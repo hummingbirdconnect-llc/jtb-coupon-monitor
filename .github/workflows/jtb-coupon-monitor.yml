@@ -1,0 +1,37 @@
+name: JTB Coupon Monitor
+
+on:
+  schedule:
+    # 毎日朝9時（JST）に実行 = UTC 0:00
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # ← これがあると手動実行ボタンも使える
+
+permissions:
+  contents: write  # データをリポジトリに書き戻すために必要
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        run: pip install requests beautifulsoup4
+
+      - name: クーポン監視スクリプトを実行
+        run: python jtb_coupon_monitor.py
+
+      - name: データをコミット＆プッシュ
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add jtb_coupon_data/
+          # 変更がある場合のみコミット（なければスキップ）
+          git diff --staged --quiet || git commit -m "📊 クーポンデータ更新 $(date +%Y-%m-%d)"
+          git push
