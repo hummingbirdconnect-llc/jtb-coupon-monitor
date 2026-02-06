@@ -22,10 +22,16 @@ jobs:
           python-version: '3.11'
 
       - name: 依存パッケージをインストール
-        run: pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4 gspread google-auth
 
       - name: クーポン監視スクリプトを実行
         run: python jtb_coupon_monitor.py
+
+      - name: Google Sheets に書き出し
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python export_to_sheets.py
 
       - name: データをコミット＆プッシュ
         run: |
