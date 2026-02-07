@@ -172,37 +172,33 @@ def scrape_coupon_list_page(page_config):
         card_text = card.get_text(separator="\n", strip=True)
 
         # ----- 配布終了の検出 -----
-        # 注意: ページ上部の注意書き「『配布終了』表記がない場合がございます」を
-        #       誤検出しないよう、注意書きパターンを除外する
+        # JTBが配布終了時に追加するバッジ/ラベル要素を直接探す。
+        # テキスト全文検索はページ上部の注意書き（「配布終了」表記がない場合…）を
+        # 誤検出するため使わない。
         is_ended = False
-        # まず link 要素自体のテキストで判定（最も狭い範囲）
-        link_text = link.get_text(separator=" ", strip=True)
-        ended_keywords = ["配布終了", "配布は終了", "受付終了", "終了しました"]
-        # 注意書きの除外パターン（これらを含む文脈は配布終了ではない）
-        disclaimer_patterns = ["表記がない", "表記が無い", "「配布終了」表記"]
-        for kw in ended_keywords:
-            if kw in link_text:
-                # 注意書きパターンに該当しないか確認
-                is_disclaimer = False
-                for dp in disclaimer_patterns:
-                    if dp in link_text:
-                        is_disclaimer = True
-                        break
-                if not is_disclaimer:
+        # 方法1: link要素内の短いテキスト要素から「配布終了」を探す
+        for el in link.find_all(string=True):
+            el_text = el.strip()
+            # 短いテキスト（30文字以下）に「配布終了」が含まれていれば、
+            # それはバッジ/ラベルであり注意書きではない
+            if el_text and len(el_text) <= 30:
+                if "配布終了" in el_text or "受付終了" in el_text:
                     is_ended = True
                     break
-        # link_text で見つからなければ card_text でも探す（ただし注意書き除外）
+        # 方法2: card要素内のclass名に"end"や"sold"等が含まれる要素を探す
         if not is_ended:
-            for kw in ended_keywords:
-                if kw in card_text:
-                    is_disclaimer = False
-                    for dp in disclaimer_patterns:
-                        if dp in card_text:
-                            is_disclaimer = True
-                            break
-                    if not is_disclaimer:
-                        is_ended = True
-                        break
+            for el in card.find_all(class_=True):
+                classes = " ".join(el.get("class", []))
+                if any(kw in classes.lower() for kw in ["end", "sold", "finish", "close", "stop"]):
+                    is_ended = True
+                    break
+        # 方法3: imgタグのalt属性に「配布終了」が含まれる場合
+        if not is_ended:
+            for img in card.find_all("img"):
+                alt = img.get("alt", "")
+                if "配布終了" in alt or "受付終了" in alt:
+                    is_ended = True
+                    break
 
         # タイトル抽出
         title_el = link.find("h3") or link
@@ -333,23 +329,31 @@ def scrape_detail_page(url):
             "raw_text_hash": hashlib.md5(page_text.encode()).hexdigest(),
         }
 
-        # 詳細ページでも配布終了を検出（注意書きパターンは除外）
-        ended_keywords = ["配布終了", "配布は終了", "受付終了", "終了しました",
-                          "配布上限に達し", "上限に達した"]
-        disclaimer_patterns = ["表記がない", "表記が無い", "「配布終了」表記"]
-        for kw in ended_keywords:
-            if kw in page_text:
-                # 注意書きの文脈かどうかチェック
-                is_disclaimer = False
-                for dp in disclaimer_patterns:
-                    if dp in page_text:
-                        is_disclaimer = True
-                        break
-                # 「配布上限に達し」「上限に達した」は注意書きではないので常に検出
-                if kw in ["配布上限に達し", "上限に達した"]:
+        # 詳細ページでも配布終了を検出（HTML要素レベルで判定）
+        # 方法1: 短いテキスト要素から「配布終了」を探す（注意書きの長文は除外）
+        for el in soup.find_all(string=True):
+            el_text = el.strip()
+            if el_text and len(el_text) <= 30:
+                if any(kw in el_text for kw in ["配布終了", "受付終了", "配布は終了しました"]):
                     detail["is_ended_on_detail"] = True
                     break
-                if not is_disclaimer:
+        # 方法2: 「配布上限に達し」は明確な終了シグナル（注意書きとは別）
+        if not detail["is_ended_on_detail"]:
+            for el in soup.find_all(string=True):
+                el_text = el.strip()
+                if any(kw in el_text for kw in ["配布上限に達し", "上限に達した"]):
+                    detail["is_ended_on_detail"] = True
+                    break
+        # 方法3: class名やimg altで検出
+        if not detail["is_ended_on_detail"]:
+            for el in soup.find_all(class_=True):
+                classes = " ".join(el.get("class", []))
+                if any(kw in classes.lower() for kw in ["end", "sold", "finish", "close"]):
+                    detail["is_ended_on_detail"] = True
+                    break
+            for img in soup.find_all("img"):
+                alt = img.get("alt", "")
+                if "配布終了" in alt or "受付終了" in alt:
                     detail["is_ended_on_detail"] = True
                     break
 
@@ -424,12 +428,18 @@ def update_master(master, scraped_coupons):
         detail_ended = (coupon.get("detail_data") or {}).get("is_ended_on_detail", False)
         booking_expired = is_booking_expired(coupon.get("booking_period", ""))
 
+        # デバッグ: 各判定フラグを表示
+        print(f"  📋 [{cid}] ended_page={is_ended} ended_detail={detail_ended} booking_expired={booking_expired} period='{coupon.get('booking_period', '')}'")
+
         if is_ended or detail_ended:
             new_status = STATUS_ENDED
+            print(f"     → 🔴 配布終了（{'一覧:配布終了表記' if is_ended else '詳細:配布終了検出'}）")
         elif booking_expired:
-            new_status = STATUS_ENDED  # 予約期間切れも終了扱い
+            new_status = STATUS_ENDED
+            print(f"     → 🔴 配布終了（予約期間切れ）")
         else:
             new_status = STATUS_ACTIVE
+            print(f"     → 🟢 配布中")
 
         if cid in master_coupons:
             old_status = master_coupons[cid].get("status", "")
