@@ -1,0 +1,538 @@
+#!/usr/bin/env python3
+"""
+近畿日本ツーリスト クーポン監視スクリプト（シンプル版）
+================================================================
+獲得クーポン + クーポンコードの一覧ページからクーポンを収集し、
+各詳細ページから割引額・条件等を抽出。前回との差分（新規・消失）を検出する。
+
+使い方:
+  python knt_coupon_monitor.py           # 通常実行
+  python knt_coupon_monitor.py --init    # 初回セットアップ
+"""
+
+import requests
+from bs4 import BeautifulSoup
+import json
+import sys
+import hashlib
+from datetime import datetime, timedelta
+from pathlib import Path
+from urllib.parse import urljoin, urlparse, parse_qs
+import time
+import re
+
+# ============================================================
+# 設定
+# ============================================================
+BASE_URL = "https://www.knt.co.jp"
+
+COUPON_PAGES = [
+    {
+        "name": "獲得クーポン",
+        "url": f"{BASE_URL}/coupon/get/",
+    },
+    {
+        "name": "クーポンコード",
+        "url": f"{BASE_URL}/coupon/code/",
+    },
+]
+
+DATA_DIR = Path("./knt_coupon_data")
+MASTER_FILE = DATA_DIR / "master_ids.json"
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept-Language": "ja,en;q=0.9",
+}
+
+REQUEST_DELAY = 2
+
+# フィルタ: ダミーエントリやトップページリンクを除外
+SKIP_PATHS = {"/", "/coupon/", "/coupon/get/", "/coupon/code/", "/contents/fukkou/"}
+
+
+# ============================================================
+# ユーティリティ
+# ============================================================
+def setup_dirs():
+    DATA_DIR.mkdir(exist_ok=True)
+
+
+def today_str():
+    return datetime.now().strftime("%Y-%m-%d")
+
+
+def make_coupon_id(url):
+    """URLからユニークなIDを生成"""
+    parsed = urlparse(url)
+    # campaign.html?cmpgncd=XXX → cmpgncd値
+    qs = parse_qs(parsed.query)
+    if "cmpgncd" in qs:
+        return f"cmpgn-{qs['cmpgncd'][0]}"
+    # /yado/sp/xxx/ → パス末尾
+    path = parsed.path.rstrip("/")
+    if path:
+        # 末尾2セグメントをIDに（例: yado-sp-okinawa_kcp）
+        parts = [p for p in path.split("/") if p]
+        slug = "-".join(parts[-3:]) if len(parts) >= 3 else "-".join(parts)
+        return slug
+    return hashlib.md5(url.encode()).hexdigest()[:12]
+
+
+def is_valid_detail_url(href):
+    """ダミーや無効なリンクを除外"""
+    if not href:
+        return False
+    parsed = urlparse(href)
+    path = parsed.path.rstrip("/")
+    if path in {"", "/"} or path + "/" in SKIP_PATHS:
+        return False
+    # knt.co.jp 内部リンクのみ（外部サイトは除外）
+    if parsed.netloc and "knt.co.jp" not in parsed.netloc:
+        return False
+    return True
+
+
+# ============================================================
+# マスターID管理
+# ============================================================
+def load_master_ids():
+    if MASTER_FILE.exists():
+        with open(MASTER_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"last_updated": "", "ids": {}}
+
+
+def save_master_ids(master):
+    master["last_updated"] = datetime.now().isoformat()
+    with open(MASTER_FILE, "w", encoding="utf-8") as f:
+        json.dump(master, f, ensure_ascii=False, indent=2)
+
+
+# ============================================================
+# 都道府県リスト
+# ============================================================
+PREFECTURES = [
+    "北海道", "青森県", "岩手県", "宮城県", "秋田県", "山形県", "福島県",
+    "茨城県", "栃木県", "群馬県", "埼玉県", "千葉県", "東京都", "神奈川県",
+    "新潟県", "富山県", "石川県", "福井県", "山梨県", "長野県",
+    "岐阜県", "静岡県", "愛知県", "三重県",
+    "滋賀県", "京都府", "大阪府", "兵庫県", "奈良県", "和歌山県",
+    "鳥取県", "島根県", "岡山県", "広島県", "山口県",
+    "徳島県", "香川県", "愛媛県", "高知県",
+    "福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
+    # 略称
+    "沖縄", "北海道", "九州", "東北",
+]
+
+
+# ============================================================
+# スクレイピング: 一覧ページ
+# ============================================================
+def scrape_list_page(page_config):
+    """KNTの一覧ページからクーポンカード情報を抽出"""
+    page_name = page_config["name"]
+    page_url = page_config["url"]
+
+    print(f"📡 [{page_name}] 一覧ページを取得中... {page_url}")
+    resp = requests.get(page_url, headers=HEADERS, timeout=30)
+    resp.raise_for_status()
+    resp.encoding = resp.apparent_encoding
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    coupons = []
+    seen_urls = set()
+
+    # h5 タイトル要素を起点にカードを探す
+    for h5 in soup.find_all("h5"):
+        title = h5.get_text(strip=True)
+        if not title or "ああああ" in title:
+            continue
+
+        # h5の近傍から詳細リンクを探す
+        # 親要素を遡ってカードコンテナを見つける
+        card = h5
+        detail_url = None
+        for _ in range(6):
+            parent = card.parent
+            if parent is None:
+                break
+            card = parent
+            # カード内の「詳細はこちら」「キャンペーン詳細はこちら」リンクを探す
+            links = card.find_all("a", href=True)
+            for link in links:
+                link_text = link.get_text(strip=True)
+                href = link.get("href", "")
+                if ("詳細" in link_text or "campaign" in href) and is_valid_detail_url(href):
+                    detail_url = urljoin(BASE_URL, href)
+                    break
+            if detail_url:
+                break
+
+        if not detail_url or detail_url in seen_urls:
+            continue
+        seen_urls.add(detail_url)
+
+        card_text = card.get_text(separator="\n", strip=True)
+
+        # 都道府県を抽出
+        area = ""
+        areas_found = []
+        for pref in PREFECTURES:
+            if pref in card_text[:200]:
+                if pref not in areas_found:
+                    areas_found.append(pref)
+        if areas_found:
+            area = "・".join(areas_found[:3])  # 最大3つまで
+
+        # 対象タイプ
+        type_keywords = [
+            "国内ダイナミックパッケージ",
+            "海外ダイナミックパッケージ",
+            "国内ツアー", "国内宿泊",
+        ]
+        found_types = []
+        for kw in type_keywords:
+            if kw in card_text:
+                found_types.append(kw)
+        coupon_type = "・".join(found_types) if found_types else ""
+
+        coupon_id = make_coupon_id(detail_url)
+
+        coupons.append({
+            "id": coupon_id,
+            "category": page_name,
+            "title": title,
+            "area": area,
+            "type": coupon_type,
+            "detail_url": detail_url,
+            "detail_data": None,
+        })
+
+    print(f"  ✅ [{page_name}] {len(coupons)}件検出")
+    return coupons
+
+
+def scrape_all_lists():
+    all_coupons = []
+    for page_config in COUPON_PAGES:
+        time.sleep(REQUEST_DELAY)
+        coupons = scrape_list_page(page_config)
+        all_coupons.extend(coupons)
+
+    # 重複排除（同じクーポンが両ページに載る場合）
+    seen = {}
+    deduped = []
+    for c in all_coupons:
+        if c["id"] not in seen:
+            seen[c["id"]] = True
+            deduped.append(c)
+        else:
+            print(f"  ℹ️ 重複スキップ: {c['id']}")
+    return deduped
+
+
+# ============================================================
+# スクレイピング: 詳細ページ
+# ============================================================
+def scrape_detail_page(url):
+    """KNTの詳細ページから割引額・条件・期間などを抽出"""
+    try:
+        time.sleep(REQUEST_DELAY)
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        resp.encoding = resp.apparent_encoding
+
+        soup = BeautifulSoup(resp.text, "html.parser")
+        page_text = soup.get_text(separator="\n", strip=True)
+
+        detail = {
+            "discount": "",
+            "conditions": [],
+            "booking_period": "",
+            "stay_period": "",
+            "coupon_codes": [],
+            "notes": [],
+        }
+
+        # ----- 割引額 -----
+        # 「X,XXX円分クーポン」「X,XXX円割引」パターン
+        discount_matches = re.findall(
+            r'([0-9,]+)円(?:分クーポン|割引クーポン|割引)', page_text
+        )
+        if discount_matches:
+            amounts = []
+            for m in discount_matches:
+                amt = m.replace(",", "")
+                if amt.isdigit() and int(amt) >= 500:
+                    amounts.append(int(amt))
+            if amounts:
+                max_amt = max(amounts)
+                detail["discount"] = f"最大{max_amt:,}円割引" if len(amounts) > 1 else f"{max_amt:,}円割引"
+
+        # ----- 条件（X円以上で使える / 先着X名様） -----
+        cond_patterns = [
+            r'([0-9,]+)円以上で使える',
+            r'先着[\s]*([0-9,]+)[\s]*名様',
+        ]
+        for pat in cond_patterns:
+            for match in re.finditer(pat, page_text):
+                cond = match.group(0)
+                if cond not in detail["conditions"]:
+                    detail["conditions"].append(cond)
+
+        # ----- 申込期間（予約期間） -----
+        bp_match = re.search(
+            r'申込期間\s*\n?\s*(\d{4}年\d{1,2}月\d{1,2}日.+?)(?:\n\n|\n(?:※|$))',
+            page_text, re.DOTALL
+        )
+        if bp_match:
+            detail["booking_period"] = bp_match.group(1).replace("\n", "").strip()[:120]
+        else:
+            # フォールバック
+            bp2 = re.search(r'申込期間[：:\s]*\n?\s*(.+?)(?:\n|$)', page_text)
+            if bp2:
+                detail["booking_period"] = bp2.group(1).strip()[:120]
+
+        # ----- 出発・宿泊対象期間 -----
+        sp_match = re.search(
+            r'(?:出発期間|対象宿泊日|宿泊対象期間|出発対象期間)[：:\s]*\n?\s*(.+?)(?:\n\n|\n(?:※|対象|$))',
+            page_text, re.DOTALL
+        )
+        if sp_match:
+            detail["stay_period"] = sp_match.group(1).replace("\n", "").strip()[:120]
+        else:
+            sp2 = re.search(
+                r'(?:出発期間|対象宿泊日)[：:\s]*\n?\s*(.+?)(?:\n|$)', page_text
+            )
+            if sp2:
+                detail["stay_period"] = sp2.group(1).strip()[:120]
+
+        # ----- クーポンコード -----
+        code_patterns = [
+            r'クーポンコード[：:\s]*([A-Za-z0-9_\-]+)',
+            r'コード[：:\s]*([A-Za-z0-9_\-]+)',
+        ]
+        for pat in code_patterns:
+            for match in re.finditer(pat, page_text, re.IGNORECASE):
+                code = match.group(1)
+                if code not in detail["coupon_codes"] and len(code) >= 3:
+                    detail["coupon_codes"].append(code)
+
+        # ----- 注意事項（重要キーワード周辺） -----
+        note_keywords = ["併用不可", "1回限り", "先着", "枚数限定", "1予約につき", "なくなり次第"]
+        for keyword in note_keywords:
+            if keyword in page_text:
+                idx = page_text.find(keyword)
+                start = max(0, idx - 10)
+                end = min(len(page_text), idx + 60)
+                snippet = page_text[start:end].replace("\n", " ").strip()
+                if snippet and snippet not in detail["notes"]:
+                    detail["notes"].append(snippet)
+
+        return detail
+
+    except Exception as e:
+        print(f"    ⚠️ 詳細ページ取得エラー: {e}")
+        return {
+            "discount": "",
+            "conditions": [],
+            "booking_period": "",
+            "stay_period": "",
+            "coupon_codes": [],
+            "notes": [],
+        }
+
+
+# ============================================================
+# 差分検出（新規・消失）
+# ============================================================
+def detect_changes(master_ids, current_coupons):
+    prev_ids = set(master_ids.get("ids", {}).keys())
+    curr_map = {c["id"]: c for c in current_coupons}
+    curr_id_set = set(curr_map.keys())
+
+    new_ids = curr_id_set - prev_ids
+    gone_ids = prev_ids - curr_id_set
+
+    events = []
+
+    for cid in sorted(new_ids):
+        c = curr_map[cid]
+        events.append({
+            "date": today_str(),
+            "type": "🆕 新規",
+            "id": cid,
+            "category": c["category"],
+            "title": c["title"],
+            "area": c.get("area", ""),
+        })
+
+    for cid in sorted(gone_ids):
+        prev_info = master_ids["ids"].get(cid, {})
+        events.append({
+            "date": today_str(),
+            "type": "❌ 消失",
+            "id": cid,
+            "category": prev_info.get("category", ""),
+            "title": prev_info.get("title", ""),
+            "area": prev_info.get("area", ""),
+        })
+
+    return events
+
+
+def update_master_ids(master_ids, current_coupons):
+    new_ids = {}
+    for c in current_coupons:
+        new_ids[c["id"]] = {
+            "category": c["category"],
+            "title": c["title"],
+            "area": c.get("area", ""),
+        }
+    master_ids["ids"] = new_ids
+    return master_ids
+
+
+# ============================================================
+# データ保存
+# ============================================================
+def save_daily_data(coupons):
+    today = today_str()
+    daily_file = DATA_DIR / f"coupons_{today}.json"
+    data = []
+    for c in coupons:
+        entry = {k: v for k, v in c.items() if k != "detail_data"}
+        entry["detail_data"] = c.get("detail_data") or {}
+        data.append(entry)
+
+    with open(daily_file, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"💾 日次データ保存: {daily_file}（{len(data)}件）")
+
+
+def save_change_log(events):
+    log_file = DATA_DIR / "change_log.json"
+    existing = []
+    if log_file.exists():
+        with open(log_file, "r", encoding="utf-8") as f:
+            existing = json.load(f)
+
+    existing.extend(events)
+    cutoff = (datetime.now() - timedelta(days=90)).strftime("%Y-%m-%d")
+    existing = [e for e in existing if e.get("date", "") >= cutoff]
+
+    with open(log_file, "w", encoding="utf-8") as f:
+        json.dump(existing, f, ensure_ascii=False, indent=2)
+
+
+# ============================================================
+# レポート
+# ============================================================
+def generate_report(coupons, events):
+    today = today_str()
+    get_coupons = [c for c in coupons if c["category"] == "獲得クーポン"]
+    code_coupons = [c for c in coupons if c["category"] == "クーポンコード"]
+
+    lines = [
+        f"# KNTクーポンレポート {today}",
+        f"",
+        f"## 概要",
+        f"- 獲得クーポン: {len(get_coupons)}件",
+        f"- クーポンコード: {len(code_coupons)}件",
+        f"- 合計: {len(coupons)}件",
+        f"",
+    ]
+
+    if events:
+        lines.append("## 変動")
+        for e in events:
+            lines.append(f"- {e['type']} [{e['category']}] {e['title']} ({e['id']})")
+        lines.append("")
+    else:
+        lines.append("## 変動: なし")
+        lines.append("")
+
+    report_text = "\n".join(lines)
+    report_file = DATA_DIR / f"report_{today}.md"
+    with open(report_file, "w", encoding="utf-8") as f:
+        f.write(report_text)
+    print(f"📝 レポート保存: {report_file}")
+
+    print("\n" + "=" * 60)
+    for line in lines:
+        print(line)
+    print("=" * 60)
+
+
+# ============================================================
+# メイン
+# ============================================================
+def run_init():
+    print("🔄 KNT 初期化モード")
+    setup_dirs()
+
+    coupons = scrape_all_lists()
+
+    print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
+    for i, coupon in enumerate(coupons):
+        print(f"  [{i+1}/{len(coupons)}] [{coupon['category']}] {coupon['title'][:40]}...")
+        detail = scrape_detail_page(coupon["detail_url"])
+        coupon["detail_data"] = detail
+        # 詳細ページの割引額をクーポンに反映
+        if detail.get("discount") and not coupon.get("discount"):
+            coupon["discount"] = detail["discount"]
+
+    save_daily_data(coupons)
+
+    master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
+    save_master_ids(master_ids)
+
+    generate_report(coupons, [])
+    print(f"\n✅ KNT 初期化完了: {len(coupons)}件")
+
+
+def run_full():
+    setup_dirs()
+
+    coupons = scrape_all_lists()
+
+    print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
+    for i, coupon in enumerate(coupons):
+        print(f"  [{i+1}/{len(coupons)}] [{coupon['category']}] {coupon['title'][:40]}...")
+        detail = scrape_detail_page(coupon["detail_url"])
+        coupon["detail_data"] = detail
+        if detail.get("discount") and not coupon.get("discount"):
+            coupon["discount"] = detail["discount"]
+
+    save_daily_data(coupons)
+
+    master_ids = load_master_ids()
+    events = detect_changes(master_ids, coupons)
+
+    if events:
+        print(f"\n📢 変動検出: {len(events)}件")
+        for e in events:
+            print(f"  {e['type']} [{e['category']}] {e['title']}")
+    else:
+        print("\n📢 変動なし")
+
+    master_ids = update_master_ids(master_ids, coupons)
+    save_master_ids(master_ids)
+
+    if events:
+        save_change_log(events)
+
+    generate_report(coupons, events)
+
+
+def main():
+    if len(sys.argv) > 1 and sys.argv[1] == "--init":
+        run_init()
+    else:
+        run_full()
+
+
+if __name__ == "__main__":
+    main()
