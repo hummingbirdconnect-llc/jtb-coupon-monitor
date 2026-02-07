@@ -1,13 +1,10 @@
 {
-  "scraped_at": "2026-02-07T05:10:22.751763",
-  "total_count": 130,
-  "domestic_count": 81,
-  "overseas_count": 49,
-  "coupons": [
-    {
+  "last_updated": "2026-02-07T05:10:22.757581",
+  "coupons": {
+    "2601jtbhpnew": {
       "id": "2601jtbhpnew",
-      "category": "国内",
       "title": "【JTBトラベルメンバー新規会員向け】初回購入限定！国内クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -15,7 +12,6 @@
       "stay_period": "2026/1/1(木)  ～ 2026/6/30(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jtbhpnew/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "hpnew"
@@ -32,12 +28,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "3b7e579f127fa4b705fbcbf1370421df"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2602thkcp": {
       "id": "2602thkcp",
-      "category": "国内",
       "title": "3月までの国内宿泊に使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊",
@@ -45,7 +52,6 @@
       "stay_period": "2026/2/3(火) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602thkcp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "thkcp"
@@ -64,12 +70,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "1e57265823a741c03e25e3fe91cdac5f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511black2": {
       "id": "2511black2",
-      "category": "国内",
       "title": "国内ツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -77,7 +94,6 @@
       "stay_period": "2026/1/15(木) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511black2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "black"
@@ -96,12 +112,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "62ab3caf1d4fa65f88f48fc69fae8e77"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512hayac": {
       "id": "2512hayac",
-      "category": "国内",
       "title": "宿泊早期予約キャンペーン（GW/夏休み/9月シルバーウイーク含む） で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊",
@@ -109,7 +136,6 @@
       "stay_period": "2026/4/1(水) ～ 2026/9/30(水)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512hayac/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "hayac"
@@ -129,12 +155,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c84a021f7f2bad4781a94ad15165df2b"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511airhayawari": {
       "id": "2511airhayawari",
-      "category": "国内",
       "title": "【早期75日前までの予約限定】GW・夏休みも先どり！4-9月出発航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -142,7 +179,6 @@
       "stay_period": "2026/4/1(水) ～ 2026/9/30(水)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511airhayawari/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "airha"
@@ -159,12 +195,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "2bdf6019581d1dd1c334fa17d5faf9d4"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510jjp": {
       "id": "2510jjp",
-      "category": "国内",
       "title": "往復ジェットスター便利用航空機ツアー割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -172,7 +219,6 @@
       "stay_period": "2025/12/01(月) ～ 2026/3/25(水)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510jjp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jjpcp"
@@ -190,12 +236,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "bbf92307370fe673482f07b0d86b6ef1"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510sunsunski": {
       "id": "2510sunsunski",
-      "category": "国内",
       "title": "飛行機、JR利用がお得！スキー割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -203,7 +260,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/03/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510sunsunski/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "sunsu"
@@ -223,12 +279,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "04ae63a28253d8432f6d844e72551a34"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2501green": {
       "id": "2501green",
-      "category": "国内",
       "title": "往復JR新幹線グリーン車で行く　華やぎ・優雅・ラグジュアリー割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -236,7 +303,6 @@
       "stay_period": "2025/4/1(火) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2501green/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jrcpn"
@@ -256,12 +322,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "9eac4ca5ceaa7252f2c0f5a0047fdd63"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601green": {
       "id": "2601green",
-      "category": "国内",
       "title": "【2026年4月以降出発】往復JR新幹線グリーン車で行く　華やぎ・優雅・ラグジュアリー割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -269,7 +346,6 @@
       "stay_period": "2026/4/1(水) ～ 2027/3/31(水)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601green/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jrcpn"
@@ -289,12 +365,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ddc4a077252198bf317f11e7063093e7"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601monterey": {
       "id": "2601monterey",
-      "category": "国内",
       "title": "ホテルモントレグループ21ホテルで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -302,7 +389,6 @@
       "stay_period": "2026/2/1(日) ～ 2026/5/31(日)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601monterey/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "monte"
@@ -322,12 +408,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "dfb4be89db0004e0b01e3daf3212245f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601richm": {
       "id": "2601richm",
-      "category": "国内",
       "title": "全国のリッチモンドホテルズで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "全国",
       "type": "宿泊・ツアー",
@@ -335,7 +432,6 @@
       "stay_period": "2026/1/21(水) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601richm/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "richm"
@@ -355,12 +451,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c12309f552e4e9321c2a6142e41da0d7"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511prince": {
       "id": "2511prince",
-      "category": "国内",
       "title": "全国の西武プリンスホテルズ＆リゾーツで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "全国",
       "type": "宿泊・ツアー",
@@ -368,7 +475,6 @@
       "stay_period": "2025/11/6(木) ～ 2026/3/27(金)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511prince/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "princ"
@@ -389,12 +495,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "9daf93b95e8868931e54411e82822c4a"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601orixc": {
       "id": "2601orixc",
-      "category": "国内",
       "title": "全国のORIX HOTELS & RESORTS　旅館・ホテルで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "全国",
       "type": "宿泊・ツアー",
@@ -402,7 +519,6 @@
       "stay_period": "2026/1/19(月) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601orixc/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "orixc"
@@ -422,12 +538,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "d557db662714b356127b170fe93b7d6c"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601solar": {
       "id": "2601solar",
-      "category": "国内",
       "title": "全国のソラーレ ホテルズ アンド リゾーツ　飛行機、JR利用で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "全国",
       "type": "ツアー",
@@ -435,7 +562,6 @@
       "stay_period": "2026/1/8(木) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601solar/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "solar"
@@ -455,12 +581,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "6e0a31955317fbca22bf560570b9e639"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510tokyu": {
       "id": "2510tokyu",
-      "category": "国内",
       "title": "全国の東急ホテルズで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "全国",
       "type": "宿泊・ツアー",
@@ -468,7 +605,6 @@
       "stay_period": "2025/11/1(土) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510tokyu/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "tokyu"
@@ -489,12 +625,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "e09f6283183c3027b92473f30fb633a4"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601ooedo": {
       "id": "2601ooedo",
-      "category": "国内",
       "title": "全国の大江戸温泉物語で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "全国",
       "type": "宿泊・ツアー",
@@ -502,7 +649,6 @@
       "stay_period": "2026/2/1(日) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601ooedo/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "ooedo"
@@ -526,12 +672,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "a1a55ce802af18c732af879c1c9acc0e"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512hilton": {
       "id": "2512hilton",
-      "category": "国内",
       "title": "ヒルトンおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -539,7 +696,6 @@
       "stay_period": "2025/12/18(木) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512hilton/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "hilto"
@@ -559,12 +715,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "6550ecc355a5f0f838b7ee91ccca7ec3"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510kyoritsu": {
       "id": "2510kyoritsu",
-      "category": "国内",
       "title": "全国の共立リゾート40施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "全国",
       "type": "宿泊・ツアー",
@@ -572,7 +739,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/2/28(土)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510kyoritsu/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kyori"
@@ -591,12 +757,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "850d44a8101e71b38895fe52eb8e0545"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601hokkaido": {
       "id": "2601hokkaido",
-      "category": "国内",
       "title": "北海道へ【２・３月限定】オススメ旅館・ホテルで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "北海道",
       "type": "宿泊・ツアー",
@@ -604,7 +781,6 @@
       "stay_period": "2026/2/1(日) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601hokkaido/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "hokka"
@@ -622,12 +798,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "8e78e1327acb495b4523f98e29f339f1"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2602dohoku": {
       "id": "2602dohoku",
-      "category": "国内",
       "title": "【道北エリア】オススメ旅館・ホテルで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊",
@@ -635,7 +822,6 @@
       "stay_period": "2026/2/3(火) ～ 2026/4/30(木)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602dohoku/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "dohok"
@@ -654,12 +840,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ce1ce1eb3e7683b9b0c992e45d74fe3f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510donan": {
       "id": "2510donan",
-      "category": "国内",
       "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "北海道",
       "type": "宿泊・ツアー",
@@ -667,7 +864,6 @@
       "stay_period": "2025/11/1(土) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510donan/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "donan"
@@ -687,12 +883,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "81234d68ce86b1d9618af2a36e477cb2"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601nstoh": {
       "id": "2601nstoh",
-      "category": "国内",
       "title": "「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "東北",
       "type": "宿泊・ツアー",
@@ -700,7 +907,6 @@
       "stay_period": "2026/4/1(水) ～ 2026/7/12(日)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601nstoh/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "nstoh"
@@ -721,12 +927,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ceb71fd5856a765a4e20e7243fcab0c0"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512tohoku": {
       "id": "2512tohoku",
-      "category": "国内",
       "title": "東北のおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "東北",
       "type": "宿泊・ツアー",
@@ -734,7 +951,6 @@
       "stay_period": "2025/12/22(月) ～ 2026/3/15(日)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512tohoku/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "tohok"
@@ -755,12 +971,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "0cca80d83e3fd2229a61eaabb0a6c7ea"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2508fukushima": {
       "id": "2508fukushima",
-      "category": "国内",
       "title": "福島県おすすめ【今食べたい口福旅！海の福・山の福】プランで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "福島県",
       "type": "宿泊",
@@ -768,7 +995,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2508fukushima/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "fukus"
@@ -788,12 +1014,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "475c33122393005b43df291c7fb5565e"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509niigata": {
       "id": "2509niigata",
-      "category": "国内",
       "title": "美食・美酒・名湯・体験・感動の旅♪にいがた宿物語で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -801,7 +1038,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509niigata/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "niiga"
@@ -821,12 +1057,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "d90a11dd62bb3d3fc325762a644baf06"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601yamanashi": {
       "id": "2601yamanashi",
-      "category": "国内",
       "title": "山梨県のおすすめホテル・旅館～冬のほっこり山梨割クーポン～",
+      "category": "国内",
       "discount": "",
       "area": "山梨県",
       "type": "宿泊",
@@ -834,7 +1081,6 @@
       "stay_period": "2026/1/23(金) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601yamanashi/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "yaman"
@@ -851,12 +1097,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "855f0c2ff753795082d9d2a02804d221"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512kanto": {
       "id": "2512kanto",
-      "category": "国内",
       "title": "電車で行こう！冬の温泉旅で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -864,7 +1121,6 @@
       "stay_period": "2025/12/3(水) ～ 2026/3/30(月)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512kanto/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kanto"
@@ -884,12 +1140,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c4e80b5dceaef283911093f0be95e930"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2506kanto": {
       "id": "2506kanto",
-      "category": "国内",
       "title": "JTBスタッフおすすめ「とっておきのお部屋プラン」で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -897,7 +1164,6 @@
       "stay_period": "2025/6/2(月) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2506kanto/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kanto"
@@ -916,12 +1182,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "7db6804d35c207f82389640b5665a8b8"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601higashi": {
       "id": "2601higashi",
-      "category": "国内",
       "title": "【関東・伊豆箱根・山梨・新潟】エリアのおすすめ旅館・ホテルで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "関東",
       "type": "宿泊",
@@ -929,7 +1206,6 @@
       "stay_period": "2026/1/23(金) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601higashi/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "higas"
@@ -953,12 +1229,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "5042115ed84204cbf02d74adc8c848ab"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601kusatsu": {
       "id": "2601kusatsu",
-      "category": "国内",
       "title": "草津温泉のおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -966,7 +1253,6 @@
       "stay_period": "2026/2/1(日) ～ 2026/4/12(日)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601kusatsu/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kusat"
@@ -984,12 +1270,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "8442cead269fd02489e42a66ee3ddf0e"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2505shima": {
       "id": "2505shima",
-      "category": "国内",
       "title": "四万温泉のおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -997,7 +1294,6 @@
       "stay_period": "2025/05/19(月) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2505shima/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "shima"
@@ -1017,12 +1313,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cde90734d1b5336412293f5c2c3941f5"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504ikaho": {
       "id": "2504ikaho",
-      "category": "国内",
       "title": "伊香保温泉をぶらり散策しよう割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1030,7 +1337,6 @@
       "stay_period": "2025/4/16(水) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2504ikaho/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "ikaho"
@@ -1050,12 +1356,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "820516a32c4ac857409ca474efe02d94"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2508hachijo": {
       "id": "2508hachijo",
-      "category": "国内",
       "title": "羽田から約55分！東京のリゾートアイランド八丈島で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -1063,7 +1380,6 @@
       "stay_period": "2025/8/23(土) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2508hachijo/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "hachi"
@@ -1088,12 +1404,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "f31a84b70cb627b3c83d5a8ed3187049"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512hachijo": {
       "id": "2512hachijo",
-      "category": "国内",
       "title": "旅して応援！八丈島 復興支援クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1101,7 +1428,6 @@
       "stay_period": "2025/12/22(月) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512hachijo/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "hacha"
@@ -1123,12 +1449,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "494a25ea5dba1f4625c99a8f001858f1"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601toyoko": {
       "id": "2601toyoko",
-      "category": "国内",
       "title": "【東京・横浜】エリアのおすすめホテルで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊",
@@ -1136,7 +1473,6 @@
       "stay_period": "2026/1/23(金) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601toyoko/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "higas"
@@ -1160,12 +1496,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "a843f505c90c220dd751959a0be23601"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601chiba": {
       "id": "2601chiba",
-      "category": "国内",
       "title": "【舞浜・新浦安・幕張】エリアのおすすめホテルで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊",
@@ -1173,7 +1520,6 @@
       "stay_period": "2026/1/23(金) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601chiba/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "higas"
@@ -1193,12 +1539,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c81cfe4b0b5df0d44214b7102257dbc9"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510tdrhtl": {
       "id": "2510tdrhtl",
-      "category": "国内",
       "title": "冬の東京ディズニーリゾート®に行くならJTB！割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -1206,7 +1563,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510tdrhtl/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "tdrht"
@@ -1223,12 +1579,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "be897f8b244758efea758480130a349d"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510bouso": {
       "id": "2510bouso",
-      "category": "国内",
       "title": "房総半島のオススメ旅館・ホテルで使える 割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1236,7 +1603,6 @@
       "stay_period": "2025/11/3(月) ～ 2026/2/27(金)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510bouso/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "bouso"
@@ -1256,12 +1622,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "94738d8e82d20a65cdbf7e0cea2425b5"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512shimoda": {
       "id": "2512shimoda",
-      "category": "国内",
       "title": "伊豆下田温泉の宿泊施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1269,7 +1646,6 @@
       "stay_period": "2025/12/8(月) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512shimoda/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "shimo"
@@ -1286,12 +1662,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "e30fb1d0d7424b523c9d07aa06d245d7"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2508shizuoka": {
       "id": "2508shizuoka",
-      "category": "国内",
       "title": "【静岡県中部】魅力いっぱい静岡　おすすめ施設で使えるクーポン",
+      "category": "国内",
       "discount": "",
       "area": "静岡県",
       "type": "宿泊・ツアー",
@@ -1299,7 +1686,6 @@
       "stay_period": "2025/8/1(金) ～ 2026/2/27(金)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2508shizuoka/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "shizu"
@@ -1316,12 +1702,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "0a39492043ec5fa220353d22a0bb8ba4"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601jrfuksp2": {
       "id": "2601jrfuksp2",
-      "category": "国内",
       "title": "【山陽発限定】JR西日本利用のツアーで使えるクーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -1329,7 +1726,6 @@
       "stay_period": "2026/1/22(木) ～ 2026/3/30(月)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jrfuksp2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jrfsc"
@@ -1348,12 +1744,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "b52a253bfbdfb8af095c2fb6edb327bb"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2602jrthc": {
       "id": "2602jrthc",
-      "category": "国内",
       "title": "JR西日本利用のツアーで使えるクーポン＜第3弾＞",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -1361,7 +1768,6 @@
       "stay_period": "2026/2/5(木) ～ 2026/3/30(月)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602jrthc/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jrthc"
@@ -1385,12 +1791,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cdb1615f73f9e1cdb13efcd709dd6e2d"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512nishi": {
       "id": "2512nishi",
-      "category": "国内",
       "title": "西日本のおすすめ施設で使える早春割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1398,7 +1815,6 @@
       "stay_period": "2025/12/22(月) ～ 2026/3/19(木)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512nishi/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "nishi"
@@ -1415,12 +1831,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "90b82313ae3abfda688a9abbcb3113d7"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510shiga": {
       "id": "2510shiga",
-      "category": "国内",
       "title": "滋賀県　びわ湖の歴史と湖上交通　夕食に認証「近江牛」が楽しめる　おすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1428,7 +1855,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/02/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510shiga/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "shiga"
@@ -1447,12 +1873,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "42bfc3123b45e92445f7434af88c5dc1"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512kyota": {
       "id": "2512kyota",
-      "category": "国内",
       "title": "京都のおすすめ施設で使える『今、京都へおこしやす』割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1460,7 +1897,6 @@
       "stay_period": "2026/1/1(木) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512kyota/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kyota"
@@ -1480,12 +1916,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "90fa578b645225885077abcd5077d568"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510kyoto": {
       "id": "2510kyoto",
-      "category": "国内",
       "title": "京都で温泉　おすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1493,7 +1940,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510kyoto/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kyoto"
@@ -1513,12 +1959,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c9bc1fa6518b6e737d9560621c5284ba"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510kyotm": {
       "id": "2510kyotm",
-      "category": "国内",
       "title": "【京の味覚を愉しむ】おすすめ施設割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1526,7 +1983,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510kyotm/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kyotm"
@@ -1546,12 +2002,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cca3adabdd8a1537d3389346110a5adc"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601usjcp": {
       "id": "2601usjcp",
-      "category": "国内",
       "title": "【大阪府】ユニバーサル・スタジオ・ジャパン　オフィシャルホテルで使えるクーポン",
+      "category": "国内",
       "discount": "",
       "area": "大阪府",
       "type": "宿泊・ツアー",
@@ -1559,7 +2026,6 @@
       "stay_period": "2026/01/23(金) ～ 2026/03/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601usjcp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "usjcp"
@@ -1579,12 +2045,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c1326b14d81198037ca7363afcf6a586"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512hyogo": {
       "id": "2512hyogo",
-      "category": "国内",
       "title": "【アゲていこう、冬兵庫】キャンペーンで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1592,7 +2069,6 @@
       "stay_period": "2025/12/16(火) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512hyogo/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "hyogo"
@@ -1612,12 +2088,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "42e9940f0582e12548a1b5864b68bc9f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512okayama": {
       "id": "2512okayama",
-      "category": "国内",
       "title": "晴れの国おかやま！岡山県のおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1625,7 +2112,6 @@
       "stay_period": "2025/12/19(金) ～ 2026/3/13(金)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512okayama/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "okaya"
@@ -1644,12 +2130,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "5d4ca0127ee31c06d829e30ab80332aa"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509kochi": {
       "id": "2509kochi",
-      "category": "国内",
       "title": "高知県のおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1657,7 +2154,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509kochi/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kochi"
@@ -1674,12 +2170,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "a85dc029b5853638af36e2bac01a0d0f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510tottori": {
       "id": "2510tottori",
-      "category": "国内",
       "title": "すいちょるけん！鳥取割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1687,7 +2194,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/2/28(土)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510tottori/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "totto"
@@ -1707,12 +2213,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "4b1dd0e8da21e2b9cfd6995a54535855"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511shimane": {
       "id": "2511shimane",
-      "category": "国内",
       "title": "だんだん　島根割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1720,7 +2237,6 @@
       "stay_period": "2026/1/4(日) ～ 2026/3/19(木)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511shimane/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "shima"
@@ -1740,12 +2256,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "5bdb364ccfdf2c4d52ef0899938f24af"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507yamaguchi": {
       "id": "2507yamaguchi",
-      "category": "国内",
       "title": "【山口県】おすすめ施設で使える「おいでませ山口」クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1753,7 +2280,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/2/27(金)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2507yamaguchi/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "yamag"
@@ -1771,12 +2297,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ffd1a066efbdb9821b7b0b6af4dee6a2"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2508klacation": {
       "id": "2508klacation",
-      "category": "国内",
       "title": "Let’s ラーケーション 学びの九州 ～目で見て、触れて、考える～ で使える割引クーポン(ラーケーション限定クーポン)",
+      "category": "国内",
       "discount": "",
       "area": "九州",
       "type": "宿泊",
@@ -1784,7 +2321,6 @@
       "stay_period": "2025/9/16(火) ～ 2026/2/27(金)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2508klacation/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "klaca"
@@ -1807,12 +2343,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "a12bc573a9496152c0daa3d4f4384835"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507kyushu": {
       "id": "2507kyushu",
-      "category": "国内",
       "title": "いこっ、九州。～KOI九州～　九州への旅行で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "九州",
       "type": "ツアー",
@@ -1820,7 +2367,6 @@
       "stay_period": "2025/11/1(土) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2507kyushu/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kyush"
@@ -1837,12 +2383,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "4eb2fa5792d7ca788237bc921c48a912"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "202511kagoshima": {
       "id": "202511kagoshima",
-      "category": "国内",
       "title": "南の宝箱　鹿児島　冬のあったか宿泊割キャンペーン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -1850,7 +2407,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/202511kagoshima/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "ZSKGS",
@@ -1877,12 +2433,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "88142d4f2220cca7a20b3702e3546117"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510jalcpr": {
       "id": "2510jalcpr",
-      "category": "国内",
       "title": "【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "鹿児島県",
       "type": "ツアー",
@@ -1890,7 +2457,6 @@
       "stay_period": "2025/10/18(土) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510jalcpr/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jalcp"
@@ -1907,12 +2473,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "4f04d442d0c558cfe9ff25e8a1a483d5"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509kagoshima": {
       "id": "2509kagoshima",
-      "category": "国内",
       "title": "鹿児島県のおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "鹿児島県",
       "type": "宿泊・ツアー",
@@ -1920,7 +2497,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/3/19(木)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509kagoshima/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kagos",
@@ -1942,12 +2518,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "57313276effb3ba6bee3063952b6b914"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512kagoshima": {
       "id": "2512kagoshima",
-      "category": "国内",
       "title": "鹿児島県内のおすすめ施設で利用可能な割引クーポン（12月～3月宿泊）",
+      "category": "国内",
       "discount": "",
       "area": "鹿児島県",
       "type": "宿泊・ツアー",
@@ -1955,7 +2542,6 @@
       "stay_period": "2025/12/18(木) ～ 2026/3/29(日)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512kagoshima/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kagoc"
@@ -1973,12 +2559,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ec81a8a0352e5b9e782bdcaae933eb12"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512nsoki": {
       "id": "2512nsoki",
-      "category": "国内",
       "title": "＜日本の旬沖縄＞で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "沖縄",
       "type": "宿泊",
@@ -1986,7 +2583,6 @@
       "stay_period": "2025/12/22(月) ～ 2026/3/29(日)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512nsoki/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "nsoki"
@@ -2003,12 +2599,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "e7bf09254064ccb22851b3380a2c22d3"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601rokin": {
       "id": "2601rokin",
-      "category": "国内",
       "title": "【沖縄離島】3月～6月出発　石垣・宮古・竹富・西表・小浜島へのツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "沖縄",
       "type": "ツアー",
@@ -2016,7 +2623,6 @@
       "stay_period": "2026/3/1(日) ～ 2026/6/30(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601rokin/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "rokin"
@@ -2033,12 +2639,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "89c02362fbb41a7e25cdf4b88b071f0d"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512okinawa": {
       "id": "2512okinawa",
-      "category": "国内",
       "title": "☆【沖縄】1月～6月出発☆GWにも使える　おすすめ施設クーポン",
+      "category": "国内",
       "discount": "",
       "area": "沖縄",
       "type": "ツアー",
@@ -2046,7 +2663,6 @@
       "stay_period": "2026/1/1(木) ～ 2026/6/30(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512okinawa/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "okina"
@@ -2066,12 +2682,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "58654b47a10fc27f0ce03068caf9b8ed"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509jtbynghp": {
       "id": "2509jtbynghp",
-      "category": "国内",
       "title": "U-29旅（10代/20代）初めてのWeb予約限定！国内旅行に使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -2079,7 +2706,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509jtbynghp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "ynghp"
@@ -2096,12 +2722,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ade2b2df71c0cbaa87885986fa8a41fa"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509young": {
       "id": "2509young",
-      "category": "国内",
       "title": "U-29旅(10代/20代)３名までの国内ツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2109,7 +2746,6 @@
       "stay_period": "2026/1/9(金) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509young/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "young"
@@ -2126,12 +2762,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "241d2ed19d04b49509d656dc1367f838"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509jtbyngdm": {
       "id": "2509jtbyngdm",
-      "category": "国内",
       "title": "U-29旅（10代/20代）国内グループ旅行応援クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2139,7 +2786,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509jtbyngdm/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "yngdm"
@@ -2156,12 +2802,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "7e8073f4d4574a03582a3e3171b97a4f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601jtbknnew": {
       "id": "2601jtbknnew",
-      "category": "国内",
       "title": "国内宿泊に使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊",
@@ -2169,7 +2826,6 @@
       "stay_period": "2026/1/13(火) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jtbknnew/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "knnew"
@@ -2187,12 +2843,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ea41ecb19c61e6b0acb31bfba5f7ccc2"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601jtbfuksp": {
       "id": "2601jtbfuksp",
-      "category": "国内",
       "title": "【新春福春】国内ツアーに使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2200,7 +2867,6 @@
       "stay_period": "2026/1/8(木) ～ 2026/6/30(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jtbfuksp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "fuksp"
@@ -2219,12 +2885,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "8ef2cfafd0486ab67dcd9b841a47ffae"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601fukuh": {
       "id": "2601fukuh",
-      "category": "国内",
       "title": "【新春福春】JTBのおすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -2232,7 +2909,6 @@
       "stay_period": "2026/1/7(水) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601fukuh/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "fukuh"
@@ -2253,12 +2929,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c4dd9076e2abaefb38f337fe064d2211"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509trcpn": {
       "id": "2509trcpn",
-      "category": "国内",
       "title": "秋旅から春休みも！【10-3月出発】国内ツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2266,7 +2953,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509trcpn/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "trcpn"
@@ -2289,12 +2975,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "31b330ce882325232dc4ea3d58a3bbc2"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511jtbblack": {
       "id": "2511jtbblack",
-      "category": "国内",
       "title": "【ブラックフライデー】 おすすめ施設で使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -2302,7 +2999,6 @@
       "stay_period": "2025/11/18(火) ～ 2026/3/31(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511jtbblack/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "black"
@@ -2320,12 +3016,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "31fb816fd2e2107b6106b1c39c4a68dd"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511black": {
       "id": "2511black",
-      "category": "国内",
       "title": "ブラックフライデー期間に使える！国内ツアー割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2333,7 +3040,6 @@
       "stay_period": "2025/11/19(水) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511black/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "black"
@@ -2350,12 +3056,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ebc43fe6bfcdb9704cb464bc73ed43b6"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507airhayawari": {
       "id": "2507airhayawari",
-      "category": "国内",
       "title": "【早期75日前までの予約限定】早めの予約がおトク！航空機（往復JALまたはANA限定）利用のツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2363,7 +3080,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2507airhayawari/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "airha"
@@ -2380,12 +3096,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "ce4519e0dd029391607309e037308d10"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510jalcp": {
       "id": "2510jalcp",
-      "category": "国内",
       "title": "【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2393,7 +3120,6 @@
       "stay_period": "2025/12/1(月) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510jalcp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jalcp"
@@ -2412,12 +3138,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "77c75da3c75c459e97b7fc6884dc44c4"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512anahp": {
       "id": "2512anahp",
-      "category": "国内",
       "title": "【平日出発限定】往復ANA便利用のツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2425,7 +3162,6 @@
       "stay_period": "2026/3/1(日) ～ 2026/3/19(木)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512anahp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "anahp"
@@ -2442,12 +3178,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "1c63555789d0ea1daa65ee91329083bd"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512anadp": {
       "id": "2512anadp",
-      "category": "国内",
       "title": "往復ANA便利用のツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2455,7 +3202,6 @@
       "stay_period": "2026/3/1(日) ～ 2026/3/19(木)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512anadp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "anadp"
@@ -2472,12 +3218,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "4c91e0b865e7cb52754975295c59cdb4"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510kinki": {
       "id": "2510kinki",
-      "category": "国内",
       "title": "【関西在住者限定】やっぱ旅はええやん！国内ツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "関西",
       "type": "ツアー",
@@ -2485,7 +3242,6 @@
       "stay_period": "2025/10/10(金) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510kinki/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "kinki"
@@ -2503,12 +3259,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "e1695db14cc910a1d60f309e31b26b31"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601jrfuksp": {
       "id": "2601jrfuksp",
-      "category": "国内",
       "title": "JR西日本利用のツアーで使えるクーポン＜第2弾＞",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2516,7 +3283,6 @@
       "stay_period": "2026/1/8(木) ～ 2026/3/30(月)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jrfuksp/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jrfsc"
@@ -2543,12 +3309,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "57fb8d1a1fccab86bf36ddf591d38fec"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511jrblack": {
       "id": "2511jrblack",
-      "category": "国内",
       "title": "JR西日本利用のツアーで使える割引クーポン",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "ツアー",
@@ -2556,7 +3333,6 @@
       "stay_period": "2025/11/19(水) ～ 2026/3/30(月)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511jrblack/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "jrbfc"
@@ -2583,12 +3359,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "e6395c28ea5b2b06bbf932010dbd3f7e"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511konpira": {
       "id": "2511konpira",
-      "category": "国内",
       "title": "こんぴら温泉のおすすめ施設で使える割引クーポン＜第二弾＞",
+      "category": "国内",
       "discount": "",
       "area": "",
       "type": "宿泊・ツアー",
@@ -2596,7 +3383,6 @@
       "stay_period": "2026/1/4(日) ～ 2026/2/28(土)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511konpira/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "knprc"
@@ -2615,12 +3401,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "779ec3dbeb32f2a8df76ce880a69b585"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509okinawa": {
       "id": "2509okinawa",
-      "category": "国内",
       "title": "☆【沖縄】10月～3月出発☆年末年始にも使える　おすすめ施設クーポン",
+      "category": "国内",
       "discount": "",
       "area": "沖縄",
       "type": "ツアー",
@@ -2628,7 +3425,6 @@
       "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
       "store_available": true,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509okinawa/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "okina"
@@ -2646,12 +3442,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c0405b73aa7e0c218e369bc39b657bb6"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601qf": {
       "id": "2601qf",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるどこでも割引クーポン【カンタス航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -2659,7 +3466,6 @@
       "stay_period": "2026年1月16日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2601qf/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2601C1",
@@ -2678,12 +3484,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "85e751e9052b791b0d31e6aaba6aaa93"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601qf2": {
       "id": "2601qf2",
-      "category": "海外",
       "title": "海外航空券で使えるどこでも割引クーポン【カンタス航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -2691,7 +3508,6 @@
       "stay_period": "2026年1月16日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2601qf2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2601B1",
@@ -2710,12 +3526,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "377e90aefcdb9cf0e378e6d835b10171"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511br2": {
       "id": "2511br2",
-      "category": "海外",
       "title": "海外航空券で使えるどこでも割引クーポン【エバー航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -2723,7 +3550,6 @@
       "stay_period": "2026年1月1日(木)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511br2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511A1",
@@ -2742,12 +3568,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "e2b79594ef055eaed6a8d5283d65dd1e"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511br": {
       "id": "2511br",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるどこでも割引クーポン【エバー航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -2755,7 +3592,6 @@
       "stay_period": "2026年1月1日(木)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511br/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511B1",
@@ -2774,12 +3610,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "92aae4b3cd9d3a228020a70386598901"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511fam": {
       "id": "2511fam",
-      "category": "海外",
       "title": "祝！進級・進学！春休み・ＧＷは家族で海外へ！2-11歳のお子様含むご旅行に使えるルックJTBMySTYLEクーポン",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -2787,7 +3634,6 @@
       "stay_period": "2026年2月1日(日)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511fam/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511N2",
@@ -2806,12 +3652,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "1b4fcaa92885e56e8bb5a37f4e08ae2f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511spr": {
       "id": "2511spr",
-      "category": "海外",
       "title": "GWにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年4-6月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -2819,7 +3676,6 @@
       "stay_period": "2026年4月1日(水)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511spr/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511D1",
@@ -2838,12 +3694,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "130377362c3256c41f2b83dcbb93d655"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511sum": {
       "id": "2511sum",
-      "category": "海外",
       "title": "先どり 夏休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -2851,7 +3718,6 @@
       "stay_period": "2026年7月1日(水)～2026年9月30日(水)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511sum/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511F1",
@@ -2870,12 +3736,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "b373320de489babcb627848e461a8f84"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511aut": {
       "id": "2511aut",
-      "category": "海外",
       "title": "もっと先どり 冬休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -2883,7 +3760,6 @@
       "stay_period": "2026年10月1日(木)～2026年12月31日(木)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511aut/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511G1",
@@ -2902,12 +3778,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "5545cb78328257f081a8118f340d17e6"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511sk": {
       "id": "2511sk",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるどこでも割引クーポン【スカンジナビア航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -2915,7 +3802,6 @@
       "stay_period": "2025年11月1日(土)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511sk/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511C1",
@@ -2934,12 +3820,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "1536dfb61d23cff97024d85634b92a9b"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509dpyng": {
       "id": "2509dpyng",
-      "category": "海外",
       "title": "【U-29旅】航空券+ホテルで使えるどこでも割引クーポン（10代）",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル",
@@ -2947,7 +3844,6 @@
       "stay_period": "2025年9月26日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2509dpyng/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2509A1",
@@ -2966,12 +3862,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "bf0249ef9bc8c760ad13d3b3531210b8"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509dpyng2": {
       "id": "2509dpyng2",
-      "category": "海外",
       "title": "【U-29旅】航空券+ホテルで使えるどこでも割引クーポン（20代）",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル",
@@ -2979,7 +3886,6 @@
       "stay_period": "2025年9月26日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2509dpyng2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2509B1",
@@ -2998,12 +3904,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cbb671e3a7a5380a032f7b8eda8476a8"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509lsgryng": {
       "id": "2509lsgryng",
-      "category": "海外",
       "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外グループ旅行応援クーポン（10代）",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -3011,7 +3928,6 @@
       "stay_period": "2025年9月26日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2509lsgryng/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2509C4",
@@ -3031,12 +3947,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "2fba703a78f8311da8f9f7a16a5fb184"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509lsgryng2": {
       "id": "2509lsgryng2",
-      "category": "海外",
       "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外グループ旅行応援クーポン（20代）",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -3044,7 +3971,6 @@
       "stay_period": "2025年9月26日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2509lsgryng2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2509D4",
@@ -3064,12 +3990,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "b931cf016184b846df350af2b3f057dc"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509lsyng": {
       "id": "2509lsyng",
-      "category": "海外",
       "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外旅行応援クーポン（10代）",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -3077,7 +4014,6 @@
       "stay_period": "2026年1月9日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2509lsyng/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2509F1",
@@ -3095,12 +4031,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cc5f95241e1c482aaf49be7f69d1dca1"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2509lsyng2": {
       "id": "2509lsyng2",
-      "category": "海外",
       "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外旅行応援クーポン（20代）",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -3108,7 +4055,6 @@
       "stay_period": "2026年1月9日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2509lsyng2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2509G1",
@@ -3126,12 +4072,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cbaa732056a11db06f5faba23fee43d9"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504sq": {
       "id": "2504sq",
-      "category": "海外",
       "title": "海外航空券+ホテルでどこでも使える割引クーポン【シンガポール航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3139,7 +4096,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504sq/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504U1",
@@ -3158,12 +4114,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "38b66f69b616689b8677a32f580c06dc"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512hwi": {
       "id": "2512hwi",
-      "category": "海外",
       "title": "ホノルルで使える！海外ツアールックJTBMySTYLE割引クーポン【デルタ航空(DL)対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -3171,7 +4138,6 @@
       "stay_period": "2026年1月1日(木)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2512hwi/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2512A1",
@@ -3190,12 +4156,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "090f7d4e3a537b01a6048c9e9854ffc5"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510gum": {
       "id": "2510gum",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるグアム行き割引クーポン【日本航空（JAL）対象】",
+      "category": "海外",
       "discount": "",
       "area": "グアム",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3203,7 +4180,6 @@
       "stay_period": "2025年10月1日(水)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2510gum/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2510C1",
@@ -3222,12 +4198,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cf5c0317d7cef165e30febf5dd5ee840"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510vn2": {
       "id": "2510vn2",
-      "category": "海外",
       "title": "海外航空券で使えるベトナム行き割引クーポン【ベトナム航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -3235,7 +4222,6 @@
       "stay_period": "2025年10月1日(水)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2510vn2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2510A1",
@@ -3254,12 +4240,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "f3052f795dbd883f0b84e7811e940fd2"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2510vn": {
       "id": "2510vn",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるベトナム行き割引クーポン【ベトナム航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3267,7 +4264,6 @@
       "stay_period": "2025年10月1日(水)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2510vn/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2510B1",
@@ -3286,12 +4282,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "374f44a1e6c673dbeecaea838ab4cf68"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507pen": {
       "id": "2507pen",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるペナン（マレーシア）行き割引クーポン【マレーシア航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3299,7 +4306,6 @@
       "stay_period": "2025年7月9日(水)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2507pen/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2507D1",
@@ -3318,12 +4324,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "537abcefb2ae0822bd67285374a53894"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507lgk": {
       "id": "2507lgk",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるランカウイ（マレーシア）行き割引クーポン【マレーシア航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3331,7 +4348,6 @@
       "stay_period": "2025年7月9日(水)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2507lgk/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2507F1",
@@ -3350,12 +4366,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "aa752b7d8fbfb16e915aec60951bfc20"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507kch": {
       "id": "2507kch",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるクチン（マレーシア）行き割引クーポン【マレーシア航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3363,7 +4390,6 @@
       "stay_period": "2025年7月9日(水)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2507kch/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2507G1",
@@ -3382,12 +4408,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "01da497c792af63519237011f540008b"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504ke2": {
       "id": "2504ke2",
-      "category": "海外",
       "title": "海外航空券で使えるソウル行き割引クーポン【大韓航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -3395,7 +4432,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504ke2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504F1",
@@ -3414,12 +4450,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "5491e4ac363de9215cc0562635dc1282"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504lj2": {
       "id": "2504lj2",
-      "category": "海外",
       "title": "海外航空券で使える韓国行き割引クーポン【ジンエアー対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -3427,7 +4474,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504lj2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504H1",
@@ -3446,12 +4492,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "0b3c59352da5839c1a00de14be1b768c"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504ci2": {
       "id": "2504ci2",
-      "category": "海外",
       "title": "海外航空券で使える台北行き割引クーポン【チャイナエアライン対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -3459,7 +4516,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504ci2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504K1",
@@ -3478,12 +4534,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "48e8d7708c7af5c2ce2213817285c789"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504ke": {
       "id": "2504ke",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるソウル行き割引クーポン【大韓航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3491,7 +4558,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504ke/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504L1",
@@ -3510,12 +4576,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "602e93d19f5ef51a7618606119607aa8"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504lj": {
       "id": "2504lj",
-      "category": "海外",
       "title": "海外航空券+ホテルで使える韓国行き割引クーポン【ジンエアー対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3523,7 +4600,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504lj/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504N1",
@@ -3542,12 +4618,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c5b97f179c8a64ab0a615c506b58af7a"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504ci": {
       "id": "2504ci",
-      "category": "海外",
       "title": "海外航空券+ホテルで使える台北行き割引クーポン【チャイナエアライン対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3555,7 +4642,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504ci/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504Q1",
@@ -3574,12 +4660,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "74f173730c69df50a90cff07ff76c95e"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504tpe": {
       "id": "2504tpe",
-      "category": "海外",
       "title": "海外航空券+ホテルで使える台北行き割引クーポン【日本航空(JAL)対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3587,7 +4684,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504tpe/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504T1",
@@ -3606,12 +4702,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "984eff6e2031aa8a5edd496f35ba4dd4"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504br2": {
       "id": "2504br2",
-      "category": "海外",
       "title": "海外航空券で使える台北行き割引クーポン【エバー航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -3619,7 +4726,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504br2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504J1",
@@ -3638,12 +4744,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "e2203c32879eaa26e7c6706d73d0fdc5"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504br": {
       "id": "2504br",
-      "category": "海外",
       "title": "海外航空券+ホテルで使える台北行き割引クーポン【エバー航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3651,7 +4768,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504br/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504P1",
@@ -3670,12 +4786,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "2cc2c1683d1746aad27813505c77577f"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511ci": {
       "id": "2511ci",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるどこでも割引クーポン【チャイナエアライン対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3683,7 +4810,6 @@
       "stay_period": "2025年11月14日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511ci/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511K1",
@@ -3702,12 +4828,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "45d60c4cf14be216975801c6fb969246"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511ci2": {
       "id": "2511ci2",
-      "category": "海外",
       "title": "海外航空券で使えるどこでも割引クーポン【チャイナエアライン対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -3715,7 +4852,6 @@
       "stay_period": "2025年11月14日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511ci2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511L1",
@@ -3734,12 +4870,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "328175e1efc5618a422ba759f7564162"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511bf2": {
       "id": "2511bf2",
-      "category": "海外",
       "title": "【ブラックフライデー】海外航空券＋ホテルで使えるどこでもクーポン",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル",
@@ -3747,7 +4894,6 @@
       "stay_period": "2025年11月18日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511bf2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511J1",
@@ -3766,12 +4912,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "8d9236bf463d2b19b638d6a20c8eb7cd"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2506hawai": {
       "id": "2506hawai",
-      "category": "海外",
       "title": "ハワイで使える！海外ツアールックJTBMySTYLE割引クーポン【ハワイアン航空(HA)対象】",
+      "category": "海外",
       "discount": "",
       "area": "ハワイ",
       "type": "海外ツアー・ツアー",
@@ -3779,7 +4936,6 @@
       "stay_period": "2025年6月20日(金)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2506hawai/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2506B1",
@@ -3798,12 +4954,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "a322457fa17b186dfa6a42c15efcb20b"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507win": {
       "id": "2507win",
-      "category": "海外",
       "title": "アリトク　先どり早春旅！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年1-3月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -3811,7 +4978,6 @@
       "stay_period": "2026年1月1日(木)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2507win/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2507A1",
@@ -3830,12 +4996,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "c48d6f62f45ebd1083337a44845f70b9"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504oz": {
       "id": "2504oz",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるソウル行き割引クーポン【アシアナ航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3843,7 +5020,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504oz/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504M1",
@@ -3862,12 +5038,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "fb45adefd192c05571407606c57dbb3d"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504oz2": {
       "id": "2504oz2",
-      "category": "海外",
       "title": "海外航空券で使えるソウル行き割引クーポン【アシアナ航空対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券",
@@ -3875,7 +5062,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504oz2/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504G1",
@@ -3894,12 +5080,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "7b538d47cb5910868378bfc73c684a64"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504hnl": {
       "id": "2504hnl",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるハワイ行き割引クーポン【日本航空(JAL)対象】",
+      "category": "海外",
       "discount": "",
       "area": "ハワイ",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3907,7 +5104,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504hnl/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504R1",
@@ -3926,12 +5122,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "cce8f48d742fe3acdf9c1a2cce72c893"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2504sel": {
       "id": "2504sel",
-      "category": "海外",
       "title": "海外航空券+ホテルで使えるソウル行き割引クーポン【日本航空(JAL)対象】",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外航空券＋ホテル・海外航空券+ホテル",
@@ -3939,7 +5146,6 @@
       "stay_period": "2025年4月1日(火)～2026年3月31日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504sel/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2504S1",
@@ -3958,12 +5164,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "3637862658cd9e1240983d6dace5478c"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2601sfh": {
       "id": "2601sfh",
-      "category": "海外",
       "title": "【新春福春】海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年1-6月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -3971,7 +5188,6 @@
       "stay_period": "2026年1月9日(金)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2601sfh/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2601A1",
@@ -3990,12 +5206,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "32f9fd0139aea307b86b578b4ae6c5e1"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512fh": {
       "id": "2512fh",
-      "category": "海外",
       "title": "【福春】海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年1-6月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -4003,7 +5230,6 @@
       "stay_period": "2026年1月9日(金)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2512fh/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2512D1",
@@ -4022,12 +5248,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "dee40a9d253b3eb271c977fcfa2a9e34"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511bf": {
       "id": "2511bf",
-      "category": "海外",
       "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使える割引クーポン",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -4035,7 +5272,6 @@
       "stay_period": "2025年12月1日(月)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511bf/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511H1",
@@ -4054,12 +5290,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "dfb8f6ed676d93517cfbec0999c97920"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507spr": {
       "id": "2507spr",
-      "category": "海外",
       "title": "アリトク　もっと先どり春旅！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年4-6月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -4067,7 +5314,6 @@
       "stay_period": "2026年4月1日(水)～2026年6月30日(火)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2507spr/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2507B1",
@@ -4086,12 +5332,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "4fd5353256fe561698af9c8face303ab"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2511mlb": {
       "id": "2511mlb",
-      "category": "海外",
       "title": "MLB™公式 　2026ロサンゼルス・ドジャース™試合観戦ツアーで使える割引クーポン＜2026年3-9月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -4099,7 +5356,6 @@
       "stay_period": "2026年3月23日(月)～2026年9月24日(木)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511mlb/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2511M1",
@@ -4118,12 +5374,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "405aa7753dacad2e64aad5ff5189a563"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2507sum": {
       "id": "2507sum",
-      "category": "海外",
       "title": "アリトク　先先先どり夏旅！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
+      "category": "海外",
       "discount": "",
       "area": "",
       "type": "海外ツアー・ツアー",
@@ -4131,7 +5398,6 @@
       "stay_period": "2026年7月1日(水)～2026年9月30日(水)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2507sum/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2507C1",
@@ -4150,12 +5416,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "1acc5fb54dbdb516f3233bd311f3461b"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512nh": {
       "id": "2512nh",
-      "category": "海外",
       "title": "【ヨーロッパフェス】海外ツアールックJTBMySTYLEどこでも使える割引クーポン【ANA対象】",
+      "category": "海外",
       "discount": "",
       "area": "ヨーロッパ",
       "type": "海外ツアー・ツアー",
@@ -4163,7 +5440,6 @@
       "stay_period": "2025年12月20日(土)～2026年9月30日(水)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2512nh/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2512C1",
@@ -4182,12 +5458,23 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "3d09b1119a13c157e93c45beb45c7176"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     },
-    {
+    "2512eur": {
       "id": "2512eur",
-      "category": "海外",
       "title": "【ヨーロッパフェス】ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【ANA対象】",
+      "category": "海外",
       "discount": "",
       "area": "ヨーロッパ",
       "type": "海外ツアー・ツアー",
@@ -4195,7 +5482,6 @@
       "stay_period": "2025年12月20日(土)～2026年9月30日(水)",
       "store_available": false,
       "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2512eur/page.asp",
-      "is_ended_on_page": false,
       "detail_data": {
         "coupon_codes": [
           "2512B1",
@@ -4214,7 +5500,18 @@
         ],
         "is_ended_on_detail": true,
         "raw_text_hash": "bcd09ed3a3cb59e4a33f7d21fb7c271e"
-      }
+      },
+      "status": "🔴 配布終了",
+      "first_seen": "2026-02-07",
+      "last_seen": "2026-02-07",
+      "last_updated": "2026-02-07",
+      "status_history": [
+        {
+          "date": "2026-02-07",
+          "from": "",
+          "to": "🔴 配布終了"
+        }
+      ]
     }
-  ]
+  }
 }
