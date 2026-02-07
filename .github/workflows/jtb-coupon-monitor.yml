@@ -2,9 +2,8 @@ name: JTB Coupon Monitor
 
 on:
   schedule:
-    # 毎日朝9時（JST）に実行 = UTC 0:00
-    - cron: '0 0 * * *'
-  workflow_dispatch:  # 手動実行ボタン
+    - cron: '0 0 * * *'  # 毎日 9:00 JST
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,7 +12,7 @@ jobs:
   monitor:
     runs-on: ubuntu-latest
     steps:
-      - name: リポジトリをチェックアウト（最新を取得）
+      - name: チェックアウト
         uses: actions/checkout@v4
         with:
           ref: main
@@ -24,49 +23,31 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: 依存パッケージをインストール
+      - name: 依存パッケージ
         run: pip install requests beautifulsoup4 gspread google-auth
 
-      - name: クーポン監視スクリプトを実行
+      - name: クーポン監視
         run: python jtb_coupon_monitor.py
 
-      - name: Google Sheets に書き出し
+      - name: Google Sheets 書き出し
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: python export_to_sheets.py
 
-      - name: データをコミット＆プッシュ
+      - name: コミット＆プッシュ
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # 最新のリモートを取得
-          git fetch origin main
-          
-          # 変更をステージング
           git add jtb_coupon_data/
-          
-          # 変更がなければ終了
           if git diff --staged --quiet; then
             echo "✅ 変更なし"
             exit 0
           fi
-          
-          # コミット
           git commit -m "📊 クーポンデータ更新 $(date +%Y-%m-%d)"
-          
-          # プッシュ（リトライ付き）
-          for i in 1 2 3; do
-            git pull --rebase origin main --strategy-option=theirs && break
-            echo "⚠️ rebase失敗、リトライ $i..."
-            git rebase --abort 2>/dev/null || true
-            git reset --soft HEAD~1
-            git stash
-            git pull origin main
-            git stash pop
-            git add jtb_coupon_data/
-            git commit -m "📊 クーポンデータ更新 $(date +%Y-%m-%d)"
-          done
-          
+          git fetch origin main
+          git pull --rebase origin main --strategy-option=theirs || {
+            git add -A
+            git rebase --continue || true
+          }
           git push origin main
