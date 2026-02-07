@@ -1,4 +1,4 @@
-# JTB クーポン自動監視 — 運用マニュアル
+# JTB クーポン自動監視 — 運用マニュアル（ライフサイクル追跡版）
 
 > **リポジトリ**: https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor
 >
@@ -9,126 +9,128 @@
 ## 1. システム全体像
 
 ```
-┌─ GitHub Actions（毎朝9:00 JST 自動実行）──────────────┐
-│                                                         │
-│  ① JTBクーポンページをスクレイピング                    │
-│     ├─ 国内クーポン一覧 + 各詳細ページ                 │
-│     └─ 海外クーポン一覧 + 各詳細ページ                 │
-│                                                         │
-│  ② 前日データと比較                                    │
-│     ├─ 新規追加されたクーポン                          │
-│     ├─ 終了/削除されたクーポン                         │
-│     └─ 内容が変更されたクーポン（コード変更含む）      │
-│                                                         │
-│  ③ 結果を2箇所に保存                                  │
-│     ├─ GitHub リポジトリ（JSONデータ＋テキストレポート）│
-│     └─ Google Sheets（一覧＋変動ログ）                 │
-└─────────────────────────────────────────────────────────┘
+┌─ GitHub Actions（毎朝9:00 JST 自動実行）────────────────┐
+│                                                           │
+│  ① JTBクーポンページをスクレイピング                      │
+│     ├─ 国内クーポン一覧 + 各詳細ページ                   │
+│     └─ 海外クーポン一覧 + 各詳細ページ                   │
+│                                                           │
+│  ② マスター台帳と照合してステータスを判定                │
+│     ├─ 🟢 配布中:   ページにあり、終了表記なし            │
+│     ├─ 🔴 配布終了: ページに「配布終了」表記あり          │
+│     ├─ ⚫ ページ消滅: 前日まであったが今日消えた           │
+│     └─ 🔄 復活:    一度終了/消滅したが再び配布中          │
+│                                                           │
+│  ③ 結果を保存                                            │
+│     ├─ GitHub: マスター台帳 + 日次JSON + レポート         │
+│     └─ Google Sheets: 3つのシート                         │
+│        ├─ 「現在のクーポン」← 今すぐ取得可能なもの       │
+│        ├─ 「マスター台帳」 ← 全件（終了・消滅含む）     │
+│        └─ 「変動ログ」    ← 日々の追加・終了・復活の履歴│
+└───────────────────────────────────────────────────────────┘
 
 監視対象URL:
   国内: https://www.jtb.co.jp/myjtb/campaign/coupon/
   海外: https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/
 ```
 
+### 従来版との違い
+
+| | 従来版（スナップショット方式） | 新版（ライフサイクル追跡） |
+|---|---|---|
+| データ構造 | 毎日のデータは独立ファイル | マスター台帳に全履歴を蓄積 |
+| 配布終了の扱い | 「消えた=削除」としてログに記録 | 終了/消滅を区別して保持し続ける |
+| 復活の検出 | 不可能（過去との紐付けがない） | 同じIDで再登場すれば自動検出 |
+| Sheetsの見え方 | 全件一覧（配布中のみ） | 「今取れるもの」と「全件」を分離 |
+
 ### 生成されるファイル
 
 | 場所 | ファイル | 内容 |
 |------|---------|------|
-| GitHub | `jtb_coupon_data/coupons_YYYY-MM-DD.json` | その日の全クーポンデータ（国内＋海外） |
-| GitHub | `jtb_coupon_data/reports/report_YYYY-MM-DD.txt` | 前日比の差分レポート |
-| Google Sheets | 「クーポン一覧」シート | 最新のクーポン全件（毎日上書き更新） |
-| Google Sheets | 「変動ログ」シート | 追加・削除・変更の時系列ログ（毎日追記） |
+| GitHub | `jtb_coupon_data/master_coupons.json` | **マスター台帳**（核心。全履歴を保持） |
+| GitHub | `jtb_coupon_data/coupons_YYYY-MM-DD.json` | その日のスクレイピング生データ |
+| GitHub | `jtb_coupon_data/reports/report_YYYY-MM-DD.txt` | 日次レポート |
+| Google Sheets | 「現在のクーポン」シート | 🟢配布中 + 🔄復活 のみ（毎日上書き） |
+| Google Sheets | 「マスター台帳」シート | 全件・全ステータス（色分け付き） |
+| Google Sheets | 「変動ログ」シート | 追加・終了・復活・消滅の時系列（追記） |
 
 ---
 
-## 2. 毎日の運用（やることは1つだけ）
+## 2. 毎日の運用
 
 ### 通常時: 何もしなくてOK
 
-毎朝9時にGitHub Actionsが自動実行されます。変化がなければ何も起きません。
+毎朝9時にGitHub Actionsが自動実行されます。
 
-### 変化を確認したいとき
+### 結果の確認（Google Sheets）
 
-**方法A: Google Sheets を見る（最も簡単・推奨）**
-
-1. スプレッドシートを開く
-2. 「変動ログ」シートを見る
-3. 最新の行に今日の状況が記録されている
+**「現在のクーポン」シートを開くだけで、今取得可能なクーポンが全部わかります。**
 
 ```
-日付        | カテゴリ | 種別     | タイトル                    | 割引額        | 変更内容
-2026-02-07 |         | ─ 変化なし |                            |              | 全25件に変更なし
-2026-02-08 | 海外    | 🆕 追加   | ハワイ旅行割引クーポン       | 最大50,000円引 | コード: HAWAII2026
-2026-02-08 | 国内    | ❌ 終了   | 冬のスキー割引クーポン       | 最大20,000円引|
-2026-02-09 | 国内    | ✏️ 変更   | 3月までの国内宿泊クーポン    | 最大3,000円引 | discount: 最大2,000円引 → 最大3,000円引
+ステータス | カテゴリ | タイトル                          | 割引額          | クーポンコード
+🟢 配布中  | 国内    | 3月までの国内宿泊に使える割引クーポン | 最大3,000円引   | SPRING2026
+🟢 配布中  | 海外    | 海外航空券+ホテルで使える割引クーポン | 最大200,000円引 | QF2026
+🔄 復活    | 国内    | 全国のヒルトンで使える割引クーポン   | 最大20,000円引  | HILTON26
 ```
 
-「クーポン一覧」シートには常に最新のクーポン全件が入っているので、いつでも現状を一覧できます。
+**「マスター台帳」シートは全件（終了・消滅含む）の台帳です。**
 
-**方法B: GitHub でレポートを見る**
+```
+ステータス   | カテゴリ | タイトル                   | 初回検出日  | 最終確認日 | ステータス履歴
+🟢 配布中    | 国内    | 3月までの国内宿泊クーポン   | 2026-02-07 | 2026-02-10 | 2026-02-07:🟢配布中
+🔄 復活      | 国内    | ヒルトン割引クーポン        | 2026-01-15 | 2026-02-10 | 01-15:🟢配布中 → 02-01:🔴配布終了 → 02-08:🔄復活
+🔴 配布終了  | 海外    | ハワイ旅行特別クーポン      | 2026-01-10 | 2026-02-05 | 01-10:🟢配布中 → 02-05:🔴配布終了
+⚫ ページ消滅 | 国内    | 冬のスキー割引クーポン      | 2025-12-01 | 2026-02-03 | 12-01:🟢配布中 → 02-03:⚫ページ消滅
+```
 
-1. https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor を開く
-2. `jtb_coupon_data/reports/` フォルダをクリック
-3. 最新の `report_YYYY-MM-DD.txt` を開く
+色分け: 🔴終了=薄い赤、⚫消滅=グレー、🔄復活=薄い青、🟢配布中=白（デフォルト）
 
-**方法C: Actions の実行ログを見る**
+**「変動ログ」シートは日々の変化の時系列記録です。**
 
-1. https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions を開く
-2. 最新の実行をクリック
-3. 「クーポン監視スクリプトを実行」のログを展開
+```
+日付        | カテゴリ | 種別         | タイトル              | 配布中 | 配布終了 | 消滅 | 全件数
+2026-02-07 |         | ─ 変化なし   |                      | 25    | 3       | 2   | 30
+2026-02-08 | 海外    | 🆕 新規      | 春のハワイクーポン     | 26    | 3       | 2   | 31
+2026-02-09 | 国内    | 🔴 配布終了  | 冬のスキー割引クーポン | 25    | 4       | 2   | 31
+2026-02-10 | 国内    | 🔄 復活      | ヒルトン割引クーポン   | 26    | 3       | 2   | 31
+```
 
 ---
 
 ## 3. よく使う操作
 
-### 3-1. 手動で今すぐ実行したい
+### 3-1. 手動で今すぐ実行
 
-旅行シーズン前など、定時を待たずに最新データが欲しいとき。
+1. https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions
+2. 「JTB Coupon Monitor」→「Run workflow」→「Run workflow」
 
-1. https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions を開く
-2. 左サイドバー「JTB Coupon Monitor」をクリック
-3. 右上「Run workflow」→「Run workflow」（緑ボタン）
-
-### 3-2. 実行時間を変更したい
-
-`.github/workflows/jtb-coupon-monitor.yml` の `cron` を編集します。
-
-```yaml
-# 例: 朝7時（JST）に変更 → UTC 22:00
-- cron: '0 22 * * *'
-
-# 例: 1日2回（朝9時 + 夕方18時 JST）
-- cron: '0 0,9 * * *'
-
-# 例: 平日のみ（月〜金）朝9時
-- cron: '0 0 * * 1-5'
-```
-
-cron書式: `分 時(UTC) 日 月 曜日`（JSTはUTC+9なので9時間引く）
-
-### 3-3. 一時的に自動実行を止めたい
-
-1. Actions タブ → 左サイドバー「JTB Coupon Monitor」
-2. 右上の「...」→「Disable workflow」
-3. 再開するときは同じ場所で「Enable workflow」
-
-### 3-4. スクリプトを修正したい
-
-ターミナルで：
+### 3-2. ターミナルで確認
 
 ```bash
 cd ~/jtb-coupon-monitor
 
-# ファイルを編集（お好みのエディタで）
-# ...
+# 今の状態をサマリー表示（スクレイピングなし・ローカルのマスター台帳を参照）
+python3 jtb_coupon_monitor.py --status
 
-# 変更をGitHubに反映
-git add .
-git commit -m "スクリプトを改善"
-git push
+# 手動でフル実行
+python3 jtb_coupon_monitor.py
 ```
 
-次回の自動実行（または手動実行）から反映されます。
+### 3-3. 実行時間の変更
+
+`.github/workflows/jtb-coupon-monitor.yml` の `cron` を編集:
+
+```yaml
+# 朝7時（JST）に変更 → UTC 22:00
+- cron: '0 22 * * *'
+
+# 1日2回（朝9時 + 夕方18時）
+- cron: '0 0,9 * * *'
+```
+
+### 3-4. 一時停止/再開
+
+Actions タブ → 左サイドバー「JTB Coupon Monitor」→ 右上「...」→「Disable workflow」
 
 ---
 
@@ -136,172 +138,162 @@ git push
 
 ### 4-1. Google Cloud でサービスアカウントを作成（初回のみ・約10分）
 
-「サービスアカウント」とは、人間ではなくプログラムが使う専用のGoogleアカウントです。このアカウントにスプレッドシートの編集権限を与えます。
-
-**手順:**
-
-1. **Google Cloud Console** にアクセス
-   https://console.cloud.google.com/
-
-2. **プロジェクトを作成**
-   - 上部の「プロジェクトを選択」→「新しいプロジェクト」
-   - プロジェクト名: `jtb-coupon-monitor`（何でもOK）
-   - 「作成」をクリック
-
-3. **Google Sheets API を有効化**
-   - 左メニュー「APIとサービス」→「ライブラリ」
-   - 「Google Sheets API」で検索 → クリック →「有効にする」
-   - 同様に「Google Drive API」も検索して有効化
-
-4. **サービスアカウントを作成**
-   - 左メニュー「APIとサービス」→「認証情報」
-   - 上部「+ 認証情報を作成」→「サービスアカウント」
-   - サービスアカウント名: `jtb-coupon-bot`
-   - 「作成して続行」→ ロールは設定不要 →「完了」
-
-5. **JSONキーをダウンロード**
-   - 作成したサービスアカウントをクリック
-   - 「キー」タブ →「鍵を追加」→「新しい鍵を作成」
-   - キーのタイプ: JSON →「作成」
-   - JSONファイルが自動ダウンロードされる（**これが認証キー。大切に保管**）
-
-6. **サービスアカウントのメールアドレスをメモ**
-   - `jtb-coupon-bot@jtb-coupon-monitor.iam.gserviceaccount.com` のような形式
-   - 次のステップで使います
+1. https://console.cloud.google.com/ にアクセス
+2. プロジェクト作成（名前: `jtb-coupon-monitor` 等）
+3. 「APIとサービス」→「ライブラリ」で **Google Sheets API** と **Google Drive API** を有効化
+4. 「認証情報」→「+ 認証情報を作成」→「サービスアカウント」作成
+5. サービスアカウント → 「キー」タブ → JSON キーをダウンロード
+6. サービスアカウントのメールアドレスをメモ（`xxx@xxx.iam.gserviceaccount.com`）
 
 ### 4-2. スプレッドシートを準備
 
-1. **Google Sheets で新しいスプレッドシートを作成**
-   - https://sheets.google.com → 「空白」で新規作成
-   - 名前: 「JTBクーポン監視」（任意）
-
-2. **サービスアカウントに編集権限を付与**
-   - スプレッドシートの右上「共有」をクリック
-   - STEP 4-1 でメモしたサービスアカウントのメールアドレスを入力
-   - 権限: 「編集者」
-   - 「送信」
-
-3. **スプレッドシートIDをメモ**
-   - URL の `https://docs.google.com/spreadsheets/d/` と `/edit` の間の文字列がID
-   - 例: `https://docs.google.com/spreadsheets/d/1AbCdEfGhIjKlMnOpQrStUvWxYz/edit`
-   - → ID は `1AbCdEfGhIjKlMnOpQrStUvWxYz`
+1. https://sheets.google.com で新規作成（名前: 「JTBクーポン監視」等）
+2. 右上「共有」→ サービスアカウントのメールアドレスを「編集者」で追加
+3. URLからスプレッドシートIDをメモ（`/d/` と `/edit` の間の文字列）
 
 ### 4-3. GitHub にシークレットを登録
 
-1. https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/settings/secrets/actions を開く
-2. 「New repository secret」をクリック
+https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/settings/secrets/actions
 
-**1つ目のシークレット:**
+| Name | Secret |
+|------|--------|
+| `GOOGLE_SERVICE_ACCOUNT_JSON` | JSONファイルの中身をまるごとコピペ |
+| `SPREADSHEET_ID` | スプレッドシートID |
 
-- Name: `GOOGLE_SERVICE_ACCOUNT_JSON`
-- Secret: ダウンロードしたJSONファイルの**中身をまるごとコピペ**
-  - ターミナルで `cat ~/Downloads/jtb-coupon-monitor-xxxxx.json | pbcopy` とすればクリップボードにコピーされる
-- 「Add secret」
-
-**2つ目のシークレット:**
-
-- Name: `SPREADSHEET_ID`
-- Secret: STEP 4-2 でメモしたスプレッドシートID
-- 「Add secret」
+ターミナルでJSONをクリップボードにコピー:
+```bash
+cat ~/Downloads/jtb-coupon-monitor-xxxxx.json | pbcopy
+```
 
 ### 4-4. ファイルをリポジトリに追加
 
 ```bash
 cd ~/jtb-coupon-monitor
 
-# export_to_sheets.py をフォルダに配置（ダウンロードしたファイルをコピー）
+# ダウンロードしたファイルで上書き
+cp ~/Downloads/jtb_coupon_monitor.py ./
 cp ~/Downloads/export_to_sheets.py ./
-
-# 更新版ワークフローを配置
-cp ~/Downloads/jtb-coupon-monitor.yml .github/workflows/jtb-coupon-monitor.yml
+cp ~/Downloads/jtb-coupon-monitor.yml .github/workflows/
 
 # GitHubに反映
 git add .
-git commit -m "Google Sheets連携を追加"
+git commit -m "ライフサイクル追跡版にアップグレード"
 git push
 ```
 
 ### 4-5. テスト実行
 
-1. GitHub → Actions → 「Run workflow」で手動実行
-2. 全ステップが ✅ になれば成功
-3. Google Sheets を開いて「クーポン一覧」「変動ログ」シートが作成されていることを確認
+GitHub → Actions → 「Run workflow」で手動実行。全ステップが ✅ なら成功。
 
 ---
 
-## 5. トラブルシューティング
+## 5. ステータス判定ロジック（詳細）
 
-### Actions が失敗する
+```
+毎日のスクレイピング結果
+        │
+        ▼
+ページに存在するか？ ─── No ──→ 前日まで台帳にあったか？
+        │                              │
+       Yes                            Yes → ⚫ ページ消滅
+        │                              No  → （何もしない）
+        ▼
+「配布終了」表記があるか？
+        │
+       Yes → 🔴 配布終了
+        │
+       No
+        │
+        ▼
+予約対象期間が過ぎているか？
+        │
+       Yes → 🔴 配布終了（期間切れ）
+        │
+       No
+        │
+        ▼
+前回のステータスは「終了」or「消滅」だったか？
+        │
+       Yes → 🔄 復活
+        │
+       No  → 🟢 配布中
+```
+
+JTBのクーポンページには注意書きとして「クーポン利用枚数が上限に達した場合、更新タイミングによって配布終了表記がない場合がございます」とあります。つまり「配布終了」表記が出るケースと、**表記なしでいきなりページから消えるケース**の両方があります。このスクリプトは両方を検出します。
+
+---
+
+## 6. トラブルシューティング
 
 | 症状 | 原因 | 対処 |
 |------|------|------|
-| 「Permission denied to push」 | 書き込み権限不足 | ワークフローの `permissions: contents: write` を確認 |
-| 「ModuleNotFoundError: gspread」 | パッケージ未インストール | ワークフローの pip install に `gspread google-auth` があるか確認 |
-| 「403 Forbidden: Google Sheets」 | シートの共有設定 | サービスアカウントのメールアドレスに「編集者」権限を付与したか確認 |
-| 「Spreadsheet not found」 | ID間違い | GitHub Secrets の `SPREADSHEET_ID` が正しいか確認 |
-| 「Invalid credentials」 | JSONキー間違い | `GOOGLE_SERVICE_ACCOUNT_JSON` にJSONの中身がまるごと入っているか確認 |
-| スクレイピングで0件になる | JTBのHTML構造変更 | Claudeに相談してスクリプトを修正 |
+| Actions が失敗 | 権限不足 | `permissions: contents: write` を確認 |
+| Sheets更新されない | 認証エラー | `GOOGLE_SERVICE_ACCOUNT_JSON` の中身を再確認 |
+| 0件になる | HTML構造変更 | Claudeに相談してスクリプト修正 |
+| 配布終了が検出されない | 表記パターンの変更 | `ended_keywords` リストに追加 |
+| マスター台帳が壊れた | JSONエラー | `master_coupons.json` を削除して `--init` で再作成 |
 
 ### 確認コマンド集
 
 ```bash
-# ローカルでスクレイピングだけテスト
-cd ~/jtb-coupon-monitor
+# ローカルでフル実行テスト
+python3 jtb_coupon_monitor.py
+
+# マスター台帳のサマリーだけ表示
+python3 jtb_coupon_monitor.py --status
+
+# 一覧だけ高速取得（詳細ページはスキップ）
 python3 jtb_coupon_monitor.py --list-only
 
-# ローカルでSheets書き出しテスト（環境変数を一時的に設定）
-export GOOGLE_SERVICE_ACCOUNT_JSON=$(cat ~/Downloads/jtb-coupon-monitor-xxxxx.json)
-export SPREADSHEET_ID="あなたのスプレッドシートID"
-python3 export_to_sheets.py
-
-# GitHub Actions のログを確認
-open https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions
+# マスター台帳のリセット（最初からやり直し）
+rm jtb_coupon_data/master_coupons.json
+python3 jtb_coupon_monitor.py --init
 ```
 
 ---
 
-## 6. データの活用方法
+## 7. データの活用方法
 
 ### 記事作成への活用
 
-Google Sheets にデータが溜まることで、以下のような記事ネタに使えます：
-
-- **「今月のJTBクーポンまとめ」記事**: クーポン一覧シートからコピペするだけ
-- **「先週追加された新クーポン」記事**: 変動ログでフィルターすれば一発
-- **クーポン有効期限のアラート**: スプレッドシートの条件付き書式で期限間近を赤くハイライト
+- **「今月のJTBクーポンまとめ」記事**: 「現在のクーポン」シートをそのまま記事化
+- **「先月終了したクーポン」**: マスター台帳でフィルターすれば一発
+- **「復活クーポン速報」**: 変動ログの🔄復活をウォッチ → SNS投稿ネタ
+- **「過去の傾向分析」**: ステータス履歴から「毎月月初に出るクーポン」等のパターン発見
 
 ### 他OTAへの横展開
 
-このスクリプトの構造（スクレイピング → JSON保存 → 差分比較 → Sheets書き出し）は、エクスペディアやアゴダなど他のOTAにもそのまま応用できます。`scrape_coupon_list()` と `scrape_detail_page()` の中身を各OTAのHTML構造に合わせて変えるだけです。
+このスクリプトの構造（スクレイピング → マスター台帳で追跡 → Sheets書き出し）は、エクスペディアやアゴダなど他OTAにも応用可能。
 
 ---
 
-## 7. コスト
+## 8. コスト
+
+すべて無料枠内で運用可能。
 
 | 項目 | コスト |
 |------|--------|
-| GitHub Actions | 無料（月2,000分まで。本ツールは月90分程度） |
-| Google Cloud サービスアカウント | 無料 |
-| Google Sheets API | 無料（1日あたり300リクエストまで。本ツールは2〜3リクエスト/日） |
-
-**すべて無料枠内で運用できます。**
+| GitHub Actions | 無料（月2,000分。本ツールは月90分程度） |
+| Google Cloud | 無料 |
+| Google Sheets API | 無料（1日300リクエスト。本ツールは3〜4リクエスト/日） |
 
 ---
 
-## 8. ファイル構成
+## 9. ファイル構成
 
 ```
 jtb-coupon-monitor/
 ├── .github/
 │   └── workflows/
-│       └── jtb-coupon-monitor.yml   ← GitHub Actions 設定
-├── jtb_coupon_monitor.py            ← メインスクリプト（スクレイピング＋比較）
-├── export_to_sheets.py              ← Google Sheets 書き出し
+│       └── jtb-coupon-monitor.yml    ← GitHub Actions 設定
+├── jtb_coupon_monitor.py             ← メインスクリプト（スクレイピング + マスター更新）
+├── export_to_sheets.py               ← Google Sheets 書き出し（3シート）
 ├── .gitignore
-└── jtb_coupon_data/                 ← 自動生成されるデータフォルダ
+└── jtb_coupon_data/                  ← 自動生成
+    ├── master_coupons.json           ← ★ マスター台帳（全履歴）
     ├── coupons_2026-02-07.json
     ├── coupons_2026-02-08.json
     └── reports/
-        ├── report_2026-02-08.txt
-        └── report_2026-02-09.txt
+        ├── report_2026-02-07.txt
+        └── report_2026-02-08.txt
 ```

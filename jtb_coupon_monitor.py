@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
 """
-JTB クーポン監視スクリプト（国内＋海外対応）
-=============================================
-毎日実行して、JTBクーポンページの変化（追加・削除・変更）を検出する。
+JTB クーポン監視スクリプト（国内＋海外 / ライフサイクル追跡版）
+================================================================
+クーポンの「配布中 → 配布終了 → ページ消滅 → 復活」を追跡し、
+マスター台帳（master_coupons.json）で全履歴を管理する。
 
-監視対象:
-  - 国内: https://www.jtb.co.jp/myjtb/campaign/coupon/
-  - 海外: https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/
+ステータス定義:
+  🟢 配布中      ページに表示されており「配布終了」表記なし
+  🔴 配布終了    ページに表示されているが「配布終了」表記あり
+  ⚫ ページ消滅   一覧ページから消えた（期限切れ or 掲載終了）
+  🔵 予約期間外   予約対象期間がまだ始まっていない or 過ぎた（日付判定）
+  🔄 復活        一度消えた/終了したクーポンが再び配布中に戻った
 
 使い方:
-  python jtb_coupon_monitor.py           # 通常実行（スクレイピング→比較→レポート）
-  python jtb_coupon_monitor.py --init    # 初回セットアップ（初期データ取得のみ）
-  python jtb_coupon_monitor.py --report  # 前回データとの比較レポートのみ表示
-
-データ保存先: ./jtb_coupon_data/ ディレクトリ
+  python jtb_coupon_monitor.py           # 通常実行
+  python jtb_coupon_monitor.py --init    # 初回セットアップ
+  python jtb_coupon_monitor.py --report  # レポートのみ
+  python jtb_coupon_monitor.py --status  # 現在のマスター台帳サマリー表示
 """
 
 import requests
@@ -26,13 +29,13 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import time
 import re
+import copy
 
 # ============================================================
 # 設定
 # ============================================================
 BASE_URL = "https://www.jtb.co.jp"
 
-# 監視対象ページの定義
 COUPON_PAGES = [
     {
         "name": "国内",
@@ -48,6 +51,7 @@ COUPON_PAGES = [
 
 DATA_DIR = Path("./jtb_coupon_data")
 REPORT_DIR = DATA_DIR / "reports"
+MASTER_FILE = DATA_DIR / "master_coupons.json"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -55,8 +59,13 @@ HEADERS = {
     "Accept-Language": "ja,en;q=0.9",
 }
 
-# リクエスト間隔（秒）- サーバーに優しく
 REQUEST_DELAY = 2
+
+# ステータス定数
+STATUS_ACTIVE = "🟢 配布中"
+STATUS_ENDED = "🔴 配布終了"
+STATUS_GONE = "⚫ ページ消滅"
+STATUS_REVIVED = "🔄 復活"
 
 
 # ============================================================
@@ -71,18 +80,58 @@ def today_str():
     return datetime.now().strftime("%Y-%m-%d")
 
 
-def get_latest_data_file():
-    """最新のデータファイルパスを返す（今日以外で最新）"""
-    files = sorted(DATA_DIR.glob("coupons_*.json"), reverse=True)
-    today = f"coupons_{today_str()}.json"
-    for f in files:
-        if f.name != today:
-            return f
+def now_iso():
+    return datetime.now().isoformat()
+
+
+def parse_date_loose(text):
+    """日付テキストからdatetimeを抽出（複数フォーマット対応）"""
+    if not text:
+        return None
+    # パターン: 2026/3/31(火) or 2026年3月31日(火)
+    m = re.search(r'(\d{4})[/年](\d{1,2})[/月](\d{1,2})', text)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+        except ValueError:
+            pass
     return None
 
 
+def is_booking_expired(booking_period):
+    """予約対象期間の終了日が過ぎているか判定"""
+    if not booking_period:
+        return False
+    # 「～」の後ろ側を取得
+    parts = re.split(r'[～〜~]', booking_period)
+    if len(parts) >= 2:
+        end_date = parse_date_loose(parts[1])
+        if end_date and end_date.date() < datetime.now().date():
+            return True
+    return False
+
+
 # ============================================================
-# スクレイピング: 一覧ページ（国内・海外共通ロジック）
+# マスター台帳の読み書き
+# ============================================================
+def load_master():
+    """マスター台帳を読み込む（なければ空で返す）"""
+    if MASTER_FILE.exists():
+        with open(MASTER_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"last_updated": "", "coupons": {}}
+
+
+def save_master(master):
+    """マスター台帳を保存"""
+    master["last_updated"] = now_iso()
+    with open(MASTER_FILE, "w", encoding="utf-8") as f:
+        json.dump(master, f, ensure_ascii=False, indent=2)
+    print(f"💾 マスター台帳保存: {MASTER_FILE}")
+
+
+# ============================================================
+# スクレイピング: 一覧ページ
 # ============================================================
 def scrape_coupon_list_page(page_config):
     """1つのクーポン一覧ページからクーポン情報を抽出"""
@@ -98,7 +147,6 @@ def scrape_coupon_list_page(page_config):
     soup = BeautifulSoup(resp.text, "html.parser")
     coupons = []
 
-    # 詳細ページへのリンクを抽出
     coupon_links = soup.select(f'a[href*="{detail_pattern}"]')
 
     seen_urls = set()
@@ -123,27 +171,30 @@ def scrape_coupon_list_page(page_config):
 
         card_text = card.get_text(separator="\n", strip=True)
 
+        # ----- 配布終了の検出 -----
+        is_ended = False
+        ended_keywords = ["配布終了", "配布は終了", "受付終了", "終了しました"]
+        for kw in ended_keywords:
+            if kw in card_text:
+                is_ended = True
+                break
+
         # タイトル抽出
         title_el = link.find("h3") or link
         title = title_el.get_text(strip=True)
         if not title:
             title = link.get_text(strip=True)
 
-        # 割引額抽出
+        # 割引額
         discount = ""
         discount_match = re.search(r'最大[\s]*([0-9,]+)[\s]*円引|([0-9,]+)[\s]*円引', card_text)
         if discount_match:
             amount = discount_match.group(1) or discount_match.group(2)
-            if discount_match.group(1):
-                discount = f"最大{amount}円引"
-            else:
-                discount = f"{amount}円引"
+            discount = f"最大{amount}円引" if discount_match.group(1) else f"{amount}円引"
 
-        # 期間抽出（国内と海外で表記が微妙に異なる）
+        # 期間抽出
         booking_period = ""
         stay_period = ""
-
-        # パターン1: 「予約対象期間：2026/2/3(火) ～ 2026/3/31(火)」（国内）
         period_lines = re.findall(
             r'(予約対象期間|宿泊対象期間|出発対象期間)[：:\s]*(.+?)(?:\n|$)', card_text
         )
@@ -153,7 +204,6 @@ def scrape_coupon_list_page(page_config):
             elif "宿泊" in label or "出発" in label:
                 stay_period = period.strip()
 
-        # パターン2: 海外ページの改行入り表記
         if not booking_period:
             bp_match = re.search(
                 r'予約対象期間[：:\s]*\n?\s*(\d{4}年\d{1,2}月\d{1,2}日.+?)(?:\n\n|\n[^\d])',
@@ -170,7 +220,7 @@ def scrape_coupon_list_page(page_config):
             if sp_match:
                 stay_period = sp_match.group(1).replace("\n", "").strip()
 
-        # タイプ（宿泊/ツアー/海外航空券+ホテル 等）
+        # タイプ
         coupon_type = ""
         type_keywords = [
             "海外航空券＋ホテル", "海外航空券+ホテル",
@@ -181,7 +231,6 @@ def scrape_coupon_list_page(page_config):
         found_types = []
         for kw in type_keywords:
             if kw in card_text:
-                # 「海外航空券＋ホテル」がマッチしたら「海外航空券」単体はスキップ
                 if kw == "海外航空券" and any("海外航空券＋" in ft or "海外航空券+" in ft for ft in found_types):
                     continue
                 if kw not in found_types:
@@ -189,29 +238,29 @@ def scrape_coupon_list_page(page_config):
         if found_types:
             coupon_type = "・".join(found_types)
 
-        # 店舗利用可
         store_available = "店舗利用可" in card_text or "店舗でも使える" in card_text
 
-        # 対象エリア
         area = ""
         area_candidates = [
             "全方面", "全国",
             "ハワイ", "グアム", "サイパン", "アジア", "ヨーロッパ", "アメリカ", "オセアニア",
             "北海道", "東北", "関東", "甲信越", "北陸", "東海",
             "近畿", "関西", "中国", "四国", "九州", "沖縄",
+            "福島県", "新潟県", "山梨県", "長野県", "石川県", "静岡県",
+            "三重県", "京都府", "大阪府", "兵庫県", "広島県", "愛媛県",
+            "福岡県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
         ]
         for a in area_candidates:
             if a in card_text[:80]:
                 area = a
                 break
 
-        # IDをURLから抽出
         id_match = re.search(r'/detail/([^/]+)/', detail_url)
         coupon_id = id_match.group(1) if id_match else hashlib.md5(detail_url.encode()).hexdigest()[:12]
 
         coupons.append({
             "id": coupon_id,
-            "category": page_name,  # "国内" or "海外"
+            "category": page_name,
             "title": title,
             "discount": discount,
             "area": area,
@@ -220,15 +269,15 @@ def scrape_coupon_list_page(page_config):
             "stay_period": stay_period,
             "store_available": store_available,
             "detail_url": detail_url,
+            "is_ended_on_page": is_ended,
             "detail_data": None,
         })
 
-    print(f"  ✅ [{page_name}] {len(coupons)}件のクーポンを検出")
+    print(f"  ✅ [{page_name}] {len(coupons)}件検出（うち配布終了表記: {sum(1 for c in coupons if c['is_ended_on_page'])}件）")
     return coupons
 
 
 def scrape_all_coupon_lists():
-    """全ページ（国内＋海外）のクーポンを取得"""
     all_coupons = []
     for page_config in COUPON_PAGES:
         time.sleep(REQUEST_DELAY)
@@ -241,7 +290,6 @@ def scrape_all_coupon_lists():
 # スクレイピング: 詳細ページ
 # ============================================================
 def scrape_detail_page(url):
-    """個別クーポンの詳細ページからクーポンコード等を抽出"""
     try:
         time.sleep(REQUEST_DELAY)
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -256,14 +304,22 @@ def scrape_detail_page(url):
             "passwords": [],
             "conditions": [],
             "notes": [],
+            "is_ended_on_detail": False,
             "raw_text_hash": hashlib.md5(page_text.encode()).hexdigest(),
         }
 
-        # クーポンコード検出パターン
+        # 詳細ページでも配布終了を検出
+        ended_keywords = ["配布終了", "配布は終了", "受付終了", "終了しました",
+                          "配布上限に達し", "上限に達した"]
+        for kw in ended_keywords:
+            if kw in page_text:
+                detail["is_ended_on_detail"] = True
+                break
+
+        # クーポンコード
         code_patterns = [
             r'クーポンコード[：:\s]*([A-Za-z0-9_\-]+)',
             r'コード[：:\s]*([A-Za-z0-9_\-]+)',
-            r'COUPON\s*CODE[：:\s]*([A-Za-z0-9_\-]+)',
         ]
         for pat in code_patterns:
             for match in re.finditer(pat, page_text, re.IGNORECASE):
@@ -271,7 +327,7 @@ def scrape_detail_page(url):
                 if code not in detail["coupon_codes"] and len(code) >= 3:
                     detail["coupon_codes"].append(code)
 
-        # パスワード検出
+        # パスワード
         pw_patterns = [
             r'パスワード[：:\s]*([A-Za-z0-9_\-]+)',
             r'PASSWORD[：:\s]*([A-Za-z0-9_\-]+)',
@@ -282,21 +338,16 @@ def scrape_detail_page(url):
                 if pw not in detail["passwords"]:
                     detail["passwords"].append(pw)
 
-        # 割引条件テーブル検出
-        condition_patterns = [
-            r'([0-9,]+)円以上[のでご利用時に]*([0-9,]+)円[\s]*(割引|引|OFF)',
-            r'旅行代金.*?([0-9,]+)円以上.*?([0-9,]+)円',
-        ]
-        for pat in condition_patterns:
+        # 条件
+        for pat in [r'([0-9,]+)円以上[のでご利用時に]*([0-9,]+)円[\s]*(割引|引|OFF)']:
             for match in re.finditer(pat, page_text):
                 cond = match.group(0)
                 if cond not in detail["conditions"]:
                     detail["conditions"].append(cond)
 
-        # 注意事項・制限
-        note_keywords = ["配布終了", "枚数上限", "先着", "1回限り", "併用不可", "対象外",
-                         "配布上限", "残りわずか"]
-        for keyword in note_keywords:
+        # 注意事項
+        for keyword in ["配布終了", "枚数上限", "先着", "1回限り", "併用不可",
+                        "対象外", "配布上限", "残りわずか"]:
             if keyword in page_text:
                 idx = page_text.find(keyword)
                 start = max(0, idx - 20)
@@ -308,20 +359,151 @@ def scrape_detail_page(url):
         return detail
 
     except Exception as e:
-        return {"error": str(e), "raw_text_hash": ""}
+        return {"error": str(e), "raw_text_hash": "", "is_ended_on_detail": False}
 
 
 # ============================================================
-# データ保存・読み込み
+# マスター台帳の更新（ライフサイクル管理の核心）
 # ============================================================
-def save_data(coupons):
+def update_master(master, scraped_coupons):
+    """
+    今日のスクレイピング結果でマスター台帳を更新し、変動イベントを返す。
+
+    判定ロジック:
+    - ページにある + 配布終了表記なし → 🟢 配布中
+    - ページにある + 配布終了表記あり → 🔴 配布終了
+    - ページにない + 以前あった       → ⚫ ページ消滅
+    - 以前「終了/消滅」→ 今日「配布中」→ 🔄 復活
+    """
+    events = []  # 変動イベントのリスト
+    today = today_str()
+    scraped_ids = {c["id"]: c for c in scraped_coupons}
+    master_coupons = master.get("coupons", {})
+
+    # --- 1. ページに存在するクーポンを処理 ---
+    for cid, coupon in scraped_ids.items():
+        # ステータス判定
+        is_ended = coupon.get("is_ended_on_page", False)
+        detail_ended = (coupon.get("detail_data") or {}).get("is_ended_on_detail", False)
+        booking_expired = is_booking_expired(coupon.get("booking_period", ""))
+
+        if is_ended or detail_ended:
+            new_status = STATUS_ENDED
+        elif booking_expired:
+            new_status = STATUS_ENDED  # 予約期間切れも終了扱い
+        else:
+            new_status = STATUS_ACTIVE
+
+        if cid in master_coupons:
+            old_status = master_coupons[cid].get("status", "")
+            old_entry = master_coupons[cid]
+
+            # 復活検出: 以前「終了」「消滅」→ 今日「配布中」
+            if new_status == STATUS_ACTIVE and old_status in [STATUS_ENDED, STATUS_GONE]:
+                new_status = STATUS_REVIVED
+                events.append({
+                    "type": "🔄 復活",
+                    "coupon": coupon,
+                    "detail": f"{old_status} → {new_status}",
+                })
+            elif new_status != old_status:
+                events.append({
+                    "type": f"ステータス変更",
+                    "coupon": coupon,
+                    "detail": f"{old_status} → {new_status}",
+                })
+
+            # 内容変更の検出
+            content_changes = []
+            for field in ["title", "discount", "booking_period", "stay_period"]:
+                old_val = old_entry.get(field, "")
+                new_val = coupon.get(field, "")
+                if old_val != new_val and new_val:
+                    content_changes.append(f"{field}: {old_val} → {new_val}")
+            if content_changes:
+                events.append({
+                    "type": "✏️ 内容変更",
+                    "coupon": coupon,
+                    "detail": " / ".join(content_changes),
+                })
+
+            # マスター更新（既存エントリを上書き、履歴は保持）
+            history = old_entry.get("status_history", [])
+            if new_status != old_status:
+                history.append({"date": today, "from": old_status, "to": new_status})
+
+            master_coupons[cid].update({
+                "title": coupon["title"],
+                "category": coupon["category"],
+                "discount": coupon["discount"],
+                "area": coupon["area"],
+                "type": coupon["type"],
+                "booking_period": coupon["booking_period"],
+                "stay_period": coupon["stay_period"],
+                "store_available": coupon["store_available"],
+                "detail_url": coupon["detail_url"],
+                "detail_data": coupon.get("detail_data"),
+                "status": new_status,
+                "last_seen": today,
+                "last_updated": today,
+                "status_history": history,
+            })
+
+        else:
+            # 新規クーポン
+            events.append({
+                "type": "🆕 新規",
+                "coupon": coupon,
+                "detail": f"{new_status}",
+            })
+            master_coupons[cid] = {
+                "id": cid,
+                "title": coupon["title"],
+                "category": coupon["category"],
+                "discount": coupon["discount"],
+                "area": coupon["area"],
+                "type": coupon["type"],
+                "booking_period": coupon["booking_period"],
+                "stay_period": coupon["stay_period"],
+                "store_available": coupon["store_available"],
+                "detail_url": coupon["detail_url"],
+                "detail_data": coupon.get("detail_data"),
+                "status": new_status,
+                "first_seen": today,
+                "last_seen": today,
+                "last_updated": today,
+                "status_history": [{"date": today, "from": "", "to": new_status}],
+            }
+
+    # --- 2. ページから消えたクーポンを処理 ---
+    for cid, entry in master_coupons.items():
+        if cid not in scraped_ids and entry.get("status") not in [STATUS_GONE]:
+            old_status = entry.get("status", "")
+            if old_status in [STATUS_ACTIVE, STATUS_ENDED, STATUS_REVIVED]:
+                events.append({
+                    "type": "⚫ ページ消滅",
+                    "coupon": entry,
+                    "detail": f"{old_status} → {STATUS_GONE}",
+                })
+                history = entry.get("status_history", [])
+                history.append({"date": today, "from": old_status, "to": STATUS_GONE})
+                entry["status"] = STATUS_GONE
+                entry["last_updated"] = today
+                entry["status_history"] = history
+
+    master["coupons"] = master_coupons
+    return events
+
+
+# ============================================================
+# データ保存
+# ============================================================
+def save_daily_data(coupons):
     filepath = DATA_DIR / f"coupons_{today_str()}.json"
-
     domestic = [c for c in coupons if c["category"] == "国内"]
     overseas = [c for c in coupons if c["category"] == "海外"]
-
     data = {
-        "scraped_at": datetime.now().isoformat(),
+        "scraped_at": now_iso(),
         "total_count": len(coupons),
         "domestic_count": len(domestic),
         "overseas_count": len(overseas),
@@ -329,216 +511,174 @@ def save_data(coupons):
     }
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"💾 データ保存: {filepath}")
-    print(f"   内訳: 国内 {len(domestic)}件 / 海外 {len(overseas)}件 / 合計 {len(coupons)}件")
+    print(f"💾 日次データ保存: {filepath}")
+    print(f"   内訳: 国内 {len(domestic)}件 / 海外 {len(overseas)}件")
     return filepath
 
 
-def load_data(filepath):
-    with open(filepath, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-
 # ============================================================
-# 比較・レポート生成
+# レポート生成
 # ============================================================
-def compare_data(old_data, new_data):
-    old_coupons = {c["id"]: c for c in old_data["coupons"]}
-    new_coupons = {c["id"]: c for c in new_data["coupons"]}
-
-    old_ids = set(old_coupons.keys())
-    new_ids = set(new_coupons.keys())
-
-    added = new_ids - old_ids
-    removed = old_ids - new_ids
-    common = old_ids & new_ids
-
-    changed = []
-    for cid in common:
-        old_c = old_coupons[cid]
-        new_c = new_coupons[cid]
-
-        changes = []
-        check_fields = ["title", "discount", "booking_period", "stay_period", "type", "store_available"]
-        for field in check_fields:
-            if old_c.get(field) != new_c.get(field):
-                changes.append({
-                    "field": field,
-                    "old": old_c.get(field),
-                    "new": new_c.get(field),
-                })
-
-        old_hash = (old_c.get("detail_data") or {}).get("raw_text_hash", "")
-        new_hash = (new_c.get("detail_data") or {}).get("raw_text_hash", "")
-        if old_hash and new_hash and old_hash != new_hash:
-            changes.append({
-                "field": "detail_page_content",
-                "old": f"hash:{old_hash[:8]}",
-                "new": f"hash:{new_hash[:8]}",
-            })
-
-        old_codes = set((old_c.get("detail_data") or {}).get("coupon_codes", []))
-        new_codes = set((new_c.get("detail_data") or {}).get("coupon_codes", []))
-        if old_codes != new_codes:
-            changes.append({
-                "field": "coupon_codes",
-                "old": list(old_codes),
-                "new": list(new_codes),
-            })
-
-        if changes:
-            changed.append({
-                "id": cid,
-                "category": new_c.get("category", ""),
-                "title": new_c["title"],
-                "changes": changes,
-            })
-
-    return {
-        "added": [new_coupons[cid] for cid in added],
-        "removed": [old_coupons[cid] for cid in removed],
-        "changed": changed,
-        "unchanged_count": len(common) - len(changed),
-    }
-
-
-def generate_report(diff, old_data, new_data):
+def generate_report(events, master):
     lines = []
+    mc = master.get("coupons", {})
+
+    # ステータス別集計
+    active = [c for c in mc.values() if c["status"] == STATUS_ACTIVE]
+    revived = [c for c in mc.values() if c["status"] == STATUS_REVIVED]
+    ended = [c for c in mc.values() if c["status"] == STATUS_ENDED]
+    gone = [c for c in mc.values() if c["status"] == STATUS_GONE]
+
     lines.append("=" * 60)
     lines.append(f"📊 JTB クーポン変動レポート（国内＋海外）")
-    lines.append(f"   比較: {old_data['scraped_at'][:10]} → {new_data['scraped_at'][:10]}")
-    lines.append(f"   総数: {old_data['total_count']}件 → {new_data['total_count']}件")
-    lines.append(f"   国内: {old_data.get('domestic_count', '?')}件 → {new_data.get('domestic_count', '?')}件")
-    lines.append(f"   海外: {old_data.get('overseas_count', '?')}件 → {new_data.get('overseas_count', '?')}件")
+    lines.append(f"   日付: {today_str()}")
+    lines.append(f"   マスター台帳: 全{len(mc)}件")
     lines.append("=" * 60)
+    lines.append("")
+    lines.append("■ ステータス別サマリー")
+    lines.append(f"  🟢 配布中:     {len(active)}件  ← 今すぐ取得可能")
+    lines.append(f"  🔄 復活:       {len(revived)}件  ← 再配布あり！要チェック")
+    lines.append(f"  🔴 配布終了:   {len(ended)}件")
+    lines.append(f"  ⚫ ページ消滅: {len(gone)}件")
 
     lines.append("")
-    has_changes = diff["added"] or diff["removed"] or diff["changed"]
-    if not has_changes:
-        lines.append("✅ 変化なし - 全クーポンに変更はありませんでした。")
+    lines.append(f"■ 本日の変動: {len(events)}件")
+
+    if not events:
+        lines.append("  ✅ 変化なし")
     else:
-        lines.append(f"  🆕 新規追加: {len(diff['added'])}件")
-        lines.append(f"  ❌ 終了/削除: {len(diff['removed'])}件")
-        lines.append(f"  ✏️  内容変更: {len(diff['changed'])}件")
-        lines.append(f"  ─  変化なし: {diff['unchanged_count']}件")
+        for ev in events:
+            c = ev["coupon"]
+            lines.append("")
+            cat = c.get("category", "")
+            title = c.get("title", c.get("id", ""))
+            discount = c.get("discount", "")
+            lines.append(f"  {ev['type']}")
+            lines.append(f"    [{cat}]【{discount}】{title}")
+            lines.append(f"    {ev['detail']}")
+            if c.get("detail_url"):
+                lines.append(f"    URL: {c['detail_url']}")
 
-    if diff["added"]:
+    # 今取得可能なクーポン一覧
+    available = active + revived
+    if available:
         lines.append("")
         lines.append("━" * 40)
-        lines.append("🆕 新規追加されたクーポン")
+        lines.append(f"■ 現在取得可能なクーポン一覧（{len(available)}件）")
         lines.append("━" * 40)
-        for c in diff["added"]:
-            lines.append(f"")
-            lines.append(f"  [{c.get('category', '')}]【{c['discount']}】{c['title']}")
-            lines.append(f"  エリア: {c['area']} | タイプ: {c['type']}")
-            lines.append(f"  予約期間: {c['booking_period']}")
-            lines.append(f"  対象期間: {c['stay_period']}")
-            if c.get("detail_data", {}).get("coupon_codes"):
-                lines.append(f"  コード: {', '.join(c['detail_data']['coupon_codes'])}")
-            lines.append(f"  URL: {c['detail_url']}")
 
-    if diff["removed"]:
-        lines.append("")
-        lines.append("━" * 40)
-        lines.append("❌ 終了/削除されたクーポン")
-        lines.append("━" * 40)
-        for c in diff["removed"]:
-            lines.append(f"")
-            lines.append(f"  [{c.get('category', '')}]【{c['discount']}】{c['title']}")
-            lines.append(f"  エリア: {c['area']} | タイプ: {c['type']}")
-
-    if diff["changed"]:
-        lines.append("")
-        lines.append("━" * 40)
-        lines.append("✏️  内容が変更されたクーポン")
-        lines.append("━" * 40)
-        for item in diff["changed"]:
-            lines.append(f"")
-            lines.append(f"  [{item.get('category', '')}] {item['title']}")
-            for ch in item["changes"]:
-                field_names = {
-                    "title": "タイトル", "discount": "割引額",
-                    "booking_period": "予約期間", "stay_period": "対象期間",
-                    "type": "タイプ", "store_available": "店舗利用",
-                    "detail_page_content": "詳細ページ内容",
-                    "coupon_codes": "クーポンコード",
-                }
-                fname = field_names.get(ch["field"], ch["field"])
-                lines.append(f"    {fname}: {ch['old']} → {ch['new']}")
+        # カテゴリ別にソート
+        for cat in ["国内", "海外"]:
+            cat_coupons = [c for c in available if c.get("category") == cat]
+            if cat_coupons:
+                lines.append(f"\n  【{cat}】{len(cat_coupons)}件")
+                for c in cat_coupons:
+                    status_mark = "🔄" if c["status"] == STATUS_REVIVED else "🟢"
+                    codes = ", ".join((c.get("detail_data") or {}).get("coupon_codes", []))
+                    code_str = f" [コード: {codes}]" if codes else ""
+                    lines.append(f"    {status_mark} {c['discount']} {c['title'][:50]}{code_str}")
 
     lines.append("")
     lines.append("=" * 60)
     return "\n".join(lines)
 
 
+def save_report(report_text):
+    report_file = REPORT_DIR / f"report_{today_str()}.txt"
+    with open(report_file, "w", encoding="utf-8") as f:
+        f.write(report_text)
+    print(f"📁 レポート保存: {report_file}")
+
+
+# ============================================================
+# ステータスサマリー表示
+# ============================================================
+def show_status(master):
+    mc = master.get("coupons", {})
+    if not mc:
+        print("マスター台帳が空です。--init で初期データを取得してください。")
+        return
+
+    active = [c for c in mc.values() if c["status"] in [STATUS_ACTIVE, STATUS_REVIVED]]
+    ended = [c for c in mc.values() if c["status"] == STATUS_ENDED]
+    gone = [c for c in mc.values() if c["status"] == STATUS_GONE]
+
+    print(f"\n📋 マスター台帳サマリー（全{len(mc)}件）")
+    print(f"   最終更新: {master.get('last_updated', '不明')}")
+    print()
+
+    print(f"🟢 現在取得可能（{len(active)}件）:")
+    for c in sorted(active, key=lambda x: x.get("category", "")):
+        codes = ", ".join((c.get("detail_data") or {}).get("coupon_codes", []))
+        code_str = f" [コード: {codes}]" if codes else ""
+        print(f"   [{c['category']}] {c['discount']} {c['title'][:50]}{code_str}")
+
+    print(f"\n🔴 配布終了（{len(ended)}件）:")
+    for c in ended:
+        print(f"   [{c['category']}] {c['discount']} {c['title'][:50]}")
+
+    print(f"\n⚫ ページ消滅（{len(gone)}件）:")
+    for c in gone:
+        print(f"   [{c['category']}] {c['discount']} {c['title'][:50]} (最終確認: {c.get('last_seen', '?')})")
+
+
 # ============================================================
 # メイン処理
 # ============================================================
-def run_scrape(include_details=True):
+def run_full():
+    """通常実行: スクレイピング → マスター更新 → レポート"""
+    # 1. スクレイピング
     coupons = scrape_all_coupon_lists()
 
-    if include_details:
-        print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
-        for i, coupon in enumerate(coupons):
-            cat = coupon.get("category", "")
-            print(f"  [{i+1}/{len(coupons)}] [{cat}] {coupon['id']}: {coupon['title'][:40]}...")
-            detail = scrape_detail_page(coupon["detail_url"])
-            coupon["detail_data"] = detail
+    print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
+    for i, coupon in enumerate(coupons):
+        cat = coupon.get("category", "")
+        print(f"  [{i+1}/{len(coupons)}] [{cat}] {coupon['id']}: {coupon['title'][:40]}...")
+        detail = scrape_detail_page(coupon["detail_url"])
+        coupon["detail_data"] = detail
 
-    filepath = save_data(coupons)
-    return filepath, coupons
+    # 2. 日次データ保存
+    save_daily_data(coupons)
 
+    # 3. マスター台帳更新
+    master = load_master()
+    events = update_master(master, coupons)
+    save_master(master)
 
-def run_compare():
-    today_file = DATA_DIR / f"coupons_{today_str()}.json"
-    if not today_file.exists():
-        print("⚠️ 今日のデータがありません。先にスクレイピングを実行してください。")
-        return None
-
-    prev_file = get_latest_data_file()
-    if prev_file is None:
-        print("ℹ️ 比較対象の過去データがありません（初回実行）。明日以降に差分が確認できます。")
-        return None
-
-    print(f"📊 比較中: {prev_file.name} vs {today_file.name}")
-    old_data = load_data(prev_file)
-    new_data = load_data(today_file)
-
-    diff = compare_data(old_data, new_data)
-    report = generate_report(diff, old_data, new_data)
-
-    report_file = REPORT_DIR / f"report_{today_str()}.txt"
-    with open(report_file, "w", encoding="utf-8") as f:
-        f.write(report)
-
+    # 4. レポート生成
+    report = generate_report(events, master)
     print(report)
-    print(f"\n📁 レポート保存: {report_file}")
-    return report
+    save_report(report)
+
+    return master, events
 
 
 def main():
     setup_dirs()
 
     if "--init" in sys.argv:
-        print("🚀 初回セットアップ - データ取得のみ（国内＋海外）")
-        run_scrape(include_details=True)
-        print("\n✅ 初期データ取得完了。明日同じスクリプトを実行すると差分レポートが生成されます。")
+        print("🚀 初回セットアップ（国内＋海外 / マスター台帳作成）")
+        print("-" * 40)
+        run_full()
+        print("\n✅ 初期セットアップ完了。マスター台帳を作成しました。")
 
     elif "--report" in sys.argv:
-        print("📊 レポートのみ表示")
-        run_compare()
+        master = load_master()
+        if not master.get("coupons"):
+            print("⚠️ マスター台帳がありません。先に通常実行してください。")
+            return
+        print("📊 マスター台帳からレポート生成")
+        report = generate_report([], master)
+        print(report)
 
-    elif "--list-only" in sys.argv:
-        print("📋 一覧ページのみスクレイピング（詳細ページはスキップ）")
-        run_scrape(include_details=False)
-        run_compare()
+    elif "--status" in sys.argv:
+        master = load_master()
+        show_status(master)
 
     else:
         print(f"🔄 JTB クーポン監視（国内＋海外）- {today_str()}")
         print("-" * 40)
-        run_scrape(include_details=True)
-        print()
-        run_compare()
+        run_full()
 
 
 if __name__ == "__main__":

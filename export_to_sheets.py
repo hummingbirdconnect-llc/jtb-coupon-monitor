@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
 """
-JTB クーポンデータを Google Sheets に書き出すスクリプト
-=====================================================
-GitHub Actions から自動実行し、スプレッドシートを毎日更新する。
-
-2つのシートを管理:
-  - 「クーポン一覧」: 最新のクーポン全件（毎回上書き）
-  - 「変動ログ」: 追加・削除・変更の履歴（追記）
+JTB クーポンデータを Google Sheets に書き出すスクリプト（マスター台帳対応版）
+==========================================================================
+3つのシートを管理:
+  - 「現在のクーポン」: 今取得可能なクーポン（配布中＋復活のみ）
+  - 「マスター台帳」: 全クーポンの最新ステータス（配布終了・消滅含む）
+  - 「変動ログ」: 追加・終了・復活・変更の時系列ログ
 
 必要な環境変数:
-  GOOGLE_SERVICE_ACCOUNT_JSON: サービスアカウントのJSONキー（中身そのまま）
+  GOOGLE_SERVICE_ACCOUNT_JSON: サービスアカウントのJSONキー
   SPREADSHEET_ID: 対象スプレッドシートのID
 """
 
@@ -27,11 +26,11 @@ except ImportError:
     print("   pip install gspread google-auth")
     sys.exit(1)
 
-
 # ============================================================
 # 設定
 # ============================================================
 DATA_DIR = Path("./jtb_coupon_data")
+MASTER_FILE = DATA_DIR / "master_coupons.json"
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive",
@@ -39,24 +38,20 @@ SCOPES = [
 
 
 def get_gspread_client():
-    """サービスアカウントで認証してgspreadクライアントを返す"""
     sa_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
     if not sa_json:
         print("❌ 環境変数 GOOGLE_SERVICE_ACCOUNT_JSON が設定されていません")
         sys.exit(1)
-
     sa_info = json.loads(sa_json)
     creds = Credentials.from_service_account_info(sa_info, scopes=SCOPES)
     return gspread.authorize(creds)
 
 
 def get_spreadsheet(client):
-    """スプレッドシートを取得"""
     spreadsheet_id = os.environ.get("SPREADSHEET_ID")
     if not spreadsheet_id:
         print("❌ 環境変数 SPREADSHEET_ID が設定されていません")
         sys.exit(1)
-
     return client.open_by_key(spreadsheet_id)
 
 
@@ -64,94 +59,23 @@ def today_str():
     return datetime.now().strftime("%Y-%m-%d")
 
 
-def load_today_data():
-    """今日のクーポンデータを読み込む"""
-    filepath = DATA_DIR / f"coupons_{today_str()}.json"
-    if not filepath.exists():
-        print(f"⚠️ 今日のデータファイルが見つかりません: {filepath}")
-        return None
-    with open(filepath, "r", encoding="utf-8") as f:
-        return json.load(f)
+def load_master():
+    if MASTER_FILE.exists():
+        with open(MASTER_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return None
 
 
-def load_report():
-    """今日のレポート（差分情報）を読み込む"""
-    filepath = DATA_DIR / "reports" / f"report_{today_str()}.txt"
-    if not filepath.exists():
-        return None
-    with open(filepath, "r", encoding="utf-8") as f:
-        return f.read()
-
-
-# ============================================================
-# シート1: クーポン一覧（最新状態を上書き）
-# ============================================================
-def update_coupon_list_sheet(spreadsheet, data):
-    """「クーポン一覧」シートを最新データで上書き"""
-    sheet_name = "クーポン一覧"
-
-    # シートがなければ作成
+def get_or_create_sheet(spreadsheet, name, rows=500, cols=20):
     try:
-        ws = spreadsheet.worksheet(sheet_name)
+        return spreadsheet.worksheet(name)
     except gspread.exceptions.WorksheetNotFound:
-        ws = spreadsheet.add_worksheet(title=sheet_name, rows=100, cols=15)
+        return spreadsheet.add_worksheet(title=name, rows=rows, cols=cols)
 
-    # ヘッダー行
-    headers = [
-        "更新日時",
-        "カテゴリ",
-        "ID",
-        "タイトル",
-        "割引額",
-        "エリア",
-        "タイプ",
-        "予約対象期間",
-        "宿泊/出発対象期間",
-        "店舗利用",
-        "クーポンコード",
-        "パスワード",
-        "条件",
-        "注意事項",
-        "詳細URL",
-    ]
 
-    rows = [headers]
-
-    for c in data["coupons"]:
-        detail = c.get("detail_data") or {}
-        rows.append([
-            data["scraped_at"][:16],
-            c.get("category", ""),
-            c.get("id", ""),
-            c.get("title", ""),
-            c.get("discount", ""),
-            c.get("area", ""),
-            c.get("type", ""),
-            c.get("booking_period", ""),
-            c.get("stay_period", ""),
-            "✅" if c.get("store_available") else "",
-            ", ".join(detail.get("coupon_codes", [])),
-            ", ".join(detail.get("passwords", [])),
-            " / ".join(detail.get("conditions", [])),
-            " / ".join(detail.get("notes", [])),
-            c.get("detail_url", ""),
-        ])
-
-    # シート全体をクリアして書き込み
-    ws.clear()
-    ws.update(range_name="A1", values=rows)
-
-    # ヘッダー行の書式設定
-    ws.format("A1:O1", {
-        "backgroundColor": {"red": 0.2, "green": 0.4, "blue": 0.7},
-        "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
-    })
-
-    # 列幅の自動調整（近似値で設定）
-    # A:更新日時, B:カテゴリ, C:ID, D:タイトル, E:割引額...
-    col_widths = [120, 60, 140, 400, 100, 60, 120, 200, 200, 60, 150, 100, 200, 200, 300]
+def set_col_widths(spreadsheet, ws, widths):
     requests_body = []
-    for i, width in enumerate(col_widths):
+    for i, width in enumerate(widths):
         requests_body.append({
             "updateDimensionProperties": {
                 "range": {
@@ -167,163 +91,248 @@ def update_coupon_list_sheet(spreadsheet, data):
     if requests_body:
         spreadsheet.batch_update({"requests": requests_body})
 
-    print(f"  ✅ 「{sheet_name}」を更新（{len(data['coupons'])}件）")
+
+# ============================================================
+# シート1: 現在のクーポン（配布中＋復活のみ）
+# ============================================================
+def update_available_sheet(spreadsheet, master):
+    ws = get_or_create_sheet(spreadsheet, "現在のクーポン")
+
+    headers = [
+        "ステータス", "カテゴリ", "タイトル", "割引額", "エリア", "タイプ",
+        "予約対象期間", "宿泊/出発対象期間", "店舗利用",
+        "クーポンコード", "パスワード", "条件", "詳細URL", "更新日",
+    ]
+
+    mc = master.get("coupons", {})
+    available = [c for c in mc.values() if c["status"] in ["🟢 配布中", "🔄 復活"]]
+    available.sort(key=lambda x: (x.get("category", ""), x.get("area", "")))
+
+    rows = [headers]
+    for c in available:
+        detail = c.get("detail_data") or {}
+        rows.append([
+            c.get("status", ""),
+            c.get("category", ""),
+            c.get("title", ""),
+            c.get("discount", ""),
+            c.get("area", ""),
+            c.get("type", ""),
+            c.get("booking_period", ""),
+            c.get("stay_period", ""),
+            "✅" if c.get("store_available") else "",
+            ", ".join(detail.get("coupon_codes", [])),
+            ", ".join(detail.get("passwords", [])),
+            " / ".join(detail.get("conditions", [])),
+            c.get("detail_url", ""),
+            c.get("last_updated", ""),
+        ])
+
+    ws.clear()
+    ws.update(range_name="A1", values=rows)
+
+    # ヘッダー書式
+    ws.format("A1:N1", {
+        "backgroundColor": {"red": 0.13, "green": 0.55, "blue": 0.13},
+        "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
+    })
+
+    set_col_widths(spreadsheet, ws, [90, 60, 400, 110, 70, 120, 200, 200, 60, 150, 100, 200, 300, 90])
+
+    print(f"  ✅ 「現在のクーポン」を更新（{len(available)}件）")
 
 
 # ============================================================
-# シート2: 変動ログ（差分を追記）
+# シート2: マスター台帳（全件）
 # ============================================================
-def update_change_log_sheet(spreadsheet, data):
-    """「変動ログ」シートに今日の変化を追記"""
-    sheet_name = "変動ログ"
+def update_master_sheet(spreadsheet, master):
+    ws = get_or_create_sheet(spreadsheet, "マスター台帳")
 
-    try:
-        ws = spreadsheet.worksheet(sheet_name)
-    except gspread.exceptions.WorksheetNotFound:
-        ws = spreadsheet.add_worksheet(title=sheet_name, rows=1000, cols=8)
-        # 初回はヘッダーを書き込み
-        headers = ["日付", "カテゴリ", "種別", "クーポンID", "タイトル", "割引額", "変更内容", "詳細URL", "総数"]
+    headers = [
+        "ステータス", "カテゴリ", "ID", "タイトル", "割引額", "エリア", "タイプ",
+        "予約対象期間", "宿泊/出発対象期間", "店舗利用",
+        "クーポンコード", "パスワード",
+        "初回検出日", "最終確認日", "ステータス履歴", "詳細URL",
+    ]
+
+    mc = master.get("coupons", {})
+    # ソート: ステータス順 (配布中→復活→配布終了→消滅) → カテゴリ → エリア
+    status_order = {"🟢 配布中": 0, "🔄 復活": 1, "🔴 配布終了": 2, "⚫ ページ消滅": 3}
+    all_coupons = sorted(
+        mc.values(),
+        key=lambda x: (status_order.get(x.get("status", ""), 9), x.get("category", ""), x.get("area", ""))
+    )
+
+    rows = [headers]
+    for c in all_coupons:
+        detail = c.get("detail_data") or {}
+        history = c.get("status_history", [])
+        history_str = " → ".join([f"{h['date']}:{h['to']}" for h in history[-5:]])  # 直近5件
+
+        rows.append([
+            c.get("status", ""),
+            c.get("category", ""),
+            c.get("id", ""),
+            c.get("title", ""),
+            c.get("discount", ""),
+            c.get("area", ""),
+            c.get("type", ""),
+            c.get("booking_period", ""),
+            c.get("stay_period", ""),
+            "✅" if c.get("store_available") else "",
+            ", ".join(detail.get("coupon_codes", [])),
+            ", ".join(detail.get("passwords", [])),
+            c.get("first_seen", ""),
+            c.get("last_seen", ""),
+            history_str,
+            c.get("detail_url", ""),
+        ])
+
+    ws.clear()
+    ws.update(range_name="A1", values=rows)
+
+    # ヘッダー書式
+    ws.format("A1:P1", {
+        "backgroundColor": {"red": 0.2, "green": 0.4, "blue": 0.7},
+        "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
+    })
+
+    # ステータス別に行の背景色を設定
+    batch_requests = []
+    for i, c in enumerate(all_coupons, start=2):  # 2行目から（1行目はヘッダー）
+        status = c.get("status", "")
+        if status == "🔴 配布終了":
+            color = {"red": 1, "green": 0.9, "blue": 0.9}  # 薄い赤
+        elif status == "⚫ ページ消滅":
+            color = {"red": 0.85, "green": 0.85, "blue": 0.85}  # グレー
+        elif status == "🔄 復活":
+            color = {"red": 0.85, "green": 0.93, "blue": 1}  # 薄い青
+        else:
+            continue  # 配布中はデフォルト（白）
+
+        batch_requests.append({
+            "repeatCell": {
+                "range": {
+                    "sheetId": ws.id,
+                    "startRowIndex": i - 1,
+                    "endRowIndex": i,
+                    "startColumnIndex": 0,
+                    "endColumnIndex": 16,
+                },
+                "cell": {"userEnteredFormat": {"backgroundColor": color}},
+                "fields": "userEnteredFormat.backgroundColor",
+            }
+        })
+
+    if batch_requests:
+        spreadsheet.batch_update({"requests": batch_requests})
+
+    set_col_widths(spreadsheet, ws, [90, 60, 130, 400, 110, 70, 120, 200, 200, 60, 150, 100, 90, 90, 300, 300])
+
+    print(f"  ✅ 「マスター台帳」を更新（全{len(all_coupons)}件）")
+
+
+# ============================================================
+# シート3: 変動ログ（追記）
+# ============================================================
+def update_change_log_sheet(spreadsheet, master):
+    ws = get_or_create_sheet(spreadsheet, "変動ログ", rows=2000)
+
+    # ヘッダーが空なら初回
+    existing = ws.get_all_values()
+    if not existing:
+        headers = ["日付", "カテゴリ", "種別", "クーポンID", "タイトル", "割引額",
+                   "変更内容", "詳細URL", "配布中", "配布終了", "消滅", "全件数"]
         ws.update(range_name="A1", values=[headers])
-        ws.format("A1:I1", {
+        ws.format("A1:L1", {
             "backgroundColor": {"red": 0.85, "green": 0.92, "blue": 0.83},
             "textFormat": {"bold": True},
         })
 
-    # 前日データを読み込んで差分を計算
-    today_file = DATA_DIR / f"coupons_{today_str()}.json"
-    if not today_file.exists():
+    # 今日の変動ログファイルを読む
+    report_file = DATA_DIR / "reports" / f"report_{today_str()}.txt"
+    if not report_file.exists():
+        print("  ⚠️ 今日のレポートがないためログ追記をスキップ")
         return
 
-    # 過去データを探す
-    files = sorted(DATA_DIR.glob("coupons_*.json"), reverse=True)
-    prev_data = None
-    today_name = f"coupons_{today_str()}.json"
-    for f in files:
-        if f.name != today_name:
-            with open(f, "r", encoding="utf-8") as fh:
-                prev_data = json.load(fh)
-            break
+    mc = master.get("coupons", {})
+    active_count = sum(1 for c in mc.values() if c["status"] in ["🟢 配布中", "🔄 復活"])
+    ended_count = sum(1 for c in mc.values() if c["status"] == "🔴 配布終了")
+    gone_count = sum(1 for c in mc.values() if c["status"] == "⚫ ページ消滅")
 
-    if prev_data is None:
-        # 初回は全件を「初期登録」として記録
-        new_rows = []
-        for c in data["coupons"]:
+    # 今日更新されたクーポンを変動ログに追記
+    new_rows = []
+    for cid, c in mc.items():
+        if c.get("last_updated") != today_str():
+            continue
+        history = c.get("status_history", [])
+        today_events = [h for h in history if h.get("date") == today_str()]
+
+        for ev in today_events:
+            event_type = ""
+            if not ev.get("from"):
+                event_type = "🆕 新規"
+            elif "配布中" in ev.get("to", "") and ("終了" in ev.get("from", "") or "消滅" in ev.get("from", "")):
+                event_type = "🔄 復活"
+            elif "配布終了" in ev.get("to", ""):
+                event_type = "🔴 配布終了"
+            elif "消滅" in ev.get("to", ""):
+                event_type = "⚫ ページ消滅"
+            else:
+                event_type = "✏️ ステータス変更"
+
+            detail = c.get("detail_data") or {}
+            codes = ", ".join(detail.get("coupon_codes", []))
+
             new_rows.append([
                 today_str(),
                 c.get("category", ""),
-                "🟢 初期登録",
-                c.get("id", ""),
+                event_type,
+                cid,
                 c.get("title", ""),
                 c.get("discount", ""),
-                "",
+                f"{ev.get('from', '(なし)')} → {ev.get('to', '')}" + (f" コード:{codes}" if codes else ""),
                 c.get("detail_url", ""),
-                str(data["total_count"]),
-            ])
-        if new_rows:
-            ws.append_rows(new_rows)
-            print(f"  ✅ 「{sheet_name}」に初期データ {len(new_rows)}件を記録")
-        return
-
-    # 差分計算
-    old_ids = {c["id"]: c for c in prev_data["coupons"]}
-    new_ids = {c["id"]: c for c in data["coupons"]}
-
-    new_rows = []
-
-    # 新規追加
-    for cid in set(new_ids.keys()) - set(old_ids.keys()):
-        c = new_ids[cid]
-        codes = ", ".join((c.get("detail_data") or {}).get("coupon_codes", []))
-        new_rows.append([
-            today_str(),
-            c.get("category", ""),
-            "🆕 追加",
-            c.get("id", ""),
-            c.get("title", ""),
-            c.get("discount", ""),
-            f"コード: {codes}" if codes else "",
-            c.get("detail_url", ""),
-            str(data["total_count"]),
-        ])
-
-    # 削除/終了
-    for cid in set(old_ids.keys()) - set(new_ids.keys()):
-        c = old_ids[cid]
-        new_rows.append([
-            today_str(),
-            c.get("category", ""),
-            "❌ 終了",
-            c.get("id", ""),
-            c.get("title", ""),
-            c.get("discount", ""),
-            "",
-            c.get("detail_url", ""),
-            str(data["total_count"]),
-        ])
-
-    # 内容変更
-    for cid in set(old_ids.keys()) & set(new_ids.keys()):
-        old_c = old_ids[cid]
-        new_c = new_ids[cid]
-        changes = []
-        for field in ["title", "discount", "booking_period", "stay_period"]:
-            if old_c.get(field) != new_c.get(field):
-                changes.append(f"{field}: {old_c.get(field)} → {new_c.get(field)}")
-
-        old_hash = (old_c.get("detail_data") or {}).get("raw_text_hash", "")
-        new_hash = (new_c.get("detail_data") or {}).get("raw_text_hash", "")
-        if old_hash and new_hash and old_hash != new_hash:
-            changes.append("詳細ページ内容が変更")
-
-        if changes:
-            new_rows.append([
-                today_str(),
-                new_c.get("category", ""),
-                "✏️ 変更",
-                new_c.get("id", ""),
-                new_c.get("title", ""),
-                new_c.get("discount", ""),
-                " / ".join(changes),
-                new_c.get("detail_url", ""),
-                str(data["total_count"]),
+                str(active_count),
+                str(ended_count),
+                str(gone_count),
+                str(len(mc)),
             ])
 
-    # 変化なしの日もログに記録
     if not new_rows:
         new_rows.append([
-            today_str(),
-            "",
-            "─ 変化なし",
-            "",
-            "",
-            "",
-            f"全{data['total_count']}件に変更なし",
-            "",
-            str(data["total_count"]),
+            today_str(), "", "─ 変化なし", "", "", "",
+            f"配布中:{active_count} 終了:{ended_count} 消滅:{gone_count}",
+            "", str(active_count), str(ended_count), str(gone_count), str(len(mc)),
         ])
 
     ws.append_rows(new_rows)
-    print(f"  ✅ 「{sheet_name}」に{len(new_rows)}件を追記")
+    print(f"  ✅ 「変動ログ」に{len(new_rows)}件を追記")
 
 
 # ============================================================
 # メイン
 # ============================================================
 def main():
-    data = load_today_data()
-    if data is None:
-        print("❌ データがないため終了します")
+    master = load_master()
+    if master is None:
+        print("❌ マスター台帳がないため終了します")
         sys.exit(1)
 
+    mc = master.get("coupons", {})
+    active = sum(1 for c in mc.values() if c["status"] in ["🟢 配布中", "🔄 復活"])
+    ended = sum(1 for c in mc.values() if c["status"] == "🔴 配布終了")
+
     print(f"📊 Google Sheets 書き出し開始 - {today_str()}")
-    print(f"   クーポン数: {data['total_count']}件")
+    print(f"   マスター台帳: 全{len(mc)}件（配布中:{active} 終了:{ended}）")
 
     client = get_gspread_client()
     spreadsheet = get_spreadsheet(client)
     print(f"   スプレッドシート: {spreadsheet.title}")
 
-    update_coupon_list_sheet(spreadsheet, data)
-    update_change_log_sheet(spreadsheet, data)
+    update_available_sheet(spreadsheet, master)
+    update_master_sheet(spreadsheet, master)
+    update_change_log_sheet(spreadsheet, master)
 
     print(f"\n✅ Google Sheets 更新完了!")
     print(f"   https://docs.google.com/spreadsheets/d/{os.environ.get('SPREADSHEET_ID')}")
