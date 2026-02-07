@@ -99,7 +99,6 @@ def update_coupon_list_sheet(spreadsheet, data):
     # ヘッダー行
     headers = [
         "更新日時",
-        "カテゴリ",
         "ID",
         "タイトル",
         "割引額",
@@ -121,7 +120,6 @@ def update_coupon_list_sheet(spreadsheet, data):
         detail = c.get("detail_data") or {}
         rows.append([
             data["scraped_at"][:16],
-            c.get("category", ""),
             c.get("id", ""),
             c.get("title", ""),
             c.get("discount", ""),
@@ -142,14 +140,14 @@ def update_coupon_list_sheet(spreadsheet, data):
     ws.update(range_name="A1", values=rows)
 
     # ヘッダー行の書式設定
-    ws.format("A1:O1", {
+    ws.format("A1:N1", {
         "backgroundColor": {"red": 0.2, "green": 0.4, "blue": 0.7},
         "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
     })
 
     # 列幅の自動調整（近似値で設定）
-    # A:更新日時, B:カテゴリ, C:ID, D:タイトル, E:割引額...
-    col_widths = [120, 60, 140, 400, 100, 60, 120, 200, 200, 60, 150, 100, 200, 200, 300]
+    # A:更新日時, B:ID, C:タイトル, D:割引額...
+    col_widths = [120, 140, 400, 100, 60, 80, 200, 200, 60, 150, 100, 200, 200, 300]
     requests_body = []
     for i, width in enumerate(col_widths):
         requests_body.append({
@@ -182,9 +180,9 @@ def update_change_log_sheet(spreadsheet, data):
     except gspread.exceptions.WorksheetNotFound:
         ws = spreadsheet.add_worksheet(title=sheet_name, rows=1000, cols=8)
         # 初回はヘッダーを書き込み
-        headers = ["日付", "カテゴリ", "種別", "クーポンID", "タイトル", "割引額", "変更内容", "詳細URL", "総数"]
+        headers = ["日付", "種別", "クーポンID", "タイトル", "割引額", "変更内容", "詳細URL", "総数"]
         ws.update(range_name="A1", values=[headers])
-        ws.format("A1:I1", {
+        ws.format("A1:H1", {
             "backgroundColor": {"red": 0.85, "green": 0.92, "blue": 0.83},
             "textFormat": {"bold": True},
         })
@@ -210,7 +208,6 @@ def update_change_log_sheet(spreadsheet, data):
         for c in data["coupons"]:
             new_rows.append([
                 today_str(),
-                c.get("category", ""),
                 "🟢 初期登録",
                 c.get("id", ""),
                 c.get("title", ""),
@@ -236,7 +233,6 @@ def update_change_log_sheet(spreadsheet, data):
         codes = ", ".join((c.get("detail_data") or {}).get("coupon_codes", []))
         new_rows.append([
             today_str(),
-            c.get("category", ""),
             "🆕 追加",
             c.get("id", ""),
             c.get("title", ""),
@@ -251,7 +247,6 @@ def update_change_log_sheet(spreadsheet, data):
         c = old_ids[cid]
         new_rows.append([
             today_str(),
-            c.get("category", ""),
             "❌ 終了",
             c.get("id", ""),
             c.get("title", ""),
@@ -278,7 +273,6 @@ def update_change_log_sheet(spreadsheet, data):
         if changes:
             new_rows.append([
                 today_str(),
-                new_c.get("category", ""),
                 "✏️ 変更",
                 new_c.get("id", ""),
                 new_c.get("title", ""),
@@ -292,7 +286,6 @@ def update_change_log_sheet(spreadsheet, data):
     if not new_rows:
         new_rows.append([
             today_str(),
-            "",
             "─ 変化なし",
             "",
             "",
