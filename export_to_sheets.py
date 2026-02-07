@@ -99,9 +99,9 @@ def update_available_sheet(spreadsheet, master):
     ws = get_or_create_sheet(spreadsheet, "現在のクーポン")
 
     headers = [
-        "ステータス", "カテゴリ", "タイトル", "割引額", "エリア", "タイプ",
-        "予約対象期間", "宿泊/出発対象期間", "店舗利用",
-        "クーポンコード", "パスワード", "条件", "詳細URL", "更新日",
+        "更新日時", "カテゴリ", "ID", "詳細URL", "タイトル", "割引額",
+        "エリア", "タイプ", "予約対象期間", "宿泊/出発対象期間", "店舗利用",
+        "クーポンコード", "パスワード", "条件", "注意事項", "クーポンアフィリエイトリンク",
     ]
 
     mc = master.get("coupons", {})
@@ -112,8 +112,10 @@ def update_available_sheet(spreadsheet, master):
     for c in available:
         detail = c.get("detail_data") or {}
         rows.append([
-            c.get("status", ""),
+            c.get("last_updated", ""),
             c.get("category", ""),
+            c.get("id", ""),
+            c.get("detail_url", ""),
             c.get("title", ""),
             c.get("discount", ""),
             c.get("area", ""),
@@ -124,20 +126,20 @@ def update_available_sheet(spreadsheet, master):
             ", ".join(detail.get("coupon_codes", [])),
             ", ".join(detail.get("passwords", [])),
             " / ".join(detail.get("conditions", [])),
-            c.get("detail_url", ""),
-            c.get("last_updated", ""),
+            " / ".join(detail.get("notes", [])),
+            "",  # クーポンアフィリエイトリンク（空欄）
         ])
 
     ws.clear()
     ws.update(range_name="A1", values=rows)
 
-    # ヘッダー書式
-    ws.format("A1:N1", {
+    # ヘッダー書式（16列: A〜P）
+    ws.format("A1:P1", {
         "backgroundColor": {"red": 0.13, "green": 0.55, "blue": 0.13},
         "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
     })
 
-    set_col_widths(spreadsheet, ws, [90, 60, 400, 110, 70, 120, 200, 200, 60, 150, 100, 200, 300, 90])
+    set_col_widths(spreadsheet, ws, [90, 60, 130, 300, 400, 110, 70, 120, 200, 200, 60, 150, 100, 200, 200, 250])
 
     print(f"  ✅ 「現在のクーポン」を更新（{len(available)}件）")
 
@@ -149,14 +151,13 @@ def update_master_sheet(spreadsheet, master):
     ws = get_or_create_sheet(spreadsheet, "マスター台帳")
 
     headers = [
-        "ステータス", "カテゴリ", "ID", "タイトル", "割引額", "エリア", "タイプ",
-        "予約対象期間", "宿泊/出発対象期間", "店舗利用",
-        "クーポンコード", "パスワード",
-        "初回検出日", "最終確認日", "ステータス履歴", "詳細URL",
+        "ステータス", "更新日時", "カテゴリ", "ID", "詳細URL", "タイトル", "割引額",
+        "エリア", "タイプ", "予約対象期間", "宿泊/出発対象期間", "店舗利用",
+        "クーポンコード", "パスワード", "条件", "注意事項",
+        "クーポンアフィリエイトリンク", "初回検出日", "最終確認日", "ステータス履歴",
     ]
 
     mc = master.get("coupons", {})
-    # ソート: ステータス順 (配布中→復活→配布終了→消滅) → カテゴリ → エリア
     status_order = {"🟢 配布中": 0, "🔄 復活": 1, "🔴 配布終了": 2, "⚫ ページ消滅": 3}
     all_coupons = sorted(
         mc.values(),
@@ -167,12 +168,14 @@ def update_master_sheet(spreadsheet, master):
     for c in all_coupons:
         detail = c.get("detail_data") or {}
         history = c.get("status_history", [])
-        history_str = " → ".join([f"{h['date']}:{h['to']}" for h in history[-5:]])  # 直近5件
+        history_str = " → ".join([f"{h['date']}:{h['to']}" for h in history[-5:]])
 
         rows.append([
             c.get("status", ""),
+            c.get("last_updated", ""),
             c.get("category", ""),
             c.get("id", ""),
+            c.get("detail_url", ""),
             c.get("title", ""),
             c.get("discount", ""),
             c.get("area", ""),
@@ -182,17 +185,19 @@ def update_master_sheet(spreadsheet, master):
             "✅" if c.get("store_available") else "",
             ", ".join(detail.get("coupon_codes", [])),
             ", ".join(detail.get("passwords", [])),
+            " / ".join(detail.get("conditions", [])),
+            " / ".join(detail.get("notes", [])),
+            "",  # クーポンアフィリエイトリンク（空欄）
             c.get("first_seen", ""),
             c.get("last_seen", ""),
             history_str,
-            c.get("detail_url", ""),
         ])
 
     ws.clear()
     ws.update(range_name="A1", values=rows)
 
-    # ヘッダー書式
-    ws.format("A1:P1", {
+    # ヘッダー書式（20列: A〜T）
+    ws.format("A1:T1", {
         "backgroundColor": {"red": 0.2, "green": 0.4, "blue": 0.7},
         "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
     })
@@ -217,7 +222,7 @@ def update_master_sheet(spreadsheet, master):
                     "startRowIndex": i - 1,
                     "endRowIndex": i,
                     "startColumnIndex": 0,
-                    "endColumnIndex": 16,
+                    "endColumnIndex": 20,
                 },
                 "cell": {"userEnteredFormat": {"backgroundColor": color}},
                 "fields": "userEnteredFormat.backgroundColor",
@@ -227,7 +232,7 @@ def update_master_sheet(spreadsheet, master):
     if batch_requests:
         spreadsheet.batch_update({"requests": batch_requests})
 
-    set_col_widths(spreadsheet, ws, [90, 60, 130, 400, 110, 70, 120, 200, 200, 60, 150, 100, 90, 90, 300, 300])
+    set_col_widths(spreadsheet, ws, [90, 90, 60, 130, 300, 400, 110, 70, 120, 200, 200, 60, 150, 100, 200, 200, 250, 90, 90, 300])
 
     print(f"  ✅ 「マスター台帳」を更新（全{len(all_coupons)}件）")
 
