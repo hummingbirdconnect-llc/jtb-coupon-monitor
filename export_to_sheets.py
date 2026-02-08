@@ -109,12 +109,18 @@ def update_jtb_coupon_sheet(spreadsheet, coupons):
 
     headers = [
         "更新日時", "カテゴリ", "ID", "詳細URL", "タイトル", "割引額",
+        "配布状況",
         "エリア", "タイプ", "予約対象期間", "宿泊/出発対象期間", "店舗利用",
         "クーポンコード", "パスワード", "条件", "注意事項", "クーポンアフィリエイトリンク",
     ]
 
     today = datetime.now().strftime("%Y-%m-%d")
-    coupons.sort(key=lambda x: (x.get("category", ""), x.get("area", "")))
+    # 配布中を先、配布終了を後に → カテゴリ → エリア
+    coupons.sort(key=lambda x: (
+        0 if x.get("stock_status") == "配布中" else 1,
+        x.get("category", ""),
+        x.get("area", ""),
+    ))
 
     rows = [headers]
     for c in coupons:
@@ -126,6 +132,7 @@ def update_jtb_coupon_sheet(spreadsheet, coupons):
             c.get("detail_url", ""),
             c.get("title", ""),
             c.get("discount", ""),
+            c.get("stock_status", "不明"),
             c.get("area", ""),
             c.get("type", ""),
             c.get("booking_period", ""),
@@ -141,16 +148,42 @@ def update_jtb_coupon_sheet(spreadsheet, coupons):
     ws.clear()
     ws.update(range_name="A1", values=rows)
 
-    ws.format("A1:P1", {
+    # ヘッダー書式（17列: A〜Q）
+    ws.format("A1:Q1", {
         "backgroundColor": {"red": 0.13, "green": 0.55, "blue": 0.13},
         "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
     })
 
+    # 配布終了行を薄赤に色付け
+    batch_requests = []
+    for i, c in enumerate(coupons, start=2):
+        if c.get("stock_status") == "配布終了":
+            batch_requests.append({
+                "repeatCell": {
+                    "range": {
+                        "sheetId": ws.id,
+                        "startRowIndex": i - 1,
+                        "endRowIndex": i,
+                        "startColumnIndex": 0,
+                        "endColumnIndex": 17,
+                    },
+                    "cell": {"userEnteredFormat": {
+                        "backgroundColor": {"red": 1, "green": 0.92, "blue": 0.92},
+                    }},
+                    "fields": "userEnteredFormat.backgroundColor",
+                }
+            })
+
+    if batch_requests:
+        spreadsheet.batch_update({"requests": batch_requests})
+
     set_col_widths(spreadsheet, ws, [
-        90, 60, 130, 300, 400, 110, 100, 120, 200, 200, 60, 150, 100, 200, 200, 250,
+        90, 60, 130, 300, 400, 110, 80, 100, 120, 200, 200, 60, 150, 100, 200, 200, 250,
     ])
 
-    print(f"  ✅ JTB_現在のクーポン を更新（{len(coupons)}件）")
+    active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
+    ended = sum(1 for c in coupons if c.get("stock_status") == "配布終了")
+    print(f"  ✅ JTB_現在のクーポン を更新（{len(coupons)}件: 配布中={active}, 配布終了={ended}）")
 
 
 # ============================================================
@@ -232,13 +265,18 @@ def update_change_log_sheet(spreadsheet, sheet_name, change_log, header_color):
         "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
     })
 
-    # 新規=薄緑、消失=薄赤
+    # 新規=薄緑、消失=薄赤、配布終了=薄オレンジ、配布再開=薄青
     batch_requests = []
     for i, e in enumerate(change_log, start=2):
-        if "新規" in e.get("type", ""):
+        etype = e.get("type", "")
+        if "新規" in etype:
             color = {"red": 0.85, "green": 1, "blue": 0.85}
-        elif "消失" in e.get("type", ""):
+        elif "消失" in etype:
             color = {"red": 1, "green": 0.85, "blue": 0.85}
+        elif "配布終了" in etype:
+            color = {"red": 1, "green": 0.93, "blue": 0.8}
+        elif "配布再開" in etype:
+            color = {"red": 0.8, "green": 0.93, "blue": 1}
         else:
             continue
 
