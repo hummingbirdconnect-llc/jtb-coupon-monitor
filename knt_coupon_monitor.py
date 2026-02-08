@@ -341,22 +341,33 @@ def scrape_detail_page(url):
 def _extract_latest_period(page_text, labels):
     """
     ページテキストから指定ラベルに続く期間文字列を全件抽出し、
-    最も未来の終了日を持つものを返す。
+    有効な期間をすべてまとめて返す。
 
     KNTのページは1ページ内に以下のようなパターンが混在する:
-      - 【秋】申込期間: 2024/8/7～2025/2/24  ← 古い（終了済み）
-      - 【冬】申込期間: 2025/1/10～2025/3/12  ← 新しい（有効）
-    → 全部拾って、終了日が最も未来のものを採用する
+      - 第1弾 予約期間: 2025/10/17～12/28  ← 終了済み
+      - 第2弾 予約期間: 2025/11/20～2026/2/24  ← 有効
+      - 第3弾 予約期間: 2025/12/15～3/28  ← 有効
+    → 全部拾って、終了済みを除外し、有効な全弾をまとめて返す
+
+    返却例:
+      有効1件: "2025年12月15日(月)～3月28日(土)"
+      有効複数: "【第2弾】～2026年2月24日 / 【第3弾】～3月28日"
+      全終了: 最新の1件をそのまま返す
     """
     label_pattern = "|".join(re.escape(l) for l in labels)
 
     patterns = [
         # 日本語形式: 2025年1月10日(金)～2025年3月12日(水)...
-        # 終端: 空行、※、別のラベル開始、「第N」「【」セクション区切り
-        rf'(?:{label_pattern})[：:\s]*\n?\s*(\d{{4}}年\d{{1,2}}月\d{{1,2}}日.+?)(?:\n\n|\n(?:※|対象|下記|割引|クーポン|本|宿泊期間|出発期間|申込期間|予約期間|第\d|【|$))',
+        # 終端: 空行、※、別のラベル開始、「第N」「【」セクション区切り、金額表記
+        rf'(?:{label_pattern})[：:\s]*\n?\s*(\d{{4}}年\d{{1,2}}月\d{{1,2}}日.+?)(?:\n\n|\n(?:※|対象|下記|割引|クーポン|本|宿泊期間|出発期間|申込期間|予約期間|第\d|【|\d[\d,]*円|$))',
         # 簡易形式: ラベルの直後の1行
         rf'(?:{label_pattern})[：:\s]*\n?\s*(.+?)(?:\n|$)',
     ]
+
+    # セクション境界パターン（「第N弾は終了」は境界ではなく終了告知）
+    sec_boundary_pattern = r'(?:第\d弾(?!は)|【[^】]+】)'
+    # セクション名抽出パターン（「第1弾」「第2弾」「【秋】」「【冬】」など）
+    sec_name_pattern = r'(第\d+弾|【[^】]+】)'
 
     all_periods = []
 
@@ -365,11 +376,47 @@ def _extract_latest_period(page_text, labels):
             raw = match.group(1).replace("\n", "").strip()
             if not raw or len(raw) < 8:
                 continue
-            # 「終了しました」を含むセクションの期間はスキップ
-            # ただし周辺テキスト（前後200文字）で判定
+
             pos = match.start()
-            context = page_text[max(0, pos - 200):min(len(page_text), pos + 200)]
-            is_ended = "終了いたしました" in context or "終了しました" in context
+            match_end = match.end()
+
+            # --- セクション境界の特定 ---
+            section_start = 0
+            for sec_match in re.finditer(sec_boundary_pattern, page_text[:pos]):
+                section_start = sec_match.start()
+
+            # 直後のセクション区切りを探す
+            # ただし「※【秋】...は終了いたしました」のような終了告知行は
+            # セクション境界ではなく注釈なのでスキップする
+            section_end = min(len(page_text), match_end + 300)
+            search_from = match_end
+            while True:
+                next_sec = re.search(sec_boundary_pattern, page_text[search_from:])
+                if not next_sec:
+                    break
+                # この境界を含む行が「終了」を含んでいたら注釈行→スキップ
+                boundary_abs_pos = search_from + next_sec.start()
+                line_start = page_text.rfind("\n", 0, boundary_abs_pos) + 1
+                line_end = page_text.find("\n", boundary_abs_pos)
+                if line_end == -1:
+                    line_end = len(page_text)
+                boundary_line = page_text[line_start:line_end]
+                if "終了" in boundary_line:
+                    # この境界はスキップして次を探す
+                    search_from = boundary_abs_pos + len(next_sec.group())
+                    continue
+                section_end = boundary_abs_pos
+                break
+
+            # 同一セクション内で「終了」を判定
+            section_text = page_text[section_start:section_end]
+            is_ended = "終了いたしました" in section_text or "終了しました" in section_text
+
+            # --- セクション名の取得 ---
+            # マッチ位置の直前200文字からセクション名を探す
+            pre_text = page_text[max(0, pos - 200):pos]
+            sec_name_matches = re.findall(sec_name_pattern, pre_text)
+            section_name = sec_name_matches[-1] if sec_name_matches else ""
 
             # 終了日を抽出してソート用のスコアにする
             end_date = _extract_end_date(raw)
@@ -378,6 +425,7 @@ def _extract_latest_period(page_text, labels):
                 "text": raw[:120],
                 "end_date": end_date,
                 "is_ended": is_ended,
+                "section_name": section_name,
             })
 
         # 十分な結果が得られたら後続パターンは不要
@@ -391,33 +439,85 @@ def _extract_latest_period(page_text, labels):
     active = [p for p in all_periods if not p["is_ended"]]
     candidates = active if active else all_periods
 
-    # 終了日が最も未来のものを採用
-    best = max(candidates, key=lambda p: p["end_date"] or "0000-00-00")
-    return best["text"]
+    # 終了日の昇順でソート
+    candidates.sort(key=lambda p: p["end_date"] or "0000-00-00")
+
+    # --- 返却値の組み立て ---
+    if len(candidates) == 1:
+        # 有効1件: そのまま返す
+        return candidates[0]["text"]
+
+    # 有効複数件: セクション名付きで結合
+    # セクション名がどの候補にもなければ番号を振る
+    has_names = any(p["section_name"] for p in candidates)
+
+    parts = []
+    for i, p in enumerate(candidates):
+        if has_names and p["section_name"]:
+            # 「第2弾」→「【第2弾】」、「【冬】」はそのまま
+            name = p["section_name"]
+            if not name.startswith("【"):
+                name = f"【{name}】"
+            parts.append(f"{name}{p['text']}")
+        elif not has_names and len(candidates) > 1:
+            parts.append(p["text"])
+        else:
+            parts.append(p["text"])
+
+    return " / ".join(parts)
 
 
 def _extract_end_date(period_str):
     """
     期間文字列から終了日を抽出してYYYY-MM-DD形式で返す。
-    「2025年3月12日」「2026/3/31」「2026年2月28日(土)」などに対応。
-    見つからなければNoneを返す。
+    
+    KNTの期間表記は終了日の年を省略することが多い:
+      「2025年12月15日(月)～3月28日(土)」→ 終了日は2026年3月28日
+      「2026年1月4日(日)～2月28日(土)」→ 終了日は2026年2月28日
+    
+    ロジック:
+    1. 年あり日付を全件取得
+    2. ～の後にある年なし日付も取得
+    3. 年なし日付には直前の年あり日付から年を推定
+       （月が前の日付より小さければ翌年と判定）
     """
-    # 「～」の後の日付を拾う（終了日）
-    # パターン: ～2026年3月31日 or ～2026/3/31
-    date_matches = re.findall(
+    # ステップ1: 年あり日付を全件取得
+    dated_matches = re.findall(
         r'(\d{4})[年/](\d{1,2})[月/](\d{1,2})日?',
         period_str
     )
-    if not date_matches:
-        return None
-
-    # 複数の日付があれば最も未来のもの（＝終了日）を返す
+    
     dates = []
-    for y, m, d in date_matches:
+    last_year = None
+    last_month = None
+    
+    for y, m, d in dated_matches:
         try:
-            dates.append(f"{int(y):04d}-{int(m):02d}-{int(d):02d}")
+            year, month, day = int(y), int(m), int(d)
+            dates.append(f"{year:04d}-{month:02d}-{day:02d}")
+            last_year = year
+            last_month = month
         except ValueError:
             continue
+
+    # ステップ2: ～の後にある年なし日付を取得
+    # パターン: ～12月28日 or ～3月28日(土) （年なし）
+    yearless_after_tilde = re.findall(
+        r'[～〜~]\s*(\d{1,2})月(\d{1,2})日',
+        period_str
+    )
+    
+    if yearless_after_tilde and last_year:
+        for m_str, d_str in yearless_after_tilde:
+            try:
+                month, day = int(m_str), int(d_str)
+                # 年を推定: 月が開始月以下なら翌年（12月→3月 = 翌年）
+                inferred_year = last_year
+                if last_month and month < last_month:
+                    inferred_year = last_year + 1
+                dates.append(f"{inferred_year:04d}-{month:02d}-{day:02d}")
+            except ValueError:
+                continue
 
     return max(dates) if dates else None
 
