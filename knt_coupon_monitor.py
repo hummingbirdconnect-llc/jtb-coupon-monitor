@@ -237,7 +237,13 @@ def scrape_all_lists():
 # スクレイピング: 詳細ページ
 # ============================================================
 def scrape_detail_page(url):
-    """KNTの詳細ページから割引額・条件・期間などを抽出"""
+    """KNTの詳細ページから割引額・条件・期間などを抽出
+    
+    注意: KNTのページは1ページ内に複数の期間セクション（例: 秋/冬、
+    第1弾/第2弾、1～3月/4～6月）が混在することが多い。
+    re.search()ではなくre.findall()で全件取得し、
+    最も未来の日付を持つ情報を採用する。
+    """
     try:
         time.sleep(REQUEST_DELAY)
         resp = requests.get(url, headers=HEADERS, timeout=30)
@@ -257,7 +263,7 @@ def scrape_detail_page(url):
         }
 
         # ----- 割引額 -----
-        # 「X,XXX円分クーポン」「X,XXX円割引」パターン
+        # 「X,XXX円分クーポン」「X,XXX円割引」パターン（ページ全体から全件取得）
         discount_matches = re.findall(
             r'([0-9,]+)円(?:分クーポン|割引クーポン|割引)', page_text
         )
@@ -282,32 +288,19 @@ def scrape_detail_page(url):
                 if cond not in detail["conditions"]:
                     detail["conditions"].append(cond)
 
-        # ----- 申込期間（予約期間） -----
-        bp_match = re.search(
-            r'申込期間\s*\n?\s*(\d{4}年\d{1,2}月\d{1,2}日.+?)(?:\n\n|\n(?:※|$))',
-            page_text, re.DOTALL
+        # =============================================================
+        # 期間抽出: ページ全体から全件取得 → 最新のものを採用
+        # =============================================================
+        detail["booking_period"] = _extract_latest_period(
+            page_text,
+            labels=["申込期間", "予約期間", "予約受付期間"],
         )
-        if bp_match:
-            detail["booking_period"] = bp_match.group(1).replace("\n", "").strip()[:120]
-        else:
-            # フォールバック
-            bp2 = re.search(r'申込期間[：:\s]*\n?\s*(.+?)(?:\n|$)', page_text)
-            if bp2:
-                detail["booking_period"] = bp2.group(1).strip()[:120]
 
-        # ----- 出発・宿泊対象期間 -----
-        sp_match = re.search(
-            r'(?:出発期間|対象宿泊日|宿泊対象期間|出発対象期間)[：:\s]*\n?\s*(.+?)(?:\n\n|\n(?:※|対象|$))',
-            page_text, re.DOTALL
+        detail["stay_period"] = _extract_latest_period(
+            page_text,
+            labels=["出発期間", "対象宿泊日", "宿泊対象期間", "出発対象期間",
+                     "宿泊期間", "対象期間"],
         )
-        if sp_match:
-            detail["stay_period"] = sp_match.group(1).replace("\n", "").strip()[:120]
-        else:
-            sp2 = re.search(
-                r'(?:出発期間|対象宿泊日)[：:\s]*\n?\s*(.+?)(?:\n|$)', page_text
-            )
-            if sp2:
-                detail["stay_period"] = sp2.group(1).strip()[:120]
 
         # ----- クーポンコード -----
         code_patterns = [
@@ -343,6 +336,90 @@ def scrape_detail_page(url):
             "coupon_codes": [],
             "notes": [],
         }
+
+
+def _extract_latest_period(page_text, labels):
+    """
+    ページテキストから指定ラベルに続く期間文字列を全件抽出し、
+    最も未来の終了日を持つものを返す。
+
+    KNTのページは1ページ内に以下のようなパターンが混在する:
+      - 【秋】申込期間: 2024/8/7～2025/2/24  ← 古い（終了済み）
+      - 【冬】申込期間: 2025/1/10～2025/3/12  ← 新しい（有効）
+    → 全部拾って、終了日が最も未来のものを採用する
+    """
+    label_pattern = "|".join(re.escape(l) for l in labels)
+
+    patterns = [
+        # 日本語形式: 2025年1月10日(金)～2025年3月12日(水)...
+        # 終端: 空行、※、別のラベル開始、「第N」「【」セクション区切り
+        rf'(?:{label_pattern})[：:\s]*\n?\s*(\d{{4}}年\d{{1,2}}月\d{{1,2}}日.+?)(?:\n\n|\n(?:※|対象|下記|割引|クーポン|本|宿泊期間|出発期間|申込期間|予約期間|第\d|【|$))',
+        # 簡易形式: ラベルの直後の1行
+        rf'(?:{label_pattern})[：:\s]*\n?\s*(.+?)(?:\n|$)',
+    ]
+
+    all_periods = []
+
+    for pat in patterns:
+        for match in re.finditer(pat, page_text, re.DOTALL):
+            raw = match.group(1).replace("\n", "").strip()
+            if not raw or len(raw) < 8:
+                continue
+            # 「終了しました」を含むセクションの期間はスキップ
+            # ただし周辺テキスト（前後200文字）で判定
+            pos = match.start()
+            context = page_text[max(0, pos - 200):min(len(page_text), pos + 200)]
+            is_ended = "終了いたしました" in context or "終了しました" in context
+
+            # 終了日を抽出してソート用のスコアにする
+            end_date = _extract_end_date(raw)
+
+            all_periods.append({
+                "text": raw[:120],
+                "end_date": end_date,
+                "is_ended": is_ended,
+            })
+
+        # 十分な結果が得られたら後続パターンは不要
+        if all_periods:
+            break
+
+    if not all_periods:
+        return ""
+
+    # 終了セクションを除外（ただし全部終了なら仕方なく最新を使う）
+    active = [p for p in all_periods if not p["is_ended"]]
+    candidates = active if active else all_periods
+
+    # 終了日が最も未来のものを採用
+    best = max(candidates, key=lambda p: p["end_date"] or "0000-00-00")
+    return best["text"]
+
+
+def _extract_end_date(period_str):
+    """
+    期間文字列から終了日を抽出してYYYY-MM-DD形式で返す。
+    「2025年3月12日」「2026/3/31」「2026年2月28日(土)」などに対応。
+    見つからなければNoneを返す。
+    """
+    # 「～」の後の日付を拾う（終了日）
+    # パターン: ～2026年3月31日 or ～2026/3/31
+    date_matches = re.findall(
+        r'(\d{4})[年/](\d{1,2})[月/](\d{1,2})日?',
+        period_str
+    )
+    if not date_matches:
+        return None
+
+    # 複数の日付があれば最も未来のもの（＝終了日）を返す
+    dates = []
+    for y, m, d in date_matches:
+        try:
+            dates.append(f"{int(y):04d}-{int(m):02d}-{int(d):02d}")
+        except ValueError:
+            continue
+
+    return max(dates) if dates else None
 
 
 # ============================================================
