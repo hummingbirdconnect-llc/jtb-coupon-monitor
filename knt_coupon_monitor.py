@@ -48,6 +48,9 @@ HEADERS = {
 
 REQUEST_DELAY = 2
 
+# データ保持日数（これより古い日次ファイルは自動削除）
+DATA_RETENTION_DAYS = 30
+
 # フィルタ: ダミーエントリやトップページリンクを除外
 SKIP_PATHS = {"/", "/coupon/", "/coupon/get/", "/coupon/code/", "/contents/fukkou/"}
 
@@ -230,6 +233,12 @@ def scrape_all_lists():
             deduped.append(c)
         else:
             print(f"  ℹ️ 重複スキップ: {c['id']}")
+
+    # 異常検知: 0件の場合はサイト構造変更の可能性
+    if not deduped:
+        print("🚨 異常検知: クーポンが0件です。サイト構造が変更された可能性があります。")
+        sys.exit(1)
+
     return deduped
 
 
@@ -612,6 +621,22 @@ def save_change_log(events):
         json.dump(existing, f, ensure_ascii=False, indent=2)
 
 
+def cleanup_old_files():
+    """DATA_RETENTION_DAYS より古い日次ファイルとレポートを削除"""
+    cutoff = (datetime.now() - timedelta(days=DATA_RETENTION_DAYS)).strftime("%Y-%m-%d")
+    removed = 0
+
+    for pattern in ["coupons_*.json", "report_*.md"]:
+        for f in DATA_DIR.glob(pattern):
+            date_match = re.search(r'(\d{4}-\d{2}-\d{2})', f.name)
+            if date_match and date_match.group(1) < cutoff:
+                f.unlink()
+                removed += 1
+
+    if removed:
+        print(f"🧹 古いファイル {removed}件を削除（{DATA_RETENTION_DAYS}日超過分）")
+
+
 # ============================================================
 # レポート
 # ============================================================
@@ -710,6 +735,9 @@ def run_full():
         save_change_log(events)
 
     generate_report(coupons, events)
+
+    # 古いファイルを自動削除
+    cleanup_old_files()
 
 
 def main():
