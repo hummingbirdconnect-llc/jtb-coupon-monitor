@@ -5,8 +5,21 @@ JTB クーポン監視スクリプト（国内＋海外 / Stock API対応版）
 一覧ページからクーポンを収集し、Stock APIで配布終了を判定。
 前回との差分（新規・消失）も検出する。
 
+HTML構造（2026-02時点）:
+  <div class="c-coupon__item" data-id="XXX" data-category='["宿泊"]' data-pref='["全国"]'>
+    <div class="c-coupon__head">
+      <div class="c-coupon__area">全国</div>
+      <div class="c-coupon__price">最大<em>3,000</em>円引<br/>クーポン</div>
+    </div>
+    <div class="c-coupon__bottom">
+      <h3 class="c-coupon__title"><a href="/myjtb/campaign/coupon/detail/XXX/page.asp">...</a></h3>
+      <p class="c-coupon__term">予約対象期間：... 宿泊対象期間：...</p>
+    </div>
+  </div>
+
 Stock API: /myjtb/campaign/coupon/api/groupkey-stock?groupkey=ID1,ID2,...
   StockFlag=1 → 配布中、StockFlag=0 → 配布終了
+  ※バッチサイズ10件以下で使用すること（大量IDだとResult=-20001エラー）
 
 使い方:
   python jtb_coupon_monitor.py           # 通常実行
@@ -17,7 +30,6 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import sys
-import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
 import time
@@ -54,6 +66,9 @@ HEADERS = {
 
 REQUEST_DELAY = 2
 
+# データ保持日数（これより古い日次ファイルは自動削除）
+DATA_RETENTION_DAYS = 30
+
 
 # ============================================================
 # ユーティリティ
@@ -83,9 +98,20 @@ def save_master_ids(master):
 
 
 # ============================================================
-# スクレイピング: 一覧ページ
+# スクレイピング: 一覧ページ（CSS セレクタ方式）
 # ============================================================
 def scrape_coupon_list_page(page_config):
+    """
+    JTBの一覧ページからクーポン情報を抽出。
+
+    HTML構造:
+      .c-coupon__item[data-id][data-category][data-pref]
+        .c-coupon__head > .c-coupon__price > em  → 割引額
+        .c-coupon__head > .c-coupon__area         → エリア
+        .c-coupon__bottom > .c-coupon__title > a  → タイトル & 詳細URL
+        .c-coupon__bottom > .c-coupon__term        → 期間
+        .c-coupon__bottom > .c-coupon__tags        → タイプ
+    """
     page_name = page_config["name"]
     page_url = page_config["url"]
     detail_pattern = page_config["detail_pattern"]
@@ -98,126 +124,110 @@ def scrape_coupon_list_page(page_config):
     soup = BeautifulSoup(resp.text, "html.parser")
     coupons = []
 
-    coupon_links = soup.select(f'a[href*="{detail_pattern}"]')
+    # .c-coupon__item を直接取得（data-id属性を持つもの）
+    items = soup.select(".c-coupon__item[data-id]")
 
-    seen_urls = set()
-    for link in coupon_links:
-        href = link.get("href", "")
-        if not href or href in seen_urls:
+    if not items:
+        # フォールバック: data-id がない場合はリンクベースで探す
+        print(f"  ⚠️ [{page_name}] .c-coupon__item[data-id] が見つかりません。フォールバック処理中...")
+        return _scrape_coupon_list_page_fallback(page_config, soup)
+
+    for item in items:
+        # ----- ID -----
+        coupon_id = item.get("data-id", "").strip()
+        if not coupon_id:
             continue
-        seen_urls.add(href)
 
-        detail_url = href if href.startswith("http") else BASE_URL + href
-
-        # カード全体のコンテナを探す
-        card = link
-        for _ in range(5):
-            parent = card.parent
-            if parent is None:
-                break
-            card = parent
-            card_text = card.get_text(separator="\n", strip=True)
-            if "円引" in card_text or "予約対象期間" in card_text:
-                break
-
-        card_text = card.get_text(separator="\n", strip=True)
-
-        # タイトル
-        title_el = link.find("h3") or link
-        title = title_el.get_text(strip=True)
-        if not title:
-            title = link.get_text(strip=True)
-
-        # 割引額（円引 + ％引）
+        # ----- 割引額 -----
         discount = ""
-        discount_match = re.search(
-            r'最大[\s]*([0-9,]+)[\s]*円引|([0-9,]+)[\s]*円引'
-            r'|最大[\s]*([0-9,]+)[\s]*[％%]引|([0-9,]+)[\s]*[％%]引',
-            card_text
-        )
-        if discount_match:
-            if discount_match.group(1):
-                discount = f"最大{discount_match.group(1)}円引"
-            elif discount_match.group(2):
-                discount = f"{discount_match.group(2)}円引"
-            elif discount_match.group(3):
-                discount = f"最大{discount_match.group(3)}％引"
-            elif discount_match.group(4):
-                discount = f"{discount_match.group(4)}％引"
+        price_el = item.select_one(".c-coupon__price")
+        if price_el:
+            em_el = price_el.select_one("em")
+            if em_el:
+                amount = em_el.get_text(strip=True)
+                price_text = price_el.get_text(strip=True)
+                if "％引" in price_text or "%引" in price_text:
+                    discount = f"最大{amount}％引" if "最大" in price_text else f"{amount}％引"
+                else:
+                    discount = f"最大{amount}円引" if "最大" in price_text else f"{amount}円引"
 
-        # 期間
+        # ----- タイトル & 詳細URL -----
+        title = ""
+        detail_url = ""
+        title_a = item.select_one(".c-coupon__title a")
+        if title_a:
+            title = title_a.get_text(strip=True)
+            href = title_a.get("href", "")
+            detail_url = href if href.startswith("http") else BASE_URL + href
+        else:
+            # h3 直接
+            title_h3 = item.select_one(".c-coupon__title")
+            if title_h3:
+                title = title_h3.get_text(strip=True)
+
+        if not detail_url:
+            # detail_patternを使ってリンクを探す
+            link = item.select_one(f'a[href*="{detail_pattern}"]')
+            if link:
+                href = link.get("href", "")
+                detail_url = href if href.startswith("http") else BASE_URL + href
+
+        # ----- エリア -----
+        area = ""
+        # data-pref 属性から取得（JSON配列）
+        pref_data = item.get("data-pref", "")
+        if pref_data:
+            try:
+                prefs = json.loads(pref_data)
+                if isinstance(prefs, list) and prefs:
+                    area = "・".join(prefs[:3])
+            except (json.JSONDecodeError, TypeError):
+                pass
+        if not area:
+            area_el = item.select_one(".c-coupon__area")
+            if area_el:
+                area = area_el.get_text(strip=True)
+
+        # ----- 期間 -----
         booking_period = ""
         stay_period = ""
-        period_lines = re.findall(
-            r'(予約対象期間|宿泊対象期間|出発対象期間)[：:\s]*(.+?)(?:\n|$)', card_text
-        )
-        for label, period in period_lines:
-            if "予約" in label:
-                booking_period = period.strip()
-            elif "宿泊" in label or "出発" in label:
-                stay_period = period.strip()
+        term_el = item.select_one(".c-coupon__term")
+        if term_el:
+            term_text = term_el.get_text(separator="\n", strip=True)
 
-        if not booking_period:
             bp_match = re.search(
-                r'予約対象期間[：:\s]*\n?\s*(\d{4}年?\d{1,2}月?\d{1,2}日?.+?)(?:\n\n|\n[^\d])',
-                card_text, re.DOTALL
+                r'予約対象期間[：:\s]*(.+?)(?:\n|$)', term_text
             )
             if bp_match:
-                booking_period = bp_match.group(1).replace("\n", "").strip()
+                booking_period = bp_match.group(1).strip()
 
-        if not stay_period:
             sp_match = re.search(
-                r'(?:宿泊|出発)対象期間[：:\s]*\n?\s*(\d{4}年?\d{1,2}月?\d{1,2}日?.+?)(?:\n\n|\n[^\d])',
-                card_text, re.DOTALL
+                r'(?:宿泊|出発)対象期間[：:\s]*(.+?)(?:\n|$)', term_text
             )
             if sp_match:
-                stay_period = sp_match.group(1).replace("\n", "").strip()
+                stay_period = sp_match.group(1).strip()
 
-        # タイプ
+        # ----- タイプ（data-category属性） -----
         coupon_type = ""
-        type_keywords = [
-            "海外航空券＋ホテル", "海外航空券+ホテル",
-            "海外現地オプショナルツアー",
-            "海外航空券", "海外ツアー",
-            "宿泊", "ツアー",
-        ]
-        found_types = []
-        for kw in type_keywords:
-            if kw in card_text:
-                if kw == "海外航空券" and any("海外航空券＋" in ft or "海外航空券+" in ft for ft in found_types):
-                    continue
-                if kw not in found_types:
-                    found_types.append(kw)
-        if found_types:
-            coupon_type = "・".join(found_types)
+        cat_data = item.get("data-category", "")
+        if cat_data:
+            try:
+                cats = json.loads(cat_data)
+                if isinstance(cats, list) and cats:
+                    coupon_type = "・".join(cats)
+            except (json.JSONDecodeError, TypeError):
+                pass
+        if not coupon_type:
+            tags_el = item.select_one(".c-coupon__tags")
+            if tags_el:
+                spans = tags_el.select("span")
+                found_types = [s.get_text(strip=True) for s in spans if s.get_text(strip=True)]
+                if found_types:
+                    coupon_type = "・".join(found_types)
 
-        # 店舗利用可
-        store_available = "店舗利用可" in card_text or "店舗でも使える" in card_text
-
-        # エリア
-        area = ""
-        area_candidates = [
-            "全方面", "全国",
-            "ハワイ", "グアム", "サイパン", "アジア", "ヨーロッパ", "アメリカ", "オセアニア",
-            "欧州ロシア/アフリカ",
-            "北海道", "東北", "関東", "甲信越", "北陸", "東海",
-            "近畿", "関西", "中国", "四国", "九州", "沖縄",
-            "福島県", "新潟県", "山梨県", "長野県", "石川県", "静岡県",
-            "三重県", "京都府", "大阪府", "兵庫県", "岡山県", "広島県", "愛媛県",
-            "高知県", "鳥取県", "島根県", "山口県",
-            "東京都", "千葉県", "群馬県", "滋賀県",
-            "福岡県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
-        ]
-        # card_textの前半（エリアラベル部分）とタイトル周辺から検出
-        search_area = card_text[:120]
-        for a in area_candidates:
-            if a in search_area:
-                area = a
-                break
-
-        # ID
-        id_match = re.search(r'/detail/([^/]+)/', detail_url)
-        coupon_id = id_match.group(1) if id_match else hashlib.md5(detail_url.encode()).hexdigest()[:12]
+        # ----- 店舗利用可 -----
+        item_text = item.get_text(strip=True)
+        store_available = "店舗利用可" in item_text or "店舗でも使える" in item_text
 
         coupons.append({
             "id": coupon_id,
@@ -238,6 +248,79 @@ def scrape_coupon_list_page(page_config):
     return coupons
 
 
+def _scrape_coupon_list_page_fallback(page_config, soup):
+    """data-id属性が見つからない場合のフォールバック（リンクベース）"""
+    page_name = page_config["name"]
+    detail_pattern = page_config["detail_pattern"]
+    coupons = []
+
+    coupon_links = soup.select(f'a[href*="{detail_pattern}"]')
+    seen_urls = set()
+
+    for link in coupon_links:
+        href = link.get("href", "")
+        if not href or href in seen_urls:
+            continue
+        seen_urls.add(href)
+
+        detail_url = href if href.startswith("http") else BASE_URL + href
+
+        # カード全体のコンテナを探す（.c-coupon__item まで遡る）
+        card = link
+        for _ in range(8):
+            parent = card.parent
+            if parent is None:
+                break
+            card = parent
+            if card.get("class") and "c-coupon__item" in card.get("class", []):
+                break
+
+        card_text = card.get_text(separator="\n", strip=True)
+
+        title = link.get_text(strip=True)
+
+        # 割引額
+        discount = ""
+        discount_match = re.search(
+            r'最大[\s]*([0-9,]+)[\s]*円引|([0-9,]+)[\s]*円引'
+            r'|最大[\s]*([0-9,]+)[\s]*[％%]引|([0-9,]+)[\s]*[％%]引',
+            card_text
+        )
+        if discount_match:
+            if discount_match.group(1):
+                discount = f"最大{discount_match.group(1)}円引"
+            elif discount_match.group(2):
+                discount = f"{discount_match.group(2)}円引"
+            elif discount_match.group(3):
+                discount = f"最大{discount_match.group(3)}％引"
+            elif discount_match.group(4):
+                discount = f"{discount_match.group(4)}％引"
+
+        # ID
+        id_match = re.search(r'/detail/([^/]+)/', detail_url)
+        coupon_id = id_match.group(1) if id_match else ""
+        if not coupon_id:
+            continue
+
+        coupons.append({
+            "id": coupon_id,
+            "category": page_name,
+            "title": title,
+            "discount": discount,
+            "area": "",
+            "type": "",
+            "booking_period": "",
+            "stay_period": "",
+            "store_available": False,
+            "stock_status": "不明",
+            "detail_url": detail_url,
+            "detail_data": None,
+        })
+
+    print(f"  ✅ [{page_name}] {len(coupons)}件検出（フォールバック）")
+    return coupons
+
+
 def scrape_all_coupon_lists():
     all_coupons = []
     for page_config in COUPON_PAGES:
@@ -252,6 +335,12 @@ def scrape_all_coupon_lists():
                 c["stock_status"] = stock_map.get(c["id"], "不明")
 
         all_coupons.extend(coupons)
+
+    # 異常検知: 0件の場合はサイト構造変更の可能性
+    if not all_coupons:
+        print("🚨 異常検知: クーポンが0件です。サイト構造が変更された可能性があります。")
+        sys.exit(1)
+
     return all_coupons
 
 
@@ -263,13 +352,16 @@ def check_stock_status(api_url, coupons):
     Stock API を叩いて各クーポンの配布状況を取得する。
     StockFlag=1 → 配布中、StockFlag=0 → 配布終了
 
+    注意: バッチサイズは10件以下にすること。
+    20件以上だとAPIがResult=-20001を返しエラーになる。
+
     Returns: {coupon_id: "配布中" or "配布終了"}
     """
     ids = list(dict.fromkeys(c["id"] for c in coupons))  # 重複排除・順序保持
     stock_map = {}
 
-    # APIは一度に大量のIDを受け付けるが、念のため50件ずつ分割
-    BATCH_SIZE = 50
+    # APIはバッチサイズ10が安全上限（20以上でResult=-20001エラー）
+    BATCH_SIZE = 10
     for i in range(0, len(ids), BATCH_SIZE):
         batch = ids[i:i + BATCH_SIZE]
         params = {"groupkey": ",".join(batch)}
@@ -291,11 +383,12 @@ def check_stock_status(api_url, coupons):
                     else:
                         stock_map[gk] = "不明"
 
-                active = sum(1 for v in stock_map.values() if v == "配布中")
-                ended = sum(1 for v in stock_map.values() if v == "配布終了")
-                print(f"  📊 Stock API: {len(batch)}件チェック → 配布中={active}, 配布終了={ended}")
+                batch_active = sum(1 for bid in batch if stock_map.get(bid) == "配布中")
+                batch_ended = sum(1 for bid in batch if stock_map.get(bid) == "配布終了")
+                print(f"  📊 Stock API [{i+1}-{i+len(batch)}]: 配布中={batch_active}, 配布終了={batch_ended}")
             else:
-                print(f"  ⚠️ Stock API: 予期しないレスポンス: {data.get('Result', 'N/A')}")
+                result_code = data.get("Result", "N/A")
+                print(f"  ⚠️ Stock API: 予期しないレスポンス (Result={result_code})")
                 for bid in batch:
                     stock_map.setdefault(bid, "不明")
 
@@ -303,6 +396,11 @@ def check_stock_status(api_url, coupons):
             print(f"  ⚠️ Stock API エラー: {e}")
             for bid in batch:
                 stock_map.setdefault(bid, "不明")
+
+    total_active = sum(1 for v in stock_map.values() if v == "配布中")
+    total_ended = sum(1 for v in stock_map.values() if v == "配布終了")
+    total_unknown = sum(1 for v in stock_map.values() if v == "不明")
+    print(f"  📊 Stock API 合計: 配布中={total_active}, 配布終了={total_ended}, 不明={total_unknown}")
 
     return stock_map
 
@@ -479,6 +577,23 @@ def save_change_log(events):
         json.dump(existing, f, ensure_ascii=False, indent=2)
 
 
+def cleanup_old_files():
+    """DATA_RETENTION_DAYS より古い日次ファイルとレポートを削除"""
+    cutoff = (datetime.now() - timedelta(days=DATA_RETENTION_DAYS)).strftime("%Y-%m-%d")
+    removed = 0
+
+    for pattern in ["coupons_*.json", "report_*.md"]:
+        for f in DATA_DIR.glob(pattern):
+            # ファイル名から日付を抽出
+            date_match = re.search(r'(\d{4}-\d{2}-\d{2})', f.name)
+            if date_match and date_match.group(1) < cutoff:
+                f.unlink()
+                removed += 1
+
+    if removed:
+        print(f"🧹 古いファイル {removed}件を削除（{DATA_RETENTION_DAYS}日超過分）")
+
+
 # ============================================================
 # レポート生成
 # ============================================================
@@ -582,6 +697,9 @@ def run_full():
         save_change_log(events)
 
     generate_report(coupons, events)
+
+    # 古いファイルを自動削除
+    cleanup_old_files()
 
 
 def main():

@@ -11,6 +11,8 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
       - name: チェックアウト
         uses: actions/checkout@v4
@@ -24,7 +26,7 @@ jobs:
           python-version: '3.11'
 
       - name: 依存パッケージ
-        run: pip install requests beautifulsoup4 gspread google-auth
+        run: pip install -r requirements.txt
 
       - name: JTB クーポン監視
         run: python jtb_coupon_monitor.py
@@ -38,6 +40,13 @@ jobs:
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
         run: python export_to_sheets.py
 
+      - name: 変動通知メール送信
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+        run: python daily_diff_notifier.py
+
       - name: コミット＆プッシュ
         run: |
           git config user.name "github-actions[bot]"
@@ -48,9 +57,10 @@ jobs:
             exit 0
           fi
           git commit -m "📊 クーポンデータ更新 $(date +%Y-%m-%d)"
-          git fetch origin main
-          git pull --rebase origin main --strategy-option=theirs || {
-            git add -A
-            git rebase --continue || true
-          }
+          # リモートとの同期（最大3回リトライ）
+          for i in 1 2 3; do
+            git pull --rebase origin main && break
+            echo "⚠️ rebase リトライ ($i/3)..."
+            sleep 5
+          done
           git push origin main

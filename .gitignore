@@ -2,3 +2,9 @@ __pycache__/
 *.pyc
 .DS_Store
 cron.log
+
+# Google Cloud credentials (NEVER commit these)
+*.json.bak
+*-key.json
+*service-account*.json
+coupon-monitor-*.json
