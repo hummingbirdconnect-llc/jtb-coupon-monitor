@@ -32,6 +32,7 @@ import json
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import re
 
@@ -126,6 +127,22 @@ def scrape_coupon_list_page(page_config):
 
     # .c-coupon__item を直接取得（data-id属性を持つもの）
     items = soup.select(".c-coupon__item[data-id]")
+
+    # 「期限終了した割引クーポン」セクション内のアイテムを除外
+    # 海外ページでは .c-coupon__block > h2 に「期限終了」を含むブロックがある
+    items_filtered = []
+    expired_count = 0
+    for item in items:
+        block = item.find_parent("div", class_="c-coupon__block")
+        if block:
+            heading = block.select_one("h2.c-coupon__block--title")
+            if heading and "期限終了" in heading.get_text():
+                expired_count += 1
+                continue
+        items_filtered.append(item)
+    if expired_count:
+        print(f"  🚫 [{page_name}] 期限終了クーポン {expired_count}件を除外")
+    items = items_filtered
 
     if not items:
         # フォールバック: data-id がない場合はリンクベースで探す
@@ -362,8 +379,16 @@ def check_stock_status(api_url, coupons):
 
     # APIはバッチサイズ10が安全上限（20以上でResult=-20001エラー）
     BATCH_SIZE = 10
+    api_unavailable = False  # 初回バッチ失敗時に残りをスキップ
+
     for i in range(0, len(ids), BATCH_SIZE):
         batch = ids[i:i + BATCH_SIZE]
+
+        if api_unavailable:
+            for bid in batch:
+                stock_map.setdefault(bid, "不明")
+            continue
+
         params = {"groupkey": ",".join(batch)}
 
         try:
@@ -393,7 +418,8 @@ def check_stock_status(api_url, coupons):
                     stock_map.setdefault(bid, "不明")
 
         except Exception as e:
-            print(f"  ⚠️ Stock API エラー: {e}")
+            print(f"  ⚠️ Stock API エラー（残りバッチをスキップ）: {e}")
+            api_unavailable = True
             for bid in batch:
                 stock_map.setdefault(bid, "不明")
 
@@ -403,6 +429,24 @@ def check_stock_status(api_url, coupons):
     print(f"  📊 Stock API 合計: 配布中={total_active}, 配布終了={total_ended}, 不明={total_unknown}")
 
     return stock_map
+
+
+# ============================================================
+# 詳細ページキャッシュ
+# ============================================================
+def load_previous_detail_cache():
+    """前回のJSONからdetail_dataのキャッシュを作成"""
+    files = sorted(DATA_DIR.glob("coupons_*.json"), reverse=True)
+    today = today_str()
+    for f in files:
+        if f.stem != f"coupons_{today}":
+            try:
+                with open(f, "r", encoding="utf-8") as fh:
+                    prev_data = json.load(fh)
+                return {c["id"]: c.get("detail_data", {}) for c in prev_data}
+            except (json.JSONDecodeError, KeyError):
+                continue
+    return {}
 
 
 # ============================================================
@@ -470,6 +514,31 @@ def scrape_detail_page(url):
     except Exception as e:
         print(f"    ⚠️ 詳細ページ取得エラー: {e}")
         return {"coupon_codes": [], "passwords": [], "conditions": [], "notes": []}
+
+
+def scrape_detail_pages_parallel(coupons, max_workers=3):
+    """詳細ページを並列取得（最大3並列、礼儀正しいレート制限付き）"""
+    results = {}
+    if not coupons:
+        return results
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {}
+        for i, coupon in enumerate(coupons):
+            if i > 0:
+                time.sleep(0.7)  # 投入間隔で実効レートを制限
+            future = executor.submit(scrape_detail_page, coupon["detail_url"])
+            futures[future] = coupon["id"]
+
+        for future in as_completed(futures):
+            cid = futures[future]
+            try:
+                results[cid] = future.result()
+            except Exception as e:
+                print(f"    ⚠️ 並列取得エラー ({cid}): {e}")
+                results[cid] = {"coupon_codes": [], "passwords": [], "conditions": [], "notes": []}
+
+    return results
 
 
 # ============================================================
@@ -652,11 +721,10 @@ def run_init():
 
     coupons = scrape_all_coupon_lists()
 
-    print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
-    for i, coupon in enumerate(coupons):
-        print(f"  [{i+1}/{len(coupons)}] [{coupon['category']}] {coupon['id']}")
-        detail = scrape_detail_page(coupon["detail_url"])
-        coupon["detail_data"] = detail
+    print(f"\n📄 詳細ページを並列取得中（{len(coupons)}ページ）...")
+    detail_results = scrape_detail_pages_parallel(coupons)
+    for coupon in coupons:
+        coupon["detail_data"] = detail_results.get(coupon["id"], {})
 
     save_daily_data(coupons)
 
@@ -672,15 +740,30 @@ def run_full():
 
     coupons = scrape_all_coupon_lists()
 
-    print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
-    for i, coupon in enumerate(coupons):
-        print(f"  [{i+1}/{len(coupons)}] [{coupon['category']}] {coupon['id']}")
-        detail = scrape_detail_page(coupon["detail_url"])
-        coupon["detail_data"] = detail
+    # 前日のdetail_dataをキャッシュとして読み込み
+    master_ids = load_master_ids()
+    prev_cache = load_previous_detail_cache()
+    prev_ids = set(master_ids.get("ids", {}).keys())
+
+    need_detail = []
+    cached_count = 0
+    for coupon in coupons:
+        if coupon["id"] in prev_cache and coupon["id"] in prev_ids:
+            coupon["detail_data"] = prev_cache[coupon["id"]]
+            cached_count += 1
+        else:
+            need_detail.append(coupon)
+
+    if need_detail:
+        print(f"\n📄 詳細ページ取得: キャッシュ利用={cached_count}件 / 新規取得={len(need_detail)}件")
+        detail_results = scrape_detail_pages_parallel(need_detail)
+        for coupon in need_detail:
+            coupon["detail_data"] = detail_results.get(coupon["id"], {})
+    else:
+        print(f"\n📄 全{cached_count}件キャッシュ利用（詳細ページ取得スキップ）")
 
     save_daily_data(coupons)
 
-    master_ids = load_master_ids()
     events = detect_changes(master_ids, coupons)
 
     if events:

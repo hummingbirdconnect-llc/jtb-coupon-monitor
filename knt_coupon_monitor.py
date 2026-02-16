@@ -18,6 +18,7 @@ import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import urljoin, urlparse, parse_qs
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import re
 
@@ -540,6 +541,54 @@ def _extract_end_date(period_str):
 
 
 # ============================================================
+# 詳細ページキャッシュ & 並列取得
+# ============================================================
+def load_previous_detail_cache():
+    """前回のJSONからdetail_dataのキャッシュを作成"""
+    files = sorted(DATA_DIR.glob("coupons_*.json"), reverse=True)
+    today = today_str()
+    for f in files:
+        if f.stem != f"coupons_{today}":
+            try:
+                with open(f, "r", encoding="utf-8") as fh:
+                    prev_data = json.load(fh)
+                return {c["id"]: c.get("detail_data", {}) for c in prev_data}
+            except (json.JSONDecodeError, KeyError):
+                continue
+    return {}
+
+
+def scrape_detail_pages_parallel(coupons, max_workers=3):
+    """詳細ページを並列取得（最大3並列、礼儀正しいレート制限付き）"""
+    results = {}
+    if not coupons:
+        return results
+
+    empty_detail = {
+        "discount": "", "conditions": [], "booking_period": "",
+        "stay_period": "", "coupon_codes": [], "notes": [],
+    }
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {}
+        for i, coupon in enumerate(coupons):
+            if i > 0:
+                time.sleep(0.7)
+            future = executor.submit(scrape_detail_page, coupon["detail_url"])
+            futures[future] = coupon["id"]
+
+        for future in as_completed(futures):
+            cid = futures[future]
+            try:
+                results[cid] = future.result()
+            except Exception as e:
+                print(f"    ⚠️ 並列取得エラー ({cid}): {e}")
+                results[cid] = dict(empty_detail)
+
+    return results
+
+
+# ============================================================
 # 差分検出（新規・消失）
 # ============================================================
 def detect_changes(master_ids, current_coupons):
@@ -679,20 +728,24 @@ def generate_report(coupons, events):
 # ============================================================
 # メイン
 # ============================================================
+def _apply_detail_to_coupons(coupons, detail_map):
+    """detail_dataをクーポンに適用し、割引額がなければ詳細から反映"""
+    for coupon in coupons:
+        detail = detail_map.get(coupon["id"], {})
+        coupon["detail_data"] = detail
+        if detail.get("discount") and not coupon.get("discount"):
+            coupon["discount"] = detail["discount"]
+
+
 def run_init():
     print("🔄 KNT 初期化モード")
     setup_dirs()
 
     coupons = scrape_all_lists()
 
-    print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
-    for i, coupon in enumerate(coupons):
-        print(f"  [{i+1}/{len(coupons)}] [{coupon['category']}] {coupon['title'][:40]}...")
-        detail = scrape_detail_page(coupon["detail_url"])
-        coupon["detail_data"] = detail
-        # 詳細ページの割引額をクーポンに反映
-        if detail.get("discount") and not coupon.get("discount"):
-            coupon["discount"] = detail["discount"]
+    print(f"\n📄 詳細ページを並列取得中（{len(coupons)}ページ）...")
+    detail_results = scrape_detail_pages_parallel(coupons)
+    _apply_detail_to_coupons(coupons, detail_results)
 
     save_daily_data(coupons)
 
@@ -708,17 +761,31 @@ def run_full():
 
     coupons = scrape_all_lists()
 
-    print(f"\n📄 詳細ページを取得中（{len(coupons)}ページ、約{len(coupons) * REQUEST_DELAY}秒）...")
-    for i, coupon in enumerate(coupons):
-        print(f"  [{i+1}/{len(coupons)}] [{coupon['category']}] {coupon['title'][:40]}...")
-        detail = scrape_detail_page(coupon["detail_url"])
-        coupon["detail_data"] = detail
-        if detail.get("discount") and not coupon.get("discount"):
-            coupon["discount"] = detail["discount"]
+    # 前日のdetail_dataをキャッシュとして読み込み
+    master_ids = load_master_ids()
+    prev_cache = load_previous_detail_cache()
+    prev_ids = set(master_ids.get("ids", {}).keys())
+
+    need_detail = []
+    cached_count = 0
+    for coupon in coupons:
+        if coupon["id"] in prev_cache and coupon["id"] in prev_ids:
+            coupon["detail_data"] = prev_cache[coupon["id"]]
+            if coupon["detail_data"].get("discount") and not coupon.get("discount"):
+                coupon["discount"] = coupon["detail_data"]["discount"]
+            cached_count += 1
+        else:
+            need_detail.append(coupon)
+
+    if need_detail:
+        print(f"\n📄 詳細ページ取得: キャッシュ利用={cached_count}件 / 新規取得={len(need_detail)}件")
+        detail_results = scrape_detail_pages_parallel(need_detail)
+        _apply_detail_to_coupons(need_detail, detail_results)
+    else:
+        print(f"\n📄 全{cached_count}件キャッシュ利用（詳細ページ取得スキップ）")
 
     save_daily_data(coupons)
 
-    master_ids = load_master_ids()
     events = detect_changes(master_ids, coupons)
 
     if events:
