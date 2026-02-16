@@ -509,7 +509,7 @@
     "booking_period": "2025/10/1(水) ～ 2026/2/28(土)",
     "stay_period": "2025/10/1(水) ～ 2026/2/28(土)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510kyoritsu/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -589,7 +589,7 @@
     "booking_period": "2025/10/30(木) ～ 2026/2/27(金)",
     "stay_period": "2025/11/1(土) ～ 2026/2/28(土)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510donan/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1429,7 +1429,7 @@
     "booking_period": "2025/10/1(水) ～ 2026/2/28(土)",
     "stay_period": "2025/10/1(水) ～ 2026/2/28(土)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509kochi/page.asp",
     "detail_data": {
       "coupon_codes": [
