@@ -82,6 +82,92 @@ def today_str():
     return datetime.now().strftime("%Y-%m-%d")
 
 
+def parse_booking_end_date(period_str):
+    """
+    予約対象期間の文字列から終了日を抽出し、datetime.dateで返す。
+    抽出できない場合はNoneを返す。
+
+    対応フォーマット:
+      - "2025/12/22(月) ～ 2026/3/31(火)"
+      - "2026年1月16日(金)～2026年3月23日(月)"
+      - "2026年2月16日(月)～3月27日(金)まで"  (年なし → 開始年から推定)
+    """
+    if not period_str:
+        return None
+
+    # 全日付を抽出（年あり）
+    # パターン1: YYYY/M/D
+    slash_dates = re.findall(r'(\d{4})/(\d{1,2})/(\d{1,2})', period_str)
+    # パターン2: YYYY年M月D日
+    kanji_dates = re.findall(r'(\d{4})年(\d{1,2})月(\d{1,2})日', period_str)
+
+    all_dates = []
+    last_year = None
+    for y, m, d in slash_dates + kanji_dates:
+        try:
+            dt = datetime(int(y), int(m), int(d)).date()
+            all_dates.append(dt)
+            last_year = int(y)
+        except ValueError:
+            continue
+
+    # ～の後に年なし日付がある場合（KNTスタイル: ～3月27日）
+    tilde_pos = -1
+    for tilde in ["～", "〜", "~"]:
+        pos = period_str.find(tilde)
+        if pos >= 0:
+            tilde_pos = pos
+            break
+
+    if tilde_pos >= 0 and last_year:
+        after_tilde = period_str[tilde_pos:]
+        yearless = re.findall(r'(\d{1,2})月(\d{1,2})日', after_tilde)
+        # 年ありの日付が～の後にあるか確認
+        has_year_after = re.search(r'\d{4}[年/]', after_tilde)
+        if yearless and not has_year_after:
+            m, d = yearless[0]
+            try:
+                # 月が開始月より小さければ翌年と推定
+                start_month = all_dates[0].month if all_dates else 1
+                inferred_year = last_year
+                if int(m) < start_month:
+                    inferred_year = last_year + 1
+                dt = datetime(inferred_year, int(m), int(d)).date()
+                all_dates.append(dt)
+            except ValueError:
+                pass
+
+    return max(all_dates) if all_dates else None
+
+
+def filter_expired_bookings(coupons, date_field="booking_period"):
+    """
+    予約対象期間の終了日が過去のクーポンを除外する。
+    date_field: booking_periodの格納場所（トップレベルまたはdetail_data内）
+    """
+    today = datetime.now().date()
+    active = []
+    expired_count = 0
+
+    for c in coupons:
+        # トップレベルから取得
+        period = c.get(date_field, "")
+        # detail_data内からも取得（KNT用）
+        if not period and c.get("detail_data"):
+            period = c["detail_data"].get(date_field, "")
+
+        end_date = parse_booking_end_date(period)
+        if end_date and end_date < today:
+            expired_count += 1
+            continue
+        active.append(c)
+
+    if expired_count:
+        print(f"  🗓️ 予約期間終了クーポン {expired_count}件を除外")
+
+    return active
+
+
 # ============================================================
 # マスターID管理（前回のID一覧を記憶して差分検出に使う）
 # ============================================================
@@ -343,6 +429,9 @@ def scrape_all_coupon_lists():
     for page_config in COUPON_PAGES:
         time.sleep(REQUEST_DELAY)
         coupons = scrape_coupon_list_page(page_config)
+
+        # 予約対象期間が終了済みのクーポンを除外
+        coupons = filter_expired_bookings(coupons)
 
         # Stock API で配布状況を一括チェック
         stock_api_url = page_config.get("stock_api")

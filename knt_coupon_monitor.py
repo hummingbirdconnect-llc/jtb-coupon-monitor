@@ -67,6 +67,83 @@ def today_str():
     return datetime.now().strftime("%Y-%m-%d")
 
 
+def parse_booking_end_date(period_str):
+    """
+    予約対象期間の文字列から終了日を抽出し、datetime.dateで返す。
+    抽出できない場合はNoneを返す。
+
+    対応フォーマット:
+      - "2025/12/22(月) ～ 2026/3/31(火)"
+      - "2026年1月16日(金)～2026年3月23日(月)"
+      - "2026年2月16日(月)～3月27日(金)まで"  (年なし → 開始年から推定)
+    """
+    if not period_str:
+        return None
+
+    # 全日付を抽出（年あり）
+    slash_dates = re.findall(r'(\d{4})/(\d{1,2})/(\d{1,2})', period_str)
+    kanji_dates = re.findall(r'(\d{4})年(\d{1,2})月(\d{1,2})日', period_str)
+
+    all_dates = []
+    last_year = None
+    for y, m, d in slash_dates + kanji_dates:
+        try:
+            dt = datetime(int(y), int(m), int(d)).date()
+            all_dates.append(dt)
+            last_year = int(y)
+        except ValueError:
+            continue
+
+    # ～の後に年なし日付がある場合
+    tilde_pos = -1
+    for tilde in ["～", "〜", "~"]:
+        pos = period_str.find(tilde)
+        if pos >= 0:
+            tilde_pos = pos
+            break
+
+    if tilde_pos >= 0 and last_year:
+        after_tilde = period_str[tilde_pos:]
+        yearless = re.findall(r'(\d{1,2})月(\d{1,2})日', after_tilde)
+        has_year_after = re.search(r'\d{4}[年/]', after_tilde)
+        if yearless and not has_year_after:
+            m, d = yearless[0]
+            try:
+                start_month = all_dates[0].month if all_dates else 1
+                inferred_year = last_year
+                if int(m) < start_month:
+                    inferred_year = last_year + 1
+                dt = datetime(inferred_year, int(m), int(d)).date()
+                all_dates.append(dt)
+            except ValueError:
+                pass
+
+    return max(all_dates) if all_dates else None
+
+
+def filter_expired_bookings(coupons, date_field="booking_period"):
+    """予約対象期間の終了日が過去のクーポンを除外する。"""
+    today = datetime.now().date()
+    active = []
+    expired_count = 0
+
+    for c in coupons:
+        period = c.get(date_field, "")
+        if not period and c.get("detail_data"):
+            period = c["detail_data"].get(date_field, "")
+
+        end_date = parse_booking_end_date(period)
+        if end_date and end_date < today:
+            expired_count += 1
+            continue
+        active.append(c)
+
+    if expired_count:
+        print(f"  🗓️ 予約期間終了クーポン {expired_count}件を除外")
+
+    return active
+
+
 def make_coupon_id(url):
     """URLからユニークなIDを生成"""
     parsed = urlparse(url)
@@ -747,6 +824,9 @@ def run_init():
     detail_results = scrape_detail_pages_parallel(coupons)
     _apply_detail_to_coupons(coupons, detail_results)
 
+    # 予約対象期間が終了済みのクーポンを除外
+    coupons = filter_expired_bookings(coupons)
+
     save_daily_data(coupons)
 
     master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
@@ -783,6 +863,9 @@ def run_full():
         _apply_detail_to_coupons(need_detail, detail_results)
     else:
         print(f"\n📄 全{cached_count}件キャッシュ利用（詳細ページ取得スキップ）")
+
+    # 予約対象期間が終了済みのクーポンを除外
+    coupons = filter_expired_bookings(coupons)
 
     save_daily_data(coupons)
 
