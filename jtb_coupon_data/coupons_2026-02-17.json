@@ -25,6 +25,31 @@
     }
   },
   {
+    "id": "2602harutabi",
+    "category": "国内",
+    "title": "【ときめく春旅】JTBのおすすめ施設で使える割引クーポン",
+    "discount": "1,000円引",
+    "area": "全国",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/2/17(火) ～ 2026/3/31(火)",
+    "stay_period": "2026/2/17(火) ～ 2026/3/31(火)",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602harutabi/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "jtbht"
+      ],
+      "passwords": [
+        "g520"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 5000枚 12,000円以上のご利用で 1,000 円引 クーポンコード jtbht パスワ"
+      ]
+    }
+  },
+  {
     "id": "2602thkcp",
     "category": "国内",
     "title": "3月までの国内宿泊に使える割引クーポン",
@@ -536,7 +561,7 @@
     "booking_period": "2026/1/23(金) ～ 2026/3/31(火)",
     "stay_period": "2026/2/1(日) ～ 2026/3/31(火)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601hokkaido/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -549,6 +574,32 @@
       "conditions": [],
       "notes": [
         "なし 泊数指定なし 先着 100枚 50,000円以上のご利用で 10,000 円引 クーポンコード hokka パスワ"
+      ]
+    }
+  },
+  {
+    "id": "2602hokkaido",
+    "category": "国内",
+    "title": "【3・4月限定】北海道おすすめホテルで使える割引クーポン",
+    "discount": "最大10,000円引",
+    "area": "北海道",
+    "type": "宿泊",
+    "booking_period": "2026/2/17(火) ～ 2026/4/30(木)",
+    "stay_period": "2026/3/1(日) ～ 2026/4/30(木)",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602hokkaido/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "hokka"
+      ],
+      "passwords": [
+        "g442",
+        "g443"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 30枚 70,000円以上のご利用で 10,000 円引 クーポンコード hokka パスワー"
       ]
     }
   },
@@ -617,7 +668,7 @@
     "booking_period": "2026/1/23(金) ～ 2026/7/12(日)",
     "stay_period": "2026/4/1(水) ～ 2026/7/12(日)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601nstoh/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -658,6 +709,35 @@
         "g370",
         "g371",
         "g372"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 10枚 100,000円以上のご利用で 10,000 円引 クーポンコード tohok パスワ"
+      ]
+    }
+  },
+  {
+    "id": "2602tohoku",
+    "category": "国内",
+    "title": "東北のおすすめ施設で使える割引クーポン＜第2弾＞",
+    "discount": "最大10,000円引",
+    "area": "青森県・岩手県・宮城県",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/2/17(火) ～ 2026/3/31(火)",
+    "stay_period": "2026/2/17(火) ～ 2026/3/31(火)",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602tohoku/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "tohok"
+      ],
+      "passwords": [
+        "g515",
+        "g516",
+        "g517",
+        "g518",
+        "g519"
       ],
       "conditions": [],
       "notes": [

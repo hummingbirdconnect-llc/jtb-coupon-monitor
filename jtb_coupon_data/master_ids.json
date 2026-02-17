@@ -1,10 +1,17 @@
 {
-  "last_updated": "2026-02-17T00:07:16.862250",
+  "last_updated": "2026-02-17T02:58:18.927954",
   "ids": {
     "2601jtbhpnew": {
       "category": "国内",
       "title": "【JTBトラベルメンバー新規会員向け】初回購入限定！国内クーポン",
       "discount": "最大1,000円引",
+      "area": "全国",
+      "stock_status": "配布終了"
+    },
+    "2602harutabi": {
+      "category": "国内",
+      "title": "【ときめく春旅】JTBのおすすめ施設で使える割引クーポン",
+      "discount": "1,000円引",
       "area": "全国",
       "stock_status": "配布終了"
     },
@@ -139,7 +146,14 @@
       "title": "北海道へ【２・３月限定】オススメ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
+    },
+    "2602hokkaido": {
+      "category": "国内",
+      "title": "【3・4月限定】北海道おすすめホテルで使える割引クーポン",
+      "discount": "最大10,000円引",
+      "area": "北海道",
+      "stock_status": "配布終了"
     },
     "2602dohoku": {
       "category": "国内",
@@ -160,11 +174,18 @@
       "title": "「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2512tohoku": {
       "category": "国内",
       "title": "東北のおすすめ施設で使える割引クーポン",
+      "discount": "最大10,000円引",
+      "area": "青森県・岩手県・宮城県",
+      "stock_status": "配布終了"
+    },
+    "2602tohoku": {
+      "category": "国内",
+      "title": "東北のおすすめ施設で使える割引クーポン＜第2弾＞",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
       "stock_status": "配布終了"
