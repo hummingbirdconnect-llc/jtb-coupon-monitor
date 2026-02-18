@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
 """
-JTB クーポン監視スクリプト（国内＋海外 / Stock API対応版）
+JTB クーポン監視スクリプト（国内＋海外 / Stock API + Playwright対応版）
 ================================================================
-一覧ページからクーポンを収集し、Stock APIで配布終了を判定。
+一覧ページからクーポンを収集し、配布終了を判定。
+- 国内: Stock API（StockFlag）で判定
+- 海外: Playwright でJS描画後のDOM（.c-close__txt）から判定
 前回との差分（新規・消失）も検出する。
 
 HTML構造（2026-02時点）:
-  <div class="c-coupon__item" data-id="XXX" data-category='["宿泊"]' data-pref='["全国"]'>
-    <div class="c-coupon__head">
-      <div class="c-coupon__area">全国</div>
-      <div class="c-coupon__price">最大<em>3,000</em>円引<br/>クーポン</div>
+  国内:
+    <div class="c-coupon__item" data-id="XXX" data-category='["宿泊"]' data-pref='["全国"]'>
+      ...
     </div>
-    <div class="c-coupon__bottom">
-      <h3 class="c-coupon__title"><a href="/myjtb/campaign/coupon/detail/XXX/page.asp">...</a></h3>
-      <p class="c-coupon__term">予約対象期間：... 宿泊対象期間：...</p>
+  海外（JS描画後）:
+    <div class="c-coupon__item" data-category='["海外ツアー"]'>
+      ...
+      <div class="c-close__txt"><br>配布終了いたしました</div>  ← 配布終了時のみ出現
     </div>
-  </div>
 
-Stock API: /myjtb/campaign/coupon/api/groupkey-stock?groupkey=ID1,ID2,...
+Stock API（国内のみ）: /myjtb/campaign/coupon/api/groupkey-stock?groupkey=ID1,ID2,...
   StockFlag=1 → 配布中、StockFlag=0 → 配布終了
   ※バッチサイズ10件以下で使用すること（大量IDだとResult=-20001エラー）
 
@@ -46,12 +47,13 @@ COUPON_PAGES = [
         "url": f"{BASE_URL}/myjtb/campaign/coupon/",
         "detail_pattern": "/myjtb/campaign/coupon/detail/",
         "stock_api": f"{BASE_URL}/myjtb/campaign/coupon/api/groupkey-stock",
+        "stock_method": "api",
     },
     {
         "name": "海外",
         "url": f"{BASE_URL}/myjtb/campaign/kaigaicoupon/",
         "detail_pattern": "/myjtb/campaign/kaigaicoupon/detail/",
-        "stock_api": f"{BASE_URL}/myjtb/campaign/kaigaicoupon/api/groupkey-stock",
+        "stock_method": "playwright",  # Stock APIが存在しないためPlaywrightで判定
     },
 ]
 
@@ -327,12 +329,23 @@ def scrape_all_coupon_lists():
         time.sleep(REQUEST_DELAY)
         coupons = scrape_coupon_list_page(page_config)
 
-        # Stock API で配布状況を一括チェック
-        stock_api_url = page_config.get("stock_api")
-        if stock_api_url and coupons:
-            stock_map = check_stock_status(stock_api_url, coupons)
+        if not coupons:
+            continue
+
+        stock_method = page_config.get("stock_method", "api")
+
+        if stock_method == "playwright":
+            # 海外: Playwright でJS描画後のDOMから配布状況を判定
+            stock_map = check_stock_status_playwright(page_config["url"], coupons)
             for c in coupons:
                 c["stock_status"] = stock_map.get(c["id"], "不明")
+        else:
+            # 国内: Stock API で配布状況を一括チェック
+            stock_api_url = page_config.get("stock_api")
+            if stock_api_url:
+                stock_map = check_stock_status(stock_api_url, coupons)
+                for c in coupons:
+                    c["stock_status"] = stock_map.get(c["id"], "不明")
 
         all_coupons.extend(coupons)
 
@@ -401,6 +414,84 @@ def check_stock_status(api_url, coupons):
     total_ended = sum(1 for v in stock_map.values() if v == "配布終了")
     total_unknown = sum(1 for v in stock_map.values() if v == "不明")
     print(f"  📊 Stock API 合計: 配布中={total_active}, 配布終了={total_ended}, 不明={total_unknown}")
+
+    return stock_map
+
+
+# ============================================================
+# Playwright: 海外クーポン配布状況チェック
+# ============================================================
+def check_stock_status_playwright(page_url, coupons):
+    """
+    Playwright でページをJS描画し、配布状況を判定する。
+    海外クーポンページにはStock APIが存在しないため、
+    DOM上の .c-close__txt 要素内の「配布終了」テキストで判定する。
+
+    Returns: {coupon_id: "配布中" or "配布終了"}
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("  ⚠️ Playwright未インストール。全件「不明」にフォールバック")
+        return {c["id"]: "不明" for c in coupons}
+
+    stock_map = {}
+
+    try:
+        print(f"  🎭 Playwright で配布状況を取得中... {page_url}")
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page(
+                user_agent=HEADERS["User-Agent"],
+            )
+
+            page.goto(page_url, wait_until="domcontentloaded", timeout=60000)
+
+            # JS描画を待機（配布終了の表示はJSで動的に挿入される）
+            page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
+            page.wait_for_timeout(3000)
+
+            items = page.query_selector_all(".c-coupon__item")
+            print(f"  🎭 {len(items)}件のクーポン要素を検出")
+
+            seen_ids = set()
+            for item in items:
+                # 詳細リンクからIDを抽出
+                link = item.query_selector("a[href*='detail']")
+                if not link:
+                    continue
+                href = link.get_attribute("href") or ""
+                id_match = re.search(r'/detail/([^/]+)/', href)
+                if not id_match:
+                    continue
+                coupon_id = id_match.group(1)
+
+                # 重複スキップ（おすすめスライダー等で同一IDが複数回出現）
+                if coupon_id in seen_ids:
+                    continue
+                seen_ids.add(coupon_id)
+
+                # .c-close__txt 内に「配布終了」があれば配布終了
+                close_el = item.query_selector(".c-close__txt")
+                if close_el:
+                    close_text = close_el.inner_text()
+                    if "配布終了" in close_text:
+                        stock_map[coupon_id] = "配布終了"
+                        continue
+
+                stock_map[coupon_id] = "配布中"
+
+            browser.close()
+
+        active = sum(1 for v in stock_map.values() if v == "配布中")
+        ended = sum(1 for v in stock_map.values() if v == "配布終了")
+        print(f"  🎭 Playwright 結果: 配布中={active}, 配布終了={ended}")
+
+    except Exception as e:
+        print(f"  ⚠️ Playwright エラー: {e}")
+        print("  ⚠️ 全件「不明」にフォールバック")
+        for c in coupons:
+            stock_map.setdefault(c["id"], "不明")
 
     return stock_map
 
