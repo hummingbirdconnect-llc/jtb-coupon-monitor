@@ -11,7 +11,7 @@ permissions:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: チェックアウト
@@ -27,6 +27,9 @@ jobs:
 
       - name: 依存パッケージ
         run: pip install -r requirements.txt
+
+      - name: Playwright ブラウザインストール
+        run: python -m playwright install --with-deps chromium
 
       - name: JTB クーポン監視
         run: python jtb_coupon_monitor.py
