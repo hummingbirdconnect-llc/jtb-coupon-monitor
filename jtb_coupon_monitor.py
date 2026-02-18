@@ -354,7 +354,75 @@ def scrape_all_coupon_lists():
         print("🚨 異常検知: クーポンが0件です。サイト構造が変更された可能性があります。")
         sys.exit(1)
 
+    # 予約対象期間が終了しているクーポンを「配布終了」に上書き
+    expired_count = mark_expired_by_booking_period(all_coupons)
+    if expired_count:
+        print(f"📅 予約対象期間終了による配布終了: {expired_count}件")
+
     return all_coupons
+
+
+# ============================================================
+# 予約対象期間による配布終了判定
+# ============================================================
+def parse_booking_end_date(booking_period):
+    """
+    予約対象期間文字列から終了日を解析する。
+    対応フォーマット:
+      - "2025/10/1(水) ～ 2026/2/28(土)"   ← スラッシュ形式
+      - "2025年10月1日(水)～2026年3月23日(月)" ← 漢字形式
+    Returns: datetime.date or None
+    """
+    if not booking_period:
+        return None
+
+    # 「～」「〜」「~」の後ろの日付を取得
+    parts = re.split(r'[～〜~]', booking_period)
+    if len(parts) < 2:
+        return None
+
+    end_part = parts[-1].strip()
+
+    # スラッシュ形式: "2026/2/28(土)" or "2026/02/28(土)"
+    m = re.search(r'(\d{4})/(\d{1,2})/(\d{1,2})', end_part)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3))).date()
+        except ValueError:
+            return None
+
+    # 漢字形式: "2026年3月23日(月)"
+    m = re.search(r'(\d{4})年(\d{1,2})月(\d{1,2})日', end_part)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3))).date()
+        except ValueError:
+            return None
+
+    return None
+
+
+def mark_expired_by_booking_period(coupons):
+    """
+    予約対象期間の終了日が過ぎたクーポンを「配布終了」に上書きする。
+    既に「配布終了」のものはスキップ。
+    Returns: 上書きした件数
+    """
+    today = datetime.now().date()
+    expired_count = 0
+
+    for c in coupons:
+        if c.get("stock_status") == "配布終了":
+            continue
+
+        end_date = parse_booking_end_date(c.get("booking_period", ""))
+        if end_date and end_date < today:
+            c["stock_status"] = "配布終了"
+            expired_count += 1
+            print(f"  📅 期間終了: [{c['category']}] {c['title'][:50]} "
+                  f"(予約期限: {end_date})")
+
+    return expired_count
 
 
 # ============================================================
