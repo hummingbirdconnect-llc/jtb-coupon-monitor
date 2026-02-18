@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-18T00:07:40.490021",
+  "last_updated": "2026-02-18T03:01:26.997063",
   "ids": {
     "2601jtbhpnew": {
       "category": "国内",
@@ -286,7 +286,7 @@
       "title": "冬の東京ディズニーリゾート®に行くならJTB！割引クーポン",
       "discount": "5,000円引",
       "area": "千葉県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2510bouso": {
       "category": "国内",
@@ -314,13 +314,6 @@
       "title": "【山陽発限定】JR西日本利用のツアーで使えるクーポン",
       "discount": "最大10,000円引",
       "area": "千葉県・東京都・神奈川県",
-      "stock_status": "配布終了"
-    },
-    "2602jrthc": {
-      "category": "国内",
-      "title": "JR西日本利用のツアーで使えるクーポン＜第3弾＞",
-      "discount": "最大10,000円引",
-      "area": "富山県・石川県・福井県",
       "stock_status": "配布終了"
     },
     "2512nishi": {
@@ -377,7 +370,7 @@
       "title": "晴れの国おかやま！岡山県のおすすめ施設で使える割引クーポン",
       "discount": "最大20,000円引",
       "area": "岡山県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2509kochi": {
       "category": "国内",
@@ -482,7 +475,7 @@
       "title": "U-29旅(10代/20代)３名までの国内ツアーで使える割引クーポン",
       "discount": "5,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2509jtbyngdm": {
       "category": "国内",
@@ -568,6 +561,13 @@
       "area": "全国",
       "stock_status": "配布終了"
     },
+    "2511jrblack": {
+      "category": "国内",
+      "title": "JR西日本利用のツアーで使える割引クーポン",
+      "discount": "最大10,000円引",
+      "area": "埼玉県・千葉県・東京都",
+      "stock_status": "配布中"
+    },
     "2601jrfuksp": {
       "category": "国内",
       "title": "JR西日本利用のツアーで使えるクーポン＜第2弾＞",
@@ -575,11 +575,11 @@
       "area": "埼玉県・千葉県・東京都",
       "stock_status": "配布中"
     },
-    "2511jrblack": {
+    "2602jrthc": {
       "category": "国内",
-      "title": "JR西日本利用のツアーで使える割引クーポン",
+      "title": "JR西日本利用のツアーで使えるクーポン＜第3弾＞",
       "discount": "最大10,000円引",
-      "area": "埼玉県・千葉県・東京都",
+      "area": "富山県・石川県・福井県",
       "stock_status": "配布中"
     },
     "2511konpira": {
@@ -595,6 +595,27 @@
       "discount": "最大10,000円引",
       "area": "沖縄県",
       "stock_status": "配布中"
+    },
+    "2602sum": {
+      "category": "海外",
+      "title": "夏休み・シルバーウィークにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "不明"
+    },
+    "2602aut": {
+      "category": "海外",
+      "title": "冬休み・年末にも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+      "discount": "最大40,000円引",
+      "area": "全方面",
+      "stock_status": "不明"
+    },
+    "2602win": {
+      "category": "海外",
+      "title": "お正月・春休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
+      "discount": "最大60,000円引",
+      "area": "全方面",
+      "stock_status": "不明"
     },
     "2601qf": {
       "category": "海外",
@@ -628,27 +649,6 @@
       "category": "海外",
       "title": "祝！進級・進学！春休み・ＧＷは家族で海外へ！2-11歳のお子様含むご旅行に使えるルックJTBMySTYLEクーポン",
       "discount": "最大35,000円引",
-      "area": "全方面",
-      "stock_status": "不明"
-    },
-    "2511spr": {
-      "category": "海外",
-      "title": "GWにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年4-6月出発＞",
-      "discount": "最大20,000円引",
-      "area": "全方面",
-      "stock_status": "不明"
-    },
-    "2511sum": {
-      "category": "海外",
-      "title": "先どり 夏休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
-      "discount": "最大40,000円引",
-      "area": "全方面",
-      "stock_status": "不明"
-    },
-    "2511aut": {
-      "category": "海外",
-      "title": "もっと先どり 冬休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
-      "discount": "最大60,000円引",
       "area": "全方面",
       "stock_status": "不明"
     },
@@ -890,6 +890,13 @@
       "area": "ソウル",
       "stock_status": "不明"
     },
+    "2511spr": {
+      "category": "海外",
+      "title": "GWにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年4-6月出発＞",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "不明"
+    },
     "2601sfh": {
       "category": "海外",
       "title": "【新春福春】海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年1-6月出発＞",
@@ -925,6 +932,13 @@
       "area": "アメリカ",
       "stock_status": "不明"
     },
+    "2511sum": {
+      "category": "海外",
+      "title": "先どり 夏休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
+      "discount": "最大40,000円引",
+      "area": "全方面",
+      "stock_status": "不明"
+    },
     "2507sum": {
       "category": "海外",
       "title": "アリトク　先先先どり夏旅！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
@@ -944,6 +958,13 @@
       "title": "【ヨーロッパフェス】ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【ANA対象】",
       "discount": "最大120,000円引",
       "area": "欧州ロシア/アフリカ",
+      "stock_status": "不明"
+    },
+    "2511aut": {
+      "category": "海外",
+      "title": "もっと先どり 冬休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+      "discount": "最大60,000円引",
+      "area": "全方面",
       "stock_status": "不明"
     }
   }
