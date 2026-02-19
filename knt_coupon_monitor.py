@@ -211,6 +211,7 @@ def scrape_list_page(page_config):
             "type": coupon_type,
             "detail_url": detail_url,
             "detail_data": None,
+            "stock_status": "配布中",
         })
 
     print(f"  ✅ [{page_name}] {len(coupons)}件検出")
@@ -540,6 +541,39 @@ def _extract_end_date(period_str):
 
 
 # ============================================================
+# 配布状況判定（予約期間終了チェック）
+# ============================================================
+def mark_expired_by_booking_period(coupons):
+    """
+    予約対象期間の終了日が過ぎたクーポンを「配布終了」に上書きする。
+    KNTの _extract_end_date() を使って終了日を判定。
+    """
+    today = datetime.now().strftime("%Y-%m-%d")
+    expired_count = 0
+
+    for c in coupons:
+        if c.get("stock_status") == "配布終了":
+            continue
+
+        booking_period = ""
+        detail = c.get("detail_data")
+        if detail:
+            booking_period = detail.get("booking_period", "")
+
+        if not booking_period:
+            continue
+
+        end_date = _extract_end_date(booking_period)
+        if end_date and end_date < today:
+            c["stock_status"] = "配布終了"
+            expired_count += 1
+            print(f"  📅 期間終了: [{c['category']}] {c['title'][:50]} "
+                  f"(予約期限: {end_date})")
+
+    return expired_count
+
+
+# ============================================================
 # 差分検出（新規・消失）
 # ============================================================
 def detect_changes(master_ids, current_coupons):
@@ -694,6 +728,11 @@ def run_init():
         if detail.get("discount") and not coupon.get("discount"):
             coupon["discount"] = detail["discount"]
 
+    # 予約期間終了による配布終了判定
+    expired = mark_expired_by_booking_period(coupons)
+    if expired:
+        print(f"  📅 予約期間終了により {expired}件を「配布終了」に更新")
+
     save_daily_data(coupons)
 
     master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
@@ -715,6 +754,11 @@ def run_full():
         coupon["detail_data"] = detail
         if detail.get("discount") and not coupon.get("discount"):
             coupon["discount"] = detail["discount"]
+
+    # 予約期間終了による配布終了判定
+    expired = mark_expired_by_booking_period(coupons)
+    if expired:
+        print(f"  📅 予約期間終了により {expired}件を「配布終了」に更新")
 
     save_daily_data(coupons)
 
