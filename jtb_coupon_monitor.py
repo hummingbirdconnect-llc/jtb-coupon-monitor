@@ -331,8 +331,10 @@ def scrape_all_coupon_lists():
         if not coupons:
             continue
 
-        # Playwright でJS描画後のDOMから配布状況を判定（国内・海外共通）
-        stock_map = check_stock_status_playwright(page_config["url"], coupons)
+        # Playwright で配布状況を判定（国内: 詳細ページ確認、海外: DOMの.c-close__txt）
+        stock_map = check_stock_status_playwright(
+            page_config["url"], coupons, page_config.get("detail_pattern", ""),
+        )
         for c in coupons:
             c["stock_status"] = stock_map.get(c["id"], "不明")
 
@@ -478,12 +480,13 @@ def check_stock_status(api_url, coupons):
 # ============================================================
 # Playwright: 海外クーポン配布状況チェック
 # ============================================================
-def check_stock_status_playwright(page_url, coupons):
+def check_stock_status_playwright(page_url, coupons, detail_pattern=""):
     """
-    Playwright でページをJS描画し、配布状況を判定する。
-    - 国内: Stock APIが不正確なためPlaywrightで判定（data-id属性あり）
-    - 海外: Stock APIが存在しないためPlaywrightで判定（リンクからID抽出）
-    DOM上の .c-close__txt 要素内の「配布終了」テキストで判定する。
+    Playwright で配布状況を判定する。
+
+    海外: 一覧ページのDOM上の .c-close__txt「配布終了」テキストで判定
+    国内: 一覧ページでは判別不可のため、各詳細ページに
+          「本クーポンは終了いたしました」が表示されるかで判定
 
     Returns: {coupon_id: "配布中" or "配布終了"}
     """
@@ -494,6 +497,7 @@ def check_stock_status_playwright(page_url, coupons):
         return {c["id"]: "不明" for c in coupons}
 
     stock_map = {}
+    is_domestic = "kaigaicoupon" not in page_url
 
     try:
         print(f"  🎭 Playwright で配布状況を取得中... {page_url}")
@@ -505,7 +509,7 @@ def check_stock_status_playwright(page_url, coupons):
 
             page.goto(page_url, wait_until="domcontentloaded", timeout=60000)
 
-            # JS描画を待機（配布終了の表示はJSで動的に挿入される）
+            # JS描画を待機
             page.evaluate("window.scrollTo(0, document.body.scrollHeight)")
             page.wait_for_timeout(3000)
 
@@ -526,20 +530,56 @@ def check_stock_status_playwright(page_url, coupons):
                         continue
                     coupon_id = id_match.group(1)
 
-                # 重複スキップ（おすすめスライダー等で同一IDが複数回出現）
                 if coupon_id in seen_ids:
                     continue
                 seen_ids.add(coupon_id)
 
-                # .c-close__txt 内に「配布終了」があれば配布終了
-                close_el = item.query_selector(".c-close__txt")
-                if close_el:
-                    close_text = close_el.inner_text()
-                    if "配布終了" in close_text:
-                        stock_map[coupon_id] = "配布終了"
-                        continue
+                if not is_domestic:
+                    # 海外: .c-close__txt 内の「配布終了」で判定
+                    close_el = item.query_selector(".c-close__txt")
+                    if close_el:
+                        close_text = close_el.inner_text()
+                        if "配布終了" in close_text:
+                            stock_map[coupon_id] = "配布終了"
+                            continue
+                    stock_map[coupon_id] = "配布中"
+                else:
+                    # 国内: 一覧では判別不可、後で詳細ページで確認
+                    stock_map[coupon_id] = "要確認"
 
-                stock_map[coupon_id] = "配布中"
+            # 国内: 各詳細ページで「本クーポンは終了いたしました」を確認
+            if is_domestic:
+                pending_ids = [cid for cid, st in stock_map.items() if st == "要確認"]
+                print(f"  🎭 国内: {len(pending_ids)}件の詳細ページを確認中...")
+                for i, cid in enumerate(pending_ids):
+                    detail_url = f"{BASE_URL}{detail_pattern}{cid}/page.asp"
+                    try:
+                        page.goto(detail_url, wait_until="domcontentloaded", timeout=10000)
+                        page.wait_for_timeout(800)
+
+                        is_ended = page.evaluate('''() => {
+                            const els = document.querySelectorAll('h1, h2, h3, p, div');
+                            for (const el of els) {
+                                if (el.textContent.trim().startsWith('本クーポンは終了いたしました')) {
+                                    let p = el;
+                                    while (p) {
+                                        if (p.className && (p.className.includes('notice') || p.className.includes('note') || p.className.includes('attention'))) {
+                                            return false;
+                                        }
+                                        p = p.parentElement;
+                                    }
+                                    return true;
+                                }
+                            }
+                            return false;
+                        }''')
+
+                        stock_map[cid] = "配布終了" if is_ended else "配布中"
+                    except Exception:
+                        stock_map[cid] = "不明"
+
+                    if (i + 1) % 20 == 0:
+                        print(f"    ... {i + 1}/{len(pending_ids)}件完了")
 
             browser.close()
 
