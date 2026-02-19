@@ -3,7 +3,8 @@
 Google Sheets 書き出しスクリプト（JTB + KNT 統合版）
 ====================================================
 1つのスプレッドシートに以下のタブを書き出す:
-  - JTB_現在のクーポン
+  - JTB_国内_現在のクーポン
+  - JTB_海外_現在のクーポン
   - JTB_変動ログ
   - KNT_現在のクーポン
   - KNT_変動ログ
@@ -102,23 +103,23 @@ def load_change_log(data_dir):
 
 
 # ============================================================
-# JTB: 現在のクーポン
+# JTB: 現在のクーポン（国内・海外共通）
 # ============================================================
-def update_jtb_coupon_sheet(spreadsheet, coupons):
-    ws = get_or_create_sheet(spreadsheet, "JTB_現在のクーポン")
+def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
+    ws = get_or_create_sheet(spreadsheet, sheet_name)
 
     headers = [
-        "更新日時", "カテゴリ", "ID", "詳細URL", "タイトル", "割引額",
+        "更新日時", "ID", "詳細URL", "タイトル", "割引額",
         "配布状況",
         "エリア", "タイプ", "予約対象期間", "宿泊/出発対象期間", "店舗利用",
         "クーポンコード", "パスワード", "条件", "注意事項", "クーポンアフィリエイトリンク",
     ]
+    num_cols = len(headers)  # 16列: A〜P
 
     today = datetime.now().strftime("%Y-%m-%d")
-    # 配布中を先、配布終了を後に → カテゴリ → エリア
+    # 配布中を先、配布終了を後に → エリア
     coupons.sort(key=lambda x: (
         0 if x.get("stock_status") == "配布中" else 1,
-        x.get("category", ""),
         x.get("area", ""),
     ))
 
@@ -127,7 +128,6 @@ def update_jtb_coupon_sheet(spreadsheet, coupons):
         detail = c.get("detail_data") or {}
         rows.append([
             today,
-            c.get("category", ""),
             c.get("id", ""),
             c.get("detail_url", ""),
             c.get("title", ""),
@@ -148,9 +148,10 @@ def update_jtb_coupon_sheet(spreadsheet, coupons):
     ws.clear()
     ws.update(range_name="A1", values=rows)
 
-    # ヘッダー書式（17列: A〜Q）
-    ws.format("A1:Q1", {
-        "backgroundColor": {"red": 0.13, "green": 0.55, "blue": 0.13},
+    # ヘッダー書式
+    col_letter = chr(ord("A") + num_cols - 1)
+    ws.format(f"A1:{col_letter}1", {
+        "backgroundColor": header_color,
         "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
     })
 
@@ -165,7 +166,7 @@ def update_jtb_coupon_sheet(spreadsheet, coupons):
                         "startRowIndex": i - 1,
                         "endRowIndex": i,
                         "startColumnIndex": 0,
-                        "endColumnIndex": 17,
+                        "endColumnIndex": num_cols,
                     },
                     "cell": {"userEnteredFormat": {
                         "backgroundColor": {"red": 1, "green": 0.92, "blue": 0.92},
@@ -178,12 +179,12 @@ def update_jtb_coupon_sheet(spreadsheet, coupons):
         spreadsheet.batch_update({"requests": batch_requests})
 
     set_col_widths(spreadsheet, ws, [
-        90, 60, 130, 300, 400, 110, 80, 100, 120, 200, 200, 60, 150, 100, 200, 200, 250,
+        90, 130, 300, 400, 110, 80, 100, 120, 200, 200, 60, 150, 100, 200, 200, 250,
     ])
 
     active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
     ended = sum(1 for c in coupons if c.get("stock_status") == "配布終了")
-    print(f"  ✅ JTB_現在のクーポン を更新（{len(coupons)}件: 配布中={active}, 配布終了={ended}）")
+    print(f"  ✅ {sheet_name} を更新（{len(coupons)}件: 配布中={active}, 配布終了={ended}）")
 
 
 # ============================================================
@@ -316,8 +317,22 @@ def main():
     jtb_log = load_change_log(jtb_data_dir)
 
     if jtb_coupons:
-        print(f"\n📦 JTB: {len(jtb_coupons)}件")
-        update_jtb_coupon_sheet(spreadsheet, jtb_coupons)
+        jtb_domestic = [c for c in jtb_coupons if c.get("category") == "国内"]
+        jtb_overseas = [c for c in jtb_coupons if c.get("category") == "海外"]
+
+        print(f"\n📦 JTB: {len(jtb_coupons)}件（国内={len(jtb_domestic)}, 海外={len(jtb_overseas)}）")
+
+        if jtb_domestic:
+            update_jtb_coupon_sheet(
+                spreadsheet, jtb_domestic, "JTB_国内_現在のクーポン",
+                {"red": 0.13, "green": 0.55, "blue": 0.13},
+            )
+        if jtb_overseas:
+            update_jtb_coupon_sheet(
+                spreadsheet, jtb_overseas, "JTB_海外_現在のクーポン",
+                {"red": 0.15, "green": 0.35, "blue": 0.6},
+            )
+
         update_change_log_sheet(
             spreadsheet, "JTB_変動ログ", jtb_log,
             {"red": 0.8, "green": 0.4, "blue": 0.0},
