@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Google Sheets 書き出しスクリプト（JTB + KNT 統合版）
+Google Sheets 書き出しスクリプト（JTB + KNT + HIS 統合版）
 ====================================================
 1つのスプレッドシートに以下のタブを書き出す:
   - JTB_国内_現在のクーポン
@@ -8,6 +8,8 @@ Google Sheets 書き出しスクリプト（JTB + KNT 統合版）
   - JTB_変動ログ
   - KNT_現在のクーポン
   - KNT_変動ログ
+  - HIS_現在のクーポン
+  - HIS_変動ログ
 """
 
 import json
@@ -273,7 +275,91 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
 
 
 # ============================================================
-# 変動ログ（JTB / KNT 共通処理）
+# HIS: 現在のクーポン
+# ============================================================
+def update_his_coupon_sheet(spreadsheet, coupons):
+    ws = get_or_create_sheet(spreadsheet, "HIS_現在のクーポン")
+
+    headers = [
+        "更新日時", "カテゴリ", "タイトル", "割引額",
+        "配布状況",
+        "予約期間", "出発/宿泊期間",
+        "クーポンコード", "条件", "対象商品",
+        "クーポンアフィリエイトリンク",
+    ]
+    num_cols = len(headers)  # 11列: A〜K
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    # 配布中を先、配布終了を後に → カテゴリ
+    coupons.sort(key=lambda x: (
+        0 if x.get("stock_status") == "配布中" else 1,
+        x.get("category", ""),
+    ))
+
+    rows = [headers]
+    for c in coupons:
+        codes = c.get("coupon_codes", [])
+        code_strs = [cc["code"] for cc in codes]
+        cond_strs = [f'{cc["condition"]}→{cc["discount"]}' for cc in codes if cc.get("condition") or cc.get("discount")]
+
+        rows.append([
+            today,
+            c.get("category", ""),
+            c.get("title", ""),
+            c.get("discount", ""),
+            c.get("stock_status", "不明"),
+            c.get("booking_period", ""),
+            c.get("travel_period", ""),
+            " / ".join(code_strs),
+            " / ".join(cond_strs),
+            c.get("target", ""),
+            "",
+        ])
+
+    ws.clear()
+    ws.update(range_name="A1", values=rows)
+
+    # ヘッダー書式（HISブランドカラー: オレンジ系）
+    col_letter = chr(ord("A") + num_cols - 1)
+    ws.format(f"A1:{col_letter}1", {
+        "backgroundColor": {"red": 0.93, "green": 0.49, "blue": 0.0},
+        "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
+    })
+
+    # 配布終了行を薄赤に色付け
+    batch_requests = []
+    for i, c in enumerate(coupons, start=2):
+        if c.get("stock_status") == "配布終了":
+            batch_requests.append({
+                "repeatCell": {
+                    "range": {
+                        "sheetId": ws.id,
+                        "startRowIndex": i - 1,
+                        "endRowIndex": i,
+                        "startColumnIndex": 0,
+                        "endColumnIndex": num_cols,
+                    },
+                    "cell": {"userEnteredFormat": {
+                        "backgroundColor": {"red": 1, "green": 0.92, "blue": 0.92},
+                    }},
+                    "fields": "userEnteredFormat.backgroundColor",
+                }
+            })
+
+    if batch_requests:
+        spreadsheet.batch_update({"requests": batch_requests})
+
+    set_col_widths(spreadsheet, ws, [
+        90, 130, 400, 150, 80, 250, 250, 300, 300, 250, 250,
+    ])
+
+    active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
+    ended = sum(1 for c in coupons if c.get("stock_status") == "配布終了")
+    print(f"  ✅ HIS_現在のクーポン を更新（{len(coupons)}件: 配布中={active}, 配布終了={ended}）")
+
+
+# ============================================================
+# 変動ログ（JTB / KNT / HIS 共通処理）
 # ============================================================
 def update_change_log_sheet(spreadsheet, sheet_name, change_log, header_color):
     ws = get_or_create_sheet(spreadsheet, sheet_name)
@@ -389,6 +475,21 @@ def main():
         )
     else:
         print("\n📦 KNT: データなし（スキップ）")
+
+    # ----- HIS -----
+    his_data_dir = "./his_coupon_data"
+    his_coupons = load_latest_data(his_data_dir)
+    his_log = load_change_log(his_data_dir)
+
+    if his_coupons:
+        print(f"\n📦 HIS: {len(his_coupons)}件")
+        update_his_coupon_sheet(spreadsheet, his_coupons)
+        update_change_log_sheet(
+            spreadsheet, "HIS_変動ログ", his_log,
+            {"red": 0.75, "green": 0.4, "blue": 0.0},
+        )
+    else:
+        print("\n📦 HIS: データなし（スキップ）")
 
     print("\n✅ Google Sheets 書き出し完了")
 
