@@ -46,8 +46,7 @@ COUPON_PAGES = [
         "name": "国内",
         "url": f"{BASE_URL}/myjtb/campaign/coupon/",
         "detail_pattern": "/myjtb/campaign/coupon/detail/",
-        "stock_api": f"{BASE_URL}/myjtb/campaign/coupon/api/groupkey-stock",
-        "stock_method": "api",
+        "stock_method": "playwright",  # Stock APIは判定が不正確なためPlaywrightに変更
     },
     {
         "name": "海外",
@@ -332,20 +331,10 @@ def scrape_all_coupon_lists():
         if not coupons:
             continue
 
-        stock_method = page_config.get("stock_method", "api")
-
-        if stock_method == "playwright":
-            # 海外: Playwright でJS描画後のDOMから配布状況を判定
-            stock_map = check_stock_status_playwright(page_config["url"], coupons)
-            for c in coupons:
-                c["stock_status"] = stock_map.get(c["id"], "不明")
-        else:
-            # 国内: Stock API で配布状況を一括チェック
-            stock_api_url = page_config.get("stock_api")
-            if stock_api_url:
-                stock_map = check_stock_status(stock_api_url, coupons)
-                for c in coupons:
-                    c["stock_status"] = stock_map.get(c["id"], "不明")
+        # Playwright でJS描画後のDOMから配布状況を判定（国内・海外共通）
+        stock_map = check_stock_status_playwright(page_config["url"], coupons)
+        for c in coupons:
+            c["stock_status"] = stock_map.get(c["id"], "不明")
 
         all_coupons.extend(coupons)
 
@@ -492,7 +481,8 @@ def check_stock_status(api_url, coupons):
 def check_stock_status_playwright(page_url, coupons):
     """
     Playwright でページをJS描画し、配布状況を判定する。
-    海外クーポンページにはStock APIが存在しないため、
+    - 国内: Stock APIが不正確なためPlaywrightで判定（data-id属性あり）
+    - 海外: Stock APIが存在しないためPlaywrightで判定（リンクからID抽出）
     DOM上の .c-close__txt 要素内の「配布終了」テキストで判定する。
 
     Returns: {coupon_id: "配布中" or "配布終了"}
@@ -524,15 +514,17 @@ def check_stock_status_playwright(page_url, coupons):
 
             seen_ids = set()
             for item in items:
-                # 詳細リンクからIDを抽出
-                link = item.query_selector("a[href*='detail']")
-                if not link:
-                    continue
-                href = link.get_attribute("href") or ""
-                id_match = re.search(r'/detail/([^/]+)/', href)
-                if not id_match:
-                    continue
-                coupon_id = id_match.group(1)
+                # ID取得: data-id属性（国内）優先、なければリンクから抽出（海外）
+                coupon_id = item.get_attribute("data-id") or ""
+                if not coupon_id:
+                    link = item.query_selector("a[href*='detail']")
+                    if not link:
+                        continue
+                    href = link.get_attribute("href") or ""
+                    id_match = re.search(r'/detail/([^/]+)/', href)
+                    if not id_match:
+                        continue
+                    coupon_id = id_match.group(1)
 
                 # 重複スキップ（おすすめスライダー等で同一IDが複数回出現）
                 if coupon_id in seen_ids:
