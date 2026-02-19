@@ -195,12 +195,19 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
 
     headers = [
         "更新日時", "カテゴリ", "ID", "詳細URL", "タイトル", "割引額",
+        "配布状況",
         "エリア", "タイプ", "申込期間", "宿泊/出発対象期間",
         "クーポンコード", "条件", "注意事項", "クーポンアフィリエイトリンク",
     ]
+    num_cols = len(headers)  # 15列: A〜O
 
     today = datetime.now().strftime("%Y-%m-%d")
-    coupons.sort(key=lambda x: (x.get("category", ""), x.get("area", "")))
+    # 配布中を先、配布終了を後に → カテゴリ → エリア
+    coupons.sort(key=lambda x: (
+        0 if x.get("stock_status") == "配布中" else 1,
+        x.get("category", ""),
+        x.get("area", ""),
+    ))
 
     rows = [headers]
     for c in coupons:
@@ -212,6 +219,7 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
             c.get("detail_url", ""),
             c.get("title", ""),
             c.get("discount", "") or detail.get("discount", ""),
+            c.get("stock_status", "不明"),
             c.get("area", ""),
             c.get("type", ""),
             detail.get("booking_period", ""),
@@ -225,16 +233,43 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
     ws.clear()
     ws.update(range_name="A1", values=rows)
 
-    ws.format("A1:N1", {
+    # ヘッダー書式
+    col_letter = chr(ord("A") + num_cols - 1)
+    ws.format(f"A1:{col_letter}1", {
         "backgroundColor": {"red": 0.0, "green": 0.44, "blue": 0.75},
         "textFormat": {"bold": True, "foregroundColor": {"red": 1, "green": 1, "blue": 1}},
     })
 
+    # 配布終了行を薄赤に色付け
+    batch_requests = []
+    for i, c in enumerate(coupons, start=2):
+        if c.get("stock_status") == "配布終了":
+            batch_requests.append({
+                "repeatCell": {
+                    "range": {
+                        "sheetId": ws.id,
+                        "startRowIndex": i - 1,
+                        "endRowIndex": i,
+                        "startColumnIndex": 0,
+                        "endColumnIndex": num_cols,
+                    },
+                    "cell": {"userEnteredFormat": {
+                        "backgroundColor": {"red": 1, "green": 0.92, "blue": 0.92},
+                    }},
+                    "fields": "userEnteredFormat.backgroundColor",
+                }
+            })
+
+    if batch_requests:
+        spreadsheet.batch_update({"requests": batch_requests})
+
     set_col_widths(spreadsheet, ws, [
-        90, 110, 180, 350, 400, 130, 120, 160, 200, 200, 150, 200, 200, 250,
+        90, 110, 180, 350, 400, 130, 80, 120, 160, 200, 200, 150, 200, 200, 250,
     ])
 
-    print(f"  ✅ KNT_現在のクーポン を更新（{len(coupons)}件）")
+    active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
+    ended = sum(1 for c in coupons if c.get("stock_status") == "配布終了")
+    print(f"  ✅ KNT_現在のクーポン を更新（{len(coupons)}件: 配布中={active}, 配布終了={ended}）")
 
 
 # ============================================================
