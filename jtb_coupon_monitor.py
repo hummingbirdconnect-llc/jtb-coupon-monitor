@@ -35,6 +35,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 import time
 import re
+from coupon_validator import validate_coupons
 
 # ============================================================
 # 設定
@@ -362,6 +363,7 @@ def parse_booking_end_date(booking_period):
     対応フォーマット:
       - "2025/10/1(水) ～ 2026/2/28(土)"   ← スラッシュ形式
       - "2025年10月1日(水)～2026年3月23日(月)" ← 漢字形式
+      - "2026年1月1日～3月31日"              ← 年なし終了日（開始年から推定）
     Returns: datetime.date or None
     """
     if not booking_period:
@@ -373,6 +375,7 @@ def parse_booking_end_date(booking_period):
         return None
 
     end_part = parts[-1].strip()
+    start_part = parts[0].strip()
 
     # スラッシュ形式: "2026/2/28(土)" or "2026/02/28(土)"
     m = re.search(r'(\d{4})/(\d{1,2})/(\d{1,2})', end_part)
@@ -389,6 +392,23 @@ def parse_booking_end_date(booking_period):
             return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3))).date()
         except ValueError:
             return None
+
+    # --- 年なし終了日: 開始日から年を推定 ---
+    end_m = re.search(r'(\d{1,2})[月/](\d{1,2})', end_part)
+    if end_m:
+        # 開始側から年と月を取得
+        start_y = re.search(r'(\d{4})[年/](\d{1,2})[月/]', start_part)
+        if start_y:
+            start_year = int(start_y.group(1))
+            start_month = int(start_y.group(2))
+            end_month = int(end_m.group(1))
+            end_day = int(end_m.group(2))
+            # 終了月が開始月より小さければ翌年と推定
+            inferred_year = start_year + 1 if end_month < start_month else start_year
+            try:
+                return datetime(inferred_year, end_month, end_day).date()
+            except ValueError:
+                return None
 
     return None
 
@@ -849,6 +869,9 @@ def run_init():
         detail = scrape_detail_page(coupon["detail_url"])
         coupon["detail_data"] = detail
 
+    # バリデーション（ダブルチェック）
+    coupons, validation_report = validate_coupons(coupons, service_name="JTB")
+
     save_daily_data(coupons)
 
     master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
@@ -856,6 +879,8 @@ def run_init():
 
     generate_report(coupons, [])
     print(f"\n✅ 初期化完了: {len(coupons)}件")
+
+    return validation_report
 
 
 def run_full():
@@ -869,9 +894,14 @@ def run_full():
         detail = scrape_detail_page(coupon["detail_url"])
         coupon["detail_data"] = detail
 
+    # バリデーション（ダブルチェック）
+    master_ids = load_master_ids()
+    coupons, validation_report = validate_coupons(
+        coupons, master_ids=master_ids, service_name="JTB"
+    )
+
     save_daily_data(coupons)
 
-    master_ids = load_master_ids()
     events = detect_changes(master_ids, coupons)
 
     if events:
@@ -891,6 +921,8 @@ def run_full():
 
     # 古いファイルを自動削除
     cleanup_old_files()
+
+    return validation_report
 
 
 def main():
