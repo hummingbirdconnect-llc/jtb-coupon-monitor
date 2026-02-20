@@ -36,6 +36,7 @@ import hashlib
 from datetime import datetime, timedelta
 from pathlib import Path
 import re
+from coupon_validator import validate_coupons
 
 # ============================================================
 # 設定
@@ -247,7 +248,9 @@ def parse_coupons(html):
 
 
 def _extract_booking_end_date(period_str):
-    """予約期間文字列から終了日をYYYY-MM-DD形式で返す"""
+    """予約期間文字列から終了日をYYYY-MM-DD形式で返す。
+    年なし終了日にも対応（開始日の年から推定）。
+    """
     if not period_str:
         return None
 
@@ -256,6 +259,7 @@ def _extract_booking_end_date(period_str):
     if len(parts) < 2:
         return None
 
+    start_part = parts[0].strip()
     end_part = parts[-1].strip()
 
     # "2026年3月6日(金)9:00" or "2026年3月31日(火)"
@@ -275,6 +279,21 @@ def _extract_booking_end_date(period_str):
             return f"{y:04d}-{mo:02d}-{d:02d}"
         except ValueError:
             return None
+
+    # --- 年なし終了日: 開始日から年を推定 ---
+    end_m = re.search(r"(\d{1,2})[月/](\d{1,2})", end_part)
+    if end_m:
+        start_y = re.search(r"(\d{4})[年/](\d{1,2})[月/]", start_part)
+        if start_y:
+            start_year = int(start_y.group(1))
+            start_month = int(start_y.group(2))
+            end_month = int(end_m.group(1))
+            end_day = int(end_m.group(2))
+            inferred_year = start_year + 1 if end_month < start_month else start_year
+            try:
+                return f"{inferred_year:04d}-{end_month:02d}-{end_day:02d}"
+            except ValueError:
+                return None
 
     return None
 
@@ -432,6 +451,9 @@ def run_init():
         print("🚨 異常検知: クーポンが0件です。サイト構造が変更された可能性があります。")
         sys.exit(1)
 
+    # バリデーション（ダブルチェック）
+    coupons, validation_report = validate_coupons(coupons, service_name="HIS")
+
     save_daily_data(coupons)
 
     master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
@@ -439,6 +461,8 @@ def run_init():
 
     generate_report(coupons, [])
     print(f"\n✅ HIS 初期化完了: {len(coupons)}件")
+
+    return validation_report
 
 
 def run_full():
@@ -455,9 +479,14 @@ def run_full():
         print("🚨 異常検知: クーポンが0件です。サイト構造が変更された可能性があります。")
         sys.exit(1)
 
+    # バリデーション（ダブルチェック）
+    master_ids = load_master_ids()
+    coupons, validation_report = validate_coupons(
+        coupons, master_ids=master_ids, service_name="HIS"
+    )
+
     save_daily_data(coupons)
 
-    master_ids = load_master_ids()
     events = detect_changes(master_ids, coupons)
 
     if events:
@@ -476,6 +505,8 @@ def run_full():
     generate_report(coupons, events)
 
     cleanup_old_files()
+
+    return validation_report
 
 
 def main():

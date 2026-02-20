@@ -20,6 +20,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse, parse_qs
 import time
 import re
+from coupon_validator import validate_coupons
 
 # ============================================================
 # 設定
@@ -67,19 +68,24 @@ def today_str():
 
 
 def make_coupon_id(url):
-    """URLからユニークなIDを生成"""
+    """URLからユニークなIDを生成
+
+    cmpgncdクエリパラメータがある場合はそれを使用。
+    それ以外は読みやすいスラッグ + パス全体のハッシュを付与して衝突を防止。
+    """
     parsed = urlparse(url)
     # campaign.html?cmpgncd=XXX → cmpgncd値
     qs = parse_qs(parsed.query)
     if "cmpgncd" in qs:
         return f"cmpgn-{qs['cmpgncd'][0]}"
-    # /yado/sp/xxx/ → パス末尾
+    # パスベース: スラッグ + ハッシュで衝突防止
     path = parsed.path.rstrip("/")
     if path:
-        # 末尾2セグメントをIDに（例: yado-sp-okinawa_kcp）
         parts = [p for p in path.split("/") if p]
         slug = "-".join(parts[-3:]) if len(parts) >= 3 else "-".join(parts)
-        return slug
+        # パス全体のハッシュを末尾に付けて一意性を保証
+        path_hash = hashlib.md5(path.encode()).hexdigest()[:6]
+        return f"{slug}-{path_hash}"
     return hashlib.md5(url.encode()).hexdigest()[:12]
 
 
@@ -281,7 +287,7 @@ def scrape_detail_page(url):
             amounts = []
             for m in discount_matches:
                 amt = m.replace(",", "")
-                if amt.isdigit() and int(amt) >= 500:
+                if amt.isdigit() and int(amt) >= 100:
                     amounts.append(int(amt))
             if amounts:
                 max_amt = max(amounts)
@@ -733,6 +739,9 @@ def run_init():
     if expired:
         print(f"  📅 予約期間終了により {expired}件を「配布終了」に更新")
 
+    # バリデーション（ダブルチェック）
+    coupons, validation_report = validate_coupons(coupons, service_name="KNT")
+
     save_daily_data(coupons)
 
     master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
@@ -740,6 +749,8 @@ def run_init():
 
     generate_report(coupons, [])
     print(f"\n✅ KNT 初期化完了: {len(coupons)}件")
+
+    return validation_report
 
 
 def run_full():
@@ -760,9 +771,14 @@ def run_full():
     if expired:
         print(f"  📅 予約期間終了により {expired}件を「配布終了」に更新")
 
+    # バリデーション（ダブルチェック）
+    master_ids = load_master_ids()
+    coupons, validation_report = validate_coupons(
+        coupons, master_ids=master_ids, service_name="KNT"
+    )
+
     save_daily_data(coupons)
 
-    master_ids = load_master_ids()
     events = detect_changes(master_ids, coupons)
 
     if events:
@@ -782,6 +798,8 @@ def run_full():
 
     # 古いファイルを自動削除
     cleanup_old_files()
+
+    return validation_report
 
 
 def main():
