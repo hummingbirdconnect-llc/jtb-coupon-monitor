@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T00:10:30.861956",
+  "last_updated": "2026-02-20T02:58:33.325757",
   "ids": {
     "2601jtbhpnew": {
       "category": "国内",
@@ -106,6 +106,13 @@
       "area": "全国",
       "stock_status": "配布中"
     },
+    "2602route": {
+      "category": "国内",
+      "title": "全国のルートインホテルズ　飛行機、JR利用で使える割引クーポン",
+      "discount": "最大8,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
     "2601solar": {
       "category": "国内",
       "title": "全国のソラーレ ホテルズ アンド リゾーツ　飛行機、JR利用で使える割引クーポン",
@@ -139,7 +146,7 @@
       "title": "全国の共立リゾート40施設で使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2601hokkaido": {
       "category": "国内",
@@ -167,7 +174,7 @@
       "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2601nstoh": {
       "category": "国内",
@@ -321,7 +328,7 @@
       "title": "西日本のおすすめ施設で使える早春割引クーポン",
       "discount": "4,000円引",
       "area": "滋賀県・京都府・大阪府",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2510shiga": {
       "category": "国内",
@@ -371,6 +378,13 @@
       "discount": "最大20,000円引",
       "area": "岡山県",
       "stock_status": "配布終了"
+    },
+    "2602jalcp": {
+      "category": "国内",
+      "title": "【JAL麗らか四国キャンペーン】往復JAL便利用でいく小豆島ツアーで使える割引クーポン",
+      "discount": "最大16,000円引",
+      "area": "香川県",
+      "stock_status": "配布中"
     },
     "2509kochi": {
       "category": "国内",
@@ -468,21 +482,21 @@
       "title": "U-29旅（10代/20代）初めてのWeb予約限定！国内旅行に使える割引クーポン",
       "discount": "3,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2509young": {
       "category": "国内",
       "title": "U-29旅(10代/20代)３名までの国内ツアーで使える割引クーポン",
       "discount": "5,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2509jtbyngdm": {
       "category": "国内",
       "title": "U-29旅（10代/20代）国内グループ旅行応援クーポン",
       "discount": "10,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2601jtbknnew": {
       "category": "国内",
