@@ -111,7 +111,7 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
     ws = get_or_create_sheet(spreadsheet, sheet_name)
 
     headers = [
-        "更新日時", "ID", "詳細URL", "タイトル", "割引額",
+        "更新日時", "詳細URL", "タイトル", "ID", "割引額",
         "配布状況",
         "エリア", "タイプ", "予約対象期間", "宿泊/出発対象期間", "店舗利用",
         "クーポンコード", "パスワード", "条件", "注意事項", "クーポンアフィリエイトリンク",
@@ -130,9 +130,9 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
         detail = c.get("detail_data") or {}
         rows.append([
             today,
-            c.get("id", ""),
             c.get("detail_url", ""),
             c.get("title", ""),
+            c.get("id", ""),
             c.get("discount", ""),
             c.get("stock_status", "不明"),
             c.get("area", ""),
@@ -181,7 +181,7 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
         spreadsheet.batch_update({"requests": batch_requests})
 
     set_col_widths(spreadsheet, ws, [
-        90, 130, 300, 400, 110, 80, 100, 120, 200, 200, 60, 150, 100, 200, 200, 250,
+        90, 350, 400, 130, 110, 80, 100, 120, 200, 200, 60, 150, 100, 200, 200, 250,
     ])
 
     active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
@@ -196,7 +196,7 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
     ws = get_or_create_sheet(spreadsheet, "KNT_現在のクーポン")
 
     headers = [
-        "更新日時", "カテゴリ", "ID", "詳細URL", "タイトル", "割引額",
+        "更新日時", "詳細URL", "タイトル", "カテゴリ", "ID", "割引額",
         "配布状況",
         "エリア", "タイプ", "申込期間", "宿泊/出発対象期間",
         "クーポンコード", "条件", "注意事項", "クーポンアフィリエイトリンク",
@@ -216,10 +216,10 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
         detail = c.get("detail_data") or {}
         rows.append([
             today,
-            c.get("category", ""),
-            c.get("id", ""),
             c.get("detail_url", ""),
             c.get("title", ""),
+            c.get("category", ""),
+            c.get("id", ""),
             c.get("discount", "") or detail.get("discount", ""),
             c.get("stock_status", "不明"),
             c.get("area", ""),
@@ -266,7 +266,7 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
         spreadsheet.batch_update({"requests": batch_requests})
 
     set_col_widths(spreadsheet, ws, [
-        90, 110, 180, 350, 400, 130, 80, 120, 160, 200, 200, 150, 200, 200, 250,
+        90, 350, 400, 110, 180, 130, 80, 120, 160, 200, 200, 150, 200, 200, 250,
     ])
 
     active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
@@ -280,14 +280,16 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
 def update_his_coupon_sheet(spreadsheet, coupons):
     ws = get_or_create_sheet(spreadsheet, "HIS_現在のクーポン")
 
+    HIS_COUPON_PAGE = "https://www.his-j.com/campaign/shisaku/"
+
     headers = [
-        "更新日時", "カテゴリ", "タイトル", "割引額",
+        "更新日時", "施策ページURL", "タイトル", "カテゴリ", "割引額",
         "配布状況",
         "予約期間", "出発/宿泊期間",
         "クーポンコード", "条件", "対象商品",
         "クーポンアフィリエイトリンク",
     ]
-    num_cols = len(headers)  # 11列: A〜K
+    num_cols = len(headers)  # 12列: A〜L
 
     today = datetime.now().strftime("%Y-%m-%d")
     # 配布中を先、配布終了を後に → カテゴリ
@@ -304,8 +306,9 @@ def update_his_coupon_sheet(spreadsheet, coupons):
 
         rows.append([
             today,
-            c.get("category", ""),
+            HIS_COUPON_PAGE,
             c.get("title", ""),
+            c.get("category", ""),
             c.get("discount", ""),
             c.get("stock_status", "不明"),
             c.get("booking_period", ""),
@@ -350,7 +353,7 @@ def update_his_coupon_sheet(spreadsheet, coupons):
         spreadsheet.batch_update({"requests": batch_requests})
 
     set_col_widths(spreadsheet, ws, [
-        90, 130, 400, 150, 80, 250, 250, 300, 300, 250, 250,
+        90, 350, 400, 130, 150, 80, 250, 250, 300, 300, 250, 250,
     ])
 
     active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
