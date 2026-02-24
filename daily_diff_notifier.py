@@ -2,7 +2,7 @@
 """
 日次クーポン差分通知スクリプト
 ================================================================
-JTB・KNTのクーポン日次JSONスナップショットを比較し、
+JTB・KNT・HISのクーポン日次JSONスナップショットを比較し、
 フィールドレベルの変更を検出してHTMLメールで通知する。
 
 使い方:
@@ -63,6 +63,21 @@ SERVICES = {
             "coupon_codes": "クーポンコード",
         },
         "has_stock_status": False,
+    },
+    "HIS": {
+        "data_dir": BASE_DIR / "his_coupon_data",
+        "top_fields": {
+            "title": "タイトル",
+            "category": "カテゴリ",
+            "discount": "割引額",
+            "stock_status": "配布状況",
+            "booking_period": "予約期間",
+            "travel_period": "旅行対象期間",
+            "target": "対象",
+            "coupon_codes": "クーポンコード",
+        },
+        "detail_fields": {},
+        "has_stock_status": True,
     },
 }
 
@@ -602,7 +617,7 @@ def send_email(subject, html_body, plain_body):
 
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
-    msg["From"] = f"JTB/KNT Monitor <{gmail_address}>"
+    msg["From"] = f"JTB/KNT/HIS Monitor <{gmail_address}>"
     msg["To"] = notify_email
 
     msg.attach(MIMEText(plain_body, "plain", "utf-8"))
