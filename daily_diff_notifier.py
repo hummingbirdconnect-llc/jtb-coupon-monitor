@@ -286,6 +286,10 @@ tr.removed { background: #f8d7da; }
 .arrow { color: #6c757d; margin: 0 4px; }
 .footer { padding: 12px 24px; background: #f8f9fa; font-size: 12px; color: #6c757d; text-align: center; }
 .no-changes { padding: 20px; text-align: center; color: #6c757d; font-size: 14px; }
+.tweet-section { margin: 16px 24px; padding: 16px; background: #e8f4fd; border-radius: 8px; border: 1px solid #bee5eb; }
+.tweet-section h3 { margin: 0 0 12px 0; font-size: 15px; color: #0c5460; }
+.tweet-box { background: #fff; border: 1px solid #d1ecf1; border-radius: 6px; padding: 12px; margin: 8px 0; font-size: 13px; white-space: pre-wrap; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.tweet-label { font-size: 11px; color: #6c757d; margin-bottom: 4px; }
 </style>
 """
 
@@ -441,7 +445,51 @@ def build_summary_badges(diff):
     return " ".join(badges)
 
 
-def build_html_email(diffs, today_str):
+def load_tweets(today_str):
+    """generate_tweets.py が出力したツイートJSONを読み込む。"""
+    tweets_file = BASE_DIR / "tweets_output" / f"tweets_{today_str}.json"
+    if tweets_file.exists():
+        try:
+            with open(tweets_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            pass
+    return []
+
+
+def build_tweet_section_html(tweets):
+    """ツイート文面のHTMLセクションを生成する（コピペ用）。"""
+    if not tweets:
+        return ""
+    boxes = []
+    for i, t in enumerate(tweets, 1):
+        ota = _esc(t.get("ota", ""))
+        tweet = _esc(t.get("tweet", ""))
+        boxes.append(
+            f'<div class="tweet-label">{i}. [{ota}] {_esc(t.get("title", ""))}</div>'
+            f'<div class="tweet-box">{tweet}</div>'
+        )
+    return (
+        f'<div class="tweet-section">'
+        f'<h3>📋 ツイート文面（{len(tweets)}件 / コピペ用）</h3>'
+        f"{''.join(boxes)}"
+        f"</div>"
+    )
+
+
+def build_tweet_section_plain(tweets):
+    """ツイート文面のプレーンテキストセクションを生成する。"""
+    if not tweets:
+        return ""
+    lines = ["", "=" * 40, f"ツイート文面（{len(tweets)}件）", "=" * 40, ""]
+    for i, t in enumerate(tweets, 1):
+        lines.append(f"--- {i}/{len(tweets)} [{t.get('ota', '')}] ---")
+        lines.append(t.get("tweet", ""))
+        lines.append("")
+    return "\n".join(lines)
+
+
+def build_html_email(diffs, today_str, tweets=None):
     """全サービスのHTMLメールを生成する。"""
     # サマリー
     summary_rows = []
@@ -479,6 +527,7 @@ def build_html_email(diffs, today_str):
     {''.join(summary_rows)}
   </div>
   {''.join(sections)}
+  {build_tweet_section_html(tweets) if tweets else ''}
   <div class="footer">
     送信時刻: {_esc(now_str)} / 比較対象: {_esc(comparison_info)}
   </div>
@@ -488,7 +537,7 @@ def build_html_email(diffs, today_str):
     return html
 
 
-def build_plain_text(diffs, today_str):
+def build_plain_text(diffs, today_str, tweets=None):
     """プレーンテキストのフォールバックを生成する。"""
     lines = [f"クーポン変動レポート {today_str}", "=" * 40, ""]
     for diff in diffs:
@@ -515,6 +564,8 @@ def build_plain_text(diffs, today_str):
                     for ch in mod.changes:
                         lines.append(f"      {ch.label}: {ch.old} → {ch.new}")
         lines.append("")
+    if tweets:
+        lines.append(build_tweet_section_plain(tweets))
     return "\n".join(lines)
 
 
@@ -681,9 +732,14 @@ def main():
         print("\n全サービスで変動なし。メール送信をスキップします。")
         return
 
+    # ツイート文面を読み込み（generate_tweets.py で事前生成）
+    tweets = load_tweets(today_str)
+    if tweets:
+        print(f"\nツイート文面: {len(tweets)}件を読み込み（メールに含めます）")
+
     # メール生成
-    html_body = build_html_email(all_diffs, today_str)
-    plain_body = build_plain_text(all_diffs, today_str)
+    html_body = build_html_email(all_diffs, today_str, tweets=tweets)
+    plain_body = build_plain_text(all_diffs, today_str, tweets=tweets)
 
     # 件名
     change_parts = []
