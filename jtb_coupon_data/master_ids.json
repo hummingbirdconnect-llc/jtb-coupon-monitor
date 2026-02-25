@@ -1,10 +1,17 @@
 {
-  "last_updated": "2026-02-25T00:11:15.202513",
+  "last_updated": "2026-02-25T03:05:45.371349",
   "ids": {
     "2601jtbhpnew": {
       "category": "国内",
       "title": "【JTBトラベルメンバー新規会員向け】初回購入限定！国内クーポン",
       "discount": "1,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
+    "2603appcp": {
+      "category": "国内",
+      "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
+      "discount": "最大3,000円引",
       "area": "全国",
       "stock_status": "配布中"
     },
@@ -139,7 +146,7 @@
       "title": "ヒルトンおすすめ施設で使える割引クーポン",
       "discount": "最大20,000円引",
       "area": "北海道・東京都・神奈川県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2510kyoritsu": {
       "category": "国内",
@@ -153,7 +160,7 @@
       "title": "北海道へ【２・３月限定】オススメ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2602hokkaido": {
       "category": "国内",
@@ -293,7 +300,7 @@
       "title": "冬の東京ディズニーリゾート®に行くならJTB！割引クーポン",
       "discount": "5,000円引",
       "area": "千葉県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2510bouso": {
       "category": "国内",
@@ -328,7 +335,7 @@
       "title": "西日本のおすすめ施設で使える早春割引クーポン",
       "discount": "4,000円引",
       "area": "滋賀県・京都府・大阪府",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2510shiga": {
       "category": "国内",
@@ -398,7 +405,7 @@
       "title": "すいちょるけん！鳥取割引クーポン",
       "discount": "最大20,000円引",
       "area": "鳥取県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2511shimane": {
       "category": "国内",
@@ -482,14 +489,14 @@
       "title": "U-29旅（10代/20代）初めてのWeb予約限定！国内旅行に使える割引クーポン",
       "discount": "3,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2509young": {
       "category": "国内",
       "title": "U-29旅(10代/20代)３名までの国内ツアーで使える割引クーポン",
       "discount": "5,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2509jtbyngdm": {
       "category": "国内",
