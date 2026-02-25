@@ -56,8 +56,21 @@ jobs:
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
         run: python daily_diff_notifier.py
 
-      - name: HIS ブログ用HTML生成
+      - name: HIS ブログ用HTML生成（テーブル形式）
         run: python generate_his_html.py
+
+      - name: HIS ブログ用HTML生成（リスト形式）
+        run: python generate_his_list_html.py
+
+      - name: JTB ブログ用HTML生成（リスト形式）
+        run: python generate_jtb_html.py
+
+      - name: Google Drive 同期
+        if: env.GDRIVE_FOLDER_ID != ''
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+        run: python sync_to_gdrive.py
 
       - name: コミット＆プッシュ
         run: |
