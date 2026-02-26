@@ -111,10 +111,10 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
     ws = get_or_create_sheet(spreadsheet, sheet_name)
 
     headers = [
-        "更新日時", "詳細URL", "タイトル", "ID", "割引額",
+        "更新日時", "ID", "クーポンアフィリエイトリンク", "詳細URL", "タイトル",
         "配布状況",
-        "エリア", "タイプ", "予約対象期間", "宿泊/出発対象期間", "店舗利用",
-        "クーポンコード", "パスワード", "条件", "注意事項", "クーポンアフィリエイトリンク",
+        "割引額", "エリア", "タイプ", "予約対象期間", "宿泊/出発対象期間",
+        "店舗利用", "クーポンコード", "パスワード", "条件", "注意事項",
     ]
     num_cols = len(headers)  # 16列: A〜P
 
@@ -130,11 +130,12 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
         detail = c.get("detail_data") or {}
         rows.append([
             today,
+            c.get("id", ""),
+            "",  # クーポンアフィリエイトリンク
             c.get("detail_url", ""),
             c.get("title", ""),
-            c.get("id", ""),
-            c.get("discount", ""),
             c.get("stock_status", "不明"),
+            c.get("discount", ""),
             c.get("area", ""),
             c.get("type", ""),
             c.get("booking_period", ""),
@@ -144,7 +145,6 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
             ", ".join(detail.get("passwords", [])),
             " / ".join(detail.get("conditions", [])),
             " / ".join(detail.get("notes", [])),
-            "",
         ])
 
     ws.clear()
@@ -181,7 +181,7 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
         spreadsheet.batch_update({"requests": batch_requests})
 
     set_col_widths(spreadsheet, ws, [
-        90, 350, 400, 130, 110, 80, 100, 120, 200, 200, 60, 150, 100, 200, 200, 250,
+        90, 130, 250, 350, 400, 80, 110, 100, 120, 200, 200, 60, 150, 100, 200, 200,
     ])
 
     active = sum(1 for c in coupons if c.get("stock_status") == "配布中")
