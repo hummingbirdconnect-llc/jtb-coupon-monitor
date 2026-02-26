@@ -2,7 +2,7 @@
 """
 HIS クーポン JSON → SWELL WordPress ブロック HTML 自動生成スクリプト（リスト形式）
 
-既存の HIS_クーポンリスト.md と同一フォーマット（タブ構造＋リスト形式）で出力。
+既存の HIS クーポン記事と同一フォーマット（タブ構造＋リスト形式）で出力。
 テーブル形式の generate_his_html.py とは別に、記事埋め込み用リストHTMLを生成する。
 
 Usage:
@@ -29,60 +29,126 @@ OUTPUT_DIR = os.path.join(SCRIPT_DIR, "html_output")
 
 # ---------------------------------------------------------------------------
 # セクション定義（海外タブ / 国内タブ）
+# 各セクションの描画属性を宣言的に定義
+# heading_type: "h3" = wp:heading, "p" = wp:paragraph
+# list_type: "ol" = ordered, "ul" = unordered
+# list_class: リストの追加CSSクラス（空文字なら付与しない）
 # ---------------------------------------------------------------------------
-OVERSEAS_SECTIONS = ["海外ツアー", "海外その他"]
-DOMESTIC_SECTIONS = [
-    "国内ツアー・航空券＋ホテル",
-    "国内添乗員同行ツアー",
-    "国内ホテル",
-    "国内バスツアー",
+OVERSEAS_SECTIONS = [
+    {
+        "key": "海外航空券",
+        "display_name": "海外航空券",
+        "heading_type": "h3",
+        "list_type": "ol",
+        "list_class": "-list-under-dashed",
+        "id": "71",
+    },
+    {
+        "key": "海外ツアー",
+        "display_name": "海外ツアー",
+        "heading_type": "h3",
+        "list_type": "ol",
+        "list_class": "-list-under-dashed",
+        "id": "",
+    },
+    {
+        "key": "海外eSIM",
+        "display_name": "【海外eSIM】",
+        "heading_type": "p",
+        "list_type": "ul",
+        "list_class": "",
+        "id": "",
+    },
+    {
+        "key": "海外オプショナルツアー",
+        "display_name": "【海外オプショナルツアー】",
+        "heading_type": "p",
+        "list_type": "ul",
+        "list_class": "",
+        "id": "",
+    },
 ]
 
-# 記事内の h3 セクション名とID
-SECTION_DISPLAY = {
-    "海外ツアー": {"name": "海外ツアー", "id": ""},
-    "海外その他": {"name": "海外その他", "id": ""},
-    "国内ツアー・航空券＋ホテル": {"name": "国内ツアー", "id": "80"},
-    "国内添乗員同行ツアー": {"name": "添乗員同行ツアー", "id": "tenjyouin"},
-    "国内ホテル": {"name": "ホテル・宿泊", "id": "hotel"},
-    "国内バスツアー": {"name": "バスツアー・高速バス", "id": "bus"},
-}
-
-# h3 で使う既存IDマッピング（既存記事のアンカーを維持）
-SECTION_H3_IDS = {
-    "海外航空券": "71",
-    "海外ツアー": "",
-    "国内ツアー・航空券＋ホテル": "80",
-    "国内添乗員同行ツアー": "tenjyouin",
-    "国内ホテル": "hotel",
-    "国内バスツアー": "bus",
-}
+DOMESTIC_SECTIONS = [
+    {
+        "key": "国内ツアー",
+        "display_name": "国内ツアー",
+        "heading_type": "h3",
+        "list_type": "ol",
+        "list_class": "-list-under-dashed",
+        "id": "80",
+    },
+    {
+        "key": "国内ホテル",
+        "display_name": "ホテル・宿泊",
+        "heading_type": "h3",
+        "list_type": "ul",
+        "list_class": "-list-under-dashed",
+        "id": "hotel",
+    },
+    {
+        "key": "国内航空券",
+        "display_name": "国内航空券",
+        "heading_type": "h3",
+        "list_type": "ul",
+        "list_class": "-list-under-dashed",
+        "id": "",
+    },
+    {
+        "key": "国内バスツアー",
+        "display_name": "バスツアー・高速バス",
+        "heading_type": "h3",
+        "list_type": "ul",
+        "list_class": "-list-under-dashed",
+        "id": "bus",
+    },
+    {
+        "key": "国内添乗員同行ツアー",
+        "display_name": "添乗員同行ツアー",
+        "heading_type": "h3",
+        "list_type": "ul",
+        "list_class": "-list-under-dashed",
+        "id": "tenjyouin",
+    },
+]
 
 # ---------------------------------------------------------------------------
-# セクション分類（generate_his_html.py と同一ロジック）
+# セクション分類
 # ---------------------------------------------------------------------------
 KEYWORD_SECTION_OVERRIDES = [
-    ("TAViCA", "海外その他"),
-    ("TAVICA", "海外その他"),
-    ("eSIM", "海外その他"),
+    ("TAViCA", "海外ツアー"),
+    ("TAVICA", "海外ツアー"),
+    ("eSIM", "海外eSIM"),
+    ("オプショナルツアー", "海外オプショナルツアー"),
 ]
 
 CATEGORY_TO_SECTION = {
+    # 海外
     "海外旅行": "海外ツアー",
     "添乗員同行トルコツアー": "海外ツアー",
-    "海外eSIM": "海外その他",
-    "国内ツアー": "国内ツアー・航空券＋ホテル",
-    "国内航空券＋ホテル": "国内ツアー・航空券＋ホテル",
-    "沖縄行き航空券＋ホテル": "国内ツアー・航空券＋ホテル",
-    "石川行き航空券＋ホテル": "国内ツアー・航空券＋ホテル",
-    "能登（石川）行き航空券＋ホテル": "国内ツアー・航空券＋ホテル",
-    "奄美群島行き航空券＋ホテル": "国内ツアー・航空券＋ホテル",
-    "福島行きツアー": "国内ツアー・航空券＋ホテル",
+    "海外航空券・AirZ(海外航空券+ホテル)": "海外航空券",
+    "海外eSIM": "海外eSIM",
+    # 国内ツアー系
+    "国内ツアー": "国内ツアー",
+    "国内航空券＋ホテル": "国内ツアー",
+    "沖縄行き航空券＋ホテル": "国内ツアー",
+    "石川行き航空券＋ホテル": "国内ツアー",
+    "能登（石川）行き航空券＋ホテル": "国内ツアー",
+    "奄美群島行き航空券＋ホテル": "国内ツアー",
+    "福島行きツアー": "国内ツアー",
+    # 国内航空券（独立セクション）
+    "国内航空券": "国内航空券",
+    # 国内添乗員同行ツアー
     "国内添乗員同行ツアー": "国内添乗員同行ツアー",
+    # バス
     "国内バスツアー": "国内バスツアー",
     "高速バス・夜行バス": "国内バスツアー",
+    # ホテル
+    "国内ホテル": "国内ホテル",
     "北海道・福岡県ホテル": "国内ホテル",
     "グランピング・コテージ・貸し別荘宿泊": "国内ホテル",
+    "変なホテル": "国内ホテル",
+    "満天ノ 辻のや": "国内ホテル",
 }
 
 
@@ -95,17 +161,22 @@ def get_section(category: str, title: str = ""):
             return section
     if category in CATEGORY_TO_SECTION:
         return CATEGORY_TO_SECTION[category]
-    if "海外" in category or "eSIM" in category:
-        return "海外その他"
+    # フォールバック（キーワードベース）
+    if "eSIM" in category:
+        return "海外eSIM"
+    if "海外" in category:
+        return "海外ツアー"
     if "バス" in category:
         return "国内バスツアー"
     if "ホテル" in category or "グランピング" in category or "コテージ" in category:
         return "国内ホテル"
     if "添乗員" in category:
         return "国内添乗員同行ツアー"
+    if "航空券" in category and "国内" in category:
+        return "国内航空券"
     if "国内" in category or "行き" in category:
-        return "国内ツアー・航空券＋ホテル"
-    return "海外その他"
+        return "国内ツアー"
+    return "海外ツアー"
 
 
 # ---------------------------------------------------------------------------
@@ -127,7 +198,7 @@ def get_affiliate_link(coupon: dict, config: dict):
     if section and section in config.get("category_links", {}):
         link = config["category_links"][section]
         return link.get("url", ""), link.get("pixel", "")
-    fallback = config.get("category_links", {}).get("海外その他", {})
+    fallback = config.get("category_links", {}).get("海外ツアー", {})
     return fallback.get("url", ""), fallback.get("pixel", "")
 
 
@@ -145,7 +216,42 @@ def load_latest_coupons():
 
 
 # ---------------------------------------------------------------------------
-# List Item Generation (matching HIS_クーポンリスト.md format)
+# Text Cleanup Helpers
+# ---------------------------------------------------------------------------
+def clean_condition(cond: str) -> str:
+    """条件テキストを整形: '出発の180日以上前まで' → '180日以上前'"""
+    cond = re.sub(r"^出発の", "", cond)
+    cond = re.sub(r"^宿泊の", "", cond)
+    cond = re.sub(r"まで$", "", cond)
+    return cond
+
+
+def extract_discount_and_minimum(disc: str) -> tuple:
+    """割引テキストから割引額と最低金額を分離
+    例: 'お1人様5,000円割引お1人様の旅行代金30,000円以上'
+        → ('お1人様5,000円割引', '3万円以上')
+    """
+    # 割引部分を抽出
+    match = re.search(r"(.*?(?:割引|％OFF|%OFF))", disc)
+    if not match:
+        return disc, ""
+    discount_part = match.group(1)
+    remainder = disc[match.end():]
+    # 最低金額を抽出
+    min_match = re.search(r"(\d[\d,]+)円以上", remainder)
+    if min_match:
+        amount_str = min_match.group(1).replace(",", "")
+        amount = int(amount_str)
+        if amount >= 10000:
+            man = amount // 10000
+            return discount_part, f"{man}万円以上"
+        else:
+            return discount_part, f"{amount:,}円以上"
+    return discount_part, ""
+
+
+# ---------------------------------------------------------------------------
+# List Item Generation
 # ---------------------------------------------------------------------------
 def generate_coupon_list_item(coupon: dict, config: dict) -> str:
     """1つのクーポンを wp:list-item として生成"""
@@ -172,7 +278,6 @@ def generate_coupon_list_item(coupon: dict, config: dict) -> str:
     if travel:
         sub_items.append(f"対象出発期間：{html_escape(travel)}")
     if target:
-        # 簡潔にする
         short_target = target.replace("HISが企画・実施する", "")
         short_target = re.split(r"【対象外】", short_target)[0].strip()
         if len(short_target) > 80:
@@ -185,18 +290,49 @@ def generate_coupon_list_item(coupon: dict, config: dict) -> str:
             code = codes[0].get("code", "")
             sub_items.append(f"クーポンコード：<strong>{html_escape(code)}</strong>")
         else:
+            # 複数コード → ネストされたサブリストを生成
+            code_sub_items = []
             for cc in codes:
                 code = cc.get("code", "")
                 cond = cc.get("condition", "")
-                if cond:
-                    cond = cond.replace("出発の", "").replace("以上前まで", "前")
-                    sub_items.append(
-                        f"クーポンコード（{html_escape(cond)}）：<strong>{html_escape(code)}</strong>"
+                disc = cc.get("discount", "")
+                # 条件を整形、割引から最低金額を分離
+                cleaned_cond = clean_condition(cond) if cond else ""
+                discount_amount, minimum = extract_discount_and_minimum(disc) if disc else ("", "")
+                # 条件＋最低金額を結合
+                cond_with_min = cleaned_cond
+                if minimum and cond_with_min:
+                    cond_with_min = f"{cond_with_min}・{minimum}"
+                elif minimum:
+                    cond_with_min = minimum
+                # 説明テキスト: 条件→割引額
+                desc_parts = []
+                if cond_with_min:
+                    desc_parts.append(html_escape(cond_with_min))
+                if discount_amount:
+                    desc_parts.append(html_escape(discount_amount))
+                desc = "→".join(desc_parts) if desc_parts else ""
+                if desc:
+                    code_sub_items.append(
+                        f"<strong>{html_escape(code)}</strong>（{desc}）"
                     )
                 else:
-                    sub_items.append(
-                        f"クーポンコード：<strong>{html_escape(code)}</strong>"
-                    )
+                    code_sub_items.append(f"<strong>{html_escape(code)}</strong>")
+
+            # ネストリストHTML構築
+            nested_items_html = ""
+            for item in code_sub_items:
+                nested_items_html += (
+                    f"<!-- wp:list-item -->\n"
+                    f"<li>{item}</li>\n"
+                    f"<!-- /wp:list-item -->\n\n"
+                )
+            nested_list_html = (
+                "<!-- wp:list -->\n"
+                f'<ul class="wp-block-list">{nested_items_html}</ul>\n'
+                "<!-- /wp:list -->"
+            )
+            sub_items.append(f"クーポンコード：{nested_list_html}")
 
     # サブリストHTML
     sub_html = ""
@@ -217,34 +353,62 @@ def generate_coupon_list_item(coupon: dict, config: dict) -> str:
     )
 
 
-def generate_section_html(section_name: str, coupons: list, config: dict) -> str:
-    """セクション（h3 + ordered list）を生成"""
+def generate_section_html(section_def: dict, coupons: list, config: dict) -> str:
+    """セクション定義dictに基づき、見出し + リストを生成"""
     active = [c for c in coupons if c.get("stock_status") == "配布中"]
     if not active:
         return ""
 
-    display = SECTION_DISPLAY.get(section_name, {"name": section_name, "id": ""})
-    h3_name = display["name"]
-    h3_id = display["id"]
-    id_attr = f' id="{h3_id}"' if h3_id else ""
+    display_name = section_def["display_name"]
+    heading_type = section_def["heading_type"]
+    list_type = section_def["list_type"]
+    list_class = section_def["list_class"]
+    h3_id = section_def["id"]
 
     lines = []
-    lines.append('<!-- wp:heading {"level":3,"className":"is-style-section_ttl"} -->')
-    lines.append(
-        f'<h3 class="wp-block-heading is-style-section_ttl"{id_attr}>'
-        f"<strong>{h3_name}</strong></h3>"
-    )
-    lines.append("<!-- /wp:heading -->")
-    lines.append("")
-    lines.append('<!-- wp:list {"ordered":true,"className":"-list-under-dashed"} -->')
-    lines.append('<ol class="wp-block-list -list-under-dashed">')
+
+    # --- 見出し部分 ---
+    if heading_type == "h3":
+        id_attr = f' id="{h3_id}"' if h3_id else ""
+        lines.append('<!-- wp:heading {"level":3,"className":"is-style-section_ttl"} -->')
+        lines.append(
+            f'<h3 class="wp-block-heading is-style-section_ttl"{id_attr}>'
+            f"<strong>{display_name}</strong></h3>"
+        )
+        lines.append("<!-- /wp:heading -->")
+        lines.append("")
+    elif heading_type == "p":
+        lines.append("<!-- wp:paragraph -->")
+        lines.append(f"<p><strong>{display_name}</strong></p>")
+        lines.append("<!-- /wp:paragraph -->")
+        lines.append("")
+
+    # --- リスト部分 ---
+    class_attr = f" {list_class}" if list_class else ""
+
+    if list_type == "ol":
+        json_parts = ['"ordered":true']
+        if list_class:
+            json_parts.append(f'"className":"{list_class}"')
+        lines.append(f'<!-- wp:list {{{",".join(json_parts)}}} -->')
+        lines.append(f'<ol class="wp-block-list{class_attr}">')
+    else:
+        if list_class:
+            lines.append(f'<!-- wp:list {{"className":"{list_class}"}} -->')
+        else:
+            lines.append("<!-- wp:list -->")
+        lines.append(f'<ul class="wp-block-list{class_attr}">')
 
     for coupon in active:
         lines.append(generate_coupon_list_item(coupon, config))
         lines.append("")
 
-    lines.append("</ol>")
+    if list_type == "ol":
+        lines.append("</ol>")
+    else:
+        lines.append("</ul>")
     lines.append("<!-- /wp:list -->")
+
     return "\n".join(lines)
 
 
@@ -287,10 +451,13 @@ def generate_cta_button(url: str, text: str, pixel_url: str = "") -> str:
 # Tab Structure
 # ---------------------------------------------------------------------------
 def generate_full_html(coupons: list, config: dict, filename: str) -> str:
-    """HIS_クーポンリスト.md と同一のタブ構造HTMLを生成"""
+    """HIS クーポン記事と同一のタブ構造HTMLを生成"""
     # セクション振り分け
-    all_sections = OVERSEAS_SECTIONS + DOMESTIC_SECTIONS
-    sections = {s: [] for s in all_sections}
+    all_section_keys = (
+        [s["key"] for s in OVERSEAS_SECTIONS]
+        + [s["key"] for s in DOMESTIC_SECTIONS]
+    )
+    sections = {k: [] for k in all_section_keys}
     for coupon in coupons:
         section = get_section(coupon.get("category", ""), coupon.get("title", ""))
         if section is None:
@@ -299,10 +466,10 @@ def generate_full_html(coupons: list, config: dict, filename: str) -> str:
             sections[section].append(coupon)
 
     # CTA ボタン設定
-    cta_overseas = config.get("cta_buttons", {}).get("海外セール", {})
-    cta_domestic = config.get("cta_buttons", {}).get("国内セール", {})
-    # フォールバック
-    cta_url = "https://t.afi-b.com/visit.php?a=Q10113i-m6912001_H&p=X653459L"
+    cta_config = config.get("cta_buttons", {}).get("main", {})
+    cta_url = cta_config.get("url", "https://t.afi-b.com/visit.php?a=Q10113i-m6912001_H&p=X653459L")
+    cta_pixel = cta_config.get("pixel", "https://t.afi-b.com/lead/Q10113i/X653459L/m6912001_H")
+    cta_text = cta_config.get("text", "HISクーポンを一覧を見る→")
 
     tab_id = "97716cc7"
 
@@ -348,15 +515,15 @@ def generate_full_html(coupons: list, config: dict, filename: str) -> str:
     lines.append("<!-- /wp:paragraph -->")
     lines.append("")
 
-    for sec_name in OVERSEAS_SECTIONS:
-        sec_html = generate_section_html(sec_name, sections.get(sec_name, []), config)
+    for sec_def in OVERSEAS_SECTIONS:
+        sec_html = generate_section_html(sec_def, sections.get(sec_def["key"], []), config)
         if sec_html:
             lines.append(sec_html)
             lines.append("")
 
     # 海外CTA
     lines.append(
-        generate_cta_button(cta_url, "HISクーポンを一覧を見る→")
+        generate_cta_button(cta_url, cta_text, cta_pixel)
     )
 
     # 学生リンク
@@ -391,15 +558,15 @@ def generate_full_html(coupons: list, config: dict, filename: str) -> str:
     lines.append("<!-- /wp:paragraph -->")
     lines.append("")
 
-    for sec_name in DOMESTIC_SECTIONS:
-        sec_html = generate_section_html(sec_name, sections.get(sec_name, []), config)
+    for sec_def in DOMESTIC_SECTIONS:
+        sec_html = generate_section_html(sec_def, sections.get(sec_def["key"], []), config)
         if sec_html:
             lines.append(sec_html)
             lines.append("")
 
     # 国内CTA
     lines.append(
-        generate_cta_button(cta_url, "HISクーポンを一覧を見る→")
+        generate_cta_button(cta_url, cta_text, cta_pixel)
     )
 
     # 学生リンク
