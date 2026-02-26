@@ -1,0 +1,25 @@
+<!-- wp:list-item -->
+<li><strong>→<a href="{{ c.aff_url }}" rel="nofollow">{{ c.pixel }}{{ c.title }}</a></strong><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>割引額：<strong>{{ c.discount }}</strong></li>
+<!-- /wp:list-item -->
+{% if c.booking_period %}
+
+<!-- wp:list-item -->
+<li>予約期間：{{ c.booking_period }}</li>
+<!-- /wp:list-item -->
+{% endif %}
+{% if c.stay_period %}
+
+<!-- wp:list-item -->
+<li>{{ c.period_label }}：{{ c.stay_period }}</li>
+<!-- /wp:list-item -->
+{% endif %}
+{% if c.code_line %}
+
+<!-- wp:list-item -->
+<li>{{ c.code_line }}</li>
+<!-- /wp:list-item -->
+{% endif %}</ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
