@@ -3,13 +3,13 @@
 <!-- /wp:paragraph -->
 
 {% if first_time %}
-{% set text = "初回限定クーポンコード" %}
+{% set text = "初回限定" %}
 {% set id = "first-time" %}
 {% set section = first_time %}
 {% include "jtb/first_time_section.html.j2" %}
 
 {% endif %}
-{% set text = "国内旅行クーポンコード" %}
+{% set text = "国内旅行" %}
 {% set id = "" %}
 {% include "jtb/blocks/h3.html.j2" %}
 
@@ -22,16 +22,12 @@
 {% set coupons = sections.zenkoku %}
 {% include "jtb/blocks/ordered_list.html.j2" %}
 
-{% endif %}
+{% include "jtb/blocks/cta_domestic.html.j2" %}
+
 {% set height = "50px" %}
 {% include "jtb/blocks/spacer.html.j2" %}
 
-{% set text = "JTB新幹線クーポンはこちら" %}
-{% set id = "" %}
-{% include "jtb/blocks/balloon.html.j2" %}
-
-{% include "jtb/blocks/post_link.html.j2" %}
-
+{% endif %}
 {% if sections.hotel %}
 
 {% set text = "チェーンホテル限定クーポン" %}
@@ -41,10 +37,9 @@
 {% set coupons = sections.hotel %}
 {% include "jtb/blocks/ordered_list.html.j2" %}
 
-{% endif %}
-{% set height = "50px" %}
-{% include "jtb/blocks/spacer.html.j2" %}
+{% include "jtb/blocks/cta_domestic.html.j2" %}
 
+{% endif %}
 {% for area in area_sections %}
 {% if area.coupons %}
 
@@ -55,16 +50,7 @@
 {% set coupons = area.coupons %}
 {% include "jtb/blocks/ordered_list.html.j2" %}
 
+{% include "jtb/blocks/cta_domestic.html.j2" %}
+
 {% endif %}
 {% endfor %}
-{% set height = "50px" %}
-{% include "jtb/blocks/spacer.html.j2" %}
-
-<!-- wp:paragraph {"align":"center"} -->
-<p class="has-text-align-center"><span class="swl-fz u-fz-xs">誰でも使える</span></p>
-<!-- /wp:paragraph -->
-
-{% set url_json = domestic_cta.url_json %}
-{% set url_html = domestic_cta.url_html %}
-{% set label = "JTB 国内クーポン一覧ページ →" %}
-{% include "jtb/blocks/button_shiny.html.j2" %}

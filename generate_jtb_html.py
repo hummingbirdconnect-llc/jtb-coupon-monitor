@@ -219,11 +219,12 @@ def build_coupon_vm(coupon, config):
     }
 
 
-def build_url_pair(url_raw):
-    """URLの2形式を返す: HTML属性用(&amp;) と JSON属性用(\\u0026)"""
+def build_url_pair(url_raw, pixel_html=""):
+    """URLの2形式 + ピクセルHTMLを返す"""
     return {
         "url_html": escape(url_raw, quote=True),
         "url_json": url_raw.replace("&", "\\u0026"),
+        "pixel": pixel_html,
     }
 
 
@@ -262,13 +263,15 @@ def build_viewmodels(dom_sections, ovs_sections, config, filename):
         )
         first_time_btn = build_url_pair(ft_url)
 
-    # CTA URLs
+    # CTA URLs（ピクセル付き）
     dom_cta_raw = build_aff_url(
         "https://www.jtb.co.jp/myjtb/campaign/coupon/", "国内", config
     )
+    dom_pixel = build_pixel("国内", config)
     ovs_cta_raw = build_aff_url(
         "https://www.jtb.co.jp/myjtb/campaign/coupon/kaigaicoupon/", "海外", config
     )
+    ovs_pixel = build_pixel("海外", config)
 
     return {
         "tab_id": TAB_ID,
@@ -282,7 +285,7 @@ def build_viewmodels(dom_sections, ovs_sections, config, filename):
             "hotel": build_section_coupons(dom_sections["hotel"]),
         },
         "area_sections": area_sections,
-        "domestic_cta": build_url_pair(dom_cta_raw),
+        "domestic_cta": build_url_pair(dom_cta_raw, dom_pixel),
         # 海外
         "overseas_sections": {
             "tour": build_section_coupons(ovs_sections["tour"]),
@@ -290,7 +293,7 @@ def build_viewmodels(dom_sections, ovs_sections, config, filename):
             "air": build_section_coupons(ovs_sections["air"]),
             "optional": build_section_coupons(ovs_sections["optional"]),
         },
-        "overseas_cta": build_url_pair(ovs_cta_raw),
+        "overseas_cta": build_url_pair(ovs_cta_raw, ovs_pixel),
     }
 
 
