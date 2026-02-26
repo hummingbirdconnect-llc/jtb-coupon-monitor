@@ -1,0 +1,70 @@
+<!-- wp:paragraph -->
+<p>下記は、今すぐ誰でも使えるJTBの割引情報と配布中クーポンを一覧にしました。</p>
+<!-- /wp:paragraph -->
+
+{% if first_time %}
+{% set text = "初回限定クーポンコード" %}
+{% set id = "first-time" %}
+{% set section = first_time %}
+{% include "jtb/first_time_section.html.j2" %}
+
+{% endif %}
+{% set text = "国内旅行クーポンコード" %}
+{% set id = "" %}
+{% include "jtb/blocks/h3.html.j2" %}
+
+{% if sections.zenkoku %}
+
+{% set text = "全国共通クーポン" %}
+{% set id = "" %}
+{% include "jtb/blocks/balloon.html.j2" %}
+
+{% set coupons = sections.zenkoku %}
+{% include "jtb/blocks/ordered_list.html.j2" %}
+
+{% endif %}
+{% set height = "50px" %}
+{% include "jtb/blocks/spacer.html.j2" %}
+
+{% set text = "JTB新幹線クーポンはこちら" %}
+{% set id = "" %}
+{% include "jtb/blocks/balloon.html.j2" %}
+
+{% include "jtb/blocks/post_link.html.j2" %}
+
+{% if sections.hotel %}
+
+{% set text = "チェーンホテル限定クーポン" %}
+{% set id = "" %}
+{% include "jtb/blocks/balloon.html.j2" %}
+
+{% set coupons = sections.hotel %}
+{% include "jtb/blocks/ordered_list.html.j2" %}
+
+{% endif %}
+{% set height = "50px" %}
+{% include "jtb/blocks/spacer.html.j2" %}
+
+{% for area in area_sections %}
+{% if area.coupons %}
+
+{% set text = area.label %}
+{% set id = area.id %}
+{% include "jtb/blocks/balloon.html.j2" %}
+
+{% set coupons = area.coupons %}
+{% include "jtb/blocks/ordered_list.html.j2" %}
+
+{% endif %}
+{% endfor %}
+{% set height = "50px" %}
+{% include "jtb/blocks/spacer.html.j2" %}
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><span class="swl-fz u-fz-xs">誰でも使える</span></p>
+<!-- /wp:paragraph -->
+
+{% set url_json = domestic_cta.url_json %}
+{% set url_html = domestic_cta.url_html %}
+{% set label = "JTB 国内クーポン一覧ページ →" %}
+{% include "jtb/blocks/button_shiny.html.j2" %}

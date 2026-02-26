@@ -1,0 +1,64 @@
+<!-- wp:paragraph -->
+<p id="kaigai">下記は、今すぐ誰でも使えるJTBの海外旅行向け割引クーポンを一覧にしました。</p>
+<!-- /wp:paragraph -->
+
+{% set text = "海外ツアー（ルックJTB MySTYLE）" %}
+{% set id = "" %}
+{% include "jtb/blocks/h3.html.j2" %}
+
+{% if sections.tour %}
+
+{% set coupons = sections.tour %}
+{% include "jtb/blocks/ordered_list.html.j2" %}
+
+{% endif %}
+{% set height = "50px" %}
+{% include "jtb/blocks/spacer.html.j2" %}
+
+{% set text = "海外航空券＋ホテル" %}
+{% set id = "" %}
+{% include "jtb/blocks/h3.html.j2" %}
+
+{% if sections.air_hotel %}
+
+{% set coupons = sections.air_hotel %}
+{% include "jtb/blocks/ordered_list.html.j2" %}
+
+{% endif %}
+{% set height = "50px" %}
+{% include "jtb/blocks/spacer.html.j2" %}
+
+{% set text = "海外航空券" %}
+{% set id = "" %}
+{% include "jtb/blocks/h3.html.j2" %}
+
+{% if sections.air %}
+
+{% set coupons = sections.air %}
+{% include "jtb/blocks/ordered_list.html.j2" %}
+
+{% endif %}
+{% if sections.optional %}
+
+{% set height = "50px" %}
+{% include "jtb/blocks/spacer.html.j2" %}
+
+{% set text = "海外オプショナルツアー" %}
+{% set id = "" %}
+{% include "jtb/blocks/h3.html.j2" %}
+
+{% set coupons = sections.optional %}
+{% include "jtb/blocks/ordered_list.html.j2" %}
+
+{% endif %}
+{% set height = "50px" %}
+{% include "jtb/blocks/spacer.html.j2" %}
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><span class="swl-fz u-fz-xs">誰でも使える</span></p>
+<!-- /wp:paragraph -->
+
+{% set url_json = overseas_cta.url_json %}
+{% set url_html = overseas_cta.url_html %}
+{% set label = "JTB 海外クーポン一覧ページ →" %}
+{% include "jtb/blocks/button_shiny.html.j2" %}

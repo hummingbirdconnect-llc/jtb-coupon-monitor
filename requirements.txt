@@ -4,3 +4,4 @@ gspread>=6.0,<7
 google-auth>=2.28,<3
 playwright>=1.40,<2
 google-api-python-client>=2.100,<3
+Jinja2>=3.1,<4
