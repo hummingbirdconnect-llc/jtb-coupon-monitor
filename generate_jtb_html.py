@@ -2,7 +2,7 @@
 """
 JTB クーポン JSON → SWELL WordPress ブロック HTML 自動生成スクリプト
 
-既存の JTB_クーポンリスト.md と同一フォーマット（リスト形式）で出力する。
+記事フォーマット（balloon_box2 サブセクション・初回限定アコーディオン・割引額表示）に準拠。
 ValueCommerce アフィリエイトリンクを detail_url から自動構築。
 
 Usage:
@@ -26,6 +26,37 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CONFIG_PATH = os.path.join(SCRIPT_DIR, "config", "jtb_affiliate_links.json")
 JTB_DATA_DIR = os.path.join(SCRIPT_DIR, "jtb_coupon_data")
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "html_output")
+
+# ---------------------------------------------------------------------------
+# Section Definitions
+# ---------------------------------------------------------------------------
+# spacer_before: True ならセクション描画前に 50px スペーサーを挿入
+DOMESTIC_SECTIONS = [
+    {"name": "全国共通クーポン", "spacer_before": False},
+    {"name": "チェーンホテル限定クーポン", "spacer_before": True},
+    {"name": "北海道・東北エリア", "spacer_before": True},
+    {"name": "関東エリア", "spacer_before": False},
+    {"name": "甲信越・中部・東海エリア", "spacer_before": False},
+    {"name": "関西エリア", "spacer_before": False},
+    {"name": "中国・四国・九州・沖縄エリア", "spacer_before": False},
+]
+
+OVERSEAS_SECTIONS = [
+    {"name": "海外ツアー（ルックJTB MySTYLE）", "spacer_before": False},
+    {"name": "海外航空券＋ホテル", "spacer_before": True},
+    {"name": "海外航空券", "spacer_before": False},
+    {"name": "海外オプショナルツアー", "spacer_before": False},
+    {"name": "U-29旅（海外）", "spacer_before": True},
+]
+
+# 初回限定セクションに振り分けるキーワード（title に含まれるか）
+FIRST_TIME_KEYWORDS = ["初回", "新規会員"]
+
+# balloon_box2 の id 属性（一部セクションのみ）
+SECTION_IDS = {
+    "関東エリア": "kanto",
+    "関西エリア": "kansai",
+}
 
 
 # ---------------------------------------------------------------------------
@@ -62,12 +93,11 @@ def build_affiliate_url(detail_url: str, category: str, config: dict) -> str:
         pid = vc["domestic_pid"]
         utm = vc["domestic_utm"]
 
-    # detail_url に utm パラメータを追加
     sep = "&" if "?" in detail_url else "?"
     target_url = f"{detail_url}{sep}{utm}"
     encoded_url = quote(target_url, safe="")
 
-    return f"//ck.jp.ap.valuecommerce.com/servlet/referral?sid={sid}&pid={pid}&vc_url={encoded_url}"
+    return f"//ck.jp.ap.valuecommerce.com/servlet/referral?sid={sid}&amp;pid={pid}&amp;vc_url={encoded_url}"
 
 
 def build_tracking_pixel(category: str, config: dict) -> str:
@@ -77,41 +107,42 @@ def build_tracking_pixel(category: str, config: dict) -> str:
     pid = vc["overseas_pid"] if category == "海外" else vc["domestic_pid"]
     return (
         f'<img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner'
-        f'?sid={sid}&pid={pid}" height="1" width="0" border="0">'
+        f'?sid={sid}&amp;pid={pid}" height="1" width="0" border="0">'
     )
 
 
 # ---------------------------------------------------------------------------
 # Section Classification
 # ---------------------------------------------------------------------------
+def is_first_time_coupon(coupon: dict) -> bool:
+    """初回限定クーポンかどうか判定"""
+    title = coupon.get("title", "")
+    return any(kw in title for kw in FIRST_TIME_KEYWORDS)
+
+
 def classify_domestic_section(coupon: dict, config: dict) -> str:
-    """国内クーポンをセクションに分類"""
+    """国内クーポンをセクションに分類（JR セクション廃止 → 全国共通 or エリアへ）"""
     title = coupon.get("title", "")
     area = coupon.get("area", "")
 
     # 1. ホテルチェーン判定（タイトルベース）
     for kw in config.get("hotel_chain_keywords", []):
         if kw in title:
-            return "ホテルチェーン限定クーポン"
+            return "チェーンホテル限定クーポン"
 
-    # 2. JR・鉄道判定
-    for kw in config.get("jr_keywords", []):
-        if kw in title:
-            return "JR・鉄道利用クーポン"
-
-    # 3. タイトルキーワードでエリア判定
+    # 2. タイトルキーワードでエリア判定
     kw_map = config.get("title_keyword_to_section", {})
     for kw, section in kw_map.items():
         if kw in title:
             return section
 
-    # 4. area フィールドで都道府県判定
+    # 3. area フィールドで都道府県判定
     area_map = config.get("area_to_section", {})
     for pref, section in area_map.items():
         if pref in area:
             return section
 
-    # 5. デフォルト：全国共通
+    # 4. デフォルト：全国共通
     return "全国共通クーポン"
 
 
@@ -124,7 +155,6 @@ def classify_overseas_section(coupon: dict, config: dict) -> str:
         if kw in title:
             return section
 
-    # デフォルト
     if "航空券" in title and "ホテル" in title:
         return "海外航空券＋ホテル"
     if "航空券" in title:
@@ -136,12 +166,13 @@ def classify_overseas_section(coupon: dict, config: dict) -> str:
 # SWELL Block HTML Generation
 # ---------------------------------------------------------------------------
 def generate_coupon_list_item(coupon: dict, config: dict) -> str:
-    """1つのクーポンを wp:list-item として生成"""
+    """1つのクーポンを wp:list-item として生成（割引額付き）"""
     title = coupon.get("title", "")
     category = coupon.get("category", "国内")
     detail_url = coupon.get("detail_url", "")
     booking = coupon.get("booking_period", "")
     stay = coupon.get("stay_period", "")
+    discount = coupon.get("discount", "")
     detail = coupon.get("detail_data", {})
     codes = detail.get("coupon_codes", [])
     passwords = detail.get("passwords", [])
@@ -151,20 +182,26 @@ def generate_coupon_list_item(coupon: dict, config: dict) -> str:
     pixel = build_tracking_pixel(category, config)
 
     # メインリンク
-    link_html = (
-        f'<a href="{aff_url}" rel="nofollow">{pixel}{title}</a>'
-        if aff_url
-        else f"<strong>{title}</strong>"
-    )
+    if aff_url:
+        link_html = f'<a href="{aff_url}" rel="nofollow">{pixel}{title}</a>'
+    else:
+        link_html = f"<strong>{title}</strong>"
+
+    # 割引額テキスト（タイトル直後に括弧で表示）
+    discount_text = ""
+    if discount:
+        discount_text = f"（<strong>{discount}</strong>）"
 
     # サブリスト（期間・コード・パスワード）
     sub_items = []
     if booking:
-        label = "予約期間" if category == "国内" else "予約期間"
-        sub_items.append(f"<li>{label}：{booking}</li>")
+        sub_items.append(f"<li>予約期間：{booking}</li>")
     if stay:
-        label = "対象宿泊期間" if "宿泊" in coupon.get("type", "") else "対象出発期間"
-        if category == "海外":
+        if "宿泊" in coupon.get("type", ""):
+            label = "対象宿泊期間"
+        elif category == "海外":
+            label = "対象出発期間"
+        else:
             label = "対象出発期間"
         sub_items.append(f"<li>{label}：{stay}</li>")
 
@@ -179,75 +216,280 @@ def generate_coupon_list_item(coupon: dict, config: dict) -> str:
 
     sub_list = ""
     if sub_items:
+        # ターゲットHTML準拠: 各 list-item の間に空行、最後は </ul> に密着
+        parts = []
+        for i, item in enumerate(sub_items):
+            parts.append(f"<!-- wp:list-item -->\n{item}\n<!-- /wp:list-item -->")
+        items_html = "\n\n".join(parts)
         sub_list = (
             "<!-- wp:list -->\n"
-            '<ul class="wp-block-list">'
-            + "".join(
-                f"<!-- wp:list-item -->\n{item}\n<!-- /wp:list-item -->\n"
-                for item in sub_items
-            )
-            + "</ul>\n<!-- /wp:list -->"
+            f'<ul class="wp-block-list">{items_html}</ul>\n'
+            "<!-- /wp:list -->"
         )
 
     return (
         "<!-- wp:list-item -->\n"
-        f"<li><strong>→{link_html}</strong>"
+        f"<li><strong>→{link_html}</strong>{discount_text}"
         f"{sub_list}</li>\n"
         "<!-- /wp:list-item -->"
     )
 
 
-def generate_section_html(
-    section_name: str, coupons: list, config: dict, ordered: bool = True
-) -> str:
-    """セクション（h3 + リスト）を生成"""
+def generate_spacer(height: str = "50px") -> str:
+    """スペーサーブロックを生成"""
+    return (
+        f'<!-- wp:spacer {{"height":"{height}"}} -->\n'
+        f'<div style="height:{height}" aria-hidden="true" class="wp-block-spacer"></div>\n'
+        f"<!-- /wp:spacer -->"
+    )
+
+
+def generate_balloon_heading(text: str, section_id: str = "") -> str:
+    """balloon_box2 段落見出しを生成"""
+    id_attr = f' id="{section_id}"' if section_id else ""
+    return (
+        '<!-- wp:paragraph {"className":"is-style-balloon_box2"} -->\n'
+        f'<p class="is-style-balloon_box2"{id_attr}><strong>{text}</strong></p>\n'
+        "<!-- /wp:paragraph -->"
+    )
+
+
+def generate_h3_heading(text: str, h3_id: str = "") -> str:
+    """h3 セクション見出しを生成"""
+    id_attr = f' id="{h3_id}"' if h3_id else ""
+    return (
+        '<!-- wp:heading {"level":3,"className":"is-style-section_ttl"} -->\n'
+        f'<h3 class="wp-block-heading is-style-section_ttl"{id_attr}>'
+        f"{text}</h3>\n"
+        "<!-- /wp:heading -->"
+    )
+
+
+def generate_ordered_list(coupons: list, config: dict) -> str:
+    """ol リスト（-list-under-dashed）を生成"""
     if not coupons:
         return ""
 
-    h3_ids = config.get("section_h3_ids", {})
-    h3_id = h3_ids.get(section_name, "")
-    id_attr = f' id="{h3_id}"' if h3_id else ""
+    # ターゲットHTML準拠: <ol> と最初の list-item を密着
+    items = []
+    for coupon in coupons:
+        items.append(generate_coupon_list_item(coupon, config))
+
+    items_html = "\n\n".join(items)
+
+    return (
+        '<!-- wp:list {"ordered":true,"className":"-list-under-dashed"} -->\n'
+        f'<ol class="wp-block-list -list-under-dashed">{items_html}</ol>\n'
+        "<!-- /wp:list -->"
+    )
+
+
+def generate_first_time_section(coupons: list, config: dict) -> str:
+    """初回限定セクション（h3 + ol + アコーディオン）を生成"""
+    if not coupons:
+        return ""
 
     lines = []
 
-    # h3
-    lines.append('<!-- wp:heading {"level":3,"className":"is-style-section_ttl"} -->')
-    lines.append(
-        f'<h3 class="wp-block-heading is-style-section_ttl"{id_attr}>'
-        f"<strong>{section_name}</strong></h3>"
-    )
-    lines.append("<!-- /wp:heading -->")
+    # h3 見出し
+    lines.append(generate_h3_heading("初回限定", "first-time"))
     lines.append("")
 
-    # リスト開始
-    if ordered:
-        lines.append(
-            '<!-- wp:list {"ordered":true,"className":"-list-under-dashed"} -->'
-        )
-        lines.append('<ol class="wp-block-list -list-under-dashed">')
-    else:
-        lines.append('<!-- wp:list {"className":"-list-under-dashed"} -->')
-        lines.append('<ul class="wp-block-list -list-under-dashed">')
+    # クーポンリスト
+    lines.append(generate_ordered_list(coupons, config))
+    lines.append("")
 
-    # 各クーポン
-    for coupon in coupons:
-        lines.append(generate_coupon_list_item(coupon, config))
+    # アコーディオン（初回限定の利用条件 - 固定コンテンツ）
+    # 初回限定クーポンの detail_url からCTAボタン用URLを生成
+    first_coupon = coupons[0]
+    cta_url = ""
+    if first_coupon.get("detail_url"):
+        cta_url = build_affiliate_url(
+            first_coupon["detail_url"], "国内", config
+        )
+
+    accordion_html = _build_first_time_accordion(cta_url)
+    lines.append(accordion_html)
+    lines.append("")
+
+    return "\n".join(lines)
+
+
+def _build_first_time_accordion(cta_url: str) -> str:
+    """初回限定クーポンの注意事項アコーディオン（固定コンテンツ）"""
+    cta_button = ""
+    if cta_url:
+        # JSON属性では & を使い、HTML属性では &amp; を使う
+        cta_url_json = cta_url.replace("&amp;", "&")
+        cta_button = (
+            f'<!-- wp:loos/button {{"hrefUrl":"{cta_url_json}","isNewTab":true,'
+            f'"color":"blue","btnSize":"l","className":"is-style-btn_normal"}} -->\n'
+            f'<div class="swell-block-button blue_ -size-l is-style-btn_normal">'
+            f'<a href="{cta_url}" target="_blank" rel="noopener noreferrer" '
+            f'class="swell-block-button__link"><span>【初回限定】 JTBクーポン ページ→</span></a></div>\n'
+            f"<!-- /wp:loos/button -->"
+        )
+
+    return f"""<!-- wp:loos/accordion {{"className":"is-style-default"}} -->
+<div class="swell-block-accordion is-style-default"><!-- wp:loos/accordion-item -->
+<details class="swell-block-accordion__item" data-swl-acc="wrapper"><summary class="swell-block-accordion__title" data-swl-acc="header"><span class="swell-block-accordion__label"><strong>注意：初回割引クーポンコードを使う条件</strong></span><span class="swell-block-accordion__icon c-switchIconBtn" data-swl-acc="icon" aria-hidden="true" data-opened="false"><i class="__icon--closed icon-caret-down"></i><i class="__icon--opened icon-caret-up"></i></span></summary><div class="swell-block-accordion__body" data-swl-acc="body"><!-- wp:group {{"className":"is-style-bg_stripe","layout":{{"type":"constrained"}}}} -->
+<div class="wp-block-group is-style-bg_stripe"><!-- wp:list {{"ordered":true}} -->
+<ol class="wp-block-list"><!-- wp:list-item -->
+<li><strong>対象者:</strong><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>JTBトラベルメンバーに新規会員登録</strong>した方限定です。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>JTBのウェブサイトでの<strong>初回予約</strong>にのみ利用できます。</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>利用条件:</strong><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>JTBの<strong>ウェブサイトからの予約限定</strong>です。店舗や電話での予約には使えません。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>対象となるプランは「JTB宿泊プラン」「るるぶトラベルプラン」「JR＋宿泊プラン」「飛行機＋宿泊プラン」など幅広く利用可能です。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>お一人様1回限りの利用となります。</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>併用は合計10枚まで。（適応外とのクーポンとの場合は併用できない。）</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>国内の宿泊とツアーのみでしか使えない。（海外は利用不可）</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li><strong>他のキャンペーンとの併用がお得:</strong><!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>JTBでは、初回クーポンと併用できる「初めての旅行＆エントリーでポイントキャンペーン」などを実施している場合があります。エントリーするだけでポイントがもらえるため、さらにお得になります。</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list --></li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p><span class="swl-fz u-fz-xs">※海外の初回限定の割引クーポンコードはありません。→<a href="#kaigai">海外JTB割引クーポンコード一覧</a></span></p>
+<!-- /wp:paragraph -->
+
+{cta_button}</div>
+<!-- /wp:group --></div></details>
+<!-- /wp:loos/accordion-item --></div>
+<!-- /wp:loos/accordion -->"""
+
+
+def generate_domestic_html(
+    first_time_coupons: list,
+    section_coupons: dict,
+    config: dict,
+) -> str:
+    """国内タブの HTML を生成"""
+    lines = []
+
+    # イントロ段落（h2 なし）
+    lines.append("<!-- wp:paragraph -->")
+    lines.append(
+        "<p>下記は、今すぐ誰でも使えるJTBの割引情報と配布中クーポンを一覧にしました。</p>"
+    )
+    lines.append("<!-- /wp:paragraph -->")
+    lines.append("")
+
+    # 初回限定セクション
+    if first_time_coupons:
+        lines.append(generate_first_time_section(first_time_coupons, config))
         lines.append("")
 
-    # リスト終了
-    if ordered:
-        lines.append("</ol>")
-    else:
-        lines.append("</ul>")
-    lines.append("<!-- /wp:list -->")
+    # 「国内旅行」h3
+    lines.append(generate_h3_heading("国内旅行"))
+    lines.append("")
+
+    # 各サブセクション（balloon_box2）
+    for section_def in DOMESTIC_SECTIONS:
+        name = section_def["name"]
+        coupons = section_coupons.get(name, [])
+        if not coupons:
+            continue
+
+        # スペーサー
+        if section_def["spacer_before"]:
+            lines.append(generate_spacer())
+            lines.append("")
+
+        # balloon_box2 見出し
+        section_id = SECTION_IDS.get(name, "")
+        lines.append(generate_balloon_heading(name, section_id))
+        lines.append("")
+
+        # クーポンリスト
+        lines.append(generate_ordered_list(coupons, config))
+        lines.append("")
+
+    return "\n".join(lines)
+
+
+def generate_overseas_html(
+    section_coupons: dict,
+    config: dict,
+) -> str:
+    """海外タブの HTML を生成"""
+    lines = []
+
+    # イントロ段落（h2 なし）
+    lines.append("<!-- wp:paragraph -->")
+    lines.append(
+        "<p>下記は、今すぐ誰でも使えるJTBの海外割引情報と配布中クーポンを一覧にしました。</p>"
+    )
+    lines.append("<!-- /wp:paragraph -->")
+    lines.append("")
+
+    # 「海外旅行」h3
+    lines.append(generate_h3_heading("海外旅行", "kaigai"))
+    lines.append("")
+
+    # 各サブセクション（balloon_box2）
+    for section_def in OVERSEAS_SECTIONS:
+        name = section_def["name"]
+        coupons = section_coupons.get(name, [])
+        if not coupons:
+            continue
+
+        if section_def["spacer_before"]:
+            lines.append(generate_spacer())
+            lines.append("")
+
+        lines.append(generate_balloon_heading(name))
+        lines.append("")
+
+        lines.append(generate_ordered_list(coupons, config))
+        lines.append("")
 
     return "\n".join(lines)
 
 
 def generate_cta_button(url: str, text: str, pixel_html: str = "") -> str:
-    """CTA ボタンブロックを生成"""
+    """CTA ボタンブロックを生成
+
+    url は &amp; エスケープ済みで渡されることを前提とする。
+    JSON コメント内の hrefUrl には &amp; → & に戻したものを使う。
+    """
+    # JSON属性では & を使い、HTML属性では &amp; を使う
+    url_for_json = url.replace("&amp;", "&")
+
     lines = []
-    lines.append('<!-- wp:paragraph {"align":"center","className":"u-mb-ctrl u-mb-0"} -->')
+    lines.append(
+        '<!-- wp:paragraph {"align":"center","className":"u-mb-ctrl u-mb-0"} -->'
+    )
     lines.append(
         '<p class="has-text-align-center u-mb-ctrl u-mb-0">'
         '<strong><span class="swl-fz u-fz-s">＼JTBクーポンをまとめて見るなら／</span></strong></p>'
@@ -255,32 +497,35 @@ def generate_cta_button(url: str, text: str, pixel_html: str = "") -> str:
     lines.append("<!-- /wp:paragraph -->")
     lines.append("")
     lines.append(
-        f'{{"hrefUrl":"{url}","color":"blue","className":"is-style-btn_shiny u-mb-ctrl u-mb-0"}}'
+        f'<!-- wp:loos/button {{"hrefUrl":"{url_for_json}","color":"blue",'
+        f'"className":"is-style-btn_shiny u-mb-ctrl u-mb-0"}} -->'
     )
-    # SWELL button block
-    lines_btn = []
-    lines_btn.append(
-        f'<!-- wp:loos/button {{"hrefUrl":"{url}","color":"blue","className":"is-style-btn_shiny u-mb-ctrl u-mb-0"}} -->'
-    )
-    lines_btn.append(
+    lines.append(
         f'<div class="swell-block-button -html blue_ is-style-btn_shiny u-mb-ctrl u-mb-0">'
         f'<a href="{url}" rel="nofollow">'
         f"{pixel_html}{text}</a></div>"
     )
-    lines_btn.append("<!-- /wp:loos/button -->")
-    lines_btn.append("")
-    lines_btn.append('<!-- wp:paragraph {"align":"center","className":"u-mb-ctrl u-mb-30"} -->')
-    lines_btn.append(
+    lines.append("<!-- /wp:loos/button -->")
+    lines.append("")
+    lines.append(
+        '<!-- wp:paragraph {"align":"center","className":"u-mb-ctrl u-mb-30"} -->'
+    )
+    lines.append(
         '<p class="has-text-align-center u-mb-ctrl u-mb-30"><strong>★誰でも使える★</strong></p>'
     )
-    lines_btn.append("<!-- /wp:paragraph -->")
-    return "\n".join(lines_btn)
+    lines.append("<!-- /wp:paragraph -->")
+    return "\n".join(lines)
 
 
 def generate_tab_html(
-    domestic_html: str, overseas_html: str, tab_id: str = "b3c7e9f1"
+    domestic_html: str, overseas_html: str, config: dict, tab_id: str = "b3c7e9f1"
 ) -> str:
     """国内/海外タブ構造全体を生成"""
+    vc = config["valuecommerce"]
+    sid = vc["sid"]
+    dom_pid = vc["domestic_pid"]
+    ovs_pid = vc["overseas_pid"]
+
     lines = []
 
     # タブコンテナ開始
@@ -302,7 +547,7 @@ def generate_tab_html(
         f'</ul><div class="c-tabBody">'
     )
 
-    # タブ0: 国内
+    # --- タブ0: 国内 ---
     lines.append(f'<!-- wp:loos/tab-body {{"tabId":"{tab_id}"}} -->')
     lines.append(
         f'<div id="tab-{tab_id}-0" class="c-tabBody__item" aria-hidden="false">'
@@ -313,35 +558,23 @@ def generate_tab_html(
     lines.append(
         '<div class="wp-block-group has-swl-pale-04-background-color has-background">'
     )
-    lines.append('<!-- wp:heading {"textAlign":"center"} -->')
-    lines.append(
-        '<h2 class="wp-block-heading has-text-align-center">'
-        "【国内】JTBの誰でも使える割引クーポンコード一覧</h2>"
-    )
-    lines.append("<!-- /wp:heading -->")
-    lines.append("")
-    lines.append("<!-- wp:paragraph -->")
-    lines.append(
-        "<p>下記は、今すぐ誰でも使えるJTBの割引情報と配布中クーポンを一覧にしました。</p>"
-    )
-    lines.append("<!-- /wp:paragraph -->")
-    lines.append("")
 
     lines.append(domestic_html)
 
     # 国内 CTA ボタン
-    vc = {"sid": "3448423", "pid": "885714709"}
-    cta_url = (
-        f'//ck.jp.ap.valuecommerce.com/servlet/referral?sid={vc["sid"]}&pid={vc["pid"]}'
-        f"&vc_url=https%3A%2F%2Fwww.jtb.co.jp%2Fmyjtb%2Fcampaign%2Fcoupon%2F"
-        f"%3Futm_source%3Dvcdom%26utm_medium%3Daffiliate"
+    dom_cta_utm = quote(
+        "https://www.jtb.co.jp/myjtb/campaign/coupon/?utm_source=vcdom&utm_medium=affiliate",
+        safe="",
     )
-    pixel_html = (
+    dom_cta_url = f"//ck.jp.ap.valuecommerce.com/servlet/referral?sid={sid}&amp;pid={dom_pid}&amp;vc_url={dom_cta_utm}"
+    dom_pixel = (
         f'<img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner'
-        f'?sid={vc["sid"]}&pid={vc["pid"]}" height="1" width="0" border="0">'
+        f'?sid={sid}&amp;pid={dom_pid}" height="1" width="0" border="0">'
     )
     lines.append("")
-    lines.append(generate_cta_button(cta_url, "JTB国内クーポンの一覧はこちら", pixel_html))
+    lines.append(
+        generate_cta_button(dom_cta_url, "JTB国内クーポンの一覧はこちら", dom_pixel)
+    )
 
     lines.append("")
     lines.append("</div>")
@@ -349,7 +582,7 @@ def generate_tab_html(
     lines.append("</div>")
     lines.append("<!-- /wp:loos/tab-body -->")
 
-    # タブ1: 海外
+    # --- タブ1: 海外 ---
     lines.append(f'<!-- wp:loos/tab-body {{"id":1,"tabId":"{tab_id}"}} -->')
     lines.append(
         f'<div id="tab-{tab_id}-1" class="c-tabBody__item" aria-hidden="true">'
@@ -360,32 +593,22 @@ def generate_tab_html(
     lines.append(
         '<div class="wp-block-group has-swl-pale-04-background-color has-background">'
     )
-    lines.append('<!-- wp:heading {"textAlign":"center"} -->')
-    lines.append(
-        '<h2 class="wp-block-heading has-text-align-center">'
-        "【海外】JTBの誰でも使える割引クーポンコード一覧</h2>"
-    )
-    lines.append("<!-- /wp:heading -->")
-    lines.append("")
-    lines.append("<!-- wp:paragraph -->")
-    lines.append(
-        "<p>下記は、今すぐ誰でも使えるJTBの海外割引情報と配布中クーポンを一覧にしました。</p>"
-    )
-    lines.append("<!-- /wp:paragraph -->")
-    lines.append("")
 
     lines.append(overseas_html)
 
     # 海外 CTA ボタン
-    vc_o = {"sid": "3448423", "pid": "885714709"}
-    cta_url_o = (
-        f'//ck.jp.ap.valuecommerce.com/servlet/referral?sid={vc_o["sid"]}&pid={vc_o["pid"]}'
-        f"&vc_url=https%3A%2F%2Fwww.jtb.co.jp%2Fmyjtb%2Fcampaign%2Fkaigaicoupon%2F"
-        f"%3Futm_source%3Dvcdom%26utm_medium%3Daffiliate"
+    ovs_cta_utm = quote(
+        "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/?utm_source=vcdom&utm_medium=affiliate",
+        safe="",
+    )
+    ovs_cta_url = f"//ck.jp.ap.valuecommerce.com/servlet/referral?sid={sid}&amp;pid={ovs_pid}&amp;vc_url={ovs_cta_utm}"
+    ovs_pixel = (
+        f'<img src="//ad.jp.ap.valuecommerce.com/servlet/gifbanner'
+        f'?sid={sid}&amp;pid={ovs_pid}" height="1" width="0" border="0">'
     )
     lines.append("")
     lines.append(
-        generate_cta_button(cta_url_o, "JTB海外クーポンの一覧はこちら", pixel_html)
+        generate_cta_button(ovs_cta_url, "JTB海外クーポンの一覧はこちら", ovs_pixel)
     )
 
     lines.append("")
@@ -419,9 +642,14 @@ def main():
     domestic = [c for c in active if c.get("category") == "国内"]
     overseas = [c for c in active if c.get("category") == "海外"]
 
+    # --- 国内: 初回限定を分離 ---
+    first_time = [c for c in domestic if is_first_time_coupon(c)]
+    domestic_regular = [c for c in domestic if not is_first_time_coupon(c)]
+
     # --- 国内セクション分類 ---
-    domestic_sections = {s: [] for s in config["section_order_domestic"]}
-    for c in domestic:
+    section_names = [s["name"] for s in DOMESTIC_SECTIONS]
+    domestic_sections = {s: [] for s in section_names}
+    for c in domestic_regular:
         section = classify_domestic_section(c, config)
         if section in domestic_sections:
             domestic_sections[section].append(c)
@@ -429,7 +657,8 @@ def main():
             domestic_sections["全国共通クーポン"].append(c)
 
     # --- 海外セクション分類 ---
-    overseas_sections = {s: [] for s in config["section_order_overseas"]}
+    overseas_section_names = [s["name"] for s in OVERSEAS_SECTIONS]
+    overseas_sections = {s: [] for s in overseas_section_names}
     for c in overseas:
         section = classify_overseas_section(c, config)
         if section in overseas_sections:
@@ -438,38 +667,23 @@ def main():
             overseas_sections["海外ツアー（ルックJTB MySTYLE）"].append(c)
 
     # 統計表示
-    print("\n  【国内】")
-    for name, items in domestic_sections.items():
+    if first_time:
+        print(f"\n  【初回限定】: {len(first_time)} 件")
+    print("  【国内】")
+    for name in section_names:
+        items = domestic_sections[name]
         if items:
             print(f"    {name}: {len(items)} 件")
-    print(f"  【海外】")
-    for name, items in overseas_sections.items():
+    print("  【海外】")
+    for name in overseas_section_names:
+        items = overseas_sections[name]
         if items:
             print(f"    {name}: {len(items)} 件")
 
     # --- HTML 生成 ---
-    domestic_parts = []
-    for section_name in config["section_order_domestic"]:
-        section_coupons = domestic_sections.get(section_name, [])
-        if section_coupons:
-            domestic_parts.append(
-                generate_section_html(section_name, section_coupons, config)
-            )
-            domestic_parts.append("")
-
-    overseas_parts = []
-    for section_name in config["section_order_overseas"]:
-        section_coupons = overseas_sections.get(section_name, [])
-        if section_coupons:
-            overseas_parts.append(
-                generate_section_html(section_name, section_coupons, config)
-            )
-            overseas_parts.append("")
-
-    domestic_html = "\n".join(domestic_parts)
-    overseas_html = "\n".join(overseas_parts)
-
-    full_html = generate_tab_html(domestic_html, overseas_html)
+    domestic_html = generate_domestic_html(first_time, domestic_sections, config)
+    overseas_html = generate_overseas_html(overseas_sections, config)
+    full_html = generate_tab_html(domestic_html, overseas_html, config)
 
     # ヘッダーコメント追加
     header = (
@@ -483,7 +697,10 @@ def main():
         f.write(header + full_html)
 
     print(f"\n✅ 出力: {output_path}")
-    print(f"   国内セクション: {sum(1 for v in domestic_sections.values() if v)} 個")
+    print(
+        f"   国内セクション: {sum(1 for v in domestic_sections.values() if v)} 個 "
+        f"(+ 初回限定 {len(first_time)} 件)"
+    )
     print(f"   海外セクション: {sum(1 for v in overseas_sections.values() if v)} 個")
 
 

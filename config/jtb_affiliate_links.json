@@ -12,8 +12,7 @@
 
   "section_order_domestic": [
     "全国共通クーポン",
-    "ホテルチェーン限定クーポン",
-    "JR・鉄道利用クーポン",
+    "チェーンホテル限定クーポン",
     "北海道・東北エリア",
     "関東エリア",
     "甲信越・中部・東海エリア",
@@ -29,21 +28,7 @@
     "U-29旅（海外）"
   ],
 
-  "section_h3_ids": {
-    "全国共通クーポン": "zenkoku",
-    "ホテルチェーン限定クーポン": "hotel",
-    "JR・鉄道利用クーポン": "jr",
-    "北海道・東北エリア": "hokkaido",
-    "関東エリア": "kanto",
-    "甲信越・中部・東海エリア": "chubu",
-    "関西エリア": "kansai",
-    "中国・四国・九州・沖縄エリア": "west",
-    "海外ツアー（ルックJTB MySTYLE）": "kaigai-tour",
-    "海外航空券＋ホテル": "kaigai-air-hotel",
-    "海外航空券": "kaigai-air",
-    "海外オプショナルツアー": "kaigai-op",
-    "U-29旅（海外）": "u29-kaigai"
-  },
+  "_note_section_ids": "balloon_box2 の id 属性は generate_jtb_html.py の SECTION_IDS で管理",
 
   "hotel_chain_keywords": [
     "モントレ", "リッチモンド", "メルキュール", "グランドメルキュール",
@@ -53,9 +38,7 @@
     "ドーミーイン", "三井ガーデン", "JR ホテル"
   ],
 
-  "jr_keywords": [
-    "JR", "新幹線", "鉄道", "電車で", "グリーン車"
-  ],
+  "_note_jr": "JR・鉄道セクション廃止。JR関連はエリアor全国共通に自動分類",
 
   "area_to_section": {
     "北海道": "北海道・東北エリア",
