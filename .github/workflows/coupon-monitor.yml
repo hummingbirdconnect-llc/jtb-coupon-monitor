@@ -67,9 +67,11 @@ jobs:
 
       - name: Google Drive 同期
         if: env.GDRIVE_FOLDER_ID != ''
+        continue-on-error: true
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+          GDRIVE_IMPERSONATE_EMAIL: ${{ secrets.GDRIVE_IMPERSONATE_EMAIL }}
         run: python sync_to_gdrive.py
 
       - name: コミット＆プッシュ

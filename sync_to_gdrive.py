@@ -8,6 +8,7 @@ Google Drive 同期スクリプト
 環境変数:
     GOOGLE_SERVICE_ACCOUNT_JSON: サービスアカウントのJSON鍵（文字列）
     GDRIVE_FOLDER_ID: アップロード先の Google Drive フォルダID
+    GDRIVE_IMPERSONATE_EMAIL: (任意) ドメイン委任で偽装するユーザーのメール
 
 Usage:
     python sync_to_gdrive.py
@@ -44,7 +45,11 @@ SCOPES = ["https://www.googleapis.com/auth/drive"]
 # Google Drive Client
 # ---------------------------------------------------------------------------
 def get_drive_service():
-    """サービスアカウントで認証した Drive API クライアントを返す"""
+    """サービスアカウントで認証した Drive API クライアントを返す
+
+    GDRIVE_IMPERSONATE_EMAIL が設定されている場合、ドメイン委任で
+    そのユーザーとして操作する（SAのストレージクォータ制限を回避）。
+    """
     sa_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
     if not sa_json:
         print("❌ GOOGLE_SERVICE_ACCOUNT_JSON が未設定です")
@@ -52,6 +57,13 @@ def get_drive_service():
 
     sa_info = json.loads(sa_json)
     creds = Credentials.from_service_account_info(sa_info, scopes=SCOPES)
+
+    # ドメイン委任（impersonation）対応
+    impersonate_email = os.environ.get("GDRIVE_IMPERSONATE_EMAIL")
+    if impersonate_email:
+        creds = creds.with_subject(impersonate_email)
+        print(f"👤 ドメイン委任: {impersonate_email}")
+
     return build("drive", "v3", credentials=creds)
 
 
@@ -64,7 +76,12 @@ def find_file_in_folder(service, folder_id: str, filename: str):
     )
     results = (
         service.files()
-        .list(q=query, fields="files(id, name)", supportsAllDrives=True)
+        .list(
+            q=query,
+            fields="files(id, name)",
+            supportsAllDrives=True,
+            includeItemsFromAllDrives=True,
+        )
         .execute()
     )
     files = results.get("files", [])
