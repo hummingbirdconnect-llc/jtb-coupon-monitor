@@ -153,15 +153,15 @@ def scrape_list_page(page_config):
     coupons = []
     seen_urls = set()
 
-    # h5 タイトル要素を起点にカードを探す
-    for h5 in soup.find_all("h5"):
-        title = h5.get_text(strip=True)
+    # h3 タイトル要素を起点にカードを探す（2026-03: h5→h3に構造変更）
+    for heading in soup.find_all("h3"):
+        title = heading.get_text(strip=True)
         if not title or "ああああ" in title:
             continue
 
-        # h5の近傍から詳細リンクを探す
+        # 見出しの近傍から詳細リンクを探す
         # 親要素を遡ってカードコンテナを見つける
-        card = h5
+        card = heading
         detail_url = None
         for _ in range(6):
             parent = card.parent
