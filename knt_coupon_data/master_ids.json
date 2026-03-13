@@ -1,11 +1,6 @@
 {
-  "last_updated": "2026-03-04T02:56:13.660002",
+  "last_updated": "2026-03-13T02:18:16.940185",
   "ids": {
-    "yado-sp-wakayama-kumano-kcp-6bb148": {
-      "category": "獲得クーポン",
-      "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
-      "area": "和歌山県"
-    },
     "hokkaido-cpn-douou.html-433b50": {
       "category": "獲得クーポン",
       "title": "札幌・小樽も対象！北海道お得クーポン第2弾",
@@ -15,21 +10,6 @@
       "category": "獲得クーポン",
       "title": "春休み！伊豆・静岡宿泊割引クーポン",
       "area": "静岡県"
-    },
-    "cmpgn-2600001": {
-      "category": "獲得クーポン",
-      "title": "伊豆・静岡 宿泊割引クーポン第2弾",
-      "area": "静岡県"
-    },
-    "cmpgn-2500331": {
-      "category": "獲得クーポン",
-      "title": "伊豆・静岡エリア宿泊割引クーポン",
-      "area": "静岡県"
-    },
-    "yado-sp-kochi-coupon-86c4d5": {
-      "category": "獲得クーポン",
-      "title": "こじゃんとお得！冬の高知旅キャンペーン",
-      "area": "高知県"
     },
     "hokkaido-cpn-doto.html-4a0604": {
       "category": "獲得クーポン",
@@ -56,11 +36,6 @@
       "title": "ほな、大阪行こか！キャンペーン",
       "area": "大阪府"
     },
-    "yado-sp-2026kyushucp-coupon-21e3d4": {
-      "category": "獲得クーポン",
-      "title": "いざ！にっぽん旅 九州キャンペーン",
-      "area": "福岡県・佐賀県・長崎県"
-    },
     "yado-sp-nara-kcp-b91c6e": {
       "category": "獲得クーポン",
       "title": "奈良県を楽しもうキャンペーン",
@@ -70,11 +45,6 @@
       "category": "獲得クーポン",
       "title": "函館大沼 Love onuma割キャンペーン",
       "area": "北海道"
-    },
-    "yado-sp-tohoku-kcp-ba973f": {
-      "category": "獲得クーポン",
-      "title": "東北たびクーポンキャンペーン",
-      "area": "青森県・岩手県・宮城県"
     },
     "sp-kinugawa-campaign-660979": {
       "category": "獲得クーポン",
@@ -86,10 +56,10 @@
       "title": "世界遺産の街・日光へ行こう！",
       "area": "栃木県"
     },
-    "sp-fukkou-kagoshima_shimameguri-63c531": {
-      "category": "獲得クーポン",
-      "title": "奄美群島 しまめぐり割",
-      "area": "鹿児島県"
+    "yado-sp-2026kyushucp-coupon-21e3d4": {
+      "category": "クーポンコード",
+      "title": "いざ！にっぽん旅 九州キャンペーン",
+      "area": "九州"
     },
     "cpn-harutabi-d86ee7": {
       "category": "クーポンコード",
@@ -105,11 +75,6 @@
       "category": "クーポンコード",
       "title": "お得な【北海道】道南キャンペーン",
       "area": "北海道"
-    },
-    "yado-sp-wakayama-coupon-5e3234": {
-      "category": "クーポンコード",
-      "title": "飛行機で行こう 和歌山キャンペーン",
-      "area": "和歌山県"
     }
   }
 }

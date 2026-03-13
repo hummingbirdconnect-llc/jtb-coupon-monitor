@@ -654,5 +654,61 @@
     "category": "獲得クーポン",
     "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
     "area": "和歌山県"
+  },
+  {
+    "date": "2026-03-13",
+    "type": "❌ 消失",
+    "id": "cmpgn-2500331",
+    "category": "獲得クーポン",
+    "title": "伊豆・静岡エリア宿泊割引クーポン",
+    "area": "静岡県"
+  },
+  {
+    "date": "2026-03-13",
+    "type": "❌ 消失",
+    "id": "cmpgn-2600001",
+    "category": "獲得クーポン",
+    "title": "伊豆・静岡 宿泊割引クーポン第2弾",
+    "area": "静岡県"
+  },
+  {
+    "date": "2026-03-13",
+    "type": "❌ 消失",
+    "id": "sp-fukkou-kagoshima_shimameguri-63c531",
+    "category": "獲得クーポン",
+    "title": "奄美群島 しまめぐり割",
+    "area": "鹿児島県"
+  },
+  {
+    "date": "2026-03-13",
+    "type": "❌ 消失",
+    "id": "yado-sp-kochi-coupon-86c4d5",
+    "category": "獲得クーポン",
+    "title": "こじゃんとお得！冬の高知旅キャンペーン",
+    "area": "高知県"
+  },
+  {
+    "date": "2026-03-13",
+    "type": "❌ 消失",
+    "id": "yado-sp-tohoku-kcp-ba973f",
+    "category": "獲得クーポン",
+    "title": "東北たびクーポンキャンペーン",
+    "area": "青森県・岩手県・宮城県"
+  },
+  {
+    "date": "2026-03-13",
+    "type": "❌ 消失",
+    "id": "yado-sp-wakayama-coupon-5e3234",
+    "category": "クーポンコード",
+    "title": "飛行機で行こう 和歌山キャンペーン",
+    "area": "和歌山県"
+  },
+  {
+    "date": "2026-03-13",
+    "type": "❌ 消失",
+    "id": "yado-sp-wakayama-kumano-kcp-6bb148",
+    "category": "獲得クーポン",
+    "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
+    "area": "和歌山県"
   }
 ]
