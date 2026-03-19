@@ -865,6 +865,34 @@
     }
   },
   {
+    "id": "2603ikaho",
+    "category": "国内",
+    "title": "伊香保温泉をぶらり散策しよう！割引クーポン",
+    "discount": "最大6,000円引",
+    "area": "群馬県",
+    "type": "宿泊",
+    "booking_period": "2026/3/19(木) ～ 2027/2/28(日)",
+    "stay_period": "2026/3/19(木) ～ 2027/2/28(日)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603ikaho/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "ikaho"
+      ],
+      "passwords": [
+        "g561",
+        "g562",
+        "g563",
+        "g564"
+      ],
+      "conditions": [],
+      "notes": [
+        "＜全曜日利用可＞ 先着 119枚 10,000円以上のご利用で 1,000 円引 クーポンコード ikaho パスワー"
+      ]
+    }
+  },
+  {
     "id": "2603hachijo",
     "category": "国内",
     "title": "【復幸旅！八丈島】3月～6月宿泊で使える割引クーポン",
@@ -1278,6 +1306,61 @@
       "conditions": [],
       "notes": [
         "以上 泊数指定なし 先着 1000枚 200,000円以上のご利用で 10,000 円引 クーポンコード rokin パ"
+      ]
+    }
+  },
+  {
+    "id": "2603okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】４月～６月出発☆　GWにも使える　おすすめ施設クーポン",
+    "discount": "最大10,000円引",
+    "area": "沖縄県",
+    "type": "ツアー",
+    "booking_period": "2026/3/19(木) ～ 2026/6/29(月)",
+    "stay_period": "2026/4/1(水) ～ 2026/6/30(火)",
+    "store_available": true,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603okinawa/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "okina"
+      ],
+      "passwords": [
+        "g551",
+        "g552",
+        "g553"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 50枚 250,000円以上のご利用で 10,000 円引 クーポンコード okina パスワ"
+      ]
+    }
+  },
+  {
+    "id": "2603okinawa2",
+    "category": "国内",
+    "title": "☆【沖縄】７月～９月出発☆夏休みにも使える　おすすめ施設クーポン",
+    "discount": "最大20,000円引",
+    "area": "沖縄県",
+    "type": "ツアー",
+    "booking_period": "2026/3/19(木) ～ 2026/9/29(火)",
+    "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
+    "store_available": true,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603okinawa2/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "okina"
+      ],
+      "passwords": [
+        "g554",
+        "g555",
+        "g556",
+        "g557"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 10枚 350,000円以上のご利用で 20,000 円引 クーポンコード okina パスワ"
       ]
     }
   },
