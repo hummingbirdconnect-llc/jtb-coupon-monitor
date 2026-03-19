@@ -3,12 +3,13 @@
 Google Drive 同期スクリプト
 
 生成した HTML ファイルを Google Drive の指定フォルダにアップロード/上書きする。
-既存のサービスアカウント (GOOGLE_SERVICE_ACCOUNT_JSON) を再利用。
+OAuth2 リフレッシュトークンで認証（個人 Google アカウント対応）。
 
 環境変数:
-    GOOGLE_SERVICE_ACCOUNT_JSON: サービスアカウントのJSON鍵（文字列）
     GDRIVE_FOLDER_ID: アップロード先の Google Drive フォルダID
-    GDRIVE_IMPERSONATE_EMAIL: (任意) ドメイン委任で偽装するユーザーのメール
+    GDRIVE_OAUTH_CLIENT_ID: OAuth2 クライアントID
+    GDRIVE_OAUTH_CLIENT_SECRET: OAuth2 クライアントシークレット
+    GDRIVE_OAUTH_REFRESH_TOKEN: OAuth2 リフレッシュトークン
 
 Usage:
     python sync_to_gdrive.py
@@ -18,11 +19,10 @@ Usage:
     html_output/his_coupons_list.html → HIS_クーポンリスト.md
 """
 
-import json
 import os
 import sys
 
-from google.oauth2.service_account import Credentials
+from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
@@ -39,31 +39,33 @@ FILE_MAPPING = {
 }
 
 SCOPES = ["https://www.googleapis.com/auth/drive"]
+TOKEN_URI = "https://oauth2.googleapis.com/token"
 
 
 # ---------------------------------------------------------------------------
 # Google Drive Client
 # ---------------------------------------------------------------------------
 def get_drive_service():
-    """サービスアカウントで認証した Drive API クライアントを返す
+    """OAuth2 リフレッシュトークンで認証した Drive API クライアントを返す"""
+    client_id = os.environ.get("GDRIVE_OAUTH_CLIENT_ID")
+    client_secret = os.environ.get("GDRIVE_OAUTH_CLIENT_SECRET")
+    refresh_token = os.environ.get("GDRIVE_OAUTH_REFRESH_TOKEN")
 
-    GDRIVE_IMPERSONATE_EMAIL が設定されている場合、ドメイン委任で
-    そのユーザーとして操作する（SAのストレージクォータ制限を回避）。
-    """
-    sa_json = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON")
-    if not sa_json:
-        print("❌ GOOGLE_SERVICE_ACCOUNT_JSON が未設定です")
+    if not all([client_id, client_secret, refresh_token]):
+        print("❌ OAuth2 認証情報が不足しています")
+        print("   必要: GDRIVE_OAUTH_CLIENT_ID, GDRIVE_OAUTH_CLIENT_SECRET, GDRIVE_OAUTH_REFRESH_TOKEN")
         sys.exit(1)
 
-    sa_info = json.loads(sa_json)
-    creds = Credentials.from_service_account_info(sa_info, scopes=SCOPES)
+    creds = Credentials(
+        token=None,
+        refresh_token=refresh_token,
+        token_uri=TOKEN_URI,
+        client_id=client_id,
+        client_secret=client_secret,
+        scopes=SCOPES,
+    )
 
-    # ドメイン委任（impersonation）対応
-    impersonate_email = os.environ.get("GDRIVE_IMPERSONATE_EMAIL")
-    if impersonate_email:
-        creds = creds.with_subject(impersonate_email)
-        print(f"👤 ドメイン委任: {impersonate_email}")
-
+    print("🔑 OAuth2 認証（リフレッシュトークン）")
     return build("drive", "v3", credentials=creds)
 
 
