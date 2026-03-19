@@ -67,6 +67,44 @@ def today_str():
     return datetime.now().strftime("%Y-%m-%d")
 
 
+def _append_coupon_code(codes, raw_code):
+    """クーポンコード候補を正規化して重複なく追加"""
+    code = re.sub(r"\s+", "", raw_code or "")
+    if len(code) < 3:
+        return
+    if not re.fullmatch(r"[A-Za-z0-9_-]+", code):
+        return
+    if code.lower() == "notranslate":
+        return
+    if code not in codes:
+        codes.append(code)
+
+
+def _extract_coupon_codes(soup, page_text):
+    """本文テキストとコピー用 input の両方からクーポンコードを抽出"""
+    codes = []
+
+    # KNT のコード系ページは input[value] に実コードが入っていることがある。
+    selectors = [
+        'input[id^="copyTarget"][value]',
+        '.cpn_code_txt input[value]',
+        '.coupon_code input[value]',
+    ]
+    for selector in selectors:
+        for el in soup.select(selector):
+            _append_coupon_code(codes, el.get("value"))
+
+    code_patterns = [
+        r'クーポンコード[：:\s]*([A-Za-z0-9_\-]+)',
+        r'コード[：:\s]*([A-Za-z0-9_\-]+)',
+    ]
+    for pat in code_patterns:
+        for match in re.finditer(pat, page_text, re.IGNORECASE):
+            _append_coupon_code(codes, match.group(1))
+
+    return codes
+
+
 def make_coupon_id(url):
     """URLからユニークなIDを生成
 
@@ -319,15 +357,7 @@ def scrape_detail_page(url):
         )
 
         # ----- クーポンコード -----
-        code_patterns = [
-            r'クーポンコード[：:\s]*([A-Za-z0-9_\-]+)',
-            r'コード[：:\s]*([A-Za-z0-9_\-]+)',
-        ]
-        for pat in code_patterns:
-            for match in re.finditer(pat, page_text, re.IGNORECASE):
-                code = match.group(1)
-                if code not in detail["coupon_codes"] and len(code) >= 3:
-                    detail["coupon_codes"].append(code)
+        detail["coupon_codes"] = _extract_coupon_codes(soup, page_text)
 
         # ----- 注意事項（重要キーワード周辺） -----
         note_keywords = ["併用不可", "1回限り", "先着", "枚数限定", "1予約につき", "なくなり次第"]

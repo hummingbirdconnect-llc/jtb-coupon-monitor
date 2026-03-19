@@ -2,14 +2,14 @@
 
 > **リポジトリ**: https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor
 >
-> **最終更新**: 2026年2月11日
+> **最終更新**: 2026年3月7日
 
 ---
 
 ## 1. システム全体像
 
 ```
-┌─ GitHub Actions（毎朝9:00 JST 自動実行）────────────────┐
+┌─ GitHub Actions（毎朝6:00 JST 自動実行）────────────────┐
 │                                                           │
 │  ① JTBクーポンページをスクレイピング                      │
 │     ├─ 国内クーポン一覧（CSSセレクタ方式）               │
@@ -64,7 +64,7 @@
 
 ### 通常時: 何もしなくてOK
 
-毎朝9時にGitHub Actionsが自動実行されます。変動があればメール通知されます。
+毎朝6時にGitHub Actionsが自動実行されます。変動があればメール通知されます。
 
 ### 結果の確認（Google Sheets）
 
@@ -81,7 +81,7 @@
 ### 3-1. 手動で今すぐ実行
 
 1. https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions
-2. 「Coupon Monitor (JTB + KNT)」→「Run workflow」→「Run workflow」
+2. 「Coupon Monitor (JTB + KNT + HIS)」→「Run workflow」→「Run workflow」
 
 ### 3-2. ターミナルで確認
 
@@ -102,16 +102,16 @@ python3 knt_coupon_monitor.py --init
 `.github/workflows/coupon-monitor.yml` の `cron` を編集:
 
 ```yaml
-# 朝7時（JST）に変更 → UTC 22:00
-- cron: '0 22 * * *'
+# 朝6時（JST）に変更 → UTC 21:00
+- cron: '0 21 * * *'
 
-# 1日2回（朝9時 + 夕方18時）
-- cron: '0 0,9 * * *'
+# 1日2回（朝6時 + 夕方18時）
+- cron: '0 9,21 * * *'
 ```
 
 ### 3-4. 一時停止/再開
 
-Actions タブ → 左サイドバー「Coupon Monitor (JTB + KNT)」→ 右上「...」→「Disable workflow」
+Actions タブ → 左サイドバー「Coupon Monitor (JTB + KNT + HIS)」→ 右上「...」→「Disable workflow」
 
 ---
 
