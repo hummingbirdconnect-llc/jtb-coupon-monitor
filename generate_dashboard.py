@@ -64,8 +64,7 @@ def format_jtb_rows(coupons):
             "店舗利用": "✅" if c.get("store_available") else "",
             "クーポンコード": ", ".join(detail.get("coupon_codes", [])),
             "パスワード": ", ".join(detail.get("passwords", [])),
-            "条件": " / ".join(detail.get("conditions", [])),
-            "注意事項": " / ".join(detail.get("notes", [])),
+            "条件": " / ".join(filter(None, detail.get("conditions", []) + detail.get("notes", []))),
         })
     return rows
 
@@ -91,8 +90,7 @@ def format_knt_rows(coupons):
             "申込期間": detail.get("booking_period", ""),
             "宿泊/出発対象期間": detail.get("stay_period", ""),
             "クーポンコード": ", ".join(detail.get("coupon_codes", [])),
-            "条件": " / ".join(detail.get("conditions", [])),
-            "注意事項": " / ".join(detail.get("notes", [])),
+            "条件": " / ".join(filter(None, detail.get("conditions", []) + detail.get("notes", []))),
         })
     return rows
 
@@ -185,10 +183,19 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .copy-btn:hover {{ background: #1557b0; }}
 .copy-btn.copied {{ background: #2e7d32; border-color: #2e7d32; }}
 .filter-label {{ font-size: 0.85rem; color: #666; font-weight: 500; }}
-.gridjs-th {{ white-space: nowrap; }}
+.col-toggle-btn {{ padding: 6px 14px; border: 2px solid #7c4dff; border-radius: 6px; background: #fff; color: #7c4dff; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }}
+.col-toggle-btn:hover {{ background: #f3e8ff; }}
+.col-panel {{ display: none; background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 12px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }}
+.col-panel.open {{ display: flex; flex-wrap: wrap; gap: 6px; }}
+.col-chip {{ padding: 4px 10px; border: 1.5px solid #ddd; border-radius: 16px; background: #fff; cursor: pointer; font-size: 0.8rem; transition: all 0.15s; user-select: none; }}
+.col-chip.on {{ border-color: #1a73e8; background: #e8f0fe; color: #1a73e8; }}
+.col-chip.off {{ border-color: #ccc; background: #f5f5f5; color: #999; text-decoration: line-through; }}
+.gridjs-th {{ white-space: nowrap; position: relative; }}
 .gridjs-td {{ font-size: 0.85rem; line-height: 1.5; max-width: 400px; white-space: normal; word-break: break-word; }}
 .gridjs-wrapper {{ overflow-x: auto; }}
 .gridjs-table {{ width: auto !important; min-width: 100%; }}
+.gridjs-th .resize-handle {{ position: absolute; right: 0; top: 0; bottom: 0; width: 5px; cursor: col-resize; background: transparent; }}
+.gridjs-th .resize-handle:hover {{ background: #1a73e8; }}
 .status-active {{ background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 4px; font-weight: 500; font-size: 0.8rem; }}
 .status-ended {{ background: #fce4ec; color: #c62828; padding: 2px 8px; border-radius: 4px; font-weight: 500; font-size: 0.8rem; }}
 .log-new {{ background: #e8f5e9; }}
@@ -276,6 +283,35 @@ function copyTableData(rows, columns) {{
   }});
 }}
 
+function addResizeHandles(gridDiv) {{
+  setTimeout(() => {{
+    gridDiv.querySelectorAll('th.gridjs-th').forEach(th => {{
+      if (th.querySelector('.resize-handle')) return;
+      const handle = document.createElement('div');
+      handle.className = 'resize-handle';
+      th.style.position = 'relative';
+      th.appendChild(handle);
+      let startX, startW;
+      handle.addEventListener('mousedown', (e) => {{
+        e.preventDefault();
+        e.stopPropagation();
+        startX = e.pageX;
+        startW = th.offsetWidth;
+        const onMove = (e2) => {{
+          th.style.width = Math.max(40, startW + e2.pageX - startX) + 'px';
+          th.style.minWidth = th.style.width;
+        }};
+        const onUp = () => {{
+          document.removeEventListener('mousemove', onMove);
+          document.removeEventListener('mouseup', onUp);
+        }};
+        document.addEventListener('mousemove', onMove);
+        document.addEventListener('mouseup', onUp);
+      }});
+    }});
+  }}, 300);
+}}
+
 function renderTable(containerId, allRows, columns) {{
   const el = document.getElementById(containerId);
   if (!allRows || allRows.length === 0) {{
@@ -285,11 +321,34 @@ function renderTable(containerId, allRows, columns) {{
 
   let currentFilter = 'all';
   let gridInstance = null;
+  let visibleCols = [...columns];
 
   function getFilteredRows() {{
     if (currentFilter === 'active') return allRows.filter(r => r['配布状況'] === '配布中');
     if (currentFilter === 'ended') return allRows.filter(r => r['配布状況'] === '配布終了');
     return allRows;
+  }}
+
+  function buildCols(cols) {{
+    const narrowCols = ['配布状況', '店舗利用', 'エリア'];
+    const minWidthCols = {{ 'タイトル': '250px', 'ID': '100px' }};
+    return cols.map(col => {{
+      const base = {{ name: col }};
+      if (col === '配布状況') base.formatter = (cell) => statusCell(cell);
+      if (['詳細URL', '施策ページ'].includes(col)) {{ base.formatter = (cell) => linkCell(cell); base.width = '70px'; }}
+      if (narrowCols.includes(col)) base.width = 'auto';
+      if (minWidthCols[col]) base.attributes = (cell) => ({{ style: `min-width:${{minWidthCols[col]}}` }});
+      return base;
+    }});
+  }}
+
+  function rebuildGrid() {{
+    const filtered = getFilteredRows();
+    gridInstance.updateConfig({{
+      columns: buildCols(visibleCols),
+      data: filtered.map(r => visibleCols.map(c => r[c] || '')),
+    }}).forceRender();
+    addResizeHandles(gridDiv);
   }}
 
   // ヘッダー
@@ -298,7 +357,7 @@ function renderTable(containerId, allRows, columns) {{
   tableDiv.className = 'section';
   tableDiv.innerHTML = `<h2>クーポン一覧</h2>${{statsHtml}}`;
 
-  // ツールバー（フィルタ + コピー）
+  // ツールバー（フィルタ + 列切替 + コピー）
   const toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
@@ -306,13 +365,46 @@ function renderTable(containerId, allRows, columns) {{
     <button class="filter-btn active" data-filter="all">すべて</button>
     <button class="filter-btn" data-filter="active">配布中のみ</button>
     <button class="filter-btn" data-filter="ended">配布終了のみ</button>
-    <button class="copy-btn" id="copy-${{containerId}}">📋 テーブルをコピー</button>
+    <button class="col-toggle-btn" id="coltgl-${{containerId}}">⚙ 列の表示</button>
+    <button class="copy-btn" id="copy-${{containerId}}">📋 コピー</button>
   `;
   tableDiv.appendChild(toolbar);
+
+  // 列表示切替パネル
+  const colPanel = document.createElement('div');
+  colPanel.className = 'col-panel';
+  colPanel.id = `colpanel-${{containerId}}`;
+  columns.forEach(col => {{
+    const chip = document.createElement('span');
+    chip.className = 'col-chip on';
+    chip.textContent = col;
+    chip.dataset.col = col;
+    chip.addEventListener('click', () => {{
+      if (chip.classList.contains('on')) {{
+        if (visibleCols.length <= 1) return;
+        chip.classList.remove('on');
+        chip.classList.add('off');
+        visibleCols = visibleCols.filter(c => c !== col);
+      }} else {{
+        chip.classList.remove('off');
+        chip.classList.add('on');
+        const idx = columns.indexOf(col);
+        visibleCols.splice(visibleCols.reduce((pos, c) => columns.indexOf(c) < idx ? pos + 1 : pos, 0), 0, col);
+      }}
+      rebuildGrid();
+    }});
+    colPanel.appendChild(chip);
+  }});
+  tableDiv.appendChild(colPanel);
 
   const gridDiv = document.createElement('div');
   tableDiv.appendChild(gridDiv);
   el.appendChild(tableDiv);
+
+  // 列切替パネルの開閉
+  document.getElementById(`coltgl-${{containerId}}`).addEventListener('click', () => {{
+    colPanel.classList.toggle('open');
+  }});
 
   // フィルタボタン
   toolbar.querySelectorAll('.filter-btn').forEach(btn => {{
@@ -324,34 +416,18 @@ function renderTable(containerId, allRows, columns) {{
       if (currentFilter === 'active') btn.classList.add('active-green');
       else if (currentFilter === 'ended') btn.classList.add('active-red');
       else btn.classList.add('active');
-
-      const filtered = getFilteredRows();
-      gridInstance.updateConfig({{
-        data: filtered.map(r => columns.map(c => r[c] || '')),
-      }}).forceRender();
+      rebuildGrid();
     }});
   }});
 
   // コピーボタン
   document.getElementById(`copy-${{containerId}}`).addEventListener('click', (event) => {{
-    copyTableData(getFilteredRows(), columns);
+    copyTableData(getFilteredRows(), visibleCols);
   }});
 
-  // Grid.js
-  const narrowCols = ['配布状況', '店舗利用', 'エリア'];
-  const minWidthCols = {{ 'タイトル': '250px', 'ID': '100px' }};
-
-  const cols = columns.map(col => {{
-    const base = {{ name: col }};
-    if (col === '配布状況') base.formatter = (cell) => statusCell(cell);
-    if (['詳細URL', '施策ページ'].includes(col)) {{ base.formatter = (cell) => linkCell(cell); base.width = '70px'; }}
-    if (narrowCols.includes(col)) base.width = 'auto';
-    if (minWidthCols[col]) base.attributes = (cell) => ({{ style: `min-width:${{minWidthCols[col]}}` }});
-    return base;
-  }});
-
+  // Grid.js 初期描画
   gridInstance = new gridjs.Grid({{
-    columns: cols,
+    columns: buildCols(columns),
     data: allRows.map(r => columns.map(c => r[c] || '')),
     search: true,
     sort: true,
@@ -370,6 +446,7 @@ function renderTable(containerId, allRows, columns) {{
     }},
   }});
   gridInstance.render(gridDiv);
+  addResizeHandles(gridDiv);
 }}
 
 function renderLogTable(containerId, rows, title) {{
@@ -434,8 +511,8 @@ function renderLogTable(containerId, rows, title) {{
 }}
 
 // テーブル描画
-const jtbDomCols = ['ID', '詳細URL', 'タイトル', '配布状況', '割引額', 'エリア', 'タイプ', '予約対象期間', '宿泊/出発対象期間', '店舗利用', 'クーポンコード', 'パスワード', '条件', '注意事項'];
-const kntCols = ['詳細URL', 'タイトル', 'カテゴリ', 'ID', '割引額', '配布状況', 'エリア', 'タイプ', '申込期間', '宿泊/出発対象期間', 'クーポンコード', '条件', '注意事項'];
+const jtbDomCols = ['ID', '詳細URL', 'タイトル', '配布状況', '割引額', 'エリア', 'タイプ', '予約対象期間', '宿泊/出発対象期間', '店舗利用', 'クーポンコード', 'パスワード', '条件'];
+const kntCols = ['詳細URL', 'タイトル', 'カテゴリ', 'ID', '割引額', '配布状況', 'エリア', 'タイプ', '申込期間', '宿泊/出発対象期間', 'クーポンコード', '条件'];
 const hisCols = ['施策ページ', 'タイトル', 'カテゴリ', '割引額', '配布状況', '予約期間', '出発/宿泊期間', 'クーポンコード', '条件', '対象商品'];
 
 renderTable('jtb-domestic', DATA.jtb_domestic, jtbDomCols);
