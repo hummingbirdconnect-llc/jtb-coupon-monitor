@@ -53,6 +53,7 @@ def format_jtb_rows(coupons):
         detail = c.get("detail_data") or {}
         rows.append({
             "ID": c.get("id", ""),
+            "詳細URL": c.get("detail_url", ""),
             "タイトル": c.get("title", ""),
             "配布状況": c.get("stock_status", "不明"),
             "割引額": c.get("discount", ""),
@@ -79,6 +80,7 @@ def format_knt_rows(coupons):
     for c in coupons:
         detail = c.get("detail_data") or {}
         rows.append({
+            "詳細URL": c.get("detail_url", ""),
             "タイトル": c.get("title", ""),
             "カテゴリ": c.get("category", ""),
             "ID": c.get("id", ""),
@@ -110,6 +112,7 @@ def format_his_rows(coupons):
             if isinstance(cc, dict) and (cc.get("condition") or cc.get("discount"))
         ]
         rows.append({
+            "施策ページ": "https://www.his-j.com/campaign/shisaku/",
             "タイトル": c.get("title", ""),
             "カテゴリ": c.get("category", ""),
             "割引額": c.get("discount", ""),
@@ -172,6 +175,16 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .stat.active {{ background: #e8f5e9; color: #2e7d32; }}
 .stat.ended {{ background: #fce4ec; color: #c62828; }}
 .stat.total {{ background: #e3f2fd; color: #1565c0; }}
+.toolbar {{ display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }}
+.filter-btn {{ padding: 6px 14px; border: 2px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; }}
+.filter-btn:hover {{ border-color: #999; }}
+.filter-btn.active {{ border-color: #1a73e8; background: #e8f0fe; color: #1a73e8; font-weight: 600; }}
+.filter-btn.active-green {{ border-color: #2e7d32; background: #e8f5e9; color: #2e7d32; font-weight: 600; }}
+.filter-btn.active-red {{ border-color: #c62828; background: #fce4ec; color: #c62828; font-weight: 600; }}
+.copy-btn {{ padding: 6px 14px; border: 2px solid #1a73e8; border-radius: 6px; background: #1a73e8; color: #fff; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; margin-left: auto; }}
+.copy-btn:hover {{ background: #1557b0; }}
+.copy-btn.copied {{ background: #2e7d32; border-color: #2e7d32; }}
+.filter-label {{ font-size: 0.85rem; color: #666; font-weight: 500; }}
 .gridjs-th {{ white-space: nowrap; }}
 .gridjs-td {{ font-size: 0.85rem; line-height: 1.5; max-width: 400px; white-space: normal; word-break: break-word; }}
 .gridjs-wrapper {{ overflow-x: auto; }}
@@ -234,6 +247,11 @@ function statusCell(val) {{
   return val;
 }}
 
+function linkCell(val) {{
+  if (!val) return '';
+  return gridjs.html(`<a href="${{val}}" target="_blank" rel="noopener" style="color:#1a73e8;font-size:0.8rem;">🔗 開く</a>`);
+}}
+
 function makeStats(rows) {{
   const active = rows.filter(r => r['配布状況'] === '配布中').length;
   const ended = rows.filter(r => r['配布状況'] === '配布終了').length;
@@ -244,34 +262,97 @@ function makeStats(rows) {{
   </div>`;
 }}
 
-function renderTable(containerId, rows, columns) {{
+function copyTableData(rows, columns) {{
+  const header = columns.join('\\t');
+  const body = rows.map(r => columns.map(c => (r[c] || '').replace(/\\n/g, ' ')).join('\\t')).join('\\n');
+  const text = header + '\\n' + body;
+  navigator.clipboard.writeText(text).then(() => {{
+    event.target.textContent = '✅ コピー完了';
+    event.target.classList.add('copied');
+    setTimeout(() => {{
+      event.target.textContent = '📋 テーブルをコピー';
+      event.target.classList.remove('copied');
+    }}, 2000);
+  }});
+}}
+
+function renderTable(containerId, allRows, columns) {{
   const el = document.getElementById(containerId);
-  if (!rows || rows.length === 0) {{
+  if (!allRows || allRows.length === 0) {{
     el.innerHTML = '<div class="section"><p style="color:#999;padding:20px;">データなし</p></div>';
     return;
   }}
-  const statsHtml = makeStats(rows);
+
+  let currentFilter = 'all';
+  let gridInstance = null;
+
+  function getFilteredRows() {{
+    if (currentFilter === 'active') return allRows.filter(r => r['配布状況'] === '配布中');
+    if (currentFilter === 'ended') return allRows.filter(r => r['配布状況'] === '配布終了');
+    return allRows;
+  }}
+
+  // ヘッダー
+  const statsHtml = makeStats(allRows);
   const tableDiv = document.createElement('div');
   tableDiv.className = 'section';
-  tableDiv.innerHTML = `<h2>${{containerId.includes('log') ? '' : 'クーポン一覧'}}</h2>${{statsHtml}}`;
+  tableDiv.innerHTML = `<h2>クーポン一覧</h2>${{statsHtml}}`;
+
+  // ツールバー（フィルタ + コピー）
+  const toolbar = document.createElement('div');
+  toolbar.className = 'toolbar';
+  toolbar.innerHTML = `
+    <span class="filter-label">抽出:</span>
+    <button class="filter-btn active" data-filter="all">すべて</button>
+    <button class="filter-btn" data-filter="active">配布中のみ</button>
+    <button class="filter-btn" data-filter="ended">配布終了のみ</button>
+    <button class="copy-btn" id="copy-${{containerId}}">📋 テーブルをコピー</button>
+  `;
+  tableDiv.appendChild(toolbar);
+
   const gridDiv = document.createElement('div');
   tableDiv.appendChild(gridDiv);
   el.appendChild(tableDiv);
 
+  // フィルタボタン
+  toolbar.querySelectorAll('.filter-btn').forEach(btn => {{
+    btn.addEventListener('click', () => {{
+      currentFilter = btn.dataset.filter;
+      toolbar.querySelectorAll('.filter-btn').forEach(b => {{
+        b.classList.remove('active', 'active-green', 'active-red');
+      }});
+      if (currentFilter === 'active') btn.classList.add('active-green');
+      else if (currentFilter === 'ended') btn.classList.add('active-red');
+      else btn.classList.add('active');
+
+      const filtered = getFilteredRows();
+      gridInstance.updateConfig({{
+        data: filtered.map(r => columns.map(c => r[c] || '')),
+      }}).forceRender();
+    }});
+  }});
+
+  // コピーボタン
+  document.getElementById(`copy-${{containerId}}`).addEventListener('click', (event) => {{
+    copyTableData(getFilteredRows(), columns);
+  }});
+
+  // Grid.js
   const narrowCols = ['配布状況', '店舗利用', 'エリア'];
   const minWidthCols = {{ 'タイトル': '250px', 'ID': '100px' }};
 
   const cols = columns.map(col => {{
     const base = {{ name: col }};
     if (col === '配布状況') base.formatter = (cell) => statusCell(cell);
+    if (['詳細URL', '施策ページ'].includes(col)) {{ base.formatter = (cell) => linkCell(cell); base.width = '70px'; }}
     if (narrowCols.includes(col)) base.width = 'auto';
     if (minWidthCols[col]) base.attributes = (cell) => ({{ style: `min-width:${{minWidthCols[col]}}` }});
     return base;
   }});
 
-  new gridjs.Grid({{
+  gridInstance = new gridjs.Grid({{
     columns: cols,
-    data: rows.map(r => columns.map(c => r[c] || '')),
+    data: allRows.map(r => columns.map(c => r[c] || '')),
     search: true,
     sort: true,
     pagination: {{ limit: 50 }},
@@ -287,7 +368,8 @@ function renderTable(containerId, rows, columns) {{
         results: () => '件',
       }},
     }},
-  }}).render(gridDiv);
+  }});
+  gridInstance.render(gridDiv);
 }}
 
 function renderLogTable(containerId, rows, title) {{
@@ -299,11 +381,21 @@ function renderLogTable(containerId, rows, title) {{
   const tableDiv = document.createElement('div');
   tableDiv.className = 'section';
   tableDiv.innerHTML = `<h2 class="log">${{title}}</h2>`;
+
+  const toolbar = document.createElement('div');
+  toolbar.className = 'toolbar';
+  toolbar.innerHTML = `<button class="copy-btn" id="copy-${{containerId}}">📋 テーブルをコピー</button>`;
+  tableDiv.appendChild(toolbar);
+
   const gridDiv = document.createElement('div');
   tableDiv.appendChild(gridDiv);
   el.appendChild(tableDiv);
 
   const columns = ['日付', '種別', 'カテゴリ', 'ID', 'タイトル', 'エリア/割引'];
+
+  document.getElementById(`copy-${{containerId}}`).addEventListener('click', (event) => {{
+    copyTableData(rows, columns);
+  }});
 
   new gridjs.Grid({{
     columns: columns.map(c => {{
@@ -342,9 +434,9 @@ function renderLogTable(containerId, rows, title) {{
 }}
 
 // テーブル描画
-const jtbDomCols = ['ID', 'タイトル', '配布状況', '割引額', 'エリア', 'タイプ', '予約対象期間', '宿泊/出発対象期間', '店舗利用', 'クーポンコード', 'パスワード', '条件', '注意事項'];
-const kntCols = ['タイトル', 'カテゴリ', 'ID', '割引額', '配布状況', 'エリア', 'タイプ', '申込期間', '宿泊/出発対象期間', 'クーポンコード', '条件', '注意事項'];
-const hisCols = ['タイトル', 'カテゴリ', '割引額', '配布状況', '予約期間', '出発/宿泊期間', 'クーポンコード', '条件', '対象商品'];
+const jtbDomCols = ['ID', '詳細URL', 'タイトル', '配布状況', '割引額', 'エリア', 'タイプ', '予約対象期間', '宿泊/出発対象期間', '店舗利用', 'クーポンコード', 'パスワード', '条件', '注意事項'];
+const kntCols = ['詳細URL', 'タイトル', 'カテゴリ', 'ID', '割引額', '配布状況', 'エリア', 'タイプ', '申込期間', '宿泊/出発対象期間', 'クーポンコード', '条件', '注意事項'];
+const hisCols = ['施策ページ', 'タイトル', 'カテゴリ', '割引額', '配布状況', '予約期間', '出発/宿泊期間', 'クーポンコード', '条件', '対象商品'];
 
 renderTable('jtb-domestic', DATA.jtb_domestic, jtbDomCols);
 renderTable('jtb-overseas', DATA.jtb_overseas, jtbDomCols);
