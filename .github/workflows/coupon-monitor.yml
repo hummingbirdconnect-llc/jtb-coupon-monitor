@@ -31,6 +31,15 @@ jobs:
       - name: Playwright ブラウザインストール
         run: python -m playwright install --with-deps chromium
 
+      - name: アフィリエイト設定を復元
+        env:
+          JTB_AFFILIATE_CONFIG: ${{ secrets.JTB_AFFILIATE_CONFIG }}
+          HIS_AFFILIATE_CONFIG: ${{ secrets.HIS_AFFILIATE_CONFIG }}
+        run: |
+          mkdir -p config
+          echo "$JTB_AFFILIATE_CONFIG" > config/jtb_affiliate_links.json
+          echo "$HIS_AFFILIATE_CONFIG" > config/his_affiliate_links.json
+
       - name: JTB クーポン監視
         run: python jtb_coupon_monitor.py
 

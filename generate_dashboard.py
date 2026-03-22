@@ -173,10 +173,9 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .stat.ended {{ background: #fce4ec; color: #c62828; }}
 .stat.total {{ background: #e3f2fd; color: #1565c0; }}
 .gridjs-th {{ white-space: nowrap; }}
-.gridjs-td {{ font-size: 0.85rem; line-height: 1.4; }}
-.gridjs-table {{ table-layout: fixed; }}
+.gridjs-td {{ font-size: 0.85rem; line-height: 1.5; max-width: 400px; white-space: normal; word-break: break-word; }}
 .gridjs-wrapper {{ overflow-x: auto; }}
-td.gridjs-td {{ white-space: normal; word-break: break-word; overflow-wrap: break-word; }}
+.gridjs-table {{ width: auto !important; min-width: 100%; }}
 .status-active {{ background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 4px; font-weight: 500; font-size: 0.8rem; }}
 .status-ended {{ background: #fce4ec; color: #c62828; padding: 2px 8px; border-radius: 4px; font-weight: 500; font-size: 0.8rem; }}
 .log-new {{ background: #e8f5e9; }}
@@ -259,31 +258,14 @@ function renderTable(containerId, rows, columns) {{
   tableDiv.appendChild(gridDiv);
   el.appendChild(tableDiv);
 
-  const colWidths = {{
-    'ID': '120px',
-    'タイトル': '300px',
-    '配布状況': '90px',
-    '割引額': '130px',
-    'エリア': '80px',
-    'タイプ': '100px',
-    'カテゴリ': '100px',
-    '予約対象期間': '200px',
-    '宿泊/出発対象期間': '200px',
-    '申込期間': '200px',
-    '予約期間': '200px',
-    '出発/宿泊期間': '200px',
-    '店舗利用': '70px',
-    'クーポンコード': '180px',
-    'パスワード': '120px',
-    '条件': '250px',
-    '注意事項': '250px',
-    '対象商品': '250px',
-  }};
+  const narrowCols = ['配布状況', '店舗利用', 'エリア'];
+  const minWidthCols = {{ 'タイトル': '250px', 'ID': '100px' }};
 
   const cols = columns.map(col => {{
     const base = {{ name: col }};
-    if (colWidths[col]) base.width = colWidths[col];
     if (col === '配布状況') base.formatter = (cell) => statusCell(cell);
+    if (narrowCols.includes(col)) base.width = 'auto';
+    if (minWidthCols[col]) base.attributes = (cell) => ({{ style: `min-width:${{minWidthCols[col]}}` }});
     return base;
   }});
 
@@ -323,12 +305,10 @@ function renderLogTable(containerId, rows, title) {{
 
   const columns = ['日付', '種別', 'カテゴリ', 'ID', 'タイトル', 'エリア/割引'];
 
-  const logWidths = {{ '日付': '100px', '種別': '90px', 'カテゴリ': '80px', 'ID': '160px', 'タイトル': '350px', 'エリア/割引': '120px' }};
-
   new gridjs.Grid({{
     columns: columns.map(c => {{
       const base = {{ name: c }};
-      if (logWidths[c]) base.width = logWidths[c];
+      if (c === 'タイトル') base.attributes = (cell) => ({{ style: 'min-width:250px' }});
       return base;
     }}),
     data: rows.map(r => columns.map(c => r[c] || '')),

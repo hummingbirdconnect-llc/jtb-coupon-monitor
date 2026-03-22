@@ -8,3 +8,6 @@ cron.log
 *-key.json
 *service-account*.json
 coupon-monitor-*.json
+
+# アフィリエイト設定（Secrets経由で復元）
+config/
