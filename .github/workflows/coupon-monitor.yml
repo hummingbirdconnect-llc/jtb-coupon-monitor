@@ -41,6 +41,7 @@ jobs:
         run: python his_coupon_monitor.py
 
       - name: Google Sheets 書き出し
+        continue-on-error: true
         env:
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
@@ -65,6 +66,9 @@ jobs:
       - name: JTB ブログ用HTML生成（リスト形式）
         run: python generate_jtb_html.py
 
+      - name: ダッシュボード HTML 生成
+        run: python generate_dashboard.py
+
       - name: Google Drive 同期
         if: env.GDRIVE_FOLDER_ID != ''
         continue-on-error: true
@@ -79,7 +83,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add jtb_coupon_data/ knt_coupon_data/ his_coupon_data/ html_output/ tweets_output/
+          git add jtb_coupon_data/ knt_coupon_data/ his_coupon_data/ html_output/ tweets_output/ dashboard/
           if git diff --staged --quiet; then
             echo "✅ 変更なし"
             exit 0
