@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-03-23T00:08:32.240696",
+  "last_updated": "2026-03-23T03:25:57.908571",
   "ids": {
-    "2601jtbhpnew": {
-      "category": "国内",
-      "title": "【JTBトラベルメンバー新規会員向け】初回購入限定！国内クーポン",
-      "discount": "1,000円引",
-      "area": "全国",
-      "stock_status": "配布中"
-    },
     "2603appcp": {
       "category": "国内",
       "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
@@ -28,13 +21,6 @@
       "discount": "3,000円引",
       "area": "全国",
       "stock_status": "配布中"
-    },
-    "2510jjp": {
-      "category": "国内",
-      "title": "往復ジェットスター便利用航空機ツアー割引クーポン",
-      "discount": "最大12,000円引",
-      "area": "全国",
-      "stock_status": "配布終了"
     },
     "2501green": {
       "category": "国内",
@@ -139,7 +125,7 @@
       "title": "【道北エリア】オススメ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2603douto": {
       "category": "国内",
@@ -253,20 +239,6 @@
       "area": "千葉県",
       "stock_status": "配布中"
     },
-    "2601jrfuksp2": {
-      "category": "国内",
-      "title": "【山陽発限定】JR西日本利用のツアーで使えるクーポン",
-      "discount": "最大10,000円引",
-      "area": "千葉県・東京都・神奈川県",
-      "stock_status": "配布終了"
-    },
-    "2512nishi": {
-      "category": "国内",
-      "title": "西日本のおすすめ施設で使える早春割引クーポン",
-      "discount": "4,000円引",
-      "area": "滋賀県・京都府・大阪府",
-      "stock_status": "配布終了"
-    },
     "2512kyota": {
       "category": "国内",
       "title": "京都のおすすめ施設で使える『今、京都へおこしやす』割引クーポン",
@@ -286,7 +258,7 @@
       "title": "【大阪府】ユニバーサル・スタジオ・ジャパン　オフィシャルホテルで使えるクーポン",
       "discount": "最大10,000円引",
       "area": "大阪府",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2602jalcp": {
       "category": "国内",
@@ -294,20 +266,6 @@
       "discount": "最大16,000円引",
       "area": "香川県",
       "stock_status": "配布中"
-    },
-    "2511shimane": {
-      "category": "国内",
-      "title": "だんだん　島根割引クーポン",
-      "discount": "最大20,000円引",
-      "area": "島根県",
-      "stock_status": "配布終了"
-    },
-    "2509kagoshima": {
-      "category": "国内",
-      "title": "鹿児島県のおすすめ施設で使える割引クーポン",
-      "discount": "最大12,000円引",
-      "area": "鹿児島県",
-      "stock_status": "配布終了"
     },
     "2512kagoshima": {
       "category": "国内",
@@ -351,6 +309,13 @@
       "area": "沖縄県",
       "stock_status": "配布中"
     },
+    "2601jtbhpnew": {
+      "category": "国内",
+      "title": "【JTBトラベルメンバー新規会員向け】初回購入限定！国内クーポン",
+      "discount": "1,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
     "2602harutabi": {
       "category": "国内",
       "title": "【ときめく春旅】JTBのおすすめ施設で使える割引クーポン",
@@ -363,7 +328,7 @@
       "title": "U-29旅（10代/20代）初めてのWeb予約限定！国内旅行に使える割引クーポン",
       "discount": "3,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2509young": {
       "category": "国内",
@@ -376,6 +341,13 @@
       "category": "国内",
       "title": "U-29旅（10代/20代）国内グループ旅行応援クーポン",
       "discount": "10,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
+    "2510jjp": {
+      "category": "国内",
+      "title": "往復ジェットスター便利用航空機ツアー割引クーポン",
+      "discount": "最大12,000円引",
       "area": "全国",
       "stock_status": "配布終了"
     },
@@ -505,6 +477,13 @@
       "area": "富山県・石川県・福井県",
       "stock_status": "配布終了"
     },
+    "2601jrfuksp2": {
+      "category": "国内",
+      "title": "【山陽発限定】JR西日本利用のツアーで使えるクーポン",
+      "discount": "最大10,000円引",
+      "area": "千葉県・東京都・神奈川県",
+      "stock_status": "配布終了"
+    },
     "2510jalcpr": {
       "category": "国内",
       "title": "【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
@@ -574,48 +553,6 @@
       "discount": "最大40,000円引",
       "area": "全方面",
       "stock_status": "配布中"
-    },
-    "2509dpyng": {
-      "category": "海外",
-      "title": "【U-29旅】航空券+ホテルで使えるどこでも割引クーポン（10代）",
-      "discount": "最大20,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
-    "2509dpyng2": {
-      "category": "海外",
-      "title": "【U-29旅】航空券+ホテルで使えるどこでも割引クーポン（20代）",
-      "discount": "最大20,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
-    "2509lsgryng": {
-      "category": "海外",
-      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外グループ旅行応援クーポン（10代）",
-      "discount": "最大56,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
-    "2509lsgryng2": {
-      "category": "海外",
-      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外グループ旅行応援クーポン（20代）",
-      "discount": "最大56,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
-    "2509lsyng": {
-      "category": "海外",
-      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外旅行応援クーポン（10代）",
-      "discount": "最大15,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
-    "2509lsyng2": {
-      "category": "海外",
-      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外旅行応援クーポン（20代）",
-      "discount": "最大15,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
     },
     "2504sq": {
       "category": "海外",
@@ -722,12 +659,47 @@
       "area": "台北",
       "stock_status": "配布中"
     },
-    "op": {
+    "2509dpyng": {
       "category": "海外",
-      "title": "【MyBusソウル】新ツアー発売記念！50％割引クーポン",
-      "discount": "50％円引",
-      "area": "ソウル",
-      "stock_status": "配布中"
+      "title": "【U-29旅】航空券+ホテルで使えるどこでも割引クーポン（10代）",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
+    "2509dpyng2": {
+      "category": "海外",
+      "title": "【U-29旅】航空券+ホテルで使えるどこでも割引クーポン（20代）",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
+    "2509lsgryng": {
+      "category": "海外",
+      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外グループ旅行応援クーポン（10代）",
+      "discount": "最大56,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
+    "2509lsgryng2": {
+      "category": "海外",
+      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外グループ旅行応援クーポン（20代）",
+      "discount": "最大56,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
+    "2509lsyng": {
+      "category": "海外",
+      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外旅行応援クーポン（10代）",
+      "discount": "最大15,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
+    "2509lsyng2": {
+      "category": "海外",
+      "title": "【U-29旅】　海外ツアールックJTBMySTYLEどこでも使える！海外旅行応援クーポン（20代）",
+      "discount": "最大15,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
     },
     "2504br2": {
       "category": "海外",
