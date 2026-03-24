@@ -64,7 +64,7 @@
     "booking_period": "2025/11/21(金) ～ 2026/3/31(火)",
     "stay_period": "2026/4/1(水) ～ 2026/9/30(水)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511airhayawari/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1213,7 +1213,7 @@
     "booking_period": "2025/12/19(金) ～ 2026/3/31(火)",
     "stay_period": "2026/1/1(木) ～ 2026/6/30(火)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2512okinawa/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1241,7 +1241,7 @@
     "booking_period": "2025/12/22(月) ～ 2026/3/31(火)",
     "stay_period": "2026/1/1(木)  ～ 2026/6/30(火)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jtbhpnew/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1291,7 +1291,7 @@
     "booking_period": "2025/9/26(金) ～ 2026/3/29(日)",
     "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509jtbynghp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2046,62 +2046,6 @@
     }
   },
   {
-    "id": "2601qf",
-    "category": "海外",
-    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【カンタス航空対象】",
-    "discount": "最大200,000円引",
-    "area": "全方面",
-    "type": "海外航空券＋ホテル",
-    "booking_period": "2026年1月16日(金)～2026年3月23日(月)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2601qf/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2601C1",
-        "2601C2",
-        "2601C3",
-        "2601C4"
-      ],
-      "passwords": [
-        "DP2601QF"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着5枚 旅行代金200,000円以上（燃油・空港諸税等除く）のご利用で 50,000 円引 クーポ"
-      ]
-    }
-  },
-  {
-    "id": "2601qf2",
-    "category": "海外",
-    "title": "海外航空券で使えるどこでも割引クーポン【カンタス航空対象】",
-    "discount": "最大160,000円引",
-    "area": "全方面",
-    "type": "海外航空券",
-    "booking_period": "2026年1月16日(金)～2026年3月23日(月)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2601qf2/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2601B1",
-        "2601B2",
-        "2601B3",
-        "2601B4"
-      ],
-      "passwords": [
-        "AR2601QF"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着5枚 旅行代金150,000円以上（燃油・空港諸税等除く）のご利用で 40,000 円引 クーポ"
-      ]
-    }
-  },
-  {
     "id": "2511br2",
     "category": "海外",
     "title": "海外航空券で使えるどこでも割引クーポン【エバー航空対象】",
@@ -2158,62 +2102,6 @@
     }
   },
   {
-    "id": "2511sk",
-    "category": "海外",
-    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【スカンジナビア航空対象】",
-    "discount": "最大40,000円引",
-    "area": "全方面",
-    "type": "海外航空券＋ホテル",
-    "booking_period": "2025年11月1日(土)～2026年3月23日(日)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511sk/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2511C1",
-        "2511C2",
-        "2511C3",
-        "2511C4"
-      ],
-      "passwords": [
-        "DP2511SK"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着3枚 10,000 円引 クーポンコード 2511C1 パスワード DP2511SK 2名利用"
-      ]
-    }
-  },
-  {
-    "id": "2504sq",
-    "category": "海外",
-    "title": "海外航空券+ホテルでどこでも使える割引クーポン【シンガポール航空対象】",
-    "discount": "最大20,000円引",
-    "area": "全方面",
-    "type": "海外航空券＋ホテル",
-    "booking_period": "2025年4月1日(火)～2026年3月23日(月)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504sq/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2504U1",
-        "2504U2",
-        "2504U3",
-        "2504U4"
-      ],
-      "passwords": [
-        "DP2504SQ"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着50枚 5,000 円引 クーポンコード 2504U1 パスワード DP2504SQ 2名利用"
-      ]
-    }
-  },
-  {
     "id": "2512hwi",
     "category": "海外",
     "title": "ホノルルで使える！海外ツアールックJTBMySTYLE割引クーポン【デルタ航空(DL)対象】",
@@ -2238,34 +2126,6 @@
       "conditions": [],
       "notes": [
         "クーポン 1名利用 先着8枚 5,000 円引 クーポンコード 2512A1 パスワード LS2512HWI 2名利用"
-      ]
-    }
-  },
-  {
-    "id": "2510gum",
-    "category": "海外",
-    "title": "海外航空券+ホテルで使えるグアム行き割引クーポン【日本航空（JAL）対象】",
-    "discount": "最大20,000円引",
-    "area": "グアム",
-    "type": "海外航空券＋ホテル",
-    "booking_period": "2025年10月1日(水)～2026年3月23日(月)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2510gum/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2510C1",
-        "2510C2",
-        "2510C3",
-        "2510C4"
-      ],
-      "passwords": [
-        "DP2510GUM"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着30枚 5,000 円引 クーポンコード 2510C1 パスワード DP2510GUM 2名利用"
       ]
     }
   },
@@ -2602,6 +2462,146 @@
       "conditions": [],
       "notes": [
         "クーポン 1名利用 先着50枚 5,000 円引 クーポンコード 2504T1 パスワード DP2504TPE 2名利用"
+      ]
+    }
+  },
+  {
+    "id": "2510gum",
+    "category": "海外",
+    "title": "海外航空券+ホテルで使えるグアム行き割引クーポン【日本航空（JAL）対象】",
+    "discount": "最大20,000円引",
+    "area": "グアム",
+    "type": "海外航空券＋ホテル",
+    "booking_period": "2025年10月1日(水)～2026年3月23日(月)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2510gum/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2510C1",
+        "2510C2",
+        "2510C3",
+        "2510C4"
+      ],
+      "passwords": [
+        "DP2510GUM"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着30枚 5,000 円引 クーポンコード 2510C1 パスワード DP2510GUM 2名利用"
+      ]
+    }
+  },
+  {
+    "id": "2504sq",
+    "category": "海外",
+    "title": "海外航空券+ホテルでどこでも使える割引クーポン【シンガポール航空対象】",
+    "discount": "最大20,000円引",
+    "area": "全方面",
+    "type": "海外航空券＋ホテル",
+    "booking_period": "2025年4月1日(火)～2026年3月23日(月)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2504sq/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2504U1",
+        "2504U2",
+        "2504U3",
+        "2504U4"
+      ],
+      "passwords": [
+        "DP2504SQ"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着50枚 5,000 円引 クーポンコード 2504U1 パスワード DP2504SQ 2名利用"
+      ]
+    }
+  },
+  {
+    "id": "2511sk",
+    "category": "海外",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【スカンジナビア航空対象】",
+    "discount": "最大40,000円引",
+    "area": "全方面",
+    "type": "海外航空券＋ホテル",
+    "booking_period": "2025年11月1日(土)～2026年3月23日(日)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511sk/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2511C1",
+        "2511C2",
+        "2511C3",
+        "2511C4"
+      ],
+      "passwords": [
+        "DP2511SK"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着3枚 10,000 円引 クーポンコード 2511C1 パスワード DP2511SK 2名利用"
+      ]
+    }
+  },
+  {
+    "id": "2601qf2",
+    "category": "海外",
+    "title": "海外航空券で使えるどこでも割引クーポン【カンタス航空対象】",
+    "discount": "最大160,000円引",
+    "area": "全方面",
+    "type": "海外航空券",
+    "booking_period": "2026年1月16日(金)～2026年3月23日(月)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2601qf2/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2601B1",
+        "2601B2",
+        "2601B3",
+        "2601B4"
+      ],
+      "passwords": [
+        "AR2601QF"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着5枚 旅行代金150,000円以上（燃油・空港諸税等除く）のご利用で 40,000 円引 クーポ"
+      ]
+    }
+  },
+  {
+    "id": "2601qf",
+    "category": "海外",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【カンタス航空対象】",
+    "discount": "最大200,000円引",
+    "area": "全方面",
+    "type": "海外航空券＋ホテル",
+    "booking_period": "2026年1月16日(金)～2026年3月23日(月)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2601qf/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2601C1",
+        "2601C2",
+        "2601C3",
+        "2601C4"
+      ],
+      "passwords": [
+        "DP2601QF"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着5枚 旅行代金200,000円以上（燃油・空港諸税等除く）のご利用で 50,000 円引 クーポ"
       ]
     }
   },
