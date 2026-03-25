@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-03-24T02:59:23.067540",
+  "last_updated": "2026-03-25T00:10:02.541839",
   "ids": {
+    "2601jtbhpnew": {
+      "category": "国内",
+      "title": "【JTBトラベルメンバー新規会員向け】初回購入限定！国内クーポン",
+      "discount": "1,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
     "2603appcp": {
       "category": "国内",
       "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
@@ -216,7 +223,7 @@
       "title": "【復幸旅！八丈島】3月～6月宿泊で使える割引クーポン",
       "discount": "最大40％引",
       "area": "東京都",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603hachijo2": {
       "category": "国内",
@@ -307,21 +314,14 @@
       "title": "☆【沖縄】1月～6月出発☆GWにも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
-    },
-    "2601jtbhpnew": {
-      "category": "国内",
-      "title": "【JTBトラベルメンバー新規会員向け】初回購入限定！国内クーポン",
-      "discount": "1,000円引",
-      "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2602harutabi": {
       "category": "国内",
       "title": "【ときめく春旅】JTBのおすすめ施設で使える割引クーポン",
       "discount": "1,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2509jtbynghp": {
       "category": "国内",
