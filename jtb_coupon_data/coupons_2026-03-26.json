@@ -554,6 +554,35 @@
     }
   },
   {
+    "id": "2603domin",
+    "category": "国内",
+    "title": "【北海道民限定】オススメ旅館・ホテルで使える割引クーポン",
+    "discount": "最大5,000円引",
+    "area": "北海道",
+    "type": "宿泊",
+    "booking_period": "2026/3/26(木) ～ 2026/5/30(土)",
+    "stay_period": "2026/3/26(木) ～ 2026/5/30(土)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603domin/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "domin"
+      ],
+      "passwords": [
+        "g586",
+        "g587",
+        "g588",
+        "g589",
+        "g590"
+      ],
+      "conditions": [],
+      "notes": [
+        "し 【札幌エリア】 先着 500枚 10,000円以上のご利用で 2,000 円引 クーポンコード domin パスワー"
+      ]
+    }
+  },
+  {
     "id": "2601nstoh",
     "category": "国内",
     "title": "「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
@@ -563,7 +592,7 @@
     "booking_period": "2026/1/23(金) ～ 2026/7/12(日)",
     "stay_period": "2026/4/1(水) ～ 2026/7/12(日)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601nstoh/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -876,7 +905,7 @@
     "booking_period": "2026/3/2(月) ～ 2026/6/30(火)",
     "stay_period": "2026/3/3(火) ～ 2026/6/30(火)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603hachijo/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1266,7 +1295,7 @@
     "booking_period": "2026/2/17(火) ～ 2026/3/31(火)",
     "stay_period": "2026/2/17(火) ～ 2026/3/31(火)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602harutabi/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1291,7 +1320,7 @@
     "booking_period": "2025/9/26(金) ～ 2026/3/29(日)",
     "stay_period": "2025/10/1(水) ～ 2026/3/31(火)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509jtbynghp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1316,7 +1345,7 @@
     "booking_period": "2025/9/26(金) ～ 2026/3/29(日)",
     "stay_period": "2026/1/9(金) ～ 2026/3/31(火)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2509young/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1353,32 +1382,6 @@
       "conditions": [],
       "notes": [
         "以上 泊数指定なし 先着 475枚 100,000円以上のご利用で 10,000 円引 クーポンコード yngdm パス"
-      ]
-    }
-  },
-  {
-    "id": "2510jjp",
-    "category": "国内",
-    "title": "往復ジェットスター便利用航空機ツアー割引クーポン",
-    "discount": "最大12,000円引",
-    "area": "全国",
-    "type": "ツアー",
-    "booking_period": "2025/10/30(木) ～ 2026/3/22(日)",
-    "stay_period": "2025/12/1(月) ～ 2026/3/25(水)",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2510jjp/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "jjpcp"
-      ],
-      "passwords": [
-        "g282",
-        "g283"
-      ],
-      "conditions": [],
-      "notes": [
-        "なし 泊数指定なし 先着 120枚 120,000円以上のご利用で 12,000 円引 クーポンコード jjpcp パス"
       ]
     }
   },
