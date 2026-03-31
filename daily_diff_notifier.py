@@ -16,10 +16,12 @@ import os
 import smtplib
 import sys
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from pathlib import Path
+
+JST = timezone(timedelta(hours=9))
 
 # ============================================================
 # 設定
@@ -527,7 +529,7 @@ def build_html_email(diffs, today_str, tweets=None):
         else today_str
     )
 
-    now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+    now_str = datetime.now(JST).strftime("%Y-%m-%d %H:%M")
 
     html = f"""<!DOCTYPE html>
 <html lang="ja">
@@ -651,7 +653,7 @@ def main():
     print("日次クーポン差分通知")
     print("=" * 50)
 
-    today_str = datetime.now().strftime("%Y-%m-%d")
+    today_str = datetime.now(JST).strftime("%Y-%m-%d")
     print(f"対象日: {today_str}")
 
     all_diffs = []

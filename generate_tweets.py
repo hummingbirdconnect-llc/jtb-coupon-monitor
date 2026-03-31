@@ -18,8 +18,10 @@ change_log.json から当日の新規/配布再開クーポンを抽出し、
 
 import json
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
+
+JST = timezone(timedelta(hours=9))
 
 BASE_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = BASE_DIR / "tweets_output"
@@ -234,7 +236,7 @@ def main():
     dry_run = "--dry-run" in sys.argv
 
     # 日付指定オプション
-    target_date = datetime.now().strftime("%Y-%m-%d")
+    target_date = datetime.now(JST).strftime("%Y-%m-%d")
     if "--date" in sys.argv:
         idx = sys.argv.index("--date")
         if idx + 1 < len(sys.argv):

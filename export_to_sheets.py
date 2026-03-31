@@ -15,11 +15,12 @@ Google Sheets 書き出しスクリプト（JTB + KNT + HIS 統合版）
 import json
 import os
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 
 import gspread
 from google.oauth2.service_account import Credentials
 
+JST = timezone(timedelta(hours=9))
 
 # ============================================================
 # Google Sheets 接続
@@ -83,7 +84,7 @@ def load_latest_data(data_dir):
     if not data_path.exists():
         return []
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(JST).strftime("%Y-%m-%d")
     daily_file = data_path / f"coupons_{today}.json"
     if not daily_file.exists():
         files = sorted(data_path.glob("coupons_*.json"), reverse=True)
@@ -118,7 +119,7 @@ def update_jtb_coupon_sheet(spreadsheet, coupons, sheet_name, header_color):
     ]
     num_cols = len(headers)  # 16列: A〜P
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(JST).strftime("%Y-%m-%d")
     # 配布中を先、配布終了を後に → エリア
     coupons.sort(key=lambda x: (
         0 if x.get("stock_status") == "配布中" else 1,
@@ -203,7 +204,7 @@ def update_knt_coupon_sheet(spreadsheet, coupons):
     ]
     num_cols = len(headers)  # 15列: A〜O
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(JST).strftime("%Y-%m-%d")
     # 配布中を先、配布終了を後に → カテゴリ → エリア
     coupons.sort(key=lambda x: (
         0 if x.get("stock_status") == "配布中" else 1,
@@ -291,7 +292,7 @@ def update_his_coupon_sheet(spreadsheet, coupons):
     ]
     num_cols = len(headers)  # 12列: A〜L
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(JST).strftime("%Y-%m-%d")
     # 配布中を先、配布終了を後に → カテゴリ
     coupons.sort(key=lambda x: (
         0 if x.get("stock_status") == "配布中" else 1,

@@ -13,8 +13,10 @@ import glob
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from html import escape as html_escape
+
+JST = timezone(timedelta(hours=9))
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -356,7 +358,7 @@ def main():
     parts: list[str] = []
 
     parts.append(f"<!-- HIS クーポン SWELL HTML（自動生成） -->")
-    parts.append(f"<!-- データ: {filename} / 生成: {datetime.now().strftime('%Y-%m-%d %H:%M')} -->")
+    parts.append(f"<!-- データ: {filename} / 生成: {datetime.now(JST).strftime('%Y-%m-%d %H:%M')} -->")
     parts.append("")
 
     for section_name in SECTION_ORDER:

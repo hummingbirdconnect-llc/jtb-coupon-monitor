@@ -33,7 +33,7 @@ HTML構造（2026-02時点）:
 import json
 import sys
 import hashlib
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import re
 from coupon_validator import validate_coupons
@@ -49,6 +49,8 @@ MASTER_FILE = DATA_DIR / "master_ids.json"
 # データ保持日数
 DATA_RETENTION_DAYS = 30
 
+JST = timezone(timedelta(hours=9))
+
 
 # ============================================================
 # ユーティリティ
@@ -58,7 +60,7 @@ def setup_dirs():
 
 
 def today_str():
-    return datetime.now().strftime("%Y-%m-%d")
+    return datetime.now(JST).strftime("%Y-%m-%d")
 
 
 def make_coupon_id(title, category):
@@ -78,7 +80,7 @@ def load_master_ids():
 
 
 def save_master_ids(master):
-    master["last_updated"] = datetime.now().isoformat()
+    master["last_updated"] = datetime.now(JST).isoformat()
     with open(MASTER_FILE, "w", encoding="utf-8") as f:
         json.dump(master, f, ensure_ascii=False, indent=2)
 
@@ -227,7 +229,7 @@ def parse_coupons(html):
         # --- 配布状況（予約期間終了チェック） ---
         stock_status = "配布中"
         end_date = _extract_booking_end_date(booking_period)
-        if end_date and end_date < today_str():
+        if end_date and end_date <= today_str():
             stock_status = "配布終了"
 
         coupon = {
@@ -367,7 +369,7 @@ def save_change_log(events):
             existing = json.load(f)
 
     existing.extend(events)
-    cutoff = (datetime.now() - timedelta(days=90)).strftime("%Y-%m-%d")
+    cutoff = (datetime.now(JST) - timedelta(days=90)).strftime("%Y-%m-%d")
     existing = [e for e in existing if e.get("date", "") >= cutoff]
 
     with open(log_file, "w", encoding="utf-8") as f:
@@ -376,7 +378,7 @@ def save_change_log(events):
 
 def cleanup_old_files():
     """DATA_RETENTION_DAYS より古い日次ファイルとレポートを削除"""
-    cutoff = (datetime.now() - timedelta(days=DATA_RETENTION_DAYS)).strftime("%Y-%m-%d")
+    cutoff = (datetime.now(JST) - timedelta(days=DATA_RETENTION_DAYS)).strftime("%Y-%m-%d")
     removed = 0
 
     for pattern in ["coupons_*.json", "report_*.md"]:

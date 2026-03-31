@@ -16,8 +16,10 @@ import glob
 import json
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from html import escape as html_escape
+
+JST = timezone(timedelta(hours=9))
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -310,7 +312,7 @@ def generate_full_html(coupons: list, config: dict, filename: str) -> str:
     # Header comment
     lines.append(f"<!-- HIS クーポン SWELL リストHTML（自動生成） -->")
     lines.append(
-        f"<!-- データ: {filename} / 生成: {datetime.now().strftime('%Y-%m-%d %H:%M')} -->"
+        f"<!-- データ: {filename} / 生成: {datetime.now(JST).strftime('%Y-%m-%d %H:%M')} -->"
     )
 
     # Tab container

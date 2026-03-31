@@ -14,10 +14,11 @@
 
 import re
 import json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from difflib import SequenceMatcher
 
+JST = timezone(timedelta(hours=9))
 
 # ============================================================
 # 設定
@@ -338,7 +339,7 @@ def check_cross_field_consistency(coupons, service_name=""):
       - 予約期間の開始日 > 終了日
     """
     warnings = []
-    today_s = datetime.now().strftime("%Y-%m-%d")
+    today_s = datetime.now(JST).strftime("%Y-%m-%d")
 
     for c in coupons:
         cid = c.get("id", "???")
@@ -348,7 +349,7 @@ def check_cross_field_consistency(coupons, service_name=""):
         if c.get("stock_status") == "配布中":
             booking = c.get("booking_period", "")
             end_date = _extract_any_end_date(booking)
-            if end_date and end_date < today_s:
+            if end_date and end_date <= today_s:
                 c["stock_status"] = "配布終了"
                 warnings.append(
                     f"[{service_name}] {cid}「{title}」: "
@@ -489,7 +490,7 @@ def save_validation_report(reports, output_dir=None):
         reports: validate_coupons() が返す report のリスト
         output_dir: 保存先ディレクトリ（省略時は各サービスのデータディレクトリ）
     """
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = datetime.now(JST).strftime("%Y-%m-%d")
     summary = {
         "date": today,
         "services": [],

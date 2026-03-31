@@ -18,10 +18,12 @@ import os
 import re
 import sys
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from html import escape
 
 import jinja2
+
+JST = timezone(timedelta(hours=9))
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -276,7 +278,7 @@ def build_viewmodels(dom_sections, ovs_sections, config, filename):
     return {
         "tab_id": TAB_ID,
         "data_filename": filename,
-        "generated_at": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "generated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M"),
         # 国内
         "first_time": first_time,
         "first_time_btn": first_time_btn,
