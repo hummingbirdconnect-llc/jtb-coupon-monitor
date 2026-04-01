@@ -71,6 +71,23 @@ jobs:
       - name: ダッシュボード HTML 生成
         run: python generate_dashboard.py
 
+             - name: WordPress クーポンページ下書き更新
+        env:
+          YF_WP_URL: ${{ secrets.YF_WP_URL }}
+          YF_WP_USER: ${{ secrets.YF_WP_USER }}
+          YF_WP_APP_PASSWORD: ${{ secrets.YF_WP_APP_PASSWORD }}
+        run: python wp_coupon_updater.py --site yakushimafan
+
+      - name: WP更新結果通知
+        if: always()
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+        run: python notify_wp_update.py
+
+
+
       - name: コミット＆プッシュ
         run: |
           git config user.name "github-actions[bot]"
@@ -89,18 +106,4 @@ jobs:
           done
           git push origin main
 
-                - name: WordPress クーポンページ下書き更新
-        env:
-          YF_WP_URL: ${{ secrets.YF_WP_URL }}
-          YF_WP_USER: ${{ secrets.YF_WP_USER }}
-          YF_WP_APP_PASSWORD: ${{ secrets.YF_WP_APP_PASSWORD }}
-        run: python wp_coupon_updater.py --site yakushimafan
-
-      - name: WP更新結果通知
-        if: always()
-        env:
-          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
-        run: python notify_wp_update.py
-
+           
