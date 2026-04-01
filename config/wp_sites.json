@@ -1,0 +1,38 @@
+{
+  "sites": {
+    "yakushimafan": {
+      "wp_url_env": "YF_WP_URL",
+      "wp_user_env": "YF_WP_USER",
+      "wp_app_password_env": "YF_WP_APP_PASSWORD",
+      "pages": [
+        {
+          "ota": "his",
+          "slug": "his-coupon",
+          "url": "https://yakushima.fun/his-coupon/",
+          "data_dir": "his_coupon_data",
+          "affiliate_config": "config/his_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col"
+        },
+        {
+          "ota": "jtb",
+          "slug": "jtb-first",
+          "url": "https://yakushima.fun/jtb-first/",
+          "data_dir": "jtb_coupon_data",
+          "affiliate_config": "config/jtb_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col"
+        },
+        {
+          "ota": "knt",
+          "slug": "knt-coupon",
+          "url": "https://yakushima.fun/knt-coupon/",
+          "data_dir": "knt_coupon_data",
+          "affiliate_config": "config/knt_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col"
+        }
+      ]
+    }
+  }
+}

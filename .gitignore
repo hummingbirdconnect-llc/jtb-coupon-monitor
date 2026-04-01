@@ -10,4 +10,7 @@ cron.log
 coupon-monitor-*.json
 
 # アフィリエイト設定（Secrets経由で復元）
-config/
+config/*_affiliate_links.json
+
+# WP更新結果（一時ファイル）
+wp_update_result.json
