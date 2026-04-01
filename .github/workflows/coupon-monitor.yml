@@ -71,7 +71,7 @@ jobs:
       - name: ダッシュボード HTML 生成
         run: python generate_dashboard.py
 
-             - name: WordPress クーポンページ下書き更新
+      - name: WordPress クーポンページ下書き更新
         env:
           YF_WP_URL: ${{ secrets.YF_WP_URL }}
           YF_WP_USER: ${{ secrets.YF_WP_USER }}
