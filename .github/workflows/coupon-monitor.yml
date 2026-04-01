@@ -86,8 +86,6 @@ jobs:
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
         run: python notify_wp_update.py
 
-
-
       - name: コミット＆プッシュ
         run: |
           git config user.name "github-actions[bot]"
