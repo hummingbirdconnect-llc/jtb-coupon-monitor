@@ -90,7 +90,23 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add --ignore-missing jtb_coupon_data/ knt_coupon_data/ his_coupon_data/ html_output/ tweets_output/ dashboard/
+          generated_paths=(
+            jtb_coupon_data/
+            knt_coupon_data/
+            his_coupon_data/
+            html_output/
+            tweets_output/
+            dashboard/
+          )
+          staged_paths=()
+          for path in "${generated_paths[@]}"; do
+            if [ -e "$path" ] || [ -n "$(git ls-files -- "$path")" ]; then
+              staged_paths+=("$path")
+            fi
+          done
+          if [ ${#staged_paths[@]} -gt 0 ]; then
+            git add -A -- "${staged_paths[@]}"
+          fi
           if git diff --staged --quiet; then
             echo "✅ 変更なし"
             exit 0
@@ -103,4 +119,3 @@ jobs:
             sleep 5
           done
           git push origin main
-
