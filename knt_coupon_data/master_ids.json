@@ -1,10 +1,25 @@
 {
-  "last_updated": "2026-04-01T09:09:49.356838+09:00",
+  "last_updated": "2026-04-11T07:59:00.982106+09:00",
   "ids": {
+    "yado-sp-kagoshima-natsu-cp-4a08ed": {
+      "category": "獲得クーポン",
+      "title": "南の宝箱　鹿児島「夏のかごしま宿泊割」キャンペーン",
+      "area": "鹿児島県"
+    },
+    "yado-sp-wakayama-kumano-kcp-6bb148": {
+      "category": "獲得クーポン",
+      "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
+      "area": "和歌山県"
+    },
     "sp-nikko-campaign-9014fc": {
       "category": "獲得クーポン",
       "title": "世界遺産の街・日光へ行こう！",
       "area": "栃木県"
+    },
+    "cpn-thanksweek-91eb8b": {
+      "category": "クーポンコード",
+      "title": "近ツー感謝ウィーク",
+      "area": ""
     },
     "yado-sp-disney-coupon-44b992": {
       "category": "クーポンコード",
