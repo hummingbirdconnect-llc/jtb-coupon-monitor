@@ -1,19 +1,26 @@
 {
-  "last_updated": "2026-04-27T09:06:02.248492+09:00",
+  "last_updated": "2026-04-28T06:56:43.042857+09:00",
   "ids": {
-    "2603appcp": {
+    "2604jtbcpnew": {
       "category": "国内",
-      "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
-      "discount": "最大3,000円引",
+      "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(7-9月出発)",
+      "discount": "1,500円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
-    "2511airhayawari": {
+    "2604airhayawari": {
       "category": "国内",
-      "title": "【早期75日前までの予約限定】GW・夏休みも先どり！4-9月出発航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+      "title": "【早期75日前までの予約限定】夏休みも先どり！<7～9月出発＞航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
       "discount": "3,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
+    },
+    "2604airhayawari2": {
+      "category": "国内",
+      "title": "【早期75日前までの予約限定】秋旅から冬旅も先どり！＜10～1月出発＞航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+      "discount": "3,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
     },
     "2601green": {
       "category": "国内",
@@ -36,6 +43,13 @@
       "area": "全国",
       "stock_status": "配布中"
     },
+    "2604ooedo": {
+      "category": "国内",
+      "title": "全国の大江戸温泉物語とTAOYAで使える割引クーポン",
+      "discount": "最大5,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
     "2602hokkaido": {
       "category": "国内",
       "title": "【3・4月限定】北海道おすすめホテルで使える割引クーポン",
@@ -48,14 +62,14 @@
       "title": "【道北エリア】オススメ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603douto": {
       "category": "国内",
       "title": "【道東エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603domin": {
       "category": "国内",
@@ -90,7 +104,7 @@
       "title": "【4～7月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604nstoh": {
       "category": "国内",
@@ -120,6 +134,13 @@
       "area": "群馬県",
       "stock_status": "配布中"
     },
+    "2605saita": {
+      "category": "国内",
+      "title": "【6～8月宿泊】埼玉県の宿泊で使える割引クーポン",
+      "discount": "最大3,000円引",
+      "area": "埼玉県",
+      "stock_status": "配布中"
+    },
     "2603hachijo": {
       "category": "国内",
       "title": "【復幸旅！八丈島】3月～6月宿泊で使える割引クーポン",
@@ -132,7 +153,7 @@
       "title": "【復幸旅！八丈島】7月宿泊で使える割引クーポン",
       "discount": "最大30％引",
       "area": "東京都",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604usjcp": {
       "category": "国内",
@@ -197,10 +218,10 @@
       "area": "沖縄県",
       "stock_status": "配布中"
     },
-    "2601jtbfuksp": {
+    "2603appcp": {
       "category": "国内",
-      "title": "【新春福春】国内ツアーに使える割引クーポン",
-      "discount": "最大12,000円引",
+      "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
+      "discount": "最大3,000円引",
       "area": "全国",
       "stock_status": "配布終了"
     },
@@ -215,6 +236,20 @@
       "category": "国内",
       "title": "宿泊早期予約キャンペーン（GW/夏休み/9月シルバーウイーク含む） で使える割引クーポン",
       "discount": "最大3,500円引",
+      "area": "全国",
+      "stock_status": "配布終了"
+    },
+    "2511airhayawari": {
+      "category": "国内",
+      "title": "【早期75日前までの予約限定】GW・夏休みも先どり！4-9月出発航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+      "discount": "3,000円引",
+      "area": "全国",
+      "stock_status": "配布終了"
+    },
+    "2601jtbfuksp": {
+      "category": "国内",
+      "title": "【新春福春】国内ツアーに使える割引クーポン",
+      "discount": "最大12,000円引",
       "area": "全国",
       "stock_status": "配布終了"
     },
