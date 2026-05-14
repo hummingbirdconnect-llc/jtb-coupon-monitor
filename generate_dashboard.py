@@ -12,8 +12,6 @@ import os
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 
-from wp_coupon_updater import public_page_options
-
 JST = timezone(timedelta(hours=9))
 
 
@@ -146,10 +144,9 @@ def format_change_log(change_log):
 # ============================================================
 # HTML テンプレート生成
 # ============================================================
-def generate_html(data, updated_at, wp_update_options):
+def generate_html(data, updated_at):
     """データを埋め込んだ自己完結型HTMLを生成"""
     data_json = json.dumps(data, ensure_ascii=False, indent=None)
-    wp_update_json = json.dumps(wp_update_options, ensure_ascii=False, indent=None)
 
     html = f"""<!DOCTYPE html>
 <html lang="ja">
@@ -207,26 +204,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 .log-lost {{ background: #fce4ec; }}
 .log-ended {{ background: #fff3e0; }}
 .log-resumed {{ background: #e3f2fd; }}
-.wp-panel {{ background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 18px; max-width: 960px; }}
-.wp-panel p {{ color: #555; line-height: 1.7; margin-bottom: 14px; }}
-.wp-form {{ display: grid; grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 14px; margin-top: 14px; }}
-.wp-field {{ display: flex; flex-direction: column; gap: 6px; }}
-.wp-field label {{ font-size: 0.85rem; font-weight: 600; color: #444; }}
-.wp-field select, .wp-field input {{ border: 1px solid #ccc; border-radius: 6px; padding: 9px 10px; font-size: 0.95rem; background: #fff; }}
-.wp-field.full {{ grid-column: 1 / -1; }}
-.wp-actions {{ display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 16px; }}
-.wp-run-btn {{ padding: 9px 16px; border: 2px solid #0b57d0; border-radius: 6px; background: #0b57d0; color: #fff; cursor: pointer; font-size: 0.92rem; font-weight: 600; }}
-.wp-run-btn:disabled {{ opacity: 0.55; cursor: wait; }}
-.wp-secondary-link {{ color: #0b57d0; text-decoration: none; font-size: 0.9rem; }}
-.wp-result {{ margin-top: 14px; padding: 12px; border-radius: 6px; background: #f5f7fb; color: #333; line-height: 1.6; white-space: normal; }}
-.wp-result.error {{ background: #fce4ec; color: #9f1239; }}
-.wp-result.ok {{ background: #e8f5e9; color: #1b5e20; }}
-.wp-note {{ font-size: 0.85rem; color: #666; }}
 @media (max-width: 768px) {{
   .tabs {{ padding: 0 8px; }}
   .tab {{ padding: 10px 12px; font-size: 0.85rem; }}
   .tab-content {{ padding: 12px; }}
-  .wp-form {{ grid-template-columns: 1fr; }}
 }}
 </style>
 </head>
@@ -242,7 +223,6 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
   <button class="tab" data-tab="jtb-overseas">JTB 海外</button>
   <button class="tab" data-tab="knt">KNT</button>
   <button class="tab" data-tab="his">HIS</button>
-  <button class="tab" data-tab="wp-update">WP下書き更新</button>
   <button class="tab" data-tab="jtb-log">JTB 変動ログ</button>
   <button class="tab" data-tab="knt-log">KNT 変動ログ</button>
   <button class="tab" data-tab="his-log">HIS 変動ログ</button>
@@ -252,7 +232,6 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 <div class="tab-content" id="jtb-overseas"></div>
 <div class="tab-content" id="knt"></div>
 <div class="tab-content" id="his"></div>
-<div class="tab-content" id="wp-update"></div>
 <div class="tab-content" id="jtb-log"></div>
 <div class="tab-content" id="knt-log"></div>
 <div class="tab-content" id="his-log"></div>
@@ -260,8 +239,6 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
 <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
 <script>
 const DATA = {data_json};
-const WP_UPDATE_OPTIONS = {wp_update_json};
-const WP_UPDATE_WORKFLOW_URL = 'https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions/workflows/wp-coupon-update.yml';
 
 // タブ切替
 document.querySelectorAll('.tab').forEach(tab => {{
@@ -537,146 +514,6 @@ function renderLogTable(containerId, rows, title) {{
   }}).render(gridDiv);
 }}
 
-function renderWpUpdatePanel() {{
-  const el = document.getElementById('wp-update');
-  const sites = WP_UPDATE_OPTIONS.sites || {{}};
-  const siteIds = Object.keys(sites);
-  if (!siteIds.length) {{
-    el.innerHTML = '<div class="section"><p style="color:#999;padding:20px;">WP更新対象の設定がありません</p></div>';
-    return;
-  }}
-
-  el.innerHTML = `
-    <div class="section wp-panel">
-      <h2>WordPress下書きへクーポン表だけ反映</h2>
-      <p>取得済みのクーポンデータを使い、対象記事のクーポン表だけを下書きに反映します。公開記事は直接上書きしません。</p>
-      <div class="wp-form">
-        <div class="wp-field">
-          <label for="wp-site-select">サイト</label>
-          <select id="wp-site-select"></select>
-        </div>
-        <div class="wp-field">
-          <label for="wp-page-select">記事</label>
-          <select id="wp-page-select"></select>
-        </div>
-        <div class="wp-field full">
-          <label for="wp-proxy-url">中継API URL</label>
-          <input id="wp-proxy-url" type="url" placeholder="https://example.workers.dev/dispatch-wp-coupon-update">
-        </div>
-        <div class="wp-field">
-          <label for="wp-admin-key">管理用合言葉</label>
-          <input id="wp-admin-key" type="password" autocomplete="current-password" placeholder="初回だけ入力">
-        </div>
-        <div class="wp-field">
-          <label for="wp-dry-run">実行モード</label>
-          <select id="wp-dry-run">
-            <option value="false">WP下書きに保存</option>
-            <option value="true">DRY-RUN（HTML出力のみ）</option>
-          </select>
-        </div>
-      </div>
-      <div class="wp-actions">
-        <button class="wp-run-btn" id="wp-run-update">下書き更新を実行</button>
-        <a class="wp-secondary-link" href="${{WP_UPDATE_WORKFLOW_URL}}" target="_blank" rel="noopener">GitHub Actionsを開く</a>
-      </div>
-      <p class="wp-note">GitHub tokenやWordPress認証情報はこの画面に保存しません。中継API側のSecretとして管理してください。</p>
-      <div id="wp-update-result" class="wp-result" style="display:none;"></div>
-    </div>
-  `;
-
-  const siteSelect = document.getElementById('wp-site-select');
-  const pageSelect = document.getElementById('wp-page-select');
-  const proxyInput = document.getElementById('wp-proxy-url');
-  const keyInput = document.getElementById('wp-admin-key');
-  const dryRunSelect = document.getElementById('wp-dry-run');
-  const runButton = document.getElementById('wp-run-update');
-  const resultBox = document.getElementById('wp-update-result');
-
-  proxyInput.value = localStorage.getItem('couponMonitorWpProxyUrl') || '';
-  keyInput.value = localStorage.getItem('couponMonitorWpAdminKey') || '';
-
-  siteIds.forEach(siteId => {{
-    const option = document.createElement('option');
-    option.value = siteId;
-    option.textContent = siteId;
-    siteSelect.appendChild(option);
-  }});
-
-  function fillPages() {{
-    const site = sites[siteSelect.value] || {{}};
-    pageSelect.innerHTML = '';
-    (site.pages || []).forEach(page => {{
-      const option = document.createElement('option');
-      option.value = page.slug;
-      option.textContent = page.label || page.slug;
-      option.dataset.url = page.url || '';
-      pageSelect.appendChild(option);
-    }});
-  }}
-
-  siteSelect.addEventListener('change', fillPages);
-  fillPages();
-
-  runButton.addEventListener('click', async () => {{
-    const endpoint = proxyInput.value.trim();
-    const adminKey = keyInput.value.trim();
-    if (!endpoint || !adminKey) {{
-      resultBox.style.display = 'block';
-      resultBox.className = 'wp-result error';
-      resultBox.textContent = '中継API URLと管理用合言葉を入力してください。';
-      return;
-    }}
-
-    localStorage.setItem('couponMonitorWpProxyUrl', endpoint);
-    localStorage.setItem('couponMonitorWpAdminKey', adminKey);
-
-    const requestId = `wp-${{Date.now()}}-${{Math.random().toString(36).slice(2, 8)}}`;
-    const payload = {{
-      site_id: siteSelect.value,
-      page_slug: pageSelect.value,
-      dry_run: dryRunSelect.value === 'true',
-      request_id: requestId,
-    }};
-
-    runButton.disabled = true;
-    resultBox.style.display = 'block';
-    resultBox.className = 'wp-result';
-    resultBox.textContent = 'GitHub Actionsを起動しています...';
-
-    try {{
-      const response = await fetch(endpoint, {{
-        method: 'POST',
-        headers: {{
-          'Content-Type': 'application/json',
-          'X-Admin-Key': adminKey,
-        }},
-        body: JSON.stringify(payload),
-      }});
-      const rawText = await response.text();
-      let data = {{}};
-      try {{
-        data = rawText ? JSON.parse(rawText) : {{}};
-      }} catch (error) {{
-        data = {{ message: rawText }};
-      }}
-      if (!response.ok) {{
-        throw new Error(data.error || data.message || `HTTP ${{response.status}}`);
-      }}
-      const runUrl = data.run_url || data.actions_url || WP_UPDATE_WORKFLOW_URL;
-      resultBox.className = 'wp-result ok';
-      resultBox.innerHTML = `
-        起動しました。request_id: <strong>${{requestId}}</strong><br>
-        <a href="${{runUrl}}" target="_blank" rel="noopener">GitHub Actionsで実行状況を見る</a>
-      `;
-    }} catch (error) {{
-      resultBox.className = 'wp-result error';
-      resultBox.textContent = `起動に失敗しました: ${{error.message}}`;
-    }} finally {{
-      runButton.disabled = false;
-    }}
-  }});
-}}
-
 // テーブル描画
 const jtbDomCols = ['ID', '詳細URL', 'タイトル', '配布状況', '割引額', 'エリア', 'タイプ', '予約対象期間', '宿泊/出発対象期間', '店舗利用', 'クーポンコード', 'パスワード', '条件'];
 const kntCols = ['詳細URL', 'タイトル', 'カテゴリ', 'ID', '割引額', '配布状況', 'エリア', 'タイプ', '申込期間', '宿泊/出発対象期間', 'クーポンコード', '条件'];
@@ -686,7 +523,6 @@ renderTable('jtb-domestic', DATA.jtb_domestic, jtbDomCols);
 renderTable('jtb-overseas', DATA.jtb_overseas, jtbDomCols);
 renderTable('knt', DATA.knt, kntCols);
 renderTable('his', DATA.his, hisCols);
-renderWpUpdatePanel();
 renderLogTable('jtb-log', DATA.jtb_log, 'JTB 変動ログ');
 renderLogTable('knt-log', DATA.knt_log, 'KNT 変動ログ');
 renderLogTable('his-log', DATA.his_log, 'HIS 変動ログ');
@@ -731,7 +567,7 @@ def main():
     }
 
     updated_at = datetime.now(JST).strftime("%Y-%m-%d %H:%M JST")
-    html = generate_html(data, updated_at, public_page_options())
+    html = generate_html(data, updated_at)
 
     # 出力
     out_dir = Path("dashboard")
