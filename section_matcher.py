@@ -47,7 +47,7 @@ def match_sections_to_coupons(
     sections: list[dict],
     coupons: list[dict],
     ota: str = "his",
-) -> list[dict]:
+) -> tuple[list[dict], list[dict]]:
     """
     H3見出し付きテーブルと、クーポンJSONをマッチングする。
 
@@ -64,7 +64,7 @@ def match_sections_to_coupons(
     tables = [b for b in sections if b["type"] == "table"]
 
     if not tables:
-        return []
+        return [], [c for c in coupons if c.get("stock_status") == "配布中"]
 
     # 配布中のみフィルタ
     active_coupons = [c for c in coupons if c.get("stock_status") == "配布中"]
@@ -82,8 +82,10 @@ def match_sections_to_coupons(
                 continue
             category = coupon.get("category", "")
             title = coupon.get("title", "")
+            coupon_type = _coupon_type(coupon)
+            area = coupon.get("area", "")
 
-            if _is_match(h3_keywords, h3_text, category, title, ota):
+            if _is_match(h3_keywords, h3_text, category, title, ota, coupon_type, area):
                 table["matched_coupons"].append(coupon)
                 used.add(i)
 
@@ -108,9 +110,11 @@ def _is_match(
     category: str,
     title: str,
     ota: str,
+    coupon_type: str = "",
+    area: str = "",
 ) -> bool:
     """クーポンがこのセクションに属するか判定。"""
-    text = f"{category} {title}"
+    text = f"{category} {title} {coupon_type} {area}"
 
     # 学生系は専用記事のためスキップ
     if "学生" in category or "学生" in title:
@@ -132,14 +136,20 @@ def _is_match(
                 if cat_key in category and h3_kw in section_kws:
                     return True
 
-    # JTB/KNT: category に「国内」「海外」+ type でマッチ
+    # JTB/KNT: category / type / title でマッチ
     if ota in ("jtb", "knt"):
-        coupon_cat = category
-        coupon_type = ""
-        # JTB は top-level に type がある
-        # KNT は detail_data に type がある場合がある
         for h3_kw in h3_keywords:
-            if h3_kw in coupon_cat or h3_kw in coupon_type:
+            if h3_kw in text:
                 return True
 
     return False
+
+
+def _coupon_type(coupon: dict) -> str:
+    """JTB/KNTのtype情報を取得する。"""
+    detail = coupon.get("detail_data") or {}
+    return " ".join(filter(None, [
+        str(coupon.get("type", "")),
+        str(detail.get("type", "")),
+        str(detail.get("target", "")),
+    ]))

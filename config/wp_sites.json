@@ -7,6 +7,7 @@
       "pages": [
         {
           "ota": "his",
+          "label": "屋久島ファン / HISクーポン",
           "slug": "his-coupon",
           "url": "https://yakushima.fun/his-coupon/",
           "data_dir": "his_coupon_data",
@@ -16,17 +17,102 @@
         },
         {
           "ota": "jtb",
+          "label": "屋久島ファン / JTB初回クーポン",
           "slug": "jtb-first",
           "url": "https://yakushima.fun/jtb-first/",
+          "data_dir": "jtb_coupon_data",
+          "affiliate_config": "config/jtb_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "include_keywords": ["初回", "新規会員", "新規"]
+        },
+        {
+          "ota": "knt",
+          "label": "屋久島ファン / KNTクーポン",
+          "slug": "knt-coupon",
+          "url": "https://yakushima.fun/knt-coupon/",
+          "data_dir": "knt_coupon_data",
+          "affiliate_config": "config/knt_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col"
+        }
+      ]
+    },
+    "welltrip": {
+      "wp_url_env": ["WT_WP_URL", "WP_URL"],
+      "wp_user_env": ["WT_WP_USER", "WP_USER"],
+      "wp_app_password_env": ["WT_WP_APP_PASSWORD", "WP_APP_PASSWORD"],
+      "pages": [
+        {
+          "ota": "his",
+          "label": "ウェルトリップ / HISクーポン",
+          "slug": "his-coupon",
+          "url": "https://travel.hb-connect.co.jp/his-coupon/",
+          "data_dir": "his_coupon_data",
+          "affiliate_config": "config/his_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col"
+        },
+        {
+          "ota": "jtb",
+          "label": "ウェルトリップ / JTBクーポン総合",
+          "slug": "jtb-coupon",
+          "url": "https://travel.hb-connect.co.jp/jtb-coupon/",
           "data_dir": "jtb_coupon_data",
           "affiliate_config": "config/jtb_affiliate_links.json",
           "section_matcher": "keyword",
           "table_format": "2col"
         },
         {
+          "ota": "jtb",
+          "label": "ウェルトリップ / JTB国内クーポン",
+          "slug": "jtb-domestic-coupon",
+          "url": "https://travel.hb-connect.co.jp/jtb-domestic-coupon/",
+          "data_dir": "jtb_coupon_data",
+          "affiliate_config": "config/jtb_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "include_keywords": ["国内"],
+          "exclude_keywords": ["海外"]
+        },
+        {
+          "ota": "jtb",
+          "label": "ウェルトリップ / JTB海外旅行クーポン",
+          "slug": "jtb-overseas-coupon",
+          "url": "https://travel.hb-connect.co.jp/jtb-overseas-coupon/",
+          "data_dir": "jtb_coupon_data",
+          "affiliate_config": "config/jtb_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "include_keywords": ["海外"]
+        },
+        {
+          "ota": "jtb",
+          "label": "ウェルトリップ / JTB新幹線クーポン",
+          "slug": "jtb-shinkansen-coupon",
+          "url": "https://travel.hb-connect.co.jp/jtb-shinkansen-coupon/",
+          "data_dir": "jtb_coupon_data",
+          "affiliate_config": "config/jtb_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "include_keywords": ["新幹線", "JR", "JR付き", "鉄道"]
+        },
+        {
+          "ota": "jtb",
+          "label": "ウェルトリップ / JTB初回クーポン",
+          "slug": "jtb-first-coupon",
+          "url": "https://travel.hb-connect.co.jp/jtb-first-coupon/",
+          "data_dir": "jtb_coupon_data",
+          "affiliate_config": "config/jtb_affiliate_links.json",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "include_keywords": ["初回", "新規会員", "新規"]
+        },
+        {
           "ota": "knt",
+          "label": "ウェルトリップ / KNTクーポン",
           "slug": "knt-coupon",
-          "url": "https://yakushima.fun/knt-coupon/",
+          "url": "https://travel.hb-connect.co.jp/knt-coupon/",
           "data_dir": "knt_coupon_data",
           "affiliate_config": "config/knt_affiliate_links.json",
           "section_matcher": "keyword",
