@@ -17,6 +17,7 @@ import sys
 from datetime import datetime
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from html import escape
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -39,13 +40,19 @@ def build_html(results: list[dict], today_str: str) -> str:
         status = r.get("status", "?")
         ota = r.get("ota", "").upper()
         slug = r.get("slug", "")
+        site_id = r.get("site_id", "")
+        target_slug = r.get("target_slug") or "-"
+        source_status = r.get("source_status") or "-"
 
         if status == "updated":
             emoji = "✅"
-            detail = f'{r.get("tables_updated",0)}テーブル更新, {r.get("rows",0)}行'
+            detail = (
+                f'{r.get("tables_updated",0)}テーブル更新, {r.get("rows",0)}行'
+                f'<br><small>{escape(r.get("target_message") or "")}</small>'
+            )
         elif status == "dry_run":
             emoji = "📝"
-            detail = "DRY-RUN（更新なし）"
+            detail = f'DRY-RUN（更新なし）<br><small>HTML: {escape(target_slug)}</small>'
         elif status == "blocked":
             emoji = "🚨"
             detail = f'ブロック: {r.get("reason","")}'
@@ -61,11 +68,16 @@ def build_html(results: list[dict], today_str: str) -> str:
         unmatched = r.get("unmatched_coupons", 0)
         link_issues = r.get("link_issues", [])
 
-        row = f"<tr><td>{emoji} {ota}</td><td>{slug}</td><td>{detail}</td>"
+        page = (
+            f"{escape(slug)}"
+            f"<br><small>site={escape(site_id)} / source={escape(source_status)}"
+            f" / target={escape(target_slug)}</small>"
+        )
+        row = f"<tr><td>{emoji} {escape(ota)}</td><td>{page}</td><td>{detail}</td>"
         if unmatched > 0:
             has_issues = True
             titles = "<br>".join(
-                f"- {li.get('title','')[:40]} ({li.get('category','')})"
+                f"- {escape(li.get('title','')[:40])} ({escape(li.get('category',''))})"
                 for li in link_issues[:5]
             )
             row += f"<td>⚠️ {unmatched}件未マッチ<br><small>{titles}</small></td>"
@@ -94,7 +106,13 @@ def build_html(results: list[dict], today_str: str) -> str:
 def build_plain(results: list[dict], today_str: str) -> str:
     lines = [f"WPクーポン更新レポート {today_str}", "=" * 40]
     for r in results:
-        lines.append(f"{r.get('ota','').upper()} ({r.get('slug','')}): {r.get('status','')}")
+        target = r.get("target_slug") or r.get("target") or "-"
+        lines.append(
+            f"{r.get('site_id','')}/{r.get('ota','').upper()} "
+            f"({r.get('slug','')}): {r.get('status','')} -> {target}"
+        )
+        if r.get("target_message"):
+            lines.append(f"  保存先: {r['target_message']}")
         if r.get("reason"):
             lines.append(f"  理由: {r['reason']}")
         if r.get("unmatched_coupons", 0) > 0:

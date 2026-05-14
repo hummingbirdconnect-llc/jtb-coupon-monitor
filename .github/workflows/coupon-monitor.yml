@@ -35,10 +35,18 @@ jobs:
         env:
           JTB_AFFILIATE_CONFIG: ${{ secrets.JTB_AFFILIATE_CONFIG }}
           HIS_AFFILIATE_CONFIG: ${{ secrets.HIS_AFFILIATE_CONFIG }}
+          KNT_AFFILIATE_CONFIG: ${{ secrets.KNT_AFFILIATE_CONFIG }}
         run: |
           mkdir -p config
-          echo "$JTB_AFFILIATE_CONFIG" > config/jtb_affiliate_links.json
-          echo "$HIS_AFFILIATE_CONFIG" > config/his_affiliate_links.json
+          if [ -n "$JTB_AFFILIATE_CONFIG" ]; then
+            printf '%s' "$JTB_AFFILIATE_CONFIG" > config/jtb_affiliate_links.json
+          fi
+          if [ -n "$HIS_AFFILIATE_CONFIG" ]; then
+            printf '%s' "$HIS_AFFILIATE_CONFIG" > config/his_affiliate_links.json
+          fi
+          if [ -n "$KNT_AFFILIATE_CONFIG" ]; then
+            printf '%s' "$KNT_AFFILIATE_CONFIG" > config/knt_affiliate_links.json
+          fi
 
       - name: JTB クーポン監視
         run: python jtb_coupon_monitor.py

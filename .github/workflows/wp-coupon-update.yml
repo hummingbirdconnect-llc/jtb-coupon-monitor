@@ -1,0 +1,145 @@
+name: WordPress Coupon Draft Update
+
+on:
+  workflow_dispatch:
+    inputs:
+      site_id:
+        description: WordPress site id
+        required: true
+        type: choice
+        options:
+          - yakushimafan
+          - welltrip
+      page_slug:
+        description: Target article slug from config/wp_sites.json
+        required: true
+        type: string
+      dry_run:
+        description: Generate HTML artifact only. Do not update WordPress.
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      request_id:
+        description: Dashboard request id for traceability
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  update-draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v5
+
+      - name: Python セットアップ
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: 依存パッケージ
+        run: pip install -r requirements.txt
+
+      - name: アフィリエイト設定を復元
+        env:
+          JTB_AFFILIATE_CONFIG: ${{ secrets.JTB_AFFILIATE_CONFIG }}
+          HIS_AFFILIATE_CONFIG: ${{ secrets.HIS_AFFILIATE_CONFIG }}
+          KNT_AFFILIATE_CONFIG: ${{ secrets.KNT_AFFILIATE_CONFIG }}
+        run: |
+          mkdir -p config
+          if [ -n "$JTB_AFFILIATE_CONFIG" ]; then
+            printf '%s' "$JTB_AFFILIATE_CONFIG" > config/jtb_affiliate_links.json
+          fi
+          if [ -n "$HIS_AFFILIATE_CONFIG" ]; then
+            printf '%s' "$HIS_AFFILIATE_CONFIG" > config/his_affiliate_links.json
+          fi
+          if [ -n "$KNT_AFFILIATE_CONFIG" ]; then
+            printf '%s' "$KNT_AFFILIATE_CONFIG" > config/knt_affiliate_links.json
+          fi
+
+      - name: WordPress クーポン表を下書き更新
+        env:
+          YF_WP_URL: ${{ secrets.YF_WP_URL }}
+          YF_WP_USER: ${{ secrets.YF_WP_USER }}
+          YF_WP_APP_PASSWORD: ${{ secrets.YF_WP_APP_PASSWORD }}
+          WT_WP_URL: ${{ secrets.WT_WP_URL }}
+          WT_WP_USER: ${{ secrets.WT_WP_USER }}
+          WT_WP_APP_PASSWORD: ${{ secrets.WT_WP_APP_PASSWORD }}
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          args=(--site "${{ inputs.site_id }}" --page "${{ inputs.page_slug }}")
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            args+=(--dry-run)
+          fi
+          python wp_coupon_updater.py "${args[@]}"
+
+      - name: 実行結果をチェック
+        run: |
+          python - <<'PY'
+          import json
+          import sys
+          from pathlib import Path
+
+          path = Path("wp_update_result.json")
+          if not path.exists():
+              print("wp_update_result.json がありません")
+              sys.exit(1)
+
+          results = json.loads(path.read_text(encoding="utf-8"))
+          bad = [
+              r for r in results
+              if r.get("status") in ("blocked", "error")
+              or r.get("unmatched_coupons", 0) > 0
+          ]
+          print(json.dumps(results, ensure_ascii=False, indent=2))
+          if bad:
+              print("安全チェック・未マッチ・エラーがあるため失敗扱いにします")
+              sys.exit(1)
+          PY
+
+      - name: 結果通知
+        if: always()
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
+        run: python notify_wp_update.py
+
+      - name: 実行サマリー
+        if: always()
+        run: |
+          {
+            echo "## WordPress coupon draft update"
+            echo ""
+            echo "- site_id: ${{ inputs.site_id }}"
+            echo "- page_slug: ${{ inputs.page_slug }}"
+            echo "- dry_run: ${{ inputs.dry_run }}"
+            echo "- request_id: ${{ inputs.request_id }}"
+            echo ""
+            if [ -f wp_update_result.json ]; then
+              echo '```json'
+              cat wp_update_result.json
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 結果ファイルを保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: wp-coupon-update-${{ inputs.site_id }}-${{ inputs.page_slug }}
+          path: |
+            wp_update_result.json
+            html_output/*_draft.html
+            backups/*.html
+          if-no-files-found: ignore
