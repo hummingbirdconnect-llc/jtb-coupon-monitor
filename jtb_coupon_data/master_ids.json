@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-18T06:55:44.304969+09:00",
+  "last_updated": "2026-05-19T07:05:03.446418+09:00",
   "ids": {
     "2604jtbcpnew": {
       "category": "国内",
@@ -104,14 +104,14 @@
       "title": "【4～7月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604nstoh": {
       "category": "国内",
       "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605goton": {
       "category": "国内",
@@ -160,7 +160,14 @@
       "title": "【復幸旅！八丈島】7月宿泊で使える割引クーポン",
       "discount": "最大30％引",
       "area": "東京都",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
+    },
+    "2605hakone": {
+      "category": "国内",
+      "title": "箱根・夏休み応援クーポン【第一弾】",
+      "discount": "最大15,000円引",
+      "area": "神奈川県",
+      "stock_status": "配布中"
     },
     "2605shizuoka": {
       "category": "国内",
@@ -181,7 +188,7 @@
       "title": "祝！スーパー・ニンテンドー・ワールド™5周年記念　ユニバーサル・スタジオ・ジャパンへの旅　オフィシャルホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "大阪府",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605nishi": {
       "category": "国内",
@@ -194,6 +201,13 @@
       "category": "国内",
       "title": "【JAL麗らか四国キャンペーン】往復JAL便利用でいく小豆島ツアーで使える割引クーポン",
       "discount": "最大16,000円引",
+      "area": "香川県",
+      "stock_status": "配布中"
+    },
+    "2605konpira": {
+      "category": "国内",
+      "title": "こんぴら温泉のおすすめ施設で使える割引クーポン",
+      "discount": "最大10,000円引",
       "area": "香川県",
       "stock_status": "配布中"
     },
@@ -237,7 +251,7 @@
       "title": "☆【沖縄】４月～６月出発☆　GWにも使える　おすすめ施設クーポン",
       "discount": "最大10,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603okinawa2": {
       "category": "国内",
