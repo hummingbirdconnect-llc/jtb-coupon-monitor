@@ -1,0 +1,37 @@
+name: JAL Pack Fetch Smoke
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  jalpack-fetch-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test JAL Pack official fetch
+        run: python jalpack_coupon_monitor.py --source official --timeout 20 --dry-run
+
+      - name: Upload JAL Pack dry-run artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jalpack-fetch-smoke
+          path: |
+            jalpack_coupon_data/dry_run_coupons_*.json
+            jalpack_coupon_data/dry_run_report_*.md
+          if-no-files-found: ignore
