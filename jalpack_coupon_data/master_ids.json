@@ -1,0 +1,54 @@
+{
+  "last_updated": "2026-05-20T08:08:48.376494+09:00",
+  "ids": {
+    "jalpack-domestic-birthday": {
+      "category": "公式クーポン",
+      "title": "バースデークーポン（国内）",
+      "discount": "15,000円割引 / 8,000円割引",
+      "stock_status": "配布中",
+      "source_url": "https://www.jal.co.jp/jp/ja/domtour/birthday-cpn/index.html"
+    },
+    "jalpack-overseas-birthday": {
+      "category": "公式クーポン",
+      "title": "バースデークーポン（海外）",
+      "discount": "10,000円分",
+      "stock_status": "配布中",
+      "source_url": "https://www.jal.co.jp/jp/ja/intltour/birthday-cpn/index.html"
+    },
+    "jalpack-domestic-timesale": {
+      "category": "公式クーポン",
+      "title": "期間限定タイムセールクーポン（国内）",
+      "discount": "最大30,000円割引",
+      "stock_status": "配布終了",
+      "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/index.html"
+    },
+    "jalpack-overseas-timesale": {
+      "category": "公式クーポン",
+      "title": "海外タイムセールクーポン",
+      "discount": "最大50,000円割引",
+      "stock_status": "配布終了",
+      "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale/index2.html/"
+    },
+    "jalpack-lsp-star": {
+      "category": "会員ランク",
+      "title": "LSP Star特典クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中",
+      "source_url": "https://www.jal.co.jp/jp/ja/domtour/lsp-coupon/index.html"
+    },
+    "jalpack-hayakime": {
+      "category": "公式クーポン",
+      "title": "早決プラン55/60/90",
+      "discount": "1グループにつき3,000円割引",
+      "stock_status": "配布終了",
+      "source_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/"
+    },
+    "jalpack-jalcard": {
+      "category": "カード連携",
+      "title": "JALカード会員限定ツアー割引",
+      "discount": "2%OFF",
+      "stock_status": "配布中",
+      "source_url": "https://www.jal.co.jp/jp/ja/jalcard/service/"
+    }
+  }
+}
