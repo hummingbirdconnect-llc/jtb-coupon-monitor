@@ -2,7 +2,7 @@
 """
 ダッシュボード HTML 生成スクリプト
 ==================================
-JTB / KNT / HIS のクーポンデータを読み込み、
+JTB / KNT / HIS / JALパック のクーポンデータを読み込み、
 Grid.js テーブル付きの自己完結型 HTML を dashboard/index.html に出力する。
 外部 API 認証不要。GitHub からダウンロードしてブラウザで開くだけで使える。
 """
@@ -32,6 +32,25 @@ def load_latest_data(data_dir):
             return []
     with open(daily_file, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_latest_data_with_dry_run(data_dir):
+    """通常スナップショットがなければDRY-RUNスナップショットを読む。"""
+    data_path = Path(data_dir)
+    if not data_path.exists():
+        return []
+
+    normal_files = sorted(data_path.glob("coupons_*.json"), reverse=True)
+    if normal_files:
+        with open(normal_files[0], "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    dry_run_files = sorted(data_path.glob("dry_run_coupons_*.json"), reverse=True)
+    if dry_run_files:
+        with open(dry_run_files[0], "r", encoding="utf-8") as f:
+            return json.load(f)
+
+    return []
 
 
 def load_change_log(data_dir):
@@ -122,6 +141,34 @@ def format_his_rows(coupons):
             "クーポンコード": " / ".join(code_strs),
             "条件": " / ".join(cond_strs),
             "対象商品": c.get("target", ""),
+        })
+    return rows
+
+
+def format_jalpack_rows(coupons):
+    coupons.sort(key=lambda x: (
+        0 if x.get("stock_status") == "配布中" else 1,
+        x.get("category", ""),
+        x.get("title", ""),
+    ))
+    rows = []
+    for c in coupons:
+        detail = c.get("detail_data") or {}
+        rows.append({
+            "詳細URL": c.get("detail_url", "") or c.get("source_url", ""),
+            "タイトル": c.get("title", ""),
+            "カテゴリ": c.get("category", ""),
+            "ID": c.get("id", ""),
+            "割引額": c.get("discount", "") or detail.get("discount", ""),
+            "配布状況": c.get("stock_status", "不明"),
+            "対象商品": c.get("product_type", "") or c.get("type", ""),
+            "予約期間": c.get("booking_period", "") or detail.get("booking_period", ""),
+            "出発/宿泊期間": c.get("travel_period", "") or detail.get("stay_period", ""),
+            "クーポンコード": ", ".join(c.get("coupon_codes", []) or detail.get("coupon_codes", [])),
+            "表示型": c.get("display_type", ""),
+            "配置先": c.get("placement_hint", ""),
+            "取得元": c.get("source_type", ""),
+            "条件": " / ".join(filter(None, detail.get("conditions", []) + detail.get("notes", []))),
         })
     return rows
 
@@ -223,18 +270,22 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans
   <button class="tab" data-tab="jtb-overseas">JTB 海外</button>
   <button class="tab" data-tab="knt">KNT</button>
   <button class="tab" data-tab="his">HIS</button>
+  <button class="tab" data-tab="jalpack">JALパック</button>
   <button class="tab" data-tab="jtb-log">JTB 変動ログ</button>
   <button class="tab" data-tab="knt-log">KNT 変動ログ</button>
   <button class="tab" data-tab="his-log">HIS 変動ログ</button>
+  <button class="tab" data-tab="jalpack-log">JALパック 変動ログ</button>
 </div>
 
 <div class="tab-content active" id="jtb-domestic"></div>
 <div class="tab-content" id="jtb-overseas"></div>
 <div class="tab-content" id="knt"></div>
 <div class="tab-content" id="his"></div>
+<div class="tab-content" id="jalpack"></div>
 <div class="tab-content" id="jtb-log"></div>
 <div class="tab-content" id="knt-log"></div>
 <div class="tab-content" id="his-log"></div>
+<div class="tab-content" id="jalpack-log"></div>
 
 <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
 <script>
@@ -518,14 +569,17 @@ function renderLogTable(containerId, rows, title) {{
 const jtbDomCols = ['ID', '詳細URL', 'タイトル', '配布状況', '割引額', 'エリア', 'タイプ', '予約対象期間', '宿泊/出発対象期間', '店舗利用', 'クーポンコード', 'パスワード', '条件'];
 const kntCols = ['詳細URL', 'タイトル', 'カテゴリ', 'ID', '割引額', '配布状況', 'エリア', 'タイプ', '申込期間', '宿泊/出発対象期間', 'クーポンコード', '条件'];
 const hisCols = ['施策ページ', 'タイトル', 'カテゴリ', '割引額', '配布状況', '予約期間', '出発/宿泊期間', 'クーポンコード', '条件', '対象商品'];
+const jalpackCols = ['詳細URL', 'タイトル', 'カテゴリ', 'ID', '割引額', '配布状況', '対象商品', '予約期間', '出発/宿泊期間', 'クーポンコード', '表示型', '配置先', '取得元', '条件'];
 
 renderTable('jtb-domestic', DATA.jtb_domestic, jtbDomCols);
 renderTable('jtb-overseas', DATA.jtb_overseas, jtbDomCols);
 renderTable('knt', DATA.knt, kntCols);
 renderTable('his', DATA.his, hisCols);
+renderTable('jalpack', DATA.jalpack, jalpackCols);
 renderLogTable('jtb-log', DATA.jtb_log, 'JTB 変動ログ');
 renderLogTable('knt-log', DATA.knt_log, 'KNT 変動ログ');
 renderLogTable('his-log', DATA.his_log, 'HIS 変動ログ');
+renderLogTable('jalpack-log', DATA.jalpack_log, 'JALパック 変動ログ');
 </script>
 </body>
 </html>"""
@@ -555,15 +609,22 @@ def main():
     his_log = load_change_log("./his_coupon_data")
     print(f"  HIS: {len(his_coupons)}件")
 
+    # JALパック
+    jalpack_coupons = load_latest_data_with_dry_run("./jalpack_coupon_data")
+    jalpack_log = load_change_log("./jalpack_coupon_data")
+    print(f"  JALパック: {len(jalpack_coupons)}件")
+
     # データ整形
     data = {
         "jtb_domestic": format_jtb_rows(jtb_domestic),
         "jtb_overseas": format_jtb_rows(jtb_overseas),
         "knt": format_knt_rows(knt_coupons),
         "his": format_his_rows(his_coupons),
+        "jalpack": format_jalpack_rows(jalpack_coupons),
         "jtb_log": format_change_log(jtb_log),
         "knt_log": format_change_log(knt_log),
         "his_log": format_change_log(his_log),
+        "jalpack_log": format_change_log(jalpack_log),
     }
 
     updated_at = datetime.now(JST).strftime("%Y-%m-%d %H:%M JST")
@@ -577,8 +638,8 @@ def main():
 
     print(f"\n✅ ダッシュボード生成完了: {out_file}")
     print(f"   JTB国内: {len(data['jtb_domestic'])}件, JTB海外: {len(data['jtb_overseas'])}件")
-    print(f"   KNT: {len(data['knt'])}件, HIS: {len(data['his'])}件")
-    print(f"   変動ログ: JTB={len(data['jtb_log'])}件, KNT={len(data['knt_log'])}件, HIS={len(data['his_log'])}件")
+    print(f"   KNT: {len(data['knt'])}件, HIS: {len(data['his'])}件, JALパック: {len(data['jalpack'])}件")
+    print(f"   変動ログ: JTB={len(data['jtb_log'])}件, KNT={len(data['knt_log'])}件, HIS={len(data['his_log'])}件, JALパック={len(data['jalpack_log'])}件")
 
 
 if __name__ == "__main__":

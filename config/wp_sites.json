@@ -38,6 +38,45 @@
         }
       ]
     },
+    "tripbooking": {
+      "wp_url_env": "TB_WP_URL",
+      "wp_user_env": "TB_WP_USER",
+      "wp_app_password_env": "TB_WP_APP_PASSWORD",
+      "pages": [
+        {
+          "ota": "agoda",
+          "label": "トリップブッキング / Agodaクーポン",
+          "slug": "agoda-coupon",
+          "url": "https://tripbooking.jp/agoda-coupon/",
+          "update_enabled": false,
+          "note": "Agodaの最新クーポン取得データが未整備のため、現在は接続確認のみ対応です。"
+        },
+        {
+          "ota": "expedia",
+          "label": "トリップブッキング / エクスペディアクーポン",
+          "slug": "expedia-coupon",
+          "url": "https://tripbooking.jp/expedia-coupon/",
+          "update_enabled": false,
+          "note": "Expediaの最新クーポン取得データが未整備のため、現在は接続確認のみ対応です。"
+        },
+        {
+          "ota": "hotels",
+          "label": "トリップブッキング / Hotels.comクーポン",
+          "slug": "hotels-coupon",
+          "url": "https://tripbooking.jp/hotels-coupon/",
+          "update_enabled": false,
+          "note": "Hotels.comの最新クーポン取得データが未整備のため、現在は接続確認のみ対応です。"
+        },
+        {
+          "ota": "tripcom",
+          "label": "トリップブッキング / Trip.comクーポン",
+          "slug": "tripcom-coupon",
+          "url": "https://tripbooking.jp/tripcom-coupon/",
+          "update_enabled": false,
+          "note": "Trip.comの最新クーポン取得データが未整備のため、現在は接続確認のみ対応です。"
+        }
+      ]
+    },
     "welltrip": {
       "wp_url_env": ["WT_WP_URL", "WP_URL"],
       "wp_user_env": ["WT_WP_USER", "WP_USER"],
@@ -117,6 +156,17 @@
           "affiliate_config": "config/knt_affiliate_links.json",
           "section_matcher": "keyword",
           "table_format": "2col"
+        },
+        {
+          "ota": "jalpack",
+          "label": "ウェルトリップ / JALパッククーポン",
+          "slug": "jal-pack-coupon",
+          "url": "https://travel.hb-connect.co.jp/jal-pack-coupon/",
+          "data_dir": "jalpack_coupon_data",
+          "section_matcher": "keyword",
+          "table_format": "yellow_list",
+          "update_enabled": false,
+          "note": "JALパックの監視データはDRY-RUN検証中です。赤青差分レビュー対応後に自動更新対象へ切り替えます。"
         }
       ]
     }

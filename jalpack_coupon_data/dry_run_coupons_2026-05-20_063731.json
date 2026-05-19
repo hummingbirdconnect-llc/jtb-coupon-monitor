@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "jalpack-バ-スデ-ク-ポン-国内-www-jal-co-jp-jp-ja-domtour-d7c8a438",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "バースデークーポン（国内）",
+    "discount": "1グループにつき15,000円 / 100,000円 / 8,000円",
+    "area": "",
+    "type": "JALダイナミックパッケージ（航空券＋宿泊）のみ",
+    "product_type": "JALダイナミックパッケージ（航空券＋宿泊）のみ",
+    "booking_period": "予約受付期間=誕生月前月1日〜誕生月2カ月後末日／出発対象期間=誕生月1日〜誕生月2カ月後末日出発分（Phase 2.5 Codex検証で訂正）",
+    "travel_period": "対象期間=誕生月1日〜誕生月2カ月後末日",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JMB会員・誕生月前月20日までに入会",
+      "有効期限/注意: 先着利用制限あり",
+      "併用可否: 他クーポンと併用不可"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/birthday-cpn/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/birthday-cpn/",
+    "detail_data": {
+      "discount": "1グループにつき15,000円 / 100,000円 / 8,000円",
+      "conditions": [
+        "取得条件: JMB会員・誕生月前月20日までに入会",
+        "有効期限/注意: 先着利用制限あり",
+        "併用可否: 他クーポンと併用不可"
+      ],
+      "booking_period": "予約受付期間=誕生月前月1日〜誕生月2カ月後末日／出発対象期間=誕生月1日〜誕生月2カ月後末日出発分（Phase 2.5 Codex検証で訂正）",
+      "stay_period": "対象期間=誕生月1日〜誕生月2カ月後末日",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-バ-スデ-ク-ポン-海外-www-jal-co-jp-jp-ja-intltou-03392c90",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "バースデークーポン（海外）",
+    "discount": "10,000円",
+    "area": "",
+    "type": "JAL海外ダイナミックパッケージ",
+    "product_type": "JAL海外ダイナミックパッケージ",
+    "booking_period": "出発対象=誕生月から4カ月後末日まで",
+    "travel_period": "対象=誕生月から4カ月後末日まで** 先着",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JMB会員・誕生月前月20日までに入会",
+      "有効期限/注意: 先着利用制限あり",
+      "併用可否: 他クーポンと併用不可"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/birthday-cpn/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/birthday-cpn/",
+    "detail_data": {
+      "discount": "10,000円",
+      "conditions": [
+        "取得条件: JMB会員・誕生月前月20日までに入会",
+        "有効期限/注意: 先着利用制限あり",
+        "併用可否: 他クーポンと併用不可"
+      ],
+      "booking_period": "出発対象=誕生月から4カ月後末日まで",
+      "stay_period": "対象=誕生月から4カ月後末日まで** 先着",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-期間限定タイムセ-ルク-ポン-国内-www-jal-co-jp-jp-ja-do-0d4a3d08",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "期間限定タイムセールクーポン（国内）",
+    "discount": "最大30,000円 / 10,000円 / 5,000円 / 40,000円",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内・航空券＋宿泊）",
+    "product_type": "JALダイナミックパッケージ（国内・航空券＋宿泊）",
+    "booking_period": "販売: 2026/4/21〜4/30／出発: 〜2027/3/28",
+    "travel_period": "〜2027/3/28 タイムセール終了後無効・在庫上位枠の可能性 他クーポンと最大3枚まで併用可 https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/ ✅稼働中（",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JMB会員ログイン必須・タイムセール期間中に取得",
+      "有効期限/注意: タイムセール終了後無効・在庫上位枠の可能性",
+      "併用可否: 他クーポンと最大3枚まで併用可"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/",
+    "detail_data": {
+      "discount": "最大30,000円 / 10,000円 / 5,000円 / 40,000円",
+      "conditions": [
+        "取得条件: JMB会員ログイン必須・タイムセール期間中に取得",
+        "有効期限/注意: タイムセール終了後無効・在庫上位枠の可能性",
+        "併用可否: 他クーポンと最大3枚まで併用可"
+      ],
+      "booking_period": "販売: 2026/4/21〜4/30／出発: 〜2027/3/28",
+      "stay_period": "〜2027/3/28 タイムセール終了後無効・在庫上位枠の可能性 他クーポンと最大3枚まで併用可 https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/ ✅稼働中（",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-海外タイムセ-ルク-ポンwww-jal-co-jp-jp-ja-intltour-f256c930",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "海外タイムセールクーポン",
+    "discount": "5,000円OFF / 10,000円OFF / 150,000円 / 20,000円",
+    "area": "",
+    "type": "JAL海外ダイナミックパッケージ",
+    "product_type": "JAL海外ダイナミックパッケージ",
+    "booking_period": "販売締切=2026/5/13 23:59／出発期間 2026/5/7〜2027/1/31（Phase 2.5 Codex検証で訂正）",
+    "travel_period": "期間 2026/5/7〜2027/1/31**（Phase 2.5 Codex検証で訂正） クーポン入力1つまで・他割引クーポンと併用不可 単独使用 https://www.jal.co.jp/jp/ja/intltour/jaldp/ti",
+    "coupon_codes": [
+      "TS05605",
+      "TS10605"
+    ],
+    "conditions": [
+      "取得条件: 公開コード入力・JMB会員推奨",
+      "有効期限/注意: クーポン入力1つまで・他割引クーポンと併用不可",
+      "併用可否: 単独使用"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale-pre/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale-pre/",
+    "detail_data": {
+      "discount": "5,000円OFF / 10,000円OFF / 150,000円 / 20,000円",
+      "conditions": [
+        "取得条件: 公開コード入力・JMB会員推奨",
+        "有効期限/注意: クーポン入力1つまで・他割引クーポンと併用不可",
+        "併用可否: 単独使用"
+      ],
+      "booking_period": "販売締切=2026/5/13 23:59／出発期間 2026/5/7〜2027/1/31（Phase 2.5 Codex検証で訂正）",
+      "stay_period": "期間 2026/5/7〜2027/1/31**（Phase 2.5 Codex検証で訂正） クーポン入力1つまで・他割引クーポンと併用不可 単独使用 https://www.jal.co.jp/jp/ja/intltour/jaldp/ti",
+      "coupon_codes": [
+        "TS05605",
+        "TS10605"
+      ],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-トライク-ポンwww-jal-co-jp-jp-ja-domtour-try-c-b39272d7",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "トライクーポン",
+    "discount": "3,000円OFF",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）・5方面限定",
+    "product_type": "JALダイナミックパッケージ（国内）・5方面限定",
+    "booking_period": "取得期間内",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JMB会員（方面別の条件あり）",
+      "有効期限/注意: 先着制",
+      "併用可否: 他クーポンと3枚まで併用可"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/try-cpn/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "要確認",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/try-cpn/",
+    "detail_data": {
+      "discount": "3,000円OFF",
+      "conditions": [
+        "取得条件: JMB会員（方面別の条件あり）",
+        "有効期限/注意: 先着制",
+        "併用可否: 他クーポンと3枚まで併用可"
+      ],
+      "booking_period": "取得期間内",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-2地域居住応援ク-ポンwww-jal-co-jp-jp-ja-tour-dp-c-4c2d0ffd",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "2地域居住応援クーポン",
+    "discount": "40,000円OFF",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）・北海道/東北/関西・南紀/九州方面・2名以上・5泊以上",
+    "product_type": "JALダイナミックパッケージ（国内）・北海道/東北/関西・南紀/九州方面・2名以上・5泊以上",
+    "booking_period": "予約期限〜2026-09-28 / 出発期限〜2026-09-29",
+    "travel_period": "期限〜2026-09-29 期限明示あり・",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JMB会員ログイン",
+      "有効期限/注意: 期限明示あり・条件重め",
+      "併用可否: 他クーポンと併用可"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "detail_data": {
+      "discount": "40,000円OFF",
+      "conditions": [
+        "取得条件: JMB会員ログイン",
+        "有効期限/注意: 期限明示あり・条件重め",
+        "併用可否: 他クーポンと併用可"
+      ],
+      "booking_period": "予約期限〜2026-09-28 / 出発期限〜2026-09-29",
+      "stay_period": "期限〜2026-09-29 期限明示あり・",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-2026おすすめ旅先ク-ポン-函館-秋田-松山等-www-jal-co-jp-j-edf115a3",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "2026おすすめ旅先クーポン（函館/秋田/松山等）",
+    "discount": "3,000円OFF",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）・往路到着空港指定・各地域先着50枚",
+    "product_type": "JALダイナミックパッケージ（国内）・往路到着空港指定・各地域先着50枚",
+    "booking_period": "予約期限〜2026-05-05 / 出発期限〜2026-05-06",
+    "travel_period": "期限〜2026-05-06 期限間近・先着制 他クーポンと3枚まで併用可 https://www.jal.co.jp/jp/ja/tour/dp_coupon/ ⚠️要確認（期限切れ間近） auto-research",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JMB会員ログイン",
+      "有効期限/注意: 期限間近・先着制",
+      "併用可否: 他クーポンと3枚まで併用可"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "要確認",
+    "detail_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "detail_data": {
+      "discount": "3,000円OFF",
+      "conditions": [
+        "取得条件: JMB会員ログイン",
+        "有効期限/注意: 期限間近・先着制",
+        "併用可否: 他クーポンと3枚まで併用可"
+      ],
+      "booking_period": "予約期限〜2026-05-05 / 出発期限〜2026-05-06",
+      "stay_period": "期限〜2026-05-06 期限間近・先着制 他クーポンと3枚まで併用可 https://www.jal.co.jp/jp/ja/tour/dp_coupon/ ⚠️要確認（期限切れ間近） auto-research",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-空港店舗-JAL-PLAZA-Coralway-利用券www-jal-co-jp-62195319",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "空港店舗（JAL PLAZA/Coralway）利用券",
+    "discount": "500円",
+    "area": "",
+    "type": "空港内JAL PLAZA・Coralwayでの購入のみ（旅行本体割引ではない）",
+    "product_type": "空港内JAL PLAZA・Coralwayでの購入のみ（旅行本体割引ではない）",
+    "booking_period": "旅行開始日〜2026-10-13",
+    "travel_period": "30〜7日前",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JALダイナミックパッケージ（国内）予約者・出発30〜7日前予約",
+      "有効期限/注意: 旅行開始日2日前21時以降受取",
+      "併用可否: （旅行本体クーポンと別枠）"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/jalplaza-coupon/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/jalplaza-coupon/",
+    "detail_data": {
+      "discount": "500円",
+      "conditions": [
+        "取得条件: JALダイナミックパッケージ（国内）予約者・出発30〜7日前予約",
+        "有効期限/注意: 旅行開始日2日前21時以降受取",
+        "併用可否: （旅行本体クーポンと別枠）"
+      ],
+      "booking_period": "旅行開始日〜2026-10-13",
+      "stay_period": "30〜7日前",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-早決55-60-90プラン-常設-www-jal-co-jp-jp-ja-dom-f89b1a3e",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "早決55/60/90プラン（常設）",
+    "discount": "プラン単位で割引価格設定（クーポンではなく早期予約割引価格）",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内・対象ホテル・対象商品）",
+    "product_type": "JALダイナミックパッケージ（国内・対象ホテル・対象商品）",
+    "booking_period": "通年常設",
+    "travel_period": "55/60/90日前までの",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: 出発55/60/90日前までの予約",
+      "有効期限/注意: プランごとに対象ホテル限定・在庫枠制",
+      "併用可否: クーポンと併用可（要個別確認）"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/",
+    "detail_data": {
+      "discount": "プラン単位で割引価格設定（クーポンではなく早期予約割引価格）",
+      "conditions": [
+        "取得条件: 出発55/60/90日前までの予約",
+        "有効期限/注意: プランごとに対象ホテル限定・在庫枠制",
+        "併用可否: クーポンと併用可（要個別確認）"
+      ],
+      "booking_period": "通年常設",
+      "stay_period": "55/60/90日前までの",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-国内ク-ポンペ-ジ-複数枠まとめ-www-jal-co-jp-jp-ja-tou-11d2514b",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "国内クーポンページ（複数枠まとめ）",
+    "discount": "各クーポンに準ずる",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）",
+    "product_type": "JALダイナミックパッケージ（国内）",
+    "booking_period": "クーポン別",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: クーポン別",
+      "有効期限/注意: 配布枠は時期で入替",
+      "併用可否: 最大3枚併用"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "detail_data": {
+      "discount": "各クーポンに準ずる",
+      "conditions": [
+        "取得条件: クーポン別",
+        "有効期限/注意: 配布枠は時期で入替",
+        "併用可否: 最大3枚併用"
+      ],
+      "booking_period": "クーポン別",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JMBツア-ニュ-ス-メルマガ-配信特典www-jal-co-jp-jp-ja--a5b4480f",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "JMBツアーニュース（メルマガ）配信特典",
+    "discount": "配信限定の先行情報・限定セールへのアクセス（金額直引きではない）",
+    "area": "",
+    "type": "JALダイナミックパッケージ全般",
+    "product_type": "JALダイナミックパッケージ全般",
+    "booking_period": "通年常設",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JMB会員＋メルマガ購読登録",
+      "有効期限/注意: 限定割引情報がメール経由で届く",
+      "併用可否: クーポンと併用可（個別）"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/jalmile/news/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/jalmile/news/",
+    "detail_data": {
+      "discount": "配信限定の先行情報・限定セールへのアクセス（金額直引きではない）",
+      "conditions": [
+        "取得条件: JMB会員＋メルマガ購読登録",
+        "有効期限/注意: 限定割引情報がメール経由で届く",
+        "併用可否: クーポンと併用可（個別）"
+      ],
+      "booking_period": "通年常設",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JALカ-ド会員限定ツア-割引-2-OFF-www-jal-co-jp-jp-j-344766c5",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "カード連携",
+    "title": "JALカード会員限定ツアー割引（2%OFF）",
+    "discount": "2%OFF",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JALカード保有・JAL Webサイトでの予約",
+      "仕組み: 予約フローで自動適用（JALカードログイン必須）"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/jalcard/service/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "カード連携のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/jalcard/service/",
+    "detail_data": {
+      "discount": "2%OFF",
+      "conditions": [
+        "取得条件: JALカード保有・JAL Webサイトでの予約",
+        "仕組み: 予約フローで自動適用（JALカードログイン必須）"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JALカ-ドマイル積み型恩恵-補完-www-jal-co-jp-jp-ja-ja-1a490df9",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "カード連携",
+    "title": "JALカードマイル積み型恩恵（補完）",
+    "discount": "100円 / 200円",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "取得条件: JALカード保有・WEB申込",
+      "仕組み: 旅行代金100円ごと1マイル（ツアーマイル）＋JALカード決済時の通常マイル200円=1マイル＝合算で実質的なマイル還元"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/jalcard/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "カード連携のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/jalcard/",
+    "detail_data": {
+      "discount": "100円 / 200円",
+      "conditions": [
+        "取得条件: JALカード保有・WEB申込",
+        "仕組み: 旅行代金100円ごと1マイル（ツアーマイル）＋JALカード決済時の通常マイル200円=1マイル＝合算で実質的なマイル還元"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-モッピ-pc-moppy-jp-shopping-detail-php-site-981ff4fc",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "ポイントサイト還元",
+    "title": "モッピー",
+    "discount": "国内3.0%／海外5.5%（Phase 2.5 Codex検証で訂正・公式ページ確認）",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内/海外）予約申込＆旅行遂行",
+    "product_type": "JALダイナミックパッケージ（国内/海外）予約申込＆旅行遂行",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "承認ルール: 旅行完了後承認（確定まで利用完了後250日前後）"
+    ],
+    "source_url": "https://pc.moppy.jp/shopping/detail.php?site_id=3546",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "ポイントサイト還元のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://pc.moppy.jp/shopping/detail.php?site_id=3546",
+    "detail_data": {
+      "discount": "国内3.0%／海外5.5%（Phase 2.5 Codex検証で訂正・公式ページ確認）",
+      "conditions": [
+        "承認ルール: 旅行完了後承認（確定まで利用完了後250日前後）"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-ハピタスhapitas-jp-item-detail-itemid-24938-7a6f085e",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "ポイントサイト還元",
+    "title": "ハピタス",
+    "discount": "1%（通常会員）/ 1.3%（ゴールド会員）（2026-04-25・公式ページ）",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）旅行実施完了（WEB申込必須）",
+    "product_type": "JALダイナミックパッケージ（国内）旅行実施完了（WEB申込必須）",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "承認ルール: 旅行実施完了後承認"
+    ],
+    "source_url": "https://hapitas.jp/item/detail/itemid/24938/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "ポイントサイト還元のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://hapitas.jp/item/detail/itemid/24938/",
+    "detail_data": {
+      "discount": "1%（通常会員）/ 1.3%（ゴールド会員）（2026-04-25・公式ページ）",
+      "conditions": [
+        "承認ルール: 旅行実施完了後承認"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-ちょびリッチwww-chobirich-com-ad-details-54229-2608dac1",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "ポイントサイト還元",
+    "title": "ちょびリッチ",
+    "discount": "1.5%（比較サイト2026-03-25）※公式ページは直接取得未実施",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）旅行遂行",
+    "product_type": "JALダイナミックパッケージ（国内）旅行遂行",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "承認ルール: 旅行完了後承認"
+    ],
+    "source_url": "https://www.chobirich.com/ad_details/54229",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "ポイントサイト還元のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.chobirich.com/ad_details/54229",
+    "detail_data": {
+      "discount": "1.5%（比較サイト2026-03-25）※公式ページは直接取得未実施",
+      "conditions": [
+        "承認ルール: 旅行完了後承認"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-げん玉-c76c9ef2",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "ポイントサイト還元",
+    "title": "げん玉",
+    "discount": "1.4%（比較サイト2026-03-25）※公式ページは直接取得未実施",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）",
+    "product_type": "JALダイナミックパッケージ（国内）",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "承認ルール: 旅行完了後承認"
+    ],
+    "source_url": "",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "ポイントサイト還元のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "",
+    "detail_data": {
+      "discount": "1.4%（比較サイト2026-03-25）※公式ページは直接取得未実施",
+      "conditions": [
+        "承認ルール: 旅行完了後承認"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-ポイントインカム-12e3268f",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "ポイントサイト還元",
+    "title": "ポイントインカム",
+    "discount": "1.0%（比較サイト2026-03-25）※公式ページは直接取得未実施",
+    "area": "",
+    "type": "JALダイナミックパッケージ（国内）",
+    "product_type": "JALダイナミックパッケージ（国内）",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "承認ルール: 旅行完了後承認"
+    ],
+    "source_url": "",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "ポイントサイト還元のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "",
+    "detail_data": {
+      "discount": "1.0%（比較サイト2026-03-25）※公式ページは直接取得未実施",
+      "conditions": [
+        "承認ルール: 旅行完了後承認"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JALふるさと納税-返礼品ク-ポンfurusato-jal-co-jp-feat-18beb387",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "ギフト・制度",
+    "title": "JALふるさと納税 返礼品クーポン",
+    "discount": "3,000円 / 50,000円分",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "条件/金額目安: 自治体・寄付額による（3,000円/¥10,000寄付〜50,000円/¥166,700〜170,000寄付）"
+    ],
+    "source_url": "https://furusato.jal.co.jp/feature/detail/d9a9e60bc734d52708600eed25ce5879",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "ギフト・制度のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://furusato.jal.co.jp/feature/detail/d9a9e60bc734d52708600eed25ce5879",
+    "detail_data": {
+      "discount": "3,000円 / 50,000円分",
+      "conditions": [
+        "条件/金額目安: 自治体・寄付額による（3,000円/¥10,000寄付〜50,000円/¥166,700〜170,000寄付）"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JALふるさと応援割-自治体旅行支援-appllio-com-national--29246848",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "ギフト・制度",
+    "title": "JALふるさと応援割（自治体旅行支援）",
+    "discount": "10,000円",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "条件/金額目安: JAL山口宇部便利用・対象ホテル宿泊"
+    ],
+    "source_url": "https://appllio.com/national-prefectural-travel-support",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "ギフト・制度のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://appllio.com/national-prefectural-travel-support",
+    "detail_data": {
+      "discount": "10,000円",
+      "conditions": [
+        "条件/金額目安: JAL山口宇部便利用・対象ホテル宿泊"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JAL-Life-Status-Program-Star特典ク-ポン-全Star-eb15596c",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "会員ランク",
+    "title": "JAL Life Status Program Star特典クーポン（全Starグレード共通）",
+    "discount": "5,000円割引",
+    "area": "",
+    "type": "前年度のStarグレード到達者（翌年4月1日より獲得可能・3月10日時点ステータス確認）",
+    "product_type": "前年度のStarグレード到達者（翌年4月1日より獲得可能・3月10日時点ステータス確認）",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/lsp-coupon/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "会員ランクのJALパッククーポン一覧",
+    "stock_status": "要確認",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/lsp-coupon/",
+    "detail_data": {
+      "discount": "5,000円割引",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JMBツア-マイル-Life-Statusポイントwww-jal-co-jp-j-364e2d70",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "会員ランク",
+    "title": "JMBツアーマイル＋Life Statusポイント",
+    "discount": "100円",
+    "area": "",
+    "type": "JMB会員（JALカード保有でさらに決済マイル合算）",
+    "product_type": "JMB会員（JALカード保有でさらに決済マイル合算）",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/jalmile/tour/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "会員ランクのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/jalmile/tour/",
+    "detail_data": {
+      "discount": "100円",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-期間限定タイムセ-ル-国内-www-jal-co-jp-jp-ja-domtou-4faef1d1",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "OTA固有カテゴリ",
+    "title": "期間限定タイムセール（国内）",
+    "discount": "毎月1回ペースで国内ダイナミックパッケージ限定のセール価格割引＋クーポン配布",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "ほぼ毎月（過去実績: 12月除く毎月）",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "開催時期/条件: ほぼ毎月（過去実績: 12月除く毎月）"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/",
+    "detail_data": {
+      "discount": "毎月1回ペースで国内ダイナミックパッケージ限定のセール価格割引＋クーポン配布",
+      "conditions": [
+        "開催時期/条件: ほぼ毎月（過去実績: 12月除く毎月）"
+      ],
+      "booking_period": "ほぼ毎月（過去実績: 12月除く毎月）",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-海外タイムセ-ル-春旅-新生活応援等-www-jal-co-jp-jp-ja-i-bf4eae88",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "OTA固有カテゴリ",
+    "title": "海外タイムセール（春旅・新生活応援等）",
+    "discount": "JAL海外ダイナミックパッケージ限定のタイムセール",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "年数回（季節開催）・現行は配布期限〜2026/5/13",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "開催時期/条件: 年数回（季節開催）・現行は配布期限〜2026/5/13"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale-pre/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale-pre/",
+    "detail_data": {
+      "discount": "JAL海外ダイナミックパッケージ限定のタイムセール",
+      "conditions": [
+        "開催時期/条件: 年数回（季節開催）・現行は配布期限〜2026/5/13"
+      ],
+      "booking_period": "年数回（季節開催）・現行は配布期限〜2026/5/13",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-東京ディズニ-リゾ-ト専用ツア-特典www-jal-co-jp-jp-ja-do-72ef04eb",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "OTA固有カテゴリ",
+    "title": "東京ディズニーリゾート専用ツアー特典",
+    "discount": "パークチケット付き・JALハピネスライナー（専用バス）往復無料・ポップコーンバケット引換券・オリジナルグッズ・ショー確約席オプション",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "JALパック TDR利用者向け通年提供",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "開催時期/条件: JALパック TDR利用者向け通年提供"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/tdr-portal/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/tdr-portal/",
+    "detail_data": {
+      "discount": "パークチケット付き・JALハピネスライナー（専用バス）往復無料・ポップコーンバケット引換券・オリジナルグッズ・ショー確約席オプション",
+      "conditions": [
+        "開催時期/条件: JALパック TDR利用者向け通年提供"
+      ],
+      "booking_period": "JALパック TDR利用者向け通年提供",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-沖縄-地域限定ク-ポン-500円-地域別-www-jal-co-jp-jp-ja-f16df7cd",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "OTA固有カテゴリ",
+    "title": "沖縄・地域限定クーポン（500円・地域別）",
+    "discount": "500円",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "JMB会員・不定期配布",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "開催時期/条件: JMB会員・不定期配布"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "要確認",
+    "detail_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+    "detail_data": {
+      "discount": "500円",
+      "conditions": [
+        "開催時期/条件: JMB会員・不定期配布"
+      ],
+      "booking_period": "JMB会員・不定期配布",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JALダイナミックパッケ-ジ-リニュ-アル記念キャンペ-ン-利用券-www-ja-ed2bac8b",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "終了済みアーカイブ",
+    "title": "JALダイナミックパッケージ リニューアル記念キャンペーン（利用券）",
+    "discount": "",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "2026-02-25 / 旅行期限2026-03-18 公式にキャンペーン終了を明示 No（期間限定キャンペーン） https://www.jal.co.jp/jp/ja/domtour/jaldp/renewal-campaign/",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/renewal-campaign/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "終了済み・次回確認のキャンペーン",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/renewal-campaign/",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "2026-02-25 / 旅行期限2026-03-18 公式にキャンペーン終了を明示 No（期間限定キャンペーン） https://www.jal.co.jp/jp/ja/domtour/jaldp/renewal-campaign/",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-JALカ-ド会員限定割引-入会キャンペ-ン期間限定-国内今期分-www-jal--a723c067",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "終了済みアーカイブ",
+    "title": "JALカード会員限定割引（入会キャンペーン期間限定・国内今期分）",
+    "discount": "",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "2026-03-31 17:00",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/tours/jalcard_cpn_nyukai/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "yellow_list",
+    "placement_hint": "終了済み・次回確認のキャンペーン",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/tours/jalcard_cpn_nyukai/",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "2026-03-31 17:00",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-早決ク-ポン-hayakime-cpn-www-jal-co-jp-jp-ja--7589c20c",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "終了済みアーカイブ",
+    "title": "早決クーポン（hayakime-cpn）",
+    "discount": "",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "終了済み・次回確認のキャンペーン",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-早期予約特集-c093f344",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "終了済みアーカイブ",
+    "title": "早期予約特集",
+    "discount": "",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "終了済み・次回確認のキャンペーン",
+    "stock_status": "配布終了",
+    "detail_url": "",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-海外GW-ゴ-ルデンウィ-ク-キャンペ-ンwww-jal-co-jp-jp-ja-66c7d9e8",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "終了済みアーカイブ",
+    "title": "海外GW（ゴールデンウィーク）キャンペーン",
+    "discount": "",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "終了済み・次回確認のキャンペーン",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-ワク夏-海外ツア-早期予約割キャンペ-ンwww-jal-co-jp-jp-ja--d39b4fc6",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "終了済みアーカイブ",
+    "title": "「ワク夏」海外ツアー早期予約割キャンペーン",
+    "discount": "",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "終了済み・次回確認のキャンペーン",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  },
+  {
+    "id": "jalpack-ハワイ年末年始ツア-早期予約割キャンペ-ンwww-jal-co-jp-jp-ja-03c37a09",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "終了済みアーカイブ",
+    "title": "ハワイ年末年始ツアー早期予約割キャンペーン",
+    "discount": "",
+    "area": "",
+    "type": "",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/hawaii/",
+    "source_type": "local_coupon_master",
+    "fetch_method": "markdown_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "yellow_list",
+    "placement_hint": "終了済み・次回確認のキャンペーン",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/hawaii/",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": [
+        "coupon-masterから変換: /Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md"
+      ]
+    }
+  }
+]
