@@ -51,6 +51,17 @@ DATA_RETENTION_DAYS = 30
 
 JST = timezone(timedelta(hours=9))
 
+EXPLICIT_END_MARKERS = (
+    "終了しました",
+    "終了いたしました",
+    "受付終了",
+    "配布終了",
+)
+
+THANKS_END_MARKERS = (
+    "ご予約ありがとうございました",
+)
+
 
 # ============================================================
 # ユーティリティ
@@ -67,6 +78,79 @@ def make_coupon_id(title, category):
     """タイトル+カテゴリからユニークなIDを生成"""
     raw = f"{category}_{title}"
     return hashlib.md5(raw.encode()).hexdigest()[:12]
+
+
+def _normalize_campaign_text(text):
+    """キャンペーン名照合用に表記ゆれを小さくする"""
+    text = re.sub(r"[【】〖〗\[\]（）()「」『』]", "", text or "")
+    return re.sub(r"\s+", "", text)
+
+
+def _extract_campaign_from_end_text(text):
+    """「○○は終了しました」から○○部分を取り出す"""
+    compact = _normalize_campaign_text(text)
+    if not compact:
+        return None
+
+    for marker in EXPLICIT_END_MARKERS:
+        if marker not in compact:
+            continue
+        campaign = compact.split(marker, 1)[0]
+        campaign = re.sub(r"(?:は|が|の)?$", "", campaign)
+        campaign = campaign.strip("。:：・-ー")
+        # 「配布終了クーポンについて」のような一般説明をキャンペーン名にしない
+        if len(campaign) >= 6 and any(k in campaign for k in ("クーポン", "キャンペーン", "セール")):
+            return campaign
+
+    return None
+
+
+def _looks_like_campaign_name(text):
+    """終了告知の対象になり得るキャンペーン名かをゆるく判定"""
+    compact = _normalize_campaign_text(text).strip("。:：・-ー")
+    return len(compact) >= 6 and any(k in compact for k in ("クーポン", "キャンペーン", "セール"))
+
+
+def _next_text_has_thanks_end_marker(node, max_steps=3):
+    """直後の要素に「ご予約ありがとうございました」系の終了補助文があるか確認"""
+    sibling = node
+    for _ in range(max_steps):
+        sibling = sibling.find_next_sibling()
+        if sibling is None:
+            return False
+        text = sibling.get_text(" ", strip=True)
+        if any(marker in text for marker in THANKS_END_MARKERS):
+            return True
+    return False
+
+
+def _extract_explicit_ended_campaigns(soup):
+    """公式ページ上で明示的に終了告知されているキャンペーン名を抽出"""
+    ended_campaigns = set()
+    for node in soup.find_all(["h1", "h2", "h3", "h4"]):
+        text = node.get_text(" ", strip=True)
+        if not text:
+            continue
+
+        campaign = _extract_campaign_from_end_text(text)
+        if campaign:
+            ended_campaigns.add(campaign)
+            continue
+
+        if _looks_like_campaign_name(text) and _next_text_has_thanks_end_marker(node):
+            ended_campaigns.add(_normalize_campaign_text(text).strip("。:：・-ー"))
+
+    return ended_campaigns
+
+
+def _matched_ended_campaign(title, ended_campaigns):
+    """クーポンタイトルが終了告知済みキャンペーンに属するか判定"""
+    normalized_title = _normalize_campaign_text(title)
+    for campaign in ended_campaigns:
+        normalized_campaign = _normalize_campaign_text(campaign)
+        if normalized_campaign and normalized_campaign in normalized_title:
+            return campaign
+    return None
 
 
 # ============================================================
@@ -150,6 +234,10 @@ def parse_coupons(html):
     wrappers = soup.find_all(class_="content__wrapper")
     print(f"📦 クーポンカード検出: {len(wrappers)}件")
 
+    ended_campaigns = _extract_explicit_ended_campaigns(soup)
+    if ended_campaigns:
+        print("🛑 終了キャンペーン検出: " + " / ".join(sorted(ended_campaigns)))
+
     coupons = []
 
     for w in wrappers:
@@ -228,8 +316,13 @@ def parse_coupons(html):
 
         # --- 配布状況（予約期間終了チェック） ---
         stock_status = "配布中"
+        ended_reason = ""
+        ended_campaign = _matched_ended_campaign(title, ended_campaigns)
         end_date = _extract_booking_end_date(booking_period)
-        if end_date and end_date <= today_str():
+        if ended_campaign:
+            stock_status = "配布終了"
+            ended_reason = f"公式ページの終了告知: {ended_campaign}"
+        elif end_date and end_date <= today_str():
             stock_status = "配布終了"
 
         coupon = {
@@ -244,6 +337,8 @@ def parse_coupons(html):
             "target": target,
             "notes": notes,
         }
+        if ended_reason:
+            coupon["ended_reason"] = ended_reason
         coupons.append(coupon)
 
     return coupons
