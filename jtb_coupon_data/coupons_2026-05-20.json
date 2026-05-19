@@ -1,53 +1,103 @@
 [
   {
-    "id": "2603appcp",
+    "id": "2604jtbcpnew",
     "category": "国内",
-    "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
-    "discount": "最大3,000円引",
+    "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(7-9月出発)",
+    "discount": "1,500円引",
     "area": "全国",
-    "type": "ツアー",
-    "booking_period": "2026/2/25(水) ～ 2026/4/26(日)",
-    "stay_period": "2026/4/1(水) ～ 2026/9/30(水)",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/4/27(月) ～ 2026/8/16(日)",
+    "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "store_available": false,
     "stock_status": "配布中",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603appcp/page.asp",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604jtbcpnew/page.asp",
     "detail_data": {
       "coupon_codes": [
-        "appcp"
+        "cpnew"
       ],
       "passwords": [
-        "g521",
-        "g522",
-        "g523"
+        "g628"
       ],
       "conditions": [],
       "notes": [
-        "なし 泊数指定なし 先着 600枚 100,000円以上のご利用で 3,000 円引 クーポンコード appcp パスワ"
+        "なし 泊数指定なし 先着 4000枚 30,000円以上のご利用で 1,500 円引 クーポンコード cpnew パスワ"
       ]
     }
   },
   {
-    "id": "2511airhayawari",
+    "id": "2604airhayawari",
     "category": "国内",
-    "title": "【早期75日前までの予約限定】GW・夏休みも先どり！4-9月出発航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+    "title": "【早期75日前までの予約限定】夏休みも先どり！<7～9月出発＞航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
     "discount": "3,000円引",
     "area": "全国",
     "type": "ツアー",
-    "booking_period": "2025/11/21(金) ～ 2026/4/26(日)",
-    "stay_period": "2026/4/1(水) ～ 2026/9/30(水)",
+    "booking_period": "2026/4/27(月) ～ 2026/7/17(金)",
+    "stay_period": "2026/7/11(土) ～ 2026/9/30(水)",
     "store_available": true,
     "stock_status": "配布中",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511airhayawari/page.asp",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604airhayawari/page.asp",
     "detail_data": {
       "coupon_codes": [
         "airha"
       ],
       "passwords": [
-        "g323"
+        "g640"
       ],
       "conditions": [],
       "notes": [
-        "以上 泊数指定なし 先着 9,390枚 下限金額なし 3,000 円引 クーポンコード airha パスワード g323"
+        "以上 泊数指定なし 先着 4,300枚 下限代金なし 3,000 円引 クーポンコード airha パスワード g640"
+      ]
+    }
+  },
+  {
+    "id": "2604airhayawari2",
+    "category": "国内",
+    "title": "【早期75日前までの予約限定】秋旅から冬旅も先どり！＜10～1月出発＞航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+    "discount": "3,000円引",
+    "area": "全国",
+    "type": "ツアー",
+    "booking_period": "2026/4/27(月) ～ 2026/9/30(水)",
+    "stay_period": "2026/10/1(木) ～ 2027/1/10(日)",
+    "store_available": true,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604airhayawari2/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "airha"
+      ],
+      "passwords": [
+        "g641"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 5,900枚 下限代金なし 3,000 円引 クーポンコード airha パスワード g641"
+      ]
+    }
+  },
+  {
+    "id": "2605jalhp",
+    "category": "国内",
+    "title": "【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
+    "discount": "最大12,000円引",
+    "area": "全国",
+    "type": "ツアー",
+    "booking_period": "2026/5/1(金) ～ 2026/6/30(火)",
+    "stay_period": "2026/6/1(月) ～ 2026/9/30(水)",
+    "store_available": true,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605jalhp/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "jalhp"
+      ],
+      "passwords": [
+        "g642",
+        "g643",
+        "g644"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 750枚 60,000円以上のご利用で 6,000 円引 クーポンコード jalhp パスワー"
       ]
     }
   },
@@ -136,55 +186,30 @@
     }
   },
   {
-    "id": "2602hokkaido",
+    "id": "2604ooedo",
     "category": "国内",
-    "title": "【3・4月限定】北海道おすすめホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "area": "北海道",
+    "title": "全国の大江戸温泉物語とTAOYAで使える割引クーポン",
+    "discount": "最大5,000円引",
+    "area": "全国",
     "type": "宿泊",
-    "booking_period": "2026/2/17(火) ～ 2026/4/30(木)",
-    "stay_period": "2026/3/1(日) ～ 2026/4/30(木)",
-    "store_available": false,
+    "booking_period": "2026/4/27(月) ～ 2026/8/31(月)",
+    "stay_period": "2026/4/27(月) ～ 2026/8/31(月)",
+    "store_available": true,
     "stock_status": "配布中",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602hokkaido/page.asp",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604ooedo/page.asp",
     "detail_data": {
       "coupon_codes": [
-        "hokka"
+        "ooedo"
       ],
       "passwords": [
-        "g442",
-        "g443"
+        "g632",
+        "g633",
+        "g634",
+        "g635"
       ],
       "conditions": [],
       "notes": [
-        "なし 泊数指定なし 先着 30枚 70,000円以上のご利用で 10,000 円引 クーポンコード hokka パスワー"
-      ]
-    }
-  },
-  {
-    "id": "2602dohoku",
-    "category": "国内",
-    "title": "【道北エリア】オススメ旅館・ホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "area": "北海道",
-    "type": "宿泊",
-    "booking_period": "2026/2/2(月) ～ 2026/4/30(木)",
-    "stay_period": "2026/2/3(火) ～ 2026/4/30(木)",
-    "store_available": false,
-    "stock_status": "配布中",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602dohoku/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "dohok"
-      ],
-      "passwords": [
-        "g501",
-        "g502",
-        "g503"
-      ],
-      "conditions": [],
-      "notes": [
-        "なし 泊数指定なし 先着 10枚 50,000円以上のご利用で 10,000 円引 クーポンコード dohok パスワー"
+        "以上 泊数指定なし 先着 1,666枚 15,000円以上のご利用で 2,000 円引 クーポンコード ooedo パス"
       ]
     }
   },
@@ -213,6 +238,32 @@
       "conditions": [],
       "notes": [
         "なし 泊数指定なし 先着 10枚 50,000円以上のご利用で 10,000 円引 クーポンコード douto パスワー"
+      ]
+    }
+  },
+  {
+    "id": "2605hokka",
+    "category": "国内",
+    "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
+    "discount": "最大10,000円引",
+    "area": "北海道",
+    "type": "宿泊",
+    "booking_period": "2026/5/1(金) ～ 2026/9/30(水)",
+    "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605hokka/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "hokka"
+      ],
+      "passwords": [
+        "g638",
+        "g639"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 10枚 70,000円以上のご利用で 10,000 円引 クーポンコード hokka パスワー"
       ]
     }
   },
@@ -375,7 +426,7 @@
     "booking_period": "2026/4/7(火) ～ 2026/9/30(水)",
     "stay_period": "2026/7/13(月) ～ 2026/9/30(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604nstoh/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -391,6 +442,35 @@
       "conditions": [],
       "notes": [
         "なし 泊数指定なし 先着 25枚 100,000円以上のご利用で 10,000 円引 クーポンコード nstoh パスワ"
+      ]
+    }
+  },
+  {
+    "id": "2605goton",
+    "category": "国内",
+    "title": "にいがた Go To トラベル（新潟県民限定企画）",
+    "discount": "最大20％引",
+    "area": "新潟県",
+    "type": "宿泊",
+    "booking_period": "2026/5/14(木) ～ 2026/7/17(金)",
+    "stay_period": "2026/5/14(木) ～ 2026/7/17(金)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605goton/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "ZSNGT"
+      ],
+      "passwords": [
+        "g645",
+        "g646",
+        "g647",
+        "g648",
+        "g649"
+      ],
+      "conditions": [],
+      "notes": [
+        "ン 1泊限定 1名 先着 300枚 下限代金なし 20 ％引 （割引上限3,000円） クーポンコード ZSNGT パス"
       ]
     }
   },
@@ -481,6 +561,32 @@
     }
   },
   {
+    "id": "2605saita",
+    "category": "国内",
+    "title": "【6～8月宿泊】埼玉県の宿泊で使える割引クーポン",
+    "discount": "最大3,000円引",
+    "area": "埼玉県",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/4/27(月) ～ 2026/8/28(金)",
+    "stay_period": "2026/6/1(月) ～ 2026/8/31(月)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605saita/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "saita"
+      ],
+      "passwords": [
+        "g637",
+        "g636"
+      ],
+      "conditions": [],
+      "notes": [
+        "機利用・JR利用】 先着 100枚 20,000円以上のご利用で 3,000 円引 クーポンコード saita パスワー"
+      ]
+    }
+  },
+  {
     "id": "2603hachijo",
     "category": "国内",
     "title": "【復幸旅！八丈島】3月～6月宿泊で使える割引クーポン",
@@ -520,7 +626,7 @@
     "booking_period": "2026/3/2(月) ～ 2026/7/29(水)",
     "stay_period": "2026/7/1(水) ～ 2026/7/30(木)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603hachijo2/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -537,6 +643,143 @@
       "conditions": [],
       "notes": [
         "1名】 飛行機利用 先着 2枚 25,000円以上のご利用で 30 ％引 （割引上限15,000円） クーポンコード h"
+      ]
+    }
+  },
+  {
+    "id": "2605hakone",
+    "category": "国内",
+    "title": "箱根・夏休み応援クーポン【第一弾】",
+    "discount": "最大15,000円引",
+    "area": "神奈川県",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/5/18(月) ～ 2026/6/30(火)",
+    "stay_period": "2026/7/1(水) ～ 2026/8/31(月)",
+    "store_available": true,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605hakone/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "hakon"
+      ],
+      "passwords": [
+        "g665",
+        "g666",
+        "g667",
+        "g668"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 15枚 150,000円以上のご利用で 15,000 円引 クーポンコード hakon パスワ"
+      ]
+    }
+  },
+  {
+    "id": "2605shizuoka",
+    "category": "国内",
+    "title": "涼をもとめて、静岡旅",
+    "discount": "最大5,000円引",
+    "area": "静岡県",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/5/14(木) ～ 2026/7/17(金)",
+    "stay_period": "2026/6/1(月) ～ 2026/7/17(金)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605shizuoka/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "shizu"
+      ],
+      "passwords": [
+        "g661",
+        "g660"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 140枚 50,000円以上のご利用で 5,000 円引 クーポンコード shizu パスワー"
+      ]
+    }
+  },
+  {
+    "id": "2605izucp",
+    "category": "国内",
+    "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
+    "discount": "最大15,000円引",
+    "area": "静岡県",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/5/1(金) ～ 2026/8/31(月)",
+    "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605izucp/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "izucp"
+      ],
+      "passwords": [
+        "g656",
+        "g655",
+        "g654",
+        "g653",
+        "g652",
+        "g651"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 10枚 150,000円以上のご利用で 15,000 円引 クーポンコード izucp パスワ"
+      ]
+    }
+  },
+  {
+    "id": "2604usjcp",
+    "category": "国内",
+    "title": "祝！スーパー・ニンテンドー・ワールド™5周年記念　ユニバーサル・スタジオ・ジャパンへの旅　オフィシャルホテルで使える割引クーポン",
+    "discount": "最大10,000円引",
+    "area": "大阪府",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/4/23(木) ～ 2026/6/29(月)",
+    "stay_period": "2026/4/23(木) ～ 2026/6/29(月)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604usjcp/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "usjcp"
+      ],
+      "passwords": [
+        "g631",
+        "g630"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 100枚 200,000円以上のご利用で 10,000 円引 クーポンコード usjcp パス"
+      ]
+    }
+  },
+  {
+    "id": "2605nishi",
+    "category": "国内",
+    "title": "【夏休み、もう計画中？】早期申込限定！関西中四国を彩るSummerクーポン",
+    "discount": "最大10,000円引",
+    "area": "滋賀県・京都府・大阪府",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/5/1(金) ～ 2026/5/31(日)",
+    "stay_period": "2026/7/18(土) ～ 2026/8/31(月)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605nishi/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "nishi"
+      ],
+      "passwords": [
+        "g659",
+        "g658",
+        "g657"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 10枚 100,000円以上のご利用で 10,000 円引 クーポンコード nishi パスワ"
       ]
     }
   },
@@ -564,6 +807,32 @@
       "conditions": [],
       "notes": [
         "以上 泊数指定なし 先着 17枚 80,000円以上のご利用で 8,000 円引 クーポンコード jalcp パスワード"
+      ]
+    }
+  },
+  {
+    "id": "2605konpira",
+    "category": "国内",
+    "title": "こんぴら温泉のおすすめ施設で使える割引クーポン",
+    "discount": "最大10,000円引",
+    "area": "香川県",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/5/18(月) ～ 2026/9/30(水)",
+    "stay_period": "2026/6/1(月) ～ 2026/9/30(水)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605konpira/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "knprc"
+      ],
+      "passwords": [
+        "g673",
+        "g674"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 70枚 40,000円以上のご利用で 5,000 円引 クーポンコード knprc パスワード"
       ]
     }
   },
@@ -651,7 +920,7 @@
       ],
       "conditions": [],
       "notes": [
-        "プラン利用】 1名 先着 50枚 下限代金なし 20 ％引 （割引上限5,000円） クーポンコード ZSKGS パスワ"
+        "プラン利用】 1名 先着 150枚 下限代金なし 20 ％引 （割引上限5,000円） クーポンコード ZSKGS パス"
       ]
     }
   },
@@ -686,7 +955,7 @@
       ],
       "conditions": [],
       "notes": [
-        "プラン利用】 1名 先着 20枚 下限代金なし 20 ％引 （割引上限8,000円） クーポンコード ZSKGS パスワ"
+        "プラン利用】 1名 先着 50枚 下限代金なし 20 ％引 （割引上限8,000円） クーポンコード ZSKGS パスワ"
       ]
     }
   },
@@ -725,7 +994,7 @@
     "booking_period": "2026/3/19(木) ～ 2026/6/29(月)",
     "stay_period": "2026/4/1(水) ～ 2026/6/30(火)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603okinawa/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -771,29 +1040,29 @@
     }
   },
   {
-    "id": "2601jtbfuksp",
+    "id": "2603appcp",
     "category": "国内",
-    "title": "【新春福春】国内ツアーに使える割引クーポン",
-    "discount": "最大12,000円引",
+    "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
+    "discount": "最大3,000円引",
     "area": "全国",
     "type": "ツアー",
-    "booking_period": "2026/1/7(水) ～ 2026/1/31(土)",
-    "stay_period": "2026/1/8(木) ～ 2026/6/30(火)",
-    "store_available": true,
+    "booking_period": "2026/2/25(水) ～ 2026/4/26(日)",
+    "stay_period": "2026/4/1(水) ～ 2026/9/30(水)",
+    "store_available": false,
     "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jtbfuksp/page.asp",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603appcp/page.asp",
     "detail_data": {
       "coupon_codes": [
-        "fuksp"
+        "appcp"
       ],
       "passwords": [
-        "g351",
-        "g350",
-        "g349"
+        "g521",
+        "g522",
+        "g523"
       ],
       "conditions": [],
       "notes": [
-        "なし 泊数指定なし 先着 100枚 200,000円以上のご利用で 12,000 円引 クーポンコード fuksp パス"
+        "なし 泊数指定なし 先着 600枚 100,000円以上のご利用で 3,000 円引 クーポンコード appcp パスワ"
       ]
     }
   },
@@ -847,6 +1116,58 @@
       "conditions": [],
       "notes": [
         "【事前支払い限定】 先着 500枚 70,000円以上のご利用で 3,500 円引 クーポンコード hayac パスワー"
+      ]
+    }
+  },
+  {
+    "id": "2511airhayawari",
+    "category": "国内",
+    "title": "【早期75日前までの予約限定】GW・夏休みも先どり！4-9月出発航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+    "discount": "3,000円引",
+    "area": "全国",
+    "type": "ツアー",
+    "booking_period": "2025/11/21(金) ～ 2026/4/26(日)",
+    "stay_period": "2026/4/1(水) ～ 2026/9/30(水)",
+    "store_available": true,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2511airhayawari/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "airha"
+      ],
+      "passwords": [
+        "g323"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 9,390枚 下限金額なし 3,000 円引 クーポンコード airha パスワード g323"
+      ]
+    }
+  },
+  {
+    "id": "2601jtbfuksp",
+    "category": "国内",
+    "title": "【新春福春】国内ツアーに使える割引クーポン",
+    "discount": "最大12,000円引",
+    "area": "全国",
+    "type": "ツアー",
+    "booking_period": "2026/1/7(水) ～ 2026/1/31(土)",
+    "stay_period": "2026/1/8(木) ～ 2026/6/30(火)",
+    "store_available": true,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601jtbfuksp/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "fuksp"
+      ],
+      "passwords": [
+        "g351",
+        "g350",
+        "g349"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 100枚 200,000円以上のご利用で 12,000 円引 クーポンコード fuksp パス"
       ]
     }
   },
@@ -1152,90 +1473,6 @@
       "conditions": [],
       "notes": [
         "クーポン 1名利用 先着50枚 5,000 円引 クーポンコード 2604P1 パスワード DP2604MH 2名利用"
-      ]
-    }
-  },
-  {
-    "id": "2602sum",
-    "category": "海外",
-    "title": "夏休み・シルバーウィークにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
-    "discount": "最大20,000円引",
-    "area": "全方面",
-    "type": "海外ツアー",
-    "booking_period": "2026年2月18日(水)～2026年5月12日(火)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布中",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602sum/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2602B1",
-        "2602B2",
-        "2602B3",
-        "2602B4"
-      ],
-      "passwords": [
-        "LS2602SUM"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着20枚 旅行代金200,000円以上（空港諸税等除く）のご利用で 5,000 円引 クーポンコー"
-      ]
-    }
-  },
-  {
-    "id": "2602aut",
-    "category": "海外",
-    "title": "冬休み・年末にも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
-    "discount": "最大40,000円引",
-    "area": "全方面",
-    "type": "海外ツアー",
-    "booking_period": "2026年2月18日(水)～2026年5月12日(火)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布中",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602aut/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2602C1",
-        "2602C2",
-        "2602C3",
-        "2602C4"
-      ],
-      "passwords": [
-        "LS2602AUT"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着10枚 旅行代金250,000円以上（空港諸税等除く）のご利用で 10,000 円引 クーポンコ"
-      ]
-    }
-  },
-  {
-    "id": "2602win",
-    "category": "海外",
-    "title": "お正月・春休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
-    "discount": "最大60,000円引",
-    "area": "全方面",
-    "type": "海外ツアー",
-    "booking_period": "2026年2月18日(水)～2026年5月12日(火)",
-    "stay_period": "",
-    "store_available": false,
-    "stock_status": "配布中",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602win/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "2602D1",
-        "2602D2",
-        "2602D3",
-        "2602D4"
-      ],
-      "passwords": [
-        "LS2602WIN"
-      ],
-      "conditions": [],
-      "notes": [
-        "クーポン 1名利用 先着2枚 旅行代金300,000円以上（空港諸税等除く）のご利用で 15,000 円引 クーポンコー"
       ]
     }
   },
@@ -1688,6 +1925,34 @@
     }
   },
   {
+    "id": "2602sum",
+    "category": "海外",
+    "title": "夏休み・シルバーウィークにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
+    "discount": "最大20,000円引",
+    "area": "全方面",
+    "type": "海外ツアー",
+    "booking_period": "2026年2月18日(水)～2026年5月12日(火)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602sum/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2602B1",
+        "2602B2",
+        "2602B3",
+        "2602B4"
+      ],
+      "passwords": [
+        "LS2602SUM"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着20枚 旅行代金200,000円以上（空港諸税等除く）のご利用で 5,000 円引 クーポンコー"
+      ]
+    }
+  },
+  {
     "id": "2511sum",
     "category": "海外",
     "title": "先どり 夏休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年7-9月出発＞",
@@ -1824,6 +2089,62 @@
       "conditions": [],
       "notes": [
         "クーポン 1名利用 先着2枚 旅行代金250,000円以上（空港諸税等除く）のご利用で 15,000 円引 クーポンコー"
+      ]
+    }
+  },
+  {
+    "id": "2602aut",
+    "category": "海外",
+    "title": "冬休み・年末にも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+    "discount": "最大40,000円引",
+    "area": "全方面",
+    "type": "海外ツアー",
+    "booking_period": "2026年2月18日(水)～2026年5月12日(火)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602aut/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2602C1",
+        "2602C2",
+        "2602C3",
+        "2602C4"
+      ],
+      "passwords": [
+        "LS2602AUT"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着10枚 旅行代金250,000円以上（空港諸税等除く）のご利用で 10,000 円引 クーポンコ"
+      ]
+    }
+  },
+  {
+    "id": "2602win",
+    "category": "海外",
+    "title": "お正月・春休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
+    "discount": "最大60,000円引",
+    "area": "全方面",
+    "type": "海外ツアー",
+    "booking_period": "2026年2月18日(水)～2026年5月12日(火)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602win/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2602D1",
+        "2602D2",
+        "2602D3",
+        "2602D4"
+      ],
+      "passwords": [
+        "LS2602WIN"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着2枚 旅行代金300,000円以上（空港諸税等除く）のご利用で 15,000 円引 クーポンコー"
       ]
     }
   }
