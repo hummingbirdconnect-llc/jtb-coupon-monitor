@@ -10,6 +10,7 @@ coupon-master を入力元にして DRY-RUN 検証を継続する。
   python jalpack_coupon_monitor.py --dry-run
   python jalpack_coupon_monitor.py --source master --dry-run
   python jalpack_coupon_monitor.py --source official
+  python jalpack_coupon_monitor.py --source official --fetch-method chrome --dry-run
   python jalpack_coupon_monitor.py --init --source master
 """
 
@@ -237,6 +238,42 @@ def status_from_text(text):
     return "配布終了" if any(p in text for p in END_PATTERNS) else "配布中"
 
 
+def normalize_official_discount(rule, text, extracted):
+    """公式ページ本文から、記事更新に使いやすい割引額だけを残す。"""
+    if rule.coupon_id == "jalpack-domestic-birthday":
+        amounts = [amount for amount in ("15,000円", "8,000円") if amount in text]
+        if amounts:
+            return " / ".join(f"{amount}割引" for amount in amounts)
+    if rule.coupon_id == "jalpack-overseas-birthday":
+        m = re.search(r"10,000円(?:分)?", text)
+        if m:
+            return m.group(0)
+    if rule.coupon_id == "jalpack-domestic-timesale":
+        m = re.search(r"最大\s*30,000円(?:割引|OFF|引き)?", text)
+        if m:
+            value = normalize_space(m.group(0))
+            return value if any(s in value for s in ("割引", "OFF", "引き")) else f"{value}割引"
+    if rule.coupon_id == "jalpack-overseas-timesale":
+        m = re.search(r"最大\s*[0-9,]+円(?:割引|OFF|引き)?", text)
+        if m:
+            return normalize_space(m.group(0))
+    if rule.coupon_id == "jalpack-lsp-star":
+        m = re.search(r"5,000円(?:割引|OFF|引き)?", text)
+        if m:
+            value = normalize_space(m.group(0))
+            return value if any(s in value for s in ("割引", "OFF", "引き")) else f"{value}割引"
+    if rule.coupon_id == "jalpack-hayakime":
+        m = re.search(r"1グループにつき\s*3,000円(?:割引|OFF|引き)?", text)
+        if m:
+            return normalize_space(m.group(0))
+    if rule.coupon_id == "jalpack-jalcard":
+        m = re.search(r"2\s*%OFF|2\s*％OFF", text)
+        if m:
+            return normalize_space(m.group(0))
+        return rule.fallback_discount
+    return extracted or rule.fallback_discount
+
+
 def load_master_ids():
     if MASTER_FILE.exists():
         with open(MASTER_FILE, "r", encoding="utf-8") as f:
@@ -318,7 +355,35 @@ def fetch_official_html(url, timeout):
     return resp.text
 
 
-def parse_official_source(rule, html):
+def fetch_official_html_with_chrome(browser, url, timeout):
+    page = browser.new_page(user_agent=HEADERS["User-Agent"])
+    try:
+        page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
+        return page.content()
+    finally:
+        page.close()
+
+
+def open_chrome_browser():
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception as exc:  # pragma: no cover - optional local fallback
+        raise RuntimeError(f"Playwrightを読み込めません: {exc}") from exc
+
+    playwright = sync_playwright().start()
+    try:
+        browser = playwright.chromium.launch(
+            channel="chrome",
+            headless=True,
+        )
+    except Exception:
+        playwright.stop()
+        raise
+
+    return playwright, browser
+
+
+def parse_official_source(rule, html, fetch_method):
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup(["script", "style", "noscript"]):
         tag.decompose()
@@ -326,7 +391,11 @@ def parse_official_source(rule, html):
     text = soup.get_text("\n", strip=True)
     text_norm = normalize_space(text)
     title = rule.title
-    discount = extract_discount(text_norm, rule.fallback_discount)
+    discount = normalize_official_discount(
+        rule,
+        text_norm,
+        extract_discount(text_norm, rule.fallback_discount),
+    )
     booking_period = extract_period(text_norm, ["予約受付期間", "クーポン獲得 / 予約受付期間", "販売期間", "予約期間"])
     travel_period = extract_period(text_norm, ["出発対象期間", "設定期間", "対象期間", "旅行期間"])
     coupon_codes = extract_codes(text_norm)
@@ -358,7 +427,7 @@ def parse_official_source(rule, html):
         conditions=conditions,
         source_url=rule.url,
         source_type="official_html",
-        fetch_method="requests",
+        fetch_method=fetch_method,
         stock_status=stock_status,
         confidence="high" if discount or booking_period or coupon_codes else "medium",
         placement_hint=rule.placement_hint,
@@ -366,21 +435,41 @@ def parse_official_source(rule, html):
     )
 
 
-def scrape_official_sources(timeout):
+def scrape_official_sources(timeout, fetch_method):
     coupons = []
     failures = []
+    chrome = None
 
-    for rule in OFFICIAL_SOURCES:
-        print(f"📡 [公式] {rule.title}: {rule.url}")
-        try:
-            html = fetch_official_html(rule.url, timeout)
-            coupon = parse_official_source(rule, html)
-            coupons.append(coupon)
-            print(f"  ✅ 取得: {coupon['stock_status']} / {coupon.get('discount') or '割引額未抽出'}")
-        except Exception as exc:
-            failures.append({"title": rule.title, "url": rule.url, "error": str(exc)})
-            print(f"  ⚠️ 取得失敗: {exc}")
-        time.sleep(1)
+    try:
+        if fetch_method == "chrome":
+            chrome = open_chrome_browser()
+
+        for rule in OFFICIAL_SOURCES:
+            print(f"📡 [公式] {rule.title}: {rule.url}")
+            try:
+                method_used = fetch_method
+                if fetch_method == "chrome":
+                    html = fetch_official_html_with_chrome(chrome[1], rule.url, timeout)
+                else:
+                    html = fetch_official_html(rule.url, timeout)
+                    method_used = "requests"
+                coupon = parse_official_source(rule, html, method_used)
+                coupons.append(coupon)
+                print(f"  ✅ 取得: {coupon['stock_status']} / {coupon.get('discount') or '割引額未抽出'}")
+            except Exception as exc:
+                failures.append({
+                    "title": rule.title,
+                    "url": rule.url,
+                    "method": fetch_method,
+                    "error": str(exc),
+                })
+                print(f"  ⚠️ 取得失敗: {exc}")
+            time.sleep(1)
+    finally:
+        if chrome:
+            playwright, browser = chrome
+            browser.close()
+            playwright.stop()
 
     return coupons, failures
 
@@ -701,12 +790,12 @@ def generate_report(coupons, events, fetch_failures, source_mode, dry_run=False)
 # 実行
 # ============================================================
 
-def collect_coupons(source_mode, timeout):
+def collect_coupons(source_mode, timeout, fetch_method):
     fetch_failures = []
     official_coupons = []
 
     if source_mode in {"official", "auto"}:
-        official_coupons, fetch_failures = scrape_official_sources(timeout)
+        official_coupons, fetch_failures = scrape_official_sources(timeout, fetch_method)
         if official_coupons:
             return official_coupons, fetch_failures, "official"
         if source_mode == "official":
@@ -720,7 +809,11 @@ def collect_coupons(source_mode, timeout):
 def run(args):
     setup_dirs()
 
-    coupons, fetch_failures, effective_source = collect_coupons(args.source, args.timeout)
+    coupons, fetch_failures, effective_source = collect_coupons(
+        args.source,
+        args.timeout,
+        args.fetch_method,
+    )
     if not coupons:
         print("🚨 異常検知: JALパックのクーポン候補が0件です")
         sys.exit(1)
@@ -778,6 +871,12 @@ def parse_args(argv):
         choices=["auto", "official", "master"],
         default="auto",
         help="取得元。autoは公式取得に失敗したらcoupon-masterへフォールバック",
+    )
+    parser.add_argument(
+        "--fetch-method",
+        choices=["requests", "chrome"],
+        default="requests",
+        help="公式ページの取得方法。chromeはローカルGoogle ChromeをPlaywright経由で使う",
     )
     parser.add_argument("--timeout", type=int, default=20, help="公式ページ取得の読み取りタイムアウト秒")
     return parser.parse_args(argv)

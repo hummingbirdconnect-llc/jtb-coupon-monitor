@@ -24,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Test JAL Pack official fetch
-        run: python jalpack_coupon_monitor.py --source official --timeout 20 --dry-run
+        run: python jalpack_coupon_monitor.py --source official --fetch-method chrome --timeout 60 --dry-run
 
       - name: Upload JAL Pack dry-run artifacts
         if: always()
