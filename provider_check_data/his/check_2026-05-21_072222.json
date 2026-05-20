@@ -1,0 +1,11 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-05-21T07:22:15.468448+09:00",
+  "completed_at": "2026-05-21T07:22:22.587351+09:00",
+  "coupon_count": 21,
+  "latest_file": "coupons_2026-05-21.json",
+  "error": ""
+}

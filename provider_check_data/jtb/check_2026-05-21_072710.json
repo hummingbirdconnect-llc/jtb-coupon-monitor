@@ -1,0 +1,11 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-05-21T07:22:22.588794+09:00",
+  "completed_at": "2026-05-21T07:27:10.372547+09:00",
+  "coupon_count": 77,
+  "latest_file": "coupons_2026-05-21.json",
+  "error": ""
+}
