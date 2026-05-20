@@ -1,0 +1,1580 @@
+[
+  {
+    "id": "kkday-c82fe16388",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "KKday Blog限定 5%OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "5%OFF（上限1,000円）",
+    "stock_status": "配布中",
+    "product_type": "海外ツアー10,000円以上",
+    "booking_period": "2026-01-14〜2026-12-31",
+    "travel_period": "2026-01-14〜2027-01-31",
+    "coupon_codes": [
+      "KJBGOTOUR5OFF"
+    ],
+    "conditions": [
+      "新規日本会員・初回購入・アプリ限定"
+    ],
+    "source_url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
+    "detail_url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-bf4a700bba",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "海外商品500円OFF（アプリ初回）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "500円OFF",
+    "stock_status": "配布中",
+    "product_type": "海外ツアー・チケット・交通・Wi-Fi/SIM等（10,500円以上）",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "APP500"
+    ],
+    "conditions": [
+      "アプリ初回限定／対象外商品あり"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/kkday_app",
+    "detail_url": "https://www.kkday.com/ja/promo/kkday_app",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅常設"
+    }
+  },
+  {
+    "id": "kkday-b3c75aac39",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "新規会員登録キャンペーン",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "海外商品500円OFF",
+    "stock_status": "配布中",
+    "product_type": "海外の交通／通信／観光・ツアー／体験・チケット（10,500円以上）",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "AJNEW500"
+    ],
+    "conditions": [
+      "新規会員登録後の初回購入・配布枚数上限あり・一部対象外"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/aj_newmember",
+    "detail_url": "https://www.kkday.com/ja/promo/aj_newmember",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅常設"
+    }
+  },
+  {
+    "id": "kkday-a4c00983b1",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "LINE友だち追加特典",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "500円OFF",
+    "stock_status": "配布中",
+    "product_type": "KKday商品10,000円以上",
+    "booking_period": "2025年8月〜（期限未定）",
+    "travel_period": "同左",
+    "coupon_codes": [
+      "コード非公開（LINE経由配布）"
+    ],
+    "conditions": [
+      "LINE友だち追加・アプリ購入のみ"
+    ],
+    "source_url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
+    "detail_url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-2026f19738",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "日本商品100円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "100円OFF",
+    "stock_status": "配布中",
+    "product_type": "日本国内商品",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "KKJPALL100"
+    ],
+    "conditions": [
+      "アプリダウンロード後取得／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-7d2155e0a3",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "日本商品300円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "300円OFF",
+    "stock_status": "配布中",
+    "product_type": "日本国内商品",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "KKJPALL300"
+    ],
+    "conditions": [
+      "アプリ購入限定／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/limited-sale",
+    "detail_url": "https://www.kkday.com/ja/promo/limited-sale",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-99cde696bb",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "国内人気施設100円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "100円OFF",
+    "stock_status": "配布中",
+    "product_type": "国内施設チケット",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "241APP100"
+    ],
+    "conditions": [
+      "クーポンごとに条件異／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-eecff9ec87",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "動物園チケット100円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "100円OFF",
+    "stock_status": "配布中",
+    "product_type": "動物園チケット",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "AFAJKC4"
+    ],
+    "conditions": [
+      "クーポンごとに条件異／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-26bc893fda",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "横浜・神奈川商品100円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "100円OFF",
+    "stock_status": "配布中",
+    "product_type": "横浜・神奈川の施設・交通・観光商品",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "D47DHJS"
+    ],
+    "conditions": [
+      "クーポンごとに条件異／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-b9ffeda3e1",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "人気施設・ツアー300円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "300円OFF",
+    "stock_status": "配布中",
+    "product_type": "人気施設・ツアー",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "3JXARXW"
+    ],
+    "conditions": [
+      "5,000円以上・アプリ初回購入限定・1回のみ"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/kkday_app_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-71ea05d351",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "国内全商品500円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "500円OFF",
+    "stock_status": "配布中",
+    "product_type": "国内全商品",
+    "booking_period": "期限記載なし",
+    "travel_period": "期限記載なし",
+    "coupon_codes": [
+      "JPALL500"
+    ],
+    "conditions": [
+      "アプリから取得／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/fireworks26",
+    "detail_url": "https://www.kkday.com/ja/promo/fireworks26",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-fcbae2d890",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW海外旅行クーポン アジアツアー",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "3,000円OFF",
+    "stock_status": "配布中",
+    "product_type": "アジア地域のツアー商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "ASIA3000"
+    ],
+    "conditions": [
+      "数量限定／最低利用金額不明（プラン単位判定）／APP限定の可能性"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-5938ca1e97",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW海外旅行クーポン アジアチケット",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "1,500円OFF",
+    "stock_status": "配布中",
+    "product_type": "アジア地域のチケット商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "ASIA1500"
+    ],
+    "conditions": [
+      "数量限定／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-e270c86715",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW海外旅行クーポン 欧米ツアー",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "5,000円OFF",
+    "stock_status": "配布中",
+    "product_type": "ヨーロッパ・北アメリカのツアー商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "EUNA5000"
+    ],
+    "conditions": [
+      "数量限定／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-825af11ffd",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW海外旅行クーポン 欧米チケット",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "2,500円OFF",
+    "stock_status": "配布中",
+    "product_type": "ヨーロッパ・北アメリカのチケット商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "EUNA2500"
+    ],
+    "conditions": [
+      "数量限定／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-f2b042e0f3",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW海外旅行クーポン オセアニアツアー",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "6,000円OFF",
+    "stock_status": "配布中",
+    "product_type": "オセアニアのツアー商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "OCECO6000"
+    ],
+    "conditions": [
+      "数量限定／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-a5f1f7935a",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW eSIM/Wi-Fi 150円OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "150円OFF",
+    "stock_status": "配布中",
+    "product_type": "eSIM／Wi-Fi商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "ESIM150"
+    ],
+    "conditions": [
+      "新規限定／最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-500590a61f",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "台湾新幹線最大50%OFF",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "最大50%OFF",
+    "stock_status": "配布中",
+    "product_type": "台湾新幹線片道商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "KKTHSR24"
+    ],
+    "conditions": [
+      "最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-cde2abc50e",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "タイ宿泊クーポン",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "約4,680〜4,770円OFF（ページ間で円換算表記差あり）",
+    "stock_status": "配布中",
+    "product_type": "タイ宿泊商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "THAIHTL30"
+    ],
+    "conditions": [
+      "最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/thailand26_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/thailand26_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-3fa9de8f67",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "タイ サステナブル特集",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "約4,770円OFF",
+    "stock_status": "配布中",
+    "product_type": "タイのサステナブル体験／宿泊系商品",
+    "booking_period": "共通終了日明示なし",
+    "travel_period": "共通終了日明示なし",
+    "coupon_codes": [
+      "THAISUS30"
+    ],
+    "conditions": [
+      "最低利用金額不明"
+    ],
+    "source_url": "https://www.kkday.com/ja/promo/thailand26_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/thailand26_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-2fc8149a9a",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "モッピー",
+    "category": "§3 ポイントサイト還元",
+    "discount": "5.0%（2026-04-26取得・ゴールド会員は+15%増量で実質5.75%相当）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約完了で即時付与（ポイント反映60〜90日）"
+    ],
+    "source_url": "https://pc.moppy.jp/shopping/detail.php?site_id=4835",
+    "detail_url": "https://pc.moppy.jp/shopping/detail.php?site_id=4835",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅ 稼働中"
+    }
+  },
+  {
+    "id": "kkday-073f915da5",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ハピタス",
+    "category": "§3 ポイントサイト還元",
+    "discount": "2.1%（2026-04-26取得・ゴールド会員は2.73%）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約完了で即時付与（ポイント確定60〜90日）"
+    ],
+    "source_url": "https://hapitas.jp/item/detail/itemid/87560",
+    "detail_url": "https://hapitas.jp/item/detail/itemid/87560",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅ 稼働中"
+    }
+  },
+  {
+    "id": "kkday-0f1771483d",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ワラウ",
+    "category": "§3 ポイントサイト還元",
+    "discount": "2.1%（2026-04-26取得）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約完了で即時付与"
+    ],
+    "source_url": "https://warau.jp/contents/point/pointEntrance.php?point_id=173531",
+    "detail_url": "https://warau.jp/contents/point/pointEntrance.php?point_id=173531",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅ 稼働中"
+    }
+  },
+  {
+    "id": "kkday-1ee222f785",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "えんためねっと",
+    "category": "§3 ポイントサイト還元",
+    "discount": "❓不明（2026-04-26時点で文字エンコーディング判読不能）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "―",
+    "detail_url": "―",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "❓ 未確認"
+    }
+  },
+  {
+    "id": "kkday-640873a2d8",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "LINEショッピング",
+    "category": "§3 ポイントサイト還元",
+    "discount": "❓不明（2026-04-26時点でJS描画＋ログイン必須のためWebFetch不可）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "―",
+    "detail_url": "―",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "❓ 未確認"
+    }
+  },
+  {
+    "id": "kkday-b4eda1edc3",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "シルバー",
+    "category": "§5 会員ランク",
+    "discount": "ポイント割引50pt〜利用可能・誕生月1日に特別クーポン・限定ミッション・会員特典ページ・優先購入権・優先サポート",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/aj_newmember 等 会員特典ページ",
+    "detail_url": "https://www.kkday.com/ja/promo/aj_newmember 等 会員特典ページ",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-a333d50642",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ゴールド",
+    "category": "§5 会員ランク",
+    "discount": "シルバー特典＋ボーナスポイント還元1.5倍",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "公式検索スニペット",
+    "detail_url": "公式検索スニペット",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-c046c2f811",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ダイヤモンド",
+    "category": "§5 会員ランク",
+    "discount": "ゴールド特典＋ボーナスポイント還元2倍",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "公式検索スニペット",
+    "detail_url": "公式検索スニペット",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-7221d6b288",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "期間限定セール総合ページ",
+    "category": "§6-A セール枠（特集ページ・自動適用＋クーポン併用混在型）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊・チケット・イベント・フェリー・周遊パス",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/limited-sale",
+    "detail_url": "https://www.kkday.com/ja/promo/limited-sale",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-ac75a20031",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW海外旅行セール（クーポン+割引済価格混在）",
+    "category": "§6-A セール枠（特集ページ・自動適用＋クーポン併用混在型）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "ツアー・チケット・eSIM/Wi-Fi・テーマパーク・交通",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-ac4e1b66a8",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "2026年花火特集",
+    "category": "§6-A セール枠（特集ページ・自動適用＋クーポン併用混在型）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "イベントチケット・観覧席・クルーズ・海外テーマパーク",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/fireworks26",
+    "detail_url": "https://www.kkday.com/ja/promo/fireworks26",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-572308ff38",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "タイ特集ページ（コード+割引済価格混在）",
+    "category": "§6-A セール枠（特集ページ・自動適用＋クーポン併用混在型）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊・サステナブル商品・eSIM・空港送迎・交通パス・ショー/入場券",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/thailand26_jp",
+    "detail_url": "https://www.kkday.com/ja/promo/thailand26_jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "kkday-e8bbf02878",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "#KKday旅 SNS投稿キャンペーン",
+    "category": "§6-C SNS連動キャンペーン（常設）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/sns",
+    "detail_url": "https://www.kkday.com/ja/promo/sns",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": "✅常設"
+    }
+  },
+  {
+    "id": "kkday-41fc228986",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "韓国春特集 慶州・釜山日帰りツアー1,500円OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "ページ上に「終了」明記（最終確認 2026-04-26）",
+    "coupon_codes": [
+      "GNTOUR1"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/gyeongnam_spring-jp",
+    "detail_url": "https://www.kkday.com/ja/promo/gyeongnam_spring-jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-47b92bf6e1",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "韓国春特集 慶州・釜山チケット10%OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "ページ上に「終了」明記（最終確認 2026-04-26）",
+    "coupon_codes": [
+      "GNTIX1"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/gyeongnam_spring-jp",
+    "detail_url": "https://www.kkday.com/ja/promo/gyeongnam_spring-jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-6eaae39b65",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Visa台湾10%OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "利用対象期間 2022-12-26〜2023-12-31（期日経過）",
+    "coupon_codes": [
+      "VISAIBJP09"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/visa",
+    "detail_url": "https://www.kkday.com/ja/promo/visa",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-d327f323e0",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "2024年花火特集 海外APP500",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2024年花火特集ページ内で「終了しました」表示",
+    "coupon_codes": [
+      "海外APP500（旧）"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/fireworks26 等の過去アーカイブ",
+    "detail_url": "https://www.kkday.com/ja/promo/fireworks26 等の過去アーカイブ",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-bfb0151783",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "2024年花火特集 イベント商品100円OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2024年花火特集ページ内で「終了しました」表示",
+    "coupon_codes": [
+      "242APP100"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/fireworks26 等の過去アーカイブ",
+    "detail_url": "https://www.kkday.com/ja/promo/fireworks26 等の過去アーカイブ",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-81b10ffcab",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "英語版 Mid-month セール ツアー/体験/貸切15%OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "予約期間 2026-04-15〜2026-04-17（期日経過）",
+    "coupon_codes": [
+      "MMTPC15"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/en/promo/mid-month",
+    "detail_url": "https://www.kkday.com/en/promo/mid-month",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-b0ce374583",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "英語版 Mid-month セール アトラクションチケット5%OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "予約期間 2026-04-15〜2026-04-17（期日経過）",
+    "coupon_codes": [
+      "MMAT15"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/en/promo/mid-month",
+    "detail_url": "https://www.kkday.com/en/promo/mid-month",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-c68ae83516",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "英語版 Mid-month セール 一部サイトワイド5%OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "予約期間 2026-04-15〜2026-04-17（期日経過）",
+    "coupon_codes": [
+      "NY2SEA5"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/en/promo/mid-month",
+    "detail_url": "https://www.kkday.com/en/promo/mid-month",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "external-research-chatgpt-deep-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-2a6812f104",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "KKday日本向け PayPay還元",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/paypay",
+    "detail_url": "https://www.kkday.com/ja/promo/paypay",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-e55cce178c",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "韓国春特集 慶州・釜山ホテル1,500円OFF",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [
+      "GNSTAY1"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/gyeongnam_spring-jp",
+    "detail_url": "https://www.kkday.com/ja/promo/gyeongnam_spring-jp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-99d41d9f26",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "英語版 サイトワイド5%OFF",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [
+      "APP5OFF"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/en/promo/10anniversary",
+    "detail_url": "https://www.kkday.com/en/promo/10anniversary",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-60ad7fc219",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "香港版カード優待14種（HSBC Visa分割9折／WEWA等）",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [
+      "各種"
+    ],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/zh-hk/rewards/benefits 関連ブログ",
+    "detail_url": "https://www.kkday.com/zh-hk/rewards/benefits 関連ブログ",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-7f99622261",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ポイントサイト還元率（一部未確認）",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "―",
+    "detail_url": "―",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-e2313a6b67",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "会員ランク到達条件（シルバー／ゴールド／ダイヤモンド）",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/aj_newmember 等",
+    "detail_url": "https://www.kkday.com/ja/promo/aj_newmember 等",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-4e77061c6a",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "値引き済みセール商品へのクーポン上乗せ可否",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.kkday.com/ja/promo/coupon-campaign 等",
+    "detail_url": "https://www.kkday.com/ja/promo/coupon-campaign 等",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "kkday-87855d91e4",
+    "provider": "kkday",
+    "provider_label": "KKday",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "KKday for Business（法人向け）",
+    "category": "A. researcher が一次情報を取れなかった項目（auto-research / external-research-chatgpt-deep-research 由来）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "―",
+    "detail_url": "―",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  }
+]

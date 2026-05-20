@@ -1,0 +1,367 @@
+[
+  {
+    "id": "expedia-405faf142a",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "アメックス",
+    "category": "エクスペディア_002_カード特典クーポン_SWELL",
+    "discount": "8%OFF / 3,750円OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "150,000円",
+      "2027/1/30"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "ホテル割引率",
+        "パッケージ割引額",
+        "最低利用金額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "expedia-664ac92f08",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "VISA",
+    "category": "エクスペディア_002_カード特典クーポン_SWELL",
+    "discount": "8%OFF / 2,500円OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "50,000円",
+      "2027/3/31"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "ホテル割引率",
+        "パッケージ割引額",
+        "最低利用金額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "expedia-5c941e1f5a",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "JCB",
+    "category": "エクスペディア_002_カード特典クーポン_SWELL",
+    "discount": "8%OFF / 2,500円OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "50,000円",
+      "2027/1/31"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "ホテル割引率",
+        "パッケージ割引額",
+        "最低利用金額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "expedia-c694893881",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Mastercard",
+    "category": "エクスペディア_002_カード特典クーポン_SWELL",
+    "discount": "10%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "常時"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "ホテル割引率",
+        "パッケージ割引額",
+        "最低利用金額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "expedia-30824adf98",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "イオンカード",
+    "category": "エクスペディア_002_カード特典クーポン_SWELL",
+    "discount": "8%OFF（期間限定10%） / 2,500円OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "50,000円",
+      "2027/1/31"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "ホテル割引率",
+        "パッケージ割引額",
+        "最低利用金額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "expedia-f5ca108801",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "三井住友カード",
+    "category": "エクスペディア_002_カード特典クーポン_SWELL",
+    "discount": "8%OFF / 2,500円OFF",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "50,000円",
+      "2026/3/31"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "ホテル割引率",
+        "パッケージ割引額",
+        "最低利用金額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "expedia-86f5280ee7",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "VISA",
+    "category": "エクスペディア_003_セール割引_SWELL",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_003_セール割引_SWELL.html",
+      "headers": [
+        "カード",
+        "割引内容(参考値)"
+      ]
+    }
+  },
+  {
+    "id": "expedia-2a4cb04e0e",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "JCB",
+    "category": "エクスペディア_003_セール割引_SWELL",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_003_セール割引_SWELL.html",
+      "headers": [
+        "カード",
+        "割引内容(参考値)"
+      ]
+    }
+  },
+  {
+    "id": "expedia-7090994a0f",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "アメックス",
+    "category": "エクスペディア_003_セール割引_SWELL",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_003_セール割引_SWELL.html",
+      "headers": [
+        "カード",
+        "割引内容(参考値)"
+      ]
+    }
+  },
+  {
+    "id": "expedia-40f83e5b6b",
+    "provider": "expedia",
+    "provider_label": "Expedia",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "イオンカード",
+    "category": "エクスペディア_003_セール割引_SWELL",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/エクスペディア_003_セール割引_SWELL.html",
+      "headers": [
+        "カード",
+        "割引内容(参考値)"
+      ]
+    }
+  }
+]

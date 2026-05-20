@@ -1,0 +1,62 @@
+[
+  {
+    "provider": "jalan",
+    "status": "written",
+    "file": "manual_coupon_data/jalan/coupons_2026-05-20.json",
+    "count": 46
+  },
+  {
+    "provider": "jalan_activity",
+    "status": "written",
+    "file": "manual_coupon_data/jalan_activity/coupons_2026-05-20.json",
+    "count": 16
+  },
+  {
+    "provider": "kkday",
+    "status": "written",
+    "file": "manual_coupon_data/kkday/coupons_2026-05-20.json",
+    "count": 49
+  },
+  {
+    "provider": "klook",
+    "status": "written",
+    "file": "manual_coupon_data/klook/coupons_2026-05-20.json",
+    "count": 49
+  },
+  {
+    "provider": "jtrip",
+    "status": "written",
+    "file": "manual_coupon_data/jtrip/coupons_2026-05-20.json",
+    "count": 29
+  },
+  {
+    "provider": "yumeyado",
+    "status": "written",
+    "file": "manual_coupon_data/yumeyado/coupons_2026-05-20.json",
+    "count": 21
+  },
+  {
+    "provider": "agoda",
+    "status": "written",
+    "file": "manual_coupon_data/agoda/coupons_2026-05-20.json",
+    "count": 13
+  },
+  {
+    "provider": "expedia",
+    "status": "written",
+    "file": "manual_coupon_data/expedia/coupons_2026-05-20.json",
+    "count": 10
+  },
+  {
+    "provider": "hotels",
+    "status": "written",
+    "file": "manual_coupon_data/hotels/coupons_2026-05-20.json",
+    "count": 5
+  },
+  {
+    "provider": "tripcom",
+    "status": "written",
+    "file": "manual_coupon_data/tripcom/coupons_2026-05-20.json",
+    "count": 18
+  }
+]

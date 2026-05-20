@@ -1,0 +1,200 @@
+[
+  {
+    "id": "hotels-042642c9bb",
+    "provider": "hotels",
+    "provider_label": "Hotels.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "VISA8",
+    "category": "Hotels.com_001_クーポン_SWELL_HTML",
+    "discount": "8%OFF",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026年6月30日チェックアウトまで",
+    "coupon_codes": [
+      "VISA8"
+    ],
+    "conditions": [
+      "公式サイトで確認"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Hotels.com_001_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "クーポンコード",
+        "割引率",
+        "クーポン利用期限",
+        "宿泊対象期限"
+      ]
+    }
+  },
+  {
+    "id": "hotels-4fc45d7474",
+    "provider": "hotels",
+    "provider_label": "Hotels.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "JCBJP8",
+    "category": "Hotels.com_001_クーポン_SWELL_HTML",
+    "discount": "8%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026年6月30日チェックアウトまで",
+    "coupon_codes": [
+      "JCBJP8"
+    ],
+    "conditions": [
+      "2027年1月31日"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Hotels.com_001_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "クーポンコード",
+        "割引率",
+        "クーポン利用期限",
+        "宿泊対象期限"
+      ]
+    }
+  },
+  {
+    "id": "hotels-16be4991ac",
+    "provider": "hotels",
+    "provider_label": "Hotels.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "AMEX8",
+    "category": "Hotels.com_001_クーポン_SWELL_HTML",
+    "discount": "8%OFF",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "公式サイトで確認",
+    "coupon_codes": [
+      "AMEX8"
+    ],
+    "conditions": [
+      "公式サイトで確認"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Hotels.com_001_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "クーポンコード",
+        "割引率",
+        "クーポン利用期限",
+        "宿泊対象期限"
+      ]
+    }
+  },
+  {
+    "id": "hotels-ef895c5cb1",
+    "provider": "hotels",
+    "provider_label": "Hotels.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "MCJP8",
+    "category": "Hotels.com_001_クーポン_SWELL_HTML",
+    "discount": "8%OFF",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "公式サイトで確認",
+    "coupon_codes": [
+      "MCJP8"
+    ],
+    "conditions": [
+      "公式サイトで確認"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Hotels.com_001_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "クーポンコード",
+        "割引率",
+        "クーポン利用期限",
+        "宿泊対象期限"
+      ]
+    }
+  },
+  {
+    "id": "hotels-cec32f14b7",
+    "provider": "hotels",
+    "provider_label": "Hotels.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "専用ページで確認",
+    "category": "Hotels.com_001_クーポン_SWELL_HTML",
+    "discount": "8%OFF",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026年3月31日チェックアウトまで",
+    "coupon_codes": [],
+    "conditions": [
+      "公式サイトで確認"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Hotels.com_001_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "クーポンコード",
+        "割引率",
+        "クーポン利用期限",
+        "宿泊対象期限"
+      ]
+    }
+  }
+]

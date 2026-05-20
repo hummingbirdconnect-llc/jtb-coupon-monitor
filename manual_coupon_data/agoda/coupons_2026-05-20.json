@@ -1,0 +1,471 @@
+[
+  {
+    "id": "agoda-7fed104e99",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "AGODADEAL8",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "8%OFF / 最大50ドル（約7,500円）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [
+      "AGODADEAL8"
+    ],
+    "conditions": [
+      "120ドル（約18,000円）以上",
+      "取得から3日間"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "クーポンコード",
+        "割引率",
+        "割引上限",
+        "最低利用額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "agoda-c1ba00266d",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "AGODADEAL5",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "5%OFF / 最大40ドル（約6,000円）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [
+      "AGODADEAL5"
+    ],
+    "conditions": [
+      "なし",
+      "取得から3日間"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "クーポンコード",
+        "割引率",
+        "割引上限",
+        "最低利用額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "agoda-cb6db593fe",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "アプリ初回",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "10%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [
+      "アプリ初回"
+    ],
+    "conditions": [
+      "初回限定・自動適用"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "クーポンコード",
+        "割引率",
+        "割引上限",
+        "最低利用額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "agoda-e249163127",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "シルバー",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "最大12%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "VIPランク",
+        "条件（過去2年間）",
+        "割引率"
+      ]
+    }
+  },
+  {
+    "id": "agoda-454f92460c",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "ゴールド",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "最大18%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "VIPランク",
+        "条件（過去2年間）",
+        "割引率"
+      ]
+    }
+  },
+  {
+    "id": "agoda-25b90b2884",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "プラチナ",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "最大25%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "VIPランク",
+        "条件（過去2年間）",
+        "割引率"
+      ]
+    }
+  },
+  {
+    "id": "agoda-10b4eca6f3",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Mastercard（ワールドエリート）",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "最大16%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "割引率",
+        "状況",
+        "おすすめ度"
+      ]
+    }
+  },
+  {
+    "id": "agoda-bdc827c620",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Mastercard（ワールド/セレクト）",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "最大12%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "割引率",
+        "状況",
+        "おすすめ度"
+      ]
+    }
+  },
+  {
+    "id": "agoda-81a4cecbd2",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "JCB",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "最大14%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "割引率",
+        "状況",
+        "おすすめ度"
+      ]
+    }
+  },
+  {
+    "id": "agoda-5b529822d3",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Mastercard（その他）",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "最大8%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "割引率",
+        "状況",
+        "おすすめ度"
+      ]
+    }
+  },
+  {
+    "id": "agoda-1fd41e5a6e",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Visa（一般）",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "8%OFF?",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "割引率",
+        "状況",
+        "おすすめ度"
+      ]
+    }
+  },
+  {
+    "id": "agoda-63a5e9916e",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "セゾン・UCカード",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "6%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "割引率",
+        "状況",
+        "おすすめ度"
+      ]
+    }
+  },
+  {
+    "id": "agoda-53714d8e53",
+    "provider": "agoda",
+    "provider_label": "Agoda",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Visa Infinite",
+    "category": "Agoda_01_クーポン_SWELL_HTML",
+    "discount": "3泊で1泊無料",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html",
+      "headers": [
+        "カードブランド",
+        "割引率",
+        "状況",
+        "おすすめ度"
+      ]
+    }
+  }
+]

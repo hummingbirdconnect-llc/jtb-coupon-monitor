@@ -1,0 +1,886 @@
+[
+  {
+    "id": "jtrip-f811eafc8f",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "LINE新規友だち登録1,000円クーポン",
+    "category": "採用候補",
+    "discount": "1,000円",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-99b51dd34e",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "夏オクマ2026限定プラン",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-62ed39ba89",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ドライブ北海道キャンペーン",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-91dd938617",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "友達紹介キャンペーン",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-2e9ef6e5ae",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "バースデー割引コード",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-2706864a65",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "メルマガ登録特典",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-a34301548f",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "予約日当日キャンセル料無料サポート",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-4c33d803f4",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "安心キャンセルサポート",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-9b3c2d3590",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "早期割引 国内ツアー",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-a465830b95",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "九州早割特典 OMIYAGe-gift",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-737cdecbf9",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "沖縄 直前旅",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-e82351a8ad",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "往復飛行機+ホテル1泊プラン",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-26e0a30650",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Jマイル会員特典",
+    "category": "採用候補",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "採用候補"
+    }
+  },
+  {
+    "id": "jtrip-4768a63373",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "5・6月出発ファイナルセール",
+    "category": "直近終了・再実施時の更新候補",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "ユーザー調査時点（2026-04-26）では開催中。公式ページ上の予約受付は2026-05-07 23:50までで、2026-05-09時点では終了扱い。次回類似セールが出た場合はH2を変えず、H2-1一覧枠とH2-4本文内で更新する。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "直近終了・再実施時の更新候補"
+    }
+  },
+  {
+    "id": "jtrip-56a2db66c9",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "5・6月出発ファイナルセール 沖縄",
+    "category": "直近終了・再実施時の更新候補",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "公式沖縄ページに「ファイナルセールは終了しました」と表示あり。終了済みとして扱う。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "直近終了・再実施時の更新候補"
+    }
+  },
+  {
+    "id": "jtrip-08941e9f4e",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "夏オクマ2026",
+    "category": "要確認・補足扱い",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "公式記載はあるが予約締切やコード有無が不明"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "要確認・補足扱い"
+    }
+  },
+  {
+    "id": "jtrip-f9ad6d4962",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ドライブ北海道キャンペーン",
+    "category": "要確認・補足扱い",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "公式記載はあるが開催期間が不明"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "要確認・補足扱い"
+    }
+  },
+  {
+    "id": "jtrip-4cf50c21dd",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "メルマガ登録特典",
+    "category": "要確認・補足扱い",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "誕生日クーポン以外の個別クーポン条件は不明"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "要確認・補足扱い"
+    }
+  },
+  {
+    "id": "jtrip-0f3d09552a",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "毎月8日ポイントUPキャンペーン",
+    "category": "要確認・補足扱い",
+    "discount": "ポイントUP",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "2026年時点の継続更新が不明"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "要確認・補足扱い"
+    }
+  },
+  {
+    "id": "jtrip-df40384c6d",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "支払いプラン半額キャンペーン",
+    "category": "要確認・補足扱い",
+    "discount": "半額",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "旅行代金ではなく手数料の値引き"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "要確認・補足扱い"
+    }
+  },
+  {
+    "id": "jtrip-36d3a698a4",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "予約応援1,000円OFFクーポン",
+    "category": "終了済みとして扱う",
+    "discount": "1,000円",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-a8c21145d5",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "5・6月出発ファイナルセール",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-32cebeac1a",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "5・6月出発ファイナルセール 沖縄",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-edf70aa87c",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "春休み・4月・5月SALE",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-9d3f6b3deb",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ゴールデンウィーク先取りセール",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-0759ac7580",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "2026新春初売りセール 九州旅行",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-44b3124a0b",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "UNDER25ツアー",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-fe327cab99",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "創業祭 沖縄旅行大特価セール",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  },
+  {
+    "id": "jtrip-f920966fe7",
+    "provider": "jtrip",
+    "provider_label": "ジェイトリップ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "夏休みセール 2025",
+    "category": "終了済みとして扱う",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master_bullet",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": "終了済みとして扱う"
+    }
+  }
+]

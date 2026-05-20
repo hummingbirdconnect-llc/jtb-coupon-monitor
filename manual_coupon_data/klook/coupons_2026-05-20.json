@@ -1,0 +1,1582 @@
+[
+  {
+    "id": "klook-a682fe4afb",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "アプリ初回クーポン（BetterOnApp）",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "10%OFF",
+    "stock_status": "配布中",
+    "product_type": "全アクティビティ",
+    "booking_period": "",
+    "travel_period": "常設",
+    "coupon_codes": [
+      "BetterOnApp / APP10TW"
+    ],
+    "conditions": [
+      "アプリ初回予約のみ"
+    ],
+    "source_url": "https://www.klook.com/ja/deals/",
+    "detail_url": "https://www.klook.com/ja/deals/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-7aab3fa63f",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ホテルアプリ初回クーポン（HotelOnApp）",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "5%OFF",
+    "stock_status": "配布中",
+    "product_type": "ホテル予約のみ",
+    "booking_period": "",
+    "travel_period": "常設",
+    "coupon_codes": [
+      "HotelOnApp"
+    ],
+    "conditions": [
+      "アプリ初回予約のみ"
+    ],
+    "source_url": "https://www.klook.com/ja/deals/",
+    "detail_url": "https://www.klook.com/ja/deals/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-90ef83f246",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "トラベルジャンボ 新規向け（Spring 2026）",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "8%OFF",
+    "stock_status": "配布中",
+    "product_type": "全アクティビティ",
+    "booking_period": "",
+    "travel_period": "2026-05-06",
+    "coupon_codes": [
+      "KLKTJGW26NEW8"
+    ],
+    "conditions": [
+      "新規ユーザー・アプリのみ"
+    ],
+    "source_url": "https://www.klook.com/ja/deals/",
+    "detail_url": "https://www.klook.com/ja/deals/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-52c1da89e1",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "トラベルジャンボ ツアー新規20%OFF",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "20%OFF",
+    "stock_status": "配布中",
+    "product_type": "ツアー商品のみ",
+    "booking_period": "",
+    "travel_period": "2026-05-06",
+    "coupon_codes": [
+      "KLKTJGW26NEWTOUR20"
+    ],
+    "conditions": [
+      "新規ユーザー・アプリのみ"
+    ],
+    "source_url": "https://www.klook.com/ja/deals/",
+    "detail_url": "https://www.klook.com/ja/deals/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-310498341c",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "トラベルジャンボ 全員向け5%OFF",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "5%OFF",
+    "stock_status": "配布中",
+    "product_type": "全アクティビティ",
+    "booking_period": "",
+    "travel_period": "2026-05-06",
+    "coupon_codes": [
+      "KLKTJGW26ALL5"
+    ],
+    "conditions": [
+      "全ユーザー"
+    ],
+    "source_url": "https://www.klook.com/ja/deals/",
+    "detail_url": "https://www.klook.com/ja/deals/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-f518d81d93",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ディズニー海外（FST3APR / APR3FST）",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "3%OFF",
+    "stock_status": "配布中",
+    "product_type": "香港・上海・米国・フランス ディズニー",
+    "booking_period": "",
+    "travel_period": "2026-07-05",
+    "coupon_codes": [
+      "FST3APR / APR3FST"
+    ],
+    "conditions": [
+      "全ユーザー"
+    ],
+    "source_url": "https://ls-wegazine.net/travel/coupon/klook-campaign/",
+    "detail_url": "https://ls-wegazine.net/travel/coupon/klook-campaign/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-737fbea38a",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "公式ブログ経由 初回クーポン（10%OFF・A）",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "10%OFF（上限500円）",
+    "stock_status": "要確認",
+    "product_type": "全アクティビティ",
+    "booking_period": "",
+    "travel_period": "⚠️ユーザー独自確認・期限要再検証",
+    "coupon_codes": [
+      "04クルックブログ2026"
+    ],
+    "conditions": [
+      "初回ユーザー限定"
+    ],
+    "source_url": "Klook公式ブログ経由配布（一次URL要確認）",
+    "detail_url": "Klook公式ブログ経由配布（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-c9b68ed44e",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "公式ブログ経由 初回クーポン（10%OFF・B）",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "10%OFF（上限500円）",
+    "stock_status": "要確認",
+    "product_type": "全アクティビティ",
+    "booking_period": "",
+    "travel_period": "⚠️ユーザー独自確認・期限要再検証",
+    "coupon_codes": [
+      "20クルックブログ割引26"
+    ],
+    "conditions": [
+      "初回ユーザー限定"
+    ],
+    "source_url": "Klook公式ブログ経由配布（一次URL要確認）",
+    "detail_url": "Klook公式ブログ経由配布（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-e349d80896",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "香港ディズニー専用クーポン",
+    "category": "§1 公式クーポン・プロモコード（✅稼働中のみ）",
+    "discount": "3%OFF（最大5,000円割引）",
+    "stock_status": "要確認",
+    "product_type": "香港ディズニー",
+    "booking_period": "",
+    "travel_period": "⚠️要再確認",
+    "coupon_codes": [
+      "（コード要再確認）"
+    ],
+    "conditions": [
+      "全ユーザー"
+    ],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-30d8b41c45",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "PayPayクーポン「クルックの日」",
+    "category": "定期クーポン（常設・予告なし配布）",
+    "discount": "PayPayポイント最大999円還元",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "毎月9日・19日・29日",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "PayPayクーポン取得＋PayPay支払い・20,000円以上・IPアドレスが日本"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-6053a9b4f8",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "メルマガ会員限定クーポン",
+    "category": "定期クーポン（常設・予告なし配布）",
+    "discount": "700円OFF（例）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "毎月15日",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "メルマガ登録必須"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-3ea47757c3",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JCB（韓国）",
+    "category": "§2 カード連携",
+    "discount": "5%OFF（上限400円）",
+    "stock_status": "配布中",
+    "product_type": "韓国レジャー",
+    "booking_period": "",
+    "travel_period": "2026-12-31",
+    "coupon_codes": [
+      "JCBKRクルック5OFF"
+    ],
+    "conditions": [
+      "Klookアプリからの予約・JCB支払い・日本在住・1アカウント1回のみ・先着2万名"
+    ],
+    "source_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "detail_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-dfa9b01e95",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JCB（台湾）",
+    "category": "§2 カード連携",
+    "discount": "5%OFF（上限400円）",
+    "stock_status": "配布中",
+    "product_type": "台湾レジャー",
+    "booking_period": "",
+    "travel_period": "2026-12-31",
+    "coupon_codes": [
+      "JCBTWクルック5OFF"
+    ],
+    "conditions": [
+      "同上・先着10,000名"
+    ],
+    "source_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "detail_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-2937286018",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JCB（タイ）",
+    "category": "§2 カード連携",
+    "discount": "5%OFF（上限400円）",
+    "stock_status": "配布中",
+    "product_type": "タイレジャー",
+    "booking_period": "",
+    "travel_period": "2026-12-31",
+    "coupon_codes": [
+      "JCBTHクルック5OFF"
+    ],
+    "conditions": [
+      "同上・先着10,000名"
+    ],
+    "source_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "detail_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-e4d96bce07",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JCB（香港）",
+    "category": "§2 カード連携",
+    "discount": "5%OFF（上限400円）",
+    "stock_status": "配布中",
+    "product_type": "香港レジャー",
+    "booking_period": "",
+    "travel_period": "2026-12-31",
+    "coupon_codes": [
+      "JCBHKクルック5OFF"
+    ],
+    "conditions": [
+      "同上・先着10,000名"
+    ],
+    "source_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "detail_url": "https://www.jcb.co.jp/campaign/c25_089klook_2601/index.html",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-e8fbe81440",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "エポスカード",
+    "category": "§2 カード連携",
+    "discount": "ポイント倍率アップ（倍率は §9 A参照）",
+    "stock_status": "要確認",
+    "product_type": "全Klook商品",
+    "booking_period": "",
+    "travel_period": "常設（月次変動）",
+    "coupon_codes": [
+      "（コード不要・エポスポイントUPサイト経由）"
+    ],
+    "conditions": [
+      "エポスポイントUPサイトを経由してKlookで購入"
+    ],
+    "source_url": "https://tamaru.eposcard.co.jp/shop/1919/ （403エラー）",
+    "detail_url": "https://tamaru.eposcard.co.jp/shop/1919/ （403エラー）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-ac469377f0",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Mastercard（World/World Elite）APAC現行",
+    "category": "§2 カード連携",
+    "discount": "10%OFF",
+    "stock_status": "要確認",
+    "product_type": "観光施設・パス",
+    "booking_period": "",
+    "travel_period": "⚠️要再検証",
+    "coupon_codes": [
+      "MCAAP10OFF"
+    ],
+    "conditions": [
+      "World or World Elite Mastercard消費者向け"
+    ],
+    "source_url": "Klook公式キャンペーンページ（一次URL要再確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要再確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-2dfd6a4ecf",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ハピタス",
+    "category": "§3 ポイントサイト還元",
+    "discount": "6.5%（2026-04-25）※一般会員は5%・上位ランクで6.5%",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "なし（Webブラウザ経由のみ）"
+    ],
+    "source_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "detail_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-54603dce5b",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "モッピー",
+    "category": "§3 ポイントサイト還元",
+    "discount": "5%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "なし（Webブラウザ経由のみ）"
+    ],
+    "source_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "detail_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-c67ce52e4e",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Powl",
+    "category": "§3 ポイントサイト還元",
+    "discount": "5.6%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Webブラウザ経由のみ"
+    ],
+    "source_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "detail_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-2ba85f3f5e",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ちょびリッチ",
+    "category": "§3 ポイントサイト還元",
+    "discount": "4.8%（2026-04-25）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Webブラウザ経由のみ"
+    ],
+    "source_url": "https://ameblo.jp/kuupoi/entry-12893448952.html",
+    "detail_url": "https://ameblo.jp/kuupoi/entry-12893448952.html",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-de92bcfd53",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ポイントタウン",
+    "category": "§3 ポイントサイト還元",
+    "discount": "2.5%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Webブラウザ経由のみ"
+    ],
+    "source_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "detail_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-958291eb49",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ECナビ",
+    "category": "§3 ポイントサイト還元",
+    "discount": "0.6%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Webブラウザ経由のみ"
+    ],
+    "source_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "detail_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-d64430179a",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ポイントインカム",
+    "category": "§3 ポイントサイト還元",
+    "discount": "0.6%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Webブラウザ経由のみ"
+    ],
+    "source_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "detail_url": "https://pointsite-wine.com/which-pointsite-is-best-for-klook",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-87cc1d5157",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "友達紹介プログラム",
+    "category": "§4 ギフト・制度",
+    "discount": "招待された友人：登録後500円割引クーポン。招待者：友人が体験使用後に500円クーポン",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "5,000円以上の購入で適用・1年間有効"
+    ],
+    "source_url": "https://ogasawaratrip.com/klook-coupon/",
+    "detail_url": "https://ogasawaratrip.com/klook-coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-87ad61b027",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "LINE友だち限定 5,000円OFF抽選クーポン",
+    "category": "§4 ギフト・制度",
+    "discount": "LINE友だち登録者向けの抽選で5,000円OFFクーポン配布",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Klook公式LINE友だち登録・抽選制"
+    ],
+    "source_url": "Klook公式LINE（一次URL要確認）",
+    "detail_url": "Klook公式LINE（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️抽選制"
+    }
+  },
+  {
+    "id": "klook-b5204a47aa",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "トラベレックス×Klook eSIM無料キャンペーン",
+    "category": "§4 ギフト・制度",
+    "discount": "トラベレックス対象店舗で3万円以上外貨購入でKlook eSIM無料クーポン配布",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "トラベレックス公式LINEを友だち登録・対象店舗にてクーポン画像を提示・3万円以上の外貨購入が必要"
+    ],
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000155.000029470.html",
+    "detail_url": "https://prtimes.jp/main/html/rd/p/000000155.000029470.html",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-3d355f13ac",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "KlookCash（USD建て忠誠ポイント）",
+    "category": "§4 ギフト・制度",
+    "discount": "予約完了時に支払額の一定率をKlookCash（100 KlookCash = 1 USD）で還元。次回予約時に即時オフセット利用可能",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約完了が必須。会員ランクにより還元率変動（§5参照）。有効期限は公式FAQ要確認"
+    ],
+    "source_url": "https://www.klook.com/en-US/faq/category-62-question-948/",
+    "detail_url": "https://www.klook.com/en-US/faq/category-62-question-948/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-b5824e1507",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "エクスプローラー（一般）",
+    "category": "§5 会員ランク（Klookリワード）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://ls-wegazine.net/travel/booking-site/klook/",
+    "detail_url": "https://ls-wegazine.net/travel/booking-site/klook/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-4c35b6c74b",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ゴールド",
+    "category": "§5 会員ランク（Klookリワード）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.klook.com/en-US/blog/unlock-exclusive-deals-klook-rewards/",
+    "detail_url": "https://www.klook.com/en-US/blog/unlock-exclusive-deals-klook-rewards/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-62e81dfed6",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "プラチナ",
+    "category": "§5 会員ランク（Klookリワード）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://ls-wegazine.net/travel/booking-site/klook/",
+    "detail_url": "https://ls-wegazine.net/travel/booking-site/klook/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-d2e5f60914",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "フラッシュセール（不定期）",
+    "category": "セール枠",
+    "discount": "50%OFF・数量限定・時間限定",
+    "stock_status": "配布中",
+    "product_type": "アクティビティ全般（アプリ限定）",
+    "booking_period": "不定期（Xアカウント@klookjpで告知）",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://x.com/klookjp",
+    "detail_url": "https://x.com/klookjp",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅通年（不定期）"
+    }
+  },
+  {
+    "id": "klook-3b453c0a0b",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ゾロ目の日セール",
+    "category": "セール枠",
+    "discount": "50%OFF以上・数量限定",
+    "stock_status": "配布中",
+    "product_type": "アクティビティ全般",
+    "booking_period": "毎月ゾロ目の日（1・2・3・4・5・6・7・8・9・10・11・12月の各ゾロ目日）24時間限定",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://ls-wegazine.net/travel/coupon/klook-sale/",
+    "detail_url": "https://ls-wegazine.net/travel/coupon/klook-sale/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-f7e6b5fb6a",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "クルックくじ（月間JOYルーレット）",
+    "category": "セール枠",
+    "discount": "最大100%OFFクーポン（ルーレット形式・ハズレなし）",
+    "stock_status": "配布中",
+    "product_type": "アクティビティ全般",
+    "booking_period": "毎月30日限定",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://ls-wegazine.net/travel/coupon/klook-campaign/",
+    "detail_url": "https://ls-wegazine.net/travel/coupon/klook-campaign/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-6f097d1760",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ブラックフライデー",
+    "category": "セール枠",
+    "discount": "50%以上割引・クーポンとフラッシュセール併用可",
+    "stock_status": "配布中",
+    "product_type": "アクティビティ全般",
+    "booking_period": "毎年11月〜12月",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://ls-wegazine.net/travel/coupon/klook-sale/",
+    "detail_url": "https://ls-wegazine.net/travel/coupon/klook-sale/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-1098d71f81",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "トラベルジャンボ（春）",
+    "category": "セール枠",
+    "discount": "最大50%OFF・複数コード配布",
+    "stock_status": "配布中",
+    "product_type": "アクティビティ全般",
+    "booking_period": "例年4月〜5月頃（2026年実績: 4/17〜5/6）",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://ls-wegazine.net/travel/coupon/klook-campaign/",
+    "detail_url": "https://ls-wegazine.net/travel/coupon/klook-campaign/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "klook-e6da67a395",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Summer Travel Deals",
+    "category": "セール枠",
+    "discount": "最大50%OFF",
+    "stock_status": "要確認",
+    "product_type": "アクティビティ全般",
+    "booking_period": "例年夏季",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️"
+    }
+  },
+  {
+    "id": "klook-89c529feac",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "台湾高速鉄道 常時クーポン",
+    "category": "地域・カテゴリ特化クーポン",
+    "discount": "15%OFF（常時）",
+    "stock_status": "配布中",
+    "product_type": "台湾高速鉄道",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "短期滞在外国人向け"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "✅常時"
+    }
+  },
+  {
+    "id": "klook-76274f08c2",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ベトナム特化クーポン",
+    "category": "地域・カテゴリ特化クーポン",
+    "discount": "5〜80%OFF",
+    "stock_status": "要確認",
+    "product_type": "ベトナム各地アクティビティ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "カテゴリ別"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️要確認"
+    }
+  },
+  {
+    "id": "klook-9a520ff3b0",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "韓国都市別ページ",
+    "category": "地域・カテゴリ特化クーポン",
+    "discount": "都市別キャンペーン",
+    "stock_status": "要確認",
+    "product_type": "韓国各都市",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "都市別ページ確認"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️要確認"
+    }
+  },
+  {
+    "id": "klook-1e5f2eadf1",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JCB×Klook 「最大10%OFF」旧キャンペーン",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026-03-31",
+    "coupon_codes": [
+      "20JCBCARD"
+    ],
+    "conditions": [],
+    "source_url": "https://kinoko-blog.com/klook-coupon/",
+    "detail_url": "https://kinoko-blog.com/klook-coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-8865762dff",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "トラベレックス×KlookeSIM無料",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026-03-31",
+    "coupon_codes": [
+      "KESD2603"
+    ],
+    "conditions": [],
+    "source_url": "https://prtimes.jp/main/html/rd/p/000000155.000029470.html",
+    "detail_url": "https://prtimes.jp/main/html/rd/p/000000155.000029470.html",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-c32b4fcd74",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JCB旧コード（最大10%OFF）",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "ユーザー確認時点で「利用不可」明示",
+    "coupon_codes": [
+      "JCB10OFFER2023JP"
+    ],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-c345a7c942",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Visa優待 旧コード（ツアー）",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "ユーザー確認時点で「利用不可」明示",
+    "coupon_codes": [
+      "VISAJPTOURS"
+    ],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-2c7893a68e",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Visa優待 旧コード（カー）",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "ユーザー確認時点で「利用不可」明示",
+    "coupon_codes": [
+      "VISAJPCAR"
+    ],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-9aabf91434",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JOY SALE 2026春 新規",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026年春開催・現在終了",
+    "coupon_codes": [
+      "JOYSALESP26KLKNEW"
+    ],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-b08b4f5aca",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JOY SALE 2026春 eSIM新規50%OFF",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026年春開催・現在終了",
+    "coupon_codes": [
+      "JOYSALESP26KLKESIMNEW50"
+    ],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-dce815e3bd",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "梅雨トクSALE",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "過去開催・現在終了",
+    "coupon_codes": [
+      "（コード不明）"
+    ],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "klook-d69ddb5cb3",
+    "provider": "klook",
+    "provider_label": "Klook",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "10周年セール",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "終了",
+    "coupon_codes": [
+      "（コード不明・FLASH SALE形式）"
+    ],
+    "conditions": [],
+    "source_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "detail_url": "Klook公式キャンペーンページ（一次URL要確認）",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": ""
+    }
+  }
+]

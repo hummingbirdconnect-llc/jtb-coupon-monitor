@@ -1,0 +1,1448 @@
+[
+  {
+    "id": "jalan-7c1ddc86e2",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんクーポン（通常・全施設対象）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "最大2万円（500円〜2万円の6段階、予約金額別）",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊予約（全施設）",
+    "booking_period": "キャンペーン毎",
+    "travel_period": "キャンペーン毎",
+    "coupon_codes": [],
+    "conditions": [
+      "リクルートIDでログイン→クーポン取得ボタン"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-171ae7b008",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんクーポン（特別・施設限定対象宿）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "最大2万円",
+    "stock_status": "配布中",
+    "product_type": "対象施設限定宿泊予約",
+    "booking_period": "キャンペーン毎",
+    "travel_period": "キャンペーン毎",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン→対象宿を選択すると自動適用"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-7d13b1395e",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんパッククーポン（標準・常設）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "最大3万円（スペシャルウィーク中は最大8万円）",
+    "stock_status": "配布中",
+    "product_type": "じゃらんパック（交通+宿泊）のみ",
+    "booking_period": "キャンペーン毎（常設枠あり）",
+    "travel_period": "キャンペーン毎",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン→クーポン取得→パック決済画面で適用"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-499857b3c3",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "スペシャルウィーク高額クーポン（宿泊）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "宿泊最大1.5万円・パック最大8万円・レンタカー最大1万円",
+    "stock_status": "要確認",
+    "product_type": "国内宿泊 / じゃらんパック / レンタカー",
+    "booking_period": "年5〜6回・各約3週間（2月・4月・7月・9月・11月頃）",
+    "travel_period": "開催期間内",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン→スペシャルウィーク特設ページで取得"
+    ],
+    "source_url": "https://www.jalan.net/theme/specialweek/",
+    "detail_url": "https://www.jalan.net/theme/specialweek/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 次回未発表（2026年7月頃予測・次回は速報待ち）"
+    }
+  },
+  {
+    "id": "jalan-18d7e42778",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんのお得な10日間クーポン（全施設）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "最大1万円（通常会員・全施設対象）＋ステージ別上乗せ",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊・じゃらんパック（両方対応）",
+    "booking_period": "毎月20日〜29日（通年）",
+    "travel_period": "各回の予約期間内",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン→毎月15日頃から事前配布開始→20日予約開始"
+    ],
+    "source_url": "https://www.jalan.net/theme/otoku_10days/",
+    "detail_url": "https://www.jalan.net/theme/otoku_10days/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-e4cffadf2e",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんクーポンフェス（次回開催予測枠）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "最大2万円（500円〜2万円の6種類）",
+    "stock_status": "要確認",
+    "product_type": "掲載対象施設限定（ホテルチェーン系多数）",
+    "booking_period": "年数回・不定期（5月下旬〜予測）",
+    "travel_period": "開催期間内（先着上限あり）",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン→クーポンフェス特設ページで取得"
+    ],
+    "source_url": "https://www.jalan.net/theme/jalancouponfes/",
+    "detail_url": "https://www.jalan.net/theme/jalancouponfes/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 次回未発表（5月下旬頃予測・v1から継続監視）"
+    }
+  },
+  {
+    "id": "jalan-0718d0071a",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GW宿泊クーポン（2026年版）",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "詳細は公式ログイン後確認",
+    "stock_status": "要確認",
+    "product_type": "宿泊対象期間：4月28日〜5月5日",
+    "booking_period": "〜2026年4月27日予約完了",
+    "travel_period": "4月27日（予約期限）",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン→専用クーポン取得。予約期間：〜4月27日"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 4月27日予約期限（取得可能期間が残り2日・急ぎ確認要）"
+    }
+  },
+  {
+    "id": "jalan-9441dea350",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "早ければ早いほどお得！ポイントアップ特典",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "30日前予約8% / 60日前予約10% / 90日前予約13%（じゃらん限定ポイント還元）",
+    "stock_status": "配布中",
+    "product_type": "じゃらんnet宿泊予約（対象施設）",
+    "booking_period": "2026年4月15日〜4月28日エントリー期間",
+    "travel_period": "エントリー期間内予約が条件",
+    "coupon_codes": [],
+    "conditions": [
+      "リクルートIDログイン後にエントリー → 該当期間予約で自動付与"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "✅（4/28まで・期限近接）"
+    }
+  },
+  {
+    "id": "jalan-a20619ee41",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "厳選宿クーポン",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "3,000円〜9,000円分（4段階）/ 対象宿泊金額 30,000円〜90,000円以上",
+    "stock_status": "要確認",
+    "product_type": "じゃらんnet選定の対象厳選宿（高単価帯）",
+    "booking_period": "配布期間内（次回未発表）",
+    "travel_period": "取得後の予約期限あり（公式ログイン後確認）",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン → 厳選宿特集ページから取得"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️ 要確認（公式一次URL未取得・LINE/メルマガ告知発見）"
+    }
+  },
+  {
+    "id": "jalan-dc4a02dc7e",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JALじゃらんパック 北海道限定クーポン",
+    "category": "§1 公式クーポン（✅稼働中のみ）",
+    "discount": "9,000円分",
+    "stock_status": "配布中",
+    "product_type": "JALじゃらんパック（北海道方面のみ）",
+    "booking_period": "2026年4月22日〜7月16日",
+    "travel_period": "7月16日まで",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン → JALじゃらんパック特集から取得"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "✅（7/16まで）"
+    }
+  },
+  {
+    "id": "jalan-7a617582be",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "リクルートカード（年会費永年無料）",
+    "category": "§2 カード連携",
+    "discount": "カード基本還元1.2%（リクルートポイント）+ じゃらんポイント2%（Ponta1%+じゃらん限定1%）= 合計3.2%還元",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊・じゃらんパック等（カード決済対象全般）",
+    "booking_period": "",
+    "travel_period": "常設（カード保有中）",
+    "coupon_codes": [],
+    "conditions": [
+      "リクルートカード申し込み・利用"
+    ],
+    "source_url": "https://recruit-card.jp/technique/point/",
+    "detail_url": "https://recruit-card.jp/technique/point/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-4a71867073",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "リクルートカード×10%還元プラン",
+    "category": "§2 カード連携",
+    "discount": "最大11.2%還元（通常3.2%+プラン還元10%）",
+    "stock_status": "要確認",
+    "product_type": "対象の10%ポイント還元プランのみ",
+    "booking_period": "",
+    "travel_period": "プラン設定期間内",
+    "coupon_codes": [],
+    "conditions": [
+      "リクルートカード保有+対象プラン予約"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 要確認（対象プランは時期・施設により変動）"
+    }
+  },
+  {
+    "id": "jalan-c3596b5d10",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "モッピー（通常会員）",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "2.7%（2026-04-25 スペシャルセール適用）/ 通常2.0%",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後にじゃらんnet案件経由で予約。アプリ・電話・Apple Pay不可"
+    ],
+    "source_url": "https://pc.moppy.jp/shopping/detail.php?site_id=2468",
+    "detail_url": "https://pc.moppy.jp/shopping/detail.php?site_id=2468",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-eaee503f3e",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "モッピー（ゴールド会員）",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "3.105%（2026-04-25・ランクボーナス15%増量込み）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "モッピーゴールド会員 + じゃらんnet案件経由"
+    ],
+    "source_url": "https://pc.moppy.jp/shopping/detail.php?site_id=2468",
+    "detail_url": "https://pc.moppy.jp/shopping/detail.php?site_id=2468",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅（スペシャルセール時は3.57%相当）"
+    }
+  },
+  {
+    "id": "jalan-18b64c5ec8",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ハピタス（通常会員）",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "2.0%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後にじゃらんnet案件経由で予約。アプリ経由不可"
+    ],
+    "source_url": "https://hapitas.jp/item/detail/itemid/6278/",
+    "detail_url": "https://hapitas.jp/item/detail/itemid/6278/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-666d37d3d0",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ハピタス（ゴールド会員）",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "2.6%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "ハピタスゴールド会員 + じゃらんnet案件経由"
+    ],
+    "source_url": "https://hapitas.jp/item/detail/itemid/6278/",
+    "detail_url": "https://hapitas.jp/item/detail/itemid/6278/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-fbd4140ea3",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ECナビ",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "1.2%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後に経由予約"
+    ],
+    "source_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "detail_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-e2d841de5c",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ポイントタウン",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "1.2%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後に経由予約"
+    ],
+    "source_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "detail_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-279eb992ad",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "GMOポイ活",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "1.5%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後に経由予約"
+    ],
+    "source_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "detail_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-92c29e4c95",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ポイントインカム",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "1.0%（2026-04-25）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後に経由予約"
+    ],
+    "source_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "detail_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-40918efb73",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ポイ活倶楽部",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "1.1%（2026-04-25）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後に経由予約"
+    ],
+    "source_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "detail_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 要確認（公式一次ページ未取得）"
+    }
+  },
+  {
+    "id": "jalan-214f4fdd2f",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ニフティポイントクラブ",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "2.0%（宿泊予約・@nifty利用者向け・2026-04-25）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "@nifty会員限定"
+    ],
+    "source_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "detail_url": "https://poikan.com/q/%E3%81%98%E3%82%83%E3%82%89%E3%82%93",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 要確認（@nifty会員限定で読者対象者が限定的）"
+    }
+  },
+  {
+    "id": "jalan-2863bc0d70",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "楽天リーベイツ",
+    "category": "§3 ポイントサイト還元（v2 還元率一次更新・2026-04-25）",
+    "discount": "1.0%（2026-04-20・v1値継続）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "無料登録後に経由予約"
+    ],
+    "source_url": "https://poiactivity.hatenablog.com/entry/jalan.via",
+    "detail_url": "https://poiactivity.hatenablog.com/entry/jalan.via",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅（一次公式ページは未取得・v1継続）"
+    }
+  },
+  {
+    "id": "jalan-1121f8a164",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんnet経由の自治体割・地域クーポン",
+    "category": "§4 ギフト・制度",
+    "discount": "各都道府県・観光協会が実施する独自観光支援クーポン。全国旅行支援（2023年終了）ではなく各自治体独自施策。じゃらんと連携し予約時に適用",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "対象自治体・対象施設・対象時期を各自治体ページで確認。じゃらんクーポン（通常）との併用可のケースあり"
+    ],
+    "source_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "detail_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 要確認（自治体・時期により内容が異なる。常設ではなく各自治体の予算消化まで）"
+    }
+  },
+  {
+    "id": "jalan-2e62eed5f4",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらん全国ご当地クーポン（じゃらん主催）",
+    "category": "§4 ギフト・制度",
+    "discount": "毎月15日更新のじゃらん独自の地域密着クーポン。0円以上で使えるクーポンも含む。半額以下になるケースあり",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "毎月15日更新。対象施設・対象地域はその月の設定による"
+    ],
+    "source_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "detail_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅（常設・月次更新）"
+    }
+  },
+  {
+    "id": "jalan-bb67b0b9bd",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "オンラインカード決済の挙動（v2.1 ユーザー提供レポート）",
+    "category": "§4 ギフト・制度",
+    "discount": "クーポン値引・ポイント利用を全て差し引いた最終支払額にカード決済が走る。じゃらんポイント・Pontaポイントは差し引き後の決済金額に基づき通常加算（カード還元1.2% + じゃらんポイント2% = 合計3.2%相当）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "じゃらんnetでオンラインカード決済を選択した場合"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "✅（常設・カード決済全般に適用）"
+    }
+  },
+  {
+    "id": "jalan-9514178dfb",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "レギュラー",
+    "category": "§5 会員ランク（じゃらんステージプログラム）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/jalan_stage_program/",
+    "detail_url": "https://www.jalan.net/theme/jalan_stage_program/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-d04ef0d1ec",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ブロンズ",
+    "category": "§5 会員ランク（じゃらんステージプログラム）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travelersnavi.com/coupon/jalanstage",
+    "detail_url": "https://travelersnavi.com/coupon/jalanstage",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-a707ab2459",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "シルバー",
+    "category": "§5 会員ランク（じゃらんステージプログラム）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travelersnavi.com/coupon/jalanstage",
+    "detail_url": "https://travelersnavi.com/coupon/jalanstage",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-6f54a9f3ea",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ゴールド",
+    "category": "§5 会員ランク（じゃらんステージプログラム）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/jalan_stage_program/",
+    "detail_url": "https://www.jalan.net/theme/jalan_stage_program/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-f981c9bec5",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんのお得な10日間",
+    "category": "セール枠（年間パターン）",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊予約全施設 / じゃらんパック / レンタカー（同時配布）",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/otoku_10days/",
+    "detail_url": "https://www.jalan.net/theme/otoku_10days/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-cec11c61ec",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんスペシャルウィーク",
+    "category": "セール枠（年間パターン）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "宿泊・じゃらんパック・レンタカー・遊び体験",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/specialweek/",
+    "detail_url": "https://www.jalan.net/theme/specialweek/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 次回未発表（4/17終了確定・速報待ち）"
+    }
+  },
+  {
+    "id": "jalan-83e826ff47",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんクーポンフェス",
+    "category": "セール枠（年間パターン）",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "掲載対象施設限定（ホテルチェーン系）",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/jalancouponfes/",
+    "detail_url": "https://www.jalan.net/theme/jalancouponfes/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "⚠️ 4/22終了確定・次回未発表"
+    }
+  },
+  {
+    "id": "jalan-d55817dad1",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんパッククーポン（常設・最大3万円）",
+    "category": "じゃらんパック専用クーポン枠",
+    "discount": "交通+宿泊のパック予約専用クーポン。スペシャルウィーク中は最大80,000円に増額",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "リクルートIDでログイン後に取得。宿泊単体クーポンとは併用不可（宿泊施設クーポンとは併用可）"
+    ],
+    "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅"
+    }
+  },
+  {
+    "id": "jalan-b145f6f1b5",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんレンタカー会社クーポン（週次）",
+    "category": "レンタカー専用クーポン枠（v2 新規追加）",
+    "discount": "レンタカー会社各社が提供する週次クーポン。毎週水曜10:00から1週間限定で配布",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "ログイン→じゃらんレンタカートップから取得"
+    ],
+    "source_url": "https://www.jalan.net/rentacar/coupons/",
+    "detail_url": "https://www.jalan.net/rentacar/coupons/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅（常設・週次更新）"
+    }
+  },
+  {
+    "id": "jalan-a8d4a27a7a",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんレンタカー×お得な10日間",
+    "category": "レンタカー専用クーポン枠（v2 新規追加）",
+    "discount": "お得な10日間連動のレンタカー特別クーポン。通常より割引率・割引額が高い",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "毎月20日0時から予約開始"
+    ],
+    "source_url": "https://www.jalan.net/rentacar/themes/otoku_10days/",
+    "detail_url": "https://www.jalan.net/rentacar/themes/otoku_10days/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "auto-research",
+      "raw_status": "✅（通年・毎月）"
+    }
+  },
+  {
+    "id": "jalan-d382cc33c7",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "大分県 九重町 ふるさとお得クーポン",
+    "category": "ふるさとお得クーポン枠（v2.1 ユーザー提供レポート統合・地域連携クーポン）",
+    "discount": "公式ログイン後確認（金額未公表・寄附型連動）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "自治体予算消化まで",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "じゃらんふるさとお得クーポン特設ページ → 自治体選択 → ログイン後取得"
+    ],
+    "source_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "detail_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️ 要確認（金額一次情報未取得）"
+    }
+  },
+  {
+    "id": "jalan-5683870c17",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "静岡県 熱海市 ふるさとお得クーポン",
+    "category": "ふるさとお得クーポン枠（v2.1 ユーザー提供レポート統合・地域連携クーポン）",
+    "discount": "公式ログイン後確認",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "自治体予算消化まで",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "同上 → 熱海選択 → ログイン後取得"
+    ],
+    "source_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "detail_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️ 要確認"
+    }
+  },
+  {
+    "id": "jalan-1a6f245d61",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "群馬県 草津温泉 ふるさとお得クーポン（3枠）",
+    "category": "ふるさとお得クーポン枠（v2.1 ユーザー提供レポート統合・地域連携クーポン）",
+    "discount": "公式ログイン後確認（3種類の枠が同時配布の報告あり）",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "自治体予算消化まで",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "同上 → 草津温泉選択 → ログイン後取得"
+    ],
+    "source_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "detail_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️ 要確認（3枠の使い分け不明）"
+    }
+  },
+  {
+    "id": "jalan-100a846654",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "鹿児島県（広域）ふるさとお得クーポン",
+    "category": "ふるさとお得クーポン枠（v2.1 ユーザー提供レポート統合・地域連携クーポン）",
+    "discount": "公式ログイン後確認",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "自治体予算消化まで",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "同上 → 鹿児島県選択 → ログイン後取得"
+    ],
+    "source_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "detail_url": "https://www.jalan.net/theme/coupon/20200415/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "user-input",
+      "raw_status": "⚠️ 要確認"
+    }
+  },
+  {
+    "id": "jalan-f0841ae58e",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "全国旅行支援（国施策）",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2023年12月末",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/ryoko-shien/",
+    "detail_url": "https://www.jalan.net/ryoko-shien/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "jalan-ad0c330d44",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "北陸応援割",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2025年中（最終確認: 2026-04-25時点で専用ページ確認できず）",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "公式URL削除済み",
+    "detail_url": "公式URL削除済み",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "jalan-3433ac8652",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんのお得な10日間（クーポン未取得時の失効）",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "N/A",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/otoku_10days/",
+    "detail_url": "https://www.jalan.net/theme/otoku_10days/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "jalan-562a942579",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんクーポンフェス 2026年第3弾",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026年4月22日",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/jalancouponfes/",
+    "detail_url": "https://www.jalan.net/theme/jalancouponfes/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "jalan-fe18706f51",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "じゃらんシークレットクーポン（3000円）",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "2026年現在配布なし確定（最終確認: 2026-04-25）",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://solid-p.jp/jalann-secret-coupon/",
+    "detail_url": "https://solid-p.jp/jalann-secret-coupon/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  },
+  {
+    "id": "jalan-824683362c",
+    "provider": "jalan",
+    "provider_label": "じゃらん",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ゴールド会員限定クーポン（全券種）",
+    "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "現在はすべて終了済（最終確認: 2026年4月時点）",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://www.jalan.net/theme/jalan_stage_program/",
+    "detail_url": "https://www.jalan.net/theme/jalan_stage_program/",
+    "source_type": "manual_master",
+    "fetch_method": "coupon_master",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "coupon-master",
+      "raw_status": ""
+    }
+  }
+]

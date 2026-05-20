@@ -165,8 +165,8 @@
           "data_dir": "jalpack_coupon_data",
           "section_matcher": "keyword",
           "table_format": "yellow_list",
-          "update_enabled": false,
-          "note": "JALパックの監視データはDRY-RUN検証中です。赤青差分レビュー対応後に自動更新対象へ切り替えます。"
+          "update_enabled": true,
+          "note": "JALパックは赤青差分レビューと黄色背景リストの枠外チェックに対応済みです。公式HTML由来の抽出値は下書きで目視確認してください。"
         }
       ]
     }

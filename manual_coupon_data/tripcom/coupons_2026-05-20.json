@@ -1,0 +1,661 @@
+[
+  {
+    "id": "tripcom-d9aa2f0306",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "定番（誰でも） / 航空券",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "航空券500〜2,000円OFF",
+    "stock_status": "配布中",
+    "product_type": "→コード確認ページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "コード入力 / （20,000円以上〜） / ※ANA・JALは対象外"
+    ],
+    "source_url": "https://jp.trip.com/flights/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/flights/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-08a23118dc",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "航空券2%OFF / 航空券",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "航空券2%OFF",
+    "stock_status": "配布中",
+    "product_type": "→コード確認ページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "コード「FLIGHT02」入力 / （〜2026/8/31） / ※ANA・JALは対象外"
+    ],
+    "source_url": "https://jp.trip.com/flights/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/flights/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-a91fc0e661",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "定番（誰でも） / 海外の遊び・体験",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "遊び・体験10%OFF",
+    "stock_status": "配布中",
+    "product_type": "→コード確認ページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "コード入力"
+    ],
+    "source_url": "https://jp.trip.com/things-to-do/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/things-to-do/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-819ee7c5ba",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "定番（誰でも） / レンタカー",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "レンタカー8%OFF",
+    "stock_status": "配布中",
+    "product_type": "→獲得ページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "新規会員限定"
+    ],
+    "source_url": "https://jp.trip.com/carhire/to-japan-78/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/carhire/to-japan-78/?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-b80670eea8",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Mastercard / ホテル・航空券",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "ホテル5,070円OFF / 航空券2,470円OFF",
+    "stock_status": "配布中",
+    "product_type": "→クーポン取得ページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "ワールドMastercard以上 / 最低利用金額あり"
+    ],
+    "source_url": "https://jp.trip.com/sale/w/2728/master-card.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15048903",
+    "detail_url": "https://jp.trip.com/sale/w/2728/master-card.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15048903",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-079c1db10b",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "初回限定 / 航空券・遊び・体験等",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "最大1,200円相当",
+    "stock_status": "配布中",
+    "product_type": "→獲得ページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "アプリ新規登録"
+    ],
+    "source_url": "https://jp.trip.com/sale/w/welcome-pack.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/sale/w/welcome-pack.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-488f731a48",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "国内ホテル旅どき / 国内ホテル",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "最大5,200円OFF",
+    "stock_status": "配布中",
+    "product_type": "→キャンペーン会場",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "毎週木曜12:00配布 / （〜4/29）"
+    ],
+    "source_url": "https://jp.trip.com/sale/w/15500/april-2026-super-destination-bloom-in-japan.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/sale/w/15500/april-2026-super-destination-bloom-in-japan.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-b2966cf39e",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "航空券+ホテル / パッケージ",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "最大50%OFF",
+    "stock_status": "配布中",
+    "product_type": "→キャンペーン会場",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "対象都市限定 / （〜12/31） / ※4/13〜4/26の短期会場も併走中"
+    ],
+    "source_url": "https://jp.trip.com/sale/w/31131/bs-collective.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/sale/w/31131/bs-collective.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-2607d96c9a",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "メンバーズデー / ホテル・航空券",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "最大5% Trip Coins還元",
+    "stock_status": "配布中",
+    "product_type": "→エントリーページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "毎月27日・事前エントリー"
+    ],
+    "source_url": "https://jp.trip.com/sale/w/4507/exclusive-member-day.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/sale/w/4507/exclusive-member-day.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-80c04209d2",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "タイムセール / ホテル・航空券・遊び・体験",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "期間限定セール",
+    "stock_status": "配布中",
+    "product_type": "→タイムセール会場",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "登録会員向け・Web/アプリ / （〜12/31）"
+    ],
+    "source_url": "https://jp.trip.com/sale/w/6539/globaltravel.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/sale/w/6539/globaltravel.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-f2838cba55",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "学生用航空券 / 航空券",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "運賃の割引＋特典あり",
+    "stock_status": "配布中",
+    "product_type": "→学生用ページ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "検索結果で学生用航空券に / 絞り込み・特典は航空会社により異なる"
+    ],
+    "source_url": "https://jp.trip.com/sale/w/3319/global-student-flight-campaign.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "detail_url": "https://jp.trip.com/sale/w/3319/global-student-flight-campaign.html?Allianceid=6028065&SID=294275535&trip_sub1=&trip_sub3=D15094291",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "クーポン種別",
+        "獲得ページ",
+        "割引内容",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-35a2735e7d",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "ホテル",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "ホテル",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "ワールドMastercard / ワールドエリートMastercardで決済 / 予約金額50,700円以上"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "対象",
+        "割引額",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-fb4ed6d341",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "航空券",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "航空券",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "ワールドMastercard / ワールドエリートMastercardで決済 / 予約金額61,000円以上（国内航空会社は対象外）"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "対象",
+        "割引額",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-2c84b35e54",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "VISA",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "現在はVISA名義の現行ページを確認できず。 / 再開の可能性あり"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "直近の実績",
+        "現在の状況（2026年4月時点）"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-b391c24155",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "セゾン・UCカード",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "現在は公式ページで確認できず。 / 再開の可能性あり"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "直近の実績",
+        "現在の状況（2026年4月時点）"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-0a48524dc5",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "dカード",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "現在は公式ページで確認できず。 / 再開の可能性あり"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "直近の実績",
+        "現在の状況（2026年4月時点）"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-bbe20c2bd7",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "JCB",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "直近のキャンペーンは2026年2月末で終了。 / 再開の可能性あり"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "直近の実績",
+        "現在の状況（2026年4月時点）"
+      ]
+    }
+  },
+  {
+    "id": "tripcom-8efed9b298",
+    "provider": "tripcom",
+    "provider_label": "Trip.com",
+    "site_targets": [
+      "tripbooking"
+    ],
+    "article_slug": "",
+    "title": "Amex",
+    "category": "Trip.com_001_クーポン_SWELL",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "直近のキャンペーンは終了済み"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_html",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+      "headers": [
+        "カード",
+        "直近の実績",
+        "現在の状況（2026年4月時点）"
+      ]
+    }
+  }
+]
