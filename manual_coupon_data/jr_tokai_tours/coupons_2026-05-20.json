@@ -1,0 +1,218 @@
+[
+  {
+    "id": "jr_tokai_tours-fcddd59747",
+    "provider": "jr_tokai_tours",
+    "provider_label": "JR東海ツアーズ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "割引クーポン特集",
+    "category": "P-01_JR東海ツアーズクーポン最新一覧",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "EX旅パックのホテル別クーポンを確認。先着終了に注意"
+    ],
+    "source_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+    "detail_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html",
+      "headers": [
+        "優先度",
+        "確認する割引",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "jr_tokai_tours-10066b9b2b",
+    "provider": "jr_tokai_tours",
+    "provider_label": "JR東海ツアーズ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "LINE初回連携1,000円クーポン",
+    "category": "P-01_JR東海ツアーズクーポン最新一覧",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "初回連携後に取得。対象商品・期限・併用不可を確認"
+    ],
+    "source_url": "https://travel.jr-central.co.jp/plan/tokushu/line-cp/",
+    "detail_url": "https://travel.jr-central.co.jp/plan/tokushu/line-cp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html",
+      "headers": [
+        "優先度",
+        "確認する割引",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "jr_tokai_tours-c1f74f2b62",
+    "provider": "jr_tokai_tours",
+    "provider_label": "JR東海ツアーズ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "EX旅先予約の個別ページ内クーポン",
+    "category": "P-01_JR東海ツアーズクーポン最新一覧",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "東京スカイツリーのように商品ページ単位で出る場合がある"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html",
+      "headers": [
+        "優先度",
+        "確認する割引",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "jr_tokai_tours-8c9309cd73",
+    "provider": "jr_tokai_tours",
+    "provider_label": "JR東海ツアーズ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "スタンプラリー・買いまわり型",
+    "category": "P-01_JR東海ツアーズクーポン最新一覧",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "条件達成後や抽選後に使える。すぐ使える割引とは分ける"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html",
+      "headers": [
+        "優先度",
+        "確認する割引",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "jr_tokai_tours-d9486047c7",
+    "provider": "jr_tokai_tours",
+    "provider_label": "JR東海ツアーズ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "SNS投稿型の抽選クーポン",
+    "category": "P-01_JR東海ツアーズクーポン最新一覧",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "当選者向け。毎回使える割引としては扱わない"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html",
+      "headers": [
+        "優先度",
+        "確認する割引",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "jr_tokai_tours-3e50999e78",
+    "provider": "jr_tokai_tours",
+    "provider_label": "JR東海ツアーズ",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "メール限定・クーポンコード型",
+    "category": "P-01_JR東海ツアーズクーポン最新一覧",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "公式FAQで制度は確認できるが、対象者限定のことが多い"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html",
+      "headers": [
+        "優先度",
+        "確認する割引",
+        "予約前の見方"
+      ]
+    }
+  }
+]

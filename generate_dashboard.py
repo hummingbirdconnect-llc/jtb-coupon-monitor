@@ -193,6 +193,8 @@ def next_action(provider: dict[str, Any], rows: list[dict[str, str]]) -> str:
         return "日次監視を継続。差分が出たら記事更新候補へ回す。"
     if status == "master_import" and rows:
         return "公式取得スクレイパー化の候補。まず暫定データを目視確認。"
+    if status == "article_exists" and rows:
+        return "記事抽出データを目視確認し、公式取得元を決める。"
     if status == "article_exists":
         return "記事本文から現行クーポン枠を抽出し、取得元を決める。"
     if status == "manual_queue":
@@ -210,7 +212,14 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
     coverage = provider.get("coverage_status", "")
     source_label = "未整備"
     if rows:
-        source_label = "日次JSON" if coverage == "auto_daily" else "coupon-master暫定JSON"
+        if coverage == "auto_daily":
+            source_label = "日次JSON"
+        elif coverage == "master_import":
+            source_label = "coupon-master暫定JSON"
+        elif coverage == "article_exists":
+            source_label = "記事抽出暫定JSON"
+        else:
+            source_label = "暫定JSON"
     elif provider.get("article_paths"):
         source_label = "記事HTMLあり"
 

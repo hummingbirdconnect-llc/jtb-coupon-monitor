@@ -54,6 +54,75 @@ URL_KEYS = ["出典URL", "URL", "詳細URL"]
 STATUS_KEYS = ["ステータス", "開催ステータス"]
 SOURCE_KEYS = ["source", "取得ツール"]
 
+ARTICLE_TITLE_KEYS = [
+    "クーポン・キャンペーン名",
+    "キャンペーン/クーポン名",
+    "キャンペーン名",
+    "クーポン名",
+    "クーポンの種類",
+    "クーポン種別",
+    "クーポン・クーポンコード",
+    "クーポンコード",
+    "カードブランド",
+    "カード",
+    "VIPランク",
+    "種類",
+    "制度名",
+    "割引手段",
+    "確認する割引",
+    "おすすめクーポン",
+    "出発・目的地",
+    "状況 / 開催期間",
+    "対象",
+]
+ARTICLE_DISCOUNT_KEYS = [
+    "有効期限・割引など",
+    "割引/特典内容",
+    "割引内容 / 特典",
+    "割引・特典内容",
+    "割引内容",
+    "割引率",
+    "割引額",
+    "割引額の目安",
+    "金額感の目安",
+    "内容・割引額",
+    "内容",
+    "特典内容",
+    "概算還元率",
+    "ホテル割引率",
+    "パッケージ割引額",
+    "直前割",
+    "神戸⇔那覇増便",
+]
+ARTICLE_PRODUCT_KEYS = ["対象商品", "対象", "使える人", "獲得ページ", "割引対象"]
+ARTICLE_CONDITION_KEYS = [
+    "条件",
+    "対象者・条件",
+    "期間/条件",
+    "有効期限 / 条件 / 詳細",
+    "取得方法",
+    "主な入手方法",
+    "入手条件",
+    "予約前の見方",
+    "備考",
+    "補足",
+]
+ARTICLE_PERIOD_KEYS = [
+    "有効期限",
+    "有効期限・割引など",
+    "クーポン利用期限",
+    "宿泊対象期限",
+    "現在の状況（2026年4月時点）",
+    "実施期間",
+    "期間/条件",
+    "有効期限 / 条件 / 詳細",
+]
+ARTICLE_BLOCK_HEADERS = ["症状", "主な原因", "対処", "ミス", "ブラウザ", "支払い方法", "用途", "電話", "受付時間", "メール", "チャネル"]
+ARTICLE_SIGNAL_RE = re.compile(r"クーポン|キャンペーン|割引|特典|還元|ポイント|OFF|円|直前割|セール|無料|優待")
+HEADING_BLOCK_RE = re.compile(
+    r"比較|使い方|取得方法|使えない|対処|併用|口コミ|評判|FAQ|Q&A|よくある|まとめ|注意|キャンセル|問い合わせ|支払い|どこで|可能|使えます|上限|JTB|HIS|近畿日本|JALパック|他社|旅行会社"
+)
+
 
 def clean_cell(value: str) -> str:
     value = value.strip()
@@ -286,6 +355,13 @@ def extract_href(fragment: str) -> str:
     return html_lib.unescape(match.group(1)) if match else ""
 
 
+def read_article_html(path: Path) -> str:
+    if path.suffix.lower() == ".json":
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        return payload.get("content") or payload.get("content_raw") or payload.get("html") or ""
+    return path.read_text(encoding="utf-8")
+
+
 def parse_article_tables(html: str) -> list[tuple[list[str], list[list[str]], list[str]]]:
     """HTML内のテーブルを、ヘッダー・テキスト行・行HTMLに分解する。"""
     parsed = []
@@ -315,6 +391,18 @@ def parse_article_tables(html: str) -> list[tuple[list[str], list[list[str]], li
             row_htmls.append(tr)
         parsed.append((headers, rows, row_htmls))
     return parsed
+
+
+def is_coupon_like_table(headers: list[str], rows: list[list[str]]) -> bool:
+    header_text = " ".join(headers)
+    row_text = " ".join(" ".join(row) for row in rows[:8])
+    has_signal = bool(ARTICLE_SIGNAL_RE.search(header_text + " " + row_text))
+    has_positive_header = bool(ARTICLE_SIGNAL_RE.search(header_text))
+    if not has_signal:
+        return False
+    if any(blocked in header_text for blocked in ARTICLE_BLOCK_HEADERS) and not has_positive_header:
+        return False
+    return True
 
 
 def date_is_past(text: str) -> bool:
@@ -347,19 +435,16 @@ def article_status(row: dict[str, str]) -> str:
 
 def normalize_article_row(provider: dict, source_path: Path, headers: list[str], values: list[str], row_html: str) -> dict | None:
     row = dict(zip(headers, values))
-    title = first_value(row, ["クーポン種別", "クーポンコード", "カードブランド", "カード", "対象", "VIPランク"])
+    title = first_value(row, ARTICLE_TITLE_KEYS)
     if not title or title in {"-", "―"}:
         return None
-    code = first_value(row, ["クーポンコード"])
-    discount_parts = [
-        first_value(row, ["割引内容", "割引率", "ホテル割引率"]),
-        first_value(row, ["割引上限", "パッケージ割引額"]),
-    ]
+    if not ARTICLE_SIGNAL_RE.search(" ".join([title, " ".join(row.values())])):
+        return None
+
+    code = first_value(row, ["クーポンコード", "コード"])
+    discount_parts = [first_value(row, ARTICLE_DISCOUNT_KEYS), first_value(row, ["割引上限"])]
     discount = " / ".join(part for part in discount_parts if part and part not in {"-", "―"})
-    conditions = [
-        first_value(row, ["条件", "最低利用額", "最低利用金額"]),
-        first_value(row, ["有効期限", "クーポン利用期限", "宿泊対象期限", "現在の状況（2026年4月時点）"]),
-    ]
+    conditions = [first_value(row, ARTICLE_CONDITION_KEYS), first_value(row, ARTICLE_PERIOD_KEYS)]
     source_url = extract_href(row_html)
     stock_status = article_status(row)
     coupon_id = make_coupon_id(provider["id"], title, code, source_path.name)
@@ -374,14 +459,14 @@ def normalize_article_row(provider: dict, source_path: Path, headers: list[str],
         "category": source_path.stem,
         "discount": discount,
         "stock_status": stock_status,
-        "product_type": first_value(row, ["対象", "獲得ページ"]),
+        "product_type": first_value(row, ARTICLE_PRODUCT_KEYS),
         "booking_period": "",
-        "travel_period": first_value(row, ["宿泊対象期限"]),
+        "travel_period": first_value(row, ARTICLE_PERIOD_KEYS),
         "coupon_codes": [code] if code and code not in {"-", "―", "専用ページで確認"} else [],
         "conditions": [item for item in conditions if item and item not in {"-", "―"}],
         "source_url": source_url,
         "detail_url": source_url,
-        "source_type": "article_html",
+        "source_type": "article_snapshot",
         "fetch_method": "existing_article_table",
         "last_checked": datetime.now(JST).strftime("%Y-%m-%d"),
         "confidence": "low" if stock_status == "要確認" else "medium",
@@ -394,6 +479,59 @@ def normalize_article_row(provider: dict, source_path: Path, headers: list[str],
     }
 
 
+def normalize_heading_item(provider: dict, source_path: Path, title: str, body_html: str) -> dict | None:
+    title = strip_html(title)
+    body_text = strip_html(body_html)
+    if not title or not re.search(r"クーポン|キャンペーン|セール|特典|PASS|LINE|ポイント", title, flags=re.IGNORECASE):
+        return None
+    if HEADING_BLOCK_RE.search(title):
+        return None
+
+    context = body_text[:500]
+    discount_match = re.search(r"(最大)?\d{1,3}(?:,\d{3})*円|[0-9]+(?:\.[0-9]+)?%|ポイント[0-9]+倍|[0-9]+倍|無料|抽選", title + " " + context)
+    discount = discount_match.group(0) if discount_match else ""
+    source_url = extract_href(body_html)
+    status = "配布終了" if date_is_past(title + " " + context) else "要確認"
+    coupon_id = make_coupon_id(provider["id"], title, "", source_path.name)
+
+    return {
+        "id": coupon_id,
+        "provider": provider["id"],
+        "provider_label": provider["label"],
+        "site_targets": provider.get("site_targets", []),
+        "article_slug": "",
+        "title": title,
+        "category": source_path.stem,
+        "discount": discount,
+        "stock_status": status,
+        "product_type": "",
+        "booking_period": "",
+        "travel_period": "",
+        "coupon_codes": [],
+        "conditions": [context] if context else [],
+        "source_url": source_url,
+        "detail_url": source_url,
+        "source_type": "article_snapshot",
+        "fetch_method": "existing_article_heading",
+        "last_checked": datetime.now(JST).strftime("%Y-%m-%d"),
+        "confidence": "low",
+        "display_type": "table",
+        "placement_hint": "",
+        "detail_data": {
+            "source": str(source_path),
+        },
+    }
+
+
+def parse_heading_fallback(provider: dict, source_path: Path, html: str) -> list[dict]:
+    rows = []
+    for match in re.finditer(r"<h[23]\b[^>]*>(.*?)</h[23]>(.*?)(?=<h[23]\b|$)", html, flags=re.IGNORECASE | re.DOTALL):
+        coupon = normalize_heading_item(provider, source_path, match.group(1), match.group(2))
+        if coupon:
+            rows.append(coupon)
+    return rows
+
+
 def parse_article_fallback(provider: dict) -> list[dict]:
     rows = []
     seen = set()
@@ -401,14 +539,23 @@ def parse_article_fallback(provider: dict) -> list[dict]:
         path = (ROOT / path_text).resolve()
         if not path.exists():
             continue
-        html = path.read_text(encoding="utf-8")
+        html = read_article_html(path)
         for headers, table_rows, row_htmls in parse_article_tables(html):
+            if not is_coupon_like_table(headers, table_rows):
+                continue
             for values, row_html in zip(table_rows, row_htmls):
                 coupon = normalize_article_row(provider, path, headers, values, row_html)
                 if not coupon or coupon["id"] in seen:
                     continue
                 seen.add(coupon["id"])
                 rows.append(coupon)
+        if rows:
+            continue
+        for coupon in parse_heading_fallback(provider, path, html):
+            if coupon["id"] in seen:
+                continue
+            seen.add(coupon["id"])
+            rows.append(coupon)
     return rows
 
 

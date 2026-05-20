@@ -1,0 +1,218 @@
+[
+  {
+    "id": "yahoo_travel-5fe0f0bf7e",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "",
+    "title": "獲得型クーポン",
+    "category": "SC-2_ヤフートラベルクーポン・お得情報完全ガイド",
+    "discount": "数百円〜数千円",
+    "stock_status": "配布中",
+    "product_type": "ログイン必須",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travel.yahoo.co.jp/",
+    "detail_url": "https://travel.yahoo.co.jp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html",
+      "headers": [
+        "種類",
+        "代表的な特徴",
+        "使える人",
+        "金額感の目安"
+      ]
+    }
+  },
+  {
+    "id": "yahoo_travel-fcb6252818",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "",
+    "title": "8桁クーポンコード",
+    "category": "SC-2_ヤフートラベルクーポン・お得情報完全ガイド",
+    "discount": "数百円〜数千円",
+    "stock_status": "配布中",
+    "product_type": "ゲスト予約OK",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travel.yahoo.co.jp/",
+    "detail_url": "https://travel.yahoo.co.jp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html",
+      "headers": [
+        "種類",
+        "代表的な特徴",
+        "使える人",
+        "金額感の目安"
+      ]
+    }
+  },
+  {
+    "id": "yahoo_travel-a942c78a0e",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "",
+    "title": "スペシャルクーポン",
+    "category": "SC-2_ヤフートラベルクーポン・お得情報完全ガイド",
+    "discount": "最大割引率10%目安",
+    "stock_status": "配布中",
+    "product_type": "対象者のみ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travel.yahoo.co.jp/",
+    "detail_url": "https://travel.yahoo.co.jp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html",
+      "headers": [
+        "種類",
+        "代表的な特徴",
+        "使える人",
+        "金額感の目安"
+      ]
+    }
+  },
+  {
+    "id": "yahoo_travel-31576e0b3d",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "",
+    "title": "会員特典・カード特典",
+    "category": "SC-2_ヤフートラベルクーポン・お得情報完全ガイド",
+    "discount": "還元率アップ枠",
+    "stock_status": "配布中",
+    "product_type": "会員・カード保有者",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travel.yahoo.co.jp/",
+    "detail_url": "https://travel.yahoo.co.jp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html",
+      "headers": [
+        "種類",
+        "代表的な特徴",
+        "使える人",
+        "金額感の目安"
+      ]
+    }
+  },
+  {
+    "id": "yahoo_travel-d3e4b6efa3",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "",
+    "title": "ヤフーパック向けクーポン",
+    "category": "SC-2_ヤフートラベルクーポン・お得情報完全ガイド",
+    "discount": "3,000円〜20,000円",
+    "stock_status": "配布中",
+    "product_type": "パック利用者",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travel.yahoo.co.jp/",
+    "detail_url": "https://travel.yahoo.co.jp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html",
+      "headers": [
+        "種類",
+        "代表的な特徴",
+        "使える人",
+        "金額感の目安"
+      ]
+    }
+  },
+  {
+    "id": "yahoo_travel-f2eb2e11f3",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "",
+    "title": "セール・キャンペーン",
+    "category": "SC-2_ヤフートラベルクーポン・お得情報完全ガイド",
+    "discount": "PayPay還元20%以上",
+    "stock_status": "配布中",
+    "product_type": "条件該当者",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://travel.yahoo.co.jp/",
+    "detail_url": "https://travel.yahoo.co.jp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html",
+      "headers": [
+        "種類",
+        "代表的な特徴",
+        "使える人",
+        "金額感の目安"
+      ]
+    }
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "id": "asoview-d4505d4e88",
+    "provider": "asoview",
+    "provider_label": "アソビュー",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "提携カード限定",
+    "category": "KP_アソビュー_クーポン_パイプライン記事",
+    "discount": "遊び予約3%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "エポス・JAL・イオンカード保有者"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html",
+      "headers": [
+        "種類",
+        "割引内容",
+        "入手条件"
+      ]
+    }
+  },
+  {
+    "id": "asoview-ea1c036bd3",
+    "provider": "asoview",
+    "provider_label": "アソビュー",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "メルマガ会員限定",
+    "category": "KP_アソビュー_クーポン_パイプライン記事",
+    "discount": "誕生日5%OFF / 5と0のつく日500円OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "メルマガ登録者"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html",
+      "headers": [
+        "種類",
+        "割引内容",
+        "入手条件"
+      ]
+    }
+  },
+  {
+    "id": "asoview-b0927aee78",
+    "provider": "asoview",
+    "provider_label": "アソビュー",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "施設別クーポン",
+    "category": "KP_アソビュー_クーポン_パイプライン記事",
+    "discount": "最大50%OFF（※割引率は施設・時期により異なります。公式クーポン一覧ページの掲載内容に基づく）",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "公式クーポン一覧ページで随時更新"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html",
+      "headers": [
+        "種類",
+        "割引内容",
+        "入手条件"
+      ]
+    }
+  },
+  {
+    "id": "asoview-f892980b50",
+    "provider": "asoview",
+    "provider_label": "アソビュー",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "エポスカード",
+    "category": "KP_アソビュー_クーポン_パイプライン記事",
+    "discount": "3%OFF",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "〜2026/4/7",
+    "coupon_codes": [
+      "Ur4kG"
+    ],
+    "conditions": [
+      "エポトクプラザ経由",
+      "〜2026/4/7"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html",
+      "headers": [
+        "カード",
+        "割引率",
+        "コード",
+        "有効期限",
+        "取得方法"
+      ]
+    }
+  },
+  {
+    "id": "asoview-7250854e9e",
+    "provider": "asoview",
+    "provider_label": "アソビュー",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "JALカード",
+    "category": "KP_アソビュー_クーポン_パイプライン記事",
+    "discount": "3%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "〜2026/8/31",
+    "coupon_codes": [
+      "F6kRE"
+    ],
+    "conditions": [
+      "JAL会員優待ページ",
+      "〜2026/8/31"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html",
+      "headers": [
+        "カード",
+        "割引率",
+        "コード",
+        "有効期限",
+        "取得方法"
+      ]
+    }
+  },
+  {
+    "id": "asoview-e4bdf476dc",
+    "provider": "asoview",
+    "provider_label": "アソビュー",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "イオンカード",
+    "category": "KP_アソビュー_クーポン_パイプライン記事",
+    "discount": "3%OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "〜2027/4/1",
+    "coupon_codes": [
+      "3ヶ月単位で切替"
+    ],
+    "conditions": [
+      "イオンカード優待ページ",
+      "〜2027/4/1"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html",
+      "headers": [
+        "カード",
+        "割引率",
+        "コード",
+        "有効期限",
+        "取得方法"
+      ]
+    }
+  }
+]

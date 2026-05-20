@@ -104,96 +104,120 @@
       "label": "楽天トラベル",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "manual_queue",
-      "note": "公開RaCoupon一覧からの監視候補。coupon-master未整備。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/rakuten_travel",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。公開RaCoupon一覧の公式取得化が次工程。"
     },
     {
       "id": "yahoo_travel",
       "label": "Yahoo!トラベル",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "manual_queue",
-      "note": "PayPay・いまスグ利用など表示条件が混在。半自動確認向き。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/yahoo_travel",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。PayPay・いまスグ利用など表示条件が混在。"
     },
     {
       "id": "ikkyu",
       "label": "一休",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "manual_queue",
-      "note": "会員ステージ・時間限定表示の個人差があるため半自動確認。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/ikkyu",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。会員ステージ・時間限定表示の個人差に注意。"
     },
     {
       "id": "relux",
       "label": "Relux",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "manual_queue",
-      "note": "記事型確認から着手。coupon-master未整備。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/relux",
+      "article_paths": ["../vault_blog/旅クーポン/wp_articles/567_relux-discount-campaigns.json"],
+      "note": "既存記事JSON由来の暫定データ。Welltrip記事側との統合確認が次工程。"
     },
     {
       "id": "asoview",
       "label": "アソビュー",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "manual_queue",
-      "note": "公開キャンペーンを対象に絞って監視候補化。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/asoview",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。公開キャンペーン監視の候補。"
     },
     {
       "id": "activityjapan",
       "label": "アクティビティジャパン",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "manual_queue",
-      "note": "公式ニュース・キャンペーン中心に監視候補化。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/activityjapan",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/アクティビティジャパン/note/アクティビティジャパン_P_クーポン割引全まとめ_パイプライン記事.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。公式ニュース・キャンペーン中心に監視候補化。"
     },
     {
       "id": "club_tourism",
       "label": "クラブツーリズム",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "manual_queue",
-      "note": "クーポンコードよりキャンペーン監視向き。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/club_tourism",
+      "article_paths": ["../vault_blog/旅クーポン/wp_articles/65453_club-tourism-coupon-guide.json"],
+      "note": "既存記事JSON由来の暫定データ。クーポンコードよりキャンペーン監視向き。"
     },
     {
       "id": "jr_tokai_tours",
       "label": "JR東海ツアーズ",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "manual_queue",
-      "note": "ずらし旅など特典型として別管理。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/jr_tokai_tours",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。ずらし旅など特典型として別管理。"
     },
     {
       "id": "skypack_tours",
       "label": "スカイパックツアーズ",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "manual_queue",
-      "note": "キャンペーン・路線別訴求中心。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/skypack_tours",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/スカイパックツアーズ/note/スカイパックツアーズ_P_クーポン全まとめ_パイプライン記事.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。キャンペーン・路線別訴求中心。"
     },
     {
       "id": "tobu_top_tours",
       "label": "東武トップツアーズ",
       "site_targets": ["welltrip"],
       "classification": "D",
-      "coverage_status": "not_started",
-      "note": "公式公開クーポンの安定取得可否が未確認。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/tobu_top_tours",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/東武トップツアーズ/note/tobutoptours-coupon.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。公式公開クーポンの安定取得可否は未確認。"
     },
     {
       "id": "yomiuri_travel",
       "label": "読売旅行",
       "site_targets": ["welltrip"],
       "classification": "D",
-      "coverage_status": "not_started",
-      "note": "ツアー企画型のため後回し。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/yomiuri_travel",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/読売旅行/note/SC-01_クーポン・割引・キャンペーンまとめ.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。ツアー企画型のため公式監視は後工程。"
     },
     {
       "id": "toku",
       "label": "トクー",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "manual_queue",
-      "note": "会員割引・直前割型で、クーポンコードとは別データ型が必要。"
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/toku",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/トクー/note/トクー_P_クーポン完全ガイド_パイプライン記事.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。会員割引・直前割型で、クーポンコードとは別データ型が必要。"
     },
     {
       "id": "agoda",

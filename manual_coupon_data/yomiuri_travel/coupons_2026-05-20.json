@@ -1,0 +1,138 @@
+[
+  {
+    "id": "yomiuri_travel-305d8ec85c",
+    "provider": "yomiuri_travel",
+    "provider_label": "読売旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "招福フェア",
+    "category": "SC-01_クーポン・割引・キャンペーンまとめ",
+    "discount": "新春特別プランや割引ツアー",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/読売旅行/note/SC-01_クーポン・割引・キャンペーンまとめ.html",
+      "headers": [
+        "時期",
+        "キャンペーン名",
+        "内容"
+      ]
+    }
+  },
+  {
+    "id": "yomiuri_travel-50824ea469",
+    "provider": "yomiuri_travel",
+    "provider_label": "読売旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "春のキャンペーン",
+    "category": "SC-01_クーポン・割引・キャンペーンまとめ",
+    "discount": "花見・GW向けツアーの早割",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/読売旅行/note/SC-01_クーポン・割引・キャンペーンまとめ.html",
+      "headers": [
+        "時期",
+        "キャンペーン名",
+        "内容"
+      ]
+    }
+  },
+  {
+    "id": "yomiuri_travel-6e52115729",
+    "provider": "yomiuri_travel",
+    "provider_label": "読売旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ブラックフライデー",
+    "category": "SC-01_クーポン・割引・キャンペーンまとめ",
+    "discount": "期間限定割引",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/読売旅行/note/SC-01_クーポン・割引・キャンペーンまとめ.html",
+      "headers": [
+        "時期",
+        "キャンペーン名",
+        "内容"
+      ]
+    }
+  },
+  {
+    "id": "yomiuri_travel-5c9b90ccfd",
+    "provider": "yomiuri_travel",
+    "provider_label": "読売旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "全国旅行支援",
+    "category": "SC-01_クーポン・割引・キャンペーンまとめ",
+    "discount": "政府の支援制度に連動した割引",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/読売旅行/note/SC-01_クーポン・割引・キャンペーンまとめ.html",
+      "headers": [
+        "時期",
+        "キャンペーン名",
+        "内容"
+      ]
+    }
+  }
+]

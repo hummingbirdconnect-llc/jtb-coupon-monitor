@@ -1,0 +1,565 @@
+[
+  {
+    "id": "rakuten_travel-9fb9e601a9",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "RaCoupon（毎月配布）",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "1,000円〜40,000円",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポンの種類",
+        "割引額の目安",
+        "対象",
+        "獲得方法"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-c63ca6f5ec",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "5のつく日クーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "最大20%OFF",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊・一部レンタカー",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポンの種類",
+        "割引額の目安",
+        "対象",
+        "獲得方法"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-02ddd2b6a1",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ご当地クーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "500円〜10,000円",
+    "stock_status": "配布中",
+    "product_type": "対象地域の宿泊施設",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポンの種類",
+        "割引額の目安",
+        "対象",
+        "獲得方法"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-56af45bdde",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "直前割クーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "施設による",
+    "stock_status": "配布中",
+    "product_type": "直前予約対象プラン",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポンの種類",
+        "割引額の目安",
+        "対象",
+        "獲得方法"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-06aa99dd12",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "会員ランク限定",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "1,000円〜5,000円",
+    "stock_status": "配布中",
+    "product_type": "ダイヤモンド・プラチナ会員",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポンの種類",
+        "割引額の目安",
+        "対象",
+        "獲得方法"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-90a0103b3e",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "楽天カード会員限定",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "1,000円〜3,000円",
+    "stock_status": "配布中",
+    "product_type": "楽天カード保有者",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポンの種類",
+        "割引額の目安",
+        "対象",
+        "獲得方法"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-fd015a5d7c",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "スーパーSALEクーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "最大40,000円",
+    "stock_status": "配布中",
+    "product_type": "SALE期間中の対象プラン",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポンの種類",
+        "割引額の目安",
+        "対象",
+        "獲得方法"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-8666f50234",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "RaCoupon（定額割引）",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "配布タイミング",
+        "クーポンの種類",
+        "頻度"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-6ac25bed7b",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "お買い物マラソン連動クーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "配布タイミング",
+        "クーポンの種類",
+        "頻度"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-8d96bc9887",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ご当地クーポン・会員限定",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "配布タイミング",
+        "クーポンの種類",
+        "頻度"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-1786eb04be",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "通常クーポン（RaCoupon）",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "枠",
+        "クーポンの種類",
+        "割引額の例"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-898193e4e9",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "宿クーポン（施設発行）",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "枠",
+        "クーポンの種類",
+        "割引額の例"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-67791bd36d",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "—",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "枠",
+        "クーポンの種類",
+        "割引額の例"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-2b80cd9794",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "レンタカー20%OFFクーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "20%OFF",
+    "stock_status": "配布終了",
+    "product_type": "全国のレンタカー予約",
+    "booking_period": "",
+    "travel_period": "2026年3月2日まで",
+    "coupon_codes": [],
+    "conditions": [
+      "2026年3月2日まで"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポン名",
+        "割引率",
+        "配布枚数",
+        "対象",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-97b8c2e189",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "レンタカー10%OFFクーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "10%OFF",
+    "stock_status": "配布終了",
+    "product_type": "全国のレンタカー予約",
+    "booking_period": "",
+    "travel_period": "2026年3月2日まで",
+    "coupon_codes": [],
+    "conditions": [
+      "2026年3月2日まで"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポン名",
+        "割引率",
+        "配布枚数",
+        "対象",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "rakuten_travel-f7cfa25871",
+    "provider": "rakuten_travel",
+    "provider_label": "楽天トラベル",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "25歳以下限定15%OFFクーポン",
+    "category": "楽天トラベル_P_クーポン完全ガイド_SWELL_HTML",
+    "discount": "15%OFF",
+    "stock_status": "配布終了",
+    "product_type": "25歳以下の楽天会員",
+    "booking_period": "",
+    "travel_period": "2026年3月2日まで",
+    "coupon_codes": [],
+    "conditions": [
+      "2026年3月2日まで"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html",
+      "headers": [
+        "クーポン名",
+        "割引率",
+        "配布枚数",
+        "対象",
+        "有効期限"
+      ]
+    }
+  }
+]

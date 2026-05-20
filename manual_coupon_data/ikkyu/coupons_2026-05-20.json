@@ -1,0 +1,190 @@
+[
+  {
+    "id": "ikkyu-4bbf5c80d3",
+    "provider": "ikkyu",
+    "provider_label": "一休",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "割引クーポン（自動適用型）",
+    "category": "一休_SC01_クーポン完全ガイド_v3",
+    "discount": "1,000〜10,000円",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "数日〜数週間",
+    "coupon_codes": [],
+    "conditions": [
+      "公式ページでワンタップ",
+      "数日〜数週間"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html",
+      "headers": [
+        "種類",
+        "取得方法",
+        "割引額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "ikkyu-363c464382",
+    "provider": "ikkyu",
+    "provider_label": "一休",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "クーポンコード（番号入力型）",
+    "category": "一休_SC01_クーポン完全ガイド_v3",
+    "discount": "2,000〜5,000円",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "数日〜1ヶ月",
+    "coupon_codes": [],
+    "conditions": [
+      "メルマガ・クレカ提携等",
+      "数日〜1ヶ月"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html",
+      "headers": [
+        "種類",
+        "取得方法",
+        "割引額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "ikkyu-9c55e2957e",
+    "provider": "ikkyu",
+    "provider_label": "一休",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "時間限定クーポン（ポップアップ型）",
+    "category": "一休_SC01_クーポン完全ガイド_v3",
+    "discount": "1,000〜5,000円",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "60分 or 90分",
+    "coupon_codes": [],
+    "conditions": [
+      "サイト閲覧中に自動表示",
+      "60分 or 90分"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html",
+      "headers": [
+        "種類",
+        "取得方法",
+        "割引額",
+        "有効期限"
+      ]
+    }
+  },
+  {
+    "id": "ikkyu-f93ee6b47e",
+    "provider": "ikkyu",
+    "provider_label": "一休",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ダイナースクラブ",
+    "category": "一休_SC01_クーポン完全ガイド_v3",
+    "discount": "5,000円OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "3万円以上の宿泊"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html",
+      "headers": [
+        "カード",
+        "割引額",
+        "配布",
+        "条件"
+      ]
+    }
+  },
+  {
+    "id": "ikkyu-6918299d1a",
+    "provider": "ikkyu",
+    "provider_label": "一休",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "アメックス",
+    "category": "一休_SC01_クーポン完全ガイド_v3",
+    "discount": "3,000円OFF",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "3万円以上の宿泊"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-05-20",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html",
+      "headers": [
+        "カード",
+        "割引額",
+        "配布",
+        "条件"
+      ]
+    }
+  }
+]

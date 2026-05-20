@@ -36,6 +36,78 @@
     "count": 21
   },
   {
+    "provider": "rakuten_travel",
+    "status": "written",
+    "file": "manual_coupon_data/rakuten_travel/coupons_2026-05-20.json",
+    "count": 16
+  },
+  {
+    "provider": "yahoo_travel",
+    "status": "written",
+    "file": "manual_coupon_data/yahoo_travel/coupons_2026-05-20.json",
+    "count": 6
+  },
+  {
+    "provider": "ikkyu",
+    "status": "written",
+    "file": "manual_coupon_data/ikkyu/coupons_2026-05-20.json",
+    "count": 5
+  },
+  {
+    "provider": "relux",
+    "status": "written",
+    "file": "manual_coupon_data/relux/coupons_2026-05-20.json",
+    "count": 7
+  },
+  {
+    "provider": "asoview",
+    "status": "written",
+    "file": "manual_coupon_data/asoview/coupons_2026-05-20.json",
+    "count": 6
+  },
+  {
+    "provider": "activityjapan",
+    "status": "written",
+    "file": "manual_coupon_data/activityjapan/coupons_2026-05-20.json",
+    "count": 6
+  },
+  {
+    "provider": "club_tourism",
+    "status": "written",
+    "file": "manual_coupon_data/club_tourism/coupons_2026-05-20.json",
+    "count": 6
+  },
+  {
+    "provider": "jr_tokai_tours",
+    "status": "written",
+    "file": "manual_coupon_data/jr_tokai_tours/coupons_2026-05-20.json",
+    "count": 6
+  },
+  {
+    "provider": "skypack_tours",
+    "status": "written",
+    "file": "manual_coupon_data/skypack_tours/coupons_2026-05-20.json",
+    "count": 4
+  },
+  {
+    "provider": "tobu_top_tours",
+    "status": "written",
+    "file": "manual_coupon_data/tobu_top_tours/coupons_2026-05-20.json",
+    "count": 5
+  },
+  {
+    "provider": "yomiuri_travel",
+    "status": "written",
+    "file": "manual_coupon_data/yomiuri_travel/coupons_2026-05-20.json",
+    "count": 4
+  },
+  {
+    "provider": "toku",
+    "status": "written",
+    "file": "manual_coupon_data/toku/coupons_2026-05-20.json",
+    "count": 6
+  },
+  {
     "provider": "agoda",
     "status": "written",
     "file": "manual_coupon_data/agoda/coupons_2026-05-20.json",
@@ -45,7 +117,7 @@
     "provider": "expedia",
     "status": "written",
     "file": "manual_coupon_data/expedia/coupons_2026-05-20.json",
-    "count": 10
+    "count": 16
   },
   {
     "provider": "hotels",
