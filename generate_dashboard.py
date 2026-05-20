@@ -16,6 +16,10 @@ from typing import Any
 JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent
 REGISTRY = ROOT / "config" / "provider_registry.json"
+CHECK_STATUS_ROOT = ROOT / "provider_check_data"
+WORKFLOW_URL = "https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions/workflows/coupon-monitor.yml"
+REPOSITORY = "hummingbirdconnect-llc/jtb-coupon-monitor"
+DAILY_PROVIDER_IDS = {"his", "jtb"}
 
 COVERAGE_LABELS = {
     "auto_daily": "自動取得",
@@ -46,6 +50,7 @@ SUMMARY_COLUMNS = [
     "会社",
     "対象サイト",
     "分類",
+    "監視頻度",
     "取得状態",
     "件数",
     "配布中",
@@ -97,6 +102,28 @@ def load_change_log(data_dir: str | None) -> list[dict[str, Any]]:
     if not path.exists():
         return []
     return load_json(path)
+
+
+def load_provider_check(provider_id: str) -> dict[str, Any]:
+    path = CHECK_STATUS_ROOT / provider_id / "latest.json"
+    if not path.exists():
+        return {}
+    return load_json(path)
+
+
+def provider_frequency(provider: dict[str, Any]) -> tuple[str, str]:
+    frequency = provider.get("check_frequency")
+    if not frequency:
+        frequency = "daily" if provider["id"] in DAILY_PROVIDER_IDS else "weekly"
+    labels = {
+        "daily": "毎日チェック",
+        "weekly": "週1回チェック",
+    }
+    return frequency, labels.get(frequency, frequency)
+
+
+def manual_gh_command(provider_id: str) -> str:
+    return f"gh workflow run coupon-monitor.yml -R {REPOSITORY} -f provider_id={provider_id} -f update_wp=false"
 
 
 def first_value(source: dict[str, Any], keys: list[str]) -> str:
@@ -210,6 +237,8 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
     ended = sum(1 for row in rows if row["配布状況"] == "配布終了")
     review = sum(1 for row in rows if row["配布状況"] not in {"配布中", "配布終了"})
     coverage = provider.get("coverage_status", "")
+    frequency, frequency_label = provider_frequency(provider)
+    check_status = load_provider_check(provider["id"])
     source_label = "未整備"
     if rows:
         if coverage == "auto_daily":
@@ -230,6 +259,11 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "classification": provider.get("classification", ""),
         "coverage_status": coverage,
         "coverage_label": COVERAGE_LABELS.get(coverage, coverage),
+        "check_frequency": frequency,
+        "check_frequency_label": frequency_label,
+        "manual_action_url": WORKFLOW_URL,
+        "manual_gh_command": manual_gh_command(provider["id"]),
+        "check_status": check_status,
         "note": provider.get("note", ""),
         "latest_file": latest_file,
         "source_label": source_label,
@@ -240,6 +274,7 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             "会社": provider["label"],
             "対象サイト": " / ".join(provider.get("site_targets", [])),
             "分類": provider.get("classification", ""),
+            "監視頻度": frequency_label,
             "取得状態": COVERAGE_LABELS.get(coverage, coverage),
             "件数": str(len(rows)),
             "配布中": str(active),
@@ -296,6 +331,21 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .stat.active {{ color: #146c43; background: #e9f7ef; border-color: #bde5cf; }}
 .stat.ended {{ color: #a52834; background: #fdecef; border-color: #f4c2ca; }}
 .stat.review {{ color: #7a5200; background: #fff5d6; border-color: #f0d98b; }}
+.manual-panel {{ display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; background: #fff; border: 1px solid #dfe4ea; border-radius: 8px; padding: 12px; margin-bottom: 14px; }}
+.manual-title {{ font-weight: 700; font-size: 0.92rem; color: #24313f; margin-bottom: 5px; }}
+.manual-meta {{ display: inline-block; color: #5c6978; font-size: 0.82rem; margin-right: 8px; line-height: 1.6; }}
+.manual-hint {{ color: #667386; font-size: 0.8rem; line-height: 1.5; margin-top: 6px; }}
+.manual-actions {{ display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }}
+.manual-run-btn,.copy-gh-btn {{ border: 1px solid #0f5caa; border-radius: 6px; padding: 8px 12px; cursor: pointer; font-size: 0.83rem; font-weight: 700; }}
+.manual-run-btn {{ background: #0f5caa; color: #fff; }}
+.copy-gh-btn {{ background: #fff; color: #0f5caa; }}
+.copy-gh-btn.copied {{ background: #146c43; border-color: #146c43; color: #fff; }}
+.manual-command {{ grid-column: 1 / -1; display: block; background: #f4f6f8; border: 1px solid #dfe4ea; border-radius: 6px; padding: 8px 10px; color: #2c3b4c; font-size: 0.8rem; overflow-x: auto; white-space: nowrap; }}
+.check-pill {{ display: inline-block; border-radius: 999px; padding: 2px 8px; font-size: 0.78rem; font-weight: 700; margin-right: 8px; }}
+.check-success {{ background: #e9f7ef; color: #146c43; }}
+.check-warning {{ background: #fff5d6; color: #7a5200; }}
+.check-error {{ background: #fdecef; color: #a52834; }}
+.check-no_data,.check-none {{ background: #eef2f7; color: #5c6978; }}
 .toolbar {{ display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }}
 .filter-btn,.copy-btn,.col-toggle-btn {{ padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.83rem; color: #2c3b4c; }}
 .filter-btn.active {{ border-color: #0f5caa; background: #eaf3ff; color: #0f5caa; font-weight: 700; }}
@@ -322,6 +372,8 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
   .tab-content {{ padding: 12px; }}
   .tab {{ padding: 9px 10px; font-size: 0.8rem; }}
   .header {{ padding: 16px; }}
+  .manual-panel {{ grid-template-columns: 1fr; }}
+  .manual-actions {{ justify-content: flex-start; }}
 }}
 </style>
 </head>
@@ -365,6 +417,90 @@ function copyTableData(rows, columns, button) {{
       button.classList.remove('copied');
     }}, 1600);
   }});
+}}
+
+function copyText(value, button) {{
+  navigator.clipboard.writeText(value).then(() => {{
+    if (!button) return;
+    const text = button.textContent;
+    button.textContent = 'コピー完了';
+    button.classList.add('copied');
+    setTimeout(() => {{
+      button.textContent = text;
+      button.classList.remove('copied');
+    }}, 1600);
+  }});
+}}
+
+function checkTypeLabel(value) {{
+  const labels = {{
+    official_monitor: '公式監視',
+    snapshot_url_check: '既存URL確認',
+  }};
+  return labels[value] || value || '未実行';
+}}
+
+function checkStatusLabel(value) {{
+  const labels = {{
+    success: '正常',
+    warning: '要確認',
+    error: '失敗',
+    no_data: 'データなし',
+  }};
+  return labels[value] || value || '未実行';
+}}
+
+function formatCheckTime(value) {{
+  if (!value) return 'なし';
+  return String(value).replace('T', ' ').replace(/\\.\\d+/, '').replace('+09:00', ' JST');
+}}
+
+function checkStatusHtml(provider) {{
+  const status = provider.check_status || {{}};
+  if (!status.completed_at) {{
+    return '<span class="check-pill check-none">未実行</span><span class="manual-meta">最終チェック: なし</span>';
+  }}
+  const key = String(status.status || 'none').replace(/[^a-z0-9_-]/gi, '');
+  const details = [];
+  details.push(`<span class="check-pill check-${{escapeHtml(key)}}">${{escapeHtml(checkStatusLabel(status.status))}}</span>`);
+  details.push(`<span class="manual-meta">${{escapeHtml(checkTypeLabel(status.check_type))}}</span>`);
+  details.push(`<span class="manual-meta">最終チェック: ${{escapeHtml(formatCheckTime(status.completed_at))}}</span>`);
+  details.push(`<span class="manual-meta">件数: ${{escapeHtml(status.coupon_count ?? 0)}}</span>`);
+  if (status.checked_url_count !== undefined) {{
+    details.push(`<span class="manual-meta">URL確認: ${{escapeHtml(status.ok_url_count ?? 0)}}/${{escapeHtml(status.checked_url_count ?? 0)}}</span>`);
+  }}
+  if (status.error) {{
+    details.push(`<span class="manual-meta">エラー: ${{escapeHtml(status.error)}}</span>`);
+  }}
+  return details.join('');
+}}
+
+function manualPanelHtml(provider) {{
+  const command = escapeHtml(provider.manual_gh_command || '');
+  return `<div class="manual-panel">
+    <div>
+      <div class="manual-title">手動チェック</div>
+      <span class="manual-meta">通常頻度: ${{escapeHtml(provider.check_frequency_label || '')}}</span>
+      ${{checkStatusHtml(provider)}}
+      <div class="manual-hint">会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。</div>
+    </div>
+    <div class="manual-actions">
+      <button type="button" class="manual-run-btn">手動チェック</button>
+      <button type="button" class="copy-gh-btn">コマンドコピー</button>
+    </div>
+    <code class="manual-command">${{command}}</code>
+  </div>`;
+}}
+
+function attachManualActions(section, provider) {{
+  const runButton = section.querySelector('.manual-run-btn');
+  if (runButton) {{
+    runButton.addEventListener('click', () => window.open(provider.manual_action_url, '_blank', 'noopener'));
+  }}
+  const copyButton = section.querySelector('.copy-gh-btn');
+  if (copyButton) {{
+    copyButton.addEventListener('click', event => copyText(provider.manual_gh_command || '', event.currentTarget));
+  }}
 }}
 
 function buildColumns(columns) {{
@@ -480,7 +616,8 @@ function renderGrid(container, rows, columns, options = {{}}) {{
 function renderSummary(container) {{
   const totalProviders = DATA.providers.length;
   const withRows = DATA.providers.filter(provider => provider.rows.length > 0).length;
-  const autoProviders = DATA.providers.filter(provider => provider.coverage_status === 'auto_daily').length;
+  const dailyProviders = DATA.providers.filter(provider => provider.check_frequency === 'daily').length;
+  const weeklyProviders = DATA.providers.filter(provider => provider.check_frequency === 'weekly').length;
   const totalCoupons = DATA.providers.reduce((sum, provider) => sum + provider.rows.length, 0);
   container.innerHTML = `
     <div class="section">
@@ -488,7 +625,8 @@ function renderSummary(container) {{
       <div class="stats">
         <span class="stat">対象会社 ${{totalProviders}} 社</span>
         <span class="stat active">データあり ${{withRows}} 社</span>
-        <span class="stat">自動取得 ${{autoProviders}} 社</span>
+        <span class="stat">毎日チェック ${{dailyProviders}} 社</span>
+        <span class="stat">週1回チェック ${{weeklyProviders}} 社</span>
         <span class="stat">総クーポン ${{totalCoupons}} 件</span>
       </div>
     </div>
@@ -505,7 +643,7 @@ function renderProvider(container, provider) {{
       <h2>${{escapeHtml(provider.label)}}</h2>
       <div class="note">
         対象サイト: ${{escapeHtml(provider.site_targets.join(' / ') || '未設定')}}<br>
-        取得状態: ${{escapeHtml(provider.coverage_label)}} / 分類: ${{escapeHtml(provider.classification)}} / 最新データ: ${{escapeHtml(provider.latest_file || 'なし')}}<br>
+        取得状態: ${{escapeHtml(provider.coverage_label)}} / 監視頻度: ${{escapeHtml(provider.check_frequency_label)}} / 分類: ${{escapeHtml(provider.classification)}} / 最新データ: ${{escapeHtml(provider.latest_file || 'なし')}}<br>
         ${{escapeHtml(provider.note || '')}}
       </div>
       <div class="stats">
@@ -514,9 +652,11 @@ function renderProvider(container, provider) {{
         <span class="stat ended">配布終了 ${{ended}} 件</span>
         <span class="stat review">要確認 ${{review}} 件</span>
       </div>
+      ${{manualPanelHtml(provider)}}
     </div>
   `;
   const section = container.querySelector('.section');
+  attachManualActions(section, provider);
   renderGrid(section, provider.rows, DATA.columns.coupons, {{ filter: true, limit: 50 }});
   if (provider.logs && provider.logs.length > 0) {{
     const logSection = document.createElement('div');

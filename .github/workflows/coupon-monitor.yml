@@ -1,17 +1,64 @@
-name: Coupon Monitor (JTB + KNT + HIS + JAL Pack)
+name: Coupon Monitor
 
 on:
   schedule:
-    - cron: '0 21 * * *'  # 毎日 6:00 JST
+    - cron: '0 21 * * *'    # 毎日 6:00 JST: HIS / JTB
+    - cron: '30 21 * * 0'   # 毎週月曜 6:30 JST: HIS / JTB 以外
   workflow_dispatch:
+    inputs:
+      provider_id:
+        description: 手動チェックする会社
+        required: true
+        default: all
+        type: choice
+        options:
+          - all
+          - his
+          - jtb
+          - knt
+          - jalpack
+          - jalan
+          - jalan_activity
+          - kkday
+          - klook
+          - jtrip
+          - yumeyado
+          - rakuten_travel
+          - yahoo_travel
+          - ikkyu
+          - relux
+          - asoview
+          - activityjapan
+          - club_tourism
+          - jr_tokai_tours
+          - skypack_tours
+          - tobu_top_tours
+          - yomiuri_travel
+          - toku
+          - agoda
+          - expedia
+          - hotels
+          - tripcom
+      update_wp:
+        description: WordPress下書き更新も実行する
+        required: true
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
 
 permissions:
   contents: write
 
+concurrency:
+  group: coupon-monitor-main
+  cancel-in-progress: false
+
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
 
     steps:
       - name: チェックアウト
@@ -31,6 +78,28 @@ jobs:
       - name: Playwright ブラウザインストール
         run: python -m playwright install --with-deps chromium
 
+      - name: 実行対象を決定
+        id: plan
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            if [ "${{ github.event.schedule }}" = "0 21 * * *" ]; then
+              echo "scope=daily" >> "$GITHUB_OUTPUT"
+              echo "provider_id=" >> "$GITHUB_OUTPUT"
+              echo "update_wp=true" >> "$GITHUB_OUTPUT"
+              echo "label=scheduled daily: his,jtb" >> "$GITHUB_OUTPUT"
+            else
+              echo "scope=weekly" >> "$GITHUB_OUTPUT"
+              echo "provider_id=" >> "$GITHUB_OUTPUT"
+              echo "update_wp=false" >> "$GITHUB_OUTPUT"
+              echo "label=scheduled weekly: non-daily providers" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "scope=all" >> "$GITHUB_OUTPUT"
+            echo "provider_id=${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
+            echo "update_wp=${{ inputs.update_wp }}" >> "$GITHUB_OUTPUT"
+            echo "label=manual: ${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: アフィリエイト設定を復元
         env:
           JTB_AFFILIATE_CONFIG: ${{ secrets.JTB_AFFILIATE_CONFIG }}
@@ -48,17 +117,13 @@ jobs:
             printf '%s' "$KNT_AFFILIATE_CONFIG" > config/knt_affiliate_links.json
           fi
 
-      - name: JTB クーポン監視
-        run: python jtb_coupon_monitor.py
-
-      - name: KNT クーポン監視
-        run: python knt_coupon_monitor.py
-
-      - name: HIS クーポン監視
-        run: python his_coupon_monitor.py
-
-      - name: JALパック クーポン監視
-        run: python jalpack_coupon_monitor.py --source official --fetch-method chrome
+      - name: 会社別クーポンチェック
+        run: |
+          args=(--scope "${{ steps.plan.outputs.scope }}")
+          if [ -n "${{ steps.plan.outputs.provider_id }}" ] && [ "${{ steps.plan.outputs.provider_id }}" != "all" ]; then
+            args+=(--provider-id "${{ steps.plan.outputs.provider_id }}")
+          fi
+          python provider_check_runner.py "${args[@]}"
 
       - name: ツイート文面生成
         run: python generate_tweets.py
@@ -83,6 +148,7 @@ jobs:
         run: python generate_dashboard.py
 
       - name: WordPress クーポンページ下書き更新
+        if: steps.plan.outputs.update_wp == 'true'
         env:
           YF_WP_URL: ${{ secrets.YF_WP_URL }}
           YF_WP_USER: ${{ secrets.YF_WP_USER }}
@@ -90,12 +156,24 @@ jobs:
         run: python wp_coupon_updater.py --site yakushimafan
 
       - name: WP更新結果通知
-        if: always()
+        if: always() && steps.plan.outputs.update_wp == 'true'
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
         run: python notify_wp_update.py
+
+      - name: 実行サマリー
+        if: always()
+        run: |
+          {
+            echo "## Coupon monitor"
+            echo ""
+            echo "- run: ${{ steps.plan.outputs.label }}"
+            echo "- scope: ${{ steps.plan.outputs.scope }}"
+            echo "- provider_id: ${{ steps.plan.outputs.provider_id }}"
+            echo "- update_wp: ${{ steps.plan.outputs.update_wp }}"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: コミット＆プッシュ
         run: |
@@ -106,6 +184,7 @@ jobs:
             knt_coupon_data/
             his_coupon_data/
             jalpack_coupon_data/
+            provider_check_data/
             html_output/
             tweets_output/
             dashboard/
@@ -124,7 +203,6 @@ jobs:
             exit 0
           fi
           git commit -m "📊 クーポンデータ更新 $(date +%Y-%m-%d)"
-          # リモートとの同期（最大3回リトライ）
           for i in 1 2 3; do
             git pull --rebase origin main && break
             echo "⚠️ rebase リトライ ($i/3)..."
