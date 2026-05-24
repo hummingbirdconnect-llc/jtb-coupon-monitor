@@ -1,0 +1,11 @@
+{
+  "provider_id": "knt",
+  "provider_label": "近畿日本ツーリスト",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-05-25T07:29:28.363940+09:00",
+  "completed_at": "2026-05-25T07:29:57.095480+09:00",
+  "coupon_count": 9,
+  "latest_file": "coupons_2026-05-25.json",
+  "error": ""
+}

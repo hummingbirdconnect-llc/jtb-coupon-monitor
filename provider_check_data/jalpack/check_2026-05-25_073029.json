@@ -1,0 +1,11 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-05-25T07:29:57.096437+09:00",
+  "completed_at": "2026-05-25T07:30:29.059193+09:00",
+  "coupon_count": 7,
+  "latest_file": "coupons_2026-05-25.json",
+  "error": ""
+}

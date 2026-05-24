@@ -1,0 +1,15 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "check_type": "snapshot_url_check",
+  "status": "success",
+  "started_at": "2026-05-25T07:31:09.443735+09:00",
+  "completed_at": "2026-05-25T07:31:09.443999+09:00",
+  "coupon_count": 16,
+  "latest_file": "coupons_2026-05-20.json",
+  "checked_url_count": 0,
+  "ok_url_count": 0,
+  "failed_url_count": 0,
+  "failed_urls": [],
+  "note": "記事抽出・手元マスター由来の既存URL生存確認です。新規クーポンの公式取得ではありません。"
+}
