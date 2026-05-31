@@ -1,53 +1,5 @@
 [
   {
-    "date": "2026-02-25",
-    "type": "❌ 消失",
-    "id": "kokunaidp-sp-hiroshima_kcp-769fe9",
-    "category": "クーポンコード",
-    "title": "広島お得割キャンペーン",
-    "area": "広島県"
-  },
-  {
-    "date": "2026-02-25",
-    "type": "❌ 消失",
-    "id": "yado-sp-kagoshima-fuyu-coupon-86353d",
-    "category": "獲得クーポン",
-    "title": "南の宝箱鹿児島「あったか宿泊割」キャンペーン",
-    "area": "鹿児島県"
-  },
-  {
-    "date": "2026-02-26",
-    "type": "❌ 消失",
-    "id": "yado-sp-tokyosaitama-coupon-6a995b",
-    "category": "獲得クーポン",
-    "title": "東京・埼玉宿泊割引キャンペーン",
-    "area": "埼玉県・東京都"
-  },
-  {
-    "date": "2026-02-26",
-    "type": "❌ 消失",
-    "id": "cpn-thanksweek-91eb8b",
-    "category": "クーポンコード",
-    "title": "近ツー感謝ウィーク",
-    "area": ""
-  },
-  {
-    "date": "2026-02-28",
-    "type": "❌ 消失",
-    "id": "kokunaidp-sp-kyushu-coupon-79c76f",
-    "category": "クーポンコード",
-    "title": "「いこっ、九州。～KOI　九州～」キャンペーン",
-    "area": "九州"
-  },
-  {
-    "date": "2026-03-02",
-    "type": "❌ 消失",
-    "id": "yado-sp-kagawa-kcp-3052c8",
-    "category": "クーポンコード",
-    "title": "香川県に泊まろうキャンペーン",
-    "area": "香川県"
-  },
-  {
     "date": "2026-03-03",
     "type": "🆕 新規",
     "id": "cpn-harutabi-d86ee7",
@@ -350,5 +302,13 @@
     "category": "クーポンコード",
     "title": "近ツー感謝ウィーク",
     "area": ""
+  },
+  {
+    "date": "2026-06-01",
+    "type": "🆕 新規",
+    "id": "sp-osaka-kcp-3e91ae",
+    "category": "獲得クーポン",
+    "title": "ほな、大阪行こか！キャンペーン",
+    "area": "大阪府"
   }
 ]
