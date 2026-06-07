@@ -1,29 +1,5 @@
 [
   {
-    "date": "2026-03-03",
-    "type": "🆕 新規",
-    "id": "cpn-harutabi-d86ee7",
-    "category": "クーポンコード",
-    "title": "春たびキャンペーン",
-    "area": ""
-  },
-  {
-    "date": "2026-03-03",
-    "type": "❌ 消失",
-    "id": "yado-sp-okinawa_kcp-389af4",
-    "category": "クーポンコード",
-    "title": "いざ！にっぽん旅 沖縄キャンペーン",
-    "area": "沖縄"
-  },
-  {
-    "date": "2026-03-03",
-    "type": "🆕 新規",
-    "id": "yado-sp-wakayama-kumano-kcp-6bb148",
-    "category": "獲得クーポン",
-    "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
-    "area": "和歌山県"
-  },
-  {
     "date": "2026-03-13",
     "type": "❌ 消失",
     "id": "cmpgn-2500331",
@@ -310,5 +286,21 @@
     "category": "獲得クーポン",
     "title": "ほな、大阪行こか！キャンペーン",
     "area": "大阪府"
+  },
+  {
+    "date": "2026-06-08",
+    "type": "🆕 新規",
+    "id": "cpn-natsuuri-449b65",
+    "category": "クーポンコード",
+    "title": "夏売りキャンペーン2026",
+    "area": ""
+  },
+  {
+    "date": "2026-06-08",
+    "type": "🆕 新規",
+    "id": "yado-sp-miyazaki-hinatabi-52df2b",
+    "category": "獲得クーポン",
+    "title": "ひなタビみやざき宿泊キャンペーン",
+    "area": "宮崎県"
   }
 ]

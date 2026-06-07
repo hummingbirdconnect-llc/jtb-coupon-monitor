@@ -1,6 +1,11 @@
 {
-  "last_updated": "2026-06-01T07:32:49.542083+09:00",
+  "last_updated": "2026-06-08T07:36:58.305191+09:00",
   "ids": {
+    "yado-sp-miyazaki-hinatabi-52df2b": {
+      "category": "獲得クーポン",
+      "title": "ひなタビみやざき宿泊キャンペーン",
+      "area": "宮崎県"
+    },
     "sp-osaka-kcp-3e91ae": {
       "category": "獲得クーポン",
       "title": "ほな、大阪行こか！キャンペーン",
@@ -30,6 +35,11 @@
       "category": "獲得クーポン",
       "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
       "area": "和歌山県"
+    },
+    "cpn-natsuuri-449b65": {
+      "category": "クーポンコード",
+      "title": "夏売りキャンペーン2026",
+      "area": ""
     },
     "yado-sp-hokkaido_cpn_kcp-140bae": {
       "category": "クーポンコード",
