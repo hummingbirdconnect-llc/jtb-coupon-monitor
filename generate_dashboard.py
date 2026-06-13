@@ -586,7 +586,7 @@ function statsHtml(rows) {{
 function renderGrid(container, rows, columns, options = {{}}) {{
   const sourceRows = rows || [];
   if (sourceRows.length === 0 && !options.dayFilter) {{
-    container.innerHTML += '<div class="empty">表示できるクーポンデータはまだありません。</div>';
+    container.innerHTML += `<div class="empty">${{escapeHtml(options.emptyText || '表示できるクーポンデータはまだありません。')}}</div>`;
     return;
   }}
   let currentFilter = 'all';
@@ -601,12 +601,16 @@ function renderGrid(container, rows, columns, options = {{}}) {{
       return '<button class="filter-btn day-filter-btn" data-day="' + escapeHtml(item.label) + '">' + escapeHtml(item.label) + ' ' + count + '</button>';
     }})
   ].join('') : '';
+  const sectionLinkButtons = (options.sectionLinks || []).map(item => {{
+    return '<button class="filter-btn section-link-btn" type="button" data-target="' + escapeHtml(item.target) + '">' + escapeHtml(item.label) + '</button>';
+  }}).join('');
 
   const toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
     ${{dayButtons}}
     ${{options.filter ? '<button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="active">配布中</button><button class="filter-btn" data-filter="ended">配布終了</button><button class="filter-btn" data-filter="review">要確認</button>' : ''}}
+    ${{sectionLinkButtons}}
     <button class="col-toggle-btn" type="button">列の表示</button>
     <button class="copy-btn" type="button">コピー</button>
   `;
@@ -658,6 +662,12 @@ function renderGrid(container, rows, columns, options = {{}}) {{
 
   toolbar.querySelector('.col-toggle-btn').addEventListener('click', () => colPanel.classList.toggle('open'));
   toolbar.querySelector('.copy-btn').addEventListener('click', event => copyTableData(filteredRows(), visibleCols, event.currentTarget));
+  toolbar.querySelectorAll('.section-link-btn').forEach(button => {{
+    button.addEventListener('click', () => {{
+      const target = document.getElementById(button.dataset.target || '');
+      if (target) target.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+    }});
+  }});
   toolbar.querySelectorAll('.day-filter-btn').forEach(button => {{
     button.addEventListener('click', () => {{
       currentDay = button.dataset.day;
@@ -666,11 +676,10 @@ function renderGrid(container, rows, columns, options = {{}}) {{
       rebuild();
     }});
   }});
-  toolbar.querySelectorAll('.filter-btn').forEach(button => {{
-    if (button.classList.contains('day-filter-btn')) return;
+  toolbar.querySelectorAll('.filter-btn[data-filter]').forEach(button => {{
     button.addEventListener('click', () => {{
       currentFilter = button.dataset.filter;
-      toolbar.querySelectorAll('.filter-btn:not(.day-filter-btn)').forEach(item => item.className = 'filter-btn');
+      toolbar.querySelectorAll('.filter-btn[data-filter]').forEach(item => item.className = 'filter-btn');
       if (currentFilter === 'active') button.classList.add('active-green');
       else if (currentFilter === 'ended') button.classList.add('active-red');
       else if (currentFilter === 'review') button.classList.add('active-yellow');
@@ -752,9 +761,17 @@ function renderProvider(container, provider) {{
   `;
   const section = container.querySelector('.section');
   attachManualActions(section, provider);
-  renderGrid(section, provider.rows, DATA.columns.coupons, {{ filter: true, limit: 50 }});
+  renderGrid(section, provider.rows, DATA.columns.coupons, {{
+    filter: true,
+    limit: 50,
+    sectionLinks: [
+      {{ label: '直近3日の変動比較', target: `${{provider.id}}-recent-changes` }},
+      {{ label: '変動ログ', target: `${{provider.id}}-change-log` }},
+    ],
+  }});
   const recentSection = document.createElement('div');
   recentSection.className = 'section';
+  recentSection.id = `${{provider.id}}-recent-changes`;
   recentSection.innerHTML = '<h2>直近3日の変動比較</h2>';
   container.appendChild(recentSection);
   renderGrid(recentSection, provider.recent_logs || [], DATA.columns.recent_logs, {{
@@ -762,13 +779,15 @@ function renderProvider(container, provider) {{
     dayFilterDates: DATA.recent_change_dates,
     limit: 50,
   }});
-  if (provider.logs && provider.logs.length > 0) {{
-    const logSection = document.createElement('div');
-    logSection.className = 'section';
-    logSection.innerHTML = '<h2>変動ログ</h2>';
-    container.appendChild(logSection);
-    renderGrid(logSection, provider.logs, DATA.columns.logs, {{ limit: 50 }});
-  }}
+  const logSection = document.createElement('div');
+  logSection.className = 'section';
+  logSection.id = `${{provider.id}}-change-log`;
+  logSection.innerHTML = '<h2>変動ログ</h2>';
+  container.appendChild(logSection);
+  renderGrid(logSection, provider.logs || [], DATA.columns.logs, {{
+    limit: 50,
+    emptyText: '表示できる変動ログはまだありません。',
+  }});
 }}
 
 function activate(tabId) {{
