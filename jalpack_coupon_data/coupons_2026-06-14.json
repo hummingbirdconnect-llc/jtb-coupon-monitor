@@ -1,0 +1,336 @@
+[
+  {
+    "id": "jalpack-domestic-birthday",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "バースデークーポン（国内）",
+    "discount": "15,000円割引 / 8,000円割引",
+    "area": "",
+    "type": "国内ダイナミックパッケージ",
+    "product_type": "国内ダイナミックパッケージ",
+    "booking_period": "お誕生月の前月～お誕生月の翌々月*まで *月末最終日を除く",
+    "travel_period": "2026年2月1日～4月30日 2026年3月1日～5月31日 2026年4月1日～6月30日 2026年5月1日～7月31日 2026年6月1日～8月31日 2026年7月1日～9月30日 誕生月 8月 9月 10月 11月 12月 1月",
+    "coupon_codes": [],
+    "conditions": [
+      "JMB会員",
+      "他クーポンと併用不可",
+      "予約前にクーポン獲得",
+      "対象商品: JALダイナミックパッケージ「航空券＋宿泊」（国内） ※現地参加プラン、JAL楽パック、JALじゃらんパック、JALヤフーパックを除く クーポン獲得＆",
+      "旅行代金条件: バースデークーポン15,000円 120,000円以上（1グループにつき）※オプション代金は除く バースデークーポン8,000円 65,000円以上（1グループにつき）※オプション代金は除く 回数制限： 各クーポン1回まで 割引併用",
+      "利用人数: 1名様以上（幼児は除く） バースデークーポン 8,000円 （1グループにつき） 旅行代金"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/birthday-cpn/index.html",
+    "source_type": "official_html",
+    "fetch_method": "chrome",
+    "last_checked": "2026-06-14",
+    "confidence": "high",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/birthday-cpn/index.html",
+    "detail_data": {
+      "discount": "15,000円割引 / 8,000円割引",
+      "conditions": [
+        "JMB会員",
+        "他クーポンと併用不可",
+        "予約前にクーポン獲得",
+        "対象商品: JALダイナミックパッケージ「航空券＋宿泊」（国内） ※現地参加プラン、JAL楽パック、JALじゃらんパック、JALヤフーパックを除く クーポン獲得＆",
+        "旅行代金条件: バースデークーポン15,000円 120,000円以上（1グループにつき）※オプション代金は除く バースデークーポン8,000円 65,000円以上（1グループにつき）※オプション代金は除く 回数制限： 各クーポン1回まで 割引併用",
+        "利用人数: 1名様以上（幼児は除く） バースデークーポン 8,000円 （1グループにつき） 旅行代金"
+      ],
+      "booking_period": "お誕生月の前月～お誕生月の翌々月*まで *月末最終日を除く",
+      "stay_period": "2026年2月1日～4月30日 2026年3月1日～5月31日 2026年4月1日～6月30日 2026年5月1日～7月31日 2026年6月1日～8月31日 2026年7月1日～9月30日 誕生月 8月 9月 10月 11月 12月 1月",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "jalpack-overseas-birthday",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "バースデークーポン（海外）",
+    "discount": "10,000円分",
+    "area": "",
+    "type": "海外ダイナミックパッケージ",
+    "product_type": "海外ダイナミックパッケージ",
+    "booking_period": "・",
+    "travel_period": "〕 お誕生月～お誕生月の4カ月後まで クーポンの使用期間・",
+    "coupon_codes": [],
+    "conditions": [
+      "JMB会員",
+      "他クーポンと併用不可",
+      "予約前にクーポン獲得",
+      "対象商品: JAL海外ダイナミックパッケージ（航空券＋宿泊） ViV（スペシャル商品含む） ツアーコンダクター（添乗員）・現地日本語ガイドと巡る海外ツアー",
+      "対象のお客さま: JALマイレージバンク（JMB）日本在住会員且つJMBツアーニュース受信"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/birthday-cpn/index.html",
+    "source_type": "official_html",
+    "fetch_method": "chrome",
+    "last_checked": "2026-06-14",
+    "confidence": "high",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/birthday-cpn/index.html",
+    "detail_data": {
+      "discount": "10,000円分",
+      "conditions": [
+        "JMB会員",
+        "他クーポンと併用不可",
+        "予約前にクーポン獲得",
+        "対象商品: JAL海外ダイナミックパッケージ（航空券＋宿泊） ViV（スペシャル商品含む） ツアーコンダクター（添乗員）・現地日本語ガイドと巡る海外ツアー",
+        "対象のお客さま: JALマイレージバンク（JMB）日本在住会員且つJMBツアーニュース受信"
+      ],
+      "booking_period": "・",
+      "stay_period": "〕 お誕生月～お誕生月の4カ月後まで クーポンの使用期間・",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "jalpack-domestic-timesale",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "期間限定タイムセールクーポン（国内）",
+    "discount": "最大30,000円割引",
+    "area": "",
+    "type": "国内ダイナミックパッケージ",
+    "product_type": "国内ダイナミックパッケージ",
+    "booking_period": "終了間際のご",
+    "travel_period": "2026年5月27日（水）～2027年4月25日（日）宿泊",
+    "coupon_codes": [],
+    "conditions": [
+      "JMB会員",
+      "先着順",
+      "対象施設・方面限定"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/index.html",
+    "source_type": "official_html",
+    "fetch_method": "chrome",
+    "last_checked": "2026-06-14",
+    "confidence": "high",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/index.html",
+    "detail_data": {
+      "discount": "最大30,000円割引",
+      "conditions": [
+        "JMB会員",
+        "先着順",
+        "対象施設・方面限定"
+      ],
+      "booking_period": "終了間際のご",
+      "stay_period": "2026年5月27日（水）～2027年4月25日（日）宿泊",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "jalpack-overseas-timesale",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "海外タイムセールクーポン",
+    "discount": "最大50,000円割引",
+    "area": "",
+    "type": "海外ダイナミックパッケージ",
+    "product_type": "海外ダイナミックパッケージ",
+    "booking_period": "2026年4月22日（水）10時00分～5月13日（水）23時59分",
+    "travel_period": "2025年4月8日（火）～6月30日（月）",
+    "coupon_codes": [],
+    "conditions": [
+      "公開コード型",
+      "対象方面・旅行代金条件あり",
+      "他割引クーポンと併用不可",
+      "対象商品: JAL海外ダイナミックパッケージ（海外航空券＋宿泊）"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale/index2.html/",
+    "source_type": "official_html",
+    "fetch_method": "chrome",
+    "last_checked": "2026-06-14",
+    "confidence": "high",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale/index2.html/",
+    "detail_data": {
+      "discount": "最大50,000円割引",
+      "conditions": [
+        "公開コード型",
+        "対象方面・旅行代金条件あり",
+        "他割引クーポンと併用不可",
+        "対象商品: JAL海外ダイナミックパッケージ（海外航空券＋宿泊）"
+      ],
+      "booking_period": "2026年4月22日（水）10時00分～5月13日（水）23時59分",
+      "stay_period": "2025年4月8日（火）～6月30日（月）",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "jalpack-lsp-star",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "会員ランク",
+    "title": "LSP Star特典クーポン",
+    "discount": "5,000円割引",
+    "area": "",
+    "type": "国内ダイナミックパッケージ",
+    "product_type": "国内ダイナミックパッケージ",
+    "booking_period": "・",
+    "travel_period": "3月10日時点*で特典",
+    "coupon_codes": [],
+    "conditions": [
+      "Starグレード会員",
+      "旅行代金80,000円以上",
+      "他クーポンと併用可",
+      "対象商品: JALダイナミックパッケージ（国内航空券＋宿泊） ※現地参加プラン、JAL楽パック、JALじゃらんパック、JALヤフーパックを除く クーポン獲得 /",
+      "旅行代金条件: 80,000円以上（1グループにつき）※オプション代金除く",
+      "利用人数: 1名以上 ※幼児は除く",
+      "割引併用: 他の併用可能な割引クーポンと一緒にご",
+      "対象のお客さま: JMB elite、JMB elite plus、JGC Three Star、JGC Four Star、JGC Five Star、JGC Six Star のお客さま"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/lsp-coupon/index.html",
+    "source_type": "official_html",
+    "fetch_method": "chrome",
+    "last_checked": "2026-06-14",
+    "confidence": "high",
+    "display_type": "yellow_list",
+    "placement_hint": "会員ランクのJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/lsp-coupon/index.html",
+    "detail_data": {
+      "discount": "5,000円割引",
+      "conditions": [
+        "Starグレード会員",
+        "旅行代金80,000円以上",
+        "他クーポンと併用可",
+        "対象商品: JALダイナミックパッケージ（国内航空券＋宿泊） ※現地参加プラン、JAL楽パック、JALじゃらんパック、JALヤフーパックを除く クーポン獲得 /",
+        "旅行代金条件: 80,000円以上（1グループにつき）※オプション代金除く",
+        "利用人数: 1名以上 ※幼児は除く",
+        "割引併用: 他の併用可能な割引クーポンと一緒にご",
+        "対象のお客さま: JMB elite、JMB elite plus、JGC Three Star、JGC Four Star、JGC Five Star、JGC Six Star のお客さま"
+      ],
+      "booking_period": "・",
+      "stay_period": "3月10日時点*で特典",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "jalpack-hayakime",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "公式クーポン",
+    "title": "早決プラン55/60/90",
+    "discount": "1グループにつき3,000円割引",
+    "area": "",
+    "type": "国内ダイナミックパッケージ",
+    "product_type": "国内ダイナミックパッケージ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "対象ホテル・対象商品限定",
+      "出発55/60/90日前まで",
+      "対象商品: JALダイナミックパッケージ「航空券＋宿泊」（国内） ※現地参加プラン、JAL楽パック、JALじゃらんパック、JALヤフーパックを除く",
+      "旅行代金条件: 10～12月",
+      "割引併用: 条件：他の併用可能な割引クーポンと一緒にご",
+      "対象のお客さま: 対象"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/",
+    "source_type": "official_html",
+    "fetch_method": "chrome",
+    "last_checked": "2026-06-14",
+    "confidence": "high",
+    "display_type": "yellow_list",
+    "placement_hint": "公式クーポンのJALパッククーポン一覧",
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/",
+    "detail_data": {
+      "discount": "1グループにつき3,000円割引",
+      "conditions": [
+        "対象ホテル・対象商品限定",
+        "出発55/60/90日前まで",
+        "対象商品: JALダイナミックパッケージ「航空券＋宿泊」（国内） ※現地参加プラン、JAL楽パック、JALじゃらんパック、JALヤフーパックを除く",
+        "旅行代金条件: 10～12月",
+        "割引併用: 条件：他の併用可能な割引クーポンと一緒にご",
+        "対象のお客さま: 対象"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "jalpack-jalcard",
+    "provider": "jalpack",
+    "provider_label": "JALパック",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "jal-pack-coupon",
+    "category": "カード連携",
+    "title": "JALカード会員限定ツアー割引",
+    "discount": "2%OFF",
+    "area": "",
+    "type": "国内・海外ダイナミックパッケージ",
+    "product_type": "国内・海外ダイナミックパッケージ",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "JALカード会員",
+      "専用ページからのWEB予約"
+    ],
+    "source_url": "https://www.jal.co.jp/jp/ja/jalcard/service/",
+    "source_type": "official_html",
+    "fetch_method": "chrome",
+    "last_checked": "2026-06-14",
+    "confidence": "high",
+    "display_type": "yellow_list",
+    "placement_hint": "カード連携のJALパッククーポン一覧",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jal.co.jp/jp/ja/jalcard/service/",
+    "detail_data": {
+      "discount": "2%OFF",
+      "conditions": [
+        "JALカード会員",
+        "専用ページからのWEB予約"
+      ],
+      "booking_period": "",
+      "stay_period": "",
+      "coupon_codes": [],
+      "notes": []
+    }
+  }
+]
