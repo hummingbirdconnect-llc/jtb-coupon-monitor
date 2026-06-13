@@ -19,7 +19,11 @@ REGISTRY = ROOT / "config" / "provider_registry.json"
 CHECK_STATUS_ROOT = ROOT / "provider_check_data"
 WORKFLOW_URL = "https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions/workflows/coupon-monitor.yml"
 REPOSITORY = "hummingbirdconnect-llc/jtb-coupon-monitor"
-DAILY_PROVIDER_IDS = {"his", "jtb"}
+RECENT_DAY_FILTERS = [
+    ("today", "今日", 0),
+    ("yesterday", "昨日", 1),
+    ("day_before_yesterday", "一昨日", 2),
+]
 
 COVERAGE_LABELS = {
     "auto_daily": "自動取得",
@@ -62,6 +66,7 @@ SUMMARY_COLUMNS = [
 ]
 
 LOG_COLUMNS = ["日付", "種別", "カテゴリ", "ID", "タイトル", "エリア/割引"]
+RECENT_LOG_COLUMNS = ["対象日", "日付", "会社", "種別", "カテゴリ", "ID", "タイトル", "エリア/割引"]
 
 
 def load_registry() -> list[dict[str, Any]]:
@@ -114,7 +119,7 @@ def load_provider_check(provider_id: str) -> dict[str, Any]:
 def provider_frequency(provider: dict[str, Any]) -> tuple[str, str]:
     frequency = provider.get("check_frequency")
     if not frequency:
-        frequency = "daily" if provider["id"] in DAILY_PROVIDER_IDS else "weekly"
+        frequency = "daily"
     labels = {
         "daily": "毎日チェック",
         "weekly": "週1回チェック",
@@ -214,6 +219,41 @@ def format_log_rows(change_log: list[dict[str, Any]]) -> list[dict[str, str]]:
     return rows
 
 
+def build_recent_day_filters() -> list[dict[str, str]]:
+    base_date = datetime.now(JST).date()
+    return [
+        {
+            "key": key,
+            "label": label,
+            "date": (base_date - timedelta(days=offset)).isoformat(),
+        }
+        for key, label, offset in RECENT_DAY_FILTERS
+    ]
+
+
+def attach_recent_logs(providers: list[dict[str, Any]], day_filters: list[dict[str, str]]) -> list[dict[str, str]]:
+    label_by_date = {item["date"]: item["label"] for item in day_filters}
+    all_rows: list[dict[str, str]] = []
+
+    for provider in providers:
+        recent_rows: list[dict[str, str]] = []
+        for row in provider.get("logs", []):
+            date = row.get("日付", "")
+            label = label_by_date.get(date)
+            if not label:
+                continue
+            recent_row = {
+                "対象日": label,
+                "会社": provider["label"],
+                **row,
+            }
+            recent_rows.append(recent_row)
+            all_rows.append(recent_row)
+        provider["recent_logs"] = recent_rows
+
+    return sorted(all_rows, key=lambda row: (row.get("日付", ""), row.get("会社", "")), reverse=True)
+
+
 def next_action(provider: dict[str, Any], rows: list[dict[str, str]]) -> str:
     status = provider.get("coverage_status", "")
     if status == "auto_daily":
@@ -289,14 +329,19 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
 
 def build_dashboard_data() -> dict[str, Any]:
     providers = [build_provider_payload(provider) for provider in load_registry()]
+    recent_day_filters = build_recent_day_filters()
+    recent_change_rows = attach_recent_logs(providers, recent_day_filters)
     return {
         "generated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M JST"),
         "providers": providers,
         "summary_rows": [provider["summary"] for provider in providers],
+        "recent_change_dates": recent_day_filters,
+        "recent_change_rows": recent_change_rows,
         "columns": {
             "summary": SUMMARY_COLUMNS,
             "coupons": COMMON_COLUMNS,
             "logs": LOG_COLUMNS,
+            "recent_logs": RECENT_LOG_COLUMNS,
         },
     }
 
@@ -367,6 +412,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .status-active {{ background: #e9f7ef; color: #146c43; }}
 .status-ended {{ background: #fdecef; color: #a52834; }}
 .status-review {{ background: #fff5d6; color: #7a5200; }}
+.day-badge {{ display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; background: #eef2f7; color: #4c596a; white-space: nowrap; }}
+.day-badge.today {{ background: #e9f7ef; color: #146c43; }}
+.day-badge.yesterday {{ background: #eaf3ff; color: #0f5caa; }}
+.day-badge.day-before {{ background: #fff5d6; color: #7a5200; }}
 .empty {{ color: #7a8696; padding: 20px; background: #fff; border: 1px solid #dfe4ea; border-radius: 8px; }}
 @media (max-width: 768px) {{
   .tab-content {{ padding: 12px; }}
@@ -397,6 +446,12 @@ function statusCell(value) {{
   if (value === '配布終了') return gridjs.html('<span class="status-ended">配布終了</span>');
   if (value) return gridjs.html('<span class="status-review">' + escapeHtml(value) + '</span>');
   return '';
+}}
+
+function dayCell(value) {{
+  const classes = {{ '今日': 'today', '昨日': 'yesterday', '一昨日': 'day-before' }};
+  const suffix = classes[value] || '';
+  return gridjs.html(`<span class="day-badge ${{suffix}}">${{escapeHtml(value || '')}}</span>`);
 }}
 
 function linkCell(value) {{
@@ -506,8 +561,10 @@ function attachManualActions(section, provider) {{
 function buildColumns(columns) {{
   return columns.map(col => {{
     const base = {{ name: col }};
+    if (col === '対象日') {{ base.formatter = cell => dayCell(cell); base.width = '86px'; }}
     if (col === '詳細URL') {{ base.formatter = cell => linkCell(cell); base.width = '70px'; }}
     if (col === '配布状況') base.formatter = cell => statusCell(cell);
+    if (col === '会社') base.attributes = () => ({{ style: 'min-width:130px' }});
     if (['タイトル', '次アクション'].includes(col)) base.attributes = () => ({{ style: 'min-width:260px' }});
     if (col === '条件') base.attributes = () => ({{ style: 'min-width:300px' }});
     return base;
@@ -527,17 +584,28 @@ function statsHtml(rows) {{
 }}
 
 function renderGrid(container, rows, columns, options = {{}}) {{
-  if (!rows || rows.length === 0) {{
+  const sourceRows = rows || [];
+  if (sourceRows.length === 0 && !options.dayFilter) {{
     container.innerHTML += '<div class="empty">表示できるクーポンデータはまだありません。</div>';
     return;
   }}
   let currentFilter = 'all';
+  let currentDay = 'all';
   let visibleCols = [...columns];
   let grid = null;
+  const dayFilterDates = options.dayFilterDates || [];
+  const dayButtons = options.dayFilter ? [
+    '<button class="filter-btn day-filter-btn active" data-day="all">3日比較 ' + sourceRows.length + '</button>',
+    ...dayFilterDates.map(item => {{
+      const count = sourceRows.filter(row => row['対象日'] === item.label).length;
+      return '<button class="filter-btn day-filter-btn" data-day="' + escapeHtml(item.label) + '">' + escapeHtml(item.label) + ' ' + count + '</button>';
+    }})
+  ].join('') : '';
 
   const toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
+    ${{dayButtons}}
     ${{options.filter ? '<button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="active">配布中</button><button class="filter-btn" data-filter="ended">配布終了</button><button class="filter-btn" data-filter="review">要確認</button>' : ''}}
     <button class="col-toggle-btn" type="button">列の表示</button>
     <button class="copy-btn" type="button">コピー</button>
@@ -570,10 +638,14 @@ function renderGrid(container, rows, columns, options = {{}}) {{
   container.appendChild(gridDiv);
 
   function filteredRows() {{
-    if (currentFilter === 'active') return rows.filter(row => row['配布状況'] === '配布中');
-    if (currentFilter === 'ended') return rows.filter(row => row['配布状況'] === '配布終了');
-    if (currentFilter === 'review') return rows.filter(row => row['配布状況'] && !['配布中', '配布終了'].includes(row['配布状況']));
-    return rows;
+    let body = [...sourceRows];
+    if (options.dayFilter && currentDay !== 'all') {{
+      body = body.filter(row => row['対象日'] === currentDay);
+    }}
+    if (currentFilter === 'active') return body.filter(row => row['配布状況'] === '配布中');
+    if (currentFilter === 'ended') return body.filter(row => row['配布状況'] === '配布終了');
+    if (currentFilter === 'review') return body.filter(row => row['配布状況'] && !['配布中', '配布終了'].includes(row['配布状況']));
+    return body;
   }}
 
   function rebuild() {{
@@ -586,10 +658,19 @@ function renderGrid(container, rows, columns, options = {{}}) {{
 
   toolbar.querySelector('.col-toggle-btn').addEventListener('click', () => colPanel.classList.toggle('open'));
   toolbar.querySelector('.copy-btn').addEventListener('click', event => copyTableData(filteredRows(), visibleCols, event.currentTarget));
+  toolbar.querySelectorAll('.day-filter-btn').forEach(button => {{
+    button.addEventListener('click', () => {{
+      currentDay = button.dataset.day;
+      toolbar.querySelectorAll('.day-filter-btn').forEach(item => item.className = 'filter-btn day-filter-btn');
+      button.classList.add('active');
+      rebuild();
+    }});
+  }});
   toolbar.querySelectorAll('.filter-btn').forEach(button => {{
+    if (button.classList.contains('day-filter-btn')) return;
     button.addEventListener('click', () => {{
       currentFilter = button.dataset.filter;
-      toolbar.querySelectorAll('.filter-btn').forEach(item => item.className = 'filter-btn');
+      toolbar.querySelectorAll('.filter-btn:not(.day-filter-btn)').forEach(item => item.className = 'filter-btn');
       if (currentFilter === 'active') button.classList.add('active-green');
       else if (currentFilter === 'ended') button.classList.add('active-red');
       else if (currentFilter === 'review') button.classList.add('active-yellow');
@@ -600,13 +681,14 @@ function renderGrid(container, rows, columns, options = {{}}) {{
 
   grid = new gridjs.Grid({{
     columns: buildColumns(visibleCols),
-    data: rows.map(row => visibleCols.map(col => row[col] || '')),
+    data: filteredRows().map(row => visibleCols.map(col => row[col] || '')),
     search: true,
     sort: true,
     pagination: {{ limit: options.limit || 50 }},
     fixedHeader: true,
     language: {{
       search: {{ placeholder: '検索...' }},
+      noRecordsFound: '該当する変動はありません',
       pagination: {{ previous: '前へ', next: '次へ', showing: '', of: '/', to: '〜', results: () => '件' }},
     }},
   }});
@@ -617,8 +699,9 @@ function renderSummary(container) {{
   const totalProviders = DATA.providers.length;
   const withRows = DATA.providers.filter(provider => provider.rows.length > 0).length;
   const dailyProviders = DATA.providers.filter(provider => provider.check_frequency === 'daily').length;
-  const weeklyProviders = DATA.providers.filter(provider => provider.check_frequency === 'weekly').length;
   const totalCoupons = DATA.providers.reduce((sum, provider) => sum + provider.rows.length, 0);
+  const recentChanges = DATA.recent_change_rows.length;
+  const dateLabels = DATA.recent_change_dates.map(item => `${{item.label}}: ${{item.date}}`).join(' / ');
   container.innerHTML = `
     <div class="section">
       <h2>全社サマリー</h2>
@@ -626,12 +709,24 @@ function renderSummary(container) {{
         <span class="stat">対象会社 ${{totalProviders}} 社</span>
         <span class="stat active">データあり ${{withRows}} 社</span>
         <span class="stat">毎日チェック ${{dailyProviders}} 社</span>
-        <span class="stat">週1回チェック ${{weeklyProviders}} 社</span>
         <span class="stat">総クーポン ${{totalCoupons}} 件</span>
+        <span class="stat review">直近3日変動 ${{recentChanges}} 件</span>
       </div>
     </div>
   `;
   renderGrid(container.querySelector('.section'), DATA.summary_rows, DATA.columns.summary, {{ limit: 50 }});
+  const changeSection = document.createElement('div');
+  changeSection.className = 'section';
+  changeSection.innerHTML = `
+    <h2>直近3日の変動比較</h2>
+    <div class="note">対象日: ${{escapeHtml(dateLabels)}}</div>
+  `;
+  container.appendChild(changeSection);
+  renderGrid(changeSection, DATA.recent_change_rows, DATA.columns.recent_logs, {{
+    dayFilter: true,
+    dayFilterDates: DATA.recent_change_dates,
+    limit: 50,
+  }});
 }}
 
 function renderProvider(container, provider) {{
@@ -658,6 +753,15 @@ function renderProvider(container, provider) {{
   const section = container.querySelector('.section');
   attachManualActions(section, provider);
   renderGrid(section, provider.rows, DATA.columns.coupons, {{ filter: true, limit: 50 }});
+  const recentSection = document.createElement('div');
+  recentSection.className = 'section';
+  recentSection.innerHTML = '<h2>直近3日の変動比較</h2>';
+  container.appendChild(recentSection);
+  renderGrid(recentSection, provider.recent_logs || [], DATA.columns.recent_logs, {{
+    dayFilter: true,
+    dayFilterDates: DATA.recent_change_dates,
+    limit: 50,
+  }});
   if (provider.logs && provider.logs.length > 0) {{
     const logSection = document.createElement('div');
     logSection.className = 'section';

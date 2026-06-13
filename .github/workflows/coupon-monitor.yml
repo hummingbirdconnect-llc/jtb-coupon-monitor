@@ -3,7 +3,7 @@ name: Coupon Monitor
 on:
   schedule:
     - cron: '0 21 * * *'    # 毎日 6:00 JST: HIS / JTB
-    - cron: '30 21 * * 0'   # 毎週月曜 6:30 JST: HIS / JTB 以外
+    - cron: '30 21 * * *'   # 毎日 6:30 JST: HIS / JTB 以外
   workflow_dispatch:
     inputs:
       provider_id:
@@ -91,7 +91,7 @@ jobs:
               echo "scope=weekly" >> "$GITHUB_OUTPUT"
               echo "provider_id=" >> "$GITHUB_OUTPUT"
               echo "update_wp=false" >> "$GITHUB_OUTPUT"
-              echo "label=scheduled weekly: non-daily providers" >> "$GITHUB_OUTPUT"
+              echo "label=scheduled daily: non-primary providers" >> "$GITHUB_OUTPUT"
             fi
           else
             echo "scope=all" >> "$GITHUB_OUTPUT"
