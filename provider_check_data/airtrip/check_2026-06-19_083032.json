@@ -1,0 +1,15 @@
+{
+  "provider_id": "airtrip",
+  "provider_label": "エアトリ",
+  "check_type": "snapshot_url_check",
+  "status": "success",
+  "started_at": "2026-06-19T08:30:28.041556+09:00",
+  "completed_at": "2026-06-19T08:30:32.143423+09:00",
+  "coupon_count": 15,
+  "latest_file": "coupons_2026-06-18.json",
+  "checked_url_count": 3,
+  "ok_url_count": 3,
+  "failed_url_count": 0,
+  "failed_urls": [],
+  "note": "記事抽出・手元マスター由来の既存URL生存確認です。新規クーポンの公式取得ではありません。"
+}

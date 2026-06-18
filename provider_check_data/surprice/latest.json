@@ -1,0 +1,15 @@
+{
+  "provider_id": "surprice",
+  "provider_label": "Surprice",
+  "check_type": "snapshot_url_check",
+  "status": "success",
+  "started_at": "2026-06-19T08:30:26.953875+09:00",
+  "completed_at": "2026-06-19T08:30:26.954073+09:00",
+  "coupon_count": 7,
+  "latest_file": "coupons_2026-06-18.json",
+  "checked_url_count": 0,
+  "ok_url_count": 0,
+  "failed_url_count": 0,
+  "failed_urls": [],
+  "note": "記事抽出・手元マスター由来の既存URL生存確認です。新規クーポンの公式取得ではありません。"
+}

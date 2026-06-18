@@ -1,0 +1,15 @@
+{
+  "provider_id": "jcation",
+  "provider_label": "Jcation",
+  "check_type": "snapshot_url_check",
+  "status": "success",
+  "started_at": "2026-06-19T08:30:32.144587+09:00",
+  "completed_at": "2026-06-19T08:30:35.608729+09:00",
+  "coupon_count": 4,
+  "latest_file": "coupons_2026-06-18.json",
+  "checked_url_count": 3,
+  "ok_url_count": 3,
+  "failed_url_count": 0,
+  "failed_urls": [],
+  "note": "記事抽出・手元マスター由来の既存URL生存確認です。新規クーポンの公式取得ではありません。"
+}
