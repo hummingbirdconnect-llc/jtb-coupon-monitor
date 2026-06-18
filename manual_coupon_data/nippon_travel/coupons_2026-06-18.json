@@ -1,0 +1,281 @@
+[
+  {
+    "id": "nippon_travel-86692cf38d",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "日本旅行で今使えるクーポン・割引を一覧で確認する",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "最初に見る場所は、日本旅行の公式クーポン特集です。商品別、会員限定、LINE・アプリ限定の入口を先に分けると、自分に関係ある割引だけを拾いやすくなります。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-9928c2c41f",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "公式一覧で最初に見るクーポンを分ける",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "クーポン一覧では、旅行タイプごとに見る場所を変えるのが近道です。JRセット、宿泊だけ、飛行機＋宿泊、会員特典の順に確認すると、不要な情報に振り回されにくくなります。 公式クーポン特集 向いている人: 日本旅行で使える割引をまとめて確認したい人 見る条件: 対象商品、予約期間、出発期間、併用可否 注意: 会員ログイン後に見えるマイクーポンもあります 夏旅2026関連クーポン 対象: JR＋宿泊、国内宿泊、航空＋宿泊 見る条件: 商品ごとの割引上限と対象期間 注意: 同じ夏旅でも、対象商品はそれぞれ違います LINE・アプリ・メルマガ特典 対象: LINE予約、ID連携、アプリ予約、誕生日マイクーポン 見る条件: 会員登録、メルマガ設定、予約経路 注意: 他のクーポンと併用できない場合があります"
+    ],
+    "source_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3763413&pid=892632240&vc_url=https%3A%2F%2Fwww.nta.co.jp%2Fcpn%2F",
+    "detail_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3763413&pid=892632240&vc_url=https%3A%2F%2Fwww.nta.co.jp%2Fcpn%2F",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-276d7c8d5c",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "日本旅行の夏旅2026クーポンは商品別に確認する",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "夏旅2026のクーポンは、JR＋宿泊、国内宿泊、航空＋宿泊で入口が分かれます。旅行日程が対象内でも、商品タイプが違うと使えないことがあります。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-96ffa6c761",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "日本旅行のLINE・アプリ・メルマガ限定割引を取り逃さない",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "1%",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "大きなクーポンが見つからない時でも、LINEやアプリ、メルマガの特典が使えることがあります。予約経路や会員設定が条件になるため、先に違いを分けて見ましょう。 LINEからの予約限定1%割引 向いている人: LINE経由で日本旅行の予約を進める人 見る条件: 予約経路、対象商品、併用不可 LINE ID連携500円クーポン 向いている人: LINE友だち登録とID連携までできる人 見る条件: ID連携、対象商品、利用条件 アプリからの予約限定1%割引 向いている人: 日本旅行アプリで予約を完了できる人 見る条件: アプリ予約、対象商品、他クーポンとの併用可否 メルマガ会員向け誕生日マイクーポン 向いている人: 誕生月が近く、メルマガ設定を確認できる人 見る条件: 会員登録、メルマガ受信設定、最低旅行代金"
+    ],
+    "source_url": "https://www.nta.co.jp/line/",
+    "detail_url": "https://www.nta.co.jp/line/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-4c1e1af02c",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "LINE予約割引とID連携クーポンを分けて見る",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "1%",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "公式クーポン特集では、LINEからの予約限定1%割引と、LINE友だち登録＆ID連携で使える500円分クーポンが案内されています。どちらもLINE関連ですが、予約経路とID連携で条件が違います。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-8bb62d3407",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "メルマガは誕生日マイクーポンの受け取り条件を確認する",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "誕生日マイクーポンは、メルマガ会員向けに案内される特典です。誕生月が近い人は、会員登録だけでなくメルマガ受信設定まで確認しておくと見落としにくくなります。 LINEやアプリの割引は、派手ではなくても使える場面があります。大きなクーポンがない時の保険として見ておくと安心です。 LINEやアプリを使う予定があるなら、公式一覧で対象条件を見てから予約へ進みましょう。 LINE・アプリ限定割引を確認する"
+    ],
+    "source_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3763413&pid=892632240&vc_url=https%3A%2F%2Fwww.nta.co.jp%2Fcpn%2F",
+    "detail_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3763413&pid=892632240&vc_url=https%3A%2F%2Fwww.nta.co.jp%2Fcpn%2F",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-5a9df2c13d",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "日本旅行の誕生日マイクーポンは対象金額と受け取り方を見る",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "誕生日マイクーポンは、条件が合う人にはかなり見ておきたい特典です。国内旅行と海外旅行で割引額も最低旅行代金も違うため、先に自分の予約額と照らし合わせてください。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-0feb373b5c",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "日本旅行クーポンを獲得して予約画面で使う手順",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "日本旅行のマイクーポンは、会員ログイン後に獲得し、予約画面で選択する流れが基本です。公式のマイクーポンサービス案内でも、最終確認画面でクーポンを選ぶ流れが案内されています。"
+    ],
+    "source_url": "https://www.nta.co.jp/mycoupon/",
+    "detail_url": "https://www.nta.co.jp/mycoupon/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  },
+  {
+    "id": "nippon_travel-487c963eed",
+    "provider": "nippon_travel",
+    "provider_label": "日本旅行",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "マイクーポンを獲得する手順",
+    "category": "nippon-travel-agency-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "STEP会員登録またはログインをする 日本旅行会員としてログインし、マイクーポンを獲得できる状態にしておきます。会員予約ではない場合、獲得済みクーポンが使えないことがあります。 STEP公式クーポンページで使いたいクーポンを探す 商品カテゴリ、目的地、会員限定などを見ながら、自分の旅行に近いクーポンを選びます。割引額だけでなく、対象商品も一緒に見てください。 STEP対象商品・期間・最低旅行代金を確認する 予約対象期間、出発対象期間、最低旅行代金、併用不可を確認します。ここが合わないと、予約画面でクーポンを選べない可能性があります。 STEPマイクーポンを獲得する 条件が合いそうなクーポンを獲得してから、対象の予約へ進みます。予約後にあとから適用する前提にしない方が安心です。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+    }
+  }
+]

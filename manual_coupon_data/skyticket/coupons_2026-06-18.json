@@ -1,0 +1,188 @@
+[
+  {
+    "id": "skyticket-62ffb3838c",
+    "provider": "skyticket",
+    "provider_label": "スカイチケット",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "スカイチケットのクーポン・割引を一覧で確認する",
+    "category": "skyticket-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "スカイチケットで最初に見るなら、航空券向けのクーポンコード、ホテルの月初タイムセール、会員向けのskyticketプレミアムを分けると探しやすくなります。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"
+    }
+  },
+  {
+    "id": "skyticket-f6c25937ce",
+    "provider": "skyticket",
+    "provider_label": "スカイチケット",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "初回・LINE・学割は公式掲載がある時だけ見る",
+    "category": "skyticket-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "関連検索では、初回クーポン、新規登録、LINE、メルマガ、学割なども見られます。ただし、これらをスカイチケット独自のクーポンとして常に使えるとは断定できません。 未確認情報の見方 初回や新規登録の特典は、予約画面や公式キャンペーンページに表示されている時だけ候補にします。学割や障がい者割引は、航空会社やバス会社の運賃条件として確認する方が正確です。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"
+    }
+  },
+  {
+    "id": "skyticket-cc22a22654",
+    "provider": "skyticket",
+    "provider_label": "スカイチケット",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "航空券・ホテル・レンタカーのキャンペーンを探す",
+    "category": "skyticket-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "スカイチケットは航空券だけでなく、ホテル、レンタカー、高速バス、フェリーなども扱っています。クーポン記事では商品紹介を広げすぎず、予約前に見るべき割引に絞って確認します。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"
+    }
+  },
+  {
+    "id": "skyticket-e15d4c5f68",
+    "provider": "skyticket",
+    "provider_label": "スカイチケット",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "航空券はクーポンコードと総額を見る",
+    "category": "skyticket-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "スペシャルクーポンのように、コードを入力して使う割引は、対象航空券と予約画面での反映を確認します。コードを入れただけで安心せず、申込内容確認画面で割引後の総額まで見るのが大切です。 航空券は、取扱料金や支払い方法で総額の印象が変わることがあります。割引額だけでなく、最終的に支払う金額で判断しましょう。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"
+    }
+  },
+  {
+    "id": "skyticket-bbb05f145a",
+    "provider": "skyticket",
+    "provider_label": "スカイチケット",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "ホテルは月初タイムセールと宿泊期間を見る",
+    "category": "skyticket-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "ホテルは、月初タイムセールのように掲載期間と宿泊期間が分かれていることがあります。泊まりたい日が対象期間に入っているか、対象ホテルの割引後料金が納得できるかを見てください。 ホテルの割引は、宿泊日と対象ホテルが合うかで判断します。"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"
+    }
+  },
+  {
+    "id": "skyticket-5681259d72",
+    "provider": "skyticket",
+    "provider_label": "スカイチケット",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "スカイチケットのクーポンコードを予約画面で使う手順",
+    "category": "skyticket-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "クーポンコードや会員特典を使う時は、予約完了前に割引が反映されているかを確認します。航空券は特に、予約後の適用を前提にしない方が安全です。 STEP予約商品を選ぶ スカイチケット公式サイトで、航空券やホテルなど予約したい商品を選びます。 STEP条件を入力する 出発地、到着地、日程、人数などを入力し、予約したい航空券やプランを選びます。 STEPクーポンコードを入力する クーポンコードがある場合は、予約画面の入力欄にコードを入れます。 STEP割引後の総額を確認する 申込内容確認画面で、割引後の総額、支払い条件、キャンセル条件を見てから予約します。 コードを入れても、対象外なら割引が反映されないことがあります。入力したら、最後に「割引後の金額になっているか」まで見るのが大事です。 クーポンコードを使うなら、予約完了前の確認画面で割引後の総額まで見ておきたいですね。 ＼コード入力前に料金差を見ておく／ クーポン入力前にスカイチケットの料金を確認する"
+    ],
+    "source_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3763413&pid=892632255&vc_url=https%3A%2F%2Fskyticket.jp%2F%3Fad%3DVC_sky_dom",
+    "detail_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3763413&pid=892632255&vc_url=https%3A%2F%2Fskyticket.jp%2F%3Fad%3DVC_sky_dom",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"
+    }
+  }
+]

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "jcation-c0ed1a5f81",
+    "provider": "jcation",
+    "provider_label": "Jcation",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "WEB予約限定の割引プラン",
+    "category": "jcation-coupon",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://jcation.com/rentacar/",
+    "detail_url": "https://jcation.com/rentacar/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/Jcation/coupon-migration-20260612/jcation-coupon.html",
+      "headers": [
+        "種類",
+        "見る場所",
+        "予約前の判断"
+      ]
+    }
+  },
+  {
+    "id": "jcation-2b1706fa7b",
+    "provider": "jcation",
+    "provider_label": "Jcation",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "キャンペーンコード",
+    "category": "jcation-coupon",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://jcation.com/",
+    "detail_url": "https://jcation.com/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/Jcation/coupon-migration-20260612/jcation-coupon.html",
+      "headers": [
+        "種類",
+        "見る場所",
+        "予約前の判断"
+      ]
+    }
+  },
+  {
+    "id": "jcation-834ad79cc5",
+    "provider": "jcation",
+    "provider_label": "Jcation",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "パック予約の割引",
+    "category": "jcation-coupon",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "https://jcation.com/tour/",
+    "detail_url": "https://jcation.com/tour/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/Jcation/coupon-migration-20260612/jcation-coupon.html",
+      "headers": [
+        "種類",
+        "見る場所",
+        "予約前の判断"
+      ]
+    }
+  },
+  {
+    "id": "jcation-74b2e9dbe5",
+    "provider": "jcation",
+    "provider_label": "Jcation",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "終了済みキャンペーン",
+    "category": "jcation-coupon",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/Jcation/coupon-migration-20260612/jcation-coupon.html",
+      "headers": [
+        "種類",
+        "見る場所",
+        "予約前の判断"
+      ]
+    }
+  }
+]

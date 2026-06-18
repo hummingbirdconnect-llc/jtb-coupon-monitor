@@ -220,6 +220,186 @@
       "note": "Welltrip記事HTML由来の暫定データ。会員割引・直前割型で、クーポンコードとは別データ型が必要。"
     },
     {
+      "id": "yukoyuko",
+      "label": "ゆこゆこネット",
+      "site_targets": ["welltrip", "yakushimafan"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/yukoyuko",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/ゆこゆこネット/reputation-migration-20260604/yukoyuko-reputation.html"],
+      "note": "Welltrip調査データと既存記事由来の暫定枠。クーポン記事・公式取得元は未接続のため、まず手動確認対象。"
+    },
+    {
+      "id": "booking",
+      "label": "Booking.com",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/booking",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/Booking.com/booking-campaign-code-migration-20260609/article.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。キャンペーンコード・Genius割引・外部配布の表示差に注意。"
+    },
+    {
+      "id": "newt",
+      "label": "NEWT",
+      "site_targets": ["welltrip"],
+      "classification": "B/C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/newt",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/NEWT/coupon-migration-20260609/newt-coupon-swell.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。アプリ・LINE・友達紹介など配布経路別の公式確認が必要。"
+    },
+    {
+      "id": "surprice",
+      "label": "Surprice",
+      "site_targets": ["welltrip", "yakushimafan"],
+      "classification": "B/C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/surprice",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/サプライス/coupon-brushup-20260613/surprice-coupon-rewrite.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。海外航空券セール・クーポンコードの公式取得化候補。"
+    },
+    {
+      "id": "traveloka",
+      "label": "Traveloka",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/traveloka",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/Traveloka/coupon-brushup-20260613/traveloka-coupon-affiliate-brushup-swell.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。地域・アプリ・外部配布の差があるため半自動確認向き。"
+    },
+    {
+      "id": "airtrip",
+      "label": "エアトリ",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/airtrip",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/エアトリ/coupon-migration-20260612/airtrip-coupon.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。航空券・ホテル・ツアーの割引型を分けて確認する。"
+    },
+    {
+      "id": "skyticket",
+      "label": "スカイチケット",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/skyticket",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。航空券・レンタカー・ホテルの割引表示を分けて確認する。"
+    },
+    {
+      "id": "jcation",
+      "label": "Jcation",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/jcation",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/Jcation/coupon-migration-20260612/jcation-coupon.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。レンタカー・国内旅行系の割引として半自動確認から開始。"
+    },
+    {
+      "id": "jalan_rentacar",
+      "label": "じゃらんレンタカー",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/jalan_rentacar",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/じゃらんレンタカー/brushup-20260613/jalan-rentacar-coupon-swell.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。じゃらん本体とは別にレンタカー枠として管理。"
+    },
+    {
+      "id": "tabirai_rentacar",
+      "label": "たびらいレンタカー",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/tabirai_rentacar",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/たびらいレンタカー/coupon-migration-20260612/tabirai-rentacar-coupon-brushup-20260613-swell.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。レンタカー予約の地域別・期間限定割引を半自動で確認。"
+    },
+    {
+      "id": "nippon_travel",
+      "label": "日本旅行",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/nippon_travel",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。赤い風船・JRセットプランなどの商品別に確認する。"
+    },
+    {
+      "id": "hankyu_travel",
+      "label": "阪急交通社",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/hankyu_travel",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。ツアー企画型のため、クーポンよりキャンペーン監視寄り。"
+    },
+    {
+      "id": "jamjam",
+      "label": "JAMJAMライナー",
+      "site_targets": ["welltrip", "yakushimafan"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/jamjam",
+      "article_paths": ["../vault_blog/ウェルトリップ/note/jamjam-liner-coupon-rewrite-20260617/article.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。高速バス・ツアーの割引導線を半自動で確認。"
+    },
+    {
+      "id": "skyscanner",
+      "label": "スカイスキャナー",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/skyscanner",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"],
+      "note": "Welltrip記事HTML由来の暫定データ。メタサーチ型のため、クーポンコードより比較導線・提携先確認を優先。"
+    },
+    {
+      "id": "jalan_pack",
+      "label": "じゃらんパック",
+      "site_targets": ["welltrip"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/jalan_pack",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/じゃらんパック/reputation-migration-20260604/jalan-pack-reputation.html"],
+      "note": "Welltrip既存記事由来の暫定枠。じゃらん宿泊本体と分け、パック専用クーポンの取得元を次に決める。"
+    },
+    {
+      "id": "rurubu_travel",
+      "label": "るるぶトラベル",
+      "site_targets": ["welltrip", "yakushimafan"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/rurubu_travel",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/るるぶトラベル/reputation-migration-20260604/rurubu-travel-reputation.html"],
+      "note": "Welltrip既存記事由来の暫定枠。JTB系の宿泊予約として、JTB本体とは別に成果・導線を確認する。"
+    },
+    {
+      "id": "orion_tour",
+      "label": "オリオンツアー",
+      "site_targets": ["welltrip", "yakushimafan"],
+      "classification": "C",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/orion_tour",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/オリオンツアー/reputation-migration-20260604/orion-tour-reputation.html"],
+      "note": "Welltrip既存記事由来の暫定枠。ツアー・スキー・高速バス系のキャンペーン確認を優先。"
+    },
+    {
+      "id": "shirokuma_tour",
+      "label": "しろくまツアー",
+      "site_targets": ["welltrip"],
+      "classification": "D",
+      "coverage_status": "article_exists",
+      "data_dir": "manual_coupon_data/shirokuma_tour",
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/しろくまツアー/reputation-migration-20260604/shirokuma-tour-reputation.html"],
+      "note": "Welltrip既存記事由来の暫定枠。公式クーポン取得元は未確認のため保留寄り。"
+    },
+    {
       "id": "agoda",
       "label": "Agoda",
       "site_targets": ["tripbooking"],

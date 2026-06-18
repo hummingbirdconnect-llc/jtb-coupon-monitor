@@ -130,5 +130,113 @@
     "status": "written",
     "file": "manual_coupon_data/tripcom/coupons_2026-05-20.json",
     "count": 18
+  },
+  {
+    "provider": "yukoyuko",
+    "status": "written",
+    "file": "manual_coupon_data/yukoyuko/coupons_2026-06-18.json",
+    "count": 1
+  },
+  {
+    "provider": "booking",
+    "status": "written",
+    "file": "manual_coupon_data/booking/coupons_2026-06-18.json",
+    "count": 2
+  },
+  {
+    "provider": "newt",
+    "status": "written",
+    "file": "manual_coupon_data/newt/coupons_2026-06-18.json",
+    "count": 11
+  },
+  {
+    "provider": "surprice",
+    "status": "written",
+    "file": "manual_coupon_data/surprice/coupons_2026-06-18.json",
+    "count": 7
+  },
+  {
+    "provider": "traveloka",
+    "status": "written",
+    "file": "manual_coupon_data/traveloka/coupons_2026-06-18.json",
+    "count": 8
+  },
+  {
+    "provider": "airtrip",
+    "status": "written",
+    "file": "manual_coupon_data/airtrip/coupons_2026-06-18.json",
+    "count": 15
+  },
+  {
+    "provider": "skyticket",
+    "status": "written",
+    "file": "manual_coupon_data/skyticket/coupons_2026-06-18.json",
+    "count": 6
+  },
+  {
+    "provider": "jcation",
+    "status": "written",
+    "file": "manual_coupon_data/jcation/coupons_2026-06-18.json",
+    "count": 4
+  },
+  {
+    "provider": "jalan_rentacar",
+    "status": "written",
+    "file": "manual_coupon_data/jalan_rentacar/coupons_2026-06-18.json",
+    "count": 5
+  },
+  {
+    "provider": "tabirai_rentacar",
+    "status": "written",
+    "file": "manual_coupon_data/tabirai_rentacar/coupons_2026-06-18.json",
+    "count": 5
+  },
+  {
+    "provider": "nippon_travel",
+    "status": "written",
+    "file": "manual_coupon_data/nippon_travel/coupons_2026-06-18.json",
+    "count": 9
+  },
+  {
+    "provider": "hankyu_travel",
+    "status": "written",
+    "file": "manual_coupon_data/hankyu_travel/coupons_2026-06-18.json",
+    "count": 6
+  },
+  {
+    "provider": "jamjam",
+    "status": "written",
+    "file": "manual_coupon_data/jamjam/coupons_2026-06-18.json",
+    "count": 7
+  },
+  {
+    "provider": "skyscanner",
+    "status": "written",
+    "file": "manual_coupon_data/skyscanner/coupons_2026-06-18.json",
+    "count": 7
+  },
+  {
+    "provider": "jalan_pack",
+    "status": "written",
+    "file": "manual_coupon_data/jalan_pack/coupons_2026-06-18.json",
+    "count": 5
+  },
+  {
+    "provider": "rurubu_travel",
+    "status": "written",
+    "file": "manual_coupon_data/rurubu_travel/coupons_2026-06-18.json",
+    "count": 1
+  },
+  {
+    "provider": "orion_tour",
+    "status": "written",
+    "file": "manual_coupon_data/orion_tour/coupons_2026-06-18.json",
+    "count": 1
+  },
+  {
+    "provider": "shirokuma_tour",
+    "status": "written",
+    "file": "manual_coupon_data/shirokuma_tour/coupons_2026-06-18.json",
+    "count": 1
   }
 ]

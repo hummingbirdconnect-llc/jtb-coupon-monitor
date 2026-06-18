@@ -1,0 +1,218 @@
+[
+  {
+    "id": "hankyu_travel-b2c297e8e2",
+    "provider": "hankyu_travel",
+    "provider_label": "阪急交通社",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "阪急交通社の公式クーポンページ",
+    "category": "hankyu-travel-coupon-swell",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "まず配布中のクーポンを確認する"
+    ],
+    "source_url": "https://www.hankyu-travel.com/coupon/",
+    "detail_url": "https://www.hankyu-travel.com/coupon/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html",
+      "headers": [
+        "確認する割引",
+        "条件の目安",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "hankyu_travel-a6cdc74540",
+    "provider": "hankyu_travel",
+    "provider_label": "阪急交通社",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "誕生日クーポン 10,000円",
+    "category": "hankyu-travel-coupon-swell",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "高額な海外ツアーや家族旅行で候補"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html",
+      "headers": [
+        "確認する割引",
+        "条件の目安",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "hankyu_travel-e304b60e1c",
+    "provider": "hankyu_travel",
+    "provider_label": "阪急交通社",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "誕生日クーポン 5,000円",
+    "category": "hankyu-travel-coupon-swell",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "国内外の宿泊付きツアーで候補"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html",
+      "headers": [
+        "確認する割引",
+        "条件の目安",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "hankyu_travel-c4d7bab25d",
+    "provider": "hankyu_travel",
+    "provider_label": "阪急交通社",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "誕生日クーポン 1,000円",
+    "category": "hankyu-travel-coupon-swell",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "低額な旅行商品でも候補"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html",
+      "headers": [
+        "確認する割引",
+        "条件の目安",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "hankyu_travel-6e780f4407",
+    "provider": "hankyu_travel",
+    "provider_label": "阪急交通社",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "季節キャンペーン",
+    "category": "hankyu-travel-coupon-swell",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "終了済み施策と混同しない"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html",
+      "headers": [
+        "確認する割引",
+        "条件の目安",
+        "予約前の見方"
+      ]
+    }
+  },
+  {
+    "id": "hankyu_travel-72143f3694",
+    "provider": "hankyu_travel",
+    "provider_label": "阪急交通社",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "カード・会員優待",
+    "category": "hankyu-travel-coupon-swell",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "阪急交通社公式クーポンとは分けて確認する"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_table",
+    "last_checked": "2026-06-18",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html",
+      "headers": [
+        "確認する割引",
+        "条件の目安",
+        "予約前の見方"
+      ]
+    }
+  }
+]

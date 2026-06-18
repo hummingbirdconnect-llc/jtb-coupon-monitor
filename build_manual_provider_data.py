@@ -13,6 +13,8 @@ import hashlib
 import html as html_lib
 import json
 import re
+import argparse
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -598,18 +600,58 @@ def build_provider(provider: dict) -> dict:
     return {"provider": provider["id"], "status": "written", "file": str(out_file.relative_to(ROOT)), "count": len(rows)}
 
 
-def main() -> None:
+def parse_args(argv: list[str]) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="手元マスター/記事HTML由来の暫定クーポンJSONを生成")
+    parser.add_argument(
+        "--provider-id",
+        default="",
+        help="特定会社だけ生成する場合の provider id。カンマ区切りで複数指定可。",
+    )
+    return parser.parse_args(argv)
+
+
+def update_coverage_snapshot(out_file: Path, results: list[dict], selected_ids: set[str]) -> None:
+    if not selected_ids or not out_file.exists():
+        out_file.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        return
+
+    current = json.loads(out_file.read_text(encoding="utf-8"))
+    by_provider = {item.get("provider"): item for item in current}
+    for item in results:
+        by_provider[item.get("provider")] = item
+
+    merged = []
+    seen = set()
+    for item in current:
+        provider = item.get("provider")
+        merged.append(by_provider[provider])
+        seen.add(provider)
+    for item in results:
+        provider = item.get("provider")
+        if provider not in seen:
+            merged.append(item)
+            seen.add(provider)
+    out_file.write_text(json.dumps(merged, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def main(argv: list[str] | None = None) -> None:
+    args = parse_args(argv or sys.argv[1:])
+    selected_ids = {item.strip() for item in args.provider_id.split(",") if item.strip()}
     results = []
     for provider in load_registry():
         if provider.get("coverage_status") not in {"master_import", "article_exists"}:
+            continue
+        if selected_ids and provider["id"] not in selected_ids:
             continue
         results.append(build_provider(provider))
 
     out_file = ROOT / "manual_coupon_data" / "coverage_snapshot.json"
     out_file.parent.mkdir(parents=True, exist_ok=True)
-    out_file.write_text(json.dumps(results, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    update_coverage_snapshot(out_file, results, selected_ids)
 
     print("manual provider data build")
+    if selected_ids:
+        print(f"- selected: {', '.join(sorted(selected_ids))}")
     for item in results:
         print(f"- {item['provider']}: {item['status']} / {item.get('count', 0)}件")
     print(f"coverage: {out_file.relative_to(ROOT)}")

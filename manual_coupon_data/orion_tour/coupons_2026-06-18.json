@@ -1,0 +1,34 @@
+[
+  {
+    "id": "orion_tour-b8fc90b71c",
+    "provider": "orion_tour",
+    "provider_label": "オリオンツアー",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "",
+    "title": "オリオンツアーで一番お得に予約する方法（クーポン・セール情報）",
+    "category": "orion-tour-reputation",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "オリオンツアーでは、お得な割引クーポンやセール・キャンペーンなどを随時開催しています。 公式ページのトップに最新のお得情報が掲載されていますので、気になる方はぜひチェックしてみてくださいね！ オリオンツアー公式ページへ→"
+    ],
+    "source_url": "https://www.orion-tour.co.jp/",
+    "detail_url": "https://www.orion-tour.co.jp/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/オリオンツアー/reputation-migration-20260604/orion-tour-reputation.html"
+    }
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "shirokuma_tour-90cdde787b",
+    "provider": "shirokuma_tour",
+    "provider_label": "しろくまツアー",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "しろくまツアーで一番お得に予約する方法（クーポン・セール情報）",
+    "category": "shirokuma-tour-reputation",
+    "discount": "",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "しろくまツアーでは、お得な割引クーポンやセール・キャンペーンなどを随時開催しています。 公式ページのトップに最新のお得情報が掲載されていますので、気になる方はぜひチェックしてみてくださいね！ しろくまツアー公式ページへ→"
+    ],
+    "source_url": "https://www.wbf.co.jp/kokunai/",
+    "detail_url": "https://www.wbf.co.jp/kokunai/",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/しろくまツアー/reputation-migration-20260604/shirokuma-tour-reputation.html"
+    }
+  }
+]

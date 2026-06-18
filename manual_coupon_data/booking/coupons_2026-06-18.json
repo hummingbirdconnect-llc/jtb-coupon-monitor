@@ -1,0 +1,64 @@
+[
+  {
+    "id": "booking-4127e10915",
+    "provider": "booking",
+    "provider_label": "Booking.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "Booking.comのキャンペーンコードは誰でも使える？",
+    "category": "article",
+    "discount": "10%",
+    "stock_status": "要確認",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Booking.comには、トラベルクーポンを登録するページがあります。ただし、一般に検索して見つかる共通コードを誰でも入力すれば割引になる、というより、提携先や特典メールを通じて受け取ったコードを使う仕組みです。 公式のトラベルクーポンページでは、特典提携先からクーポンコードを獲得し、Booking.com WALLETに登録して利用する流れが案内されています。コードがメールに届く場合もあり、見つからないときは迷惑メールフォルダや発行元の案内を確認する必要があります。 つまり、Booking.comで安く泊まりたい人は、ネット上のキャンペーンコード探しだけに時間を使うより、次のように見た方が現実的です。 ログインしてGenius対象施設を探す 公式セールページの対象施設を見る メールや提携先から届いたコードだけWALLETへ登録する 支払い画面で割引が反映されているか確認する 編集部チェック DataForSEOで「Booking.com キャンペーンコード」「Booking.com クーポン」「Booking.com 割引」の関連質問を確認したところ、コードの意味、10%割引の方法"
+    ],
+    "source_url": "",
+    "detail_url": "",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/Booking.com/booking-campaign-code-migration-20260609/article.html"
+    }
+  },
+  {
+    "id": "booking-07313b7995",
+    "provider": "booking",
+    "provider_label": "Booking.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "",
+    "title": "HOLIDAYセールで15%以上OFFの宿を探す",
+    "category": "article",
+    "discount": "15%",
+    "stock_status": "配布終了",
+    "product_type": "",
+    "booking_period": "",
+    "travel_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "Booking.comの公式セールページでは、HOLIDAYセール対象施設が15%以上OFFになると案内されています。コードを入力する形式ではなく、対象施設をセールページから探して予約するタイプの割引です。 公式ページで案内されているHOLIDAYセールの主な条件は次の通りです。 対象施設が15%以上OFF 割引は税金・追加料金が加わる前の料金に適用 予約期間は2026年3月12日〜9月30日 対象滞在日は2026年3月26日〜9月30日 Genius割引とHOLIDAYセールの両方が表示される施設では、予約画面の最終価格が下がることがあります。ただし、単純に割引率を足し算できるとは限りません。宿泊施設、日程、税金・手数料、支払い条件で見え方が変わります。 ここは「何%得」と先に決め打ちするより、候補の宿で最終支払額を見比べる方が安全です。 Booking.comのHOLIDAYセール対象施設を見る"
+    ],
+    "source_url": "https://px.a8.net/svt/ejp?a8mat=3Z7263+37IE62+327I+HUD03&asid=a19021279487&a8ejpredirect=https%3A%2F%2Fow.a8.net%2Fs00000014283002%2Fredirect_v2.php%3Ftype%3Ddeeplink%26url%3Dhttps%253A%252F%252Fwww.booking.com%252Fdealspage.ja.html",
+    "detail_url": "https://px.a8.net/svt/ejp?a8mat=3Z7263+37IE62+327I+HUD03&asid=a19021279487&a8ejpredirect=https%3A%2F%2Fow.a8.net%2Fs00000014283002%2Fredirect_v2.php%3Ftype%3Ddeeplink%26url%3Dhttps%253A%252F%252Fwww.booking.com%252Fdealspage.ja.html",
+    "source_type": "article_snapshot",
+    "fetch_method": "existing_article_heading",
+    "last_checked": "2026-06-18",
+    "confidence": "low",
+    "display_type": "table",
+    "placement_hint": "",
+    "detail_data": {
+      "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/Booking.com/booking-campaign-code-migration-20260609/article.html"
+    }
+  }
+]
