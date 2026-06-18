@@ -224,10 +224,10 @@
       "label": "ゆこゆこネット",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/yukoyuko",
+      "coverage_status": "auto_daily",
+      "data_dir": "yukoyuko_coupon_data",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/ゆこゆこネット/reputation-migration-20260604/yukoyuko-reputation.html"],
-      "note": "Welltrip調査データと既存記事由来の暫定枠。クーポン記事・公式取得元は未接続のため、まず手動確認対象。"
+      "note": "ゆこゆこ公式APIのクーポン一覧・個別キャンペーンと公式お得情報ページを日次取得。獲得型クーポンは公開コードなしとして扱う。"
     },
     {
       "id": "booking",

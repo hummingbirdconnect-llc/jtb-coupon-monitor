@@ -1,0 +1,11 @@
+{
+  "provider_id": "yukoyuko",
+  "provider_label": "ゆこゆこネット",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-06-18T20:49:53.721139+09:00",
+  "completed_at": "2026-06-18T20:50:16.051404+09:00",
+  "coupon_count": 74,
+  "latest_file": "coupons_2026-06-18.json",
+  "error": ""
+}

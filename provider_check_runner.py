@@ -24,12 +24,13 @@ ROOT = Path(__file__).resolve().parent
 REGISTRY = ROOT / "config" / "provider_registry.json"
 STATUS_ROOT = ROOT / "provider_check_data"
 
-DAILY_PROVIDERS = {"his", "jtb"}
+DAILY_PROVIDERS = {"his", "jtb", "yukoyuko"}
 REAL_MONITOR_COMMANDS: dict[str, list[str]] = {
     "his": [sys.executable, "his_coupon_monitor.py"],
     "jtb": [sys.executable, "jtb_coupon_monitor.py"],
     "knt": [sys.executable, "knt_coupon_monitor.py"],
     "jalpack": [sys.executable, "jalpack_coupon_monitor.py", "--source", "official", "--fetch-method", "chrome"],
+    "yukoyuko": [sys.executable, "yukoyuko_coupon_monitor.py"],
 }
 
 
