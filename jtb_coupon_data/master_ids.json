@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T07:51:35.834427+09:00",
+  "last_updated": "2026-06-24T07:17:09.832199+09:00",
   "ids": {
     "2604jtbcpnew": {
       "category": "国内",
@@ -115,7 +115,14 @@
     },
     "2603douto": {
       "category": "国内",
-      "title": "【道東エリア】おすすめ旅館・ホテルで使える割引クーポン",
+      "title": "<4～6月宿泊>【道東エリア】おすすめ旅館・ホテルで使える割引クーポン",
+      "discount": "最大10,000円引",
+      "area": "北海道",
+      "stock_status": "配布終了"
+    },
+    "2606douto": {
+      "category": "国内",
+      "title": "<7～8月宿泊>【道東エリア】おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
       "stock_status": "配布中"
@@ -132,7 +139,7 @@
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604jalto": {
       "category": "国内",
@@ -188,7 +195,7 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606iwate": {
       "category": "国内",
@@ -246,19 +253,26 @@
       "area": "埼玉県",
       "stock_status": "配布中"
     },
+    "2606hankyu2": {
+      "category": "国内",
+      "title": "「阪急阪神ホテルズ」東京レム5施設で使える！割引クーポン",
+      "discount": "2,500円引",
+      "area": "東京都",
+      "stock_status": "配布中"
+    },
     "2603hachijo": {
       "category": "国内",
       "title": "【復幸旅！八丈島】3月～6月宿泊で使える割引クーポン",
       "discount": "最大40％引",
       "area": "東京都",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2603hachijo2": {
       "category": "国内",
       "title": "【復幸旅！八丈島】7月宿泊で使える割引クーポン",
       "discount": "最大30％引",
       "area": "東京都",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605hakone": {
       "category": "国内",
@@ -286,7 +300,7 @@
       "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "静岡県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605ito": {
       "category": "国内",
@@ -363,7 +377,7 @@
       "title": "ひなタビみやざき宿泊キャンペーン",
       "discount": "最大30％引",
       "area": "宮崎県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604jalka": {
       "category": "国内",
@@ -454,7 +468,7 @@
       "title": "☆【沖縄】７月～９月出発☆夏休みにも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603okinawa": {
       "category": "国内",
