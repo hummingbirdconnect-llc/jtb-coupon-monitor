@@ -374,10 +374,10 @@
       "label": "るるぶトラベル",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/rurubu_travel",
+      "coverage_status": "auto_daily",
+      "data_dir": "rurubu_travel_coupon_data",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/るるぶトラベル/reputation-migration-20260604/rurubu-travel-reputation.html"],
-      "note": "Welltrip既存記事由来の暫定枠。JTB系の宿泊予約として、JTB本体とは別に成果・導線を確認する。"
+      "note": "公式割引クーポンページ（https://www.rurubu.travel/deals）を取得。JTB系の宿泊予約として、JTB本体とは別に成果・導線を確認する。"
     },
     {
       "id": "orion_tour",

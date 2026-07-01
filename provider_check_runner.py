@@ -30,6 +30,7 @@ REAL_MONITOR_COMMANDS: dict[str, list[str]] = {
     "jtb": [sys.executable, "jtb_coupon_monitor.py"],
     "knt": [sys.executable, "knt_coupon_monitor.py"],
     "jalpack": [sys.executable, "jalpack_coupon_monitor.py", "--source", "official", "--fetch-method", "chrome"],
+    "rurubu_travel": [sys.executable, "rurubu_travel_coupon_monitor.py"],
     "yukoyuko": [sys.executable, "yukoyuko_coupon_monitor.py"],
 }
 

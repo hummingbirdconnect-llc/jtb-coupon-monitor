@@ -25,6 +25,7 @@ on:
           - yumeyado
           - rakuten_travel
           - yahoo_travel
+          - rurubu_travel
           - ikkyu
           - relux
           - asoview
@@ -184,6 +185,7 @@ jobs:
             knt_coupon_data/
             his_coupon_data/
             jalpack_coupon_data/
+            rurubu_travel_coupon_data/
             provider_check_data/
             html_output/
             tweets_output/
