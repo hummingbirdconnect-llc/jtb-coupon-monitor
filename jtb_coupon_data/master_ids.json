@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-03T07:10:28.416504+09:00",
+  "last_updated": "2026-07-04T07:08:56.665163+09:00",
   "ids": {
     "2604jtbcpnew": {
       "category": "国内",
       "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(7-9月出発)",
       "discount": "1,500円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606appcp": {
       "category": "国内",
@@ -111,14 +111,14 @@
       "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605hokka": {
       "category": "国内",
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604jalto": {
       "category": "国内",
@@ -146,7 +146,7 @@
       "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606nstoh": {
       "category": "国内",
@@ -167,7 +167,7 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606iwate": {
       "category": "国内",
@@ -251,7 +251,7 @@
       "title": "涼をもとめて、静岡旅",
       "discount": "最大5,000円引",
       "area": "静岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605izucp": {
       "category": "国内",
@@ -412,14 +412,14 @@
       "title": "☆【沖縄】７月～８月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2603okinawa2": {
       "category": "国内",
       "title": "☆【沖縄】７月～９月出発☆夏休みにも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605jalhp": {
       "category": "国内",
