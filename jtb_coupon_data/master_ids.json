@@ -1,6 +1,13 @@
 {
-  "last_updated": "2026-07-09T07:08:51.065283+09:00",
+  "last_updated": "2026-07-10T07:24:39.076821+09:00",
   "ids": {
+    "2607timesale": {
+      "category": "国内",
+      "title": "【夏旅タイムセール】割引クーポン",
+      "discount": "1,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
     "2606appcp": {
       "category": "国内",
       "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
@@ -27,7 +34,7 @@
       "title": "【早期75日前までの予約限定】夏休みも先どり！<7～9月出発＞航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
       "discount": "3,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604airhayawari2": {
       "category": "国内",
@@ -48,7 +55,7 @@
       "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606prince": {
       "category": "国内",
@@ -111,7 +118,7 @@
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604jalto": {
       "category": "国内",
@@ -132,7 +139,7 @@
       "title": "【4～7月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604nstoh": {
       "category": "国内",
@@ -160,7 +167,7 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606iwate": {
       "category": "国内",
@@ -244,14 +251,14 @@
       "title": "涼をもとめて、静岡旅",
       "discount": "最大5,000円引",
       "area": "静岡県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605izucp": {
       "category": "国内",
       "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "静岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605ito": {
       "category": "国内",
@@ -279,7 +286,7 @@
       "title": "ホテル　ユニバーサル　ポートで使える割引クーポン",
       "discount": "最大5,000円引",
       "area": "大阪府",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606tavita": {
       "category": "国内",
@@ -398,7 +405,7 @@
       "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605okinawa": {
       "category": "国内",
@@ -419,7 +426,7 @@
       "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(7-9月出発)",
       "discount": "1,500円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605jalhp": {
       "category": "国内",
