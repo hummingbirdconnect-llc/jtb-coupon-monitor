@@ -1,0 +1,58 @@
+{
+  "_comment": "サイト別X投稿ツリー生成設定。article_map: プロバイダID→自社クーポン記事URL（記事が存在するOTAのみ掲載。ここに無いOTAはツリー候補から除外される）",
+  "_comment_trusted_codes": "trusted_code_providers: クーポンコードを投稿に表示してよいプロバイダ。データ取得時にコードが切り詰められないと実データで確認できたものだけ追加する（JTBは5文字切り詰め・HISは連結切れを確認済みのため除外）",
+  "trusted_code_providers": ["rurubu_travel", "agoda", "hotels"],
+  "sites": {
+    "yakushimafan": {
+      "display_name": "屋久島ファン",
+      "x_account": "@yakushimafan",
+      "tone": "jitsuyou",
+      "domestic_focus": true,
+      "article_map": {
+        "his": "https://yakushima.fun/his-coupon/",
+        "jtb": "https://yakushima.fun/jtb-first/",
+        "knt": "https://yakushima.fun/knt-coupon/",
+        "yahoo_travel": "https://yakushima.fun/yahoo-coupon/",
+        "yukoyuko": "https://yakushima.fun/yukoyuko-coupon/",
+        "rurubu_travel": "https://yakushima.fun/rurubu-coupon/",
+        "jamjam": "https://yakushima.fun/jamjamtour-coupon/",
+        "orion_tour": "https://yakushima.fun/orion-tour/"
+      }
+    },
+    "welltrip": {
+      "display_name": "ウェルトリップ",
+      "x_account": "welltrip",
+      "tone": "teian",
+      "domestic_focus": false,
+      "article_map": {
+        "his": "https://travel.hb-connect.co.jp/his-coupon/",
+        "jtb": "https://travel.hb-connect.co.jp/jtb-coupon/",
+        "knt": "https://travel.hb-connect.co.jp/knt-coupon/",
+        "jalpack": "https://travel.hb-connect.co.jp/jal-pack-coupon/",
+        "jalan": "https://travel.hb-connect.co.jp/jalan-coupon/",
+        "jalan_activity": "https://travel.hb-connect.co.jp/jalan-activity-coupons/",
+        "kkday": "https://travel.hb-connect.co.jp/kkday-coupon/",
+        "klook": "https://travel.hb-connect.co.jp/klook-coupon/",
+        "yumeyado": "https://travel.hb-connect.co.jp/yumeyado-coupons/",
+        "ikkyu": "https://travel.hb-connect.co.jp/ikyu-coupon/",
+        "asoview": "https://travel.hb-connect.co.jp/asoview-coupon/",
+        "activityjapan": "https://travel.hb-connect.co.jp/activityjapan-coupon/",
+        "jr_tokai_tours": "https://travel.hb-connect.co.jp/jr-tokai-tours-coupon/",
+        "skypack_tours": "https://travel.hb-connect.co.jp/skypaktours-coupon/",
+        "toku": "https://travel.hb-connect.co.jp/tocoo-travel-coupons/"
+      }
+    },
+    "tripbooking": {
+      "display_name": "トリップブッキング",
+      "x_account": "tripbooking",
+      "tone": "kyakkan",
+      "domestic_focus": false,
+      "article_map": {
+        "agoda": "https://tripbooking.jp/agoda-coupon/",
+        "expedia": "https://tripbooking.jp/expedia-coupon/",
+        "hotels": "https://tripbooking.jp/hotels-com-coupon/",
+        "tripcom": "https://tripbooking.jp/tripcom-coupon/"
+      }
+    }
+  }
+}
