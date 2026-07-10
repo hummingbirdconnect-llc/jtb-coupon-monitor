@@ -1,4 +1,36 @@
 {
+  "schema_version": 2,
+  "schedule": {
+    "daily_provider_ids": [
+      "his",
+      "jtb",
+      "knt",
+      "jalpack",
+      "rurubu_travel",
+      "yukoyuko",
+      "rakuten_travel",
+      "jalan",
+      "yahoo_travel",
+      "ikkyu",
+      "booking",
+      "agoda",
+      "expedia",
+      "hotels",
+      "tripcom",
+      "kkday",
+      "klook"
+    ],
+    "daily": {
+      "check_frequency": "daily",
+      "cadence_days": 1,
+      "freshness_sla_hours": 30
+    },
+    "every_5_days": {
+      "check_frequency": "every_5_days",
+      "cadence_days": 5,
+      "freshness_sla_hours": 144
+    }
+  },
   "providers": [
     {
       "id": "his",
@@ -44,10 +76,20 @@
       "label": "じゃらん",
       "site_targets": ["welltrip"],
       "classification": "B",
-      "coverage_status": "master_import",
-      "data_dir": "manual_coupon_data/jalan",
+      "coverage_status": "official_codex",
+      "data_dir": "official_coupon_data/jalan",
+      "legacy_data_dir": "manual_coupon_data/jalan",
+      "source_type": "official_page_candidate",
+      "official_domains": ["jalan.net"],
+      "official_sources": [
+        {
+          "url": "https://www.jalan.net/jalancponsum/zenkoku/",
+          "fetch_method": "auto",
+          "purpose": "全国の宿・ホテルクーポン一覧"
+        }
+      ],
       "master_path": "../vault_blog/ウェルトリップ/会社別/じゃらん/coupon-master/master.md",
-      "note": "coupon-master由来の暫定データ。宿泊本体を優先。"
+      "note": "全国の宿・ホテルクーポン公式一覧を監視。変更時はCodex監査候補へ送り、初回は基準データとして下書き連携しない。"
     },
     {
       "id": "jalan_activity",
@@ -64,20 +106,50 @@
       "label": "KKday",
       "site_targets": ["welltrip"],
       "classification": "B",
-      "coverage_status": "master_import",
-      "data_dir": "manual_coupon_data/kkday",
+      "coverage_status": "official_codex",
+      "data_dir": "official_coupon_data/kkday",
+      "legacy_data_dir": "manual_coupon_data/kkday",
+      "source_type": "official_page_candidate",
+      "official_domains": ["kkday.com"],
+      "official_sources": [
+        {
+          "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
+          "fetch_method": "auto",
+          "purpose": "公式クーポンまとめ"
+        },
+        {
+          "url": "https://www.kkday.com/ja/promo/coupon-campaign",
+          "fetch_method": "auto",
+          "purpose": "公式キャンペーン"
+        },
+        {
+          "url": "https://www.kkday.com/ja/promo/aj_newmember",
+          "fetch_method": "auto",
+          "purpose": "新規会員キャンペーン"
+        }
+      ],
       "master_path": "../vault_blog/ウェルトリップ/会社別/KKday/coupon-master/master.md",
-      "note": "coupon-master由来の暫定データ。公式ブログ・プロモページ監視候補。"
+      "note": "公式ブログ・キャンペーン・新規会員ページを監視。変更時だけCodex定期監査へ送る。"
     },
     {
       "id": "klook",
       "label": "Klook",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "master_import",
-      "data_dir": "manual_coupon_data/klook",
+      "coverage_status": "official_codex",
+      "data_dir": "official_coupon_data/klook",
+      "legacy_data_dir": "manual_coupon_data/klook",
+      "source_type": "official_page_candidate",
+      "official_domains": ["klook.com"],
+      "official_sources": [
+        {
+          "url": "https://www.klook.com/ja/deals/",
+          "fetch_method": "auto",
+          "purpose": "Klook日本向け公式SALE一覧"
+        }
+      ],
       "master_path": "../vault_blog/ウェルトリップ/会社別/Klook/coupon-master/master.md",
-      "note": "coupon-master由来の暫定データ。アプリ・地域差の確認が必要。"
+      "note": "日本向け公式SALE一覧を監視。アプリ・ログイン限定表示は自動断定しない。"
     },
     {
       "id": "jtrip",
@@ -104,10 +176,20 @@
       "label": "楽天トラベル",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/rakuten_travel",
+      "coverage_status": "official_codex",
+      "data_dir": "official_coupon_data/rakuten_travel",
+      "legacy_data_dir": "manual_coupon_data/rakuten_travel",
+      "source_type": "official_page_candidate",
+      "official_domains": ["travel.rakuten.co.jp"],
+      "official_sources": [
+        {
+          "url": "https://travel.rakuten.co.jp/coupon/",
+          "fetch_method": "auto",
+          "purpose": "RaCoupon公式一覧"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。公開RaCoupon一覧の公式取得化が次工程。"
+      "note": "公開RaCoupon公式一覧を監視。ログイン後のmyクーポンは対象外。"
     },
     {
       "id": "yahoo_travel",
@@ -434,10 +516,20 @@
       "label": "Trip.com",
       "site_targets": ["tripbooking"],
       "classification": "B/C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/tripcom",
+      "coverage_status": "official_codex",
+      "data_dir": "official_coupon_data/tripcom",
+      "legacy_data_dir": "manual_coupon_data/tripcom",
+      "source_type": "official_page_candidate",
+      "official_domains": ["trip.com"],
+      "official_sources": [
+        {
+          "url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+          "fetch_method": "auto",
+          "purpose": "Trip.com日本向け公式お得情報"
+        }
+      ],
       "article_paths": ["../vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html", "../vault_blog/トリップブッキング/note/Trip.com_002_セール割引_SWELL.html", "../vault_blog/トリップブッキング/note/Trip.com_003_初回クーポン_SWELL.html"],
-      "note": "トリップブッキング側のパイロット候補。公開キャンペーンから開始。"
+      "note": "日本向け公式お得情報ページを監視。公開キャンペーンから開始。"
     }
   ]
 }

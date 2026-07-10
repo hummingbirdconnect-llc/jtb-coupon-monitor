@@ -2,8 +2,7 @@ name: Coupon Monitor
 
 on:
   schedule:
-    - cron: '0 21 * * *'    # 毎日 6:00 JST: HIS / JTB
-    - cron: '30 21 * * *'   # 毎日 6:30 JST: HIS / JTB 以外
+    - cron: '0 21 * * *'    # 毎日 6:00 JST: 17社＋当日割当の5日周期会社
   workflow_dispatch:
     inputs:
       provider_id:
@@ -36,19 +35,27 @@ on:
           - tobu_top_tours
           - yomiuri_travel
           - toku
+          - yukoyuko
+          - booking
+          - newt
+          - surprice
+          - traveloka
+          - airtrip
+          - skyticket
+          - jcation
+          - jalan_rentacar
+          - tabirai_rentacar
+          - nippon_travel
+          - hankyu_travel
+          - jamjam
+          - skyscanner
+          - jalan_pack
+          - orion_tour
+          - shirokuma_tour
           - agoda
           - expedia
           - hotels
           - tripcom
-      update_wp:
-        description: WordPress下書き更新も実行する
-        required: true
-        default: "false"
-        type: choice
-        options:
-          - "false"
-          - "true"
-
 permissions:
   contents: write
 
@@ -59,7 +66,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 35
+    timeout-minutes: 60
 
     steps:
       - name: チェックアウト
@@ -83,21 +90,12 @@ jobs:
         id: plan
         run: |
           if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
-            if [ "${{ github.event.schedule }}" = "0 21 * * *" ]; then
-              echo "scope=daily" >> "$GITHUB_OUTPUT"
-              echo "provider_id=" >> "$GITHUB_OUTPUT"
-              echo "update_wp=true" >> "$GITHUB_OUTPUT"
-              echo "label=scheduled daily: his,jtb" >> "$GITHUB_OUTPUT"
-            else
-              echo "scope=weekly" >> "$GITHUB_OUTPUT"
-              echo "provider_id=" >> "$GITHUB_OUTPUT"
-              echo "update_wp=false" >> "$GITHUB_OUTPUT"
-              echo "label=scheduled daily: non-primary providers" >> "$GITHUB_OUTPUT"
-            fi
+            echo "scope=due" >> "$GITHUB_OUTPUT"
+            echo "provider_id=" >> "$GITHUB_OUTPUT"
+            echo "label=scheduled: 17 daily + distributed 5-day providers" >> "$GITHUB_OUTPUT"
           else
             echo "scope=all" >> "$GITHUB_OUTPUT"
             echo "provider_id=${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
-            echo "update_wp=${{ inputs.update_wp }}" >> "$GITHUB_OUTPUT"
             echo "label=manual: ${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
           fi
 
@@ -148,22 +146,6 @@ jobs:
       - name: ダッシュボード HTML 生成
         run: python generate_dashboard.py
 
-      - name: WordPress クーポンページ下書き更新
-        if: steps.plan.outputs.update_wp == 'true'
-        env:
-          YF_WP_URL: ${{ secrets.YF_WP_URL }}
-          YF_WP_USER: ${{ secrets.YF_WP_USER }}
-          YF_WP_APP_PASSWORD: ${{ secrets.YF_WP_APP_PASSWORD }}
-        run: python wp_coupon_updater.py --site yakushimafan
-
-      - name: WP更新結果通知
-        if: always() && steps.plan.outputs.update_wp == 'true'
-        env:
-          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
-          NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
-        run: python notify_wp_update.py
-
       - name: 実行サマリー
         if: always()
         run: |
@@ -173,7 +155,7 @@ jobs:
             echo "- run: ${{ steps.plan.outputs.label }}"
             echo "- scope: ${{ steps.plan.outputs.scope }}"
             echo "- provider_id: ${{ steps.plan.outputs.provider_id }}"
-            echo "- update_wp: ${{ steps.plan.outputs.update_wp }}"
+            echo "- AI audit: Codex scheduled task (OpenAI API is not used by Actions)"
           } >> "$GITHUB_STEP_SUMMARY"
 
       - name: コミット＆プッシュ
@@ -186,6 +168,10 @@ jobs:
             his_coupon_data/
             jalpack_coupon_data/
             rurubu_travel_coupon_data/
+            yukoyuko_coupon_data/
+            official_coupon_data/
+            official_source_data/
+            codex_audit_queue/
             provider_check_data/
             html_output/
             tweets_output/

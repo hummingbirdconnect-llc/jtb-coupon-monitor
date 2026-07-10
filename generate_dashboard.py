@@ -32,6 +32,7 @@ RECENT_DAY_FILTERS = [
 
 COVERAGE_LABELS = {
     "auto_daily": "自動取得",
+    "official_codex": "公式取得＋Codex監査",
     "master_import": "手元マスター",
     "manual_queue": "半自動確認待ち",
     "article_exists": "記事あり・取得未整備",
@@ -65,6 +66,11 @@ SUMMARY_COLUMNS = [
     "配布中",
     "配布終了",
     "要確認",
+    "公式取得日時",
+    "URL確認日時",
+    "データ日",
+    "鮮度",
+    "Codex監査",
     "最新データ",
     "データ元",
     "次アクション",
@@ -76,7 +82,27 @@ RECENT_LOG_COLUMNS = ["対象日", "日付", "会社", "種別", "カテゴリ",
 
 def load_registry() -> list[dict[str, Any]]:
     with REGISTRY.open("r", encoding="utf-8") as handle:
-        return json.load(handle)["providers"]
+        config = json.load(handle)
+    schedule = config.get("schedule") or {}
+    daily_ids = set(schedule.get("daily_provider_ids") or [])
+    daily_defaults = schedule.get("daily") or {
+        "check_frequency": "daily",
+        "cadence_days": 1,
+        "freshness_sla_hours": 30,
+    }
+    low_defaults = schedule.get("every_5_days") or {
+        "check_frequency": "every_5_days",
+        "cadence_days": 5,
+        "freshness_sla_hours": 144,
+    }
+    providers = []
+    for raw in config["providers"]:
+        provider = dict(raw)
+        defaults = daily_defaults if provider["id"] in daily_ids else low_defaults
+        for key, value in defaults.items():
+            provider.setdefault(key, value)
+        providers.append(provider)
+    return providers
 
 
 def load_json(path: Path) -> Any:
@@ -124,16 +150,38 @@ def load_provider_check(provider_id: str) -> dict[str, Any]:
 def provider_frequency(provider: dict[str, Any]) -> tuple[str, str]:
     frequency = provider.get("check_frequency")
     if not frequency:
-        frequency = "daily"
+        frequency = "daily" if int(provider.get("cadence_days", 5)) == 1 else "every_5_days"
     labels = {
         "daily": "毎日チェック",
-        "weekly": "週1回チェック",
+        "every_5_days": "5日ごとにチェック",
+        "weekly": "5日ごとにチェック（旧設定）",
     }
     return frequency, labels.get(frequency, frequency)
 
 
+def freshness_label(value: str) -> str:
+    return {
+        "fresh": "新鮮",
+        "stale": "期限超過",
+        "snapshot_only": "旧スナップショット",
+        "unknown": "不明",
+    }.get(value or "unknown", value or "不明")
+
+
+def infer_freshness(data_date: str, check_type: str, sla_hours: int) -> str:
+    if check_type == "snapshot_url_check":
+        return "snapshot_only"
+    if check_type not in {"official_monitor", "official_page_candidate"} or not data_date:
+        return "unknown"
+    try:
+        age_hours = (datetime.now(JST).date() - datetime.strptime(data_date, "%Y-%m-%d").date()).days * 24
+    except ValueError:
+        return "unknown"
+    return "fresh" if age_hours <= sla_hours else "stale"
+
+
 def manual_gh_command(provider_id: str) -> str:
-    return f"gh workflow run coupon-monitor.yml -R {REPOSITORY} -f provider_id={provider_id} -f update_wp=false"
+    return f"gh workflow run coupon-monitor.yml -R {REPOSITORY} -f provider_id={provider_id}"
 
 
 def first_value(source: dict[str, Any], keys: list[str]) -> str:
@@ -300,6 +348,8 @@ def next_action(provider: dict[str, Any], rows: list[dict[str, str]]) -> str:
     status = provider.get("coverage_status", "")
     if status == "auto_daily":
         return "日次監視を継続。差分が出たら記事更新候補へ回す。"
+    if status == "official_codex":
+        return "公式ページ差分をCodex定期監査へ送り、高確度差分だけレビュー下書きへ回す。"
     if status == "master_import" and rows:
         return "公式取得スクレイパー化の候補。まず暫定データを目視確認。"
     if status == "article_exists" and rows:
@@ -325,6 +375,8 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
     if rows:
         if coverage == "auto_daily":
             source_label = "日次JSON"
+        elif coverage == "official_codex":
+            source_label = "公式ページ＋Codex監査JSON"
         elif coverage == "master_import":
             source_label = "coupon-master暫定JSON"
         elif coverage == "article_exists":
@@ -333,6 +385,23 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             source_label = "暫定JSON"
     elif provider.get("article_paths"):
         source_label = "記事HTMLあり"
+
+    data_date = check_status.get("data_date") or (
+        parse_date_value(latest_file).isoformat() if parse_date_value(latest_file) else ""
+    )
+    freshness = check_status.get("freshness_status") or infer_freshness(
+        data_date,
+        check_status.get("check_type", ""),
+        int(provider.get("freshness_sla_hours", 30)),
+    )
+    official_fetched_at = check_status.get("official_fetched_at", "")
+    url_checked_at = check_status.get("url_checked_at", "")
+    if check_status.get("codex_audit_required"):
+        audit_label = "監査待ち"
+    elif any(coupon.get("source_type") == "official_codex_audit" for coupon in coupons):
+        audit_label = "監査済み"
+    else:
+        audit_label = "対象外"
 
     return {
         "id": provider["id"],
@@ -346,6 +415,12 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "manual_action_url": WORKFLOW_URL,
         "manual_gh_command": manual_gh_command(provider["id"]),
         "check_status": check_status,
+        "data_date": data_date,
+        "freshness_status": freshness,
+        "freshness_label": freshness_label(freshness),
+        "official_fetched_at": official_fetched_at,
+        "url_checked_at": url_checked_at,
+        "ai_label": audit_label,
         "note": provider.get("note", ""),
         "latest_file": latest_file,
         "source_label": source_label,
@@ -362,6 +437,11 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             "配布中": str(active),
             "配布終了": str(ended),
             "要確認": str(review),
+            "公式取得日時": official_fetched_at or "なし",
+            "URL確認日時": url_checked_at or "なし",
+            "データ日": data_date or "不明",
+            "鮮度": freshness_label(freshness),
+            "Codex監査": audit_label,
             "最新データ": latest_file or "なし",
             "データ元": source_label,
             "次アクション": next_action(provider, rows),
@@ -430,7 +510,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .manual-command {{ grid-column: 1 / -1; display: block; background: #f4f6f8; border: 1px solid #dfe4ea; border-radius: 6px; padding: 8px 10px; color: #2c3b4c; font-size: 0.8rem; overflow-x: auto; white-space: nowrap; }}
 .check-pill {{ display: inline-block; border-radius: 999px; padding: 2px 8px; font-size: 0.78rem; font-weight: 700; margin-right: 8px; }}
 .check-success {{ background: #e9f7ef; color: #146c43; }}
+.check-unchanged,.check-snapshot_checked {{ background: #e9f7ef; color: #146c43; }}
+.check-baseline {{ background: #eaf3ff; color: #0f5caa; }}
 .check-warning {{ background: #fff5d6; color: #7a5200; }}
+.check-audit_pending,.check-baseline_pending,.check-audit_held {{ background: #fff5d6; color: #7a5200; }}
 .check-error {{ background: #fdecef; color: #a52834; }}
 .check-no_data,.check-none {{ background: #eef2f7; color: #5c6978; }}
 .toolbar {{ display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }}
@@ -532,6 +615,7 @@ function copyText(value, button) {{
 function checkTypeLabel(value) {{
   const labels = {{
     official_monitor: '公式監視',
+    official_page_candidate: '公式ページ＋Codex監査候補',
     snapshot_url_check: '既存URL確認',
   }};
   return labels[value] || value || '未実行';
@@ -540,6 +624,11 @@ function checkTypeLabel(value) {{
 function checkStatusLabel(value) {{
   const labels = {{
     success: '正常',
+    unchanged: '変更なし',
+    baseline_pending: '初回基準・監査待ち',
+    audit_pending: 'Codex監査待ち',
+    audit_held: 'ユーザー確認待ち',
+    snapshot_checked: 'URL確認済み',
     warning: '要確認',
     error: '失敗',
     no_data: 'データなし',
@@ -561,7 +650,12 @@ function checkStatusHtml(provider) {{
   const details = [];
   details.push(`<span class="check-pill check-${{escapeHtml(key)}}">${{escapeHtml(checkStatusLabel(status.status))}}</span>`);
   details.push(`<span class="manual-meta">${{escapeHtml(checkTypeLabel(status.check_type))}}</span>`);
-  details.push(`<span class="manual-meta">最終チェック: ${{escapeHtml(formatCheckTime(status.completed_at))}}</span>`);
+  details.push(`<span class="manual-meta">最終実行: ${{escapeHtml(formatCheckTime(status.completed_at))}}</span>`);
+  details.push(`<span class="manual-meta">公式取得: ${{escapeHtml(formatCheckTime(status.official_fetched_at))}}</span>`);
+  details.push(`<span class="manual-meta">URL確認日時: ${{escapeHtml(formatCheckTime(status.url_checked_at))}}</span>`);
+  details.push(`<span class="manual-meta">データ日: ${{escapeHtml(status.data_date || '不明')}}</span>`);
+  details.push(`<span class="manual-meta">鮮度: ${{escapeHtml(provider.freshness_label || '不明')}}</span>`);
+  details.push(`<span class="manual-meta">Codex監査: ${{escapeHtml(provider.ai_label || '対象外')}}</span>`);
   details.push(`<span class="manual-meta">件数: ${{escapeHtml(status.coupon_count ?? 0)}}</span>`);
   if (status.checked_url_count !== undefined) {{
     details.push(`<span class="manual-meta">URL確認: ${{escapeHtml(status.ok_url_count ?? 0)}}/${{escapeHtml(status.checked_url_count ?? 0)}}</span>`);
@@ -751,7 +845,10 @@ function renderSummary(container) {{
   const totalProviders = DATA.providers.length;
   const withRows = DATA.providers.filter(provider => provider.rows.length > 0).length;
   const dailyProviders = DATA.providers.filter(provider => provider.check_frequency === 'daily').length;
-  const totalCoupons = DATA.providers.reduce((sum, provider) => sum + provider.rows.length, 0);
+  const fiveDayProviders = DATA.providers.filter(provider => provider.check_frequency === 'every_5_days').length;
+  const officialProviders = DATA.providers.filter(provider => ['official_monitor', 'official_page_candidate'].includes(provider.check_status?.check_type));
+  const officialCoupons = officialProviders.reduce((sum, provider) => sum + provider.rows.length, 0);
+  const snapshotProviders = DATA.providers.filter(provider => provider.check_status?.check_type === 'snapshot_url_check').length;
   const recentChanges = DATA.recent_change_rows.length;
   const todayFilter = DATA.recent_change_dates[0] || null;
   const todayChanges = todayFilter ? DATA.recent_change_rows.filter(row => row['対象日'] === todayFilter.label).length : 0;
@@ -762,9 +859,11 @@ function renderSummary(container) {{
       <h2>全社サマリー</h2>
       <div class="stats">
         <span class="stat">対象会社 ${{totalProviders}} 社</span>
-        <span class="stat active">データあり ${{withRows}} 社</span>
+        <span class="stat active">保存データあり ${{withRows}} 社</span>
         <span class="stat">毎日チェック ${{dailyProviders}} 社</span>
-        <span class="stat">総クーポン ${{totalCoupons}} 件</span>
+        <span class="stat">5日ごと ${{fiveDayProviders}} 社</span>
+        <span class="stat active">公式取得クーポン ${{officialCoupons}} 件</span>
+        <span class="stat review">旧URL確認 ${{snapshotProviders}} 社</span>
         <span class="stat review">${{escapeHtml(primaryChangeLabel)}} ${{todayChanges}} 件</span>
         <span class="stat review">過去1週間 ${{recentChanges}} 件</span>
       </div>
@@ -774,7 +873,7 @@ function renderSummary(container) {{
   changeSection.className = 'section';
   changeSection.innerHTML = `
     <h2>その日のクーポン変動</h2>
-    <div class="note">対象日: ${{escapeHtml(dateLabels)}}</div>
+    <div class="note">旧記事・手元JSONのURL生存確認だけの件数は「公式取得クーポン」に含めません。対象日: ${{escapeHtml(dateLabels)}}</div>
   `;
   container.appendChild(changeSection);
   renderGrid(changeSection, DATA.recent_change_rows, DATA.columns.recent_logs, {{

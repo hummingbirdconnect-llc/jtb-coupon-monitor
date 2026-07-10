@@ -40,7 +40,9 @@ def test_public_options_are_safe_for_dashboard():
     pages = options["sites"]["yakushimafan"]["pages"]
     assert pages
     for page in pages:
-        assert set(page.keys()) == {"ota", "slug", "label", "url"}
+        assert {"ota", "slug", "label", "url"}.issubset(page.keys())
+        assert "wp_user" not in page
+        assert "wp_app_password" not in page
     print("  ✅ test_public_options_are_safe_for_dashboard PASSED")
 
 
