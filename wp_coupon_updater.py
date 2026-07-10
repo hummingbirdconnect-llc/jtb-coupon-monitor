@@ -17,6 +17,7 @@ Usage:
 
 import argparse
 import glob
+import hashlib
 import json
 import os
 import re
@@ -41,6 +42,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 CONFIG_PATH = SCRIPT_DIR / "config" / "wp_sites.json"
 BACKUP_DIR = SCRIPT_DIR / "backups"
 RESULT_FILE = SCRIPT_DIR / "wp_update_result.json"
+DRAFT_STATE_FILE = SCRIPT_DIR / "wp_draft_state.json"
 
 REVIEW_DIFF_START = "<!-- coupon-review-diff-start -->"
 REVIEW_DIFF_END = "<!-- coupon-review-diff-end -->"
@@ -119,6 +121,54 @@ def public_page_options() -> dict:
             })
         sites[site_id] = {"pages": pages}
     return {"sites": sites}
+
+
+def content_hash(content: str) -> str:
+    return hashlib.sha256(content.encode("utf-8")).hexdigest()
+
+
+def load_draft_state() -> dict:
+    if not DRAFT_STATE_FILE.exists():
+        return {"drafts": {}}
+    try:
+        return json.loads(DRAFT_STATE_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {"drafts": {}}
+
+
+def draft_state_key(site_config: dict, slug: str) -> str:
+    return f"{site_config['site_id']}:{slug}"
+
+
+def generated_draft_hash(site_config: dict, slug: str) -> str:
+    state = load_draft_state()
+    return str((state.get("drafts") or {}).get(draft_state_key(site_config, slug), {}).get("content_hash", ""))
+
+
+def record_generated_draft(site_config: dict, slug: str, post_id: int, content: str) -> None:
+    state = load_draft_state()
+    drafts = state.setdefault("drafts", {})
+    drafts[draft_state_key(site_config, slug)] = {
+        "site_id": site_config["site_id"],
+        "slug": slug,
+        "post_id": post_id,
+        "content_hash": content_hash(content),
+        "generated_at": datetime.now().astimezone().isoformat(),
+    }
+    DRAFT_STATE_FILE.write_text(
+        json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+
+
+def human_edit_guard_reason(site_config: dict, post: dict, slug: str) -> str:
+    """自動生成後に人が本文を編集していたら上書きを止める。"""
+    expected = generated_draft_hash(site_config, slug)
+    if not expected:
+        return f"{slug} の自動生成hashが未登録です。既存下書きは上書きしません"
+    current = content_hash(wp_post_content(post))
+    if current != expected:
+        return f"{slug} は自動生成後に編集されています。人の変更を保護するため停止しました"
+    return ""
 
 
 def find_page_config(site_config: dict, slug: str) -> dict | None:
@@ -217,9 +267,20 @@ def save_coupon_update_draft(
     """公開記事は分岐下書きへ、下書き記事は同じ下書きへ保存する。"""
     source_status = source_post.get("status", "")
     source_id = source_post["id"]
+    protect_human_edits = os.getenv("WP_PROTECT_HUMAN_DRAFTS", "").lower() in {
+        "1",
+        "true",
+        "yes",
+    }
 
     if source_status == "draft":
+        if protect_human_edits:
+            reason = human_edit_guard_reason(site_config, source_post, source_slug)
+            if reason:
+                return {"target": "blocked", "reason": reason}
         result = update_wp_post_content(site_config, source_id, new_content)
+        if protect_human_edits:
+            record_generated_draft(site_config, source_slug, result["id"], new_content)
         return {
             "target": "source_draft",
             "target_post_id": result["id"],
@@ -229,7 +290,8 @@ def save_coupon_update_draft(
         }
 
     branch_slug = f"{source_slug}-coupon-update"
-    branch_title = f"{wp_post_title(source_post)}【クーポン更新案】"
+    # H1/titleは公開元と同じままにし、レビュー用途はslugと下書きstatusで識別する。
+    branch_title = wp_post_title(source_post)
     try:
         branch_post = fetch_wp_post(site_config, branch_slug)
     except ValueError:
@@ -245,12 +307,18 @@ def save_coupon_update_draft(
                     f"（status={branch_status}）。安全のため停止しました"
                 ),
             }
+        if protect_human_edits:
+            reason = human_edit_guard_reason(site_config, branch_post, branch_slug)
+            if reason:
+                return {"target": "blocked", "reason": reason}
         result = update_wp_post_content(
             site_config,
             branch_post["id"],
             new_content,
             title=branch_title,
         )
+        if protect_human_edits:
+            record_generated_draft(site_config, branch_slug, result["id"], new_content)
         return {
             "target": "branch_draft_updated",
             "target_post_id": result["id"],
@@ -260,6 +328,8 @@ def save_coupon_update_draft(
         }
 
     result = create_wp_draft(site_config, branch_title, branch_slug, new_content)
+    if protect_human_edits:
+        record_generated_draft(site_config, branch_slug, result["id"], new_content)
     return {
         "target": "branch_draft_created",
         "target_post_id": result["id"],

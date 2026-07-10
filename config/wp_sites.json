@@ -72,8 +72,12 @@
           "label": "トリップブッキング / Trip.comクーポン",
           "slug": "tripcom-coupon",
           "url": "https://tripbooking.jp/tripcom-coupon/",
-          "update_enabled": false,
-          "note": "Trip.comの最新クーポン取得データが未整備のため、現在は接続確認のみ対応です。"
+          "data_dir": "official_coupon_data/tripcom",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "update_enabled": true,
+          "auto_review_enabled": true,
+          "note": "Codex監査で公式根拠を確認できた高確度差分だけをレビュー用分岐下書きへ反映します。"
         }
       ]
     },
@@ -167,6 +171,54 @@
           "table_format": "yellow_list",
           "update_enabled": true,
           "note": "JALパックは赤青差分レビューと黄色背景リストの枠外チェックに対応済みです。公式HTML由来の抽出値は下書きで目視確認してください。"
+        },
+        {
+          "ota": "jalan",
+          "label": "ウェルトリップ / じゃらんクーポン",
+          "slug": "jalan-coupon",
+          "url": "https://travel.hb-connect.co.jp/jalan-coupon/",
+          "data_dir": "official_coupon_data/jalan",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "update_enabled": true,
+          "auto_review_enabled": true,
+          "note": "全国の宿・ホテルクーポン公式一覧をCodex監査し、高確度差分だけをレビュー下書きへ反映します。"
+        },
+        {
+          "ota": "kkday",
+          "label": "ウェルトリップ / KKdayクーポン",
+          "slug": "kkday-coupon",
+          "url": "https://travel.hb-connect.co.jp/kkday-coupon/",
+          "data_dir": "official_coupon_data/kkday",
+          "section_matcher": "keyword",
+          "table_format": "yellow_list",
+          "update_enabled": true,
+          "auto_review_enabled": true,
+          "note": "公式ブログ・キャンペーンページをCodex監査し、高確度差分だけをレビュー下書きへ反映します。"
+        },
+        {
+          "ota": "klook",
+          "label": "ウェルトリップ / Klookクーポン",
+          "slug": "klook-coupon",
+          "url": "https://travel.hb-connect.co.jp/klook-coupon/",
+          "data_dir": "official_coupon_data/klook",
+          "section_matcher": "keyword",
+          "table_format": "yellow_list",
+          "update_enabled": true,
+          "auto_review_enabled": true,
+          "note": "日本向け公式SALE一覧をCodex監査し、高確度差分だけをレビュー下書きへ反映します。"
+        },
+        {
+          "ota": "rakuten_travel",
+          "label": "ウェルトリップ / 楽天トラベルクーポン",
+          "slug": "rakuten-travel-coupon",
+          "url": "https://travel.hb-connect.co.jp/rakuten-travel-coupon/",
+          "data_dir": "official_coupon_data/rakuten_travel",
+          "section_matcher": "keyword",
+          "table_format": "2col",
+          "update_enabled": true,
+          "auto_review_enabled": true,
+          "note": "RaCoupon公式一覧をCodex監査し、高確度差分だけをレビュー下書きへ反映します。"
         }
       ]
     }

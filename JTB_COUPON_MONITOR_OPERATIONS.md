@@ -1,8 +1,56 @@
-# JTB・KNT クーポン自動監視 — 運用マニュアル
+# OTAクーポン自動監視 - 運用マニュアル
 
 > **リポジトリ**: https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor
 >
-> **最終更新**: 2026年2月11日
+> **最終更新**: 2026年7月10日
+
+---
+
+## 2026-07 OTA監視拡張
+
+### 実行頻度
+
+- 毎日: HIS、JTB、KNT、JALパック、るるぶ、ゆこゆこ、楽天、じゃらん、Yahoo!トラベル、一休、Booking.com、Agoda、Expedia、Hotels.com、Trip.com、KKday、Klookの17社
+- 5日ごと: 残り27社。会社IDから日を分散し、5日間に1回だけ実行
+- 正本: `config/provider_registry.json` の `schedule`
+
+### 公式取得とCodex監査
+
+GitHub Actionsは公式API・埋め込みJSON・HTML・Playwrightの順で取得し、ページ内容のhashが変わった場合に `codex_audit_queue/` へ監査候補JSONを保存します。GitHub ActionsからOpenAI APIやWordPress更新は実行しません。
+
+Codex定期実行は監査候補を読み、`ota-official-deal-researcher` の基準で「掲載可・条件付き・掲載不可・終了済み」を分類します。公式URL、ページ内の根拠文、金額、コード、日付は `deal_audit_schema.py` でも再検証し、推測値、根拠文にない値、公式ドメイン外URLは採用しません。
+
+公式ページ監査の初期対象は、じゃらん宿泊、KKday、Klook、楽天トラベル、Trip.comです。これは機能上の上限ではなく、公式取得元が設定済みの会社です。44社の取得スケジュールは維持し、公式取得元を追加できた会社からCodex監査対象へ昇格します。初回監査は比較用の基準データを作るだけで、WordPress下書きは作りません。
+
+### 必須GitHub Secrets
+
+| Secret | 用途 |
+|--------|------|
+| `GMAIL_ADDRESS` / `GMAIL_APP_PASSWORD` / `NOTIFY_EMAIL` | GitHub Actionsの差分通知 |
+
+WordPress認証情報はGitHub Actionsへ渡さず、Codexを実行するローカル環境だけに置きます。認証情報はGitへ保存しません。
+
+### WordPress安全条件
+
+- Codex監査が `high_confidence=true` かつ意味のある差分と判定した場合だけ処理
+- 自動下書きはJSTで1日最大5件。6件目以降は保留キューへ送り、ユーザー確認を求める
+- 公開記事は変更せず、`<slug>-coupon-update` の `draft` を作成または更新
+- title/H1、H2/H3、本文、FAQ、CTA、slug、canonical、affiliate URLは保持
+- 終了情報や前回データが公式ページから消えただけでは削除せず「要確認」で保持
+- 自動生成後に人が下書きを編集した場合はhash不一致で停止
+- 自動公開処理はない
+
+状態確認:
+
+```bash
+python3 provider_check_runner.py --scope due
+python3 generate_dashboard.py
+python3 codex_audit_runner.py pending --json
+python3 codex_audit_runner.py apply-all --dry-run
+python3 wp_review_orchestrator.py --dry-run
+```
+
+6件目以降を同日に追加する場合だけ、ユーザー承認後の手動実行で `--approved-extra-drafts N` を指定します。認証設定や人手下書きの確認後に保留候補を再試行する場合は `--retry-attention` を使います。定期実行ではどちらも指定しません。
 
 ---
 
@@ -231,7 +279,7 @@ jtb-coupon-monitor/
 
 ## 8. コスト
 
-すべて無料枠内で運用可能。
+OpenAI APIは使用しません。Codex定期実行はChatGPT/Codex契約内の利用枠を使います。
 
 | 項目 | コスト |
 |------|--------|
@@ -239,3 +287,5 @@ jtb-coupon-monitor/
 | Google Cloud | 無料 |
 | Google Sheets API | 無料（1日300リクエスト。本ツールは約8リクエスト/日） |
 | Gmail SMTP | 無料（1日500通。本ツールは最大1通/日） |
+| OpenAI API | 未使用 |
+| Codex定期実行 | ChatGPT/Codex契約の利用上限に従う |
