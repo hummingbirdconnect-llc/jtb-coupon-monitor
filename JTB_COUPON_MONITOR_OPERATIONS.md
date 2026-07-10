@@ -122,6 +122,22 @@ python3 wp_review_orchestrator.py --dry-run
 - 配布終了行は薄赤で色付け
 - 割引額・クーポンコード・パスワード・期間を一覧表示
 
+### 毎朝のX投稿（サイト別デイリーツリー）
+
+毎朝の自動実行で `tweets_output/x_threads_YYYY-MM-DD.md` が生成されます。
+屋久島ファン / ウェルトリップ / トリップブッキングの3サイト×重要度トップ3クーポン×各3投稿のツリーです。
+
+1. GitHubで当日のファイルを開く（スマホ可）:
+   `https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/blob/main/tweets_output/x_threads_YYYY-MM-DD.md`
+2. サイトごとに、各ツリーの1投稿目を投稿 → 2投稿目・3投稿目を自分の投稿へのリプライとして続ける
+3. リンクは3投稿目のみ（1投稿目にリンクを入れるとXのアルゴリズムでインプレッションが下がるため）
+
+調整したいとき:
+- 記事リンク先・対象OTAの追加削除: `config/x_thread_sites.json` の `article_map`
+- クーポンコードを投稿に表示してよいOTA: 同ファイルの `trusted_code_providers`（データ取得時にコードが完全形と確認できたOTAだけ追加。JTB/HISは切り詰めを確認済みのため非表示）
+- 文面テンプレ・スコアリング: `generate_x_threads.py` の `TONES` / `score_coupon()`
+- 手動再生成: `python generate_x_threads.py --source remote`
+
 ---
 
 ## 3. よく使う操作

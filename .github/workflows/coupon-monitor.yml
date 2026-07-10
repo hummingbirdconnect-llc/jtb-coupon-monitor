@@ -146,6 +146,10 @@ jobs:
       - name: ダッシュボード HTML 生成
         run: python generate_dashboard.py
 
+      - name: X投稿ツリー生成（サイト別デイリー3本）
+        continue-on-error: true
+        run: python generate_x_threads.py
+
       - name: 実行サマリー
         if: always()
         run: |
