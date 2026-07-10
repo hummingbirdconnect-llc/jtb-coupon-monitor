@@ -127,10 +127,18 @@ python3 wp_review_orchestrator.py --dry-run
 毎朝の自動実行で `tweets_output/x_threads_YYYY-MM-DD.md` が生成されます。
 屋久島ファン / ウェルトリップ / トリップブッキングの3サイト×重要度トップ3クーポン×各3投稿のツリーです。
 
-1. GitHubで当日のファイルを開く（スマホ可）:
-   `https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/blob/main/tweets_output/x_threads_YYYY-MM-DD.md`
-2. サイトごとに、各ツリーの1投稿目を投稿 → 2投稿目・3投稿目を自分の投稿へのリプライとして続ける
+**毎朝の投稿と実績記録は「X投稿管理」スプレッドシートが主入口**（毎朝7時過ぎに自動同期）:
+
+1. 「X投稿管理」スプレッドシートの「投稿キュー」タブを開く（一番上が今日の分・磨き版優先）
+2. 本文セルをコピーして投稿 → 同ツリーの2投稿目・3投稿目を自分の投稿へのリプライとして続ける
 3. リンクは3投稿目のみ（1投稿目にリンクを入れるとXのアルゴリズムでインプレッションが下がるため）
+4. 投稿から2〜3日後、「実績入力」タブのインプレッション列に数字を入れる → 翌朝自動でパターン淘汰エンジンに反映され、「パターン成績」タブが更新される
+
+セットアップ（初回1回だけ）: https://sheets.new で「X投稿管理」を作成 →
+`claude-seo-analyst@claude-seo-analyst.iam.gserviceaccount.com` を編集者で共有 →
+`config/x_thread_sheets.json` の `spreadsheet_id` にIDを記入。
+Macが起動していなかった日はスプシ同期が走らないため、GitHubのファイルを直接開いてもよい:
+`https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/blob/main/tweets_output/x_threads_YYYY-MM-DD.md`
 
 ### 投稿パターンのローテーションと実績淘汰
 

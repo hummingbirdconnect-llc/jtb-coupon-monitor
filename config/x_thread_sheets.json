@@ -1,0 +1,5 @@
+{
+  "_comment": "X投稿管理スプレッドシートの接続設定。spreadsheet_id: https://docs.google.com/spreadsheets/d/{この部分}/edit のID。シート側に claude-seo-analyst@claude-seo-analyst.iam.gserviceaccount.com を編集者で共有しておくこと",
+  "spreadsheet_id": "",
+  "service_account_file": "~/.config/gcloud/claude-seo-analyst.json"
+}

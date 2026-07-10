@@ -89,23 +89,16 @@ def cmd_add(args):
     print(f"   累計記録: {len(perf)}件 → 次回生成からこの実績が選択率に反映されます")
 
 
-def cmd_report(_args):
-    perf = load_json(PERF_LOG, [])
-    usage = load_json(USAGE_LOG, [])
-    patterns_conf = load_json(PATTERNS_CONFIG, {}).get("patterns", [])
+def aggregate_stats(perf, usage, patterns_conf):
+    """サイト別×パターン別の成績を集計する（CLI・スプレッドシート連携で共用）。
+    返り値: (stats, retire_candidates)
+      stats = {site: {"records": n, "median": m, "rows": [(pattern_id, name, used, n, score, verdict), ...]}}
+    """
     pattern_names = {p["id"]: p["name"] for p in patterns_conf}
     pattern_status = {p["id"]: p.get("status", "active") for p in patterns_conf}
-
-    if not perf:
-        print("実績記録がまだありません。")
-        print("記録例: python record_x_perf.py add --date 2026-07-11 --site yf --tree 1 --imp 3500")
-        if usage:
-            print(f"\n（パターン使用ログは{len(usage)}件あります — 投稿から2〜3日後の数字が安定した頃に記録するのがおすすめ）")
-        return
-
-    sites = sorted({p["site"] for p in perf})
+    stats = {}
     retire_candidates = []
-    for site in sites:
+    for site in sorted({p["site"] for p in perf}):
         recs = [p for p in perf if p["site"] == site and p.get("impressions")]
         if not recs:
             continue
@@ -118,9 +111,7 @@ def cmd_report(_args):
         for u in usage:
             if u.get("site") == site:
                 used_count[u["pattern"]] = used_count.get(u["pattern"], 0) + 1
-
-        print(f"\n## {site}（記録{len(recs)}件・インプレ中央値 {median:,}）")
-        print(f"{'パターン':<18}{'使用':>4}{'記録':>4}{'平均スコア':>8}  判定")
+        rows = []
         for pat, ratios in sorted(by_pattern.items(), key=lambda x: -sum(x[1]) / len(x[1])):
             score = sum(ratios) / len(ratios)
             n = len(ratios)
@@ -135,7 +126,29 @@ def cmd_report(_args):
                 verdict = "⭐ 好調"
             else:
                 verdict = "継続"
-            print(f"{name:<18}{used_count.get(pat, 0):>4}{n:>4}{score:>8.2f}  {verdict}")
+            rows.append((pat, name, used_count.get(pat, 0), n, score, verdict))
+        stats[site] = {"records": len(recs), "median": median, "rows": rows}
+    return stats, retire_candidates
+
+
+def cmd_report(_args):
+    perf = load_json(PERF_LOG, [])
+    usage = load_json(USAGE_LOG, [])
+    patterns_conf = load_json(PATTERNS_CONFIG, {}).get("patterns", [])
+
+    if not perf:
+        print("実績記録がまだありません。")
+        print("記録例: python record_x_perf.py add --date 2026-07-11 --site yf --tree 1 --imp 3500")
+        if usage:
+            print(f"\n（パターン使用ログは{len(usage)}件あります — 投稿から2〜3日後の数字が安定した頃に記録するのがおすすめ）")
+        return
+
+    stats, retire_candidates = aggregate_stats(perf, usage, patterns_conf)
+    for site, s in stats.items():
+        print(f"\n## {site}（記録{s['records']}件・インプレ中央値 {s['median']:,}）")
+        print(f"{'パターン':<18}{'使用':>4}{'記録':>4}{'平均スコア':>8}  判定")
+        for _pat, name, used, n, score, verdict in s["rows"]:
+            print(f"{name:<18}{used:>4}{n:>4}{score:>8.2f}  {verdict}")
 
     if retire_candidates:
         print("\n## 🔴 引退候補（自動では引退させません — ご判断ください）")
