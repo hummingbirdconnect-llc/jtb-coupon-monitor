@@ -1,0 +1,20 @@
+{
+  "provider_id": "jalan",
+  "observed_hash": "c01b562a0cfbfd083455859faeb10579b6c4cd5ad226cb8f92c3f13427ec2bbf",
+  "last_checked_at": "2026-07-11T07:05:46.113803+09:00",
+  "sources": [
+    {
+      "url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 10981,
+      "content_hash": "bbd2ec9db6680970d01a786c03b6ee5d22341f6d67c2108a962c906fb84a166b"
+    }
+  ],
+  "queued_hash": "c01b562a0cfbfd083455859faeb10579b6c4cd5ad226cb8f92c3f13427ec2bbf",
+  "queued_candidate_id": "jalan-c01b562a0cfbfd08",
+  "queued_at": "2026-07-11T07:05:46.114622+09:00",
+  "last_audit_status": "pending"
+}

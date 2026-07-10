@@ -1,0 +1,38 @@
+{
+  "provider_id": "kkday",
+  "observed_hash": "b9be46c292ae6b02f6f96146135d009a1d880c41b27c35edc400b39b90c4ba77",
+  "last_checked_at": "2026-07-11T07:05:51.350308+09:00",
+  "sources": [
+    {
+      "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "auto",
+      "error": "HTTP 405; Playwright HTTP 405",
+      "text_chars": 0,
+      "content_hash": ""
+    },
+    {
+      "url": "https://www.kkday.com/ja/promo/coupon-campaign",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 762927,
+      "content_hash": "633ee6e735ef6d4b57091a512b11e629c28b5a510408a7fc34b9367103520451"
+    },
+    {
+      "url": "https://www.kkday.com/ja/promo/aj_newmember",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 315490,
+      "content_hash": "d8be4a15cddbda6a9cb905c2fd539f824d7377dee617695b770b7cf51f5b842a"
+    }
+  ],
+  "queued_hash": "b9be46c292ae6b02f6f96146135d009a1d880c41b27c35edc400b39b90c4ba77",
+  "queued_candidate_id": "kkday-b9be46c292ae6b02",
+  "queued_at": "2026-07-11T07:05:51.371961+09:00",
+  "last_audit_status": "pending"
+}

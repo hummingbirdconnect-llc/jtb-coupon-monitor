@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-466f8b746a3d9c08",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-11T07:05:52.284973+09:00",
+  "content_hash": "466f8b746a3d9c0864d6f085f3943f6bfc958007e1d05ffdc5ca2f8d912e7c71",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "b91087cf471aa5e395d568ba522c7b47bc915bb294505a74c1c6928c3ab5094c",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE ベトナム マレーシア 韓国 シンガポール 日本 香港・マカオ タイ 台湾 すべて表示 ベトナム クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,462 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 アプリのみ 海外現地ツアー クーポンコード: KLKTOUR68 6%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア ホーチミン ハロン カテゴリ すべて ツアー・体験 観光施設チケット ホーチミン ホーチミン タンソンニャット国際空港（SGN）での入国審査VIPファストトラックサービス ★ 4.5 (902) • 50K+ 件の予約 ¥ 3,046 6％OFF セット割 ダナン サンワールドバーナーヒルズ チケット（ダナン） ★ 4.6 (35,106) • 1M+ 件の予約 ¥ 5,983 〜 7％OFF SALE ホーチミン ホーチミン 2階建て市内観光バス 乗車チケット（City Sightseeing提供） ★ 4.5 (5,200) • 200K+ 件の予約 ¥ 785 15％OFF SALE ハノイ ハノイスパ：プレミアムマッサージ＆ホリスティックウェルネス体験 ★ 5.0 (4,148) • 5K+ 件の予約 ¥ 566 80％OFF SALE ホーチミン ベトナム 空港優先入国・出国サービス (SGN・HAN・PQC・DAD国際空港対応) ★ 4.6 (222) • 20K+ 件の予約 ¥ 2,343 5％OFF SALE フエ 列車チケット（ダナン⇔フエ） ★ 4.2 (384) • 10K+ 件の予約 ¥ 994 〜 5％OFF SALE ダナン サムスパ：ヘアウォッシュ＆マッサージ体験（ダナン） ★ 4.9 (1,439) • 6K+ 件の予約 ¥ 1,246 25％OFF SALE ダナン 乗合空港送迎（ダナン空港⇔ダナン市内・ホイアン） ★ 4.5 (1,954) • 10K+ 件の予約 ¥ 846 5％OFF SALE ホイアン ホイアンメモリーズショー・ホイアンインプレッションテーマパーク チケット ★ 4.7 (5,111) • 100K+ 件の予約 ¥ 1,846 10％OFF SALE ハノイ L'essence De La Vie Spa スパ体験（ハノイ） ★ 4.8 (257) • 2K+ 件の予約 ¥ 838 75％OFF SALE ダナン サンワールドバーナーヒルズ ケーブルカー乗車券＆ビュッフェ体験 ★ 4.4 (429) • 40K+ 件の予約 ¥ 7,631 〜 5％OFF SALE Van Giang District メガグランドワールド ゴンドラ乗車チケット（ハノイ） ★ 4.5 (575) • 10K+ 件の予約 ¥ 1,108 10％OFF SALE ダナン ツリースパ：ヘアウォッシュ＆マッサージ体験（ダナン） ★ 4.8 (1,023) • 10K+ 件の予約 ¥ 1,027 30％OFF SALE さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}

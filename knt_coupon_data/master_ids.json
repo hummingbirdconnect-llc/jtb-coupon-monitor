@@ -1,6 +1,11 @@
 {
-  "last_updated": "2026-07-10T07:51:03.624576+09:00",
+  "last_updated": "2026-07-11T07:04:44.051054+09:00",
   "ids": {
+    "yado-sp-kagawa-kcp-3052c8": {
+      "category": "獲得クーポン",
+      "title": "香川たびクーポンキャンペーン",
+      "area": "香川県"
+    },
     "yado-sp-kyoto-kcp-117d09": {
       "category": "獲得クーポン",
       "title": "GO!GO!天橋立・丹後キャンペーン",
@@ -40,6 +45,11 @@
       "category": "獲得クーポン",
       "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
       "area": "和歌山県"
+    },
+    "cpn-thanksweek-91eb8b": {
+      "category": "クーポンコード",
+      "title": "近ツー感謝ウィーク",
+      "area": ""
     },
     "cpn-natsuuri-449b65": {
       "category": "クーポンコード",

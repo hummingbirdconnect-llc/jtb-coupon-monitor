@@ -70,5 +70,77 @@
   "pattern": "loss_aversion",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "☆【沖縄】７月～９月出発☆夏休みにも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "memo_style",
+  "ota": "rurubu_travel",
+  "title": "【夏旅タイムセール】割引クーポン"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "big_discount",
+  "ota": "jtb",
+  "title": "☆【沖縄】７月～９月出発☆夏休みにも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "question",
+  "ota": "jtb",
+  "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "weekend_plan",
+  "ota": "his",
+  "title": "オンライン予約限定！海外航空券1グループ最大20,000円引き"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "daily_check",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-07-11",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "weekend_plan",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]

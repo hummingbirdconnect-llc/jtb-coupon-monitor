@@ -766,5 +766,45 @@
     "id": "rurubu_travel-rusum26jun4-19c1e989bd",
     "title": "今月の値引きクーポン（最大1,500円引き）",
     "discount": "最大4%引き"
+  },
+  {
+    "date": "2026-07-11",
+    "type": "new",
+    "category": "施設限定クーポン",
+    "id": "rurubu_travel-osky26jul10-94fd7333e1",
+    "title": "群馬県 草津温泉 大阪屋で使えるクーポン（最大10,000円引き）",
+    "discount": "最大10%引き"
+  },
+  {
+    "date": "2026-07-11",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26apple20-3237b23501",
+    "title": "青森県 南田温泉 青森のお宿 ホテルアップルランドで使えるクーポン（最大10,000円引き）",
+    "discount": "最大20%引き"
+  },
+  {
+    "date": "2026-07-11",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-rusum26jun2-438ca634eb",
+    "title": "今月の値引きクーポン（最大500円引き）",
+    "discount": "最大2%引き"
+  },
+  {
+    "date": "2026-07-11",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-rusum26jun3-18b9bed2ca",
+    "title": "今月の値引きクーポン（最大800円引き）",
+    "discount": "最大3%引き"
+  },
+  {
+    "date": "2026-07-11",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-rusum26jun4-19c1e989bd",
+    "title": "今月の値引きクーポン（最大1,500円引き）",
+    "discount": "最大4%引き"
   }
 ]

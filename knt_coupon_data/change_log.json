@@ -1,29 +1,5 @@
 [
   {
-    "date": "2026-04-11",
-    "type": "🆕 新規",
-    "id": "cpn-thanksweek-91eb8b",
-    "category": "クーポンコード",
-    "title": "近ツー感謝ウィーク",
-    "area": ""
-  },
-  {
-    "date": "2026-04-11",
-    "type": "🆕 新規",
-    "id": "yado-sp-kagoshima-natsu-cp-4a08ed",
-    "category": "獲得クーポン",
-    "title": "南の宝箱　鹿児島「夏のかごしま宿泊割」キャンペーン",
-    "area": "鹿児島県"
-  },
-  {
-    "date": "2026-04-11",
-    "type": "🆕 新規",
-    "id": "yado-sp-wakayama-kumano-kcp-6bb148",
-    "category": "獲得クーポン",
-    "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
-    "area": "和歌山県"
-  },
-  {
     "date": "2026-04-21",
     "type": "❌ 消失",
     "id": "sp-nikko-campaign-9014fc",
@@ -158,5 +134,21 @@
     "category": "獲得クーポン",
     "title": "GO!GO!天橋立・丹後キャンペーン",
     "area": "京都府"
+  },
+  {
+    "date": "2026-07-11",
+    "type": "🆕 新規",
+    "id": "cpn-thanksweek-91eb8b",
+    "category": "クーポンコード",
+    "title": "近ツー感謝ウィーク",
+    "area": ""
+  },
+  {
+    "date": "2026-07-11",
+    "type": "🆕 新規",
+    "id": "yado-sp-kagawa-kcp-3052c8",
+    "category": "獲得クーポン",
+    "title": "香川たびクーポンキャンペーン",
+    "area": "香川県"
   }
 ]
