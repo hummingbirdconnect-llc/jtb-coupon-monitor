@@ -25,6 +25,7 @@ X投稿文面を生成する。
 
 import argparse
 import json
+import random
 import re
 import sys
 import urllib.request
@@ -37,7 +38,10 @@ OUTPUT_DIR = BASE_DIR / "tweets_output"
 DASHBOARD_HTML = BASE_DIR / "dashboard" / "index.html"
 REMOTE_DASHBOARD_URL = "https://hummingbirdconnect-llc.github.io/jtb-coupon-monitor/dashboard/"
 SITES_CONFIG = BASE_DIR / "config" / "x_thread_sites.json"
+PATTERNS_CONFIG = BASE_DIR / "config" / "x_thread_patterns.json"
 PROVIDER_REGISTRY = BASE_DIR / "config" / "provider_registry.json"
+USAGE_LOG = OUTPUT_DIR / "x_pattern_usage.json"
+PERF_LOG = OUTPUT_DIR / "x_perf_log.json"
 
 TOP_N = 3
 MAX_PER_OTA = 2  # トップ3内の同一OTA上限
@@ -364,31 +368,124 @@ def hashtag_for(label):
     return re.sub(r"[!！.。・\s]", "", name)
 
 
-def build_hook_line(item, today):
-    """1投稿目のフック文（数字・限定性先出し）。"""
+def load_patterns():
+    """パターンライブラリを読み込む。"""
+    conf = json.loads(PATTERNS_CONFIG.read_text(encoding="utf-8"))
+    return conf.get("patterns", []), conf.get("post3_closings", {})
+
+
+def load_usage_log():
+    if USAGE_LOG.exists():
+        try:
+            return json.loads(USAGE_LOG.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            return []
+    return []
+
+
+def load_perf_scores():
+    """実績ログからサイト別×パターン別の正規化スコアを集計する。
+    スコア = 各記録のインプレッション ÷ 同サイト全記録の中央値、の平均。
+    記録が無いパターンは None（中立扱い）。"""
+    if not PERF_LOG.exists():
+        return {}
+    try:
+        entries = json.loads(PERF_LOG.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+    by_site = {}
+    for e in entries:
+        imp = e.get("impressions")
+        if not imp:
+            continue
+        by_site.setdefault(e.get("site"), []).append(e)
+    scores = {}
+    for site, recs in by_site.items():
+        imps = sorted(r["impressions"] for r in recs)
+        median = imps[len(imps) // 2] or 1
+        by_pattern = {}
+        for r in recs:
+            by_pattern.setdefault(r.get("pattern"), []).append(r["impressions"] / median)
+        for pat, ratios in by_pattern.items():
+            scores[(site, pat)] = sum(ratios) / len(ratios)
+    return scores
+
+
+def coupon_flags(item, today):
+    """クーポンの状態フラグ（new / restart / deadline_soon）を判定。
+    「今日出ました」系パターンの誤用を防ぐため、new/restart は当日のみ。"""
+    flags = {"always"}
+    reasons = item["reasons"]
+    if "本日新規" in reasons:
+        flags.add("new")
+    if "本日配布再開" in reasons:
+        flags.add("restart")
+    days_left, _ = parse_deadline(item["row"], today)
+    if days_left is not None and 0 <= days_left <= 7:
+        flags.add("deadline_soon")
+    return flags
+
+
+def choose_pattern(item, site_id, patterns, used_today, used_yesterday, perf_scores, rng, today):
+    """適合条件・実績・前日使用・同日重複を考慮してパターンを選ぶ。"""
+    flags = coupon_flags(item, today)
+    target = clean_target(item["row"])
+    eligible = []
+    for p in patterns:
+        if p.get("status") != "active":
+            continue
+        if site_id not in p.get("sites", []):
+            continue
+        if not any(c in flags for c in p.get("conditions", [])):
+            continue
+        if "{target}" in p.get("hook", "") and not target:
+            continue  # 対象が取れないクーポンに対象前提パターンは使わない
+        if p["id"] in used_today:
+            continue  # 同日同サイトでのパターン重複禁止
+        eligible.append(p)
+    if not eligible:
+        fallback = next((p for p in patterns if p["id"] == "direct_number"), patterns[0])
+        return fallback
+    weights = []
+    for p in eligible:
+        w = 1.0
+        score = perf_scores.get((site_id, p["id"]))
+        if score is not None:
+            w *= min(max(score, 0.5), 2.0)  # 実績比0.5〜2.0倍で反映
+        if p["id"] in used_yesterday:
+            w *= 0.4  # 前日使用ペナルティ
+        # 限定条件パターン（新規/再開/期限）は該当時に優先
+        if "always" not in p.get("conditions", []):
+            w *= 1.6
+        weights.append(w)
+    return rng.choices(eligible, weights=weights, k=1)[0]
+
+
+def build_hook_from_pattern(pattern, item, today):
+    """選択パターンのテンプレを変数展開して1投稿目フックを作る。"""
     row = item["row"]
     yen, pct, is_max, label = parse_discount(row)
-    reasons = item["reasons"]
-    if any("新規" in r for r in reasons):
-        prefix = "新しいクーポンが出ました。"
-    elif any("再開" in r for r in reasons):
-        prefix = "終了していたクーポンが復活しています。"
-    else:
-        prefix = ""
     if yen >= 1000:
-        core = f"{'最大' if is_max else ''}{yen:,}円引きクーポンが配布中です"
+        discount = f"{'最大' if is_max else ''}{yen:,}円引き"
     elif pct:
-        core = f"{'最大' if is_max else ''}{pct}%OFFクーポンが配布中です"
+        discount = f"{'最大' if is_max else ''}{pct}%OFF"
     else:
-        core = f"{truncate_jp(label, 20)}のクーポンが配布中です"
-    return prefix + core
+        discount = truncate_jp(label, 20)
+    target = truncate_jp(clean_target(row), 22) or "対象商品"
+    days_left, deadline_disp = parse_deadline(row, today)
+    hook = pattern["hook"]
+    hook = hook.replace("{ota}", item["provider_label"])
+    hook = hook.replace("{discount}", discount)
+    hook = hook.replace("{target}", target)
+    hook = hook.replace("{days_left}", str(days_left) if days_left is not None else "わずか")
+    hook = hook.replace("{deadline}", deadline_disp.split("（")[0] if deadline_disp else "")
+    return hook
 
 
-def build_thread(item, site_conf, today, trusted_code_providers=()):
+def build_thread(item, site_conf, today, trusted_code_providers=(), pattern=None, closing=None):
     """1クーポン分のツリー3投稿を生成する。"""
     row = item["row"]
     tone = TONES[site_conf["tone"]]
-    ota_label = item["provider_label"]
     yen, pct, is_max, discount_label = parse_discount(row)
     days_left, deadline_disp = parse_deadline(row, today)
     target = truncate_jp(clean_target(row), 30)
@@ -396,21 +493,27 @@ def build_thread(item, site_conf, today, trusted_code_providers=()):
     caution = detect_caution(row)
     article_url = site_conf["article_map"][item["provider_id"]]
 
-    # --- 1投稿目: フック（リンクなし） ---
-    hook = build_hook_line(item, today)
+    # --- 1投稿目: フック（パターン適用・リンクなし） ---
+    hook_template = pattern.get("hook", "") if pattern else ""
+    hook = build_hook_from_pattern(pattern, item, today) if pattern else ""
     sub_lines = []
-    if target:
-        sub_lines.append(f"対象は{target}。")
-    else:
-        # 対象が取れない場合はタイトルを対象説明に転用（例: 「アプリ初回」「Mastercard」）
-        title_as_target = truncate_jp(row.get("タイトル", ""), 26)
-        if title_as_target:
-            sub_lines.append(f"「{title_as_target}」向けのクーポンです。")
-    if days_left is not None and 0 <= days_left <= 7:
-        sub_lines.append(f"予約は{deadline_disp.split('（')[0]}、急ぎめです。")
-    elif deadline_disp:
+    if "{target}" not in hook_template:  # フックで対象に触れていない場合のみ補足
+        if target:
+            sub_lines.append(f"対象は{target}。")
+        else:
+            # 対象が取れない場合はタイトルを対象説明に転用（例: 「アプリ初回」「Mastercard」）
+            title_as_target = truncate_jp(row.get("タイトル", ""), 26)
+            if title_as_target:
+                sub_lines.append(f"「{title_as_target}」向けのクーポンです。")
+    if "{days_left}" not in hook_template and "{deadline}" not in hook_template:
+        if days_left is not None and 0 <= days_left <= 7:
+            sub_lines.append(f"予約は{deadline_disp.split('（')[0]}、急ぎめです。")
+        elif deadline_disp:
+            sub_lines.append(f"予約期限は{deadline_disp.split('（')[0]}。")
+    elif deadline_disp and "{deadline}" not in hook_template:
         sub_lines.append(f"予約期限は{deadline_disp.split('（')[0]}。")
-    post1 = f"【{ota_label}】{hook}\n\n" + "\n".join(sub_lines) + f"\n\n{tone['hook_close']}\n(1/3)"
+    body = "\n".join(sub_lines)
+    post1 = hook + ("\n\n" + body if body else "") + f"\n\n{tone['hook_close']}\n(1/3)"
 
     # --- 2投稿目: 条件詳細（リンクなし） ---
     lines = [f"✅割引: {truncate_jp(discount_label, 24)}"]
@@ -427,11 +530,14 @@ def build_thread(item, site_conf, today, trusted_code_providers=()):
         lines.append(f"✅コード: {code}")
     post2 = f"{tone['post2_lead']}\n\n" + "\n".join(lines) + f"\n\n⚠️{caution}\n(2/3)"
 
-    # --- 3投稿目: 自社記事リンク + CTA ---
-    domestic_note = tone.get("domestic_note", "") if not is_overseas_only(row) else ""
-    closing = (domestic_note + tone["post3_close"]).strip()
-    tags = f"#旅行クーポン #{hashtag_for(ota_label)}"
-    post3 = f"{tone['post3_lead']}\n→ {article_url}\n\n{closing}\n\n{tags}\n(3/3)"
+    # --- 3投稿目: 自社記事リンク + CTA（締めフレーズはローテーション） ---
+    if closing and not ("屋久島" in closing and is_overseas_only(row)):
+        closing_text = closing  # 海外クーポンに屋久島文言が付く組合せだけ回避
+    else:
+        domestic_note = tone.get("domestic_note", "") if not is_overseas_only(row) else ""
+        closing_text = (domestic_note + tone["post3_close"]).strip()
+    tags = f"#旅行クーポン #{hashtag_for(item['provider_label'])}"
+    post3 = f"{tone['post3_lead']}\n→ {article_url}\n\n{closing_text}\n\n{tags}\n(3/3)"
 
     posts = []
     for text in (post1, post2, post3):
@@ -481,7 +587,7 @@ def render_markdown(results, date_str, generated_at):
         for i, th in enumerate(site["threads"], 1):
             reasons = "・".join(th["reasons"]) if th["reasons"] else "定番"
             out.append(f"### ツリー{i}: 【{th['provider_label']}】{th['title']}")
-            out.append(f"重要度スコア: {th['score']}（{reasons}）")
+            out.append(f"重要度スコア: {th['score']}（{reasons}）／パターン: {th.get('pattern_name', '-')}")
             out.append("")
             for j, post in enumerate(th["posts"], 1):
                 out.append(f"**{j}投稿目**（weight {post['weight']}/280）")
@@ -507,6 +613,10 @@ def main():
     config = json.loads(SITES_CONFIG.read_text(encoding="utf-8"))
     sites_conf = config["sites"]
     trusted_code_providers = tuple(config.get("trusted_code_providers", []))
+    patterns, closings = load_patterns()
+    usage_log = load_usage_log()
+    perf_scores = load_perf_scores()
+    yesterday = (today - timedelta(days=1)).strftime("%Y-%m-%d")
     try:
         data = load_dashboard_data(args.source)
     except (OSError, RuntimeError) as e:
@@ -519,20 +629,40 @@ def main():
     generated_at = data.get("generated_at", "不明")
 
     results = []
+    new_usage = []
     for site_id, site_conf in sites_conf.items():
         scored = collect_site_coupons(data, site_id, site_conf, change_map, today)
         top = select_top(scored)
+        used_yesterday = {u["pattern"] for u in usage_log
+                          if u.get("date") == yesterday and u.get("site") == site_id}
+        used_today = set()
         threads = []
-        for item in top:
-            posts = build_thread(item, site_conf, today, trusted_code_providers)
+        for i, item in enumerate(top, 1):
+            rng = random.Random(f"{date_str}-{site_id}-{i}")  # 日付・サイト・ツリー番号で再現性を確保
+            pattern = choose_pattern(item, site_id, patterns, used_today,
+                                     used_yesterday, perf_scores, rng, today)
+            used_today.add(pattern["id"])
+            closing_list = closings.get(site_id, [])
+            closing = rng.choice(closing_list) if closing_list else None
+            posts = build_thread(item, site_conf, today, trusted_code_providers, pattern, closing)
             threads.append({
                 "provider_id": item["provider_id"],
                 "provider_label": item["provider_label"],
                 "title": str(item["row"].get("タイトル", ""))[:60],
                 "score": item["score"],
                 "reasons": item["reasons"],
+                "pattern": pattern["id"],
+                "pattern_name": pattern["name"],
                 "article_url": site_conf["article_map"][item["provider_id"]],
                 "posts": posts,
+            })
+            new_usage.append({
+                "date": date_str,
+                "site": site_id,
+                "tree": i,
+                "pattern": pattern["id"],
+                "ota": item["provider_id"],
+                "title": str(item["row"].get("タイトル", ""))[:60],
             })
         results.append({
             "site_id": site_id,
@@ -557,8 +687,12 @@ def main():
                    ensure_ascii=False, indent=2),
         encoding="utf-8",
     )
+    # パターン使用ログ更新（同日分は置き換え・再実行対応）
+    usage_log = [u for u in usage_log if u.get("date") != date_str] + new_usage
+    USAGE_LOG.write_text(json.dumps(usage_log, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"保存: {md_path}")
     print(f"保存: {json_path}")
+    print(f"パターン使用ログ: {USAGE_LOG.name}（累計{len(usage_log)}件）")
 
 
 if __name__ == "__main__":

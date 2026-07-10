@@ -1,0 +1,104 @@
+{
+  "_comment": "X投稿ツリー1投稿目のフックパターンライブラリ。status: active=使用中 / retired=引退（実績不振・自動では引退させずrecord_x_perf.pyが候補提案）。conditions: パターンが使える条件（new=当日新規, restart=配布再開, deadline_soon=期限7日以内, always=常時）。sites: 使用可能サイト（トーン適合）。テンプレ変数: {ota}{discount}{target}{deadline}{days_left}",
+  "patterns": [
+    {
+      "id": "direct_number",
+      "name": "数字直球型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "【{ota}】{discount}クーポンが配布中です",
+      "note": "初代テンプレ。数字先出しの王道"
+    },
+    {
+      "id": "discovery",
+      "name": "発見共有型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip"],
+      "status": "active",
+      "hook": "今朝のクーポンチェックで見つけたやつです。\n【{ota}】で{discount}が出てます",
+      "note": "毎日巡回している中の人感・親近感"
+    },
+    {
+      "id": "question",
+      "name": "問いかけ型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "{target}の予約、もう済ませましたか？\n【{ota}】に{discount}クーポンが出てます",
+      "note": "読者の状況を代弁して自分ごと化"
+    },
+    {
+      "id": "loss_aversion",
+      "name": "損失回避型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "tripbooking"],
+      "status": "active",
+      "hook": "知らないまま定価で予約しがちなやつです。\n【{ota}】{discount}クーポン、配布中",
+      "note": "welltripのトーン（押し付けない提案）には不適合のため除外"
+    },
+    {
+      "id": "countdown",
+      "name": "期限カウントダウン型",
+      "conditions": ["deadline_soon"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "【あと{days_left}日】{ota}の{discount}クーポン、まだ間に合います",
+      "note": "期限7日以内のクーポン限定"
+    },
+    {
+      "id": "target_call",
+      "name": "ターゲット呼びかけ型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "{target}を予約する人へ。\n【{ota}】で{discount}クーポンが配布中です",
+      "note": "対象が明確なクーポンで刺さる"
+    },
+    {
+      "id": "comeback",
+      "name": "復活速報型",
+      "conditions": ["restart"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "終了していた【{ota}】のクーポンが復活してます。\n{discount}、対象は{target}",
+      "note": "配布再開クーポン限定・鮮度訴求"
+    },
+    {
+      "id": "fresh",
+      "name": "新着速報型",
+      "conditions": ["new"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "【{ota}】に今日、新しいクーポンが出ました。\n{discount}、対象は{target}",
+      "note": "当日新規クーポン限定・速報性"
+    },
+    {
+      "id": "daily_check",
+      "name": "定点確認型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "【{ota}】の{discount}クーポン、本日も配布中であることを確認しました",
+      "note": "毎日確認している信頼感。対象情報が取れないクーポンでも使える客観型"
+    }
+  ],
+  "post3_closings": {
+    "_comment": "3投稿目の締めフレーズもローテーションして単調化を防ぐ（サイト別・配列からseed選択）",
+    "yakushimafan": [
+      "屋久島旅行の予約にも使えます。予約前にどうぞ。",
+      "屋久島の旅の計画に。予約前にチェックしてみてください。",
+      "屋久島に行く予定がある人は予約前に一度見ておくと安心です。"
+    ],
+    "welltrip": [
+      "旅の予定がある方はのぞいてみてください。",
+      "次の旅の計画に、よければ役立ててください。",
+      "がんばった自分へのご褒美旅にも。よければどうぞ。"
+    ],
+    "tripbooking": [
+      "主要OTAのクーポンを毎日確認しています。",
+      "クーポンの配布状況は毎日チェックして更新しています。",
+      "予約前のクーポン確認はこのページが早いです。"
+    ]
+  }
+}

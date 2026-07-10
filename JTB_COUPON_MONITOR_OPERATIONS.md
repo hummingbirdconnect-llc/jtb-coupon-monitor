@@ -132,10 +132,33 @@ python3 wp_review_orchestrator.py --dry-run
 2. サイトごとに、各ツリーの1投稿目を投稿 → 2投稿目・3投稿目を自分の投稿へのリプライとして続ける
 3. リンクは3投稿目のみ（1投稿目にリンクを入れるとXのアルゴリズムでインプレッションが下がるため）
 
+### 投稿パターンのローテーションと実績淘汰
+
+投稿の単調化を防ぐため、1投稿目のフックは複数パターン（数字直球・問いかけ・損失回避・期限カウントダウン・復活速報・新着速報・定点確認など）を日替わりでローテーションします。
+
+- パターン定義: `config/x_thread_patterns.json`（自由に追加・編集可。`status: "retired"` で引退）
+- 選択ルール: 同じ日の3ツリーは必ず別パターン／前日使ったパターンは出にくい／新規・再開・期限間近のクーポンには専用パターンを優先
+- 使用履歴: `tweets_output/x_pattern_usage.json`（自動記録）
+
+**反応の良いパターンを残す**には、投稿から2〜3日後にXアナリティクスの数字を記録します:
+
+```bash
+# 例: 7/10の屋久島ファン ツリー1がインプレ3,500だった
+python record_x_perf.py add --date 2026-07-10 --site yf --tree 1 --imp 3500 --likes 8
+
+# パターン別の成績と引退候補を見る
+python record_x_perf.py report
+```
+
+- 記録が溜まると、成績の良いパターンが自動的に出やすくなります（選択率0.5〜2.0倍）
+- 記録3件以上で平均スコア0.6未満のパターンは「引退候補」としてレポートに出ます（自動では引退しません）
+- Claudeに「7/10の屋久島ツリー1はインプレ3500だった」と伝えて記録してもらうこともできます
+
 調整したいとき:
 - 記事リンク先・対象OTAの追加削除: `config/x_thread_sites.json` の `article_map`
 - クーポンコードを投稿に表示してよいOTA: 同ファイルの `trusted_code_providers`（データ取得時にコードが完全形と確認できたOTAだけ追加。JTB/HISは切り詰めを確認済みのため非表示）
-- 文面テンプレ・スコアリング: `generate_x_threads.py` の `TONES` / `score_coupon()`
+- 投稿パターンの追加・引退: `config/x_thread_patterns.json`
+- トーン・スコアリング: `generate_x_threads.py` の `TONES` / `score_coupon()`
 - 手動再生成: `python generate_x_threads.py --source remote`
 
 ---
