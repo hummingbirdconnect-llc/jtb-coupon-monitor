@@ -80,7 +80,7 @@ HOWTO_ROWS = [
     ["3.", "投稿順1の本文セルをコピー → Xでそのまま投稿（リンクなしでOK）"],
     ["4.", "投稿順2を「1つ目の自分の投稿への返信」として投稿 → 投稿順3も同様に返信で続ける"],
     ["5.", "リンクは3投稿目だけ（1投稿目にリンクを貼るとXの仕様でインプレッションが大きく下がります）"],
-    ["6.", "投稿し終えたら「投稿状況」をプルダウンで「完了」に → 行の文字がグレーになり、未投稿分と見分けられます"],
+    ["6.", "1ツリー投稿し終えたら、そのツリーの1行目（投稿順1）の「投稿状況」をプルダウンで「完了」に → ツリー3行まとめて文字がグレーになり、未投稿分と見分けられます（プルダウンは各ツリー1行目だけにあります）"],
     [""],
     ["【実績の記録（任意・やると投稿が育ちます）】"],
     ["1.", "投稿から2〜3日後、Xのアナリティクスを見て「実績入力」タブのインプレッション列に数字を入れるだけ"],
@@ -181,9 +181,10 @@ def source_md_for(date_str):
 
 
 def ensure_queue_layout(sh, ws):
-    """投稿状況プルダウン・完了行グレー化の条件付き書式を冪等に整備する。"""
+    """投稿状況プルダウン（各ツリー第1投稿のみ）・完了行グレー化を冪等に整備する。"""
     sheet_id = ws.id
     status_col = len(QUEUE_HEADER) - 1  # H列（0始まり7）
+    values = ws.get_all_values()
     requests = []
     # 既存の条件付き書式を全削除（このタブは本スクリプト管理のため安全）
     meta = sh.fetch_sheet_metadata({"fields": "sheets(properties(sheetId),conditionalFormats)"})
@@ -192,24 +193,29 @@ def ensure_queue_layout(sh, ws):
             continue
         for _ in s.get("conditionalFormats", []):
             requests.append({"deleteConditionalFormatRule": {"sheetId": sheet_id, "index": 0}})
-    # 投稿状況プルダウン（未投稿/完了）を H2:H に設定
+    dropdown_rule = {"condition": {"type": "ONE_OF_LIST",
+                                   "values": [{"userEnteredValue": "未投稿"},
+                                              {"userEnteredValue": "完了"}]},
+                     "showCustomUi": True, "strict": False}
+    # まずH列全体のプルダウンをクリア → 各ツリー第1投稿（投稿順=1）のセルにだけ再設定
     requests.append({"setDataValidation": {
-        "range": {"sheetId": sheet_id, "startRowIndex": 1, "endRowIndex": 5000,
-                  "startColumnIndex": status_col, "endColumnIndex": status_col + 1},
-        "rule": {"condition": {"type": "ONE_OF_LIST",
-                               "values": [{"userEnteredValue": "未投稿"},
-                                          {"userEnteredValue": "完了"}]},
-                 "showCustomUi": True, "strict": False},
-    }})
-    # 「完了」の行は文字をグレーにして未投稿分と見分ける
+        "range": {"sheetId": sheet_id, "startRowIndex": 1, "endRowIndex": len(values) + 1,
+                  "startColumnIndex": status_col, "endColumnIndex": status_col + 1}}})
+    for i, row in enumerate(values[1:], start=1):  # 0始まり行インデックス
+        if len(row) > 5 and row[5].strip() and str(row[3]).strip() == "1":  # 本文あり＆投稿順1
+            requests.append({"setDataValidation": {
+                "range": {"sheetId": sheet_id, "startRowIndex": i, "endRowIndex": i + 1,
+                          "startColumnIndex": status_col, "endColumnIndex": status_col + 1},
+                "rule": dropdown_rule}})
+    # 完了マーク（第1投稿のH）に連動してツリー3行まとめてグレー化。
+    # INDEX($H:$H, ROW()-($D2-1)) で各行から自ツリー第1投稿のHを参照する
     requests.append({"addConditionalFormatRule": {"index": 0, "rule": {
         "ranges": [{"sheetId": sheet_id, "startRowIndex": 1, "endRowIndex": 5000,
                     "startColumnIndex": 0, "endColumnIndex": len(QUEUE_HEADER)}],
         "booleanRule": {
             "condition": {"type": "CUSTOM_FORMULA",
-                          "values": [{"userEnteredValue": '=$H2="完了"'}]},
-            "format": {"textFormat": {"foregroundColor": GREY_TEXT,
-                                      "strikethrough": False}},
+                          "values": [{"userEnteredValue": '=INDEX($H:$H,ROW()-($D2-1))="完了"'}]},
+            "format": {"textFormat": {"foregroundColor": GREY_TEXT}},
         },
     }}})
     sh.batch_update({"requests": requests})
@@ -255,19 +261,21 @@ def repaint_perf_colors(ws, limit=100):
 
 
 def ensure_howto_sheet(sh):
-    """「使い方」タブを整備する（無ければ作成・あれば触らない）。"""
+    """「使い方」タブを整備する（無ければ作成・内容は常に最新へ同期）。"""
+    created = False
     try:
-        sh.worksheet(HOWTO_SHEET)
-        return
+        ws = sh.worksheet(HOWTO_SHEET)
     except gspread.exceptions.WorksheetNotFound:
         ws = sh.add_worksheet(title=HOWTO_SHEET, rows=40, cols=4)
+        created = True
+    ws.batch_clear(["A1:D40"])
     ws.update(range_name="A1", values=HOWTO_ROWS, value_input_option="RAW")
     ws.format("A1", {"textFormat": {"bold": True, "fontSize": 14}})
     ws.format("A3:A30", {"textFormat": {"bold": True}})
     sh.batch_update({"requests": [{"updateDimensionProperties": {
         "range": {"sheetId": ws.id, "dimension": "COLUMNS", "startIndex": 1, "endIndex": 2},
         "properties": {"pixelSize": 640}, "fields": "pixelSize"}}]})
-    print("「使い方」タブを作成しました")
+    print("「使い方」タブを作成しました" if created else "「使い方」タブを更新しました")
 
 
 def push_queue(sh, date_str):
@@ -284,8 +292,10 @@ def push_queue(sh, date_str):
     rows = []
     for th in parse_threads_md(path):
         for order, post in enumerate(th["posts"], 1):
+            # 投稿状況は各ツリー第1投稿のみ「未投稿」。2・3投稿目は空欄
+            status = "未投稿" if order == 1 else ""
             rows.append([date_str, SITE_DISPLAY[th["site"]], th["tree"], order,
-                         th["pattern"], post, "", "未投稿"])
+                         th["pattern"], post, "", status])
     if not rows:
         print("⚠️ 投稿の抽出に失敗（md構造を確認してください）")
         return ws
@@ -295,13 +305,19 @@ def push_queue(sh, date_str):
 
 
 def fill_missing_status(ws):
-    """投稿状況が空の既存行に「未投稿」を補完する（列追加の遡及対応）。"""
+    """投稿状況を正規化する。第1投稿(投稿順1)は空なら「未投稿」を補完し、
+    2・3投稿目に値が残っていれば空欄化する（旧レイアウトからの遡及対応）。"""
     values = ws.get_all_values()
     updates = []
     for i, row in enumerate(values[1:], start=2):
         row = row + [""] * (8 - len(row))
-        if row[5].strip() and not row[7].strip():  # 本文あり・状況空
+        if not row[5].strip():
+            continue
+        is_first = str(row[3]).strip() == "1"
+        if is_first and not row[7].strip():
             updates.append({"range": f"H{i}", "values": [["未投稿"]]})
+        elif not is_first and row[7].strip():
+            updates.append({"range": f"H{i}", "values": [[""]]})
     if updates:
         ws.batch_update(updates, value_input_option="RAW")
 
