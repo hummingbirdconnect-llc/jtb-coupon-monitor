@@ -1,5 +1,5 @@
 {
-  "_comment": "X投稿ツリー1投稿目のフックパターンライブラリ。status: active=使用中 / retired=引退（実績不振・自動では引退させずrecord_x_perf.pyが候補提案）。conditions: パターンが使える条件（new=当日新規, restart=配布再開, deadline_soon=期限7日以内, always=常時）。sites: 使用可能サイト（トーン適合）。テンプレ変数: {ota}{discount}{target}{deadline}{days_left}",
+  "_comment": "X投稿ツリー1投稿目のフックパターンライブラリ。status: active=使用中 / retired=引退（実績不振・自動では引退させずrecord_x_perf.pyが候補提案）。conditions: パターンが使える条件（new=当日新規, restart=配布再開, deadline_soon=期限7日以内, big_yen=割引1万円以上, high_threshold=最低利用額10万円以上, weekend=金土日, always=常時）。sites: 使用可能サイト（トーン適合）。テンプレ変数: {ota}{discount}{target}{deadline}{days_left}{season}",
   "patterns": [
     {
       "id": "direct_number",
@@ -81,24 +81,159 @@
       "status": "active",
       "hook": "【{ota}】の{discount}クーポン、本日も配布中であることを確認しました",
       "note": "毎日確認している信頼感。対象情報が取れないクーポンでも使える客観型"
+    },
+    {
+      "id": "memo_style",
+      "name": "メモ共有型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip"],
+      "status": "active",
+      "hook": "旅行の予定がある人向けの覚え書きです📝\n【{ota}】{discount}クーポンが配布中",
+      "note": "カジュアルなメモ共有感。tripbookingの客観トーンには不適合のため除外"
+    },
+    {
+      "id": "soft_news",
+      "name": "予約前チェック型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "【{ota}】をこれから予約する人は、{discount}クーポンの確認を先にどうぞ",
+      "note": "予約直前の読者に刺さる導線型。押し付けず手順として案内"
+    },
+    {
+      "id": "big_discount",
+      "name": "大型割引強調型",
+      "conditions": ["big_yen"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "ちょっと大きめの割引が出ています。\n【{ota}】{discount}クーポンが配布中です",
+      "note": "割引1万円以上限定。額の大きさ自体をフックにする"
+    },
+    {
+      "id": "weekend_plan",
+      "name": "週末計画型",
+      "conditions": ["weekend"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "週末に旅の計画を立てる人へ。\n【{ota}】に{discount}クーポンが出ています",
+      "note": "金土日限定。週末=予約作業のタイミングという文脈（旅行日が先でも成立する言い回しを維持）"
+    },
+    {
+      "id": "season_context",
+      "name": "季節文脈型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "{season}の計画、これからの人へ。\n【{ota}】で{discount}クーポンが配布中です",
+      "note": "{season}は月から自動展開（12-2月=冬の旅/3-5月=春の旅/6-8月=夏の旅/9-11月=秋の旅）"
+    },
+    {
+      "id": "honest_take",
+      "name": "正直レビュー型",
+      "conditions": ["high_threshold"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "条件はすこし厳しめです。ただ、当てはまる人には大きいです。\n【{ota}】{discount}クーポン配布中",
+      "note": "最低利用額10万円以上のクーポン限定。条件の重さを正直に先に言う信頼型"
     }
   ],
+  "hook_closes": {
+    "_comment": "1投稿目の締め（👇誘導）もローテーションして単調化を防ぐ（サイト別・ツリーごとseed選択）",
+    "yakushimafan": [
+      "詳しい条件はこの下に👇",
+      "条件はこの下にまとめました👇",
+      "使える条件はこの下です👇"
+    ],
+    "welltrip": [
+      "使える条件をまとめました👇",
+      "条件はこちらです👇",
+      "詳しい条件は下に続きます👇"
+    ],
+    "tripbooking": [
+      "条件と注意点は次の投稿で👇",
+      "詳細は次の投稿にまとめました👇",
+      "適用条件は下に続きます👇"
+    ]
+  },
+  "post2_leads": {
+    "_comment": "2投稿目の導入文ローテーション（サイト別）",
+    "yakushimafan": [
+      "使える条件はここだけ見ればOKです。",
+      "使う前にここだけ確認してください。",
+      "予約前の確認はここだけでOKです。",
+      "条件を短くまとめるとこうなります。"
+    ],
+    "welltrip": [
+      "予約前に見ておきたい条件はこちらです。",
+      "予約前のチェックポイントはこちら。",
+      "見ておきたい条件をまとめました。",
+      "使える条件を整理しました。"
+    ],
+    "tripbooking": [
+      "適用条件は以下のとおりです。",
+      "適用条件の詳細です。",
+      "条件は以下にまとめました。",
+      "確認できた適用条件は以下です。"
+    ]
+  },
+  "post3_leads": {
+    "_comment": "3投稿目のリンク導入文ローテーション（サイト別）",
+    "yakushimafan": [
+      "取得の手順と使い方はここにまとめています",
+      "クーポンの取り方と使い方はこちら",
+      "取得手順と注意点はここにまとめています"
+    ],
+    "welltrip": [
+      "取得方法と使い方の手順はこちらに",
+      "取り方と使い方はこちらにまとめています",
+      "使い方の手順はこちらから確認できます"
+    ],
+    "tripbooking": [
+      "コードの使い方と最新一覧はこちら",
+      "最新のクーポン一覧と使い方はこちら",
+      "全クーポンの最新状況はこちらで確認できます"
+    ]
+  },
+  "sub_phrases": {
+    "_comment": "1投稿目の補足行（対象・期限）のローテーション。{target}{deadline}{days_left}を展開。{deadline}は「9/29まで」形式（『まで』を含む）なのでテンプレ側に『まで』を重ねない",
+    "target": [
+      "対象は{target}。",
+      "対象は{target}です。",
+      "{target}で使えます。"
+    ],
+    "deadline_normal": [
+      "予約期限は{deadline}。",
+      "予約は{deadline}です。",
+      "期限は{deadline}。"
+    ],
+    "deadline_urgent": [
+      "予約は{deadline}、急ぎめです。",
+      "予約期限は{deadline}。残り{days_left}日です。",
+      "締切は{deadline}。検討中なら早めがおすすめです。"
+    ]
+  },
   "post3_closings": {
     "_comment": "3投稿目の締めフレーズもローテーションして単調化を防ぐ（サイト別・配列からseed選択）",
     "yakushimafan": [
       "屋久島旅行の予約にも使えます。予約前にどうぞ。",
       "屋久島の旅の計画に。予約前にチェックしてみてください。",
-      "屋久島に行く予定がある人は予約前に一度見ておくと安心です。"
+      "屋久島に行く予定がある人は予約前に一度見ておくと安心です。",
+      "屋久島行きを考え中なら、予約前のひと手間でお得になります。",
+      "配布状況は毎朝チェックして更新しています。"
     ],
     "welltrip": [
       "旅の予定がある方はのぞいてみてください。",
       "次の旅の計画に、よければ役立ててください。",
-      "がんばった自分へのご褒美旅にも。よければどうぞ。"
+      "がんばった自分へのご褒美旅にも。よければどうぞ。",
+      "予約前のひと確認で、旅の予算がすこし浮きます。",
+      "気になった方は早めのチェックがおすすめです。"
     ],
     "tripbooking": [
       "主要OTAのクーポンを毎日確認しています。",
       "クーポンの配布状況は毎日チェックして更新しています。",
-      "予約前のクーポン確認はこのページが早いです。"
+      "予約前のクーポン確認はこのページが早いです。",
+      "配布終了・再開の検知も毎日行っています。",
+      "一覧の更新は毎朝行っています。"
     ]
   }
 }

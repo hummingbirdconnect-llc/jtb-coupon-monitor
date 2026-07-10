@@ -63,7 +63,7 @@ HASHTAG_MAP = {
     "JR東海ツアーズ": "JR東海ツアーズ",
 }
 
-# サイト別トーン定義
+# サイト別トーン定義（config/x_thread_patterns.json に文言配列が無い場合のフォールバック）
 TONES = {
     "jitsuyou": {  # 屋久島ファン: 実用・数字・直球
         "hook_close": "詳しい条件はこの下に👇",
@@ -87,6 +87,17 @@ TONES = {
         "domestic_note": "",
     },
 }
+
+# {season} 変数の展開マップ（月→季節フレーズ）
+SEASON_MAP = {
+    12: "冬の旅", 1: "冬の旅", 2: "冬の旅",
+    3: "春の旅", 4: "春の旅", 5: "春の旅",
+    6: "夏の旅", 7: "夏の旅", 8: "夏の旅",
+    9: "秋の旅", 10: "秋の旅", 11: "秋の旅",
+}
+
+# パターン重み付けで1.6倍優先する鮮度系条件（属性系 big_yen/weekend/high_threshold は等倍）
+FRESHNESS_CONDITIONS = {"new", "restart", "deadline_soon"}
 
 PREF_PATTERN = re.compile(
     r"(北海道|青森|岩手|宮城|秋田|山形|福島|茨城|栃木|群馬|埼玉|千葉|東京|神奈川"
@@ -259,6 +270,13 @@ def detect_caution(row):
     return "配布状況は変わることがあるので公式ページで最新を確認してください"
 
 
+def min_spend_amount(row):
+    """最低利用額（「N円以上」条件）を抽出する。無ければ0。"""
+    text = " ".join(str(row.get(k, "")) for k in ("タイトル", "対象商品", "条件", "予約期間"))
+    m = re.search(r"([\d,]+)\s*円以上", text)
+    return int(m.group(1).replace(",", "")) if m else 0
+
+
 def is_overseas_only(row):
     text = str(row.get("タイトル", "")) + str(row.get("カテゴリ", ""))
     return "海外" in text and "国内" not in text
@@ -317,7 +335,10 @@ def score_coupon(row, site_conf, change_map, today):
         reasons.append(f"割引{yen:,}円" if yen else f"割引{pct}%")
     days_left, _ = parse_deadline(row, today)
     if days_left is not None:
-        if 1 < days_left <= 3:
+        if days_left in (0, 1):
+            score += 8
+            reasons.append("本日/明日まで")
+        elif days_left <= 3:
             score += 15
             reasons.append(f"残り{days_left}日")
         elif days_left <= 7:
@@ -325,9 +346,6 @@ def score_coupon(row, site_conf, change_map, today):
             reasons.append(f"残り{days_left}日")
         elif days_left <= 14:
             score += 6
-        elif days_left in (0, 1):
-            score += 8
-            reasons.append("本日/明日まで")
     text_all = str(row.get("タイトル", "")) + str(row.get("対象商品", "")) + str(row.get("カテゴリ", ""))
     if "全国" in text_all:
         score += 8
@@ -369,9 +387,19 @@ def hashtag_for(label):
 
 
 def load_patterns():
-    """パターンライブラリを読み込む。"""
+    """パターンライブラリ（フック・締め・リード・補足の全文言セット）を読み込む。"""
     conf = json.loads(PATTERNS_CONFIG.read_text(encoding="utf-8"))
-    return conf.get("patterns", []), conf.get("post3_closings", {})
+    return conf
+
+
+def site_phrases(conf, site_id):
+    """サイト別に解決済みの文言配列辞書を組み立てる（build_thread へ渡す）。"""
+    return {
+        "hook_closes": conf.get("hook_closes", {}).get(site_id, []),
+        "post2_leads": conf.get("post2_leads", {}).get(site_id, []),
+        "post3_leads": conf.get("post3_leads", {}).get(site_id, []),
+        "sub_phrases": conf.get("sub_phrases", {}),
+    }
 
 
 def load_usage_log():
@@ -412,7 +440,7 @@ def load_perf_scores():
 
 
 def coupon_flags(item, today):
-    """クーポンの状態フラグ（new / restart / deadline_soon）を判定。
+    """クーポンの状態フラグ（new / restart / deadline_soon / big_yen / high_threshold / weekend）を判定。
     「今日出ました」系パターンの誤用を防ぐため、new/restart は当日のみ。"""
     flags = {"always"}
     reasons = item["reasons"]
@@ -423,6 +451,13 @@ def coupon_flags(item, today):
     days_left, _ = parse_deadline(item["row"], today)
     if days_left is not None and 0 <= days_left <= 7:
         flags.add("deadline_soon")
+    yen, _, _, _ = parse_discount(item["row"])
+    if yen >= 10000:
+        flags.add("big_yen")
+    if min_spend_amount(item["row"]) >= 100000:
+        flags.add("high_threshold")
+    if today.weekday() >= 4:  # 金・土・日
+        flags.add("weekend")
     return flags
 
 
@@ -454,8 +489,9 @@ def choose_pattern(item, site_id, patterns, used_today, used_yesterday, perf_sco
             w *= min(max(score, 0.5), 2.0)  # 実績比0.5〜2.0倍で反映
         if p["id"] in used_yesterday:
             w *= 0.4  # 前日使用ペナルティ
-        # 限定条件パターン（新規/再開/期限）は該当時に優先
-        if "always" not in p.get("conditions", []):
+        # 鮮度系の限定条件パターン（新規/再開/期限）は該当時に優先。
+        # 属性系（big_yen/weekend/high_threshold）は毎回発動しうるため等倍に留める
+        if FRESHNESS_CONDITIONS & set(p.get("conditions", [])):
             w *= 1.6
         weights.append(w)
     return rng.choices(eligible, weights=weights, k=1)[0]
@@ -479,15 +515,27 @@ def build_hook_from_pattern(pattern, item, today):
     hook = hook.replace("{target}", target)
     hook = hook.replace("{days_left}", str(days_left) if days_left is not None else "わずか")
     hook = hook.replace("{deadline}", deadline_disp.split("（")[0] if deadline_disp else "")
+    hook = hook.replace("{season}", SEASON_MAP[today.month])
     return hook
 
 
-def build_thread(item, site_conf, today, trusted_code_providers=(), pattern=None, closing=None):
-    """1クーポン分のツリー3投稿を生成する。"""
+def pick_phrase(options, rng, fallback):
+    """config の文言配列から seed 選択する。配列が無ければ fallback（旧固定文言）。"""
+    if options:
+        return rng.choice(options) if rng else options[0]
+    return fallback
+
+
+def build_thread(item, site_conf, today, trusted_code_providers=(), pattern=None,
+                 closing=None, phrases=None, rng=None):
+    """1クーポン分のツリー3投稿を生成する。phrases はサイト別解決済みの文言配列辞書。"""
     row = item["row"]
     tone = TONES[site_conf["tone"]]
+    phrases = phrases or {}
+    sub_conf = phrases.get("sub_phrases", {})
     yen, pct, is_max, discount_label = parse_discount(row)
     days_left, deadline_disp = parse_deadline(row, today)
+    deadline_short = deadline_disp.split("（")[0] if deadline_disp else ""
     target = truncate_jp(clean_target(row), 30)
     code = str(row.get("クーポンコード", "")).strip()
     caution = detect_caution(row)
@@ -499,21 +547,36 @@ def build_thread(item, site_conf, today, trusted_code_providers=(), pattern=None
     sub_lines = []
     if "{target}" not in hook_template:  # フックで対象に触れていない場合のみ補足
         if target:
-            sub_lines.append(f"対象は{target}。")
+            tpl = pick_phrase(sub_conf.get("target"), rng, "対象は{target}。")
+            sub_lines.append(tpl.replace("{target}", target))
         else:
             # 対象が取れない場合はタイトルを対象説明に転用（例: 「アプリ初回」「Mastercard」）
             title_as_target = truncate_jp(row.get("タイトル", ""), 26)
             if title_as_target:
                 sub_lines.append(f"「{title_as_target}」向けのクーポンです。")
+
+    def deadline_line(urgent):
+        if urgent:
+            pool = sub_conf.get("deadline_urgent") or ["予約は{deadline}、急ぎめです。"]
+            if days_left is not None and days_left < 2:
+                # 残り0〜1日で「残りN日です」は不自然なため該当テンプレを除外
+                pool = [t for t in pool if "{days_left}" not in t] or ["予約は{deadline}、急ぎめです。"]
+        else:
+            pool = sub_conf.get("deadline_normal") or ["予約期限は{deadline}。"]
+        tpl = pick_phrase(pool, rng, pool[0])
+        return (tpl.replace("{deadline}", deadline_short)
+                   .replace("{days_left}", str(days_left) if days_left is not None else ""))
+
     if "{days_left}" not in hook_template and "{deadline}" not in hook_template:
         if days_left is not None and 0 <= days_left <= 7:
-            sub_lines.append(f"予約は{deadline_disp.split('（')[0]}、急ぎめです。")
+            sub_lines.append(deadline_line(urgent=True))
         elif deadline_disp:
-            sub_lines.append(f"予約期限は{deadline_disp.split('（')[0]}。")
+            sub_lines.append(deadline_line(urgent=False))
     elif deadline_disp and "{deadline}" not in hook_template:
-        sub_lines.append(f"予約期限は{deadline_disp.split('（')[0]}。")
+        sub_lines.append(deadline_line(urgent=False))
     body = "\n".join(sub_lines)
-    post1 = hook + ("\n\n" + body if body else "") + f"\n\n{tone['hook_close']}\n(1/3)"
+    hook_close = pick_phrase(phrases.get("hook_closes"), rng, tone["hook_close"])
+    post1 = hook + ("\n\n" + body if body else "") + f"\n\n{hook_close}\n(1/3)"
 
     # --- 2投稿目: 条件詳細（リンクなし） ---
     lines = [f"✅割引: {truncate_jp(discount_label, 24)}"]
@@ -528,7 +591,8 @@ def build_thread(item, site_conf, today, trusted_code_providers=(), pattern=None
         and re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9\-_]{2,23}", code)
     ):
         lines.append(f"✅コード: {code}")
-    post2 = f"{tone['post2_lead']}\n\n" + "\n".join(lines) + f"\n\n⚠️{caution}\n(2/3)"
+    post2_lead = pick_phrase(phrases.get("post2_leads"), rng, tone["post2_lead"])
+    post2 = f"{post2_lead}\n\n" + "\n".join(lines) + f"\n\n⚠️{caution}\n(2/3)"
 
     # --- 3投稿目: 自社記事リンク + CTA（締めフレーズはローテーション） ---
     if closing and not ("屋久島" in closing and is_overseas_only(row)):
@@ -537,7 +601,8 @@ def build_thread(item, site_conf, today, trusted_code_providers=(), pattern=None
         domestic_note = tone.get("domestic_note", "") if not is_overseas_only(row) else ""
         closing_text = (domestic_note + tone["post3_close"]).strip()
     tags = f"#旅行クーポン #{hashtag_for(item['provider_label'])}"
-    post3 = f"{tone['post3_lead']}\n→ {article_url}\n\n{closing_text}\n\n{tags}\n(3/3)"
+    post3_lead = pick_phrase(phrases.get("post3_leads"), rng, tone["post3_lead"])
+    post3 = f"{post3_lead}\n→ {article_url}\n\n{closing_text}\n\n{tags}\n(3/3)"
 
     posts = []
     for text in (post1, post2, post3):
@@ -561,6 +626,9 @@ def collect_site_coupons(data, site_id, site_conf, change_map, today):
         for row in p.get("rows", []):
             if row.get("配布状況") != "配布中":
                 continue
+            days_left, _ = parse_deadline(row, today)
+            if days_left is not None and days_left < 0:
+                continue  # 予約期限切れ（ダッシュボード側ステータスとのラグ）は誤情報防止のため除外
             score, reasons = score_coupon(row, site_conf, change_map, today)
             scored.append({
                 "provider_id": pid,
@@ -613,7 +681,9 @@ def main():
     config = json.loads(SITES_CONFIG.read_text(encoding="utf-8"))
     sites_conf = config["sites"]
     trusted_code_providers = tuple(config.get("trusted_code_providers", []))
-    patterns, closings = load_patterns()
+    pattern_conf = load_patterns()
+    patterns = pattern_conf.get("patterns", [])
+    closings = pattern_conf.get("post3_closings", {})
     usage_log = load_usage_log()
     perf_scores = load_perf_scores()
     yesterday = (today - timedelta(days=1)).strftime("%Y-%m-%d")
@@ -644,7 +714,8 @@ def main():
             used_today.add(pattern["id"])
             closing_list = closings.get(site_id, [])
             closing = rng.choice(closing_list) if closing_list else None
-            posts = build_thread(item, site_conf, today, trusted_code_providers, pattern, closing)
+            posts = build_thread(item, site_conf, today, trusted_code_providers, pattern,
+                                 closing, site_phrases(pattern_conf, site_id), rng)
             threads.append({
                 "provider_id": item["provider_id"],
                 "provider_label": item["provider_label"],
