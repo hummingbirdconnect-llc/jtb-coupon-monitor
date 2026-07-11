@@ -142,5 +142,77 @@
   "pattern": "weekend_plan",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "direct_number",
+  "ota": "jtb",
+  "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "question",
+  "ota": "yukoyuko",
+  "title": "にいがた Go To トラベル"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "question",
+  "ota": "jtb",
+  "title": "涼をもとめて、静岡旅"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "quote_highlight",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "countdown",
+  "ota": "his",
+  "title": "オンライン予約限定！海外航空券1グループ最大20,000円引き"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "price_diff",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "loss_aversion",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-07-12",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "regret_prevention",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]

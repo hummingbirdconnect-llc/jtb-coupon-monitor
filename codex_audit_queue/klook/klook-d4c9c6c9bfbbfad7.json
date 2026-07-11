@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-d4c9c6c9bfbbfad7",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-12T06:52:24.627551+09:00",
+  "content_hash": "d4c9c6c9bfbbfad7c0ce3d3c06ff8dedeec794b45a9086ba14c525177e749a34",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "1e14c117d35339c81b50d416bbe4fadd252b989e7773dd33123e3c522172b7ec",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE ベトナム マレーシア 韓国 シンガポール 日本 香港・マカオ タイ 台湾 すべて表示 ベトナム クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,434 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 アプリのみ 海外現地ツアー クーポンコード: KLKTOUR68 6%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア ホーチミン ハロン カテゴリ すべて ツアー・体験 観光施設チケット ホーチミン ホーチミン タンソンニャット国際空港（SGN）での入国審査VIPファストトラックサービス ★ 4.5 (907) • 50K+ 件の予約 ¥ 3,043 6％OFF セット割 ダナン サンワールドバーナーヒルズ チケット（ダナン） ★ 4.6 (35,117) • 1M+ 件の予約 ¥ 6,003 〜 7％OFF SALE ホーチミン ホーチミン 2階建て市内観光バス 乗車チケット（City Sightseeing提供） ★ 4.5 (5,205) • 200K+ 件の予約 ¥ 784 15％OFF SALE ハノイ ハノイスパ：プレミアムマッサージ＆ホリスティックウェルネス体験 ★ 5.0 (4,162) • 5K+ 件の予約 ¥ 566 80％OFF SALE ホーチミン ベトナム 空港優先入国・出国サービス (SGN・HAN・PQC・DAD国際空港対応) ★ 4.6 (222) • 20K+ 件の予約 ¥ 2,347 5％OFF SALE フエ 列車チケット（ダナン⇔フエ） ★ 4.2 (385) • 10K+ 件の予約 ¥ 993 〜 5％OFF SALE ダナン サムスパ：ヘアウォッシュ＆マッサージ体験（ダナン） ★ 4.9 (1,439) • 6K+ 件の予約 ¥ 1,245 25％OFF SALE ダナン 乗合空港送迎（ダナン空港⇔ダナン市内・ホイアン） ★ 4.5 (1,954) • 10K+ 件の予約 ¥ 846 5％OFF SALE フーコック サンワールドホントム 各種チケット ★ 4.6 (6,606) • 300K+ 件の予約 ¥ 3,052 15％OFF SALE ホイアン ホイアンメモリーズショー・ホイアンインプレッションテーマパーク チケット ★ 4.7 (5,113) • 100K+ 件の予約 ¥ 1,844 10％OFF SALE ハノイ L'essence De La Vie Spa スパ体験（ハノイ） ★ 4.8 (257) • 2K+ 件の予約 ¥ 838 75％OFF SALE ダナン ツリースパ：ヘアウォッシュ＆マッサージ体験（ダナン） ★ 4.8 (1,023) • 10K+ 件の予約 ¥ 1,027 30％OFF SALE ダナン サンワールドバーナーヒルズ ケーブルカー乗車券＆ビュッフェ体験 ★ 4.4 (432) • 40K+ 件の予約 ¥ 7,607 5％OFF SALE ハロン コージーベイ・デイクルーズ（ハロン湾、スンソット、ティートップ） ★ 4.9 (6,162) • 80K+ 件の予約 ¥ 5,737 38％OFF SALE さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}
