@@ -135,6 +135,60 @@
       "status": "active",
       "hook": "条件はすこし厳しめです。ただ、当てはまる人には大きいです。\n【{ota}】{discount}クーポン配布中",
       "note": "最低利用額10万円以上のクーポン限定。条件の重さを正直に先に言う信頼型"
+    },
+    {
+      "id": "price_diff",
+      "name": "差額実感型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "同じ予約でも、クーポン1枚で{discount}になります。\n【{ota}】で配布中です",
+      "note": "人気旅行系アカウント研究由来（2026-07）。価格対比で「知ってるかどうかの差」を事実だけで言う型。{discount}は「最大N円引き」形式なので「〜になります」で受ける"
+    },
+    {
+      "id": "casual_aside",
+      "name": "ひとりごと型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip"],
+      "status": "active",
+      "hook": "【{ota}】{discount}クーポンが配布中です\n（どこ行くか考える時間が、いちばん楽しいんですよね）",
+      "note": "括弧のひとりごとで人間味を出す型。tripbookingの客観トーン（一人称なし）には不適合のため除外"
+    },
+    {
+      "id": "group_call",
+      "name": "各位呼びかけ型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "{target}を予約予定の各位。\n【{ota}】に{discount}クーポンが出ています",
+      "note": "「遠征民各位」型の丸め版。ターゲット呼びかけ型より短く硬質でX的な言い回し"
+    },
+    {
+      "id": "regret_prevention",
+      "name": "取りこぼし防止型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "tripbooking"],
+      "status": "active",
+      "hook": "せっかく安い日程を見つけても、クーポンを取りこぼすともったいないです。\n【{ota}】いま{discount}が配布中",
+      "note": "節約行動の穴を突く2段階指摘型。損失回避型と同じくwelltripのトーンには不適合のため除外"
+    },
+    {
+      "id": "quote_highlight",
+      "name": "カギカッコ強調型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip", "tripbooking"],
+      "status": "active",
+      "hook": "【{ota}】いま『{target}が{discount}』のクーポンを配布しています",
+      "note": "核心情報をカギカッコで囲んで視認性を上げる型。1行完結でタイムラインで目に留まる"
+    },
+    {
+      "id": "honest_value",
+      "name": "実用直言型",
+      "conditions": ["always"],
+      "sites": ["yakushimafan", "welltrip"],
+      "status": "active",
+      "hook": "{target}で{discount}は、正直かなり実用的です。\n【{ota}】で配布中",
+      "note": "書き手の評価を短く言い切る型。主観を含むためtripbooking（客観・一人称なし）は除外"
     }
   ],
   "hook_closes": {
