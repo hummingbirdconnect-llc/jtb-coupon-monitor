@@ -1,16 +1,16 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "c60828ce6d1eec0df97791e301daed02029a5f100edc721e1dc2c8962c768a3b",
-  "last_checked_at": "2026-07-12T06:52:23.554477+09:00",
+  "observed_hash": "6a6dd88883f69fed4f7c42b8cda3bfd9d445de63c03fe36408d5655d3bc65d97",
+  "last_checked_at": "2026-07-13T06:52:18.762574+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
-      "ok": false,
-      "status_code": "",
-      "fetch_method": "auto",
-      "error": "HTTP 405; Playwright HTTP 405",
-      "text_chars": 0,
-      "content_hash": ""
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 14965,
+      "content_hash": "26d166efa6be1d8dca4ca5c7c8c19750465f3792cfc1e7a749e525cd7c556a97"
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
@@ -18,8 +18,8 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 762484,
-      "content_hash": "971d74fec0cb1aaa118509d4382db9c3cb31c8a9b8513466fdb45def6bbf92f4"
+      "text_chars": 762820,
+      "content_hash": "ecf1c32d7bdde9b95c470153d69695f5a9fdcbda340c62b53c7931a298f87864"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -27,12 +27,12 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 315300,
-      "content_hash": "ce02c6192c8711bb509110e714d7c2890126a0caa42cc1abb24487e020772a56"
+      "text_chars": 315462,
+      "content_hash": "a976ec1a29a372c5be9a94ab2f5b46d377b559a97e03099a3402fcb4eadb7646"
     }
   ],
-  "queued_hash": "c60828ce6d1eec0df97791e301daed02029a5f100edc721e1dc2c8962c768a3b",
-  "queued_candidate_id": "kkday-c60828ce6d1eec0d",
-  "queued_at": "2026-07-12T06:52:23.574545+09:00",
+  "queued_hash": "6a6dd88883f69fed4f7c42b8cda3bfd9d445de63c03fe36408d5655d3bc65d97",
+  "queued_candidate_id": "kkday-6a6dd88883f69fed",
+  "queued_at": "2026-07-13T06:52:18.782299+09:00",
   "last_audit_status": "pending"
 }

@@ -214,5 +214,77 @@
   "pattern": "regret_prevention",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "honest_value",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "シギラベイサイドスイートアラマンダ、アラマンダスプレンディッド　☆夏休みにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "quote_highlight",
+  "ota": "yukoyuko",
+  "title": "にいがた Go To トラベル"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "quote_highlight",
+  "ota": "jtb",
+  "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "big_discount",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "knt",
+  "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "last_check",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-07-13",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
