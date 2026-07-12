@@ -1,5 +1,6 @@
 {
   "_comment": "X投稿ツリー1投稿目のフックパターンライブラリ。status: active=使用中 / retired=引退（実績不振・自動では引退させずrecord_x_perf.pyが候補提案）。conditions: パターンが使える条件（new=当日新規, restart=配布再開, deadline_soon=期限7日以内, big_yen=割引1万円以上, high_threshold=最低利用額10万円以上, weekend=金土日, always=常時）。sites: 使用可能サイト（トーン適合）。テンプレ変数: {ota}{discount}{target}{deadline}{days_left}{season}",
+  "_hook_principle": "【フック共通原則・初見者ファースト（2026-07-13ユーザーFB）】投稿は初見の人が大半。1投稿目は冒頭2文以内で『どの【OTA】のクーポン配布の話か』を言い切り、『クーポン』の語を早い段階（理想は1行目）に必ず出す。評価・一般論・訓話だけで1行目を消費しない（数字だけでは主語が伝わらない）。短い好奇心フック1文→2文目で【OTA】＋クーポン＋配布中の全文脈を言い切る構成は可（好例: soft_news / big_discount）。新パターン追加時はこの原則を必ず通すこと",
   "patterns": [
     {
       "id": "direct_number",
@@ -142,8 +143,8 @@
       "conditions": ["always"],
       "sites": ["yakushimafan", "welltrip", "tripbooking"],
       "status": "active",
-      "hook": "同じ予約でも、クーポン1枚で{discount}になります。\n【{ota}】で配布中です",
-      "note": "人気旅行系アカウント研究由来（2026-07）。価格対比で「知ってるかどうかの差」を事実だけで言う型。{discount}は「最大N円引き」形式なので「〜になります」で受ける"
+      "hook": "【{ota}】で{discount}クーポンが配布中です。\n同じ予約でも、1枚使うかどうかでこの差がつきます",
+      "note": "人気旅行系アカウント研究由来（2026-07）。価格対比で「知ってるかどうかの差」を事実だけで言う型。2026-07-13ユーザーFB（回りくどい）を受け文脈先出しに再構成: 1行目で配布の事実、対比は2行目で受ける"
     },
     {
       "id": "casual_aside",
@@ -187,8 +188,8 @@
       "conditions": ["always"],
       "sites": ["yakushimafan", "welltrip"],
       "status": "active",
-      "hook": "{target}で{discount}は、正直かなり実用的です。\n【{ota}】で配布中",
-      "note": "書き手の評価を短く言い切る型。主観を含むためtripbooking（客観・一人称なし）は除外"
+      "hook": "【{ota}】{target}で使える{discount}クーポンが配布中です。\nこれは正直かなり実用的です",
+      "note": "書き手の評価を短く言い切る型。主観を含むためtripbooking（客観・一人称なし）は除外。2026-07-13ユーザーFB（最初何の話かわからない）を受け文脈先出しに再構成: 旧形は「クーポン」の語が無く評価が1行目だった"
     },
     {
       "id": "anshin_reserve",
@@ -223,8 +224,8 @@
       "conditions": ["always"],
       "sites": ["yakushimafan", "tripbooking"],
       "status": "active",
-      "hook": "予約ボタンを押す前のクーポン確認が、いちばん確実な節約です。\n【{ota}】いま{discount}が配布中",
-      "note": "「いちばん取りこぼしが少ない」型の移植。{target}不要なのでカード特典・アプリ系クーポン（tripbookingに多い）でも発動できる"
+      "hook": "【{ota}】いま{discount}クーポンが配布中です。\n予約ボタンを押す前のひと確認が、いちばん確実な節約です",
+      "note": "「いちばん取りこぼしが少ない」型の移植。{target}不要なのでカード特典・アプリ系クーポン（tripbookingに多い）でも発動できる。2026-07-13ユーザーFB（回りくどい）を受け文脈先出しに再構成: 訓は2行目へ"
     }
   ],
   "hook_closes": {
