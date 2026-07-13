@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-3ffaa12266180699",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-14T07:00:14.575983+09:00",
+  "content_hash": "3ffaa1226618069989c477b0561c2ca6fe39a3b8c9b52fc74b61c7de770fa7d8",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "3c6d10639d7587da4b004d3b144759ca63aba6dfe2fa98a6dd38e3cab6650d3b",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE ベトナム マレーシア 韓国 シンガポール 日本 香港・マカオ タイ 台湾 すべて表示 ベトナム クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,522 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 アプリのみ 数量限定 [3日間限定] 海外現地ツアー クーポンコード: 夏ツアーもクルック 15%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア ホーチミン ハロン カテゴリ すべて ツアー・体験 観光施設チケット ホーチミン ホーチミン タンソンニャット国際空港（SGN）での入国審査VIPファストトラックサービス ★ 4.5 (915) • 50K+ 件の予約 ¥ 3,060 6％OFF セット割 ダナン サンワールドバーナーヒルズ チケット（ダナン） ★ 4.6 (35,137) • 1M+ 件の予約 ¥ 927 7％OFF SALE ホーチミン ホーチミン 2階建て市内観光バス 乗車チケット（City Sightseeing提供） ★ 4.5 (5,210) • 200K+ 件の予約 ¥ 787 15％OFF SALE ハノイ ハノイスパ：プレミアムマッサージ＆ホリスティックウェルネス体験 ★ 5.0 (4,196) • 5K+ 件の予約 ¥ 569 80％OFF SALE フエ 列車チケット（ダナン⇔フエ） ★ 4.2 (386) • 10K+ 件の予約 ¥ 998 〜 5％OFF SALE ホーチミン ベトナム 空港優先入国・出国サービス (SGN・HAN・PQC・DAD国際空港対応) ★ 4.6 (223) • 20K+ 件の予約 ¥ 2,351 5％OFF SALE ダナン サムスパ：ヘアウォッシュ＆マッサージ体験（ダナン） ★ 4.9 (1,444) • 6K+ 件の予約 ¥ 1,252 25％OFF SALE ミトー ホーチミン発：メコンデルタ日帰りツアー（日本語ガイド付き) ★ 4.5 (4) • 50+ 件の予約 ¥ 4,914 〜 20％OFF SALE ダナン 乗合空港送迎（ダナン空港⇔ダナン市内・ホイアン） ★ 4.5 (1,954) • 10K+ 件の予約 ¥ 846 5％OFF SALE ホイアン ホイアンメモリーズショー・ホイアンインプレッションテーマパーク チケット ★ 4.7 (5,117) • 100K+ 件の予約 ¥ 1,855 10％OFF SALE ハノイ L'essence De La Vie Spa スパ体験（ハノイ） ★ 4.8 (257) • 2K+ 件の予約 ¥ 843 75％OFF SALE ダナン サンワールドバーナーヒルズ ケーブルカー乗車券＆ビュッフェ体験 ★ 4.4 (432) • 40K+ 件の予約 ¥ 1,206 5％OFF SALE さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}

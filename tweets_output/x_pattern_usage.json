@@ -286,5 +286,77 @@
   "pattern": "soft_news",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "シギラベイサイドスイートアラマンダ、アラマンダスプレンディッド　☆夏休みにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "honest_value",
+  "ota": "yukoyuko",
+  "title": "にいがた Go To トラベル"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "season_context",
+  "ota": "knt",
+  "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-07-14",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
