@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-44e3997cb4fbcd16",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-15T07:02:00.355780+09:00",
+  "content_hash": "44e3997cb4fbcd1667d7debd3ab4c1d9127c0fc8f77ef115bdb25f4ea629ccae",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "f3e737abe969bc1908333d518d7fea87763dc800bc16b49cdec4ab89a016e28e",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE ベトナム マレーシア 韓国 シンガポール 日本 香港・マカオ タイ 台湾 すべて表示 ベトナム クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,553 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 アプリのみ 海外現地ツアー クーポンコード: KLKTOUR68 6%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア ホーチミン ハロン カテゴリ すべて ツアー・体験 観光施設チケット ホーチミン ホーチミン タンソンニャット国際空港（SGN）での入国審査VIPファストトラックサービス ★ 4.5 (927) • 50K+ 件の予約 ¥ 3,053 6％OFF セット割 ダナン サンワールドバーナーヒルズ チケット（ダナン） ★ 4.6 (35,146) • 1M+ 件の予約 ¥ 6,002 〜 7％OFF SALE ホーチミン ホーチミン 2階建て市内観光バス 乗車チケット（City Sightseeing提供） ★ 4.5 (5,213) • 200K+ 件の予約 ¥ 786 15％OFF SALE ハノイ ハノイスパ：プレミアムマッサージ＆ホリスティックウェルネス体験 ★ 5.0 (4,196) • 5K+ 件の予約 ¥ 567 80％OFF SALE ホーチミン ベトナム 空港優先入国・出国サービス (SGN・HAN・PQC・DAD国際空港対応) ★ 4.6 (224) • 20K+ 件の予約 ¥ 2,347 5％OFF SALE フエ 列車チケット（ダナン⇔フエ） ★ 4.2 (387) • 10K+ 件の予約 ¥ 997 〜 5％OFF SALE ホイアン ホイアンメモリーズショー・ホイアンインプレッションテーマパーク チケット ★ 4.7 (5,121) • 100K+ 件の予約 ¥ 1,850 10％OFF SALE 5％OFF セット割 Van Giang District メガグランドワールド ゴンドラ乗車チケット（ハノイ） ★ 4.5 (575) • 10K+ 件の予約 ¥ 1,111 10％OFF SALE ダナン サンワールドバーナーヒルズ ケーブルカー乗車券＆ビュッフェ体験 ★ 4.4 (433) • 40K+ 件の予約 ¥ 1,203 5％OFF SALE ダナン サムスパ：ヘアウォッシュ＆マッサージ体験（ダナン） ★ 4.9 (1,446) • 6K+ 件の予約 ¥ 1,249 25％OFF SALE ハノイ L'essence De La Vie Spa スパ体験（ハノイ） ★ 4.8 (257) • 2K+ 件の予約 ¥ 840 75％OFF SALE ミトー ホーチミン発：メコンデルタ日帰りツアー（日本語ガイド付き) ★ 4.5 (4) • 50+ 件の予約 ¥ 4,902 〜 20％OFF SALE ダナン 乗合空港送迎（ダナン空港⇔ダナン市内・ホイアン） ★ 4.5 (1,957) • 10K+ 件の予約 ¥ 847 5％OFF SALE ハノイ 寝台列車 片道乗車チケット（ハノイ⇔サパ） ★ 4.3 (2,243) • 70K+ 件の予約 ¥ 1,850 5％OFF SALE さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}
