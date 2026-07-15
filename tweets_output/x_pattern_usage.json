@@ -430,5 +430,77 @@
   "pattern": "daily_check",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "question",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "loss_aversion",
+  "ota": "jtb",
+  "title": "☆【沖縄】７月～８月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "last_check",
+  "ota": "his",
+  "title": "年末年始出発がお得！1名様につき3,000円引き"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "honest_value",
+  "ota": "jtb",
+  "title": "☆【沖縄】７月～８月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "his",
+  "title": "年末年始出発がお得！1名様につき3,000円引き"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-07-16",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
