@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-64f778786989e567",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-17T07:07:38.115285+09:00",
+  "content_hash": "64f778786989e567ca509a38e6f87998acb08e8223096e2d703b3d80df919830",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "4efa1b76b43bd8c1ceae0e8b8a906cc5fed818e3f1d93d315d736fc2347a77eb",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE シンガポール タイ 日本 中国 香港 台湾 韓国 ベトナム すべて表示 シンガポール クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,539 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 アプリのみ 海外現地ツアー クーポンコード: KLKTOUR68 6%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン カテゴリ すべて ツアー・体験 観光施設チケット シンガポール ユニバーサルスタジオシンガポール チケット ★ 4.8 (107,755) • 4M+ 件の予約 ¥ 8,561 〜 無料Grabトラベルパス 3点セットパッケージ シンガポール ガーデンズバイザベイ -> ガーデンズ・バイ・ザ・ベイ ★ 4.8 (57,396) • 3M+ 件の予約 ¥ 3,019 無料Grabトラベルパス シンガポール ナイトサファリ チケット | マンダイ・ワイルドライフ・ リザーブ（シンガポール） ★ 4.5 (10,379) • 800K+ 件の予約 ¥ 6,052 5％OFF SALE 無料Grabトラベルパス シンガポール Klookパス シンガポール ★ 4.7 (13,003) • 400K+ 件の予約 ¥ 11,698 Klook限定 シンガポール ハリー・ポッター：魔法の展望 ★ 4.6 (2,036) • 100K+ 件の予約 ¥ 7,421 無料Grabトラベルパス シンガポール アドベンチャーコーブウォーターパーク チケット（シンガポール） ★ 4.7 (8,219) • 400K+ 件の予約 ¥ 3,701 18％OFF セット割 無料Grabトラベルパス 3点セットパッケージ 25 off シンガポール オーシャナリウム チケット（シンガポール） ★ 4.7 (36,930) • 1M+ 件の予約 ¥ 5,912 〜 無料Grabトラベルパス シンガポール リバーワンダー チケット（シンガポール） ★ 4.6 (9,168) • 500K+ 件の予約 ¥ 629 無料Grabトラベルパス シンガポール シンガポール・ウィングス・オブ・タイム花火シンフォニーチケット ★ 4.6 (12,321) • 500K+ 件の予約 ¥ 1,509 45％OFF セット割 無料Grabトラベルパス 最大25％OFF Klook限定 シンガポール シンガポール動物園 チケット ★ 4.7 (16,679) • 1M+ 件の予約 ¥ 6,038 20％OFF SALE 無料Grabトラベルパス シンガポール M1 5G シンガポール SIMカード（シンガポール チャンギ国際空港 & 市内受取） ★ 4.6 (27,959) • 400K+ 件の予約 ¥ 723 15 off シンガポール ジュエルチャンギエアポート アトラクション利用チケット（シンガポール） ★ 4.7 (10,790) • 500K+ 件の予約 ¥ 739 5％OFF SALE シンガポール Hub & Spoke Cafe ガーデンラウンジ利用チケット（シンガポール / チャンギ空港内公共エリア） ★ 4.1 (549) • 20K+ 件の予約 ¥ 1,076 10％OFF SALE シンガポール スタジオ M ホテル シンガポール ★ 4.2 (1,148) • 100+ 件の予約 ¥ 19,855 ¥ 993 Save シンガポール マンダイマルチパークチケット（シンガポール） ★ 4.7 (1,728) • 70K+ 件の予約 ¥ 16,101 無料Grabトラベルパス シンガポール Klookパス シンガポール マンダイパス ★ 4.6 (421) • 20K+ 件の予約 ¥ 11,823 Klook限定 シンガポール スカイラインリュージュシンガポール 利用チケット ★ 4.8 (32,999) • 900K+ 件の予約 ¥ 4,076 〜 12％OFF セット割 無料Grabトラベルパス さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}

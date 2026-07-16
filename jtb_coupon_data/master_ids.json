@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-16T07:01:19.497502+09:00",
+  "last_updated": "2026-07-17T07:06:24.890857+09:00",
   "ids": {
     "2607jtbcpnew": {
       "category": "国内",
@@ -41,7 +41,7 @@
       "title": "【早期75日前までの予約限定】夏休みも先どり！<7～9月出発＞航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
       "discount": "3,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604airhayawari2": {
       "category": "国内",
@@ -104,21 +104,21 @@
       "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606douto": {
       "category": "国内",
       "title": "<7～8月宿泊>【道東エリア】おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605douou": {
       "category": "国内",
       "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605hokka": {
       "category": "国内",
@@ -167,7 +167,7 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606iwate": {
       "category": "国内",
@@ -181,7 +181,7 @@
       "title": "にいがた Go To トラベル（新潟県民限定企画）",
       "discount": "最大20％引",
       "area": "新潟県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2603niigata": {
       "category": "国内",
@@ -239,6 +239,13 @@
       "area": "神奈川県",
       "stock_status": "配布中"
     },
+    "2607taokada": {
+      "category": "国内",
+      "title": "ホテルおかだ☆夏休み＆シルバーウィークにも使える旅行割引クーポン",
+      "discount": "最大7,000円引",
+      "area": "神奈川県",
+      "stock_status": "配布中"
+    },
     "2606takeizan": {
       "category": "国内",
       "title": "石和温泉　華やぎの章慶山で使える施設割引クーポン",
@@ -265,6 +272,13 @@
       "title": "近鉄・都ホテルズのおすすめ施設で使える割引クーポン",
       "discount": "最大5,000円引",
       "area": "三重県・京都府・大阪府",
+      "stock_status": "配布中"
+    },
+    "2607kansai": {
+      "category": "国内",
+      "title": "関西2府4県の対象施設で使える♪とっておき旅クーポン",
+      "discount": "最大5,000円引",
+      "area": "滋賀県・京都府・大阪府",
       "stock_status": "配布中"
     },
     "2606hankyu": {
@@ -398,14 +412,14 @@
       "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605okinawa": {
       "category": "国内",
       "title": "☆【沖縄】７月～８月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2603okinawa2": {
       "category": "国内",

@@ -502,5 +502,77 @@
   "pattern": "direct_number",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "loss_aversion",
+  "ota": "jtb",
+  "title": "<7～8月宿泊>【道東エリア】おすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "honest_value",
+  "ota": "his",
+  "title": "まだ間に合う！8月2・3日出発 長岡まつり大花火大会ツアー1名様につき5,000円引き"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "関西2府4県の対象施設で使える♪とっておき旅クーポン"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "question",
+  "ota": "his",
+  "title": "まだ間に合う！8月2・3日出発 長岡まつり大花火大会ツアー1名様につき5,000円引き"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-07-17",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "season_context",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
