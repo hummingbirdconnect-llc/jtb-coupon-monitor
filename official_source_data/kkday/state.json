@@ -1,7 +1,7 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "9e9e7700b603c3d2b63fb24c2d5ba2c64c5232b29091e9f0671caa801e346ece",
-  "last_checked_at": "2026-07-18T06:54:39.792666+09:00",
+  "observed_hash": "11ecda59784e7d428c295e50488ab004d79479380302b7dacdb90d434b62b178",
+  "last_checked_at": "2026-07-19T06:52:53.903735+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
@@ -18,8 +18,8 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 778684,
-      "content_hash": "8d23df73d03fb099aff7de5b340648476815de760b06f7f1c408e6b3a57ef700"
+      "text_chars": 778309,
+      "content_hash": "673976adfbddc52eb79c25593905c8be823941e3ae3766e3c7560db5c8347128"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -27,12 +27,12 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 318205,
-      "content_hash": "22a0cc8bfcfef555f63577eafec8e661ec3f2f949ce706ffcb3225c371d21b8b"
+      "text_chars": 317945,
+      "content_hash": "1a21765e76561bcb9d083218b0c174a196b3525c8a1b8ecd2a725be6add0a2ca"
     }
   ],
-  "queued_hash": "9e9e7700b603c3d2b63fb24c2d5ba2c64c5232b29091e9f0671caa801e346ece",
-  "queued_candidate_id": "kkday-9e9e7700b603c3d2",
-  "queued_at": "2026-07-18T06:54:39.810542+09:00",
+  "queued_hash": "11ecda59784e7d428c295e50488ab004d79479380302b7dacdb90d434b62b178",
+  "queued_candidate_id": "kkday-11ecda59784e7d42",
+  "queued_at": "2026-07-19T06:52:53.926004+09:00",
   "last_audit_status": "pending"
 }
