@@ -718,5 +718,77 @@
   "pattern": "loss_aversion",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "last_check",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "timing_answer",
+  "ota": "jtb",
+  "title": "シギラベイサイドスイートアラマンダ、アラマンダスプレンディッド　☆夏休みにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "target_call",
+  "ota": "his",
+  "title": "まだ間に合う！8月2・3日出発 長岡まつり大花火大会ツアー1名様につき5,000円引き"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "シギラベイサイドスイートアラマンダ、アラマンダスプレンディッド　☆夏休みにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "question",
+  "ota": "his",
+  "title": "まだ間に合う！8月2・3日出発 長岡まつり大花火大会ツアー1名様につき5,000円引き"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-07-20",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "last_check",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
