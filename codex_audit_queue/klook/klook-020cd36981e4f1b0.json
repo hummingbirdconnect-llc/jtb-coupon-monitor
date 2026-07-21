@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-020cd36981e4f1b0",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-22T07:08:34.751445+09:00",
+  "content_hash": "020cd36981e4f1b08d03865dd80eca0ae9d91a96eedb07fa94352e3dcd5ef65d",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "bf9761338434d8770bd94ece6bef0b2719d319f13c2a5cde2555a54375a82b77",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE 日本 韓国 シンガポール 香港 ベトナム タイ マレーシア 台湾 すべて表示 日本 クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,685 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 アプリのみ 海外現地ツアー クーポンコード: KLKTOUR68 6%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア 東京都 京都 カテゴリ すべて ツアー・体験 観光施設チケット 名古屋 レゴランド®・ジャパン チケット ★ 4.7 (11,496) • 500K+ 件の予約 ¥ 5,200 3 OFF 藤沢 新江ノ島水族館 入館チケット (神奈川) ★ 4.7 (440) • 20K+ 件の予約 ¥ 3,264 20 off 東京都 Tokyo Subway Ticket (24/48/72時間券) ★ 4.8 (88,528) • 3M+ 件の予約 ¥ 3,100 最大11 OFF 東京都 森ビル デジタルアート ミュージアム：エプソン チームラボボーダレス チケット（麻布台ヒルズ・東京） ★ 4.7 (23,278) • 1M+ 件の予約 ¥ 3,600 〜 無料ジェラート 無料 eSIM 東京都 ワーナー ブラザース スタジオツアー東京 – メイキング・オブ・ ハリー・ポッター ★ 4.9 (16,383) • 900K+ 件の予約 ¥ 6,600 〜 無料特典 無料 eSIM 京都 チームラボ バイオヴォルテックス 京都 - 大成建設 ★ 4.8 (2,607) • 200K+ 件の予約 ¥ 4,032 〜 無料 eSIM カスタムバッジ Klook限定 松本 長野：上高地ハイキング日帰りツアー（3.5時間の自由散策付き）（名古屋発） ★ 4.6 (192) • 3K+ 件の予約 ¥ 6,480 20％OFF SALE 東京都 豊洲 チームラボプラネッツTOKYO チケット ★ 4.7 (20,708) • 1M+ 件の予約 ¥ 3,600 〜 無料 eSIM 大阪 大阪周遊パス ★ 4.7 (20,858) • 1M+ 件の予約 ¥ 3,500 15 OFF 北海道 【北海道夏の花見】四季彩の丘＆ファーム富田＆青い池＆滝＆パッチワークの旅日帰りツアー|札幌発 ★ 4.8 (3,034) • 30K+ 件の予約 ¥ 7,500 15 OFF 30％OFF SALE 西臼杵郡 九州：阿蘇山＆草千里ヶ浜＆高千穂峡一日ツアー（高千穂ボート体験オプション付き） ★ 4.9 (3,549) • 20K+ 件の予約 ¥ 7,000 40％OFF SALE 東京都 東京銀座：伝統的な箸作り体験 ★ 4.8 (496) • 20K+ 件の予約 ¥ 400 50％OFF SALE 東京都 スモールワールズTOKYO 入場パスポート ★ 4.6 (1,218) • 50K+ 件の予約 ¥ 2,128 30％割引 東京都 アートアクアリウム美術館 GINZA 入館チケット (東京) ★ 4.6 (5,441) • 200K+ 件の予約 ¥ 2,700 3人目無料 東京都 東京ジョイポリス パスポート ★ 4.4 (4,023) • 100K+ 件の予約 ¥ 4,250 15％OFF SALE さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}
