@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-d8ff4c0227d9fb06",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-23T07:09:52.330089+09:00",
+  "content_hash": "d8ff4c0227d9fb0660e29e85dbbb6e0112e5bccac5bb2fca4b582ea4060d2039",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "4a8e6aaf31bc2d5f2eb646f513cccd635e406153cac6c5283afd9d73df4c2e47",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE 日本 韓国 シンガポール 香港 ベトナム タイ マレーシア 台湾 すべて表示 日本 クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,761 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 アプリのみ 海外現地ツアー クーポンコード: KLKTOUR68 6%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア 東京都 京都 カテゴリ すべて ツアー・体験 観光施設チケット 名古屋 レゴランド®・ジャパン チケット ★ 4.7 (11,503) • 500K+ 件の予約 ¥ 5,200 3 OFF 東京都 森ビル デジタルアート ミュージアム：エプソン チームラボボーダレス チケット（麻布台ヒルズ・東京） ★ 4.7 (23,297) • 1M+ 件の予約 ¥ 3,600 〜 無料ジェラート 無料 eSIM 北海道 【北海道夏の花見】四季彩の丘＆ファーム富田＆青い池＆滝＆パッチワークの旅日帰りツアー|札幌発 ★ 4.8 (3,051) • 30K+ 件の予約 ¥ 7,500 15 OFF 30％OFF SALE 藤沢 新江ノ島水族館 入館チケット (神奈川) ★ 4.7 (440) • 20K+ 件の予約 ¥ 3,264 20 off 京都 チームラボ バイオヴォルテックス 京都 - 大成建設 ★ 4.8 (2,617) • 200K+ 件の予約 ¥ 4,032 〜 無料 eSIM カスタムバッジ Klook限定 東京都 Tokyo Subway Ticket (24/48/72時間券) ★ 4.8 (88,540) • 3M+ 件の予約 ¥ 3,100 最大11 OFF 大阪 大阪周遊パス ★ 4.7 (20,887) • 1M+ 件の予約 ¥ 3,500 15 OFF 東京都 ワーナー ブラザース スタジオツアー東京 – メイキング・オブ・ ハリー・ポッター ★ 4.9 (16,398) • 900K+ 件の予約 ¥ 6,600 〜 無料特典 無料 eSIM 東京都 豊洲 チームラボプラネッツTOKYO チケット ★ 4.7 (20,716) • 1M+ 件の予約 ¥ 3,600 〜 無料 eSIM 東京都 東京銀座：伝統的な箸作り体験 ★ 4.8 (499) • 20K+ 件の予約 ¥ 400 50％OFF SALE 東京都 アートアクアリウム美術館 GINZA 入館チケット (東京) ★ 4.6 (5,447) • 200K+ 件の予約 ¥ 2,700 3人目無料 東京都 スモールワールズTOKYO 入場パスポート ★ 4.6 (1,222) • 50K+ 件の予約 ¥ 2,128 30％割引 中頭郡 レクー沖縄北谷スパ＆リゾート ★ 4.8 (1,099) • 100+ 件の予約 ¥ 17,459 ¥ 5,238 Save 西臼杵郡 九州：阿蘇山＆草千里ヶ浜＆高千穂峡一日ツアー（高千穂ボート体験オプション付き） ★ 4.9 (3,578) • 20K+ 件の予約 ¥ 7,000 40％OFF SALE さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}
