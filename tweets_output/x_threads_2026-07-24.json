@@ -1,0 +1,299 @@
+{
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24 07:09 JST",
+  "sites": [
+    {
+      "site_id": "yakushimafan",
+      "display_name": "屋久島ファン",
+      "x_account": "@yakushimafan",
+      "candidates": 220,
+      "threads": [
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "全国の共立リゾート43施設で使える割引クーポン",
+          "score": 58,
+          "reasons": [
+            "本日配布再開",
+            "割引8,000円",
+            "全国対象"
+          ],
+          "pattern": "daily_check",
+          "pattern_name": "定点確認型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "【JTB】の最大8,000円引きクーポン、本日も配布中であることを確認しました\n\n宿泊・ツアーで使えます。\n期限は9/30まで。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 143,
+              "chars": 83
+            },
+            {
+              "text": "予約前にここだけ押さえておけば安心です。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 9/30まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 146,
+              "chars": 90
+            },
+            {
+              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/jtb-first/\n\n屋久島旅行の予約にも使えます。予約前にどうぞ。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 133,
+              "chars": 96
+            }
+          ]
+        },
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン",
+          "score": 54,
+          "reasons": [
+            "本日配布再開",
+            "割引10,000円"
+          ],
+          "pattern": "timing_answer",
+          "pattern_name": "タイミング断言型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "宿泊の予約、安く取るなら「クーポンがあるうち」が確実です。\n【JTB】でいま最大10,000円引き\n\n予約期限は9/1まで。\n\n条件はこの下にまとめました👇\n(1/3)",
+              "weight": 145,
+              "chars": 84
+            },
+            {
+              "text": "予約前にここだけ押さえておけば安心です。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊\n✅予約期限: 9/1まで\n\n⚠️50,000円以上の予約が条件です\n(2/3)",
+              "weight": 137,
+              "chars": 85
+            },
+            {
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\nうまく使えば、ういたぶんを現地のごはんや体験にまわせます。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 153,
+              "chars": 106
+            }
+          ]
+        },
+        {
+          "provider_id": "rurubu_travel",
+          "provider_label": "るるぶトラベル",
+          "title": "【復幸旅！八丈島】7月宿泊割引クーポン（おとなひとり1泊あたり最大7,500円引き）",
+          "score": 37,
+          "reasons": [
+            "割引7,500円",
+            "残り6日"
+          ],
+          "pattern": "direct_number",
+          "pattern_name": "数字直球型",
+          "article_url": "https://yakushima.fun/rurubu-coupon/",
+          "posts": [
+            {
+              "text": "【るるぶトラベル】最大7,500円引きクーポンが配布中です\n\n対象は国内宿泊です。\n予約は7/30まで、急ぎめです。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 134,
+              "chars": 77
+            },
+            {
+              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 最大30%引き\n✅対象: 国内宿泊\n✅予約期限: 7/30まで\n✅コード: FUKKO26MR30\n\n⚠️配布状況は変わることがあるので公式ページで最新を確認してください\n(2/3)",
+              "weight": 191,
+              "chars": 116
+            },
+            {
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/rurubu-coupon/\n\n屋久島旅行の予約にも使えます。予約前にどうぞ。\n\n#旅行クーポン #るるぶトラベル\n(3/3)",
+              "weight": 152,
+              "chars": 108
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site_id": "welltrip",
+      "display_name": "ウェルトリップ",
+      "x_account": "welltrip",
+      "candidates": 151,
+      "threads": [
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "全国の共立リゾート43施設で使える割引クーポン",
+          "score": 58,
+          "reasons": [
+            "本日配布再開",
+            "割引8,000円",
+            "全国対象"
+          ],
+          "pattern": "memo_style",
+          "pattern_name": "メモ共有型",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "posts": [
+            {
+              "text": "旅行の予定がある人向けの覚え書きです📝\n【JTB】最大8,000円引きクーポンが配布中\n\n対象は宿泊・ツアーです。\n期限は9/30まで。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "weight": 154,
+              "chars": 89
+            },
+            {
+              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 9/30まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 140,
+              "chars": 87
+            },
+            {
+              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n旅の予定がある方はのぞいてみてください。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 133,
+              "chars": 107
+            }
+          ]
+        },
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン",
+          "score": 54,
+          "reasons": [
+            "本日配布再開",
+            "割引10,000円"
+          ],
+          "pattern": "comeback",
+          "pattern_name": "復活速報型",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "posts": [
+            {
+              "text": "終了していた【JTB】のクーポンが復活してます。\n最大10,000円引き、対象は宿泊\n\n予約期限は9/1まで。\n\n条件はこちらです👇\n(1/3)",
+              "weight": 121,
+              "chars": 72
+            },
+            {
+              "text": "予約前に見ておきたい条件はこちらです。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊\n✅予約期限: 9/1まで\n\n⚠️50,000円以上の予約が条件です\n(2/3)",
+              "weight": 135,
+              "chars": 84
+            },
+            {
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\nがんばった自分へのご褒美旅にも。よければどうぞ。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 139,
+              "chars": 110
+            }
+          ]
+        },
+        {
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "沖縄NEWオールインクルーシブプラン限定！1グループ最大10％引き",
+          "score": 35,
+          "reasons": [
+            "割引10%",
+            "残り7日"
+          ],
+          "pattern": "question",
+          "pattern_name": "問いかけ型",
+          "article_url": "https://travel.hb-connect.co.jp/his-coupon/",
+          "posts": [
+            {
+              "text": "HISが企画・実施する首都圏発沖縄NEWオ…の予約、もう済ませましたか？\n【HIS】に最大10%OFFクーポンが出てます\n\n7/31までなので、検討中の方は先に押さえておくと安心です。\n\n条件はこちらです👇\n(1/3)",
+              "weight": 188,
+              "chars": 109
+            },
+            {
+              "text": "見ておきたい条件をまとめました。\n\n✅割引: 最大10%OFF\n✅対象: HISが企画・実施する首都圏発沖縄NEWオールインクルーシ…\n✅予約期限: 7/31まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
+              "weight": 194,
+              "chars": 114
+            },
+            {
+              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/his-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #HIS\n(3/3)",
+              "weight": 139,
+              "chars": 110
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site_id": "tripbooking",
+      "display_name": "トリップブッキング",
+      "x_account": "tripbooking",
+      "candidates": 29,
+      "threads": [
+        {
+          "provider_id": "agoda",
+          "provider_label": "Agoda",
+          "title": "アプリ初回",
+          "score": 23,
+          "reasons": [
+            "割引10%"
+          ],
+          "pattern": "price_diff",
+          "pattern_name": "差額実感型",
+          "article_url": "https://tripbooking.jp/agoda-coupon/",
+          "posts": [
+            {
+              "text": "【Agoda】で10%OFFクーポンが配布中です。\n同じ予約でも、1枚使うかどうかでこの差がつきます\n\n「アプリ初回」向けのクーポンです。\n\n詳細は次の投稿にまとめました👇\n(1/3)",
+              "weight": 161,
+              "chars": 92
+            },
+            {
+              "text": "確認できた適用条件は以下です。\n\n✅割引: 10%OFF\n✅予約期限: 公式ページに記載\n\n⚠️初めて利用する人限定です\n(2/3)",
+              "weight": 111,
+              "chars": 66
+            },
+            {
+              "text": "コードの使い方と最新一覧はこちら\n→ https://tripbooking.jp/agoda-coupon/\n\nクーポンの配布状況は毎日チェックして更新しています。\n\n#旅行クーポン #アゴダ\n(3/3)",
+              "weight": 142,
+              "chars": 103
+            }
+          ]
+        },
+        {
+          "provider_id": "agoda",
+          "provider_label": "Agoda",
+          "title": "Mastercard（ワールド/セレクト）",
+          "score": 20,
+          "reasons": [
+            "割引12%"
+          ],
+          "pattern": "last_check",
+          "pattern_name": "最終確認型",
+          "article_url": "https://tripbooking.jp/agoda-coupon/",
+          "posts": [
+            {
+              "text": "【Agoda】いま最大12%OFFクーポンが配布中です。\n予約ボタンを押す前のひと確認が、いちばん確実な節約です\n\n「Mastercard（ワールド/セレクト）」向けのクーポンです。\n\n条件と注意点は次の投稿で👇\n(1/3)",
+              "weight": 191,
+              "chars": 112
+            },
+            {
+              "text": "確認できた適用条件は以下です。\n\n✅割引: 最大12%OFF\n✅予約期限: 公式ページに記載\n\n⚠️対象カードでの決済が条件です\n(2/3)",
+              "weight": 119,
+              "chars": 70
+            },
+            {
+              "text": "最新のクーポン一覧と使い方はこちら\n→ https://tripbooking.jp/agoda-coupon/\n\n予約前に確認しておくと、取りこぼしがありません。\n\n#旅行クーポン #アゴダ\n(3/3)",
+              "weight": 140,
+              "chars": 102
+            }
+          ]
+        },
+        {
+          "provider_id": "expedia",
+          "provider_label": "Expedia",
+          "title": "Mastercard",
+          "score": 20,
+          "reasons": [
+            "割引10%"
+          ],
+          "pattern": "soft_news",
+          "pattern_name": "予約前チェック型",
+          "article_url": "https://tripbooking.jp/expedia-coupon/",
+          "posts": [
+            {
+              "text": "【Expedia】をこれから予約する人は、10%OFFクーポンの確認を先にどうぞ\n\n「Mastercard」向けのクーポンです。\n\n詳細は次の投稿にまとめました👇\n(1/3)",
+              "weight": 141,
+              "chars": 87
+            },
+            {
+              "text": "確認できた適用条件は以下です。\n\n✅割引: 10%OFF\n✅予約期限: 公式ページに記載\n\n⚠️対象カードでの決済が条件です\n(2/3)",
+              "weight": 115,
+              "chars": 68
+            },
+            {
+              "text": "全クーポンの最新状況はこちらで確認できます\n→ https://tripbooking.jp/expedia-coupon/\n\n予約前のクーポン確認はこのページが早いです。\n\n#旅行クーポン #エクスペディア\n(3/3)",
+              "weight": 152,
+              "chars": 110
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

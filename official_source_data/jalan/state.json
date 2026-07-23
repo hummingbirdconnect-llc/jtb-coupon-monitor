@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "be60f5c8f011e5a766e4858b406f9c3c27562062bc13ac9ea26072f285a53da0",
-  "last_checked_at": "2026-07-23T07:09:45.864880+09:00",
+  "observed_hash": "5cad731184e5c2d2963f74a6485492e6bfc79e9a97e76d185d2374c32987a7ba",
+  "last_checked_at": "2026-07-24T07:08:41.493016+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/zenkoku/",
@@ -9,12 +9,12 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 11316,
-      "content_hash": "34537727076644b4c79dbecfdfd2a3e06f7c9cbcd998da49c3e91da06eaed76c"
+      "text_chars": 10841,
+      "content_hash": "d8fb17538fe30bee5d09108a94cfdbf46f99de7a66f94f7320648f2ffaa8a979"
     }
   ],
-  "queued_hash": "be60f5c8f011e5a766e4858b406f9c3c27562062bc13ac9ea26072f285a53da0",
-  "queued_candidate_id": "jalan-be60f5c8f011e5a7",
-  "queued_at": "2026-07-23T07:09:45.865410+09:00",
+  "queued_hash": "5cad731184e5c2d2963f74a6485492e6bfc79e9a97e76d185d2374c32987a7ba",
+  "queued_candidate_id": "jalan-5cad731184e5c2d2",
+  "queued_at": "2026-07-24T07:08:41.493699+09:00",
   "last_audit_status": "pending"
 }
