@@ -50,6 +50,7 @@ COMMON_COLUMNS = [
     "予約期間",
     "出発/宿泊期間",
     "クーポンコード",
+    "パスワード",
     "データ元",
     "取得方法",
     "確度",
@@ -196,22 +197,41 @@ def first_value(source: dict[str, Any], keys: list[str]) -> str:
     return ""
 
 
-def normalize_codes(value: Any) -> str:
+def normalize_values(value: Any, item_keys: tuple[str, ...]) -> str:
     if not value:
         return ""
     if isinstance(value, str):
         return value
     if isinstance(value, list):
-        codes = []
+        values = []
         for item in value:
             if isinstance(item, dict):
-                code = item.get("code") or item.get("coupon_code") or ""
-                if code:
-                    codes.append(str(code))
+                item_value = first_value(item, list(item_keys))
+                if item_value:
+                    values.append(item_value)
             elif item:
-                codes.append(str(item))
-        return " / ".join(codes)
+                values.append(str(item))
+        return " / ".join(dict.fromkeys(values))
     return str(value)
+
+
+def normalize_codes(value: Any) -> str:
+    return normalize_values(value, ("code", "coupon_code"))
+
+
+def normalize_passwords(coupon: dict[str, Any]) -> str:
+    detail = coupon.get("detail_data") or {}
+    value = (
+        coupon.get("passwords")
+        or coupon.get("coupon_passwords")
+        or coupon.get("password")
+        or coupon.get("coupon_password")
+        or detail.get("passwords")
+        or detail.get("coupon_passwords")
+        or detail.get("password")
+        or detail.get("coupon_password")
+    )
+    return normalize_values(value, ("password", "coupon_password", "value"))
 
 
 def normalize_conditions(coupon: dict[str, Any]) -> str:
@@ -240,6 +260,7 @@ def format_coupon_row(coupon: dict[str, Any], provider: dict[str, Any], file_kin
 
     source_type = first_value(coupon, ["source_type"]) or first_value(detail, ["source"]) or file_kind
     codes = normalize_codes(coupon.get("coupon_codes") or detail.get("coupon_codes"))
+    passwords = normalize_passwords(coupon)
     return {
         "詳細URL": first_value(coupon, ["detail_url", "source_url"]),
         "タイトル": first_value(coupon, ["title", "name"]),
@@ -251,6 +272,7 @@ def format_coupon_row(coupon: dict[str, Any], provider: dict[str, Any], file_kin
         "予約期間": first_value(coupon, ["booking_period"]) or first_value(detail, ["booking_period"]),
         "出発/宿泊期間": first_value(coupon, ["travel_period", "stay_period"]) or first_value(detail, ["stay_period"]),
         "クーポンコード": codes,
+        "パスワード": passwords,
         "データ元": source_type,
         "取得方法": first_value(coupon, ["fetch_method"]) or ("手元マスター" if source_type == "manual_master" else ""),
         "確度": first_value(coupon, ["confidence"]),

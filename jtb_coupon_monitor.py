@@ -85,6 +85,65 @@ def today_str():
     return datetime.now(JST).strftime("%Y-%m-%d")
 
 
+def _append_unique(values, value):
+    """空値を除き、出現順を保ったまま値を追加する。"""
+    if value and value not in values:
+        values.append(value)
+
+
+def _clean_credential_value(value):
+    """JTBのコード／パスワード表示から、入力に使う値だけを取り出す。"""
+    value = re.sub(r"\s+", "", value or "").strip("：:「」『』\"'")
+    return value if re.fullmatch(r"[A-Za-z0-9_-]+", value) else ""
+
+
+def extract_coupon_credentials(soup, page_text):
+    """詳細ページからクーポンコードとパスワードを別々に取得する。
+
+    JTBの現行ページでは ``.c-code`` 内の ``.txt`` が項目名、``.label`` が
+    入力値であるため、まずこの構造を読む。レイアウト変更時にも取得を続けられる
+    よう、従来の本文テキスト検索をフォールバックとして残す。
+    """
+    coupon_codes = []
+    passwords = []
+
+    # 現行のJTB詳細ページの構造化された表示を優先する。
+    for row in soup.select(".c-code p"):
+        label_el = row.select_one(".txt")
+        value_el = row.select_one(".label")
+        if not label_el or not value_el:
+            continue
+
+        label = label_el.get_text(" ", strip=True)
+        value = _clean_credential_value(value_el.get_text(" ", strip=True))
+        if not value:
+            continue
+
+        if re.search(r"パスワード|password", label, re.IGNORECASE):
+            _append_unique(passwords, value)
+        elif re.search(r"クーポン\s*コード|コード", label, re.IGNORECASE):
+            _append_unique(coupon_codes, value)
+
+    # 構造が変わったページ向けのフォールバック。
+    code_patterns = [
+        r"クーポン\s*コード[：:\s]*([A-Za-z0-9_-]+)",
+        r"コード[：:\s]*([A-Za-z0-9_-]+)",
+    ]
+    for pattern in code_patterns:
+        for match in re.finditer(pattern, page_text, re.IGNORECASE):
+            _append_unique(coupon_codes, _clean_credential_value(match.group(1)))
+
+    password_patterns = [
+        r"パスワード[：:\s]*([A-Za-z0-9_-]+)",
+        r"PASSWORD[：:\s]*([A-Za-z0-9_-]+)",
+    ]
+    for pattern in password_patterns:
+        for match in re.finditer(pattern, page_text, re.IGNORECASE):
+            _append_unique(passwords, _clean_credential_value(match.group(1)))
+
+    return coupon_codes, passwords
+
+
 # ============================================================
 # マスターID管理（前回のID一覧を記憶して差分検出に使う）
 # ============================================================
@@ -638,27 +697,10 @@ def scrape_detail_page(url):
             "notes": [],
         }
 
-        # クーポンコード
-        code_patterns = [
-            r'クーポンコード[：:\s]*([A-Za-z0-9_\-]+)',
-            r'コード[：:\s]*([A-Za-z0-9_\-]+)',
-        ]
-        for pat in code_patterns:
-            for match in re.finditer(pat, page_text, re.IGNORECASE):
-                code = match.group(1)
-                if code not in detail["coupon_codes"] and len(code) >= 3:
-                    detail["coupon_codes"].append(code)
-
-        # パスワード
-        pw_patterns = [
-            r'パスワード[：:\s]*([A-Za-z0-9_\-]+)',
-            r'PASSWORD[：:\s]*([A-Za-z0-9_\-]+)',
-        ]
-        for pat in pw_patterns:
-            for match in re.finditer(pat, page_text, re.IGNORECASE):
-                pw = match.group(1)
-                if pw not in detail["passwords"]:
-                    detail["passwords"].append(pw)
+        # クーポンコードとパスワードは、表示用の条件文ではなく専用項目で取得する。
+        detail["coupon_codes"], detail["passwords"] = extract_coupon_credentials(
+            soup, page_text
+        )
 
         # 条件
         for pat in [r'([0-9,]+)円以上[のでご利用時に]*([0-9,]+)円[\s]*(割引|引|OFF)']:
