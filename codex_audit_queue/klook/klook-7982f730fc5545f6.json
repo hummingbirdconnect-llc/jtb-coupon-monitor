@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-7982f730fc5545f6",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-26T06:58:06.679252+09:00",
+  "content_hash": "7982f730fc5545f65fdbc23fb1843b4c8fdf3707117f1eace52d18138a2bbeac",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "1443a23d1214c38e3874f3ff50073b24be9f4ba34ed6efca93c2717052ec4269",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE 日本 韓国 シンガポール ベトナム 香港 タイ マレーシア 台湾 すべて表示 日本 クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,960 発行 Klook eSIM 50%OFF (上限2USD) クーポンコード: ESIMSUMMER26 50%OFF 最低利用額なし 発行 北海道ツアー15%オフ クーポンコード: HOKKAIDOTOUR15OFF 15%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア 東京都 京都 カテゴリ すべて ツアー・体験 観光施設チケット 名古屋 レゴランド®・ジャパン チケット 4.7 / 5 (11,520) • 500K+ 件の予約 ¥ 5,200 3 OFF 京都 チームラボ バイオヴォルテックス 京都 - 大成建設 4.8 / 5 (2,642) • 200K+ 件の予約 ¥ 4,000 〜 1予約につきeSIM1枚無料（アプリ限定） 東京都 ワーナー ブラザース スタジオツアー東京 – メイキング・オブ・ ハリー・ポッター 4.9 / 5 (16,423) • 900K+ 件の予約 ¥ 6,600 〜 無料特典 北海道 【北海道夏の花見】四季彩の丘＆ファーム富田＆青い池＆滝＆パッチワークの旅日帰りツアー|札幌発 4.8 / 5 (3,094) • 30K+ 件の予約 ¥ 7,500 ¥ 3,214オトク 東京都 豊洲 チームラボプラネッツTOKYO チケット 4.7 / 5 (20,759) • 1M+ 件の予約 ¥ 3,600 〜 参考価格： ¥ 3,800 1予約につきeSIM1枚無料（アプリ限定） 東京都 森ビル デジタルアート ミュージアム：エプソン チームラボボーダレス チケット（麻布台ヒルズ・東京） 4.7 / 5 (23,351) • 1M+ 件の予約 ¥ 3,600 〜 無料ジェラート 大阪 大阪周遊パス 4.7 / 5 (20,918) • 1M+ 件の予約 ¥ 3,500 15 OFF を入手 東京都 Tokyo Subway Ticket (24/48/72時間券) 4.8 / 5 (88,573) • 3M+ 件の予約 ¥ 3,100 最大11 OFF 藤沢 新江ノ島水族館 入館チケット (神奈川) 4.7 / 5 (441) • 20K+ 件の予約 ¥ 3,400 20 off 松本 長野：上高地ハイキング日帰りツアー（3.5時間の自由散策付き）（名古屋発） 4.6 / 5 (195) • 3K+ 件の予約 ¥ 6,480 ¥ 1,620オトク 東京都 東京銀座：伝統的な箸作り体験 4.9 / 5 (507) • 20K+ 件の予約 ¥ 400 ¥ 400オトク 東京都 アートアクアリウム美術館 GINZA 入館チケット (東京) 4.6 / 5 (5,455) • 200K+ 件の予約 ¥ 2,700 3人目無料 京都 エムズホテル三条大宮 4.2 / 5 (493) • 50+ 件の予約 ¥ 3,351 Save ¥ 1,340 国頭郡 沖縄貸切チャーター車（運転手付き）- 沖縄美ら海水族館 / 首里城へのオーダーメイド旅程 - 中国語/英語/日本語対応ドライバー 4.9 / 5 (253) • 3K+ 件の予約 ¥ 17,647 〜 参考価格： ¥ 19,500 10％OFFのオプションを選択 さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}
