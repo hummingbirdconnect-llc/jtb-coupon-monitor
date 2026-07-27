@@ -754,10 +754,14 @@ function visualObservationNote(provider) {{
 function visualObservationStats(provider) {{
   const visual = provider.visual_summary || {{}};
   if (!visual.official_checked_at) return '';
+  const imageCount = visual.derived_image_count ?? visual.visible_count ?? 0;
+  const captureStat = visual.capture_count === undefined
+    ? `<span class="stat">証拠画像 ${{escapeHtml(imageCount)}} 枚</span>`
+    : `<span class="stat">画面撮影 ${{escapeHtml(visual.capture_count)}} 回 → 個別画像 ${{escapeHtml(imageCount)}} 枚</span>`;
   return `
     <span class="stat active">公式画面に表示 ${{escapeHtml(visual.visible_count ?? 0)}} 件</span>
     <span class="stat review">HTML内の非表示 ${{escapeHtml(visual.hidden_dom_count ?? 0)}} 件</span>
-    <span class="stat">証拠画像 ${{escapeHtml(visual.visible_count ?? 0)}} 枚</span>
+    ${{captureStat}}
   `;
 }}
 
