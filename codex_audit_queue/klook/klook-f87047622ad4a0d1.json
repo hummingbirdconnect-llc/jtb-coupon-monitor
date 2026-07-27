@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-f87047622ad4a0d1",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-07-28T07:08:10.727941+09:00",
+  "content_hash": "f87047622ad4a0d11f9ab3fbdfd002e6a45bd801469c104094449ec52dee72b7",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "9dc3a6a8aa590f3a055093dac7637fa09e85db2ffe2613cfb361bd80acc91e84",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE 日本 韓国 シンガポール ベトナム 香港 タイ マレーシア 台湾 すべて表示 日本 クーポンコード すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,906 発行 北海道ツアー15%オフ クーポンコード: HOKKAIDOTOUR15OFF 15%OFF 最低利用額なし 発行 大阪周遊パス 15% クーポンコード: OAPSUMMER3 15%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア 東京都 京都 カテゴリ すべて ツアー・体験 観光施設チケット 名古屋 レゴランド®・ジャパン チケット ★ 4.7 (11,526) • 500K+ 件の予約 ¥ 5,200 3 OFF 東京都 森ビル デジタルアート ミュージアム：エプソン チームラボボーダレス チケット（麻布台ヒルズ・東京） ★ 4.7 (23,371) • 1M+ 件の予約 ¥ 3,600 〜 無料ジェラート 1予約につきeSIM1枚無料（アプリ限定） 京都 チームラボ バイオヴォルテックス 京都 - 大成建設 ★ 4.8 (2,652) • 200K+ 件の予約 ¥ 4,032 〜 1予約につきeSIM1枚無料（アプリ限定） カスタムバッジ Klook限定 西臼杵郡 九州：阿蘇山＆草千里ヶ浜＆高千穂峡一日ツアー（高千穂ボート体験オプション付き） ★ 4.9 (3,669) • 20K+ 件の予約 ¥ 7,000 40％OFF SALE 東京都 ワーナー ブラザース スタジオツアー東京 – メイキング・オブ・ ハリー・ポッター ★ 4.9 (16,436) • 900K+ 件の予約 ¥ 6,600 〜 無料特典 1予約につきeSIM1枚無料（アプリ限定） 大阪 大阪周遊パス ★ 4.7 (20,944) • 1M+ 件の予約 ¥ 3,500 15 OFF 北海道 【北海道夏の花見】四季彩の丘＆ファーム富田＆青い池＆滝＆パッチワークの旅日帰りツアー|札幌発 ★ 4.8 (3,112) • 30K+ 件の予約 ¥ 7,500 15 OFF 30％OFF SALE 東京都 豊洲 チームラボプラネッツTOKYO チケット ★ 4.7 (20,794) • 1M+ 件の予約 ¥ 3,600 〜 1予約につきeSIM1枚無料（アプリ限定） 藤沢 新江ノ島水族館 入館チケット (神奈川) ★ 4.7 (444) • 20K+ 件の予約 ¥ 3,264 20 off 沖縄市 Klookパス 沖縄 ★ 4.4 (609) • 30K+ 件の予約 ¥ 3,000 Klook限定 さいたま市 カンデオホテルズ大宮 ★ 4.8 (1,040) • 100+ 件の予約 ¥ 9,852 ¥ 1,990 Save 東京都 アートアクアリウム美術館 GINZA 入館チケット (東京) ★ 4.6 (5,458) • 200K+ 件の予約 ¥ 2,700 3人目無料 西宮 キッザニア甲子園入場チケット ★ 4.7 (221) • 10K+ 件の予約 ¥ 2,993 〜 10％OFF SALE 松山市 レフ松山市駅ｂｙベッセルホテルズ ★ 4.8 (260) • 100+ 件の予約 ¥ 9,703 ¥ 1,552 Save 名古屋 ベッセルイン栄駅前 ★ 4.8 (558) • 200+ 件の予約 ¥ 7,309 ¥ 804 Save さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}
