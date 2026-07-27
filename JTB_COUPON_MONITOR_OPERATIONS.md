@@ -2,7 +2,7 @@
 
 > **リポジトリ**: https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor
 >
-> **最終更新**: 2026年7月10日
+> **最終更新**: 2026年7月27日
 
 ---
 
@@ -10,9 +10,26 @@
 
 ### 実行頻度
 
-- 毎日: HIS、JTB、KNT、JALパック、るるぶ、ゆこゆこ、楽天、じゃらん、Yahoo!トラベル、一休、Booking.com、Agoda、Expedia、Hotels.com、Trip.com、KKday、Klookの17社
+- 毎日6:00 JST: HIS、JTB、KNT、JALパック、るるぶ、ゆこゆこ、楽天、じゃらん、Yahoo!トラベル、一休、Booking.com、Agoda、Expedia、Hotels.com、Trip.com、KKday、Klookの17社
+- 毎日11:05 / 19:05 JST: HISだけを追加確認。公式画面で表示中のカードを再取得し、証拠画像とダッシュボードを更新
 - 5日ごと: 残り27社。会社IDから日を分散し、5日間に1回だけ実行
 - 正本: `config/provider_registry.json` の `schedule`
+
+### HISの公式画面確認
+
+HISはHTML内に残っていても、地域・時間帯・切替状態によって画面上では非表示のカードがあります。そのため、単純なHTML全件取得は使いません。
+
+- 「海外旅行」「国内旅行」タブを順に開く
+- 画面上で表示中のカードだけを対象にする
+- 各カードの「詳細を見る」アコーディオンを開く
+- 展開後のカード全体を画像として保存する
+- 表示件数とHTML内の非表示件数を分けてダッシュボードへ表示する
+- 画像は最新の表示カード分だけを保持し、過去画像を無制限に増やさない
+
+生成先:
+
+- `his_coupon_data/visual_observation_latest.json`: 表示地域、タブ別件数、確認時刻
+- `dashboard/evidence/his/<coupon_id>.png`: カードごとの最新証拠画像
 
 ### 公式取得とCodex監査
 
@@ -57,7 +74,7 @@ python3 wp_review_orchestrator.py --dry-run
 ## 1. システム全体像
 
 ```
-┌─ GitHub Actions（毎朝9:00 JST 自動実行）────────────────┐
+┌─ GitHub Actions（毎朝6:00 JST 自動実行）────────────────┐
 │                                                           │
 │  ① JTBクーポンページをスクレイピング                      │
 │     ├─ 国内クーポン一覧（CSSセレクタ方式）               │
@@ -112,7 +129,7 @@ python3 wp_review_orchestrator.py --dry-run
 
 ### 通常時: 何もしなくてOK
 
-毎朝9時にGitHub Actionsが自動実行されます。変動があればメール通知されます。
+毎朝6時に全体チェックが自動実行され、HISだけは11:05と19:05にも公式画面を再確認します。全体チェックで変動があればメール通知されます。
 
 ### 結果の確認（Google Sheets）
 

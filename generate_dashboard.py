@@ -40,6 +40,11 @@ COVERAGE_LABELS = {
 }
 
 COMMON_COLUMNS = [
+    "公式表示",
+    "公式画像",
+    "表示タブ",
+    "表示地域",
+    "公式確認時刻",
     "詳細URL",
     "タイトル",
     "カテゴリ",
@@ -67,6 +72,9 @@ SUMMARY_COLUMNS = [
     "配布中",
     "配布終了",
     "要確認",
+    "公式画面表示",
+    "HTML内非表示",
+    "画面確認日時",
     "公式取得日時",
     "URL確認日時",
     "データ日",
@@ -141,6 +149,16 @@ def load_change_log(data_dir: str | None) -> list[dict[str, Any]]:
     return load_json(path)
 
 
+def load_visual_summary(data_dir: str | None) -> dict[str, Any]:
+    """公式画面の表示件数・非表示件数など、最新の目視相当観測を読む。"""
+    if not data_dir:
+        return {}
+    path = ROOT / data_dir / "visual_observation_latest.json"
+    if not path.exists():
+        return {}
+    return load_json(path)
+
+
 def load_provider_check(provider_id: str) -> dict[str, Any]:
     path = CHECK_STATUS_ROOT / provider_id / "latest.json"
     if not path.exists():
@@ -157,7 +175,7 @@ def provider_frequency(provider: dict[str, Any]) -> tuple[str, str]:
         "every_5_days": "5日ごとにチェック",
         "weekly": "5日ごとにチェック（旧設定）",
     }
-    return frequency, labels.get(frequency, frequency)
+    return frequency, provider.get("check_frequency_label") or labels.get(frequency, frequency)
 
 
 def freshness_label(value: str) -> str:
@@ -261,7 +279,15 @@ def format_coupon_row(coupon: dict[str, Any], provider: dict[str, Any], file_kin
     source_type = first_value(coupon, ["source_type"]) or first_value(detail, ["source"]) or file_kind
     codes = normalize_codes(coupon.get("coupon_codes") or detail.get("coupon_codes"))
     passwords = normalize_passwords(coupon)
+    official_visibility = first_value(coupon, ["official_visibility"])
+    if official_visibility == "visible":
+        official_visibility = "表示中"
     return {
+        "公式表示": official_visibility,
+        "公式画像": first_value(coupon, ["screenshot_url"]),
+        "表示タブ": first_value(coupon, ["official_tab"]),
+        "表示地域": first_value(coupon, ["official_area"]),
+        "公式確認時刻": first_value(coupon, ["official_checked_at"]),
         "詳細URL": first_value(coupon, ["detail_url", "source_url"]),
         "タイトル": first_value(coupon, ["title", "name"]),
         "カテゴリ": first_value(coupon, ["category", "area"]),
@@ -393,6 +419,7 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
     coverage = provider.get("coverage_status", "")
     frequency, frequency_label = provider_frequency(provider)
     check_status = load_provider_check(provider["id"])
+    visual_summary = load_visual_summary(provider.get("data_dir"))
     source_label = "未整備"
     if rows:
         if coverage == "auto_daily":
@@ -437,6 +464,7 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "manual_action_url": WORKFLOW_URL,
         "manual_gh_command": manual_gh_command(provider["id"]),
         "check_status": check_status,
+        "visual_summary": visual_summary,
         "data_date": data_date,
         "freshness_status": freshness,
         "freshness_label": freshness_label(freshness),
@@ -459,6 +487,17 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             "配布中": str(active),
             "配布終了": str(ended),
             "要確認": str(review),
+            "公式画面表示": (
+                str(visual_summary["visible_count"])
+                if visual_summary.get("visible_count") is not None
+                else "未確認"
+            ),
+            "HTML内非表示": (
+                str(visual_summary["hidden_dom_count"])
+                if visual_summary.get("hidden_dom_count") is not None
+                else "未確認"
+            ),
+            "画面確認日時": visual_summary.get("official_checked_at") or "なし",
             "公式取得日時": official_fetched_at or "なし",
             "URL確認日時": url_checked_at or "なし",
             "データ日": data_date or "不明",
@@ -559,6 +598,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .status-active {{ background: #e9f7ef; color: #146c43; }}
 .status-ended {{ background: #fdecef; color: #a52834; }}
 .status-review {{ background: #fff5d6; color: #7a5200; }}
+.official-visible {{ display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; background: #e9f7ef; color: #146c43; white-space: nowrap; }}
+.evidence-link {{ display: inline-block; line-height: 0; }}
+.evidence-thumb {{ width: 92px; height: 68px; object-fit: cover; object-position: top; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; }}
+.evidence-thumb:hover {{ border-color: #0f5caa; box-shadow: 0 2px 8px rgba(15, 92, 170, 0.18); }}
 .day-badge {{ display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; background: #eef2f7; color: #4c596a; white-space: nowrap; }}
 .day-badge.today {{ background: #e9f7ef; color: #146c43; }}
 .day-badge.yesterday {{ background: #eaf3ff; color: #0f5caa; }}
@@ -604,6 +647,17 @@ function dayCell(value) {{
 function linkCell(value) {{
   if (!value) return '';
   return gridjs.html(`<a href="${{escapeHtml(value)}}" target="_blank" rel="noopener" style="color:#0f5caa;">開く</a>`);
+}}
+
+function imageCell(value) {{
+  if (!value) return '';
+  const safeValue = escapeHtml(value);
+  return gridjs.html(`<a class="evidence-link" href="${{safeValue}}" target="_blank" rel="noopener"><img class="evidence-thumb" src="${{safeValue}}" alt="公式画面のクーポン画像" loading="lazy"></a>`);
+}}
+
+function visibilityCell(value) {{
+  if (value === '表示中') return gridjs.html('<span class="official-visible">表示中</span>');
+  return escapeHtml(value || '');
 }}
 
 function copyTableData(rows, columns, button) {{
@@ -688,6 +742,25 @@ function checkStatusHtml(provider) {{
   return details.join('');
 }}
 
+function visualObservationNote(provider) {{
+  const visual = provider.visual_summary || {{}};
+  if (!visual.official_checked_at) return '';
+  const tabCounts = Object.entries(visual.tab_counts || {{}})
+    .map(([label, count]) => `${{escapeHtml(label)}} ${{escapeHtml(count)}}件`)
+    .join(' / ');
+  return `<br>公式画面確認: ${{escapeHtml(formatCheckTime(visual.official_checked_at))}} / 表示地域: ${{escapeHtml(visual.official_area || '未確認')}}${{tabCounts ? ' / ' + tabCounts : ''}}`;
+}}
+
+function visualObservationStats(provider) {{
+  const visual = provider.visual_summary || {{}};
+  if (!visual.official_checked_at) return '';
+  return `
+    <span class="stat active">公式画面に表示 ${{escapeHtml(visual.visible_count ?? 0)}} 件</span>
+    <span class="stat review">HTML内の非表示 ${{escapeHtml(visual.hidden_dom_count ?? 0)}} 件</span>
+    <span class="stat">証拠画像 ${{escapeHtml(visual.visible_count ?? 0)}} 枚</span>
+  `;
+}}
+
 function manualPanelHtml(provider) {{
   const command = escapeHtml(provider.manual_gh_command || '');
   return `<div class="manual-panel">
@@ -721,6 +794,8 @@ function buildColumns(columns) {{
     const base = {{ name: col }};
     if (col === '対象日') {{ base.formatter = cell => dayCell(cell); base.width = '86px'; }}
     if (col === '詳細URL') {{ base.formatter = cell => linkCell(cell); base.width = '70px'; }}
+    if (col === '公式画像') {{ base.formatter = cell => imageCell(cell); base.width = '112px'; }}
+    if (col === '公式表示') {{ base.formatter = cell => visibilityCell(cell); base.width = '88px'; }}
     if (col === '配布状況') base.formatter = cell => statusCell(cell);
     if (col === '会社') base.attributes = () => ({{ style: 'min-width:130px' }});
     if (['タイトル', '次アクション'].includes(col)) base.attributes = () => ({{ style: 'min-width:260px' }});
@@ -917,26 +992,32 @@ function renderProvider(container, provider) {{
   const active = provider.rows.filter(row => row['配布状況'] === '配布中').length;
   const ended = provider.rows.filter(row => row['配布状況'] === '配布終了').length;
   const review = provider.rows.filter(row => row['配布状況'] && !['配布中', '配布終了'].includes(row['配布状況'])).length;
+  const visualColumns = ['公式表示', '公式画像', '表示タブ', '表示地域', '公式確認時刻'];
+  const hasVisualEvidence = provider.rows.some(row => row['公式表示'] || row['公式画像']);
+  const couponColumns = hasVisualEvidence
+    ? DATA.columns.coupons
+    : DATA.columns.coupons.filter(column => !visualColumns.includes(column));
   container.innerHTML = `
     <div class="section">
       <h2>${{escapeHtml(provider.label)}}</h2>
       <div class="note">
         対象サイト: ${{escapeHtml(provider.site_targets.join(' / ') || '未設定')}}<br>
         取得状態: ${{escapeHtml(provider.coverage_label)}} / 監視頻度: ${{escapeHtml(provider.check_frequency_label)}} / 分類: ${{escapeHtml(provider.classification)}} / 最新データ: ${{escapeHtml(provider.latest_file || 'なし')}}<br>
-        ${{escapeHtml(provider.note || '')}}
+        ${{escapeHtml(provider.note || '')}}${{visualObservationNote(provider)}}
       </div>
       <div class="stats">
         <span class="stat">全 ${{provider.rows.length}} 件</span>
         <span class="stat active">配布中 ${{active}} 件</span>
         <span class="stat ended">配布終了 ${{ended}} 件</span>
         <span class="stat review">要確認 ${{review}} 件</span>
+        ${{visualObservationStats(provider)}}
       </div>
       ${{manualPanelHtml(provider)}}
     </div>
   `;
   const section = container.querySelector('.section');
   attachManualActions(section, provider);
-  renderGrid(section, provider.rows, DATA.columns.coupons, {{
+  renderGrid(section, provider.rows, couponColumns, {{
     filter: true,
     limit: 50,
     sectionLinks: [

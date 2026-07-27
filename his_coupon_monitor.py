@@ -3,7 +3,8 @@
 HIS クーポン監視スクリプト（Playwright版）
 ================================================================
 HISの割引クーポンページ（施策ページ）からクーポン情報を収集。
-ページはアコーディオンUIのため、Playwrightで全展開後にHTMLを解析する。
+Playwrightで旅行タブを順に開き、公式画面で実際に表示されているカードだけを
+アコーディオン展開して解析し、カード単位の証拠画像も保存する。
 
 HTML構造（2026-02時点）:
   <div class="content__wrapper is-ovs|is-dom|is-gakusei|...">
@@ -31,6 +32,7 @@ HTML構造（2026-02時点）:
 """
 
 import json
+import os
 import sys
 import hashlib
 from datetime import datetime, timedelta, timezone
@@ -45,6 +47,14 @@ PAGE_URL = "https://www.his-j.com/campaign/shisaku/"
 
 DATA_DIR = Path("./his_coupon_data")
 MASTER_FILE = DATA_DIR / "master_ids.json"
+VISUAL_SUMMARY_FILE = DATA_DIR / "visual_observation_latest.json"
+EVIDENCE_DIR = Path("./dashboard/evidence/his")
+EVIDENCE_URL_PREFIX = "evidence/his"
+
+TAB_CONFIG = (
+    ("海外旅行", "li[data-tab='tab1']"),
+    ("国内旅行", "li[data-tab='tab2']"),
+)
 
 # データ保持日数
 DATA_RETENTION_DAYS = 30
@@ -68,6 +78,7 @@ THANKS_END_MARKERS = (
 # ============================================================
 def setup_dirs():
     DATA_DIR.mkdir(exist_ok=True)
+    EVIDENCE_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def today_str():
@@ -170,23 +181,54 @@ def save_master_ids(master):
 
 
 # ============================================================
-# Playwright でページ取得 & アコーディオン展開
+# Playwright で表示中カードを取得 & アコーディオン展開
 # ============================================================
-def fetch_page_html():
-    """Playwright で HIS クーポンページを取得し、アコーディオンを全展開してHTMLを返す"""
+def _current_area_label(page):
+    """公式ページの「現在のエリア」表示を返す。"""
+    button = page.get_by_role("button", name=re.compile(r"現在のエリア")).first
+    if button.count() == 0:
+        return "未確認"
+    text = button.inner_text().strip()
+    area = re.sub(r"^現在のエリア[：:]?\s*", "", text).strip()
+    return area or "未確認"
+
+
+def _prune_stale_evidence(active_ids):
+    """最新画面に存在しないHIS証拠画像を削除し、容量増加を防ぐ。"""
+    active_names = {f"{coupon_id}.png" for coupon_id in active_ids}
+    for path in EVIDENCE_DIR.glob("*.png"):
+        if path.name not in active_names:
+            path.unlink()
+
+
+def fetch_visible_page_snapshot():
+    """公式画面で実際に表示中のカードだけを展開・撮影して返す。
+
+    HTML内に存在してもCSSやJavaScriptで非表示の地域限定・時間限定・
+    切替済みカードは含めない。
+    """
     try:
         from playwright.sync_api import sync_playwright
+        from bs4 import BeautifulSoup
     except ImportError:
         print("⚠️ Playwright未インストール。pip install playwright && playwright install chromium")
         sys.exit(1)
 
-    print(f"🎭 Playwright でページ取得中... {PAGE_URL}")
+    headless = os.environ.get("HIS_BROWSER_HEADLESS", "false").lower() == "true"
+    browser_mode = "headless" if headless else "headed"
+    print(f"🎭 Playwright で公式表示を確認中... {PAGE_URL} ({browser_mode})")
+    checked_at = datetime.now(JST).isoformat(timespec="seconds")
+    observations = {}
+    visible_card_html = []
+    tab_counts = {}
+    missing_tabs = []
 
     with sync_playwright() as p:
         browser = p.chromium.launch(
-            headless=False,
+            # HISはheadless Chromiumへ403を返すため、ActionsではXvfb上の
+            # 通常ブラウザを使う。HIS_BROWSER_HEADLESS=true で明示変更可能。
+            headless=headless,
             args=[
-                "--headless=new",
                 "--disable-blink-features=AutomationControlled",
                 "--no-sandbox",
             ],
@@ -203,24 +245,139 @@ def fetch_page_html():
         )
 
         resp = page.goto(PAGE_URL, wait_until="domcontentloaded", timeout=30000)
-        if resp.status != 200:
-            print(f"⚠️ HTTP {resp.status} - アクセスがブロックされた可能性")
+        if resp is None or resp.status != 200:
+            status = resp.status if resp else "応答なし"
+            print(f"⚠️ HTTP {status} - アクセスがブロックされた可能性")
             browser.close()
             return None
 
         page.wait_for_timeout(3000)
 
-        # アコーディオンをすべて展開
-        page.evaluate(
-            'document.querySelectorAll(".accordion__button").forEach(btn => btn.click());'
-        )
-        page.wait_for_timeout(1500)
+        area = _current_area_label(page)
+        total_dom_count = page.locator(".content__wrapper").count()
 
-        html = page.content()
+        for tab_label, tab_selector in TAB_CONFIG:
+            tab = page.locator(tab_selector).first
+            if tab.count() == 0:
+                tab_counts[tab_label] = 0
+                missing_tabs.append(tab_label)
+                continue
+
+            tab.click()
+            page.wait_for_timeout(300)
+            cards = page.locator(".content__wrapper:visible")
+            tab_counts[tab_label] = cards.count()
+
+            for index in range(cards.count()):
+                card = cards.nth(index)
+                accordion = card.locator(".accordion__button").first
+                if accordion.count():
+                    button_text = accordion.inner_text().strip()
+                    if "詳細" in button_text:
+                        accordion.click()
+                        page.wait_for_timeout(80)
+
+                # BeautifulSoup側と同じ文字列化でIDを作り、改行・span境界による
+                # Playwright inner_textとの差をなくす。
+                outer_html = card.evaluate("(element) => element.outerHTML")
+                card_soup = BeautifulSoup(outer_html, "html.parser")
+                title_node = card_soup.select_one(".plan__title")
+                category_node = card_soup.select_one(".plan__dst")
+                title = title_node.get_text(strip=True) if title_node else ""
+                category = category_node.get_text(strip=True) if category_node else ""
+                if not title:
+                    continue
+
+                coupon_id = make_coupon_id(title, category)
+                screenshot_name = f"{coupon_id}.png"
+                screenshot_path = EVIDENCE_DIR / screenshot_name
+                card.screenshot(
+                    path=str(screenshot_path),
+                    animations="disabled",
+                )
+
+                if coupon_id not in observations:
+                    visible_card_html.append(outer_html)
+                    observations[coupon_id] = {
+                        "official_visibility": "visible",
+                        "official_tab": tab_label,
+                        "official_area": area,
+                        "official_checked_at": checked_at,
+                        "screenshot_url": f"{EVIDENCE_URL_PREFIX}/{screenshot_name}",
+                    }
+
         browser.close()
 
-    print(f"  ✅ HTML取得完了（{len(html):,}文字）")
-    return html
+    if missing_tabs:
+        print("🚨 旅行タブを確認できませんでした: " + " / ".join(missing_tabs))
+        return None
+    if not observations:
+        print("🚨 公式画面で表示中のクーポンカードを取得できませんでした。")
+        return None
+
+    html = "<html><body>" + "\n".join(visible_card_html) + "</body></html>"
+    snapshot = {
+        "html": html,
+        "observations": observations,
+        "checked_at": checked_at,
+        "area": area,
+        "tab_counts": tab_counts,
+        "total_dom_count": total_dom_count,
+        "visible_count": len(observations),
+        "hidden_dom_count": max(total_dom_count - len(observations), 0),
+    }
+    print(
+        "  ✅ 公式表示取得完了"
+        f"（表示中={snapshot['visible_count']}件 / HTML内非表示={snapshot['hidden_dom_count']}件"
+        f" / エリア={area}）"
+    )
+    return snapshot
+
+
+def enrich_visible_coupons(coupons, snapshot):
+    """表示観測メタデータと公式証拠画像をクーポン単位で付与する。"""
+    observations = snapshot.get("observations") or {}
+    enriched = []
+    missing_ids = []
+
+    for coupon in coupons:
+        observation = observations.get(coupon["id"])
+        if not observation:
+            missing_ids.append(coupon["id"])
+            continue
+        enriched_coupon = dict(coupon)
+        enriched_coupon.update(observation)
+        enriched_coupon.update({
+            "source_url": PAGE_URL,
+            "source_type": "official_visible_dom",
+            "fetch_method": "playwright_visible_dom+screenshot",
+            "confidence": "公式画面表示確認済み",
+        })
+        enriched.append(enriched_coupon)
+
+    if missing_ids:
+        raise ValueError("表示観測と解析結果が一致しません: " + ", ".join(missing_ids))
+    if len(enriched) != len(observations):
+        raise ValueError(
+            f"表示観測件数({len(observations)})と解析件数({len(enriched)})が一致しません"
+        )
+    return enriched
+
+
+def save_visual_summary(snapshot):
+    """ダッシュボードの会社別概要に使う最新の画面観測結果を保存する。"""
+    summary = {
+        "source_url": PAGE_URL,
+        "official_checked_at": snapshot["checked_at"],
+        "official_area": snapshot["area"],
+        "tab_counts": snapshot["tab_counts"],
+        "visible_count": snapshot["visible_count"],
+        "total_dom_count": snapshot["total_dom_count"],
+        "hidden_dom_count": snapshot["hidden_dom_count"],
+        "evidence_directory": EVIDENCE_URL_PREFIX,
+    }
+    with open(VISUAL_SUMMARY_FILE, "w", encoding="utf-8") as handle:
+        json.dump(summary, handle, ensure_ascii=False, indent=2)
 
 
 # ============================================================
@@ -267,19 +424,21 @@ def parse_coupons(html):
 
         # --- 割引額（タイトルから） ---
         discount = ""
-        m = re.search(r"(?:最大)?([0-9,]+)円割引", title)
+        m = re.search(r"(?:最大)?[0-9,]+円(?:割引|引き)", title)
         if m:
             discount = m.group(0)
         else:
-            m2 = re.search(r"(\d+)[％%](?:OFF|割引)", title)
+            m2 = re.search(r"(?:最大)?\d+[％%](?:OFF|割引|引き)?", title)
             if m2:
-                discount = f"{m2.group(1)}%OFF"
+                discount = m2.group(0).replace("％", "%")
 
         # --- クーポンコード & 条件 ---
         coupon_codes = []
         for li in w.select(".coupon__list li"):
             code_el = li.find(class_="coupon__code")
-            code = code_el.get("data-name", "") if code_el else ""
+            code = ""
+            if code_el:
+                code = code_el.get("data-name", "") or code_el.get_text(strip=True)
 
             cond_el = li.find(class_="coupon__condition")
             condition = cond_el.get_text(strip=True) if cond_el else ""
@@ -537,21 +696,29 @@ def run_init():
     print("🔄 HIS 初期化モード")
     setup_dirs()
 
-    html = fetch_page_html()
-    if not html:
+    snapshot = fetch_visible_page_snapshot()
+    if not snapshot:
         print("🚨 ページ取得失敗")
         sys.exit(1)
 
-    coupons = parse_coupons(html)
+    coupons = parse_coupons(snapshot["html"])
 
     if not coupons:
         print("🚨 異常検知: クーポンが0件です。サイト構造が変更された可能性があります。")
+        sys.exit(1)
+
+    try:
+        coupons = enrich_visible_coupons(coupons, snapshot)
+    except ValueError as exc:
+        print(f"🚨 公式画面の観測結果と抽出結果が不一致です: {exc}")
         sys.exit(1)
 
     # バリデーション（ダブルチェック）
     coupons, validation_report = validate_coupons(coupons, service_name="HIS")
 
     save_daily_data(coupons)
+    save_visual_summary(snapshot)
+    _prune_stale_evidence({coupon["id"] for coupon in coupons})
 
     master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
     save_master_ids(master_ids)
@@ -565,15 +732,21 @@ def run_init():
 def run_full():
     setup_dirs()
 
-    html = fetch_page_html()
-    if not html:
+    snapshot = fetch_visible_page_snapshot()
+    if not snapshot:
         print("🚨 ページ取得失敗")
         sys.exit(1)
 
-    coupons = parse_coupons(html)
+    coupons = parse_coupons(snapshot["html"])
 
     if not coupons:
         print("🚨 異常検知: クーポンが0件です。サイト構造が変更された可能性があります。")
+        sys.exit(1)
+
+    try:
+        coupons = enrich_visible_coupons(coupons, snapshot)
+    except ValueError as exc:
+        print(f"🚨 公式画面の観測結果と抽出結果が不一致です: {exc}")
         sys.exit(1)
 
     # バリデーション（ダブルチェック）
@@ -583,6 +756,8 @@ def run_full():
     )
 
     save_daily_data(coupons)
+    save_visual_summary(snapshot)
+    _prune_stale_evidence({coupon["id"] for coupon in coupons})
 
     events = detect_changes(master_ids, coupons)
 

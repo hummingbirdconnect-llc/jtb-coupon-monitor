@@ -3,6 +3,8 @@ name: Coupon Monitor
 on:
   schedule:
     - cron: '0 21 * * *'    # 毎日 6:00 JST: 17社＋当日割当の5日周期会社
+    - cron: '5 2 * * *'     # 毎日 11:05 JST: HIS公式画面＋証拠画像
+    - cron: '5 10 * * *'    # 毎日 19:05 JST: HIS公式画面＋証拠画像
   workflow_dispatch:
     inputs:
       provider_id:
@@ -90,12 +92,21 @@ jobs:
         id: plan
         run: |
           if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
-            echo "scope=due" >> "$GITHUB_OUTPUT"
-            echo "provider_id=" >> "$GITHUB_OUTPUT"
-            echo "label=scheduled: 17 daily + distributed 5-day providers" >> "$GITHUB_OUTPUT"
+            if [ "${{ github.event.schedule }}" = "0 21 * * *" ]; then
+              echo "scope=due" >> "$GITHUB_OUTPUT"
+              echo "provider_id=" >> "$GITHUB_OUTPUT"
+              echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
+              echo "label=scheduled: 17 daily + distributed 5-day providers" >> "$GITHUB_OUTPUT"
+            else
+              echo "scope=all" >> "$GITHUB_OUTPUT"
+              echo "provider_id=his" >> "$GITHUB_OUTPUT"
+              echo "his_visual_only=true" >> "$GITHUB_OUTPUT"
+              echo "label=scheduled: HIS official visible cards + screenshots" >> "$GITHUB_OUTPUT"
+            fi
           else
             echo "scope=all" >> "$GITHUB_OUTPUT"
             echo "provider_id=${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
+            echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
             echo "label=manual: ${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
           fi
 
@@ -122,12 +133,14 @@ jobs:
           if [ -n "${{ steps.plan.outputs.provider_id }}" ] && [ "${{ steps.plan.outputs.provider_id }}" != "all" ]; then
             args+=(--provider-id "${{ steps.plan.outputs.provider_id }}")
           fi
-          python provider_check_runner.py "${args[@]}"
+          xvfb-run -a python provider_check_runner.py "${args[@]}"
 
       - name: ツイート文面生成
+        if: steps.plan.outputs.his_visual_only != 'true'
         run: python generate_tweets.py
 
       - name: 変動通知メール送信
+        if: steps.plan.outputs.his_visual_only != 'true'
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
@@ -141,12 +154,14 @@ jobs:
         run: python generate_his_list_html.py
 
       - name: JTB ブログ用HTML生成（リスト形式）
+        if: steps.plan.outputs.his_visual_only != 'true'
         run: python generate_jtb_html.py
 
       - name: ダッシュボード HTML 生成
         run: python generate_dashboard.py
 
       - name: X投稿ツリー生成（サイト別デイリー3本）
+        if: steps.plan.outputs.his_visual_only != 'true'
         continue-on-error: true
         run: python generate_x_threads.py
 
@@ -159,6 +174,7 @@ jobs:
             echo "- run: ${{ steps.plan.outputs.label }}"
             echo "- scope: ${{ steps.plan.outputs.scope }}"
             echo "- provider_id: ${{ steps.plan.outputs.provider_id }}"
+            echo "- HIS visual-only: ${{ steps.plan.outputs.his_visual_only }}"
             echo "- AI audit: Codex scheduled task (OpenAI API is not used by Actions)"
           } >> "$GITHUB_STEP_SUMMARY"
 

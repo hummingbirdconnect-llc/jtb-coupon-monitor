@@ -57,6 +57,25 @@ class JTBCouponCredentialsTest(unittest.TestCase):
         self.assertEqual(row["クーポンコード"], "cpnew")
         self.assertEqual(row["パスワード"], "jvDR")
 
+    def test_dashboard_exposes_official_visual_evidence(self):
+        coupon = {
+            "id": "his-sample",
+            "title": "HIS表示中クーポン",
+            "official_visibility": "visible",
+            "official_tab": "国内旅行",
+            "official_area": "首都圏版",
+            "official_checked_at": "2026-07-27T19:05:00+09:00",
+            "screenshot_url": "evidence/his/his-sample.png",
+        }
+
+        row = format_coupon_row(coupon, {"id": "his"}, "coupons")
+
+        self.assertIn("公式画像", COMMON_COLUMNS)
+        self.assertEqual(row["公式表示"], "表示中")
+        self.assertEqual(row["表示タブ"], "国内旅行")
+        self.assertEqual(row["表示地域"], "首都圏版")
+        self.assertEqual(row["公式画像"], "evidence/his/his-sample.png")
+
 
 if __name__ == "__main__":
     unittest.main()

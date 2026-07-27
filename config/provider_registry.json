@@ -38,9 +38,10 @@
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "A",
       "coverage_status": "auto_daily",
+      "check_frequency_label": "1日3回（6:00 / 11:05 / 19:05 JST）",
       "data_dir": "his_coupon_data",
       "master_path": "../vault_blog/ウェルトリップ/会社別/HIS/coupon-master/master.md",
-      "note": "既存の日次監視データあり。"
+      "note": "公式画面で表示中のカードだけを取得し、カードごとの証拠画像も保存。"
     },
     {
       "id": "jtb",
