@@ -238,6 +238,9 @@ def fetch_visible_page_snapshot():
                        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             viewport={"width": 1280, "height": 800},
             locale="ja-JP",
+            # GitHub ActionsはUTCで動くため、時間帯限定カードの表示判定を
+            # 公式ページ利用者と同じ日本時間に固定する。
+            timezone_id="Asia/Tokyo",
         )
         page = context.new_page()
         page.add_init_script(
