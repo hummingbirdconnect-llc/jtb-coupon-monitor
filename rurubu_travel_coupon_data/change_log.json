@@ -1534,5 +1534,61 @@
     "id": "rurubu_travel-sumtm26jl10-87d8ea74cf",
     "title": "【夏旅タイムセール】割引クーポン",
     "discount": "最大¥1,000引き"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "new",
+    "category": "エリア限定クーポン",
+    "id": "rurubu_travel-hodo26jul30-72a11dc63b",
+    "title": "北海道 道央エリア オススメ旅館・ホテルで使える割引クーポン＜第二弾＞",
+    "discount": "最大¥3,000引き"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "new",
+    "category": "施設限定クーポン",
+    "id": "rurubu_travel-wsn26jul100-wsn26jul50-bc111c33c5",
+    "title": "リニューアルOPEN記念！群馬県 伊香保温泉 和心の宿大森で使えるクーポン",
+    "discount": "最大¥10,000引き"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "gone",
+    "category": "エリア限定クーポン",
+    "id": "rurubu_travel-ito26may20-5d9f6672cd",
+    "title": "今こそ伊東へ！伊東温泉・伊豆高原・川奈で使える旅行割引クーポン（ひとり1泊あたり最大5,000円引き）＜第一弾＞",
+    "discount": "最大20%引き"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-rusum26jun2-438ca634eb",
+    "title": "今月の値引きクーポン（最大500円引き）",
+    "discount": "最大2%引き"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-rusum26jun3-18b9bed2ca",
+    "title": "今月の値引きクーポン（最大800円引き）",
+    "discount": "最大3%引き"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-rusum26jun4-19c1e989bd",
+    "title": "今月の値引きクーポン（最大1,500円引き）",
+    "discount": "最大4%引き"
+  },
+  {
+    "date": "2026-07-30",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-sumtm26jl10-87d8ea74cf",
+    "title": "【夏旅タイムセール】割引クーポン",
+    "discount": "最大¥1,000引き"
   }
 ]

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-28T07:07:08.065629+09:00",
+  "last_updated": "2026-07-30T07:02:39.297117+09:00",
   "ids": {
     "2607jtbcpnew": {
       "category": "国内",
@@ -55,7 +55,7 @@
       "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606prince": {
       "category": "国内",
@@ -83,14 +83,14 @@
       "title": "全国の共立リゾート43施設で使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606richm": {
       "category": "国内",
       "title": "全国のリッチモンドホテルズで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607anadp": {
       "category": "国内",
@@ -99,26 +99,33 @@
       "area": "北海道・埼玉県・千葉県",
       "stock_status": "配布中"
     },
+    "2607ihghotels": {
+      "category": "国内",
+      "title": "IHG One Rewards × JTBトラベルメンバー パートナーシッププランで使える割引クーポン",
+      "discount": "最大10,000円引",
+      "area": "北海道・大阪府・沖縄県",
+      "stock_status": "配布中"
+    },
     "2605dohoku": {
       "category": "国内",
       "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606douto": {
       "category": "国内",
       "title": "<7～8月宿泊>【道東エリア】おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605douou": {
       "category": "国内",
       "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605hokka": {
       "category": "国内",
@@ -223,7 +230,7 @@
       "title": "【復幸旅！八丈島】7月宿泊で使える割引クーポン",
       "discount": "最大30％引",
       "area": "東京都",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607hakone": {
       "category": "国内",
@@ -244,7 +251,7 @@
       "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "静岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606kintetsu": {
       "category": "国内",
@@ -328,7 +335,7 @@
       "title": "【離島】南の宝箱　鹿児島　夏のかごしま宿泊割キャンペーン",
       "discount": "最大20％引",
       "area": "鹿児島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2607okinawa": {
       "category": "国内",
@@ -342,14 +349,14 @@
       "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605okinawa": {
       "category": "国内",
       "title": "☆【沖縄】７月～８月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603okinawa2": {
       "category": "国内",
@@ -510,6 +517,13 @@
       "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アラスカ航空対象】",
       "discount": "最大40,000円引",
       "area": "全方面",
+      "stock_status": "配布中"
+    },
+    "op": {
+      "category": "海外",
+      "title": "MyBus 夏休み・レイトサマー期間も対象！10％割引キャンペーン！",
+      "discount": "10％円引",
+      "area": "ハワイ",
       "stock_status": "配布中"
     },
     "2607ke2": {
