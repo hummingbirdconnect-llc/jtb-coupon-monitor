@@ -195,6 +195,45 @@ def validated_site_url(value: str) -> str:
     return value.strip().rstrip("/")
 
 
+def safe_error_text(value: Any, limit: int = 160) -> str:
+    """監視ログに認証情報を含めず、障害理由だけを短く表示する。"""
+
+    return " ".join(str(value or "").split())[:limit]
+
+
+def http_error_summary(response: requests.Response) -> str:
+    """WordPressの権限拒否と経路上の拒否を安全に区別する。"""
+
+    content_type = response.headers.get("Content-Type", "").split(";", 1)[0]
+    detail = ""
+    if content_type.lower() == "application/json":
+        try:
+            body = response.json()
+        except ValueError:
+            body = None
+        if isinstance(body, dict):
+            code = safe_error_text(body.get("code"), 80)
+            message = safe_error_text(body.get("message"))
+            if code and message:
+                detail = f" {code}: {message}"
+            elif code or message:
+                detail = f" {code or message}"
+
+    route_signals = []
+    if response.headers.get("CF-RAY"):
+        route_signals.append("Cloudflare経由")
+    if response.headers.get("X-Sucuri-ID"):
+        route_signals.append("Sucuri経由")
+    if response.headers.get("WWW-Authenticate"):
+        route_signals.append("認証要求あり")
+    if not detail and route_signals:
+        detail = f"（{'、'.join(route_signals)}）"
+    elif not detail and content_type:
+        detail = f"（応答形式: {content_type}）"
+
+    return f"WordPressが同期を拒否しました（HTTP {response.status_code}）。{detail}"
+
+
 def request_json(
     session: requests.Session,
     method: str,
@@ -226,9 +265,7 @@ def request_json(
             time.sleep(attempt * 2)
             continue
         if response.status_code >= 400:
-            raise RuntimeError(
-                f"WordPressが同期を拒否しました（HTTP {response.status_code}）。"
-            )
+            raise RuntimeError(http_error_summary(response))
         try:
             result = response.json()
         except ValueError as exc:
