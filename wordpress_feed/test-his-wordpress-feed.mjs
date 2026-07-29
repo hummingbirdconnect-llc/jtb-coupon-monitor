@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { mkdtempSync, rmSync } from "node:fs";
+import { mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -9,6 +9,13 @@ const testDir = dirname(fileURLToPath(import.meta.url));
 const monitorRepo = resolve(testDir, "..");
 const outputDir = mkdtempSync(join(tmpdir(), "his-wordpress-feed-"));
 const outputPath = join(outputDir, "feed.json");
+const latest = JSON.parse(
+  readFileSync(
+    join(monitorRepo, "provider_check_data", "his", "latest.json"),
+    "utf8",
+  ),
+);
+const staleNowMs = Date.parse(latest.official_fetched_at) + 4 * 60 * 60 * 1000;
 
 try {
   assert.throws(
@@ -16,6 +23,7 @@ try {
       buildHisWordPressFeed({
         monitorRepo,
         outputPath,
+        nowMs: staleNowMs,
       }),
     /3時間を超えているため同期しません/,
     "古い監視結果を通常の自動同期用に生成できてしまいます。",
