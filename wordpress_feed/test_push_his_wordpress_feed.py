@@ -9,10 +9,23 @@ from datetime import datetime, timedelta, timezone
 
 from push_his_wordpress_feed import (
     FeedValidationError,
+    http_error_summary,
     normalize_application_password,
     validate_feed,
     verify_readback,
 )
+
+
+class FakeResponse:
+    def __init__(self, status_code: int, headers: dict, body: object) -> None:
+        self.status_code = status_code
+        self.headers = headers
+        self.body = body
+
+    def json(self) -> object:
+        if isinstance(self.body, ValueError):
+            raise self.body
+        return self.body
 
 
 def sample_payload(now: datetime) -> dict:
@@ -105,6 +118,31 @@ class FeedValidationTests(unittest.TestCase):
             normalize_application_password("abcd efgh  ijkl\tmnop\n"),
             "abcdefghijklmnop",
         )
+
+    def test_json_permission_error_is_safe_and_actionable(self) -> None:
+        message = http_error_summary(
+            FakeResponse(
+                403,
+                {"Content-Type": "application/json; charset=UTF-8"},
+                {
+                    "code": "rest_forbidden",
+                    "message": "この操作を実行する権限がありません。",
+                },
+            )
+        )
+        self.assertIn("rest_forbidden", message)
+        self.assertIn("HTTP 403", message)
+
+    def test_non_json_rejection_reports_only_route_signal(self) -> None:
+        message = http_error_summary(
+            FakeResponse(
+                403,
+                {"Content-Type": "text/html", "CF-RAY": "test"},
+                "<html>ignored</html>",
+            )
+        )
+        self.assertIn("Cloudflare経由", message)
+        self.assertNotIn("ignored", message)
 
     def test_duplicate_id_is_rejected(self) -> None:
         self.payload["items"][1]["id"] = self.payload["items"][0]["id"]
