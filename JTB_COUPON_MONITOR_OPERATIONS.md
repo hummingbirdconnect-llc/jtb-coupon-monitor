@@ -2,7 +2,7 @@
 
 > **リポジトリ**: https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor
 >
-> **最終更新**: 2026年7月27日
+> **最終更新**: 2026年7月29日
 
 ---
 
@@ -34,7 +34,7 @@ HISはHTML内に残っていても、地域・時間帯・切替状態によっ�
 
 ### 公式取得とCodex監査
 
-GitHub Actionsは公式API・埋め込みJSON・HTML・Playwrightの順で取得し、ページ内容のhashが変わった場合に `codex_audit_queue/` へ監査候補JSONを保存します。GitHub ActionsからOpenAI APIやWordPress更新は実行しません。
+GitHub Actionsは公式API・埋め込みJSON・HTML・Playwrightの順で取得し、ページ内容のhashが変わった場合に `codex_audit_queue/` へ監査候補JSONを保存します。OpenAI APIは実行しません。HISだけは公式画面の確認に成功した場合、検証済みの現在一覧をWordPressプラグインの保存領域へ同期します。記事本文、下書き、公開状態は変更しません。
 
 Codex定期実行は監査候補を読み、`ota-official-deal-researcher` の基準で「掲載可・条件付き・掲載不可・終了済み」を分類します。公式URL、ページ内の根拠文、金額、コード、日付は `deal_audit_schema.py` でも再検証し、推測値、根拠文にない値、公式ドメイン外URLは採用しません。
 
@@ -45,8 +45,17 @@ Codex定期実行は監査候補を読み、`ota-official-deal-researcher` の�
 | Secret | 用途 |
 |--------|------|
 | `GMAIL_ADDRESS` / `GMAIL_APP_PASSWORD` / `NOTIFY_EMAIL` | GitHub Actionsの差分通知 |
+| `YF_WP_URL` / `YF_WP_USER` / `YF_WP_APP_PASSWORD` | 検証済みHIS一覧のWordPress同期 |
 
-WordPress認証情報はGitHub Actionsへ渡さず、Codexを実行するローカル環境だけに置きます。認証情報はGitへ保存しません。
+WordPress認証情報はGitHub Actionsの暗号化された設定だけに置きます。認証情報はGitへ保存しません。
+
+### HIS一覧のWordPress自動同期
+
+- HIS公式画面の取得、ダッシュボード生成、件数・時刻・コード照合がすべて成功した場合だけ送信
+- 公式表示が10件未満、直前から40％超の急減、コード・期間の不一致、3時間超の古い結果は送信しない
+- WordPressへ保存後、同じ件数・確認時刻・識別子・クーポンコードを読戻して確認
+- 途中で失敗した場合、WordPressは直前の正常な一覧を保持
+- WordPressの記事本文、下書き、公開状態、リンク設定は変更しない
 
 ### WordPress安全条件
 

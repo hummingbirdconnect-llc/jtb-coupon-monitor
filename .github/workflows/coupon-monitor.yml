@@ -96,11 +96,13 @@ jobs:
               echo "scope=due" >> "$GITHUB_OUTPUT"
               echo "provider_id=" >> "$GITHUB_OUTPUT"
               echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
+              echo "his_checked=true" >> "$GITHUB_OUTPUT"
               echo "label=scheduled: 17 daily + distributed 5-day providers" >> "$GITHUB_OUTPUT"
             else
               echo "scope=all" >> "$GITHUB_OUTPUT"
               echo "provider_id=his" >> "$GITHUB_OUTPUT"
               echo "his_visual_only=true" >> "$GITHUB_OUTPUT"
+              echo "his_checked=true" >> "$GITHUB_OUTPUT"
               echo "label=scheduled: HIS official visible cards + screenshots" >> "$GITHUB_OUTPUT"
             fi
           else
@@ -110,6 +112,11 @@ jobs:
               echo "his_visual_only=true" >> "$GITHUB_OUTPUT"
             else
               echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
+            fi
+            if [ "${{ inputs.provider_id }}" = "his" ] || [ "${{ inputs.provider_id }}" = "all" ]; then
+              echo "his_checked=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "his_checked=false" >> "$GITHUB_OUTPUT"
             fi
             echo "label=manual: ${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
           fi
@@ -164,6 +171,12 @@ jobs:
       - name: ダッシュボード HTML 生成
         run: python generate_dashboard.py
 
+      - name: HIS WordPress用フィード生成・送信前検証
+        if: steps.plan.outputs.his_checked == 'true'
+        run: |
+          node wordpress_feed/build-his-wordpress-feed.mjs
+          python wordpress_feed/push_his_wordpress_feed.py --dry-run
+
       - name: X投稿ツリー生成（サイト別デイリー3本）
         if: steps.plan.outputs.his_visual_only != 'true'
         continue-on-error: true
@@ -179,6 +192,7 @@ jobs:
             echo "- scope: ${{ steps.plan.outputs.scope }}"
             echo "- provider_id: ${{ steps.plan.outputs.provider_id }}"
             echo "- HIS visual-only: ${{ steps.plan.outputs.his_visual_only }}"
+            echo "- HIS WordPress feed: ${{ steps.plan.outputs.his_checked }}"
             echo "- AI audit: Codex scheduled task (OpenAI API is not used by Actions)"
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -200,6 +214,7 @@ jobs:
             html_output/
             tweets_output/
             dashboard/
+            wordpress_feed/his-monitor-feed.json
           )
           staged_paths=()
           for path in "${generated_paths[@]}"; do
@@ -221,3 +236,11 @@ jobs:
             sleep 5
           done
           git push origin main
+
+      - name: 検証済みHIS一覧をWordPressへ同期
+        if: steps.plan.outputs.his_checked == 'true'
+        env:
+          YF_WP_URL: ${{ secrets.YF_WP_URL }}
+          YF_WP_USER: ${{ secrets.YF_WP_USER }}
+          YF_WP_APP_PASSWORD: ${{ secrets.YF_WP_APP_PASSWORD }}
+        run: python wordpress_feed/push_his_wordpress_feed.py
