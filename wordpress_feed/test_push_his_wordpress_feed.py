@@ -9,6 +9,7 @@ from datetime import datetime, timedelta, timezone
 
 from push_his_wordpress_feed import (
     FeedValidationError,
+    normalize_application_password,
     validate_feed,
     verify_readback,
 )
@@ -98,6 +99,12 @@ class FeedValidationTests(unittest.TestCase):
             ],
         }
         verify_readback(readback, expected)
+
+    def test_application_password_spaces_are_removed(self) -> None:
+        self.assertEqual(
+            normalize_application_password("abcd efgh  ijkl\tmnop\n"),
+            "abcdefghijklmnop",
+        )
 
     def test_duplicate_id_is_rejected(self) -> None:
         self.payload["items"][1]["id"] = self.payload["items"][0]["id"]

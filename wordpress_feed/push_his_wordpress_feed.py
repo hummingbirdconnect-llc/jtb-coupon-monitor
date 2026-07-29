@@ -27,6 +27,12 @@ class FeedValidationError(ValueError):
     """安全条件を満たさない監視フィード。"""
 
 
+def normalize_application_password(value: str) -> str:
+    """WordPressの表示用区切りを認証に含めない。"""
+
+    return "".join(value.split())
+
+
 def parse_iso_datetime(value: Any, label: str) -> datetime:
     if not isinstance(value, str) or not value.strip():
         raise FeedValidationError(f"{label}がありません。")
@@ -323,7 +329,9 @@ def main() -> int:
 
     site_url = os.environ.get("YF_WP_URL", "")
     username = os.environ.get("YF_WP_USER", "")
-    app_password = os.environ.get("YF_WP_APP_PASSWORD", "")
+    app_password = normalize_application_password(
+        os.environ.get("YF_WP_APP_PASSWORD", "")
+    )
     if not site_url or not username or not app_password:
         print("❌ WordPress同期用の認証設定が不足しています。", file=sys.stderr)
         return 1
