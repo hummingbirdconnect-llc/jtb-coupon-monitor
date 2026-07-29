@@ -36,8 +36,6 @@ import os
 import sys
 import hashlib
 from datetime import datetime, timedelta, timezone
-from io import BytesIO
-from math import ceil, floor
 from pathlib import Path
 import re
 from coupon_validator import validate_coupons
@@ -203,108 +201,28 @@ def _prune_stale_evidence(active_ids):
             path.unlink()
 
 
-def _document_box(locator):
-    """要素の位置をページ全体基準のCSSピクセルで返す。"""
-    return locator.evaluate(
-        """(element) => {
-            const rect = element.getBoundingClientRect();
-            return {
-                x: rect.left + window.scrollX,
-                y: rect.top + window.scrollY,
-                width: rect.width,
-                height: rect.height,
-            };
-        }"""
+def _capture_card_png(card):
+    """ブラウザが判定したカード範囲を、そのままPNGで返す。"""
+    return card.screenshot(
+        animations="disabled",
+        timeout=30000,
     )
-
-
-def _union_clip(boxes):
-    """複数カードをすべて含む1枚の撮影範囲を返す。"""
-    left = max(0, floor(min(box["x"] for box in boxes)))
-    top = max(0, floor(min(box["y"] for box in boxes)))
-    right = ceil(max(box["x"] + box["width"] for box in boxes))
-    bottom = ceil(max(box["y"] + box["height"] for box in boxes))
-    return {
-        "x": left,
-        "y": top,
-        "width": right - left,
-        "height": bottom - top,
-    }
-
-
-def _pixel_crop_box(image_size, clip, card_box):
-    """CSS座標のカード範囲を、撮影画像内のピクセル座標へ変換する。"""
-    image_width, image_height = image_size
-    scale_x = image_width / clip["width"]
-    scale_y = image_height / clip["height"]
-    left = max(0, floor((card_box["x"] - clip["x"]) * scale_x))
-    top = max(0, floor((card_box["y"] - clip["y"]) * scale_y))
-    right = min(
-        image_width,
-        ceil((card_box["x"] + card_box["width"] - clip["x"]) * scale_x),
-    )
-    bottom = min(
-        image_height,
-        ceil((card_box["y"] + card_box["height"] - clip["y"]) * scale_y),
-    )
-    if right <= left or bottom <= top:
-        raise ValueError(f"クーポン画像の切り抜き範囲が不正です: {card_box}")
-    return left, top, right, bottom
-
-
-def _crop_evidence_bytes(tab_png, clip, card_records, image_class):
-    """タブ画像を切り出し、クーポンIDごとのPNGデータを返す。"""
-    cropped_images = {}
-    with image_class.open(BytesIO(tab_png)) as source_image:
-        source_image.load()
-        for record in card_records:
-            crop_box = _pixel_crop_box(source_image.size, clip, record["box"])
-            cropped = source_image.crop(crop_box)
-            try:
-                buffer = BytesIO()
-                cropped.save(buffer, format="PNG", optimize=True)
-                cropped_images[record["coupon_id"]] = buffer.getvalue()
-            finally:
-                cropped.close()
-    return cropped_images
-
-
-def _save_cropped_evidence(
-    tab_png,
-    clip,
-    card_records,
-    image_class,
-    output_dir=EVIDENCE_DIR,
-):
-    """タブ全体を1回撮影した画像から、クーポン別の画像を切り出す。"""
-    output_dir = Path(output_dir)
-    output_dir.mkdir(parents=True, exist_ok=True)
-    cropped_images = _crop_evidence_bytes(
-        tab_png,
-        clip,
-        card_records,
-        image_class,
-    )
-    for coupon_id, image_bytes in cropped_images.items():
-        with (output_dir / f"{coupon_id}.png").open("wb") as handle:
-            handle.write(image_bytes)
 
 
 def fetch_visible_page_snapshot():
     """公式画面で実際に表示中のカードだけを展開・撮影して返す。
 
     HTML内に存在してもCSSやJavaScriptで非表示の地域限定・時間限定・
-    切替済みカードは含めない。各タブを1回だけ撮影し、その画像から
-    クーポン単位の証拠画像を座標で切り出す。
+    切替済みカードは含めない。各タブの全アコーディオンを先に開き、
+    ブラウザが判定した要素範囲でカードを1枚ずつ直接撮影する。
     """
     try:
         from playwright.sync_api import sync_playwright
         from bs4 import BeautifulSoup
-        from PIL import Image
     except ImportError:
         print(
             "⚠️ 必要パッケージ未インストール。"
-            "pip install playwright beautifulsoup4 Pillow && playwright install chromium"
+            "pip install playwright beautifulsoup4 && playwright install chromium"
         )
         sys.exit(1)
 
@@ -381,7 +299,6 @@ def fetch_visible_page_snapshot():
             page.evaluate("window.scrollTo(0, 0)")
             page.wait_for_timeout(100)
 
-            card_records = []
             for index in range(cards.count()):
                 card = cards.nth(index)
                 # BeautifulSoup側と同じ文字列化でIDを作り、改行・span境界による
@@ -405,24 +322,10 @@ def fetch_visible_page_snapshot():
                         "official_area": area,
                         "official_checked_at": checked_at,
                         "screenshot_url": f"{EVIDENCE_URL_PREFIX}/{screenshot_name}",
-                        "screenshot_capture_method": "tab_single_capture_crop",
+                        "screenshot_capture_method": "element_screenshot",
                     }
-                    card_records.append({
-                        "coupon_id": coupon_id,
-                        "box": _document_box(card),
-                    })
-
-            if card_records:
-                clip = _union_clip([record["box"] for record in card_records])
-                tab_png = page.screenshot(
-                    clip=clip,
-                    animations="disabled",
-                    timeout=30000,
-                )
-                capture_count += 1
-                pending_evidence.update(
-                    _crop_evidence_bytes(tab_png, clip, card_records, Image)
-                )
+                    pending_evidence[coupon_id] = _capture_card_png(card)
+                    capture_count += 1
 
         browser.close()
 
@@ -434,12 +337,12 @@ def fetch_visible_page_snapshot():
         return None
     if len(pending_evidence) != len(observations):
         print(
-            "🚨 撮影画像の切り抜き件数が一致しません"
+            "🚨 カード撮影件数が一致しません"
             f"（観測={len(observations)}件 / 画像={len(pending_evidence)}件）"
         )
         return None
 
-    # 全タブの撮影と切り抜きが成功してから、最新画像を一括反映する。
+    # 全カードの撮影が成功してから、最新画像を一括反映する。
     for coupon_id, image_bytes in pending_evidence.items():
         with (EVIDENCE_DIR / f"{coupon_id}.png").open("wb") as handle:
             handle.write(image_bytes)
@@ -455,7 +358,7 @@ def fetch_visible_page_snapshot():
         "visible_count": len(observations),
         "hidden_dom_count": max(total_dom_count - len(observations), 0),
         "capture_count": capture_count,
-        "capture_method": "one_tab_screenshot_then_crop",
+        "capture_method": "individual_element_screenshot",
     }
     print(
         "  ✅ 公式表示取得完了"
@@ -481,7 +384,7 @@ def enrich_visible_coupons(coupons, snapshot):
         enriched_coupon.update({
             "source_url": PAGE_URL,
             "source_type": "official_visible_dom",
-            "fetch_method": "playwright_visible_dom+tab_screenshot_crop",
+            "fetch_method": "playwright_visible_dom+element_screenshot",
             "confidence": "公式画面表示確認済み",
         })
         enriched.append(enriched_coupon)
