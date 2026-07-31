@@ -1,8 +1,12 @@
 name: WordPress Coupon Draft Update
 
 on:
-  schedule:
-    - cron: '30 21 * * *'    # 毎朝 6:30 JST: welltrip 全ページの下書きを更新（収集ジョブの30分後）
+  # 2026-08-01: GitHub Actions から WordPress REST API へ接続すると 403 で拒否される
+  # （同じ認証情報でローカルからは 200。サーバー側の国外IPアクセス制限とみられる）。
+  # 毎朝の自動実行はローカル launchd 側で行うため、ここでは schedule を無効にしている。
+  # サーバー側の制限を解除できた場合は下2行のコメントを外す。
+  # schedule:
+  #   - cron: '30 21 * * *'    # 毎朝 6:30 JST（収集ジョブの30分後）
   workflow_dispatch:
     inputs:
       site_id:
