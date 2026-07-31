@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-9f394371884f0119",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-08-01T07:08:17.020239+09:00",
+  "content_hash": "9f394371884f0119f4f7f978081a316ed815be6d83e86034f1276654f9a04726",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "8df31e265cc366338e2843a1c91439ec81d2c13949d41f384aded1e1ea55ada0",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA 旅だって進化する 香港 台湾 日本 シンガポール タイ マレーシア 韓国 ベトナム すべて表示 香港 クーポンコード すべてのアクティビティ対象 全サイト10%OFF クーポンコード: MCWORLD10OFF 10%OFF 最低利用額：JPY 56,070 発行 すべてのアクティビティ対象 全サイト5%OFF クーポンコード: MCWORLD5OFF 5%OFF 最低利用額：JPY 40,050 発行 香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 613 オフ 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン カテゴリ すべて ツアー・体験 観光施設チケット 香港 香港ディズニーランド パーク・チケット 4.8 / 5 (191,015) • 8M+ 件の予約 ¥ 12,235 〜 HKD30OFF セット割 21％OFF 最大20 割引 無料特典 指定アトラクションチケットの予約で、中国鉄道チケットが15 OFF Klook限定 香港 香港エアポートエクスプレス チケット 4.9 / 5 (353,286) • 6M+ 件の予約 ¥ 1,267 参考価格： ¥ 1,491 Up to 30 off 香港 ビクトリアピークトラム・スカイテラス428展望台 チケットセット（香港） 4.6 / 5 (41,081) • 2M+ 件の予約 ¥ 1,675 セット割 9％OFF 香港 香港オーシャンパーク チケット 4.7 / 5 (81,601) • 2M+ 件の予約 ¥ 8,783 セット割 42％OFF マカオ ターボジェット 香港マカオ往復フェリーチケット 4.9 / 5 (34) • 6K+ 件の予約 ¥ 6,742 セット割 50％OFF 香港 Klookパス 香港 4.7 / 5 (3,695) • 90K+ 件の予約 ¥ 8,129 参考価格： ¥ 11,839 Klook限定 広州 広州+珠海+深圳+珠海5日間都市ハイライトツアー ¥ 71,693 SALE 5％OFF マカオ 香港⇔マカオ フェリー（TurboJet提供） 4.7 / 5 (27,613) • 1M+ 件の予約 ¥ 2,860 参考価格： ¥ 4,943 最大42 OFF 香港 香港オープントップ観光バスツアー｜廟街（テンプルストリート） 4.4 / 5 (664) • 30K+ 件の予約 ¥ 2,441 〜 SALE 20％OFF セット割 28％OFF 香港 ビクトリアハーバー ナイトクルーズ ファンタジースターチェイサー（軽食・ドリンク飲み放題＋写真撮影付き） 4.6 / 5 (242) • 10K+ 件の予約 ¥ 1,653 SALE 66％OFF 香港 ゴンピン360ケーブルカー チケット（香港） 4.7 / 5 (61,345) • 2M+ 件の予約 ¥ 3,350 セット割 26％OFF 香港 ビッグバス乗り降り自由観光ツアー 香港 4.4 / 5 (874) • 60K+ 件の予約 ¥ 3,064 セット割 5％OFF 香港 マダムタッソー香港 入館チケット 4.7 / 5 (5,831) • 200K+ 件の予約 ¥ 3,656 セット割 34％OFF 30％割引 香港 香港大坑ファイヤードラゴンダンス & ピークトラム夜景ツアー（VIP席付き） ¥ 16,014 SALE 20％OFF マカオ 香港⇔マカオ コタイウォータージェット・フェリーチケット 4.8 / 5 (17,547) • 800K+ 件の予約 ¥ 3,148 〜 10 OFF 香港 香港ビクトリアハーバーサンセットクルーズ＆飲茶ディナー 4.2 / 5 (5) • 100+ 件の予約 ¥ 7,190 SALE 20％OFF さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}

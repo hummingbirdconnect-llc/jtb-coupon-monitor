@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-31T07:15:20.344496+09:00",
+  "last_updated": "2026-08-01T07:07:16.965838+09:00",
   "ids": {
     "2607jtbcpnew": {
       "category": "国内",
@@ -43,6 +43,13 @@
       "area": "全国",
       "stock_status": "配布中"
     },
+    "2607jalhp": {
+      "category": "国内",
+      "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
+      "discount": "最大12,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
     "2601green": {
       "category": "国内",
       "title": "【2026年4月以降出発】往復JR新幹線グリーン車で行く　華やぎ・優雅・ラグジュアリー割引クーポン",
@@ -55,11 +62,18 @@
       "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606prince": {
       "category": "国内",
       "title": "西武プリンスホテルズ＆リゾーツ30施設で使える割引クーポン",
+      "discount": "最大8,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
+    "2607tokyu": {
+      "category": "国内",
+      "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
       "stock_status": "配布中"
@@ -80,10 +94,17 @@
     },
     "2605kyoritsu": {
       "category": "国内",
-      "title": "全国の共立リゾート43施設で使える割引クーポン",
+      "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
       "stock_status": "配布終了"
+    },
+    "2608kyoritsu": {
+      "category": "国内",
+      "title": "<10～12月出発>【早期割引60】共立リゾート41施設で使える割引クーポン",
+      "discount": "2,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
     },
     "2606richm": {
       "category": "国内",
@@ -91,6 +112,13 @@
       "discount": "最大10,000円引",
       "area": "全国",
       "stock_status": "配布終了"
+    },
+    "2607jaldp": {
+      "category": "国内",
+      "title": "＜8～9月出発＞【往復JAL便利用限定】国内ツアーで使える割引クーポン",
+      "discount": "最大7,000円引",
+      "area": "北海道・埼玉県・千葉県",
+      "stock_status": "配布中"
     },
     "2607anadp": {
       "category": "国内",
@@ -118,7 +146,7 @@
       "title": "<7～8月宿泊>【道東エリア】おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605douou": {
       "category": "国内",
@@ -132,7 +160,7 @@
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604jalto": {
       "category": "国内",
@@ -153,7 +181,7 @@
       "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606nstoh": {
       "category": "国内",
@@ -300,7 +328,7 @@
       "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
       "discount": "最大12,000円引",
       "area": "山口県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604sagak": {
       "category": "国内",
@@ -337,6 +365,13 @@
       "area": "鹿児島県",
       "stock_status": "配布終了"
     },
+    "2607jalka": {
+      "category": "国内",
+      "title": "＜9～3月出発＞【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
+      "discount": "12,000円引",
+      "area": "鹿児島県",
+      "stock_status": "配布中"
+    },
     "2607okinawa": {
       "category": "国内",
       "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
@@ -356,7 +391,7 @@
       "title": "☆【沖縄】７月～８月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603okinawa2": {
       "category": "国内",
