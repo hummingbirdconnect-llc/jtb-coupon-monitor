@@ -1,6 +1,8 @@
 name: WordPress Coupon Draft Update
 
 on:
+  schedule:
+    - cron: '30 21 * * *'    # 毎朝 6:30 JST: welltrip 全ページの下書きを更新（収集ジョブの30分後）
   workflow_dispatch:
     inputs:
       site_id:
@@ -11,8 +13,9 @@ on:
           - yakushimafan
           - welltrip
       page_slug:
-        description: Target article slug from config/wp_sites.json
-        required: true
+        description: Target article slug from config/wp_sites.json (empty = all pages)
+        required: false
+        default: ""
         type: string
       dry_run:
         description: Generate HTML artifact only. Do not update WordPress.
@@ -31,14 +34,35 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: wp-coupon-update-main
+  cancel-in-progress: false
+
 jobs:
   update-draft:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: チェックアウト
         uses: actions/checkout@v5
+
+      - name: 実行対象を決定
+        id: plan
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            echo "site_id=welltrip" >> "$GITHUB_OUTPUT"
+            echo "page_slug=" >> "$GITHUB_OUTPUT"
+            echo "dry_run=false" >> "$GITHUB_OUTPUT"
+            echo "request_id=scheduled-$(date +%Y%m%d)" >> "$GITHUB_OUTPUT"
+            echo "label=scheduled: welltrip all pages" >> "$GITHUB_OUTPUT"
+          else
+            echo "site_id=${{ inputs.site_id }}" >> "$GITHUB_OUTPUT"
+            echo "page_slug=${{ inputs.page_slug }}" >> "$GITHUB_OUTPUT"
+            echo "dry_run=${{ inputs.dry_run }}" >> "$GITHUB_OUTPUT"
+            echo "request_id=${{ inputs.request_id }}" >> "$GITHUB_OUTPUT"
+            echo "label=manual: ${{ inputs.site_id }} / ${{ inputs.page_slug || 'all pages' }}" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Python セットアップ
         uses: actions/setup-python@v6
@@ -77,8 +101,11 @@ jobs:
           WP_USER: ${{ secrets.WP_USER }}
           WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
         run: |
-          args=(--site "${{ inputs.site_id }}" --page "${{ inputs.page_slug }}")
-          if [ "${{ inputs.dry_run }}" = "true" ]; then
+          args=(--site "${{ steps.plan.outputs.site_id }}")
+          if [ -n "${{ steps.plan.outputs.page_slug }}" ]; then
+            args+=(--page "${{ steps.plan.outputs.page_slug }}")
+          fi
+          if [ "${{ steps.plan.outputs.dry_run }}" = "true" ]; then
             args+=(--dry-run)
           fi
           python wp_coupon_updater.py "${args[@]}"
@@ -121,10 +148,11 @@ jobs:
           {
             echo "## WordPress coupon draft update"
             echo ""
-            echo "- site_id: ${{ inputs.site_id }}"
-            echo "- page_slug: ${{ inputs.page_slug }}"
-            echo "- dry_run: ${{ inputs.dry_run }}"
-            echo "- request_id: ${{ inputs.request_id }}"
+            echo "- run: ${{ steps.plan.outputs.label }}"
+            echo "- site_id: ${{ steps.plan.outputs.site_id }}"
+            echo "- page_slug: ${{ steps.plan.outputs.page_slug || 'all pages' }}"
+            echo "- dry_run: ${{ steps.plan.outputs.dry_run }}"
+            echo "- request_id: ${{ steps.plan.outputs.request_id }}"
             echo ""
             if [ -f wp_update_result.json ]; then
               echo '```json'
@@ -137,7 +165,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: wp-coupon-update-${{ inputs.site_id }}-${{ inputs.page_slug }}
+          name: wp-coupon-update-${{ steps.plan.outputs.site_id }}-${{ steps.plan.outputs.page_slug || 'all' }}
           path: |
             wp_update_result.json
             html_output/*_draft.html
