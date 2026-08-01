@@ -32,6 +32,17 @@ HISはHTML内に残っていても、地域・時間帯・切替状態によっ�
 - `his_coupon_data/visual_observation_latest.json`: 表示地域、タブ別件数、確認時刻
 - `dashboard/evidence/his/<coupon_id>.png`: カードごとの最新証拠画像
 
+### ダッシュボード出力
+
+`python3 generate_dashboard.py` は、同じ監視データから次の2ファイルを同時生成します。
+
+- `dashboard/index.html`: 人が確認するダッシュボード
+- `dashboard/latest.json`: クーポン更新処理が読む機械向けデータ
+
+JSONには `schema_version` と会社別の `freshness_sla_hours` を含めます。更新処理は保存済みの鮮度表示を信用せず、`official_fetched_at` から現在時刻までの経過時間をこの許容時間と照合します。
+
+片方の生成またはJSON契約の検証に失敗した場合は処理をエラー終了し、GitHub Actionsは生成物をコミットしません。クーポン更新処理は `latest.json` を先に確認し、取得失敗や鮮度不良の場合は公式ページ巡回へ自動で切り替えず停止します。
+
 ### 公式取得とCodex監査
 
 GitHub Actionsは公式API・埋め込みJSON・HTML・Playwrightの順で取得し、ページ内容のhashが変わった場合に `codex_audit_queue/` へ監査候補JSONを保存します。OpenAI APIは実行しません。HISだけは公式画面の確認に成功した場合、検証済みの現在一覧をWordPressプラグインの保存領域へ同期します。記事本文、下書き、公開状態は変更しません。

@@ -20,6 +20,7 @@ REGISTRY = ROOT / "config" / "provider_registry.json"
 CHECK_STATUS_ROOT = ROOT / "provider_check_data"
 WORKFLOW_URL = "https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions/workflows/coupon-monitor.yml"
 REPOSITORY = "hummingbirdconnect-llc/jtb-coupon-monitor"
+DASHBOARD_SCHEMA_VERSION = 1
 RECENT_DAY_FILTERS = [
     ("today", "今日", 0),
     ("yesterday", "昨日", 1),
@@ -461,6 +462,7 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "coverage_label": COVERAGE_LABELS.get(coverage, coverage),
         "check_frequency": frequency,
         "check_frequency_label": frequency_label,
+        "freshness_sla_hours": int(provider.get("freshness_sla_hours", 30)),
         "manual_action_url": WORKFLOW_URL,
         "manual_gh_command": manual_gh_command(provider["id"]),
         "check_status": check_status,
@@ -515,6 +517,7 @@ def build_dashboard_data() -> dict[str, Any]:
     recent_day_filters = build_recent_day_filters(latest_available_data_date(providers))
     recent_change_rows = attach_recent_logs(providers, recent_day_filters)
     return {
+        "schema_version": DASHBOARD_SCHEMA_VERSION,
         "generated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M JST"),
         "providers": providers,
         "summary_rows": [provider["summary"] for provider in providers],
@@ -1092,13 +1095,48 @@ init();
 </html>"""
 
 
+def validate_dashboard_json_contract(data: dict[str, Any]) -> None:
+    """更新処理が必要とする機械向けJSONの最低契約を検証する。"""
+    if data.get("schema_version") != DASHBOARD_SCHEMA_VERSION:
+        raise ValueError("dashboard schema_version is missing or unsupported")
+    if not isinstance(data.get("generated_at"), str) or not data["generated_at"]:
+        raise ValueError("dashboard generated_at is missing")
+    providers = data.get("providers")
+    if not isinstance(providers, list):
+        raise ValueError("dashboard providers must be a list")
+    for provider in providers:
+        if not isinstance(provider, dict) or not provider.get("id"):
+            raise ValueError("dashboard provider id is missing")
+        sla_hours = provider.get("freshness_sla_hours")
+        if not isinstance(sla_hours, int) or sla_hours <= 0:
+            raise ValueError(f"invalid freshness SLA: {provider.get('id')}")
+        if not isinstance(provider.get("check_status"), dict):
+            raise ValueError(f"check_status is missing: {provider['id']}")
+        if not isinstance(provider.get("rows"), list):
+            raise ValueError(f"rows must be a list: {provider['id']}")
+
+
+def write_dashboard_outputs(
+    data: dict[str, Any], out_dir: Path
+) -> tuple[Path, Path]:
+    """同じ監視データから人向けHTMLと機械向けJSONを生成する。"""
+    validate_dashboard_json_contract(data)
+    out_dir.mkdir(exist_ok=True)
+    html_file = out_dir / "index.html"
+    json_file = out_dir / "latest.json"
+    html_file.write_text(generate_html(data), encoding="utf-8")
+    json_file.write_text(
+        json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+    return html_file, json_file
+
+
 def main() -> None:
     print("dashboard build")
     data = build_dashboard_data()
     out_dir = ROOT / "dashboard"
-    out_dir.mkdir(exist_ok=True)
-    out_file = out_dir / "index.html"
-    out_file.write_text(generate_html(data), encoding="utf-8")
+    html_file, json_file = write_dashboard_outputs(data, out_dir)
 
     provider_count = len(data["providers"])
     provider_with_data = sum(1 for provider in data["providers"] if provider["rows"])
@@ -1106,7 +1144,8 @@ def main() -> None:
     print(f"- providers: {provider_count}")
     print(f"- providers_with_data: {provider_with_data}")
     print(f"- coupons: {coupon_count}")
-    print(f"- output: {out_file.relative_to(ROOT)}")
+    print(f"- html: {html_file.relative_to(ROOT)}")
+    print(f"- json: {json_file.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
