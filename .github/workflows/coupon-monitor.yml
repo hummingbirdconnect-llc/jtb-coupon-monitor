@@ -168,7 +168,7 @@ jobs:
         if: steps.plan.outputs.his_visual_only != 'true'
         run: python generate_jtb_html.py
 
-      - name: ダッシュボード HTML 生成
+      - name: ダッシュボード HTML・JSON 生成
         run: python generate_dashboard.py
 
       - name: HIS WordPress用フィード生成・送信前検証
