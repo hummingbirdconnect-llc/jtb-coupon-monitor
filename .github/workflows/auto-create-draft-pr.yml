@@ -1,0 +1,146 @@
+name: Auto create draft pull request
+
+on:
+  push:
+    branches:
+      - "codex/**"
+  workflow_dispatch:
+    inputs:
+      head_branch:
+        description: Codex branch to open as a draft pull request
+        required: true
+        type: string
+      base_branch:
+        description: Optional allowed base branch override
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: auto-draft-pr-${{ github.repository }}-${{ github.event_name }}-${{ github.ref_name }}-${{ inputs.head_branch }}
+  cancel-in-progress: false
+
+jobs:
+  create-draft-pr:
+    name: Create draft pull request if missing
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve branches and create draft pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPOSITORY: ${{ github.repository }}
+          EVENT_NAME: ${{ github.event_name }}
+          PUSH_HEAD_BRANCH: ${{ github.ref_name }}
+          INPUT_HEAD_BRANCH: ${{ inputs.head_branch }}
+          INPUT_BASE_BRANCH: ${{ inputs.base_branch }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [[ "${EVENT_NAME}" == "workflow_dispatch" ]]; then
+            HEAD_BRANCH="${INPUT_HEAD_BRANCH}"
+          else
+            HEAD_BRANCH="${PUSH_HEAD_BRANCH}"
+          fi
+
+          if [[ "${HEAD_BRANCH}" != codex/* ]]; then
+            echo "::error::Only codex/** branches can create pull requests."
+            exit 1
+          fi
+
+          if [[ -n "${INPUT_BASE_BRANCH}" ]]; then
+            BASE_BRANCH="${INPUT_BASE_BRANCH}"
+          elif [[ "${REPOSITORY}" == "hummingbirdconnect-llc/vault_box" && "${HEAD_BRANCH}" == codex/coupon-updater-* ]]; then
+            BASE_BRANCH="refactor/cleanup-202606"
+          else
+            BASE_BRANCH="${DEFAULT_BRANCH}"
+          fi
+
+          case "${REPOSITORY}:${BASE_BRANCH}" in
+            "hummingbirdconnect-llc/jtb-coupon-monitor:main" | \
+            "hummingbirdconnect-llc/vault_box:main" | \
+            "hummingbirdconnect-llc/vault_box:refactor/cleanup-202606")
+              ;;
+            *)
+              echo "::error::Base branch is not allowed: ${BASE_BRANCH}"
+              exit 1
+              ;;
+          esac
+
+          if [[ "${HEAD_BRANCH}" == "${BASE_BRANCH}" ]]; then
+            echo "::error::Head and base branches must differ."
+            exit 1
+          fi
+
+          gh api "repos/${REPOSITORY}/git/ref/heads/${HEAD_BRANCH}" >/dev/null
+          gh api "repos/${REPOSITORY}/git/ref/heads/${BASE_BRANCH}" >/dev/null
+
+          EXISTING_PR="$(
+            gh pr list \
+              --repo "${REPOSITORY}" \
+              --head "${HEAD_BRANCH}" \
+              --base "${BASE_BRANCH}" \
+              --state open \
+              --json number,url \
+              --jq 'if length > 0 then "\(.[0].number) \(.[0].url)" else empty end'
+          )"
+
+          if [[ -n "${EXISTING_PR}" ]]; then
+            echo "Draft pull request already exists: ${EXISTING_PR}"
+            {
+              echo "### Draft pull request"
+              echo
+              echo "Already exists: ${EXISTING_PR}"
+            } >> "${GITHUB_STEP_SUMMARY}"
+            exit 0
+          fi
+
+          PR_TITLE="$(
+            gh api "repos/${REPOSITORY}/commits/${HEAD_BRANCH}" \
+              --jq '.commit.message | split("\n")[0]'
+          )"
+          if [[ -z "${PR_TITLE}" ]]; then
+            PR_TITLE="Update from ${HEAD_BRANCH}"
+          fi
+
+          PR_BODY="$(cat <<EOF
+          ## 変更内容
+
+          CodexがPushしたブランチから自動生成されたDraft Pull Requestです。
+
+          - ブランチ: \`${HEAD_BRANCH}\`
+          - ベースブランチ: \`${BASE_BRANCH}\`
+          - 作成方法: GitHub Actions
+
+          ## 確認事項
+
+          - [ ] 差分を確認した
+          - [ ] テスト結果を確認した
+          - [ ] 無関係なファイルが含まれていない
+          - [ ] 本番反映してよい
+          EOF
+          )"
+
+          PR_URL="$(
+            gh pr create \
+              --repo "${REPOSITORY}" \
+              --head "${HEAD_BRANCH}" \
+              --base "${BASE_BRANCH}" \
+              --title "${PR_TITLE}" \
+              --body "${PR_BODY}" \
+              --draft
+          )"
+
+          echo "Created draft pull request: ${PR_URL}"
+          {
+            echo "### Draft pull request"
+            echo
+            echo "Created: ${PR_URL}"
+            echo
+            echo "- Head: \`${HEAD_BRANCH}\`"
+            echo "- Base: \`${BASE_BRANCH}\`"
+          } >> "${GITHUB_STEP_SUMMARY}"
