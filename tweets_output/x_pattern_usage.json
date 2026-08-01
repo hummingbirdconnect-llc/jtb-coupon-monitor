@@ -1582,5 +1582,77 @@
   "pattern": "direct_number",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "timing_answer",
+  "ota": "jtb",
+  "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "big_discount",
+  "ota": "his",
+  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行アイスランドツアーお1人様10,000円割引"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "his",
+  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行アイスランドツアーお1人様10,000円割引"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-08-02",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "loss_aversion",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
