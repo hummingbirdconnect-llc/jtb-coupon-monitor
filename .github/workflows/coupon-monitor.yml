@@ -171,7 +171,7 @@ jobs:
       - name: ダッシュボード HTML・JSON 生成
         run: python generate_dashboard.py
 
-      - name: HIS WordPress用フィード生成・送信前検証
+      - name: HIS WordPress用フィード生成・ローカル同期前検証
         if: steps.plan.outputs.his_checked == 'true'
         run: |
           node wordpress_feed/build-his-wordpress-feed.mjs
@@ -192,7 +192,11 @@ jobs:
             echo "- scope: ${{ steps.plan.outputs.scope }}"
             echo "- provider_id: ${{ steps.plan.outputs.provider_id }}"
             echo "- HIS visual-only: ${{ steps.plan.outputs.his_visual_only }}"
-            echo "- HIS WordPress feed: ${{ steps.plan.outputs.his_checked }}"
+            if [ "${{ steps.plan.outputs.his_checked }}" = "true" ]; then
+              echo "- HIS WordPress feed: validated for local Mac sync"
+            else
+              echo "- HIS WordPress feed: not generated"
+            fi
             echo "- AI audit: Codex scheduled task (OpenAI API is not used by Actions)"
           } >> "$GITHUB_STEP_SUMMARY"
 
@@ -236,11 +240,3 @@ jobs:
             sleep 5
           done
           git push origin main
-
-      - name: 検証済みHIS一覧をWordPressへ同期
-        if: steps.plan.outputs.his_checked == 'true'
-        env:
-          YF_WP_URL: ${{ secrets.YF_WP_URL }}
-          YF_WP_USER: ${{ secrets.YF_WP_USER }}
-          YF_WP_APP_PASSWORD: ${{ secrets.YF_WP_APP_PASSWORD }}
-        run: python wordpress_feed/push_his_wordpress_feed.py
