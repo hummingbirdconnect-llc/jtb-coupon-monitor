@@ -1726,5 +1726,77 @@
   "pattern": "season_context",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "jtb",
+  "title": "【京の味覚を愉しむ】おすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "anshin_reserve",
+  "ota": "his",
+  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行アイスランドツアーお1人様10,000円割引"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "jtb",
+  "title": "【京の味覚を愉しむ】おすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "discovery",
+  "ota": "his",
+  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行アイスランドツアーお1人様10,000円割引"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "last_check",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "daily_check",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-08-04",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-03T06:57:49.353122+09:00",
+  "last_updated": "2026-08-04T07:10:02.181463+09:00",
   "ids": {
     "2607jtbcpnew": {
       "category": "国内",
@@ -62,7 +62,7 @@
       "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606prince": {
       "category": "国内",
@@ -106,13 +106,6 @@
       "area": "全国",
       "stock_status": "配布中"
     },
-    "2606richm": {
-      "category": "国内",
-      "title": "全国のリッチモンドホテルズで使える割引クーポン",
-      "discount": "最大10,000円引",
-      "area": "全国",
-      "stock_status": "配布終了"
-    },
     "2607jaldp": {
       "category": "国内",
       "title": "＜8～9月出発＞【往復JAL便利用限定】国内ツアーで使える割引クーポン",
@@ -146,7 +139,7 @@
       "title": "<7～8月宿泊>【道東エリア】おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605douou": {
       "category": "国内",
@@ -181,7 +174,7 @@
       "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606nstoh": {
       "category": "国内",
@@ -202,7 +195,7 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606iwate": {
       "category": "国内",
@@ -239,6 +232,13 @@
       "area": "群馬県",
       "stock_status": "配布中"
     },
+    "2608candeohotels": {
+      "category": "国内",
+      "title": "カンデオホテルズのおすすめ施設で使える割引クーポン",
+      "discount": "最大3,000円引",
+      "area": "栃木県・大阪府・長崎県",
+      "stock_status": "配布中"
+    },
     "2605saita": {
       "category": "国内",
       "title": "【6～8月宿泊】埼玉県の宿泊で使える割引クーポン",
@@ -252,13 +252,6 @@
       "discount": "2,500円引",
       "area": "東京都",
       "stock_status": "配布中"
-    },
-    "2603hachijo2": {
-      "category": "国内",
-      "title": "【復幸旅！八丈島】7月宿泊で使える割引クーポン",
-      "discount": "最大30％引",
-      "area": "東京都",
-      "stock_status": "配布終了"
     },
     "2607hakone": {
       "category": "国内",
@@ -279,7 +272,7 @@
       "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "静岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606kintetsu": {
       "category": "国内",
@@ -293,6 +286,13 @@
       "title": "関西2府4県の対象施設で使える♪とっておき旅クーポン",
       "discount": "最大5,000円引",
       "area": "滋賀県・京都府・大阪府",
+      "stock_status": "配布中"
+    },
+    "2608kyotm": {
+      "category": "国内",
+      "title": "【京の味覚を愉しむ】おすすめ施設で使える割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "京都府",
       "stock_status": "配布中"
     },
     "2606hankyu": {
@@ -328,7 +328,7 @@
       "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
       "discount": "最大12,000円引",
       "area": "山口県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604sagak": {
       "category": "国内",
@@ -350,20 +350,6 @@
       "discount": "最大30％引",
       "area": "宮崎県",
       "stock_status": "配布中"
-    },
-    "2604kagoshima": {
-      "category": "国内",
-      "title": "【離島以外】南の宝箱　鹿児島　夏のかごしま宿泊割キャンペーン",
-      "discount": "最大20％引",
-      "area": "鹿児島県",
-      "stock_status": "配布終了"
-    },
-    "2604kagoshima2": {
-      "category": "国内",
-      "title": "【離島】南の宝箱　鹿児島　夏のかごしま宿泊割キャンペーン",
-      "discount": "最大20％引",
-      "area": "鹿児島県",
-      "stock_status": "配布終了"
     },
     "2607jalka": {
       "category": "国内",

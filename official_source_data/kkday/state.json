@@ -1,38 +1,38 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "7314a5d9ce4edd2df4ef38dccaef1304bdafed3e8f47343f69bea7c0adfd1710",
-  "last_checked_at": "2026-08-03T06:58:51.672766+09:00",
+  "observed_hash": "4c02e57134de264b17d334eaddf2e30d119c459319f650be39db48e2299804f6",
+  "last_checked_at": "2026-08-04T07:11:14.284721+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
-      "ok": false,
-      "status_code": "",
-      "fetch_method": "auto",
-      "error": "HTTP 405; Playwright HTTP 405",
-      "text_chars": 0,
-      "content_hash": ""
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "text_chars": 8806,
+      "content_hash": "280ec424f5309aadde477c4604aad5865e7c136849d7a8d13e09d14240ebee70"
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
       "ok": true,
       "status_code": 200,
-      "fetch_method": "html",
+      "fetch_method": "playwright",
       "error": "",
-      "text_chars": 818481,
-      "content_hash": "cf9d199b5afe69056afcf3456bf86729b948135917a864eb601f561bc60560fb"
+      "text_chars": 5212,
+      "content_hash": "356209c79e2543c6ede296c0fbb0d4034f37a32782678da8c89893be948a3648"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
       "ok": true,
       "status_code": 200,
-      "fetch_method": "html",
+      "fetch_method": "playwright",
       "error": "",
-      "text_chars": 318630,
-      "content_hash": "4e8895bf0dc664f936d71452c27028e3230e9ed8d170de7f5596acfbb096890e"
+      "text_chars": 1365,
+      "content_hash": "5bf3ef56ac1f0963903c212550b6163f76e1fb12119012535a7ce765c9c2aa99"
     }
   ],
-  "queued_hash": "7314a5d9ce4edd2df4ef38dccaef1304bdafed3e8f47343f69bea7c0adfd1710",
-  "queued_candidate_id": "kkday-7314a5d9ce4edd2d",
-  "queued_at": "2026-08-03T06:58:51.695200+09:00",
+  "queued_hash": "4c02e57134de264b17d334eaddf2e30d119c459319f650be39db48e2299804f6",
+  "queued_candidate_id": "kkday-4c02e57134de264b",
+  "queued_at": "2026-08-04T07:11:14.285663+09:00",
   "last_audit_status": "pending"
 }
