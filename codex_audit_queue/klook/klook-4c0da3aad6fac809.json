@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-4c0da3aad6fac809",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "baseline",
+  "fetched_at": "2026-08-06T07:15:51.031005+09:00",
+  "content_hash": "4c0da3aad6fac809f28b5bf9e86b8beed18576f01b22e0d375aa63bdde2182fe",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "bc2d1eca941cd4b2662336eb6a8328fd19ff78ef5629592f71e0f358455da825",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA 旅だって進化する 台湾 日本 中国 韓国 タイ 香港 ベトナム マレーシア すべて表示 台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行 台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行 ホテル新規ユーザー20%オフ クーポンコード: HOTELNEWUSER 20%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア 台北 新北市 カテゴリ すべて ツアー・体験 観光施設チケット 台北 台湾高速鉄道（THSR）乗車チケット 4.8 / 5 (25,439) • 1M+ 件の予約 ¥ 146 50 OFF 桃園 悠遊カード（桃園空港受取） 4.8 / 5 (22,302) • 600K+ 件の予約 ¥ 424 参考価格： ¥ 585 無料特典 台北 野柳地質公園・九份・十分・黄金瀑布 日帰りツアー（台北発） 4.9 / 5 (45,692) • 600K+ 件の予約 ¥ 2,702 SALE 50％OFF 台北 台北MRT フリーパス 4.8 / 5 (2,013) • 70K+ 件の予約 ¥ 659 SALE 10％OFF 新北市 九份・十分老街・十分瀑布・野柳 日本語ツアー・台北発 4.8 / 5 (1,625) • 20K+ 件の予約 ¥ 3,214 SALE 50％OFF 台北 台北無限周遊パス（台湾）Taipei FunPASS 4.8 / 5 (4,117) • 100K+ 件の予約 ¥ 5,296 10 OFF 20 off 新北市 野柳&十分老街&十分瀑布&九份 日本語ツアー（台北発） 4.8 / 5 (104) • 2K+ 件の予約 ¥ 3,065 SALE 60％OFF 台北 台北101展望台 チケット 4.7 / 5 (41,409) • 1M+ 件の予約 ¥ 2,587 参考価格： ¥ 2,926 無料特典 台北 台湾高鉄周遊券 4.8 / 5 (4,027) • 80K+ 件の予約 ¥ 9,950 参考価格： ¥ 10,729 無料特典 台北 【台湾パス】 台湾高速鉄道・MRT・台湾好行シャトルバス 3in1パッケージ（台北) 4.3 / 5 (251) • 10K+ 件の予約 ¥ 8,291 SALE 30％OFF 新北市 【毎日催行】十分＆九分バスツアー7.5H 4.9 / 5 (76) • 1K+ 件の予約 ¥ 4,258 SALE 30％OFF 新北市 台北九份オールドストリート半日ツアー 4.9 / 5 (259) • 4K+ 件の予約 ¥ 2,433 SALE 50％OFF 新北市 野柳 & 九份 & 十分 日帰りツアー（跳石海岸のオプション選択可） 4.9 / 5 (14,477) • 100K+ 件の予約 ¥ 3,380 SALE 50％OFF 澎湖 2026年澎湖花火フェスティバル限定花火船 - 海上花火鑑賞体験（席数保証） 4.8 / 5 (1,545) • 50K+ 件の予約 ¥ 1,462 SALE 10％OFF 台東 【期間限定】2026 台湾国際熱気球フェスティバル：南廻鉄道＆台東三仙台＆池上 多日ツアー（台北／高雄／台東発） 5.0 / 5 (2) • 新着アクティビティ ¥ 3,950 SALE 40％OFF 桃園 Xpark チケット（桃園） 4.8 / 5 (11,711) • 600K+ 件の予約 ¥ 1,073 SALE 20％OFF セット割 12％OFF 20 off 台北 Royal Thai Orient Massage マッサージ体験（台北） 4.8 / 5 (1,254) • 20K+ 件の予約 ¥ 1,969 SALE 5％OFF 台中 麗宝楽園テーマパーク 入園チケット（台中） 4.7 / 5 (6,390) • 400K+ 件の予約 ¥ 971 セット割 41％OFF 南投 九族文化村 入場チケット（南投） 4.9 / 5 (6,692) • 200K+ 件の予約 ¥ 4,292 SALE 20％OFF さらに表示"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}
