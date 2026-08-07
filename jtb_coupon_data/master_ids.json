@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T10:08:09.770478+09:00",
+  "last_updated": "2026-08-08T06:40:41.683392+09:00",
   "ids": {
     "2607jtbcpnew": {
       "category": "国内",
@@ -97,7 +97,7 @@
       "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2608kyoritsu": {
       "category": "国内",
@@ -174,7 +174,7 @@
       "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606nstoh": {
       "category": "国内",
@@ -188,7 +188,7 @@
       "title": "【6～9月宿泊】「日本の旬 東北」　南東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "宮城県・山形県・福島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606tohoku": {
       "category": "国内",
@@ -258,7 +258,7 @@
       "title": "箱根・夏休み応援クーポン【第二弾】",
       "discount": "最大15,000円引",
       "area": "神奈川県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2607yamanashi": {
       "category": "国内",
@@ -272,7 +272,7 @@
       "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "静岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606kintetsu": {
       "category": "国内",
@@ -538,6 +538,13 @@
       "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アラスカ航空対象】",
       "discount": "最大40,000円引",
       "area": "全方面",
+      "stock_status": "配布中"
+    },
+    "2608hwi": {
+      "category": "海外",
+      "title": "成田・羽田空港利用限定！ハワイで使える海外ツアールックJTBMySTYLE割引クーポン【日本航空（JAL）対象】",
+      "discount": "最大12,000円引",
+      "area": "ハワイ",
       "stock_status": "配布中"
     },
     "op": {
