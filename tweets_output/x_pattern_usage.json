@@ -2086,5 +2086,77 @@
   "pattern": "season_context",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "anshin_reserve",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "his",
+  "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "daily_check",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "【東北】この夏、おすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "big_discount",
+  "ota": "his",
+  "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "last_check",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-08-09",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "loss_aversion",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
