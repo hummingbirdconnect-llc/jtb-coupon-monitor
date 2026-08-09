@@ -1,16 +1,16 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-08-09T19:40:46+09:00",
+  "official_checked_at": "2026-08-10T06:25:27+09:00",
   "official_area": "首都圏版",
   "tab_counts": {
-    "海外旅行": 2,
+    "海外旅行": 1,
     "国内旅行": 17
   },
-  "visible_count": 19,
+  "visible_count": 18,
   "total_dom_count": 24,
-  "hidden_dom_count": 5,
-  "capture_count": 19,
+  "hidden_dom_count": 6,
+  "capture_count": 18,
   "capture_method": "individual_element_screenshot",
-  "derived_image_count": 19,
+  "derived_image_count": 18,
   "evidence_directory": "evidence/his"
 }
