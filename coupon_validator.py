@@ -103,6 +103,13 @@ def detect_duplicates(coupons, service_name=""):
             discount_a = c_a.get("discount", "")
             discount_b = c_b.get("discount", "")
 
+            # 地域別監視が同じ元カードの内容差を意図的に別IDへ分けた場合は、
+            # 類似タイトルであること自体が正常なので組み合わせ警告を出さない。
+            regional_base_a = c_a.get("regional_base_id")
+            regional_base_b = c_b.get("regional_base_id")
+            if regional_base_a and regional_base_a == regional_base_b:
+                continue
+
             sim = _title_similarity(title_a, title_b)
             if sim >= TITLE_SIMILARITY_THRESHOLD and discount_a == discount_b:
                 similarity_warned.add(pair_key)

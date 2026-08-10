@@ -35,10 +35,18 @@ import json
 import os
 import sys
 import hashlib
+import time
+from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import re
 from coupon_validator import validate_coupons
+from his_regions import (
+    HIS_REGIONS,
+    PRIMARY_REGION_CODE,
+    HisRegion,
+    area_matches_region,
+)
 
 # ============================================================
 # 設定
@@ -55,6 +63,8 @@ TAB_CONFIG = (
     ("海外旅行", "li[data-tab='tab1']"),
     ("国内旅行", "li[data-tab='tab2']"),
 )
+REGION_FETCH_ATTEMPTS = 2
+REGION_RETRY_DELAY_SECONDS = 2
 
 # データ保持日数
 DATA_RETENTION_DAYS = 30
@@ -209,69 +219,113 @@ def _capture_card_png(card):
     )
 
 
-def fetch_visible_page_snapshot():
-    """公式画面で実際に表示中のカードだけを展開・撮影して返す。
+def _card_content_signature(wrapper) -> str:
+    """地域をまたいで同一カードをまとめるため、意味のある内容だけを指紋化する。"""
+    text = " ".join(wrapper.stripped_strings)
+    codes = [
+        str(node.get("data-name", "") or node.get_text(strip=True))
+        for node in wrapper.select(".coupon__code")
+    ]
+    links = [
+        {
+            "text": node.get_text(" ", strip=True),
+            "href": str(node.get("href", "")),
+        }
+        for node in wrapper.select("a[href]")
+    ]
+    payload = json.dumps(
+        {"text": text, "codes": codes, "links": links},
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
 
-    HTML内に存在してもCSSやJavaScriptで非表示の地域限定・時間限定・
-    切替済みカードは含めない。各タブの全アコーディオンを先に開き、
-    ブラウザが判定した要素範囲でカードを1枚ずつ直接撮影する。
-    """
+
+def _assign_variant_id(
+    base_id: str,
+    signature: str,
+    region_code: str,
+    variants_by_base: dict[str, dict[str, str]],
+) -> str:
+    """首都圏版は従来IDを維持し、内容が異なる地域版だけ派生IDにする。"""
+    variants = variants_by_base.setdefault(base_id, {})
+    if signature in variants:
+        return variants[signature]
+
+    assigned_ids = set(variants.values())
+    if region_code == PRIMARY_REGION_CODE and base_id not in assigned_ids:
+        variant_id = base_id
+    else:
+        suffix_length = 6
+        variant_id = f"{base_id}-{signature[:suffix_length]}"
+        while variant_id in assigned_ids:
+            suffix_length += 2
+            variant_id = f"{base_id}-{signature[:suffix_length]}"
+
+    variants[signature] = variant_id
+    return variant_id
+
+
+def _new_browser_context(browser):
+    return browser.new_context(
+        user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+        viewport={"width": 1280, "height": 800},
+        locale="ja-JP",
+        # GitHub ActionsはUTCで動くため、時間帯限定カードの表示判定を
+        # 公式ページ利用者と同じ日本時間に固定する。
+        timezone_id="Asia/Tokyo",
+    )
+
+
+def _response_ok(response) -> bool:
+    return response is not None and 200 <= response.status < 400
+
+
+def _fetch_one_region(
+    browser,
+    region: HisRegion,
+    beautiful_soup,
+    checked_at: str,
+    variants_by_base: dict[str, dict[str, str]],
+    observations: dict[str, dict],
+    visible_card_html: list[str],
+    pending_evidence: dict[str, bytes],
+) -> dict:
+    """独立ブラウザ状態で1地域を選択し、表示中カードを観測する。"""
+    context = _new_browser_context(browser)
+    page = context.new_page()
+    page.add_init_script(
+        'Object.defineProperty(navigator, "webdriver", { get: () => false });'
+    )
     try:
-        from playwright.sync_api import sync_playwright
-        from bs4 import BeautifulSoup
-    except ImportError:
-        print(
-            "⚠️ 必要パッケージ未インストール。"
-            "pip install playwright beautifulsoup4 && playwright install chromium"
+        switch_response = page.goto(
+            region.switch_url,
+            wait_until="domcontentloaded",
+            timeout=30000,
         )
-        sys.exit(1)
+        if not _response_ok(switch_response):
+            status = switch_response.status if switch_response else "応答なし"
+            raise RuntimeError(f"地域切替HTTP {status}")
+        page.wait_for_timeout(1000)
 
-    headless = os.environ.get("HIS_BROWSER_HEADLESS", "false").lower() == "true"
-    browser_mode = "headless" if headless else "headed"
-    print(f"🎭 Playwright で公式表示を確認中... {PAGE_URL} ({browser_mode})")
-    checked_at = datetime.now(JST).isoformat(timespec="seconds")
-    observations = {}
-    visible_card_html = []
-    tab_counts = {}
-    missing_tabs = []
-    capture_count = 0
-    pending_evidence = {}
-
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            # HISはheadless Chromiumへ403を返すため、ActionsではXvfb上の
-            # 通常ブラウザを使う。HIS_BROWSER_HEADLESS=true で明示変更可能。
-            headless=headless,
-            args=[
-                "--disable-blink-features=AutomationControlled",
-                "--no-sandbox",
-            ],
-        )
-        context = browser.new_context(
-            user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                       "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-            viewport={"width": 1280, "height": 800},
-            locale="ja-JP",
-            # GitHub ActionsはUTCで動くため、時間帯限定カードの表示判定を
-            # 公式ページ利用者と同じ日本時間に固定する。
-            timezone_id="Asia/Tokyo",
-        )
-        page = context.new_page()
-        page.add_init_script(
-            'Object.defineProperty(navigator, "webdriver", { get: () => false });'
-        )
-
-        resp = page.goto(PAGE_URL, wait_until="domcontentloaded", timeout=30000)
-        if resp is None or resp.status != 200:
-            status = resp.status if resp else "応答なし"
-            print(f"⚠️ HTTP {status} - アクセスがブロックされた可能性")
-            browser.close()
-            return None
-
+        response = page.goto(PAGE_URL, wait_until="domcontentloaded", timeout=30000)
+        if not _response_ok(response):
+            status = response.status if response else "応答なし"
+            raise RuntimeError(f"クーポンページHTTP {status}")
         page.wait_for_timeout(3000)
 
         area = _current_area_label(page)
+        if not area_matches_region(area, region):
+            raise RuntimeError(
+                f"地域切替不一致（期待={region.label} / 実際={area}）"
+            )
+
         total_dom_count = page.locator(".content__wrapper").count()
+        tab_counts = {}
+        missing_tabs = []
+        region_variant_ids = set()
 
         for tab_label, tab_selector in TAB_CONFIG:
             tab = page.locator(tab_selector).first
@@ -285,15 +339,12 @@ def fetch_visible_page_snapshot():
             cards = page.locator(".content__wrapper:visible")
             tab_counts[tab_label] = cards.count()
 
-            # 先にこのタブの全アコーディオンを展開する。
             for index in range(cards.count()):
                 card = cards.nth(index)
                 accordion = card.locator(".accordion__button").first
-                if accordion.count():
-                    button_text = accordion.inner_text().strip()
-                    if "詳細" in button_text:
-                        accordion.click()
-                        page.wait_for_timeout(80)
+                if accordion.count() and "詳細" in accordion.inner_text().strip():
+                    accordion.click()
+                    page.wait_for_timeout(80)
 
             page.wait_for_timeout(300)
             page.evaluate("window.scrollTo(0, 0)")
@@ -301,36 +352,234 @@ def fetch_visible_page_snapshot():
 
             for index in range(cards.count()):
                 card = cards.nth(index)
-                # BeautifulSoup側と同じ文字列化でIDを作り、改行・span境界による
-                # Playwright inner_textとの差をなくす。
                 outer_html = card.evaluate("(element) => element.outerHTML")
-                card_soup = BeautifulSoup(outer_html, "html.parser")
-                title_node = card_soup.select_one(".plan__title")
-                category_node = card_soup.select_one(".plan__dst")
+                card_soup = beautiful_soup(outer_html, "html.parser")
+                wrapper = card_soup.select_one(".content__wrapper")
+                if wrapper is None:
+                    continue
+                title_node = wrapper.select_one(".plan__title")
+                category_node = wrapper.select_one(".plan__dst")
                 title = title_node.get_text(strip=True) if title_node else ""
                 category = category_node.get_text(strip=True) if category_node else ""
                 if not title:
                     continue
 
-                coupon_id = make_coupon_id(title, category)
-                screenshot_name = f"{coupon_id}.png"
+                base_id = make_coupon_id(title, category)
+                signature = _card_content_signature(wrapper)
+                coupon_id = _assign_variant_id(
+                    base_id,
+                    signature,
+                    region.code,
+                    variants_by_base,
+                )
+                wrapper["data-monitor-id"] = coupon_id
+                region_variant_ids.add(coupon_id)
+
                 if coupon_id not in observations:
-                    visible_card_html.append(outer_html)
+                    screenshot_name = f"{coupon_id}.png"
+                    visible_card_html.append(str(wrapper))
                     observations[coupon_id] = {
+                        "regional_base_id": base_id,
                         "official_visibility": "visible",
                         "official_tab": tab_label,
+                        "official_tabs": [tab_label],
                         "official_area": area,
+                        "official_areas": [],
+                        "region_codes": [],
+                        "region_labels": [],
                         "official_checked_at": checked_at,
                         "screenshot_url": f"{EVIDENCE_URL_PREFIX}/{screenshot_name}",
-                        "screenshot_capture_method": "element_screenshot",
+                        "screenshot_capture_method": "deduplicated_element_screenshot",
+                        "regional_observations": [],
                     }
                     pending_evidence[coupon_id] = _capture_card_png(card)
-                    capture_count += 1
 
-        browser.close()
+                observation = observations[coupon_id]
+                if tab_label not in observation["official_tabs"]:
+                    observation["official_tabs"].append(tab_label)
+                if region.code not in observation["region_codes"]:
+                    observation["region_codes"].append(region.code)
+                    observation["region_labels"].append(region.label)
+                    observation["official_areas"].append(area)
+                    observation["regional_observations"].append({
+                        "region_code": region.code,
+                        "region_label": region.label,
+                        "official_area": area,
+                        "official_tab": tab_label,
+                        "official_checked_at": checked_at,
+                    })
 
-    if missing_tabs:
-        print("🚨 旅行タブを確認できませんでした: " + " / ".join(missing_tabs))
+        if missing_tabs:
+            raise RuntimeError("旅行タブ未検出: " + " / ".join(missing_tabs))
+        if not region_variant_ids:
+            raise RuntimeError("表示中クーポンカード0件")
+
+        return {
+            "code": region.code,
+            "label": region.label,
+            "official_area": area,
+            "switch_url": region.switch_url,
+            "tab_counts": tab_counts,
+            "visible_count": len(region_variant_ids),
+            "total_dom_count": total_dom_count,
+            "hidden_dom_count": max(total_dom_count - len(region_variant_ids), 0),
+        }
+    finally:
+        context.close()
+
+
+def _fetch_region_with_retry(
+    browser,
+    region: HisRegion,
+    beautiful_soup,
+    checked_at: str,
+    variants_by_base: dict[str, dict[str, str]],
+    observations: dict[str, dict],
+    visible_card_html: list[str],
+    pending_evidence: dict[str, bytes],
+    fetch_region=None,
+    attempts: int = REGION_FETCH_ATTEMPTS,
+    retry_delay_seconds: float = REGION_RETRY_DELAY_SECONDS,
+) -> dict:
+    """1地域を一時状態へ取得し、完了時だけ集約結果へ反映する。"""
+    if attempts < 1:
+        raise ValueError("地域取得の試行回数は1回以上必要です。")
+    fetch_region = fetch_region or _fetch_one_region
+
+    for attempt in range(1, attempts + 1):
+        attempt_variants = deepcopy(variants_by_base)
+        attempt_observations = deepcopy(observations)
+        attempt_html = list(visible_card_html)
+        attempt_evidence = dict(pending_evidence)
+        try:
+            summary = fetch_region(
+                browser,
+                region,
+                beautiful_soup,
+                checked_at,
+                attempt_variants,
+                attempt_observations,
+                attempt_html,
+                attempt_evidence,
+            )
+        except Exception as exc:
+            if attempt >= attempts:
+                raise RuntimeError(
+                    f"{region.label}の取得に{attempts}回失敗: {exc}"
+                ) from exc
+            print(
+                f"    ⚠️ {region.label}の取得を再試行します"
+                f"（{attempt}/{attempts}: {exc}）"
+            )
+            if retry_delay_seconds > 0:
+                time.sleep(retry_delay_seconds)
+            continue
+
+        variants_by_base.clear()
+        variants_by_base.update(attempt_variants)
+        observations.clear()
+        observations.update(attempt_observations)
+        visible_card_html[:] = attempt_html
+        pending_evidence.clear()
+        pending_evidence.update(attempt_evidence)
+        return summary
+
+    raise AssertionError("unreachable")
+
+
+def _finalize_regional_observations(
+    observations: dict[str, dict], expected_region_count: int
+) -> None:
+    for observation in observations.values():
+        region_count = len(observation["region_codes"])
+        observation["official_region_count"] = region_count
+        observation["is_nationwide"] = region_count == expected_region_count
+        observation["official_area"] = (
+            "全国共通"
+            if observation["is_nationwide"]
+            else "、".join(observation["region_labels"])
+        )
+        observation["official_tab"] = "、".join(observation["official_tabs"])
+
+
+def fetch_visible_page_snapshot(regions=HIS_REGIONS):
+    """HIS全地域版を独立状態で取得し、同一内容のカードをまとめて返す。
+
+    1地域でも切替・タブ・カード取得に失敗した場合は、既存データを更新せず
+    全体を失敗させる。地域取得失敗をクーポン消失と誤認しないためである。
+    """
+    try:
+        from playwright.sync_api import sync_playwright
+        from bs4 import BeautifulSoup
+    except ImportError:
+        print(
+            "⚠️ 必要パッケージ未インストール。"
+            "pip install playwright beautifulsoup4 && playwright install chromium"
+        )
+        sys.exit(1)
+
+    selected_regions = tuple(regions)
+    if not selected_regions:
+        raise ValueError("HIS取得地域が指定されていません。")
+    if selected_regions[0].code != PRIMARY_REGION_CODE:
+        raise ValueError("従来IDを維持するため首都圏版を先頭にしてください。")
+
+    headless = os.environ.get("HIS_BROWSER_HEADLESS", "false").lower() == "true"
+    browser_mode = "headless" if headless else "headed"
+    print(
+        f"🎭 Playwright でHIS {len(selected_regions)}地域版を確認中... "
+        f"{PAGE_URL} ({browser_mode})"
+    )
+    checked_at = datetime.now(JST).isoformat(timespec="seconds")
+    observations = {}
+    visible_card_html = []
+    pending_evidence = {}
+    variants_by_base = {}
+    region_summaries = []
+
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(
+                # HISはheadless Chromiumへ403を返すため、ActionsではXvfb上の
+                # 通常ブラウザを使う。HIS_BROWSER_HEADLESS=true で明示変更可能。
+                headless=headless,
+                args=[
+                    "--disable-blink-features=AutomationControlled",
+                    "--no-sandbox",
+                ],
+            )
+            try:
+                for region in selected_regions:
+                    print(f"  🌏 {region.label}を確認中...")
+                    summary = _fetch_region_with_retry(
+                        browser,
+                        region,
+                        BeautifulSoup,
+                        checked_at,
+                        variants_by_base,
+                        observations,
+                        visible_card_html,
+                        pending_evidence,
+                    )
+                    region_summaries.append(summary)
+                    print(
+                        f"    ✅ {region.label}: 表示中{summary['visible_count']}件"
+                    )
+            finally:
+                browser.close()
+    except Exception as exc:
+        completed_codes = {summary["code"] for summary in region_summaries}
+        missing_labels = [
+            region.label for region in selected_regions if region.code not in completed_codes
+        ]
+        print(
+            f"🚨 HIS地域別取得を中止: {exc}"
+            f"（未完了地域={' / '.join(missing_labels)}）"
+        )
+        return None
+
+    if len(region_summaries) != len(selected_regions):
+        print("🚨 HIS地域別取得件数が一致しません。既存データを維持します。")
         return None
     if not observations:
         print("🚨 公式画面で表示中のクーポンカードを取得できませんでした。")
@@ -342,28 +591,53 @@ def fetch_visible_page_snapshot():
         )
         return None
 
-    # 全カードの撮影が成功してから、最新画像を一括反映する。
+    _finalize_regional_observations(observations, len(selected_regions))
+
+    # 全11地域の取得と撮影が成功してから、最新画像を一括反映する。
     for coupon_id, image_bytes in pending_evidence.items():
         with (EVIDENCE_DIR / f"{coupon_id}.png").open("wb") as handle:
             handle.write(image_bytes)
 
+    aggregate_tab_counts = {
+        tab_label: sum(
+            summary["tab_counts"].get(tab_label, 0) for summary in region_summaries
+        )
+        for tab_label, _ in TAB_CONFIG
+    }
+    regional_visible_count = sum(
+        summary["visible_count"] for summary in region_summaries
+    )
+    total_dom_count = sum(
+        summary["total_dom_count"] for summary in region_summaries
+    )
+    regional_hidden_count = sum(
+        summary["hidden_dom_count"] for summary in region_summaries
+    )
     html = "<html><body>" + "\n".join(visible_card_html) + "</body></html>"
     snapshot = {
         "html": html,
         "observations": observations,
         "checked_at": checked_at,
-        "area": area,
-        "tab_counts": tab_counts,
+        "area": f"全{len(selected_regions)}地域版",
+        "coverage_status": "complete",
+        "region_count": len(selected_regions),
+        "successful_region_count": len(region_summaries),
+        "region_failures": [],
+        "regions": region_summaries,
+        "tab_counts": aggregate_tab_counts,
         "total_dom_count": total_dom_count,
         "visible_count": len(observations),
-        "hidden_dom_count": max(total_dom_count - len(observations), 0),
-        "capture_count": capture_count,
-        "capture_method": "individual_element_screenshot",
+        "regional_visible_count": regional_visible_count,
+        "hidden_dom_count": regional_hidden_count,
+        "capture_count": len(pending_evidence),
+        "capture_method": "deduplicated_individual_element_screenshot",
     }
     print(
-        "  ✅ 公式表示取得完了"
-        f"（表示中={snapshot['visible_count']}件 / HTML内非表示={snapshot['hidden_dom_count']}件"
-        f" / エリア={area} / 撮影={capture_count}回）"
+        "  ✅ HIS地域別公式表示取得完了"
+        f"（地域={len(selected_regions)}/{len(selected_regions)}"
+        f" / 地域別延べ表示={regional_visible_count}件"
+        f" / 内容別ユニーク={len(observations)}件"
+        f" / 証拠画像={len(pending_evidence)}枚）"
     )
     return snapshot
 
@@ -384,7 +658,10 @@ def enrich_visible_coupons(coupons, snapshot):
         enriched_coupon.update({
             "source_url": PAGE_URL,
             "source_type": "official_visible_dom",
-            "fetch_method": "playwright_visible_dom+element_screenshot",
+            "fetch_method": (
+                "playwright_visible_dom+regional_contexts+"
+                "deduplicated_element_screenshot"
+            ),
             "confidence": "公式画面表示確認済み",
         })
         enriched.append(enriched_coupon)
@@ -404,8 +681,16 @@ def save_visual_summary(snapshot):
         "source_url": PAGE_URL,
         "official_checked_at": snapshot["checked_at"],
         "official_area": snapshot["area"],
+        "coverage_status": snapshot.get("coverage_status", "complete"),
+        "region_count": snapshot.get("region_count", 1),
+        "successful_region_count": snapshot.get("successful_region_count", 1),
+        "region_failures": snapshot.get("region_failures", []),
+        "regions": snapshot.get("regions", []),
         "tab_counts": snapshot["tab_counts"],
         "visible_count": snapshot["visible_count"],
+        "regional_visible_count": snapshot.get(
+            "regional_visible_count", snapshot["visible_count"]
+        ),
         "total_dom_count": snapshot["total_dom_count"],
         "hidden_dom_count": snapshot["hidden_dom_count"],
         "capture_count": snapshot["capture_count"],
@@ -446,7 +731,7 @@ def parse_coupons(html):
             continue
 
         # --- ID ---
-        coupon_id = make_coupon_id(title, category)
+        coupon_id = w.get("data-monitor-id") or make_coupon_id(title, category)
 
         # --- 期間情報 ---
         booking_period = ""
@@ -613,6 +898,8 @@ def detect_changes(master_ids, current_coupons):
             "category": c["category"],
             "title": c["title"],
             "discount": c.get("discount", ""),
+            "region_codes": c.get("region_codes", []),
+            "region_labels": c.get("region_labels", []),
         })
 
     for cid in sorted(gone_ids):
@@ -624,6 +911,8 @@ def detect_changes(master_ids, current_coupons):
             "category": prev_info.get("category", ""),
             "title": prev_info.get("title", ""),
             "discount": prev_info.get("discount", ""),
+            "region_codes": prev_info.get("region_codes", []),
+            "region_labels": prev_info.get("region_labels", []),
         })
 
     return events
@@ -636,6 +925,8 @@ def update_master_ids(master_ids, current_coupons):
             "category": c["category"],
             "title": c["title"],
             "discount": c.get("discount", ""),
+            "region_codes": c.get("region_codes", []),
+            "region_labels": c.get("region_labels", []),
         }
     master_ids["ids"] = new_ids
     return master_ids
@@ -693,6 +984,12 @@ def generate_report(coupons, events):
     other = [c for c in coupons if "海外" not in c["category"] and "国内" not in c["category"]]
     active = [c for c in coupons if c.get("stock_status") == "配布中"]
     ended = [c for c in coupons if c.get("stock_status") == "配布終了"]
+    region_counts = {
+        region.label: sum(
+            region.code in coupon.get("region_codes", []) for coupon in coupons
+        )
+        for region in HIS_REGIONS
+    }
 
     lines = [
         f"# HISクーポンレポート {today}",
@@ -702,6 +999,8 @@ def generate_report(coupons, events):
         f"- 海外旅行: {len(overseas)}件",
         f"- 国内旅行: {len(domestic)}件",
         f"- その他: {len(other)}件",
+        "- 地域別表示件数: "
+        + " / ".join(f"{label}={count}" for label, count in region_counts.items()),
         "",
     ]
 

@@ -14,6 +14,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from his_regions import coupon_region_codes
+
 JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent
 REGISTRY = ROOT / "config" / "provider_registry.json"
@@ -269,7 +271,9 @@ def normalize_conditions(coupon: dict[str, Any]) -> str:
     return " / ".join(dict.fromkeys(part.strip() for part in parts if part and part.strip()))
 
 
-def format_coupon_row(coupon: dict[str, Any], provider: dict[str, Any], file_kind: str) -> dict[str, str]:
+def format_coupon_row(
+    coupon: dict[str, Any], provider: dict[str, Any], file_kind: str
+) -> dict[str, Any]:
     detail = coupon.get("detail_data") or {}
     status = first_value(coupon, ["stock_status", "status"]) or "要確認"
     if status == "active":
@@ -283,7 +287,7 @@ def format_coupon_row(coupon: dict[str, Any], provider: dict[str, Any], file_kin
     official_visibility = first_value(coupon, ["official_visibility"])
     if official_visibility == "visible":
         official_visibility = "表示中"
-    return {
+    row = {
         "公式表示": official_visibility,
         "公式画像": first_value(coupon, ["screenshot_url"]),
         "表示タブ": first_value(coupon, ["official_tab"]),
@@ -305,6 +309,10 @@ def format_coupon_row(coupon: dict[str, Any], provider: dict[str, Any], file_kin
         "確度": first_value(coupon, ["confidence"]),
         "条件": normalize_conditions(coupon),
     }
+    row["_region_codes"] = (
+        coupon_region_codes(coupon) if provider.get("id") == "his" else []
+    )
+    return row
 
 
 def format_log_rows(change_log: list[dict[str, Any]]) -> list[dict[str, str]]:
@@ -421,6 +429,11 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
     frequency, frequency_label = provider_frequency(provider)
     check_status = load_provider_check(provider["id"])
     visual_summary = load_visual_summary(provider.get("data_dir"))
+    region_filters = [
+        {"code": item.get("code", ""), "label": item.get("label", "")}
+        for item in visual_summary.get("regions", [])
+        if item.get("code") and item.get("label")
+    ]
     source_label = "未整備"
     if rows:
         if coverage == "auto_daily":
@@ -467,6 +480,7 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "manual_gh_command": manual_gh_command(provider["id"]),
         "check_status": check_status,
         "visual_summary": visual_summary,
+        "region_filters": region_filters,
         "data_date": data_date,
         "freshness_status": freshness,
         "freshness_label": freshness_label(freshness),
@@ -582,6 +596,8 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .check-no_data,.check-none {{ background: #eef2f7; color: #5c6978; }}
 .toolbar {{ display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }}
 .filter-btn,.copy-btn,.col-toggle-btn {{ padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; cursor: pointer; font-size: 0.83rem; color: #2c3b4c; }}
+.region-filter-label {{ display: inline-flex; align-items: center; gap: 6px; color: #4c596a; font-size: 0.83rem; font-weight: 700; }}
+.region-filter-select {{ padding: 6px 28px 6px 10px; border: 1px solid #0f5caa; border-radius: 6px; background: #fff; color: #0f5caa; font-size: 0.83rem; }}
 .filter-btn.active {{ border-color: #0f5caa; background: #eaf3ff; color: #0f5caa; font-weight: 700; }}
 .filter-btn.active-green {{ border-color: #16834f; background: #e9f7ef; color: #146c43; font-weight: 700; }}
 .filter-btn.active-red {{ border-color: #b02a37; background: #fdecef; color: #a52834; font-weight: 700; }}
@@ -748,22 +764,28 @@ function checkStatusHtml(provider) {{
 function visualObservationNote(provider) {{
   const visual = provider.visual_summary || {{}};
   if (!visual.official_checked_at) return '';
+  const successfulRegions = visual.successful_region_count ?? visual.region_count;
+  const regionCoverage = successfulRegions
+    ? ` / 取得地域: ${{escapeHtml(successfulRegions)}}/${{escapeHtml(visual.region_count || successfulRegions)}}`
+    : '';
   const tabCounts = Object.entries(visual.tab_counts || {{}})
     .map(([label, count]) => `${{escapeHtml(label)}} ${{escapeHtml(count)}}件`)
     .join(' / ');
-  return `<br>公式画面確認: ${{escapeHtml(formatCheckTime(visual.official_checked_at))}} / 表示地域: ${{escapeHtml(visual.official_area || '未確認')}}${{tabCounts ? ' / ' + tabCounts : ''}}`;
+  return `<br>公式画面確認: ${{escapeHtml(formatCheckTime(visual.official_checked_at))}} / 表示地域: ${{escapeHtml(visual.official_area || '未確認')}}${{regionCoverage}}${{tabCounts ? ' / ' + tabCounts : ''}}`;
 }}
 
 function visualObservationStats(provider) {{
   const visual = provider.visual_summary || {{}};
   if (!visual.official_checked_at) return '';
   const imageCount = visual.derived_image_count ?? visual.visible_count ?? 0;
+  const isRegional = Number(visual.region_count || 0) > 1;
   const captureStat = visual.capture_count === undefined
     ? `<span class="stat">証拠画像 ${{escapeHtml(imageCount)}} 枚</span>`
     : `<span class="stat">画面撮影 ${{escapeHtml(visual.capture_count)}} 回 → 個別画像 ${{escapeHtml(imageCount)}} 枚</span>`;
   return `
-    <span class="stat active">公式画面に表示 ${{escapeHtml(visual.visible_count ?? 0)}} 件</span>
-    <span class="stat review">HTML内の非表示 ${{escapeHtml(visual.hidden_dom_count ?? 0)}} 件</span>
+    <span class="stat active">${{isRegional ? '内容別ユニーク' : '公式画面に表示'}} ${{escapeHtml(visual.visible_count ?? 0)}} 件</span>
+    ${{isRegional ? `<span class="stat active">地域別延べ表示 ${{escapeHtml(visual.regional_visible_count ?? visual.visible_count ?? 0)}} 件</span>` : ''}}
+    <span class="stat review">HTML内の非表示${{isRegional ? '（延べ）' : ''}} ${{escapeHtml(visual.hidden_dom_count ?? 0)}} 件</span>
     ${{captureStat}}
   `;
 }}
@@ -831,6 +853,7 @@ function renderGrid(container, rows, columns, options = {{}}) {{
   }}
   let currentFilter = 'all';
   let currentDay = options.defaultDay || 'all';
+  let currentRegion = 'all';
   let visibleCols = [...columns];
   let grid = null;
   const dayFilterDates = options.dayFilterDates || [];
@@ -845,12 +868,19 @@ function renderGrid(container, rows, columns, options = {{}}) {{
   const sectionLinkButtons = (options.sectionLinks || []).map(item => {{
     return '<button class="filter-btn section-link-btn" type="button" data-target="' + escapeHtml(item.target) + '">' + escapeHtml(item.label) + '</button>';
   }}).join('');
+  const regionSelect = (options.regionFilters || []).length
+    ? '<label class="region-filter-label">表示地域<select class="region-filter-select">' +
+      '<option value="all">全地域</option>' +
+      options.regionFilters.map(item => '<option value="' + escapeHtml(item.code) + '">' + escapeHtml(item.label) + '</option>').join('') +
+      '</select></label>'
+    : '';
 
   const toolbar = document.createElement('div');
   toolbar.className = 'toolbar';
   toolbar.innerHTML = `
     ${{dayButtons}}
     ${{options.filter ? '<button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="active">配布中</button><button class="filter-btn" data-filter="ended">配布終了</button><button class="filter-btn" data-filter="review">要確認</button>' : ''}}
+    ${{regionSelect}}
     ${{sectionLinkButtons}}
     <button class="col-toggle-btn" type="button">列の表示</button>
     <button class="copy-btn" type="button">コピー</button>
@@ -887,6 +917,9 @@ function renderGrid(container, rows, columns, options = {{}}) {{
     if (options.dayFilter && currentDay !== 'all') {{
       body = body.filter(row => row['対象日'] === currentDay);
     }}
+    if (currentRegion !== 'all') {{
+      body = body.filter(row => Array.isArray(row._region_codes) && row._region_codes.includes(currentRegion));
+    }}
     if (currentFilter === 'active') return body.filter(row => row['配布状況'] === '配布中');
     if (currentFilter === 'ended') return body.filter(row => row['配布状況'] === '配布終了');
     if (currentFilter === 'review') return body.filter(row => row['配布状況'] && !['配布中', '配布終了'].includes(row['配布状況']));
@@ -903,6 +936,13 @@ function renderGrid(container, rows, columns, options = {{}}) {{
 
   toolbar.querySelector('.col-toggle-btn').addEventListener('click', () => colPanel.classList.toggle('open'));
   toolbar.querySelector('.copy-btn').addEventListener('click', event => copyTableData(filteredRows(), visibleCols, event.currentTarget));
+  const regionSelectElement = toolbar.querySelector('.region-filter-select');
+  if (regionSelectElement) {{
+    regionSelectElement.addEventListener('change', () => {{
+      currentRegion = regionSelectElement.value || 'all';
+      rebuild();
+    }});
+  }}
   toolbar.querySelectorAll('.section-link-btn').forEach(button => {{
     button.addEventListener('click', () => {{
       const target = document.getElementById(button.dataset.target || '');
@@ -1026,6 +1066,7 @@ function renderProvider(container, provider) {{
   attachManualActions(section, provider);
   renderGrid(section, provider.rows, couponColumns, {{
     filter: true,
+    regionFilters: provider.region_filters || [],
     limit: 50,
     sectionLinks: [
       {{ label: '過去1週間の変動比較', target: `${{provider.id}}-recent-changes` }},

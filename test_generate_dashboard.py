@@ -9,10 +9,29 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from generate_dashboard import write_dashboard_outputs
+from generate_dashboard import format_coupon_row, write_dashboard_outputs
 
 
 class DashboardOutputTest(unittest.TestCase):
+    def test_his_rows_expose_region_codes_for_dashboard_filter(self) -> None:
+        legacy = format_coupon_row(
+            {"id": "legacy", "title": "旧首都圏版"},
+            {"id": "his"},
+            "coupons",
+        )
+        hokkaido = format_coupon_row(
+            {
+                "id": "hokkaido-only",
+                "title": "北海道限定",
+                "region_codes": ["hokkaido"],
+            },
+            {"id": "his"},
+            "coupons",
+        )
+
+        self.assertEqual(legacy["_region_codes"], ["kanto"])
+        self.assertEqual(hokkaido["_region_codes"], ["hokkaido"])
+
     def test_html_and_json_are_generated_from_the_same_data(self) -> None:
         data = {
             "schema_version": 1,

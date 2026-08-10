@@ -614,6 +614,19 @@ def build_thread(item, site_conf, today, trusted_code_providers=(), pattern=None
     return posts
 
 
+def is_primary_his_dashboard_row(provider_id, row):
+    """HISの既存記事・自動投稿に使える首都圏版の行か判定する。"""
+    if provider_id != "his":
+        return True
+    region_codes = row.get("_region_codes")
+    # 地域対応前の行は首都圏版だったため、そのまま互換扱いする。
+    return not (
+        isinstance(region_codes, list)
+        and region_codes
+        and "kanto" not in region_codes
+    )
+
+
 def collect_site_coupons(data, site_id, site_conf, change_map, today):
     """サイト対象×記事マッピング済みOTAの配布中クーポンを収集しスコアリング。"""
     scored = []
@@ -624,6 +637,10 @@ def collect_site_coupons(data, site_id, site_conf, change_map, today):
         if pid not in site_conf["article_map"]:
             continue
         for row in p.get("rows", []):
+            # HIS地域拡張後も既存記事へ誘導する自動投稿は首都圏版に固定する。
+            # 地域対応前の行（メタデータなし）は従来どおり対象に含める。
+            if not is_primary_his_dashboard_row(pid, row):
+                continue
             if row.get("配布状況") != "配布中":
                 continue
             days_left, _ = parse_deadline(row, today)

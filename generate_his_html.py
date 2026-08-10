@@ -16,6 +16,8 @@ import re
 from datetime import datetime, timezone, timedelta
 from html import escape as html_escape
 
+from his_regions import PRIMARY_REGION_CODE, select_region_coupons
+
 JST = timezone(timedelta(hours=9))
 
 # ---------------------------------------------------------------------------
@@ -326,12 +328,17 @@ def generate_table(coupons: list[dict], config: dict) -> str:
 # ---------------------------------------------------------------------------
 def main():
     coupons, filename = load_latest_coupons()
+    all_coupon_count = len(coupons)
+    coupons = select_region_coupons(coupons, PRIMARY_REGION_CODE)
     config = load_config()
 
     date_match = re.search(r"(\d{4}-\d{2}-\d{2})", filename)
     data_date = date_match.group(1) if date_match else "unknown"
 
-    print(f"📊 {len(coupons)} 件のクーポンを読み込み ({filename})")
+    print(
+        f"📊 首都圏版 {len(coupons)} 件を使用 "
+        f"（地域別ユニーク全{all_coupon_count}件 / {filename}）"
+    )
 
     # セクション振り分け
     sections: dict[str, list] = {s: [] for s in SECTION_ORDER}

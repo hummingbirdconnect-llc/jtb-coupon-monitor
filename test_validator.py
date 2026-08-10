@@ -56,6 +56,30 @@ def test_detect_duplicates_by_similarity():
     print("  ✅ test_detect_duplicates_by_similarity PASSED")
 
 
+def test_intentional_regional_variants_do_not_warn_as_duplicates():
+    """同じ元カードから分けた地域差分は、類似警告の対象外にする。"""
+    coupons = [
+        {
+            "id": "base-id",
+            "regional_base_id": "base-id",
+            "title": "地域によって条件が異なるクーポン",
+            "discount": "5,000円割引",
+        },
+        {
+            "id": "base-id-hokkaido",
+            "regional_base_id": "base-id",
+            "title": "地域によって条件が異なるクーポン",
+            "discount": "5,000円割引",
+        },
+    ]
+
+    deduped, warnings = detect_duplicates(coupons, "HIS")
+
+    assert len(deduped) == 2
+    assert warnings == []
+    print("  ✅ test_intentional_regional_variants_do_not_warn_as_duplicates PASSED")
+
+
 def test_check_data_integrity_missing_title():
     """タイトル欠損の検出"""
     coupons = [
@@ -177,6 +201,7 @@ if __name__ == "__main__":
     test_title_similarity()
     test_detect_duplicates_by_id()
     test_detect_duplicates_by_similarity()
+    test_intentional_regional_variants_do_not_warn_as_duplicates()
     test_check_data_integrity_missing_title()
     test_check_data_integrity_discount_range()
     test_fix_yearless_end_date()

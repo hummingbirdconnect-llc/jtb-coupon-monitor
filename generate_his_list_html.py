@@ -19,6 +19,8 @@ import re
 from datetime import datetime, timezone, timedelta
 from html import escape as html_escape
 
+from his_regions import PRIMARY_REGION_CODE, select_region_coupons
+
 JST = timezone(timedelta(hours=9))
 
 # ---------------------------------------------------------------------------
@@ -433,9 +435,14 @@ def generate_full_html(coupons: list, config: dict, filename: str) -> str:
 # ---------------------------------------------------------------------------
 def main():
     coupons, filename = load_latest_coupons()
+    all_coupon_count = len(coupons)
+    coupons = select_region_coupons(coupons, PRIMARY_REGION_CODE)
     config = load_config()
 
-    print(f"📊 {len(coupons)} 件のクーポンを読み込み ({filename})")
+    print(
+        f"📊 首都圏版 {len(coupons)} 件を使用 "
+        f"（地域別ユニーク全{all_coupon_count}件 / {filename}）"
+    )
 
     html = generate_full_html(coupons, config, filename)
 

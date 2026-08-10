@@ -16,6 +16,7 @@ const DEFAULT_MIN_COUPONS = 10;
 const DEFAULT_MAX_AGE_HOURS = 3;
 const MAX_FUTURE_SKEW_MINUTES = 5;
 const MAX_DROP_RATIO = 0.4;
+const PRIMARY_REGION_CODE = "kanto";
 
 function parseArgs(argv) {
   const args = {};
@@ -113,7 +114,19 @@ function assertFreshRun(latest, allowStale, maxAgeHours, nowMs) {
   return fetchedAt;
 }
 
-function previousSnapshotCount(dataDir, latestFile) {
+function couponRegionCodes(coupon) {
+  if (Array.isArray(coupon?.region_codes) && coupon.region_codes.length > 0) {
+    return [...new Set(coupon.region_codes.map((code) => String(code)))];
+  }
+  // 地域対応前の監視データは首都圏版のみ。
+  return [PRIMARY_REGION_CODE];
+}
+
+export function selectRegionCoupons(coupons, regionCode = PRIMARY_REGION_CODE) {
+  return coupons.filter((coupon) => couponRegionCodes(coupon).includes(regionCode));
+}
+
+function previousSnapshotCount(dataDir, latestFile, regionCode) {
   const files = readdirSync(dataDir)
     .filter(
       (name) =>
@@ -125,10 +138,18 @@ function previousSnapshotCount(dataDir, latestFile) {
     return null;
   }
   const previous = readJson(join(dataDir, files[0]), "直前のHIS監視JSON");
-  return Array.isArray(previous) ? previous.length : null;
+  return Array.isArray(previous)
+    ? selectRegionCoupons(previous, regionCode).length
+    : null;
 }
 
-function validateOfficialCoupons(coupons, latest, minCoupons, previousCount) {
+export function validateOfficialCoupons(
+  coupons,
+  latest,
+  minCoupons,
+  previousCount,
+  requireFeedFields = true,
+) {
   if (!Array.isArray(coupons)) {
     throw new Error("HIS監視JSONが配列ではありません。");
   }
@@ -183,14 +204,19 @@ function validateOfficialCoupons(coupons, latest, minCoupons, previousCount) {
     if (!String(coupon.title || "").trim()) {
       throw new Error(`クーポン名がありません: ${id}`);
     }
-    if (!String(coupon.booking_period || "").trim()) {
-      throw new Error(`予約期間がありません: ${id}`);
-    }
-    const codes = Array.isArray(coupon.coupon_codes)
-      ? coupon.coupon_codes
-      : [];
-    if (codes.length === 0 || codes.some((entry) => !String(entry?.code || "").trim())) {
-      throw new Error(`クーポンコードがありません: ${id}`);
+    if (requireFeedFields) {
+      if (!String(coupon.booking_period || "").trim()) {
+        throw new Error(`予約期間がありません: ${id}`);
+      }
+      const codes = Array.isArray(coupon.coupon_codes)
+        ? coupon.coupon_codes
+        : [];
+      if (
+        codes.length === 0 ||
+        codes.some((entry) => !String(entry?.code || "").trim())
+      ) {
+        throw new Error(`クーポンコードがありません: ${id}`);
+      }
     }
   }
 }
@@ -326,14 +352,30 @@ export function buildHisWordPressFeed(options = {}) {
   const sourceText = readFileSync(sourcePath, "utf8");
   const htmlText = readFileSync(htmlPath, "utf8");
   const coupons = JSON.parse(sourceText);
-  const previousCount = previousSnapshotCount(dataDir, latest.latest_file);
-  validateOfficialCoupons(coupons, latest, minCoupons, previousCount);
+  // 全地域の監視結果自体は検証するが、既存記事・WordPressフィードへは
+  // 従来どおり首都圏版だけを渡す。地域拡張で記事内容を無承認変更しない。
+  validateOfficialCoupons(coupons, latest, 1, null, false);
+  const primaryRegionCoupons = selectRegionCoupons(
+    coupons,
+    PRIMARY_REGION_CODE,
+  );
+  const previousCount = previousSnapshotCount(
+    dataDir,
+    latest.latest_file,
+    PRIMARY_REGION_CODE,
+  );
+  validateOfficialCoupons(
+    primaryRegionCoupons,
+    { ...latest, coupon_count: primaryRegionCoupons.length },
+    minCoupons,
+    previousCount,
+  );
   if (!htmlText.includes(`データ: ${latest.latest_file} /`)) {
     throw new Error("遷移リンクHTMLが最新のHIS監視JSONから生成されていません。");
   }
 
   const links = extractAffiliateLinks(htmlText);
-  const items = coupons.map((coupon) =>
+  const items = primaryRegionCoupons.map((coupon) =>
     buildItem(coupon, links, verifiedAt),
   );
   const itemIds = new Set(items.map((item) => item.id));
@@ -359,10 +401,18 @@ export function buildHisWordPressFeed(options = {}) {
       verifiedAt,
       freshnessSlaHours: 30,
       monitorRawCount: coupons.length,
+      monitorPrimaryRegionCount: primaryRegionCoupons.length,
+      regionalCoverage: {
+        primaryRegionCode: PRIMARY_REGION_CODE,
+        uniqueVariantCount: coupons.length,
+        primaryRegionCount: primaryRegionCoupons.length,
+        regionCount: Number(latest.region_count || 1),
+        successfulRegionCount: Number(latest.successful_region_count || 1),
+      },
       officialComparison: {
-        liveCount: coupons.length,
-        sourceCount: coupons.length,
-        matchedCount: coupons.length,
+        liveCount: primaryRegionCoupons.length,
+        sourceCount: primaryRegionCoupons.length,
+        matchedCount: primaryRegionCoupons.length,
         codeMismatchCount: 0,
         periodMismatchCount: 0,
       },
