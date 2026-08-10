@@ -1,16 +1,166 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-08-11T06:35:45+09:00",
-  "official_area": "首都圏版",
+  "official_checked_at": "2026-08-11T08:38:11+09:00",
+  "official_area": "全11地域版",
+  "coverage_status": "complete",
+  "region_count": 11,
+  "successful_region_count": 11,
+  "region_failures": [],
+  "regions": [
+    {
+      "code": "kanto",
+      "label": "首都圏版",
+      "official_area": "首都圏版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=1",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 17
+      },
+      "visible_count": 18,
+      "total_dom_count": 24,
+      "hidden_dom_count": 6
+    },
+    {
+      "code": "hokkaido",
+      "label": "北海道版",
+      "official_area": "北海道版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=2",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 13
+      },
+      "visible_count": 14,
+      "total_dom_count": 24,
+      "hidden_dom_count": 10
+    },
+    {
+      "code": "tohoku",
+      "label": "東北版",
+      "official_area": "東北版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=3",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 13
+      },
+      "visible_count": 14,
+      "total_dom_count": 24,
+      "hidden_dom_count": 10
+    },
+    {
+      "code": "koshinetsu",
+      "label": "甲信越（新潟）版",
+      "official_area": "甲信越（新潟）版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=4",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 13
+      },
+      "visible_count": 14,
+      "total_dom_count": 24,
+      "hidden_dom_count": 10
+    },
+    {
+      "code": "chubu",
+      "label": "中部版",
+      "official_area": "中部版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=5",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 14
+      },
+      "visible_count": 15,
+      "total_dom_count": 24,
+      "hidden_dom_count": 9
+    },
+    {
+      "code": "hokuriku",
+      "label": "北陸版",
+      "official_area": "北陸版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=10",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 14
+      },
+      "visible_count": 15,
+      "total_dom_count": 24,
+      "hidden_dom_count": 9
+    },
+    {
+      "code": "kansai",
+      "label": "関西版",
+      "official_area": "関西版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=6",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 13
+      },
+      "visible_count": 14,
+      "total_dom_count": 24,
+      "hidden_dom_count": 10
+    },
+    {
+      "code": "chugoku",
+      "label": "中国版",
+      "official_area": "中国版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=7",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 13
+      },
+      "visible_count": 14,
+      "total_dom_count": 24,
+      "hidden_dom_count": 10
+    },
+    {
+      "code": "shikoku",
+      "label": "四国版",
+      "official_area": "四国版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=11",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 13
+      },
+      "visible_count": 14,
+      "total_dom_count": 24,
+      "hidden_dom_count": 10
+    },
+    {
+      "code": "kyushu",
+      "label": "九州版",
+      "official_area": "九州版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=8",
+      "tab_counts": {
+        "海外旅行": 3,
+        "国内旅行": 13
+      },
+      "visible_count": 16,
+      "total_dom_count": 24,
+      "hidden_dom_count": 8
+    },
+    {
+      "code": "okinawa",
+      "label": "沖縄版",
+      "official_area": "沖縄版",
+      "switch_url": "https://www.his-j.com/Default.aspx?param=9",
+      "tab_counts": {
+        "海外旅行": 1,
+        "国内旅行": 13
+      },
+      "visible_count": 14,
+      "total_dom_count": 24,
+      "hidden_dom_count": 10
+    }
+  ],
   "tab_counts": {
-    "海外旅行": 1,
-    "国内旅行": 17
+    "海外旅行": 13,
+    "国内旅行": 149
   },
-  "visible_count": 18,
-  "total_dom_count": 24,
-  "hidden_dom_count": 6,
-  "capture_count": 18,
-  "capture_method": "individual_element_screenshot",
-  "derived_image_count": 18,
+  "visible_count": 39,
+  "regional_visible_count": 162,
+  "total_dom_count": 264,
+  "hidden_dom_count": 102,
+  "capture_count": 39,
+  "capture_method": "deduplicated_individual_element_screenshot",
+  "derived_image_count": 39,
   "evidence_directory": "evidence/his"
 }
