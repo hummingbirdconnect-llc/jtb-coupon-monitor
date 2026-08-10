@@ -3,8 +3,8 @@ name: Coupon Monitor
 on:
   schedule:
     - cron: '0 21 * * *'    # 毎日 6:00 JST: 17社＋当日割当の5日周期会社
-    - cron: '5 2 * * *'     # 毎日 11:05 JST: HIS公式画面＋証拠画像
-    - cron: '5 10 * * *'    # 毎日 19:05 JST: HIS公式画面＋証拠画像
+    - cron: '5 2 * * *'     # 毎日 11:05 JST: HIS全11地域の公式画面＋証拠画像
+    - cron: '5 10 * * *'    # 毎日 19:05 JST: HIS全11地域の公式画面＋証拠画像
   workflow_dispatch:
     inputs:
       provider_id:
@@ -103,7 +103,7 @@ jobs:
               echo "provider_id=his" >> "$GITHUB_OUTPUT"
               echo "his_visual_only=true" >> "$GITHUB_OUTPUT"
               echo "his_checked=true" >> "$GITHUB_OUTPUT"
-              echo "label=scheduled: HIS official visible cards + screenshots" >> "$GITHUB_OUTPUT"
+              echo "label=scheduled: HIS official 11-region visible cards + screenshots" >> "$GITHUB_OUTPUT"
             fi
           else
             echo "scope=all" >> "$GITHUB_OUTPUT"

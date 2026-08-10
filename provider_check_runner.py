@@ -16,6 +16,12 @@ from urllib.parse import urlparse
 import requests
 
 from official_deal_monitor import run_official_deal_monitor
+from his_regions import (
+    ALL_REGION_CODES,
+    HIS_REGIONS,
+    PRIMARY_REGION_CODE,
+    select_region_coupons,
+)
 
 JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent
@@ -207,6 +213,50 @@ def run_real_monitor(provider: dict) -> dict:
         "wp_review_eligible": False,
         "error": error,
     }
+    if provider["id"] == "his" and status == "success":
+        visual_path = (
+            ROOT / provider["data_dir"] / "visual_observation_latest.json"
+        )
+        try:
+            visual_summary = json.loads(visual_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError) as exc:
+            payload["status"] = "error"
+            payload["error"] = f"regional_visual_summary={exc.__class__.__name__}"
+        else:
+            region_count = int(visual_summary.get("region_count") or 0)
+            successful_region_count = int(
+                visual_summary.get("successful_region_count") or 0
+            )
+            coverage_status = visual_summary.get("coverage_status")
+            observed_region_codes = {
+                str(region.get("code"))
+                for region in visual_summary.get("regions", [])
+                if region.get("code")
+            }
+            if (
+                coverage_status != "complete"
+                or region_count != len(HIS_REGIONS)
+                or successful_region_count != len(HIS_REGIONS)
+                or observed_region_codes != set(ALL_REGION_CODES)
+            ):
+                payload["status"] = "error"
+                payload["error"] = (
+                    "regional_coverage_incomplete="
+                    f"{successful_region_count}/{len(HIS_REGIONS)}"
+                )
+            payload.update({
+                "regional_coverage_status": coverage_status or "unknown",
+                "region_count": region_count,
+                "successful_region_count": successful_region_count,
+                "regional_visible_count": visual_summary.get(
+                    "regional_visible_count", len(coupons)
+                ),
+                "unique_coupon_variant_count": len(coupons),
+                "primary_region_code": PRIMARY_REGION_CODE,
+                "primary_region_coupon_count": len(
+                    select_region_coupons(coupons, PRIMARY_REGION_CODE)
+                ),
+            })
     write_status(provider, payload)
     return payload
 

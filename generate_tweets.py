@@ -21,6 +21,12 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+from his_regions import (
+    PRIMARY_REGION_CODE,
+    coupon_region_codes,
+    select_region_coupons,
+)
+
 JST = timezone(timedelta(hours=9))
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -110,6 +116,30 @@ def enrich_with_snapshot(log_entries, snapshot_data, ota_name):
     return enriched
 
 
+def select_his_primary_events(log_entries, snapshot_data):
+    """地域拡張後も自動X文面は従来の首都圏版だけを対象にする。"""
+    if snapshot_data:
+        primary_snapshot = select_region_coupons(
+            snapshot_data, PRIMARY_REGION_CODE
+        )
+        primary_ids = {coupon.get("id") for coupon in primary_snapshot}
+        return (
+            [entry for entry in log_entries if entry.get("id") in primary_ids],
+            primary_snapshot,
+        )
+
+    # スナップショットを読めない場合も、新形式の地域メタデータがあれば
+    # 地域限定イベントを除外する。旧形式は首都圏版として互換扱いする。
+    return (
+        [
+            entry
+            for entry in log_entries
+            if PRIMARY_REGION_CODE in coupon_region_codes(entry)
+        ],
+        snapshot_data,
+    )
+
+
 def truncate(text, max_len):
     """テキストを最大長で切り詰める。"""
     if len(text) <= max_len:
@@ -176,10 +206,15 @@ def generate_all_tweets(target_date):
             print(f"  {ota_name}: 新規クーポンなし")
             continue
 
-        print(f"  {ota_name}: {len(new_entries)}件の新規/配布再開を検出")
-
         # スナップショットで詳細補完
         snapshot = find_today_snapshot(data_dir, target_date)
+        if ota_name == "HIS":
+            new_entries, snapshot = select_his_primary_events(new_entries, snapshot)
+            if not new_entries:
+                print("  HIS: 首都圏版の新規クーポンなし")
+                continue
+
+        print(f"  {ota_name}: {len(new_entries)}件の新規/配布再開を検出")
         enriched = enrich_with_snapshot(new_entries, snapshot, ota_name)
 
         # ツイート生成
