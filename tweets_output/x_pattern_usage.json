@@ -2230,5 +2230,77 @@
   "pattern": "loss_aversion",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "big_discount",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "daily_check",
+  "ota": "jtb",
+  "title": "箱根・夏休み応援クーポン【第二弾】"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "ukigane",
+  "ota": "his",
+  "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "箱根・夏休み応援クーポン【第二弾】"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "his",
+  "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "Mastercard（ワールド/セレクト）"
+ },
+ {
+  "date": "2026-08-11",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "expedia",
+  "title": "Mastercard"
  }
 ]
