@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate_id": "tripcom-4df91cd360bacfb4",
+  "provider_id": "tripcom",
+  "page_summary": "Trip.com公式お得情報一覧で、前回登録済みの割引率明記セール3件が同じ内容で掲載されていることを確認した。",
+  "change_summary": "登録済み3件の名称と最大割引率に意味のある変更はなく、掲載枠と埋め込み情報の変動だけだった。",
+  "recommendation": "ignore",
+  "priority": 0,
+  "uncertainty_reasons": [],
+  "audit_notes": "前回3件のevidence_quoteは、今回のconfirmed公式本文にも連続完全一致した。個別施設や在庫条件は補完していない。",
+  "deals": []
+}

@@ -18,14 +18,14 @@
       "content_hash": "87f86462aaa1e76ec6c02f2739479ce3b90bc8d570cdfae48d80ac6c5e9f81ba"
     }
   ],
-  "queued_hash": "4df91cd360bacfb4d0ef23688e52a6ae039c127e85c6db5075f1389f4e63782f",
-  "queued_candidate_id": "tripcom-4df91cd360bacfb4",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-08-12T06:52:22.874212+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-08-11T13:29:39.698995+09:00",
-  "last_audit_candidate_id": "tripcom-017350a2dd6ba2e2",
-  "processed_hash": "017350a2dd6ba2e27ef9433ba4c8765f152d9f0ad07dfd75f403919ecf35e749",
-  "last_processed_at": "2026-08-11T13:29:39.698995+09:00",
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-08-12T08:08:42.439316+09:00",
+  "last_audit_candidate_id": "tripcom-4df91cd360bacfb4",
+  "processed_hash": "4df91cd360bacfb4d0ef23688e52a6ae039c127e85c6db5075f1389f4e63782f",
+  "last_processed_at": "2026-08-12T08:08:42.439316+09:00",
   "last_changed_at": "2026-08-11T13:29:39.698995+09:00",
   "latest_file": "coupons_2026-08-11.json",
   "semantic_hash": "9d617bea0a22ff7dc994385137d0b4f8bcefd7c605ed6c3e23a01c7f8cd65e9f"

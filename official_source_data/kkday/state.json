@@ -46,15 +46,15 @@
       "content_hash": "0b621bf8098caaab8f67b585cec38d3cba9e0e8cf5a21d511f40562b540dad15"
     }
   ],
-  "queued_hash": "3850facd514b1f31dc2de07dfa6fcc0967fc0f05f6a0a228b48a8003193cbf8a",
-  "queued_candidate_id": "kkday-3850facd514b1f31",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-08-12T06:51:29.962190+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-08-11T13:29:39.697145+09:00",
-  "last_audit_candidate_id": "kkday-d594ac6f086c8b4f",
-  "processed_hash": "d594ac6f086c8b4f9ab3e666e5bb342b3d8093e257790496267d9364f0d2b54f",
-  "last_processed_at": "2026-08-11T13:29:39.697145+09:00",
-  "last_changed_at": "2026-08-11T13:29:39.697145+09:00",
-  "latest_file": "coupons_2026-08-11.json",
-  "semantic_hash": "346f5b5cffea871adb3e92d5a4fa47ff647d4e4d29160a4142db35398ab13480"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-08-12T08:08:42.438148+09:00",
+  "last_audit_candidate_id": "kkday-3850facd514b1f31",
+  "processed_hash": "3850facd514b1f31dc2de07dfa6fcc0967fc0f05f6a0a228b48a8003193cbf8a",
+  "last_processed_at": "2026-08-12T08:08:42.438148+09:00",
+  "last_changed_at": "2026-08-12T08:08:42.438148+09:00",
+  "latest_file": "coupons_2026-08-12.json",
+  "semantic_hash": "882cbf58505b143b3261c0ffca6990622a46e0e5fcf4be362e1c90a2deefebf0"
 }
