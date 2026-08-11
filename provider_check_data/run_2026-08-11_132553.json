@@ -1,0 +1,52 @@
+{
+  "completed_at": "2026-08-11T13:25:53.611031+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "jalan-9f2d5fda548014bc",
+      "provider_id": "jalan",
+      "candidate_path": "codex_audit_queue/jalan/jalan-9f2d5fda548014bc.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "jalan",
+      "provider_label": "じゃらん",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-08-11T13:25:52.667323+09:00",
+      "completed_at": "2026-08-11T13:25:53.609642+09:00",
+      "official_fetched_at": "2026-08-11T13:25:53.609651+09:00",
+      "source_results": [
+        {
+          "url": "https://www.jalan.net/jalancponsum/zenkoku/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "text_chars": 7656,
+          "content_hash": "d9f143f9b88d01c158c940c4cd57a9d7051d406193c2a23ae5af4f6cb2040c27"
+        }
+      ],
+      "failed_source_count": 0,
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "9f2d5fda548014bc94a985fd19915b43cc514db248afd54bb16ca19dfa5c7f77",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "jalan-9f2d5fda548014bc",
+      "audit_candidate_path": "codex_audit_queue/jalan/jalan-9f2d5fda548014bc.json",
+      "error": "",
+      "freshness_status": "unknown"
+    }
+  ]
+}

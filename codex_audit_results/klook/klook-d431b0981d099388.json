@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-d431b0981d099388",
+  "provider_id": "klook",
+  "page_summary": "Klook公式お得情報ページで、台湾向けのクーポンコード3件を確認した。",
+  "change_summary": "初回基準データとして、コード・割引率・対象が公式本文に明記された3件を登録する。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "期間は公式本文に表示されていないため記録しない。対象地域・商品条件付きとして扱う。",
+  "deals": [
+    {
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "50%OFF（上限3USD）",
+      "coupon_code": "SUMMER4ESIM",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "台湾ページ掲載のKlook eSIM。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "台湾高速鉄道 B1G1",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "50%OFF",
+      "coupon_code": "G02TAIWAN",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "台中・高雄・嘉義・台南・彰化・雲林のみに行く路線。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "北北基おもしろカード10%OFF",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "10%OFF",
+      "coupon_code": "TAIPEIFUNS4",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "北北基おもしろカード。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "北北基おもしろカード10%OFF クーポンコード: TAIPEIFUNS4 10%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    }
+  ]
+}

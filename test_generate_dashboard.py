@@ -9,10 +9,49 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from generate_dashboard import format_coupon_row, write_dashboard_outputs
+from generate_dashboard import (
+    format_coupon_row,
+    official_audit_display,
+    write_dashboard_outputs,
+)
 
 
 class DashboardOutputTest(unittest.TestCase):
+    def test_official_audit_pending_and_held_are_not_reported_as_zero(self) -> None:
+        pending = official_audit_display(
+            "official_codex",
+            [],
+            [],
+            {"codex_audit_required": True},
+            {"last_audit_status": "pending"},
+        )
+        self.assertEqual(pending, ("pending", "未確定", "Codex監査の確定前", "監査待ち"))
+
+        held = official_audit_display(
+            "official_codex",
+            [],
+            [],
+            {"codex_audit_required": True},
+            {
+                "last_audit_status": "held",
+                "queued_candidate_id": "sample-new",
+                "last_audit_candidate_id": "sample-new",
+            },
+        )
+        self.assertEqual(held, ("held", "保留", "公式根拠または条件が不足", "監査保留"))
+
+        confirmed_empty = official_audit_display(
+            "official_codex",
+            [],
+            [],
+            {"codex_audit_required": True},
+            {"last_audit_status": "processed"},
+        )
+        self.assertEqual(
+            confirmed_empty,
+            ("confirmed", "0", "監査済み・掲載対象なし", "監査済み"),
+        )
+
     def test_his_rows_expose_region_codes_for_dashboard_filter(self) -> None:
         legacy = format_coupon_row(
             {"id": "legacy", "title": "旧首都圏版"},

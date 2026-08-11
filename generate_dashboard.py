@@ -169,6 +169,54 @@ def load_provider_check(provider_id: str) -> dict[str, Any]:
     return load_json(path)
 
 
+def load_official_state(provider_id: str) -> dict[str, Any]:
+    path = ROOT / "official_source_data" / provider_id / "state.json"
+    if not path.exists():
+        return {}
+    return load_json(path)
+
+
+def official_audit_display(
+    coverage: str,
+    rows: list[dict[str, Any]],
+    coupons: list[dict[str, Any]],
+    check_status: dict[str, Any],
+    state: dict[str, Any],
+) -> tuple[str, str, str, str]:
+    """監査前・保留を0件と断定せず、件数と監査状態を分けて返す。"""
+    if coverage != "official_codex":
+        return "confirmed", str(len(rows)), "保存済みデータ", "対象外"
+
+    queued_candidate_id = str(state.get("queued_candidate_id") or "")
+    audited_candidate_id = str(state.get("last_audit_candidate_id") or "")
+    held_current_candidate = state.get("last_audit_status") == "held" and (
+        not queued_candidate_id or queued_candidate_id == audited_candidate_id
+    )
+    audit_required = bool(check_status.get("codex_audit_required"))
+
+    if held_current_candidate:
+        audit_label = "監査保留"
+    elif state.get("last_audit_status") == "processed" and not queued_candidate_id:
+        audit_label = "監査済み"
+    elif audit_required or state.get("last_audit_status") == "pending":
+        audit_label = "監査待ち"
+    elif state.get("last_audit_status") == "processed" or any(
+        coupon.get("source_type") == "official_codex_audit" for coupon in coupons
+    ):
+        audit_label = "監査済み"
+    else:
+        audit_label = "監査待ち"
+
+    if rows or state.get("last_audit_status") == "processed":
+        detail = "保存済みの監査確定データ"
+        if not rows:
+            detail = "監査済み・掲載対象なし"
+        return "confirmed", str(len(rows)), detail, audit_label
+    if held_current_candidate:
+        return "held", "保留", "公式根拠または条件が不足", audit_label
+    return "pending", "未確定", "Codex監査の確定前", audit_label
+
+
 def provider_frequency(provider: dict[str, Any]) -> tuple[str, str]:
     frequency = provider.get("check_frequency")
     if not frequency:
@@ -428,6 +476,14 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
     coverage = provider.get("coverage_status", "")
     frequency, frequency_label = provider_frequency(provider)
     check_status = load_provider_check(provider["id"])
+    official_state = load_official_state(provider["id"])
+    count_status, count_label, count_detail, audit_label = official_audit_display(
+        coverage,
+        rows,
+        coupons,
+        check_status,
+        official_state,
+    )
     visual_summary = load_visual_summary(provider.get("data_dir"))
     region_filters = [
         {"code": item.get("code", ""), "label": item.get("label", "")}
@@ -446,6 +502,11 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             source_label = "記事抽出暫定JSON"
         else:
             source_label = "暫定JSON"
+    elif coverage == "official_codex":
+        source_label = {
+            "held": "公式ページ＋Codex監査保留",
+            "pending": "公式ページ＋Codex監査待ち",
+        }.get(count_status, "公式ページ＋Codex監査済み")
     elif provider.get("article_paths"):
         source_label = "記事HTMLあり"
 
@@ -459,13 +520,6 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
     )
     official_fetched_at = check_status.get("official_fetched_at", "")
     url_checked_at = check_status.get("url_checked_at", "")
-    if check_status.get("codex_audit_required"):
-        audit_label = "監査待ち"
-    elif any(coupon.get("source_type") == "official_codex_audit" for coupon in coupons):
-        audit_label = "監査済み"
-    else:
-        audit_label = "対象外"
-
     return {
         "id": provider["id"],
         "label": provider["label"],
@@ -487,6 +541,9 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "official_fetched_at": official_fetched_at,
         "url_checked_at": url_checked_at,
         "ai_label": audit_label,
+        "count_status": count_status,
+        "count_label": count_label,
+        "count_detail": count_detail,
         "note": provider.get("note", ""),
         "latest_file": latest_file,
         "source_label": source_label,
@@ -499,10 +556,10 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             "分類": provider.get("classification", ""),
             "監視頻度": frequency_label,
             "取得状態": COVERAGE_LABELS.get(coverage, coverage),
-            "件数": str(len(rows)),
-            "配布中": str(active),
-            "配布終了": str(ended),
-            "要確認": str(review),
+            "件数": count_label,
+            "配布中": str(active) if count_status == "confirmed" else "—",
+            "配布終了": str(ended) if count_status == "confirmed" else "—",
+            "要確認": str(review) if count_status == "confirmed" else "—",
             "公式画面表示": (
                 str(visual_summary["visible_count"])
                 if visual_summary.get("visible_count") is not None
@@ -751,7 +808,7 @@ function checkStatusHtml(provider) {{
   details.push(`<span class="manual-meta">データ日: ${{escapeHtml(status.data_date || '不明')}}</span>`);
   details.push(`<span class="manual-meta">鮮度: ${{escapeHtml(provider.freshness_label || '不明')}}</span>`);
   details.push(`<span class="manual-meta">Codex監査: ${{escapeHtml(provider.ai_label || '対象外')}}</span>`);
-  details.push(`<span class="manual-meta">件数: ${{escapeHtml(status.coupon_count ?? 0)}}</span>`);
+  details.push(`<span class="manual-meta">件数: ${{escapeHtml(provider.count_label ?? provider.rows.length)}}</span>`);
   if (status.checked_url_count !== undefined) {{
     details.push(`<span class="manual-meta">URL確認: ${{escapeHtml(status.ok_url_count ?? 0)}}/${{escapeHtml(status.checked_url_count ?? 0)}}</span>`);
   }}
@@ -1044,6 +1101,13 @@ function renderProvider(container, provider) {{
   const couponColumns = hasVisualEvidence
     ? DATA.columns.coupons
     : DATA.columns.coupons.filter(column => !visualColumns.includes(column));
+  const countStats = provider.count_status === 'confirmed'
+    ? `<span class="stat">全 ${{escapeHtml(provider.count_label ?? provider.rows.length)}} 件</span>
+        <span class="stat active">配布中 ${{active}} 件</span>
+        <span class="stat ended">配布終了 ${{ended}} 件</span>
+        <span class="stat review">要確認 ${{review}} 件</span>`
+    : `<span class="stat review">クーポン件数 ${{escapeHtml(provider.count_label)}}</span>
+        <span class="stat">${{escapeHtml(provider.count_detail)}}</span>`;
   container.innerHTML = `
     <div class="section">
       <h2>${{escapeHtml(provider.label)}}</h2>
@@ -1053,10 +1117,7 @@ function renderProvider(container, provider) {{
         ${{escapeHtml(provider.note || '')}}${{visualObservationNote(provider)}}
       </div>
       <div class="stats">
-        <span class="stat">全 ${{provider.rows.length}} 件</span>
-        <span class="stat active">配布中 ${{active}} 件</span>
-        <span class="stat ended">配布終了 ${{ended}} 件</span>
-        <span class="stat review">要確認 ${{review}} 件</span>
+        ${{countStats}}
         ${{visualObservationStats(provider)}}
       </div>
       ${{manualPanelHtml(provider)}}
@@ -1118,7 +1179,7 @@ function init() {{
     const tab = document.createElement('button');
     tab.className = 'tab';
     tab.dataset.tab = provider.id;
-    tab.innerHTML = `${{escapeHtml(provider.label)}} <span class="tab-count">${{provider.rows.length}}</span>`;
+    tab.innerHTML = `${{escapeHtml(provider.label)}} <span class="tab-count">${{escapeHtml(provider.count_label ?? provider.rows.length)}}</span>`;
     tabs.appendChild(tab);
     const content = document.createElement('div');
     content.id = provider.id;

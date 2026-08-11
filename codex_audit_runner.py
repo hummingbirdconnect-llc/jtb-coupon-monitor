@@ -69,11 +69,46 @@ def candidate_files() -> list[Path]:
     return sorted(QUEUE_ROOT.glob("*/*.json")) if QUEUE_ROOT.exists() else []
 
 
-def pending_candidates() -> list[dict[str, Any]]:
-    applied = load_applied_ledger().get("candidates") or {}
-    pending: list[dict[str, Any]] = []
+def _candidate_sort_key(candidate: dict[str, Any], path: Path) -> tuple[float, str, str]:
+    """候補の新しさを、取得時刻・ID・パスの順で安定判定する。"""
+    raw_fetched_at = str(candidate.get("fetched_at") or "")
+    try:
+        fetched_at = datetime.fromisoformat(raw_fetched_at.replace("Z", "+00:00"))
+        if fetched_at.tzinfo is None:
+            fetched_at = fetched_at.replace(tzinfo=timezone.utc)
+        timestamp = fetched_at.timestamp()
+    except ValueError:
+        timestamp = 0.0
+    return timestamp, str(candidate.get("candidate_id") or ""), str(path)
+
+
+def _candidate_records(*, latest_per_provider: bool = False) -> list[tuple[Path, dict[str, Any]]]:
+    records: list[tuple[Path, dict[str, Any]]] = []
     for path in candidate_files():
         candidate = load_json(path, {})
+        if not candidate.get("candidate_id") or not candidate.get("provider_id"):
+            continue
+        records.append((path, candidate))
+
+    if not latest_per_provider:
+        return records
+
+    latest: dict[str, tuple[Path, dict[str, Any]]] = {}
+    for path, candidate in records:
+        provider_id = str(candidate["provider_id"])
+        current = latest.get(provider_id)
+        if current is None or _candidate_sort_key(candidate, path) > _candidate_sort_key(
+            current[1], current[0]
+        ):
+            latest[provider_id] = (path, candidate)
+    return [latest[provider_id] for provider_id in sorted(latest)]
+
+
+def pending_candidates(*, latest_per_provider: bool = False) -> list[dict[str, Any]]:
+    """未適用候補を返す。最新版限定時は、適用済みの旧版へ後戻りしない。"""
+    applied = load_applied_ledger().get("candidates") or {}
+    pending: list[dict[str, Any]] = []
+    for path, candidate in _candidate_records(latest_per_provider=latest_per_provider):
         candidate_id = str(candidate.get("candidate_id") or "")
         if not candidate_id or candidate_id in applied:
             continue
@@ -265,12 +300,12 @@ def apply_candidate(
     }
 
 
-def apply_all(*, dry_run: bool = False) -> dict[str, Any]:
+def apply_all(*, dry_run: bool = False, latest_per_provider: bool = False) -> dict[str, Any]:
     ledger = load_applied_ledger()
     applied = ledger.setdefault("candidates", {})
     audits: list[dict[str, Any]] = []
     waiting: list[dict[str, Any]] = []
-    for item in pending_candidates():
+    for item in pending_candidates(latest_per_provider=latest_per_provider):
         candidate_path = ROOT / item["candidate_path"]
         result_path = ROOT / item["result_path"]
         candidate = load_json(candidate_path, {})
@@ -293,6 +328,7 @@ def apply_all(*, dry_run: bool = False) -> dict[str, Any]:
     summary = {
         "completed_at": now_jst().isoformat(),
         "dry_run": dry_run,
+        "selection_mode": "latest_per_provider" if latest_per_provider else "all_pending",
         "audit_count": len(audits),
         "waiting_count": len(waiting),
         "validation_error_count": sum(audit["status"] == "validation_error" for audit in audits),
@@ -315,6 +351,11 @@ def parse_args() -> argparse.Namespace:
 
     pending = subparsers.add_parser("pending", help="未監査候補を一覧表示")
     pending.add_argument("--json", action="store_true")
+    pending.add_argument(
+        "--latest-per-provider",
+        action="store_true",
+        help="各社の最新候補だけを表示（適用済みなら旧候補へ戻らない）",
+    )
 
     template = subparsers.add_parser("template", help="監査結果テンプレートを作成")
     template.add_argument("--candidate", required=True)
@@ -326,13 +367,18 @@ def parse_args() -> argparse.Namespace:
 
     apply_parser = subparsers.add_parser("apply-all", help="監査済み候補を一括適用")
     apply_parser.add_argument("--dry-run", action="store_true")
+    apply_parser.add_argument(
+        "--latest-per-provider",
+        action="store_true",
+        help="各社の最新候補だけを適用（適用済みなら旧候補へ戻らない）",
+    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     if args.command == "pending":
-        items = pending_candidates()
+        items = pending_candidates(latest_per_provider=args.latest_per_provider)
         if args.json:
             print(json.dumps(items, ensure_ascii=False, indent=2))
         else:
@@ -358,7 +404,10 @@ def main() -> None:
             raise SystemExit(1)
         return
 
-    summary = apply_all(dry_run=args.dry_run)
+    summary = apply_all(
+        dry_run=args.dry_run,
+        latest_per_provider=args.latest_per_provider,
+    )
     print(json.dumps(summary, ensure_ascii=False, indent=2))
     if summary["validation_error_count"]:
         raise SystemExit(1)

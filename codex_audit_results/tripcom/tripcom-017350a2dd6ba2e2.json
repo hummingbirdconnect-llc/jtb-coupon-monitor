@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "tripcom-017350a2dd6ba2e2",
+  "provider_id": "tripcom",
+  "page_summary": "Trip.com公式セール一覧で、割引率が明記されたホテルセール3件を確認した。",
+  "change_summary": "初回基準データとして、公式一覧の表示文から名称と最大割引率を確認できた3件を登録する。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "一覧本文だけでは個別対象施設・在庫条件を確定できないため条件付き。期間は表示本文で明示されていないため記録しない。",
+  "deals": [
+    {
+      "title": "もっと！国内旅！",
+      "campaign_type": "sale",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大60%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "秋の東北厳選ホテル。対象施設・在庫条件あり。",
+      "official_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "evidence_quote": "もっと！国内旅！ 秋の東北厳選ホテル最大60%OFF！国内ホテルならトリップ！",
+      "confidence": "high"
+    },
+    {
+      "title": "スーパー・ワールド・ウィーク",
+      "campaign_type": "sale",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大50%オフ",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "対象ホテル・在庫条件あり。",
+      "official_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "evidence_quote": "スーパー・ワールド・ウィーク ホテル最大50%オフ",
+      "confidence": "high"
+    },
+    {
+      "title": "国内ホテルならトリップ！",
+      "campaign_type": "sale",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大50%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "対象ホテル・在庫条件あり。",
+      "official_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "evidence_quote": "国内ホテルならトリップ！ 人気ホテルも最大50%OFF",
+      "confidence": "high"
+    }
+  ]
+}

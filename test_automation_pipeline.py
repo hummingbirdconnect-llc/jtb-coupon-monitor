@@ -81,6 +81,76 @@ def test_http_404_and_429_are_not_success() -> None:
     assert not rate_limited["ok"] and rate_limited["classification"] == "rate_limited"
 
 
+def test_response_decoder_handles_shift_jis_and_utf8_despite_latin1_header() -> None:
+    shift_jis_html = '<html><head><meta charset="Shift_JIS"></head><body>じゃらんクーポン</body></html>'
+    shift_jis_response = Mock(
+        content=shift_jis_html.encode("cp932"),
+        encoding="ISO-8859-1",
+        apparent_encoding="Windows-1252",
+    )
+    assert "じゃらんクーポン" in monitor._decode_response_html(shift_jis_response)
+
+    utf8_html = '<html><head><meta charset="UTF-8"></head><body>楽天トラベルクーポン</body></html>'
+    utf8_response = Mock(
+        content=utf8_html.encode("utf-8"),
+        encoding="ISO-8859-1",
+        apparent_encoding="Windows-1252",
+    )
+    assert "楽天トラベルクーポン" in monitor._decode_response_html(utf8_response)
+
+
+def test_latest_per_provider_applies_only_newest_and_never_backfills_old() -> None:
+    old_root = audit_runner.ROOT
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        audit_runner.configure_root(root)
+        try:
+            for suffix, fetched_at, content_hash in [
+                ("old", "2026-08-10T08:00:00+09:00", "old-hash"),
+                ("new", "2026-08-11T08:00:00+09:00", "new-hash"),
+            ]:
+                candidate = {
+                    "schema_version": 1,
+                    "candidate_id": f"sample-{suffix}",
+                    "provider_id": "sample",
+                    "provider_label": "Sample",
+                    "change_kind": "baseline",
+                    "content_hash": content_hash,
+                    "fetched_at": fetched_at,
+                    "data_dir": "official_coupon_data/sample",
+                    "official_domains": ["example.com"],
+                    "sources": [
+                        {
+                            "url": SOURCE_URL,
+                            "verification_result": "confirmed",
+                            "text": SOURCE_TEXT,
+                        }
+                    ],
+                    "previous_coupons": [],
+                }
+                audit_runner.write_json(
+                    root / "codex_audit_queue" / "sample" / f"{candidate['candidate_id']}.json",
+                    candidate,
+                )
+                audit_runner.write_json(
+                    audit_runner.result_path_for(candidate),
+                    valid_result(candidate["candidate_id"]),
+                )
+
+            pending = audit_runner.pending_candidates(latest_per_provider=True)
+            assert [item["candidate_id"] for item in pending] == ["sample-new"]
+
+            summary = audit_runner.apply_all(latest_per_provider=True)
+            assert summary["selection_mode"] == "latest_per_provider"
+            assert [audit["candidate_id"] for audit in summary["audits"]] == ["sample-new"]
+            assert audit_runner.pending_candidates(latest_per_provider=True) == []
+            assert [
+                item["candidate_id"] for item in audit_runner.pending_candidates()
+            ] == ["sample-old"]
+        finally:
+            audit_runner.configure_root(old_root)
+
+
 def test_official_fetch_queues_candidate_then_codex_applies_update() -> None:
     provider = {
         "id": "sample",
@@ -293,6 +363,8 @@ def main() -> None:
     tests = [
         test_registry_frequency_counts,
         test_http_404_and_429_are_not_success,
+        test_response_decoder_handles_shift_jis_and_utf8_despite_latin1_header,
+        test_latest_per_provider_applies_only_newest_and_never_backfills_old,
         test_official_fetch_queues_candidate_then_codex_applies_update,
         test_audit_validation_rejects_unquoted_evidence,
         test_ignore_non_deal_change_marks_update_processed,

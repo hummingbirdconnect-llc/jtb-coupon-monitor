@@ -31,8 +31,15 @@
       "content_hash": "8f3a003140e6270997266ab11d9b82467831d34d17d3fbfb0f833fc536f6b952"
     }
   ],
-  "queued_hash": "d594ac6f086c8b4f9ab3e666e5bb342b3d8093e257790496267d9364f0d2b54f",
-  "queued_candidate_id": "kkday-d594ac6f086c8b4f",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-08-11T06:44:49.989757+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-08-11T13:29:39.697145+09:00",
+  "last_audit_candidate_id": "kkday-d594ac6f086c8b4f",
+  "processed_hash": "d594ac6f086c8b4f9ab3e666e5bb342b3d8093e257790496267d9364f0d2b54f",
+  "last_processed_at": "2026-08-11T13:29:39.697145+09:00",
+  "last_changed_at": "2026-08-11T13:29:39.697145+09:00",
+  "latest_file": "coupons_2026-08-11.json",
+  "semantic_hash": "346f5b5cffea871adb3e92d5a4fa47ff647d4e4d29160a4142db35398ab13480"
 }

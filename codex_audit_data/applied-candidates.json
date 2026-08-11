@@ -1,0 +1,39 @@
+{
+  "candidates": {
+    "jalan-9f2d5fda548014bc": {
+      "provider_id": "jalan",
+      "status": "held",
+      "recommendation": "hold",
+      "applied_at": "2026-08-11T13:29:39.696052+09:00",
+      "result_path": "codex_audit_results/jalan/jalan-9f2d5fda548014bc.json"
+    },
+    "kkday-d594ac6f086c8b4f": {
+      "provider_id": "kkday",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-08-11T13:29:39.697304+09:00",
+      "result_path": "codex_audit_results/kkday/kkday-d594ac6f086c8b4f.json"
+    },
+    "klook-d431b0981d099388": {
+      "provider_id": "klook",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-08-11T13:29:39.697769+09:00",
+      "result_path": "codex_audit_results/klook/klook-d431b0981d099388.json"
+    },
+    "rakuten_travel-f33bed149b04a738": {
+      "provider_id": "rakuten_travel",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-08-11T13:29:39.698555+09:00",
+      "result_path": "codex_audit_results/rakuten_travel/rakuten_travel-f33bed149b04a738.json"
+    },
+    "tripcom-017350a2dd6ba2e2": {
+      "provider_id": "tripcom",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-08-11T13:29:39.699099+09:00",
+      "result_path": "codex_audit_results/tripcom/tripcom-017350a2dd6ba2e2.json"
+    }
+  }
+}

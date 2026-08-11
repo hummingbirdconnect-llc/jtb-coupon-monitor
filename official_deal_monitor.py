@@ -30,6 +30,18 @@ RELEVANT_PATTERN = re.compile(
     r"クーポン|coupon|割引|off|セール|sale|キャンペーン|campaign|ポイント|point|特典|benefit",
     re.IGNORECASE,
 )
+META_CHARSET_PATTERN = re.compile(
+    br"<meta[^>]+charset\s*=\s*[\"']?\s*([A-Za-z0-9._-]+)",
+    re.IGNORECASE,
+)
+UNTRUSTED_WESTERN_ENCODINGS = {
+    "iso-8859-1",
+    "iso8859-1",
+    "latin-1",
+    "latin1",
+    "windows-1252",
+    "cp1252",
+}
 
 
 class OfficialFetchError(RuntimeError):
@@ -72,6 +84,38 @@ def _embedded_json_text(html: str) -> str:
     return normalize_text(" ".join(chunks))
 
 
+def _decode_response_html(response: requests.Response) -> str:
+    """HTML内charsetを優先し、日本語ページの文字化けを避けて復号する。"""
+    content = response.content
+    meta_match = META_CHARSET_PATTERN.search(content[:16_384])
+    declared = meta_match.group(1).decode("ascii", errors="ignore") if meta_match else ""
+    response_encoding = str(response.encoding or "")
+    apparent_encoding = str(response.apparent_encoding or "")
+
+    encodings: list[str] = []
+    for encoding in [
+        declared,
+        response_encoding,
+        "utf-8",
+        "cp932",
+        "shift_jis",
+        "euc_jp",
+        apparent_encoding,
+    ]:
+        normalized = encoding.strip().lower().replace("_", "-")
+        if not normalized or normalized in UNTRUSTED_WESTERN_ENCODINGS:
+            continue
+        if normalized not in encodings:
+            encodings.append(normalized)
+
+    for encoding in encodings:
+        try:
+            return content.decode(encoding)
+        except (LookupError, UnicodeDecodeError):
+            continue
+    return content.decode("utf-8", errors="replace")
+
+
 def _requests_fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[str, int]:
     last_error = ""
     for attempt in range(retries + 1):
@@ -88,7 +132,7 @@ def _requests_fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[str,
                     continue
             if response.status_code != 200:
                 raise OfficialFetchError(f"HTTP {response.status_code}")
-            return response.text, response.status_code
+            return _decode_response_html(response), response.status_code
         except requests.RequestException as exc:
             last_error = exc.__class__.__name__
             if attempt < retries:
