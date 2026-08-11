@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T06:43:36.450855+09:00",
+  "last_updated": "2026-08-12T06:50:11.449538+09:00",
   "ids": {
     "2607jtbcpnew": {
       "category": "国内",
@@ -146,14 +146,14 @@
       "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605hokka": {
       "category": "国内",
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604jalto": {
       "category": "国内",
@@ -195,7 +195,7 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606iwate": {
       "category": "国内",
@@ -363,7 +363,7 @@
       "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
       "discount": "最大15,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606okinawa": {
       "category": "国内",

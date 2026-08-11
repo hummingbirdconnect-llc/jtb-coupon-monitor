@@ -1,7 +1,7 @@
 {
   "provider_id": "klook",
-  "observed_hash": "d431b0981d09938838a0dcd5b0b749a73ee0db1b6bb3a08ab4364553f66b6427",
-  "last_checked_at": "2026-08-11T06:44:50.920305+09:00",
+  "observed_hash": "865a84ef4012913e2b5ad754716125d834fd2fdcbacd92c3dd133b36c1be14e3",
+  "last_checked_at": "2026-08-12T06:51:30.955853+09:00",
   "sources": [
     {
       "url": "https://www.klook.com/ja/deals/",
@@ -9,14 +9,19 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 1844,
-      "content_hash": "8995394a9676aac439ffdbb81e7d93ff841bdc2e45dc46e09e0213a7b9682ccf"
+      "purpose": "Klook日本向け公式SALE一覧",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 1866,
+      "content_hash": "fd6a3208ee4c5251626360ece68536dc6e42fecbfaa40752b3821302abda2456"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-08-11T06:44:50.920641+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "865a84ef4012913e2b5ad754716125d834fd2fdcbacd92c3dd133b36c1be14e3",
+  "queued_candidate_id": "klook-865a84ef4012913e",
+  "queued_at": "2026-08-12T06:51:30.956328+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-08-11T13:29:39.697658+09:00",
   "last_audit_candidate_id": "klook-d431b0981d099388",
   "processed_hash": "d431b0981d09938838a0dcd5b0b749a73ee0db1b6bb3a08ab4364553f66b6427",

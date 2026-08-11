@@ -2302,5 +2302,77 @@
   "pattern": "direct_number",
   "ota": "expedia",
   "title": "Mastercard"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "jtb",
+  "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "last_check",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "regret_prevention",
+  "ota": "his",
+  "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "【東北】この夏、おすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "question",
+  "ota": "jtb",
+  "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "memo_style",
+  "ota": "his",
+  "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "anshin_reserve",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-12",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]

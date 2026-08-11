@@ -1,16 +1,21 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "d594ac6f086c8b4f9ab3e666e5bb342b3d8093e257790496267d9364f0d2b54f",
-  "last_checked_at": "2026-08-11T06:44:49.988873+09:00",
+  "observed_hash": "3850facd514b1f31dc2de07dfa6fcc0967fc0f05f6a0a228b48a8003193cbf8a",
+  "last_checked_at": "2026-08-12T06:51:29.960418+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
-      "ok": false,
-      "status_code": "",
-      "fetch_method": "auto",
-      "error": "HTTP 403; Playwright HTTP 403",
-      "text_chars": 0,
-      "content_hash": ""
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "公式クーポンまとめ",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 9141,
+      "content_hash": "694010c66918eecd5871d6397505d2b5c4b97de8f70c8df46deeeeadfb4a0e25"
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
@@ -18,8 +23,13 @@
       "status_code": 200,
       "fetch_method": "playwright",
       "error": "",
+      "purpose": "公式キャンペーン",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
       "text_chars": 5497,
-      "content_hash": "1086deff6d4b7198f12d00d5d804747454f50660869f2a08a04b12ae242d0b22"
+      "content_hash": "47569b598b42132533a848a52488bff6240d2d0bd3eb01571664fb1d5e1dc058"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -27,14 +37,19 @@
       "status_code": 200,
       "fetch_method": "playwright",
       "error": "",
-      "text_chars": 4496,
-      "content_hash": "8f3a003140e6270997266ab11d9b82467831d34d17d3fbfb0f833fc536f6b952"
+      "purpose": "新規会員キャンペーン",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 1555,
+      "content_hash": "0b621bf8098caaab8f67b585cec38d3cba9e0e8cf5a21d511f40562b540dad15"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-08-11T06:44:49.989757+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "3850facd514b1f31dc2de07dfa6fcc0967fc0f05f6a0a228b48a8003193cbf8a",
+  "queued_candidate_id": "kkday-3850facd514b1f31",
+  "queued_at": "2026-08-12T06:51:29.962190+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-08-11T13:29:39.697145+09:00",
   "last_audit_candidate_id": "kkday-d594ac6f086c8b4f",
   "processed_hash": "d594ac6f086c8b4f9ab3e666e5bb342b3d8093e257790496267d9364f0d2b54f",

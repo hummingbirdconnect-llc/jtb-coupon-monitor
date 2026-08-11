@@ -1,7 +1,7 @@
 {
   "provider_id": "rakuten_travel",
   "observed_hash": "f33bed149b04a7385aa0086994e3feb937727748af156e4264e0e8c63cbc3896",
-  "last_checked_at": "2026-08-11T13:26:00.982376+09:00",
+  "last_checked_at": "2026-08-12T06:51:32.038948+09:00",
   "sources": [
     {
       "url": "https://travel.rakuten.co.jp/coupon/",
@@ -9,6 +9,11 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
+      "purpose": "RaCoupon公式一覧",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
       "text_chars": 3925,
       "content_hash": "a69264cbc28671f819577b8182a484a006ec16d852e63a82049bd8f8723e8235"
     }
