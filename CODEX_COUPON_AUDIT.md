@@ -14,12 +14,22 @@
 - 自動下書きはJSTで1日5件まで。定期実行では `--approved-extra-drafts` を絶対に指定しない。
 - アフィリエイトURL、title/H1、H2/H3、本文、FAQ、CTA、slug、canonical、noindex、計測タグを変更しない。
 
+## じゃらんの監視範囲
+
+- じゃらんは `coverage_scope=curated_representative` とし、ダッシュボードの件数は「代表クーポン件数」であって、じゃらん全体のクーポン総数ではない。
+- `https://www.jalan.net/jalancponsum/` は代表ページの発見入口として使い、入口本文そのものは監査候補へ入れない。
+- 個別宿一覧 `/jalancponsum/zenkoku/` と約1,000件の宿別クーポンは取得・集計しない。
+- 発見URLは `provider_registry.json` の公式ドメイン・パスallowlist・上限件数に合う1階層だけを取得し、宿別一覧へ再帰しない。
+- `manual_sources` は監査候補の公式根拠に混ぜない。ログイン必須・会員ランク依存・動的表示のページは「ログイン・画面確認待ち」とし、バックグラウンド実行でCookie、パスワード、二要素認証情報を保存・利用しない。
+- ログイン済み画面を補完確認する場合は、ユーザーが開始を明示した別工程で、ユーザー自身がブラウザへ認証情報を入力する。認証情報やCookieをリポジトリへ保存しない。
+
 ## 実行順
 
 1. 専用のcleanなworktreeで `git pull --ff-only origin main` を実行する。dirty、競合、非fast-forwardなら停止する。
 2. `python3 codex_audit_runner.py pending --latest-per-provider --json` を実行する。
 3. `needs_codex_audit` の候補ファイルを1件ずつ読む。
 4. `.agents/skills/ota-official-deal-researcher/SKILL.md` の判定基準を適用する。Skillが現在のproject外にある場合は、監査候補内の `audit_contract` と本ファイルを優先する。
+   - じゃらん候補では `coverage_scope` と `source_role` を確認し、代表ページに明示されたキャンペーンだけを抽出する。件数を全クーポン総数として説明しない。
 5. 各候補の `result_path` に監査結果JSONを作る。連続完全一致の引用を取れない項目は推測せず `hold` にする。
 6. 各結果を `python3 codex_audit_runner.py validate --candidate ... --result ...` で検証する。
 7. `python3 codex_audit_runner.py apply-all --latest-per-provider --dry-run` を実行する。

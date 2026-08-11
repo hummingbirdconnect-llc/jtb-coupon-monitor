@@ -1,19 +1,27 @@
 {
-  "completed_at": "2026-08-11T15:02:28.216861+09:00",
+  "completed_at": "2026-08-11T15:01:04.660798+09:00",
   "scope": "due",
   "provider_count": 1,
   "error_count": 0,
-  "codex_audit_candidate_count": 0,
-  "codex_audit_candidates": [],
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "jalan-f1d31f975b5f1ab4",
+      "provider_id": "jalan",
+      "candidate_path": "codex_audit_queue/jalan/jalan-f1d31f975b5f1ab4.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
   "wp_review_eligible_provider_ids": [],
   "summaries": [
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
       "check_type": "official_page_candidate",
-      "started_at": "2026-08-11T15:02:24.611333+09:00",
-      "completed_at": "2026-08-11T15:02:28.213110+09:00",
-      "official_fetched_at": "2026-08-11T15:02:28.213115+09:00",
+      "started_at": "2026-08-11T15:01:00.968606+09:00",
+      "completed_at": "2026-08-11T15:01:04.657899+09:00",
+      "official_fetched_at": "2026-08-11T15:01:04.657903+09:00",
       "source_results": [
         {
           "url": "https://www.jalan.net/jalancponsum/",
@@ -127,16 +135,18 @@
       "count_scope_label": "代表クーポン",
       "count_scope_detail": "代表的な公式クーポンページのみ。個別宿クーポン約1,000件は集計対象外。",
       "ai_used": false,
-      "codex_audit_required": false,
+      "codex_audit_required": true,
       "wp_review_eligible": false,
-      "status": "unchanged",
-      "change_kind": "unchanged",
-      "data_date": "2026-08-11",
-      "latest_file": "coupons_2026-08-11.json",
-      "coupon_count": 6,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
       "content_hash": "f1d31f975b5f1ab4454a15f71845e35f611239c8d7c720a584f17888631352dc",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "jalan-f1d31f975b5f1ab4",
+      "audit_candidate_path": "codex_audit_queue/jalan/jalan-f1d31f975b5f1ab4.json",
       "error": "",
-      "freshness_status": "fresh"
+      "freshness_status": "unknown"
     }
   ]
 }

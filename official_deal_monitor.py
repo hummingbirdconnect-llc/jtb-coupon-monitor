@@ -10,6 +10,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 
 import requests
 from bs4 import BeautifulSoup
@@ -82,6 +83,86 @@ def _embedded_json_text(html: str) -> str:
         }:
             chunks.append(normalize_text(body))
     return normalize_text(" ".join(chunks))
+
+
+def _canonical_discovery_url(url: str, keep_query_params: set[str] | None = None) -> str:
+    """追跡用queryとfragmentを落とし、発見URLを安定化する。"""
+    parsed = urlsplit(url)
+    allowed = keep_query_params or set()
+    query = urlencode(
+        [
+            (key, value)
+            for key, value in parse_qsl(parsed.query, keep_blank_values=True)
+            if key in allowed
+        ]
+    )
+    path = parsed.path or "/"
+    return urlunsplit((parsed.scheme.lower(), parsed.netloc.lower(), path, query, ""))
+
+
+def _discover_official_urls(html: str, source: dict[str, Any]) -> list[str]:
+    """入口ページ内のallowlistに合う代表ページだけを1階層発見する。"""
+    if not source.get("discover_links"):
+        return []
+
+    base_url = str(source.get("url") or "")
+    base_host = (urlsplit(base_url).hostname or "").lower()
+    raw_patterns = source.get("discovery_path_patterns") or []
+    patterns = [re.compile(str(pattern)) for pattern in raw_patterns]
+    if not base_host or not patterns:
+        return []
+
+    keep_query_params = {
+        str(value) for value in source.get("discovery_keep_query_params") or []
+    }
+    max_links = max(0, int(source.get("max_discovered_links", 10)))
+    if max_links == 0:
+        return []
+    discovered: list[str] = []
+    seen: set[str] = set()
+    soup = BeautifulSoup(html, "html.parser")
+    for anchor in soup.find_all("a", href=True):
+        resolved = urljoin(base_url, str(anchor.get("href") or ""))
+        parsed = urlsplit(resolved)
+        host = (parsed.hostname or "").lower()
+        if parsed.scheme not in {"http", "https"} or host != base_host:
+            continue
+        if not any(pattern.search(parsed.path) for pattern in patterns):
+            continue
+        canonical = _canonical_discovery_url(resolved, keep_query_params)
+        if canonical in seen:
+            continue
+        seen.add(canonical)
+        discovered.append(canonical)
+        if len(discovered) >= max_links:
+            break
+    return discovered
+
+
+def _source_result(
+    source: dict[str, Any],
+    *,
+    ok: bool,
+    status_code: int | str,
+    fetch_method: str,
+    text: str,
+    error: str,
+    html: str = "",
+) -> dict[str, Any]:
+    result = {
+        "url": source["url"],
+        "ok": ok,
+        "status_code": status_code,
+        "fetch_method": fetch_method,
+        "text": text,
+        "error": error,
+        "purpose": source.get("purpose", ""),
+        "source_role": source.get("source_role", "official_source"),
+        "include_in_audit": bool(source.get("include_in_audit", True)),
+        "discovered_from": source.get("discovered_from", ""),
+        "discovered_urls": _discover_official_urls(html, source) if ok and html else [],
+    }
+    return result
 
 
 def _decode_response_html(response: requests.Response) -> str:
@@ -172,6 +253,7 @@ def _playwright_fetch(url: str, timeout: int = 45) -> str:
 def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str, Any]:
     url = source["url"]
     requested_method = source.get("fetch_method", "auto")
+    min_page_text = max(1, int(source.get("min_page_text", MIN_PAGE_TEXT)))
     html = ""
     request_error = ""
 
@@ -180,27 +262,29 @@ def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str
             html, status_code = _requests_fetch(url, timeout=timeout)
             embedded = _embedded_json_text(html)
             visible = _visible_text(html)
-            if requested_method == "embedded_json" and len(embedded) >= MIN_PAGE_TEXT:
-                return {
-                    "url": url,
-                    "ok": True,
-                    "status_code": status_code,
-                    "fetch_method": "embedded_json",
-                    "text": embedded,
-                    "error": "",
-                }
-            if len(visible) >= MIN_PAGE_TEXT:
+            if requested_method == "embedded_json" and len(embedded) >= min_page_text:
+                return _source_result(
+                    source,
+                    ok=True,
+                    status_code=status_code,
+                    fetch_method="embedded_json",
+                    text=embedded,
+                    error="",
+                    html=html,
+                )
+            if len(visible) >= min_page_text:
                 combined = visible
                 if embedded and embedded not in visible:
                     combined = normalize_text(f"{visible} {embedded}")
-                return {
-                    "url": url,
-                    "ok": True,
-                    "status_code": status_code,
-                    "fetch_method": "html",
-                    "text": combined,
-                    "error": "",
-                }
+                return _source_result(
+                    source,
+                    ok=True,
+                    status_code=status_code,
+                    fetch_method="html",
+                    text=combined,
+                    error="",
+                    html=html,
+                )
             request_error = f"page text too short ({len(visible)})"
         except OfficialFetchError as exc:
             request_error = str(exc)
@@ -209,27 +293,28 @@ def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str
         try:
             html = _playwright_fetch(url, timeout=max(timeout, 45))
             visible = _visible_text(html)
-            if len(visible) < MIN_PAGE_TEXT:
+            if len(visible) < min_page_text:
                 raise OfficialFetchError(f"Playwright page text too short ({len(visible)})")
-            return {
-                "url": url,
-                "ok": True,
-                "status_code": 200,
-                "fetch_method": "playwright",
-                "text": visible,
-                "error": "",
-            }
+            return _source_result(
+                source,
+                ok=True,
+                status_code=200,
+                fetch_method="playwright",
+                text=visible,
+                error="",
+                html=html,
+            )
         except OfficialFetchError as exc:
             request_error = f"{request_error}; {exc}".strip("; ")
 
-    return {
-        "url": url,
-        "ok": False,
-        "status_code": "",
-        "fetch_method": requested_method,
-        "text": "",
-        "error": request_error or "unsupported fetch method",
-    }
+    return _source_result(
+        source,
+        ok=False,
+        status_code="",
+        fetch_method=requested_method,
+        text="",
+        error=request_error or "unsupported fetch method",
+    )
 
 
 def _state_path(provider_id: str) -> Path:
@@ -415,6 +500,9 @@ def _candidate_sources(source_results: list[dict[str, Any]]) -> list[dict[str, A
         candidates.append(
             {
                 "url": source["url"],
+                "purpose": source.get("purpose", ""),
+                "source_role": source.get("source_role", "official_source"),
+                "discovered_from": source.get("discovered_from", ""),
                 "status_code": source.get("status_code"),
                 "fetch_method": source.get("fetch_method", ""),
                 "verification_method": source.get("fetch_method", ""),
@@ -445,6 +533,10 @@ def write_audit_candidate(
         "content_hash": content_hash,
         "data_dir": provider["data_dir"],
         "official_domains": provider.get("official_domains") or [],
+        "coverage_scope": provider.get("coverage_scope", "all_confirmed_deals"),
+        "count_scope_label": provider.get("count_scope_label", "クーポン"),
+        "count_scope_detail": provider.get("count_scope_detail", ""),
+        "manual_sources": provider.get("manual_sources") or [],
         "sources": _candidate_sources(source_results),
         "previous_coupons": _load_previous_coupons(provider["data_dir"]),
         "audit_contract": {
@@ -457,6 +549,8 @@ def write_audit_candidate(
             ],
             "official_evidence_only": True,
             "baseline_must_not_create_wp_draft": True,
+            "representative_scope_only": provider.get("coverage_scope")
+            == "curated_representative",
         },
     }
     path = _candidate_path(provider["id"], candidate_id)
@@ -467,9 +561,42 @@ def write_audit_candidate(
 
 def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> dict[str, Any]:
     started = now_jst()
-    source_results = [fetch_official_source(source, timeout=timeout) for source in provider["official_sources"]]
+    configured_sources = list(provider["official_sources"])
+    configured_results = [
+        fetch_official_source(source, timeout=timeout) for source in configured_sources
+    ]
+    known_urls = {
+        _canonical_discovery_url(str(source["url"])) for source in configured_sources
+    }
+    discovered_sources: list[dict[str, Any]] = []
+    for parent, result in zip(configured_sources, configured_results):
+        for discovered_url in result.get("discovered_urls") or []:
+            canonical = _canonical_discovery_url(str(discovered_url))
+            if canonical in known_urls:
+                continue
+            known_urls.add(canonical)
+            discovered_sources.append(
+                {
+                    "url": canonical,
+                    "fetch_method": parent.get("discovered_fetch_method", "auto"),
+                    "purpose": f"{parent.get('purpose', '公式入口')}から発見",
+                    "source_role": parent.get(
+                        "discovered_source_role", "representative_discovered"
+                    ),
+                    "include_in_audit": True,
+                    "discovered_from": parent["url"],
+                }
+            )
+    discovered_results = [
+        fetch_official_source(source, timeout=timeout) for source in discovered_sources
+    ]
+    source_results = configured_results + discovered_results
     failed_sources = [source for source in source_results if not source["ok"]]
-    successful_sources = [source for source in source_results if source["ok"]]
+    successful_sources = [
+        source
+        for source in source_results
+        if source["ok"] and source.get("include_in_audit", True)
+    ]
     public_source_results = []
     for source in source_results:
         public = {key: value for key, value in source.items() if key != "text"}
@@ -488,6 +615,13 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
         "official_fetched_at": now_jst().isoformat() if successful_sources else "",
         "source_results": public_source_results,
         "failed_source_count": len(failed_sources),
+        "configured_source_count": len(configured_sources),
+        "discovered_source_count": len(discovered_sources),
+        "audit_source_count": len(successful_sources),
+        "manual_source_count": len(provider.get("manual_sources") or []),
+        "coverage_scope": provider.get("coverage_scope", "all_confirmed_deals"),
+        "count_scope_label": provider.get("count_scope_label", "クーポン"),
+        "count_scope_detail": provider.get("count_scope_detail", ""),
         "ai_used": False,
         "codex_audit_required": False,
         "wp_review_eligible": False,

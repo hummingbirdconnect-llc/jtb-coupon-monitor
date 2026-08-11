@@ -10,13 +10,42 @@ import unittest
 from pathlib import Path
 
 from generate_dashboard import (
+    dashboard_manual_sources,
     format_coupon_row,
     official_audit_display,
+    scoped_count_labels,
     write_dashboard_outputs,
 )
 
 
 class DashboardOutputTest(unittest.TestCase):
+    def test_representative_scope_is_explicit_in_count_labels(self) -> None:
+        provider = {
+            "count_scope_label": "代表クーポン",
+            "count_scope_short_label": "代表",
+        }
+        self.assertEqual(
+            scoped_count_labels(provider, "3"),
+            ("代表クーポン 3", "代表3", "代表クーポン"),
+        )
+        self.assertEqual(scoped_count_labels({}, "3"), ("3", "3", "全"))
+
+    def test_manual_source_queue_explains_login_dependency(self) -> None:
+        sources = dashboard_manual_sources(
+            {
+                "manual_sources": [
+                    {
+                        "url": "https://www.jalan.net/activity/theme/coupon/",
+                        "purpose": "遊び・体験クーポン",
+                        "access_mode": "login_required",
+                        "reason": "リクルートIDが必要",
+                    }
+                ]
+            }
+        )
+        self.assertEqual(sources[0]["access_label"], "ログイン確認待ち")
+        self.assertEqual(sources[0]["reason"], "リクルートIDが必要")
+
     def test_official_audit_pending_and_held_are_not_reported_as_zero(self) -> None:
         pending = official_audit_display(
             "official_codex",

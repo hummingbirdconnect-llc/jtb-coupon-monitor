@@ -34,6 +34,13 @@
       "recommendation": "draft",
       "applied_at": "2026-08-11T13:29:39.699099+09:00",
       "result_path": "codex_audit_results/tripcom/tripcom-017350a2dd6ba2e2.json"
+    },
+    "jalan-f1d31f975b5f1ab4": {
+      "provider_id": "jalan",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-08-11T15:02:13.110646+09:00",
+      "result_path": "codex_audit_results/jalan/jalan-f1d31f975b5f1ab4.json"
     }
   }
 }

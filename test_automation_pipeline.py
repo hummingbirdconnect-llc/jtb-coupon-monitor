@@ -99,6 +99,45 @@ def test_response_decoder_handles_shift_jis_and_utf8_despite_latin1_header() -> 
     assert "楽天トラベルクーポン" in monitor._decode_response_html(utf8_response)
 
 
+def test_jalan_discovery_keeps_only_allowlisted_representative_pages() -> None:
+    source = {
+        "url": "https://www.jalan.net/jalancponsum/",
+        "discover_links": True,
+        "discovery_path_patterns": [
+            r"^/theme/jalancouponfes/?$",
+            r"^/discountCoupon/CAM[0-9]+/?$",
+        ],
+        "max_discovered_links": 8,
+    }
+    html = """
+    <a href="/theme/jalancouponfes/?ccnt=tracking">クーポンフェス</a>
+    <a href="https://www.jalan.net/discountCoupon/CAM1322324/#detail">直接クーポン</a>
+    <a href="/discountCoupon/CAM1322324/?ccnt=duplicate">重複</a>
+    <a href="/jalancponsum/zenkoku/">個別宿1,000件</a>
+    <a href="https://example.com/discountCoupon/CAM999/">外部</a>
+    """
+
+    assert monitor._discover_official_urls(html, source) == [
+        "https://www.jalan.net/theme/jalancouponfes/",
+        "https://www.jalan.net/discountCoupon/CAM1322324/",
+    ]
+
+
+def test_jalan_registry_uses_representative_scope_and_manual_queue() -> None:
+    jalan = next(provider for provider in runner.load_registry() if provider["id"] == "jalan")
+    official_urls = {source["url"] for source in jalan["official_sources"]}
+
+    assert jalan["coverage_scope"] == "curated_representative"
+    assert jalan["count_scope_label"] == "代表クーポン"
+    assert "https://www.jalan.net/jalancponsum/zenkoku/" not in official_urls
+    assert "https://www.jalan.net/jalancponsum/" in official_urls
+    assert len(jalan["manual_sources"]) == 7
+    assert any(
+        source["access_mode"] == "login_required"
+        for source in jalan["manual_sources"]
+    )
+
+
 def test_latest_per_provider_applies_only_newest_and_never_backfills_old() -> None:
     old_root = audit_runner.ROOT
     with tempfile.TemporaryDirectory() as tmp:
@@ -208,6 +247,61 @@ def test_official_fetch_queues_candidate_then_codex_applies_update() -> None:
         finally:
             monitor.configure_root(old_monitor_root)
             audit_runner.configure_root(old_audit_root)
+
+
+def test_discovery_hub_is_not_audited_but_its_representative_page_is() -> None:
+    hub_url = "https://www.jalan.net/jalancponsum/"
+    campaign_url = "https://www.jalan.net/theme/jalancouponfes/"
+    provider = {
+        "id": "jalan",
+        "label": "じゃらん",
+        "data_dir": "official_coupon_data/jalan",
+        "official_domains": ["jalan.net"],
+        "coverage_scope": "curated_representative",
+        "count_scope_label": "代表クーポン",
+        "official_sources": [
+            {
+                "url": hub_url,
+                "fetch_method": "auto",
+                "include_in_audit": False,
+                "discover_links": True,
+            }
+        ],
+    }
+
+    def fake_fetch(source, timeout=30):
+        is_hub = source["url"] == hub_url
+        return {
+            "url": source["url"],
+            "ok": True,
+            "status_code": 200,
+            "fetch_method": "html",
+            "text": "入口ページ" if is_hub else SOURCE_TEXT,
+            "error": "",
+            "purpose": source.get("purpose", ""),
+            "source_role": source.get("source_role", "official_source"),
+            "include_in_audit": source.get("include_in_audit", True),
+            "discovered_from": source.get("discovered_from", ""),
+            "discovered_urls": [campaign_url] if is_hub else [],
+        }
+
+    old_root = monitor.ROOT
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        monitor.configure_root(root)
+        try:
+            with patch.object(monitor, "fetch_official_source", side_effect=fake_fetch):
+                check = monitor.run_official_deal_monitor(provider)
+            candidate = json.loads(
+                (root / check["audit_candidate_path"]).read_text(encoding="utf-8")
+            )
+
+            assert check["discovered_source_count"] == 1
+            assert check["audit_source_count"] == 1
+            assert [source["url"] for source in candidate["sources"]] == [campaign_url]
+            assert candidate["coverage_scope"] == "curated_representative"
+        finally:
+            monitor.configure_root(old_root)
 
 
 def test_audit_validation_rejects_unquoted_evidence() -> None:

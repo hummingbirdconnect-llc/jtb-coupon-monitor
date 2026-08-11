@@ -81,16 +81,111 @@
       "data_dir": "official_coupon_data/jalan",
       "legacy_data_dir": "manual_coupon_data/jalan",
       "source_type": "official_page_candidate",
+      "coverage_scope": "curated_representative",
+      "count_scope_label": "代表クーポン",
+      "count_scope_short_label": "代表",
+      "count_scope_detail": "代表的な公式クーポンページのみ。個別宿クーポン約1,000件は集計対象外。",
       "official_domains": ["jalan.net"],
       "official_sources": [
         {
-          "url": "https://www.jalan.net/jalancponsum/zenkoku/",
+          "url": "https://www.jalan.net/jalancponsum/",
           "fetch_method": "auto",
-          "purpose": "全国の宿・ホテルクーポン一覧"
+          "purpose": "じゃらんクーポン入口・代表ページ発見",
+          "source_role": "discovery_hub",
+          "include_in_audit": false,
+          "discover_links": true,
+          "discovery_path_patterns": [
+            "^/theme/jalancouponfes/?$",
+            "^/theme/coupon/yadonohitokushu/?$",
+            "^/theme/furusato_coupon/?$",
+            "^/discountCoupon/CAM[0-9]+/?$",
+            "^/dp/theme/jp_coupon/?$",
+            "^/rentacar/coupons/?$"
+          ],
+          "max_discovered_links": 8
+        },
+        {
+          "url": "https://www.jalan.net/theme/jalancouponfes/",
+          "fetch_method": "auto",
+          "purpose": "じゃらんクーポンフェス",
+          "source_role": "representative_campaign",
+          "discover_links": true,
+          "discovery_path_patterns": ["^/discountCoupon/CAM[0-9]+/?$"],
+          "max_discovered_links": 5
+        },
+        {
+          "url": "https://www.jalan.net/theme/furusato_coupon/",
+          "fetch_method": "auto",
+          "purpose": "ふるさとお得クーポン",
+          "source_role": "representative_campaign"
+        },
+        {
+          "url": "https://www.jalan.net/discountCoupon/CAM1322324/",
+          "fetch_method": "auto",
+          "purpose": "代表的な直接クーポン詳細",
+          "source_role": "representative_coupon"
+        },
+        {
+          "url": "https://www.jalan.net/dp/theme/jp_coupon/",
+          "fetch_method": "auto",
+          "purpose": "じゃらんパッククーポン",
+          "source_role": "representative_campaign"
+        },
+        {
+          "url": "https://www.jalan.net/rentacar/coupons/",
+          "fetch_method": "auto",
+          "min_page_text": 120,
+          "purpose": "じゃらんレンタカークーポン",
+          "source_role": "representative_campaign"
+        }
+      ],
+      "manual_sources": [
+        {
+          "url": "https://www.jalan.net/theme/coupon/general/?type=jot_all",
+          "purpose": "全国の宿で使えるクーポン",
+          "access_mode": "session_or_dynamic",
+          "reason": "匿名HTMLではクーポン情報を取得できない表示になるため、ログイン済みブラウザで確認"
+        },
+        {
+          "url": "https://www.jalan.net/theme/coupon/general/?type=jot_csp_gold",
+          "purpose": "ゴールド会員向けクーポン",
+          "access_mode": "login_required",
+          "reason": "会員ランクとログイン状態に依存"
+        },
+        {
+          "url": "https://www.jalan.net/theme/coupon/general/?type=jot_csp_silver",
+          "purpose": "シルバー会員向けクーポン",
+          "access_mode": "login_required",
+          "reason": "会員ランクとログイン状態に依存"
+        },
+        {
+          "url": "https://www.jalan.net/theme/coupon/general/?type=jot_csp_bronze",
+          "purpose": "ブロンズ会員向けクーポン",
+          "access_mode": "login_required",
+          "reason": "会員ランクとログイン状態に依存"
+        },
+        {
+          "url": "https://www.jalan.net/dp/theme/coupon/general/?type=jot_dp",
+          "purpose": "じゃらんパック会員向けクーポン",
+          "access_mode": "session_or_dynamic",
+          "reason": "匿名HTMLではクーポン情報を取得できない表示になるため、ログイン済みブラウザで確認"
+        },
+        {
+          "url": "https://www.jalan.net/theme/coupon/yc0041/",
+          "purpose": "地域別クーポンページ",
+          "access_mode": "dynamic_browser",
+          "reason": "クーポン本体が動的表示のためブラウザ確認"
+        },
+        {
+          "url": "https://www.jalan.net/activity/theme/coupon/?ccnt=asb_h120",
+          "purpose": "じゃらん遊び・体験クーポン",
+          "access_mode": "login_required",
+          "reason": "リクルートIDのログイン画面へ遷移"
         }
       ],
       "master_path": "../vault_blog/ウェルトリップ/会社別/じゃらん/coupon-master/master.md",
-      "note": "全国の宿・ホテルクーポン公式一覧を監視。変更時はCodex監査候補へ送り、初回は基準データとして下書き連携しない。"
+      "next_action": "代表公開ページの自動監視を継続。ログイン・動的表示ページは、ユーザー操作のブラウザ確認時だけ補完する。",
+      "note": "じゃらんクーポン入口から代表ページを発見し、クーポンフェス・ふるさと・パック・レンタカー・代表的な直接クーポンを監視。個別宿約1,000件は集計せず、ログイン・動的表示ページは確認待ちとして分離。"
     },
     {
       "id": "jalan_activity",

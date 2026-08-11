@@ -42,6 +42,12 @@ COVERAGE_LABELS = {
     "not_started": "未着手",
 }
 
+MANUAL_ACCESS_LABELS = {
+    "login_required": "ログイン確認待ち",
+    "session_or_dynamic": "ログイン・画面確認待ち",
+    "dynamic_browser": "画面確認待ち",
+}
+
 COMMON_COLUMNS = [
     "公式表示",
     "公式画像",
@@ -450,6 +456,8 @@ def attach_recent_logs(providers: list[dict[str, Any]], day_filters: list[dict[s
 
 
 def next_action(provider: dict[str, Any], rows: list[dict[str, str]]) -> str:
+    if provider.get("next_action"):
+        return str(provider["next_action"])
     status = provider.get("coverage_status", "")
     if status == "auto_daily":
         return "日次監視を継続。差分が出たら記事更新候補へ回す。"
@@ -464,6 +472,31 @@ def next_action(provider: dict[str, Any], rows: list[dict[str, str]]) -> str:
     if status == "manual_queue":
         return "公式/ASP/手入力の確認表を作る。"
     return "取得可否の初回調査が必要。"
+
+
+def scoped_count_labels(provider: dict[str, Any], count_label: str) -> tuple[str, str, str]:
+    """総数と誤認しない表示用ラベルを返す。"""
+    scope_label = str(provider.get("count_scope_label") or "")
+    short_label = str(provider.get("count_scope_short_label") or scope_label)
+    if not scope_label:
+        return count_label, count_label, "全"
+    return f"{scope_label} {count_label}", f"{short_label}{count_label}", scope_label
+
+
+def dashboard_manual_sources(provider: dict[str, Any]) -> list[dict[str, str]]:
+    sources: list[dict[str, str]] = []
+    for source in provider.get("manual_sources") or []:
+        access_mode = str(source.get("access_mode") or "manual")
+        sources.append(
+            {
+                "url": str(source.get("url") or ""),
+                "purpose": str(source.get("purpose") or "確認対象ページ"),
+                "access_mode": access_mode,
+                "access_label": MANUAL_ACCESS_LABELS.get(access_mode, "手動確認待ち"),
+                "reason": str(source.get("reason") or "自動取得対象外"),
+            }
+        )
+    return sources
 
 
 def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
@@ -484,6 +517,13 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         check_status,
         official_state,
     )
+    count_display_label, tab_count_label, count_noun = scoped_count_labels(
+        provider, count_label
+    )
+    count_scope_detail = str(provider.get("count_scope_detail") or "")
+    if count_scope_detail:
+        count_detail = f"{count_detail}。{count_scope_detail}"
+    manual_sources = dashboard_manual_sources(provider)
     visual_summary = load_visual_summary(provider.get("data_dir"))
     region_filters = [
         {"code": item.get("code", ""), "label": item.get("label", "")}
@@ -496,6 +536,8 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             source_label = "日次JSON"
         elif coverage == "official_codex":
             source_label = "公式ページ＋Codex監査JSON"
+            if provider.get("coverage_scope") == "curated_representative":
+                source_label += "（代表）"
         elif coverage == "master_import":
             source_label = "coupon-master暫定JSON"
         elif coverage == "article_exists":
@@ -507,6 +549,8 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             "held": "公式ページ＋Codex監査保留",
             "pending": "公式ページ＋Codex監査待ち",
         }.get(count_status, "公式ページ＋Codex監査済み")
+        if provider.get("coverage_scope") == "curated_representative":
+            source_label += "（代表）"
     elif provider.get("article_paths"):
         source_label = "記事HTMLあり"
 
@@ -543,7 +587,14 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "ai_label": audit_label,
         "count_status": count_status,
         "count_label": count_label,
+        "count_display_label": count_display_label,
+        "tab_count_label": tab_count_label,
+        "count_noun": count_noun,
         "count_detail": count_detail,
+        "coverage_scope": provider.get("coverage_scope", ""),
+        "count_scope_detail": count_scope_detail,
+        "manual_sources": manual_sources,
+        "manual_source_count": len(manual_sources),
         "note": provider.get("note", ""),
         "latest_file": latest_file,
         "source_label": source_label,
@@ -556,7 +607,7 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             "分類": provider.get("classification", ""),
             "監視頻度": frequency_label,
             "取得状態": COVERAGE_LABELS.get(coverage, coverage),
-            "件数": count_label,
+            "件数": count_display_label,
             "配布中": str(active) if count_status == "confirmed" else "—",
             "配布終了": str(ended) if count_status == "confirmed" else "—",
             "要確認": str(review) if count_status == "confirmed" else "—",
@@ -643,6 +694,11 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .copy-gh-btn {{ background: #fff; color: #0f5caa; }}
 .copy-gh-btn.copied {{ background: #146c43; border-color: #146c43; color: #fff; }}
 .manual-command {{ grid-column: 1 / -1; display: block; background: #f4f6f8; border: 1px solid #dfe4ea; border-radius: 6px; padding: 8px 10px; color: #2c3b4c; font-size: 0.8rem; overflow-x: auto; white-space: nowrap; }}
+.source-queue {{ margin-top: 9px; border-top: 1px solid #e3e8ef; padding-top: 8px; }}
+.source-queue summary {{ cursor: pointer; color: #7a5200; font-size: 0.82rem; font-weight: 700; }}
+.source-queue ul {{ margin: 8px 0 0 20px; }}
+.source-queue li {{ margin: 5px 0; color: #566477; font-size: 0.8rem; line-height: 1.45; }}
+.source-queue a {{ color: #0f5caa; }}
 .check-pill {{ display: inline-block; border-radius: 999px; padding: 2px 8px; font-size: 0.78rem; font-weight: 700; margin-right: 8px; }}
 .check-success {{ background: #e9f7ef; color: #146c43; }}
 .check-unchanged,.check-snapshot_checked {{ background: #e9f7ef; color: #146c43; }}
@@ -808,7 +864,16 @@ function checkStatusHtml(provider) {{
   details.push(`<span class="manual-meta">データ日: ${{escapeHtml(status.data_date || '不明')}}</span>`);
   details.push(`<span class="manual-meta">鮮度: ${{escapeHtml(provider.freshness_label || '不明')}}</span>`);
   details.push(`<span class="manual-meta">Codex監査: ${{escapeHtml(provider.ai_label || '対象外')}}</span>`);
-  details.push(`<span class="manual-meta">件数: ${{escapeHtml(provider.count_label ?? provider.rows.length)}}</span>`);
+  details.push(`<span class="manual-meta">件数: ${{escapeHtml(provider.count_display_label ?? provider.count_label ?? provider.rows.length)}}</span>`);
+  if (provider.manual_source_count) {{
+    details.push(`<span class="manual-meta">ログイン・画面確認待ち: ${{escapeHtml(provider.manual_source_count)}}ページ</span>`);
+  }}
+  if (status.audit_source_count !== undefined) {{
+    details.push(`<span class="manual-meta">代表公開ページ: ${{escapeHtml(status.audit_source_count)}}ページ</span>`);
+  }}
+  if (status.discovered_source_count) {{
+    details.push(`<span class="manual-meta">入口から発見: ${{escapeHtml(status.discovered_source_count)}}ページ</span>`);
+  }}
   if (status.checked_url_count !== undefined) {{
     details.push(`<span class="manual-meta">URL確認: ${{escapeHtml(status.ok_url_count ?? 0)}}/${{escapeHtml(status.checked_url_count ?? 0)}}</span>`);
   }}
@@ -847,6 +912,20 @@ function visualObservationStats(provider) {{
   `;
 }}
 
+function manualSourceQueueHtml(provider) {{
+  const sources = provider.manual_sources || [];
+  if (!sources.length) return '';
+  const items = sources.map(source => `
+    <li>
+      <a href="${{escapeHtml(source.url)}}" target="_blank" rel="noopener">${{escapeHtml(source.purpose)}}</a>
+      — ${{escapeHtml(source.access_label)}}：${{escapeHtml(source.reason)}}
+    </li>`).join('');
+  return `<details class="source-queue">
+    <summary>自動取得外の確認待ち ${{escapeHtml(sources.length)}}ページ</summary>
+    <ul>${{items}}</ul>
+  </details>`;
+}}
+
 function manualPanelHtml(provider) {{
   const command = escapeHtml(provider.manual_gh_command || '');
   return `<div class="manual-panel">
@@ -855,6 +934,7 @@ function manualPanelHtml(provider) {{
       <span class="manual-meta">通常頻度: ${{escapeHtml(provider.check_frequency_label || '')}}</span>
       ${{checkStatusHtml(provider)}}
       <div class="manual-hint">会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。</div>
+      ${{manualSourceQueueHtml(provider)}}
     </div>
     <div class="manual-actions">
       <button type="button" class="manual-run-btn">手動チェック</button>
@@ -1102,11 +1182,11 @@ function renderProvider(container, provider) {{
     ? DATA.columns.coupons
     : DATA.columns.coupons.filter(column => !visualColumns.includes(column));
   const countStats = provider.count_status === 'confirmed'
-    ? `<span class="stat">全 ${{escapeHtml(provider.count_label ?? provider.rows.length)}} 件</span>
+    ? `<span class="stat">${{escapeHtml(provider.count_noun || '全')}} ${{escapeHtml(provider.count_label ?? provider.rows.length)}} 件</span>
         <span class="stat active">配布中 ${{active}} 件</span>
         <span class="stat ended">配布終了 ${{ended}} 件</span>
         <span class="stat review">要確認 ${{review}} 件</span>`
-    : `<span class="stat review">クーポン件数 ${{escapeHtml(provider.count_label)}}</span>
+    : `<span class="stat review">${{escapeHtml(provider.count_noun || 'クーポン')}} ${{escapeHtml(provider.count_label)}}</span>
         <span class="stat">${{escapeHtml(provider.count_detail)}}</span>`;
   container.innerHTML = `
     <div class="section">
@@ -1179,7 +1259,7 @@ function init() {{
     const tab = document.createElement('button');
     tab.className = 'tab';
     tab.dataset.tab = provider.id;
-    tab.innerHTML = `${{escapeHtml(provider.label)}} <span class="tab-count">${{escapeHtml(provider.count_label ?? provider.rows.length)}}</span>`;
+    tab.innerHTML = `${{escapeHtml(provider.label)}} <span class="tab-count">${{escapeHtml(provider.tab_count_label ?? provider.count_label ?? provider.rows.length)}}</span>`;
     tabs.appendChild(tab);
     const content = document.createElement('div');
     content.id = provider.id;
