@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate_id": "kkday-ace02265b31a4cf7",
+  "provider_id": "kkday",
+  "page_summary": "KKdayのconfirmed公式3ページで、前回登録済みのクーポン25件が同じ内容で掲載されていることを確認した。",
+  "change_summary": "前回25件の根拠引用はすべて今回の公式本文にも連続完全一致し、商品カードや価格表示の変動だけだった。",
+  "recommendation": "ignore",
+  "priority": 0,
+  "uncertainty_reasons": [],
+  "audit_notes": "前回25件のevidence_quoteを今回のconfirmed公式本文で再確認した。同一コードの重複紹介は追加件数にせず、商品カードの変動価格もクーポン差分に含めていない。",
+  "deals": []
+}
