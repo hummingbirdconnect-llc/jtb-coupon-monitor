@@ -1,7 +1,7 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "ace02265b31a4cf7a445f2fd7f1e518c3ffcf367fe17aed6f89e1addb9ef0e57",
-  "last_checked_at": "2026-08-13T06:51:46.854539+09:00",
+  "observed_hash": "ba8f09bea9e6e9a0a65ed6109cce7577e8ba9e8ecce53f5457cca7e4403b9089",
+  "last_checked_at": "2026-08-14T06:50:49.371971+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
@@ -14,22 +14,22 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 9146,
-      "content_hash": "b4557898392e729d78fd5b505239f1fd7b6606b078ad6ff7426b4ad781b0298c"
+      "text_chars": 9136,
+      "content_hash": "5302317723a8c8ded9b2abfc0ee2a1c47e34d2ad1f597d95f6a1ec28e80cd6b9"
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "playwright",
-      "error": "",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "auto",
+      "error": "HTTP 403; Playwright HTTP 403",
       "purpose": "公式キャンペーン",
       "source_role": "official_source",
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 15173,
-      "content_hash": "f75581afd27c18062b42ccdd474b5b1b0cf73cad0ca9a7506212f761d17c1158"
+      "text_chars": 0,
+      "content_hash": ""
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -42,14 +42,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 4493,
-      "content_hash": "8acc4a5a9b1620858498349b0fcd7a327712b8fccccf1c62a6cb4239b156605b"
+      "text_chars": 4307,
+      "content_hash": "d79d4867fc5b38b0ce9f3eb331c1e25cdff77025d3ed6c261d88fa7206304438"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-08-13T06:51:46.856407+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "ba8f09bea9e6e9a0a65ed6109cce7577e8ba9e8ecce53f5457cca7e4403b9089",
+  "queued_candidate_id": "kkday-ba8f09bea9e6e9a0",
+  "queued_at": "2026-08-14T06:50:49.373547+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-08-13T08:04:15.813067+09:00",
   "last_audit_candidate_id": "kkday-ace02265b31a4cf7",
   "processed_hash": "ace02265b31a4cf7a445f2fd7f1e518c3ffcf367fe17aed6f89e1addb9ef0e57",

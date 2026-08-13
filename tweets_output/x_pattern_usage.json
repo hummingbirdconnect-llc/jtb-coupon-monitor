@@ -2446,5 +2446,77 @@
   "pattern": "season_context",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "discovery",
+  "ota": "his",
+  "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "anshin_reserve",
+  "ota": "his",
+  "title": "早めの予約がお得！90日以上前までのお申し込みで1名様につき最大10,000円引き"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "西武プリンスホテルズ＆リゾーツ30施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "group_call",
+  "ota": "his",
+  "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "casual_aside",
+  "ota": "his",
+  "title": "早めの予約がお得！90日以上前までのお申し込みで1名様につき最大10,000円引き"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-14",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
