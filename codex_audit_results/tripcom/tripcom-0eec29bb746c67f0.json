@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate_id": "tripcom-0eec29bb746c67f0",
+  "provider_id": "tripcom",
+  "page_summary": "confirmedの公式お得情報ページで、前回の割引表示3件が連続完全一致で継続していることを確認した。",
+  "change_summary": "前回確定した3件の名称・割引内容に意味のある変更はない。",
+  "recommendation": "ignore",
+  "priority": 0,
+  "uncertainty_reasons": [],
+  "audit_notes": "割引額・期間・条件を個別に確定できないバナー文言は件数へ追加していない。",
+  "deals": []
+}

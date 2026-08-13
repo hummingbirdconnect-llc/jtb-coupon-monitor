@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-28e84781a0fddd47",
+  "provider_id": "klook",
+  "page_summary": "confirmedの公式お得情報ページで、香港欄のクーポンコード付き3件を確認した。",
+  "change_summary": "香港3件の内容は継続し、香港ディズニーランドの画面換算表示だけがJPY 608オフからJPY 609オフへ変化。前回の台湾2件は現行本文にないため終了とは断定せず要確認で保持する。",
+  "recommendation": "draft",
+  "priority": 20,
+  "uncertainty_reasons": [],
+  "audit_notes": "台湾高速鉄道B1G1と北北基おもしろカードは現行confirmed本文に見当たらないため、終了扱いにせず要確認のまま保持する。",
+  "deals": [
+    {
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "50%OFF（上限3USD）",
+      "coupon_code": "SUMMER4ESIM",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "香港欄に掲載されたKlook eSIM。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "香港 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "香港ディズニーランド・パークチケット 30香港ドルオフ",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "30香港ドルオフ（表示換算 JPY 609 オフ）",
+      "coupon_code": "HKDL30MERCH",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "香港ディズニーランド・パークチケット。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 609 オフ 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "コタイウォータージェットフェリーチケット 10%OFF",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "10%OFF",
+      "coupon_code": "10COTAI",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "コタイウォータージェットフェリーチケット。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "コタイウォータージェットフェリーチケット10%OFF クーポンコード: 10COTAI 10%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    }
+  ]
+}

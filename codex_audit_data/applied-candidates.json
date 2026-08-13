@@ -83,6 +83,27 @@
       "recommendation": "ignore",
       "applied_at": "2026-08-13T08:04:15.815452+09:00",
       "result_path": "codex_audit_results/tripcom/tripcom-0e652cf81eac4d60.json"
+    },
+    "kkday-ba8f09bea9e6e9a0": {
+      "provider_id": "kkday",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-08-14T08:14:23.670084+09:00",
+      "result_path": "codex_audit_results/kkday/kkday-ba8f09bea9e6e9a0.json"
+    },
+    "klook-28e84781a0fddd47": {
+      "provider_id": "klook",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-08-14T08:14:23.671027+09:00",
+      "result_path": "codex_audit_results/klook/klook-28e84781a0fddd47.json"
+    },
+    "tripcom-0eec29bb746c67f0": {
+      "provider_id": "tripcom",
+      "status": "processed",
+      "recommendation": "ignore",
+      "applied_at": "2026-08-14T08:14:23.671688+09:00",
+      "result_path": "codex_audit_results/tripcom/tripcom-0eec29bb746c67f0.json"
     }
   }
 }
