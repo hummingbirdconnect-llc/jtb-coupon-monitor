@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-06bdb0edf0ba479d",
+  "provider_id": "klook",
+  "page_summary": "公式お得情報ページの台湾欄で、eSIM、台湾高速鉄道、北北基おもしろカードの3件をコード・割引・最低利用額まで連続完全一致で確認した。",
+  "change_summary": "表示対象が香港3件から台湾3件へ戻り、eSIMの地域欄変更と、要確認だった台湾高速鉄道・北北基おもしろカードの再表示を確認した。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "今回表示された台湾3件だけを確定する。香港2件は削除・終了扱いにしない。期間は公式本文に表示されていないため記録しない。",
+  "deals": [
+    {
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "50%OFF（上限3USD）",
+      "coupon_code": "SUMMER4ESIM",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "台湾ページ掲載のKlook eSIM。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "台湾高速鉄道 B1G1",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "50%OFF",
+      "coupon_code": "G02TAIWAN",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "台中・高雄・嘉義・台南・彰化・雲林のみに行く路線。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "北北基おもしろカード10%OFF",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "10%OFF",
+      "coupon_code": "TAIPEIFUNS4",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "北北基おもしろカード。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "北北基おもしろカード10%OFF クーポンコード: TAIPEIFUNS4 10%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    }
+  ]
+}

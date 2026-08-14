@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate_id": "jalan-fa7becb46857b645",
+  "provider_id": "jalan",
+  "page_summary": "confirmedの代表公開ページ6件で、前回確定した代表クーポン6件の根拠引用が今回の公式本文にも連続完全一致した。",
+  "change_summary": "代表クーポン6件の名称・金額・期間・条件に意味のある変更はなく、ページ内表示の更新だけだった。",
+  "recommendation": "ignore",
+  "priority": 0,
+  "uncertainty_reasons": [],
+  "audit_notes": "coverage_scope=curated_representativeとして代表範囲だけを確認した。個別宿一覧は取得・集計していない。manual_sources 7ページは監査根拠に混ぜず、ログイン・画面確認待ちのまま分離した。",
+  "deals": []
+}

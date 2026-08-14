@@ -106,14 +106,14 @@
       "content_hash": "13afa4ab3a7cda8c17e263bba82846fc5060d60b0819b3fec0f2de979daaf62f"
     }
   ],
-  "queued_hash": "fa7becb46857b645fe8ccd74a68c315a395a4d7b56a7be801bcd285551312fb3",
-  "queued_candidate_id": "jalan-fa7becb46857b645",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-08-15T06:30:24.243029+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-08-11T15:02:13.110466+09:00",
-  "last_audit_candidate_id": "jalan-f1d31f975b5f1ab4",
-  "processed_hash": "f1d31f975b5f1ab4454a15f71845e35f611239c8d7c720a584f17888631352dc",
-  "last_processed_at": "2026-08-11T15:02:13.110466+09:00",
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-08-15T08:11:00.593537+09:00",
+  "last_audit_candidate_id": "jalan-fa7becb46857b645",
+  "processed_hash": "fa7becb46857b645fe8ccd74a68c315a395a4d7b56a7be801bcd285551312fb3",
+  "last_processed_at": "2026-08-15T08:11:00.593537+09:00",
   "last_changed_at": "2026-08-11T15:02:13.110466+09:00",
   "latest_file": "coupons_2026-08-11.json",
   "semantic_hash": "c7a76654ae5fd10ef8b0083a7e73e287101d9a420fdc23a4dc835b2127ebf15b"
