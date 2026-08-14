@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-05-15",
-    "type": "🆕 新規",
-    "id": "ba57c03703e0",
-    "category": "国内ホテル",
-    "title": "早めの予約がお得！30日以上前までのお申込みで1グループ最大5,000円引き",
-    "discount": ""
-  },
-  {
     "date": "2026-05-16",
     "type": "🆕 新規",
     "id": "5e6935d23c6a",
@@ -1149,6 +1141,40 @@
     "region_labels": [
       "中部版",
       "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-14",
+    "type": "🆕 新規",
+    "id": "86a932fa496c",
+    "category": "国内航空券＋ホテル",
+    "title": "まもなく終了！スーパーサマーセールFINAL1グループ2,000円引き",
+    "discount": "2,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
     ]
   }
 ]

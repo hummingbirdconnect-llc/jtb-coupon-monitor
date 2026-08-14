@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-14T06:41:34.694756+09:00",
+  "last_updated": "2026-08-14T13:14:02.873451+09:00",
   "ids": {
     "e27e6445bb5e": {
       "category": "海外eSIM",
@@ -32,6 +32,37 @@
       ],
       "region_labels": [
         "首都圏版"
+      ]
+    },
+    "86a932fa496c": {
+      "category": "国内航空券＋ホテル",
+      "title": "まもなく終了！スーパーサマーセールFINAL1グループ2,000円引き",
+      "discount": "2,000円引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
       ]
     },
     "f6b2c61b263f": {
