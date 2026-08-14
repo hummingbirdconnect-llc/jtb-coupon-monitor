@@ -1,7 +1,7 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "ba8f09bea9e6e9a0a65ed6109cce7577e8ba9e8ecce53f5457cca7e4403b9089",
-  "last_checked_at": "2026-08-14T06:50:49.371971+09:00",
+  "observed_hash": "27048951e4167c752c5a03697785c27208cb689844549ad45b0eb5a5ca563e4d",
+  "last_checked_at": "2026-08-15T06:30:35.075981+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
@@ -19,17 +19,17 @@
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
-      "ok": false,
-      "status_code": "",
-      "fetch_method": "auto",
-      "error": "HTTP 403; Playwright HTTP 403",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
       "purpose": "公式キャンペーン",
       "source_role": "official_source",
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 0,
-      "content_hash": ""
+      "text_chars": 5506,
+      "content_hash": "426da3e9d72e057bba95f34ff146014b9700fb688c682cb53a9a7b50000c4dc2"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -42,14 +42,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 4307,
-      "content_hash": "d79d4867fc5b38b0ce9f3eb331c1e25cdff77025d3ed6c261d88fa7206304438"
+      "text_chars": 1555,
+      "content_hash": "0b621bf8098caaab8f67b585cec38d3cba9e0e8cf5a21d511f40562b540dad15"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-08-14T06:50:49.373547+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "27048951e4167c752c5a03697785c27208cb689844549ad45b0eb5a5ca563e4d",
+  "queued_candidate_id": "kkday-27048951e4167c75",
+  "queued_at": "2026-08-15T06:30:35.077690+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-08-14T08:14:23.669796+09:00",
   "last_audit_candidate_id": "kkday-ba8f09bea9e6e9a0",
   "processed_hash": "ba8f09bea9e6e9a0a65ed6109cce7577e8ba9e8ecce53f5457cca7e4403b9089",
