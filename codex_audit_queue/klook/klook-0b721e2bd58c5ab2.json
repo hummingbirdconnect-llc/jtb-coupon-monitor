@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-0b721e2bd58c5ab2",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "update",
+  "fetched_at": "2026-08-17T06:26:25.619138+09:00",
+  "content_hash": "0b721e2bd58c5ab2645519c22a63c639ae1d1c45b1c204445498a2b3861f3dae",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "purpose": "Klook日本向け公式SALE一覧",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "1160130f598bd26c151c6e56d85074b7a489e84721969480297798595b149648",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA 旅だって進化する 台湾 シンガポール 韓国 香港 タイ マレーシア 日本 マカオ すべて表示 台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行 台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行 厳選されたツアーが10%オフ クーポンコード: TOURS10OFFMAC 10%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア 台北 新北市 カテゴリ すべて ツアー・体験 観光施設チケット 台北 台湾高速鉄道（THSR）乗車チケット 4.8 / 5 (25,499) • 1M+ 件の予約 ¥ 147 参考価格： ¥ 199 50 OFF 桃園 悠遊カード（桃園空港受取） 4.8 / 5 (22,363) • 600K+ 件の予約 ¥ 433 参考価格： ¥ 598 無料特典 新北市 九份・十分老街・十分瀑布・野柳 日本語ツアー・台北発 4.8 / 5 (1,785) • 20K+ 件の予約 ¥ 3,283 ¥ 3,282オトク 台北 台北MRT フリーパス 4.8 / 5 (2,027) • 70K+ 件の予約 ¥ 672 ¥ 747 10％OFF 台北 台北無限周遊パス（台湾）Taipei FunPASS 4.8 / 5 (4,127) • 100K+ 件の予約 ¥ 5,500 参考価格： ¥ 26,746 20 off 台北 野柳地質公園・九份・十分・黄金瀑布 日帰りツアー（台北発） 4.9 / 5 (46,300) • 600K+ 件の予約 ¥ 2,760 ¥ 2,759オトク 新北市 野柳&十分老街&十分瀑布&九份 日本語ツアー（台北発） 4.8 / 5 (111) • 2K+ 件の予約 ¥ 3,528 ¥ 5,292オトク 台北 台北101展望台 チケット 4.7 / 5 (41,470) • 1M+ 件の予約 ¥ 2,587 参考価格： ¥ 2,988 無料特典 台北 【台湾パス】 台湾高速鉄道・MRT・台湾好行シャトルバス 3in1パッケージ（台北) 4.3 / 5 (253) • 10K+ 件の予約 ¥ 8,467 参考価格： ¥ 11,167 30％OFFのオプションを選択 新北市 九份ディープ半日ツアー（午後出発／台北駅集合） 4.9 / 5 (261) • 5K+ 件の予約 ¥ 2,484 ¥ 2,484オトク 新北市 【毎日催行】十分＆九分バスツアー7.5H 4.9 / 5 (82) • 2K+ 件の予約 ¥ 4,784 ¥ 2,050オトク 台北 台湾高鉄周遊券 4.8 / 5 (4,027) • 80K+ 件の予約 ¥ 9,900 参考価格： ¥ 10,958 無料特典 台北 台北発：運転手付き台北チャーター車 - カスタマイズ可能な旅程 4.5 / 5 (1,906) • 10K+ 件の予約 ¥ 13,000 ¥ 14,444 ¥ 1,444オトク 宜蘭 宜蘭FunTOUR観光バス：国立伝統芸術センター＆カバランウイスキー蒸留所＆礁渓温泉（台北発）（入場券と蒸留所200元割引券付き） 4.9 / 5 (96) • 3K+ 件の予約 ¥ 249 52％OFFのオプションを選択 澎湖 2026年澎湖花火フェスティバル限定花火船 - 海上花火鑑賞体験（席数保証） 4.8 / 5 (1,554) • 50K+ 件の予約 ¥ 1,493 ¥ 166オトク 新北市 野柳 & 九份 & 十分 日帰りツアー（跳石海岸のオプション選択可） 4.9 / 5 (14,645) • 100K+ 件の予約 ¥ 3,452 ¥ 3,451オトク 新北市 台北九份猴硐日帰りツアーガイド 4.9 / 5 (1,479) • 10K+ 件の予約 ¥ 3,781 〜 ¥ 3,780オトク 台北 Royal Thai Orient Massage マッサージ体験（台北） 4.8 / 5 (1,264) • 20K+ 件の予約 ¥ 2,011 5％OFFのオプションを選択 新北市 台北 十分瀑布＆天燈 半日バスツアー 5.0 / 5 (1) • 100+ 件の予約 ¥ 2,839 ¥ 2,839オトク さらに表示"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "klook-7d92655c1665ec11",
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF（上限3USD）",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台湾ページ掲載のKlook eSIM。最低利用額なし。",
+      "coupon_codes": [
+        "SUMMER4ESIM"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-bd9ab92f9762205c",
+      "title": "台湾高速鉄道 B1G1",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台中・高雄・嘉義・台南・彰化・雲林のみに行く路線。最低利用額なし。",
+      "coupon_codes": [
+        "G02TAIWAN"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-d7920283892bee37",
+      "title": "北北基おもしろカード10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "北北基おもしろカード。最低利用額なし。",
+      "coupon_codes": [
+        "TAIPEIFUNS4"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "北北基おもしろカード10%OFF クーポンコード: TAIPEIFUNS4 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-9d3df0dc21abe843",
+      "title": "香港ディズニーランド・パークチケット 30香港ドルオフ",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "30香港ドルオフ（表示換算 JPY 609 オフ）",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "香港ディズニーランド・パークチケット。最低利用額なし。",
+      "coupon_codes": [
+        "HKDL30MERCH"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 609 オフ 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    },
+    {
+      "id": "klook-3cdecc9353802356",
+      "title": "コタイウォータージェットフェリーチケット 10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "コタイウォータージェットフェリーチケット。最低利用額なし。",
+      "coupon_codes": [
+        "10COTAI"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "コタイウォータージェットフェリーチケット10%OFF クーポンコード: 10COTAI 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

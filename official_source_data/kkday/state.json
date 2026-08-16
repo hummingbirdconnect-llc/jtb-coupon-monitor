@@ -1,7 +1,7 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "27048951e4167c752c5a03697785c27208cb689844549ad45b0eb5a5ca563e4d",
-  "last_checked_at": "2026-08-15T06:30:35.075981+09:00",
+  "observed_hash": "a51236fde56ca82c2810f4eecc652fa74dc62898b3e6aff62eb55b9e3758006b",
+  "last_checked_at": "2026-08-17T06:26:24.596985+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
@@ -14,22 +14,22 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 9136,
-      "content_hash": "5302317723a8c8ded9b2abfc0ee2a1c47e34d2ad1f597d95f6a1ec28e80cd6b9"
+      "text_chars": 9152,
+      "content_hash": "fcd6760e27088131775a109b201055ee1d69a4ad942b87c9b0cf7314b207a352"
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "playwright",
-      "error": "",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "auto",
+      "error": "HTTP 403; Playwright HTTP 403",
       "purpose": "公式キャンペーン",
       "source_role": "official_source",
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 5506,
-      "content_hash": "426da3e9d72e057bba95f34ff146014b9700fb688c682cb53a9a7b50000c4dc2"
+      "text_chars": 0,
+      "content_hash": ""
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -46,10 +46,10 @@
       "content_hash": "0b621bf8098caaab8f67b585cec38d3cba9e0e8cf5a21d511f40562b540dad15"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-08-15T06:30:35.077690+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "a51236fde56ca82c2810f4eecc652fa74dc62898b3e6aff62eb55b9e3758006b",
+  "queued_candidate_id": "kkday-a51236fde56ca82c",
+  "queued_at": "2026-08-17T06:26:24.598290+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.596052+09:00",
   "last_audit_candidate_id": "kkday-27048951e4167c75",
   "processed_hash": "27048951e4167c752c5a03697785c27208cb689844549ad45b0eb5a5ca563e4d",
