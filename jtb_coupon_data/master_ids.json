@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-08-15T06:29:14.707312+09:00",
+  "last_updated": "2026-08-17T05:22:30.250080+09:00",
   "ids": {
     "2607jtbcpnew": {
       "category": "国内",
       "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(7/11-9/30出発)",
       "discount": "1,500円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607appcp": {
       "category": "国内",
@@ -27,14 +27,14 @@
       "title": "暑い夏におすすめ！避暑旅＆快適旅に使える割引クーポン",
       "discount": "3,000円引",
       "area": "北海道・青森県・岩手県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606renpaku": {
       "category": "国内",
       "title": "暑い夏におすすめ！テーマパーク連泊快適旅に使える割引クーポン",
       "discount": "3,000円引",
       "area": "千葉県・愛知県・大阪府",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604airhayawari2": {
       "category": "国内",
@@ -97,7 +97,7 @@
       "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2608kyoritsu": {
       "category": "国内",
@@ -146,14 +146,14 @@
       "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605hokka": {
       "category": "国内",
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604jalto": {
       "category": "国内",
@@ -188,7 +188,7 @@
       "title": "【6～9月宿泊】「日本の旬 東北」　南東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "宮城県・山形県・福島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606tohoku": {
       "category": "国内",
@@ -370,14 +370,14 @@
       "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
       "discount": "最大15,000円引",
       "area": "沖縄県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606okinawa": {
       "category": "国内",
       "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605okinawa": {
       "category": "国内",
