@@ -2662,5 +2662,77 @@
   "pattern": "soft_news",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "ひなタビみやざき宿泊キャンペーン"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "honest_value",
+  "ota": "knt",
+  "title": "ひなタビみやざき宿泊キャンペーン"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "memo_style",
+  "ota": "knt",
+  "title": "東北たびクーポンキャンペーン"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "target_call",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "last_check",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-18",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
