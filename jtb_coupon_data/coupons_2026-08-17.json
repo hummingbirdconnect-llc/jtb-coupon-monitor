@@ -1,26 +1,26 @@
 [
   {
-    "id": "2607jtbcpnew",
+    "id": "2608jtbcpnew",
     "category": "国内",
-    "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(7/11-9/30出発)",
-    "discount": "1,500円引",
+    "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(9-1月出発)",
+    "discount": "1,000円引",
     "area": "全国",
     "type": "宿泊・ツアー",
-    "booking_period": "2026/7/10(金) ～ 2026/8/16(日)",
-    "stay_period": "2026/7/11(土) ～ 2026/9/30(水)",
+    "booking_period": "2026/8/17(月) ～ 2026/11/16(月)",
+    "stay_period": "2026/9/1(火) ～ 2027/1/31(日)",
     "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607jtbcpnew/page.asp",
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608jtbcpnew/page.asp",
     "detail_data": {
       "coupon_codes": [
         "cpnew"
       ],
       "passwords": [
-        "jvDR"
+        "CTme"
       ],
       "conditions": [],
       "notes": [
-        "なし 泊数指定なし 先着 4300枚 30,000円以上のご利用で 1,500 円引 クーポンコード cpnew パスワ"
+        "なし 泊数指定なし 先着 5000枚 20,000円以上のご利用で 1,000 円引 クーポンコード cpnew パスワ"
       ]
     }
   },
@@ -73,56 +73,6 @@
       "conditions": [],
       "notes": [
         "以上 泊数指定なし 先着 2,670枚 70,000円以上のご利用で 3,000 円引 クーポンコード young パス"
-      ]
-    }
-  },
-  {
-    "id": "2606hisyo",
-    "category": "国内",
-    "title": "暑い夏におすすめ！避暑旅＆快適旅に使える割引クーポン",
-    "discount": "3,000円引",
-    "area": "北海道・青森県・岩手県",
-    "type": "ツアー",
-    "booking_period": "2026/6/19(金) ～ 2026/8/16(日)",
-    "stay_period": "2026/7/1(水) ～ 2026/9/13(日)",
-    "store_available": true,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606hisyo/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "hisyo"
-      ],
-      "passwords": [
-        "g835"
-      ],
-      "conditions": [],
-      "notes": [
-        "以上 泊数指定なし 先着 3,500枚 100,000円以上のご利用で 3,000 円引 クーポンコード hisyo パ"
-      ]
-    }
-  },
-  {
-    "id": "2606renpaku",
-    "category": "国内",
-    "title": "暑い夏におすすめ！テーマパーク連泊快適旅に使える割引クーポン",
-    "discount": "3,000円引",
-    "area": "千葉県・愛知県・大阪府",
-    "type": "ツアー",
-    "booking_period": "2026/6/19(金) ～ 2026/8/16(日)",
-    "stay_period": "2026/7/1(水) ～ 2026/9/13(日)",
-    "store_available": true,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606renpaku/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "renpa"
-      ],
-      "passwords": [
-        "g851"
-      ],
-      "conditions": [],
-      "notes": [
-        "名以上 2連泊以上 先着 1,500枚 100,000円以上のご利用で 3,000 円引 クーポンコード renpa パ"
       ]
     }
   },
@@ -216,7 +166,7 @@
     "booking_period": "2026/6/8(月) ～ 2026/9/29(火)",
     "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606hilton/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -549,7 +499,7 @@
     "booking_period": "2026/5/22(金) ～ 2026/8/31(月)",
     "stay_period": "2026/6/1(月) ～ 2026/8/31(月)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605douou/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -575,7 +525,7 @@
     "booking_period": "2026/5/1(金) ～ 2026/9/30(水)",
     "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605hokka/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -628,7 +578,7 @@
     "booking_period": "2026/4/1(水) ～ 2026/9/29(火)",
     "stay_period": "",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604jtoho2/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -660,7 +610,7 @@
     "booking_period": "2026/4/7(火) ～ 2026/9/30(水)",
     "stay_period": "2026/7/13(月) ～ 2026/9/30(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604nstoh/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -761,7 +711,7 @@
     "booking_period": "2026/6/1(月) ～ 2026/9/30(水)",
     "stay_period": "2026/6/1(月) ～ 2026/9/30(水)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606tohoku/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1073,7 +1023,7 @@
     "booking_period": "2026/5/1(金) ～ 2026/8/31(月)",
     "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605izucp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1318,7 +1268,7 @@
     "booking_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "stay_period": "2026/7/19(日) ～ 2026/9/30(水)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607yamaguchi/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1400,7 +1350,7 @@
     "booking_period": "2026/6/5(金) ～ 2026/9/30(水)",
     "stay_period": "2026/6/5(金) ～ 2026/9/30(水)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606miyazaki/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1710,6 +1660,56 @@
       "conditions": [],
       "notes": [
         "【事前支払い限定】 先着 500枚 70,000円以上のご利用で 3,500 円引 クーポンコード hayac パスワー"
+      ]
+    }
+  },
+  {
+    "id": "2606hisyo",
+    "category": "国内",
+    "title": "暑い夏におすすめ！避暑旅＆快適旅に使える割引クーポン",
+    "discount": "3,000円引",
+    "area": "北海道・青森県・岩手県",
+    "type": "ツアー",
+    "booking_period": "2026/6/19(金) ～ 2026/8/16(日)",
+    "stay_period": "2026/7/1(水) ～ 2026/9/13(日)",
+    "store_available": true,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606hisyo/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "hisyo"
+      ],
+      "passwords": [
+        "g835"
+      ],
+      "conditions": [],
+      "notes": [
+        "以上 泊数指定なし 先着 3,500枚 100,000円以上のご利用で 3,000 円引 クーポンコード hisyo パ"
+      ]
+    }
+  },
+  {
+    "id": "2606renpaku",
+    "category": "国内",
+    "title": "暑い夏におすすめ！テーマパーク連泊快適旅に使える割引クーポン",
+    "discount": "3,000円引",
+    "area": "千葉県・愛知県・大阪府",
+    "type": "ツアー",
+    "booking_period": "2026/6/19(金) ～ 2026/8/16(日)",
+    "stay_period": "2026/7/1(水) ～ 2026/9/13(日)",
+    "store_available": true,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606renpaku/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "renpa"
+      ],
+      "passwords": [
+        "g851"
+      ],
+      "conditions": [],
+      "notes": [
+        "名以上 2連泊以上 先着 1,500枚 100,000円以上のご利用で 3,000 円引 クーポンコード renpa パ"
       ]
     }
   },
