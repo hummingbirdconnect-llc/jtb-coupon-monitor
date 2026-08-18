@@ -5,6 +5,8 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   buildHisWordPressFeed,
+  couponLinkKey,
+  extractAffiliateLinks,
   selectRegionCoupons,
   validateOfficialCoupons,
 } from "./build-his-wordpress-feed.mjs";
@@ -34,6 +36,38 @@ const expectedPrimaryCoupons = sourceCoupons.filter((coupon) => {
 const staleNowMs = Date.parse(latest.official_fetched_at) + 4 * 60 * 60 * 1000;
 
 try {
+  const duplicateTitle =
+    "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き";
+  const duplicateTitleHtml = `
+<!-- ========== 国内ツアー・航空券＋ホテル ========== -->
+<a href="https://example.com/dynamic-package">${duplicateTitle}</a>
+<!-- ========== 国内添乗員同行ツアー ========== -->
+<a href="https://example.com/escorted-tour">${duplicateTitle}</a>`;
+  const duplicateTitleLinks = extractAffiliateLinks(duplicateTitleHtml);
+  assert.equal(
+    duplicateTitleLinks.get(
+      couponLinkKey("国内航空券＋ホテル", duplicateTitle),
+    ),
+    "https://example.com/dynamic-package",
+    "同名の国内航空券＋ホテルクーポンに別商品のリンクが割り当てられています。",
+  );
+  assert.equal(
+    duplicateTitleLinks.get(
+      couponLinkKey("国内添乗員同行ツアー", duplicateTitle),
+    ),
+    "https://example.com/escorted-tour",
+    "同名の添乗員同行ツアークーポンに別商品のリンクが割り当てられています。",
+  );
+  assert.throws(
+    () =>
+      extractAffiliateLinks(`
+<!-- ========== 国内ツアー・航空券＋ホテル ========== -->
+<a href="https://example.com/first">${duplicateTitle}</a>
+<a href="https://example.com/second">${duplicateTitle}</a>`),
+    /同じセクション・表示タイトルに異なる遷移リンクがあります/,
+    "同一セクション内の危険なリンク重複を許しています。",
+  );
+
   assert.deepEqual(
     selectRegionCoupons([
       { id: "legacy" },

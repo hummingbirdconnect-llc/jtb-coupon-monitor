@@ -17,6 +17,24 @@ const DEFAULT_MAX_AGE_HOURS = 3;
 const MAX_FUTURE_SKEW_MINUTES = 5;
 const MAX_DROP_RATIO = 0.4;
 const PRIMARY_REGION_CODE = "kanto";
+const SECTION_SEPARATOR = "\u0000";
+const CATEGORY_TO_SECTION = new Map([
+  ["海外旅行", "海外ツアー"],
+  ["添乗員同行トルコツアー", "海外ツアー"],
+  ["海外eSIM", "海外その他"],
+  ["国内ツアー", "国内ツアー・航空券＋ホテル"],
+  ["国内航空券＋ホテル", "国内ツアー・航空券＋ホテル"],
+  ["沖縄行き航空券＋ホテル", "国内ツアー・航空券＋ホテル"],
+  ["石川行き航空券＋ホテル", "国内ツアー・航空券＋ホテル"],
+  ["能登（石川）行き航空券＋ホテル", "国内ツアー・航空券＋ホテル"],
+  ["奄美群島行き航空券＋ホテル", "国内ツアー・航空券＋ホテル"],
+  ["福島行きツアー", "国内ツアー・航空券＋ホテル"],
+  ["国内添乗員同行ツアー", "国内添乗員同行ツアー"],
+  ["国内バスツアー", "国内バスツアー"],
+  ["高速バス・夜行バス", "国内バスツアー"],
+  ["北海道・福岡県ホテル", "国内ホテル"],
+  ["グランピング・コテージ・貸し別荘宿泊", "国内ホテル"],
+]);
 
 function parseArgs(argv) {
   const args = {};
@@ -67,19 +85,69 @@ function decodeHtml(value) {
     .replace(/&gt;/g, ">");
 }
 
-function extractAffiliateLinks(html) {
+function couponSection(category, title = "") {
+  const text = `${category} ${title}`;
+  if (/TAViCA|TAVICA|eSIM/.test(text)) {
+    return "海外その他";
+  }
+  if (CATEGORY_TO_SECTION.has(category)) {
+    return CATEGORY_TO_SECTION.get(category);
+  }
+  if (category.includes("海外") || category.includes("eSIM")) {
+    return "海外その他";
+  }
+  if (category.includes("バス")) {
+    return "国内バスツアー";
+  }
+  if (
+    category.includes("ホテル") ||
+    category.includes("グランピング") ||
+    category.includes("コテージ")
+  ) {
+    return "国内ホテル";
+  }
+  if (category.includes("添乗員")) {
+    return "国内添乗員同行ツアー";
+  }
+  if (category.includes("国内") || category.includes("行き")) {
+    return "国内ツアー・航空券＋ホテル";
+  }
+  return "海外その他";
+}
+
+function displayLinkTitle(title) {
+  const characters = Array.from(String(title || ""));
+  return characters.length > 50
+    ? `${characters.slice(0, 47).join("")}…`
+    : characters.join("");
+}
+
+export function couponLinkKey(category, title) {
+  return `${couponSection(String(category || ""), title)}${SECTION_SEPARATOR}${displayLinkTitle(title)}`;
+}
+
+export function extractAffiliateLinks(html) {
   const links = new Map();
-  const pattern = /<a\s+href="([^"]+)"[^>]*>([^<]+)<\/a>/g;
+  let section = "";
+  const pattern =
+    /<!--\s*=+\s*([^=]+?)\s*=+\s*-->|<a\s+href="([^"]+)"[^>]*>([^<]+)<\/a>/g;
   for (const match of html.matchAll(pattern)) {
-    const title = decodeHtml(match[2]).trim();
-    const url = decodeHtml(match[1]).trim();
-    if (!title || !url) {
+    if (match[1] !== undefined) {
+      section = decodeHtml(match[1]).trim();
       continue;
     }
-    if (links.has(title) && links.get(title) !== url) {
-      throw new Error(`同じ表示タイトルに異なる遷移リンクがあります: ${title}`);
+    const url = decodeHtml(match[2]).trim();
+    const title = decodeHtml(match[3]).trim();
+    if (!section || !title || !url) {
+      continue;
     }
-    links.set(title, url);
+    const key = `${section}${SECTION_SEPARATOR}${title}`;
+    if (links.has(key) && links.get(key) !== url) {
+      throw new Error(
+        `同じセクション・表示タイトルに異なる遷移リンクがあります: ${section} / ${title}`,
+      );
+    }
+    links.set(key, url);
   }
   return links;
 }
@@ -237,7 +305,10 @@ function buildItem(coupon, links, monitorFetchedAt) {
   const status = normalizeStatus(coupon.stock_status);
   const bookingPeriod = String(coupon.booking_period || "").trim();
   const travelPeriod = String(coupon.travel_period || "").trim();
-  const destinationUrl = status === "ended" ? "" : links.get(title) || "";
+  const destinationUrl =
+    status === "ended"
+      ? ""
+      : links.get(couponLinkKey(coupon.category, title)) || "";
   const presentation = formatHisCouponForCard(coupon);
   const warnings = [];
 
