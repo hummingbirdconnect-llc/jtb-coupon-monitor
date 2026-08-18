@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18T06:31:25.594272+09:00",
+  "last_updated": "2026-08-18T11:37:29.885532+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -48,7 +48,7 @@
       "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606prince": {
       "category": "国内",
@@ -239,6 +239,13 @@
       "area": "東京都",
       "stock_status": "配布中"
     },
+    "2608hachijo": {
+      "category": "国内",
+      "title": "心をほどく、青の離島へ　八丈島で使える割引クーポン",
+      "discount": "最大30％引",
+      "area": "東京都",
+      "stock_status": "配布中"
+    },
     "2607hakone": {
       "category": "国内",
       "title": "箱根・夏休み応援クーポン【第二弾】",
@@ -258,7 +265,14 @@
       "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
       "discount": "最大15,000円引",
       "area": "静岡県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
+    },
+    "2608notoairport": {
+      "category": "国内",
+      "title": "【往復ANA便】能登空港利用で使える国内ツアー割引クーポン",
+      "discount": "最大15,000円引",
+      "area": "石川県",
+      "stock_status": "配布中"
     },
     "2606kintetsu": {
       "category": "国内",
@@ -302,6 +316,13 @@
       "area": "大阪府",
       "stock_status": "配布中"
     },
+    "2608osacp": {
+      "category": "国内",
+      "title": "大阪府のおすすめ施設で使える割引クーポン",
+      "discount": "3,000円引",
+      "area": "大阪府",
+      "stock_status": "配布中"
+    },
     "2602jalcp": {
       "category": "国内",
       "title": "【JAL麗らか四国キャンペーン】往復JAL便利用でいく小豆島ツアーで使える割引クーポン",
@@ -321,7 +342,7 @@
       "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
       "discount": "最大12,000円引",
       "area": "山口県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604sagak": {
       "category": "国内",
@@ -356,7 +377,7 @@
       "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
       "discount": "最大15,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606okinawa": {
       "category": "国内",

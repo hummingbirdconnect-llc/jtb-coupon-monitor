@@ -31,7 +31,7 @@
     "discount": "最大3,000円引",
     "area": "全国",
     "type": "ツアー",
-    "booking_period": "2026/7/24(金) ～ 2026/8/23(日)",
+    "booking_period": "2026/7/24(金) ～ 2026/9/27(日)",
     "stay_period": "2026/7/25(土) ～ 2027/3/31(水)",
     "store_available": false,
     "stock_status": "配布中",
@@ -47,7 +47,7 @@
       ],
       "conditions": [],
       "notes": [
-        "なし 泊数指定なし 先着 300枚 100,000円以上のご利用で 3,000 円引 クーポンコード appcp パスワ"
+        "なし 泊数指定なし 先着 1,000枚 100,000円以上のご利用で 3,000 円引 クーポンコード appcp パ"
       ]
     }
   },
@@ -166,7 +166,7 @@
     "booking_period": "2026/6/8(月) ～ 2026/9/29(火)",
     "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606hilton/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -958,6 +958,36 @@
     }
   },
   {
+    "id": "2608hachijo",
+    "category": "国内",
+    "title": "心をほどく、青の離島へ　八丈島で使える割引クーポン",
+    "discount": "最大30％引",
+    "area": "東京都",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/8/18(火) ～ 2027/2/27(土)",
+    "stay_period": "2026/9/23(水) ～ 2027/2/28(日)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608hachijo/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "hachi"
+      ],
+      "passwords": [
+        "g983",
+        "g984",
+        "g985",
+        "g986",
+        "g987",
+        "g988"
+      ],
+      "conditions": [],
+      "notes": [
+        "1名】 飛行機利用 先着 3枚 下限代金なし 30 ％引 （割引上限15,000円） クーポンコード hachi パスワ"
+      ]
+    }
+  },
+  {
     "id": "2607hakone",
     "category": "国内",
     "title": "箱根・夏休み応援クーポン【第二弾】",
@@ -1023,7 +1053,7 @@
     "booking_period": "2026/5/1(金) ～ 2026/8/31(月)",
     "stay_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605izucp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1040,6 +1070,33 @@
       "conditions": [],
       "notes": [
         "以上 泊数指定なし 先着 10枚 150,000円以上のご利用で 15,000 円引 クーポンコード izucp パスワ"
+      ]
+    }
+  },
+  {
+    "id": "2608notoairport",
+    "category": "国内",
+    "title": "【往復ANA便】能登空港利用で使える国内ツアー割引クーポン",
+    "discount": "最大15,000円引",
+    "area": "石川県",
+    "type": "ツアー",
+    "booking_period": "2026/8/18(火) ～ 2027/2/27(土)",
+    "stay_period": "2026/9/1(火) ～ 2027/2/28(日)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608notoairport/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "notoc"
+      ],
+      "passwords": [
+        "g974",
+        "g975",
+        "g976"
+      ],
+      "conditions": [],
+      "notes": [
+        "1名 泊数指定なし 先着 10枚 下限代金なし 5,000 円引 クーポンコード notoc パスワード g974 2名"
       ]
     }
   },
@@ -1206,6 +1263,31 @@
     }
   },
   {
+    "id": "2608osacp",
+    "category": "国内",
+    "title": "大阪府のおすすめ施設で使える割引クーポン",
+    "discount": "3,000円引",
+    "area": "大阪府",
+    "type": "宿泊",
+    "booking_period": "2026/8/18(火) ～ 2026/10/31(土)",
+    "stay_period": "2026/8/18(火) ～ 2026/10/31(土)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608osacp/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "osacp"
+      ],
+      "passwords": [
+        "g989"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 333枚 20,000円以上のご利用で 3,000 円引 クーポンコード osacp パスワー"
+      ]
+    }
+  },
+  {
     "id": "2602jalcp",
     "category": "国内",
     "title": "【JAL麗らか四国キャンペーン】往復JAL便利用でいく小豆島ツアーで使える割引クーポン",
@@ -1268,7 +1350,7 @@
     "booking_period": "2026/7/1(水) ～ 2026/9/30(水)",
     "stay_period": "2026/7/19(日) ～ 2026/9/30(水)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607yamaguchi/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1409,7 +1491,7 @@
     "booking_period": "2026/7/24(金) ～ 2026/9/30(水)",
     "stay_period": "2026/8/1(土) ～ 2026/10/31(土)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607okinawa/page.asp",
     "detail_data": {
       "coupon_codes": [

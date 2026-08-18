@@ -1,66 +1,65 @@
 {
   "date": "2026-08-18",
-  "generated_at": "2026-08-18 06:33 JST",
+  "generated_at": "2026-08-18 11:37 JST",
   "sites": [
     {
       "site_id": "yakushimafan",
       "display_name": "屋久島ファン",
       "x_account": "@yakushimafan",
-      "candidates": 202,
+      "candidates": 214,
       "threads": [
         {
-          "provider_id": "jtb",
-          "provider_label": "JTB",
-          "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
-          "score": 62,
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "年末年始出発がお得！1グループ最大50,000円引き",
+          "score": 63,
           "reasons": [
-            "本日配布再開",
-            "割引15,000円",
-            "全国対象"
+            "本日新規",
+            "割引50,000円"
           ],
-          "pattern": "loss_aversion",
-          "pattern_name": "損失回避型",
-          "article_url": "https://yakushima.fun/jtb-first/",
+          "pattern": "question",
+          "pattern_name": "問いかけ型",
+          "article_url": "https://yakushima.fun/his-coupon/",
           "posts": [
             {
-              "text": "知らないまま定価で予約しがちなやつです。\n【JTB】最大15,000円引きクーポン、配布中\n\n対象はツアーです。\n期限は9/29まで。\n\n詳しい条件はこの下に👇\n(1/3)",
-              "weight": 147,
-              "chars": 86
+              "text": "HISが企画・実施する国内航空券＋ホテル（…の予約、もう済ませましたか？\n【HIS】に最大50,000円引きクーポンが出てます\n\n予約は9/25までです。\n\n使える条件はこの下です👇\n(1/3)",
+              "weight": 167,
+              "chars": 97
             },
             {
-              "text": "予約前の確認はここだけでOKです。\n\n✅割引: 最大15,000円引\n✅対象: ツアー\n✅予約期限: 9/29まで\n\n⚠️180,000円以上の予約が条件です\n(2/3)",
-              "weight": 133,
-              "chars": 85
+              "text": "使う前にここだけ確認してください。\n\n✅割引: 最大50,000円引き\n✅対象: HISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…\n✅予約期限: 9/25まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
+              "weight": 205,
+              "chars": 118
             },
             {
-              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #JTB\n(3/3)",
-              "weight": 153,
-              "chars": 106
+              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/his-coupon/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #HIS\n(3/3)",
+              "weight": 145,
+              "chars": 103
             }
           ]
         },
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "title": "ひなタビみやざき宿泊キャンペーン",
-          "score": 52,
+          "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
+          "score": 60,
           "reasons": [
             "本日配布再開",
-            "割引30%"
+            "割引15,000円"
           ],
           "pattern": "season_context",
           "pattern_name": "季節文脈型",
           "article_url": "https://yakushima.fun/jtb-first/",
           "posts": [
             {
-              "text": "夏の旅の計画、これからの人へ。\n【JTB】で最大30%OFFクーポンが配布中です\n\n宿泊・ツアーで使えます。\n予約期限は9/30まで。\n\n詳しい条件はこの下に👇\n(1/3)",
-              "weight": 147,
-              "chars": 86
+              "text": "夏の旅の計画、これからの人へ。\n【JTB】で最大15,000円引きクーポンが配布中です\n\n宿泊・ツアーで使えます。\n予約期限は8/31まで。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 153,
+              "chars": 89
             },
             {
-              "text": "予約前の確認はここだけでOKです。\n\n✅割引: 最大30％引\n✅対象: 宿泊・ツアー\n✅予約期限: 9/30まで\n\n⚠️4,500円以上の予約が条件です\n(2/3)",
-              "weight": 133,
-              "chars": 82
+              "text": "予約前の確認はここだけでOKです。\n\n✅割引: 最大15,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 8/31まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 139,
+              "chars": 88
             },
             {
               "text": "取得手順と注意点はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n配布状況は毎朝チェックして更新しています。\n\n#旅行クーポン #JTB\n(3/3)",
@@ -70,31 +69,32 @@
           ]
         },
         {
-          "provider_id": "knt",
-          "provider_label": "近畿日本ツーリスト",
-          "title": "ひなタビみやざき宿泊キャンペーン",
-          "score": 29,
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き",
+          "score": 59,
           "reasons": [
-            "本日配布再開"
+            "本日新規",
+            "割引10,000円"
           ],
-          "pattern": "honest_value",
-          "pattern_name": "実用直言型",
-          "article_url": "https://yakushima.fun/knt-coupon/",
+          "pattern": "quote_highlight",
+          "pattern_name": "カギカッコ強調型",
+          "article_url": "https://yakushima.fun/his-coupon/",
           "posts": [
             {
-              "text": "【近畿日本ツーリスト】国内宿泊で使える割引あり（金額は公式で確認）クーポンが配布中です。\nこれは正直かなり実用的です\n\n予約期限は9/30まで。\n\n使える条件はこの下です👇\n(1/3)",
-              "weight": 169,
-              "chars": 92
+              "text": "【HIS】いま『HISが企画・実施する国内航空券＋ホテル（…が最大10,000円引き』のクーポンを配布しています\n\n予約期限は9/25まで。\n\n使える条件はこの下です👇\n(1/3)",
+              "weight": 154,
+              "chars": 90
             },
             {
-              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 割引あり（金額は公式で確認）\n✅対象: 国内宿泊\n✅予約期限: 9/30まで（なくなり次第終了）\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
-              "weight": 178,
-              "chars": 101
+              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 最大10,000円引き\n✅対象: HISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…\n✅予約期限: 9/25まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
+              "weight": 205,
+              "chars": 119
             },
             {
-              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/knt-coupon/\n\nうまく使えば、ういたぶんを現地のごはんや体験にまわせます。\n\n#旅行クーポン #近畿日本ツーリスト\n(3/3)",
-              "weight": 168,
-              "chars": 113
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/his-coupon/\n\nうまく使えば、ういたぶんを現地のごはんや体験にまわせます。\n\n#旅行クーポン #HIS\n(3/3)",
+              "weight": 153,
+              "chars": 107
             }
           ]
         }
@@ -104,95 +104,95 @@
       "site_id": "welltrip",
       "display_name": "ウェルトリップ",
       "x_account": "welltrip",
-      "candidates": 169,
+      "candidates": 181,
       "threads": [
         {
-          "provider_id": "jtb",
-          "provider_label": "JTB",
-          "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
-          "score": 62,
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "早めの予約がお得！11月以降出発をお申し込みで1グループ最大20,000円引き",
+          "score": 69,
           "reasons": [
-            "本日配布再開",
-            "割引15,000円",
-            "全国対象"
+            "本日新規",
+            "割引20,000円"
           ],
           "pattern": "casual_aside",
           "pattern_name": "ひとりごと型",
-          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "article_url": "https://travel.hb-connect.co.jp/his-coupon/",
           "posts": [
             {
-              "text": "【JTB】最大15,000円引きクーポンが配布中です\n（どこ行くか考える時間が、いちばん楽しいんですよね）\n\nツアーで使えます。\n期限は9/29まで。\n\n条件はこちらです👇\n(1/3)",
-              "weight": 159,
-              "chars": 92
+              "text": "【HIS】最大20,000円引きクーポンが配布中です\n（どこ行くか考える時間が、いちばん楽しいんですよね）\n\n海外航空券で使えます。\n期限は8/31まで。\n\n条件はこちらです👇\n(1/3)",
+              "weight": 163,
+              "chars": 94
             },
             {
-              "text": "使える条件を整理しました。\n\n✅割引: 最大15,000円引\n✅対象: ツアー\n✅予約期限: 9/29まで\n\n⚠️180,000円以上の予約が条件です\n(2/3)",
-              "weight": 127,
-              "chars": 81
+              "text": "使える条件を整理しました。\n\n✅割引: 最大20,000円引き\n✅対象: 海外航空券\n✅予約期限: 8/31まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
+              "weight": 150,
+              "chars": 89
             },
             {
-              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n気になった方は早めのチェックがおすすめです。\n\n#旅行クーポン #JTB\n(3/3)",
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/his-coupon/\n\n気になった方は早めのチェックがおすすめです。\n\n#旅行クーポン #HIS\n(3/3)",
               "weight": 135,
               "chars": 108
             }
           ]
         },
         {
-          "provider_id": "jtb",
-          "provider_label": "JTB",
-          "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
-          "score": 54,
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+          "score": 63,
           "reasons": [
-            "本日配布再開",
-            "割引10,000円"
+            "本日新規",
+            "割引50,000円"
           ],
           "pattern": "soft_news",
           "pattern_name": "予約前チェック型",
-          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "article_url": "https://travel.hb-connect.co.jp/his-coupon/",
           "posts": [
             {
-              "text": "【JTB】をこれから予約する人は、最大10,000円引きクーポンの確認を先にどうぞ\n\n対象は宿泊・ツアーです。\n予約は9/30までです。\n\n詳しい条件は下に続きます👇\n(1/3)",
-              "weight": 154,
-              "chars": 89
+              "text": "【HIS】をこれから予約する人は、最大50,000円引きクーポンの確認を先にどうぞ\n\n対象はHISが企画・実施する海外ツアー（Ciao）、海外添乗員同…です。\n予約は9/25までです。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "weight": 195,
+              "chars": 113
             },
             {
-              "text": "使える条件を整理しました。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 9/30まで\n\n⚠️100,000円以上の予約が条件です\n(2/3)",
-              "weight": 133,
-              "chars": 84
+              "text": "使える条件を整理しました。\n\n✅割引: 最大50,000円割引\n✅対象: HISが企画・実施する海外ツアー（Ciao）、海外添乗員同…\n✅予約期限: 9/25まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
+              "weight": 193,
+              "chars": 114
             },
             {
-              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\nがんばった自分へのご褒美旅にも。よければどうぞ。\n\n#旅行クーポン #JTB\n(3/3)",
+              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/his-coupon/\n\nがんばった自分へのご褒美旅にも。よければどうぞ。\n\n#旅行クーポン #HIS\n(3/3)",
               "weight": 141,
               "chars": 111
             }
           ]
         },
         {
-          "provider_id": "knt",
-          "provider_label": "近畿日本ツーリスト",
-          "title": "東北たびクーポンキャンペーン",
-          "score": 30,
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "早いがお得！伊豆の夏　JTBプランで使える割引クーポン",
+          "score": 60,
           "reasons": [
-            "割引30,000円"
+            "本日配布再開",
+            "割引15,000円"
           ],
           "pattern": "memo_style",
           "pattern_name": "メモ共有型",
-          "article_url": "https://travel.hb-connect.co.jp/knt-coupon/",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
           "posts": [
             {
-              "text": "旅行の予定がある人向けの覚え書きです📝\n【近畿日本ツーリスト】最大30,000円引きクーポンが配布中\n\n対象は国内宿泊。\n予約は3/10までです。\n\n使える条件をまとめました👇\n(1/3)",
-              "weight": 166,
-              "chars": 94
+              "text": "旅行の予定がある人向けの覚え書きです📝\n【JTB】最大15,000円引きクーポンが配布中\n\n対象は宿泊・ツアー。\n予約は8/31までです。\n\n使える条件をまとめました👇\n(1/3)",
+              "weight": 155,
+              "chars": 90
             },
             {
-              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 30,000円割引\n✅対象: 国内宿泊\n✅予約期限: 3/10まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
-              "weight": 142,
-              "chars": 85
+              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大15,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 8/31まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 141,
+              "chars": 88
             },
             {
-              "text": "取得方法と使い方の手順はこちらに\n→ https://travel.hb-connect.co.jp/knt-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #近畿日本ツーリスト\n(3/3)",
-              "weight": 148,
-              "chars": 113
+              "text": "取得方法と使い方の手順はこちらに\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 133,
+              "chars": 107
             }
           ]
         }
