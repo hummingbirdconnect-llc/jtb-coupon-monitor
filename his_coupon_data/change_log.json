@@ -1,69 +1,5 @@
 [
   {
-    "date": "2026-05-16",
-    "type": "🆕 新規",
-    "id": "5e6935d23c6a",
-    "category": "国内航空券＋ホテル",
-    "title": "【先着合計2,500枚限定】JAL利用がお得！1グループ最大15,000円引き",
-    "discount": ""
-  },
-  {
-    "date": "2026-05-16",
-    "type": "🆕 新規",
-    "id": "8e8a88f489a4",
-    "category": "国内航空券＋ホテル",
-    "title": "沖縄行き航空券＋ホテルがお得！1グループ2,000円引き",
-    "discount": ""
-  },
-  {
-    "date": "2026-05-19",
-    "type": "🆕 新規",
-    "id": "3d3f3ffe833c",
-    "category": "海外航空券・AirZ(海外航空券+ホテル)",
-    "title": "ナイトタイムクーポン！海外航空券・AirZ(海外航空券+ホテル)1グループ2,000円引き",
-    "discount": ""
-  },
-  {
-    "date": "2026-05-19",
-    "type": "🆕 新規",
-    "id": "3fc9b1c4edf6",
-    "category": "国内ホテル",
-    "title": "【総額1億円！スーパーサマーセールウルトラクーポン】1グループ10％OFFクーポン",
-    "discount": "10%OFF"
-  },
-  {
-    "date": "2026-05-19",
-    "type": "🆕 新規",
-    "id": "a1e733d84564",
-    "category": "グランピング・コテージ・貸し別荘宿泊",
-    "title": "【総額1億円！スーパーサマーセールウルトラクーポン】1グループ5％OFFクーポン",
-    "discount": "5%OFF"
-  },
-  {
-    "date": "2026-05-19",
-    "type": "🆕 新規",
-    "id": "b99d686002b3",
-    "category": "国内航空券＋ホテル",
-    "title": "【総額1億円！スーパーサマーセールウルトラクーポン】1グループ最大20％OFFクーポン",
-    "discount": "20%OFF"
-  },
-  {
-    "date": "2026-05-19",
-    "type": "🆕 新規",
-    "id": "ceda9bd397bf",
-    "category": "高速バス・夜行バス",
-    "title": "【総額1億円！スーパーサマーセールウルトラクーポン】お1人様10％OFFクーポン",
-    "discount": "10%OFF"
-  },
-  {
-    "date": "2026-05-19",
-    "type": "🆕 新規",
-    "id": "e2b2152d73f9",
-    "category": "国内鉄道ツアー",
-    "title": "【総額1億円！スーパーサマーセールウルトラクーポン】1グループ5％OFFクーポン",
-    "discount": "5%OFF"
-  },
-  {
     "date": "2026-05-21",
     "type": "🆕 新規",
     "id": "019606e44823",
@@ -1150,6 +1086,1338 @@
     "category": "国内航空券＋ホテル",
     "title": "まもなく終了！スーパーサマーセールFINAL1グループ2,000円引き",
     "discount": "2,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "07c5f73161f8-6cbe2b",
+    "category": "佐賀空港利用 海外旅行",
+    "title": "九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大4,000円助成",
+    "discount": "",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "2291e0cd6211-132b8e",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "2291e0cd6211-61a9df",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "2291e0cd6211-83fcd8",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "280b2b87265b",
+    "category": "国内航空券＋ホテル",
+    "title": "年末年始出発がお得！1グループ最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "29cb4aa743a6",
+    "category": "満天ノ 辻のや",
+    "title": "連休もお得！満天ノ 辻のや公式サイトで使える1グループ10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-1359bd",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-33ef99",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-5f79c4",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-67444b",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-888b34",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-a6f743",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-c037f4",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-f9369e",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "4d53962adf68",
+    "category": "変なホテル",
+    "title": "連休もお得！変なホテル公式サイトで使える1グループ10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "6ecd52cc38b2",
+    "category": "国内添乗員同行ツアー",
+    "title": "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き",
+    "discount": "最大10,000円引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "776b7d604b2b",
+    "category": "高速バス・夜行バス",
+    "title": "オンライン予約限定！45日以上前までのお申し込みで1名様につき5％引き",
+    "discount": "5%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "8386cc56aac1",
+    "category": "海外航空券",
+    "title": "早めの予約がお得！11月以降出発をお申し込みで1グループ最大20,000円引き",
+    "discount": "最大20,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-22f220",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-3c4bbe",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-580a32",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-637540",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-74ab77",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-8ac8c0",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-c5c55d",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "a4a867d1f2a3-dcdbca",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
+    "discount": "最大50,000円割引",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "b207d97c5e74",
+    "category": "国内航空券＋ホテル",
+    "title": "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き",
+    "discount": "最大10,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "d266989e495d-bee0d4",
+    "category": "佐賀空港利用 海外旅行",
+    "title": "若者（29歳以下）限定！九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大13,000円助成",
+    "discount": "",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "🆕 新規",
+    "id": "fba9e460a060",
+    "category": "国内ホテル",
+    "title": "オンライン予約限定！60日以上前までのお申し込みで1グループ最大2,000円引き",
+    "discount": "最大2,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "07c5f73161f8-687569",
+    "category": "佐賀空港利用 海外旅行",
+    "title": "九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大4,000円助成",
+    "discount": "",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "1805aba27449",
+    "category": "国内鉄道ツアー",
+    "title": "オンライン予約限定！対象の鉄道ツアーをお申し込みで1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "2291e0cd6211-594df9",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "2291e0cd6211-83af73",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "2291e0cd6211-d12c82",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "3e39bbc60ef7",
+    "category": "満天ノ 辻のや",
+    "title": "夏休みも連休もお得！満天ノ 辻のや公式サイトで使える1グループ10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-0a8b8f",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-154a13",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-27693a",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-27a5b9",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-33e645",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-490f56",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-755646",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-ddc9d7",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "4dddb36b3ec7",
+    "category": "JR・新幹線＋ホテル",
+    "title": "JR・新幹線＋ホテルパック・ツアーで使える！1グループ1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "64825bb0d5e6",
+    "category": "グランピング・コテージ・貸し別荘宿泊",
+    "title": "オンライン予約限定！7～11月の滞在に使える！1グループ5％引き",
+    "discount": "5%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "817b7e0d0680",
+    "category": "沖縄ツアー",
+    "title": "8～10月出発の沖縄家族旅行がお得！1グループ最大10％引き",
+    "discount": "最大10%引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "86a932fa496c",
+    "category": "国内航空券＋ホテル",
+    "title": "まもなく終了！スーパーサマーセールFINAL1グループ2,000円引き",
+    "discount": "2,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "a86c8e167a74",
+    "category": "国内航空券＋ホテル",
+    "title": "レンタカー同時予約がお得！1グループ1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "b9a8f755da03",
+    "category": "高速バス・夜行バス",
+    "title": "オンライン予約限定！25歳以下ならお得！1名様につき5％引き",
+    "discount": "5%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "bec869fcc676",
+    "category": "国内添乗員同行ツアー",
+    "title": "早めの予約がお得！90日以上前までのお申し込みで1名様につき最大10,000円引き",
+    "discount": "最大10,000円引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "cf03c80b29d5",
+    "category": "変なホテル",
+    "title": "夏休みも連休もお得！変なホテル公式サイトで使える1グループ10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "d266989e495d-82a64a",
+    "category": "佐賀空港利用 海外旅行",
+    "title": "若者（29歳以下）限定！九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大13,000円助成",
+    "discount": "",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "d3000a952db4",
+    "category": "国内ホテル",
+    "title": "オンライン予約限定！国内ホテル宿泊をお申込みで1グループ1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e-389ac7",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e-400bd5",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e-436e28",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e-71118a",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e-a1a12c",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "chugoku",
+      "shikoku"
+    ],
+    "region_labels": [
+      "中国版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e-b0c61e",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e27e6445bb5e-d5b80c",
+    "category": "海外eSIM",
+    "title": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+    "discount": "10%引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "e7b7aa037781",
+    "category": "国内ホテル",
+    "title": "オンライン予約限定！舞浜・浦安エリアの宿泊がお得！1グループ2,000円引き",
+    "discount": "2,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "f00d1e1b5615-2ac123",
+    "category": "中部発国内添乗員同行ツアー",
+    "title": "夏旅応援！8・9月出発がお得1名様につき3,000円引き",
+    "discount": "3,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "f6b2c61b263f",
+    "category": "国内航空券＋ホテル",
+    "title": "8月～2027年3月出発で使える！1グループ最大10,000円引き",
+    "discount": "最大10,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "type": "❌ 消失",
+    "id": "f949f807a2f2",
+    "category": "国内航空券＋ホテル・国内ホテル",
+    "title": "全国の変なホテルなど対象ホテル宿泊で使える1グループ1,000円引き",
+    "discount": "1,000円引き",
     "region_codes": [
       "kanto",
       "hokkaido",

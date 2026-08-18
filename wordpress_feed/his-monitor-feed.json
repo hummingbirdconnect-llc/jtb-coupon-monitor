@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-18T06:24:48.403872+09:00",
+  "generatedAt": "2026-08-18T11:12:26.259197+09:00",
   "source": {
     "monitorSourceId": "his-official-monitor",
     "providerSlug": "his",
     "providerName": "HIS",
     "monitorRepository": "jtb-coupon-monitor",
     "monitorFile": "his_coupon_data/coupons_2026-08-18.json",
-    "monitorFileSha256": "4bc0f19030ea127d3616cad282e06d9f092aeefa36f3c78881a74649cf137b1e",
+    "monitorFileSha256": "36ecd4f1d6f0360a60373aea27c753a65d36af1fabc93429c0f88a08fd79e3c5",
     "monitorHtmlFile": "html_output/his_coupons.html",
-    "monitorHtmlSha256": "67deb7769b2cba41f60f60df54d2221b63c29cf05f5eb5beff24493270525970",
+    "monitorHtmlSha256": "659ed2fd235874d918856723b4fefdaa6d11f78581636b88587ce25bf7f90291",
     "monitorStatusFile": "provider_check_data/his/latest.json",
-    "monitorFetchedAt": "2026-08-18T06:24:48.403872+09:00",
-    "verifiedAt": "2026-08-18T06:24:48.403872+09:00",
+    "monitorFetchedAt": "2026-08-18T11:12:26.259197+09:00",
+    "verifiedAt": "2026-08-18T11:12:26.259197+09:00",
     "freshnessSlaHours": 30,
-    "monitorRawCount": 40,
-    "monitorPrimaryRegionCount": 19,
+    "monitorRawCount": 34,
+    "monitorPrimaryRegionCount": 13,
     "regionalCoverage": {
       "primaryRegionCode": "kanto",
-      "uniqueVariantCount": 40,
-      "primaryRegionCount": 19,
+      "uniqueVariantCount": 34,
+      "primaryRegionCount": 13,
       "regionCount": 11,
       "successfulRegionCount": 11
     },
     "officialComparison": {
-      "liveCount": 19,
-      "sourceCount": 19,
-      "matchedCount": 19,
+      "liveCount": 13,
+      "sourceCount": 13,
+      "matchedCount": 13,
       "codeMismatchCount": 0,
       "periodMismatchCount": 0
     },
@@ -39,40 +39,121 @@
     }
   },
   "counts": {
-    "total": 19,
-    "selectable": 12,
-    "needsReview": 7
+    "total": 13,
+    "selectable": 10,
+    "needsReview": 3
   },
   "items": [
     {
-      "id": "his:e27e6445bb5e",
+      "id": "his:a4a867d1f2a3",
       "monitorSourceId": "his-official-monitor",
       "providerSlug": "his",
       "providerName": "HIS",
-      "status": "ended",
-      "couponName": "TripSIM（eSIM）クーポン",
-      "discountLabel": "10％引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "",
-      "displayTitle": "海外eSIM 10％引きクーポンを確認する",
+      "status": "active",
+      "couponName": "海外旅行 早期割クーポン",
+      "discountLabel": "最大50,000円割引",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+      "travelPeriod": "2026年12月16日(水)以降",
+      "displayTitle": "海外旅行 最大50,000円割引クーポンを確認する",
       "codes": [
         {
-          "code": "VZJA7EK",
-          "condition": "",
-          "discount": "10％引き"
+          "code": "ANF9JTXKFXDEEAGL",
+          "condition": "旅行代金総額100万円以上",
+          "discount": "5万円引き"
+        },
+        {
+          "code": "ANF8JXPPVGWPPKVM",
+          "condition": "旅行代金総額90万円以上",
+          "discount": "4万円引き"
+        },
+        {
+          "code": "ANF7LVAMWUPBNBGX",
+          "condition": "旅行代金総額80万円以上",
+          "discount": "35,000円引き"
+        },
+        {
+          "code": "ANF6HBKTHLQQMLZE",
+          "condition": "旅行代金総額70万円以上",
+          "discount": "3万円引き"
+        },
+        {
+          "code": "ANF5TCTFKVURCCMA",
+          "condition": "旅行代金総額60万円以上",
+          "discount": "25,000円引き"
+        },
+        {
+          "code": "ANF4ZANFQMZHWVMS",
+          "condition": "旅行代金総額50万円以上",
+          "discount": "2万円引き"
+        },
+        {
+          "code": "ANF3QSLSCHSUBJYH",
+          "condition": "旅行代金総額40万円以上",
+          "discount": "15,000円引き"
+        },
+        {
+          "code": "ANF2LPPSPWLCSBFU",
+          "condition": "旅行代金総額30万円以上",
+          "discount": "1万円引き"
+        },
+        {
+          "code": "ANF1ZWHTPWUTMHLN",
+          "condition": "旅行代金総額20万円以上",
+          "discount": "5千円引き"
         }
       ],
-      "note": "Trip SIM（eSIM）が対象です。",
-      "destinationUrl": "",
+      "note": "海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)が対象です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "海外eSIM",
-      "sourceTitle": "期間中にTripSIM（eSIM）をお申し込みで利用プラン10％引き",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
+      "sourceCategory": "海外旅行",
+      "sourceTitle": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円割引クーポン",
       "presentationVersion": 2,
-      "selectable": false,
-      "warnings": [
-        "対象期間を監視元で確認できません。"
-      ]
+      "selectable": true,
+      "warnings": []
+    },
+    {
+      "id": "his:8386cc56aac1",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "海外航空券 早期割クーポン",
+      "discountLabel": "1組最大20,000円引き",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年8月31日(月)23:59",
+      "travelPeriod": "2026年11月1日(日)～2027年7月31日(土)",
+      "displayTitle": "海外航空券 1組最大20,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "XR2JHKAQSSRMWLCM",
+          "condition": "航空券代金40万円以上",
+          "discount": "2万円引き"
+        },
+        {
+          "code": "EX1UJAPNNKXLBPLY",
+          "condition": "航空券代金20万円以上",
+          "discount": "1万円引き"
+        },
+        {
+          "code": "JS5PAANGUJALVHFR",
+          "condition": "航空券代金7万円以上",
+          "discount": "5千円引き"
+        },
+        {
+          "code": "FE3AGRWUCAFNZTAH",
+          "condition": "航空券代金2万円以上",
+          "discount": "3千円引き"
+        }
+      ],
+      "note": "オンライン予約限定です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
+      "sourceCategory": "海外航空券",
+      "sourceTitle": "早めの予約がお得！11月以降出発をお申し込みで1グループ最大20,000円引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
     },
     {
       "id": "his:447b24b927ec",
@@ -105,7 +186,7 @@
       "note": "1名様の旅行代金30,000円以上が条件です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
       "sourceCategory": "国内ツアー",
       "sourceTitle": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
       "presentationVersion": 2,
@@ -135,7 +216,7 @@
       "note": "首都圏発の飛行機利用国内ツアーが対象です。1名様の旅行代金50,000円以上が条件です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
       "sourceCategory": "国内ツアー",
       "sourceTitle": "年末年始出発がお得！1名様につき3,000円引き",
       "presentationVersion": 2,
@@ -143,95 +224,87 @@
       "warnings": []
     },
     {
-      "id": "his:86a932fa496c",
+      "id": "his:b207d97c5e74",
       "monitorSourceId": "his-official-monitor",
       "providerSlug": "his",
       "providerName": "HIS",
-      "status": "ended",
-      "couponName": "国内航空券＋ホテル まもなく終了 スーパーサマーセールFINALクーポン",
-      "discountLabel": "1組2,000円引き",
-      "bookingPeriod": "2026年8月14日(金)10:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年8月17日(月)～2027年3月31日(水)",
-      "displayTitle": "国内航空券＋ホテル 1組2,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "GSGCABJ26K5RFZBB",
-          "condition": "",
-          "discount": "2千円引き"
-        }
-      ],
-      "note": "2名様以上のグループが対象です。オンライン予約でも利用できます。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "国内航空券＋ホテル",
-      "sourceTitle": "まもなく終了！スーパーサマーセールFINAL1グループ2,000円引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
-    },
-    {
-      "id": "his:f6b2c61b263f",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "国内航空券＋ホテル 8月～2027年3月出発クーポン",
+      "status": "active",
+      "couponName": "国内航空券＋ホテル 早期割クーポン",
       "discountLabel": "1組最大10,000円引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年8月1日(土)～2027年3月31日(水)",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+      "travelPeriod": "2026年11月16日(月)～2027年3月31日(水)※2026年12月25日(金)～2027年1月3日(日)は除く。",
       "displayTitle": "国内航空券＋ホテル 1組最大10,000円引きクーポンを確認する",
       "codes": [
         {
-          "code": "U97NAGW535KEFH99",
-          "condition": "JAL・JTA利用",
+          "code": "A7LZAMMQWZ8H5X55",
+          "condition": "180日前まで",
           "discount": "1万円引き"
         },
         {
-          "code": "VM5W35M5BB4ZGASD",
-          "condition": "JAL・JTAを除く全航空会社",
-          "discount": "5千円引き"
-        }
-      ],
-      "note": "2名様以上のグループが対象です。オンライン予約でも利用できます。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "国内航空券＋ホテル",
-      "sourceTitle": "8月～2027年3月出発で使える！1グループ最大10,000円引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
-    },
-    {
-      "id": "his:817b7e0d0680",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "8～10月出発の沖縄家族旅行クーポン",
-      "discountLabel": "1組最大10％引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年8月1日(土)～2026年10月29日(木)",
-      "displayTitle": "沖縄ツアー 1組最大10％引きクーポンを確認する",
-      "codes": [
+          "code": "DJ93S97UEESUN6QB",
+          "condition": "150日前まで",
+          "discount": "7千円引き"
+        },
         {
-          "code": "RHGLK5UC393DJJCC",
-          "condition": "沖縄 夏大満喫家族旅行",
-          "discount": "最大10％引き（上限3万円まで）"
+          "code": "B57DHBWZ33BSTK33",
+          "condition": "120日前まで",
+          "discount": "5千円引き"
+        },
+        {
+          "code": "QBRXUQMQ9ZXDJ9BB",
+          "condition": "90日前まで",
+          "discount": "3千円引き"
         }
       ],
-      "note": "首都圏発の沖縄 夏大満喫家族旅行でお問合せコード末尾が-NATSUのツアー商品が対象です。",
-      "destinationUrl": "",
+      "note": "オンライン予約でも利用できます。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "沖縄ツアー",
-      "sourceTitle": "8～10月出発の沖縄家族旅行がお得！1グループ最大10％引き",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
+      "sourceCategory": "国内航空券＋ホテル",
+      "sourceTitle": "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き",
       "presentationVersion": 2,
       "selectable": false,
       "warnings": [
         "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
       ]
+    },
+    {
+      "id": "his:280b2b87265b",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "国内航空券＋ホテル 年末年始出発クーポン",
+      "discountLabel": "1組最大50,000円引き",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+      "travelPeriod": "2026年12月25日(金)～2027年1月3日(日)",
+      "displayTitle": "国内航空券＋ホテル 1組最大50,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "KZMX9Y3CAWGBAYQB",
+          "condition": "",
+          "discount": "5万円引き"
+        },
+        {
+          "code": "B6MTH8BMDKX8M3M8",
+          "condition": "",
+          "discount": "3万円引き"
+        },
+        {
+          "code": "K75XQEGLQU9BHL33",
+          "condition": "",
+          "discount": "1万円引き"
+        }
+      ],
+      "note": "オンライン予約でも利用できます。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
+      "sourceCategory": "国内航空券＋ホテル",
+      "sourceTitle": "年末年始出発がお得！1グループ最大50,000円引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
     },
     {
       "id": "his:2291e0cd6211",
@@ -259,7 +332,7 @@
       "note": "首都圏・関西・中部発の沖縄に行ったらヨロンへ行こう！キャンペーン対象のツアー商品（お問合せコード末尾が-YONA、-YOMO）です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-g6731466_L&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
       "sourceCategory": "沖縄ツアー",
       "sourceTitle": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
       "presentationVersion": 2,
@@ -269,69 +342,39 @@
       ]
     },
     {
-      "id": "his:1805aba27449",
+      "id": "his:6ecd52cc38b2",
       "monitorSourceId": "his-official-monitor",
       "providerSlug": "his",
       "providerName": "HIS",
-      "status": "ended",
-      "couponName": "対象の鉄道ツアークーポン",
-      "discountLabel": "1名1,000円引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年7月11日(土)～2026年9月29日(火)",
-      "displayTitle": "国内鉄道ツアー 1名1,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "9785LXRQFTN2AW66",
-          "condition": "",
-          "discount": "1千円引き"
-        }
-      ],
-      "note": "株式会社日本旅行が旅行企画・実施、HISが受託販売する首都圏発の【HIS × 赤い風船】特別商品でお問合せコードに-TD-SSSFが含まれるツアー商品が対象です。オンライン予約限定です。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "国内鉄道ツアー",
-      "sourceTitle": "オンライン予約限定！対象の鉄道ツアーをお申し込みで1名様につき1,000円引き",
-      "presentationVersion": 2,
-      "selectable": false,
-      "warnings": [
-        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
-      ]
-    },
-    {
-      "id": "his:bec869fcc676",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
+      "status": "active",
       "couponName": "国内添乗員同行ツアー 早期割クーポン",
-      "discountLabel": "1名最大10,000円引き",
-      "bookingPeriod": "2026年5月8日(金)9:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年8月6日(木)～2027年3月31日(水)",
-      "displayTitle": "国内添乗員同行ツアー 1名最大10,000円引きクーポンを確認する",
+      "discountLabel": "1組最大10,000円引き",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+      "travelPeriod": "202611月16日(月)～2027年3月31日(水)",
+      "displayTitle": "国内添乗員同行ツアー 1組最大10,000円引きクーポンを確認する",
       "codes": [
         {
-          "code": "4UU5Y4TPJA5PLPCC",
-          "condition": "150日前まで・5万円以上",
+          "code": "TS9BRWTB37UJ3KY6",
+          "condition": "150日前まで",
           "discount": "1万円引き"
         },
         {
-          "code": "6RE5FJP7VWG3LJG3",
-          "condition": "120日前まで・4万円以上",
+          "code": "BJ8RTXJ2RDPNQXY6",
+          "condition": "120日前まで",
           "discount": "5千円引き"
         },
         {
-          "code": "9UZVNEU3RMB8JSTE",
-          "condition": "90日前まで・4万円以上",
+          "code": "4Y3NYEWHTBBA94EE",
+          "condition": "90日前まで",
           "discount": "3千円引き"
         }
       ],
-      "note": "首都圏発の飛行機・鉄道利用国内添乗員同行ツアーが対象です。金額条件は1名あたりです。",
-      "destinationUrl": "",
+      "note": "首都圏発の飛行機・鉄道利用国内添乗員同行ツアーが対象です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-d6731468_q&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
       "sourceCategory": "国内添乗員同行ツアー",
-      "sourceTitle": "早めの予約がお得！90日以上前までのお申し込みで1名様につき最大10,000円引き",
+      "sourceTitle": "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き",
       "presentationVersion": 2,
       "selectable": true,
       "warnings": []
@@ -367,7 +410,7 @@
       "note": "首都圏および東北発バスツアーが対象です。金額条件は1名あたりです。オンライン予約限定です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-F6191235_J&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
       "sourceCategory": "国内バスツアー",
       "sourceTitle": "早めの予約がお得！60日以上前までのお申し込みで1名様につき最大3,000円引き",
       "presentationVersion": 2,
@@ -375,215 +418,81 @@
       "warnings": []
     },
     {
-      "id": "his:a86c8e167a74",
+      "id": "his:fba9e460a060",
       "monitorSourceId": "his-official-monitor",
       "providerSlug": "his",
       "providerName": "HIS",
-      "status": "ended",
-      "couponName": "国内航空券＋ホテル レンタカー同時予約クーポン",
-      "discountLabel": "1組1,000円引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年8月1日(土)～2027年3月31日(水)",
-      "displayTitle": "国内航空券＋ホテル 1組1,000円引きクーポンを確認する",
+      "status": "active",
+      "couponName": "国内ホテル 60日以上前までのお申し込みでクーポン",
+      "discountLabel": "1組最大2,000円引き",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+      "travelPeriod": "2026年10月17日(土)～2027年3月31日(水)",
+      "displayTitle": "国内ホテル 1組最大2,000円引きクーポンを確認する",
       "codes": [
         {
-          "code": "LBSTLRFUYYMHFJW4",
-          "condition": "",
-          "discount": "1千円引き"
-        }
-      ],
-      "note": "国内航空券＋ホテル（ダイナミックパッケージ）でレンタカーを同時予約された方が対象です。2名様以上のグループが対象です。オンライン予約でも利用できます。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "国内航空券＋ホテル",
-      "sourceTitle": "レンタカー同時予約がお得！1グループ1,000円引き",
-      "presentationVersion": 2,
-      "selectable": false,
-      "warnings": [
-        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
-      ]
-    },
-    {
-      "id": "his:d3000a952db4",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "国内ホテル宿泊クーポン",
-      "discountLabel": "1組1,000円引き",
-      "bookingPeriod": "2026年7月27日(月)15:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年8月1日(土)～2027年1月31日(日)",
-      "displayTitle": "国内ホテル 1組1,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "37Y6V9DA7GTB84QB",
-          "condition": "",
-          "discount": "1千円引き"
-        }
-      ],
-      "note": "宿泊代金総額20,000円以上が条件です。オンライン予約限定です。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "国内ホテル",
-      "sourceTitle": "オンライン予約限定！国内ホテル宿泊をお申込みで1グループ1,000円引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
-    },
-    {
-      "id": "his:e7b7aa037781",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "国内ホテル 舞浜・浦安エリアの宿泊クーポン",
-      "discountLabel": "1組2,000円引き",
-      "bookingPeriod": "2026年7月27日(月)15:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年8月1日(土)～2026年10月31日(土)",
-      "displayTitle": "国内ホテル 1組2,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "BZAWUDBND5BMW6DD",
-          "condition": "",
+          "code": "9GVATRDDNEPN3SK6",
+          "condition": "宿泊日の120日以上前まで",
           "discount": "2千円引き"
-        }
-      ],
-      "note": "千葉県浦安市内のホテル宿泊が対象です。宿泊代金総額20,000円以上が条件です。オンライン予約限定です。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "国内ホテル",
-      "sourceTitle": "オンライン予約限定！舞浜・浦安エリアの宿泊がお得！1グループ2,000円引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
-    },
-    {
-      "id": "his:f949f807a2f2",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "全国の変なホテルなど対象ホテル宿泊クーポン",
-      "discountLabel": "1組1,000円引き",
-      "bookingPeriod": "2026年6月19日(金)12:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年6月22日(月)～2027年3月31日(水)",
-      "displayTitle": "国内航空券＋ホテル・国内ホテル 1組1,000円引きクーポンを確認する",
-      "codes": [
+        },
         {
-          "code": "D4KGT42GT3BFYFW4",
-          "condition": "",
+          "code": "S8QTZ92ELEWUE5Z7",
+          "condition": "宿泊日の90日以上前まで",
+          "discount": "1,500円引き"
+        },
+        {
+          "code": "EJHJ2RQAL45GZLK6",
+          "condition": "宿泊日の60日以上前まで",
           "discount": "1千円引き"
         }
       ],
-      "note": "国内航空券＋ホテル（ダイナミックパッケージ）または国内ホテル宿泊で、対象ホテルに1泊以上の宿泊があるご予約です。オンライン予約限定です。",
-      "destinationUrl": "",
+      "note": "宿泊代金総額30,000円以上が条件です。オンライン予約限定です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-S6731472_P&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "国内航空券＋ホテル・国内ホテル",
-      "sourceTitle": "全国の変なホテルなど対象ホテル宿泊で使える1グループ1,000円引き",
-      "presentationVersion": 2,
-      "selectable": false,
-      "warnings": [
-        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
-      ]
-    },
-    {
-      "id": "his:64825bb0d5e6",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "グランピング・コテージ・貸し別荘宿泊 7～11月の滞在クーポン",
-      "discountLabel": "1組5％引き",
-      "bookingPeriod": "2026年7月27日(月)15:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年7月28日(火)～2026年11月30日(月)",
-      "displayTitle": "グランピング・コテージ・貸し別荘宿泊 1組5％引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "WOWPLUSSSSFNL20265%OFF",
-          "condition": "",
-          "discount": "5％引き"
-        }
-      ],
-      "note": "WOW+公式サイトで取り扱いのグランピング、コテージ・貸別荘、ペットと泊まれる施設が対象です。オンライン予約限定です。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "グランピング・コテージ・貸し別荘宿泊",
-      "sourceTitle": "オンライン予約限定！7～11月の滞在に使える！1グループ5％引き",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
+      "sourceCategory": "国内ホテル",
+      "sourceTitle": "オンライン予約限定！60日以上前までのお申し込みで1グループ最大2,000円引き",
       "presentationVersion": 2,
       "selectable": true,
       "warnings": []
     },
     {
-      "id": "his:b9a8f755da03",
+      "id": "his:776b7d604b2b",
       "monitorSourceId": "his-official-monitor",
       "providerSlug": "his",
       "providerName": "HIS",
-      "status": "ended",
-      "couponName": "高速バス・夜行バス 25歳以下クーポン",
+      "status": "active",
+      "couponName": "高速バス・夜行バス 45日以上前までのお申し込みでクーポン",
       "discountLabel": "1名5％引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年7月1日(水)～2026年10月31日(土)",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+      "travelPeriod": "2026年10月2日(金)～2026年12月31日(木)",
       "displayTitle": "高速バス・夜行バス 1名5％引きクーポンを確認する",
       "codes": [
         {
-          "code": "Z55T7LQ67SMFSY88",
+          "code": "37ZD97R3LU9ZJM55",
           "condition": "",
           "discount": "5％引き"
         }
       ],
-      "note": "高速バス・夜行バスチケットをお申し込みの25歳以下の方が対象です。オンライン予約限定です。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "高速バス・夜行バス",
-      "sourceTitle": "オンライン予約限定！25歳以下ならお得！1名様につき5％引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
-    },
-    {
-      "id": "his:4dddb36b3ec7",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "JR・新幹線＋ホテルパック・ツアークーポン",
-      "discountLabel": "1組1,000円引き",
-      "bookingPeriod": "2026年6月1日(月)0:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年6月2日(火)～2026年9月30日(水)",
-      "displayTitle": "JR・新幹線＋ホテル 1組1,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "hiscp",
-          "condition": "",
-          "discount": "1千円引き"
-        }
-      ],
       "note": "オンライン予約限定です。",
-      "destinationUrl": "",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-h6693729_N&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
-      "sourceCategory": "JR・新幹線＋ホテル",
-      "sourceTitle": "JR・新幹線＋ホテルパック・ツアーで使える！1グループ1,000円引き",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
+      "sourceCategory": "高速バス・夜行バス",
+      "sourceTitle": "オンライン予約限定！45日以上前までのお申し込みで1名様につき5％引き",
       "presentationVersion": 2,
       "selectable": true,
       "warnings": []
     },
     {
-      "id": "his:cf03c80b29d5",
+      "id": "his:4d53962adf68",
       "monitorSourceId": "his-official-monitor",
       "providerSlug": "his",
       "providerName": "HIS",
-      "status": "ended",
-      "couponName": "変なホテル公式サイトクーポン",
+      "status": "active",
+      "couponName": "連休もお得 変なホテル公式サイトクーポン",
       "discountLabel": "1組10％引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年6月30日(火)～2027年2月28日(日)",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)11:00",
+      "travelPeriod": "2026年8月18日(火)～2027年2月28日(日)",
       "displayTitle": "変なホテル 1組10％引きクーポンを確認する",
       "codes": [
         {
@@ -593,25 +502,25 @@
         }
       ],
       "note": "日本全国の「変なホテル」22施設、ウォーターマークホテル沖縄 宮古島、ウォーターマークホテル沖縄 久米アイランドが対象です。オンライン予約限定です。",
-      "destinationUrl": "",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-S6731472_P&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
       "sourceCategory": "変なホテル",
-      "sourceTitle": "夏休みも連休もお得！変なホテル公式サイトで使える1グループ10％引き",
+      "sourceTitle": "連休もお得！変なホテル公式サイトで使える1グループ10％引き",
       "presentationVersion": 2,
       "selectable": true,
       "warnings": []
     },
     {
-      "id": "his:3e39bbc60ef7",
+      "id": "his:29cb4aa743a6",
       "monitorSourceId": "his-official-monitor",
       "providerSlug": "his",
       "providerName": "HIS",
-      "status": "ended",
-      "couponName": "満天ノ 辻のや公式サイトクーポン",
+      "status": "active",
+      "couponName": "連休もお得 満天ノ 辻のや公式サイトクーポン",
       "discountLabel": "1組10％引き",
-      "bookingPeriod": "2026年6月30日(火)11:00～2026年8月18日(火)10:00",
-      "travelPeriod": "2026年6月30日(火)～2027年2月28日(日)",
+      "bookingPeriod": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+      "travelPeriod": "2026年8月18日(火)～2027年2月28日(日)",
       "displayTitle": "満天ノ 辻のや 1組10％引きクーポンを確認する",
       "codes": [
         {
@@ -621,11 +530,11 @@
         }
       ],
       "note": "オンライン予約限定です。",
-      "destinationUrl": "",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-08-18T06:24:48.403872+09:00",
+      "sourceUpdatedAt": "2026-08-18T11:12:26.259197+09:00",
       "sourceCategory": "満天ノ 辻のや",
-      "sourceTitle": "夏休みも連休もお得！満天ノ 辻のや公式サイトで使える1グループ10％引き",
+      "sourceTitle": "連休もお得！満天ノ 辻のや公式サイトで使える1グループ10％引き",
       "presentationVersion": 2,
       "selectable": true,
       "warnings": []
