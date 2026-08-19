@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "fa7becb46857b645fe8ccd74a68c315a395a4d7b56a7be801bcd285551312fb3",
-  "last_checked_at": "2026-08-19T06:31:34.888460+09:00",
+  "observed_hash": "9fdb9fa4952096e9d40a056ece6efb31d4dafc1dbf22838a428c122a9f7fe556",
+  "last_checked_at": "2026-08-20T06:35:29.915614+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -14,7 +14,6 @@
       "include_in_audit": false,
       "discovered_from": "",
       "discovered_urls": [
-        "https://www.jalan.net/theme/coupon/yadonohitokushu/",
         "https://www.jalan.net/dp/theme/jp_coupon/",
         "https://www.jalan.net/rentacar/coupons/"
       ],
@@ -90,26 +89,12 @@
       "discovered_urls": [],
       "text_chars": 478,
       "content_hash": "6b4fc1a9bab3cd7af4a7fd5d50021c571ed1361c3b8a3f14e1217fc89f768995"
-    },
-    {
-      "url": "https://www.jalan.net/theme/coupon/yadonohitokushu/",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "html",
-      "error": "",
-      "purpose": "じゃらんクーポン入口・代表ページ発見から発見",
-      "source_role": "representative_discovered",
-      "include_in_audit": true,
-      "discovered_from": "https://www.jalan.net/jalancponsum/",
-      "discovered_urls": [],
-      "text_chars": 376,
-      "content_hash": "13afa4ab3a7cda8c17e263bba82846fc5060d60b0819b3fec0f2de979daaf62f"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-08-15T06:30:24.243029+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "9fdb9fa4952096e9d40a056ece6efb31d4dafc1dbf22838a428c122a9f7fe556",
+  "queued_candidate_id": "jalan-9fdb9fa4952096e9",
+  "queued_at": "2026-08-20T06:35:29.916255+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.593537+09:00",
   "last_audit_candidate_id": "jalan-fa7becb46857b645",
   "processed_hash": "fa7becb46857b645fe8ccd74a68c315a395a4d7b56a7be801bcd285551312fb3",

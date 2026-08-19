@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "candidate_id": "jalan-9fdb9fa4952096e9",
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "change_kind": "update",
+  "fetched_at": "2026-08-20T06:35:29.915628+09:00",
+  "content_hash": "9fdb9fa4952096e9d40a056ece6efb31d4dafc1dbf22838a428c122a9f7fe556",
+  "data_dir": "official_coupon_data/jalan",
+  "official_domains": [
+    "jalan.net"
+  ],
+  "coverage_scope": "curated_representative",
+  "count_scope_label": "代表クーポン",
+  "count_scope_detail": "代表的な公式クーポンページのみ。個別宿クーポン約1,000件は集計対象外。",
+  "manual_sources": [
+    {
+      "url": "https://www.jalan.net/theme/coupon/general/?type=jot_all",
+      "purpose": "全国の宿で使えるクーポン",
+      "access_mode": "session_or_dynamic",
+      "reason": "匿名HTMLではクーポン情報を取得できない表示になるため、ログイン済みブラウザで確認"
+    },
+    {
+      "url": "https://www.jalan.net/theme/coupon/general/?type=jot_csp_gold",
+      "purpose": "ゴールド会員向けクーポン",
+      "access_mode": "login_required",
+      "reason": "会員ランクとログイン状態に依存"
+    },
+    {
+      "url": "https://www.jalan.net/theme/coupon/general/?type=jot_csp_silver",
+      "purpose": "シルバー会員向けクーポン",
+      "access_mode": "login_required",
+      "reason": "会員ランクとログイン状態に依存"
+    },
+    {
+      "url": "https://www.jalan.net/theme/coupon/general/?type=jot_csp_bronze",
+      "purpose": "ブロンズ会員向けクーポン",
+      "access_mode": "login_required",
+      "reason": "会員ランクとログイン状態に依存"
+    },
+    {
+      "url": "https://www.jalan.net/dp/theme/coupon/general/?type=jot_dp",
+      "purpose": "じゃらんパック会員向けクーポン",
+      "access_mode": "session_or_dynamic",
+      "reason": "匿名HTMLではクーポン情報を取得できない表示になるため、ログイン済みブラウザで確認"
+    },
+    {
+      "url": "https://www.jalan.net/theme/coupon/yc0041/",
+      "purpose": "地域別クーポンページ",
+      "access_mode": "dynamic_browser",
+      "reason": "クーポン本体が動的表示のためブラウザ確認"
+    },
+    {
+      "url": "https://www.jalan.net/activity/theme/coupon/?ccnt=asb_h120",
+      "purpose": "じゃらん遊び・体験クーポン",
+      "access_mode": "login_required",
+      "reason": "リクルートIDのログイン画面へ遷移"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.jalan.net/theme/jalancouponfes/",
+      "purpose": "じゃらんクーポンフェス",
+      "source_role": "representative_campaign",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "ec3f98b45e07abdfa58b7e06922beb67ad20c8d0d79796e79c4fbdc00a6a63a1",
+      "text": "じゃらんクーポンフェス！ホテル・宿予約の限定プランとクーポンが満載-じゃらんnet じゃらん PRODUCED BY RECRUIT ヘルプ/問い合わせ 宿・ホテル予約TOP > 特集一覧 > じゃらんクーポンフェス！ホテル・宿予約の限定プランとクーポンが満載 じゃらんクーポンフェス！ホテル・宿予約の限定プランとクーポンが満載 掲載期間：2026年8月5日〜2026年9月3日 PR じゃらんクーポンフェス開催中！ホテルや旅館の宿泊がお得になるクーポンが盛りだくさん♪ 直前予約や、先々の予約に使えるクーポンなど、ここでしか獲得できないお得なクーポンを多数配布★ クーポンは数に限りがあるので、ご予約はお早めに！掲載施設に泊まって、素敵な旅をしよう！ 地域から絞り込む エリアを選択してください ※クーポン取得ページにてクーポンの使用条件とご利用上の注意をご確認ください。 ※クーポンには配布期間が設けられています。 早いもの勝ち！！ 直前割引特集 から探す 都道府県から探す 北海道 青森県 岩手県 宮城県 秋田県 山形県 福島県 栃木県 群馬県 茨城県 埼玉県 千葉県 東京都 神奈川県 山梨県 長野県 新潟県 富山県 石川県 福井県 静岡県 岐阜県 愛知県 三重県 滋賀県 京都府 大阪府 兵庫県 奈良県 和歌山県 鳥取県 島根県 岡山県 広島県 山口県 徳島県 香川県 愛媛県 高知県 福岡県 佐賀県 長崎県 熊本県 大分県 宮崎県 鹿児島県 沖縄県 検索 する 早期予約はお得がいっぱい！ 早いとお得なプラン から探す 都道府県から探す 北海道 青森県 岩手県 宮城県 秋田県 山形県 福島県 栃木県 群馬県 茨城県 埼玉県 千葉県 東京都 神奈川県 山梨県 長野県 新潟県 富山県 石川県 福井県 静岡県 岐阜県 愛知県 三重県 滋賀県 京都府 大阪府 兵庫県 奈良県 和歌山県 鳥取県 島根県 岡山県 広島県 山口県 徳島県 香川県 愛媛県 高知県 福岡県 佐賀県 長崎県 熊本県 大分県 宮崎県 鹿児島県 沖縄県 検索 する じゃらん限定プラン じゃらんnetだけで 予約できるお得なプラン から探す 都道府県から探す 北海道 青森県 岩手県 宮城県 秋田県 山形県 福島県 栃木県 群馬県 茨城県 埼玉県 千葉県 東京都 神奈川県 山梨県 長野県 新潟県 富山県 石川県 福井県 静岡県 岐阜県 愛知県 三重県 滋賀県 京都府 大阪府 兵庫県 奈良県 和歌山県 鳥取県 島根県 岡山県 広島県 山口県 徳島県 香川県 愛媛県 高知県 福岡県 佐賀県 長崎県 熊本県 大分県 宮崎県 鹿児島県 沖縄県 検索 する クーポンはなくなり次第終了！急いでチェック！ ウィズシードホテルグループ 幅広いニーズにお応えするホテル クーポンあり グランドメルキュール・メルキュール 五感で感じられる滞在をご提供 クーポンあり ソラーレ ホテルズ アンド リゾーツ お得なクーポン発行中！ クーポンあり ホテルモントレグループ 最大5000円クーポン配布中 クーポンあり スーパーホテル もっと心地よく、もっと健やかに クーポンあり イシン・ホテルズ・グループ お得なクーポン発行中！ クーポンあり ※クーポン取得ページにてクーポンの使用条件とご利用上の注意をご確認ください。 ※クーポンには配布期間が設けられています。 ※クーポンの配布期間は、8/5(水)〜8/17(月)、8/18(火)〜8/25(火)、8/26(水)〜9/3(木)を予定しています。 ※クーポンの利用条件は各クーポン詳細ページをご確認ください。 ※このクーポンは、対象外宿泊施設がございます。各種クーポン取得画面より利用可能宿泊施設をご確認いただけます。 ※本クーポンの配布開始は、配布日の10:00頃を予定しています。 ※配布時間になっても内容が変わらない場合は、ページの更新（再読み込み）やブラウザのキャッシュのクリアなどをお試しください。 ※クーポン取得ページにてクーポンの使用条件とご利用上の注意をご確認ください。 ※クーポンには配布期間が設けられています。 宿・ホテル ｜ 出張・ビジネス ｜ 温泉ガイド ｜ じゃらんパック （ JR / JAL / ANA ）｜ レンタカー ｜ 航空券 ｜ 観光ガイド ｜ 海外 (C) Recruit Co.,Ltd. 特集一覧へ じゃらんnet TOPへ (C) Recruit Co.,Ltd. TOP"
+    },
+    {
+      "url": "https://www.jalan.net/theme/furusato_coupon/",
+      "purpose": "ふるさとお得クーポン",
+      "source_role": "representative_campaign",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "a90bf41861a3f4b0f85909045416161ec238b6236411c0b2227c18e6f801b1d6",
+      "text": "ふるさとキャンペーン＆お得クーポンで旅にでよう！ 宿・ホテル予約TOP > 特集一覧 > ふるさとキャンペーン＆お得クーポンで旅にでよう！ ふるさとキャンペーン＆お得クーポンで旅にでよう！ [PR] 今すぐ使えるお得なクーポンはこちら！ ＼ 全国 の ご当地特集 を 紹介！／ お得なクーポン を発行している地域もチェックしよう♪ クーポンの注意事項については こちら をご確認ください。 ご当地特集とクーポンを探す エリアから探す 全国 北海道 東北 北関東 首都圏 東海 甲信越 北陸 近畿 山陰・山陽 四国 九州・沖縄 おすすめご当地特集とクーポンをチェック！ もっとご当地特集とクーポンをチェック！ 遊び・体験 の 特集 と クーポン を 探す 今が旬のご当地特集 この時期にぴったりの特集をご紹介♪ ご当地じゃらん 国内旅行や宿情報、周辺の観光情報を雑誌でチェックしよう♪ 前へ 次へ ご当地動画 ご当地の魅力を動画でご紹介♪ 前へ 次へ 戻る 次へ TOP 閉じる"
+    },
+    {
+      "url": "https://www.jalan.net/discountCoupon/CAM1322324/",
+      "purpose": "代表的な直接クーポン詳細",
+      "source_role": "representative_coupon",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "18c59a3623f433e9ab6eb2e531e801603b5e009711a69e6960a44d7c7cff64b3",
+      "text": "大江戸温泉物語グループで使えるクーポン 宿・ホテル予約TOP > 大江戸温泉物語グループで使えるクーポン ご利用の際には、 プライバシーポリシー と「ご利用上の注意」を必ずご確認ください。 クーポンについて 特別クーポン 併用可と記載のある「宿泊施設クーポン」「じゃらんクーポン」「地域クーポン」「特別クーポン」は1枚ずつ併用が可能です（最大4枚） 大江戸温泉物語グループで使えるクーポン 大江戸温泉物語グループで使えるクーポン 2,000 円分 エリア 全国(対象施設のみ) 配布期間 2026年8月15日(土)00:00〜2026年8月31日(月)23:59 予約期間 2026年8月15日(土)00:00〜2026年8月31日(月)23:59 宿泊対象期間 2026年8月15日(土)チェックイン〜2026年10月14日(水)チェックアウト 利用条件 【予約金額】20,000円(税込)以上【大人人数】2名以上【宿泊曜日】月・火・水・木・金・日【休前日】利用不可 ※下記の「ご利用上の注意」の内容に同意の上、クーポンの獲得をお願いいたします。 先着予約数 16000 併用 併用可 クーポンGET クーポン対象の宿を探す ご利用上の注意 ※ リクルートIDをお持ちの会員の方のみ獲得可能です。 ※ 「宿・ホテルクーポン」をプリントアウトしての利用はできません。 ※ 同一「宿・ホテルクーポン」は1会員様につき1種類1枚まで獲得可能です。 ※ 本クーポンは、1予約につき1枚のみ利用可能です。 ※ 本クーポンを利用してのご予約の際は必ず「当該宿・ホテルクーポン」対象宿かどうかをご確認ください。 ※ 本クーポンの予約期間内にご利用ください。 ※ 本クーポンは「特別クーポン」です。 ※ 併用可と記載のある「宿泊施設クーポン」「じゃらんクーポン」「地域クーポン」「特別クーポン」は1枚ずつ併用が可能です（最大4枚） ※ 他の旅行券や他の「特別クーポン」との併用はできません。 ※ 利用条件に併用不可の記載がある場合や、条件が合致しない場合は併用はできません。 ※2000円分クーポンの休前日は、土曜日・2026/9/20（日）〜2026/9/22（火）・2026/10/11（日）です。休前日を含むご予約にはご利用いただけませんので、ご了承ください。 ※ 本クーポンは予約数に限りがあります。本クーポンを利用した予約数が、表示の先着予約数に達した場合には、対象期間中であっても獲得済みのクーポンが利用できなくなりますので、ご了承ください。 ※ ご利用条件に「利用できるプラン」の記載がある場合は、対象プランのご予約にのみご利用が可能です。 なお今後、プラン名が変更になる場合がございますが、クーポンは変更後のプランにご利用いただけます。 ※ 本クーポンは、宿・ホテルのご予約時にご利用いただけます。 クーポン対象の宿を探す 宿泊日 チェックイン チェックアウト 宿泊日数：1泊 人数等 1 2 3 4 5 6 7 8 9〜 部屋 大人 1 2 3 4 5 6 7 8 9〜 名 子供 - 名 クーポン クーポンを選択 8/15発行_【大江戸温泉物語グループ】で使える2000円分クーポン<SP> エリア 都道府県を選択 エリアを選択 検索する ※このクーポンが利用できないプランが出ることもありますので利用条件をご確認ください。 ※航空便を選択する際に、特定航空便クーポンの利用条件に適しているか必ずご確認ください。 クーポンの使い方 STEP 1 お好みのクーポンを獲得します ※クーポンの獲得には、リクルートIDのログインが必要です。 ※クーポンのご利用には条件があります。必ず利用条件やご利用上の注意等をご確認ください。 STEP 2 クーポン獲得後、対象となる宿・プランを検索します STEP 3 予約画面で利用するクーポンを確認し、予約を完了します 予約の変更の際、変更内容によってはじゃらんクーポンの使用条件を満たさなくなる場合があります。 その場合は、クーポンのご利用設定が解除されますのでご注意ください。 ページTOPへ プライバシーポリシー"
+    },
+    {
+      "url": "https://www.jalan.net/dp/theme/jp_coupon/",
+      "purpose": "じゃらんパッククーポン",
+      "source_role": "representative_campaign",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "ba5e9da321f9b2917a6bb30a986e2449a1f8d0754a91d3907b1f473b65bf8a33",
+      "text": "最大30000円分クーポン配布中！ - じゃらんnet 宿・ホテル予約TOP > じゃらんパック > じゃらんパック 選べるクーポン特集 じゃらんパック 選べるクーポン特集 じゃらん PRODUCED BY RECRUIT ヘルプ/問い合わせ ・ご利用の際には、 プライバシーポリシー と「ご利用の注意」を必ずご確認ください。 ・クーポンの獲得にはリクルートIDでのログインが必要です。ログインは こちら クーポンについて このページのTOPへ 宿・ホテル ｜ ビジネスホテル ｜ 温泉・露天風呂 ｜ じゃらんパック （ JR / JAL / ANA ）｜ レンタカー ｜ 航空券 ｜ 観光ガイド ｜ 海外"
+    },
+    {
+      "url": "https://www.jalan.net/rentacar/coupons/",
+      "purpose": "じゃらんレンタカークーポン",
+      "source_role": "representative_campaign",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "6b4fc1a9bab3cd7af4a7fd5d50021c571ed1361c3b8a3f14e1217fc89f768995",
+      "text": "クーポンと言えばじゃらんレンタカー！全国で使える割引クーポン TOP > クーポン クーポンについて クーポン獲得には ログイン が必要です 今すぐログイン じゃらんレンタカーならクーポン利用でお得に予約可能！ 全国のレンタカー予約に使える、お得なクーポンを配布中 エリア限定、季節限定クーポンなど、ゲットのチャンスをお見逃しなく！ { \"@context\": \"http://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [ { \"@type\": \"ListItem\", \"position\": 1, \"item\": { \"@id\": \"https://www.jalan.net/rentacar/\", \"name\": \"TOP\" } }, { \"@type\": \"ListItem\", \"position\": 2, \"item\": { \"@id\": \"https://www.jalan.net/rentacar/coupons\", \"name\": \"クーポン\" } } ] }"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "jalan-195115a346ed1ed5",
+      "title": "じゃらんクーポンフェス",
+      "category": "campaign",
+      "type": "campaign",
+      "discount": "",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "掲載期間は2026年8月5日〜9月3日。対象地域・施設、配布期間、利用条件は各クーポン取得ページで確認。",
+      "coupon_codes": [],
+      "detail_url": "https://www.jalan.net/theme/jalancouponfes/",
+      "source_url": "https://www.jalan.net/theme/jalancouponfes/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "掲載期間：2026年8月5日〜2026年9月3日 PR じゃらんクーポンフェス開催中！ホテルや旅館の宿泊がお得になるクーポンが盛りだくさん♪ 直前予約や、先々の予約に使えるクーポンなど、ここでしか獲得できないお得なクーポンを多数配布★ クーポンは数に限りがあるので、ご予約はお早めに！",
+      "official_fetched_at": "2026-08-11T15:02:13.109894+09:00"
+    },
+    {
+      "id": "jalan-d464dfcb6dae0082",
+      "title": "ふるさとキャンペーン＆お得クーポン",
+      "category": "campaign",
+      "type": "campaign",
+      "discount": "",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "クーポンを発行している地域から選択。金額・期間・条件は各地域の詳細で確認。",
+      "coupon_codes": [],
+      "detail_url": "https://www.jalan.net/theme/furusato_coupon/",
+      "source_url": "https://www.jalan.net/theme/furusato_coupon/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "今すぐ使えるお得なクーポンはこちら！ ＼ 全国 の ご当地特集 を 紹介！／ お得なクーポン を発行している地域もチェックしよう♪ クーポンの注意事項については こちら をご確認ください。 ご当地特集とクーポンを探す",
+      "official_fetched_at": "2026-08-11T15:02:13.109894+09:00"
+    },
+    {
+      "id": "jalan-c68706dfbbb32d58",
+      "title": "大江戸温泉物語グループで使える2,000円分クーポン",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "2,000円分",
+      "stock_status": "配布予定",
+      "booking_period": "2026-08-15 - 2026-08-31",
+      "travel_period": "2026-08-15 - 2026-10-14",
+      "conditions": "全国の対象施設のみ。予約金額20,000円以上、大人2名以上、月〜金・日曜宿泊、休前日は利用不可。リクルートID会員限定、先着16,000予約。",
+      "coupon_codes": [],
+      "detail_url": "https://www.jalan.net/discountCoupon/CAM1322324/",
+      "source_url": "https://www.jalan.net/discountCoupon/CAM1322324/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "大江戸温泉物語グループで使えるクーポン 2,000 円分 エリア 全国(対象施設のみ) 配布期間 2026年8月15日(土)00:00〜2026年8月31日(月)23:59 予約期間 2026年8月15日(土)00:00〜2026年8月31日(月)23:59 宿泊対象期間 2026年8月15日(土)チェックイン〜2026年10月14日(水)チェックアウト 利用条件 【予約金額】20,000円(税込)以上【大人人数】2名以上【宿泊曜日】月・火・水・木・金・日【休前日】利用不可",
+      "official_fetched_at": "2026-08-11T15:02:13.109894+09:00"
+    },
+    {
+      "id": "jalan-afabbdfe0c904647",
+      "title": "じゃらんパック 選べるクーポン特集",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "最大30000円分",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "じゃらんパック（JR・JAL・ANA）が対象。獲得にはリクルートIDでのログインが必要。",
+      "coupon_codes": [],
+      "detail_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+      "source_url": "https://www.jalan.net/dp/theme/jp_coupon/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "最大30000円分クーポン配布中！ - じゃらんnet 宿・ホテル予約TOP > じゃらんパック > じゃらんパック 選べるクーポン特集 じゃらんパック 選べるクーポン特集 じゃらん PRODUCED BY RECRUIT ヘルプ/問い合わせ ・ご利用の際には、 プライバシーポリシー と「ご利用の注意」を必ずご確認ください。 ・クーポンの獲得にはリクルートIDでのログインが必要です。",
+      "official_fetched_at": "2026-08-11T15:02:13.109894+09:00"
+    },
+    {
+      "id": "jalan-4cdad71d00e76f94",
+      "title": "じゃらんレンタカー割引クーポン",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "全国のレンタカー予約向け。エリア・季節限定を含み、獲得にはログインが必要。",
+      "coupon_codes": [],
+      "detail_url": "https://www.jalan.net/rentacar/coupons/",
+      "source_url": "https://www.jalan.net/rentacar/coupons/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "クーポン獲得には ログイン が必要です 今すぐログイン じゃらんレンタカーならクーポン利用でお得に予約可能！ 全国のレンタカー予約に使える、お得なクーポンを配布中 エリア限定、季節限定クーポンなど、ゲットのチャンスをお見逃しなく！",
+      "official_fetched_at": "2026-08-11T15:02:13.109894+09:00"
+    },
+    {
+      "id": "jalan-d2f2b202481a9708",
+      "title": "旅応援連動 宿の日特集 じゃらん限定クーポン",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "最大22.9%・最大22,500円",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "掲載期間は2026年8月1日〜8月19日。日程別のクーポンがあり、一部宿泊対象外日あり。",
+      "coupon_codes": [],
+      "detail_url": "https://www.jalan.net/theme/coupon/yadonohitokushu/",
+      "source_url": "https://www.jalan.net/theme/coupon/yadonohitokushu/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "旅応援連動 宿の日特集 じゃらん限定クーポン 配布中 掲載期間:2026年8月1日（土）〜2026年8月19日（水） 大型連休・3連休限定 最大 10 % お得 最大 15,000 円 最大 15 % お得 最大 15,000 円 最大 22.9 % お得 最大 22,500 円 その他日程で使える",
+      "official_fetched_at": "2026-08-11T15:02:13.109894+09:00"
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": true
+  }
+}
