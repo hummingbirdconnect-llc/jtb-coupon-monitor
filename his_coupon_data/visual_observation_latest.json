@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-08-19T06:19:06+09:00",
+  "official_checked_at": "2026-08-19T12:05:45+09:00",
   "official_area": "全11地域版",
   "coverage_status": "complete",
   "region_count": 11,
@@ -130,12 +130,12 @@
       "official_area": "九州版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=8",
       "tab_counts": {
-        "海外旅行": 4,
+        "海外旅行": 5,
         "国内旅行": 9
       },
-      "visible_count": 13,
+      "visible_count": 14,
       "total_dom_count": 16,
-      "hidden_dom_count": 3
+      "hidden_dom_count": 2
     },
     {
       "code": "okinawa",
@@ -152,15 +152,15 @@
     }
   ],
   "tab_counts": {
-    "海外旅行": 24,
+    "海外旅行": 25,
     "国内旅行": 101
   },
-  "visible_count": 34,
-  "regional_visible_count": 125,
+  "visible_count": 35,
+  "regional_visible_count": 126,
   "total_dom_count": 176,
-  "hidden_dom_count": 51,
-  "capture_count": 34,
+  "hidden_dom_count": 50,
+  "capture_count": 35,
   "capture_method": "deduplicated_individual_element_screenshot",
-  "derived_image_count": 34,
+  "derived_image_count": 35,
   "evidence_directory": "evidence/his"
 }
