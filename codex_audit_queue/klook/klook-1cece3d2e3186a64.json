@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-1cece3d2e3186a64",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "update",
+  "fetched_at": "2026-08-21T06:34:35.970366+09:00",
+  "content_hash": "1cece3d2e3186a640716fd72aee550953e03b15dbfb7e2a8b16ff9b5a2b24e5b",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "purpose": "Klook日本向け公式SALE一覧",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "d0614a41ea94adbcc2d751a3a643be55c2ff7e6df51343c6b546ed2ecbcb05ac",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA 旅だって進化する シンガポール 日本 ベトナム 香港 韓国 タイ マレーシア 台湾 すべて表示 シンガポール クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行 ロイヤルカリビアンが25%OFF、上限はSGD160です。 クーポンコード: RC25OFFSUMMER 25%OFF 最低利用額なし 発行 シンガポール ホテル 15% クーポンコード: AUGSGHOTELS 15%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン カテゴリ すべて ツアー・体験 観光施設チケット シンガポール ユニバーサルスタジオシンガポール チケット 4.8 / 5 (108,127) • 4M+ 件の予約 ¥ 8,483 〜 セット割 6％OFF 3点セットパッケージ シンガポール アドベンチャーコーブウォーターパーク チケット（シンガポール） 4.7 / 5 (8,245) • 400K+ 件の予約 ¥ 3,691 〜 セット割 18％OFF 3点セットパッケージ シンガポール Klookパス シンガポール 4.7 / 5 (13,058) • 400K+ 件の予約 ¥ 11,601 参考価格： ¥ 13,098 Klook限定 シンガポール ナイトサファリ チケット | マンダイ・ワイルドライフ・ リザーブ（シンガポール） 4.4 / 5 (10,465) • 900K+ 件の予約 ¥ 6,539 SALE 5％OFF セット割 24％OFF シンガポール シンガポールリバークルーズ 4.7 / 5 (8,131) • 400K+ 件の予約 ¥ 3,172 セット割 5％OFF シンガポール ジュエルチャンギエアポート アトラクション利用チケット（シンガポール） 4.7 / 5 (10,831) • 500K+ 件の予約 ¥ 731 SALE 8％OFF セット割 8％OFF シンガポール シンガポール・ウィングス・オブ・タイム花火シンフォニーチケット 4.6 / 5 (12,379) • 500K+ 件の予約 ¥ 2,333 セット割 34％OFF Klook限定 シンガポール シンガポール動物園 チケット 4.7 / 5 (16,732) • 1M+ 件の予約 ¥ 6,096 SALE 20％OFF シンガポール Hub & Spoke Cafe ガーデンラウンジ利用チケット（シンガポール / チャンギ空港内公共エリア） 4.1 / 5 (575) • 20K+ 件の予約 ¥ 1,067 SALE 10％OFF シンガポール スカイラインリュージュシンガポール 利用チケット 4.8 / 5 (33,077) • 900K+ 件の予約 ¥ 4,042 セット割 12％OFF シンガポール ディズニー・アドベンチャークルーズ 3泊（シンガポール発／全出航日） 4.6 / 5 (94) • 10K+ 件の予約 ¥ 73,497 8 OFF Save up to 20 80米ドルのバウチャー シンガポール シンガポール発 4泊 ディズニー アドベンチャー クルーズ（全出航日） 4.7 / 5 (57) • 10K+ 件の予約 ¥ 88,810 〜 8 OFF Save up to 20 80米ドルのバウチャー シンガポール Klookパス シンガポール マンダイパス 4.6 / 5 (422) • 20K+ 件の予約 ¥ 11,725 参考価格： ¥ 12,849 Klook限定 シンガポール チャンギ空港 アンバサダートランジットラウンジ（第2・第3ターミナル） 3.6 / 5 (164) • 5K+ 件の予約 ¥ 6,175 SALE 10％OFF シンガポール シンガポール チャイナタウン ホーカーフード体験 3.8 / 5 (12) • 200+ 件の予約 ¥ 1,698 セット割 7％OFF シンガポール ナショナルギャラリーシンガポール 入館チケット 4.7 / 5 (2,819) • 100K+ 件の予約 ¥ 624 SALE 2名分の予約で5％OFF セット割 18％OFF シンガポール Shake Shack ダイニングバウチャー（セントーサ島） 4.7 / 5 (139) • 2K+ 件の予約 ¥ 2,062 SALE 5％OFF さらに表示"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "klook-7d92655c1665ec11",
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF（上限3USD）",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台湾ページ掲載のKlook eSIM。最低利用額なし。",
+      "coupon_codes": [
+        "SUMMER4ESIM"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-bd9ab92f9762205c",
+      "title": "台湾高速鉄道 B1G1",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台中・高雄・嘉義・台南・彰化・雲林のみに行く路線。最低利用額なし。",
+      "coupon_codes": [
+        "G02TAIWAN"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-d7920283892bee37",
+      "title": "北北基おもしろカード10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "北北基おもしろカード。最低利用額なし。",
+      "coupon_codes": [
+        "TAIPEIFUNS4"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "北北基おもしろカード10%OFF クーポンコード: TAIPEIFUNS4 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-9d3df0dc21abe843",
+      "title": "香港ディズニーランド・パークチケット 30香港ドルオフ",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "30香港ドルオフ（表示換算 JPY 609 オフ）",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "香港ディズニーランド・パークチケット。最低利用額なし。",
+      "coupon_codes": [
+        "HKDL30MERCH"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 609 オフ 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    },
+    {
+      "id": "klook-3cdecc9353802356",
+      "title": "コタイウォータージェットフェリーチケット 10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "コタイウォータージェットフェリーチケット。最低利用額なし。",
+      "coupon_codes": [
+        "10COTAI"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "コタイウォータージェットフェリーチケット10%OFF クーポンコード: 10COTAI 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

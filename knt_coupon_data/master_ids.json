@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-20T06:34:41.852967+09:00",
+  "last_updated": "2026-08-21T06:33:42.266676+09:00",
   "ids": {
     "yado-sp-kagawa-kcp-3052c8": {
       "category": "獲得クーポン",
@@ -31,6 +31,11 @@
       "title": "ホテルモントレ ラ・スール大阪 宿泊割引クーポン",
       "area": "大阪府"
     },
+    "yado-sp-hokkaido-cpn-kcp-2-246642": {
+      "category": "クーポンコード",
+      "title": "いざ！にっぽん旅 北海道キャンペーン（第二弾）",
+      "area": "北海道"
+    },
     "cpn-thanksweek-91eb8b": {
       "category": "クーポンコード",
       "title": "近ツー感謝ウィーク",
@@ -43,7 +48,7 @@
     },
     "yado-sp-hokkaido_cpn_kcp-140bae": {
       "category": "クーポンコード",
-      "title": "いざ！にっぽん旅 北海道キャンペーン",
+      "title": "いざ！にっぽん旅 北海道キャンペーン（第一弾）",
       "area": "北海道"
     }
   }
