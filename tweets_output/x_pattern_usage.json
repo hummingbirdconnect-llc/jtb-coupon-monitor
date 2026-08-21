@@ -2950,5 +2950,77 @@
   "pattern": "soft_news",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "quote_highlight",
+  "ota": "jtb",
+  "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "last_check",
+  "ota": "jtb",
+  "title": "箱根・夏休み応援クーポン【第二弾】"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "honest_value",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "箱根・夏休み応援クーポン【第二弾】"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "daily_check",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "timing_answer",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-22",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "weekend_plan",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
