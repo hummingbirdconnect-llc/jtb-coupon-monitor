@@ -1,0 +1,298 @@
+{
+  "date": "2026-08-23",
+  "generated_at": "2026-08-23 06:29 JST",
+  "sites": [
+    {
+      "site_id": "yakushimafan",
+      "display_name": "屋久島ファン",
+      "x_account": "@yakushimafan",
+      "candidates": 227,
+      "threads": [
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン",
+          "score": 58,
+          "reasons": [
+            "本日配布再開",
+            "割引8,000円",
+            "全国対象"
+          ],
+          "pattern": "comeback",
+          "pattern_name": "復活速報型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "終了していた【JTB】のクーポンが復活してます。\n最大8,000円引き、対象は宿泊・ツアー\n\n期限は9/30まで。\n\n使える条件はこの下です👇\n(1/3)",
+              "weight": 131,
+              "chars": 77
+            },
+            {
+              "text": "予約前にここだけ押さえておけば安心です。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 9/30まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 146,
+              "chars": 90
+            },
+            {
+              "text": "取得手順と注意点はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島までの旅費を抑えるチャンスです。予約前にどうぞ。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 147,
+              "chars": 103
+            }
+          ]
+        },
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
+          "score": 58,
+          "reasons": [
+            "本日配布再開",
+            "割引20,000円"
+          ],
+          "pattern": "season_context",
+          "pattern_name": "季節文脈型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "夏の旅の計画、これからの人へ。\n【JTB】で最大20,000円引きクーポンが配布中です\n\n対象はツアー。\n予約期限は9/30まで。\n\n条件はこの下にまとめました👇\n(1/3)",
+              "weight": 149,
+              "chars": 87
+            },
+            {
+              "text": "予約前にここだけ押さえておけば安心です。\n\n✅割引: 最大20,000円引\n✅対象: ツアー\n✅予約期限: 9/30まで\n\n⚠️500,000円以上の予約が条件です\n(2/3)",
+              "weight": 141,
+              "chars": 88
+            },
+            {
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島行きを考え中なら、予約前のひと手間でお得になります。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 153,
+              "chars": 106
+            }
+          ]
+        },
+        {
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "年末年始出発がお得！1グループ最大50,000円引き",
+          "score": 33,
+          "reasons": [
+            "割引50,000円"
+          ],
+          "pattern": "casual_aside",
+          "pattern_name": "ひとりごと型",
+          "article_url": "https://yakushima.fun/his-coupon/",
+          "posts": [
+            {
+              "text": "【HIS】最大50,000円引きクーポンが配布中です\n（どこ行くか考える時間が、いちばん楽しいんですよね）\n\n対象はHISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…。\n予約期限は9/25まで。\n\n条件はこの下にまとめました👇\n(1/3)",
+              "weight": 220,
+              "chars": 124
+            },
+            {
+              "text": "予約前にここだけ押さえておけば安心です。\n\n✅割引: 最大50,000円引き\n✅対象: HISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…\n✅予約期限: 9/25まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
+              "weight": 211,
+              "chars": 121
+            },
+            {
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/his-coupon/\n\n屋久島旅行の予約にも使えます。予約前にどうぞ。\n\n#旅行クーポン #HIS\n(3/3)",
+              "weight": 141,
+              "chars": 101
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site_id": "welltrip",
+      "display_name": "ウェルトリップ",
+      "x_account": "welltrip",
+      "candidates": 188,
+      "threads": [
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン",
+          "score": 58,
+          "reasons": [
+            "本日配布再開",
+            "割引8,000円",
+            "全国対象"
+          ],
+          "pattern": "quote_highlight",
+          "pattern_name": "カギカッコ強調型",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "posts": [
+            {
+              "text": "【JTB】いま『宿泊・ツアーが最大8,000円引き』のクーポンを配布しています\n\n予約期限は9/30まで。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "weight": 126,
+              "chars": 74
+            },
+            {
+              "text": "使える条件を整理しました。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 9/30まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 132,
+              "chars": 83
+            },
+            {
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n気になった方は早めのチェックがおすすめです。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 135,
+              "chars": 108
+            }
+          ]
+        },
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
+          "score": 58,
+          "reasons": [
+            "本日配布再開",
+            "割引20,000円"
+          ],
+          "pattern": "season_context",
+          "pattern_name": "季節文脈型",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "posts": [
+            {
+              "text": "夏の旅の計画、これからの人へ。\n【JTB】で最大20,000円引きクーポンが配布中です\n\n対象はツアーです。\n予約は9/30までです。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "weight": 151,
+              "chars": 88
+            },
+            {
+              "text": "予約前に見ておきたい条件はこちらです。\n\n✅割引: 最大20,000円引\n✅対象: ツアー\n✅予約期限: 9/30まで\n\n⚠️500,000円以上の予約が条件です\n(2/3)",
+              "weight": 139,
+              "chars": 87
+            },
+            {
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 137,
+              "chars": 109
+            }
+          ]
+        },
+        {
+          "provider_id": "jalpack",
+          "provider_label": "JALパック",
+          "title": "バースデークーポン（国内）",
+          "score": 56,
+          "reasons": [
+            "本日新規",
+            "割引15,000円"
+          ],
+          "pattern": "big_discount",
+          "pattern_name": "大型割引強調型",
+          "article_url": "https://travel.hb-connect.co.jp/jal-pack-coupon/",
+          "posts": [
+            {
+              "text": "ちょっと大きめの割引が出ています。\n【JALパック】15,000円引きクーポンが配布中です\n\n対象は国内ダイナミックパッケージ。\n予約期限はお誕生月の前月～お誕生月の翌々月*まで 。\n\n条件はこちらです👇\n(1/3)",
+              "weight": 193,
+              "chars": 108
+            },
+            {
+              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 15,000円割引 / 8,000円割引\n✅対象: 国内ダイナミックパッケージ\n✅予約期限: お誕生月の前月～お誕生月の翌々月*まで \n\n⚠️120,000円以上の予約が条件です\n(2/3)",
+              "weight": 197,
+              "chars": 119
+            },
+            {
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jal-pack-coupon/\n\n旅の予定がある方はのぞいてみてください。\n\n#旅行クーポン #JALパック\n(3/3)",
+              "weight": 137,
+              "chars": 114
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site_id": "tripbooking",
+      "display_name": "トリップブッキング",
+      "x_account": "tripbooking",
+      "candidates": 32,
+      "threads": [
+        {
+          "provider_id": "tripcom",
+          "provider_label": "Trip.com",
+          "title": "もっと！国内旅！",
+          "score": 24,
+          "reasons": [
+            "割引60%"
+          ],
+          "pattern": "quote_highlight",
+          "pattern_name": "カギカッコ強調型",
+          "article_url": "https://tripbooking.jp/tripcom-coupon/",
+          "posts": [
+            {
+              "text": "【Trip.com】いま『saleが最大60%OFF』のクーポンを配布しています\n\n条件と注意点は次の投稿で👇\n(1/3)",
+              "weight": 96,
+              "chars": 61
+            },
+            {
+              "text": "適用条件は以下のとおりです。\n\n✅割引: 最大60%OFF\n✅対象: sale\n✅予約期限: 公式ページに記載\n\n⚠️配布状況は変わることがあるので公式ページで最新を確認してください\n(2/3)",
+              "weight": 166,
+              "chars": 97
+            },
+            {
+              "text": "最新のクーポン一覧と使い方はこちら\n→ https://tripbooking.jp/tripcom-coupon/\n\n予約前に確認しておくと、取りこぼしがありません。\n\n#旅行クーポン #Tripcom\n(3/3)",
+              "weight": 141,
+              "chars": 108
+            }
+          ]
+        },
+        {
+          "provider_id": "tripcom",
+          "provider_label": "Trip.com",
+          "title": "スーパー・ワールド・ウィーク",
+          "score": 24,
+          "reasons": [
+            "割引50%"
+          ],
+          "pattern": "target_call",
+          "pattern_name": "ターゲット呼びかけ型",
+          "article_url": "https://tripbooking.jp/tripcom-coupon/",
+          "posts": [
+            {
+              "text": "saleを予約する人へ。\n【Trip.com】で最大50%OFFクーポンが配布中です\n\n条件と注意点は次の投稿で👇\n(1/3)",
+              "weight": 99,
+              "chars": 63
+            },
+            {
+              "text": "適用条件は以下のとおりです。\n\n✅割引: 最大50%オフ\n✅対象: sale\n✅予約期限: 公式ページに記載\n\n⚠️配布状況は変わることがあるので公式ページで最新を確認してください\n(2/3)",
+              "weight": 167,
+              "chars": 96
+            },
+            {
+              "text": "全クーポンの最新状況はこちらで確認できます\n→ https://tripbooking.jp/tripcom-coupon/\n\n一覧の更新は毎朝行っています。\n\n#旅行クーポン #Tripcom\n(3/3)",
+              "weight": 131,
+              "chars": 103
+            }
+          ]
+        },
+        {
+          "provider_id": "agoda",
+          "provider_label": "Agoda",
+          "title": "アプリ初回",
+          "score": 23,
+          "reasons": [
+            "割引10%"
+          ],
+          "pattern": "soft_news",
+          "pattern_name": "予約前チェック型",
+          "article_url": "https://tripbooking.jp/agoda-coupon/",
+          "posts": [
+            {
+              "text": "【Agoda】をこれから予約する人は、10%OFFクーポンの確認を先にどうぞ\n\n「アプリ初回」向けのクーポンです。\n\n条件と注意点は次の投稿で👇\n(1/3)",
+              "weight": 135,
+              "chars": 78
+            },
+            {
+              "text": "適用条件の詳細です。\n\n✅割引: 10%OFF\n✅予約期限: 公式ページに記載\n\n⚠️初めて利用する人限定です\n(2/3)",
+              "weight": 101,
+              "chars": 61
+            },
+            {
+              "text": "全クーポンの最新状況はこちらで確認できます\n→ https://tripbooking.jp/agoda-coupon/\n\nクーポンの配布状況は毎日チェックして更新しています。\n\n#旅行クーポン #アゴダ\n(3/3)",
+              "weight": 152,
+              "chars": 108
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -3022,5 +3022,77 @@
   "pattern": "weekend_plan",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "casual_aside",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "quote_highlight",
+  "ota": "jtb",
+  "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "big_discount",
+  "ota": "jalpack",
+  "title": "バースデークーポン（国内）"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "quote_highlight",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-23",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
