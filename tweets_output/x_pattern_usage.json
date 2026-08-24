@@ -3094,5 +3094,77 @@
   "pattern": "soft_news",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "big_discount",
+  "ota": "jtb",
+  "title": "【旅で応援！】往復JAL利用限定　九州ツアーで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "last_check",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "question",
+  "ota": "jtb",
+  "title": "【旅で応援！】往復JAL利用限定　九州ツアーで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "big_discount",
+  "ota": "his",
+  "title": "早めの予約がお得！11月以降出発をお申し込みで1グループ最大20,000円引き"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "quote_highlight",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-25",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
