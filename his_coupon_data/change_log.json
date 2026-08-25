@@ -3152,5 +3152,101 @@
       "東北版",
       "甲信越（新潟）版"
     ]
+  },
+  {
+    "date": "2026-08-25",
+    "type": "🆕 新規",
+    "id": "34ba7eb1eb87",
+    "category": "沖縄ツアー",
+    "title": "【沖縄キャンペーン】リゾートステイコース限定！子ども1名様につき10,000円引き",
+    "discount": "10,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "type": "🆕 新規",
+    "id": "385538411fb5",
+    "category": "国内ホテル",
+    "title": "【沖縄キャンペーン】1グループ2,000円引き",
+    "discount": "2,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "type": "🆕 新規",
+    "id": "8c94826e1727",
+    "category": "国内航空券＋ホテル",
+    "title": "【沖縄キャンペーン】1グループ5,000円引き",
+    "discount": "5,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ]
   }
 ]
