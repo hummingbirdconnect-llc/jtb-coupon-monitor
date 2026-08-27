@@ -1,7 +1,7 @@
 {
   "provider_id": "tripcom",
-  "observed_hash": "1204e510e0f3c7c087f2415ad4cdba9810b801844c87c1e0a4b4188557cc5571",
-  "last_checked_at": "2026-08-26T06:34:31.528641+09:00",
+  "observed_hash": "10204e9c7702dc0cf5a258a7697bb13a7004a7e793bf24a79512d83eba6dc75c",
+  "last_checked_at": "2026-08-27T09:37:43.312238+09:00",
   "sources": [
     {
       "url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
@@ -14,13 +14,13 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 11962,
-      "content_hash": "2a5bdfcde2f3cdcd7ef8949e5ef8d3ec1c5bf21bb73dbdc57c0557d87c1f56b0"
+      "text_chars": 11963,
+      "content_hash": "5939f37e4909198fc2ea3b35dd468be0198913d80752d2e3b09f787da6b277c2"
     }
   ],
-  "queued_hash": "1204e510e0f3c7c087f2415ad4cdba9810b801844c87c1e0a4b4188557cc5571",
-  "queued_candidate_id": "tripcom-1204e510e0f3c7c0",
-  "queued_at": "2026-08-26T06:34:31.529299+09:00",
+  "queued_hash": "10204e9c7702dc0cf5a258a7697bb13a7004a7e793bf24a79512d83eba6dc75c",
+  "queued_candidate_id": "tripcom-10204e9c7702dc0c",
+  "queued_at": "2026-08-27T09:37:43.312899+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.597519+09:00",
   "last_audit_candidate_id": "tripcom-270978c39d946935",
