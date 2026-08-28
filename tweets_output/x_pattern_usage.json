@@ -3310,5 +3310,77 @@
   "pattern": "daily_check",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "timing_answer",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "honest_value",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "his",
+  "title": "JAL利用がお得！1グループ5,000円引き"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "big_discount",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "weekend_plan",
+  "ota": "his",
+  "title": "早めの予約がお得！11月以降出発をお申し込みで1グループ最大20,000円引き"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "quote_highlight",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-28",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]

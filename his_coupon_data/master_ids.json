@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-28T05:17:57.606662+09:00",
+  "last_updated": "2026-08-28T14:06:12.016790+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -17,30 +17,10 @@
       "title": "先着合計1,000枚限定！少し遅めの夏休み出発に使える最大25,000円引き",
       "discount": "最大25,000円引き",
       "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
+        "kanto"
       ],
       "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
+        "首都圏版"
       ]
     },
     "8386cc56aac1": {
