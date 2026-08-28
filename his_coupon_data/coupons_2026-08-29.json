@@ -1,0 +1,4413 @@
+[
+  {
+    "id": "c436200b8e32",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "首都圏版",
+    "official_areas": [
+      "首都圏版"
+    ],
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "7d2c89d0993c",
+    "category": "海外ツアー",
+    "title": "先着合計1,000枚限定！少し遅めの夏休み出発に使える最大25,000円引き",
+    "discount": "最大25,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月21日(金)19:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年9月1日(火)～2026年10月31日(土)",
+    "coupon_codes": [
+      {
+        "code": "LMN5DSHSTLKJRJTF",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "LMN4WYPTYUEWCRBA",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "LMN3TAJKLZBXPFSU",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ7,000円引き"
+      },
+      {
+        "code": "LMN2MZMFSNVBSTNF",
+        "condition": "旅行代金総額10万円以上",
+        "discount": "1グループ3,000円引き"
+      },
+      {
+        "code": "LMN1XSTYJPXXJULY",
+        "condition": "旅行代金総額8万円以上",
+        "discount": "1グループ2,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao） 【対象外】海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・各クーポン先着200枚、合計1,000枚です。上限枚数に達したクーポンより順次終了いたします。",
+      "・HIS首都圏すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。"
+    ],
+    "regional_base_id": "7d2c89d0993c",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "首都圏版",
+    "official_areas": [
+      "首都圏版"
+    ],
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/7d2c89d0993c.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "8386cc56aac1",
+    "category": "海外航空券",
+    "title": "早めの予約がお得！11月以降出発をお申し込みで1グループ最大20,000円引き",
+    "discount": "最大20,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年8月31日(月)23:59",
+    "travel_period": "2026年11月1日(日)～2027年7月31日(土)",
+    "coupon_codes": [
+      {
+        "code": "XR2JHKAQSSRMWLCM",
+        "condition": "航空券代金40万円以上",
+        "discount": "1グループ20,000円引き※燃油サーチャージ・諸税・手数料除く"
+      },
+      {
+        "code": "EX1UJAPNNKXLBPLY",
+        "condition": "航空券代金20万円以上",
+        "discount": "1グループ10,000円引き※燃油サーチャージ・諸税・手数料除く"
+      },
+      {
+        "code": "JS5PAANGUJALVHFR",
+        "condition": "航空券代金7万円以上",
+        "discount": "1グループ5,000円引き※燃油サーチャージ・諸税・手数料除く"
+      },
+      {
+        "code": "FE3AGRWUCAFNZTAH",
+        "condition": "航空券代金2万円以上",
+        "discount": "1グループ3,000円引き※燃油サーチャージ・諸税・手数料除く"
+      }
+    ],
+    "target": "海外航空券 【対象外】日帰り航空券、沖縄発海外航空券、正規割引運賃・および一部航空券、幼児のお客様。",
+    "notes": [
+      "・オンライン予約限定です。",
+      "・航空券代金（燃油・諸税除く）がクーポン額を下回る場合はご利用いただけません。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・予約完了後のご利用はできません。予めご注意ください。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・クーポンの重複利用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "8386cc56aac1",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/8386cc56aac1.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "首都圏版",
+    "official_areas": [
+      "首都圏版"
+    ],
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "73b9e6727c2b",
+    "category": "国内ツアー",
+    "title": "年末年始出発がお得！1名様につき3,000円引き",
+    "discount": "3,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年7月17日(金)12:00～2026年9月30日(水)23:59",
+    "travel_period": "2026年12月25日(金)～2027年1月3日(日)",
+    "coupon_codes": [
+      {
+        "code": "2HTJPUNRCVHXR9M8",
+        "condition": "年末年始出発",
+        "discount": "1名様3,000円引き1名様の旅行代金50,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する首都圏発の飛行機利用国内ツアー 【対象外】首都圏発以外の飛行機利用国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS首都圏の店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "73b9e6727c2b",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "首都圏版",
+    "official_areas": [
+      "首都圏版"
+    ],
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/73b9e6727c2b.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "b207d97c5e74",
+    "category": "国内航空券＋ホテル",
+    "title": "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き",
+    "discount": "最大10,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年11月16日(月)～2027年3月31日(水)※2026年12月25日(金)～2027年1月3日(日)は除く。",
+    "coupon_codes": [
+      {
+        "code": "A7LZAMMQWZ8H5X55",
+        "condition": "出発の180日以上前",
+        "discount": "1グループ10,000円引き旅行代金総額15万円以上"
+      },
+      {
+        "code": "DJ93S97UEESUN6QB",
+        "condition": "出発の150日～179日前まで",
+        "discount": "1グループ7,000円引き旅行代金総額13万円以上"
+      },
+      {
+        "code": "B57DHBWZ33BSTK33",
+        "condition": "出発の120～149日前まで",
+        "discount": "1グループ5,000円引き旅行代金総額11万円以上"
+      },
+      {
+        "code": "QBRXUQMQ9ZXDJ9BB",
+        "condition": "出発の90～119日前まで",
+        "discount": "1グループ3,000円引き旅行代金総額9万円以上"
+      }
+    ],
+    "target": "HISが企画・実施する国内航空券＋ホテル（ダイナミックパッケージ） 【対象外】2026年12月25日(金)～2027年1月3日(日)出発の国内航空券＋ホテル（ダイナミックパッケージ）、国内ツアー、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・お支払い画面に進み、クーポン利用画面での登録完了を持って権利確定となります。クーポンコード取得で権利確定ではありません。ご注意ください。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "b207d97c5e74",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/b207d97c5e74.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "280b2b87265b",
+    "category": "国内航空券＋ホテル",
+    "title": "年末年始出発がお得！1グループ最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月25日(金)～2027年1月3日(日)",
+    "coupon_codes": [
+      {
+        "code": "KZMX9Y3CAWGBAYQB",
+        "condition": "",
+        "discount": "1グループ50,000円引き旅行代金総額80万円以上"
+      },
+      {
+        "code": "B6MTH8BMDKX8M3M8",
+        "condition": "",
+        "discount": "1グループ30,000円引き旅行代金総額50万円以上"
+      },
+      {
+        "code": "K75XQEGLQU9BHL33",
+        "condition": "",
+        "discount": "1グループ10,000円引き旅行代金総額20万円以上"
+      }
+    ],
+    "target": "HISが企画・実施する国内航空券＋ホテル（ダイナミックパッケージ） 【対象外】国内ツアー、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・お支払い画面に進み、クーポン利用画面での登録完了を持って権利確定となります。クーポンコード取得で権利確定ではありません。ご注意ください。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "280b2b87265b",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/280b2b87265b.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "34ba7eb1eb87",
+    "category": "沖縄ツアー",
+    "title": "【沖縄キャンペーン】リゾートステイコース限定！子ども1名様につき10,000円引き",
+    "discount": "10,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月26日(水)0:00～2026年11月4日(水)12:00",
+    "travel_period": "2026年11月1日(日)～2027年4月9日(金)",
+    "coupon_codes": [
+      {
+        "code": "KY42HQK2DWB3DAZ7",
+        "condition": "JAL（JTA・RAC含む）、スカイマーク利用",
+        "discount": "子ども1名様10,000円引き"
+      },
+      {
+        "code": "MDGGG4GM9PRS3UBB",
+        "condition": "ANA（HDO・SNA・SFJ・IBX含む）、ジェットスター・ジャパン、Peach利用",
+        "discount": "子ども1名様10,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する沖縄キャンペーンリゾートステイ飛行機利用ツアーで問い合わせコード末尾が-Lea11の商品 【対象外】上記以外の飛行機利用ツアー、沖縄発国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズム",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "34ba7eb1eb87",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "首都圏版、北海道版、東北版、甲信越（新潟）版、中部版、北陸版、関西版、中国版、四国版、九州版",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/34ba7eb1eb87.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 10,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "8c94826e1727",
+    "category": "国内航空券＋ホテル",
+    "title": "【沖縄キャンペーン】1グループ5,000円引き",
+    "discount": "5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月26日(水)0:00～2026年11月4日(水)12:00",
+    "travel_period": "2026年8月29日(土)～2027年3月31日(水)",
+    "coupon_codes": [
+      {
+        "code": "AM6H6SA5P3GLJJJ5",
+        "condition": "",
+        "discount": "1グループ5,000円引き旅行代金総額15万円以上"
+      }
+    ],
+    "target": "HISが企画・実施する沖縄行き国内航空券＋ホテル（ダイナミックパッケージ） 【対象外】沖縄行き以外の国内航空券＋ホテル（ダイナミックパッケージ）、国内ツアー、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・お支払い画面に進み、クーポン利用画面での登録完了を持って権利確定となります。クーポンコード取得で権利確定ではありません。ご注意ください。",
+      "・沖縄県内のホテル宿泊が1泊以上含まれる場合に利用できます。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "8c94826e1727",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "首都圏版、北海道版、東北版、甲信越（新潟）版、中部版、北陸版、関西版、中国版、四国版、九州版",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/8c94826e1727.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 10,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "b7f801ca9936",
+    "category": "国内航空券＋ホテル",
+    "title": "JAL利用がお得！1グループ5,000円引き",
+    "discount": "5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月27日(木)10:00 ～2026年9月6日(日)23:59",
+    "travel_period": "2026年9月1日(火)～2027年3月31日(水)",
+    "coupon_codes": [
+      {
+        "code": "ABP4NTVCRWA2J9N9",
+        "condition": "JAL・JTA利用",
+        "discount": "1グループ5,000円引き1グループ2名様以上"
+      }
+    ],
+    "target": "HISが企画・実施するJAL・JTA利用の国内航空券＋ホテル（ダイナミックパッケージ） 【対象外】JAL・JTA以外を利用する国内航空券＋ホテル（ダイナミックパッケージ）、国内ツアー、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施が",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・お支払い画面に進み、クーポン利用画面での登録完了を持って権利確定となります。クーポンコード取得で権利確定ではありません。ご注意ください。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "b7f801ca9936",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/b7f801ca9936.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "2291e0cd6211",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月1日(土)0:00～2027年3月31日(水)23:59",
+    "travel_period": "2026年9月1日(火)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "62GKDQ5L29WV2255",
+        "condition": "那覇港⇒与論島",
+        "discount": "1名様5,000円引き"
+      },
+      {
+        "code": "A64XWQ4PPAR3TPRC",
+        "condition": "本部港⇒与論島",
+        "discount": "1名様3,500円引き"
+      }
+    ],
+    "target": "HISが企画・実施する首都圏・関西・中部発の沖縄に行ったらヨロンへ行こう！キャンペーン対象のツアー商品（お問合せコード末尾が-YONA、-YOMO） 【対象外】上記以外の沖縄ツアー、上記以外の飛行機利用ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク",
+    "notes": [
+      "・HIS首都圏・関西・中部の各店舗で受付可能です。（首都圏・関西・中部以外、クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "2291e0cd6211",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "首都圏版",
+    "official_areas": [
+      "首都圏版"
+    ],
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/2291e0cd6211.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "6ecd52cc38b2",
+    "category": "国内添乗員同行ツアー",
+    "title": "早めの予約がお得！90日以上前までのお申し込みで1グループ最大10,000円引き",
+    "discount": "最大10,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "202611月16日(月)～2027年3月31日(水)",
+    "coupon_codes": [
+      {
+        "code": "TS9BRWTB37UJ3KY6",
+        "condition": "出発の150日以上前まで",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "BJ8RTXJ2RDPNQXY6",
+        "condition": "出発の120日以上前まで",
+        "discount": "1グループ5,000円引き"
+      },
+      {
+        "code": "4Y3NYEWHTBBA94EE",
+        "condition": "出発の90日以上前まで",
+        "discount": "1グループ3,000円引き"
+      }
+    ],
+    "target": "HISが旅行企画・実施する首都圏発の飛行機・鉄道利用国内添乗員同行ツアー 【対象外】首都圏発以外の国内添乗員同行ツアー、国内ツアー、鉄道ツアー、バスツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS首都圏すべての店舗で受付可能です。（クオリタ、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "6ecd52cc38b2",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "首都圏版",
+    "official_areas": [
+      "首都圏版"
+    ],
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/6ecd52cc38b2.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "1cc5d408b348",
+    "category": "国内バスツアー",
+    "title": "早めの予約がお得！60日以上前までのお申し込みで1名様につき最大3,000円引き",
+    "discount": "最大3,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2025年4月1日(水)0:00～2027年3月31日(水)23:59",
+    "travel_period": "2026年1月31日(土)～2027年9月30日(木)",
+    "coupon_codes": [
+      {
+        "code": "54EZM2NY9ZLPMT44",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金20,000円以上"
+      },
+      {
+        "code": "BM9EZA9SRW86YKH4",
+        "condition": "出発の90日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金10,000円以上"
+      },
+      {
+        "code": "TEGN8MP8RPM6R222",
+        "condition": "出発の60日以上前まで",
+        "discount": "1名様1,000円引き1名様の旅行代金10,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する首都圏および東北発バスツアー 【対象外】首都圏および東北発以外の国内バスツアー、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・オンライン予約限定です。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "1cc5d408b348",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/1cc5d408b348.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "fba9e460a060",
+    "category": "国内ホテル",
+    "title": "オンライン予約限定！60日以上前までのお申し込みで1グループ最大2,000円引き",
+    "discount": "最大2,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年10月17日(土)～2027年3月31日(水)",
+    "coupon_codes": [
+      {
+        "code": "9GVATRDDNEPN3SK6",
+        "condition": "宿泊日の120日以上前まで",
+        "discount": "1グループ2,000円引き宿泊代金総額30,000円以上"
+      },
+      {
+        "code": "S8QTZ92ELEWUE5Z7",
+        "condition": "宿泊日の90日以上前まで",
+        "discount": "1グループ1,500円引き宿泊代金総額30,000円以上"
+      },
+      {
+        "code": "EJHJ2RQAL45GZLK6",
+        "condition": "宿泊日の60日以上前まで",
+        "discount": "1グループ1,000円引き宿泊代金総額30,000円以上"
+      }
+    ],
+    "target": "国内ホテル宿泊 ※HIS国内ホテル予約サイトからご予約の場合のみ。",
+    "notes": [
+      "・オンライン予約限定です。",
+      "・予約情報入力ページでクーポンを登録後、予約完了ページの表示を持って権利確定となります。クーポンコード取得で権利確定ではありません。ご注意ください。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "fba9e460a060",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/fba9e460a060.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "385538411fb5",
+    "category": "国内ホテル",
+    "title": "【沖縄キャンペーン】1グループ2,000円引き",
+    "discount": "2,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月26日(水)0:00～2026年11月4日(水)12:00",
+    "travel_period": "2026年9月1日(火)～2027年3月31日(水)",
+    "coupon_codes": [
+      {
+        "code": "SR389AGDQMCRLRPA",
+        "condition": "",
+        "discount": "1グループ2,000円引き宿泊代金総額30,000円以上"
+      }
+    ],
+    "target": "沖縄ホテル宿泊 ※HIS国内ホテル予約サイトからご予約の場合のみ。",
+    "notes": [
+      "・オンライン予約限定です。",
+      "・予約情報入力ページでクーポンを登録後、予約完了ページの表示を持って権利確定となります。クーポンコード取得で権利確定ではありません。ご注意ください。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "385538411fb5",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "首都圏版、北海道版、東北版、甲信越（新潟）版、中部版、北陸版、関西版、中国版、四国版、九州版",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/385538411fb5.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 10,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "776b7d604b2b",
+    "category": "高速バス・夜行バス",
+    "title": "オンライン予約限定！45日以上前までのお申し込みで1名様につき5％引き",
+    "discount": "5%引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年10月2日(金)～2026年12月31日(木)",
+    "coupon_codes": [
+      {
+        "code": "37ZD97R3LU9ZJM55",
+        "condition": "オンライン予約限定",
+        "discount": "1名様5％引き"
+      }
+    ],
+    "target": "高速バス・夜行バスチケット ※HIS国内高速バス・夜行バス予約サイトからご予約の場合のみ。",
+    "notes": [
+      "・オンライン予約限定です。",
+      "・予約情報入力ページでクーポンを登録後、予約完了ページの表示を持って権利確定となります。クーポンコード取得で権利確定ではありません。ご注意ください。",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "776b7d604b2b",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/776b7d604b2b.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "4d53962adf68",
+    "category": "変なホテル",
+    "title": "連休もお得！変なホテル公式サイトで使える1グループ10％引き",
+    "discount": "10%引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)11:00",
+    "travel_period": "2026年8月18日(火)～2027年2月28日(日)",
+    "coupon_codes": [
+      {
+        "code": "HEN26SA",
+        "condition": "",
+        "discount": "10％引き"
+      }
+    ],
+    "target": "日本全国の「変なホテル」22施設、ウォーターマークホテル沖縄 宮古島、ウォーターマークホテル沖縄 久米アイランド ※公式サイトからのご予約の場合のみ。",
+    "notes": [
+      "・公式サイトからのご予約のみ利用できます。",
+      "・予約後のご利用はできません。予めご注意ください。",
+      "・一部割引対象外商品がございます。"
+    ],
+    "regional_base_id": "4d53962adf68",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/4d53962adf68.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "29cb4aa743a6",
+    "category": "満天ノ 辻のや",
+    "title": "連休もお得！満天ノ 辻のや公式サイトで使える1グループ10％引き",
+    "discount": "10%引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年8月18日(火)～2027年2月28日(日)",
+    "coupon_codes": [
+      {
+        "code": "MTN26SA",
+        "condition": "",
+        "discount": "10％引き"
+      }
+    ],
+    "target": "満天ノ 辻のや ※公式サイトからのご予約の場合のみ。",
+    "notes": [
+      "・公式サイトからのご予約のみ利用できます。",
+      "・予約後のご利用はできません。予めご注意ください。",
+      "・一部割引対象外商品がございます。"
+    ],
+    "regional_base_id": "29cb4aa743a6",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "全国共通",
+    "official_areas": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/29cb4aa743a6.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kanto",
+        "region_label": "首都圏版",
+        "official_area": "首都圏版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 11,
+    "is_nationwide": true,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-1ef7bc",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "北海道版",
+    "official_areas": [
+      "北海道版"
+    ],
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-1ef7bc.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-d4edfe",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "北海道版",
+    "official_areas": [
+      "北海道版"
+    ],
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-d4edfe.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "2291e0cd6211-83fcd8",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月1日(土)0:00～2027年3月31日(水)23:59",
+    "travel_period": "2026年9月1日(火)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "62GKDQ5L29WV2255",
+        "condition": "那覇港⇒与論島",
+        "discount": "1名様5,000円引き"
+      },
+      {
+        "code": "A64XWQ4PPAR3TPRC",
+        "condition": "本部港⇒与論島",
+        "discount": "1名様3,500円引き"
+      }
+    ],
+    "target": "HISが企画・実施する首都圏・関西・中部発の沖縄に行ったらヨロンへ行こう！キャンペーン対象のツアー商品（お問合せコード末尾が-YONA、-YOMO） 【対象外】上記以外の沖縄ツアー、上記以外の飛行機利用ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク",
+    "notes": [
+      "・HIS首都圏・関西・中部の各店舗で受付可能です。（首都圏・関西・中部以外、クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "2291e0cd6211",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "北海道版、東北版、甲信越（新潟）版、中国版、四国版、九州版、沖縄版",
+    "official_areas": [
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "region_codes": [
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/2291e0cd6211-83fcd8.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "hokkaido",
+        "region_label": "北海道版",
+        "official_area": "北海道版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 7,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-b9ba6f",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "東北版、甲信越（新潟）版",
+    "official_areas": [
+      "東北版",
+      "甲信越（新潟）版"
+    ],
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-b9ba6f.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 2,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-391740",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "東北版、甲信越（新潟）版",
+    "official_areas": [
+      "東北版",
+      "甲信越（新潟）版"
+    ],
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-391740.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 2,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-378efb",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "中部版、北陸版",
+    "official_areas": [
+      "中部版",
+      "北陸版"
+    ],
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-378efb.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 2,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-d4b9ab",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "中部版、北陸版",
+    "official_areas": [
+      "中部版",
+      "北陸版"
+    ],
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-d4b9ab.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 2,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "2291e0cd6211-132b8e",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月1日(土)0:00～2027年3月31日(水)23:59",
+    "travel_period": "2026年9月1日(火)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "62GKDQ5L29WV2255",
+        "condition": "那覇港⇒与論島",
+        "discount": "1名様5,000円引き"
+      },
+      {
+        "code": "A64XWQ4PPAR3TPRC",
+        "condition": "本部港⇒与論島",
+        "discount": "1名様3,500円引き"
+      }
+    ],
+    "target": "HISが企画・実施する首都圏・関西・中部発の沖縄に行ったらヨロンへ行こう！キャンペーン対象のツアー商品（お問合せコード末尾が-YONA、-YOMO） 【対象外】上記以外の沖縄ツアー、上記以外の飛行機利用ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク",
+    "notes": [
+      "・HIS首都圏・関西・中部の各店舗で受付可能です。（首都圏・関西・中部以外、クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "2291e0cd6211",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "中部版、北陸版",
+    "official_areas": [
+      "中部版",
+      "北陸版"
+    ],
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/2291e0cd6211-132b8e.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "chubu",
+        "region_label": "中部版",
+        "official_area": "中部版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      },
+      {
+        "region_code": "hokuriku",
+        "region_label": "北陸版",
+        "official_area": "北陸版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 2,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-3a8cd9",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "関西版",
+    "official_areas": [
+      "関西版"
+    ],
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-3a8cd9.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-eb69a5",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "関西版",
+    "official_areas": [
+      "関西版"
+    ],
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-eb69a5.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "2291e0cd6211-61a9df",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月1日(土)0:00～2027年3月31日(水)23:59",
+    "travel_period": "2026年9月1日(火)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "62GKDQ5L29WV2255",
+        "condition": "那覇港⇒与論島",
+        "discount": "1名様5,000円引き"
+      },
+      {
+        "code": "A64XWQ4PPAR3TPRC",
+        "condition": "本部港⇒与論島",
+        "discount": "1名様3,500円引き"
+      }
+    ],
+    "target": "HISが企画・実施する首都圏・関西・中部発の沖縄に行ったらヨロンへ行こう！キャンペーン対象のツアー商品（お問合せコード末尾が-YONA、-YOMO） 【対象外】上記以外の沖縄ツアー、上記以外の飛行機利用ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク",
+    "notes": [
+      "・HIS首都圏・関西・中部の各店舗で受付可能です。（首都圏・関西・中部以外、クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "2291e0cd6211",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "関西版",
+    "official_areas": [
+      "関西版"
+    ],
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/2291e0cd6211-61a9df.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kansai",
+        "region_label": "関西版",
+        "official_area": "関西版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-71ecc2",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "中国版",
+    "official_areas": [
+      "中国版"
+    ],
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-71ecc2.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-c61195",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "中国版",
+    "official_areas": [
+      "中国版"
+    ],
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-c61195.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "chugoku",
+        "region_label": "中国版",
+        "official_area": "中国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-938b69",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "四国版",
+    "official_areas": [
+      "四国版"
+    ],
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-938b69.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-1f3285",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "四国版",
+    "official_areas": [
+      "四国版"
+    ],
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-1f3285.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-500e4f",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "九州版",
+    "official_areas": [
+      "九州版"
+    ],
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-500e4f.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "6e6beee59060-cf7532",
+    "category": "九州発 AirZ(海外航空券+ホテル)",
+    "title": "オンライン予約限定！旅トクAirZキャンペーン1グループ5,000円引き",
+    "discount": "5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月19日(水)11:00～2026年9月24日(木)10:00",
+    "travel_period": "2026年8月20日(木)～2027年3月31日(水)",
+    "coupon_codes": [
+      {
+        "code": "AIRZBHRUYJNJMDQJ",
+        "condition": "",
+        "discount": "1グループ5,000円割引"
+      }
+    ],
+    "target": "九州発着のAirZ(海外航空券+ホテル) 【対象外】九州発着以外のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル",
+    "notes": [
+      "・オンライン予約限定です。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・旅行代金の総額がクーポン金額を下回る場合は利用できません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・外部サイト経由の予約の場合は利用できません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・クーポンの重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。"
+    ],
+    "regional_base_id": "6e6beee59060",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "九州版",
+    "official_areas": [
+      "九州版"
+    ],
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/6e6beee59060-cf7532.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "07c5f73161f8-6cbe2b",
+    "category": "佐賀空港利用 海外旅行",
+    "title": "九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大4,000円助成",
+    "discount": "",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月1日(水)～2027年3月31日(水)",
+    "travel_period": "～2027年3月31日(水)まで",
+    "coupon_codes": [],
+    "target": "九州佐賀国際空港国際線を利用する海外旅行",
+    "notes": [
+      "・九州佐賀国際空港の往復または片道を全員同じ便で利用する2名様以上のグループであることが条件です。",
+      "・保護者同伴での座席を使用しない（同伴者の膝の上に座り搭乗する）幼児は、グループの人数に算入されません。"
+    ],
+    "regional_base_id": "07c5f73161f8",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "九州版",
+    "official_areas": [
+      "九州版"
+    ],
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/07c5f73161f8-6cbe2b.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "d266989e495d-bee0d4",
+    "category": "佐賀空港利用 海外旅行",
+    "title": "若者（29歳以下）限定！九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大13,000円助成",
+    "discount": "",
+    "stock_status": "配布中",
+    "booking_period": "2026年7月1日(水)～2026年9月30日(水)",
+    "travel_period": "2026年8月1日(土)～2026年10月30日(金)",
+    "coupon_codes": [],
+    "target": "九州佐賀国際空港国際線を利用する海外旅行",
+    "notes": [
+      "・九州佐賀国際空港の往復または片道を全員同じ便で利用する2名様以上のグループであることが条件です。",
+      "・保護者同伴での座席を使用しない（同伴者の膝の上に座り搭乗する）幼児は、グループの人数に算入されません。",
+      "・出国時に29歳以下のお客様がグループに1名様以上含まれることが条件です。"
+    ],
+    "regional_base_id": "d266989e495d",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "九州版",
+    "official_areas": [
+      "九州版"
+    ],
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/d266989e495d-bee0d4.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-2fb966",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "九州版",
+    "official_areas": [
+      "九州版"
+    ],
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-2fb966.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "kyushu",
+        "region_label": "九州版",
+        "official_area": "九州版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "c436200b8e32-5ce280",
+    "category": "海外旅行",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
+    "discount": "最大50,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年8月18日(火)10:00～2026年9月25日(金)10:00",
+    "travel_period": "2026年12月16日(水)以降",
+    "coupon_codes": [
+      {
+        "code": "ANF9JTXKFXDEEAGL",
+        "condition": "旅行代金総額100万円以上",
+        "discount": "1グループ50,000円引き"
+      },
+      {
+        "code": "ANF8JXPPVGWPPKVM",
+        "condition": "旅行代金総額90万円以上",
+        "discount": "1グループ40,000円引き"
+      },
+      {
+        "code": "ANF7LVAMWUPBNBGX",
+        "condition": "旅行代金総額80万円以上",
+        "discount": "1グループ35,000円引き"
+      },
+      {
+        "code": "ANF6HBKTHLQQMLZE",
+        "condition": "旅行代金総額70万円以上",
+        "discount": "1グループ30,000円引き"
+      },
+      {
+        "code": "ANF5TCTFKVURCCMA",
+        "condition": "旅行代金総額60万円以上",
+        "discount": "1グループ25,000円引き"
+      },
+      {
+        "code": "ANF4ZANFQMZHWVMS",
+        "condition": "旅行代金総額50万円以上",
+        "discount": "1グループ20,000円引き"
+      },
+      {
+        "code": "ANF3QSLSCHSUBJYH",
+        "condition": "旅行代金総額40万円以上",
+        "discount": "1グループ15,000円引き"
+      },
+      {
+        "code": "ANF2LPPSPWLCSBFU",
+        "condition": "旅行代金総額30万円以上",
+        "discount": "1グループ10,000円引き"
+      },
+      {
+        "code": "ANF1ZWHTPWUTMHLN",
+        "condition": "旅行代金総額20万円以上",
+        "discount": "1グループ5,000円引き"
+      }
+    ],
+    "target": "HISが企画・実施する海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)※店舗での予約のみ 【対象外】オンラインでご予約のAirZ(海外航空券+ホテル)、海外航空券、海外ホテル、クルーズツアー、スタディツアーデスク、エコツアーデスク、ユニバーサルツーリズムデスク、ネイチャーワールド・秘境旅行専門デスクの商品、旅行企画・実施がHIS以外のツアー。",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄は対象外です。）",
+      "・ご予約いただいた出発日が不催行となり、割引適用日以外に出発日を変更された場合は割引対象外です。",
+      "・割引適用日までにキャンセル待ちでご予約いただいた場合、割引適用日以降に座席・ホテルが確保できた場合は割引対象となりますが、座席・ホテルが確保できず、割引適用日以降に他の出発日に変更された場合は割引対象外となります。",
+      "・1回のご予約で1グループにつき1クーポンのみご利用いただけます。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払い完了後はクーポンコードを入力することができず、割引を適用することができません。必ずお支払い完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、手数料、取扱料金、保険代金は含まれません。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・割引（クーポンを含む）の重複利用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "c436200b8e32",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "沖縄版",
+    "official_areas": [
+      "沖縄版"
+    ],
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/c436200b8e32-5ce280.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "447b24b927ec-ce671d",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "stock_status": "配布中",
+    "booking_period": "2026年4月2日(火)0:00～2026年11月4日(水)23:59",
+    "travel_period": "2026年7月31日(金)～2027年5月31日(月)",
+    "coupon_codes": [
+      {
+        "code": "J4SH6NH6THQVGJCC",
+        "condition": "出発の180日以上前まで",
+        "discount": "1名様5,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "Y6AU4FAFZREBCKBB",
+        "condition": "出発の150日以上前まで",
+        "discount": "1名様3,000円引き1名様の旅行代金30,000円以上"
+      },
+      {
+        "code": "8XNKLXSYYRRY4SEE",
+        "condition": "出発の120日以上前まで",
+        "discount": "1名様2,000円引き1名様の旅行代金30,000円以上"
+      }
+    ],
+    "target": "HISが企画・実施する飛行機利用の国内ツアー 【対象外】沖縄発の飛行機利用国内ツアー、お問い合わせコードに-CSPが含まれる国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、鉄道ツアー、バスツアー、クルーズツアー、鉄道＋ホテル、国内ホテル、国内航空券、鉄道チケット、高速バス、スタディツアーデスク・エコツアーデスク・ユニバーサルツーリズムデスクの商品、旅行企画・実施がH",
+    "notes": [
+      "・HIS全国すべての店舗で受付可能です。（クオリタ、HIS沖縄、提携販売営業所は対象外です。）",
+      "・当クーポンは1回のご予約で1クーポンのみご利用いただけます。割引の重複利用はできません。",
+      "・HISが企画実施する国内ツアー商品、国内航空券＋ホテル商品、国内ホテル商品のクーポンとの併用が可能です。",
+      "・他クーポンとの併用はできません。が可能です。",
+      "・HIS株主優待券との併用はできません。",
+      "・ベネフィット（福利厚生割引・補助券）との併用はできません。",
+      "・各省庁や自治体が発出する観光需要喚起策との併用はできません。",
+      "・クーポン適用期間内にご予約・ご入金が必要です。ご予約完了画面やマイページ等で確認できる入金期限とは異なる場合がありますのでご注意ください。",
+      "・お支払いご予約完了後はクーポンコードを入力することができず、割り引きを適用することができません。必ずお支払いご予約完了前にご入力をお願いします。",
+      "・割引クーポンを利用したご予約がキャンセルになった場合、取消料は割引クーポン利用前の旅行代金を基に算出いたします。また、割引クーポンを取消料に充当することはできません。",
+      "・旅行代金には各種諸税、取扱料金、手数料、保険代金は含まれません。",
+      "・クーポンがなくなり次第、予告なく終了いたします。"
+    ],
+    "regional_base_id": "447b24b927ec",
+    "official_visibility": "visible",
+    "official_tab": "国内旅行",
+    "official_tabs": [
+      "国内旅行"
+    ],
+    "official_area": "沖縄版",
+    "official_areas": [
+      "沖縄版"
+    ],
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ],
+    "official_checked_at": "2026-08-29T06:09:37+09:00",
+    "screenshot_url": "evidence/his/447b24b927ec-ce671d.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "okinawa",
+        "region_label": "沖縄版",
+        "official_area": "沖縄版",
+        "official_tab": "国内旅行",
+        "official_checked_at": "2026-08-29T06:09:37+09:00"
+      }
+    ],
+    "official_region_count": 1,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  }
+]
