@@ -3382,5 +3382,77 @@
   "pattern": "direct_number",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "last_check",
+  "ota": "jtb",
+  "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "【4～8月宿泊】全国の大江戸温泉物語とTAOYAで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "discovery",
+  "ota": "yukoyuko",
+  "title": "【宿特別クーポン】御宿 東鳳"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "honest_value",
+  "ota": "jtb",
+  "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "his",
+  "title": "早めの予約がお得！11月以降出発をお申し込みで1グループ最大20,000円引き"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "jtb",
+  "title": "【4～8月宿泊】全国の大江戸温泉物語とTAOYAで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "timing_answer",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-29",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
