@@ -1,7 +1,7 @@
 {
   "provider_id": "klook",
-  "observed_hash": "349bf605a95889ab78433021a6a0e8eb09ddf4a47993a6945b2b00d59afd2038",
-  "last_checked_at": "2026-08-30T08:10:16.992929+09:00",
+  "observed_hash": "8401c46235b8b1bc4079ce6772071f56841cefae216f7515d1d0855527051e86",
+  "last_checked_at": "2026-08-31T08:16:41.313610+09:00",
   "sources": [
     {
       "url": "https://www.klook.com/ja/deals/",
@@ -14,13 +14,13 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 1583,
-      "content_hash": "f4e383e4f2a2baae8320b6e900adea4723a75ac59d149fb260f0f7755e90c14e"
+      "text_chars": 1638,
+      "content_hash": "147723e36081931211ecffc64721b52b25e0d40f00fccf73275eee6557cef8ff"
     }
   ],
-  "queued_hash": "349bf605a95889ab78433021a6a0e8eb09ddf4a47993a6945b2b00d59afd2038",
-  "queued_candidate_id": "klook-349bf605a95889ab",
-  "queued_at": "2026-08-30T08:10:16.993445+09:00",
+  "queued_hash": "8401c46235b8b1bc4079ce6772071f56841cefae216f7515d1d0855527051e86",
+  "queued_candidate_id": "klook-8401c46235b8b1bc",
+  "queued_at": "2026-08-31T08:16:41.314118+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.596913+09:00",
   "last_audit_candidate_id": "klook-06bdb0edf0ba479d",

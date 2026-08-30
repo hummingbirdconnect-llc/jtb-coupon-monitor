@@ -3526,5 +3526,77 @@
   "pattern": "season_context",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "timing_answer",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "jtb",
+  "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "loss_aversion",
+  "ota": "his",
+  "title": "JAL利用がお得！1グループ5,000円引き"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "season_context",
+  "ota": "his",
+  "title": "JAL利用がお得！1グループ5,000円引き"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "last_check",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "daily_check",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-08-31",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
