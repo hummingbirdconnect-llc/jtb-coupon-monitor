@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-31T08:15:26.878292+09:00",
+  "last_updated": "2026-09-01T09:29:07.700363+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -83,7 +83,7 @@
       "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2608kyoritsu": {
       "category": "国内",
@@ -118,7 +118,7 @@
       "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606douto": {
       "category": "国内",
@@ -139,7 +139,7 @@
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604jalto": {
       "category": "国内",
@@ -540,20 +540,6 @@
       "area": "全方面",
       "stock_status": "配布中"
     },
-    "2605win": {
-      "category": "海外",
-      "title": "秋旅・冬旅先どり！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
-      "discount": "最大20,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
-    "2605spr": {
-      "category": "海外",
-      "title": "冬旅・早春旅先どり！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
-      "discount": "最大40,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
     "2604jl": {
       "category": "海外",
       "title": "海外航空券+ホテルでどこでも使える割引クーポン【日本航空(JAL)対象】",
@@ -820,10 +806,24 @@
       "area": "全方面",
       "stock_status": "配布終了"
     },
+    "2605win": {
+      "category": "海外",
+      "title": "秋旅・冬旅先どり！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
     "2602win": {
       "category": "海外",
       "title": "お正月・春休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
       "discount": "最大60,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
+    "2605spr": {
+      "category": "海外",
+      "title": "冬旅・早春旅先どり！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
+      "discount": "最大40,000円引",
       "area": "全方面",
       "stock_status": "配布終了"
     }

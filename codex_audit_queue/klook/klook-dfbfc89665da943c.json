@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-dfbfc89665da943c",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "update",
+  "fetched_at": "2026-09-01T09:30:22.620193+09:00",
+  "content_hash": "dfbfc89665da943cb532d690174804146204b916cf2d1883da5fcc30dfdc2409",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "purpose": "Klook日本向け公式SALE一覧",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "452ff66e17ec75ab778ae0901417d4cbb1e6b4d19b9fef596e10a6f2af243f69",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE マレーシア シンガポール ベトナム 日本 マカオ タイ 香港 中国 すべて表示 マレーシア クーポンコード アプリのみ 海外現地ツアー クーポンコード: KLKTJSMR26TRAO1 6%OFF 最低利用額なし 発行 アプリのみ ホテル全商品 (ディズニー直営ホテルを除く) クーポンコード: ホテルもKLOOK 最大 JPY 5,000 割引 発行 現在のSALE＆キャンペーン エリア クアラルンプール セランゴール カテゴリ すべて ツアー・体験 観光施設チケット マラッカ マラッカ日帰りツアー（クアラルンプール発、ランチオプション付き） 4.6 / 5 (4,397) • 60K+ 件の予約 ¥ 4,616 ¥ 513割引適用済み イスカンダル プテリ レゴランドマレーシア 入園チケット 4.7 / 5 (11,916) • 600K+ 件の予約 ¥ 4,707 参考価格： ¥ 4,955 対象プランが14％OFF セランゴール サンウェイラグーン チケット（セランゴール） 4.7 / 5 (13,816) • 900K+ 件の予約 ¥ 3,031 参考価格： ¥ 3,925 対象プランが10％OFF ゲンティンハイランド・ケーブルカーチケット 4.8 / 5 (17,397) • 2M+ 件の予約 ¥ 428 参考価格： ¥ 436 対象プランが11％OFF ランカウイ ランカウイケーブルカー チケット 4.6 / 5 (7,895) • 600K+ 件の予約 ¥ 1,311 参考価格： ¥ 1,365 対象プランが5％OFF イスカンダル プテリ レゴランド マレーシア リゾート 4.7 / 5 (1,642) • 200+ 件の予約 ¥ 28,739 Save ¥ 1,451 ランカウイ Klookパス ランカウイ 4.7 / 5 (1,248) • 40K+ 件の予約 ¥ 4,162 参考価格： ¥ 4,678 Klook限定 ゲンティンハイランド ウィンダム イオン マジェスティック ゲンティン ハイランド 4.5 / 5 (198) • 600+ 件の予約 ¥ 9,687 Save ¥ 6,587 クアラルンプール Klookパス クアラルンプール 4.5 / 5 (882) • 30K+ 件の予約 ¥ 3,687 参考価格： ¥ 4,757 Klook限定 ゲンティンハイランド [日帰りツアー] ゲンティンハイランド＆バトゥ洞窟 4.7 / 5 (3,934) • 70K+ 件の予約 ¥ 4,757 ¥ 1,189割引適用済み ランカウイ サンセットクルーズ体験（ランカウイ） 4.2 / 5 (1,471) • 40K+ 件の予約 ¥ 3,791 ¥ 669割引適用済み サバ プライベート5つ星プレミアムホワイトサンドパラダイスアイランドツアー 4.6 / 5 (45) • 800+ 件の予約 ¥ 15,646 ¥ 1,361割引適用済み ペナン Klookパス ペナン 4.6 / 5 (659) • 10K+ 件の予約 ¥ 5,272 参考価格： ¥ 6,462 Klook限定 ゲンティンハイランド リゾーツ ワールド ゲンティン ファースト ワールド ホテル 3.5 / 5 (1,304) • 100+ 件の予約 ¥ 4,342 Save ¥ 593 ジョホールバル セント・ジャイルズ・サウスキー 4.6 / 5 (1,442) • 100+ 件の予約 ¥ 16,983 Save ¥ 2,997 プトラジャヤ クアラルンプール ピンクモスク & マラッカ 1日ツアー（送迎付き） 5.0 / 5 (6) • 50+ 件の予約 ¥ 10,827 〜 ¥ 570割引適用済み ゲンティンハイランド 1001 ナイツ テーマ バイ ウィンダム - ゲンティン 4.5 / 5 (37) • 200+ 件の予約 ¥ 8,343 Save ¥ 5,673 さらに表示"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "klook-7d92655c1665ec11",
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF（上限3USD）",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台湾ページ掲載のKlook eSIM。最低利用額なし。",
+      "coupon_codes": [
+        "SUMMER4ESIM"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-bd9ab92f9762205c",
+      "title": "台湾高速鉄道 B1G1",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台中・高雄・嘉義・台南・彰化・雲林のみに行く路線。最低利用額なし。",
+      "coupon_codes": [
+        "G02TAIWAN"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-d7920283892bee37",
+      "title": "北北基おもしろカード10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "北北基おもしろカード。最低利用額なし。",
+      "coupon_codes": [
+        "TAIPEIFUNS4"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "北北基おもしろカード10%OFF クーポンコード: TAIPEIFUNS4 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-9d3df0dc21abe843",
+      "title": "香港ディズニーランド・パークチケット 30香港ドルオフ",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "30香港ドルオフ（表示換算 JPY 609 オフ）",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "香港ディズニーランド・パークチケット。最低利用額なし。",
+      "coupon_codes": [
+        "HKDL30MERCH"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 609 オフ 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    },
+    {
+      "id": "klook-3cdecc9353802356",
+      "title": "コタイウォータージェットフェリーチケット 10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "コタイウォータージェットフェリーチケット。最低利用額なし。",
+      "coupon_codes": [
+        "10COTAI"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "コタイウォータージェットフェリーチケット10%OFF クーポンコード: 10COTAI 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "fe86bb023844525f07589ec6cfa4589762516fb18efd1c16c7d3f7116898dae5",
-  "last_checked_at": "2026-08-31T08:16:28.716808+09:00",
+  "observed_hash": "f54c92f12d09424f0eae9353e78e8f06cffcf119878e3a8dad5ab4ef8288524b",
+  "last_checked_at": "2026-09-01T09:30:10.955042+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -59,8 +59,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 1730,
-      "content_hash": "18c59a3623f433e9ab6eb2e531e801603b5e009711a69e6960a44d7c7cff64b3"
+      "text_chars": 1725,
+      "content_hash": "4738f1e116194cc2ecacc137c395413afde97204dc2199f470033636fc1fa888"
     },
     {
       "url": "https://www.jalan.net/dp/theme/jp_coupon/",
@@ -87,13 +87,13 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 39971,
-      "content_hash": "8ef761893192a532431cc6925d66cb8f3c3a6135c827cfe9c7b4f3113b58cca9"
+      "text_chars": 41046,
+      "content_hash": "ae4b3409431ba06ad548814e752ab7a66d0c4a01cd1a9b90aec8549c43ac4cdc"
     }
   ],
-  "queued_hash": "fe86bb023844525f07589ec6cfa4589762516fb18efd1c16c7d3f7116898dae5",
-  "queued_candidate_id": "jalan-fe86bb023844525f",
-  "queued_at": "2026-08-31T08:16:28.719365+09:00",
+  "queued_hash": "f54c92f12d09424f0eae9353e78e8f06cffcf119878e3a8dad5ab4ef8288524b",
+  "queued_candidate_id": "jalan-f54c92f12d09424f",
+  "queued_at": "2026-09-01T09:30:10.957661+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.593537+09:00",
   "last_audit_candidate_id": "jalan-fa7becb46857b645",
