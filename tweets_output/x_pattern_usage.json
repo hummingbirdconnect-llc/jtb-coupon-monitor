@@ -3670,5 +3670,77 @@
   "pattern": "last_check",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "daily_check",
+  "ota": "jtb",
+  "title": "日本の旬九州特別企画　九州内の宿泊＋往復FDA利用で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "casual_aside",
+  "ota": "his",
+  "title": "【ハウステンボスキャンペーン】1グループ5,000円引き"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "fresh",
+  "ota": "jtb",
+  "title": "日本の旬九州特別企画　九州内の宿泊＋往復FDA利用で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "daily_check",
+  "ota": "jtb",
+  "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "his",
+  "title": "【ハウステンボスキャンペーン】1グループ5,000円引き"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "anshin_reserve",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-09-02",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "season_context",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
