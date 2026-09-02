@@ -3742,5 +3742,77 @@
   "pattern": "season_context",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "honest_value",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "ukigane",
+  "ota": "jtb",
+  "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "last_check",
+  "ota": "his",
+  "title": "JAL利用がお得！1グループ5,000円引き"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "honest_take",
+  "ota": "jtb",
+  "title": "【6～9月宿泊】「日本の旬 東北」　南東北エリアのおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "his",
+  "title": "JAL利用がお得！1グループ5,000円引き"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "timing_answer",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-09-03",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]

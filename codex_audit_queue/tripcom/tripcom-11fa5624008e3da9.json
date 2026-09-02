@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "candidate_id": "tripcom-11fa5624008e3da9",
+  "provider_id": "tripcom",
+  "provider_label": "Trip.com",
+  "change_kind": "update",
+  "fetched_at": "2026-09-03T08:09:56.581009+09:00",
+  "content_hash": "11fa5624008e3da9022a5132c8bcf5dc6a295c8b13c5533906f94489b927b8d3",
+  "data_dir": "official_coupon_data/tripcom",
+  "official_domains": [
+    "trip.com"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "purpose": "Trip.com日本向け公式お得情報",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "43f69f18acbd3d56daa43b71b1f18ac15727ecabd96f6aaf038cad930ec6661d",
+      "text": "Deals スーパー・ワールド・ウィーク ホテル最大50%オフ もっと！国内旅！ 秋の東北ホテル最大60%OFF！国内ホテルならトリップ！ 国内ホテルならトリップ！ 人気ホテルも最大50%OFF イオン カード分割払い手数料無料特別セール Go Thailand 心おどるタイ エアソウルでお得に！ 韓国・ソウル旅行ならエアソウル 新潟・青森・小松、ぜんぶ増便！ 地元空港から直行便で、もっと気軽に海外へ お得な旅行をTrip.comで 世界最大手のオンライン旅行会社のひとつ、Trip.comで万全な旅行を！バケーションでも出張や社員旅行でも、Trip.comの便利なオンライン予約システムで、航空券やホテル、鉄道乗車券をお得に予約！お得な海外旅行プランをお探しですか？Trip.comなら、便利な日本語ウェブサイトやアプリ、安心の日本語カスタマーサービスで、お客様の旅をサポートいたします。Trip.comのサービスは日本語をはじめ、英語、韓国語、中国語、広東語、ドイツ語、フランス語、スペイン語など20か国語以上に対応しています。 お得なホテルと格安航空券で、旅行のアレンジも簡単！ 航空券やホテルの絞込検索、航空運賃アラート、料金カレンダー、早割りプランなどのTrip.com独自のツールで、旅行の計画も簡単。クレジットカード、デビットカード、ユニオンペイ（銀聯カード）に対応のTrip.comの決済システムで、安心して旅行をお楽しみいただけます。 海外人気都市・エリアのおすすめホテル 海外 ホテル ｜ 上海 ホテル ｜ 北京 ホテル ｜ 大連 ホテル ｜ 広州 ホテル ｜ 深セン ホテル ｜ 香港 ホテル ｜ マカオ ホテル ｜ 台北 ホテル {\"rootMessageId\":\"100076006-0a8eb7a8-496775-7723\",\"appId\":\"100076006\",\"fullUrl\":\"https://jp.trip.com/sale/deals/?locale=ja-JP\",\"abtest_260727_IBU_DealsOH\":{\"expCode\":\"260727_IBU_DealsOH\",\"divisionID\":\"ee387bef-8309-4fa2-befe-2c378badd411\",\"version\":\"A\",\"mod\":\"51\",\"domain\":\"D\",\"layer\":\"L202715\",\"attrs\":null,\"effectTime\":\"2026-09-02 18:12:06\"},\"fetchPerf\":[{\"runningType\":\"nfes-server\",\"duration\":28,\"success\":true,\"url\":\"http://trip-api.fx.sgp.tripws.com/restapi/soa2/19816/bjjson/queryAdsDisplayData\",\"serviceCode\":\"19816\",\"operation\":\"queryAdsDisplayData\",\"RootMessageId\":\"100025527-0a98f2a3-496775-617619\",\"CLOGGING_TRACE_ID\":\"6605684791563845439\",\"gatewayRegion\":\"SGP-ALI\",\"gatewayTime\":\"0.022\",\"statusCode\":200,\"isSOA\":true,\"requestUrl\":\"http://trip-api.fx.sgp.tripws.com/restapi/soa2/19816/bjjson/queryAdsDisplayData\",\"method\":\"\",\"errorReason\":\"\",\"timeout\":10000,\"buHead\":\"\"}]} {\"props\":{\"pageProps\":{\"initialState\":{\"abKey\":\"260727_IBU_DealsOH\",\"abVersion\":\"A\",\"ubtString\":\"M:51,260727_IBU_DealsOH:A;\",\"adsData\":{\"adsList\":[{\"displayDataId\":11466323,\"tags\":[],\"displayDataType\":1,\"displayDataUrl\":\"https://dimg04.tripcdn.com/images/0a13s12000to0wz2t521B.png\",\"coverImageUrl\":\"https://dimg04.tripcdn.com/images/0a13s12000to0wz2t521B.png\",\"title\":\"スーパー・ワールド・ウィーク\",\"introduction\":\"ホテル最大50%オフ\",\"pageLink\":\"https://jp.trip.com/sale/w/4225/super-worldweek-kr.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_42953_1\",\"canonicalUrl\":\"https://jp.trip.com/sale/w/4225/super-worldweek-kr.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_42953_1\",\"promoId\":42953,\"startTime\":\"2026-08-30 23:00:00\",\"endTime\":\"2026-09-04 22:59:59\",\"category\":3,\"materialId\":11466323,\"index\":1,\"ext\":\"{\\\"promoId\\\":42953,\\\"schemeId\\\":10061024,\\\"strategyId\\\":11588200,\\\"whetherRacing\\\":false}\",\"linkType\":\"normaLLink\",\"track\":{},\"clickLinks\":[],\"showLinks\":[]},{\"displayDataId\":11466435,\"tags\":[],\"displayDataType\":1,\"displayDataUrl\":\"https://dimg04.tripcdn.com/images/0a13m12000tfobkxr22FD.png\",\"coverImageUrl\":\"https://dimg04.tripcdn.com/images/0a13m12000tfobkxr22FD.png\",\"title\":\"もっと！国内旅！\",\"introduction\":\"秋の東北ホテル最大60%OFF！国内ホテルならトリップ！\",\"pageLink\":\"https://jp.trip.com/sale/w/37676/gojapan.html?locale=ja-jp\\u0026curr=jpy\\u0026transparentBar=1\\u0026promo_referer=406_46215_2\",\"canonicalUrl\":\"https://jp.trip.com/sale/w/37676/gojapan.html?locale=ja-jp\\u0026curr=jpy\\u0026transparentBar=1\\u0026promo_referer=406_46215_2\",\"promoId\":46215,\"startTime\":\"2026-08-30 23:00:00\",\"endTime\":\"2026-09-04 22:59:59\",\"category\":3,\"materialId\":11466435,\"index\":2,\"ext\":\"{\\\"promoId\\\":46215,\\\"schemeId\\\":10058826,\\\"strategyId\\\":11588312,\\\"whetherRacing\\\":false}\",\"linkType\":\"normaLLink\",\"track\":{},\"clickLinks\":[],\"showLinks\":[]},{\"displayDataId\":11469648,\"tags\":[],\"displayDataType\":1,\"displayDataUrl\":\"https://dimg04.tripcdn.com/images/1zp5812000sy1yj6x2078.png\",\"coverImageUrl\":\"https://dimg04.tripcdn.com/images/1zp5812000sy1yj6x2078.png\",\"title\":\"国内ホテルならトリップ！\",\"introduction\":\"人気ホテルも最大50%OFF\",\"pageLink\":\"https://jp.trip.com/sale/w/41001/jp-hotel-dealscollection.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_50079_3\",\"canonicalUrl\":\"https://jp.trip.com/sale/w/41001/jp-hotel-dealscollection.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_50079_3\",\"promoId\":50079,\"startTime\":\"2026-08-30 23:00:00\",\"endTime\":\"2026-09-04 22:59:59\",\"category\":3,\"materialId\":11469648,\"index\":3,\"ext\":\"{\\\"promoId\\\":50079,\\\"schemeId\\\":10061115,\\\"strategyId\\\":11591336,\\\"whetherRacing\\\":false}\",\"linkType\":\"normaLLink\",\"track\":{},\"clickLinks\":[],\"showLinks\":[]},{\"displayDataId\":11480743,\"tags\":[],\"displayDataType\":1,\"displayDataUrl\":\"https://dimg04.tripcdn.com/images/1zp5f12000tpwkavd5D29.png\",\"coverImageUrl\":\"https://dimg04.tripcdn.com/images/1zp5f12000tpwkavd5D29.png\",\"title\":\"イオン カード分割払い手数料無料特別セール\",\"introduction\":\"\",\"pageLink\":\"https://jp.trip.com/sale/w/3npqhqd7qbwjlv1q/aeonpayment.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_51430_4\",\"canonicalUrl\":\"https://jp.trip.com/sale/w/3npqhqd7qbwjlv1q/aeonpayment.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_51430_4\",\"promoId\":51430,\"startTime\":\"2026-09-01 17:00:00\",\"endTime\":\"2026-11-15 22:59:59\",\"category\":3,\"materialId\":11480743,\"index\":4,\"ext\":\"{\\\"promoId\\\":51430,\\\"schemeId\\\":10061605,\\\"strategyId\\\":11601262,\\\"whetherRacing\\\":true,\\\"displayReason\\\":\\\"single\\\",\\\"horseRacing\\\":\\\"horse_race\\\"}\",\"linkType\":\"normaLLink\",\"track\":{},\"clickLinks\":[],\"showLinks\":[]},{\"displayDataId\":11403547,\"tags\":[],\"displayDataType\":1,\"displayDataUrl\":\"https://dimg04.tripcdn.com/images/1zp1p12000tetk003E44C.png\",\"coverImageUrl\":\"https://dimg04.tripcdn.com/images/1zp1p12000tetk003E44C.png\",\"title\":\"Go Thailand 心おどるタイ\",\"introduction\":\"\",\"pageLink\":\"https://jp.trip.com/sale/w/e7fjmapjissndf3r/go-thailand.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_46810_5\",\"canonicalUrl\":\"https://jp.trip.com/sale/w/e7fjmapjissndf3r/go-thailand.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_46810_5\",\"promoId\":46810,\"startTime\":\"2026-08-09 23:00:00\",\"endTime\":\"2026-10-18 22:59:59\",\"category\":3,\"materialId\":11403547,\"index\":5,\"ext\":\"{\\\"promoId\\\":46810,\\\"schemeId\\\":10058469,\\\"strategyId\\\":11528812,\\\"whetherRacing\\\":true,\\\"displayReason\\\":\\\"single\\\",\\\"horseRacing\\\":\\\"horse_race\\\"}\",\"linkType\":\"normaLLink\",\"track\":{},\"clickLinks\":[],\"showLinks\":[]},{\"displayDataId\":11457202,\"tags\":[],\"displayDataType\":1,\"displayDataUrl\":\"https://dimg04.tripcdn.com/images/1zp0112000tn8d5lw64BB.png\",\"coverImageUrl\":\"https://dimg04.tripcdn.com/images/1zp0112000tn8d5lw64BB.png\",\"title\":\"エアソウルでお得に！\",\"introduction\":\"韓国・ソウル旅行ならエアソウル\",\"pageLink\":\"https://jp.trip.com/sale/w/iamdd8matqovlgit/airline-rs.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_51458_6\",\"canonicalUrl\":\"https://jp.trip.com/sale/w/iamdd8matqovlgit/airline-rs.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_51458_6\",\"promoId\":51458,\"startTime\":\"2026-08-30 23:00:00\",\"endTime\":\"2026-09-20 22:59:59\",\"category\":3,\"materialId\":11457202,\"index\":6,\"ext\":\"{\\\"promoId\\\":51458,\\\"schemeId\\\":10060380,\\\"strategyId\\\":11575201,\\\"whetherRacing\\\":true,\\\"displayReason\\\":\\\"single\\\",\\\"horseRacing\\\":\\\"horse_race\\\"}\",\"linkType\":\"normaLLink\",\"track\":{},\"clickLinks\":[],\"showLinks\":[]},{\"displayDataId\":11479238,\"tags\":[],\"displayDataType\":1,\"displayDataUrl\":\"https://dimg04.tripcdn.com/images/1zp5s12000tptdi3jB2DA.png\",\"coverImageUrl\":\"https://dimg04.tripcdn.com/images/1zp5s12000tptdi3jB2DA.png\",\"title\":\"新潟・青森・小松、ぜんぶ増便！\",\"introduction\":\"地元空港から直行便で、もっと気軽に海外へ\",\"pageLink\":\"https://jp.trip.com/sale/w/gnxffrndq4a1oyvm/airline-ke-kij.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_51437_7\",\"canonicalUrl\":\"https://jp.trip.com/sale/w/gnxffrndq4a1oyvm/airline-ke-kij.html?locale=ja-JP\\u0026transparentBar=1\\u0026wkp=1\\u0026promo_referer=406_51437_7\",\"promoId\":51437,\"startTime\":\"2026-08-23 23:00:00\",\"endTime\":\"2026-09-20 22:59:59\",\"category\":2,\"materialId\":11479238,\"index\":7,\"ext\":\"{\\\"promoId\\\":51437,\\\"schemeId\\\":10059855,\\\"strategyId\\\":11566682,\\\"whetherRacing\\\":true,\\\"displayReason\\\":\\\"single\\\",\\\"horseRacing\\\":\\\"horse_race\\\"}\",\"linkType\":\"normaLLink\",\"track\":{},\"clickLinks\":[],\"showLinks\":[]}],\"logContext\":{\"adSpaceId\":\"637\",\"pageId\":\"10650137790\",\"moduleName\":\"ONLINE_DEALS_TODAY\"}}},\"key\":\"/sale/deals?locale=ja-JP\",\"pathname\":\"/sale/deals\",\"query\":{\"renderPlatform\":\"\",\"seo\":1,\"envObj\":{\"env\":\"prod\",\"isCtrip\":false,\"pro\":true,\"dev\":false,\"routerParams\":[\"sale\",\"deals\",\"\"],\"routerObj\":{\"path\":\"deals/\"},\"plat\":\"unknow\",\"phoneModel\":\"\",\"isSupportWebP\":false,\"configData\":null},\"locale\":\"ja-JP\"},\"asPath\":\"/sale/deals?locale=ja-JP\",\"realPath\":\"/sale/deals/?locale=ja-JP\"},\"xtaroAppProps\":{\"random\":\"38js2hx\"}},\"page\":\"/sale/deals\",\"query\":{\"renderPlatform\":\"\",\"seo\":1,\"envObj\":{\"env\":\"prod\",\"isCtrip\":false,\"pro\":true,\"dev\":false,\"routerParams\":[\"sale\",\"deals\",\"\"],\"routerObj\":{\"path\":\"deals/\"},\"plat\":\"unknow\",\"phoneModel\":\"\",\"isSupportWebP\":false,\"configData\":null},\"locale\":\"ja-JP\"},\"buildId\":\"xxx\",\"assetPrefix\":\"https://ak-s-cw.tripcdn.com/ares/NFES/100076006/1788250638436\",\"runtimeConfig\":{\"appPrefix\":\"\",\"routerConfig\":[],\"AppID\":\"100076006\",\"useAres2\":true},\"isFallback\":false,\"customServer\":true,\"gip\":true,\"appGip\":true,\"isSSR\":true,\"isForceRender\":false,\"isServerGetData\":true,\"__pd\":\"{\\\"pd\\\":{\\\"r\\\":19,\\\"_d\\\":160,\\\"_p\\\":2}}\",\"version\":\"6.17.2\",\"i18nCaptchaURL\":\"https://ak-s-cw.tripcdn.com/modules/infosec/jigsawCaptcha/jigsaw-captcha.min.70c6e6893d555dd045d1a4110c14953a.macro.js\",\"__nfesGlobalDatas\":{\"nfesSharkData\":{\"key.nfes.errorPage.tip\":\"読み込みに失敗しました。時間をおいて再試行してください。\",\"key.nfes.errorPage.retry\":\"再試行\",\"key.nfes.errorPage.back\":\"戻る\"},\"abTestingWeb\":{\"260727_IBU_DealsOH\":{\"expCode\":\"260727_IBU_DealsOH\",\"divisionID\":\"ee387bef-8309-4fa2-befe-2c378badd411\",\"version\":\"A\",\"mod\":\"51\",\"domain\":\"D\",\"layer\":\"L202715\",\"attrs\":null,\"effectTime\":\"2026-09-02 18:12:06\",\"ubtString\":\"M:51,260727_IBU_DealsOH:A;\"}}},\"company\":\"\",\"fullUrl\":\"https://jp.trip.com/sale/deals/?locale=ja-JP\",\"isRTL\":\"\",\"webcore\":{},\"scriptLoader\":[]}"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "tripcom-c613e8eeb4739fa8",
+      "title": "もっと！国内旅！",
+      "category": "sale",
+      "type": "sale",
+      "discount": "最大60%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "秋の東北厳選ホテル。対象施設・在庫条件あり。",
+      "coupon_codes": [],
+      "detail_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "source_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "もっと！国内旅！ 秋の東北厳選ホテル最大60%OFF！国内ホテルならトリップ！",
+      "official_fetched_at": "2026-08-11T13:29:39.698777+09:00"
+    },
+    {
+      "id": "tripcom-ffdb6c1d00565562",
+      "title": "スーパー・ワールド・ウィーク",
+      "category": "sale",
+      "type": "sale",
+      "discount": "最大50%オフ",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "対象ホテル・在庫条件あり。",
+      "coupon_codes": [],
+      "detail_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "source_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "スーパー・ワールド・ウィーク ホテル最大50%オフ",
+      "official_fetched_at": "2026-08-11T13:29:39.698777+09:00"
+    },
+    {
+      "id": "tripcom-8e89bd80a6448580",
+      "title": "国内ホテルならトリップ！",
+      "category": "sale",
+      "type": "sale",
+      "discount": "最大50%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "対象ホテル・在庫条件あり。",
+      "coupon_codes": [],
+      "detail_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "source_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "国内ホテルならトリップ！ 人気ホテルも最大50%OFF",
+      "official_fetched_at": "2026-08-11T13:29:39.698777+09:00"
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}
