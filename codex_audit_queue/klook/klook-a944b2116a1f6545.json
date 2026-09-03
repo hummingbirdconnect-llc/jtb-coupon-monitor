@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-a944b2116a1f6545",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "update",
+  "fetched_at": "2026-09-04T08:08:24.286088+09:00",
+  "content_hash": "a944b2116a1f6545dba6a88809b8f5a597aa2adfd25f1418a572c1480b62043a",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "purpose": "Klook日本向け公式SALE一覧",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "9f31326764054339c1c2b1949476e45dd9ddc3614021b384a82ed4d2d9219ba0",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE タイ 香港 韓国 日本 ベトナム 台湾 中国 マレーシア すべて表示 タイ クーポンコード バンコクのマハナコン スカイウォーク チケット 20%OFF クーポンコード: SUNMSTB 20%OFF 最低利用額なし 発行 アプリのみ 新規ホテルユーザーは20%OFF クーポンコード: NEWHOTELUSER 20%OFF 最低利用額なし 発行 タイ バンコク ホテル 15% オフ クーポンコード: AUGTHHOTELS 15%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン エリア バンコク プーケット カテゴリ すべて ツアー・体験 観光施設チケット ラーチャブリー県 アユタヤ遺跡・水上マーケット・メークロン市場 日本語ツアー (バンコク発) 4.9 / 5 (1,241) • 10K+ 件の予約 ¥ 8,169 ¥ 8,168割引適用済み ピピ島 プーケット：ピピ島、マヤ湾、カイ島スピードボートツアー（ランチ付き） 4.5 / 5 (4,584) • 100K+ 件の予約 ¥ 5,630 ¥ 2,413割引適用済み バンコク バンコク・チャオプラヤホワイトオーキッドクルーズ 4.4 / 5 (8,322) • 300K+ 件の予約 ¥ 3,367 対象プランが4名分の予約で25％OFF ラーチャブリー県 ダムヌンサドゥアック水上マーケット＆メークローン鉄道市場 日帰りツアー 4.7 / 5 (2,571) • 60K+ 件の予約 ¥ 4,017 〜 ¥ 1,721割引適用済み ラーチャブリー県 ピンクのガネーシャ・ワットパクナム 半日ツアー (バンコク午前発 / 日本語ガイド / ホテルお迎え付き / Fun Group提供) 4.5 / 5 (129) • 2K+ 件の予約 ¥ 9,755 ¥ 1,084割引適用済み バンコク バンコク寺院ツアー MyProGuide提供（ワット・パクナム／ピンクガネーシャ／ワット・サマン） 4.6 / 5 (538) • 7K+ 件の予約 ¥ 4,571 ¥ 1,959割引適用済み バンコク BTSスカイトレイン 1日乗車パス（バンコク） 4.8 / 5 (11,967) • 200K+ 件の予約 ¥ 636 ¥ 707 ¥ 71割引適用済み バンコク バンコク・メリディアンディナークルーズ 4.5 / 5 (5,408) • 200K+ 件の予約 ¥ 2,542 ¥ 847割引適用済み バンコク シーライフバンコクオーシャンワールド チケット 4.6 / 5 (18,438) • 700K+ 件の予約 ¥ 561 参考価格： ¥ 707 3人目無料 バンコク ThaiThai Massage マッサージ（バンコク BTSアソーク スクンビット19） 4.7 / 5 (75) • 1K+ 件の予約 ¥ 2,078 ¥ 231割引適用済み プラナコーンシーアユッタヤー郡 バンコク発アユタヤ終日ツアー（トゥクトゥク・カフェ付き） 5.0 / 5 (6) • 50+ 件の予約 ¥ 4,524 ¥ 1,131割引適用済み バンコク バンコク スクンビット18 タイタイマッサージ BTSアソーク店 (ThaiThai Massage BTS Asoke (Sukhumvit 18) in Bangkok) 4.5 / 5 (429) • 8K+ 件の予約 ¥ 2,078 ¥ 231割引適用済み バンコク アユタヤ遺跡・ピンクガネーシャ・ワットパクナム 日本語ツアー (バンコク発) 4.8 / 5 (184) • 2K+ 件の予約 ¥ 11,876 ¥ 5,090割引適用済み プラナコーンシーアユッタヤー郡 バンコク・アユタヤ 貸切チャーター（TTD Global提供） 4.7 / 5 (397) • 3K+ 件の予約 ¥ 12,884 ¥ 14,315 ¥ 1,431割引適用済み バンコク バンコク アソークでタイ古式マッサージ体験 4.8 / 5 (211) • 2K+ 件の予約 ¥ 1,649 対象プランが15％OFF バンコク ムエタイ観戦チケット（バンコク / Rajadamnern Stadium提供） 4.8 / 5 (2,084) • 90K+ 件の予約 ¥ 4,713 対象プランが5％OFF ピピ島 ピピ島、マヤ島、バンブー島 スピードボート日帰りツアー 4.7 / 5 (13,100) • 700K+ 件の予約 ¥ 5,434 ¥ 1,358割引適用済み バンコク バンコク・チャオプラヤ川ボート＆バス乗り放題パス 4.5 / 5 (229) • 2K+ 件の予約 ¥ 157 ¥ 1,744 ¥ 1,587割引適用済み さらに表示"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "klook-7d92655c1665ec11",
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF（上限3USD）",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台湾ページ掲載のKlook eSIM。最低利用額なし。",
+      "coupon_codes": [
+        "SUMMER4ESIM"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-bd9ab92f9762205c",
+      "title": "台湾高速鉄道 B1G1",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台中・高雄・嘉義・台南・彰化・雲林のみに行く路線。最低利用額なし。",
+      "coupon_codes": [
+        "G02TAIWAN"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-d7920283892bee37",
+      "title": "北北基おもしろカード10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "北北基おもしろカード。最低利用額なし。",
+      "coupon_codes": [
+        "TAIPEIFUNS4"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "北北基おもしろカード10%OFF クーポンコード: TAIPEIFUNS4 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-9d3df0dc21abe843",
+      "title": "香港ディズニーランド・パークチケット 30香港ドルオフ",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "30香港ドルオフ（表示換算 JPY 609 オフ）",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "香港ディズニーランド・パークチケット。最低利用額なし。",
+      "coupon_codes": [
+        "HKDL30MERCH"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 609 オフ 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    },
+    {
+      "id": "klook-3cdecc9353802356",
+      "title": "コタイウォータージェットフェリーチケット 10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "コタイウォータージェットフェリーチケット。最低利用額なし。",
+      "coupon_codes": [
+        "10COTAI"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "コタイウォータージェットフェリーチケット10%OFF クーポンコード: 10COTAI 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

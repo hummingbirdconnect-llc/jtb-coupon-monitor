@@ -1,7 +1,7 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "647b916ec2597fb672b1f0ec19e6c305d155c45227418a649932b25fde9c4fe4",
-  "last_checked_at": "2026-09-03T08:09:09.425909+09:00",
+  "observed_hash": "667b3c6e060f445ab0ade2f507206da95b08692d5c80c050d0bbd3e03e6b0c51",
+  "last_checked_at": "2026-09-04T08:08:23.187784+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
@@ -14,8 +14,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 9602,
-      "content_hash": "3fd6ccbba690287dce02af92edb654daaccce9fcdee81c1a5661af9fbb574ef7"
+      "text_chars": 9586,
+      "content_hash": "56ddf92b4a0ba55888c119d661745ec6798eb138a25e2f6097ce8bf45c28b91b"
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
@@ -28,8 +28,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 11469,
-      "content_hash": "a9a20091b445d6f34c33de16030283fa577bf9e762c933f54f4770d3e2cab6b5"
+      "text_chars": 11463,
+      "content_hash": "a4f6f340ad95db3e6d5d21de811b6011374ee1712f7196bf35dbc10ddd4dd079"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -42,13 +42,13 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 4295,
-      "content_hash": "2a69f99bbfe74412ef9c72e0f9d66ce62b7568d964deedd708fc577de0e79cb3"
+      "text_chars": 1555,
+      "content_hash": "0b621bf8098caaab8f67b585cec38d3cba9e0e8cf5a21d511f40562b540dad15"
     }
   ],
-  "queued_hash": "647b916ec2597fb672b1f0ec19e6c305d155c45227418a649932b25fde9c4fe4",
-  "queued_candidate_id": "kkday-647b916ec2597fb6",
-  "queued_at": "2026-09-03T08:09:09.428180+09:00",
+  "queued_hash": "667b3c6e060f445ab0ade2f507206da95b08692d5c80c050d0bbd3e03e6b0c51",
+  "queued_candidate_id": "kkday-667b3c6e060f445a",
+  "queued_at": "2026-09-04T08:08:23.189772+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.596052+09:00",
   "last_audit_candidate_id": "kkday-27048951e4167c75",
