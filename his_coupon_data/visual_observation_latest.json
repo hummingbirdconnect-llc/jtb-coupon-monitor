@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-09-03T07:57:00+09:00",
+  "official_checked_at": "2026-09-03T15:59:32+09:00",
   "official_area": "全11地域版",
   "coverage_status": "complete",
   "region_count": 11,
@@ -17,8 +17,8 @@
         "国内旅行": 18
       },
       "visible_count": 20,
-      "total_dom_count": 25,
-      "hidden_dom_count": 5
+      "total_dom_count": 40,
+      "hidden_dom_count": 20
     },
     {
       "code": "hokkaido",
@@ -30,8 +30,8 @@
         "国内旅行": 16
       },
       "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "total_dom_count": 40,
+      "hidden_dom_count": 23
     },
     {
       "code": "tohoku",
@@ -39,12 +39,12 @@
       "official_area": "東北版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=3",
       "tab_counts": {
-        "海外旅行": 1,
-        "国内旅行": 16
+        "海外旅行": 13,
+        "国内旅行": 17
       },
-      "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "visible_count": 30,
+      "total_dom_count": 40,
+      "hidden_dom_count": 10
     },
     {
       "code": "koshinetsu",
@@ -52,12 +52,12 @@
       "official_area": "甲信越（新潟）版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=4",
       "tab_counts": {
-        "海外旅行": 1,
-        "国内旅行": 16
+        "海外旅行": 13,
+        "国内旅行": 17
       },
-      "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "visible_count": 30,
+      "total_dom_count": 40,
+      "hidden_dom_count": 10
     },
     {
       "code": "chubu",
@@ -69,8 +69,8 @@
         "国内旅行": 16
       },
       "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "total_dom_count": 40,
+      "hidden_dom_count": 23
     },
     {
       "code": "hokuriku",
@@ -82,8 +82,8 @@
         "国内旅行": 16
       },
       "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "total_dom_count": 40,
+      "hidden_dom_count": 23
     },
     {
       "code": "kansai",
@@ -95,8 +95,8 @@
         "国内旅行": 16
       },
       "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "total_dom_count": 40,
+      "hidden_dom_count": 23
     },
     {
       "code": "chugoku",
@@ -108,8 +108,8 @@
         "国内旅行": 16
       },
       "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "total_dom_count": 40,
+      "hidden_dom_count": 23
     },
     {
       "code": "shikoku",
@@ -117,12 +117,12 @@
       "official_area": "四国版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=11",
       "tab_counts": {
-        "海外旅行": 1,
-        "国内旅行": 16
+        "海外旅行": 13,
+        "国内旅行": 17
       },
-      "visible_count": 17,
-      "total_dom_count": 25,
-      "hidden_dom_count": 8
+      "visible_count": 30,
+      "total_dom_count": 40,
+      "hidden_dom_count": 10
     },
     {
       "code": "kyushu",
@@ -134,8 +134,8 @@
         "国内旅行": 16
       },
       "visible_count": 20,
-      "total_dom_count": 25,
-      "hidden_dom_count": 5
+      "total_dom_count": 40,
+      "hidden_dom_count": 20
     },
     {
       "code": "okinawa",
@@ -144,23 +144,23 @@
       "switch_url": "https://www.his-j.com/Default.aspx?param=9",
       "tab_counts": {
         "海外旅行": 1,
-        "国内旅行": 13
+        "国内旅行": 16
       },
-      "visible_count": 14,
-      "total_dom_count": 25,
-      "hidden_dom_count": 11
+      "visible_count": 17,
+      "total_dom_count": 40,
+      "hidden_dom_count": 23
     }
   ],
   "tab_counts": {
-    "海外旅行": 15,
-    "国内旅行": 175
+    "海外旅行": 51,
+    "国内旅行": 181
   },
-  "visible_count": 42,
-  "regional_visible_count": 190,
-  "total_dom_count": 275,
-  "hidden_dom_count": 85,
-  "capture_count": 42,
+  "visible_count": 56,
+  "regional_visible_count": 232,
+  "total_dom_count": 440,
+  "hidden_dom_count": 208,
+  "capture_count": 56,
   "capture_method": "deduplicated_individual_element_screenshot",
-  "derived_image_count": 42,
+  "derived_image_count": 56,
   "evidence_directory": "evidence/his"
 }

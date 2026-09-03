@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T08:00:09.317777+09:00",
+  "last_updated": "2026-09-03T16:02:41.711944+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -121,7 +121,8 @@
         "kansai",
         "chugoku",
         "shikoku",
-        "kyushu"
+        "kyushu",
+        "okinawa"
       ],
       "region_labels": [
         "首都圏版",
@@ -133,7 +134,8 @@
         "関西版",
         "中国版",
         "四国版",
-        "九州版"
+        "九州版",
+        "沖縄版"
       ]
     },
     "8c94826e1727": {
@@ -150,7 +152,8 @@
         "kansai",
         "chugoku",
         "shikoku",
-        "kyushu"
+        "kyushu",
+        "okinawa"
       ],
       "region_labels": [
         "首都圏版",
@@ -162,7 +165,8 @@
         "関西版",
         "中国版",
         "四国版",
-        "九州版"
+        "九州版",
+        "沖縄版"
       ]
     },
     "af0e4e1e6c54": {
@@ -356,7 +360,8 @@
         "kansai",
         "chugoku",
         "shikoku",
-        "kyushu"
+        "kyushu",
+        "okinawa"
       ],
       "region_labels": [
         "首都圏版",
@@ -368,7 +373,8 @@
         "関西版",
         "中国版",
         "四国版",
-        "九州版"
+        "九州版",
+        "沖縄版"
       ]
     },
     "7a2a9d6d1586": {
@@ -553,10 +559,203 @@
         "甲信越（新潟）版"
       ]
     },
+    "e850a0705b7d-fae589": {
+      "category": "バリ島",
+      "title": "東北・新潟在住者限定10,000円交通費サポート",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "d8281f860aaf-897c1d": {
+      "category": "海外添乗員同行ツアー",
+      "title": "宮城県外在住の方に10,000円交通費サポート",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "8022eb20d28d-74b585": {
+      "category": "海外添乗員同行ツアー",
+      "title": "岩手・秋田県在住の方に10,000円交通費サポート",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "4f386cab4bfd-272b82": {
+      "category": "【仙台発着】海外旅行",
+      "title": "宮城県在住で25歳以下の方はパスポート取得でみやぎポイント3,000ポイントプレゼント",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "7933f950cba9-0ff78a": {
+      "category": "【仙台発着】海外ツアー・AirZ募集型(海外航空券+ホテル)",
+      "title": "対象期間の海外ツアーをご予約で仙台空港 指定駐車場無料",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "ac62de71ba88-8c6bcb": {
+      "category": "【青森発着】海外旅行",
+      "title": "パスポート取得（更新）の方は旅行代金より5,000円サポート",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "e939af7847f6-241963": {
+      "category": "【青森発着】海外旅行",
+      "title": "出発60日前までにご成約で旅行代金より3,000円引き",
+      "discount": "3,000円引き",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "a2a3fe070331-e91ecd": {
+      "category": "【青森発着】海外旅行",
+      "title": "渡航日時点で30歳以下の方は旅行代金より3,000円引き",
+      "discount": "3,000円引き",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "788d82bac88e-fec582": {
+      "category": "【青森発着】海外旅行",
+      "title": "青森空港駐車料金1,000円に減免！",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "85e63be9d23d-654665": {
+      "category": "【新潟発着】海外旅行",
+      "title": "パスポート取得（更新）の方はお１人様あたり新潟空港共通利用券3,200円分プレゼント",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "f9ffff1945e6-e33e75": {
+      "category": "【新潟発着】新潟⇔ソウル線",
+      "title": "≪先着合計500名様限定≫10月出発の新潟空港⇔ソウル線を往復利用される方オリジナル「Tマネーカード」5,000円分プレゼントキャンペーン",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "b152c158665f-0b8e19": {
+      "category": "【新潟発着】台湾旅行",
+      "title": "≪先着150名様限定≫7月～9月出発の新潟空港⇔台北線を往復利用される方に「PayPayポイント」5,000円分をプレゼント！",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
     "447b24b927ec-391740": {
       "category": "国内ツアー",
       "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
       "discount": "最大5,000円引き",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版"
+      ]
+    },
+    "d31411e334d7-43d609": {
+      "category": "【東北・新潟発着】国内ツアー",
+      "title": "11～3月出発限定のANA利用国内旅行をご予約で1グループあたり最大10％OFF",
+      "discount": "最大10%OFF",
       "region_codes": [
         "tohoku",
         "koshinetsu"
@@ -675,6 +874,17 @@
       "category": "国内ツアー",
       "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
       "discount": "最大5,000円引き",
+      "region_codes": [
+        "shikoku"
+      ],
+      "region_labels": [
+        "四国版"
+      ]
+    },
+    "d31411e334d7-0816aa": {
+      "category": "【東北・新潟発着】国内ツアー",
+      "title": "11～3月出発限定のANA利用国内旅行をご予約で1グループあたり最大10％OFF",
+      "discount": "最大10%OFF",
       "region_codes": [
         "shikoku"
       ],
