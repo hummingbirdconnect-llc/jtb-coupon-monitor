@@ -86,7 +86,7 @@
     "region_labels": [
       "首都圏版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -95,7 +95,7 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -172,7 +172,7 @@
     "region_labels": [
       "首都圏版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/7d2c89d0993c.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -181,7 +181,7 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -247,7 +247,7 @@
     "region_labels": [
       "首都圏版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -256,7 +256,7 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -312,7 +312,7 @@
     "region_labels": [
       "首都圏版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/73b9e6727c2b.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -321,7 +321,7 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -423,7 +423,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/b207d97c5e74.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -432,77 +432,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -599,7 +599,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/280b2b87265b.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -608,77 +608,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -769,7 +769,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/34ba7eb1eb87.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -778,77 +778,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -936,7 +936,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/8c94826e1727.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -945,77 +945,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -1101,7 +1101,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/af0e4e1e6c54.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -1110,77 +1110,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -1268,7 +1268,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/edec8cbb11c7.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -1277,77 +1277,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -1434,7 +1434,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/b7f801ca9936.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -1443,77 +1443,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -1574,7 +1574,7 @@
     "region_labels": [
       "首都圏版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/2291e0cd6211.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -1583,7 +1583,7 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -1649,7 +1649,7 @@
     "region_labels": [
       "首都圏版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/6ecd52cc38b2.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -1658,7 +1658,7 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -1754,7 +1754,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/1cc5d408b348.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -1763,77 +1763,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -1930,7 +1930,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/fba9e460a060.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -1939,77 +1939,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -2096,7 +2096,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/385538411fb5.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -2105,77 +2105,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -2263,7 +2263,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/7a2a9d6d1586.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -2272,77 +2272,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -2429,7 +2429,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/776b7d604b2b.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -2438,77 +2438,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -2585,7 +2585,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/4d53962adf68.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -2594,77 +2594,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -2741,7 +2741,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/29cb4aa743a6.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -2750,77 +2750,77 @@
         "region_label": "首都圏版",
         "official_area": "首都圏版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokkaido",
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chubu",
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kansai",
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 11,
@@ -2917,7 +2917,7 @@
     "region_labels": [
       "北海道版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-1ef7bc.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -2926,7 +2926,7 @@
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -2992,7 +2992,7 @@
     "region_labels": [
       "北海道版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-d4edfe.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3001,7 +3001,7 @@
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -3080,7 +3080,7 @@
       "九州版",
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/2291e0cd6211-83fcd8.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3089,49 +3089,49 @@
         "region_label": "北海道版",
         "official_area": "北海道版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "tohoku",
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "chugoku",
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "kyushu",
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "okinawa",
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 7,
@@ -3231,7 +3231,7 @@
       "東北版",
       "甲信越（新潟）版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-b9ba6f.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3240,14 +3240,14 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 2,
@@ -3290,7 +3290,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/e850a0705b7d-fae589.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3299,21 +3299,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3358,7 +3358,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/d8281f860aaf-897c1d.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3367,21 +3367,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3426,7 +3426,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/8022eb20d28d-74b585.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3435,21 +3435,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3495,7 +3495,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/4f386cab4bfd-272b82.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3504,21 +3504,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3566,7 +3566,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/7933f950cba9-0ff78a.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3575,21 +3575,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3642,7 +3642,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/ac62de71ba88-8c6bcb.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3651,21 +3651,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3718,7 +3718,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/e939af7847f6-241963.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3727,21 +3727,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3794,7 +3794,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/a2a3fe070331-e91ecd.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3803,21 +3803,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3860,7 +3860,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/788d82bac88e-fec582.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3869,21 +3869,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3926,7 +3926,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/85e63be9d23d-654665.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -3935,21 +3935,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -3992,7 +3992,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/f9ffff1945e6-e33e75.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4001,21 +4001,21 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -4058,7 +4058,7 @@
       "甲信越（新潟）版",
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/b152c158665f-0b8e19.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4067,21 +4067,87 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "shikoku",
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
+      }
+    ],
+    "official_region_count": 3,
+    "is_nationwide": false,
+    "source_url": "https://www.his-j.com/campaign/shisaku/",
+    "source_type": "official_visible_dom",
+    "fetch_method": "playwright_visible_dom+regional_contexts+deduplicated_element_screenshot",
+    "confidence": "公式画面表示確認済み"
+  },
+  {
+    "id": "e4b04b727075-b9e5b9",
+    "category": "【新潟発着】仁川空港乗継海外旅行",
+    "title": "≪先着20名様限定≫期間中に仁川空港乗継便を利用されるお客様仁川空港SKY HUB LOUNGEクーポンプレゼント",
+    "discount": "",
+    "stock_status": "配布中",
+    "booking_period": "",
+    "travel_period": "2026/9/3(木)～12/31(木)",
+    "coupon_codes": [],
+    "target": "",
+    "notes": [],
+    "regional_base_id": "e4b04b727075",
+    "official_visibility": "visible",
+    "official_tab": "海外旅行",
+    "official_tabs": [
+      "海外旅行"
+    ],
+    "official_area": "東北版、甲信越（新潟）版、四国版",
+    "official_areas": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ],
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ],
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
+    "screenshot_url": "evidence/his/e4b04b727075-b9e5b9.png",
+    "screenshot_capture_method": "deduplicated_element_screenshot",
+    "regional_observations": [
+      {
+        "region_code": "tohoku",
+        "region_label": "東北版",
+        "official_area": "東北版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
+      },
+      {
+        "region_code": "koshinetsu",
+        "region_label": "甲信越（新潟）版",
+        "official_area": "甲信越（新潟）版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
+      },
+      {
+        "region_code": "shikoku",
+        "region_label": "四国版",
+        "official_area": "四国版",
+        "official_tab": "海外旅行",
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 3,
@@ -4150,7 +4216,7 @@
       "東北版",
       "甲信越（新潟）版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-391740.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4159,14 +4225,14 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 2,
@@ -4236,7 +4302,7 @@
       "東北版",
       "甲信越（新潟）版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/d31411e334d7-43d609.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4245,14 +4311,14 @@
         "region_label": "東北版",
         "official_area": "東北版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "koshinetsu",
         "region_label": "甲信越（新潟）版",
         "official_area": "甲信越（新潟）版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 2,
@@ -4352,7 +4418,7 @@
       "中部版",
       "北陸版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-378efb.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4361,14 +4427,14 @@
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 2,
@@ -4437,7 +4503,7 @@
       "中部版",
       "北陸版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-d4b9ab.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4446,14 +4512,14 @@
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 2,
@@ -4517,7 +4583,7 @@
       "中部版",
       "北陸版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/2291e0cd6211-132b8e.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4526,14 +4592,14 @@
         "region_label": "中部版",
         "official_area": "中部版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       },
       {
         "region_code": "hokuriku",
         "region_label": "北陸版",
         "official_area": "北陸版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 2,
@@ -4630,7 +4696,7 @@
     "region_labels": [
       "関西版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-3a8cd9.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4639,7 +4705,7 @@
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -4705,7 +4771,7 @@
     "region_labels": [
       "関西版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-eb69a5.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4714,7 +4780,7 @@
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -4775,7 +4841,7 @@
     "region_labels": [
       "関西版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/2291e0cd6211-61a9df.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4784,7 +4850,7 @@
         "region_label": "関西版",
         "official_area": "関西版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -4881,7 +4947,7 @@
     "region_labels": [
       "中国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-71ecc2.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4890,7 +4956,7 @@
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -4956,7 +5022,7 @@
     "region_labels": [
       "中国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-c61195.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -4965,7 +5031,7 @@
         "region_label": "中国版",
         "official_area": "中国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5062,7 +5128,7 @@
     "region_labels": [
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-938b69.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5071,7 +5137,7 @@
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5137,7 +5203,7 @@
     "region_labels": [
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-1f3285.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5146,7 +5212,7 @@
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5213,7 +5279,7 @@
     "region_labels": [
       "四国版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/d31411e334d7-0816aa.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5222,7 +5288,7 @@
         "region_label": "四国版",
         "official_area": "四国版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5319,7 +5385,7 @@
     "region_labels": [
       "九州版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-500e4f.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5328,7 +5394,7 @@
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5384,7 +5450,7 @@
     "region_labels": [
       "九州版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/6e6beee59060-cf7532.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5393,7 +5459,7 @@
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5433,7 +5499,7 @@
     "region_labels": [
       "九州版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/07c5f73161f8-6cbe2b.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5442,7 +5508,7 @@
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5483,7 +5549,7 @@
     "region_labels": [
       "九州版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/d266989e495d-bee0d4.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5492,7 +5558,7 @@
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5558,7 +5624,7 @@
     "region_labels": [
       "九州版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-2fb966.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5567,7 +5633,7 @@
         "region_label": "九州版",
         "official_area": "九州版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5664,7 +5730,7 @@
     "region_labels": [
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/c436200b8e32-5ce280.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5673,7 +5739,7 @@
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "海外旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,
@@ -5739,7 +5805,7 @@
     "region_labels": [
       "沖縄版"
     ],
-    "official_checked_at": "2026-09-03T15:59:32+09:00",
+    "official_checked_at": "2026-09-03T23:17:56+09:00",
     "screenshot_url": "evidence/his/447b24b927ec-ce671d.png",
     "screenshot_capture_method": "deduplicated_element_screenshot",
     "regional_observations": [
@@ -5748,7 +5814,7 @@
         "region_label": "沖縄版",
         "official_area": "沖縄版",
         "official_tab": "国内旅行",
-        "official_checked_at": "2026-09-03T15:59:32+09:00"
+        "official_checked_at": "2026-09-03T23:17:56+09:00"
       }
     ],
     "official_region_count": 1,

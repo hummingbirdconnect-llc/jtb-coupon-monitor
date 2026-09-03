@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T16:02:41.711944+09:00",
+  "last_updated": "2026-09-03T23:21:03.085239+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -727,6 +727,21 @@
     "b152c158665f-0b8e19": {
       "category": "【新潟発着】台湾旅行",
       "title": "≪先着150名様限定≫7月～9月出発の新潟空港⇔台北線を往復利用される方に「PayPayポイント」5,000円分をプレゼント！",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "e4b04b727075-b9e5b9": {
+      "category": "【新潟発着】仁川空港乗継海外旅行",
+      "title": "≪先着20名様限定≫期間中に仁川空港乗継便を利用されるお客様仁川空港SKY HUB LOUNGEクーポンプレゼント",
       "discount": "",
       "region_codes": [
         "tohoku",
