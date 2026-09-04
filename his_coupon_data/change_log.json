@@ -3774,5 +3774,299 @@
     "region_labels": [
       "沖縄版"
     ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-029a45",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-142057",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-87c858",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-af0a51",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-b1d660",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-c19c64",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-cfa4bf",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-dbae9b",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "🆕 新規",
+    "id": "e6e44b7f2b0e",
+    "category": "海外オプショナルツアー",
+    "title": "先着合計1,000枚限定！海外オプショナルツアー5％引き",
+    "discount": "5%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-0fd299",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-1801ec",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-338e21",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-9744e9",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-a8d883",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-d99530",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-db4bd6",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "type": "❌ 消失",
+    "id": "8b784bb4eca5-fa8664",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
   }
 ]
