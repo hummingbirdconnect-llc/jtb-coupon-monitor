@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04T16:07:12.047366+09:00",
+  "last_updated": "2026-09-04T23:11:13.915230+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -27,6 +27,37 @@
       "category": "海外オプショナルツアー",
       "title": "先着合計1,000枚限定！海外オプショナルツアー5％引き",
       "discount": "5%引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
+    "184fcc10c29e": {
+      "category": "添乗員同行オランダツアー",
+      "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行オランダツアーお1人様5,000円引き",
+      "discount": "5,000円引き",
       "region_codes": [
         "kanto",
         "hokkaido",
