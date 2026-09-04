@@ -1,26 +1,26 @@
 {
   "provider_id": "tripcom",
-  "observed_hash": "7f4555ee49aff817d312a5a76caefee396d86b58c8371ecdde46f9653ca011e8",
-  "last_checked_at": "2026-09-04T08:09:10.691136+09:00",
+  "observed_hash": "37fe7180f513ba87017995219787de27f847a5b65d3b92ad30d84245691e25ac",
+  "last_checked_at": "2026-09-05T07:57:44.777078+09:00",
   "sources": [
     {
       "url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
       "ok": true,
       "status_code": 200,
-      "fetch_method": "playwright",
+      "fetch_method": "html",
       "error": "",
       "purpose": "Trip.com日本向け公式お得情報",
       "source_role": "official_source",
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 1347,
-      "content_hash": "f93a1b111cc6f9fc8ff35026d593c1ff4efc8dfb001b5c062ef22f4923c8c35c"
+      "text_chars": 12801,
+      "content_hash": "1d0a1e95166387a75dd94ced34d8929934a3cc1c7448c8d6853b83c4a9d9e7d0"
     }
   ],
-  "queued_hash": "7f4555ee49aff817d312a5a76caefee396d86b58c8371ecdde46f9653ca011e8",
-  "queued_candidate_id": "tripcom-7f4555ee49aff817",
-  "queued_at": "2026-09-04T08:09:10.691480+09:00",
+  "queued_hash": "37fe7180f513ba87017995219787de27f847a5b65d3b92ad30d84245691e25ac",
+  "queued_candidate_id": "tripcom-37fe7180f513ba87",
+  "queued_at": "2026-09-05T07:57:44.777762+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.597519+09:00",
   "last_audit_candidate_id": "tripcom-270978c39d946935",
