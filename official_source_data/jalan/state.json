@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "e7b5643c943471fd74c6dbdd95298eee8bd7de6b6382200add641992d8403242",
-  "last_checked_at": "2026-09-05T07:56:39.322228+09:00",
+  "observed_hash": "c35c474f1f1472c945e14de649850a262a8898503650b90f026a9990dda72901",
+  "last_checked_at": "2026-09-06T07:47:52.357879+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -87,13 +87,13 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 38408,
-      "content_hash": "2d883964c5d48495303ec4fb8b565886a9ab2952174067d216af63ad5f54493d"
+      "text_chars": 38413,
+      "content_hash": "feb64cbdaec5ed5129d698c870103793574eddd9fe907103626f486c32d52cf4"
     }
   ],
-  "queued_hash": "e7b5643c943471fd74c6dbdd95298eee8bd7de6b6382200add641992d8403242",
-  "queued_candidate_id": "jalan-e7b5643c943471fd",
-  "queued_at": "2026-09-05T07:56:39.324722+09:00",
+  "queued_hash": "c35c474f1f1472c945e14de649850a262a8898503650b90f026a9990dda72901",
+  "queued_candidate_id": "jalan-c35c474f1f1472c9",
+  "queued_at": "2026-09-06T07:47:52.360287+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.593537+09:00",
   "last_audit_candidate_id": "jalan-fa7becb46857b645",
