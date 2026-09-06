@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-06T22:33:35.262540+09:00",
+  "last_updated": "2026-09-07T07:42:00.031450+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -265,37 +265,6 @@
     "edec8cbb11c7": {
       "category": "国内航空券＋ホテル",
       "title": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊で使える1グループ5,000円引き",
-      "discount": "5,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "b7f801ca9936": {
-      "category": "国内航空券＋ホテル",
-      "title": "JAL利用がお得！1グループ5,000円引き",
       "discount": "5,000円引き",
       "region_codes": [
         "kanto",

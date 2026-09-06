@@ -4030,5 +4030,77 @@
   "pattern": "season_context",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "＜8～9月出発＞【往復JAL便利用限定】国内ツアーで使える割引クーポン"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "<7～9月出発>【往復JR利用限定】東北エリアで使える割引クーポン"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "memo_style",
+  "ota": "jtb",
+  "title": "<7～9月出発>【往復JR利用限定】東北エリアで使える割引クーポン"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "question",
+  "ota": "jtb",
+  "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-09-07",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
