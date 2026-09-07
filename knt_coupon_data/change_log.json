@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-06-08",
-    "type": "🆕 新規",
-    "id": "cpn-natsuuri-449b65",
-    "category": "クーポンコード",
-    "title": "夏売りキャンペーン2026",
-    "area": ""
-  },
-  {
-    "date": "2026-06-08",
-    "type": "🆕 新規",
-    "id": "yado-sp-miyazaki-hinatabi-52df2b",
-    "category": "獲得クーポン",
-    "title": "ひなタビみやざき宿泊キャンペーン",
-    "area": "宮崎県"
-  },
-  {
     "date": "2026-06-14",
     "type": "🆕 新規",
     "id": "cpn-thanksweek-91eb8b",
@@ -166,5 +150,21 @@
     "category": "クーポンコード",
     "title": "九州を元気に！旅で応援クーポン・プラン",
     "area": "福岡県・佐賀県・長崎県"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "🆕 新規",
+    "id": "cmpgn-2600191",
+    "category": "獲得クーポン",
+    "title": "ホテルモントレ ラ・スール大阪 宿泊割引クーポン 第2弾",
+    "area": "大阪府"
+  },
+  {
+    "date": "2026-09-08",
+    "type": "🆕 新規",
+    "id": "yado-sp-niigata-goto-39c481",
+    "category": "獲得クーポン",
+    "title": "「にいがたGo Toトラベル」キャンペーン 第二弾",
+    "area": "新潟県"
   }
 ]

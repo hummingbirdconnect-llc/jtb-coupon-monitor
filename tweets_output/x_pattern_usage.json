@@ -4102,5 +4102,77 @@
   "pattern": "soft_news",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "fresh",
+  "ota": "knt",
+  "title": "「にいがたGo Toトラベル」キャンペーン 第二弾"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "knt",
+  "title": "ホテルモントレ ラ・スール大阪 宿泊割引クーポン 第2弾"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "quote_highlight",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-09-08",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
