@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-07T07:42:00.031450+09:00",
+  "last_updated": "2026-09-07T16:11:42.112489+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -1054,39 +1054,6 @@
       "category": "海外旅行",
       "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
       "discount": "最大50,000円引き",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
-    "6e6beee59060-cf7532": {
-      "category": "九州発 AirZ(海外航空券+ホテル)",
-      "title": "オンライン予約限定！旅トクAirZキャンペーン1グループ5,000円引き",
-      "discount": "5,000円引き",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
-    "07c5f73161f8-6cbe2b": {
-      "category": "佐賀空港利用 海外旅行",
-      "title": "九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大4,000円助成",
-      "discount": "",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
-    "d266989e495d-bee0d4": {
-      "category": "佐賀空港利用 海外旅行",
-      "title": "若者（29歳以下）限定！九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大13,000円助成",
-      "discount": "",
       "region_codes": [
         "kyushu"
       ],
