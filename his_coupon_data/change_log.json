@@ -4198,5 +4198,39 @@
       "甲信越（新潟）版",
       "四国版"
     ]
+  },
+  {
+    "date": "2026-09-09",
+    "type": "❌ 消失",
+    "id": "e6e44b7f2b0e",
+    "category": "海外オプショナルツアー",
+    "title": "先着合計1,000枚限定！海外オプショナルツアー5％引き",
+    "discount": "5%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
   }
 ]
