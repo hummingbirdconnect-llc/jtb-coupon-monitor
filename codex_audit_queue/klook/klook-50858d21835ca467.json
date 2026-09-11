@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-50858d21835ca467",
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "change_kind": "update",
+  "fetched_at": "2026-09-12T08:09:25.959740+09:00",
+  "content_hash": "50858d21835ca467d2731e470d859e4eea2648e1f2d3980ffd2e785982b3dd44",
+  "data_dir": "official_coupon_data/klook",
+  "official_domains": [
+    "klook.com"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://www.klook.com/ja/deals/",
+      "purpose": "Klook日本向け公式SALE一覧",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "258d05d211912fb2f07e4217c8406127d522b21095fdfcee40690e9a79c58927",
+      "text": "Klookのお得な情報 - 限定クーポンコードとオファー - Klook USA SALE 香港 マレーシア シンガポール 日本 ベトナム タイ 韓国 台湾 すべて表示 香港 クーポンコード 香港ディズニーランド・パークチケット HKD 300オフ クーポンコード: HKDLSBDJP300 JPY 5,890 オフ 最低利用額なし 発行 香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 589 オフ 最低利用額なし 発行 アプリのみ 新規ホテルユーザー限定 | 48時間限定20%オフ クーポンコード: NEWHOTELUSER 20%OFF 最低利用額なし 発行 すべて表示 現在のSALE＆キャンペーン カテゴリ すべて ツアー・体験 観光施設チケット 香港 香港ディズニーランド・パーク チケット 4.8 / 5 (191,630) • 8M+ 件の予約 ¥ 3,696 対象オプションが15 OFF 香港 香港エアポートエクスプレス 乗車チケット 4.9 / 5 (353,766) • 6M+ 件の予約 ¥ 999 参考価格： ¥ 1,433 対象オプションが最大30 OFF 香港 ピークトラムチケット（香港） 4.6 / 5 (41,364) • 2M+ 件の予約 ¥ 2,277 参考価格： ¥ 2,356 対象プランが18％OFF 香港 香港オーシャンパーク チケット 4.7 / 5 (81,729) • 2M+ 件の予約 ¥ 7,843 参考価格： ¥ 10,562 対象オプションが10 OFF マカオ ターボジェットフェリー チケット（香港⇔マカオ） 4.7 / 5 (27,824) • 1M+ 件の予約 ¥ 2,663 参考価格： ¥ 4,751 対象オプションが最大42 OFF 香港 香港オープントップ観光バスツアー｜廟街（テンプルストリート） 4.4 / 5 (679) • 40K+ 件の予約 ¥ 2,186 〜 ¥ 546割引適用済み 香港 ゴンピン360ケーブルカー チケット（香港） 4.7 / 5 (61,532) • 2M+ 件の予約 ¥ 3,220 参考価格： ¥ 4,025 対象オプションが29 OFF 香港 ビクトリアハーバー ナイトクルーズ ファンタジースターチェイサー（軽食・ドリンク飲み放題＋写真撮影付き） 4.5 / 5 (251) • 10K+ 件の予約 ¥ 1,588 ¥ 3,084割引適用済み 香港 Klookパス 香港 4.7 / 5 (3,700) • 90K+ 件の予約 ¥ 7,813 参考価格： ¥ 11,378 Klook限定 香港 M+ 入館チケット（香港） 4.6 / 5 (8,947) • 1M+ 件の予約 ¥ 3,646 〜 参考価格： ¥ 3,730 対象オプションが40 OFF 香港 パンダ ホテル 4.4 / 5 (1,997) • 1K+ 件の予約 ¥ 8,266 Save ¥ 2,066 香港 香港ビクトリアピーク＆ハーバークルーズ夜景ツアー（グランドアクアリウムディナー付き） ¥ 23,244 ¥ 5,811割引適用済み 香港 香港 半日 ビクトリアピーク＆スターフェリー ガイド付きツアー 3.3 / 5 (10) • 300+ 件の予約 ¥ 7,225 ¥ 1,806割引適用済み さらに表示"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "klook-7d92655c1665ec11",
+      "title": "Klook eSIM 50%OFF（上限3USD）",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF（上限3USD）",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台湾ページ掲載のKlook eSIM。最低利用額なし。",
+      "coupon_codes": [
+        "SUMMER4ESIM"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾 クーポンコード Klook eSIM 50%OFF (上限3USD) クーポンコード: SUMMER4ESIM 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-bd9ab92f9762205c",
+      "title": "台湾高速鉄道 B1G1",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "50%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "台中・高雄・嘉義・台南・彰化・雲林のみに行く路線。最低利用額なし。",
+      "coupon_codes": [
+        "G02TAIWAN"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-d7920283892bee37",
+      "title": "北北基おもしろカード10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "北北基おもしろカード。最低利用額なし。",
+      "coupon_codes": [
+        "TAIPEIFUNS4"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "北北基おもしろカード10%OFF クーポンコード: TAIPEIFUNS4 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-15T08:11:00.596487+09:00"
+    },
+    {
+      "id": "klook-9d3df0dc21abe843",
+      "title": "香港ディズニーランド・パークチケット 30香港ドルオフ",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "30香港ドルオフ（表示換算 JPY 609 オフ）",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "香港ディズニーランド・パークチケット。最低利用額なし。",
+      "coupon_codes": [
+        "HKDL30MERCH"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 609 オフ 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    },
+    {
+      "id": "klook-3cdecc9353802356",
+      "title": "コタイウォータージェットフェリーチケット 10%OFF",
+      "category": "coupon",
+      "type": "coupon",
+      "discount": "10%OFF",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "コタイウォータージェットフェリーチケット。最低利用額なし。",
+      "coupon_codes": [
+        "10COTAI"
+      ],
+      "detail_url": "https://www.klook.com/ja/deals/",
+      "source_url": "https://www.klook.com/ja/deals/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "コタイウォータージェットフェリーチケット10%OFF クーポンコード: 10COTAI 10%OFF 最低利用額なし 発行",
+      "official_fetched_at": "2026-08-14T08:14:23.670297+09:00",
+      "missing_from_latest": true
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

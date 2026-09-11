@@ -4390,5 +4390,77 @@
   "pattern": "regret_prevention",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "rurubu_travel",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "weekend_plan",
+  "ota": "jtb",
+  "title": "ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【スカンジナビア航空(SK)対象】"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "quote_highlight",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "last_check",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "daily_check",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-09-12",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "season_context",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
