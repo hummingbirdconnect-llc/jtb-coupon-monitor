@@ -1,21 +1,21 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "5911f1d2c15711d775c1bcc880c4bda02714887e42d73dce44dfb6a20ec78dfe",
-  "last_checked_at": "2026-09-14T08:01:10.772489+09:00",
+  "observed_hash": "cd55e63380910eea1116651519c4b603e6bf33ee6e949ffeb301105823e674be",
+  "last_checked_at": "2026-09-15T08:52:59.120731+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "playwright",
-      "error": "",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "auto",
+      "error": "HTTP 403; Playwright HTTP 403",
       "purpose": "公式クーポンまとめ",
       "source_role": "official_source",
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 9944,
-      "content_hash": "32f4616bbaceb7505630fdfd073b96f6fb3bfd07f182c15af13afd1019a354dc"
+      "text_chars": 0,
+      "content_hash": ""
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
@@ -29,7 +29,7 @@
       "discovered_from": "",
       "discovered_urls": [],
       "text_chars": 11401,
-      "content_hash": "1e2c56c90bebf313e5ead512e36d0de1cf4117c2f4f13bc80a2955304b7a05d8"
+      "content_hash": "55bb51a046c68b50249596512f130984c7ab81489aa0f04c652ca2795ce6d05c"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -46,9 +46,9 @@
       "content_hash": "5bf3ef56ac1f0963903c212550b6163f76e1fb12119012535a7ce765c9c2aa99"
     }
   ],
-  "queued_hash": "5911f1d2c15711d775c1bcc880c4bda02714887e42d73dce44dfb6a20ec78dfe",
-  "queued_candidate_id": "kkday-5911f1d2c15711d7",
-  "queued_at": "2026-09-14T08:01:10.774788+09:00",
+  "queued_hash": "cd55e63380910eea1116651519c4b603e6bf33ee6e949ffeb301105823e674be",
+  "queued_candidate_id": "kkday-cd55e63380910eea",
+  "queued_at": "2026-09-15T08:52:59.122478+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.596052+09:00",
   "last_audit_candidate_id": "kkday-27048951e4167c75",

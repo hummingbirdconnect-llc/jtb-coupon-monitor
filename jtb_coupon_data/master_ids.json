@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-14T07:59:38.897279+09:00",
+  "last_updated": "2026-09-15T08:51:29.279380+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -146,7 +146,7 @@
       "title": "【6～9月宿泊】「日本の旬 東北」　南東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "宮城県・山形県・福島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2608tohoku": {
       "category": "国内",
@@ -160,7 +160,7 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606iwate": {
       "category": "国内",
@@ -174,7 +174,7 @@
       "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞",
       "discount": "最大50％引",
       "area": "岩手県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609goton": {
       "category": "国内",
@@ -370,7 +370,7 @@
       "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
       "discount": "10,000円引",
       "area": "熊本県・宮崎県・鹿児島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606miyazaki": {
       "category": "国内",
@@ -386,10 +386,38 @@
       "area": "鹿児島県",
       "stock_status": "配布中"
     },
+    "2609kagoshima": {
+      "category": "国内",
+      "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
+      "discount": "最大60％引",
+      "area": "鹿児島県",
+      "stock_status": "配布中"
+    },
+    "2609amami": {
+      "category": "国内",
+      "title": "あまみゆったり島泊割",
+      "discount": "最大50％引",
+      "area": "鹿児島県",
+      "stock_status": "配布中"
+    },
     "2609okinawamonterey": {
       "category": "国内",
       "title": "ホテルモントレ沖縄スパ＆リゾート、ホテルモントレ ラ・スール那覇で使える割引クーポン",
       "discount": "最大10,000円引",
+      "area": "沖縄県",
+      "stock_status": "配布中"
+    },
+    "2609okinawa2": {
+      "category": "国内",
+      "title": "沖縄【秋冬旅】タイムセールや年末年始にも利用できる割引クーポン",
+      "discount": "3,000円引",
+      "area": "沖縄県",
+      "stock_status": "配布中"
+    },
+    "2609okinawa": {
+      "category": "国内",
+      "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
+      "discount": "最大25,000円引",
       "area": "沖縄県",
       "stock_status": "配布中"
     },
@@ -412,7 +440,7 @@
       "title": "☆【沖縄】７月～９月出発☆夏休みにも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607timesale": {
       "category": "国内",

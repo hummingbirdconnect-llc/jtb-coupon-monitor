@@ -1,7 +1,7 @@
 {
   "provider_id": "rakuten_travel",
-  "observed_hash": "2fd0cd8f8a1676dde69e084554a9f9fc6e93dd0149c76e31a340a7a38b831df3",
-  "last_checked_at": "2026-09-14T08:01:12.431545+09:00",
+  "observed_hash": "db8cdba3759049ff2d97da02362b9fb355c4d9ff6dff998d91221f1dae7ed3d0",
+  "last_checked_at": "2026-09-15T08:53:02.550243+09:00",
   "sources": [
     {
       "url": "https://travel.rakuten.co.jp/coupon/",
@@ -14,13 +14,13 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 4003,
-      "content_hash": "4877b3d5a07e16e402863bb7126e0243cd7f6d80eb8ff7f35fc9d4dc678ca53b"
+      "text_chars": 4054,
+      "content_hash": "d1faafd8051284452ddde908dbf1395f0469a535092ae1b1f28399a0002e0199"
     }
   ],
-  "queued_hash": "2fd0cd8f8a1676dde69e084554a9f9fc6e93dd0149c76e31a340a7a38b831df3",
-  "queued_candidate_id": "rakuten_travel-2fd0cd8f8a1676dd",
-  "queued_at": "2026-08-18T06:32:40.812976+09:00",
+  "queued_hash": "db8cdba3759049ff2d97da02362b9fb355c4d9ff6dff998d91221f1dae7ed3d0",
+  "queued_candidate_id": "rakuten_travel-db8cdba3759049ff",
+  "queued_at": "2026-09-15T08:53:02.550948+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-11T13:29:39.698345+09:00",
   "last_audit_candidate_id": "rakuten_travel-f33bed149b04a738",
