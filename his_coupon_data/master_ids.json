@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15T08:43:32.098021+09:00",
+  "last_updated": "2026-09-15T16:29:22.195020+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -765,6 +765,21 @@
     "788d82bac88e-fec582": {
       "category": "【青森発着】海外旅行",
       "title": "青森空港駐車料金1,000円に減免！",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "a358f728ffe4-46d741": {
+      "category": "【花巻発着】海外旅行",
+      "title": "パスポート取得（更新）の方はお１人様あたり5,000円支援",
       "discount": "",
       "region_codes": [
         "tohoku",
