@@ -1,21 +1,21 @@
 {
   "provider_id": "kkday",
-  "observed_hash": "cd55e63380910eea1116651519c4b603e6bf33ee6e949ffeb301105823e674be",
-  "last_checked_at": "2026-09-15T08:52:59.120731+09:00",
+  "observed_hash": "20568f23c1a750450de06380bb0b45ec9331efae9fe56b06aa97e3497a98ca35",
+  "last_checked_at": "2026-09-16T08:34:30.118298+09:00",
   "sources": [
     {
       "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
-      "ok": false,
-      "status_code": "",
-      "fetch_method": "auto",
-      "error": "HTTP 403; Playwright HTTP 403",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
       "purpose": "公式クーポンまとめ",
       "source_role": "official_source",
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 0,
-      "content_hash": ""
+      "text_chars": 9929,
+      "content_hash": "b38554fcc382253fe4784cd12f5712cdff45adf5919bd8b7e5e9ade4b2a06346"
     },
     {
       "url": "https://www.kkday.com/ja/promo/coupon-campaign",
@@ -28,8 +28,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 11401,
-      "content_hash": "55bb51a046c68b50249596512f130984c7ab81489aa0f04c652ca2795ce6d05c"
+      "text_chars": 11402,
+      "content_hash": "511058f5df3cf13c459fba59a62121ece0b1d1ab6f433ae05d056f644b9194fa"
     },
     {
       "url": "https://www.kkday.com/ja/promo/aj_newmember",
@@ -42,13 +42,13 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 1365,
-      "content_hash": "5bf3ef56ac1f0963903c212550b6163f76e1fb12119012535a7ce765c9c2aa99"
+      "text_chars": 4485,
+      "content_hash": "de0e526e3afb53171e7449caecbe8e208090dda0e0e2d45a738d05655382ec87"
     }
   ],
-  "queued_hash": "cd55e63380910eea1116651519c4b603e6bf33ee6e949ffeb301105823e674be",
-  "queued_candidate_id": "kkday-cd55e63380910eea",
-  "queued_at": "2026-09-15T08:52:59.122478+09:00",
+  "queued_hash": "20568f23c1a750450de06380bb0b45ec9331efae9fe56b06aa97e3497a98ca35",
+  "queued_candidate_id": "kkday-20568f23c1a75045",
+  "queued_at": "2026-09-16T08:34:30.120059+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.596052+09:00",
   "last_audit_candidate_id": "kkday-27048951e4167c75",
