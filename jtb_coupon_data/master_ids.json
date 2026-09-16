@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T08:32:42.287859+09:00",
+  "last_updated": "2026-09-17T08:41:04.086913+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -90,7 +90,7 @@
       "title": "<６～9月宿泊>全国の共立リゾート43施設で使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2608kyoritsu": {
       "category": "国内",
@@ -111,6 +111,13 @@
       "title": "IHG One Rewards × JTBトラベルメンバー パートナーシッププランで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道・大阪府・沖縄県",
+      "stock_status": "配布中"
+    },
+    "2609sunsunski": {
+      "category": "国内",
+      "title": "飛行機、JR利用がお得！スキー割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "北海道・青森県・岩手県",
       "stock_status": "配布中"
     },
     "2605hokka": {
@@ -239,6 +246,13 @@
       "area": "東京都",
       "stock_status": "配布中"
     },
+    "2609hachijo": {
+      "category": "国内",
+      "title": "がんばろう！八丈島で使えるクーポン",
+      "discount": "最大15,000円引",
+      "area": "東京都",
+      "stock_status": "配布中"
+    },
     "2607yamanashi": {
       "category": "国内",
       "title": "山梨へGo！夏旅応援クーポン",
@@ -258,6 +272,13 @@
       "title": "【往復ANA便】能登空港利用で使える国内ツアー割引クーポン",
       "discount": "最大15,000円引",
       "area": "石川県",
+      "stock_status": "配布中"
+    },
+    "2609shiga": {
+      "category": "国内",
+      "title": "滋賀県　びわ湖の歴史と湖上交通　夕食に認証「近江牛」が楽しめる　おすすめ施設で使える割引クーポン",
+      "discount": "最大15％引",
+      "area": "滋賀県",
       "stock_status": "配布中"
     },
     "2606kintetsu": {
@@ -321,7 +342,7 @@
       "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
       "discount": "最大12,000円引",
       "area": "山口県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2608jalkc": {
       "category": "国内",
@@ -370,7 +391,7 @@
       "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
       "discount": "10,000円引",
       "area": "熊本県・宮崎県・鹿児島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606miyazaki": {
       "category": "国内",
@@ -518,6 +539,13 @@
       "discount": "3,000円引",
       "area": "沖縄県",
       "stock_status": "配布終了"
+    },
+    "2609any": {
+      "category": "海外",
+      "title": "【リニューアル記念】海外航空券＋ホテルどこでも使える割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "配布中"
     },
     "2607yng2": {
       "category": "海外",
