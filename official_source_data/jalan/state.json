@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "2cb0f6ad9f0b2d8e770b695740f952f918bea7e809922ebd4d20e8cc09e7fd03",
-  "last_checked_at": "2026-09-17T08:42:22.016689+09:00",
+  "observed_hash": "6ac9f90b5486edca6ffbe6bdc2bf05000161b373216332710152c6812f7211e3",
+  "last_checked_at": "2026-09-18T08:34:00.579589+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -31,8 +31,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 1865,
-      "content_hash": "ec3f98b45e07abdfa58b7e06922beb67ad20c8d0d79796e79c4fbdc00a6a63a1"
+      "text_chars": 1877,
+      "content_hash": "97afadbe1c31d1c6ad1fa1fea72b55d6bfd35c077fb355abda95d5bf4a1df738"
     },
     {
       "url": "https://www.jalan.net/theme/furusato_coupon/",
@@ -91,9 +91,9 @@
       "content_hash": "6b4fc1a9bab3cd7af4a7fd5d50021c571ed1361c3b8a3f14e1217fc89f768995"
     }
   ],
-  "queued_hash": "2cb0f6ad9f0b2d8e770b695740f952f918bea7e809922ebd4d20e8cc09e7fd03",
-  "queued_candidate_id": "jalan-2cb0f6ad9f0b2d8e",
-  "queued_at": "2026-09-16T08:34:21.067143+09:00",
+  "queued_hash": "6ac9f90b5486edca6ffbe6bdc2bf05000161b373216332710152c6812f7211e3",
+  "queued_candidate_id": "jalan-6ac9f90b5486edca",
+  "queued_at": "2026-09-18T08:34:00.580376+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-08-15T08:11:00.593537+09:00",
   "last_audit_candidate_id": "jalan-fa7becb46857b645",
