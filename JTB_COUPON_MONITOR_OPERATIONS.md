@@ -36,12 +36,12 @@ python provider_check_runner.py --provider-id relux --deep && python generate_da
 
 ダッシュボードの「未確認の候補（外部情報）」欄は、Grokがweb検索（Xの投稿・公式サイト・ニュース）で見つけたクーポン・セール・キャンペーンの**未確認情報**です。公式ページの根拠がないため、Codex監査にも記事にも自動では流しません。
 
-- 頻度: 常時6社は毎朝、指定時の会社（公式ページ登録済み）は月曜だけ。国内Macの launchd `com.hbconnect.coupon-discovery-daily`（07:15）が `vault_box/tools/coupon-discovery-daily.sh` を実行し、`discovery_hints/` とダッシュボードをGitHubへ送ります。GitHub Actionsでは実行しません（Grokの個人契約が必要）
+- 頻度: 常時6社は毎朝、指定時の会社（公式ページ登録済み）は月曜だけ。国内MacのCodex自動化「クーポン候補集め（Grok）毎朝」（07:15、`~/.codex/automations/coupon-discovery-daily/`）が `vault_box/tools/coupon-discovery-daily.sh` を実行し、`discovery_hints/` とダッシュボードをGitHubへ送ります。GitHub Actionsでは実行しません（Grokの個人契約が必要）
 - 手元で試す: `python3 grok_deal_discovery.py --provider-id relux`（`--dry-run` で指示文だけ表示）。1社あたり4分前後かかる（web検索と閲覧を最大40往復）。6社で25分、月曜は19社で80分ほど
 - 状態の意味: 「新規」は登録済み公式ページにも既知の題名にも一致しないもの。「既知（URL一致）」「既知（題名一致）」はすでに把握済み
 - 候補を監視に加える手順: 候補の公式URLを開いて内容を確かめる → 「雛形をコピー」で得たJSONを `config/provider_registry.json` の該当会社の `official_sources` へ足す → `python3 provider_check_runner.py --provider-id <会社ID> --deep` で取得できることを確かめる → commit・push
 - Grokの認証が切れると全社「失敗」になります。ターミナルで `~/.grok/bin/grok login` を実行して再ログインしてください
-- ログ: `~/logs/coupon-discovery-daily/`
+- 実行結果はCodexアプリの自動化の履歴に残る。Codexを使わない場合は `vault_box/tools/launchd/com.hbconnect.coupon-discovery-daily.plist` を代わりに登録する（両方は登録しない）
 
 ### 公式サイト内の自動発見
 
