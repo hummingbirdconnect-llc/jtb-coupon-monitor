@@ -1,6 +1,37 @@
 {
-  "last_updated": "2026-09-18T16:15:11.810178+09:00",
+  "last_updated": "2026-09-18T23:20:53.822279+09:00",
   "ids": {
+    "99511f0dbc58": {
+      "category": "海外航空券",
+      "title": "ナイトタイムクーポン！海外航空券1グループ2,000円引き",
+      "discount": "2,000円引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
     "c436200b8e32": {
       "category": "海外旅行",
       "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
@@ -58,6 +89,37 @@
       "category": "添乗員同行モロッコツアー",
       "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行モロッコツアーお1人様10,000円引き",
       "discount": "10,000円引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
+    "b250f4f2d4f1": {
+      "category": "クルーズツアー",
+      "title": "オンライン配信「旅情報LIVE」視聴者限定！クルーズツアーお1人様5,000円引き",
+      "discount": "5,000円引き",
       "region_codes": [
         "kanto",
         "hokkaido",
@@ -200,8 +262,8 @@
         "沖縄版"
       ]
     },
-    "8c94826e1727": {
-      "category": "国内航空券＋ホテル",
+    "81f88a153a60": {
+      "category": "沖縄行き航空券＋ホテル",
       "title": "【沖縄キャンペーン】1グループ5,000円引き",
       "discount": "5,000円引き",
       "region_codes": [
@@ -262,8 +324,8 @@
         "沖縄版"
       ]
     },
-    "edec8cbb11c7": {
-      "category": "国内航空券＋ホテル",
+    "1d54e4b285f1": {
+      "category": "ハウステンボス行き航空券＋ホテル",
       "title": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊で使える1グループ5,000円引き",
       "discount": "5,000円引き",
       "region_codes": [
@@ -641,21 +703,6 @@
       "region_labels": [
         "東北版",
         "甲信越（新潟）版"
-      ]
-    },
-    "d8a3b3d41f6b-2deb98": {
-      "category": "【東北・新潟発】海外旅行",
-      "title": "東北・新潟発の海外旅行をご予約で1グループあたり最大15,000円引き",
-      "discount": "最大15,000円引き",
-      "region_codes": [
-        "tohoku",
-        "koshinetsu",
-        "shikoku"
-      ],
-      "region_labels": [
-        "東北版",
-        "甲信越（新潟）版",
-        "四国版"
       ]
     },
     "eec1f5443bfe-ad9b01": {
