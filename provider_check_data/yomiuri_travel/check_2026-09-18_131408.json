@@ -1,0 +1,35 @@
+{
+  "provider_id": "yomiuri_travel",
+  "provider_label": "読売旅行",
+  "check_type": "official_page_candidate",
+  "started_at": "2026-09-18T13:14:04.226154+09:00",
+  "completed_at": "2026-09-18T13:14:08.195113+09:00",
+  "official_fetched_at": "2026-09-18T13:14:08.195123+09:00",
+  "source_results": [
+    {
+      "url": "https://www.yomiuri-ryokou.co.jp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "text_chars": 5918,
+      "content_hash": "24e66b84e87039c31b03b89f1c339cad66b1362fa78a8e8d28a615a744ab9d59"
+    }
+  ],
+  "failed_source_count": 0,
+  "ai_used": false,
+  "codex_audit_required": true,
+  "wp_review_eligible": false,
+  "status": "baseline_pending",
+  "change_kind": "baseline",
+  "content_hash": "120be6ff4738d518879664ab9c01a3ba03268d6f14db2cd395199ce6af63243e",
+  "data_date": "",
+  "latest_file": "",
+  "coupon_count": 0,
+  "audit_candidate_id": "yomiuri_travel-120be6ff4738d518",
+  "audit_candidate_path": "codex_audit_queue/yomiuri_travel/yomiuri_travel-120be6ff4738d518.json",
+  "error": "",
+  "freshness_status": "unknown",
+  "deep_dive": true,
+  "deep_dive_at": "2026-09-18T13:14:08.195113+09:00"
+}

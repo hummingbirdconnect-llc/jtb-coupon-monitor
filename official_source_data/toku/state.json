@@ -1,0 +1,29 @@
+{
+  "provider_id": "toku",
+  "observed_hash": "cf1d9120e18b0993c2669f0eff115d0f977bea397f2d3ff52da4244295f6d273",
+  "last_checked_at": "2026-09-18T13:14:10.018205+09:00",
+  "sources": [
+    {
+      "url": "https://www.tocoo.jp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 3544,
+      "content_hash": "1efb7c33ef637faa411c1dba563eec8413b6e26091652f43752aa1df93e4d4bd"
+    },
+    {
+      "url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 3749,
+      "content_hash": "0bd7835e39c7380e44d20dc6393e62f8e2a3739d78b53cb355c2e7cd6b139c05"
+    }
+  ],
+  "queued_hash": "cf1d9120e18b0993c2669f0eff115d0f977bea397f2d3ff52da4244295f6d273",
+  "queued_candidate_id": "toku-cf1d9120e18b0993",
+  "queued_at": "2026-09-18T13:14:10.019133+09:00",
+  "last_audit_status": "pending"
+}

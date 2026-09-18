@@ -1,0 +1,20 @@
+{
+  "provider_id": "asoview",
+  "observed_hash": "060a2c4c2e9a0df085bb3a57b2576f127353f97e05902a0894e41b513644a2df",
+  "last_checked_at": "2026-09-18T13:13:48.305916+09:00",
+  "sources": [
+    {
+      "url": "https://www.asoview.com/coupon/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "text_chars": 2351,
+      "content_hash": "f33e5bf582bce7f9018be494fb361c1f16b9d56b7d7153802bf8e184c2f2ca9f"
+    }
+  ],
+  "queued_hash": "060a2c4c2e9a0df085bb3a57b2576f127353f97e05902a0894e41b513644a2df",
+  "queued_candidate_id": "asoview-060a2c4c2e9a0df0",
+  "queued_at": "2026-09-18T13:13:48.306293+09:00",
+  "last_audit_status": "pending"
+}

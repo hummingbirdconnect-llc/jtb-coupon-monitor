@@ -1,0 +1,20 @@
+{
+  "provider_id": "skypack_tours",
+  "observed_hash": "903381b0c7640f25ef0517fdd110d37e3bcec85970c86f7d47732b7755b16702",
+  "last_checked_at": "2026-09-18T13:14:02.536475+09:00",
+  "sources": [
+    {
+      "url": "https://www.skypack.jp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "text_chars": 5352,
+      "content_hash": "b6af00a2c05b867d4037b80b2dbcb23e80fdff7093ad1a1efdd39ae8de66a6f3"
+    }
+  ],
+  "queued_hash": "903381b0c7640f25ef0517fdd110d37e3bcec85970c86f7d47732b7755b16702",
+  "queued_candidate_id": "skypack_tours-903381b0c7640f25",
+  "queued_at": "2026-09-18T13:14:02.536962+09:00",
+  "last_audit_status": "pending"
+}

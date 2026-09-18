@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "candidate_id": "skypack_tours-903381b0c7640f25",
+  "provider_id": "skypack_tours",
+  "provider_label": "スカイパックツアーズ",
+  "change_kind": "baseline",
+  "fetched_at": "2026-09-18T13:14:02.536480+09:00",
+  "content_hash": "903381b0c7640f25ef0517fdd110d37e3bcec85970c86f7d47732b7755b16702",
+  "data_dir": "official_coupon_data/skypack_tours",
+  "official_domains": [],
+  "sources": [
+    {
+      "url": "https://www.skypack.jp/",
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "verification_method": "playwright",
+      "verification_result": "confirmed",
+      "content_hash": "b6af00a2c05b867d4037b80b2dbcb23e80fdff7093ad1a1efdd39ae8de66a6f3",
+      "text": "SKYPACK Create attractive packages that stand out the contents. SKYPACK Packaging Co., Ltd manufactures jewelry cases, watch cases, pen cases, cosmetic cases, metal products, wooden boxes, etc... We are a comprehensive package company. Package production matched to customer requirements. Detailed response from luxury goods to mass production. It is possible to Product packages, sundries and accessories using various materials such as plastic, paper, glass, synthetic leather and wood. Please feel free to contact us. 10 reasons to choose Skypack 1 Quality We produce products that conform to quality standards mainly in Japan and around the world. With a commitment to quality, we also carry out inspections in our factory. 2 Speedy We will proceed from sample preparation to production, inspection and delivery in a short delivery time. We have achieved a significant reduction in lead time by constantly stocking frequently used materials and rigorous process control. 3 Aftercare We also support aftercare after delivery. Exchange and repair are also available. 4 Japanese management SKYPACK is Japanese-owned. We are safe, secure and polite. We have earned the trust of many customers 5 Own factory It is manufactured at the China factory (Huizhou, Guangdong), which is wholly owned by the Japanese president. We educate each employee firmly in order to stably supply high-quality products, and operate the plant. 6 Artisans We are carefully producted by SKYPACK exclusive craftsmen. They have the skills to handle complex products that require high technology. 7 Composite products It is possible to create a product design that combines various materials such as plastic, leather, glass, paper, etc. that require high skill. It is our original skill which can not imitate in other companies. 8 Network Based on years of experience, we have built a wide network in Japan, China and Hong Kong. Our alliances with material makers and parts makers around the world create an environment that can meet the diverse needs of our customers. 9 Molding machines, 3D printers, other machinesy The latest Molding Machines, 3D Printers, Silk Printing Machines, Sonic Sealing Machines, etc. are introduced to enable production with high quality and quick delivery. 10 Materials We have high quality materials from material companies around the world through our own network. Products Click to enlarge the photo. Plastic Box Watch Case Plastic Box Watch Case Plastic Box Watch Case Plastic Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Leatherette Box, Paper Box Jewelry Case Other Item Flower Box Other Item Flower Box Other Item Candy Box Other Item Jewelry Pouch Other Item Cosmetic Case Other Item Cosmetic Case Flow of order We will propose content in line with the design you have requested, according to your application and budget. We will respond consistently from meeting to sample preparation, production, inspection and aftercare after delivery. Meeting 01 Sample creation 02 Production 03 Inspection 04 Delivery 05 Aftercare 06 We also accept not only production using our original molds, but also the creation of complete orders made from molds. Company Profile Company Name Skypack Packaging Co., Ltd. Established August,1988 Representative Yuma Masunaga Address Flat G011, 9/F., Kwai Shing Industrial Building (Phase 2), No.42 ~ 46 Tai Lin Pai Road, Kwai Chung, N.T. Hong Kong Employees 80 people Business Description Production and sales of plastic molded products, production and sales of packaged products TEL +852-2428-6550 FAX +852-2489-9470 Factory Huizhou factory Our factory is located in Huizhou which is about 80 km northeast of Shenzhen. It is good access to Hong Kong, Shenzhen and Dongguan. So it is a very convenient location for procurement of materials and parts. In addition, there are many local workers, it is possible to provide long-term education for production techniques. At Skypak, dedicated craftsmen carefully make products by hand, so long-term education is a very important point. Huizhou factory has a molding department, a hot stamping department, an assembly processing department, a sample preparation department, a purchasing department, a quality management department, a warehouse management department, etc. We purchase and produce materials after thoroughly confirming various technologies and quality levels. Company Name Skypack Packaging (Huizhou) Co., Ltd. Address 2/F, Building B, Maosen Science Park,Xinhua Avenue, Zhongkai High-Tech Zone, Huizhou, Guangdong, China Department Plastic molding, Hot stamping, Assembly processing, Sample creation department, Purchasing department, Quality management department, Warehouse management department, etc. Past Transaction Results Jewelry Box Watch Case Candy Box Hearing Aid Case Name Tag Cosmetic Case Stationery Case Sake Box Pouch Pencil Case Flower Box etc... Past Trading Companies Major Specialized Trading Company Major Advertising Agency Major Jewelry Aaker Major Watch Maker Major Toy Maker Major Hearing Aid Manufacturer Major Confectionery Maker Major Theme Park Major Cosmetics Maker etc..."
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true
+  }
+}

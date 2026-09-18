@@ -1,0 +1,44 @@
+{
+  "provider_id": "relux",
+  "provider_label": "Relux",
+  "check_type": "official_page_candidate",
+  "started_at": "2026-09-18T13:13:42.020900+09:00",
+  "completed_at": "2026-09-18T13:13:43.370120+09:00",
+  "official_fetched_at": "2026-09-18T13:13:43.370124+09:00",
+  "source_results": [
+    {
+      "url": "https://rlx.jp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 4004,
+      "content_hash": "39c530ab8deb583df41dbb5913400b391de3c2b85ff34b25dd648799044b1763"
+    },
+    {
+      "url": "https://rlx.jp/timesale/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 3470,
+      "content_hash": "3d68e35ea7e9781a9c0d555b8e63a8a17264c774ac94684fc48cfbc0d7775190"
+    }
+  ],
+  "failed_source_count": 0,
+  "ai_used": false,
+  "codex_audit_required": true,
+  "wp_review_eligible": false,
+  "status": "baseline_pending",
+  "change_kind": "baseline",
+  "content_hash": "c6a2b28dfe2d350ea3014484b57a2720773d033993c170161316430dac0f1241",
+  "data_date": "",
+  "latest_file": "",
+  "coupon_count": 0,
+  "audit_candidate_id": "relux-c6a2b28dfe2d350e",
+  "audit_candidate_path": "codex_audit_queue/relux/relux-c6a2b28dfe2d350e.json",
+  "error": "",
+  "freshness_status": "unknown",
+  "deep_dive": true,
+  "deep_dive_at": "2026-09-18T13:13:43.370120+09:00"
+}

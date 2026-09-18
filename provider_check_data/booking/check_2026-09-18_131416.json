@@ -1,0 +1,44 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "check_type": "official_page_candidate",
+  "started_at": "2026-09-18T13:14:10.128105+09:00",
+  "completed_at": "2026-09-18T13:14:16.122578+09:00",
+  "official_fetched_at": "2026-09-18T13:14:16.122589+09:00",
+  "source_results": [
+    {
+      "url": "https://www.booking.com/genius.ja.html",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "text_chars": 5110,
+      "content_hash": "76cba27dd528febd889b4e0780e6cf4f88a9eef27a628cc0dffd8a0d72b85307"
+    },
+    {
+      "url": "https://www.booking.com/index.ja.html",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "playwright",
+      "error": "Playwright HTTP 202",
+      "text_chars": 0,
+      "content_hash": ""
+    }
+  ],
+  "failed_source_count": 1,
+  "ai_used": false,
+  "codex_audit_required": true,
+  "wp_review_eligible": false,
+  "status": "baseline_pending",
+  "change_kind": "baseline",
+  "content_hash": "f17a0fe77c6685ec74e2696387af2be874e8f7d39a8fc93ae6ad7a671d430b4e",
+  "data_date": "",
+  "latest_file": "",
+  "coupon_count": 0,
+  "audit_candidate_id": "booking-f17a0fe77c6685ec",
+  "audit_candidate_path": "codex_audit_queue/booking/booking-f17a0fe77c6685ec.json",
+  "error": "",
+  "freshness_status": "unknown",
+  "deep_dive": true,
+  "deep_dive_at": "2026-09-18T13:14:16.122578+09:00"
+}

@@ -11,6 +11,8 @@ coupon-monitor-*.json
 
 # アフィリエイト設定（Secrets経由で復元）
 config/*_affiliate_links.json
+config/affiliate_links/*.json
+!config/affiliate_links/_template.json
 
 # WP更新結果（一時ファイル）
 wp_update_result.json

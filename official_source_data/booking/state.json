@@ -1,0 +1,29 @@
+{
+  "provider_id": "booking",
+  "observed_hash": "f17a0fe77c6685ec74e2696387af2be874e8f7d39a8fc93ae6ad7a671d430b4e",
+  "last_checked_at": "2026-09-18T13:14:16.122811+09:00",
+  "sources": [
+    {
+      "url": "https://www.booking.com/genius.ja.html",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "text_chars": 5110,
+      "content_hash": "76cba27dd528febd889b4e0780e6cf4f88a9eef27a628cc0dffd8a0d72b85307"
+    },
+    {
+      "url": "https://www.booking.com/index.ja.html",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "playwright",
+      "error": "Playwright HTTP 202",
+      "text_chars": 0,
+      "content_hash": ""
+    }
+  ],
+  "queued_hash": "f17a0fe77c6685ec74e2696387af2be874e8f7d39a8fc93ae6ad7a671d430b4e",
+  "queued_candidate_id": "booking-f17a0fe77c6685ec",
+  "queued_at": "2026-09-18T13:14:16.123558+09:00",
+  "last_audit_status": "pending"
+}

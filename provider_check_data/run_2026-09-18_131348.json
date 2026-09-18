@@ -1,0 +1,54 @@
+{
+  "completed_at": "2026-09-18T13:13:48.306960+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "asoview-060a2c4c2e9a0df0",
+      "provider_id": "asoview",
+      "candidate_path": "codex_audit_queue/asoview/asoview-060a2c4c2e9a0df0.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "asoview",
+      "provider_label": "アソビュー",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-09-18T13:13:43.477423+09:00",
+      "completed_at": "2026-09-18T13:13:48.305792+09:00",
+      "official_fetched_at": "2026-09-18T13:13:48.305798+09:00",
+      "source_results": [
+        {
+          "url": "https://www.asoview.com/coupon/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "playwright",
+          "error": "",
+          "text_chars": 2351,
+          "content_hash": "f33e5bf582bce7f9018be494fb361c1f16b9d56b7d7153802bf8e184c2f2ca9f"
+        }
+      ],
+      "failed_source_count": 0,
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "060a2c4c2e9a0df085bb3a57b2576f127353f97e05902a0894e41b513644a2df",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "asoview-060a2c4c2e9a0df0",
+      "audit_candidate_path": "codex_audit_queue/asoview/asoview-060a2c4c2e9a0df0.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-09-18T13:13:48.305792+09:00"
+    }
+  ]
+}

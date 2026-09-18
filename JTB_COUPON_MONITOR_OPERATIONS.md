@@ -2,18 +2,42 @@
 
 > **リポジトリ**: https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor
 >
-> **最終更新**: 2026年8月2日
+> **最終更新**: 2026年9月18日
 
 ---
 
 ## 2026-07 OTA監視拡張
 
-### 実行頻度
+### 実行頻度（2026-09-18 改訂）
 
-- 毎日6:00 JST: HIS、JTB、KNT、JALパック、るるぶ、ゆこゆこ、楽天、じゃらん、Yahoo!トラベル、一休、Booking.com、Agoda、Expedia、Hotels.com、Trip.com、KKday、Klookの17社
+- 毎日6:00 JST: **常時監視の6社**（HIS、JTB、近畿日本ツーリスト、JALパック、じゃらん、楽天トラベル）
 - 毎日11:05 / 19:05 JST: HISだけを追加確認。公式画面で表示中のカードを再取得し、証拠画像とダッシュボードを更新
-- 5日ごと: 残り27社。会社IDから日を分散し、5日間に1回だけ実行
-- 正本: `config/provider_registry.json` の `schedule`
+- それ以外の38社: 定期実行しない。**指定したときだけ**深掘りする（次項）
+- 正本: `config/provider_registry.json` の `schedule`（`daily_provider_ids` が常時6社。載っていない会社は `on_demand`）
+
+### 指定時の深掘り（常時6社以外）
+
+深掘りとは、会社ごとに登録した公式のクーポン／キャンペーンページを取得し、前回から内容が変わっていればCodex監査候補（`codex_audit_queue/<会社ID>/`）を作ることです。クーポンだけでなくセール・ポイント・会員特典もキャンペーン種別として拾います。
+
+- ダッシュボードの「指定時に深掘りする会社」から「GitHubで深掘り」を押す（`workflow_dispatch` で会社を選び、`deep_dive` を入れたまま実行）
+- 手元で実行する場合:
+
+```bash
+python provider_check_runner.py --provider-id relux --deep && python generate_dashboard.py
+```
+
+- `--provider-id` を直指定すれば `--deep` は省略できます。`--scope all` で全社をまとめて回すときだけ `--deep` が必要です（付けないと旧URLの生存確認だけ）
+- 深掘り対象として公式ページを登録済みの会社: Relux、アソビュー、アクティビティジャパン、クラブツーリズム、JR東海ツアーズ、スカイパックツアーズ、東武トップツアーズ、読売旅行、トクー、Booking.com（`coverage_status: official_on_demand`）。ゆこゆこ・るるぶは既存の自動取得をそのまま指定時に動かします（`auto_on_demand`）
+- 深掘り結果は、Codex監査（`codex_audit_runner.py apply`）を通すと `official_coupon_data/<会社ID>/` に入り、ダッシュボードへ反映されます。監査前は記事由来の旧データを「深掘り前の旧データ」として表示します
+- 公式ページの登録を増やす・変える: `config/provider_registry.json` の該当会社の `official_sources`（URL・取得方法・目的）を編集する
+
+### アフィリエイトリンク
+
+- 会社別の設定は `config/affiliate_links/<会社ID>.json`（形は `_template.json`）。`category_links.default.url` に貼れば、その会社の全クーポンに効きます
+- ダッシュボードの各クーポン行に「アフィリエイトURL」列、全社一覧に「アフィ設定」列（設定済み／枠のみ／なし）が出ます
+- URL入りのファイルはGitへ入れません。GitHub Actions では Secrets `AFFILIATE_LINKS_CONFIG`（`{"relux": {...}, "booking": {...}}` の形）から復元します
+- HIS／JTB／KNT は従来の `config/<id>_affiliate_links.json` と Secrets のまま
+- ダッシュボード上部の「資料」リンクから、このマニュアル・アフィリエイト設定の書き方・Codex監査の手順・会社一覧の設定を開けます
 
 ### HISの公式画面確認
 

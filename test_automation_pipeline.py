@@ -56,19 +56,56 @@ def valid_result(candidate_id: str, discount: str = "最大3,000円OFF") -> dict
     }
 
 
+ALWAYS_ON_IDS = {"his", "jtb", "knt", "jalpack", "jalan", "rakuten_travel"}
+ON_DEMAND_DEEP_IDS = {
+    "relux",
+    "asoview",
+    "activityjapan",
+    "club_tourism",
+    "jr_tokai_tours",
+    "skypack_tours",
+    "tobu_top_tours",
+    "yomiuri_travel",
+    "toku",
+    "booking",
+}
+
+
 def test_registry_frequency_counts() -> None:
     providers = runner.load_registry()
     assert len(providers) == 44
-    assert sum(provider["cadence_days"] == 1 for provider in providers) == 17
-    assert sum(provider["cadence_days"] == 5 for provider in providers) == 27
-    five_day = [provider for provider in providers if provider["cadence_days"] == 5]
-    start = date(2026, 7, 10)
-    for provider in five_day:
-        due_count = sum(
-            runner.provider_due(provider, date.fromordinal(start.toordinal() + offset))
-            for offset in range(5)
-        )
-        assert due_count == 1, provider["id"]
+    daily = {provider["id"] for provider in providers if provider["cadence_days"] == 1}
+    assert daily == ALWAYS_ON_IDS
+    assert sum(provider["cadence_days"] == 5 for provider in providers) == 0
+    on_demand = [provider for provider in providers if runner.is_on_demand(provider)]
+    assert len(on_demand) == 44 - len(ALWAYS_ON_IDS)
+    for provider in on_demand:
+        for offset in range(7):
+            assert not runner.provider_due(provider, date(2026, 9, 18 + offset)), provider["id"]
+
+
+def test_scope_due_selects_only_always_on_providers() -> None:
+    providers = runner.load_registry()
+    due = runner.select_providers(providers, "due", "", date(2026, 9, 18))
+    assert {provider["id"] for provider in due} == ALWAYS_ON_IDS
+    on_demand = runner.select_providers(providers, "on_demand", "", date(2026, 9, 18))
+    assert ON_DEMAND_DEEP_IDS <= {provider["id"] for provider in on_demand}
+
+
+def test_on_demand_providers_have_official_sources_and_deep_flag_gate() -> None:
+    providers = {provider["id"]: provider for provider in runner.load_registry()}
+    for provider_id in ON_DEMAND_DEEP_IDS:
+        provider = providers[provider_id]
+        assert provider["coverage_status"] == "official_on_demand"
+        assert provider["official_sources"], provider_id
+        assert provider["data_dir"] == f"official_coupon_data/{provider_id}"
+        assert provider["legacy_data_dir"] == f"manual_coupon_data/{provider_id}"
+        # --scope all だけでは深掘りしない。--deep か --provider-id 直指定が必要
+        assert not runner.deep_dive_allowed(provider, deep=False, explicit=False)
+        assert runner.deep_dive_allowed(provider, deep=True, explicit=False)
+        assert runner.deep_dive_allowed(provider, deep=False, explicit=True)
+    # 常時監視で official_sources がある会社は従来どおり常に深掘り
+    assert runner.deep_dive_allowed(providers["jalan"], deep=False, explicit=False)
 
 
 def test_http_404_and_429_are_not_success() -> None:
@@ -456,6 +493,8 @@ def test_human_edit_guard() -> None:
 def main() -> None:
     tests = [
         test_registry_frequency_counts,
+        test_scope_due_selects_only_always_on_providers,
+        test_on_demand_providers_have_official_sources_and_deep_flag_gate,
         test_http_404_and_429_are_not_success,
         test_response_decoder_handles_shift_jis_and_utf8_despite_latin1_header,
         test_latest_per_provider_applies_only_newest_and_never_backfills_old,

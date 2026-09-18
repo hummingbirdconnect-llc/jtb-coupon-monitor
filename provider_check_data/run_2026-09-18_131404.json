@@ -1,0 +1,63 @@
+{
+  "completed_at": "2026-09-18T13:14:04.121145+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "tobu_top_tours-2d48254494b19f51",
+      "provider_id": "tobu_top_tours",
+      "candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-2d48254494b19f51.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "tobu_top_tours",
+      "provider_label": "東武トップツアーズ",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-09-18T13:14:02.642421+09:00",
+      "completed_at": "2026-09-18T13:14:04.119484+09:00",
+      "official_fetched_at": "2026-09-18T13:14:04.119489+09:00",
+      "source_results": [
+        {
+          "url": "https://tobutoptours.jp/members_new/coupon/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "text_chars": 2318,
+          "content_hash": "9800dc55a72bd94241d46ab759f320d76a64eb7985885ed0b70c2ed4ae452f35"
+        },
+        {
+          "url": "https://tobutoptours.jp/special/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "text_chars": 2070,
+          "content_hash": "25b8c13aaf32bb8f26b543743e1d546e16eb253510d40d9123e82954b68e7923"
+        }
+      ],
+      "failed_source_count": 0,
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "2d48254494b19f514d31d651dfe26cd767719406d3dacba42b999e8fc307a374",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "tobu_top_tours-2d48254494b19f51",
+      "audit_candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-2d48254494b19f51.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-09-18T13:14:04.119484+09:00"
+    }
+  ]
+}

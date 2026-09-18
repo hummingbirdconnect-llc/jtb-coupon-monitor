@@ -1,0 +1,44 @@
+{
+  "provider_id": "toku",
+  "provider_label": "トクー",
+  "check_type": "official_page_candidate",
+  "started_at": "2026-09-18T13:14:08.311860+09:00",
+  "completed_at": "2026-09-18T13:14:10.017891+09:00",
+  "official_fetched_at": "2026-09-18T13:14:10.017895+09:00",
+  "source_results": [
+    {
+      "url": "https://www.tocoo.jp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 3544,
+      "content_hash": "1efb7c33ef637faa411c1dba563eec8413b6e26091652f43752aa1df93e4d4bd"
+    },
+    {
+      "url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 3749,
+      "content_hash": "0bd7835e39c7380e44d20dc6393e62f8e2a3739d78b53cb355c2e7cd6b139c05"
+    }
+  ],
+  "failed_source_count": 0,
+  "ai_used": false,
+  "codex_audit_required": true,
+  "wp_review_eligible": false,
+  "status": "baseline_pending",
+  "change_kind": "baseline",
+  "content_hash": "cf1d9120e18b0993c2669f0eff115d0f977bea397f2d3ff52da4244295f6d273",
+  "data_date": "",
+  "latest_file": "",
+  "coupon_count": 0,
+  "audit_candidate_id": "toku-cf1d9120e18b0993",
+  "audit_candidate_path": "codex_audit_queue/toku/toku-cf1d9120e18b0993.json",
+  "error": "",
+  "freshness_status": "unknown",
+  "deep_dive": true,
+  "deep_dive_at": "2026-09-18T13:14:10.017891+09:00"
+}

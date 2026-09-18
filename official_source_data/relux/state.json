@@ -1,0 +1,29 @@
+{
+  "provider_id": "relux",
+  "observed_hash": "c6a2b28dfe2d350ea3014484b57a2720773d033993c170161316430dac0f1241",
+  "last_checked_at": "2026-09-18T13:13:43.370407+09:00",
+  "sources": [
+    {
+      "url": "https://rlx.jp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 4004,
+      "content_hash": "39c530ab8deb583df41dbb5913400b391de3c2b85ff34b25dd648799044b1763"
+    },
+    {
+      "url": "https://rlx.jp/timesale/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 3470,
+      "content_hash": "3d68e35ea7e9781a9c0d555b8e63a8a17264c774ac94684fc48cfbc0d7775190"
+    }
+  ],
+  "queued_hash": "c6a2b28dfe2d350ea3014484b57a2720773d033993c170161316430dac0f1241",
+  "queued_candidate_id": "relux-c6a2b28dfe2d350e",
+  "queued_at": "2026-09-18T13:13:43.370997+09:00",
+  "last_audit_status": "pending"
+}

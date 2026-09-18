@@ -2,7 +2,7 @@ name: Coupon Monitor
 
 on:
   schedule:
-    - cron: '0 21 * * *'    # 毎日 6:00 JST: 17社＋当日割当の5日周期会社
+    - cron: '0 21 * * *'    # 毎日 6:00 JST: 常時監視の6社（HIS/JTB/KNT/JALパック/じゃらん/楽天トラベル）
     - cron: '5 2 * * *'     # 毎日 11:05 JST: HIS全11地域の公式画面＋証拠画像
     - cron: '5 10 * * *'    # 毎日 19:05 JST: HIS全11地域の公式画面＋証拠画像
   workflow_dispatch:
@@ -58,6 +58,11 @@ on:
           - expedia
           - hotels
           - tripcom
+      deep_dive:
+        description: 指定した会社の公式ページを深掘り取得する（指定時だけの会社はこれを入れないと旧URL確認のみ）
+        required: false
+        default: true
+        type: boolean
 permissions:
   contents: write
 
@@ -97,7 +102,7 @@ jobs:
               echo "provider_id=" >> "$GITHUB_OUTPUT"
               echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
               echo "his_checked=true" >> "$GITHUB_OUTPUT"
-              echo "label=scheduled: 17 daily + distributed 5-day providers" >> "$GITHUB_OUTPUT"
+              echo "label=scheduled: 6 always-on providers" >> "$GITHUB_OUTPUT"
             else
               echo "scope=all" >> "$GITHUB_OUTPUT"
               echo "provider_id=his" >> "$GITHUB_OUTPUT"
@@ -118,7 +123,12 @@ jobs:
             else
               echo "his_checked=false" >> "$GITHUB_OUTPUT"
             fi
-            echo "label=manual: ${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
+            echo "label=manual: ${{ inputs.provider_id }} (deep_dive=${{ inputs.deep_dive }})" >> "$GITHUB_OUTPUT"
+          fi
+          if [ "$GITHUB_EVENT_NAME" != "schedule" ] && [ "${{ inputs.deep_dive }}" = "true" ]; then
+            echo "deep=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "deep=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: アフィリエイト設定を復元
@@ -126,8 +136,9 @@ jobs:
           JTB_AFFILIATE_CONFIG: ${{ secrets.JTB_AFFILIATE_CONFIG }}
           HIS_AFFILIATE_CONFIG: ${{ secrets.HIS_AFFILIATE_CONFIG }}
           KNT_AFFILIATE_CONFIG: ${{ secrets.KNT_AFFILIATE_CONFIG }}
+          AFFILIATE_LINKS_CONFIG: ${{ secrets.AFFILIATE_LINKS_CONFIG }}
         run: |
-          mkdir -p config
+          mkdir -p config config/affiliate_links
           if [ -n "$JTB_AFFILIATE_CONFIG" ]; then
             printf '%s' "$JTB_AFFILIATE_CONFIG" > config/jtb_affiliate_links.json
           fi
@@ -137,12 +148,27 @@ jobs:
           if [ -n "$KNT_AFFILIATE_CONFIG" ]; then
             printf '%s' "$KNT_AFFILIATE_CONFIG" > config/knt_affiliate_links.json
           fi
+          if [ -n "$AFFILIATE_LINKS_CONFIG" ]; then
+            # 会社ID → 設定 のJSONを1社1ファイルへ展開する
+            printf '%s' "$AFFILIATE_LINKS_CONFIG" | python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          data = json.load(sys.stdin)
+          for provider_id, config in data.items():
+              Path("config/affiliate_links", f"{provider_id}.json").write_text(
+                  json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+              )
+          PY
+          fi
 
       - name: 会社別クーポンチェック
         run: |
           args=(--scope "${{ steps.plan.outputs.scope }}")
           if [ -n "${{ steps.plan.outputs.provider_id }}" ] && [ "${{ steps.plan.outputs.provider_id }}" != "all" ]; then
             args+=(--provider-id "${{ steps.plan.outputs.provider_id }}")
+          fi
+          if [ "${{ steps.plan.outputs.deep }}" = "true" ]; then
+            args+=(--deep)
           fi
           xvfb-run -a python provider_check_runner.py "${args[@]}"
 

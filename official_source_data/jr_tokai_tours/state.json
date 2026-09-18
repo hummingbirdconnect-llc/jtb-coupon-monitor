@@ -1,0 +1,47 @@
+{
+  "provider_id": "jr_tokai_tours",
+  "observed_hash": "416fdbe99796226496f3ceb6daa649a08166b10fa05056d4fc8206d1229be47c",
+  "last_checked_at": "2026-09-18T13:13:59.797229+09:00",
+  "sources": [
+    {
+      "url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 15051,
+      "content_hash": "20412421cd15ad0ecd1c8252f82b94661d58c29160577d1620778800b31588a0"
+    },
+    {
+      "url": "https://travel.jr-central.co.jp/plan/tokushu/line-cp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 5188,
+      "content_hash": "8169b7f81cda2c10950070b7f8e410d0d8dfe547d32e44a606af0341df646fb5"
+    },
+    {
+      "url": "https://travel.jr-central.co.jp/plan/tokushu/chokuzen/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 5708,
+      "content_hash": "a9a6e8d20a30521aaf45e0940ad500d636de3ffe18090ecfa45f6757d8d82a1e"
+    },
+    {
+      "url": "https://travel.jr-central.co.jp/plan/tokushu/early/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 9733,
+      "content_hash": "a321a9159110f210904c70b09c2aee77d6a61ddc9939a608f7eaca762134d6a5"
+    }
+  ],
+  "queued_hash": "416fdbe99796226496f3ceb6daa649a08166b10fa05056d4fc8206d1229be47c",
+  "queued_candidate_id": "jr_tokai_tours-416fdbe997962264",
+  "queued_at": "2026-09-18T13:13:59.798723+09:00",
+  "last_audit_status": "pending"
+}

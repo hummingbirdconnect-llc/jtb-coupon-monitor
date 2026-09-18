@@ -15,13 +15,18 @@ from pathlib import Path
 from typing import Any
 
 from his_regions import coupon_region_codes
+from affiliate_links import affiliate_setup_status, load_affiliate_config, resolve_affiliate_url
 
 JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent
 REGISTRY = ROOT / "config" / "provider_registry.json"
 CHECK_STATUS_ROOT = ROOT / "provider_check_data"
+AUDIT_QUEUE_ROOT = ROOT / "codex_audit_queue"
+AUDIT_RESULT_ROOT = ROOT / "codex_audit_results"
+AUDIT_LEDGER = ROOT / "codex_audit_data" / "applied-candidates.json"
 WORKFLOW_URL = "https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions/workflows/coupon-monitor.yml"
 REPOSITORY = "hummingbirdconnect-llc/jtb-coupon-monitor"
+DOC_BASE = f"https://github.com/{REPOSITORY}/blob/main"
 DASHBOARD_SCHEMA_VERSION = 1
 RECENT_DAY_FILTERS = [
     ("today", "今日", 0),
@@ -35,7 +40,9 @@ RECENT_DAY_FILTERS = [
 
 COVERAGE_LABELS = {
     "auto_daily": "自動取得",
+    "auto_on_demand": "自動取得（指定時のみ）",
     "official_codex": "公式取得＋Codex監査",
+    "official_on_demand": "公式取得（指定時のみ）＋Codex監査",
     "master_import": "手元マスター",
     "manual_queue": "半自動確認待ち",
     "article_exists": "記事あり・取得未整備",
@@ -55,8 +62,10 @@ COMMON_COLUMNS = [
     "表示地域",
     "公式確認時刻",
     "詳細URL",
+    "アフィリエイトURL",
     "タイトル",
     "カテゴリ",
+    "種別",
     "ID",
     "割引額",
     "配布状況",
@@ -73,6 +82,7 @@ COMMON_COLUMNS = [
 
 SUMMARY_COLUMNS = [
     "会社",
+    "監視区分",
     "対象サイト",
     "分類",
     "監視頻度",
@@ -85,12 +95,15 @@ SUMMARY_COLUMNS = [
     "HTML内非表示",
     "画面確認日時",
     "公式取得日時",
+    "最終深掘り日",
     "URL確認日時",
     "データ日",
     "鮮度",
     "Codex監査",
+    "監査待ち",
     "最新データ",
     "データ元",
+    "アフィ設定",
     "次アクション",
 ]
 
@@ -108,19 +121,60 @@ def load_registry() -> list[dict[str, Any]]:
         "cadence_days": 1,
         "freshness_sla_hours": 30,
     }
+    five_day_ids = set(schedule.get("every_5_days_provider_ids") or [])
     low_defaults = schedule.get("every_5_days") or {
         "check_frequency": "every_5_days",
         "cadence_days": 5,
         "freshness_sla_hours": 144,
     }
+    on_demand_defaults = schedule.get("on_demand") or {
+        "check_frequency": "on_demand",
+        "cadence_days": 0,
+        "freshness_sla_hours": 720,
+    }
     providers = []
     for raw in config["providers"]:
         provider = dict(raw)
-        defaults = daily_defaults if provider["id"] in daily_ids else low_defaults
+        if provider["id"] in daily_ids:
+            defaults = daily_defaults
+        elif provider["id"] in five_day_ids:
+            defaults = low_defaults
+        else:
+            defaults = on_demand_defaults
         for key, value in defaults.items():
             provider.setdefault(key, value)
         providers.append(provider)
     return providers
+
+
+def is_on_demand(provider: dict[str, Any]) -> bool:
+    return provider.get("check_frequency") == "on_demand" or int(provider.get("cadence_days", 0)) <= 0
+
+
+def load_pending_audit_counts() -> dict[str, int]:
+    """Codex監査待ち（候補はあるが結果も適用も無い）の件数を会社別に数える。"""
+    applied: dict[str, Any] = {}
+    if AUDIT_LEDGER.exists():
+        try:
+            applied = (load_json(AUDIT_LEDGER) or {}).get("candidates") or {}
+        except (OSError, json.JSONDecodeError):
+            applied = {}
+    counts: dict[str, int] = {}
+    if not AUDIT_QUEUE_ROOT.exists():
+        return counts
+    for path in sorted(AUDIT_QUEUE_ROOT.glob("*/*.json")):
+        try:
+            candidate = load_json(path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        candidate_id = str(candidate.get("candidate_id") or "")
+        provider_id = str(candidate.get("provider_id") or path.parent.name)
+        if not candidate_id or candidate_id in applied:
+            continue
+        if (AUDIT_RESULT_ROOT / provider_id / f"{candidate_id}.json").exists():
+            continue
+        counts[provider_id] = counts.get(provider_id, 0) + 1
+    return counts
 
 
 def load_json(path: Path) -> Any:
@@ -231,6 +285,7 @@ def provider_frequency(provider: dict[str, Any]) -> tuple[str, str]:
         "daily": "毎日チェック",
         "every_5_days": "5日ごとにチェック",
         "weekly": "5日ごとにチェック（旧設定）",
+        "on_demand": "指定時だけ深掘り",
     }
     return frequency, provider.get("check_frequency_label") or labels.get(frequency, frequency)
 
@@ -256,8 +311,15 @@ def infer_freshness(data_date: str, check_type: str, sla_hours: int) -> str:
     return "fresh" if age_hours <= sla_hours else "stale"
 
 
-def manual_gh_command(provider_id: str) -> str:
-    return f"gh workflow run coupon-monitor.yml -R {REPOSITORY} -f provider_id={provider_id}"
+def manual_gh_command(provider_id: str, deep: bool = False) -> str:
+    command = f"gh workflow run coupon-monitor.yml -R {REPOSITORY} -f provider_id={provider_id}"
+    if deep:
+        command += " -f deep_dive=true"
+    return command
+
+
+def local_deep_command(provider_id: str) -> str:
+    return f"python provider_check_runner.py --provider-id {provider_id} --deep && python generate_dashboard.py"
 
 
 def first_value(source: dict[str, Any], keys: list[str]) -> str:
@@ -325,8 +387,24 @@ def normalize_conditions(coupon: dict[str, Any]) -> str:
     return " / ".join(dict.fromkeys(part.strip() for part in parts if part and part.strip()))
 
 
+def kind_label(coupon: dict[str, Any]) -> str:
+    display_type = first_value(coupon, ["display_type"])
+    campaign_type = first_value(coupon, ["type", "campaign_type"])
+    if display_type == "campaign" or campaign_type in {"sale", "campaign", "points", "member_benefit"}:
+        return {
+            "sale": "セール",
+            "campaign": "キャンペーン",
+            "points": "ポイント",
+            "member_benefit": "会員特典",
+        }.get(campaign_type, "キャンペーン")
+    return "クーポン"
+
+
 def format_coupon_row(
-    coupon: dict[str, Any], provider: dict[str, Any], file_kind: str
+    coupon: dict[str, Any],
+    provider: dict[str, Any],
+    file_kind: str,
+    affiliate_config: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     detail = coupon.get("detail_data") or {}
     status = first_value(coupon, ["stock_status", "status"]) or "要確認"
@@ -348,8 +426,10 @@ def format_coupon_row(
         "表示地域": first_value(coupon, ["official_area"]),
         "公式確認時刻": first_value(coupon, ["official_checked_at"]),
         "詳細URL": first_value(coupon, ["detail_url", "source_url"]),
+        "アフィリエイトURL": resolve_affiliate_url(coupon, affiliate_config or {}),
         "タイトル": first_value(coupon, ["title", "name"]),
         "カテゴリ": first_value(coupon, ["category", "area"]),
+        "種別": kind_label(coupon),
         "ID": first_value(coupon, ["id", "coupon_id"]),
         "割引額": first_value(coupon, ["discount"]) or first_value(detail, ["discount"]),
         "配布状況": status,
@@ -463,6 +543,10 @@ def next_action(provider: dict[str, Any], rows: list[dict[str, str]]) -> str:
         return "日次監視を継続。差分が出たら記事更新候補へ回す。"
     if status == "official_codex":
         return "公式ページ差分をCodex定期監査へ送り、高確度差分だけレビュー下書きへ回す。"
+    if status == "official_on_demand":
+        return "必要なときだけ「深掘り」を実行し、公式ページの変更をCodex監査へ送る。"
+    if status == "auto_on_demand":
+        return "必要なときだけ手動チェックを実行する。自動スクレイパーはそのまま使える。"
     if status == "master_import" and rows:
         return "公式取得スクレイパー化の候補。まず暫定データを目視確認。"
     if status == "article_exists" and rows:
@@ -499,10 +583,21 @@ def dashboard_manual_sources(provider: dict[str, Any]) -> list[dict[str, str]]:
     return sources
 
 
-def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
+def build_provider_payload(
+    provider: dict[str, Any], pending_audit_counts: dict[str, int] | None = None
+) -> dict[str, Any]:
     coupons, latest_file, file_kind = load_latest_data(provider.get("data_dir"))
-    rows = [format_coupon_row(coupon, provider, file_kind) for coupon in coupons]
+    legacy_used = False
+    if not coupons and provider.get("legacy_data_dir"):
+        coupons, latest_file, file_kind = load_latest_data(provider.get("legacy_data_dir"))
+        legacy_used = bool(coupons)
+    affiliate_config = load_affiliate_config(provider["id"])
+    rows = [format_coupon_row(coupon, provider, file_kind, affiliate_config) for coupon in coupons]
     log_rows = format_log_rows(load_change_log(provider.get("data_dir")))
+    on_demand = is_on_demand(provider)
+    monitor_mode = "指定時" if on_demand else "常時"
+    pending_audits = (pending_audit_counts or {}).get(provider["id"], 0)
+    affiliate_status = affiliate_setup_status(provider["id"])
     active = sum(1 for row in rows if row["配布状況"] == "配布中")
     ended = sum(1 for row in rows if row["配布状況"] == "配布終了")
     review = sum(1 for row in rows if row["配布状況"] not in {"配布中", "配布終了"})
@@ -542,6 +637,8 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             source_label = "coupon-master暫定JSON"
         elif coverage == "article_exists":
             source_label = "記事抽出暫定JSON"
+        elif coverage in {"official_on_demand", "auto_on_demand"}:
+            source_label = "公式取得JSON（指定時）"
         else:
             source_label = "暫定JSON"
     elif coverage == "official_codex":
@@ -562,8 +659,23 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         check_status.get("check_type", ""),
         int(provider.get("freshness_sla_hours", 30)),
     )
+    if legacy_used:
+        source_label = "記事抽出暫定JSON（深掘り前の旧データ）"
+    if coverage == "official_on_demand":
+        if pending_audits:
+            audit_label = "監査待ち"
+        elif any(coupon.get("source_type") == "official_codex_audit" for coupon in coupons):
+            audit_label = "監査済み"
+        else:
+            audit_label = "未実施"
     official_fetched_at = check_status.get("official_fetched_at", "")
     url_checked_at = check_status.get("url_checked_at", "")
+    deep_dive_at = check_status.get("deep_dive_at", "") if check_status.get("deep_dive") else ""
+    if not deep_dive_at and on_demand and check_status.get("check_type") in {
+        "official_monitor",
+        "official_page_candidate",
+    }:
+        deep_dive_at = official_fetched_at
     return {
         "id": provider["id"],
         "label": provider["label"],
@@ -575,7 +687,14 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "check_frequency_label": frequency_label,
         "freshness_sla_hours": int(provider.get("freshness_sla_hours", 30)),
         "manual_action_url": WORKFLOW_URL,
-        "manual_gh_command": manual_gh_command(provider["id"]),
+        "manual_gh_command": manual_gh_command(provider["id"], deep=on_demand),
+        "local_deep_command": local_deep_command(provider["id"]),
+        "on_demand": on_demand,
+        "monitor_mode": monitor_mode,
+        "deep_dive_at": deep_dive_at,
+        "pending_audit_count": pending_audits,
+        "affiliate_status": affiliate_status,
+        "legacy_used": legacy_used,
         "check_status": check_status,
         "visual_summary": visual_summary,
         "region_filters": region_filters,
@@ -603,6 +722,7 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
         "logs": log_rows,
         "summary": {
             "会社": provider["label"],
+            "監視区分": monitor_mode,
             "対象サイト": " / ".join(provider.get("site_targets", [])),
             "分類": provider.get("classification", ""),
             "監視頻度": frequency_label,
@@ -623,19 +743,23 @@ def build_provider_payload(provider: dict[str, Any]) -> dict[str, Any]:
             ),
             "画面確認日時": visual_summary.get("official_checked_at") or "なし",
             "公式取得日時": official_fetched_at or "なし",
+            "最終深掘り日": (deep_dive_at or "未実施") if on_demand else "-",
             "URL確認日時": url_checked_at or "なし",
             "データ日": data_date or "不明",
             "鮮度": freshness_label(freshness),
             "Codex監査": audit_label,
+            "監査待ち": str(pending_audits) if pending_audits else "0",
             "最新データ": latest_file or "なし",
             "データ元": source_label,
+            "アフィ設定": affiliate_status,
             "次アクション": next_action(provider, rows),
         },
     }
 
 
 def build_dashboard_data() -> dict[str, Any]:
-    providers = [build_provider_payload(provider) for provider in load_registry()]
+    pending_audit_counts = load_pending_audit_counts()
+    providers = [build_provider_payload(provider, pending_audit_counts) for provider in load_registry()]
     recent_day_filters = build_recent_day_filters(latest_available_data_date(providers))
     recent_change_rows = attach_recent_logs(providers, recent_day_filters)
     return {
@@ -669,6 +793,9 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .header {{ background: #172033; color: #fff; padding: 20px 24px; }}
 .header h1 {{ font-size: 1.35rem; font-weight: 700; letter-spacing: 0; }}
 .header .updated {{ font-size: 0.85rem; opacity: 0.78; margin-top: 5px; }}
+.header .doc-links {{ font-size: 0.82rem; margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px 14px; opacity: 0.92; }}
+.header .doc-links a {{ color: #cfe3ff; text-decoration: underline; }}
+.header .doc-links a:hover {{ color: #fff; }}
 .tabs {{ display: flex; flex-wrap: wrap; gap: 4px; background: #fff; border-bottom: 1px solid #dfe4ea; padding: 8px 12px 0; position: sticky; top: 0; z-index: 100; }}
 .tab {{ padding: 10px 12px; cursor: pointer; border: 1px solid transparent; border-bottom: 3px solid transparent; background: none; color: #516071; font-size: 0.86rem; line-height: 1.2; }}
 .tab:hover {{ background: #f4f7fb; color: #202b38; }}
@@ -683,6 +810,16 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .stat {{ padding: 8px 12px; border-radius: 8px; font-size: 0.86rem; font-weight: 700; background: #fff; border: 1px solid #dfe4ea; }}
 .stat.active {{ color: #146c43; background: #e9f7ef; border-color: #bde5cf; }}
 .stat.ended {{ color: #a52834; background: #fdecef; border-color: #f4c2ca; }}
+.kind-badge {{ display: inline-block; white-space: nowrap; padding: 2px 8px; border-radius: 10px; font-size: 0.78rem; font-weight: 700; }}
+.kind-coupon {{ color: #0f5caa; background: #e8f1fb; }}
+.kind-campaign {{ color: #8a4b00; background: #fff1e0; }}
+.deep-list {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }}
+.deep-card {{ background: #fff; border: 1px solid #dfe4ea; border-radius: 8px; padding: 12px; font-size: 0.86rem; line-height: 1.6; }}
+.deep-card .deep-name {{ font-weight: 700; margin-bottom: 4px; }}
+.deep-card .deep-meta {{ color: #47566a; font-size: 0.8rem; }}
+.deep-card .deep-actions {{ margin-top: 8px; display: flex; gap: 6px; flex-wrap: wrap; }}
+.deep-card button {{ font-size: 0.78rem; padding: 5px 9px; border-radius: 6px; border: 1px solid #0f5caa; background: #fff; color: #0f5caa; cursor: pointer; }}
+.deep-card button:hover {{ background: #e8f1fb; }}
 .stat.review {{ color: #7a5200; background: #fff5d6; border-color: #f0d98b; }}
 .manual-panel {{ display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; background: #fff; border: 1px solid #dfe4ea; border-radius: 8px; padding: 12px; margin-bottom: 14px; }}
 .manual-title {{ font-weight: 700; font-size: 0.92rem; color: #24313f; margin-bottom: 5px; }}
@@ -752,6 +889,15 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 <div class="header">
   <h1>旅行会社クーポン監視ダッシュボード</h1>
   <div class="updated">最終更新: {data["generated_at"]}</div>
+  <div class="doc-links">
+    資料:
+    <a href="{DOC_BASE}/JTB_COUPON_MONITOR_OPERATIONS.md" target="_blank" rel="noopener">運用マニュアル</a>
+    <a href="{DOC_BASE}/config/affiliate_links/README.md" target="_blank" rel="noopener">アフィリエイト設定の書き方</a>
+    <a href="{DOC_BASE}/CODEX_COUPON_AUDIT.md" target="_blank" rel="noopener">Codex監査の手順</a>
+    <a href="{DOC_BASE}/config/provider_registry.json" target="_blank" rel="noopener">会社一覧の設定</a>
+    <a href="{WORKFLOW_URL}" target="_blank" rel="noopener">GitHub Actions（手動実行）</a>
+    <a href="https://github.com/{REPOSITORY}" target="_blank" rel="noopener">リポジトリ</a>
+  </div>
 </div>
 <div class="tabs" id="tabs"></div>
 <main id="contents"></main>
@@ -776,9 +922,15 @@ function dayCell(value) {{
   return gridjs.html(`<span class="day-badge ${{suffix}}">${{escapeHtml(value || '')}}</span>`);
 }}
 
-function linkCell(value) {{
+function linkCell(value, label = '開く') {{
   if (!value) return '';
-  return gridjs.html(`<a href="${{escapeHtml(value)}}" target="_blank" rel="noopener" style="color:#0f5caa;">開く</a>`);
+  return gridjs.html(`<a href="${{escapeHtml(value)}}" target="_blank" rel="noopener" style="color:#0f5caa;">${{escapeHtml(label)}}</a>`);
+}}
+
+function kindCell(value) {{
+  if (!value) return '';
+  const cls = value === 'クーポン' ? 'kind-coupon' : 'kind-campaign';
+  return gridjs.html(`<span class="kind-badge ${{cls}}">${{escapeHtml(value)}}</span>`);
 }}
 
 function imageCell(value) {{
@@ -930,14 +1082,16 @@ function manualPanelHtml(provider) {{
   const command = escapeHtml(provider.manual_gh_command || '');
   return `<div class="manual-panel">
     <div>
-      <div class="manual-title">手動チェック</div>
-      <span class="manual-meta">通常頻度: ${{escapeHtml(provider.check_frequency_label || '')}}</span>
+      <div class="manual-title">${{provider.on_demand ? '深掘りを依頼' : '手動チェック'}}</div>
+      <span class="manual-meta">監視区分: ${{escapeHtml(provider.monitor_mode || '')}} / ${{escapeHtml(provider.check_frequency_label || '')}}</span>
+      ${{provider.on_demand ? `<span class="manual-meta">最終深掘り: ${{escapeHtml(formatCheckTime(provider.deep_dive_at))}}</span>` : ''}}
+      <span class="manual-meta">アフィリエイト設定: ${{escapeHtml(provider.affiliate_status || 'なし')}}</span>
       ${{checkStatusHtml(provider)}}
       <div class="manual-hint">会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。</div>
       ${{manualSourceQueueHtml(provider)}}
     </div>
     <div class="manual-actions">
-      <button type="button" class="manual-run-btn">手動チェック</button>
+      <button type="button" class="manual-run-btn">${{provider.on_demand ? '深掘りを実行（GitHub）' : '手動チェック'}}</button>
       <button type="button" class="copy-gh-btn">コマンドコピー</button>
     </div>
     <code class="manual-command">${{command}}</code>
@@ -960,6 +1114,9 @@ function buildColumns(columns) {{
     const base = {{ name: col }};
     if (col === '対象日') {{ base.formatter = cell => dayCell(cell); base.width = '86px'; }}
     if (col === '詳細URL') {{ base.formatter = cell => linkCell(cell); base.width = '70px'; }}
+    if (col === 'アフィリエイトURL') {{ base.formatter = cell => linkCell(cell, 'アフィ'); base.width = '70px'; }}
+    if (col === '種別') {{ base.formatter = cell => kindCell(cell); base.attributes = () => ({{ style: 'min-width:120px; white-space:nowrap' }}); }}
+    if (col === 'ID') base.attributes = () => ({{ style: 'min-width:150px' }});
     if (col === '公式画像') {{ base.formatter = cell => imageCell(cell); base.width = '112px'; }}
     if (col === '公式表示') {{ base.formatter = cell => visibilityCell(cell); base.width = '88px'; }}
     if (col === '配布状況') base.formatter = cell => statusCell(cell);
@@ -1127,6 +1284,8 @@ function renderSummary(container) {{
   const withRows = DATA.providers.filter(provider => provider.rows.length > 0).length;
   const dailyProviders = DATA.providers.filter(provider => provider.check_frequency === 'daily').length;
   const fiveDayProviders = DATA.providers.filter(provider => provider.check_frequency === 'every_5_days').length;
+  const onDemandProviders = DATA.providers.filter(provider => provider.on_demand);
+  const pendingAudits = DATA.providers.reduce((sum, provider) => sum + (provider.pending_audit_count || 0), 0);
   const officialProviders = DATA.providers.filter(provider => ['official_monitor', 'official_page_candidate'].includes(provider.check_status?.check_type));
   const officialCoupons = officialProviders.reduce((sum, provider) => sum + provider.rows.length, 0);
   const snapshotProviders = DATA.providers.filter(provider => provider.check_status?.check_type === 'snapshot_url_check').length;
@@ -1141,8 +1300,10 @@ function renderSummary(container) {{
       <div class="stats">
         <span class="stat">対象会社 ${{totalProviders}} 社</span>
         <span class="stat active">保存データあり ${{withRows}} 社</span>
-        <span class="stat">毎日チェック ${{dailyProviders}} 社</span>
-        <span class="stat">5日ごと ${{fiveDayProviders}} 社</span>
+        <span class="stat">常時（毎日） ${{dailyProviders}} 社</span>
+        ${{fiveDayProviders ? `<span class="stat">5日ごと ${{fiveDayProviders}} 社</span>` : ''}}
+        <span class="stat">指定時だけ深掘り ${{onDemandProviders.length}} 社</span>
+        <span class="stat review">Codex監査待ち ${{pendingAudits}} 件</span>
         <span class="stat active">公式取得クーポン ${{officialCoupons}} 件</span>
         <span class="stat review">旧URL確認 ${{snapshotProviders}} 社</span>
         <span class="stat review">${{escapeHtml(primaryChangeLabel)}} ${{todayChanges}} 件</span>
@@ -1170,12 +1331,43 @@ function renderSummary(container) {{
   renderGrid(summarySection, DATA.summary_rows, DATA.columns.summary, {{
     limit: 50,
   }});
+  renderDeepDiveSection(container, onDemandProviders);
+}}
+
+function renderDeepDiveSection(container, providers) {{
+  const section = document.createElement('div');
+  section.className = 'section';
+  const deepReady = providers.filter(provider => (provider.coverage_status || '').startsWith('official_') || provider.coverage_status === 'auto_on_demand');
+  const cards = deepReady.map(provider => `
+    <div class="deep-card" data-provider="${{escapeHtml(provider.id)}}">
+      <div class="deep-name">${{escapeHtml(provider.label)}}</div>
+      <div class="deep-meta">取得: ${{escapeHtml(provider.coverage_label)}}<br>最終深掘り: ${{escapeHtml(formatCheckTime(provider.deep_dive_at))}} / 監査待ち: ${{escapeHtml(provider.pending_audit_count || 0)}} 件<br>アフィリエイト: ${{escapeHtml(provider.affiliate_status || 'なし')}}</div>
+      <div class="deep-actions">
+        <button type="button" class="deep-run-btn">GitHubで深掘り</button>
+        <button type="button" class="deep-copy-gh-btn">ghコマンド</button>
+        <button type="button" class="deep-copy-local-btn">手元コマンド</button>
+      </div>
+    </div>`).join('');
+  section.innerHTML = `
+    <h2>指定時に深掘りする会社</h2>
+    <div class="note">この一覧の会社は毎朝の自動チェックでは動きません。調べたいときだけ「GitHubで深掘り」を押すか、コピーしたコマンドを実行してください。公式ページの変更はCodex監査候補として保存され、監査後にこのダッシュボードへ反映されます。</div>
+    <div class="deep-list">${{cards || '<div class="empty">深掘りできる会社はまだ登録されていません。</div>'}}</div>
+  `;
+  container.appendChild(section);
+  section.querySelectorAll('.deep-card').forEach(card => {{
+    const provider = providers.find(item => item.id === card.dataset.provider);
+    if (!provider) return;
+    card.querySelector('.deep-run-btn').addEventListener('click', () => window.open(provider.manual_action_url, '_blank', 'noopener'));
+    card.querySelector('.deep-copy-gh-btn').addEventListener('click', event => copyText(provider.manual_gh_command || '', event.currentTarget));
+    card.querySelector('.deep-copy-local-btn').addEventListener('click', event => copyText(provider.local_deep_command || '', event.currentTarget));
+  }});
 }}
 
 function renderProvider(container, provider) {{
   const active = provider.rows.filter(row => row['配布状況'] === '配布中').length;
   const ended = provider.rows.filter(row => row['配布状況'] === '配布終了').length;
   const review = provider.rows.filter(row => row['配布状況'] && !['配布中', '配布終了'].includes(row['配布状況'])).length;
+  const campaigns = provider.rows.filter(row => row['種別'] && row['種別'] !== 'クーポン').length;
   const visualColumns = ['公式表示', '公式画像', '表示タブ', '表示地域', '公式確認時刻'];
   const hasVisualEvidence = provider.rows.some(row => row['公式表示'] || row['公式画像']);
   const couponColumns = hasVisualEvidence
@@ -1193,11 +1385,12 @@ function renderProvider(container, provider) {{
       <h2>${{escapeHtml(provider.label)}}</h2>
       <div class="note">
         対象サイト: ${{escapeHtml(provider.site_targets.join(' / ') || '未設定')}}<br>
-        取得状態: ${{escapeHtml(provider.coverage_label)}} / 監視頻度: ${{escapeHtml(provider.check_frequency_label)}} / 分類: ${{escapeHtml(provider.classification)}} / 最新データ: ${{escapeHtml(provider.latest_file || 'なし')}}<br>
+        取得状態: ${{escapeHtml(provider.coverage_label)}} / 監視区分: ${{escapeHtml(provider.monitor_mode)}}（${{escapeHtml(provider.check_frequency_label)}}） / 分類: ${{escapeHtml(provider.classification)}} / 最新データ: ${{escapeHtml(provider.latest_file || 'なし')}}<br>
         ${{escapeHtml(provider.note || '')}}${{visualObservationNote(provider)}}
       </div>
       <div class="stats">
         ${{countStats}}
+        ${{campaigns ? `<span class="stat">キャンペーン系 ${{campaigns}} 件</span>` : ''}}
         ${{visualObservationStats(provider)}}
       </div>
       ${{manualPanelHtml(provider)}}

@@ -25,7 +25,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0020",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -55,7 +59,11 @@
           "ngStayDescription": "水・土曜、5/3～5、7/19、8/9～14など",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 22,
+========
+          "issueCount": 24,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 100,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -91,7 +99,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0032",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -121,7 +133,11 @@
           "ngStayDescription": "4/25～5/9、8/8～15、9/19～21除く",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 10,
+========
+          "issueCount": 11,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -158,7 +174,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0036",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -188,7 +208,11 @@
           "ngStayDescription": "8/7・9～12・16～21は除外",
           "leastReserveAmount": 30000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 189,
+========
+          "issueCount": 210,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -224,7 +248,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0040",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -254,7 +282,11 @@
           "ngStayDescription": "土曜、5/3～5、7~11月の一部日程除く",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 167,
+========
+          "issueCount": 171,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -289,7 +321,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0043",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -319,7 +355,11 @@
           "ngStayDescription": "",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 7,
+========
+          "issueCount": 14,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -330,6 +370,7 @@
     }
   },
   {
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "id": "yukoyuko-ydcp0045",
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
@@ -395,6 +436,8 @@
     }
   },
   {
+========
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "id": "yukoyuko-ydcp0051",
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
@@ -419,7 +462,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0051",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -485,7 +532,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0059",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -515,7 +566,11 @@
           "ngStayDescription": "",
           "leastReserveAmount": 40000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 7,
+========
+          "issueCount": 12,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 100,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -551,7 +606,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0061",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -581,7 +640,11 @@
           "ngStayDescription": "土曜日、4/28～5/6、7~10月の一部日程除外",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 15,
+========
+          "issueCount": 18,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -617,7 +680,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0062",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -647,7 +714,11 @@
           "ngStayDescription": "土曜日、4/28～5/6、7~10月の一部日程除外",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 13,
+========
+          "issueCount": 20,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -683,7 +754,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0063",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -713,7 +788,11 @@
           "ngStayDescription": "土曜、7/19～8/28、9/6～12/4等を除く",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 24,
+========
+          "issueCount": 25,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -749,7 +828,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0064",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -779,7 +862,11 @@
           "ngStayDescription": "土曜日、7/18～8/22、9/20～22は除外",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 67,
+========
+          "issueCount": 75,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -815,7 +902,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0066",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -869,27 +960,31 @@
     "discount": "6,000円割引 / 9,000円割引 / 12,000円割引",
     "stock_status": "配布中",
     "product_type": "宿泊",
-    "booking_period": "2026/04/13 09:00 ～ 2026/12/30 23:59",
-    "travel_period": "2026/04/13 ～ 2026/12/30",
+    "booking_period": "2026/04/13 09:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/04/13 ～ 2027/02/28",
     "coupon_codes": [],
     "conditions": [
       "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
       "予約金額50,000円以上で利用可",
-      "対象外日: 除外：土曜、5/3～5、7/19、8/9～14など",
+      "対象外日: 土曜日と一部の日程を除く",
       "他のゆこゆこクーポンと併用不可"
     ],
     "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0070",
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0070",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
     "detail_data": {
       "campaign_id": "ydcp0070",
       "campaign_overview": "",
-      "discount_description": "●対象宿泊施設 有馬きらり ●割引概要 1予約あたり50,000円以上で、大人の人数に応じて割引 ・大人2名で税込6,000円を割引 ・大人3名で税込9,000円を割引 ・大人4名で税込12,000円を割引 ●対象者 / 期間 対象者 : 全員（大人のみ） 予約期間：2026年4月13日～2026年12月30日 宿泊期間：2026年4月13日～2026年12月30日 （※12/31チェックアウトまで） ※除外日：土曜日、5/3～5、7/19、8/9～14、9/20～22、10/11・11/22 ※先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ※予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。 ●割引方法 ゆこゆこ発行の「【ゆこゆこクーポン】有馬きらり」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【ゆこゆこクーポン】有馬きらり」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・先着ご予約順につき、上限に達した場合は終了となります ・宿泊料金以外の館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ)",
+      "discount_description": "●対象宿泊施設 有馬きらり ●割引概要 1予約あたり50,000円以上で、大人の人数に応じて割引 ・大人2名で税込6,000円を割引 ・大人3名で税込9,000円を割引 ・大人4名で税込12,000円を割引 ●対象者 / 期間 対象者 : 全員（大人のみ） 予約期間：2026年4月13日～2027年2月28日 宿泊期間：2026年4月13日～2027年2月28日 （※3/31チェックアウトまで） ※除外日：土曜日、5/3～5、7/19、8/9～14、9/20～22、10/11・11/22、12/31～1/3・10 ※先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ※予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。 ●割引方法 ゆこゆこ発行の「【ゆこゆこクーポン】有馬きらり」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【ゆこゆこクーポン】有馬きらり」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・先着ご予約順につき、上限に達した場合は終了となります ・宿泊料金以外の館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ)",
       "coupon_count": 3,
       "is_all_over_issue_limit": false,
       "conditions": {
@@ -906,13 +1001,17 @@
           "discountAmount": 6000,
           "discountRate": -1,
           "useStartedOn": "2026/04/13 09:00",
-          "useEndedOn": "2026/12/30 23:59",
+          "useEndedOn": "2027/02/28 23:59",
           "stayStartedOn": "2026/04/13",
-          "stayEndedOn": "2026/12/30",
-          "ngStayDescription": "除外：土曜、5/3～5、7/19、8/9～14など",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "土曜日と一部の日程を除く",
           "leastReserveAmount": 50000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 48,
+========
+          "issueCount": 62,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -925,10 +1024,10 @@
           "discountAmount": 9000,
           "discountRate": -1,
           "useStartedOn": "2026/04/13 09:00",
-          "useEndedOn": "2026/12/30 23:59",
+          "useEndedOn": "2027/02/28 23:59",
           "stayStartedOn": "2026/04/13",
-          "stayEndedOn": "2026/12/30",
-          "ngStayDescription": "除外：土曜、5/3～5、7/19、8/9～14など",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "土曜日と一部の日程を除く",
           "leastReserveAmount": 50000,
           "atmostReserveAmount": -1,
           "issueCount": 5,
@@ -944,13 +1043,17 @@
           "discountAmount": 12000,
           "discountRate": -1,
           "useStartedOn": "2026/04/13 09:00",
-          "useEndedOn": "2026/12/30 23:59",
+          "useEndedOn": "2027/02/28 23:59",
           "stayStartedOn": "2026/04/13",
-          "stayEndedOn": "2026/12/30",
-          "ngStayDescription": "除外：土曜、5/3～5、7/19、8/9～14など",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "土曜日と一部の日程を除く",
           "leastReserveAmount": 50000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 5,
+========
+          "issueCount": 4,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -961,6 +1064,7 @@
     }
   },
   {
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "id": "yukoyuko-ydcp0073",
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
@@ -1027,6 +1131,8 @@
     }
   },
   {
+========
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "id": "yukoyuko-ydcp0075",
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
@@ -1052,7 +1158,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0075",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1082,7 +1192,11 @@
           "ngStayDescription": "5/2～5、8/8～15、9/19～21は除外",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 114,
+========
+          "issueCount": 143,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1117,7 +1231,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0079",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1182,7 +1300,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0080",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1248,7 +1370,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0082",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1278,7 +1404,11 @@
           "ngStayDescription": "7/18～8/23、9/20～20、一部土曜は除外",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 51,
+========
+          "issueCount": 62,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1313,7 +1443,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0084",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1343,7 +1477,11 @@
           "ngStayDescription": "",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 108,
+========
+          "issueCount": 131,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1379,7 +1517,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0093",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1409,7 +1551,11 @@
           "ngStayDescription": "",
           "leastReserveAmount": 27000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 30,
+========
+          "issueCount": 65,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 100,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1445,7 +1591,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0095",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1475,7 +1625,11 @@
           "ngStayDescription": "除外日詳細は『ご案内』情報の対象期間を確認ください",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 13,
+========
+          "issueCount": 18,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 50,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1486,6 +1640,7 @@
     }
   },
   {
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "id": "yukoyuko-ydcp0096",
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
@@ -1552,6 +1707,8 @@
     }
   },
   {
+========
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "id": "yukoyuko-ydcp0097",
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
@@ -1577,7 +1734,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0097",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1607,7 +1768,11 @@
           "ngStayDescription": "除外日詳細は『ご案内』情報の対象期間を確認ください",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 6,
+========
+          "issueCount": 14,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 100,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1631,8 +1796,8 @@
     "discount": "1,500円割引",
     "stock_status": "配布中",
     "product_type": "宿泊",
-    "booking_period": "2026/05/29 00:00 ～ 2026/10/30 23:59",
-    "travel_period": "2026/06/01 ～ 2026/10/30",
+    "booking_period": "2026/06/01 00:00 ～ 2027/04/28 23:59",
+    "travel_period": "2026/06/01 ～ 2027/04/28",
     "coupon_codes": [],
     "conditions": [
       "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
@@ -1643,14 +1808,18 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0098",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
     "detail_data": {
       "campaign_id": "ydcp0098",
       "campaign_overview": "",
-      "discount_description": "●対象宿泊施設 2349_三河湾リゾートリンクス（愛知県） ●割引概要 1予約あたり税込1,500円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年6月1日～2026年10月30日 宿泊期間：2026年6月1日～2026年10月30日 （※10/31チェックアウトまで） ※除外日：土曜日、7/19、8/7～8/16、9/20～10/4、10/11 ※先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ※予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。 ●割引方法 ゆこゆこ発行の「【ゆこゆこクーポン】三河湾リゾートリンクス」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【ゆこゆこクーポン】三河湾リゾートリンクス」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・先着ご予約順につき、上限に達した場合は終了となります ・宿泊料金以外の館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ)",
+      "discount_description": "●対象宿泊施設 2349_三河湾リゾートリンクス（愛知県） ●割引概要 1予約あたり税込1,500円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年6月1日～2027年4月28日 宿泊期間：2026年6月1日～2027年4月28日 （※2027/5/1チェックアウトまで） ※除外日：土曜日、7/19、8/7～8/16、9/20～10/4、10/11、11/22、12/30～2027/1/3・10、3/21 ※先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ※予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。 ●割引方法 ゆこゆこ発行の「【ゆこゆこクーポン】三河湾リゾートリンクス」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【ゆこゆこクーポン】三河湾リゾートリンクス」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・先着ご予約順につき、上限に達した場合は終了となります ・宿泊料金以外の館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ)",
       "coupon_count": 1,
       "is_all_over_issue_limit": false,
       "conditions": {
@@ -1667,13 +1836,17 @@
           "discountAmount": 1500,
           "discountRate": -1,
           "useStartedOn": "2026/06/01 12:00",
-          "useEndedOn": "2026/10/30 23:59",
+          "useEndedOn": "2027/04/28 23:59",
           "stayStartedOn": "2026/06/01",
-          "stayEndedOn": "2026/10/30",
+          "stayEndedOn": "2027/04/28",
           "ngStayDescription": "除外日詳細は『ご案内』情報の対象期間を確認ください",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 91,
+========
+          "issueCount": 129,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 200,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1710,7 +1883,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0104",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -1740,7 +1917,11 @@
           "ngStayDescription": "金～日曜、7/20～8/31、9/21～23は除く",
           "leastReserveAmount": 39600,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 1,
+========
+          "issueCount": 3,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 20,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -1752,6 +1933,7 @@
   },
   {
     "id": "yukoyuko-ydcp0107",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
     "site_targets": [
@@ -2485,6 +2667,8 @@
   },
   {
     "id": "yukoyuko-ydcp0120",
+========
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
     "site_targets": [
@@ -2492,57 +2676,868 @@
       "yakushimafan"
     ],
     "article_slug": "yukoyuko-coupon",
-    "title": "【宿特別クーポン】御宿 東鳳",
+    "title": "【宿クーポン】あわら温泉 清風荘",
     "category": "宿限定クーポン",
     "discount": "5,000円割引",
     "stock_status": "配布中",
     "product_type": "宿泊",
-    "booking_period": "2026/07/01 12:00 ～ 2026/08/31 23:59",
-    "travel_period": "2026/07/21 ～ 2026/08/31",
+    "booking_period": "2026/07/01 12:00 ～ 2026/10/30 23:59",
+    "travel_period": "2026/09/04 ～ 2026/10/30",
     "coupon_codes": [],
     "conditions": [
       "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額50,800円以上で利用可",
+      "対象外日: ※土曜日、10/11を除く",
       "他のゆこゆこクーポンと併用不可"
     ],
-    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0120",
-    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0120",
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0107",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0107",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
     "detail_data": {
-      "campaign_id": "ydcp0120",
+      "campaign_id": "ydcp0107",
       "campaign_overview": "",
-      "discount_description": "●対象宿泊施設 0765_御宿 東鳳（福島県） ●割引概要 1予約あたり税込5,000円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2026年8月31日 宿泊期間：2026年7月21日～2026年8月31日（※9/1チェックアウト分まで） ●割引方法 ゆこゆこ発行の「【宿特別クーポン】御宿 東鳳」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿特別クーポン】御宿 東鳳」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "discount_description": "●対象宿泊施設 2039_あわら温泉 清風荘 ●割引概要 1予約あたり税込5,000円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年8月24日～2026年10月30日 宿泊期間：2026年9月4日～2026年10月30日（※10月31日チェックアウトまで） ※土曜日、10/11を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】あわら温泉 清風荘」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】あわら温泉 清風荘」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
       "coupon_count": 1,
       "is_all_over_issue_limit": false,
       "conditions": {
-        "conditionTextIssueLimitFlag": true,
+        "conditionTextIssueLimitFlag": false,
         "conditionTextConditionalFlag": false,
         "conditionTextNotConditionalFlag": true,
         "conditionTextLotteryFlag": false
       },
       "coupons": [
         {
-          "couponId": "ydcp0120",
-          "couponName": "【宿特別クーポン】御宿 東鳳",
+          "couponId": "ydcp0107",
+          "couponName": "【宿クーポン】あわら温泉 清風荘",
           "discountRateFlag": false,
           "discountAmount": 5000,
           "discountRate": -1,
-          "useStartedOn": "2026/07/15 10:00",
-          "useEndedOn": "2026/08/31 23:59",
-          "stayStartedOn": "2026/07/21",
-          "stayEndedOn": "2026/08/31",
+          "useStartedOn": "2026/08/24 10:00",
+          "useEndedOn": "2026/10/30 23:59",
+          "stayStartedOn": "2026/09/04",
+          "stayEndedOn": "2026/10/30",
+          "ngStayDescription": "※土曜日、10/11を除く",
+          "leastReserveAmount": 50800,
+          "atmostReserveAmount": -1,
+          "issueCount": 6,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0107?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0110",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】あわら温泉 政竜閣",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/09/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額35,000円以上で利用可",
+      "対象外日: ※一部日程を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0110",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0110",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0110",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 1878_あわら温泉 政竜閣 ●割引概要 1予約あたり税込3,000円を割引 /1予約35,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2027年2月28日 宿泊期間：2026年9月1日～2027年2月28日(※2027年3月1日チェックアウトまで) ※9月10月12月の水曜日、12月と11月の土曜日、9/15～16・20~23、10/10~11・28~29、11/22、12/22~23・25～31、1/1～4、2/14・21~23を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】あわら温泉 政竜閣」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】あわら温泉 政竜閣」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0110",
+          "couponName": "【宿クーポン】あわら温泉  政竜閣",
+          "discountRateFlag": false,
+          "discountAmount": 3000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※一部日程を除く",
+          "leastReserveAmount": 35000,
+          "atmostReserveAmount": -1,
+          "issueCount": 7,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0110?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0111",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】北陸 福井 あわら温泉 美松",
+    "category": "宿限定クーポン",
+    "discount": "4,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/09/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額50,600円以上で利用可",
+      "対象外日: ※11~12月、1/1～3を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0111",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0111",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0111",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 2009_北陸 福井 あわら温泉 美松 ●割引概要 1予約あたり税込4,000円を割引 /1予約50,600円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2027年2月28日 宿泊期間：2026年9月1日～2027年2月28日(※2027年3月1日チェックアウトまで) ※11~12月、1/1～3を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】北陸 福井 あわら温泉 美松」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】北陸 福井 あわら温泉 美松」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0111",
+          "couponName": "【宿クーポン】北陸　福井　あわら温泉　美松",
+          "discountRateFlag": false,
+          "discountAmount": 4000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※11~12月、1/1～3を除く",
+          "leastReserveAmount": 50600,
+          "atmostReserveAmount": -1,
+          "issueCount": 9,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0111?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0112",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】グランディア芳泉",
+    "category": "宿限定クーポン",
+    "discount": "4,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/09/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額50,000円以上で利用可",
+      "対象外日: ※一部日程を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0112",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0112",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0112",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 2019_グランディア芳泉 ●割引概要 1予約あたり税込4,000円を割引 /1予約50,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2027年2月28日 宿泊期間：2026年9月1日～2027年2月28日(※2027年3月1日チェックアウトまで) ※11~12月、9/19～22、10/11、11/22、1/1～3を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】グランディア芳泉」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】グランディア芳泉」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0112",
+          "couponName": "【宿クーポン】グランディア芳泉",
+          "discountRateFlag": false,
+          "discountAmount": 4000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※一部日程を除く",
+          "leastReserveAmount": 50000,
+          "atmostReserveAmount": -1,
+          "issueCount": 2,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0112?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0113",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】あわら温泉グランドホテル 湯めぐりの宿",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/09/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額35,000円以上で利用可",
+      "対象外日: ※土曜日、その他一部日程を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0113",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0113",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0113",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 2021_あわら温泉グランドホテル 湯めぐりの宿 ●割引概要 1予約あたり税込2,000円を割引 /1予約税込35,000円以上の予約に適用 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2027年2月28日 宿泊期間：2026年9月1日～2027年2月28日(※2027年3月1日チェックアウトまで) ※土曜日、10/11、11/22、12/27～1/3、1/10を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】あわら温泉グランドホテル 湯めぐりの宿」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】あわら温泉グランドホテル 湯めぐりの宿」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0113",
+          "couponName": "【宿クーポン】あわら温泉グランドホテル　湯めぐりの宿",
+          "discountRateFlag": false,
+          "discountAmount": 2000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※土曜日、その他一部日程を除く",
+          "leastReserveAmount": 35000,
+          "atmostReserveAmount": -1,
+          "issueCount": 3,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0113?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0114",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】あわら温泉 みのや泰平閣",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/09/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額68,000円以上で利用可",
+      "対象外日: ※土曜日、その他一部日程を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0114",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0114",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0114",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 2061_あわら温泉 みのや泰平閣 ●割引概要 1予約あたり税込3,000円を割引 /1予約68,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2027年2月28日 宿泊期間：2026年9月1日～2027年2月28日(※2027年3月1日チェックアウトまで) ※土曜日、10/11、11/22、12/27～1/3、1/10を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】あわら温泉 みのや泰平閣」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】あわら温泉 みのや泰平閣」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0114",
+          "couponName": "【宿クーポン】あわら温泉　みのや泰平閣",
+          "discountRateFlag": false,
+          "discountAmount": 3000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※土曜日、その他一部日程を除く",
+          "leastReserveAmount": 68000,
+          "atmostReserveAmount": -1,
+          "issueCount": 0,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0114?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0115",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】福井県市町村職員共済組合 芦原保養所 越路",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2026/10/30 23:59",
+    "travel_period": "2026/09/01 ～ 2026/10/30",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "対象外日: ※土曜日、9/19～22、10/11を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0115",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0115",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0115",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 3859_福井県市町村職員共済組合 芦原保養所 越路 ●割引概要 1予約あたり税込2,000円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2026年10月30日 宿泊期間：2026年9月1日～2026年10月30日(※2026年10月31日チェックアウトまで) ※土曜日、9/19～22、10/11を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】福井県市町村職員共済組合 芦原保養所 越路」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】福井県市町村職員共済組合 芦原保養所 越路」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0115",
+          "couponName": "【宿クーポン】福井県市町村職員共済組合　芦原保養所　越路",
+          "discountRateFlag": false,
+          "discountAmount": 2000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2026/10/30 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2026/10/30",
+          "ngStayDescription": "※土曜日、9/19～22、10/11を除く",
+          "leastReserveAmount": -1,
+          "atmostReserveAmount": -1,
+          "issueCount": 0,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0115?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0116",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】花の宿 福寿",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2026/10/30 23:59",
+    "travel_period": "2026/09/01 ～ 2026/10/30",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額37,000円以上で利用可",
+      "対象外日: ※土曜日、9/20～22、10/11を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0116",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0116",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0116",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 8863_花の宿 福寿 ●割引概要 1予約あたり税込3,000円を割引 /1予約37,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2026年10月30日 宿泊期間：2026年9月1日～2026年10月30日(※2026年10月31日チェックアウトまで) ※土曜日、9/20～22、10/11を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】花の宿 福寿」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】花の宿 福寿」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0116",
+          "couponName": "【宿クーポン】花の宿 福寿",
+          "discountRateFlag": false,
+          "discountAmount": 3000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2026/10/30 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2026/10/30",
+          "ngStayDescription": "※土曜日、9/20～22、10/11を除く",
+          "leastReserveAmount": 37000,
+          "atmostReserveAmount": -1,
+          "issueCount": 4,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0116?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0117",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】季がさね",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2026/10/30 23:59",
+    "travel_period": "2026/07/03 ～ 2026/09/30",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0117",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0117",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0117",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 1935_季がさね ●割引概要 1予約あたり税込1,000円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月3日～2026年9月30日 宿泊期間：2026年7月3日～2026年9月30日(※2026年10月1日チェックアウトまで) ●割引方法 ゆこゆこ発行の「【宿クーポン】季がさね」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】季がさね」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0117",
+          "couponName": "【宿クーポン】季がさね",
+          "discountRateFlag": false,
+          "discountAmount": 1000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/03 10:00",
+          "useEndedOn": "2026/09/30 23:59",
+          "stayStartedOn": "2026/07/03",
+          "stayEndedOn": "2026/09/30",
           "ngStayDescription": "",
           "leastReserveAmount": -1,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 47,
           "issueLimit": 200,
+========
+          "issueCount": 3,
+          "issueLimit": -1,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimitOver": false,
           "combinationFlag": false,
-          "hotelListLink": "/otocoupon/ydcp0120?stay_count=1&room_count=1&adult_count=2"
+          "hotelListLink": "/otocoupon/ydcp0117?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0118",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】ホテル八田",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/08/24 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額30,000円以上で利用可",
+      "対象外日: ※土曜日、その他一部日程を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0118",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0118",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0118",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 1525_ホテル八田 ●割引概要 1予約あたり税込2,000円を割引 /1予約30,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年8月24日～2027年2月28日 宿泊期間：2026年8月24日～2027年2月28日(※2027年3月1日チェックアウトまで) ※土曜日、9/20～22、10/11、11/20・22、12/27～1/3・10は除く ●割引方法 ゆこゆこ発行の「【宿クーポン】ホテル八田」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】ホテル八田」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0118",
+          "couponName": "【宿クーポン】ホテル八田",
+          "discountRateFlag": false,
+          "discountAmount": 2000,
+          "discountRate": -1,
+          "useStartedOn": "2026/08/24 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/08/24",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※土曜日、その他一部日程を除く",
+          "leastReserveAmount": 30000,
+          "atmostReserveAmount": -1,
+          "issueCount": 9,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0118?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0119",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】ホテルサンバレー那須",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2026/09/30 23:59",
+    "travel_period": "2026/08/24 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "対象外日: ※金・土・日曜日、9/21・22、12/31を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0119",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0119",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0119",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 0988_ホテルサンバレー那須 ●割引概要 1予約あたり税込2,000円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年8月24日～2026年9月30日 宿泊期間：2026年8月24日～2027年2月28日(※2027年3月1日チェックアウトまで) ※金・土・日曜日、9/21・22、12/31を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】ホテルサンバレー那須」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】ホテルサンバレー那須」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0119",
+          "couponName": "【宿クーポン】ホテルサンバレー那須",
+          "discountRateFlag": false,
+          "discountAmount": 2000,
+          "discountRate": -1,
+          "useStartedOn": "2026/08/24 10:00",
+          "useEndedOn": "2026/09/30 23:59",
+          "stayStartedOn": "2026/08/24",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※金・土・日曜日、9/21・22、12/31を除く",
+          "leastReserveAmount": -1,
+          "atmostReserveAmount": -1,
+          "issueCount": 54,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0119?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0121",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】白和荘",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/09/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額37,000円以上で利用可",
+      "対象外日: ※土曜日、11月、12月、その他一部日程を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0121",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0121",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0121",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 4087_白和荘 ●割引概要 1予約あたり税込2,000円を割引 /1予約37,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2027年2月28日 宿泊期間：2026年9月1日～2027年2月28日(※2027年3月1日チェックアウトまで) ※土曜日、9/19～22、10/10～11、11～12月と1/1～3、1/10を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】白和荘」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】白和荘」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0121",
+          "couponName": "【宿クーポン】白和荘",
+          "discountRateFlag": false,
+          "discountAmount": 2000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※土曜日、11月、12月、その他一部日程を除く",
+          "leastReserveAmount": 37000,
+          "atmostReserveAmount": -1,
+          "issueCount": 0,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0121?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0122",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】ホテル八木",
+    "category": "宿限定クーポン",
+    "discount": "6,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2027/02/28 23:59",
+    "travel_period": "2026/09/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額60,000円以上で利用可",
+      "対象外日: ※11月、12月、その他一部日程を除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0122",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0122",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0122",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 2047_ホテル八木 ●割引概要 1予約あたり税込6,000円を割引 /1予約60,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2027年2月28日 宿泊期間：2026年9月1日～2027年2月28日(※2027年3月1日チェックアウトまで) ※9/19～22、10/10～11、11～12月と1/1～3、1/10を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】ホテル八木」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】ホテル八木」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0122",
+          "couponName": "【宿クーポン】ホテル八木",
+          "discountRateFlag": false,
+          "discountAmount": 6000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2027/02/28 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2027/02/28",
+          "ngStayDescription": "※11月、12月、その他一部日程を除く",
+          "leastReserveAmount": 60000,
+          "atmostReserveAmount": -1,
+          "issueCount": 1,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0122?stay_count=1&room_count=1&adult_count=2"
         }
       ],
       "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
@@ -2709,7 +3704,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0123",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -2776,7 +3775,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0124",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -2806,7 +3809,11 @@
           "ngStayDescription": "※土曜日、9/19～22、10/11は除く",
           "leastReserveAmount": 35000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 2,
+========
+          "issueCount": 7,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -2843,7 +3850,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0125",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -2873,7 +3884,11 @@
           "ngStayDescription": "※土曜日、9/19～22、10/11を除く",
           "leastReserveAmount": 33000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 0,
+========
+          "issueCount": 7,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -2909,7 +3924,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0126",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -2939,7 +3958,11 @@
           "ngStayDescription": "",
           "leastReserveAmount": 30000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 1,
+========
+          "issueCount": 18,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -2976,7 +3999,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0127",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -3006,7 +4033,11 @@
           "ngStayDescription": "※12/27～1/3は除く",
           "leastReserveAmount": 45000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 0,
+========
+          "issueCount": 9,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": -1,
           "issueLimitOver": false,
           "combinationFlag": false,
@@ -3017,6 +4048,76 @@
     }
   },
   {
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
+========
+    "id": "yukoyuko-ydcp0128",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】伝統旅館のぬくもり 灰屋",
+    "category": "宿限定クーポン",
+    "discount": "4,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/07/01 12:00 ～ 2026/12/27 23:59",
+    "travel_period": "2026/09/01 ～ 2026/12/27",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "予約金額55,000円以上で利用可",
+      "対象外日: ※11月は除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0128",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0128",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0128",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 2018_伝統旅館のぬくもり 灰屋 ●割引概要 1予約あたり税込4,000円を割引 /1予約55,000円以上で利用可 ●対象者 / 期間 対象者 : 全員 予約期間：2026年7月16日～2026年12月27日 宿泊期間：2026年9月1日～2026年12月27日(※2026年12月28日チェックアウトまで) ※11月を除く ●割引方法 ゆこゆこ発行の「【宿クーポン】伝統旅館のぬくもり 灰屋」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 電話予約の方はオペレーターに当クーポンを使用したい旨をお伝えください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【宿クーポン】伝統旅館のぬくもり 灰屋」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・宿泊料金以外の入湯税、館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ) ・先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ・予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0128",
+          "couponName": "【宿クーポン】伝統旅館のぬくもり　灰屋",
+          "discountRateFlag": false,
+          "discountAmount": 4000,
+          "discountRate": -1,
+          "useStartedOn": "2026/07/16 10:00",
+          "useEndedOn": "2026/12/27 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2026/12/27",
+          "ngStayDescription": "※11月は除く",
+          "leastReserveAmount": 55000,
+          "atmostReserveAmount": -1,
+          "issueCount": 2,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0128?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "id": "yukoyuko-ydcp0129",
     "provider": "yukoyuko",
     "provider_label": "ゆこゆこネット",
@@ -3043,7 +4144,11 @@
     "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0129",
     "source_type": "official_api",
     "fetch_method": "gaia_api",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "high",
     "display_type": "table",
     "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
@@ -3073,11 +4178,214 @@
           "ngStayDescription": "金・土・日曜日、8/10～13、9/21・22",
           "leastReserveAmount": 29000,
           "atmostReserveAmount": -1,
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
           "issueCount": 4,
+========
+          "issueCount": 19,
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
           "issueLimit": 200,
           "issueLimitOver": false,
           "combinationFlag": false,
           "hotelListLink": "/otocoupon/ydcp0129?stay_count=1&room_count=1&adult_count=2"
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
+========
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-ydcp0130",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【宿クーポン】渓流展望貸切露天の宿 奥土湯温泉峡 小滝温泉",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/09/10 12:00 ～ 2027/03/31 23:59",
+    "travel_period": "2026/09/23 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0130",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/ydcp0130",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "ydcp0130",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 渓流展望貸切露天の宿 奥土湯温泉峡 小滝温泉 ●割引概要 1予約あたり税込2,000円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年9月10日～2027年3月31日 宿泊期間：2026年9月23日～2027年3月31日 （※4/1チェックアウトまで） ※先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ※予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。 ●割引方法 ゆこゆこ発行の「【ゆこゆこクーポン】渓流展望貸切露天の宿 奥土湯温泉峡 小滝温泉」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【ゆこゆこクーポン】渓流展望貸切露天の宿 奥土湯温泉峡 小滝温泉」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・先着ご予約順につき、上限に達した場合は終了となります ・宿泊料金以外の館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ)",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": false,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "ydcp0130",
+          "couponName": "【宿クーポン】渓流展望貸切露天の宿 奥土湯温泉峡 小滝温泉",
+          "discountRateFlag": false,
+          "discountAmount": 2000,
+          "discountRate": -1,
+          "useStartedOn": "2026/09/10 10:00",
+          "useEndedOn": "2027/03/31 23:59",
+          "stayStartedOn": "2026/09/23",
+          "stayEndedOn": "2027/03/31",
+          "ngStayDescription": "",
+          "leastReserveAmount": -1,
+          "atmostReserveAmount": -1,
+          "issueCount": 0,
+          "issueLimit": -1,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/ydcp0130?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-yrcp0021",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "にいがた Go To トラベル",
+    "category": "エリアクーポン・地域割",
+    "discount": "30%割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/09/07 09:00 ～ 2026/12/28 23:59",
+    "travel_period": "2026/09/07 ～ 2026/12/28",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/yrcp0021",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/yrcp0021",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "yrcp0021",
+      "campaign_overview": "",
+      "discount_description": "今後キャンペーンの方針により内容が変更になる場合があります。 必ず公式サイトをご確認の上でご予約下さい。 公式サイトリンク https://niigata-kankou.or.jp/ngt/goto/ ●対象者 代表者および同行者全員が新潟県在住者のみ（現住所が新潟県） ●期間 予約期間：2026年9月7日～12月28日 宿泊期間：2026年9月7日～12月28日（12月29日チェックアウトまで） ※販売開始前に手続きをした予約にクーポンを適用することはできません。新規予約のみが対象となります。全く同じ予約を単に取り直すことは既存予約と同じものとみなし、原則、割引対象外となります。 ※クーポン枚数の上限に達した場合、その時点で販売終了となります。 ●割引概要 宿泊金額総額の30%の割引（おひとり様1泊あたり5,000円が上限) ●割引方法 ゆこゆこネットにて【にいがた Go To トラベル】クーポンを取得後、予約入力画面にてクーポンを選択 ※電話予約の方はオペレーターにクーポンを使いたい旨をご申告ください。 ●注意事項 ・「にいがた Go To トラベル」は国の交付金を活用した、新潟県内にお住まいの方を対象とする宿泊割引支援です。 ・必ずご予約時に【にいがた Go To トラベル】とついたクーポンを適用してご予約ください。当日や後日の申告では適用できません ・他のゆこゆこのクーポンとの併用はできません ・入湯税、おすすめオプション以外の別注料理、ドリンク代などは対象外となります ・金券類付きプランについても対象外となります ・事前決済は対象外(現地決済のみ) ・公費による出張（公務員の方などの宿泊）は割引対象外です ・キャンセル・変更手数料は割引前の金額をもとに請求となります。 申込を持って下記の事項を誓約したとみなします。 ・全員が新潟県在住者 ・ビジネス利用以外 ・不正があった場合は割引相当額の返金に応じる ・事業の運営に必要な範囲で、旅行者の個人情報が宿泊施設・旅行事業者及び事務局間で共有される",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": true,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "yrcp0021",
+          "couponName": "にいがた Go Toトラベル",
+          "discountRateFlag": true,
+          "discountAmount": -1,
+          "discountRate": 30,
+          "useStartedOn": "2026/09/07 09:30",
+          "useEndedOn": "2026/12/28 23:59",
+          "stayStartedOn": "2026/09/07",
+          "stayEndedOn": "2026/12/28",
+          "ngStayDescription": "",
+          "leastReserveAmount": -1,
+          "atmostReserveAmount": -1,
+          "issueCount": 1991,
+          "issueLimit": 3000,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/yrcp0021/L06/P18?stay_count=1&room_count=1&adult_count=2"
+        }
+      ],
+      "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
+    }
+  },
+  {
+    "id": "yukoyuko-yrcp0022",
+    "provider": "yukoyuko",
+    "provider_label": "ゆこゆこネット",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yukoyuko-coupon",
+    "title": "【エリアクーポン】熱海",
+    "category": "エリアクーポン・地域割",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "booking_period": "2026/09/01 11:00 ～ 2026/10/29 23:59",
+    "travel_period": "2026/09/01 ～ 2026/10/29",
+    "coupon_codes": [],
+    "conditions": [
+      "ゆこゆこネット会員登録・ログイン後にクーポン獲得",
+      "対象外日: 金・土・日曜、9/21・9/22・10/12は除く",
+      "他のゆこゆこクーポンと併用不可"
+    ],
+    "source_url": "https://www.yukoyuko.net/cp/otocoupon/yrcp0022",
+    "detail_url": "https://www.yukoyuko.net/cp/otocoupon/yrcp0022",
+    "source_type": "official_api",
+    "fetch_method": "gaia_api",
+    "last_checked": "2026-09-18",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "ゆこゆこクーポン一覧・公式確認済み枠",
+    "detail_data": {
+      "campaign_id": "yrcp0022",
+      "campaign_overview": "",
+      "discount_description": "●対象宿泊施設 【熱海エリア】の対象宿泊施設 ●割引概要 1予約あたり税込2,000円を割引 ●対象者 / 期間 対象者 : 全員 予約期間：2026年9月1日～2026年10月29日 宿泊期間：2026年9月1日～2026年10月29日 （※10/30チェックアウトまで） ※除外日：金・土・日曜日、9/21・9/22・10/12 ※先着順のため、クーポン枚数の上限に達した場合、その時点で割引適用外となります。 ※予告なく、予約/宿泊対象期間、クーポン上限枚数等を変更、終了する場合がございます。予めご了承ください。 ●割引方法 ゆこゆこ発行の「【エリアクーポン】熱海」を、システム上のクーポン取得画面で、予約完了前に必ず取得・適用してください。 ●注意事項 ・本クーポンをご利用の際は、予約入力画面にて「【エリアクーポン】熱海」と表記のあるクーポンを選択してください。 ・対象クーポンを選択しなかった場合、または宿泊日当日のクーポン提示や申告では割引が適用できません ・先着ご予約順につき、上限に達した場合は終了となります ・宿泊料金以外の館内施設使用料、ドリンク代、お土産購入代などは宿泊割引の対象外となります ・事前決済は対象外(現地決済のみ)",
+      "coupon_count": 1,
+      "is_all_over_issue_limit": false,
+      "conditions": {
+        "conditionTextIssueLimitFlag": true,
+        "conditionTextConditionalFlag": false,
+        "conditionTextNotConditionalFlag": true,
+        "conditionTextLotteryFlag": false
+      },
+      "coupons": [
+        {
+          "couponId": "yrcp0022",
+          "couponName": "【エリアクーポン】熱海",
+          "discountRateFlag": false,
+          "discountAmount": 2000,
+          "discountRate": -1,
+          "useStartedOn": "2026/09/01 11:00",
+          "useEndedOn": "2026/10/29 23:59",
+          "stayStartedOn": "2026/09/01",
+          "stayEndedOn": "2026/10/29",
+          "ngStayDescription": "金・土・日曜、9/21・9/22・10/12は除く",
+          "leastReserveAmount": -1,
+          "atmostReserveAmount": -1,
+          "issueCount": 210,
+          "issueLimit": 211,
+          "issueLimitOver": false,
+          "combinationFlag": false,
+          "hotelListLink": "/otocoupon/yrcp0022/L05/P15?stay_count=1&room_count=1&adult_count=2"
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
         }
       ],
       "official_api": "https://gaia-api.yukoyuko.net/external/v4/otocoupon/entry/campaign"
@@ -3108,7 +4416,11 @@
     "detail_url": "https://www.yukoyuko.net/lp/coupon_howtouse/",
     "source_type": "official_page",
     "fetch_method": "requests_html",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "medium",
     "display_type": "table",
     "placement_hint": "ゆこゆこ常設お得情報・使い方補足枠",
@@ -3142,7 +4454,11 @@
     "detail_url": "https://www.yukoyuko.net/special/t00373/ALL",
     "source_type": "official_page",
     "fetch_method": "requests_html",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "medium",
     "display_type": "table",
     "placement_hint": "ゆこゆこ常設お得情報・使い方補足枠",
@@ -3161,10 +4477,10 @@
       "yakushimafan"
     ],
     "article_slug": "yukoyuko-coupon",
-    "title": "お探しのページが見つかりませんでした",
+    "title": "初夏のゆこゆこ宝箱セール2026！お得な値下げや特典付プラン",
     "category": "セール",
     "discount": "値下げ・特典付きプラン",
-    "stock_status": "要確認",
+    "stock_status": "掲載中",
     "product_type": "宿泊",
     "booking_period": "",
     "travel_period": "",
@@ -3176,14 +4492,19 @@
     "detail_url": "https://www.yukoyuko.net/special/t00230",
     "source_type": "official_page",
     "fetch_method": "requests_html",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
     "confidence": "low",
+========
+    "last_checked": "2026-09-18",
+    "confidence": "medium",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "display_type": "table",
     "placement_hint": "ゆこゆこ常設お得情報・使い方補足枠",
     "detail_data": {
-      "http_status": 404,
-      "page_title": "404エラー｜【ゆこゆこ】で温泉旅行・宿探し",
-      "description": ""
+      "http_status": 200,
+      "page_title": "初夏のゆこゆこ宝箱セール2026！お得な値下げや特典付プラン(2026年最新)｜ゆこゆこ",
+      "description": "まもなく夏本番！お得な値下げプランや特典付きプランのある宿を集めました。お得に旅行を楽しみたい方におすすめです。普段よりもお得な格安・穴場プランが見つかるかもしれません。ぜひ宝探しのようにわくわくしながら、チェックしてみてくださいね。ご家族やご夫婦でぜひ久しぶりのお出かけを楽しんでください♪｜温泉旅行・温泉宿探しは【ゆこゆこネット】"
     }
   },
   {
@@ -3210,7 +4531,11 @@
     "detail_url": "https://www.yukoyuko.net/special/g00206",
     "source_type": "official_page",
     "fetch_method": "requests_html",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "medium",
     "display_type": "table",
     "placement_hint": "ゆこゆこ常設お得情報・使い方補足枠",
@@ -3244,7 +4569,11 @@
     "detail_url": "https://www.yukoyuko.net/special/t00029",
     "source_type": "official_page",
     "fetch_method": "requests_html",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "medium",
     "display_type": "table",
     "placement_hint": "ゆこゆこ常設お得情報・使い方補足枠",
@@ -3278,7 +4607,11 @@
     "detail_url": "https://www.yukoyuko.net/special/t00033",
     "source_type": "official_page",
     "fetch_method": "requests_html",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "medium",
     "display_type": "table",
     "placement_hint": "ゆこゆこ常設お得情報・使い方補足枠",
@@ -3312,7 +4645,11 @@
     "detail_url": "https://www.yukoyuko.net/special/g00009",
     "source_type": "official_page",
     "fetch_method": "requests_html",
+<<<<<<<< HEAD:yukoyuko_coupon_data/coupons_2026-08-23.json
     "last_checked": "2026-08-23",
+========
+    "last_checked": "2026-09-18",
+>>>>>>>> 057e488a (feat(monitor): 常時監視を6社に絞り、残りは指定時だけ深掘りする体制へ):yukoyuko_coupon_data/coupons_2026-09-18.json
     "confidence": "medium",
     "display_type": "table",
     "placement_hint": "ゆこゆこ常設お得情報・使い方補足枠",

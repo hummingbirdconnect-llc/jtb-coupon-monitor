@@ -1,0 +1,29 @@
+{
+  "provider_id": "activityjapan",
+  "observed_hash": "b86b79de1ae075575438333ccd998684bbed001efd3b82613a7ec7d48f2c511d",
+  "last_checked_at": "2026-09-18T13:13:49.100066+09:00",
+  "sources": [
+    {
+      "url": "https://activityjapan.com/coupon/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 1132,
+      "content_hash": "e2983926b5202f66c765d674f9f811d0c00c41827d0edf2ee4b260eb61724ece"
+    },
+    {
+      "url": "https://activityjapan.com/feature/coupon-campaign/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 10891,
+      "content_hash": "089307337c326d941f19f5c4d55347301d24fa9ca4b90ebfd9fc01c4e2b86a3f"
+    }
+  ],
+  "queued_hash": "b86b79de1ae075575438333ccd998684bbed001efd3b82613a7ec7d48f2c511d",
+  "queued_candidate_id": "activityjapan-b86b79de1ae07557",
+  "queued_at": "2026-09-18T13:13:49.100622+09:00",
+  "last_audit_status": "pending"
+}

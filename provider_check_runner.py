@@ -62,15 +62,26 @@ def load_registry() -> list[dict]:
         "cadence_days": 1,
         "freshness_sla_hours": 30,
     }
+    five_day_ids = set(schedule.get("every_5_days_provider_ids") or [])
     low_defaults = schedule.get("every_5_days") or {
         "check_frequency": "every_5_days",
         "cadence_days": 5,
         "freshness_sla_hours": 144,
     }
+    on_demand_defaults = schedule.get("on_demand") or {
+        "check_frequency": "on_demand",
+        "cadence_days": 0,
+        "freshness_sla_hours": 720,
+    }
     providers = []
     for raw in config["providers"]:
         provider = dict(raw)
-        defaults = daily_defaults if provider["id"] in daily_ids else low_defaults
+        if provider["id"] in daily_ids:
+            defaults = daily_defaults
+        elif provider["id"] in five_day_ids:
+            defaults = low_defaults
+        else:
+            defaults = on_demand_defaults
         for key, value in defaults.items():
             provider.setdefault(key, value)
         if provider["id"] in REAL_MONITOR_COMMANDS:
@@ -320,7 +331,14 @@ def cadence_bucket(provider_id: str, cadence_days: int) -> int:
     return int.from_bytes(digest[:2], "big") % cadence_days
 
 
+def is_on_demand(provider: dict) -> bool:
+    """定期実行の対象外（--provider-id 指定のときだけ動く会社）か。"""
+    return int(provider.get("cadence_days", 0)) <= 0 or provider.get("check_frequency") == "on_demand"
+
+
 def provider_due(provider: dict, current_date: date) -> bool:
+    if is_on_demand(provider):
+        return False
     cadence_days = max(1, int(provider.get("cadence_days", 5)))
     if cadence_days == 1:
         return True
@@ -342,13 +360,35 @@ def select_providers(
     if scope == "due":
         today = current_date or now_jst().date()
         return [provider for provider in registry if provider_due(provider, today)]
+    if scope == "on_demand":
+        return [provider for provider in registry if is_on_demand(provider)]
     return registry
 
 
-def run_provider(provider: dict, timeout: int, max_urls: int) -> dict:
+def deep_dive_allowed(provider: dict, *, deep: bool, explicit: bool) -> bool:
+    """公式ページの深掘り（official_deal_monitor）を走らせてよいか。
+
+    - 定期対象（daily / every_5_days）で official_sources がある会社は従来どおり常に走る
+    - 指定時だけの会社（on_demand）は --deep か --provider-id の直指定があるときだけ走る
+    """
+    if not provider.get("official_sources"):
+        return False
+    if not is_on_demand(provider):
+        return True
+    return deep or explicit
+
+
+def run_provider(
+    provider: dict, timeout: int, max_urls: int, *, deep: bool = False, explicit: bool = False
+) -> dict:
     if provider["id"] in REAL_MONITOR_COMMANDS:
-        return run_real_monitor(provider)
-    if provider.get("official_sources"):
+        payload = run_real_monitor(provider)
+        if deep or explicit:
+            payload["deep_dive"] = True
+            payload["deep_dive_at"] = payload.get("completed_at", "")
+            write_status(provider, payload)
+        return payload
+    if deep_dive_allowed(provider, deep=deep, explicit=explicit):
         payload = run_official_deal_monitor(provider, timeout=max(timeout, 30))
         payload.setdefault(
             "freshness_status",
@@ -358,6 +398,9 @@ def run_provider(provider: dict, timeout: int, max_urls: int) -> dict:
                 official=True,
             ),
         )
+        if is_on_demand(provider):
+            payload["deep_dive"] = True
+            payload["deep_dive_at"] = payload.get("completed_at", "")
         write_status(provider, payload)
         return payload
     return run_snapshot_check(provider, timeout=timeout, max_urls=max_urls)
@@ -397,12 +440,17 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="会社別クーポンチェック実行")
     parser.add_argument(
         "--scope",
-        choices=["due", "daily", "every_5_days", "weekly", "all"],
+        choices=["due", "daily", "every_5_days", "weekly", "on_demand", "all"],
         default="due",
     )
     parser.add_argument("--provider-id", default="", help="特定会社だけ実行する場合の provider id")
     parser.add_argument("--timeout", type=int, default=10, help="URL生存確認のタイムアウト秒")
     parser.add_argument("--max-urls", type=int, default=30, help="記事抽出系で確認するURL上限")
+    parser.add_argument(
+        "--deep",
+        action="store_true",
+        help="指定時だけの会社でも公式ページを深掘り取得する（--scope all と併用可）",
+    )
     return parser.parse_args(argv)
 
 
@@ -411,8 +459,16 @@ def main(argv: list[str] | None = None) -> None:
     registry = load_registry()
     providers = select_providers(registry, args.scope, args.provider_id)
     print(f"selected providers: {', '.join(provider['id'] for provider in providers)}")
+    explicit = bool(args.provider_id and args.provider_id != "all")
     summaries = [
-        run_provider(provider, timeout=args.timeout, max_urls=args.max_urls) for provider in providers
+        run_provider(
+            provider,
+            timeout=args.timeout,
+            max_urls=args.max_urls,
+            deep=args.deep,
+            explicit=explicit,
+        )
+        for provider in providers
     ]
     write_run_summary(args.scope, summaries)
     if any(item.get("status") == "error" for item in summaries):

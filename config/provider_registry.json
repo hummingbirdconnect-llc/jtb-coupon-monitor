@@ -1,25 +1,8 @@
 {
   "schema_version": 2,
   "schedule": {
-    "daily_provider_ids": [
-      "his",
-      "jtb",
-      "knt",
-      "jalpack",
-      "rurubu_travel",
-      "yukoyuko",
-      "rakuten_travel",
-      "jalan",
-      "yahoo_travel",
-      "ikkyu",
-      "booking",
-      "agoda",
-      "expedia",
-      "hotels",
-      "tripcom",
-      "kkday",
-      "klook"
-    ],
+    "daily_provider_ids": ["his", "jtb", "knt", "jalpack", "jalan", "rakuten_travel"],
+    "every_5_days_provider_ids": [],
     "daily": {
       "check_frequency": "daily",
       "cadence_days": 1,
@@ -29,7 +12,13 @@
       "check_frequency": "every_5_days",
       "cadence_days": 5,
       "freshness_sla_hours": 144
-    }
+    },
+    "on_demand": {
+      "check_frequency": "on_demand",
+      "cadence_days": 0,
+      "freshness_sla_hours": 720
+    },
+    "note": "常時監視は daily_provider_ids の6社だけ。それ以外は --provider-id 指定（または workflow_dispatch）のときだけ深掘りする。"
   },
   "providers": [
     {
@@ -312,110 +301,244 @@
       "label": "Relux",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/relux",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/relux",
       "article_paths": ["../vault_blog/旅クーポン/wp_articles/567_relux-discount-campaigns.json"],
-      "note": "既存記事JSON由来の暫定データ。Welltrip記事側との統合確認が次工程。"
+      "note": "公式にクーポン一覧ページはなく、特集・タイムセール・au等の提携キャンペーンが中心。指定時にトップとタイムセールを深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/relux",
+      "official_sources": [
+        {
+          "url": "https://rlx.jp/",
+          "fetch_method": "auto",
+          "purpose": "トップページ（特集・タイムセール・提携キャンペーンの導線）"
+        },
+        {
+          "url": "https://rlx.jp/timesale/",
+          "fetch_method": "auto",
+          "purpose": "タイムセール一覧"
+        }
+      ]
     },
     {
       "id": "asoview",
       "label": "アソビュー",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/asoview",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/asoview",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。公開キャンペーン監視の候補。"
+      "note": "公式クーポン一覧ページを指定時に深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/asoview",
+      "official_sources": [
+        {
+          "url": "https://www.asoview.com/coupon/",
+          "fetch_method": "auto",
+          "purpose": "公式クーポン一覧"
+        }
+      ]
     },
     {
       "id": "activityjapan",
       "label": "アクティビティジャパン",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/activityjapan",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/activityjapan",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/アクティビティジャパン/note/アクティビティジャパン_P_クーポン割引全まとめ_パイプライン記事.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。公式ニュース・キャンペーン中心に監視候補化。"
+      "note": "公式クーポン一覧とキャンペーン特集を指定時に深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/activityjapan",
+      "official_sources": [
+        {
+          "url": "https://activityjapan.com/coupon/",
+          "fetch_method": "auto",
+          "purpose": "公式クーポン一覧"
+        },
+        {
+          "url": "https://activityjapan.com/feature/coupon-campaign/",
+          "fetch_method": "auto",
+          "purpose": "クーポン・キャンペーン特集"
+        }
+      ]
     },
     {
       "id": "club_tourism",
       "label": "クラブツーリズム",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/club_tourism",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/club_tourism",
       "article_paths": ["../vault_blog/旅クーポン/wp_articles/65453_club-tourism-coupon-guide.json"],
-      "note": "既存記事JSON由来の暫定データ。クーポンコードよりキャンペーン監視向き。"
+      "note": "クーポンコードよりキャンペーン監視向き。通常取得が拒否される場合はブラウザ取得へ切り替える。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/club_tourism",
+      "official_sources": [
+        {
+          "url": "https://www.club-t.com/sp/campaign/ctp/",
+          "fetch_method": "auto",
+          "purpose": "キャンペーン案内（会員向けWEBクーポン含む）"
+        },
+        {
+          "url": "https://www.club-t.com/",
+          "fetch_method": "playwright",
+          "purpose": "トップページ（期間限定キャンペーンのバナー）"
+        }
+      ]
     },
     {
       "id": "jr_tokai_tours",
       "label": "JR東海ツアーズ",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/jr_tokai_tours",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/jr_tokai_tours",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/JR東海ツアーズ/note/P-01_JR東海ツアーズクーポン最新一覧.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。ずらし旅など特典型として別管理。"
+      "note": "ずらし旅など特典型が中心。クーポン特集・LINE・直前割・早割の4ページを指定時に深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/jr_tokai_tours",
+      "official_sources": [
+        {
+          "url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+          "fetch_method": "auto",
+          "purpose": "クーポン特集"
+        },
+        {
+          "url": "https://travel.jr-central.co.jp/plan/tokushu/line-cp/",
+          "fetch_method": "auto",
+          "purpose": "LINE連携キャンペーン"
+        },
+        {
+          "url": "https://travel.jr-central.co.jp/plan/tokushu/chokuzen/",
+          "fetch_method": "auto",
+          "purpose": "直前割"
+        },
+        {
+          "url": "https://travel.jr-central.co.jp/plan/tokushu/early/",
+          "fetch_method": "auto",
+          "purpose": "早期予約割"
+        }
+      ]
     },
     {
       "id": "skypack_tours",
       "label": "スカイパックツアーズ",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/skypack_tours",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/skypack_tours",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/スカイパックツアーズ/note/スカイパックツアーズ_P_クーポン全まとめ_パイプライン記事.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。キャンペーン・路線別訴求中心。"
+      "note": "専用キャンペーン一覧が無く、トップページのバナーが起点。ブラウザ取得で指定時に深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/skypack_tours",
+      "official_sources": [
+        {
+          "url": "https://www.skypack.jp/",
+          "fetch_method": "playwright",
+          "purpose": "トップページ（キャンペーン・路線別訴求）"
+        }
+      ]
     },
     {
       "id": "tobu_top_tours",
       "label": "東武トップツアーズ",
       "site_targets": ["welltrip"],
       "classification": "D",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/tobu_top_tours",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/tobu_top_tours",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/東武トップツアーズ/note/tobutoptours-coupon.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。公式公開クーポンの安定取得可否は未確認。"
+      "note": "会員向けクーポン案内と特集一覧を指定時に深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/tobu_top_tours",
+      "official_sources": [
+        {
+          "url": "https://tobutoptours.jp/members_new/coupon/",
+          "fetch_method": "auto",
+          "purpose": "会員向けクーポン案内"
+        },
+        {
+          "url": "https://tobutoptours.jp/special/",
+          "fetch_method": "auto",
+          "purpose": "特集一覧"
+        }
+      ]
     },
     {
       "id": "yomiuri_travel",
       "label": "読売旅行",
       "site_targets": ["welltrip"],
       "classification": "D",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/yomiuri_travel",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/yomiuri_travel",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/読売旅行/note/SC-01_クーポン・割引・キャンペーンまとめ.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。ツアー企画型のため公式監視は後工程。"
+      "note": "ツアー企画型でクーポンページが無い。トップページの告知を指定時に深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/yomiuri_travel",
+      "official_sources": [
+        {
+          "url": "https://www.yomiuri-ryokou.co.jp/",
+          "fetch_method": "playwright",
+          "purpose": "トップページ（企画ツアー・キャンペーン告知）"
+        }
+      ]
     },
     {
       "id": "toku",
       "label": "トクー",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/toku",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/toku",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/トクー/note/トクー_P_クーポン完全ガイド_パイプライン記事.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。会員割引・直前割型で、クーポンコードとは別データ型が必要。"
+      "note": "会員割引・直前割型。トップとスペシャルセールを指定時に深掘りする。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/toku",
+      "official_sources": [
+        {
+          "url": "https://www.tocoo.jp/",
+          "fetch_method": "auto",
+          "purpose": "トップページ（会員割引・直前割）"
+        },
+        {
+          "url": "https://osusumeyado.tocoo.jp/specialsale/",
+          "fetch_method": "auto",
+          "purpose": "スペシャルセール"
+        }
+      ]
     },
     {
       "id": "yukoyuko",
       "label": "ゆこゆこネット",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "auto_daily",
+      "coverage_status": "auto_on_demand",
       "data_dir": "yukoyuko_coupon_data",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/ゆこゆこネット/reputation-migration-20260604/yukoyuko-reputation.html"],
-      "note": "ゆこゆこ公式APIのクーポン一覧・個別キャンペーンと公式お得情報ページを日次取得。獲得型クーポンは公開コードなしとして扱う。"
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/ゆこゆこネット/reputation-migration-20260604/yukoyuko-reputation.html"
+      ],
+      "note": "ゆこゆこ公式APIのクーポン一覧・個別キャンペーンと公式お得情報ページを日次取得。獲得型クーポンは公開コードなしとして扱う。 2026-09-18以降は指定時だけ実行。"
     },
     {
       "id": "booking",
       "label": "Booking.com",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/booking",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/Booking.com/booking-campaign-code-migration-20260609/article.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。キャンペーンコード・Genius割引・外部配布の表示差に注意。"
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/booking",
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/Booking.com/booking-campaign-code-migration-20260609/article.html"
+      ],
+      "note": "通常取得もトップページも拒否されるため、Genius特典ページだけをブラウザ取得で指定時に深掘りする。キャンペーンコードの外部配布は対象外。",
+      "source_type": "official_page_candidate",
+      "legacy_data_dir": "manual_coupon_data/booking",
+      "official_sources": [
+        {
+          "url": "https://www.booking.com/genius.ja.html",
+          "fetch_method": "playwright",
+          "purpose": "Geniusロイヤルティ特典"
+        }
+      ]
     },
     {
       "id": "newt",
@@ -444,7 +567,9 @@
       "classification": "C",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/traveloka",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/Traveloka/coupon-brushup-20260613/traveloka-coupon-affiliate-brushup-swell.html"],
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/Traveloka/coupon-brushup-20260613/traveloka-coupon-affiliate-brushup-swell.html"
+      ],
       "note": "Welltrip記事HTML由来の暫定データ。地域・アプリ・外部配布の差があるため半自動確認向き。"
     },
     {
@@ -494,7 +619,9 @@
       "classification": "C",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/tabirai_rentacar",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/たびらいレンタカー/coupon-migration-20260612/tabirai-rentacar-coupon-brushup-20260613-swell.html"],
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/たびらいレンタカー/coupon-migration-20260612/tabirai-rentacar-coupon-brushup-20260613-swell.html"
+      ],
       "note": "Welltrip記事HTML由来の暫定データ。レンタカー予約の地域別・期間限定割引を半自動で確認。"
     },
     {
@@ -504,7 +631,9 @@
       "classification": "C",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/nippon_travel",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"],
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
+      ],
       "note": "Welltrip記事HTML由来の暫定データ。赤い風船・JRセットプランなどの商品別に確認する。"
     },
     {
@@ -514,7 +643,9 @@
       "classification": "C",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/hankyu_travel",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html"],
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html"
+      ],
       "note": "Welltrip記事HTML由来の暫定データ。ツアー企画型のため、クーポンよりキャンペーン監視寄り。"
     },
     {
@@ -544,7 +675,9 @@
       "classification": "C",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/jalan_pack",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/じゃらんパック/reputation-migration-20260604/jalan-pack-reputation.html"],
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/じゃらんパック/reputation-migration-20260604/jalan-pack-reputation.html"
+      ],
       "note": "Welltrip既存記事由来の暫定枠。じゃらん宿泊本体と分け、パック専用クーポンの取得元を次に決める。"
     },
     {
@@ -552,10 +685,12 @@
       "label": "るるぶトラベル",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "auto_daily",
+      "coverage_status": "auto_on_demand",
       "data_dir": "rurubu_travel_coupon_data",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/るるぶトラベル/reputation-migration-20260604/rurubu-travel-reputation.html"],
-      "note": "公式割引クーポンページ（https://www.rurubu.travel/deals）を取得。JTB系の宿泊予約として、JTB本体とは別に成果・導線を確認する。"
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/るるぶトラベル/reputation-migration-20260604/rurubu-travel-reputation.html"
+      ],
+      "note": "公式割引クーポンページ（https://www.rurubu.travel/deals）を取得。JTB系の宿泊予約として、JTB本体とは別に成果・導線を確認する。 2026-09-18以降は指定時だけ実行。"
     },
     {
       "id": "orion_tour",
@@ -564,7 +699,9 @@
       "classification": "C",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/orion_tour",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/オリオンツアー/reputation-migration-20260604/orion-tour-reputation.html"],
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/オリオンツアー/reputation-migration-20260604/orion-tour-reputation.html"
+      ],
       "note": "Welltrip既存記事由来の暫定枠。ツアー・スキー・高速バス系のキャンペーン確認を優先。"
     },
     {
@@ -574,7 +711,9 @@
       "classification": "D",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/shirokuma_tour",
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/しろくまツアー/reputation-migration-20260604/shirokuma-tour-reputation.html"],
+      "article_paths": [
+        "../vault_blog/ウェルトリップ/会社別/しろくまツアー/reputation-migration-20260604/shirokuma-tour-reputation.html"
+      ],
       "note": "Welltrip既存記事由来の暫定枠。公式クーポン取得元は未確認のため保留寄り。"
     },
     {
@@ -594,7 +733,10 @@
       "classification": "C",
       "coverage_status": "article_exists",
       "data_dir": "manual_coupon_data/expedia",
-      "article_paths": ["../vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html", "../vault_blog/トリップブッキング/note/エクスペディア_003_セール割引_SWELL.html"],
+      "article_paths": [
+        "../vault_blog/トリップブッキング/note/エクスペディア_002_カード特典クーポン_SWELL.html",
+        "../vault_blog/トリップブッキング/note/エクスペディア_003_セール割引_SWELL.html"
+      ],
       "note": "記事はあるが最新クーポン取得データは未整備。"
     },
     {
@@ -624,7 +766,11 @@
           "purpose": "Trip.com日本向け公式お得情報"
         }
       ],
-      "article_paths": ["../vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html", "../vault_blog/トリップブッキング/note/Trip.com_002_セール割引_SWELL.html", "../vault_blog/トリップブッキング/note/Trip.com_003_初回クーポン_SWELL.html"],
+      "article_paths": [
+        "../vault_blog/トリップブッキング/note/Trip.com_001_クーポン_SWELL.html",
+        "../vault_blog/トリップブッキング/note/Trip.com_002_セール割引_SWELL.html",
+        "../vault_blog/トリップブッキング/note/Trip.com_003_初回クーポン_SWELL.html"
+      ],
       "note": "日本向け公式お得情報ページを監視。公開キャンペーンから開始。"
     }
   ]

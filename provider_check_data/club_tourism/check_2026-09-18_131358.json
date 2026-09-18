@@ -1,0 +1,44 @@
+{
+  "provider_id": "club_tourism",
+  "provider_label": "クラブツーリズム",
+  "check_type": "official_page_candidate",
+  "started_at": "2026-09-18T13:13:49.210302+09:00",
+  "completed_at": "2026-09-18T13:13:58.213608+09:00",
+  "official_fetched_at": "2026-09-18T13:13:58.213615+09:00",
+  "source_results": [
+    {
+      "url": "https://www.club-t.com/sp/campaign/ctp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 11309,
+      "content_hash": "d2a5064f4dca467b5a3133cf0e19ad7880d56ce7285bac7e54127ef01c39166f"
+    },
+    {
+      "url": "https://www.club-t.com/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "text_chars": 12763,
+      "content_hash": "cbdf068b1ad1707fe791a3d909450a74f4740ecdbf958c3cc8d23306352197ba"
+    }
+  ],
+  "failed_source_count": 0,
+  "ai_used": false,
+  "codex_audit_required": true,
+  "wp_review_eligible": false,
+  "status": "baseline_pending",
+  "change_kind": "baseline",
+  "content_hash": "8e792d1675382ffee1d1c123c5f9d31ca54c8c79c6a8db3f855b7734f9f54307",
+  "data_date": "",
+  "latest_file": "",
+  "coupon_count": 0,
+  "audit_candidate_id": "club_tourism-8e792d1675382ffe",
+  "audit_candidate_path": "codex_audit_queue/club_tourism/club_tourism-8e792d1675382ffe.json",
+  "error": "",
+  "freshness_status": "unknown",
+  "deep_dive": true,
+  "deep_dive_at": "2026-09-18T13:13:58.213608+09:00"
+}

@@ -417,6 +417,7 @@ def convert_deals(provider_id: str, result: dict[str, Any], fetched_at: str, mod
             "title": deal["title"],
             "category": deal["campaign_type"],
             "type": deal["campaign_type"],
+            "display_type": "coupon" if deal["campaign_type"] == "coupon" else "campaign",
             "discount": deal.get("discount") or "",
             "stock_status": _stock_status(deal.get("status", "unknown")),
             "booking_period": _period(deal.get("booking_start"), deal.get("booking_end")),

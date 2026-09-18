@@ -1,0 +1,29 @@
+{
+  "provider_id": "tobu_top_tours",
+  "observed_hash": "2d48254494b19f514d31d651dfe26cd767719406d3dacba42b999e8fc307a374",
+  "last_checked_at": "2026-09-18T13:14:04.119706+09:00",
+  "sources": [
+    {
+      "url": "https://tobutoptours.jp/members_new/coupon/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 2318,
+      "content_hash": "9800dc55a72bd94241d46ab759f320d76a64eb7985885ed0b70c2ed4ae452f35"
+    },
+    {
+      "url": "https://tobutoptours.jp/special/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "text_chars": 2070,
+      "content_hash": "25b8c13aaf32bb8f26b543743e1d546e16eb253510d40d9123e82954b68e7923"
+    }
+  ],
+  "queued_hash": "2d48254494b19f514d31d651dfe26cd767719406d3dacba42b999e8fc307a374",
+  "queued_candidate_id": "tobu_top_tours-2d48254494b19f51",
+  "queued_at": "2026-09-18T13:14:04.120448+09:00",
+  "last_audit_status": "pending"
+}
