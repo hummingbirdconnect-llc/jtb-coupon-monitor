@@ -98,6 +98,8 @@ def test_on_demand_providers_have_official_sources_and_deep_flag_gate() -> None:
         provider = providers[provider_id]
         assert provider["coverage_status"] == "official_on_demand"
         assert provider["official_sources"], provider_id
+        # 公式ドメインが無いとCodex監査の結果が全件はじかれる
+        assert provider.get("official_domains"), provider_id
         assert provider["data_dir"] == f"official_coupon_data/{provider_id}"
         assert provider["legacy_data_dir"] == f"manual_coupon_data/{provider_id}"
         # --scope all だけでは深掘りしない。--deep か --provider-id 直指定が必要

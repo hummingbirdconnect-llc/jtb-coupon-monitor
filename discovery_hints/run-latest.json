@@ -1,0 +1,19 @@
+{
+  "completed_at": "2026-09-18T14:26:58.805326+09:00",
+  "scope": "auto",
+  "provider_count": 1,
+  "error_count": 0,
+  "candidate_count": 14,
+  "new_count": 7,
+  "results": [
+    {
+      "provider_id": "relux",
+      "provider_label": "Relux",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 14,
+      "new_count": 7,
+      "hints_file": "discovery_hints/relux/hints_2026-09-18.json"
+    }
+  ]
+}

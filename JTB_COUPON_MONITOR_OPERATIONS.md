@@ -27,14 +27,30 @@ python provider_check_runner.py --provider-id relux --deep && python generate_da
 ```
 
 - `--provider-id` を直指定すれば `--deep` は省略できます。`--scope all` で全社をまとめて回すときだけ `--deep` が必要です（付けないと旧URLの生存確認だけ）
+- 各社の `official_domains`（公式ドメイン）が空だとCodex監査の結果が全件はじかれるため、必ず登録する
 - 深掘り対象として公式ページを登録済みの会社: Relux、アソビュー、アクティビティジャパン、クラブツーリズム、JR東海ツアーズ、スカイパックツアーズ、東武トップツアーズ、読売旅行、トクー、Booking.com（`coverage_status: official_on_demand`）。ゆこゆこ・るるぶは既存の自動取得をそのまま指定時に動かします（`auto_on_demand`）
 - 深掘り結果は、Codex監査（`codex_audit_runner.py apply`）を通すと `official_coupon_data/<会社ID>/` に入り、ダッシュボードへ反映されます。監査前は記事由来の旧データを「深掘り前の旧データ」として表示します
 - 公式ページの登録を増やす・変える: `config/provider_registry.json` の該当会社の `official_sources`（URL・取得方法・目的）を編集する
 
-### アフィリエイトリンク
+### 外部情報の候補（Grok検索）
+
+ダッシュボードの「未確認の候補（外部情報）」欄は、Grokがweb検索（Xの投稿・公式サイト・ニュース）で見つけたクーポン・セール・キャンペーンの**未確認情報**です。公式ページの根拠がないため、Codex監査にも記事にも自動では流しません。
+
+- 頻度: 常時6社は毎朝、指定時の会社（公式ページ登録済み）は月曜だけ。国内Macの launchd `com.hbconnect.coupon-discovery-daily`（07:15）が `vault_box/tools/coupon-discovery-daily.sh` を実行し、`discovery_hints/` とダッシュボードをGitHubへ送ります。GitHub Actionsでは実行しません（Grokの個人契約が必要）
+- 手元で試す: `python3 grok_deal_discovery.py --provider-id relux`（`--dry-run` で指示文だけ表示）。1社あたり4分前後かかる（web検索と閲覧を最大40往復）。6社で25分、月曜は19社で80分ほど
+- 状態の意味: 「新規」は登録済み公式ページにも既知の題名にも一致しないもの。「既知（URL一致）」「既知（題名一致）」はすでに把握済み
+- 候補を監視に加える手順: 候補の公式URLを開いて内容を確かめる → 「雛形をコピー」で得たJSONを `config/provider_registry.json` の該当会社の `official_sources` へ足す → `python3 provider_check_runner.py --provider-id <会社ID> --deep` で取得できることを確かめる → commit・push
+- Grokの認証が切れると全社「失敗」になります。ターミナルで `~/.grok/bin/grok login` を実行して再ログインしてください
+- ログ: `~/logs/coupon-discovery-daily/`
+
+### 公式サイト内の自動発見
+
+会社の入口ページ（`source_role: discovery_hub`）を登録すると、配下のキャンペーン・特集ページを許可パターン（`discovery_path_patterns`）に合うものだけ自動で見つけ、深掘りの対象に加えます。じゃらんに加え、Relux・アクティビティジャパン・クラブツーリズム・JR東海ツアーズ・トクーで有効です。見つかったページは `official_source_data/<会社ID>/state.json` の `discovered_urls` で確認できます。余計なページを拾うときは許可パターンを絞ります。
+
+### ASP計測リンク（アフィリエイト用）
 
 - 会社別の設定は `config/affiliate_links/<会社ID>.json`（形は `_template.json`）。`category_links.default.url` に貼れば、その会社の全クーポンに効きます
-- ダッシュボードの各クーポン行に「アフィリエイトURL」列、全社一覧に「アフィ設定」列（設定済み／枠のみ／なし）が出ます
+- ダッシュボードの各クーポン行に「ASP計測リンク」列、全社一覧に「ASP設定」列（設定済み／枠のみ／なし）が出ます。ASP計測リンクは**すでにアフィリエイト化済み**のリンクです。記事にはそのまま貼り、詳細URL（公式ページ）を別途アフィリエイト化しません。HISは詳細URLをASPリンクの飛ばし先に設定して運用しています
 - URL入りのファイルはGitへ入れません。GitHub Actions では Secrets `AFFILIATE_LINKS_CONFIG`（`{"relux": {...}, "booking": {...}}` の形）から復元します
 - HIS／JTB／KNT は従来の `config/<id>_affiliate_links.json` と Secrets のまま
 - ダッシュボード上部の「資料」リンクから、このマニュアル・アフィリエイト設定の書き方・Codex監査の手順・会社一覧の設定を開けます

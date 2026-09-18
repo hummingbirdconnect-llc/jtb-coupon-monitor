@@ -311,14 +311,20 @@
         {
           "url": "https://rlx.jp/",
           "fetch_method": "auto",
-          "purpose": "トップページ（特集・タイムセール・提携キャンペーンの導線）"
+          "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": true,
+          "discover_links": true,
+          "discovery_path_patterns": ["^/special/[^/]+/?$", "^/timesale/?$"],
+          "max_discovered_links": 8
         },
         {
           "url": "https://rlx.jp/timesale/",
           "fetch_method": "auto",
           "purpose": "タイムセール一覧"
         }
-      ]
+      ],
+      "official_domains": ["rlx.jp"]
     },
     {
       "id": "asoview",
@@ -337,7 +343,8 @@
           "fetch_method": "auto",
           "purpose": "公式クーポン一覧"
         }
-      ]
+      ],
+      "official_domains": ["asoview.com"]
     },
     {
       "id": "activityjapan",
@@ -352,6 +359,16 @@
       "legacy_data_dir": "manual_coupon_data/activityjapan",
       "official_sources": [
         {
+          "url": "https://activityjapan.com/",
+          "fetch_method": "auto",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": false,
+          "discover_links": true,
+          "discovery_path_patterns": ["^/campaign/[^/]+/?$", "^/feature/coupon-campaign/?$"],
+          "max_discovered_links": 8
+        },
+        {
           "url": "https://activityjapan.com/coupon/",
           "fetch_method": "auto",
           "purpose": "公式クーポン一覧"
@@ -361,7 +378,8 @@
           "fetch_method": "auto",
           "purpose": "クーポン・キャンペーン特集"
         }
-      ]
+      ],
+      "official_domains": ["activityjapan.com"]
     },
     {
       "id": "club_tourism",
@@ -376,16 +394,22 @@
       "legacy_data_dir": "manual_coupon_data/club_tourism",
       "official_sources": [
         {
+          "url": "https://www.club-t.com/",
+          "fetch_method": "playwright",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": false,
+          "discover_links": true,
+          "discovery_path_patterns": ["^/sp/campaign/[^/]+/?$"],
+          "max_discovered_links": 6
+        },
+        {
           "url": "https://www.club-t.com/sp/campaign/ctp/",
           "fetch_method": "auto",
           "purpose": "キャンペーン案内（会員向けWEBクーポン含む）"
-        },
-        {
-          "url": "https://www.club-t.com/",
-          "fetch_method": "playwright",
-          "purpose": "トップページ（期間限定キャンペーンのバナー）"
         }
-      ]
+      ],
+      "official_domains": ["club-t.com"]
     },
     {
       "id": "jr_tokai_tours",
@@ -399,6 +423,16 @@
       "source_type": "official_page_candidate",
       "legacy_data_dir": "manual_coupon_data/jr_tokai_tours",
       "official_sources": [
+        {
+          "url": "https://travel.jr-central.co.jp/",
+          "fetch_method": "auto",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": false,
+          "discover_links": true,
+          "discovery_path_patterns": ["^/plan/tokushu/(?!ex/)[^/]+/?$"],
+          "max_discovered_links": 8
+        },
         {
           "url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
           "fetch_method": "auto",
@@ -419,7 +453,8 @@
           "fetch_method": "auto",
           "purpose": "早期予約割"
         }
-      ]
+      ],
+      "official_domains": ["jr-central.co.jp"]
     },
     {
       "id": "skypack_tours",
@@ -438,7 +473,8 @@
           "fetch_method": "playwright",
           "purpose": "トップページ（キャンペーン・路線別訴求）"
         }
-      ]
+      ],
+      "official_domains": ["skypack.jp"]
     },
     {
       "id": "tobu_top_tours",
@@ -462,7 +498,8 @@
           "fetch_method": "auto",
           "purpose": "特集一覧"
         }
-      ]
+      ],
+      "official_domains": ["tobutoptours.jp"]
     },
     {
       "id": "yomiuri_travel",
@@ -481,7 +518,8 @@
           "fetch_method": "playwright",
           "purpose": "トップページ（企画ツアー・キャンペーン告知）"
         }
-      ]
+      ],
+      "official_domains": ["yomiuri-ryokou.co.jp"]
     },
     {
       "id": "toku",
@@ -498,14 +536,20 @@
         {
           "url": "https://www.tocoo.jp/",
           "fetch_method": "auto",
-          "purpose": "トップページ（会員割引・直前割）"
+          "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": true,
+          "discover_links": true,
+          "discovery_path_patterns": ["^/coupon", "^/campaign"],
+          "max_discovered_links": 6
         },
         {
           "url": "https://osusumeyado.tocoo.jp/specialsale/",
           "fetch_method": "auto",
           "purpose": "スペシャルセール"
         }
-      ]
+      ],
+      "official_domains": ["tocoo.jp"]
     },
     {
       "id": "yukoyuko",
@@ -538,7 +582,8 @@
           "fetch_method": "playwright",
           "purpose": "Geniusロイヤルティ特典"
         }
-      ]
+      ],
+      "official_domains": ["booking.com"]
     },
     {
       "id": "newt",

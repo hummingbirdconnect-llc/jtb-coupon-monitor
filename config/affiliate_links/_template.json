@@ -1,5 +1,5 @@
 {
-  "_comment": "会社別アフィリエイトリンク設定の枠。URLを貼るまでダッシュボードには「枠のみ（URL未設定）」と出ます。",
+  "_comment": "会社別ASP計測リンク（アフィリエイト用）の枠。URLを貼るまでダッシュボードの「ASP設定」には「枠のみ（URL未設定）」と出ます。",
   "_usage": "category_links.default が全クーポン共通のリンク。特定の語（例: 海外ツアー）を含むクーポンだけ別リンクにしたいときは keyword_overrides へ上から順に書く。pixel は afb の計測画像URL。不要なら空のまま。",
   "_provider_id": "",
   "category_links": {

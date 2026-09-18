@@ -1,7 +1,7 @@
 {
   "provider_id": "toku",
   "observed_hash": "cf1d9120e18b0993c2669f0eff115d0f977bea397f2d3ff52da4244295f6d273",
-  "last_checked_at": "2026-09-18T13:14:10.018205+09:00",
+  "last_checked_at": "2026-09-18T14:16:42.296873+09:00",
   "sources": [
     {
       "url": "https://www.tocoo.jp/",
@@ -9,6 +9,11 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
+      "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）",
+      "source_role": "discovery_hub",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
       "text_chars": 3544,
       "content_hash": "1efb7c33ef637faa411c1dba563eec8413b6e26091652f43752aa1df93e4d4bd"
     },
@@ -18,6 +23,11 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
+      "purpose": "スペシャルセール",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
       "text_chars": 3749,
       "content_hash": "0bd7835e39c7380e44d20dc6393e62f8e2a3739d78b53cb355c2e7cd6b139c05"
     }

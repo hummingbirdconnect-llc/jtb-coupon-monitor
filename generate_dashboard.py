@@ -16,6 +16,7 @@ from typing import Any
 
 from his_regions import coupon_region_codes
 from affiliate_links import affiliate_setup_status, load_affiliate_config, resolve_affiliate_url
+from grok_deal_discovery import latest_hints_file
 
 JST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parent
@@ -24,6 +25,8 @@ CHECK_STATUS_ROOT = ROOT / "provider_check_data"
 AUDIT_QUEUE_ROOT = ROOT / "codex_audit_queue"
 AUDIT_RESULT_ROOT = ROOT / "codex_audit_results"
 AUDIT_LEDGER = ROOT / "codex_audit_data" / "applied-candidates.json"
+HINTS_ROOT = ROOT / "discovery_hints"
+HINT_RECENT_DAYS = 7
 WORKFLOW_URL = "https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/actions/workflows/coupon-monitor.yml"
 REPOSITORY = "hummingbirdconnect-llc/jtb-coupon-monitor"
 DOC_BASE = f"https://github.com/{REPOSITORY}/blob/main"
@@ -62,7 +65,7 @@ COMMON_COLUMNS = [
     "表示地域",
     "公式確認時刻",
     "詳細URL",
-    "アフィリエイトURL",
+    "ASP計測リンク",
     "タイトル",
     "カテゴリ",
     "種別",
@@ -103,9 +106,21 @@ SUMMARY_COLUMNS = [
     "監査待ち",
     "最新データ",
     "データ元",
-    "アフィ設定",
+    "ASP設定",
     "次アクション",
 ]
+
+HINT_COLUMNS = ["会社", "状態", "題名", "種別", "確度", "見つけた場所", "公式URL", "根拠", "割引・コード", "期間", "観測日", "登録用の雛形"]
+HINT_KIND_LABELS = {
+    "coupon": "クーポン",
+    "sale": "セール",
+    "campaign": "キャンペーン",
+    "points": "ポイント",
+    "member_benefit": "会員特典",
+    "other": "その他",
+}
+HINT_STATUS_LABELS = {"new": "新規", "known_title": "既知（題名一致）", "known_url": "既知（URL一致）"}
+HINT_CONFIDENCE_LABELS = {"high": "高", "medium": "中", "low": "低"}
 
 LOG_COLUMNS = ["日付", "種別", "カテゴリ", "ID", "タイトル", "エリア/割引"]
 RECENT_LOG_COLUMNS = ["対象日", "日付", "会社", "種別", "カテゴリ", "ID", "タイトル", "エリア/割引"]
@@ -426,7 +441,7 @@ def format_coupon_row(
         "表示地域": first_value(coupon, ["official_area"]),
         "公式確認時刻": first_value(coupon, ["official_checked_at"]),
         "詳細URL": first_value(coupon, ["detail_url", "source_url"]),
-        "アフィリエイトURL": resolve_affiliate_url(coupon, affiliate_config or {}),
+        "ASP計測リンク": resolve_affiliate_url(coupon, affiliate_config or {}),
         "タイトル": first_value(coupon, ["title", "name"]),
         "カテゴリ": first_value(coupon, ["category", "area"]),
         "種別": kind_label(coupon),
@@ -583,6 +598,53 @@ def dashboard_manual_sources(provider: dict[str, Any]) -> list[dict[str, str]]:
     return sources
 
 
+def load_hints(provider_id: str) -> dict[str, Any]:
+    """Grok検索の最新の候補ファイル（未確認情報）を読む。"""
+    path = latest_hints_file(provider_id)
+    if not path:
+        return {}
+    try:
+        return load_json(path)
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def hint_template_json(provider: dict[str, Any], candidate: dict[str, Any]) -> str:
+    """公式ドメイン上のURLが取れた候補を official_sources へ足すための雛形。"""
+    if not candidate.get("official_domain_match") or not candidate.get("official_url"):
+        return ""
+    return json.dumps(
+        {
+            "url": candidate["official_url"],
+            "fetch_method": "auto",
+            "purpose": str(candidate.get("title") or "")[:40],
+        },
+        ensure_ascii=False,
+    )
+
+
+def format_hint_rows(provider: dict[str, Any], hints: dict[str, Any]) -> list[dict[str, str]]:
+    rows = []
+    for candidate in hints.get("candidates") or []:
+        rows.append(
+            {
+                "会社": provider["label"],
+                "状態": HINT_STATUS_LABELS.get(candidate.get("status", ""), candidate.get("status", "")),
+                "題名": str(candidate.get("title") or ""),
+                "種別": HINT_KIND_LABELS.get(candidate.get("kind", ""), candidate.get("kind", "")),
+                "確度": HINT_CONFIDENCE_LABELS.get(candidate.get("confidence", ""), candidate.get("confidence", "")),
+                "見つけた場所": str(candidate.get("found_url") or ""),
+                "公式URL": str(candidate.get("official_url") or ""),
+                "根拠": str(candidate.get("evidence") or ""),
+                "割引・コード": str(candidate.get("discount") or ""),
+                "期間": str(candidate.get("period") or ""),
+                "観測日": str(candidate.get("observed_date") or ""),
+                "登録用の雛形": hint_template_json(provider, candidate),
+            }
+        )
+    return rows
+
+
 def build_provider_payload(
     provider: dict[str, Any], pending_audit_counts: dict[str, int] | None = None
 ) -> dict[str, Any]:
@@ -598,6 +660,8 @@ def build_provider_payload(
     monitor_mode = "指定時" if on_demand else "常時"
     pending_audits = (pending_audit_counts or {}).get(provider["id"], 0)
     affiliate_status = affiliate_setup_status(provider["id"])
+    hints = load_hints(provider["id"])
+    hint_rows = format_hint_rows(provider, hints)
     active = sum(1 for row in rows if row["配布状況"] == "配布中")
     ended = sum(1 for row in rows if row["配布状況"] == "配布終了")
     review = sum(1 for row in rows if row["配布状況"] not in {"配布中", "配布終了"})
@@ -693,8 +757,14 @@ def build_provider_payload(
         "monitor_mode": monitor_mode,
         "deep_dive_at": deep_dive_at,
         "pending_audit_count": pending_audits,
-        "affiliate_status": affiliate_status,
+        "asp_setup_status": affiliate_status,
         "legacy_used": legacy_used,
+        "hints": hints,
+        "hint_rows": hint_rows,
+        "hint_new_count": sum(1 for row in hint_rows if row["状態"] == HINT_STATUS_LABELS["new"]),
+        "hint_generated_at": hints.get("generated_at", ""),
+        "hint_status": hints.get("status", ""),
+        "hint_error": hints.get("error", ""),
         "check_status": check_status,
         "visual_summary": visual_summary,
         "region_filters": region_filters,
@@ -751,7 +821,7 @@ def build_provider_payload(
             "監査待ち": str(pending_audits) if pending_audits else "0",
             "最新データ": latest_file or "なし",
             "データ元": source_label,
-            "アフィ設定": affiliate_status,
+            "ASP設定": affiliate_status,
             "次アクション": next_action(provider, rows),
         },
     }
@@ -760,6 +830,14 @@ def build_provider_payload(
 def build_dashboard_data() -> dict[str, Any]:
     pending_audit_counts = load_pending_audit_counts()
     providers = [build_provider_payload(provider, pending_audit_counts) for provider in load_registry()]
+    hint_rows = [row for provider in providers for row in provider["hint_rows"]]
+    hint_run = {}
+    run_path = HINTS_ROOT / "run-latest.json"
+    if run_path.exists():
+        try:
+            hint_run = load_json(run_path)
+        except (OSError, json.JSONDecodeError):
+            hint_run = {}
     recent_day_filters = build_recent_day_filters(latest_available_data_date(providers))
     recent_change_rows = attach_recent_logs(providers, recent_day_filters)
     return {
@@ -767,6 +845,8 @@ def build_dashboard_data() -> dict[str, Any]:
         "generated_at": datetime.now(JST).strftime("%Y-%m-%d %H:%M JST"),
         "providers": providers,
         "summary_rows": [provider["summary"] for provider in providers],
+        "hint_rows": hint_rows,
+        "hint_run": hint_run,
         "recent_change_dates": recent_day_filters,
         "recent_change_rows": recent_change_rows,
         "columns": {
@@ -774,6 +854,7 @@ def build_dashboard_data() -> dict[str, Any]:
             "coupons": COMMON_COLUMNS,
             "logs": LOG_COLUMNS,
             "recent_logs": RECENT_LOG_COLUMNS,
+            "hints": HINT_COLUMNS,
         },
     }
 
@@ -925,6 +1006,23 @@ function dayCell(value) {{
 function linkCell(value, label = '開く') {{
   if (!value) return '';
   return gridjs.html(`<a href="${{escapeHtml(value)}}" target="_blank" rel="noopener" style="color:#0f5caa;">${{escapeHtml(label)}}</a>`);
+}}
+
+function hintStatusCell(value) {{
+  if (!value) return '';
+  const cls = value === '新規' ? 'kind-campaign' : 'kind-coupon';
+  return gridjs.html(`<span class="kind-badge ${{cls}}">${{escapeHtml(value)}}</span>`);
+}}
+
+function templateCell(value) {{
+  if (!value) return '';
+  return gridjs.html(`<button type="button" class="filter-btn hint-copy-btn" data-template="${{escapeHtml(value)}}">雛形をコピー</button>`);
+}}
+
+function attachHintCopyButtons(section) {{
+  section.querySelectorAll('.hint-copy-btn').forEach(button => {{
+    button.addEventListener('click', event => copyText(button.dataset.template || '', event.currentTarget));
+  }});
 }}
 
 function kindCell(value) {{
@@ -1085,10 +1183,11 @@ function manualPanelHtml(provider) {{
       <div class="manual-title">${{provider.on_demand ? '深掘りを依頼' : '手動チェック'}}</div>
       <span class="manual-meta">監視区分: ${{escapeHtml(provider.monitor_mode || '')}} / ${{escapeHtml(provider.check_frequency_label || '')}}</span>
       ${{provider.on_demand ? `<span class="manual-meta">最終深掘り: ${{escapeHtml(formatCheckTime(provider.deep_dive_at))}}</span>` : ''}}
-      <span class="manual-meta">アフィリエイト設定: ${{escapeHtml(provider.affiliate_status || 'なし')}}</span>
+      <span class="manual-meta">ASP設定: ${{escapeHtml(provider.asp_setup_status || 'なし')}}</span>
       ${{checkStatusHtml(provider)}}
       <div class="manual-hint">会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。</div>
       ${{manualSourceQueueHtml(provider)}}
+      ${{providerHintHtml(provider)}}
     </div>
     <div class="manual-actions">
       <button type="button" class="manual-run-btn">${{provider.on_demand ? '深掘りを実行（GitHub）' : '手動チェック'}}</button>
@@ -1114,7 +1213,13 @@ function buildColumns(columns) {{
     const base = {{ name: col }};
     if (col === '対象日') {{ base.formatter = cell => dayCell(cell); base.width = '86px'; }}
     if (col === '詳細URL') {{ base.formatter = cell => linkCell(cell); base.width = '70px'; }}
-    if (col === 'アフィリエイトURL') {{ base.formatter = cell => linkCell(cell, 'アフィ'); base.width = '70px'; }}
+    if (col === 'ASP計測リンク') {{ base.formatter = cell => linkCell(cell, 'ASP'); base.width = '80px'; }}
+    if (['見つけた場所', '公式URL'].includes(col)) {{ base.formatter = cell => linkCell(cell); base.width = '90px'; }}
+    if (col === '状態') {{ base.formatter = cell => hintStatusCell(cell); base.attributes = () => ({{ style: 'min-width:120px; white-space:nowrap' }}); }}
+    if (col === '登録用の雛形') {{ base.formatter = cell => templateCell(cell); base.attributes = () => ({{ style: 'min-width:150px' }}); }}
+    if (['根拠', '題名'].includes(col)) base.attributes = () => ({{ style: 'min-width:240px' }});
+    if (['種別', '確度', '観測日', '会社'].includes(col) && DATA.columns.hints.includes(col)) base.attributes = () => ({{ style: 'white-space:nowrap; min-width:90px' }});
+    if (['割引・コード', '期間'].includes(col)) base.attributes = () => ({{ style: 'min-width:160px' }});
     if (col === '種別') {{ base.formatter = cell => kindCell(cell); base.attributes = () => ({{ style: 'min-width:120px; white-space:nowrap' }}); }}
     if (col === 'ID') base.attributes = () => ({{ style: 'min-width:150px' }});
     if (col === '公式画像') {{ base.formatter = cell => imageCell(cell); base.width = '112px'; }}
@@ -1286,6 +1391,8 @@ function renderSummary(container) {{
   const fiveDayProviders = DATA.providers.filter(provider => provider.check_frequency === 'every_5_days').length;
   const onDemandProviders = DATA.providers.filter(provider => provider.on_demand);
   const pendingAudits = DATA.providers.reduce((sum, provider) => sum + (provider.pending_audit_count || 0), 0);
+  const hintTotal = (DATA.hint_rows || []).length;
+  const hintNew = (DATA.hint_rows || []).filter(row => row['状態'] === '新規').length;
   const officialProviders = DATA.providers.filter(provider => ['official_monitor', 'official_page_candidate'].includes(provider.check_status?.check_type));
   const officialCoupons = officialProviders.reduce((sum, provider) => sum + provider.rows.length, 0);
   const snapshotProviders = DATA.providers.filter(provider => provider.check_status?.check_type === 'snapshot_url_check').length;
@@ -1304,6 +1411,7 @@ function renderSummary(container) {{
         ${{fiveDayProviders ? `<span class="stat">5日ごと ${{fiveDayProviders}} 社</span>` : ''}}
         <span class="stat">指定時だけ深掘り ${{onDemandProviders.length}} 社</span>
         <span class="stat review">Codex監査待ち ${{pendingAudits}} 件</span>
+        <span class="stat">未確認の候補 ${{hintTotal}} 件（新規 ${{hintNew}}）</span>
         <span class="stat active">公式取得クーポン ${{officialCoupons}} 件</span>
         <span class="stat review">旧URL確認 ${{snapshotProviders}} 社</span>
         <span class="stat review">${{escapeHtml(primaryChangeLabel)}} ${{todayChanges}} 件</span>
@@ -1332,6 +1440,46 @@ function renderSummary(container) {{
     limit: 50,
   }});
   renderDeepDiveSection(container, onDemandProviders);
+  renderHintSection(container);
+}}
+
+function hintRunNote() {{
+  const run = DATA.hint_run || {{}};
+  if (!run.completed_at) return 'まだGrok検索は実行されていません。';
+  return `最終実行: ${{escapeHtml(formatCheckTime(run.completed_at))}} / 対象 ${{escapeHtml(run.provider_count ?? 0)}} 社 / 失敗 ${{escapeHtml(run.error_count ?? 0)}} 社`;
+}}
+
+function renderHintSection(container) {{
+  const section = document.createElement('div');
+  section.className = 'section';
+  section.innerHTML = `
+    <h2>未確認の候補（外部情報）</h2>
+    <div class="note">Grokがweb検索（Xの投稿・公式・ニュース）で見つけた<strong>未確認の情報</strong>です。公式ページで確かめるまで記事には使いません。常時6社は毎朝、指定時の会社は月曜だけ更新します。「新規」は登録済みの公式ページにも既知のクーポン題名にも一致しなかったもの、「既知」はすでに把握済みのものです。確度は 高＝公式ページで確認、中＝複数の非公式情報、低＝X投稿1件などの単一情報。公式ドメイン上のURLが取れた候補は「雛形をコピー」で <code>official_sources</code> へ足す形をコピーできます（登録は人が行います）。<br>${{hintRunNote()}}</div>
+  `;
+  container.appendChild(section);
+  renderGrid(section, DATA.hint_rows || [], DATA.columns.hints, {{
+    limit: 50,
+    emptyText: '候補はまだありません。',
+  }});
+  attachHintCopyButtons(section);
+}}
+
+function providerHintHtml(provider) {{
+  const rows = provider.hint_rows || [];
+  if (!rows.length && !provider.hint_error) return '';
+  const items = rows.map(row => `
+    <li>
+      <span class="kind-badge ${{row['状態'] === '新規' ? 'kind-campaign' : 'kind-coupon'}}">${{escapeHtml(row['状態'])}}</span>
+      ${{escapeHtml(row['題名'])}}（${{escapeHtml(row['種別'])}} / 確度: ${{escapeHtml(row['確度'])}}）
+      ${{row['公式URL'] ? `<a href="${{escapeHtml(row['公式URL'])}}" target="_blank" rel="noopener">公式</a>` : ''}}
+      ${{row['見つけた場所'] ? `<a href="${{escapeHtml(row['見つけた場所'])}}" target="_blank" rel="noopener">出どころ</a>` : ''}}
+      <br><span class="manual-meta">根拠: ${{escapeHtml(row['根拠'] || '')}} ${{row['観測日'] ? '/ ' + escapeHtml(row['観測日']) : ''}}</span>
+    </li>`).join('');
+  const errorNote = provider.hint_error ? `<li>前回のGrok検索は失敗しました: ${{escapeHtml(provider.hint_error)}}</li>` : '';
+  return `<details class="source-queue">
+    <summary>未確認の候補（外部情報） ${{escapeHtml(rows.length)}} 件（新規 ${{escapeHtml(provider.hint_new_count || 0)}}）— ${{escapeHtml(formatCheckTime(provider.hint_generated_at))}}</summary>
+    <ul>${{items}}${{errorNote}}</ul>
+  </details>`;
 }}
 
 function renderDeepDiveSection(container, providers) {{
@@ -1341,7 +1489,7 @@ function renderDeepDiveSection(container, providers) {{
   const cards = deepReady.map(provider => `
     <div class="deep-card" data-provider="${{escapeHtml(provider.id)}}">
       <div class="deep-name">${{escapeHtml(provider.label)}}</div>
-      <div class="deep-meta">取得: ${{escapeHtml(provider.coverage_label)}}<br>最終深掘り: ${{escapeHtml(formatCheckTime(provider.deep_dive_at))}} / 監査待ち: ${{escapeHtml(provider.pending_audit_count || 0)}} 件<br>アフィリエイト: ${{escapeHtml(provider.affiliate_status || 'なし')}}</div>
+      <div class="deep-meta">取得: ${{escapeHtml(provider.coverage_label)}}<br>最終深掘り: ${{escapeHtml(formatCheckTime(provider.deep_dive_at))}} / 監査待ち: ${{escapeHtml(provider.pending_audit_count || 0)}} 件<br>ASP設定: ${{escapeHtml(provider.asp_setup_status || 'なし')}}<br>未確認の候補: ${{escapeHtml(provider.hint_rows ? provider.hint_rows.length : 0)}} 件（新規 ${{escapeHtml(provider.hint_new_count || 0)}}）</div>
       <div class="deep-actions">
         <button type="button" class="deep-run-btn">GitHubで深掘り</button>
         <button type="button" class="deep-copy-gh-btn">ghコマンド</button>

@@ -1,14 +1,37 @@
 {
   "provider_id": "activityjapan",
-  "observed_hash": "b86b79de1ae075575438333ccd998684bbed001efd3b82613a7ec7d48f2c511d",
-  "last_checked_at": "2026-09-18T13:13:49.100066+09:00",
+  "observed_hash": "7d7a9778522ae4522ca99633112c31f33f1794557f412a39557c0199b8067813",
+  "last_checked_at": "2026-09-18T14:16:22.692088+09:00",
   "sources": [
+    {
+      "url": "https://activityjapan.com/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）",
+      "source_role": "discovery_hub",
+      "include_in_audit": false,
+      "discovered_from": "",
+      "discovered_urls": [
+        "https://activityjapan.com/campaign/theme-parks_tickets/",
+        "https://activityjapan.com/campaign/autumn_campaign_2026/",
+        "https://activityjapan.com/feature/coupon-campaign/"
+      ],
+      "text_chars": 4864,
+      "content_hash": "4f40a0e0a9d8ebf8d21c4b92726849ff08fb09eb30c2953f41c16b19e6a8a771"
+    },
     {
       "url": "https://activityjapan.com/coupon/",
       "ok": true,
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
+      "purpose": "公式クーポン一覧",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
       "text_chars": 1132,
       "content_hash": "e2983926b5202f66c765d674f9f811d0c00c41827d0edf2ee4b260eb61724ece"
     },
@@ -18,12 +41,45 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
+      "purpose": "クーポン・キャンペーン特集",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
       "text_chars": 10891,
       "content_hash": "089307337c326d941f19f5c4d55347301d24fa9ca4b90ebfd9fc01c4e2b86a3f"
+    },
+    {
+      "url": "https://activityjapan.com/campaign/theme-parks_tickets/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）から発見",
+      "source_role": "representative_discovered",
+      "include_in_audit": true,
+      "discovered_from": "https://activityjapan.com/",
+      "discovered_urls": [],
+      "text_chars": 14342,
+      "content_hash": "4a546f607ef6b7a3d25b62a5cbedc087fc957e3fcee493049f36ecfc5db294d4"
+    },
+    {
+      "url": "https://activityjapan.com/campaign/autumn_campaign_2026/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）から発見",
+      "source_role": "representative_discovered",
+      "include_in_audit": true,
+      "discovered_from": "https://activityjapan.com/",
+      "discovered_urls": [],
+      "text_chars": 9030,
+      "content_hash": "5a63cca56612c82774e7c93afc8ebafcfb4f979d008264f20f451da12a2ddd96"
     }
   ],
-  "queued_hash": "b86b79de1ae075575438333ccd998684bbed001efd3b82613a7ec7d48f2c511d",
-  "queued_candidate_id": "activityjapan-b86b79de1ae07557",
-  "queued_at": "2026-09-18T13:13:49.100622+09:00",
+  "queued_hash": "7d7a9778522ae4522ca99633112c31f33f1794557f412a39557c0199b8067813",
+  "queued_candidate_id": "activityjapan-7d7a9778522ae452",
+  "queued_at": "2026-09-18T14:16:22.693141+09:00",
   "last_audit_status": "pending"
 }
