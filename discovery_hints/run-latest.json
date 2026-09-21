@@ -1,19 +1,64 @@
 {
-  "completed_at": "2026-09-18T14:26:58.805326+09:00",
+  "completed_at": "2026-09-22T07:57:10.803232+09:00",
   "scope": "auto",
-  "provider_count": 1,
-  "error_count": 0,
-  "candidate_count": 14,
-  "new_count": 7,
+  "provider_count": 6,
+  "error_count": 1,
+  "candidate_count": 123,
+  "new_count": 82,
   "results": [
     {
-      "provider_id": "relux",
-      "provider_label": "Relux",
+      "provider_id": "his",
+      "provider_label": "HIS",
+      "status": "error",
+      "error": "ValueError: grok の出力から candidates を読み取れませんでした",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/his/hints_2026-09-22.json"
+    },
+    {
+      "provider_id": "jtb",
+      "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 14,
-      "new_count": 7,
-      "hints_file": "discovery_hints/relux/hints_2026-09-18.json"
+      "candidate_count": 55,
+      "new_count": 21,
+      "hints_file": "discovery_hints/jtb/hints_2026-09-22.json"
+    },
+    {
+      "provider_id": "knt",
+      "provider_label": "近畿日本ツーリスト",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/knt/hints_2026-09-22.json"
+    },
+    {
+      "provider_id": "jalpack",
+      "provider_label": "JALパック",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 18,
+      "new_count": 13,
+      "hints_file": "discovery_hints/jalpack/hints_2026-09-22.json"
+    },
+    {
+      "provider_id": "jalan",
+      "provider_label": "じゃらん",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 29,
+      "new_count": 27,
+      "hints_file": "discovery_hints/jalan/hints_2026-09-22.json"
+    },
+    {
+      "provider_id": "rakuten_travel",
+      "provider_label": "楽天トラベル",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 21,
+      "new_count": 21,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-09-22.json"
     }
   ]
 }
