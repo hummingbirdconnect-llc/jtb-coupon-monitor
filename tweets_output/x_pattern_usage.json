@@ -5182,5 +5182,77 @@
   "pattern": "price_diff",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "jtb",
+  "title": "全国のヒルトンおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "anshin_reserve",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "【東北】この夏、おすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "honest_value",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "timing_answer",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-09-23",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "loss_aversion",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
