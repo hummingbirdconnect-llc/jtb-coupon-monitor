@@ -1,0 +1,16 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-09-23T07:16:27.555055+09:00",
+  "search_days": 14,
+  "model": "default",
+  "source": "grok_web_search",
+  "verification": "unverified",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0
+}
