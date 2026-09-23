@@ -1,37 +1,6 @@
 {
-  "last_updated": "2026-09-23T23:53:44.504254+09:00",
+  "last_updated": "2026-09-24T08:27:53.010303+09:00",
   "ids": {
-    "99511f0dbc58": {
-      "category": "海外航空券",
-      "title": "ナイトタイムクーポン！海外航空券1グループ2,000円引き",
-      "discount": "2,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
     "c436200b8e32": {
       "category": "海外旅行",
       "title": "早めの予約がお得！120日以上前までのお申し込みで最大50,000円引き",
@@ -52,37 +21,6 @@
       ],
       "region_labels": [
         "首都圏版"
-      ]
-    },
-    "184fcc10c29e": {
-      "category": "添乗員同行オランダツアー",
-      "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行オランダツアーお1人様5,000円引き",
-      "discount": "5,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
       ]
     },
     "45502a2093ea": {
