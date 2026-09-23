@@ -1,0 +1,16 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-09-24T07:17:11.278960+09:00",
+  "search_days": 14,
+  "model": "default",
+  "source": "grok_web_search",
+  "verification": "unverified",
+  "status": "error",
+  "error": "RuntimeError: grok exit=1: sed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not executed: required env var(s) not set: ${AGI_COCKPIT_AGENT_TYPE}, ${AGI_COCKPIT_STATUS_FILE}\n\u001b[2m2026-09-23T22:41:37.590884Z\u001b[0m \u001b[33m WARN\u001b[0m stop hook failed; ignoring (fail-open) \u001b[3mhook_name\u001b[0m\u001b[2m=\u001b[0mglobal/settings:stop[0].hooks[0] \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not execu",
+  "known_title_count": 11,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0
+}

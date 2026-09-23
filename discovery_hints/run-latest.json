@@ -1,64 +1,64 @@
 {
-  "completed_at": "2026-09-23T07:16:27.555055+09:00",
+  "completed_at": "2026-09-24T07:17:11.278960+09:00",
   "scope": "auto",
   "provider_count": 6,
-  "error_count": 3,
-  "candidate_count": 65,
-  "new_count": 15,
+  "error_count": 4,
+  "candidate_count": 68,
+  "new_count": 43,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 65,
-      "new_count": 15,
-      "hints_file": "discovery_hints/his/hints_2026-09-23.json"
-    },
-    {
-      "provider_id": "jtb",
-      "provider_label": "JTB",
       "status": "error",
       "error": "ValueError: grok の出力から candidates を読み取れませんでした",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jtb/hints_2026-09-23.json"
+      "hints_file": "discovery_hints/his/hints_2026-09-24.json"
+    },
+    {
+      "provider_id": "jtb",
+      "provider_label": "JTB",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 53,
+      "new_count": 41,
+      "hints_file": "discovery_hints/jtb/hints_2026-09-24.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
       "status": "ok",
       "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-09-23.json"
+      "candidate_count": 15,
+      "new_count": 2,
+      "hints_file": "discovery_hints/knt/hints_2026-09-24.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "status": "error",
-      "error": "ValueError: grok の出力から candidates を読み取れませんでした",
+      "error": "RuntimeError: grok exit=1: sed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not executed: required env var(s) not set: ${AGI_COCKPIT_AGENT_TYPE}, ${AGI_COCKPIT_STATUS_FILE}\n\u001b[2m2026-09-23T22:41:30.922564Z\u001b[0m \u001b[33m WARN\u001b[0m stop hook failed; ignoring (fail-open) \u001b[3mhook_name\u001b[0m\u001b[2m=\u001b[0mglobal/settings:stop[0].hooks[0] \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not execu",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalpack/hints_2026-09-23.json"
+      "hints_file": "discovery_hints/jalpack/hints_2026-09-24.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
-      "status": "ok",
-      "error": "",
+      "status": "error",
+      "error": "RuntimeError: grok exit=1: sed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not executed: required env var(s) not set: ${AGI_COCKPIT_AGENT_TYPE}, ${AGI_COCKPIT_STATUS_FILE}\n\u001b[2m2026-09-23T22:41:33.832434Z\u001b[0m \u001b[33m WARN\u001b[0m stop hook failed; ignoring (fail-open) \u001b[3mhook_name\u001b[0m\u001b[2m=\u001b[0mglobal/settings:stop[0].hooks[0] \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not execu",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalan/hints_2026-09-23.json"
+      "hints_file": "discovery_hints/jalan/hints_2026-09-24.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
       "status": "error",
-      "error": "ValueError: grok の出力から candidates を読み取れませんでした",
+      "error": "RuntimeError: grok exit=1: sed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not executed: required env var(s) not set: ${AGI_COCKPIT_AGENT_TYPE}, ${AGI_COCKPIT_STATUS_FILE}\n\u001b[2m2026-09-23T22:41:37.590884Z\u001b[0m \u001b[33m WARN\u001b[0m stop hook failed; ignoring (fail-open) \u001b[3mhook_name\u001b[0m\u001b[2m=\u001b[0mglobal/settings:stop[0].hooks[0] \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not execu",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-09-23.json"
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-09-24.json"
     }
   ]
 }

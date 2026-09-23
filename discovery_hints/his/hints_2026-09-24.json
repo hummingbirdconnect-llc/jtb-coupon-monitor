@@ -1,0 +1,16 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-09-24T07:17:11.278960+09:00",
+  "search_days": 14,
+  "model": "default",
+  "source": "grok_web_search",
+  "verification": "unverified",
+  "status": "error",
+  "error": "ValueError: grok の出力から candidates を読み取れませんでした",
+  "known_title_count": 44,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0
+}
