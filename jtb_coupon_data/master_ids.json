@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T08:36:33.500578+09:00",
+  "last_updated": "2026-09-25T08:56:05.650630+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -125,7 +125,7 @@
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2604jtoho2": {
       "category": "国内",
@@ -139,7 +139,7 @@
       "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606nstoh": {
       "category": "国内",
@@ -160,14 +160,14 @@
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン＜第2弾＞",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606tohoku": {
       "category": "国内",
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606iwate": {
       "category": "国内",
@@ -181,7 +181,7 @@
       "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞",
       "discount": "最大50％引",
       "area": "岩手県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609goton": {
       "category": "国内",
@@ -379,6 +379,13 @@
       "area": "福岡県・佐賀県・長崎県",
       "stock_status": "配布中"
     },
+    "2609kyushusaga": {
+      "category": "国内",
+      "title": "九州ふっこう応援割 さがキャンペーン",
+      "discount": "最大50％引",
+      "area": "佐賀県",
+      "stock_status": "配布終了"
+    },
     "2605oita": {
       "category": "国内",
       "title": "おんせん県おおいた　おすすめ施設で使える割引クーポン",
@@ -391,7 +398,7 @@
       "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
       "discount": "10,000円引",
       "area": "熊本県・宮崎県・鹿児島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606miyazaki": {
       "category": "国内",
@@ -447,7 +454,7 @@
       "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
       "discount": "最大15,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606okinawa": {
       "category": "国内",
@@ -616,13 +623,6 @@
       "discount": "最大12,000円引",
       "area": "ハワイ",
       "stock_status": "配布中"
-    },
-    "op": {
-      "category": "海外",
-      "title": "MyBus 夏休み・レイトサマー期間も対象！10％割引キャンペーン！",
-      "discount": "10％円引",
-      "area": "ハワイ",
-      "stock_status": "配布終了"
     },
     "2607ke2": {
       "category": "海外",
