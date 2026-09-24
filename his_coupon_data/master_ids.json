@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T16:28:19.648984+09:00",
+  "last_updated": "2026-09-24T23:52:03.782625+09:00",
   "ids": {
     "c436200b8e32": {
       "category": "海外旅行",
@@ -204,6 +204,68 @@
       "category": "沖縄行き航空券＋ホテル",
       "title": "【沖縄キャンペーン】1グループ5,000円引き",
       "discount": "5,000円引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
+    "06f004280d64": {
+      "category": "北海道ツアー",
+      "title": "【北海道キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
+      "discount": "最大10%引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
+    "b38d07a03d5a": {
+      "category": "北海道行き航空券＋ホテル",
+      "title": "【北海道キャンペーン】1グループ3,000円引き",
+      "discount": "3,000円引き",
       "region_codes": [
         "kanto",
         "hokkaido",
