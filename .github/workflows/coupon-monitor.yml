@@ -2,7 +2,7 @@ name: Coupon Monitor
 
 on:
   schedule:
-    - cron: '0 21 * * *'    # 毎日 6:00 JST: 常時監視の6社（HIS/JTB/KNT/JALパック/じゃらん/楽天トラベル）
+    - cron: '0 2,16 * * *'    # 毎日 11:00 / 1:00 JST: 常時監視の6社（HIS/JTB/KNT/JALパック/じゃらん/楽天トラベル）
     - cron: '5 2 * * *'     # 毎日 11:05 JST: HIS全11地域の公式画面＋証拠画像
     - cron: '5 10 * * *'    # 毎日 19:05 JST: HIS全11地域の公式画面＋証拠画像
   workflow_dispatch:
@@ -97,7 +97,7 @@ jobs:
         id: plan
         run: |
           if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
-            if [ "${{ github.event.schedule }}" = "0 21 * * *" ]; then
+            if [ "${{ github.event.schedule }}" = "0 2,16 * * *" ]; then
               echo "scope=due" >> "$GITHUB_OUTPUT"
               echo "provider_id=" >> "$GITHUB_OUTPUT"
               echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
