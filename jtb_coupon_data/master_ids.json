@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26T16:20:27.987222+09:00",
+  "last_updated": "2026-09-27T04:18:11.710352+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -13,14 +13,14 @@
       "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
       "discount": "最大3,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609akifuyu": {
       "category": "国内",
       "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
       "discount": "最大10,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609young": {
       "category": "国内",
@@ -153,21 +153,21 @@
       "title": "【6～9月宿泊】「日本の旬 東北」　南東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "宮城県・山形県・福島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2608tohoku": {
       "category": "国内",
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン＜第2弾＞",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606tohoku": {
       "category": "国内",
       "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606iwate": {
       "category": "国内",
@@ -188,7 +188,7 @@
       "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
       "discount": "最大30％引",
       "area": "新潟県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2603niigata": {
       "category": "国内",
@@ -384,7 +384,7 @@
       "title": "九州ふっこう応援割 さがキャンペーン",
       "discount": "最大50％引",
       "area": "佐賀県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2605oita": {
       "category": "国内",
@@ -461,7 +461,7 @@
       "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2603okinawa2": {
       "category": "国内",
