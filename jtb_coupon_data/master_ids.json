@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T16:52:22.064232+09:00",
+  "last_updated": "2026-09-28T17:31:30.334047+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -7,13 +7,6 @@
       "discount": "1,000円引",
       "area": "全国",
       "stock_status": "配布中"
-    },
-    "2607appcp": {
-      "category": "国内",
-      "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
-      "discount": "最大3,000円引",
-      "area": "全国",
-      "stock_status": "配布終了"
     },
     "2609akifuyu": {
       "category": "国内",
@@ -76,7 +69,7 @@
       "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606ooedo": {
       "category": "国内",
@@ -125,7 +118,7 @@
       "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2604jtoho2": {
       "category": "国内",
@@ -139,7 +132,7 @@
       "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "青森県・岩手県・宮城県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606nstoh": {
       "category": "国内",
@@ -153,7 +146,7 @@
       "title": "【6～9月宿泊】「日本の旬 東北」　南東北エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "宮城県・山形県・福島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2608tohoku": {
       "category": "国内",
@@ -265,7 +258,7 @@
       "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞",
       "discount": "最大20％引",
       "area": "静岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2608notoairport": {
       "category": "国内",
@@ -384,7 +377,7 @@
       "title": "九州ふっこう応援割 さがキャンペーン",
       "discount": "最大50％引",
       "area": "佐賀県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2605oita": {
       "category": "国内",
@@ -398,7 +391,7 @@
       "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
       "discount": "10,000円引",
       "area": "熊本県・宮崎県・鹿児島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606miyazaki": {
       "category": "国内",
@@ -419,7 +412,7 @@
       "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
       "discount": "最大60％引",
       "area": "鹿児島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609amami": {
       "category": "国内",
@@ -469,6 +462,13 @@
       "discount": "最大20,000円引",
       "area": "沖縄県",
       "stock_status": "配布中"
+    },
+    "2607appcp": {
+      "category": "国内",
+      "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
+      "discount": "最大3,000円引",
+      "area": "全国",
+      "stock_status": "配布終了"
     },
     "2607timesale": {
       "category": "国内",
