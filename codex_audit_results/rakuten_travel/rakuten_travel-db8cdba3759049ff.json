@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "candidate_id": "rakuten_travel-db8cdba3759049ff",
+  "provider_id": "rakuten_travel",
+  "page_summary": "宿別の割引額13件は表示されるが、個別の下限金額・宿泊日・人数・期間は未取得。",
+  "change_summary": "宿別掲載内容は前回から変化。全一覧網羅と個別利用条件が確認できず保留。",
+  "recommendation": "hold",
+  "priority": 80,
+  "uncertainty_reasons": [
+    "一覧はイチオシ表示に限られ、全国の全クーポンを網羅していない。",
+    "13施設の割引額は読めるが、各クーポンの下限金額・宿泊日・人数・期限を確認できない。"
+  ],
+  "audit_notes": "2026-09-29に保存済み公式本文を監査。取得後の新規情報は確認していない。",
+  "deals": []
+}

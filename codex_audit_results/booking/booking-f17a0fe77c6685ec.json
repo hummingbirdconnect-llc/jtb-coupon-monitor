@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "candidate_id": "booking-f17a0fe77c6685ec",
+  "provider_id": "booking",
+  "page_summary": "confirmedのGenius説明は無料会員制度を示す。レベル1宿泊10%・レンタカー10%、レベル2宿泊10～15%・レンタカー10～15%、レベル3宿泊10～20%・レンタカー10～15%。到達レベルの特典は永久利用と明記する。",
+  "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+  "recommendation": "hold",
+  "priority": 0,
+  "uncertainty_reasons": [
+    "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。"
+  ],
+  "audit_notes": "2026-09-29の一回監査。根拠は2026-09-18取得候補内confirmed本文のみ。基準スキルはproject内に存在せずaudit_contractとCODEX_COUPON_AUDIT.mdを優先。確認済みURLは https://www.booking.com/genius.ja.html。連続引用「Geniusレベル1 ログインすることで、全世界の 対象の宿泊施設とレンタカー で即時割引を利用できるようになります。 宿泊予約が10%OFF 対象のレンタカーが10%OFF」。レベル2は2年間5予約、レベル3は2年間15予約の利用完了。宿泊割引は税・追加料金除外、車は車料金のみ、無料朝食・客室アップグレードは対象プラン限定。ログインによる本人レベル確認が必要だが、公開本文に制度自体の条件は明記されており期間不足ではない。コード不要・自動適用と確認。3レベルを特典3件と仮認定せず、ドメイン照合未成立によりdealsを保留。 official_domains空は判定設定の問題として記録し、変更しない。baselineからWordPress下書きを作成しない。",
+  "deals": []
+}

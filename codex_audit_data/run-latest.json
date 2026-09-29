@@ -1,107 +1,297 @@
 {
-  "completed_at": "2026-08-15T08:11:00.597682+09:00",
+  "completed_at": "2026-09-29T17:55:53.695755+09:00",
   "dry_run": false,
   "selection_mode": "latest_per_provider",
-  "audit_count": 4,
+  "audit_count": 15,
   "waiting_count": 0,
   "validation_error_count": 0,
-  "wp_review_eligible_provider_ids": [
-    "kkday"
-  ],
-  "eligible_candidates": [
-    {
-      "candidate_id": "kkday-27048951e4167c75",
-      "provider_id": "kkday",
-      "provider_label": "KKday",
-      "change_kind": "update",
-      "recommendation": "draft",
-      "priority": 70,
-      "change_summary": "前回要確認だった18件が公式クーポン一覧へ再表示され、継続7件と合わせて25件を再確定する。",
-      "validation_errors": [],
-      "high_confidence": true,
-      "wp_review_eligible": true,
-      "status": "processed",
-      "semantic_changed": true,
-      "data_date": "2026-08-15",
-      "latest_file": "coupons_2026-08-15.json",
-      "coupon_count": 25,
-      "retained_missing_ids": [],
-      "wp_block_reason": ""
-    }
-  ],
+  "wp_review_eligible_provider_ids": [],
+  "eligible_candidates": [],
   "audits": [
     {
-      "candidate_id": "jalan-fa7becb46857b645",
-      "provider_id": "jalan",
-      "provider_label": "じゃらん",
-      "change_kind": "update",
-      "recommendation": "ignore",
-      "priority": 0,
-      "change_summary": "代表クーポン6件の名称・金額・期間・条件に意味のある変更はなく、ページ内表示の更新だけだった。",
+      "candidate_id": "activityjapan-7d7a9778522ae452",
+      "provider_id": "activityjapan",
+      "provider_label": "アクティビティジャパン",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "初回候補（baseline）。前回クーポンは空で、追加・変更・終了の差分は確定しない。",
       "validation_errors": [],
       "high_confidence": false,
       "wp_review_eligible": false,
-      "status": "processed",
-      "semantic_changed": false,
-      "coupon_count": 6,
-      "ignored_non_deal_change": true
+      "status": "held",
+      "hold_reasons": [
+        "秋季1,200円クーポンは主表示A2U6、利用条件A26Uと矛盾しコードを確定できない。",
+        "LINE特典の有効期間不明。先トク・LINEの9月29日時点の配布継続は未確認。",
+        "商品別の割引表示に期間・対象詳細がなく、all_confirmed_dealsの全件確定はできない。"
+      ]
     },
     {
-      "candidate_id": "kkday-27048951e4167c75",
+      "candidate_id": "asoview-060a2c4c2e9a0df0",
+      "provider_id": "asoview",
+      "provider_label": "アソビュー",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 0,
+      "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+        "有効期限は9/23、9/27、9/30等の月日表記のみ。年を取得日時から補えないため、2026-09-29時点の終了・継続を確定できない。",
+        "クーポン取得はログイン必須。対象施設限定・対象プラン限定等の具体的対象と利用条件の全文がない。"
+      ]
+    },
+    {
+      "candidate_id": "booking-f17a0fe77c6685ec",
+      "provider_id": "booking",
+      "provider_label": "Booking.com",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 0,
+      "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。"
+      ]
+    },
+    {
+      "candidate_id": "club_tourism-336f971184b766a7",
+      "provider_id": "club_tourism",
+      "provider_label": "クラブツーリズム",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "初回候補（baseline）。前回クーポンは空で、追加・変更・終了の差分は確定しない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "年額新規入会キャンペーンの申込開始・終了期間が本文にない。旅行の出発期限は2028年3月31日。",
+        "更新時6,000円特典の有効期間・利用条件、会員割引の個別対象コース・期間は候補内で確定できない。",
+        "全会員特典・対象コースをall_confirmed_dealsとして網羅する根拠が不足。"
+      ]
+    },
+    {
+      "candidate_id": "jalan-6ac9f90b5486edca",
+      "provider_id": "jalan",
+      "provider_label": "じゃらん",
+      "change_kind": "update",
+      "recommendation": "draft",
+      "priority": 100,
+      "change_summary": "大江戸温泉物語の終了を明示。その他の代表ページは金額・利用条件不足で確定しない。",
+      "validation_errors": [],
+      "high_confidence": true,
+      "wp_review_eligible": false,
+      "status": "processed",
+      "semantic_changed": true,
+      "data_date": "2026-09-29",
+      "latest_file": "coupons_2026-09-29.json",
+      "coupon_count": 6,
+      "retained_missing_ids": [
+        "jalan-195115a346ed1ed5",
+        "jalan-d464dfcb6dae0082",
+        "jalan-afabbdfe0c904647",
+        "jalan-4cdad71d00e76f94",
+        "jalan-d2f2b202481a9708"
+      ],
+      "wp_block_reason": "前回データから消えた項目を要確認で保持"
+    },
+    {
+      "candidate_id": "jr_tokai_tours-9a5af3ba285f834e",
+      "provider_id": "jr_tokai_tours",
+      "provider_label": "JR東海ツアーズ",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "初回候補（baseline）。前回クーポンは空で、追加・変更・終了の差分は確定しない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "9月29日期限の先着8件は9月18日取得資料。現時点の残枚数・配布可否は未確認。",
+        "清水エスパルスの利用回数別特典は金額・条件の全体が本文にない。ずらし旅利用券・早期/直前割の個別対象・全条件も確定できない。",
+        "all_confirmed_dealsの全件確定不可。条件が明示されたクーポンは部分記録し、候補全体はhold。",
+        "サポーター割初回特典は追加注意事項をLINEバナー参照としており、候補内で全条件未確認。"
+      ]
+    },
+    {
+      "candidate_id": "kkday-8c7e9e589334724c",
       "provider_id": "kkday",
       "provider_label": "KKday",
       "change_kind": "update",
-      "recommendation": "draft",
-      "priority": 70,
-      "change_summary": "前回要確認だった18件が公式クーポン一覧へ再表示され、継続7件と合わせて25件を再確定する。",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "LINE500円から9月限定600円へ。国内300円は旧KKJPALL300から今回3JXARXW表示に差分。APP500の新規表示。韓国本文は夏から秋限定へ、旧コードKTOSUMMER85は消失。多数の旧コードは未掲載だが終了とは扱わない。",
       "validation_errors": [],
-      "high_confidence": true,
-      "wp_review_eligible": true,
-      "status": "processed",
-      "semantic_changed": true,
-      "data_date": "2026-08-15",
-      "latest_file": "coupons_2026-08-15.json",
-      "coupon_count": 25,
-      "retained_missing_ids": [],
-      "wp_block_reason": ""
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "all_confirmed_deals範囲。多数の商品セールは対象プラン・期間・在庫等の条件不足で一覧全件確定不可。",
+        "クーポン毎の最低利用金額・対象商品・APP限定等をマイページ詳細へ案内し、保存本文だけでは条件が不足。",
+        "9月18日保存結果のため9月29日時点の配布在庫・変更は未確認。",
+        "26FW500は利用期限が年なし8月31日で配布中表示が残る。韓国見出しは真夏、本文は秋。現行期間・コードを推測しない。"
+      ]
     },
     {
-      "candidate_id": "klook-06bdb0edf0ba479d",
+      "candidate_id": "klook-a4bc1cfacf327f51",
       "provider_id": "klook",
       "provider_label": "Klook",
       "change_kind": "update",
       "recommendation": "draft",
-      "priority": 70,
-      "change_summary": "表示対象が香港3件から台湾3件へ戻り、eSIMの地域欄変更と、要確認だった台湾高速鉄道・北北基おもしろカードの再表示を確認した。",
+      "priority": 80,
+      "change_summary": "香港クーポン3件を採用。前回本文から消えた台湾の項目は終了と断定せず要確認で保持。",
       "validation_errors": [],
       "high_confidence": true,
       "wp_review_eligible": false,
       "status": "processed",
       "semantic_changed": true,
-      "data_date": "2026-08-15",
-      "latest_file": "coupons_2026-08-15.json",
-      "coupon_count": 5,
+      "data_date": "2026-09-29",
+      "latest_file": "coupons_2026-09-29.json",
+      "coupon_count": 7,
       "retained_missing_ids": [
-        "klook-9d3df0dc21abe843",
+        "klook-7d92655c1665ec11",
+        "klook-bd9ab92f9762205c",
+        "klook-d7920283892bee37",
         "klook-3cdecc9353802356"
       ],
       "wp_block_reason": "前回データから消えた項目を要確認で保持"
     },
     {
-      "candidate_id": "tripcom-270978c39d946935",
-      "provider_id": "tripcom",
-      "provider_label": "Trip.com",
+      "candidate_id": "rakuten_travel-db8cdba3759049ff",
+      "provider_id": "rakuten_travel",
+      "provider_label": "楽天トラベル",
       "change_kind": "update",
-      "recommendation": "ignore",
-      "priority": 0,
-      "change_summary": "登録済み3件の名称と最大割引率に意味のある変更はなく、掲載枠と埋め込み情報の変動だけだった。",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "宿別掲載内容は前回から変化。全一覧網羅と個別利用条件が確認できず保留。",
       "validation_errors": [],
       "high_confidence": false,
       "wp_review_eligible": false,
-      "status": "processed",
-      "semantic_changed": false,
-      "coupon_count": 3,
-      "ignored_non_deal_change": true
+      "status": "held",
+      "hold_reasons": [
+        "一覧はイチオシ表示に限られ、全国の全クーポンを網羅していない。",
+        "13施設の割引額は読めるが、各クーポンの下限金額・宿泊日・人数・期限を確認できない。"
+      ]
+    },
+    {
+      "candidate_id": "relux-d02924b6fe1940ed",
+      "provider_id": "relux",
+      "provider_label": "Relux",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "初回候補（baseline）。前回クーポンは空で、追加・変更・終了の差分は確定しない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "タイムセール一覧には割引率・予約/宿泊期間・個別対象条件の本文がない。会員限定割引プランはログイン要。",
+        "朝食・子連れ特集の取得本文に反復と途中切れがあり、掲載101/114施設を候補だけで網羅できない。",
+        "特集の予約/チェックアウト期限は月日だけで年の明示がなく、個別割引・ポイント特典の期間条件が不足。",
+        "all_confirmed_dealsの全件確定不可。クーポン0件と結論せず未確定としてhold。"
+      ]
+    },
+    {
+      "candidate_id": "skypack_tours-903381b0c7640f25",
+      "provider_id": "skypack_tours",
+      "provider_label": "スカイパックツアーズ",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 0,
+      "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+        "本文のCompany NameはSkypack Packaging Co., Ltd.。監視対象の旅行会社スカイパックツアーズとの同一性を確認できない。",
+        "包装会社の取得ページだけでは監視対象旅行会社のクーポン有無を判断できない。"
+      ]
+    },
+    {
+      "candidate_id": "tobu_top_tours-2d48254494b19f51",
+      "provider_id": "tobu_top_tours",
+      "provider_label": "東武トップツアーズ",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 0,
+      "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+        "クーポン金額は取得本文に見当たらず、個別利用条件はログイン後のマイページ参照が必要。配布上限到達で表示されない。",
+        "特集一覧のにいがたGoToトラベルは割引率・上限・居住条件のみで予約期間・宿泊期間が取得本文にない。"
+      ]
+    },
+    {
+      "candidate_id": "toku-cf1d9120e18b0993",
+      "provider_id": "toku",
+      "provider_label": "トクー",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 0,
+      "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+        "初年度半額290円/月の登録特典は対象者・申込期間・翌年度料金等の詳細が取得本文にない。",
+        "スペシャルプランは期間限定とするが、予約・宿泊期間の具体的日付がない。対象宿ごとに除外日・在庫・会員条件が異なる。",
+        "八幡平の表示は7月お日にち限定特価だが年・対象日の記載がなく、9/29の利用可否を確定できない。他の価格はログイン必須。"
+      ]
+    },
+    {
+      "candidate_id": "tripcom-5b6aa3dc15925fe0",
+      "provider_id": "tripcom",
+      "provider_label": "Trip.com",
+      "change_kind": "update",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "もっと！国内旅！の対象表示が前回「秋の東北」から「名古屋＆中部」へ変更。韓国航空券最大12,000円OFF、イオン手数料無料等の新情報あり。旧ホテル2種は割引表現が一致するが全件の条件確定には不足。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "all_confirmed_dealsの一覧には個別詳細本文がなく、対象者・対象施設/路線・期間・最低金額等を全件確定できない。",
+        "startTime/endTimeは広告データの表示時刻で、予約対象期間・旅行対象期間と断定する本文がない。",
+        "同名スーパー・ワールド・ウィーク2カードのリンク先は別々で、候補sourcesのconfirmed URLに含まれない。",
+        "9月18日の保存結果であり、9月29日時点の販売継続・在庫・更新は未確認。"
+      ]
+    },
+    {
+      "candidate_id": "yomiuri_travel-120be6ff4738d518",
+      "provider_id": "yomiuri_travel",
+      "provider_label": "読売旅行",
+      "change_kind": "baseline",
+      "recommendation": "hold",
+      "priority": 0,
+      "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+      "validation_errors": [],
+      "high_confidence": false,
+      "wp_review_eligible": false,
+      "status": "held",
+      "hold_reasons": [
+        "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+        "九州ふっこう応援割とウィンターセールはトップの名称・入口だけ。割引額、コード、予約・旅行期間、対象者の根拠がない。",
+        "取得済みトップに具体的クーポンがないことから、会社全体のクーポン不存在や0件とは判断できない。"
+      ]
     }
   ],
   "waiting_candidates": []

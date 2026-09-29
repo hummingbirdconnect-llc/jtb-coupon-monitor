@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "candidate_id": "skypack_tours-903381b0c7640f25",
+  "provider_id": "skypack_tours",
+  "page_summary": "confirmedの取得本文はSKYPACK Packaging Co., Ltdの宝飾箱・包装製品製造案内。旅行、ツアー、クーポンの根拠はない。",
+  "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+  "recommendation": "hold",
+  "priority": 0,
+  "uncertainty_reasons": [
+    "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+    "本文のCompany NameはSkypack Packaging Co., Ltd.。監視対象の旅行会社スカイパックツアーズとの同一性を確認できない。",
+    "包装会社の取得ページだけでは監視対象旅行会社のクーポン有無を判断できない。"
+  ],
+  "audit_notes": "2026-09-29の一回監査。根拠は2026-09-18取得候補内confirmed本文のみ。基準スキルはproject内に存在せずaudit_contractとCODEX_COUPON_AUDIT.mdを優先。候補URL https://www.skypack.jp/ はconfirmedだが、連続引用「Company Name Skypack Packaging Co., Ltd. Established August,1988」。包装会社についての本文なので、旅行会社クーポン0件とは認定しない。登録URLまたは事業者対応付けの不一致の可能性を記録し、設定変更は行わない。 official_domains空は判定設定の問題として記録し、変更しない。baselineからWordPress下書きを作成しない。",
+  "deals": []
+}

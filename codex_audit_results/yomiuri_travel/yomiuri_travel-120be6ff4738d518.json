@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "candidate_id": "yomiuri_travel-120be6ff4738d518",
+  "provider_id": "yomiuri_travel",
+  "page_summary": "confirmedのトップ本文に九州ふっこう応援割について（2026.09.08）とウィンターセールの名称、クーポン利用方法のFAQ入口がある。個別割引額・コード・販売条件の本文はない。",
+  "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+  "recommendation": "hold",
+  "priority": 0,
+  "uncertainty_reasons": [
+    "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+    "九州ふっこう応援割とウィンターセールはトップの名称・入口だけ。割引額、コード、予約・旅行期間、対象者の根拠がない。",
+    "取得済みトップに具体的クーポンがないことから、会社全体のクーポン不存在や0件とは判断できない。"
+  ],
+  "audit_notes": "2026-09-29の一回監査。根拠は2026-09-18取得候補内confirmed本文のみ。基準スキルはproject内に存在せずaudit_contractとCODEX_COUPON_AUDIT.mdを優先。確認済みURL https://www.yomiuri-ryokou.co.jp/ の本文を全文読了。連続引用「国内旅行 2026.09.08 九州ふっこう応援割について ニュースリリース」。2026.09.08は告知日であり予約開始日へ転用しない。「ウィンターセール」および「クーポンのご利用方法とご利用にあたっての注意事項」は導線名称に留まるためdealsへ認定しない。 official_domains空は判定設定の問題として記録し、変更しない。baselineからWordPress下書きを作成しない。",
+  "deals": []
+}

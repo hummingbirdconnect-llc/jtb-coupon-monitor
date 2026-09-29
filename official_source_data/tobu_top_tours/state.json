@@ -25,5 +25,7 @@
   "queued_hash": "2d48254494b19f514d31d651dfe26cd767719406d3dacba42b999e8fc307a374",
   "queued_candidate_id": "tobu_top_tours-2d48254494b19f51",
   "queued_at": "2026-09-18T13:14:04.120448+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.694110+09:00",
+  "last_audit_candidate_id": "tobu_top_tours-2d48254494b19f51"
 }

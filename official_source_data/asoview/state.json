@@ -16,5 +16,7 @@
   "queued_hash": "060a2c4c2e9a0df085bb3a57b2576f127353f97e05902a0894e41b513644a2df",
   "queued_candidate_id": "asoview-060a2c4c2e9a0df0",
   "queued_at": "2026-09-18T13:13:48.306293+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.685604+09:00",
+  "last_audit_candidate_id": "asoview-060a2c4c2e9a0df0"
 }

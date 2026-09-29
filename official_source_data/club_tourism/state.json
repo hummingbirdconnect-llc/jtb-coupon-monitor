@@ -37,5 +37,7 @@
   "queued_hash": "336f971184b766a729b9d5addd84c8e0e0901431e831570f7a06a55d176846ac",
   "queued_candidate_id": "club_tourism-336f971184b766a7",
   "queued_at": "2026-09-18T14:16:36.454894+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.686556+09:00",
+  "last_audit_candidate_id": "club_tourism-336f971184b766a7"
 }

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-a4bc1cfacf327f51",
+  "provider_id": "klook",
+  "page_summary": "香港表示のクーポンコード3件を確認。",
+  "change_summary": "香港クーポン3件を採用。前回本文から消えた台湾の項目は終了と断定せず要確認で保持。",
+  "recommendation": "draft",
+  "priority": 80,
+  "uncertainty_reasons": [],
+  "audit_notes": "2026-09-29に保存済み公式本文を監査。取得後の新規情報は確認していない。香港の表示範囲で3コードを確認。全世界総数ではない。商品価格や対象オプションのセール表示はクーポンコード件数へ混ぜない。48時間の起算日時と絶対期限は本文に記載なく補わない。",
+  "deals": [
+    {
+      "title": "香港ディズニーランド・パークチケット 30香港ドルオフ",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "30香港ドルオフ",
+      "coupon_code": "HKDL30MERCH",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "香港ディズニーランド・パークチケット。最低利用額なし。アプリのみ。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "香港ディズニーランド・パークチケット 30香港ドルオフ クーポンコード: HKDL30MERCH JPY 596 オフ 最低利用額なし 発行 アプリのみ",
+      "confidence": "high"
+    },
+    {
+      "title": "新規ホテルユーザー限定 | 48時間限定20%オフ",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "20%OFF",
+      "coupon_code": "NEWHOTELUSER",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "新規ホテルユーザー限定、48時間限定。最低利用額なし。アプリのみ。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "新規ホテルユーザー限定 | 48時間限定20%オフ クーポンコード: NEWHOTELUSER 20%OFF 最低利用額なし 発行 アプリのみ",
+      "confidence": "high"
+    },
+    {
+      "title": "海外現地ツアー 6%OFF",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "6%OFF",
+      "coupon_code": "KLKTJSMR26TRAO1",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "海外現地ツアー。最低利用額なし。",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "海外現地ツアー クーポンコード: KLKTJSMR26TRAO1 6%OFF 最低利用額なし 発行 すべて表示",
+      "confidence": "high"
+    }
+  ]
+}

@@ -156,5 +156,7 @@
   "queued_hash": "9a5af3ba285f834e7e4c1e96379397bc156d6a88c7bc81cbec11af71dede03b1",
   "queued_candidate_id": "jr_tokai_tours-9a5af3ba285f834e",
   "queued_at": "2026-09-18T14:16:40.114113+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.689262+09:00",
+  "last_audit_candidate_id": "jr_tokai_tours-9a5af3ba285f834e"
 }

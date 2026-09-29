@@ -16,5 +16,7 @@
   "queued_hash": "903381b0c7640f25ef0517fdd110d37e3bcec85970c86f7d47732b7755b16702",
   "queued_candidate_id": "skypack_tours-903381b0c7640f25",
   "queued_at": "2026-09-18T13:14:02.536962+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.693718+09:00",
+  "last_audit_candidate_id": "skypack_tours-903381b0c7640f25"
 }

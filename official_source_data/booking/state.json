@@ -25,5 +25,7 @@
   "queued_hash": "f17a0fe77c6685ec74e2696387af2be874e8f7d39a8fc93ae6ad7a671d430b4e",
   "queued_candidate_id": "booking-f17a0fe77c6685ec",
   "queued_at": "2026-09-18T13:14:16.123558+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.685997+09:00",
+  "last_audit_candidate_id": "booking-f17a0fe77c6685ec"
 }

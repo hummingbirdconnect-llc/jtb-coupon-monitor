@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "candidate_id": "toku-cf1d9120e18b0993",
+  "provider_id": "toku",
+  "page_summary": "confirmedのトップは初年度半額290円/月の会員登録表示。スペシャルプラン一覧は対象プラン20%以上、最初の八幡平マウンテンホテルプラン39%OFFと示す。他7宿はログイン・登録後の価格表示。",
+  "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+  "recommendation": "hold",
+  "priority": 0,
+  "uncertainty_reasons": [
+    "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+    "初年度半額290円/月の登録特典は対象者・申込期間・翌年度料金等の詳細が取得本文にない。",
+    "スペシャルプランは期間限定とするが、予約・宿泊期間の具体的日付がない。対象宿ごとに除外日・在庫・会員条件が異なる。",
+    "八幡平の表示は7月お日にち限定特価だが年・対象日の記載がなく、9/29の利用可否を確定できない。他の価格はログイン必須。"
+  ],
+  "audit_notes": "2026-09-29の一回監査。根拠は2026-09-18取得候補内confirmed本文のみ。基準スキルはproject内に存在せずaudit_contractとCODEX_COUPON_AUDIT.mdを優先。確認済みトップと https://osusumeyado.tocoo.jp/specialsale/ の2本文を全文読了。連続引用「対象プランなら割引率20％以上！いつもよりお得に予約できる」。続いて「除外日や在庫切れなど、料金が適用されない場合があります。あらかじめご了承ください。」と明記。八幡平は39% OFF、2食付、32,200円～→19,800円～の表示だが人数・税・日付を補完しない。一覧8宿をサービス全体の件数と認定しない。構造化データのdateModified 2023-11-10を販売期限や現行条件の根拠にしない。 official_domains空は判定設定の問題として記録し、変更しない。baselineからWordPress下書きを作成しない。",
+  "deals": []
+}

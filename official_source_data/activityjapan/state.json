@@ -81,5 +81,7 @@
   "queued_hash": "7d7a9778522ae4522ca99633112c31f33f1794557f412a39557c0199b8067813",
   "queued_candidate_id": "activityjapan-7d7a9778522ae452",
   "queued_at": "2026-09-18T14:16:22.693141+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.684936+09:00",
+  "last_audit_candidate_id": "activityjapan-7d7a9778522ae452"
 }

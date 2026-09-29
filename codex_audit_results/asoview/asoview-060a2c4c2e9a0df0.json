@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "candidate_id": "asoview-060a2c4c2e9a0df0",
+  "provider_id": "asoview",
+  "page_summary": "confirmedのクーポン一覧には28件の獲得ボタンと割引表示がある。獲得にはログインが必要。30%OFF、100円OFFから1,000円OFF等を表示するが、有効期限は月日だけで年が記載されていない。",
+  "change_summary": "初回取得のbaseline。previous_couponsは空で前回との差分を確定できない。",
+  "recommendation": "hold",
+  "priority": 0,
+  "uncertainty_reasons": [
+    "official_domainsが空で、confirmed URLの公式ドメイン照合が成立しない。",
+    "有効期限は9/23、9/27、9/30等の月日表記のみ。年を取得日時から補えないため、2026-09-29時点の終了・継続を確定できない。",
+    "クーポン取得はログイン必須。対象施設限定・対象プラン限定等の具体的対象と利用条件の全文がない。"
+  ],
+  "audit_notes": "2026-09-29の一回監査。根拠は2026-09-18取得候補内confirmed本文のみ。基準スキルはproject内に存在せずaudit_contractとCODEX_COUPON_AUDIT.mdを優先。確認済みURLは https://www.asoview.com/coupon/。連続引用「クーポンを獲得するには ログイン が必要です。」。一覧は28件であり、サービス全体の総数を示さない。GALA、ジョイポリス、西武園、リトルユニバース、万葉の湯、ムーミンバレー2種、遊びつくし2種、ネオパーク、千葉応援割4月分、江の島、厚木、山梨、土肥、NARA2種、温浴5種、フルーツランド、新江ノ島、ニンジャの表示を読んだ。年・対象条件を補完せず全件認定保留。 official_domains空は判定設定の問題として記録し、変更しない。baselineからWordPress下書きを作成しない。",
+  "deals": []
+}

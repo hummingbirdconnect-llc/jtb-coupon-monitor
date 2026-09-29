@@ -16,5 +16,7 @@
   "queued_hash": "120be6ff4738d518879664ab9c01a3ba03268d6f14db2cd395199ce6af63243e",
   "queued_candidate_id": "yomiuri_travel-120be6ff4738d518",
   "queued_at": "2026-09-18T13:14:08.195947+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.695681+09:00",
+  "last_audit_candidate_id": "yomiuri_travel-120be6ff4738d518"
 }

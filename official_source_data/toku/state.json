@@ -35,5 +35,7 @@
   "queued_hash": "cf1d9120e18b0993c2669f0eff115d0f977bea397f2d3ff52da4244295f6d273",
   "queued_candidate_id": "toku-cf1d9120e18b0993",
   "queued_at": "2026-09-18T13:14:10.019133+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-09-29T17:55:53.694613+09:00",
+  "last_audit_candidate_id": "toku-cf1d9120e18b0993"
 }
