@@ -253,7 +253,7 @@
     "booking_period": "2026/7/31(金) ～ 2026/12/23(水)",
     "stay_period": "2026/9/23(水) ～ 2026/12/23(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607tokyu/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -506,7 +506,7 @@
     "booking_period": "2026/4/7(火) ～ 2026/9/30(水)",
     "stay_period": "2026/7/13(月) ～ 2026/9/30(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604nstoh/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -1285,7 +1285,7 @@
     "discount": "最大16,000円引",
     "area": "香川県",
     "type": "ツアー",
-    "booking_period": "2026/2/20(金) ～ 2026/9/30(水)",
+    "booking_period": "2026/2/20(金) ～ 2026/10/30(金)",
     "stay_period": "2026/4/1(水) ～ 2026/10/31(土)",
     "store_available": false,
     "stock_status": "配布中",
@@ -1528,6 +1528,31 @@
     }
   },
   {
+    "id": "2610nagasakimarriott",
+    "category": "国内",
+    "title": "長崎マリオットホテルのスイートルームで使える割引クーポン",
+    "discount": "20,000円引",
+    "area": "長崎県",
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/9/29(火) ～ 2027/3/31(水)",
+    "stay_period": "2026/10/1(木) ～ 2027/3/31(水)",
+    "store_available": true,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610nagasakimarriott/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "nagam"
+      ],
+      "passwords": [
+        "h086"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 150枚 下限代金なし 20,000 円引 クーポンコード nagam パスワード h086"
+      ]
+    }
+  },
+  {
     "id": "2605oita",
     "category": "国内",
     "title": "おんせん県おおいた　おすすめ施設で使える割引クーポン",
@@ -1648,7 +1673,7 @@
     "booking_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "stay_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kagoshima/page.asp",
     "detail_data": {
       "coupon_codes": [
