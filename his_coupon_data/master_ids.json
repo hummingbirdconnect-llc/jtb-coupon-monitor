@@ -1,10 +1,41 @@
 {
-  "last_updated": "2026-10-01T05:40:09.303925+09:00",
+  "last_updated": "2026-10-01T12:35:43.178681+09:00",
   "ids": {
     "a25fc39a3ef1": {
       "category": "海外航空券・AirZ(海外航空券+ホテル)",
       "title": "オンライン予約限定！海外航空券・AirZ(海外航空券+ホテル)1グループ2,000円引き",
       "discount": "2,000円引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
+    "7e09d3c11222": {
+      "category": "海外ツアー・海外添乗員同行ツアー",
+      "title": "先着100枚限定！TABIOOPS! START記念1グループ最大20,000円引き",
+      "discount": "最大20,000円引き",
       "region_codes": [
         "kanto",
         "hokkaido",
@@ -67,6 +98,17 @@
       "category": "国内ツアー",
       "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
       "discount": "最大5,000円引き",
+      "region_codes": [
+        "kanto"
+      ],
+      "region_labels": [
+        "首都圏版"
+      ]
+    },
+    "73b9e6727c2b": {
+      "category": "国内ツアー",
+      "title": "年末年始出発がお得！1名様につき3,000円引き",
+      "discount": "3,000円引き",
       "region_codes": [
         "kanto"
       ],
