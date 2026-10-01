@@ -6548,5 +6548,95 @@
       "九州版",
       "沖縄版"
     ]
+  },
+  {
+    "date": "2026-10-01",
+    "type": "🆕 新規",
+    "id": "8022eb20d28d-ad8f6e",
+    "category": "海外添乗員同行ツアー",
+    "title": "岩手・秋田県在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "type": "🆕 新規",
+    "id": "a358f728ffe4-a385ac",
+    "category": "【花巻発着】海外旅行",
+    "title": "パスポート取得（更新）の方はお１人様あたり5,000円支援",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "type": "❌ 消失",
+    "id": "8022eb20d28d-74b585",
+    "category": "海外添乗員同行ツアー",
+    "title": "岩手・秋田県在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "type": "❌ 消失",
+    "id": "a358f728ffe4-46d741",
+    "category": "【花巻発着】海外旅行",
+    "title": "パスポート取得（更新）の方はお１人様あたり5,000円支援",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "type": "❌ 消失",
+    "id": "b152c158665f-0b8e19",
+    "category": "【新潟発着】台湾旅行",
+    "title": "≪先着150名様限定≫7月～9月出発の新潟空港⇔台北線を往復利用される方に「PayPayポイント」5,000円分をプレゼント！",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
   }
 ]
