@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-02T08:16:52+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "楽天トラベル オータムSALE",
+      "kind": "coupon",
+      "found_url": "https://x.com/kikyou8225/status/2105795062072529395",
+      "official_url": "https://event.travel.rakuten.co.jp/special/sales/",
+      "evidence": "公式：国内ホテルの割引は、クーポン併用(最大10%＋20％)の組み合わせ ／ 公式：レンタカーの割引は、クーポン併用（最大15%＋最大30%）の組み合わせ ／ 公式：エントリー・予約対象期間：2026年8月31日(月) 10:00 ～ 2026年11月30日(月) 09:59 ／ 公式：旅行対象期間：2026年8月31日(月) ～ 2026年11月30日(月) ／ 公式：クーポン対象商品であっても、最低利用金額等の条件によりご利用いただけない場合がある ／ 未確認：個別クーポンの獲得期限（X投稿の10/20 9:59）は公式で未確認 ／ 未確認：最低利用額の具体額は未確認 ／ 未確認：決済方法の条件は未確認",
+      "observed_date": "2026-10-02",
+      "discount": "国内ホテルはクーポン併用で最大10%＋20%の組み合わせ（レンタカーは最大15%＋最大30%）",
+      "period": "予約：エントリー・予約対象期間：2026年8月31日10:00〜2026年11月30日9:59（個別クーポンの獲得期限は未確認。Grok: X投稿で10月20日9:59まで） ／ 旅行：旅行対象期間：2026年8月31日〜2026年11月30日（個別クーポンの宿泊対象期間は未確認）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "宿泊料金割引クーポン「RaCoupon（ラ・クーポン）」",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/",
+      "evidence": "公式：各クーポンは1会員あたり1回のみ獲得いただけます ／ 公式：毎月5と0のつく日はホテル・宿が最大20％OFF ／ 公式：ページ上のクーポン見出しに最大30％OFF・最大10％OFF・最大5,000円OFF・最大4,500円OFF ／ 未確認：個別クーポンの予約期間・宿泊期間・最低利用額は未確認 ／ 未確認：Grokが挙げた施設別の金額例は公式ページの抜き出しで確認できず ／ 未確認：決済方法の条件は未確認",
+      "observed_date": "2026-10-02",
+      "discount": "クーポンごとに異なる（ページ上に最大30%OFF・最大10%OFF・最大5,000円OFF・最大4,500円OFF。毎月5と0のつく日は最大20%OFF）。Grok: 施設別の例 有馬御苑8,000円引き・雲仙みかどホテル7,000円引き（未確認）",
+      "period": "予約：未確認（クーポンごとに異なる） ／ 旅行：未確認（クーポンごとに異なる）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
