@@ -1,0 +1,52 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-03T08:18:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "熊本・鹿児島観光応援クーポン（5%OFF）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/special/kumamoto-offers/",
+      "evidence": "公式：予約対象期間 2026/8/28 10:00～2026/10/31 23:59 ／ 公式：宿泊対象期間 2026/8/28チェックイン～2026/10/31チェックアウト ／ 公式：ご宿泊料金(税込)の5%OFF、割引上限 1予約番号につき2,000円 ／ 公式：金額条件 なし ／ 公式：1室大人2名様以上、先着13,500枚、1会員1枚、併用可 ／ 公式：対象除外日 2026/9/19～9/22、2026/10/10～10/11 ／ 未確認：決済方法の限定の有無（条件表に記載なし） ／ 未確認：現在の残り枚数",
+      "observed_date": "2026-10-03",
+      "discount": "宿泊料金（税込）の5%OFF、1予約2,000円まで",
+      "period": "予約：2026/8/28 10:00～2026/10/31 23:59 ／ 旅行：2026/8/28チェックイン～2026/10/31チェックアウト（除外日 9/19～9/22、10/10～10/11）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "能登応援クーポン（5%OFF）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/special/noto-offers/",
+      "evidence": "公式：予約対象期間 2026/10/1 10:00～2027/1/1 9:59 ／ 公式：宿泊対象期間 2026/10/1チェックイン～2027/9/30チェックアウト ／ 公式：ご宿泊料金(税込)の5%OFF ／ 公式：金額条件 なし ／ 公式：利用条件 オンラインカード決済限定 ／ 公式：1室大人2名様以上、先着2,500枚、1会員1枚、併用可 ／ 公式：適用除外日 2026/12/25～2027/01/02、2027/04/29～2027/05/04 ／ 未確認：割引上限金額（条件表に行が見当たらない） ／ 未確認：現在の残り枚数",
+      "observed_date": "2026-10-03",
+      "discount": "宿泊料金（税込）の5%OFF（割引上限の記載は見当たらず）",
+      "period": "予約：2026/10/1 10:00～2027/1/1 9:59 ／ 旅行：2026/10/1チェックイン～2027/9/30チェックアウト（除外日 2026/12/25～2027/1/2、2027/4/29～5/4）",
+      "confidence": "high",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "鹿児島県のご宿泊に利用できるクーポン（最大60%OFF）",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2106153988244852838",
+      "official_url": "https://travel.rakuten.co.jp/special/prj/202003/area/kagoshima/kagoshima.html",
+      "evidence": "公式：予約対象期間 2026/9/24 10:00～2026/10/13 23:59 ／ 公式：宿泊対象期間 2026/9/24チェックイン～2026/10/14チェックアウト ／ 公式：ご宿泊料金（税込）の最大60%、割引上限 1人1泊あたり20,000円、連泊は1泊まで ／ 公式：金額条件 条件なし ／ 公式：1室大人1名様以上、10名様以下、公費出張は不可、併用不可 ／ 公式：配布枚数に限りがあり、上限に達した場合は期間中でも早期終了 ／ 未確認：決済方法の限定の有無（条件表に記載なし） ／ 未確認：現在の残り枚数",
+      "observed_date": "2026-10-03",
+      "discount": "宿泊料金（税込）の最大60%OFF、1人1泊20,000円まで、1予約1泊まで",
+      "period": "予約：2026/9/24 10:00～2026/10/13 23:59 ／ 旅行：2026/9/24チェックイン～2026/10/14チェックアウト",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
