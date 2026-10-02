@@ -5835,6 +5835,14 @@
   "date": "2026-10-02",
   "site": "yakushimafan",
   "tree": 1,
+  "pattern": "fresh",
+  "ota": "his",
+  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行トルコツアー1名様につき10,000円引き"
+ },
+ {
+  "date": "2026-10-02",
+  "site": "yakushimafan",
+  "tree": 2,
   "pattern": "countdown",
   "ota": "his",
   "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行モロッコツアー1名様につき10,000円引き"
@@ -5842,18 +5850,10 @@
  {
   "date": "2026-10-02",
   "site": "yakushimafan",
-  "tree": 2,
-  "pattern": "target_call",
-  "ota": "jtb",
-  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
- },
- {
-  "date": "2026-10-02",
-  "site": "yakushimafan",
   "tree": 3,
   "pattern": "last_check",
   "ota": "jtb",
-  "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞"
+  "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン"
  },
  {
   "date": "2026-10-02",
@@ -5861,15 +5861,15 @@
   "tree": 1,
   "pattern": "soft_news",
   "ota": "his",
-  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行モロッコツアー1名様につき10,000円引き"
+  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行トルコツアー1名様につき10,000円引き"
  },
  {
   "date": "2026-10-02",
   "site": "welltrip",
   "tree": 2,
-  "pattern": "season_context",
-  "ota": "jtb",
-  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+  "pattern": "weekend_plan",
+  "ota": "his",
+  "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行モロッコツアー1名様につき10,000円引き"
  },
  {
   "date": "2026-10-02",
@@ -5877,7 +5877,7 @@
   "tree": 3,
   "pattern": "daily_check",
   "ota": "jtb",
-  "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞"
+  "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン"
  },
  {
   "date": "2026-10-02",
