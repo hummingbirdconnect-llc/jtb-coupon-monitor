@@ -1,0 +1,952 @@
+{
+  "checked_at": "2026-10-02T09:48:21.234126+09:00",
+  "snapshot": "jtb_coupon_data/coupons_2026-10-02.json",
+  "listed_count": 78,
+  "snapshot_count": 79,
+  "new_ids": [],
+  "results": [
+    {
+      "id": "2610jtbtsdccqevx",
+      "category": "国内",
+      "title": "【JTB旅する木トクデー】10月1日（木）予約限定　国内旅行で使える割引クーポン＜10:00開始＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610jtbtsdccqevx/page.asp",
+      "status": "not_listed"
+    },
+    {
+      "id": "2608jtbcpnew",
+      "category": "国内",
+      "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(9-1月出発)",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608jtbcpnew/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2609akifuyu",
+      "category": "国内",
+      "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609akifuyu/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2609young",
+      "category": "国内",
+      "title": "【U-29旅応援！】　国内ツアーで使える割引クーポン＜1～3月出発＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609young/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2607jalhp",
+      "category": "国内",
+      "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607jalhp/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2610airhayawari",
+      "category": "国内",
+      "title": "【早期100日前までの予約限定】＜1～3月出発＞先どり！航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610airhayawari/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2601green",
+      "category": "国内",
+      "title": "【2026年4月以降出発】往復JR新幹線グリーン車で行く　華やぎ・優雅・ラグジュアリー割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601green/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "北海道",
+        "青森県",
+        "岩手県",
+        "宮城県",
+        "秋田県",
+        "山形県",
+        "福島県",
+        "茨城県",
+        "栃木県",
+        "群馬県",
+        "埼玉県",
+        "千葉県",
+        "東京都",
+        "神奈川県",
+        "新潟県",
+        "富山県",
+        "石川県",
+        "福井県",
+        "山梨県",
+        "長野県",
+        "岐阜県",
+        "静岡県",
+        "愛知県",
+        "三重県",
+        "滋賀県",
+        "京都府",
+        "大阪府",
+        "兵庫県",
+        "奈良県",
+        "和歌山県",
+        "鳥取県",
+        "島根県",
+        "岡山県",
+        "広島県",
+        "山口県",
+        "徳島県",
+        "香川県",
+        "愛媛県",
+        "高知県",
+        "福岡県",
+        "佐賀県",
+        "長崎県",
+        "熊本県",
+        "大分県",
+        "宮崎県",
+        "鹿児島県"
+      ]
+    },
+    {
+      "id": "2609mercu",
+      "category": "国内",
+      "title": "グランドメルキュール＆メルキュールホテルで使える！割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609mercu/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2607tokyu",
+      "category": "国内",
+      "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607tokyu/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2606ooedo",
+      "category": "国内",
+      "title": "【9～1月宿泊】全国の大江戸温泉物語とTAOYAで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606ooedo/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2608kyoritsu",
+      "category": "国内",
+      "title": "<10～12月出発>【早期割引60】共立リゾート41施設で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608kyoritsu/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2607ihghotels",
+      "category": "国内",
+      "title": "IHG One Rewards × JTBトラベルメンバー パートナーシッププランで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607ihghotels/page.asp",
+      "status": "detail",
+      "booking_regions": "北海道・大阪府・沖縄県の対象施設",
+      "regions": [
+        "北海道",
+        "大阪府",
+        "沖縄県"
+      ]
+    },
+    {
+      "id": "2609sunsunski",
+      "category": "国内",
+      "title": "飛行機、JR利用がお得！スキー割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609sunsunski/page.asp",
+      "status": "detail",
+      "booking_regions": "北海道・東北・北関東・甲信越・北陸の対象施設",
+      "regions": [
+        "北海道",
+        "青森県",
+        "岩手県",
+        "秋田県",
+        "山形県",
+        "福島県",
+        "群馬県",
+        "新潟県",
+        "石川県",
+        "福井県",
+        "長野県"
+      ]
+    },
+    {
+      "id": "2609iwate",
+      "category": "国内",
+      "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609iwate/page.asp",
+      "status": "detail",
+      "booking_regions": "岩手県の対象施設",
+      "regions": [
+        "岩手県"
+      ]
+    },
+    {
+      "id": "2609goton",
+      "category": "国内",
+      "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609goton/page.asp",
+      "status": "detail",
+      "booking_regions": "新潟県の対象施設",
+      "regions": [
+        "新潟県"
+      ]
+    },
+    {
+      "id": "2610niigata",
+      "category": "国内",
+      "title": "美食・美酒・名湯・体験・感動の旅♪ にいがた宿物語で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610niigata/page.asp",
+      "status": "detail",
+      "booking_regions": "新潟県の対象施設",
+      "regions": [
+        "新潟県"
+      ]
+    },
+    {
+      "id": "2603ikaho",
+      "category": "国内",
+      "title": "伊香保温泉をぶらり散策しよう！割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603ikaho/page.asp",
+      "status": "detail",
+      "booking_regions": "群馬県　伊香保温泉の対象施設",
+      "regions": [
+        "群馬県"
+      ]
+    },
+    {
+      "id": "2608candeohotels",
+      "category": "国内",
+      "title": "カンデオホテルズのおすすめ施設で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608candeohotels/page.asp",
+      "status": "detail",
+      "booking_regions": "栃木県・大阪府・長崎県の対象施設",
+      "regions": [
+        "栃木県",
+        "大阪府",
+        "長崎県"
+      ]
+    },
+    {
+      "id": "2609hankyu",
+      "category": "国内",
+      "title": "【10～12月宿泊】「阪急阪神ホテルズ」東京レム５施設と第一ホテル東京で使える！割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609hankyu/page.asp",
+      "status": "detail",
+      "booking_regions": "阪急阪神ホテルズの対象施設",
+      "regions": [
+        "東京都"
+      ]
+    },
+    {
+      "id": "2608hachijo",
+      "category": "国内",
+      "title": "心をほどく、青の離島へ　八丈島で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608hachijo/page.asp",
+      "status": "detail",
+      "booking_regions": "東京都・八丈島の対象施設",
+      "regions": [
+        "東京都"
+      ]
+    },
+    {
+      "id": "2609hachijo",
+      "category": "国内",
+      "title": "がんばろう！八丈島で使えるクーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609hachijo/page.asp",
+      "status": "detail",
+      "booking_regions": "東京都・八丈島の対象施設",
+      "regions": [
+        "東京都"
+      ]
+    },
+    {
+      "id": "2605ito2",
+      "category": "国内",
+      "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605ito2/page.asp",
+      "status": "detail",
+      "booking_regions": "静岡県の対象施設",
+      "regions": [
+        "静岡県"
+      ]
+    },
+    {
+      "id": "2608notoairport",
+      "category": "国内",
+      "title": "【往復ANA便】能登空港利用で使える国内ツアー割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608notoairport/page.asp",
+      "status": "detail",
+      "booking_regions": "石川県の対象施設",
+      "regions": [
+        "石川県"
+      ]
+    },
+    {
+      "id": "2609shiga",
+      "category": "国内",
+      "title": "滋賀県　びわ湖の歴史と湖上交通　夕食に認証「近江牛」が楽しめる　おすすめ施設で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609shiga/page.asp",
+      "status": "detail",
+      "booking_regions": "滋賀県の対象施設",
+      "regions": [
+        "滋賀県"
+      ]
+    },
+    {
+      "id": "2606kintetsu",
+      "category": "国内",
+      "title": "近鉄・都ホテルズのおすすめ施設で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606kintetsu/page.asp",
+      "status": "detail",
+      "booking_regions": "三重県・京都府・大阪府・兵庫県・奈良県の対象施設",
+      "regions": [
+        "三重県",
+        "京都府",
+        "大阪府",
+        "兵庫県",
+        "奈良県"
+      ]
+    },
+    {
+      "id": "2608kyotm",
+      "category": "国内",
+      "title": "【京の味覚を愉しむ】おすすめ施設で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608kyotm/page.asp",
+      "status": "detail",
+      "booking_regions": "京都府の対象施設",
+      "regions": [
+        "京都府"
+      ]
+    },
+    {
+      "id": "2608hankyu",
+      "category": "国内",
+      "title": "【9～11月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608hankyu/page.asp",
+      "status": "detail",
+      "booking_regions": "大阪府・京都府の対象施設",
+      "regions": [
+        "京都府",
+        "大阪府"
+      ]
+    },
+    {
+      "id": "2609osaka",
+      "category": "国内",
+      "title": "【泊まろう大阪】おすすめ施設で使える割引クーポン＜第2弾＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609osaka/page.asp",
+      "status": "detail",
+      "booking_regions": "大阪府の対象施設",
+      "regions": [
+        "大阪府"
+      ]
+    },
+    {
+      "id": "2608osacp",
+      "category": "国内",
+      "title": "大阪府のおすすめ施設で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608osacp/page.asp",
+      "status": "detail",
+      "booking_regions": "大阪府の対象施設",
+      "regions": [
+        "大阪府"
+      ]
+    },
+    {
+      "id": "2602jalcp",
+      "category": "国内",
+      "title": "【JAL麗らか四国キャンペーン】往復JAL便利用でいく小豆島ツアーで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602jalcp/page.asp",
+      "status": "detail",
+      "booking_regions": "四国・小豆島エリアの対象施設",
+      "regions": [
+        "香川県"
+      ]
+    },
+    {
+      "id": "2610yamaguchi",
+      "category": "国内",
+      "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610yamaguchi/page.asp",
+      "status": "detail",
+      "booking_regions": "山口県の対象施設",
+      "regions": [
+        "山口県"
+      ]
+    },
+    {
+      "id": "2604sagak",
+      "category": "国内",
+      "title": "ANA便＜羽田空港発　佐賀空港利用＞国内ツアー　航空＋宿で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604sagak/page.asp",
+      "status": "detail",
+      "booking_regions": "九州の対象施設",
+      "regions": [
+        "福岡県",
+        "佐賀県",
+        "長崎県",
+        "熊本県",
+        "大分県",
+        "宮崎県",
+        "鹿児島県"
+      ]
+    },
+    {
+      "id": "2608fdacp",
+      "category": "国内",
+      "title": "日本の旬九州特別企画　九州内の宿泊＋往復FDA利用で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608fdacp/page.asp",
+      "status": "detail",
+      "booking_regions": "九州エリアの対象施設",
+      "regions": [
+        "福岡県",
+        "佐賀県",
+        "長崎県",
+        "熊本県",
+        "大分県",
+        "宮崎県",
+        "鹿児島県"
+      ]
+    },
+    {
+      "id": "2609kyushusaga",
+      "category": "国内",
+      "title": "九州ふっこう応援割 さがキャンペーン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushusaga/page.asp",
+      "status": "detail",
+      "booking_regions": "佐賀県の対象施設",
+      "regions": [
+        "佐賀県"
+      ]
+    },
+    {
+      "id": "2609kyushunagasaki",
+      "category": "国内",
+      "title": "九州ふっこう応援割 ながさきキャンペーン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushunagasaki/page.asp",
+      "status": "detail",
+      "booking_regions": "長崎県の対象施設",
+      "regions": [
+        "長崎県"
+      ]
+    },
+    {
+      "id": "2610nagasakimarriott",
+      "category": "国内",
+      "title": "長崎マリオットホテルのスイートルームで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610nagasakimarriott/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "長崎県"
+      ]
+    },
+    {
+      "id": "2609kyucp",
+      "category": "国内",
+      "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyucp/page.asp",
+      "status": "detail",
+      "booking_regions": "熊本県・宮崎県・鹿児島県の対象施設",
+      "regions": [
+        "熊本県",
+        "宮崎県",
+        "鹿児島県"
+      ]
+    },
+    {
+      "id": "2607jalka",
+      "category": "国内",
+      "title": "＜9～3月出発＞【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607jalka/page.asp",
+      "status": "detail",
+      "booking_regions": "鹿児島県・離島エリアの対象施設",
+      "regions": [
+        "鹿児島県"
+      ]
+    },
+    {
+      "id": "2609kagoshima",
+      "category": "国内",
+      "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kagoshima/page.asp",
+      "status": "detail",
+      "booking_regions": "鹿児島県の対象施設",
+      "regions": [
+        "鹿児島県"
+      ]
+    },
+    {
+      "id": "2609amami",
+      "category": "国内",
+      "title": "あまみゆったり島泊割",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609amami/page.asp",
+      "status": "detail",
+      "booking_regions": "鹿児島県の対象施設",
+      "regions": [
+        "鹿児島県"
+      ]
+    },
+    {
+      "id": "2609okinawamonterey",
+      "category": "国内",
+      "title": "ホテルモントレ沖縄スパ＆リゾート、ホテルモントレ ラ・スール那覇で使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawamonterey/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "沖縄県"
+      ]
+    },
+    {
+      "id": "2609okinawa2",
+      "category": "国内",
+      "title": "沖縄【秋冬旅】タイムセールや年末年始にも利用できる割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa2/page.asp",
+      "status": "detail",
+      "booking_regions": "沖縄県の対象施設",
+      "regions": [
+        "沖縄県"
+      ]
+    },
+    {
+      "id": "2609okinawa",
+      "category": "国内",
+      "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa/page.asp",
+      "status": "detail",
+      "booking_regions": "沖縄県の対象施設",
+      "regions": [
+        "沖縄県"
+      ]
+    },
+    {
+      "id": "2607appcp",
+      "category": "国内",
+      "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607appcp/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2607young",
+      "category": "国内",
+      "title": "【U-29旅応援！】　国内ツアーで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607young/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2604mercu",
+      "category": "国内",
+      "title": "グランドメルキュール＆メルキュールホテルで使える！割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604mercu/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2604airhayawari2",
+      "category": "国内",
+      "title": "【早期75日前までの予約限定】秋旅から冬旅も先どり！＜10～1月出発＞航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604airhayawari2/page.asp",
+      "status": "detail",
+      "booking_regions": "全国の対象施設",
+      "regions": [
+        "全国"
+      ]
+    },
+    {
+      "id": "2607okinawa",
+      "category": "国内",
+      "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607okinawa/page.asp",
+      "status": "detail",
+      "booking_regions": "沖縄の対象施設",
+      "regions": [
+        "沖縄県"
+      ]
+    },
+    {
+      "id": "2609yng",
+      "category": "海外",
+      "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜1月-3月出発＞（10代）",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2609yng/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2609yng2",
+      "category": "海外",
+      "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜1月-3月出発＞（20代）",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2609yng2/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2604jl",
+      "category": "海外",
+      "title": "海外航空券+ホテルでどこでも使える割引クーポン【日本航空(JAL)対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604jl/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2604sq",
+      "category": "海外",
+      "title": "海外航空券+ホテルでどこでも使える割引クーポン【シンガポール航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604sq/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607ci",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるどこでも割引クーポン【チャイナエアライン対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607ci/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2604mh",
+      "category": "海外",
+      "title": "海外航空券+ホテルでどこでも使える割引クーポン【マレーシア航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604mh/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607as",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アラスカ航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607as/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2609any",
+      "category": "海外",
+      "title": "【リニューアル記念】海外航空券＋ホテルどこでも使える割引クーポン",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2609any/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2604mh2",
+      "category": "海外",
+      "title": "海外航空券で使えるどこでも割引クーポン【マレーシア航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604mh2/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607ci2",
+      "category": "海外",
+      "title": "海外航空券で使えるどこでも割引クーポン【チャイナエアライン対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607ci2/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2608hwi",
+      "category": "海外",
+      "title": "成田・羽田空港利用限定！ハワイで使える海外ツアールックJTBMySTYLE割引クーポン【日本航空（JAL）対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2608hwi/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "ハワイ"
+      ]
+    },
+    {
+      "id": "2607ke2",
+      "category": "海外",
+      "title": "海外航空券で使えるソウル行き割引クーポン【大韓航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607ke2/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "ソウル"
+      ]
+    },
+    {
+      "id": "2607ke",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるソウル行き割引クーポン【大韓航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607ke/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "ソウル"
+      ]
+    },
+    {
+      "id": "2604lj2",
+      "category": "海外",
+      "title": "海外航空券で使える韓国行き割引クーポン【ジンエアー対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604lj2/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "韓国"
+      ]
+    },
+    {
+      "id": "2604vn2",
+      "category": "海外",
+      "title": "海外航空券で使えるベトナム行き割引クーポン【ベトナム航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604vn2/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "ベトナム"
+      ]
+    },
+    {
+      "id": "2604lj",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使える韓国行き割引クーポン【ジンエアー対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604lj/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "韓国"
+      ]
+    },
+    {
+      "id": "2604vn",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるベトナム行き割引クーポン【ベトナム航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2604vn/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "ベトナム"
+      ]
+    },
+    {
+      "id": "2609sk",
+      "category": "海外",
+      "title": "ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【スカンジナビア航空(SK)対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2609sk/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607af",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるどこでも割引クーポン【エールフランス航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607af/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607ua",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるアメリカ行き割引クーポン【ユナイテッド航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607ua/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "アメリカ"
+      ]
+    },
+    {
+      "id": "2607aa",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アメリカン航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607aa/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607ac",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるどこでも割引クーポン【エア・カナダ対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607ac/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607qf",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるどこでも割引クーポン【カンタス航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607qf/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607nz",
+      "category": "海外",
+      "title": "海外航空券+ホテルで使えるどこでも割引クーポン【ニュージーランド航空対象】",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607nz/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607yng2",
+      "category": "海外",
+      "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜9月-12月出発＞（20代）",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607yng2/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2607yng",
+      "category": "海外",
+      "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜9月-12月出発＞（10代）",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2607yng/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2511aut",
+      "category": "海外",
+      "title": "もっと先どり 冬休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2511aut/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2602aut",
+      "category": "海外",
+      "title": "冬休み・年末にも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602aut/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2605win",
+      "category": "海外",
+      "title": "秋旅・冬旅先どり！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2026年10-12月出発＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2605win/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2602win",
+      "category": "海外",
+      "title": "お正月・春休みにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2602win/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    },
+    {
+      "id": "2605spr",
+      "category": "海外",
+      "title": "冬旅・早春旅先どり！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年1-3月出発＞",
+      "url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2605spr/page.asp",
+      "status": "list_fallback",
+      "booking_regions": "",
+      "regions": [
+        "全方面"
+      ]
+    }
+  ]
+}

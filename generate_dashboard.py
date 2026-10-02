@@ -58,6 +58,8 @@ MANUAL_ACCESS_LABELS = {
     "dynamic_browser": "画面確認待ち",
 }
 
+JTB_CATEGORY_COLUMNS = ["記事カテゴリ", "分類根拠", "予約対象地域", "利用者条件", "利用可能プラン", "予約方法", "対象ブランド", "割引の条件"]
+
 COMMON_COLUMNS = [
     "公式表示",
     "公式画像",
@@ -73,6 +75,14 @@ COMMON_COLUMNS = [
     "割引額",
     "配布状況",
     "対象商品",
+    "予約対象地域",
+    "記事カテゴリ",
+    "分類根拠",
+    "利用者条件",
+    "利用可能プラン",
+    "予約方法",
+    "対象ブランド",
+    "割引の条件",
     "予約期間",
     "出発/宿泊期間",
     "クーポンコード",
@@ -431,6 +441,8 @@ def format_coupon_row(
     source_type = first_value(coupon, ["source_type"]) or first_value(detail, ["source"]) or file_kind
     codes = normalize_codes(coupon.get("coupon_codes") or detail.get("coupon_codes"))
     passwords = normalize_passwords(coupon)
+    from jtb_article_categories import classify_coupon
+    article_categories, classification_evidence = classify_coupon(coupon) if provider.get("id") == "jtb" else ([], {})
     official_visibility = first_value(coupon, ["official_visibility"])
     if official_visibility == "visible":
         official_visibility = "表示中"
@@ -448,7 +460,20 @@ def format_coupon_row(
         "ID": first_value(coupon, ["id", "coupon_id"]),
         "割引額": first_value(coupon, ["discount"]) or first_value(detail, ["discount"]),
         "配布状況": status,
-        "対象商品": first_value(coupon, ["product_type", "type", "target"]),
+        "対象商品": first_value(coupon, ["product_type", "type", "target"]) or first_value(detail, ["target_products"]),
+        "記事カテゴリ": " / ".join(article_categories),
+        "分類根拠": " / ".join(f"{label}: {item['text']}" + (f"（{item['note']}）" if item.get('note') else "") for label, item in classification_evidence.items()),
+        "利用者条件": first_value(detail, ["eligible_users"]),
+        "利用可能プラン": normalize_codes(detail.get("available_plans")),
+        "予約方法": first_value(detail, ["booking_channels"]),
+        "対象ブランド": first_value(detail, ["target_brand"]),
+        "割引の条件": normalize_codes(detail.get("discount_rules")),
+        "予約対象地域": (
+            first_value(detail, ["booking_regions"])
+            or first_value(coupon, ["booking_regions"])
+            or normalize_codes(coupon.get("regions"))
+            or first_value(coupon, ["area"])
+        ) if provider.get("id") == "jtb" else "",
         "予約期間": first_value(coupon, ["booking_period"]) or first_value(detail, ["booking_period"]),
         "出発/宿泊期間": first_value(coupon, ["travel_period", "stay_period"]) or first_value(detail, ["stay_period"]),
         "クーポンコード": codes,
@@ -789,6 +814,11 @@ def build_provider_payload(
         "source_label": source_label,
         "article_count": len(provider.get("article_paths", [])),
         "rows": rows,
+        "article_category_sources": (
+            load_json(ROOT / "jtb_coupon_data" / "article_category_sources_latest.json")
+            if provider["id"] == "jtb" and (ROOT / "jtb_coupon_data" / "article_category_sources_latest.json").exists()
+            else []
+        ),
         "logs": log_rows,
         "summary": {
             "会社": provider["label"],
@@ -1521,6 +1551,9 @@ function renderProvider(container, provider) {{
   const couponColumns = hasVisualEvidence
     ? DATA.columns.coupons
     : DATA.columns.coupons.filter(column => !visualColumns.includes(column));
+  const visibleCouponColumns = provider.id === 'jtb'
+    ? couponColumns
+    : couponColumns.filter(column => !{json.dumps(JTB_CATEGORY_COLUMNS, ensure_ascii=False)}.includes(column));
   const countStats = provider.count_status === 'confirmed'
     ? `<span class="stat">${{escapeHtml(provider.count_noun || '全')}} ${{escapeHtml(provider.count_label ?? provider.rows.length)}} 件</span>
         <span class="stat active">配布中 ${{active}} 件</span>
@@ -1546,7 +1579,7 @@ function renderProvider(container, provider) {{
   `;
   const section = container.querySelector('.section');
   attachManualActions(section, provider);
-  renderGrid(section, provider.rows, couponColumns, {{
+  renderGrid(section, provider.rows, visibleCouponColumns, {{
     filter: true,
     regionFilters: provider.region_filters || [],
     limit: 50,
@@ -1555,6 +1588,46 @@ function renderProvider(container, provider) {{
       {{ label: '変動ログ', target: `${{provider.id}}-change-log` }},
     ],
   }});
+  if (provider.id === 'jtb' && (provider.article_category_sources || []).length) {{
+    const sourceSection = document.createElement('div');
+    sourceSection.className = 'section';
+    sourceSection.innerHTML = '<h2>記事カテゴリ別の公式取得元</h2><div class="note">公開一覧のクーポン件数には含めません。メール・LINE配信やSNS投稿の個別内容は、受信・画面確認が必要です。</div>';
+    container.appendChild(sourceSection);
+    renderGrid(sourceSection, provider.article_category_sources.map(source => ({{
+      '記事カテゴリ': source.article_category,
+      '公式URL': source.source_url,
+      '取得状態': ({{public_page_observed: '公開ページ取得済み', redirected_review_required: '転送先の確認が必要', recipient_or_screen_check_required: '受信・画面確認が必要', fetch_failed: '取得失敗', markup_review_required: 'ページ構造の確認が必要'}})[source.status] || source.status,
+      '取得した記載': source.evidence_text || '',
+      '個別情報の確認': source.limitation || '',
+      '確認日時': source.checked_at,
+    }})), ['記事カテゴリ', '公式URL', '取得状態', '取得した記載', '個別情報の確認', '確認日時'], {{limit: 10}});
+    const offers = provider.article_category_sources.flatMap(source => (source.listed_offers || []).map(offer => {{
+      const detail = offer.detail_data || {{}};
+      return {{
+        '記事カテゴリ': source.article_category,
+        '詳細URL': offer.detail_url,
+        '公式の掲載内容': offer.evidence_text,
+        '対象ブランド': detail.target_brand || '',
+        '予約対象地域': detail.booking_regions || '',
+        '出発地': detail.departure_area || '',
+        '利用者条件': detail.eligible_users || '',
+        '予約方法': detail.booking_channels || '',
+        '予約期間': detail.booking_period || '',
+        '出発/宿泊期間': detail.stay_period || '',
+        'クーポンコード': (detail.coupon_codes || []).join(' / '),
+        'パスワード': (detail.passwords || []).join(' / '),
+        '割引の条件': (detail.discount_rules || []).join(' / '),
+        '配布状況': offer.stock_status || '不明',
+      }};
+    }}));
+    if (offers.length) {{
+      const offerSection = document.createElement('div');
+      offerSection.className = 'section';
+      offerSection.innerHTML = '<h2>専用ページで取得したクーポン</h2><div class="note">通常一覧とは別の取得情報です。予約時の利用可否は公式ページで確認してください。</div>';
+      container.appendChild(offerSection);
+      renderGrid(offerSection, offers, Object.keys(offers[0]), {{limit: 10}});
+    }}
+  }}
   const recentSection = document.createElement('div');
   recentSection.className = 'section';
   recentSection.id = `${{provider.id}}-recent-changes`;

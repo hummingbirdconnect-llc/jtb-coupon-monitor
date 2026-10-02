@@ -36,6 +36,7 @@ from pathlib import Path
 import time
 import re
 from coupon_validator import validate_coupons
+from jtb_article_categories import extract_category_fields, classify_coupon, save_article_category_sources
 
 # ============================================================
 # 設定
@@ -163,6 +164,38 @@ def save_master_ids(master):
 # ============================================================
 # スクレイピング: 一覧ページ（CSS セレクタ方式）
 # ============================================================
+def extract_list_regions(item):
+    """一覧の対象地域を、件数を省略せず取得する。"""
+    try:
+        prefs = json.loads(item.get("data-pref", "") or "[]")
+    except (json.JSONDecodeError, TypeError):
+        prefs = []
+    if isinstance(prefs, list):
+        regions = list(dict.fromkeys(
+            value.strip() for value in prefs if isinstance(value, str) and value.strip()
+        ))
+        if regions:
+            return regions
+    area = item.select_one(".c-coupon__area")
+    text = area.get_text(" ", strip=True) if area else ""
+    return [text] if text else []
+
+
+def extract_booking_regions(soup):
+    """利用条件の予約対象地域を原文で残す。居住地条件は含めない。"""
+    values = []
+    for label in soup.select(".sec-conditions .item"):
+        if label.get_text(strip=True).rstrip("：:") != "予約対象地域":
+            continue
+        value = " ".join(
+            node.get_text(" ", strip=True) if hasattr(node, "get_text") else str(node).strip()
+            for node in label.next_siblings
+        ).strip()
+        if value and value not in values:
+            values.append(value)
+    return " / ".join(values)
+
+
 def scrape_coupon_list_page(page_config):
     """
     JTBの一覧ページからクーポン情報を抽出。
@@ -236,20 +269,8 @@ def scrape_coupon_list_page(page_config):
                 detail_url = href if href.startswith("http") else BASE_URL + href
 
         # ----- エリア -----
-        area = ""
-        # data-pref 属性から取得（JSON配列）
-        pref_data = item.get("data-pref", "")
-        if pref_data:
-            try:
-                prefs = json.loads(pref_data)
-                if isinstance(prefs, list) and prefs:
-                    area = "・".join(prefs[:3])
-            except (json.JSONDecodeError, TypeError):
-                pass
-        if not area:
-            area_el = item.select_one(".c-coupon__area")
-            if area_el:
-                area = area_el.get_text(strip=True)
+        regions = extract_list_regions(item)
+        area = "・".join(regions)
 
         # ----- 期間 -----
         booking_period = ""
@@ -298,6 +319,7 @@ def scrape_coupon_list_page(page_config):
             "title": title,
             "discount": discount,
             "area": area,
+            "regions": regions,
             "type": coupon_type,
             "booking_period": booking_period,
             "stay_period": stay_period,
@@ -370,7 +392,8 @@ def _scrape_coupon_list_page_fallback(page_config, soup):
             "category": page_name,
             "title": title,
             "discount": discount,
-            "area": "",
+            "area": "・".join(extract_list_regions(card)),
+            "regions": extract_list_regions(card),
             "type": "",
             "booking_period": "",
             "stay_period": "",
@@ -695,7 +718,12 @@ def scrape_detail_page(url):
             "passwords": [],
             "conditions": [],
             "notes": [],
+            "booking_regions": extract_booking_regions(soup),
         }
+        detail.update(extract_category_fields(soup))
+        usage = detail["usage_conditions"]
+        detail["booking_period"] = usage.get("予約対象期間", "")
+        detail["stay_period"] = usage.get("宿泊対象期間", "") or usage.get("出発対象期間", "")
 
         # クーポンコードとパスワードは、表示用の条件文ではなく専用項目で取得する。
         detail["coupon_codes"], detail["passwords"] = extract_coupon_credentials(
@@ -808,6 +836,7 @@ def save_daily_data(coupons):
     for c in coupons:
         entry = {k: v for k, v in c.items() if k != "detail_data"}
         entry["detail_data"] = c.get("detail_data") or {}
+        entry["article_categories"], entry["classification_evidence"] = classify_coupon(c)
         data.append(entry)
 
     with open(daily_file, "w", encoding="utf-8") as f:
@@ -917,6 +946,7 @@ def run_init():
     coupons, validation_report = validate_coupons(coupons, service_name="JTB")
 
     save_daily_data(coupons)
+    save_article_category_sources(DATA_DIR, HEADERS, REQUEST_DELAY, scrape_detail_page)
 
     master_ids = update_master_ids({"last_updated": "", "ids": {}}, coupons)
     save_master_ids(master_ids)
@@ -945,6 +975,7 @@ def run_full():
     )
 
     save_daily_data(coupons)
+    save_article_category_sources(DATA_DIR, HEADERS, REQUEST_DELAY, scrape_detail_page)
 
     events = detect_changes(master_ids, coupons)
 
