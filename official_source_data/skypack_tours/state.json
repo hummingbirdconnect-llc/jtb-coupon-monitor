@@ -1,7 +1,7 @@
 {
   "provider_id": "skypack_tours",
   "observed_hash": "903381b0c7640f25ef0517fdd110d37e3bcec85970c86f7d47732b7755b16702",
-  "last_checked_at": "2026-09-18T13:14:02.536475+09:00",
+  "last_checked_at": "2026-10-02T19:30:44.063898+09:00",
   "sources": [
     {
       "url": "https://www.skypack.jp/",
@@ -9,6 +9,11 @@
       "status_code": 200,
       "fetch_method": "playwright",
       "error": "",
+      "purpose": "トップページ（キャンペーン・路線別訴求）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
       "text_chars": 5352,
       "content_hash": "b6af00a2c05b867d4037b80b2dbcb23e80fdff7093ad1a1efdd39ae8de66a6f3"
     }
