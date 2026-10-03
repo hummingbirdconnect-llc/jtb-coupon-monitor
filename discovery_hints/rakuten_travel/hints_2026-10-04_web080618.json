@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-04T08:23:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "得旅キャンペーン 最大ポイント15倍（国内旅行）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "official_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "evidence": "公式：エントリー・予約期間 2026年10月1日10:00～10月22日9:59、予約前のエントリー必須 ／ 公式：10月・11月・12月の宿泊に適用、チェックイン日・チェックアウト日の両方が期間内 ／ 公式：早期キャンペーン 2026年10月31日チェックイン～11月30日チェックアウト ／ 公式：ポイント15倍は通常1%＋キャンペーン14%の超先プランの値 ／ 公式：国内宿泊（日帰り・デイユース除く）、対象ホテル限定 ／ 未確認：直前・超先の旅行期間 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-04",
+      "discount": "ポイント最大15倍（超先：通常1%＋キャンペーン14%）。早期は楽天モバイル契約者さらに+1倍。直前・早期は合計10倍（未確認（Grok: キャンペーン還元9%））",
+      "period": "予約：エントリー・予約期間 2026年10月1日10:00～10月22日9:59（予約前のエントリー必須） ／ 旅行：10月・11月・12月の宿泊。早期は2026年10月31日チェックイン～11月30日チェックアウト。直前・超先は未確認（Grok: 直前10月1日～31日、超先11月30日～12月31日）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "お得なクーポン祭（国内宿泊）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2 10:00～2026/11/4 09:59 ／ 公式：全楽天会員様 500円OFF 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 4,500円OFF・4,000円OFF ／ 公式：ダイヤモンド・プラチナ会員様限定 3,000円・2,500円・1,500円・1,000円OFF ／ 公式：一部クーポンにオンラインカード決済限定の表示 ／ 未確認：宿泊対象期間 ／ 未確認：券ごとの最低利用額 ／ 未確認：券ごとの決済条件",
+      "observed_date": "2026-10-04",
+      "discount": "全楽天会員500円OFF（先着300,000枚）、ダイヤモンド会員限定4,500円・4,000円OFF、ダイヤモンド・プラチナ会員限定1,000～3,000円OFF、宿のオリジナル割引クーポン（3%～20%OFFなど）",
+      "period": "予約：2026年10月2日10:00～11月4日9:59 ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

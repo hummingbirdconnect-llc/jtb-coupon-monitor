@@ -1,0 +1,26 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-04T08:23:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "じゃらん実質最安値保証キャンペーン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/news/article/922865/",
+      "official_url": "https://www.jalan.net/news/article/922865/",
+      "evidence": "公式：予約期間2026年8月20日～11月30日 ／ 公式：宿泊対象期間2026年8月21日チェックイン～2027年1月4日チェックアウト ／ 公式：10,000円（税込）以上、クーポンやポイント適用後の金額 ／ 公式：申請は予約後72時間以内、1会員累計10回まで ／ 公式：比較条件に支払方法（事前オンラインカード／現地払い）を含む ／ 公式：ポイント還元の上限に達し次第終了する場合あり",
+      "observed_date": "2026-10-04",
+      "discount": "対象他社の方が安い場合、宿泊料金の差額を全額じゃらん限定ポイントで還元（還元上限に達し次第終了の場合あり）",
+      "period": "予約：2026年8月20日～11月30日（申請は予約後72時間以内、申請期間は12月3日まで） ／ 旅行：2026年8月21日チェックイン～2027年1月4日チェックアウト",
+      "confidence": "high",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
