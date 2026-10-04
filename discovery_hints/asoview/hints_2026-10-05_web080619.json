@@ -1,0 +1,52 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-10-05T08:24:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "アソビュー！遊びつくしキャンペーン",
+      "kind": "coupon",
+      "found_url": "https://x.com/akashijournal/status/2106671062284972188",
+      "official_url": "https://www.asoview.com/brand/202610_asobitsukushi/",
+      "evidence": "公式：ポイントは10月1日〜31日23:59の予約・購入が対象、3施設以上＋1万円以上で1,000pt、5施設以上＋1.5万円以上で3,000pt ／ 公式：クーポンは10月9日〜22日に全3弾で配布、利用期限は10月22日23:59 ／ 公式：クーポンは3,000円以上で500円、10,000円以上で1,000円、15,000円以上で3,000円OFF。先着順・複数併用不可 ／ 公式：アソビュー！会員（要ログイン）が対象、ポイント付与は11月9日頃 ／ 未確認：決済方法の条件 ／ 未確認：クーポン対象施設の一覧（公式で近日公開）",
+      "observed_date": "2026-10-05",
+      "discount": "施設数と合計額で最大3,000pt（1pt＝1円）＋対象施設限定クーポン（500円・1,000円・3,000円OFF）",
+      "period": "予約：ポイント：2026年10月1日（木）〜10月31日（土）23:59の予約・購入。クーポン配布：10月9日（金）〜10月22日（木）の全3弾 ／ 旅行：ポイント：体験日が11月以降でも10月中の予約・購入なら対象。クーポン利用期限：2026年10月22日（木）23:59",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "千葉遊び尽くし応援割 26",
+      "kind": "coupon",
+      "found_url": "https://x.com/otona_otokutabi/status/2106206228821209314",
+      "official_url": "https://www.asoview.com/brand/chiba-asobi-oen/",
+      "evidence": "公式：平日30％OFF・土日祝10％OFF、1回の決済で1人最大10,000円 ／ 公式：販売期間 2026年8月27日〜12月31日、催行期間 9月1日〜12月31日 ／ 公式：12月28日〜31日は10％、1アカウントにつき催行月ごとに1回、月ごとの原資がなくなり次第終了 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件 ／ 未確認：10月分の原資の残り",
+      "observed_date": "2026-10-05",
+      "discount": "平日30％OFF・土日祝10％OFF（1回の決済で1人最大10,000円）",
+      "period": "予約：販売期間 2026年8月27日（木）〜12月31日（木）。体験月ごとの原資がなくなり次第終了 ／ 旅行：催行（体験日）2026年9月1日（火）〜12月31日（木）。12月28日〜31日は土日祝の割引率（10％）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "やまぐちのアソビ新発見割2026（第2期）",
+      "kind": "coupon",
+      "found_url": "https://www.asoview.com/brand/yamaguchi/",
+      "official_url": "https://www.asoview.com/brand/yamaguchi/",
+      "evidence": "公式：第2期 2026年10月1日0:00〜12月31日23:59、1人あたり30％OFF ／ 公式：体験日が10月1日〜12月31日の予約分が対象 ／ 公式：第1期（7〜8月、10％OFF）は終了 ／ 未確認：最低利用額 ／ 未確認：対象者・利用回数（Grokは会員・1予約1回と回答） ／ 未確認：決済方法の条件 ／ 未確認：予約数の上限",
+      "observed_date": "2026-10-05",
+      "discount": "1人あたり30％OFF",
+      "period": "予約：第2期 2026年10月1日（木）0:00〜12月31日（木）23:59 ／ 旅行：体験日が2026年10月1日〜12月31日の予約分",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

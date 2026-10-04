@@ -1,0 +1,52 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-05T08:24:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "毎月5と0のつく日からホテル・温泉宿が最大20％OFF",
+      "kind": "coupon",
+      "found_url": "https://x.com/momo_geki/status/2106882060564484287",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定、ホテル・温泉宿が最大20％OFF ／ 公式：東日本（北海道〜甲信越）と西日本（東海〜沖縄）で対象施設が分かれる ／ 公式：11月利用分のクーポンは11月4日10時配布開始予定 ／ 公式：対象は前月時点で温泉宿／高級宿登録がある施設 ／ 未確認：クーポンごとの割引率と上限額 ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件 ／ 未確認：先着枚数",
+      "observed_date": "2026-10-05",
+      "discount": "最大20％OFF（公式表記。クーポンごとの内訳は未確認）",
+      "period": "予約：毎月5・10・15・20・25・30日から48時間限定（公式の見出し）。10月5日分の開始・終了時刻は未確認 ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "得旅キャンペーン 最大ポイント15倍（国内旅行）",
+      "kind": "coupon",
+      "found_url": "https://x.com/money_yossy/status/2106783377366110634",
+      "official_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "evidence": "公式：エントリー・予約 2026年10月1日10:00〜10月22日9:59 ／ 公式：早期の旅行対象 2026年10月31日チェックイン〜11月30日チェックアウト ／ 公式：早期はポイント10倍（通常1％＋9％）、楽天モバイル契約者は+1倍 ／ 公式：予約前のエントリー必須、対象ホテル限定、国内宿泊（日帰り・デイユース除く） ／ 未確認：超先（15倍）・直前の旅行対象期間 ／ 未確認：最低利用額（Grokは「なし」） ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-05",
+      "discount": "ポイント最大15倍（早期は通常1％＋9％の10倍。楽天モバイル契約者は早期がさらに+1倍）",
+      "period": "予約：エントリー・予約 2026年10月1日（木）10:00〜10月22日（木）9:59 ／ 旅行：早期：2026年10月31日（土）チェックイン〜11月30日（月）チェックアウト（両日とも期間内）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "値引きクーポン満載！お得なクーポン祭",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026年10月2日10:00〜11月4日9:59 ／ 公式：全楽天会員・ダイヤモンド会員限定・ダイヤモンド／プラチナ会員限定の区分 ／ 公式：クーポンには金額条件あり ／ 未確認：今回のクーポンごとの割引額（本文の抜き出しでは読めず） ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額 ／ 未確認：先着枚数 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-05",
+      "discount": "未確認",
+      "period": "予約：2026年10月2日（金）10:00〜11月4日（水）9:59 ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

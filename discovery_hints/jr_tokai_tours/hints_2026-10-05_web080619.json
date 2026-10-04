@@ -1,0 +1,65 @@
+{
+  "provider_id": "jr_tokai_tours",
+  "provider_label": "JR東海ツアーズ",
+  "generated_at": "2026-10-05T08:24:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 4,
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "title": "阪急阪神ホテルズ（大阪エリア）割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/JR_TOKAITOURS/status/2104858739215946107",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "evidence": "公式：1予約あたり3,000〜5,000円割引（施設別）、6施設合計先着508枚 ／ 公式：予約可能期間 2026年9月29日〜12月30日23:30、出発対象期間 10月1日〜12月31日 ／ 公式：自動でクーポン獲得、併用可、ツアー（JR＋宿） ／ 未確認：最低利用額 ／ 未確認：決済方法の条件 ／ 未確認：残り枚数",
+      "observed_date": "2026-10-05",
+      "discount": "1予約あたり3,000〜5,000円（ホテル阪神大阪3,500円、新阪急ホテルアネックス3,000円、ホテル阪神アネックス大阪3,000円、ホテル阪急レスパイア大阪4,000円、ホテル阪急グランレスパイア大阪5,000円、レム新大阪3,000円）",
+      "period": "予約：2026年9月29日（火）〜12月30日（水）23:30 ／ 旅行：2026年10月1日（木）〜12月31日（木）出発",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "「EX会員 ⇆ LINE」繋げて1,000円割引",
+      "kind": "coupon",
+      "found_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/line-cp/",
+      "evidence": "公式：1申込みにつき1,000円、旅行代金総額8,000円以上 ／ 公式：初回連携のみ、1会員IDにつき1回、他の割引クーポンと併用不可 ／ 公式：利用期限は連携月の翌月末日23:30、対象出発は連携月の4か月後の末日まで（2026年5月以降の連携） ／ 未確認：決済方法の条件 ／ 未確認：対象商品の全体（抜き出しが途中で切れた）",
+      "observed_date": "2026-10-05",
+      "discount": "1申込みにつき1,000円",
+      "period": "予約：連携日の翌日中に配信。利用期限は連携した月の翌月末日23:30まで（2026年5月以降の連携） ／ 旅行：連携した月の4か月後の末日出発分まで（2026年5月以降の連携）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "早トクスペシャル",
+      "kind": "coupon",
+      "found_url": "https://travel.jr-central.co.jp/plan/tokushu/early/",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/early/",
+      "evidence": "公式：出発30日前までの予約、10月5日時点の予約可能な出発日は11月4日から ／ 公式：「EX旅早トク30」を選択、年末年始・GW・お盆は設定なし（一部エリアを除く） ／ 公式：例として別々に買うより大人2名合計17,280円安い（9月16日時点の表示） ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-05",
+      "discount": "出発30日前までの予約で新幹線＋ホテルのセットが割安（公式の例：別々に買うより大人2名合計17,280円安い。Grokの「1名あたり」は誤り）",
+      "period": "予約：出発日の30日前まで（10月5日時点で予約できる出発日は11月4日から） ／ 旅行：年末年始・GW・お盆は設定なし（一部エリアを除く）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "イチ推し！直前割プラン",
+      "kind": "coupon",
+      "found_url": "https://travel.jr-central.co.jp/plan/tokushu/chokuzen/",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/chokuzen/",
+      "evidence": "公式：出発日29日前〜前日の予約が対象 ／ 公式：10月5日時点の対象出発日は10月6日〜11月3日、施設により一部除外日あり ／ 公式：EXダイナミックパック、基本設定エリアは東京・舞浜・名古屋・京都など ／ 未確認：割引の額・率（価格設定のため一律の表記なし） ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-05",
+      "discount": "出発日29日前〜前日の予約で割安になる設定（金額は宿・列車で変わる）",
+      "period": "予約：出発日の29日前〜前日 ／ 旅行：10月5日時点の対象出発日は10月6日（火）〜11月3日（火）。施設により一部除外日あり",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
