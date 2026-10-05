@@ -1,0 +1,52 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-06T08:14:20+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 公式：全楽天会員様向け 500円OFF・先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定・ダイヤモンド・プラチナ会員様限定の券あり（1,000円〜4,500円OFFの表示） ／ 公式：クーポンには金額条件あり ／ 未確認：券ごとの最低利用額 ／ 未確認：宿泊対象期間 ／ 未確認：決済方法の条件（どの券がオンラインカード決済限定か）",
+      "observed_date": "2026-10-06",
+      "discount": "全楽天会員500円OFF（先着300,000枚）、ダイヤモンド・プラチナ会員限定1,000〜4,500円OFFなど",
+      "period": "予約：2026/10/2 10:00〜2026/11/4 9:59 ／ 旅行：未確認（Grok: 国内宿泊は2026/10/2チェックイン〜2027/9/30チェックアウト、除外日あり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "毎月5と0のつく日からホテル・温泉宿が最大20％OFF",
+      "kind": "coupon",
+      "found_url": "https://x.com/money_yossy/status/2107229348449407427",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定、ホテル・温泉宿が最大20％OFF ／ 公式：11月ご利用分は11月4日10時配布開始予定 ／ 公式：対象施設内に本企画のクーポン対象外の施設が含まれる場合あり ／ 未確認：券ごとの割引率 ／ 未確認：今回分の予約期間（10/6 23:59まで） ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額 ／ 未確認：対象者・先着枚数 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-06",
+      "discount": "最大20%OFF（公式の題名）。券ごとの率は未確認（Grok: 5%OFFまたは10%OFF）",
+      "period": "予約：5と0のつく日から48時間（公式）。今回分は未確認（Grok: 2026/10/5 0:00〜10/6 23:59、次は10/10〜11） ／ 旅行：未確認（Grok: 5%OFFは2026/10/5チェックイン〜2027/7/31チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "得旅キャンペーン（最大ポイント15倍）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "official_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "evidence": "公式：エントリー・予約期間 2026年10月1日(木)10:00～2026年10月22日(木)9:59、エントリー必須、対象ホテル限定 ／ 公式：10月,11月,12月の宿泊に適用。チェックイン日・チェックアウト日の両方が対象期間内 ／ 公式：早期キャンペーン 2026年10月31日(土)チェックイン～2026年11月30日(月)チェックアウト ／ 公式：ポイント10倍は通常1%＋9%、最大15倍は超先（通常1%＋14%） ／ 公式：楽天モバイル契約者は早期予約がさらに+1倍（直前・超先は対象外） ／ 未確認：直前・超先の旅行期間の正確な日付 ／ 未確認：ポイント付与の上限（Grok: 月間10万、ダイヤモンド50万） ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-06",
+      "discount": "ポイント還元：直前・早期で10倍（通常1%＋9%）、楽天モバイル契約者は早期でさらに+1倍、2か月先の超先で最大15倍",
+      "period": "予約：エントリー・予約 2026/10/1 10:00〜2026/10/22 9:59（予約前のエントリー必須） ／ 旅行：10月・11月・12月の宿泊。早期は2026/10/31チェックイン〜2026/11/30チェックアウト（直前・超先の正確な期間は未確認）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
