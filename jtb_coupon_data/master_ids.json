@@ -1,10 +1,17 @@
 {
-  "last_updated": "2026-10-05T04:26:17.776656+09:00",
+  "last_updated": "2026-10-05T17:38:38.383416+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
       "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(9-1月出発)",
       "discount": "1,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
+    "2610premiumcp": {
+      "category": "国内",
+      "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
+      "discount": "最大5,000円引",
       "area": "全国",
       "stock_status": "配布中"
     },
@@ -48,7 +55,7 @@
       "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2606ooedo": {
       "category": "国内",
@@ -223,7 +230,7 @@
       "title": "九州ふっこう応援割 さがキャンペーン",
       "discount": "最大50％引",
       "area": "佐賀県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609kyushunagasaki": {
       "category": "国内",
@@ -246,6 +253,13 @@
       "area": "熊本県・宮崎県・鹿児島県",
       "stock_status": "配布終了"
     },
+    "2609kyushumiyazaki": {
+      "category": "国内",
+      "title": "九州ふっこう応援割 みやざきキャンペーン",
+      "discount": "最大50％引",
+      "area": "宮崎県",
+      "stock_status": "配布終了"
+    },
     "2607jalka": {
       "category": "国内",
       "title": "＜9～3月出発＞【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
@@ -258,7 +272,7 @@
       "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
       "discount": "最大60％引",
       "area": "鹿児島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609amami": {
       "category": "国内",
@@ -286,7 +300,7 @@
       "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
       "discount": "最大25,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609akifuyu": {
       "category": "国内",

@@ -7324,5 +7324,59 @@
     "title": "九州ふっこう応援割 ながさきキャンペーン",
     "discount": "最大50％引",
     "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "🆕 新規",
+    "id": "2609kyushumiyazaki",
+    "category": "国内",
+    "title": "九州ふっこう応援割 みやざきキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "🆕 新規",
+    "id": "2610premiumcp",
+    "category": "国内",
+    "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
+    "discount": "最大5,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "🟢 配布再開",
+    "id": "2607tokyu",
+    "category": "国内",
+    "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+    "discount": "最大8,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "🟢 配布再開",
+    "id": "2609kagoshima",
+    "category": "国内",
+    "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "🟢 配布再開",
+    "id": "2609kyushusaga",
+    "category": "国内",
+    "title": "九州ふっこう応援割 さがキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-05",
+    "type": "🟢 配布再開",
+    "id": "2609okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
+    "discount": "最大25,000円引",
+    "stock_status": "配布中"
   }
 ]

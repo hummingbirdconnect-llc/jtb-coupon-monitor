@@ -74,6 +74,77 @@
     }
   },
   {
+    "id": "2610premiumcp",
+    "category": "国内",
+    "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
+    "discount": "最大5,000円引",
+    "area": "全国",
+    "regions": [
+      "全国"
+    ],
+    "type": "ツアー",
+    "booking_period": "2026/10/5(月) ～ 2026/11/29(日)",
+    "stay_period": "2026/10/6(火) ～ 2027/3/31(水)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610premiumcp/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "precp"
+      ],
+      "passwords": [
+        "h093",
+        "h094",
+        "h095"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 300枚 150,000円以上のご利用で 5,000 円引 クーポンコード precp パスワ"
+      ],
+      "booking_regions": "全国の対象施設",
+      "usage_conditions": {
+        "出発対象期間": "2026/10/6(火) ～ 2027/3/31(水)",
+        "適用除外日※1": "なし",
+        "予約対象期間": "2026/10/5(月) ～ 2026/11/29(日)",
+        "予約対象地域": "全国の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JR＋宿泊プラン",
+        "飛行機＋宿泊プラン"
+      ],
+      "booking_channels": "",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "150,000円以上のご利用で 5,000 円引",
+        "100,000円以上のご利用で 3,000 円引",
+        "70,000円以上のご利用で 2,000 円引"
+      ],
+      "booking_period": "2026/10/5(月) ～ 2026/11/29(日)",
+      "stay_period": "2026/10/6(火) ～ 2027/3/31(水)"
+    },
+    "article_categories": [
+      "国内旅行",
+      "新幹線ツアー"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      },
+      "新幹線ツアー": {
+        "field": "available_plans",
+        "text": "JR＋宿泊プラン",
+        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
+      }
+    }
+  },
+  {
     "id": "2609young",
     "category": "国内",
     "title": "【U-29旅応援！】　国内ツアーで使える割引クーポン＜1～3月出発＞",
@@ -473,7 +544,7 @@
     "booking_period": "2026/7/31(金) ～ 2026/12/23(水)",
     "stay_period": "2026/9/23(水) ～ 2026/12/23(水)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607tokyu/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2272,7 +2343,7 @@
     "booking_period": "2026/9/24(木) ～ 2026/12/25(金)",
     "stay_period": "2026/10/1(木) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushusaga/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2586,6 +2657,86 @@
     }
   },
   {
+    "id": "2609kyushumiyazaki",
+    "category": "国内",
+    "title": "九州ふっこう応援割 みやざきキャンペーン",
+    "discount": "最大50％引",
+    "area": "宮崎県",
+    "regions": [
+      "宮崎県"
+    ],
+    "type": "ツアー",
+    "booking_period": "2026/10/5(月) ～ 2026/12/24(木)",
+    "stay_period": "2026/10/6(火) ～ 2026/12/25(金)",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushumiyazaki/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "ZTMYZ"
+      ],
+      "passwords": [
+        "W256",
+        "W257",
+        "W258",
+        "W259",
+        "W260",
+        "W261",
+        "W262",
+        "W263",
+        "W264",
+        "W265"
+      ],
+      "conditions": [],
+      "notes": [
+        "飛行機・JR】1名 先着 10枚 下限代金なし 50 ％引 （割引上限20,000円） クーポンコード ZTMYZ パス"
+      ],
+      "booking_regions": "宮崎県の対象施設",
+      "usage_conditions": {
+        "出発対象期間": "2026/10/6(火) ～ 2026/12/25(金)",
+        "適用除外日※1": "なし",
+        "予約対象期間": "2026/10/5(月) ～ 2026/12/24(木)",
+        "予約対象地域": "宮崎県の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JR＋宿泊プラン",
+        "飛行機＋宿泊プラン"
+      ],
+      "booking_channels": "",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "下限代金なし 50 ％引 （割引上限20,000円）",
+        "下限代金なし 50 ％引 （割引上限40,000円）",
+        "下限代金なし 50 ％引 （割引上限60,000円）",
+        "下限代金なし 50 ％引 （割引上限80,000円）",
+        "下限代金なし 50 ％引 （割引上限100,000円）"
+      ],
+      "booking_period": "2026/10/5(月) ～ 2026/12/24(木)",
+      "stay_period": "2026/10/6(火) ～ 2026/12/25(金)"
+    },
+    "article_categories": [
+      "国内旅行",
+      "新幹線ツアー"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      },
+      "新幹線ツアー": {
+        "field": "available_plans",
+        "text": "JR＋宿泊プラン",
+        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
+      }
+    }
+  },
+  {
     "id": "2607jalka",
     "category": "国内",
     "title": "＜9～3月出発＞【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
@@ -2659,7 +2810,7 @@
     "booking_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "stay_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kagoshima/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2949,7 +3100,7 @@
     "booking_period": "2026/9/14(月) ～ 2026/11/30(月)",
     "stay_period": "2026/12/1(火) ～ 2027/1/31(日)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa/page.asp",
     "detail_data": {
       "coupon_codes": [
