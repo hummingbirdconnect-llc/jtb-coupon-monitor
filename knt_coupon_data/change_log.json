@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-07-04",
-    "type": "🆕 新規",
-    "id": "yado-sp-kyoto-kcp-117d09",
-    "category": "獲得クーポン",
-    "title": "GO!GO!天橋立・丹後キャンペーン",
-    "area": "京都府"
-  },
-  {
     "date": "2026-07-11",
     "type": "🆕 新規",
     "id": "cpn-thanksweek-91eb8b",
@@ -190,5 +182,29 @@
     "category": "獲得クーポン",
     "title": "ひなタビみやざき宿泊キャンペーン",
     "area": "宮崎県"
+  },
+  {
+    "date": "2026-10-06",
+    "type": "🆕 新規",
+    "id": "sp-fukkou-kagoshima_shimameguri-63c531",
+    "category": "獲得クーポン",
+    "title": "あまみゆったり島泊割",
+    "area": ""
+  },
+  {
+    "date": "2026-10-06",
+    "type": "🆕 新規",
+    "id": "yado-sp-kagoshima-natsu-cp-4a08ed",
+    "category": "獲得クーポン",
+    "title": "南の宝箱　鹿児島「かごしま観光応援割」キャンペーン",
+    "area": ""
+  },
+  {
+    "date": "2026-10-06",
+    "type": "❌ 消失",
+    "id": "sp-fukkou-kyushu-4f28a1",
+    "category": "クーポンコード",
+    "title": "九州を元気に！旅で応援クーポン・プラン",
+    "area": "福岡県・佐賀県・長崎県"
   }
 ]
