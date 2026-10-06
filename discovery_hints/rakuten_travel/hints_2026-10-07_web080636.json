@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-07T08:15:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "値引きクーポン満載！お得なクーポン祭（10月）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2 10:00〜2026/11/4 9:59 ／ 公式：宿泊対象期間 2026/10/2チェックイン〜2027/9/30チェックアウト（除外日あり） ／ 公式：全楽天会員500円OFF・金額条件なし・先着300,000枚 ／ 公式：ダイヤモンド会員限定4,500円OFF（週末・1部屋40,000円以上）／4,000円OFF（平日・35,000円以上） ／ 公式：ダイヤモンド・プラチナ会員限定3,000円（週末・25,000円以上）／1,500円（週末・12,000円以上）／2,500円（平日・20,000円以上）／1,000円（平日・8,000円以上） ／ 公式：1回の予約で最大3枚まで。サイト上の予約時のみ ／ 未確認：決済方法の条件（ページに記載なし）",
+      "observed_date": "2026-10-07",
+      "discount": "全楽天会員500円OFF（金額条件なし）。ダイヤモンド会員限定4,500円・4,000円OFF、ダイヤモンド・プラチナ会員限定3,000円・2,500円・1,500円・1,000円OFF",
+      "period": "予約：2026/10/2 10:00〜2026/11/4 9:59（次回は11/4〜12/2予定） ／ 旅行：2026/10/2チェックイン〜2027/9/30チェックアウト。除外日：10/9〜10/11、10/31〜11/2、11/20〜11/23、12/25〜1/3、1/8〜1/10、2/19〜2/22、3/19〜3/21",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "初めての国内旅行で使える1,500円OFFクーポン（サービス初めて利用キャンペーン）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/service_debut/",
+      "official_url": "https://travel.rakuten.co.jp/camp/service_debut/",
+      "evidence": "公式：初めての国内旅行で使える1,500円OFFクーポン・先着利用15,000枚 ／ 公式：予約対象期間 2026/9/30 10:00〜2026/10/30 9:59 ／ 公式：宿泊対象期間 2026/9/30チェックイン〜2026/12/31チェックアウト ／ 公式：金額条件 1予約あたり7,500円（税込）以上。1会員1枚。全施設対象 ／ 公式：クーポン管理番号が同じ楽天トラベルクーポンとは併用不可 ／ 未確認：決済方法の条件（ページに記載なし）",
+      "observed_date": "2026-10-07",
+      "discount": "1,500円OFF（エントリーで初回利用のポイント特典もあり）",
+      "period": "予約：2026/9/30 10:00〜2026/10/30 9:59 ／ 旅行：2026/9/30チェックイン〜2026/12/31チェックアウト",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
