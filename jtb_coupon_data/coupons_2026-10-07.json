@@ -23,7 +23,7 @@
       ],
       "conditions": [],
       "notes": [
-        "なし 泊数指定なし 先着 5000枚 20,000円以上のご利用で 1,000 円引 クーポンコード cpnew パスワ"
+        "なし 泊数指定なし 先着 6000枚 20,000円以上のご利用で 1,000 円引 クーポンコード cpnew パスワ"
       ],
       "booking_regions": "全国の対象施設",
       "usage_conditions": {
@@ -544,7 +544,7 @@
     "booking_period": "2026/7/31(金) ～ 2026/12/23(水)",
     "stay_period": "2026/9/23(水) ～ 2026/12/23(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607tokyu/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2331,6 +2331,98 @@
     }
   },
   {
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "area": "福岡県",
+    "regions": [
+      "福岡県"
+    ],
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/10/7(水) ～ 2026/12/15(火)",
+    "stay_period": "2026/10/7(水) ～ 2026/12/15(火)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushufukuoka/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "ZSFKO",
+        "ZTFKO"
+      ],
+      "passwords": [
+        "W191",
+        "W192",
+        "W193",
+        "W194",
+        "W195",
+        "W196",
+        "W197",
+        "W198",
+        "W199",
+        "W200",
+        "W201",
+        "W202",
+        "W203",
+        "W204",
+        "W205"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 【宿泊】1名 先着 150枚 下限代金なし 50 ％引 （割引上限20,000円） クーポンコード ZSFKO パ"
+      ],
+      "booking_regions": "福岡県の対象施設",
+      "usage_conditions": {
+        "宿泊対象期間": "2026/10/7(水) ～ 2026/12/15(火)",
+        "適用除外日※1": "なし",
+        "予約対象期間": "2026/10/7(水) ～ 2026/12/15(火)",
+        "予約対象地域": "福岡県の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JTB宿泊プラン",
+        "るるぶトラベルプラン",
+        "JR＋宿泊プラン",
+        "飛行機＋宿泊プラン"
+      ],
+      "booking_channels": "",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "下限代金なし 50 ％引 （割引上限20,000円）",
+        "下限代金なし 50 ％引 （割引上限40,000円）",
+        "下限代金なし 50 ％引 （割引上限60,000円）",
+        "下限代金なし 50 ％引 （割引上限80,000円）",
+        "下限代金なし 50 ％引 （割引上限100,000円）",
+        "下限代金なし 50 ％引 （割引上限30,000円）",
+        "下限代金なし 50 ％引 （割引上限90,000円）",
+        "下限代金なし 50 ％引 （割引上限120,000円）",
+        "下限代金なし 50 ％引 （割引上限150,000円）"
+      ],
+      "booking_period": "2026/10/7(水) ～ 2026/12/15(火)",
+      "stay_period": "2026/10/7(水) ～ 2026/12/15(火)"
+    },
+    "article_categories": [
+      "国内旅行",
+      "新幹線ツアー"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      },
+      "新幹線ツアー": {
+        "field": "available_plans",
+        "text": "JR＋宿泊プラン",
+        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
+      }
+    }
+  },
+  {
     "id": "2609kyushusaga",
     "category": "国内",
     "title": "九州ふっこう応援割 さがキャンペーン",
@@ -2599,7 +2691,7 @@
     "booking_period": "2026/9/1(火) ～ 2026/10/30(金)",
     "stay_period": "2026/10/1(木) ～ 2026/10/31(土)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyucp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2669,7 +2761,7 @@
     "booking_period": "2026/10/5(月) ～ 2026/12/24(木)",
     "stay_period": "2026/10/6(火) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushumiyazaki/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2810,7 +2902,7 @@
     "booking_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "stay_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kagoshima/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -3100,7 +3192,7 @@
     "booking_period": "2026/9/14(月) ～ 2026/11/30(月)",
     "stay_period": "2026/12/1(火) ～ 2027/1/31(日)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -4280,6 +4372,134 @@
     }
   },
   {
+    "id": "2610ua",
+    "category": "海外",
+    "title": "海外航空券+ホテルで使えるグアム・サイパン・パラオ行き割引クーポン【ユナイテッド航空対象】",
+    "discount": "最大20,000円引",
+    "area": "グアム・サイパン・パラオ",
+    "regions": [
+      "グアム・サイパン・パラオ"
+    ],
+    "type": "海外航空券＋ホテル",
+    "booking_period": "2026年10月7日(水)～2027年3月24日(水)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2610ua/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2610C1",
+        "2610C2",
+        "2610C3",
+        "2610C4"
+      ],
+      "passwords": [
+        "DP2610UA"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着20枚 5,000 円引 クーポンコード 2610C1 パスワード DP2610UA 2名利用"
+      ],
+      "booking_regions": "",
+      "usage_conditions": {
+        "出発対象期間": "2026年10月7日(水)～2027年3月31日(水)",
+        "出発除外日": "なし",
+        "予約対象期間": "2026年10月7日(水)～2027年3月24日(水)",
+        "対象": "往復共にUA表記便名のグアム・サイパン・パラオ行き国際線全て",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "出発地": "全国"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [],
+      "booking_channels": "",
+      "residence_condition": "",
+      "departure_area": "全国",
+      "target_brand": "",
+      "target_products": "往復共にUA表記便名のグアム・サイパン・パラオ行き国際線全て",
+      "discount_rules": [
+        "5,000 円引",
+        "10,000 円引",
+        "15,000 円引",
+        "20,000 円引"
+      ],
+      "booking_period": "2026年10月7日(水)～2027年3月24日(水)",
+      "stay_period": "2026年10月7日(水)～2027年3月31日(水)"
+    },
+    "article_categories": [
+      "海外旅行"
+    ],
+    "classification_evidence": {
+      "海外旅行": {
+        "field": "category",
+        "text": "海外"
+      }
+    }
+  },
+  {
+    "id": "2609oz",
+    "category": "海外",
+    "title": "【韓国観光公社協賛！】韓国で使える！海外ツアールックJTBMySTYLE割引クーポン【アシアナ航空(OZ)対象】",
+    "discount": "最大12,000円引",
+    "area": "韓国",
+    "regions": [
+      "韓国"
+    ],
+    "type": "海外ツアー",
+    "booking_period": "2026年10月7日(水)～2026年12月8日(火)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2609oz/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2609B1",
+        "2609B2",
+        "2609B3",
+        "2609B4"
+      ],
+      "passwords": [
+        "LS2609OZ"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着5枚 3,000 円引 クーポンコード 2609B1 パスワード LS2609OZ 2名利用 先"
+      ],
+      "booking_regions": "",
+      "usage_conditions": {
+        "出発対象期間": "2026年10月15日(木)～2026年12月16日(水)",
+        "出発除外日": "なし",
+        "予約対象期間": "2026年10月7日(水)～2026年12月8日(火)",
+        "対象": "アシアナ航空(OZ)利用、韓国行き海外ツアー(JTBMySTYLE)商品",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "出発地": "全国"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [],
+      "booking_channels": "",
+      "residence_condition": "",
+      "departure_area": "全国",
+      "target_brand": "",
+      "target_products": "アシアナ航空(OZ)利用、韓国行き海外ツアー(JTBMySTYLE)商品",
+      "discount_rules": [
+        "3,000 円引",
+        "6,000 円引",
+        "9,000 円引",
+        "12,000 円引"
+      ],
+      "booking_period": "2026年10月7日(水)～2026年12月8日(火)",
+      "stay_period": "2026年10月15日(木)～2026年12月16日(水)"
+    },
+    "article_categories": [
+      "海外旅行"
+    ],
+    "classification_evidence": {
+      "海外旅行": {
+        "field": "category",
+        "text": "海外"
+      }
+    }
+  },
+  {
     "id": "2607ke2",
     "category": "海外",
     "title": "海外航空券で使えるソウル行き割引クーポン【大韓航空対象】",
@@ -4652,6 +4872,70 @@
       ],
       "booking_period": "2026年4月1日(水)～2027年3月23日(火)",
       "stay_period": "2026年4月1日(水)～2027年3月31日(水)"
+    },
+    "article_categories": [
+      "海外旅行"
+    ],
+    "classification_evidence": {
+      "海外旅行": {
+        "field": "category",
+        "text": "海外"
+      }
+    }
+  },
+  {
+    "id": "2610ba",
+    "category": "海外",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【ブリティッシュ・エアウェイズ対象】",
+    "discount": "最大120,000円引",
+    "area": "全方面",
+    "regions": [
+      "全方面"
+    ],
+    "type": "海外航空券＋ホテル",
+    "booking_period": "2026年10月7日(水)～2027年3月24日(水)",
+    "stay_period": "",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/kaigaicoupon/detail/2610ba/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "2610B1",
+        "2610B2",
+        "2610B3",
+        "2610B4"
+      ],
+      "passwords": [
+        "DP2610BA"
+      ],
+      "conditions": [],
+      "notes": [
+        "クーポン 1名利用 先着20枚 30,000 円引 クーポンコード 2610B1 パスワード DP2610BA 2名利用"
+      ],
+      "booking_regions": "",
+      "usage_conditions": {
+        "出発対象期間": "2026年10月7日(水)～2027年3月31日(水)",
+        "出発除外日": "なし",
+        "予約対象期間": "2026年10月7日(水)～2027年3月24日(水)",
+        "対象": "往復共にBA表記便名の国際線全て",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "出発地": "全国"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [],
+      "booking_channels": "",
+      "residence_condition": "",
+      "departure_area": "全国",
+      "target_brand": "",
+      "target_products": "往復共にBA表記便名の国際線全て",
+      "discount_rules": [
+        "30,000 円引",
+        "60,000 円引",
+        "90,000 円引",
+        "120,000 円引"
+      ],
+      "booking_period": "2026年10月7日(水)～2027年3月24日(水)",
+      "stay_period": "2026年10月7日(水)～2027年3月31日(水)"
     },
     "article_categories": [
       "海外旅行"

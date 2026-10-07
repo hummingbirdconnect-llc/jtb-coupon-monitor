@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T05:53:59.265318+09:00",
+  "last_updated": "2026-10-07T17:17:53.408476+09:00",
   "ids": {
     "7e09d3c11222": {
       "category": "海外ツアー・海外添乗員同行ツアー",
@@ -213,6 +213,68 @@
       "category": "国内航空券＋ホテル",
       "title": "年末年始出発がお得！1グループ最大50,000円引き",
       "discount": "最大50,000円引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
+    "2b9c08e217c3": {
+      "category": "九州ツアー",
+      "title": "旅で九州を応援しよう！1～3月出発限定1名様につき2,000円引き",
+      "discount": "2,000円引き",
+      "region_codes": [
+        "kanto",
+        "hokkaido",
+        "tohoku",
+        "koshinetsu",
+        "chubu",
+        "hokuriku",
+        "kansai",
+        "chugoku",
+        "shikoku",
+        "kyushu",
+        "okinawa"
+      ],
+      "region_labels": [
+        "首都圏版",
+        "北海道版",
+        "東北版",
+        "甲信越（新潟）版",
+        "中部版",
+        "北陸版",
+        "関西版",
+        "中国版",
+        "四国版",
+        "九州版",
+        "沖縄版"
+      ]
+    },
+    "5f8a07284254": {
+      "category": "九州行き航空券＋ホテル",
+      "title": "旅で九州を応援しよう！1グループ5,000円引き",
+      "discount": "5,000円引き",
       "region_codes": [
         "kanto",
         "hokkaido",
@@ -849,10 +911,10 @@
         "北海道版"
       ]
     },
-    "eec1f5443bfe-a434dd": {
-      "category": "【年末年始出発】オーストラリア",
-      "title": "東北・新潟在住者限定ケアンズ・ゴールドコースト行きツアーが20,000円引き",
-      "discount": "20,000円引き",
+    "6d314d2c38b1-284d2c": {
+      "category": "【東北・新潟発】海外旅行",
+      "title": "★会員限定★東北・新潟発の海外旅行をご予約で1グループあたり最大15,000円引き",
+      "discount": "最大15,000円引き",
       "region_codes": [
         "tohoku",
         "koshinetsu"
@@ -860,6 +922,21 @@
       "region_labels": [
         "東北版",
         "甲信越（新潟）版"
+      ]
+    },
+    "eec1f5443bfe-ad9b01": {
+      "category": "【年末年始出発】オーストラリア",
+      "title": "東北・新潟在住者限定ケアンズ・ゴールドコースト行きツアーが20,000円引き",
+      "discount": "20,000円引き",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
       ]
     },
     "e850a0705b7d-fae589": {
@@ -1045,6 +1122,21 @@
     "e4b04b727075-b9e5b9": {
       "category": "【新潟発着】仁川空港乗継海外旅行",
       "title": "≪先着20名様限定≫期間中に仁川空港乗継便を利用されるお客様仁川空港SKY HUB LOUNGEクーポンプレゼント",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "59bb3df452a4-ab8814": {
+      "category": "【新潟発着】韓国旅行",
+      "title": "対象期間に新潟空港発の韓国旅行へご出発の方にうれしい2つの特典プレゼント",
       "discount": "",
       "region_codes": [
         "tohoku",
@@ -1321,10 +1413,10 @@
         "中国版"
       ]
     },
-    "eec1f5443bfe-e2e839": {
-      "category": "【年末年始出発】オーストラリア",
-      "title": "東北・新潟在住者限定ケアンズ・ゴールドコースト行きツアーが20,000円引き",
-      "discount": "20,000円引き",
+    "6d314d2c38b1-b78ce7": {
+      "category": "【東北・新潟発】海外旅行",
+      "title": "★会員限定★東北・新潟発の海外旅行をご予約で1グループあたり最大15,000円引き",
+      "discount": "最大15,000円引き",
       "region_codes": [
         "shikoku"
       ],
