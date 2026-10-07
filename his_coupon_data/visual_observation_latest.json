@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-10-07T17:14:09+09:00",
+  "official_checked_at": "2026-10-08T06:02:59+09:00",
   "official_area": "全11地域版",
   "coverage_status": "complete",
   "region_count": 11,
@@ -14,11 +14,11 @@
       "switch_url": "https://www.his-j.com/Default.aspx?param=1",
       "tab_counts": {
         "海外旅行": 5,
-        "国内旅行": 27
+        "国内旅行": 28
       },
-      "visible_count": 32,
+      "visible_count": 33,
       "total_dom_count": 56,
-      "hidden_dom_count": 24
+      "hidden_dom_count": 23
     },
     {
       "code": "hokkaido",
@@ -153,14 +153,14 @@
   ],
   "tab_counts": {
     "海外旅行": 107,
-    "国内旅行": 280
+    "国内旅行": 281
   },
-  "visible_count": 98,
-  "regional_visible_count": 387,
+  "visible_count": 99,
+  "regional_visible_count": 388,
   "total_dom_count": 616,
-  "hidden_dom_count": 229,
-  "capture_count": 98,
+  "hidden_dom_count": 228,
+  "capture_count": 99,
   "capture_method": "deduplicated_individual_element_screenshot",
-  "derived_image_count": 98,
+  "derived_image_count": 99,
   "evidence_directory": "evidence/his"
 }
