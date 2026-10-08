@@ -6334,5 +6334,77 @@
   "pattern": "direct_number",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "honest_value",
+  "ota": "jtb",
+  "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "quote_highlight",
+  "ota": "his",
+  "title": "11・12月出発がお得！1名様につき2,000円引き"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "discovery",
+  "ota": "rurubu_travel",
+  "title": "南の宝箱 鹿児島 かごしま観光応援割（おとな・こどもひとり1泊あたり最大20,000円引き）"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "quote_highlight",
+  "ota": "jtb",
+  "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "memo_style",
+  "ota": "jtb",
+  "title": "熊本ふっこう応援割"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "season_context",
+  "ota": "his",
+  "title": "11・12月出発がお得！1名様につき2,000円引き"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "price_diff",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-10-09",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "weekend_plan",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
