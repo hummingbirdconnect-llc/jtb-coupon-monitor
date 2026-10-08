@@ -2343,7 +2343,7 @@
     "booking_period": "2026/10/7(水) ～ 2026/12/15(火)",
     "stay_period": "2026/10/7(水) ～ 2026/12/15(火)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushufukuoka/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2527,7 +2527,7 @@
     "booking_period": "2026/9/30(水) ～ 2026/12/25(金)",
     "stay_period": "2026/10/1(木) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushunagasaki/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2677,6 +2677,98 @@
     }
   },
   {
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "area": "熊本県",
+    "regions": [
+      "熊本県"
+    ],
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/10/8(木) ～ 2026/12/25(金)",
+    "stay_period": "2026/10/8(木) ～ 2026/12/25(金)",
+    "store_available": false,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
+    "detail_data": {
+      "coupon_codes": [
+        "ZSKMM",
+        "ZTKMM"
+      ],
+      "passwords": [
+        "W266",
+        "W267",
+        "W268",
+        "W269",
+        "W270",
+        "W271",
+        "W272",
+        "W273",
+        "W275",
+        "W276",
+        "W277",
+        "W278",
+        "W279",
+        "W280",
+        "W281"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 【宿泊】1名 先着 300枚 下限代金なし 60 ％引 （割引上限20,000円） クーポンコード ZSKMM パ"
+      ],
+      "booking_regions": "熊本県の対象施設",
+      "usage_conditions": {
+        "宿泊対象期間": "2026/10/8(木) ～ 2026/12/25(金)",
+        "適用除外日※1": "なし",
+        "予約対象期間": "2026/10/8(木) ～ 2026/12/25(金)",
+        "予約対象地域": "熊本県の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JTB宿泊プラン",
+        "るるぶトラベルプラン",
+        "JR＋宿泊プラン",
+        "飛行機＋宿泊プラン"
+      ],
+      "booking_channels": "",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "下限代金なし 60 ％引 （割引上限20,000円）",
+        "下限代金なし 60 ％引 （割引上限40,000円）",
+        "下限代金なし 60 ％引 （割引上限60,000円）",
+        "下限代金なし 60 ％引 （割引上限80,000円）",
+        "下限代金なし 60 ％引 （割引上限100,000円）",
+        "下限代金なし 60 ％引 （割引上限30,000円）",
+        "下限代金なし 60 ％引 （割引上限90,000円）",
+        "下限代金なし 60 ％引 （割引上限120,000円）",
+        "下限代金なし 60 ％引 （割引上限150,000円）"
+      ],
+      "booking_period": "2026/10/8(木) ～ 2026/12/25(金)",
+      "stay_period": "2026/10/8(木) ～ 2026/12/25(金)"
+    },
+    "article_categories": [
+      "国内旅行",
+      "新幹線ツアー"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      },
+      "新幹線ツアー": {
+        "field": "available_plans",
+        "text": "JR＋宿泊プラン",
+        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
+      }
+    }
+  },
+  {
     "id": "2609kyucp",
     "category": "国内",
     "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
@@ -2691,7 +2783,7 @@
     "booking_period": "2026/9/1(火) ～ 2026/10/30(金)",
     "stay_period": "2026/10/1(木) ～ 2026/10/31(土)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyucp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2902,7 +2994,7 @@
     "booking_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "stay_period": "2026/9/14(月) ～ 2026/10/13(火)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kagoshima/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -3255,7 +3347,7 @@
     "booking_period": "2026/9/10(木) ～ 2026/11/16(月)",
     "stay_period": "2026/9/10(木) ～ 2027/3/31(水)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609akifuyu/page.asp",
     "detail_data": {
       "coupon_codes": [
