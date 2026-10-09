@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-07-01",
-    "type": "ステータス変更 配布終了→配布中",
-    "id": "jalpack-hayakime",
-    "category": "公式クーポン",
-    "title": "早決プラン55/60/90",
-    "discount": "1グループにつき 3,000円割引"
-  },
-  {
-    "date": "2026-07-04",
-    "type": "ステータス変更 配布終了→配布中",
-    "id": "jalpack-domestic-timesale",
-    "category": "公式クーポン",
-    "title": "期間限定タイムセールクーポン（国内）",
-    "discount": "最大30,000円割引"
-  },
-  {
     "date": "2026-07-22",
     "type": "ステータス変更 配布中→配布終了",
     "id": "jalpack-domestic-timesale",
@@ -58,6 +42,14 @@
   {
     "date": "2026-09-19",
     "type": "ステータス変更 配布終了→配布中",
+    "id": "jalpack-domestic-timesale",
+    "category": "公式クーポン",
+    "title": "期間限定タイムセールクーポン（国内）",
+    "discount": "最大30,000円割引"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "ステータス変更 配布中→配布終了",
     "id": "jalpack-domestic-timesale",
     "category": "公式クーポン",
     "title": "期間限定タイムセールクーポン（国内）",
