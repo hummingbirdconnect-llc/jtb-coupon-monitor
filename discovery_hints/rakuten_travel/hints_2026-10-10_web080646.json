@@ -1,0 +1,65 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-10T08:17:10+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 4,
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "title": "楽天トラベル お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2 10:00〜2026/11/4 9:59 ／ 公式：500円引き・先着利用300,000枚・金額条件なし・併用可・全楽天会員 ／ 公式：宿泊対象期間 2026/10/2〜2027/9/30（除外日あり） ／ 未確認：決済方法の条件 ／ 未確認：ダイヤモンド・プラチナ会員限定クーポンの金額と条件",
+      "observed_date": "2026-10-10",
+      "discount": "国内宿泊500円引き（全楽天会員）。ランク限定クーポンは金額未確認（Grok: ダイヤモンド最大4,500円・プラチナ以上最大3,000円）",
+      "period": "予約：2026/10/2 10:00〜2026/11/4 9:59 ／ 旅行：2026/10/2チェックイン〜2027/9/30チェックアウト（除外日あり：10/9〜10/11、10/31〜11/2、11/20〜11/23、12/25〜1/3、1/8〜1/10、2/19〜2/22、3/19〜3/21）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天トラベル 5と0のつく日",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/50luxday/top/",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/top/",
+      "evidence": "公式：ホテル・温泉宿 クーポン併用で最大20%OFF・2027年9月末までの宿泊予約で使える ／ 公式：楽パック（航空券＋宿）5%クーポンは170,000円以上・2027年7月末までの旅行 ／ 未確認：獲得・予約できる日時 ／ 未確認：国内宿泊クーポンの最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-10",
+      "discount": "ホテル・温泉宿／最高級宿：クーポン併用で最大20%OFF。楽パック（航空券＋宿）5%クーポン（170,000円以上）",
+      "period": "予約：未確認（Grok: 毎月5・10・15・20・25・30日の0時から48時間程度） ／ 旅行：2027年9月末までの宿泊（ホテル・温泉宿）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天トラベル 得旅キャンペーン 最大ポイント15倍（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "official_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "evidence": "公式：エントリー・予約期間 2026/10/1 10:00〜2026/10/22 9:59、エントリー必須、対象ホテル限定 ／ 公式：対象宿泊は10/1〜10/31、10/31〜11/30、11/30〜12/31の3区分（両日とも期間内） ／ 公式：最大15倍は超先プランの値。楽天モバイル特典は早期のみ ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-10",
+      "discount": "ポイント還元（割引クーポンではない）。超先（2か月先）で最大15倍。楽天モバイル契約者は早期のみ+1倍",
+      "period": "予約：2026/10/1 10:00〜2026/10/22 9:59（エントリー・予約期間） ／ 旅行：直前 10/1〜10/31、早期 10/31〜11/30、超先 11/30〜12/31（チェックイン・チェックアウトとも期間内）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天トラベル 初めての国内旅行で使える1,500円OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/service_debut/",
+      "official_url": "https://travel.rakuten.co.jp/camp/service_debut/",
+      "evidence": "公式：1,500円OFF・先着利用15,000枚・1会員1枚 ／ 公式：予約対象期間 2026/9/30 10:00〜2026/10/30 9:59、宿泊対象期間 2026/9/30〜2026/12/31 ／ 公式：1予約7,500円（税込）以上・全施設対象・併用可 ／ 未確認：クーポンを獲得できる「初めて」の判定条件 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-10",
+      "discount": "国内宿泊1,500円OFF",
+      "period": "予約：2026/9/30 10:00〜2026/10/30 9:59 ／ 旅行：2026/9/30チェックイン〜2026/12/31チェックアウト",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
