@@ -1,12 +1,12 @@
 {
   "date": "2026-10-09",
-  "generated_at": "2026-10-09 06:15 JST",
+  "generated_at": "2026-10-09 16:17 JST",
   "sites": [
     {
       "site_id": "yakushimafan",
       "display_name": "屋久島ファン",
       "x_account": "@yakushimafan",
-      "candidates": 187,
+      "candidates": 192,
       "threads": [
         {
           "provider_id": "jtb",
@@ -40,6 +40,36 @@
           ]
         },
         {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+          "score": 63,
+          "reasons": [
+            "本日新規",
+            "割引20,000円"
+          ],
+          "pattern": "quote_highlight",
+          "pattern_name": "カギカッコ強調型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "【JTB】いま『宿泊・ツアーが最大20,000円引き』のクーポンを配布しています\n\n期限は2/28まで。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 119,
+              "chars": 71
+            },
+            {
+              "text": "使う前にここだけ確認してください。\n\n✅割引: 最大20,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 2/28まで\n\n⚠️100,000円以上の予約が条件です\n(2/3)",
+              "weight": 141,
+              "chars": 88
+            },
+            {
+              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/jtb-first/\n\n屋久島の旅の計画に。予約前にチェックしてみてください。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 141,
+              "chars": 100
+            }
+          ]
+        },
+        {
           "provider_id": "his",
           "provider_label": "HIS",
           "title": "11・12月出発がお得！1名様につき2,000円引き",
@@ -48,54 +78,24 @@
             "本日新規",
             "割引2,000円"
           ],
-          "pattern": "quote_highlight",
-          "pattern_name": "カギカッコ強調型",
+          "pattern": "discovery",
+          "pattern_name": "発見共有型",
           "article_url": "https://yakushima.fun/his-coupon/",
           "posts": [
             {
-              "text": "【HIS】いま『HISが企画・実施する首都圏発の飛行機利用…が2,000円引き』のクーポンを配布しています\n\n期限は11/4まで。\n\n詳しい条件はこの下に👇\n(1/3)",
-              "weight": 143,
-              "chars": 84
+              "text": "今朝のクーポンチェックで見つけたやつです。\n【HIS】で2,000円引きが出てます\n\nHISが企画・実施する首都圏発の飛行機利用国内ツアーで使えます。\n予約は11/4までです。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 187,
+              "chars": 107
             },
             {
-              "text": "使う前にここだけ確認してください。\n\n✅割引: 2,000円引き\n✅対象: HISが企画・実施する首都圏発の飛行機利用国内ツアー\n✅予約期限: 11/4まで\n\n⚠️30,000円以上の予約が条件です\n(2/3)",
+              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 2,000円引き\n✅対象: HISが企画・実施する首都圏発の飛行機利用国内ツアー\n✅予約期限: 11/4まで\n\n⚠️30,000円以上の予約が条件です\n(2/3)",
               "weight": 174,
-              "chars": 105
-            },
-            {
-              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/his-coupon/\n\n屋久島の旅の計画に。予約前にチェックしてみてください。\n\n#旅行クーポン #HIS\n(3/3)",
-              "weight": 141,
-              "chars": 101
-            }
-          ]
-        },
-        {
-          "provider_id": "rurubu_travel",
-          "provider_label": "るるぶトラベル",
-          "title": "南の宝箱 鹿児島 かごしま観光応援割（おとな・こどもひとり1泊あたり最大20,000円引き）",
-          "score": 45,
-          "reasons": [
-            "割引20,000円",
-            "残り4日"
-          ],
-          "pattern": "discovery",
-          "pattern_name": "発見共有型",
-          "article_url": "https://yakushima.fun/rurubu-coupon/",
-          "posts": [
-            {
-              "text": "今朝のクーポンチェックで見つけたやつです。\n【るるぶトラベル】で最大20,000円引きが出てます\n\n国内宿泊で使えます。\n締切は10/13まで。検討中なら早めがおすすめです。\n\n詳しい条件はこの下に👇\n(1/3)",
-              "weight": 189,
               "chars": 106
             },
             {
-              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 最大60%引き\n✅対象: 国内宿泊\n✅予約期限: 10/13まで\n✅コード: XKGSMR26SP60\n\n⚠️配布状況は変わることがあるので公式ページで最新を確認してください\n(2/3)",
-              "weight": 193,
-              "chars": 118
-            },
-            {
-              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/rurubu-coupon/\n\n屋久島旅行の予約にも使えます。予約前にどうぞ。\n\n#旅行クーポン #るるぶトラベル\n(3/3)",
-              "weight": 144,
-              "chars": 104
+              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/his-coupon/\n\n屋久島旅行の予約にも使えます。予約前にどうぞ。\n\n#旅行クーポン #HIS\n(3/3)",
+              "weight": 133,
+              "chars": 97
             }
           ]
         }
@@ -105,7 +105,7 @@
       "site_id": "welltrip",
       "display_name": "ウェルトリップ",
       "x_account": "welltrip",
-      "candidates": 185,
+      "candidates": 190,
       "threads": [
         {
           "provider_id": "jtb",
@@ -141,25 +141,25 @@
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "title": "熊本ふっこう応援割",
-          "score": 52,
+          "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+          "score": 63,
           "reasons": [
-            "本日配布再開",
-            "割引60%"
+            "本日新規",
+            "割引20,000円"
           ],
-          "pattern": "memo_style",
-          "pattern_name": "メモ共有型",
+          "pattern": "soft_news",
+          "pattern_name": "予約前チェック型",
           "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
           "posts": [
             {
-              "text": "旅行の予定がある人向けの覚え書きです📝\n【JTB】最大60%OFFクーポンが配布中\n\n対象は宿泊・ツアーです。\n予約は12/25までです。\n\n条件はこちらです👇\n(1/3)",
+              "text": "【JTB】をこれから予約する人は、最大20,000円引きクーポンの確認を先にどうぞ\n\n対象は宿泊・ツアーです。\n予約は2/28までです。\n\n条件はこちらです👇\n(1/3)",
               "weight": 146,
-              "chars": 86
+              "chars": 85
             },
             {
-              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大60％引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/25まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
-              "weight": 145,
-              "chars": 85
+              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大20,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 2/28まで\n\n⚠️100,000円以上の予約が条件です\n(2/3)",
+              "weight": 141,
+              "chars": 88
             },
             {
               "text": "取得方法と使い方の手順はこちらに\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n気になった方は早めのチェックがおすすめです。\n\n#旅行クーポン #JTB\n(3/3)",

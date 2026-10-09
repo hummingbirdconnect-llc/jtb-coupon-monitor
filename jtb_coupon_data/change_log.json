@@ -7441,5 +7441,68 @@
     "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
     "discount": "最大25,000円引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "🆕 新規",
+    "id": "2610gunma",
+    "category": "国内",
+    "title": "ぐんま冬旅キャンペーン　割引クーポン",
+    "discount": "最大3,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "🆕 新規",
+    "id": "2610matsue",
+    "category": "国内",
+    "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+    "discount": "最大20,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "🆕 新規",
+    "id": "2610okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】11月～3月出発☆冬から春の旅行に使えるおすすめ旅行割引クーポン",
+    "discount": "最大20,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "🔴 配布終了",
+    "id": "2609hankyu",
+    "category": "国内",
+    "title": "【10～12月宿泊】「阪急阪神ホテルズ」東京レム５施設と第一ホテル東京で使える！割引クーポン",
+    "discount": "最大5,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "🟢 配布再開",
+    "id": "2609kyushumiyazaki",
+    "category": "国内",
+    "title": "九州ふっこう応援割 みやざきキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "🟢 配布再開",
+    "id": "2609kyushunagasaki",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ながさきキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-09",
+    "type": "🟢 配布再開",
+    "id": "2609kyushusaga",
+    "category": "国内",
+    "title": "九州ふっこう応援割 さがキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
   }
 ]

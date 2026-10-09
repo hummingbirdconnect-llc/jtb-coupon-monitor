@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T06:14:10.995225+09:00",
+  "last_updated": "2026-10-09T16:17:02.499281+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -106,6 +106,13 @@
       "area": "新潟県",
       "stock_status": "配布中"
     },
+    "2610gunma": {
+      "category": "国内",
+      "title": "ぐんま冬旅キャンペーン　割引クーポン",
+      "discount": "最大3,000円引",
+      "area": "群馬県",
+      "stock_status": "配布中"
+    },
     "2603ikaho": {
       "category": "国内",
       "title": "伊香保温泉をぶらり散策しよう！割引クーポン",
@@ -125,7 +132,7 @@
       "title": "【10～12月宿泊】「阪急阪神ホテルズ」東京レム５施設と第一ホテル東京で使える！割引クーポン",
       "discount": "最大5,000円引",
       "area": "東京都",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2608hachijo": {
       "category": "国内",
@@ -197,6 +204,13 @@
       "area": "大阪府",
       "stock_status": "配布終了"
     },
+    "2610matsue": {
+      "category": "国内",
+      "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "島根県",
+      "stock_status": "配布中"
+    },
     "2602jalcp": {
       "category": "国内",
       "title": "【JAL麗らか四国キャンペーン】往復JAL便利用でいく小豆島ツアーで使える割引クーポン",
@@ -237,14 +251,14 @@
       "title": "九州ふっこう応援割 さがキャンペーン",
       "discount": "最大50％引",
       "area": "佐賀県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609kyushunagasaki": {
       "category": "国内",
       "title": "九州ふっこう応援割 ながさきキャンペーン",
       "discount": "最大50％引",
       "area": "長崎県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2610nagasakimarriott": {
       "category": "国内",
@@ -272,7 +286,7 @@
       "title": "九州ふっこう応援割 みやざきキャンペーン",
       "discount": "最大50％引",
       "area": "宮崎県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2607jalka": {
       "category": "国内",
@@ -306,6 +320,13 @@
       "category": "国内",
       "title": "沖縄【秋冬旅】タイムセールや年末年始にも利用できる割引クーポン",
       "discount": "3,000円引",
+      "area": "沖縄県",
+      "stock_status": "配布中"
+    },
+    "2610okinawa": {
+      "category": "国内",
+      "title": "☆【沖縄】11月～3月出発☆冬から春の旅行に使えるおすすめ旅行割引クーポン",
+      "discount": "最大20,000円引",
       "area": "沖縄県",
       "stock_status": "配布中"
     },
