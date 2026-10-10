@@ -1,0 +1,39 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-11T08:17:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "じゃらんふるさと納税クーポン（寄付額の30%）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/furusato/",
+      "official_url": "https://www.jalan.net/furusato/",
+      "evidence": "公式：ふるさと納税で寄付額の30%分のクーポンが返礼品として受け取れる ／ 公式：じゃらんふるさと納税クーポン利用のための寄付には、さとふるとのアカウント連携が必要 ／ 公式：デイユース・法人向けサービス、じゃらんパックは対象外 ／ 公式：都道府県をまたぐチェーン施設は1名1泊あたり5万円まで ／ 公式：宿泊施設クーポン・じゃらんクーポン・地域クーポン・特別クーポンは1枚ずつ併用可（併用可の記載があるもの） ／ 未確認：クーポンの有効期間（Grokは3年と回答。公式ページの表示部分では読めず） ／ 未確認：最低利用額 ／ 未確認：決済方法の条件 ／ 未確認：予約・宿泊の対象期間",
+      "observed_date": "2026-10-11",
+      "discount": "寄付額の30%分のクーポン（チェーン施設は1名1泊5万円まで）",
+      "period": "予約：未確認（Grok: 発行後利用、有効期間3年） ／ 旅行：未確認（クーポンの有効期間内）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "じゃらんスペシャルウィーク！お得なレンタカー（セールプラン）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/rentacar/themes/spweek/",
+      "official_url": "https://www.jalan.net/rentacar/themes/spweek/",
+      "evidence": "公式：掲載期間：2026年10月5日〜2026年10月15日 ／ 公式：4,200円分クーポン（25,000円以上・先着320予約）は先着利用枚数に達したため配布を終了 ／ 公式：3,300円分クーポン（20,000円以上・先着280予約）は先着利用枚数に達したため配布を終了 ／ 公式：「お得なプランを探す」として地域・車種別のプラン一覧あり ／ 未確認：セールプランの割引額・割引率 ／ 未確認：プランの利用（返却）対象期間 ／ 未確認：対象者・決済方法 ／ 未確認：特集限定クーポンは配布終了のため、残るのはセールプランのみ",
+      "observed_date": "2026-10-11",
+      "discount": "特集のセール価格プラン（具体の割引額は未確認）。特集限定クーポン4,200円分・3,300円分は先着で配布終了",
+      "period": "予約：特集の掲載期間 2026年10月5日〜10月15日 ／ 旅行：未確認（配布終了したクーポンの返却対象期間は2026/10/05〜2027/03/31）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
