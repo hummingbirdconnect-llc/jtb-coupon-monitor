@@ -6411,49 +6411,49 @@
   "date": "2026-10-10",
   "site": "yakushimafan",
   "tree": 1,
-  "pattern": "comeback",
+  "pattern": "daily_check",
   "ota": "jtb",
-  "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン"
+  "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン"
  },
  {
   "date": "2026-10-10",
   "site": "yakushimafan",
   "tree": 2,
-  "pattern": "daily_check",
+  "pattern": "comeback",
   "ota": "jtb",
-  "title": "九州ふっこう応援割 ふくおかキャンペーン"
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
  },
  {
   "date": "2026-10-10",
   "site": "yakushimafan",
   "tree": 3,
   "pattern": "last_check",
-  "ota": "his",
-  "title": "先着合計100枚限定！TABIOOPS! START記念1グループ最大20,000円引き"
+  "ota": "rurubu_travel",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
  },
  {
   "date": "2026-10-10",
   "site": "welltrip",
   "tree": 1,
   "pattern": "price_diff",
-  "ota": "jtb",
-  "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン"
- },
- {
-  "date": "2026-10-10",
-  "site": "welltrip",
-  "tree": 2,
-  "pattern": "memo_style",
   "ota": "his",
   "title": "先着合計100枚限定！TABIOOPS! START記念1グループ最大20,000円引き"
  },
  {
   "date": "2026-10-10",
   "site": "welltrip",
-  "tree": 3,
-  "pattern": "target_call",
+  "tree": 2,
+  "pattern": "soft_news",
   "ota": "jtb",
-  "title": "九州ふっこう応援割 ふくおかキャンペーン"
+  "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-10-10",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
  },
  {
   "date": "2026-10-10",

@@ -7549,5 +7549,41 @@
     "title": "九州ふっこう応援割 ながさきキャンペーン",
     "discount": "最大50％引",
     "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-10",
+    "type": "🟢 配布再開",
+    "id": "2609akifuyu",
+    "category": "国内",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "discount": "最大10,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-10",
+    "type": "🔴 配布終了",
+    "id": "2609kagoshima",
+    "category": "国内",
+    "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
+    "discount": "最大60％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-10",
+    "type": "🔴 配布終了",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-10",
+    "type": "🟢 配布再開",
+    "id": "2609okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
+    "discount": "最大25,000円引",
+    "stock_status": "配布中"
   }
 ]
