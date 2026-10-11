@@ -1,41 +1,5 @@
 [
   {
-    "date": "2026-07-13",
-    "type": "🟢 配布再開",
-    "id": "2604nstoh",
-    "category": "国内",
-    "title": "【7～9月宿泊】「日本の旬 東北」　東北エリアのおすすめ施設で使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布中"
-  },
-  {
-    "date": "2026-07-13",
-    "type": "🔴 配布終了",
-    "id": "2605shizuoka",
-    "category": "国内",
-    "title": "涼をもとめて、静岡旅",
-    "discount": "最大5,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-07-13",
-    "type": "🔴 配布終了",
-    "id": "2606taport",
-    "category": "国内",
-    "title": "ホテル　ユニバーサル　ポートで使える割引クーポン",
-    "discount": "最大5,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-07-13",
-    "type": "🔴 配布終了",
-    "id": "2606tavita",
-    "category": "国内",
-    "title": "ホテル　ユニバーサル　ポート　ヴィータで使える割引クーポン",
-    "discount": "最大5,000円引",
-    "stock_status": "配布終了"
-  },
-  {
     "date": "2026-07-14",
     "type": "❌ 消失",
     "id": "2601nstoh",
@@ -7630,5 +7594,59 @@
     "title": "九州ふっこう応援割 さがキャンペーン",
     "discount": "最大50％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "🟢 配布再開",
+    "id": "2607tokyu",
+    "category": "国内",
+    "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+    "discount": "最大8,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "🟢 配布再開",
+    "id": "2609kagoshima",
+    "category": "国内",
+    "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "🟢 配布再開",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "🔴 配布終了",
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "🔴 配布終了",
+    "id": "2609kyushunagasaki",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ながさきキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-12",
+    "type": "🟢 配布再開",
+    "id": "2609okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
+    "discount": "最大25,000円引",
+    "stock_status": "配布中"
   }
 ]
