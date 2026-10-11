@@ -1,0 +1,65 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-12T08:26:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 4,
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "title": "楽天トラベル お得なクーポン祭（10月）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 公式：全楽天会員様 500円OFF 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 週末4,500円OFF・平日4,000円OFF ／ 公式：ダイヤモンド会員様、プラチナ会員様限定 週末3,000円・1,500円OFF、平日2,500円・1,000円OFF ／ 公式：次回は11月4日～12月2日開催予定 ／ 未確認：宿泊対象期間 ／ 未確認：各クーポンの最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "全楽天会員 500円OFF、ダイヤモンド会員 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員 週末3,000円/1,500円OFF・平日2,500円/1,000円OFF",
+      "period": "予約：2026年10月2日10:00～11月4日9:59（次回は11月4日～12月2日予定） ／ 旅行：未確認（Grok: 2026年10月2日チェックイン～2027年9月30日チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天トラベル 得旅キャンペーン（ポイント最大15倍）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "official_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "evidence": "公式：エントリー・予約期間: 2026年10月1日(木)10:00～2026年10月22日(木)9:59 ／ 公式：条件: エントリー必須 対象ホテル限定 ／ 公式：10月,11月,12月の宿泊に適用 ／ 公式：楽天モバイルご契約者様は早期予約がさらに+1倍 ／ 公式：対象期間内にチェックイン日・チェックアウト日の両方が含まれるご利用が対象 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "ポイント最大15倍（2か月先の予約・超先プラン。楽天モバイル契約者は早期予約がさらに+1倍）",
+      "period": "予約：エントリー・予約期間 2026年10月1日10:00～10月22日9:59（予約前のエントリー必須） ／ 旅行：10月・11月・12月の宿泊（10月1日チェックイン～12月31日チェックアウトの3区分。期間内にチェックイン日・チェックアウト日の両方が含まれること）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天スーパーDEAL｜オータムSALE（最大40%ポイントバック）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/superdeal/special/autumnsale2026",
+      "official_url": "https://travel.rakuten.co.jp/superdeal/special/autumnsale2026/",
+      "evidence": "公式：エントリー・予約対象期間：2026年10月1日(木)10:00～10月20日(火)09:59まで ／ 公式：旅行対象期間：2026年10月1日(木)チェックイン～ 12月31日(木)チェックアウトまで ／ 公式：実際に宿泊した方に、もれなく宿泊料金の10％～40％の楽天ポイントを付与 ／ 公式：スーパーDEALはエントリーは不要 ／ 公式：エントリーで＋2%ポイント（期間限定ポイント）は楽天モバイル「Rakuten最強プラン」等の契約者が対象 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "対象プランで宿泊料金の10%～40%の楽天ポイント。楽天モバイル契約者はエントリーで期間限定ポイント+2%",
+      "period": "予約：2026年10月1日10:00～10月20日9:59 ／ 旅行：2026年10月1日チェックイン～12月31日チェックアウト",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天トラベル 初めてのアプリ予約で10%OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/service/smartphone/",
+      "official_url": "https://travel.rakuten.co.jp/service/smartphone/",
+      "evidence": "公式：初めてのアプリ経由予約限定 ／ 公式：オンラインカード決済限定 ／ 公式：10%OFF ／ 公式：先着利用9,000枚 ／ 未確認：割引上限額 ／ 未確認：予約期間 ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額",
+      "observed_date": "2026-10-12",
+      "discount": "10%OFF（上限は未確認。Grok: 1予約あたり上限2,000円）",
+      "period": "予約：未確認（Grok: 2026年10月1日10:00～10月30日9:59） ／ 旅行：未確認（Grok: 2026年10月1日チェックイン～12月31日チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

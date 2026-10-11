@@ -1,0 +1,39 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-10-12T08:26:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "Klook 国内バス 5%OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/klookjp/status/2105810120353718286",
+      "official_url": "https://www.klook.com/ja/japan-bus/",
+      "evidence": "公式：クーポンコード 5%OFF ／ 公式：最低利用額なし ／ 公式：Klook会員 ／ 未確認：予約期間 ／ 未確認：乗車の対象期間 ／ 未確認：割引上限額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "5%OFF（国内バスの予約）",
+      "period": "予約：未確認（Grok: 第三者情報では2026年10月31日まで） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "Klook ハリー・ポッター スタジオツアー東京 期間限定ミールバウチャー（500円分）",
+      "kind": "coupon",
+      "found_url": "https://x.com/klookjp/status/2107758259021172897",
+      "official_url": "https://www.klook.com/ja/activity/84374-warner-bros-studio-tour-tokyo-making-harry-potter/",
+      "evidence": "公式：期間限定ミールバウチャー ／ 公式：対象パッケージのご予約で、JPY 500のミールバウチャーをプレゼント！精算時にミールバウチャーのオプションを選択 ／ 公式：無料 JPY500 ミールバウチャー（Klook限定） ／ 未確認：予約期間（終了日） ／ 未確認：入場の対象期間 ／ 未確認：対象パッケージの範囲 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "対象パッケージの予約で500円分のミールバウチャー（Klook限定）",
+      "period": "予約：未確認（公式は「期間限定」とだけ記載） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

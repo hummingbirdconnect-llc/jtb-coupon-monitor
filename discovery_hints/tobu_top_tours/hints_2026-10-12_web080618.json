@@ -1,0 +1,78 @@
+{
+  "provider_id": "tobu_top_tours",
+  "provider_label": "東武トップツアーズ",
+  "generated_at": "2026-10-12T08:26:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 5,
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "title": "東武トップツアーズ 湯西川・奥鬼怒エリア限定クーポン（3,500円引）",
+      "kind": "coupon",
+      "found_url": "https://tobutoptours.jp/news/2026/1008/",
+      "official_url": "https://tobutoptours.jp/news/2026/1008/",
+      "evidence": "公式：配布/予約対象期間： 2026年10月8日～3月29日 ／ 公式：出発対象期間：2026年10月10日～2027年3月31日 ／ 公式：利用上限枚数：20枚、クーポン額：3,500円引 ／ 公式：最低利用額 なし、併用不可（クーポン一覧ページ） ／ 公式：対象施設 上屋敷 平の高房／本家伴久／湯西川白雲の宿 山城屋／彩り湯かしき花と華／御宿こまゆみの里／奥鬼怒温泉ホテル 加仁湯／八丁湯 ／ 公式：クーポンはマイページより事前取得が必要 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "3,500円引",
+      "period": "予約：配布/予約対象期間 2026年10月8日～2027年3月29日（公式表記は「3月29日」） ／ 旅行：出発対象期間 2026年10月10日～2027年3月31日",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "東武トップツアーズ 熱海後楽園ホテル限定クーポン（3,000円）",
+      "kind": "coupon",
+      "found_url": "https://tobutoptours.jp/news/2026/0813/",
+      "official_url": "https://tobutoptours.jp/news/2026/0813/",
+      "evidence": "公式：配布/予約対象期間： 2026年9月18日～12月22日 ／ 公式：出発対象期間：2026年12月1日～12月24日 ／ 公式：対象プラン：熱海後楽園ホテルに宿泊する「スゴ得/列車付プラン」または「宿泊プラン」 ／ 公式：クーポン額：3,000円 ／ 公式：配布上限枚数 100枚、最低利用額 なし、併用不可（クーポン一覧ページ） ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "3,000円",
+      "period": "予約：配布/予約対象期間 2026年9月18日～12月22日 ／ 旅行：出発対象期間 2026年12月1日～12月24日",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "東武トップツアーズ プレミアム宿サンデー（日曜予約で5%割引）",
+      "kind": "coupon",
+      "found_url": "https://tobutoptours.jp/yado/premium_sunday/",
+      "official_url": "https://tobutoptours.jp/yado/premium_sunday/",
+      "evidence": "公式：2026年9月6日(日)～12月27日(日)の毎週日曜日に国内「ホテル・旅館のみ」プランを予約すると5%割引 ／ 公式：スゴ得や東武鉄道利用等交通セットプラン、添乗員同行ツアーは除く ／ 公式：対象宿泊日 2026年9月8日 - 2027年3月31日、配布上限枚数 なし、最低利用額 なし、併用不可（クーポン一覧ページ） ／ 公式：クーポンを取得せずに予約された場合は5%OFFが適用されません ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "5%割引",
+      "period": "予約：2026年9月6日～12月27日の毎週日曜日（当日にクーポン配布） ／ 旅行：宿泊日 2026年9月8日～2027年3月31日",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "東武トップツアーズ【スゴ得の日】JR付プラン限定クーポン（5%割引）",
+      "kind": "coupon",
+      "found_url": "https://x.com/Madamggg14775X/status/2108797072413770082",
+      "official_url": "https://tobutoptours.jp/members_new/coupon/",
+      "evidence": "公式：配布/予約対象日 毎月5日 / 10日 / 15日 / 20日 / 25日 / 30日 ／ 公式：出発対象期間 2026年5月15日-2027年3月31日 ／ 公式：配布上限枚数 各日500枚、最低利用額 10,000円、併用不可 ／ 公式：JR＋宿がセットになった「スゴ得」は5と0の付く日に予約をすると5%割引になる【スゴ得の日】がございます（プレミアム宿サンデーのページ） ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "5%割引（公式の一覧ページでは割引率の表示を読めず。Grok: 5%）",
+      "period": "予約：毎月5日・10日・15日・20日・25日・30日（当日にクーポン配布） ／ 旅行：出発対象期間 2026年5月15日～2027年3月31日",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "東武トップツアーズ にいがたGoToトラベル（新潟県民限定・30%割引）",
+      "kind": "coupon",
+      "found_url": "https://tobutoptours.jp/news/2026/0520/",
+      "official_url": "https://tobutoptours.jp/yado/niigatagoto/",
+      "evidence": "公式：旅行代金の30％割引！！（1人1泊最大5,000円） ／ 公式：予約期間 令和8年9月7日(月)10:00～12月28日(月)23:59まで ／ 公式：宿泊期間 令和8年9月7日(月)チェックイン分～12月29日(火)チェックアウト分まで ／ 公式：割引対象者 新潟県内在住者（宿泊代表者および同行者全員）、ビジネス利用は対象外 ／ 公式：対象商品 新潟県内での宿泊を伴う旅行・宿泊商品（JR+宿泊プラン、日帰り旅行は除く） ／ 公式：当社の旅行会員（TOBU POINT 会員）になることが条件、その他クーポンとの重複はできません ／ 公式：新潟県の予算がなくなり次第、断りなく販売が停止になることがあります ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-12",
+      "discount": "旅行代金の30%割引（1人1泊最大5,000円）",
+      "period": "予約：2026年（令和8年）9月7日10:00～12月28日23:59 ／ 旅行：2026年（令和8年）9月7日チェックイン分～12月29日チェックアウト分",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
