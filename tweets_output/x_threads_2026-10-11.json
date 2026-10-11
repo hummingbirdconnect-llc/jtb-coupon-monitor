@@ -1,17 +1,17 @@
 {
   "date": "2026-10-11",
-  "generated_at": "2026-10-11 05:02 JST",
+  "generated_at": "2026-10-11 17:33 JST",
   "sites": [
     {
       "site_id": "yakushimafan",
       "display_name": "屋久島ファン",
       "x_account": "@yakushimafan",
-      "candidates": 190,
+      "candidates": 189,
       "threads": [
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "title": "九州ふっこう応援割 さがキャンペーン",
+          "title": "九州ふっこう応援割 ながさきキャンペーン",
           "score": 52,
           "reasons": [
             "本日配布再開",
@@ -104,12 +104,12 @@
       "site_id": "welltrip",
       "display_name": "ウェルトリップ",
       "x_account": "welltrip",
-      "candidates": 188,
+      "candidates": 187,
       "threads": [
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "title": "九州ふっこう応援割 さがキャンペーン",
+          "title": "九州ふっこう応援割 ながさきキャンペーン",
           "score": 52,
           "reasons": [
             "本日配布再開",
