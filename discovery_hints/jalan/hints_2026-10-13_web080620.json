@@ -1,0 +1,26 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-13T08:17:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "じゃらんふるさと納税クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/jalannet/status/2107380435458371731",
+      "official_url": "https://www.jalan.net/furusato/",
+      "evidence": "公式：寄付額の30%分のクーポンが返礼品として受け取れる ／ 公式：寄付にはさとふるとのアカウント連携が必要。入金完了後に即時じゃらん会員IDへ付与 ／ 公式：デイユース・法人向けサービス・じゃらんパックは対象外 ／ 公式：都道府県をまたぐチェーン宿は1名1泊あたり50,000円まで ／ 公式：宿泊施設クーポン・じゃらんクーポン・特別クーポンと1枚ずつ併用可（併用可の記載があるもの） ／ 未確認：有効期間の長さ（公式LPに記載なし。Grokは3年間と回答） ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-13",
+      "discount": "寄付額の30%分のクーポン（都道府県をまたぐチェーン宿は1名1泊あたり50,000円まで）",
+      "period": "予約：未確認（クーポンの有効期間内。Grok: 獲得から3年間） ／ 旅行：未確認（Grok: 獲得から3年間）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
