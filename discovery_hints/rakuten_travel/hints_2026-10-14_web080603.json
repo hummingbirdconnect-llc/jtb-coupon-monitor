@@ -1,0 +1,65 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-14T08:16:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 4,
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：国内宿泊 予約対象期間 2026/10/2 10:00～2026/11/4 9:59 ／ 公式：全楽天会員 500円OFF 先着利用300,000枚 ／ 公式：ダイヤモンド会員 週末4,500円OFF・平日4,000円OFF ／ 公式：ダイヤモンド・プラチナ会員 3,000円／2,500円／1,500円／1,000円OFF ／ 未確認：宿泊対象期間（利用条件のボタンの中で、押していない） ／ 未確認：最低利用額 ／ 未確認：オンラインカード決済限定がどの券に付くか",
+      "observed_date": "2026-10-14",
+      "discount": "全会員500円OFF（先着30万枚）。ダイヤモンド会員 週末4,500円・平日4,000円OFF、ダイヤモンド・プラチナ会員 1,000～3,000円OFF",
+      "period": "予約：2026/10/2 10:00～2026/11/4 9:59 ／ 旅行：未確認（Grok: 2026/10/2チェックイン～2027/9/30チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "得旅キャンペーン（ポイント最大15倍）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "official_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "evidence": "公式：エントリー・予約期間 2026/10/1 10:00～2026/10/22 9:59 ／ 公式：10月,11月,12月の宿泊に適用。エントリー必須・対象ホテル限定 ／ 公式：ポイント10倍（通常ポイントに加えて+9%） ／ 公式：楽天モバイル契約者は早期予約がさらに+1倍 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件 ／ 未確認：直前・超先の宿泊対象期間の正確な日付",
+      "observed_date": "2026-10-14",
+      "discount": "割引ではなくポイント還元。10倍（通常1%＋9%）、2か月先の予約で15倍。楽天モバイル契約者は早期予約+1倍",
+      "period": "予約：エントリー・予約 2026/10/1 10:00～2026/10/22 9:59 ／ 旅行：10月・11月・12月の宿泊（早期は2026/10/31チェックイン～11/30チェックアウト）。チェックイン・チェックアウトとも対象期間内",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "鹿児島ふっこう応援割（楽天トラベル）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/special/kyushuouen/kagoshima/",
+      "official_url": "https://travel.rakuten.co.jp/special/kyushuouen/kagoshima/",
+      "evidence": "公式：国内宿泊クーポン ＜1泊＞10～12月宿泊 60%OFF 先着利用4,640枚、＜2泊＞先着1,430枚 ／ 公式：出張等のビジネス利用は対象外。金券付プランは対象外。宿泊時に利用証明書等の記入が必要 ／ 公式：予約完了した先着順で枚数を数える ／ 未確認：予約期間 ／ 未確認：宿泊対象期間と除外日 ／ 未確認：1泊あたりの割引上限額 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-14",
+      "discount": "国内宿泊60%OFF（10～12月宿泊・1泊は先着4,640枚、2泊は先着1,430枚）。1月宿泊分は30,000円・60,000円の上限の券あり",
+      "period": "予約：未確認（Grok: 2026/10/14 10:00～12/25頃、1月分は～2027/1/10頃） ／ 旅行：未確認（Grok: 2026/10/14チェックイン～2027/2/1チェックアウト、12/26～1/3除外）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "5と0のつく日（楽天トラベル）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/",
+      "evidence": "公式：毎月5と0のつく日はホテル・宿が最大20%OFF（クーポン一覧ページの案内） ／ 公式：毎月5と0のつく日は最高級宿が最大20%OFF ／ 未確認：券ごとの割引率と最低利用額（特設ページは今回開いていない） ／ 未確認：宿泊対象期間 ／ 未確認：決済方法の条件（前回はオンラインカード決済限定の券あり） ／ 未確認：配布の時間帯",
+      "observed_date": "2026-10-14",
+      "discount": "ホテル・宿がクーポンで最大20%OFF（最高級宿向けも最大20%OFF）",
+      "period": "予約：毎月5と0のつく日から（Grok: 約48時間。10月の残りは15・20・25・30日） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
