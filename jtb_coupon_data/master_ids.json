@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T06:12:48.878609+09:00",
+  "last_updated": "2026-10-14T16:21:54.353515+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -27,7 +27,7 @@
       "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
       "discount": "最大12,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2610airhayawari": {
       "category": "国内",
@@ -55,7 +55,7 @@
       "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
       "discount": "最大8,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2606ooedo": {
       "category": "国内",
@@ -97,7 +97,7 @@
       "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
       "discount": "最大30％引",
       "area": "新潟県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2610niigata": {
       "category": "国内",
@@ -258,7 +258,7 @@
       "title": "九州ふっこう応援割 ながさきキャンペーン",
       "discount": "最大50％引",
       "area": "長崎県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2610nagasakimarriott": {
       "category": "国内",
@@ -272,21 +272,21 @@
       "title": "熊本ふっこう応援割",
       "discount": "最大60％引",
       "area": "熊本県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609kyucp": {
       "category": "国内",
       "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
       "discount": "10,000円引",
       "area": "熊本県・宮崎県・鹿児島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609kyushumiyazaki": {
       "category": "国内",
       "title": "九州ふっこう応援割 みやざきキャンペーン",
       "discount": "最大50％引",
       "area": "宮崎県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607jalka": {
       "category": "国内",
@@ -294,13 +294,6 @@
       "discount": "12,000円引",
       "area": "鹿児島県",
       "stock_status": "配布中"
-    },
-    "2609kagoshima": {
-      "category": "国内",
-      "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
-      "discount": "最大60％引",
-      "area": "鹿児島県",
-      "stock_status": "配布終了"
     },
     "2609amami": {
       "category": "国内",
@@ -335,14 +328,14 @@
       "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
       "discount": "最大25,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609akifuyu": {
       "category": "国内",
       "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
       "discount": "最大10,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607appcp": {
       "category": "国内",

@@ -225,7 +225,7 @@
     "booking_period": "2026/7/31(金) ～ 2026/11/30(月)",
     "stay_period": "2026/12/1(火) ～ 2027/3/31(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607jalhp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -544,7 +544,7 @@
     "booking_period": "2026/7/31(金) ～ 2026/12/23(水)",
     "stay_period": "2026/9/23(水) ～ 2026/12/23(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607tokyu/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -997,7 +997,7 @@
     "booking_period": "2026/9/7(月) ～ 2026/12/28(月)",
     "stay_period": "2026/9/7(月) ～ 2026/12/28(月)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609goton/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2681,7 +2681,7 @@
     "booking_period": "2026/9/30(水) ～ 2026/12/25(金)",
     "stay_period": "2026/10/1(木) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushunagasaki/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2843,7 +2843,7 @@
     "booking_period": "2026/10/8(木) ～ 2026/12/25(金)",
     "stay_period": "2026/10/8(木) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -2937,7 +2937,7 @@
     "booking_period": "2026/9/1(火) ～ 2026/10/30(金)",
     "stay_period": "2026/10/1(木) ～ 2026/10/31(土)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyucp/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -3007,7 +3007,7 @@
     "booking_period": "2026/10/5(月) ～ 2026/12/24(木)",
     "stay_period": "2026/10/6(火) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushumiyazaki/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -3132,83 +3132,6 @@
       "国内旅行": {
         "field": "category",
         "text": "国内"
-      }
-    }
-  },
-  {
-    "id": "2609kagoshima",
-    "category": "国内",
-    "title": "南の宝箱 鹿児島 かごしま観光応援割クーポン",
-    "discount": "最大60％引",
-    "area": "鹿児島県",
-    "regions": [
-      "鹿児島県"
-    ],
-    "type": "宿泊・ツアー",
-    "booking_period": "2026/9/14(月) ～ 2026/10/13(火)",
-    "stay_period": "2026/9/14(月) ～ 2026/10/13(火)",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kagoshima/page.asp",
-    "detail_data": {
-      "coupon_codes": [
-        "ZSKGS"
-      ],
-      "passwords": [
-        "h070",
-        "h071",
-        "h072",
-        "h073",
-        "h074"
-      ],
-      "conditions": [],
-      "notes": [
-        "泊数指定なし 1名 先着 45枚 下限代金なし 60 ％引 （割引上限20,000円） クーポンコード ZSKGS パス"
-      ],
-      "booking_regions": "鹿児島県の対象施設",
-      "usage_conditions": {
-        "宿泊対象期間": "2026/9/14(月) ～ 2026/10/13(火)",
-        "適用除外日※1": "なし",
-        "予約対象期間": "2026/9/14(月) ～ 2026/10/13(火)",
-        "予約対象地域": "鹿児島県の対象施設",
-        "利用者条件": "JTBトラベルメンバー会員限定",
-        "居住地条件※2": "なし"
-      },
-      "eligible_users": "JTBトラベルメンバー会員限定",
-      "available_plans": [
-        "JTB宿泊プラン",
-        "るるぶトラベルプラン",
-        "JR＋宿泊プラン",
-        "飛行機＋宿泊プラン"
-      ],
-      "booking_channels": "",
-      "residence_condition": "なし",
-      "departure_area": "",
-      "target_brand": "",
-      "target_products": "",
-      "discount_rules": [
-        "下限代金なし 60 ％引 （割引上限20,000円）",
-        "下限代金なし 60 ％引 （割引上限40,000円）",
-        "下限代金なし 60 ％引 （割引上限60,000円）",
-        "下限代金なし 60 ％引 （割引上限80,000円）",
-        "下限代金なし 60 ％引 （割引上限100,000円）"
-      ],
-      "booking_period": "2026/9/14(月) ～ 2026/10/13(火)",
-      "stay_period": "2026/9/14(月) ～ 2026/10/13(火)"
-    },
-    "article_categories": [
-      "国内旅行",
-      "新幹線ツアー"
-    ],
-    "classification_evidence": {
-      "国内旅行": {
-        "field": "category",
-        "text": "国内"
-      },
-      "新幹線ツアー": {
-        "field": "available_plans",
-        "text": "JR＋宿泊プラン",
-        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
       }
     }
   },
@@ -3503,7 +3426,7 @@
     "booking_period": "2026/9/14(月) ～ 2026/11/30(月)",
     "stay_period": "2026/12/1(火) ～ 2027/1/31(日)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa/page.asp",
     "detail_data": {
       "coupon_codes": [
@@ -3566,7 +3489,7 @@
     "booking_period": "2026/9/10(木) ～ 2026/11/16(月)",
     "stay_period": "2026/9/10(木) ～ 2027/3/31(水)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609akifuyu/page.asp",
     "detail_data": {
       "coupon_codes": [

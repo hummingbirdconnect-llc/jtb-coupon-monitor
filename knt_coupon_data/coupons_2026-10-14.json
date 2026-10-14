@@ -1,9 +1,26 @@
 [
   {
+    "id": "kyushu-ouenwari-2c9ab1",
+    "category": "獲得クーポン",
+    "title": "九州ふっこう応援割",
+    "area": "九州",
+    "type": "国内ツアー・国内宿泊",
+    "detail_url": "https://www.knt.co.jp/kyushu-ouenwari/",
+    "stock_status": "配布中",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "",
+      "stay_period": "2026年10月1日（木）～12月25日（金）宿泊分 / 【福岡県】2026年10月1日（木）～12月25日（金）宿泊分",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
     "id": "sp-fukkou-kagoshima_shimameguri-63c531",
     "category": "獲得クーポン",
     "title": "あまみゆったり島泊割",
-    "area": "",
+    "area": "鹿児島県",
     "type": "国内宿泊",
     "detail_url": "https://www.knt.co.jp/yado/sp/fukkou/kagoshima_shimameguri/",
     "stock_status": "配布中",
