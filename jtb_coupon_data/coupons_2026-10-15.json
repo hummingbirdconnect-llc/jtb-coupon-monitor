@@ -14,6 +14,24 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608jtbcpnew/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 494,
+    "stock_total": 6000,
+    "stock_tiers": [
+      {
+        "password": "CTme",
+        "discount_amount": 1000,
+        "minimum_charge": 20000,
+        "coupon_count": 6000,
+        "stock_count": 494,
+        "sold_out": false,
+        "reserve_from": "2026-08-17T00:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "cpnew"
@@ -88,6 +106,48 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610premiumcp/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 2044,
+    "stock_total": 3000,
+    "stock_tiers": [
+      {
+        "password": "h093",
+        "discount_amount": 5000,
+        "minimum_charge": 150000,
+        "coupon_count": 1500,
+        "stock_count": 1071,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T00:00:00+09:00",
+        "reserve_to": "2026-11-30T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h094",
+        "discount_amount": 3000,
+        "minimum_charge": 100000,
+        "coupon_count": 1000,
+        "stock_count": 690,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T00:00:00+09:00",
+        "reserve_to": "2026-11-30T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h095",
+        "discount_amount": 2000,
+        "minimum_charge": 70000,
+        "coupon_count": 500,
+        "stock_count": 283,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T00:00:00+09:00",
+        "reserve_to": "2026-11-30T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "precp"
@@ -159,6 +219,24 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609young/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 2171,
+    "stock_total": 2333,
+    "stock_tiers": [
+      {
+        "password": "h076",
+        "discount_amount": 3000,
+        "minimum_charge": 70000,
+        "coupon_count": 2333,
+        "stock_count": 2171,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T10:00:00+09:00",
+        "reserve_to": "2027-01-18T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "young"
@@ -227,6 +305,48 @@
     "store_available": true,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607jalhp/page.asp",
+    "stock_end_reason": "品切れ",
+    "stock_remaining": 0,
+    "stock_total": 800,
+    "stock_tiers": [
+      {
+        "password": "g896",
+        "discount_amount": 6000,
+        "minimum_charge": 60000,
+        "coupon_count": 500,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g897",
+        "discount_amount": 10000,
+        "minimum_charge": 100000,
+        "coupon_count": 200,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g898",
+        "discount_amount": 12000,
+        "minimum_charge": 150000,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "jalhp"
@@ -292,6 +412,24 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610airhayawari/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1310,
+    "stock_total": 1800,
+    "stock_tiers": [
+      {
+        "password": "h081",
+        "discount_amount": 5000,
+        "minimum_charge": 0,
+        "coupon_count": 1800,
+        "stock_count": 1310,
+        "sold_out": false,
+        "reserve_from": "2026-10-01T10:00:00+09:00",
+        "reserve_to": "2026-12-22T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "airha"
@@ -398,6 +536,60 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601green/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 980,
+    "stock_total": 1700,
+    "stock_tiers": [
+      {
+        "password": "g472",
+        "discount_amount": 8000,
+        "minimum_charge": 0,
+        "coupon_count": 1500,
+        "stock_count": 896,
+        "sold_out": false,
+        "reserve_from": "2026-01-20T10:00:00+09:00",
+        "reserve_to": "2027-03-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g473",
+        "discount_amount": 12000,
+        "minimum_charge": 0,
+        "coupon_count": 100,
+        "stock_count": 30,
+        "sold_out": false,
+        "reserve_from": "2026-01-20T10:00:00+09:00",
+        "reserve_to": "2027-03-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g474",
+        "discount_amount": 16000,
+        "minimum_charge": 0,
+        "coupon_count": 50,
+        "stock_count": 11,
+        "sold_out": false,
+        "reserve_from": "2026-01-20T10:00:00+09:00",
+        "reserve_to": "2027-03-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g475",
+        "discount_amount": 20000,
+        "minimum_charge": 0,
+        "coupon_count": 50,
+        "stock_count": 43,
+        "sold_out": false,
+        "reserve_from": "2026-01-20T10:00:00+09:00",
+        "reserve_to": "2027-03-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "jrcpn"
@@ -471,6 +663,60 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609mercu/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 442,
+    "stock_total": 1105,
+    "stock_tiers": [
+      {
+        "password": "h015",
+        "discount_amount": 3000,
+        "minimum_charge": 20000,
+        "coupon_count": 500,
+        "stock_count": 248,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h014",
+        "discount_amount": 3000,
+        "minimum_charge": 20000,
+        "coupon_count": 500,
+        "stock_count": 138,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h013",
+        "discount_amount": 5000,
+        "minimum_charge": 35000,
+        "coupon_count": 30,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h016",
+        "discount_amount": 2000,
+        "minimum_charge": 12000,
+        "coupon_count": 75,
+        "stock_count": 55,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "mercu"
@@ -544,8 +790,74 @@
     "booking_period": "2026/7/31(金) ～ 2026/12/23(水)",
     "stay_period": "2026/9/23(水) ～ 2026/12/23(水)",
     "store_available": true,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607tokyu/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1,
+    "stock_total": 875,
+    "stock_tiers": [
+      {
+        "password": "g865",
+        "discount_amount": 8000,
+        "minimum_charge": 150000,
+        "coupon_count": 50,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g866",
+        "discount_amount": 5000,
+        "minimum_charge": 80000,
+        "coupon_count": 200,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g867",
+        "discount_amount": 3000,
+        "minimum_charge": 25000,
+        "coupon_count": 250,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g868",
+        "discount_amount": 2000,
+        "minimum_charge": 12000,
+        "coupon_count": 275,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g869",
+        "discount_amount": 3000,
+        "minimum_charge": 30000,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "tokyu"
@@ -624,6 +936,60 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606ooedo/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 855,
+    "stock_total": 3887,
+    "stock_tiers": [
+      {
+        "password": "g836",
+        "discount_amount": 2000,
+        "minimum_charge": 15000,
+        "coupon_count": 2198,
+        "stock_count": 855,
+        "sold_out": false,
+        "reserve_from": "2026-06-19T10:00:00+09:00",
+        "reserve_to": "2027-02-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g837",
+        "discount_amount": 3000,
+        "minimum_charge": 30000,
+        "coupon_count": 1225,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-06-19T10:00:00+09:00",
+        "reserve_to": "2027-02-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g838",
+        "discount_amount": 4000,
+        "minimum_charge": 50000,
+        "coupon_count": 211,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-06-19T10:00:00+09:00",
+        "reserve_to": "2027-02-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g839",
+        "discount_amount": 5000,
+        "minimum_charge": 60000,
+        "coupon_count": 253,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-06-19T10:00:00+09:00",
+        "reserve_to": "2027-02-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ooedo"
@@ -691,6 +1057,24 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608kyoritsu/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1418,
+    "stock_total": 1500,
+    "stock_tiers": [
+      {
+        "password": "g902",
+        "discount_amount": 2000,
+        "minimum_charge": 1,
+        "coupon_count": 1500,
+        "stock_count": 1418,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-10-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "kyori"
@@ -761,6 +1145,84 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607ihghotels/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 946,
+    "stock_total": 987,
+    "stock_tiers": [
+      {
+        "password": "g890",
+        "discount_amount": 10000,
+        "minimum_charge": 200000,
+        "coupon_count": 112,
+        "stock_count": 94,
+        "sold_out": false,
+        "reserve_from": "2026-07-28T10:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g889",
+        "discount_amount": 5000,
+        "minimum_charge": 120000,
+        "coupon_count": 245,
+        "stock_count": 239,
+        "sold_out": false,
+        "reserve_from": "2026-07-28T10:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g888",
+        "discount_amount": 3000,
+        "minimum_charge": 80000,
+        "coupon_count": 210,
+        "stock_count": 208,
+        "sold_out": false,
+        "reserve_from": "2026-07-28T10:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g893",
+        "discount_amount": 5000,
+        "minimum_charge": 120000,
+        "coupon_count": 70,
+        "stock_count": 68,
+        "sold_out": false,
+        "reserve_from": "2026-07-28T10:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g892",
+        "discount_amount": 3000,
+        "minimum_charge": 80000,
+        "coupon_count": 175,
+        "stock_count": 165,
+        "sold_out": false,
+        "reserve_from": "2026-07-28T10:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g891",
+        "discount_amount": 2000,
+        "minimum_charge": 50000,
+        "coupon_count": 175,
+        "stock_count": 172,
+        "sold_out": false,
+        "reserve_from": "2026-07-28T10:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ihgcp"
@@ -847,6 +1309,60 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609sunsunski/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 352,
+    "stock_total": 550,
+    "stock_tiers": [
+      {
+        "password": "h036",
+        "discount_amount": 20000,
+        "minimum_charge": 250000,
+        "coupon_count": 100,
+        "stock_count": 40,
+        "sold_out": false,
+        "reserve_from": "2026-09-16T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h037",
+        "discount_amount": 10000,
+        "minimum_charge": 120000,
+        "coupon_count": 50,
+        "stock_count": 19,
+        "sold_out": false,
+        "reserve_from": "2026-09-16T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h038",
+        "discount_amount": 10000,
+        "minimum_charge": 120000,
+        "coupon_count": 100,
+        "stock_count": 11,
+        "sold_out": false,
+        "reserve_from": "2026-09-16T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h039",
+        "discount_amount": 5000,
+        "minimum_charge": 60000,
+        "coupon_count": 300,
+        "stock_count": 282,
+        "sold_out": false,
+        "reserve_from": "2026-09-16T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "sunsu"
@@ -906,6 +1422,113 @@
     }
   },
   {
+    "id": "2610dohoku",
+    "category": "国内",
+    "title": "道北エリアのおすすめ施設で使える割引クーポン",
+    "discount": "最大10,000円引",
+    "area": "北海道",
+    "regions": [
+      "北海道"
+    ],
+    "type": "宿泊",
+    "booking_period": "2026/10/15(木) ～ 2027/1/22(金)",
+    "stay_period": "2026/10/19(月) ～ 2027/1/22(金)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610dohoku/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 209,
+    "stock_total": 210,
+    "stock_tiers": [
+      {
+        "password": "h115",
+        "discount_amount": 10000,
+        "minimum_charge": 50000,
+        "coupon_count": 10,
+        "stock_count": 10,
+        "sold_out": false,
+        "reserve_from": "2026-10-06T00:00:00+09:00",
+        "reserve_to": "2027-01-23T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h116",
+        "discount_amount": 5000,
+        "minimum_charge": 20000,
+        "coupon_count": 50,
+        "stock_count": 50,
+        "sold_out": false,
+        "reserve_from": "2026-10-06T00:00:00+09:00",
+        "reserve_to": "2027-01-23T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h117",
+        "discount_amount": 3000,
+        "minimum_charge": 10000,
+        "coupon_count": 150,
+        "stock_count": 149,
+        "sold_out": false,
+        "reserve_from": "2026-10-06T00:00:00+09:00",
+        "reserve_to": "2027-01-23T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
+    "detail_data": {
+      "coupon_codes": [
+        "dohok"
+      ],
+      "passwords": [
+        "h115",
+        "h116",
+        "h117"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 10枚 50,000円以上のご利用で 10,000 円引 クーポンコード dohok パスワー"
+      ],
+      "booking_regions": "北海道・道北の対象施設",
+      "usage_conditions": {
+        "宿泊対象期間": "2026/10/19(月) ～ 2027/1/22(金)",
+        "適用除外日※1": "12/29～1/3",
+        "予約対象期間": "2026/10/15(木) ～ 2027/1/22(金)",
+        "予約対象地域": "北海道・道北の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JTB宿泊プラン",
+        "るるぶトラベルプラン"
+      ],
+      "booking_channels": "",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "50,000円以上のご利用で 10,000 円引",
+        "20,000円以上のご利用で 5,000 円引",
+        "10,000円以上のご利用で 3,000 円引"
+      ],
+      "booking_period": "2026/10/15(木) ～ 2027/1/22(金)",
+      "stay_period": "2026/10/19(月) ～ 2027/1/22(金)"
+    },
+    "article_categories": [
+      "国内旅行"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      }
+    }
+  },
+  {
     "id": "2609iwate",
     "category": "国内",
     "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞",
@@ -920,6 +1543,132 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609iwate/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 8,
+    "stock_total": 3251,
+    "stock_tiers": [
+      {
+        "password": "g995",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 220,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g996",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 425,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g997",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 108,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g998",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 130,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g999",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 78,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g990",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 810,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g991",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 860,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g992",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 260,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g993",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 250,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g994",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 110,
+        "stock_count": 6,
+        "sold_out": true,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "iwate"
@@ -999,6 +1748,72 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609goton/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1,
+    "stock_total": 1035,
+    "stock_tiers": [
+      {
+        "password": "h029",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 235,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-08-27T00:00:00+09:00",
+        "reserve_to": "2026-12-29T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h030",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 435,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-27T00:00:00+09:00",
+        "reserve_to": "2026-12-29T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h031",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 155,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-27T00:00:00+09:00",
+        "reserve_to": "2026-12-29T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h032",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 130,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-27T00:00:00+09:00",
+        "reserve_to": "2026-12-29T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h033",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 80,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-27T00:00:00+09:00",
+        "reserve_to": "2026-12-29T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ZSNGT"
@@ -1068,6 +1883,60 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610niigata/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 227,
+    "stock_total": 240,
+    "stock_tiers": [
+      {
+        "password": "h082",
+        "discount_amount": 1000,
+        "minimum_charge": 5000,
+        "coupon_count": 40,
+        "stock_count": 39,
+        "sold_out": false,
+        "reserve_from": "2026-09-15T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h083",
+        "discount_amount": 3000,
+        "minimum_charge": 12000,
+        "coupon_count": 70,
+        "stock_count": 69,
+        "sold_out": false,
+        "reserve_from": "2026-09-15T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h084",
+        "discount_amount": 5000,
+        "minimum_charge": 30000,
+        "coupon_count": 80,
+        "stock_count": 80,
+        "sold_out": false,
+        "reserve_from": "2026-09-15T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h085",
+        "discount_amount": 7000,
+        "minimum_charge": 40000,
+        "coupon_count": 50,
+        "stock_count": 39,
+        "sold_out": false,
+        "reserve_from": "2026-09-15T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "niiga"
@@ -1143,6 +2012,60 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610gunma/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 368,
+    "stock_total": 416,
+    "stock_tiers": [
+      {
+        "password": "h098",
+        "discount_amount": 2000,
+        "minimum_charge": 25000,
+        "coupon_count": 78,
+        "stock_count": 60,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h099",
+        "discount_amount": 3000,
+        "minimum_charge": 35000,
+        "coupon_count": 48,
+        "stock_count": 36,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h096",
+        "discount_amount": 2000,
+        "minimum_charge": 25000,
+        "coupon_count": 170,
+        "stock_count": 160,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h097",
+        "discount_amount": 3000,
+        "minimum_charge": 35000,
+        "coupon_count": 120,
+        "stock_count": 112,
+        "sold_out": false,
+        "reserve_from": "2026-09-25T00:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "gunma"
@@ -1215,6 +2138,60 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2603ikaho/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 88,
+    "stock_total": 470,
+    "stock_tiers": [
+      {
+        "password": "g561",
+        "discount_amount": 1000,
+        "minimum_charge": 10000,
+        "coupon_count": 119,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-03-11T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g562",
+        "discount_amount": 2000,
+        "minimum_charge": 20000,
+        "coupon_count": 250,
+        "stock_count": 87,
+        "sold_out": false,
+        "reserve_from": "2026-03-11T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g563",
+        "discount_amount": 3000,
+        "minimum_charge": 30000,
+        "coupon_count": 75,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-03-11T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g564",
+        "discount_amount": 6000,
+        "minimum_charge": 60000,
+        "coupon_count": 26,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-03-11T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ikaho"
@@ -1268,6 +2245,85 @@
     }
   },
   {
+    "id": "2610tochigi",
+    "category": "国内",
+    "title": "とちぎ旅冬の平日宿泊キャンペーン 割引クーポン",
+    "discount": "1,000円引",
+    "area": "栃木県",
+    "regions": [
+      "栃木県"
+    ],
+    "type": "宿泊",
+    "booking_period": "2026/10/15(木) ～ 2027/2/26(金)",
+    "stay_period": "2026/12/1(火) ～ 2027/2/26(金)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610tochigi/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1000,
+    "stock_total": 1000,
+    "stock_tiers": [
+      {
+        "password": "h075",
+        "discount_amount": 1000,
+        "minimum_charge": 6000,
+        "coupon_count": 1000,
+        "stock_count": 1000,
+        "sold_out": false,
+        "reserve_from": "2026-09-07T00:00:00+09:00",
+        "reserve_to": "2027-02-27T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
+    "detail_data": {
+      "coupon_codes": [
+        "tochi"
+      ],
+      "passwords": [
+        "h075"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 1,000枚 6,000円以上のご利用で 1,000 円引 クーポンコード tochi パスワ"
+      ],
+      "booking_regions": "栃木県の対象施設",
+      "usage_conditions": {
+        "宿泊対象期間": "2026/12/1(火) ～ 2027/2/26(金)",
+        "適用除外日※1": "土曜日、12/26～1/3、1/10",
+        "予約対象期間": "2026/10/15(木) ～ 2027/2/26(金)",
+        "予約対象地域": "栃木県の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JTB宿泊プラン",
+        "るるぶトラベルプラン"
+      ],
+      "booking_channels": "",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "6,000円以上のご利用で 1,000 円引"
+      ],
+      "booking_period": "2026/10/15(木) ～ 2027/2/26(金)",
+      "stay_period": "2026/12/1(火) ～ 2027/2/26(金)"
+    },
+    "article_categories": [
+      "国内旅行"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      }
+    }
+  },
+  {
     "id": "2608candeohotels",
     "category": "国内",
     "title": "カンデオホテルズのおすすめ施設で使える割引クーポン",
@@ -1284,6 +2340,36 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608candeohotels/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 873,
+    "stock_total": 1000,
+    "stock_tiers": [
+      {
+        "password": "g901",
+        "discount_amount": 3000,
+        "minimum_charge": 30000,
+        "coupon_count": 300,
+        "stock_count": 277,
+        "sold_out": false,
+        "reserve_from": "2026-08-03T10:00:00+09:00",
+        "reserve_to": "2027-02-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g900",
+        "discount_amount": 3000,
+        "minimum_charge": 100000,
+        "coupon_count": 700,
+        "stock_count": 596,
+        "sold_out": false,
+        "reserve_from": "2026-08-03T10:00:00+09:00",
+        "reserve_to": "2027-02-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "cande"
@@ -1355,6 +2441,36 @@
     "store_available": false,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609hankyu/page.asp",
+    "stock_end_reason": "品切れ",
+    "stock_remaining": 0,
+    "stock_total": 140,
+    "stock_tiers": [
+      {
+        "password": "h035",
+        "discount_amount": 5000,
+        "minimum_charge": 50000,
+        "coupon_count": 40,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-28T00:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h034",
+        "discount_amount": 3000,
+        "minimum_charge": 20000,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-28T00:00:00+09:00",
+        "reserve_to": "2027-01-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "remmc"
@@ -1426,6 +2542,84 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608hachijo/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 5,
+    "stock_total": 33,
+    "stock_tiers": [
+      {
+        "password": "g983",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 3,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g984",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g985",
+        "discount_amount": 30,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g986",
+        "discount_amount": 30,
+        "minimum_charge": 4000,
+        "coupon_count": 5,
+        "stock_count": 4,
+        "sold_out": false,
+        "reserve_from": "2026-08-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g987",
+        "discount_amount": 30,
+        "minimum_charge": 8000,
+        "coupon_count": 10,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-08-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g988",
+        "discount_amount": 30,
+        "minimum_charge": 12000,
+        "coupon_count": 3,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "hachi"
@@ -1498,6 +2692,84 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609hachijo/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 41,
+    "stock_total": 62,
+    "stock_tiers": [
+      {
+        "password": "h052",
+        "discount_amount": 5000,
+        "minimum_charge": 0,
+        "coupon_count": 13,
+        "stock_count": 12,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h053",
+        "discount_amount": 10000,
+        "minimum_charge": 0,
+        "coupon_count": 16,
+        "stock_count": 11,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h054",
+        "discount_amount": 15000,
+        "minimum_charge": 0,
+        "coupon_count": 5,
+        "stock_count": 2,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h049",
+        "discount_amount": 2000,
+        "minimum_charge": 4000,
+        "coupon_count": 11,
+        "stock_count": 11,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h050",
+        "discount_amount": 4000,
+        "minimum_charge": 8000,
+        "coupon_count": 12,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h051",
+        "discount_amount": 6000,
+        "minimum_charge": 12000,
+        "coupon_count": 5,
+        "stock_count": 4,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "hacha"
@@ -1570,6 +2842,132 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605ito2/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1,
+    "stock_total": 394,
+    "stock_tiers": [
+      {
+        "password": "g701",
+        "discount_amount": 20,
+        "minimum_charge": 3000,
+        "coupon_count": 30,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-11T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g702",
+        "discount_amount": 20,
+        "minimum_charge": 6000,
+        "coupon_count": 220,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-11T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g703",
+        "discount_amount": 20,
+        "minimum_charge": 9000,
+        "coupon_count": 77,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-11T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g704",
+        "discount_amount": 20,
+        "minimum_charge": 12000,
+        "coupon_count": 33,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-11T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g705",
+        "discount_amount": 20,
+        "minimum_charge": 15000,
+        "coupon_count": 15,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-11T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g706",
+        "discount_amount": 20,
+        "minimum_charge": 6000,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-10T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g707",
+        "discount_amount": 20,
+        "minimum_charge": 12000,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-10T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g708",
+        "discount_amount": 20,
+        "minimum_charge": 18000,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-10T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g709",
+        "discount_amount": 20,
+        "minimum_charge": 24000,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-10T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g710",
+        "discount_amount": 20,
+        "minimum_charge": 30000,
+        "coupon_count": 2,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-08-25T10:00:00+09:00",
+        "reserve_to": "2026-12-10T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ZSITO"
@@ -1656,6 +3054,48 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608notoairport/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 47,
+    "stock_total": 50,
+    "stock_tiers": [
+      {
+        "password": "g974",
+        "discount_amount": 5000,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 10,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g975",
+        "discount_amount": 10000,
+        "minimum_charge": 0,
+        "coupon_count": 30,
+        "stock_count": 29,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g976",
+        "discount_amount": 15000,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 8,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "notoc"
@@ -1720,6 +3160,24 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609shiga/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 51,
+    "stock_total": 100,
+    "stock_tiers": [
+      {
+        "password": "h005",
+        "discount_amount": 15,
+        "minimum_charge": 40000,
+        "coupon_count": 100,
+        "stock_count": 51,
+        "sold_out": false,
+        "reserve_from": "2026-08-07T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "shiga"
@@ -1793,6 +3251,48 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606kintetsu/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 9,
+    "stock_total": 800,
+    "stock_tiers": [
+      {
+        "password": "g699",
+        "discount_amount": 5000,
+        "minimum_charge": 30000,
+        "coupon_count": 200,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-06-01T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g700",
+        "discount_amount": 3000,
+        "minimum_charge": 0,
+        "coupon_count": 500,
+        "stock_count": 9,
+        "sold_out": false,
+        "reserve_from": "2026-06-01T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g698",
+        "discount_amount": 5000,
+        "minimum_charge": 50000,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-06-01T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "kinte"
@@ -1867,6 +3367,48 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608kyotm/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 64,
+    "stock_total": 101,
+    "stock_tiers": [
+      {
+        "password": "g859",
+        "discount_amount": 3000,
+        "minimum_charge": 15000,
+        "coupon_count": 30,
+        "stock_count": 27,
+        "sold_out": false,
+        "reserve_from": "2026-07-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g860",
+        "discount_amount": 10000,
+        "minimum_charge": 40000,
+        "coupon_count": 51,
+        "stock_count": 37,
+        "sold_out": false,
+        "reserve_from": "2026-07-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g861",
+        "discount_amount": 20000,
+        "minimum_charge": 80000,
+        "coupon_count": 20,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "kyotm"
@@ -1933,6 +3475,48 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608hankyu/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 27,
+    "stock_total": 174,
+    "stock_tiers": [
+      {
+        "password": "g971",
+        "discount_amount": 5000,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g973",
+        "discount_amount": 3000,
+        "minimum_charge": 0,
+        "coupon_count": 80,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g972",
+        "discount_amount": 2500,
+        "minimum_charge": 0,
+        "coupon_count": 84,
+        "stock_count": 27,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "hanky"
@@ -2006,6 +3590,48 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609osaka/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 381,
+    "stock_total": 510,
+    "stock_tiers": [
+      {
+        "password": "h045",
+        "discount_amount": 1000,
+        "minimum_charge": 8000,
+        "coupon_count": 200,
+        "stock_count": 177,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T11:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h046",
+        "discount_amount": 2000,
+        "minimum_charge": 15000,
+        "coupon_count": 250,
+        "stock_count": 204,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T11:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h047",
+        "discount_amount": 5000,
+        "minimum_charge": 60000,
+        "coupon_count": 60,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-03T11:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "osaka"
@@ -2078,6 +3704,24 @@
     "store_available": false,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608osacp/page.asp",
+    "stock_end_reason": "品切れ",
+    "stock_remaining": 0,
+    "stock_total": 333,
+    "stock_tiers": [
+      {
+        "password": "g989",
+        "discount_amount": 3000,
+        "minimum_charge": 20000,
+        "coupon_count": 333,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-08-06T11:00:00+09:00",
+        "reserve_to": "2026-11-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "osacp"
@@ -2139,6 +3783,84 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610matsue/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1965,
+    "stock_total": 2000,
+    "stock_tiers": [
+      {
+        "password": "h090",
+        "discount_amount": 20000,
+        "minimum_charge": 100000,
+        "coupon_count": 100,
+        "stock_count": 93,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h089",
+        "discount_amount": 10000,
+        "minimum_charge": 50000,
+        "coupon_count": 100,
+        "stock_count": 87,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h088",
+        "discount_amount": 6000,
+        "minimum_charge": 30000,
+        "coupon_count": 100,
+        "stock_count": 99,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h087",
+        "discount_amount": 2000,
+        "minimum_charge": 10000,
+        "coupon_count": 200,
+        "stock_count": 198,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h092",
+        "discount_amount": 2000,
+        "minimum_charge": 5000,
+        "coupon_count": 1000,
+        "stock_count": 991,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h091",
+        "discount_amount": 2000,
+        "minimum_charge": 0,
+        "coupon_count": 500,
+        "stock_count": 497,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "matsu",
@@ -2221,6 +3943,48 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2602jalcp/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 17,
+    "stock_total": 25,
+    "stock_tiers": [
+      {
+        "password": "g508",
+        "discount_amount": 8000,
+        "minimum_charge": 80000,
+        "coupon_count": 17,
+        "stock_count": 12,
+        "sold_out": false,
+        "reserve_from": "2026-02-09T00:00:00+09:00",
+        "reserve_to": "2026-10-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g509",
+        "discount_amount": 12000,
+        "minimum_charge": 120000,
+        "coupon_count": 4,
+        "stock_count": 4,
+        "sold_out": false,
+        "reserve_from": "2026-02-09T00:00:00+09:00",
+        "reserve_to": "2026-10-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g510",
+        "discount_amount": 16000,
+        "minimum_charge": 160000,
+        "coupon_count": 4,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-02-09T00:00:00+09:00",
+        "reserve_to": "2026-10-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "jalcp"
@@ -2285,6 +4049,48 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610yamaguchi/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 237,
+    "stock_total": 305,
+    "stock_tiers": [
+      {
+        "password": "h080",
+        "discount_amount": 12000,
+        "minimum_charge": 80000,
+        "coupon_count": 150,
+        "stock_count": 118,
+        "sold_out": false,
+        "reserve_from": "2026-10-01T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h079",
+        "discount_amount": 9000,
+        "minimum_charge": 60000,
+        "coupon_count": 90,
+        "stock_count": 75,
+        "sold_out": false,
+        "reserve_from": "2026-10-01T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h078",
+        "discount_amount": 6000,
+        "minimum_charge": 40000,
+        "coupon_count": 65,
+        "stock_count": 44,
+        "sold_out": false,
+        "reserve_from": "2026-10-01T10:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "yamag"
@@ -2365,6 +4171,60 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604sagak/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 204,
+    "stock_total": 290,
+    "stock_tiers": [
+      {
+        "password": "g624",
+        "discount_amount": 5000,
+        "minimum_charge": 0,
+        "coupon_count": 80,
+        "stock_count": 56,
+        "sold_out": false,
+        "reserve_from": "2026-04-14T10:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g625",
+        "discount_amount": 10000,
+        "minimum_charge": 0,
+        "coupon_count": 140,
+        "stock_count": 99,
+        "sold_out": false,
+        "reserve_from": "2026-04-14T10:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g626",
+        "discount_amount": 15000,
+        "minimum_charge": 0,
+        "coupon_count": 40,
+        "stock_count": 31,
+        "sold_out": false,
+        "reserve_from": "2026-04-14T10:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "g627",
+        "discount_amount": 20000,
+        "minimum_charge": 0,
+        "coupon_count": 30,
+        "stock_count": 18,
+        "sold_out": false,
+        "reserve_from": "2026-04-14T10:00:00+09:00",
+        "reserve_to": "2027-02-28T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "sagak"
@@ -2438,6 +4298,24 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608fdacp/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 86,
+    "stock_total": 100,
+    "stock_tiers": [
+      {
+        "password": "g906",
+        "discount_amount": 10000,
+        "minimum_charge": 100000,
+        "coupon_count": 100,
+        "stock_count": 86,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-12-03T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "fdacp"
@@ -2497,8 +4375,194 @@
     "booking_period": "2026/10/7(水) ～ 2026/12/15(火)",
     "stay_period": "2026/10/7(水) ～ 2026/12/15(火)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushufukuoka/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 9,
+    "stock_total": 1314,
+    "stock_tiers": [
+      {
+        "password": "W191",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 150,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W192",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 300,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W193",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 133,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W194",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 50,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W195",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 19,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W196",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 112,
+        "stock_count": 1,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-15T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W197",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 290,
+        "stock_count": 3,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-15T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W198",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 65,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-15T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W199",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 31,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-15T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W200",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-15T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W201",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 42,
+        "stock_count": 2,
+        "sold_out": false,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-14T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W202",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 92,
+        "stock_count": 1,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-14T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W203",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 16,
+        "stock_count": 1,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-14T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W204",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-14T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W205",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-07T13:00:00+09:00",
+        "reserve_to": "2026-12-14T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ZSFKO",
@@ -2589,8 +4653,194 @@
     "booking_period": "2026/9/24(木) ～ 2026/12/25(金)",
     "stay_period": "2026/10/1(木) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushusaga/page.asp",
+    "stock_end_reason": "品切れ",
+    "stock_remaining": 0,
+    "stock_total": 111,
+    "stock_tiers": [
+      {
+        "password": "W206",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W207",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 30,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W208",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W209",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W210",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 4,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W211",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 9,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W212",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 26,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W213",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W214",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W215",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W216",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W217",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 3,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W218",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W219",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W220",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-24T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ZSSGA",
@@ -2681,8 +4931,194 @@
     "booking_period": "2026/9/30(水) ～ 2026/12/25(金)",
     "stay_period": "2026/10/1(木) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushunagasaki/page.asp",
+    "stock_end_reason": "品切れ",
+    "stock_remaining": 0,
+    "stock_total": 480,
+    "stock_tiers": [
+      {
+        "password": "W221",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 50,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W222",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 130,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W223",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 40,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W224",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 15,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W225",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W226",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 35,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W227",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 95,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W228",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 25,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W229",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W230",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W231",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 12,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W232",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 40,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W233",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W234",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W235",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-30T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ZSNGS",
@@ -2775,6 +5211,24 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610nagasakimarriott/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 141,
+    "stock_total": 150,
+    "stock_tiers": [
+      {
+        "password": "h086",
+        "discount_amount": 20000,
+        "minimum_charge": 0,
+        "coupon_count": 150,
+        "stock_count": 141,
+        "sold_out": false,
+        "reserve_from": "2026-09-29T10:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "nagam"
@@ -2845,6 +5299,192 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 5,
+    "stock_total": 2299,
+    "stock_tiers": [
+      {
+        "password": "W266",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 300,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W267",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 800,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W268",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 350,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W269",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W270",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 50,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W271",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 115,
+        "stock_count": 2,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W272",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 208,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W273",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 37,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W275",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 30,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W276",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 7,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-26T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W277",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 86,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W278",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 160,
+        "stock_count": 2,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W279",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 40,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W280",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 10,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W281",
+        "discount_amount": 60,
+        "minimum_charge": 0,
+        "coupon_count": 6,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-08T13:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ZSKMM",
@@ -2939,6 +5579,24 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyucp/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1,
+    "stock_total": 200,
+    "stock_tiers": [
+      {
+        "password": "h012",
+        "discount_amount": 10000,
+        "minimum_charge": 50000,
+        "coupon_count": 200,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2026-10-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "kyucp"
@@ -3009,6 +5667,132 @@
     "store_available": false,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushumiyazaki/page.asp",
+    "stock_end_reason": "品切れ",
+    "stock_remaining": 0,
+    "stock_total": 62,
+    "stock_tiers": [
+      {
+        "password": "W256",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 11,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W257",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 33,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W258",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W259",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W260",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-25T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W261",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W262",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 4,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W263",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W264",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "W265",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-05T12:00:00+09:00",
+        "reserve_to": "2026-12-24T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "ZTMYZ"
@@ -3089,6 +5873,24 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607jalka/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 48,
+    "stock_total": 100,
+    "stock_tiers": [
+      {
+        "password": "g899",
+        "discount_amount": 12000,
+        "minimum_charge": 120000,
+        "coupon_count": 100,
+        "stock_count": 48,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-10-31T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "jalka"
@@ -3150,6 +5952,132 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609amami/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 6,
+    "stock_total": 39,
+    "stock_tiers": [
+      {
+        "password": "h060",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 5,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h061",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 14,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h062",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 5,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h063",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 3,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h064",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-03-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h065",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 3,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-27T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h066",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 3,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-27T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h067",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 2,
+        "stock_count": 2,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-27T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h068",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-27T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h069",
+        "discount_amount": 50,
+        "minimum_charge": 0,
+        "coupon_count": 1,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-03T00:00:00+09:00",
+        "reserve_to": "2027-02-27T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "amami"
@@ -3235,6 +6163,48 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawamonterey/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 431,
+    "stock_total": 600,
+    "stock_tiers": [
+      {
+        "password": "h028",
+        "discount_amount": 10000,
+        "minimum_charge": 100000,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-07T10:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h027",
+        "discount_amount": 5000,
+        "minimum_charge": 50000,
+        "coupon_count": 250,
+        "stock_count": 182,
+        "sold_out": false,
+        "reserve_from": "2026-09-07T10:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h026",
+        "discount_amount": 3000,
+        "minimum_charge": 30000,
+        "coupon_count": 250,
+        "stock_count": 249,
+        "sold_out": false,
+        "reserve_from": "2026-09-07T10:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "omont"
@@ -3302,6 +6272,24 @@
     "store_available": false,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa2/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 302,
+    "stock_total": 333,
+    "stock_tiers": [
+      {
+        "password": "h048",
+        "discount_amount": 3000,
+        "minimum_charge": 20000,
+        "coupon_count": 333,
+        "stock_count": 302,
+        "sold_out": false,
+        "reserve_from": "2026-09-01T10:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "okisy"
@@ -3363,6 +6351,48 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610okinawa/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 120,
+    "stock_total": 400,
+    "stock_tiers": [
+      {
+        "password": "h057",
+        "discount_amount": 20000,
+        "minimum_charge": 350000,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-01-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h058",
+        "discount_amount": 15000,
+        "minimum_charge": 250000,
+        "coupon_count": 200,
+        "stock_count": 85,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-01-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h059",
+        "discount_amount": 10000,
+        "minimum_charge": 200000,
+        "coupon_count": 100,
+        "stock_count": 35,
+        "sold_out": false,
+        "reserve_from": "2026-10-09T10:00:00+09:00",
+        "reserve_to": "2027-01-16T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "okina"
@@ -3426,8 +6456,38 @@
     "booking_period": "2026/9/14(月) ～ 2026/11/30(月)",
     "stay_period": "2026/12/1(火) ～ 2027/1/31(日)",
     "store_available": true,
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa/page.asp",
+    "stock_end_reason": "品切れ",
+    "stock_remaining": 0,
+    "stock_total": 150,
+    "stock_tiers": [
+      {
+        "password": "h055",
+        "discount_amount": 25000,
+        "minimum_charge": 400000,
+        "coupon_count": 90,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-14T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h056",
+        "discount_amount": 15000,
+        "minimum_charge": 250000,
+        "coupon_count": 60,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-14T10:00:00+09:00",
+        "reserve_to": "2026-12-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "okina"
@@ -3491,6 +6551,72 @@
     "store_available": true,
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609akifuyu/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1,
+    "stock_total": 1290,
+    "stock_tiers": [
+      {
+        "password": "h017",
+        "discount_amount": 10000,
+        "minimum_charge": 110000,
+        "coupon_count": 200,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-10T10:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h018",
+        "discount_amount": 8000,
+        "minimum_charge": 90000,
+        "coupon_count": 300,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-10T10:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h019",
+        "discount_amount": 5000,
+        "minimum_charge": 60000,
+        "coupon_count": 340,
+        "stock_count": 1,
+        "sold_out": false,
+        "reserve_from": "2026-09-10T10:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h020",
+        "discount_amount": 2000,
+        "minimum_charge": 14000,
+        "coupon_count": 350,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-10T10:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h021",
+        "discount_amount": 2000,
+        "minimum_charge": 14000,
+        "coupon_count": 100,
+        "stock_count": 0,
+        "sold_out": true,
+        "reserve_from": "2026-09-10T10:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "akifu"
@@ -3568,6 +6694,48 @@
     "store_available": false,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607appcp/page.asp",
+    "stock_end_reason": "予約受付の終了",
+    "stock_remaining": 0,
+    "stock_total": 12950,
+    "stock_tiers": [
+      {
+        "password": "g883",
+        "discount_amount": 3000,
+        "minimum_charge": 100000,
+        "coupon_count": 5250,
+        "stock_count": 376,
+        "sold_out": true,
+        "reserve_from": "2026-07-15T00:00:00+09:00",
+        "reserve_to": "2026-09-28T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      },
+      {
+        "password": "g882",
+        "discount_amount": 1500,
+        "minimum_charge": 50000,
+        "coupon_count": 5100,
+        "stock_count": 350,
+        "sold_out": true,
+        "reserve_from": "2026-07-15T00:00:00+09:00",
+        "reserve_to": "2026-09-28T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      },
+      {
+        "password": "g881",
+        "discount_amount": 1000,
+        "minimum_charge": 30000,
+        "coupon_count": 2600,
+        "stock_count": 232,
+        "sold_out": true,
+        "reserve_from": "2026-07-15T00:00:00+09:00",
+        "reserve_to": "2026-09-28T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "appcp"
@@ -3639,6 +6807,24 @@
     "store_available": true,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607young/page.asp",
+    "stock_end_reason": "予約受付の終了",
+    "stock_remaining": 0,
+    "stock_total": 2670,
+    "stock_tiers": [
+      {
+        "password": "g874",
+        "discount_amount": 3000,
+        "minimum_charge": 70000,
+        "coupon_count": 2670,
+        "stock_count": 310,
+        "sold_out": false,
+        "reserve_from": "2026-07-22T10:00:00+09:00",
+        "reserve_to": "2026-09-25T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "young"
@@ -3707,6 +6893,60 @@
     "store_available": true,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604mercu/page.asp",
+    "stock_end_reason": "予約受付の終了",
+    "stock_remaining": 0,
+    "stock_total": 1135,
+    "stock_tiers": [
+      {
+        "password": "g593",
+        "discount_amount": 3000,
+        "minimum_charge": 20000,
+        "coupon_count": 500,
+        "stock_count": 53,
+        "sold_out": true,
+        "reserve_from": "2026-04-01T10:00:00+09:00",
+        "reserve_to": "2026-07-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      },
+      {
+        "password": "g592",
+        "discount_amount": 3000,
+        "minimum_charge": 20000,
+        "coupon_count": 500,
+        "stock_count": 42,
+        "sold_out": true,
+        "reserve_from": "2026-04-01T10:00:00+09:00",
+        "reserve_to": "2026-07-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      },
+      {
+        "password": "g591",
+        "discount_amount": 5000,
+        "minimum_charge": 35000,
+        "coupon_count": 60,
+        "stock_count": 6,
+        "sold_out": true,
+        "reserve_from": "2026-04-01T10:00:00+09:00",
+        "reserve_to": "2026-07-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      },
+      {
+        "password": "g594",
+        "discount_amount": 2000,
+        "minimum_charge": 12000,
+        "coupon_count": 75,
+        "stock_count": 24,
+        "sold_out": true,
+        "reserve_from": "2026-04-01T10:00:00+09:00",
+        "reserve_to": "2026-07-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "mercu"
@@ -3782,6 +7022,24 @@
     "store_available": true,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2604airhayawari2/page.asp",
+    "stock_end_reason": "予約受付の終了",
+    "stock_remaining": 0,
+    "stock_total": 8900,
+    "stock_tiers": [
+      {
+        "password": "g641",
+        "discount_amount": 3000,
+        "minimum_charge": 0,
+        "coupon_count": 8900,
+        "stock_count": 1659,
+        "sold_out": true,
+        "reserve_from": "2026-04-27T10:00:00+09:00",
+        "reserve_to": "2026-10-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "airha"
@@ -3843,6 +7101,48 @@
     "store_available": true,
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607okinawa/page.asp",
+    "stock_end_reason": "予約受付の終了",
+    "stock_remaining": 0,
+    "stock_total": 450,
+    "stock_tiers": [
+      {
+        "password": "g884",
+        "discount_amount": 15000,
+        "minimum_charge": 350000,
+        "coupon_count": 90,
+        "stock_count": 1,
+        "sold_out": true,
+        "reserve_from": "2026-07-24T10:00:00+09:00",
+        "reserve_to": "2026-10-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      },
+      {
+        "password": "g885",
+        "discount_amount": 10000,
+        "minimum_charge": 200000,
+        "coupon_count": 210,
+        "stock_count": 2,
+        "sold_out": true,
+        "reserve_from": "2026-07-24T10:00:00+09:00",
+        "reserve_to": "2026-10-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      },
+      {
+        "password": "g886",
+        "discount_amount": 7000,
+        "minimum_charge": 150000,
+        "coupon_count": 150,
+        "stock_count": 1,
+        "sold_out": true,
+        "reserve_from": "2026-07-24T10:00:00+09:00",
+        "reserve_to": "2026-10-01T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
     "detail_data": {
       "coupon_codes": [
         "okina"

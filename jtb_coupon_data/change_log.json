@@ -7846,5 +7846,68 @@
     "title": "九州ふっこう応援割 さがキャンペーン",
     "discount": "最大50％引",
     "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "🆕 新規",
+    "id": "2610dohoku",
+    "category": "国内",
+    "title": "道北エリアのおすすめ施設で使える割引クーポン",
+    "discount": "最大10,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "🆕 新規",
+    "id": "2610tochigi",
+    "category": "国内",
+    "title": "とちぎ旅冬の平日宿泊キャンペーン 割引クーポン",
+    "discount": "1,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "🟢 配布再開",
+    "id": "2607tokyu",
+    "category": "国内",
+    "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+    "discount": "最大8,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "🟢 配布再開",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "🔴 配布終了",
+    "id": "2609kyushunagasaki",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ながさきキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "🔴 配布終了",
+    "id": "2609kyushusaga",
+    "category": "国内",
+    "title": "九州ふっこう応援割 さがキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-15",
+    "type": "🔴 配布終了",
+    "id": "2609okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
+    "discount": "最大25,000円引",
+    "stock_status": "配布終了"
   }
 ]
