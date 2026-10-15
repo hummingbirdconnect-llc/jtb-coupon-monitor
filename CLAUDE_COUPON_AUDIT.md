@@ -21,7 +21,7 @@ Claude Code のクラウド定期実行（routines）が、毎日1回この手�
 1. 準備
    - `git checkout main && git pull --ff-only origin main`。失敗したら停止する。
    - `git status --porcelain` が空でなければ停止する。
-   - `pip install -q -r requirements.txt`。失敗したら停止する。
+   - `python3 -m pip install -q -r requirements.txt`（`pip` 単体だと別の Python に入ることがある）。失敗したら停止する。
 2. 二重実行の確認
    - `git log origin/main --since="20 hours ago" --format=%s -- codex_audit_results codex_audit_data` を見る。
    - `Claude監査:` で始まらない行があれば、Codex側の監査が動いている。何も変更せず停止し、その行を報告する。
@@ -93,7 +93,7 @@ Claude Code のクラウド定期実行（routines）が、毎日1回この手�
 - `recommendation`:
   - `draft`: 確定項目があり、今の掲載データから意味のある変化がある（新規・終了・期間や金額の変化）。初回（`change_kind=baseline`）で確定項目がある場合も `draft`。
   - `ignore`: 更新（`change_kind=update`）だが、クーポン情報に意味のある変化がない（装飾・ナビゲーションだけ）。deals は空、`uncertainty_reasons` も空。
-  - `hold`: 候補全体を確定できない。
+  - `hold`: 候補全体を確定できない。初回（`change_kind=baseline`）で確定項目がない場合も `hold`（`ignore` は使わない）。
 - `priority`: 終了済みなのに掲載中=100、期間・条件変更=80、新規=70、割引内容変更=60、軽微=20 を目安にする。
 - 今の掲載データにあって本文から消えた項目は、終了と決めつけない。deals に入れなければ、適用時に「要確認」として残る。
 
