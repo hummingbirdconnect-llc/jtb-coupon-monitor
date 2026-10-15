@@ -1,0 +1,52 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-16T08:15:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 公式：全楽天会員様 500円OFF 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 週末4,500円OFF・平日4,000円OFF ／ 公式：ダイヤモンド・プラチナ会員様限定 週末3,000円/1,500円OFF・平日2,500円/1,000円OFF ／ 公式：クーポンには金額条件がございます ／ 公式：次回は11月4日～12月2日開催予定 ／ 未確認：最低利用額（各クーポンの利用条件の中） ／ 未確認：宿泊対象期間 ／ 未確認：決済方法（楽天モバイル会員向け以外）",
+      "observed_date": "2026-10-16",
+      "discount": "国内宿泊：全楽天会員500円OFF、ダイヤモンド会員限定 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員限定 週末3,000円/1,500円OFF・平日2,500円/1,000円OFF。楽パック8,000円/4,000円/500円OFF、レンタカー20%/10%/5%OFF",
+      "period": "予約：2026/10/2 10:00～2026/11/4 09:59 ／ 旅行：未確認（Grok: 2026/10/2チェックイン～2027/9/30チェックアウト、除外日あり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "最高級宿スペシャルオファー",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/special/special-offers/",
+      "evidence": "公式：10/15(木)10:00 ～ 10/30(金)9:59 ／ 公式：20%OFF宿クーポンと10%OFF楽天トラベルクーポンの併用で最大30%OFF ／ 公式：クーポンの利用条件・対象施設・併用可否は各クーポンで異なる ／ 未確認：最低利用額 ／ 未確認：宿泊対象期間 ／ 未確認：決済方法 ／ 未確認：先着枚数",
+      "observed_date": "2026-10-16",
+      "discount": "最大30%OFF（20%OFF宿クーポンと10%OFF楽天トラベルクーポンの併用）",
+      "period": "予約：2026/10/15 10:00～2026/10/30 9:59 ／ 旅行：未確認（Grok: 2026/10/15チェックイン～2027/9/30チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "毎月5と0のつく日はホテル・宿が最大20％OFF",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定！ホテル・温泉宿が最大20％OFF ／ 公式：11月ご利用分は11月4日10時配布開始予定 ／ 公式：宿クーポンと記載がないクーポンは楽天トラベルクーポンまたは自治体クーポン ／ 未確認：今回分の受付終了時刻 ／ 未確認：個別クーポンの割引率 ／ 未確認：最低利用額 ／ 未確認：宿泊対象期間 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-10-16",
+      "discount": "ホテル・温泉宿が最大20%OFF",
+      "period": "予約：毎月5と0のつく日から48時間限定（今回分の終了時刻は未確認） ／ 旅行：未確認（Grok: クーポンにより異なる）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
