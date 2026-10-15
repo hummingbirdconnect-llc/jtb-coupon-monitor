@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate_id": "yomiuri_travel-c4b9bedec9894d91",
+  "provider_id": "yomiuri_travel",
+  "page_summary": "読売旅行トップページ。ツアー検索、特集一覧、お知らせ（九州ふっこう応援割の見出しのみ）、FAQのクーポン項目名があるが、クーポンの名称・特典内容・期間を示す本文はない。",
+  "change_summary": "初回取得。確定できる特典・期間の記載がなく、クーポン情報の確定項目はない。",
+  "recommendation": "ignore",
+  "priority": 20,
+  "uncertainty_reasons": [],
+  "audit_notes": "「九州ふっこう応援割について」はお知らせ見出しのみで特典の中身・年つき期間が本文にないため採用しない。FAQの「クーポンについて」も案内の見出しのみ。特集名（ウィンターセール等）は名称のみで特典内容・期間なし。",
+  "deals": []
+}
