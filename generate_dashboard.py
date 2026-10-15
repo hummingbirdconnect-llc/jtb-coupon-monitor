@@ -1708,9 +1708,19 @@ function renderGrid(container, rows, columns, options = {{}}) {{
       search: {{ placeholder: '検索...' }},
       noRecordsFound: '該当する変動はありません',
       pagination: {{ previous: '前へ', next: '次へ', showing: '', of: '/', to: '〜', results: () => '件' }},
+      error: '表の読み込みに失敗しました。タブを開き直すと作り直します。',
     }},
   }});
   grid.render(gridDiv);
+  GRIDS.push({{ grid, element: gridDiv }});
+}}
+
+// 表を作り終える前に別のタブへ移ると、grid.jsが読み込み失敗の表示で止まることがある。
+// タブを開き直したときに、失敗の表示が残っている表だけ作り直す。
+const GRIDS = [];
+function retryFailedGrids(content) {{
+  GRIDS.filter(item => content.contains(item.element) && item.element.querySelector('.gridjs-error'))
+    .forEach(item => item.grid.forceRender());
 }}
 
 function renderSummary(container) {{
@@ -2148,6 +2158,8 @@ function activate(tabId) {{
   if (!RENDERED_TABS.has(tabId)) {{
     RENDERED_TABS.add(tabId);
     TAB_RENDERERS[tabId](document.getElementById(tabId));
+  }} else {{
+    retryFailedGrids(document.getElementById(tabId));
   }}
   if (location.hash !== '#' + tabId) history.replaceState(null, '', '#' + tabId);
 }}
