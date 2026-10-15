@@ -6838,5 +6838,77 @@
   "pattern": "last_check",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "his",
+  "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "memo_style",
+  "ota": "jtb",
+  "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "price_diff",
+  "ota": "his",
+  "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "weekend_plan",
+  "ota": "his",
+  "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-10-16",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "last_check",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]

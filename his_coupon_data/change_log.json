@@ -1,37 +1,5 @@
 [
   {
-    "date": "2026-07-15",
-    "type": "🆕 新規",
-    "id": "3d3f3ffe833c",
-    "category": "海外航空券・AirZ(海外航空券+ホテル)",
-    "title": "ナイトタイムクーポン！海外航空券・AirZ(海外航空券+ホテル)1グループ2,000円引き",
-    "discount": ""
-  },
-  {
-    "date": "2026-07-15",
-    "type": "🆕 新規",
-    "id": "73b9e6727c2b",
-    "category": "国内ツアー",
-    "title": "年末年始出発がお得！1名様につき3,000円引き",
-    "discount": ""
-  },
-  {
-    "date": "2026-07-15",
-    "type": "❌ 消失",
-    "id": "073a60b8709f",
-    "category": "海外航空券",
-    "title": "オンライン予約限定！海外航空券1グループ最大20,000円引き",
-    "discount": ""
-  },
-  {
-    "date": "2026-07-15",
-    "type": "❌ 消失",
-    "id": "ae0621989f65",
-    "category": "AirZ(海外航空券+ホテル)",
-    "title": "オンライン予約限定！AirZ(海外航空券+ホテル)1グループ2,000円引き",
-    "discount": ""
-  },
-  {
     "date": "2026-07-22",
     "type": "🆕 新規",
     "id": "3244d1c9f9a8",
@@ -7037,6 +7005,1346 @@
       "四国版",
       "九州版",
       "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "2291e0cd6211-039698",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "2291e0cd6211-1c6fe3",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "2291e0cd6211-c9a6aa",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-0fa55b",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-1a97a4",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-5506b6",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-852014",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-8e2042",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-ea02eb",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-eace00",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "447b24b927ec-efd0da",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-28a877",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-3bdbb0",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-42f304",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-4f9c59",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-74b0a8",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-857216",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-b10f0d",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "48f07aa0c902-c91616",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-0ff2b5",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-193534",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-43aeea",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-77cdb8",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-9c8b23",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-c0df91",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-ccd563",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "673f03098f0a-d44090",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-242ca4",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-37a0bc",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-37ec2b",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-535f66",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-6953be",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-696765",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-db413d",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "7f79a514aaa9-f4629c",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "ae14b11e831f",
+    "category": "鳥取・島根行きツアー",
+    "title": "【鳥取・島根キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
+    "discount": "最大10%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "beedf1c83b32",
+    "category": "鳥取・島根行き航空券＋ホテル",
+    "title": "【鳥取・島根キャンペーン】1グループ3,000円引き",
+    "discount": "3,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-0ce2ad",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-1ed9f2",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-476e32",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-843534",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-87b2aa",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-ac18ac",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-b02b15",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "🆕 新規",
+    "id": "c9a9b64b0d61-f488cb",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "2291e0cd6211-409af3",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "2291e0cd6211-f20746",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "2291e0cd6211-f9230f",
+    "category": "沖縄ツアー",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-6ac497",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-7de105",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-84d374",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-a6cd24",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-ce671d",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-db3c09",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-eb30ff",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "447b24b927ec-eee516",
+    "category": "国内ツアー",
+    "title": "早めの予約がお得！120日以上前までのお申し込みで1名様につき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-7bdd07",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-969f71",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-a93a57",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-a9c9bc",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-aae7fb",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-b1d660",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-e186f4",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-fce6c4",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-19e8b1",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-7d4c83",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-9cf11d",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-a27848",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-aa1522",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-c1a393",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-e539dd",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "673f03098f0a-e5742f",
+    "category": "国内旅行",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
+    "discount": "最大6,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-34c543",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-4988c0",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-4c4e3f",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-78a465",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-93d2f4",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-ceac2d",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-d0922d",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "7f79a514aaa9-dce0f8",
+    "category": "国内旅行",
+    "title": "学生一人旅応援！1名様につき1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-2adba4",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-4c2ee9",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-545cd0",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-5a9e77",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-704e17",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-c589db",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-d1c761",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "type": "❌ 消失",
+    "id": "c9a9b64b0d61-f8dc3d",
+    "category": "国内旅行",
+    "title": "学生旅行応援！60日以上前までのお申し込みで1グループ最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
     ]
   }
 ]
