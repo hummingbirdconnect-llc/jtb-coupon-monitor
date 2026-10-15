@@ -582,6 +582,111 @@ def check_stock_status(api_url, coupons):
 
 
 # ============================================================
+# パスワード在庫API: 国内クーポンの残り枚数
+# ============================================================
+PASSWORD_STOCK_API = f"{BASE_URL}/myjtb/campaign/coupon/api/password-stock"
+
+
+def _parse_jtb_datetime(value):
+    """APIの日時文字列（YYYYMMDDHHMM）をJSTのdatetimeへ変換する。"""
+    try:
+        return datetime.strptime(str(value or ""), "%Y%m%d%H%M").replace(tzinfo=JST)
+    except ValueError:
+        return None
+
+
+def summarize_password_stock(infos, now=None):
+    """パスワード別の在庫情報から、クーポン1件の配布状況を決める。
+
+    1つでも残り枚数があれば配布中。全額面が品切れ、または予約受付の
+    終了時刻を過ぎていれば配布終了。情報が無ければNoneを返す。
+    """
+    if not infos:
+        return None
+    now = now or datetime.now(JST)
+    tiers = []
+    for info in infos:
+        reserve_to = _parse_jtb_datetime(info.get("ReserveDateTimeTo"))
+        reserve_from = _parse_jtb_datetime(info.get("ReserveDateTimeFrom"))
+        stock = info.get("StockCount")
+        tiers.append({
+            "password": info.get("Password", ""),
+            "discount_amount": info.get("DiscountAmount"),
+            "minimum_charge": info.get("MinimumCharge"),
+            "coupon_count": info.get("CouponCount"),
+            "stock_count": stock,
+            "sold_out": info.get("SoldOutFlag") == 1,
+            "reserve_from": reserve_from.isoformat() if reserve_from else "",
+            "reserve_to": reserve_to.isoformat() if reserve_to else "",
+            "closed_by_period": bool(reserve_to and reserve_to <= now),
+            "not_started": bool(reserve_from and reserve_from > now),
+        })
+
+    open_tiers = [
+        t for t in tiers
+        if not t["sold_out"] and not t["closed_by_period"] and (t["stock_count"] or 0) > 0
+    ]
+    remaining = sum(int(t["stock_count"] or 0) for t in tiers if not t["closed_by_period"])
+    total = sum(int(t["coupon_count"] or 0) for t in tiers)
+    if open_tiers:
+        status = "配布中"
+    elif all(t["closed_by_period"] for t in tiers):
+        status = "配布終了"
+        reason = "予約受付の終了"
+    else:
+        status = "配布終了"
+        reason = "品切れ"
+    return {
+        "stock_status": status,
+        "stock_end_reason": "" if status == "配布中" else reason,
+        "stock_remaining": remaining,
+        "stock_total": total,
+        "stock_tiers": tiers,
+    }
+
+
+def check_stock_status_password_api(coupons, delay=0.5):
+    """国内クーポンの配布状況を、詳細ページが使うパスワード在庫APIで判定する。
+
+    詳細ページの「終了いたしました」表示は外部スクリプトが後から描画するため、
+    待ち時間しだいで判定が揺れていた（同じクーポンが毎日「終了」と「再開」を
+    繰り返した）。APIの残り枚数で判定し、取れなかったクーポンは従来の判定を残す。
+
+    Returns: 判定できた件数
+    """
+    checked = 0
+    for c in coupons:
+        if c.get("category") != "国内":
+            continue
+        passwords = (c.get("detail_data") or {}).get("passwords") or []
+        infos = []
+        for pw in passwords:
+            try:
+                time.sleep(delay)
+                resp = requests.get(
+                    PASSWORD_STOCK_API, params={"password": pw}, headers=HEADERS, timeout=20,
+                )
+                resp.raise_for_status()
+                data = resp.json()
+            except Exception as e:
+                print(f"  ⚠️ 在庫API エラー: {c['id']} {e}")
+                continue
+            if data.get("Result") == "0":
+                infos.extend(data.get("PasswordInfo") or [])
+        summary = summarize_password_stock(infos)
+        if not summary:
+            c["stock_source"] = "detail_page_render"
+            continue
+        if c.get("stock_status") not in ("不明", summary["stock_status"]):
+            print(f"  🔁 判定を修正: {c['id']} {c.get('stock_status')} → {summary['stock_status']}")
+        c.update(summary)
+        c["stock_source"] = "password_stock_api"
+        checked += 1
+    print(f"  📊 在庫API: {checked}件を残り枚数で判定")
+    return checked
+
+
+# ============================================================
 # Playwright: 海外クーポン配布状況チェック
 # ============================================================
 def check_stock_status_playwright(page_url, coupons, detail_pattern=""):
@@ -942,6 +1047,10 @@ def run_init():
         detail = scrape_detail_page(coupon["detail_url"])
         coupon["detail_data"] = detail
 
+    # 国内は詳細ページで取れたパスワードを使い、残り枚数で配布状況を確定する
+    print("\n📦 国内クーポンの残り枚数を確認中...")
+    check_stock_status_password_api(coupons)
+
     # バリデーション（ダブルチェック）
     coupons, validation_report = validate_coupons(coupons, service_name="JTB")
 
@@ -967,6 +1076,10 @@ def run_full():
         print(f"  [{i+1}/{len(coupons)}] [{coupon['category']}] {coupon['id']}")
         detail = scrape_detail_page(coupon["detail_url"])
         coupon["detail_data"] = detail
+
+    # 国内は詳細ページで取れたパスワードを使い、残り枚数で配布状況を確定する
+    print("\n📦 国内クーポンの残り枚数を確認中...")
+    check_stock_status_password_api(coupons)
 
     # バリデーション（ダブルチェック）
     master_ids = load_master_ids()

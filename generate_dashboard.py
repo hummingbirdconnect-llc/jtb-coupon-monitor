@@ -74,6 +74,7 @@ COMMON_COLUMNS = [
     "ID",
     "割引額",
     "配布状況",
+    "残り枚数",
     "対象商品",
     "予約対象地域",
     "記事カテゴリ",
@@ -425,6 +426,18 @@ def kind_label(coupon: dict[str, Any]) -> str:
     return "クーポン"
 
 
+def stock_label(coupon: dict[str, Any]) -> str:
+    """公式の在庫APIで取れた残り枚数を「残り / 配布数」で表す。"""
+    total = coupon.get("stock_total")
+    remaining = coupon.get("stock_remaining")
+    if not isinstance(total, int) or not isinstance(remaining, int) or total <= 0:
+        return ""
+    label = f"{remaining:,} / {total:,}"
+    if coupon.get("stock_end_reason"):
+        label += f"（{coupon['stock_end_reason']}）"
+    return label
+
+
 def format_coupon_row(
     coupon: dict[str, Any],
     provider: dict[str, Any],
@@ -460,6 +473,7 @@ def format_coupon_row(
         "ID": first_value(coupon, ["id", "coupon_id"]),
         "割引額": first_value(coupon, ["discount"]) or first_value(detail, ["discount"]),
         "配布状況": status,
+        "残り枚数": stock_label(coupon),
         "対象商品": first_value(coupon, ["product_type", "type", "target"]) or first_value(detail, ["target_products"]),
         "記事カテゴリ": " / ".join(article_categories),
         "分類根拠": " / ".join(f"{label}: {item['text']}" + (f"（{item['note']}）" if item.get('note') else "") for label, item in classification_evidence.items()),
@@ -489,9 +503,56 @@ def format_coupon_row(
     return row
 
 
-def format_log_rows(change_log: list[dict[str, Any]]) -> list[dict[str, str]]:
+def change_kind(value: Any) -> str:
+    """会社ごとに書き方の違う変化の種別を new/gone/ended/reopened にそろえる。"""
+    text = str(value or "")
+    if "新規" in text or text == "new":
+        return "new"
+    if "消失" in text or text == "gone":
+        return "gone"
+    if text.endswith("配布終了"):
+        return "ended"
+    if "再開" in text or text.endswith("配布中"):
+        return "reopened"
+    return "other"
+
+
+def annotate_change_log(change_log: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """変化1件ごとに、同じクーポンの前後の出入りを書き添える。
+
+    - _reappeared: 以前にも記録がある（初登場ではない）
+    - _flaps: その日までの30日間に記録された出入りの回数
+    - _came_back: 消えた・終了した後に、また出てきた
+    記録ファイルは古い順に追記されるため、同じ日付の中は元の順番を保つ。
+    """
+    ordered = sorted(enumerate(change_log), key=lambda pair: (pair[1].get("date", ""), pair[0]))
+    history: dict[str, list[tuple[int, str, str]]] = {}
+    for position, (_, item) in enumerate(ordered):
+        history.setdefault(str(item.get("id", "")), []).append(
+            (position, str(item.get("date", "")), change_kind(item.get("type")))
+        )
+    annotated = []
+    for position, (_, item) in enumerate(ordered):
+        events = history.get(str(item.get("id", "")), [])
+        date = str(item.get("date", ""))
+        event_date = parse_date_value(date)
+        window_start = (event_date - timedelta(days=30)).isoformat() if event_date else ""
+        kind = change_kind(item.get("type"))
+        annotated.append({
+            **item,
+            "_kind": kind,
+            "_reappeared": any(pos < position for pos, _, _ in events),
+            "_flaps": sum(1 for _, event_day, _ in events if window_start < event_day <= date),
+            "_came_back": kind in {"gone", "ended"} and any(
+                pos > position and later in {"new", "reopened"} for pos, _, later in events
+            ),
+        })
+    return annotated
+
+
+def format_log_rows(change_log: list[dict[str, Any]]) -> list[dict[str, Any]]:
     rows = []
-    for item in sorted(change_log, key=lambda row: row.get("date", ""), reverse=True):
+    for item in sorted(annotate_change_log(change_log), key=lambda row: row.get("date", ""), reverse=True):
         rows.append({
             "日付": item.get("date", ""),
             "種別": item.get("type", ""),
@@ -499,6 +560,10 @@ def format_log_rows(change_log: list[dict[str, Any]]) -> list[dict[str, str]]:
             "ID": item.get("id", ""),
             "タイトル": item.get("title", ""),
             "エリア/割引": item.get("discount", item.get("area", "")),
+            "_kind": item["_kind"],
+            "_reappeared": item["_reappeared"],
+            "_flaps": item["_flaps"],
+            "_came_back": item["_came_back"],
         })
     return rows
 
@@ -857,9 +922,176 @@ def build_provider_payload(
     }
 
 
+FLASH_EVENT_FIELDS = ["詳細URL", "割引額", "予約期間", "出発/宿泊期間", "配布状況", "残り枚数", "種別", "カテゴリ"]
+CAMPAIGN_HINT_KINDS = {"セール", "キャンペーン", "ポイント", "会員特典"}
+CAMPAIGN_STALE_DAYS = 14
+
+
+def period_is_over(period: str, today: Any) -> bool:
+    """期間の文に書かれた年付きの日付が、すべて今日より前なら終わったとみなす。"""
+    dates = []
+    for year, month, day in re.findall(r"(\d{4})[年/.-](\d{1,2})[月/.-](\d{1,2})", period or ""):
+        try:
+            dates.append(datetime(int(year), int(month), int(day)).date())
+        except ValueError:
+            continue
+    return bool(dates) and max(dates) < today
+
+
+def load_recent_snapshot_rows(
+    registry_provider: dict[str, Any], provider: dict[str, Any], since: Any
+) -> dict[str, dict[str, Any]]:
+    """直近の日次ファイルから、ID→表示用の行を作る（消えたクーポンの詳細を引くため）。"""
+    data_dir = registry_provider.get("data_dir")
+    if not data_dir or not (ROOT / data_dir).exists():
+        return {}
+    affiliate_config = load_affiliate_config(provider["id"])
+    index: dict[str, dict[str, Any]] = {}
+    for path in sorted((ROOT / data_dir).glob("coupons_*.json")):
+        file_date = parse_date_value(path.name)
+        if since and file_date and file_date < since:
+            continue
+        try:
+            coupons = load_json(path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        for coupon in coupons if isinstance(coupons, list) else []:
+            row = format_coupon_row(coupon, registry_provider, "coupons", affiliate_config)
+            if row.get("ID"):
+                index[row["ID"]] = row
+    return index
+
+
+def freshness_chip(provider: dict[str, Any], latest_date: Any) -> dict[str, Any]:
+    """常時監視の会社について、情報がいつ時点のものかを1行で表す。"""
+    data_date = parse_date_value(provider.get("data_date"))
+    fetched = provider.get("official_fetched_at") or provider.get("check_status", {}).get("completed_at", "")
+    fetched_date = parse_date_value(fetched)
+    pending = provider.get("pending_audit_count") or 0
+    if data_date and latest_date and data_date >= latest_date:
+        state, text = "fresh", f"{data_date.month}/{data_date.day} 取得"
+        time_match = re.search(r"T(\d{2}:\d{2})", str(fetched))
+        if time_match and fetched_date == data_date:
+            text = f"{data_date.month}/{data_date.day} {time_match.group(1)} 取得"
+    elif data_date:
+        state = "stale"
+        text = f"{data_date.month}/{data_date.day} の情報のまま"
+        if fetched_date and fetched_date > data_date and pending:
+            text += f"（公式ページは取得済み・読み取り待ち {pending} 件）"
+    else:
+        state, text = "unknown", "取得なし"
+    return {"id": provider["id"], "label": provider["label"], "state": state, "text": text}
+
+
+def build_flash_data(
+    providers: list[dict[str, Any]],
+    registry: list[dict[str, Any]],
+    day_filters: list[dict[str, str]],
+) -> dict[str, Any]:
+    """速報タブ（その日に出た・消えたクーポン）とキャンペーン欄のデータを作る。"""
+    registry_by_id = {item["id"]: item for item in registry}
+    oldest = parse_date_value(day_filters[-1]["date"]) if day_filters else None
+    since = oldest - timedelta(days=2) if oldest else None
+    latest_date = parse_date_value(day_filters[0]["date"]) if day_filters else None
+
+    events: list[dict[str, Any]] = []
+    for provider in providers:
+        recent = provider.get("recent_logs") or []
+        if not recent:
+            continue
+        current = {row["ID"]: row for row in provider.get("rows", []) if row.get("ID")}
+        snapshots = load_recent_snapshot_rows(registry_by_id.get(provider["id"], {}), provider, since)
+        for log in recent:
+            coupon_id = log.get("ID", "")
+            source = current.get(coupon_id) or snapshots.get(coupon_id) or {}
+            event = {
+                "day": log.get("対象日", ""),
+                "date": log.get("日付", ""),
+                "provider_id": provider["id"],
+                "provider": provider["label"],
+                "kind": log.get("_kind", "other"),
+                "type": log.get("種別", ""),
+                "id": coupon_id,
+                "title": log.get("タイトル", "") or source.get("タイトル", ""),
+                "discount": log.get("エリア/割引", "") or source.get("割引額", ""),
+                "reappeared": bool(log.get("_reappeared")),
+                "flaps": int(log.get("_flaps") or 0),
+                "came_back": bool(log.get("_came_back")),
+                "still_listed": coupon_id in current,
+            }
+            for field in FLASH_EVENT_FIELDS:
+                event[field] = source.get(field, "")
+            if not event["カテゴリ"]:
+                event["カテゴリ"] = log.get("カテゴリ", "")
+            events.append(event)
+
+    today = datetime.now(JST).date()
+    campaigns: list[dict[str, Any]] = []
+    for provider in providers:
+        for row in provider.get("rows", []):
+            if row.get("種別", "クーポン") == "クーポン" or row.get("配布状況") == "配布終了":
+                continue
+            campaigns.append({
+                "provider_id": provider["id"],
+                "provider": provider["label"],
+                "source": "official",
+                "kind": row.get("種別", ""),
+                "title": row.get("タイトル", ""),
+                "discount": row.get("割引額", ""),
+                "period": " ／ ".join(v for v in [row.get("予約期間", ""), row.get("出発/宿泊期間", "")] if v),
+                "url": row.get("詳細URL", ""),
+                "evidence": row.get("条件", ""),
+                "as_of": provider.get("data_date", ""),
+            })
+        for hint in provider.get("hint_rows", []):
+            if hint.get("種別") not in CAMPAIGN_HINT_KINDS:
+                continue
+            campaigns.append({
+                "provider_id": provider["id"],
+                "provider": provider["label"],
+                "source": "hint",
+                "kind": hint.get("種別", ""),
+                "title": hint.get("題名", ""),
+                "discount": hint.get("割引・コード", ""),
+                "period": hint.get("期間", ""),
+                "url": hint.get("公式URL", "") or hint.get("見つけた場所", ""),
+                "evidence": hint.get("根拠", ""),
+                "as_of": hint.get("観測日", ""),
+                "hint_status": hint.get("状態", ""),
+            })
+    campaigns = [item for item in campaigns if not period_is_over(item["period"], today)]
+    for item in campaigns:
+        as_of = parse_date_value(item["as_of"])
+        item["stale"] = bool(as_of and (today - as_of).days > CAMPAIGN_STALE_DAYS)
+
+    hint_news = [
+        {
+            "provider_id": provider["id"],
+            "provider": provider["label"],
+            "kind": hint.get("種別", ""),
+            "title": hint.get("題名", ""),
+            "discount": hint.get("割引・コード", ""),
+            "period": hint.get("期間", ""),
+            "url": hint.get("公式URL", "") or hint.get("見つけた場所", ""),
+            "date": hint.get("観測日", ""),
+        }
+        for provider in providers
+        for hint in provider.get("hint_rows", [])
+        if hint.get("状態") == HINT_STATUS_LABELS["new"]
+    ]
+
+    return {
+        "freshness": [freshness_chip(provider, latest_date) for provider in providers if not provider.get("on_demand")],
+        "events": events,
+        "campaigns": campaigns,
+        "hint_news": hint_news,
+    }
+
+
 def build_dashboard_data() -> dict[str, Any]:
     pending_audit_counts = load_pending_audit_counts()
-    providers = [build_provider_payload(provider, pending_audit_counts) for provider in load_registry()]
+    registry = load_registry()
+    providers = [build_provider_payload(provider, pending_audit_counts) for provider in registry]
     hint_rows = [row for provider in providers for row in provider["hint_rows"]]
     hint_run = {}
     run_path = HINTS_ROOT / "run-latest.json"
@@ -879,6 +1111,7 @@ def build_dashboard_data() -> dict[str, Any]:
         "hint_run": hint_run,
         "recent_change_dates": recent_day_filters,
         "recent_change_rows": recent_change_rows,
+        "flash": build_flash_data(providers, registry, recent_day_filters),
         "columns": {
             "summary": SUMMARY_COLUMNS,
             "coupons": COMMON_COLUMNS,
@@ -897,7 +1130,7 @@ def generate_html(data: dict[str, Any]) -> str:
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>旅行会社クーポン監視ダッシュボード</title>
-<link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+<link href="https://unpkg.com/gridjs@6.2.0/dist/theme/mermaid.min.css" rel="stylesheet" />
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
 body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f6f7f9; color: #24313f; }}
@@ -987,12 +1220,78 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .day-badge.yesterday {{ background: #eaf3ff; color: #0f5caa; }}
 .day-badge.day-before {{ background: #fff5d6; color: #7a5200; }}
 .empty {{ color: #7a8696; padding: 20px; background: #fff; border: 1px solid #dfe4ea; border-radius: 8px; }}
+.tab-sep {{ width: 1px; align-self: stretch; background: #dfe4ea; margin: 6px 6px 9px; }}
+.tab.tab-main {{ font-weight: 700; color: #24313f; }}
+.tab-more {{ align-self: center; margin: 0 0 6px 4px; padding: 6px 10px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #516071; font-size: 0.84rem; max-width: 220px; }}
+.tab-more.active {{ border-color: #0f5caa; color: #0f5caa; font-weight: 700; }}
+.flash-head {{ display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 12px; }}
+.flash-head h2 {{ margin-bottom: 0; }}
+.day-tabs {{ display: flex; flex-wrap: wrap; gap: 6px; }}
+.day-tab {{ padding: 6px 11px; border: 1px solid #cbd5e1; border-radius: 999px; background: #fff; color: #2c3b4c; cursor: pointer; font-size: 0.84rem; }}
+.day-tab .day-date {{ color: #738092; font-size: 0.76rem; margin-left: 3px; }}
+.day-tab .day-count {{ display: inline-block; min-width: 20px; margin-left: 5px; padding: 0 6px; border-radius: 999px; background: #eef2f7; color: #4c596a; font-size: 0.76rem; font-weight: 700; text-align: center; }}
+.day-tab.active {{ border-color: #0f5caa; background: #0f5caa; color: #fff; font-weight: 700; }}
+.day-tab.active .day-date {{ color: #d6e6f8; }}
+.day-tab.active .day-count {{ background: #fff; color: #0f5caa; }}
+.fresh-strip {{ display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }}
+.fresh-chip {{ display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 8px; border: 1px solid #dfe4ea; background: #fff; font-size: 0.8rem; color: #47566a; }}
+.fresh-chip b {{ color: #24313f; white-space: nowrap; }}
+.fresh-chip::before {{ content: ''; width: 8px; height: 8px; border-radius: 50%; background: #9aa5b1; flex: none; }}
+.fresh-chip.fresh::before {{ background: #1f9d5c; }}
+.fresh-chip.stale {{ border-color: #f0d98b; background: #fffaeb; color: #7a5200; }}
+.fresh-chip.stale::before {{ background: #d99a00; }}
+.flash-counts {{ display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }}
+.flash-count {{ flex: 1 1 150px; background: #fff; border: 1px solid #dfe4ea; border-radius: 10px; padding: 10px 14px; }}
+.flash-count .num {{ font-size: 1.6rem; font-weight: 800; line-height: 1.1; }}
+.flash-count .lbl {{ font-size: 0.8rem; color: #5c6978; margin-top: 2px; }}
+.flash-count.new .num {{ color: #146c43; }}
+.flash-count.gone .num {{ color: #a52834; }}
+.flash-count.move .num, .flash-count.hint .num {{ color: #4c596a; }}
+.flash-grid {{ display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 14px; }}
+.flash-col {{ background: #fff; border: 1px solid #dfe4ea; border-radius: 10px; padding: 12px 14px; min-width: 0; }}
+.flash-col.new {{ border-top: 4px solid #1f9d5c; }}
+.flash-col.gone {{ border-top: 4px solid #c23b4a; }}
+.flash-col h3 {{ font-size: 1rem; margin-bottom: 10px; }}
+.flash-group + .flash-group {{ margin-top: 12px; }}
+.flash-group-name {{ font-size: 0.8rem; font-weight: 700; color: #5c6978; margin-bottom: 6px; }}
+.fcard {{ border: 1px solid #e3e8ef; border-radius: 8px; padding: 9px 11px; margin-bottom: 7px; background: #fbfcfd; }}
+.fcard-title {{ font-weight: 700; font-size: 0.9rem; line-height: 1.45; }}
+.fcard-title a {{ color: #0f3f75; text-decoration: none; }}
+.fcard-title a:hover {{ text-decoration: underline; }}
+.fcard-meta {{ font-size: 0.8rem; color: #5c6978; margin-top: 3px; line-height: 1.5; }}
+.fcard-badges {{ display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }}
+.badge {{ display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 0.74rem; font-weight: 700; background: #eef2f7; color: #4c596a; white-space: nowrap; }}
+.badge.first {{ background: #e9f7ef; color: #146c43; }}
+.badge.warn {{ background: #fff5d6; color: #7a5200; }}
+.badge.back {{ background: #eaf3ff; color: #0f5caa; }}
+.badge.official {{ background: #e9f7ef; color: #146c43; }}
+.badge.hint {{ background: #fff1e0; color: #8a4b00; }}
+.flash-empty {{ color: #7a8696; font-size: 0.86rem; padding: 6px 0; }}
+.flash-more {{ background: #fff; border: 1px solid #dfe4ea; border-radius: 10px; padding: 10px 14px; margin-bottom: 10px; }}
+.flash-more summary {{ cursor: pointer; font-weight: 700; font-size: 0.9rem; }}
+.flash-more .note {{ margin: 10px 0; }}
+.move-row {{ display: grid; grid-template-columns: 92px 70px minmax(0, 1fr) auto; gap: 8px; align-items: baseline; padding: 6px 0; border-top: 1px solid #eef1f5; font-size: 0.84rem; }}
+.move-row:first-of-type {{ border-top: 0; }}
+.move-row .mv-meta {{ color: #5c6978; font-size: 0.78rem; white-space: nowrap; }}
+.camp-toolbar {{ display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }}
+.camp-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 10px; }}
+.camp-card {{ background: #fff; border: 1px solid #dfe4ea; border-radius: 10px; padding: 11px 13px; }}
+.camp-card .fcard-title {{ margin: 5px 0 2px; }}
+.camp-card details {{ margin-top: 6px; font-size: 0.78rem; color: #5c6978; }}
+.camp-card summary {{ cursor: pointer; }}
 @media (max-width: 768px) {{
   .tab-content {{ padding: 12px; }}
   .tab {{ padding: 9px 10px; font-size: 0.8rem; }}
   .header {{ padding: 16px; }}
   .manual-panel {{ grid-template-columns: 1fr; }}
   .manual-actions {{ justify-content: flex-start; }}
+  .tabs {{ flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }}
+  .tabs .tab, .tabs .tab-more {{ flex: none; white-space: nowrap; }}
+  .day-tabs {{ flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 4px; }}
+  .day-tab {{ flex: none; }}
+  .flash-grid {{ grid-template-columns: 1fr; }}
+  .move-row {{ grid-template-columns: 1fr; gap: 2px; }}
+  .camp-grid {{ grid-template-columns: 1fr; }}
 }}
 </style>
 </head>
@@ -1012,7 +1311,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 </div>
 <div class="tabs" id="tabs"></div>
 <main id="contents"></main>
-<script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+<script src="https://unpkg.com/gridjs@6.2.0/dist/gridjs.umd.js"></script>
 <script>
 const DATA = {data_json};
 
@@ -1551,9 +1850,10 @@ function renderProvider(container, provider) {{
   const couponColumns = hasVisualEvidence
     ? DATA.columns.coupons
     : DATA.columns.coupons.filter(column => !visualColumns.includes(column));
-  const visibleCouponColumns = provider.id === 'jtb'
+  const visibleCouponColumns = (provider.id === 'jtb'
     ? couponColumns
-    : couponColumns.filter(column => !{json.dumps(JTB_CATEGORY_COLUMNS, ensure_ascii=False)}.includes(column));
+    : couponColumns.filter(column => !{json.dumps(JTB_CATEGORY_COLUMNS, ensure_ascii=False)}.includes(column)))
+    .filter(column => !provider.rows.length || provider.rows.some(row => row[column]));
   const countStats = provider.count_status === 'confirmed'
     ? `<span class="stat">${{escapeHtml(provider.count_noun || '全')}} ${{escapeHtml(provider.count_label ?? provider.rows.length)}} 件</span>
         <span class="stat active">配布中 ${{active}} 件</span>
@@ -1650,39 +1950,249 @@ function renderProvider(container, provider) {{
   }});
 }}
 
+function shortDate(value) {{
+  const match = String(value || '').match(/(\\d{{4}})-(\\d{{2}})-(\\d{{2}})/);
+  return match ? `${{Number(match[2])}}/${{Number(match[3])}}` : '';
+}}
+
+function groupByProvider(items) {{
+  const groups = new Map();
+  items.forEach(item => {{
+    if (!groups.has(item.provider)) groups.set(item.provider, []);
+    groups.get(item.provider).push(item);
+  }});
+  return [...groups.entries()];
+}}
+
+function titleLink(title, url) {{
+  if (!url) return escapeHtml(title);
+  return `<a href="${{escapeHtml(url)}}" target="_blank" rel="noopener">${{escapeHtml(title)}}</a>`;
+}}
+
+function flashBadges(event) {{
+  const badges = [];
+  if (event.kind === 'new') {{
+    badges.push(event.reappeared ? '<span class="badge back">前にもあったものが再登場</span>' : '<span class="badge first">初登場</span>');
+    if (event['配布状況'] && event['配布状況'] !== '配布中') badges.push(`<span class="badge warn">${{escapeHtml(event['配布状況'])}}</span>`);
+  }}
+  if (event.kind === 'gone') {{
+    if (event.still_listed) badges.push('<span class="badge back">今は掲載中</span>');
+    else if (event.came_back) badges.push('<span class="badge back">その後に再登場</span>');
+  }}
+  if (event.flaps >= 3) badges.push(`<span class="badge warn">30日で出入り ${{escapeHtml(event.flaps)}} 回</span>`);
+  return badges.join('');
+}}
+
+function flashCard(event) {{
+  const meta = [
+    event.discount || event['割引額'],
+    event['予約期間'] ? '予約 ' + event['予約期間'] : '',
+    event['カテゴリ'],
+  ].filter(Boolean).map(escapeHtml).join(' ・ ');
+  return `<div class="fcard">
+    <div class="fcard-title">${{titleLink(event.title, event['詳細URL'])}}</div>
+    ${{meta ? `<div class="fcard-meta">${{meta}}</div>` : ''}}
+    <div class="fcard-badges">${{flashBadges(event)}}</div>
+  </div>`;
+}}
+
+function flashColumn(events, cls, heading, emptyText) {{
+  const groups = groupByProvider(events).map(([provider, items]) => `
+    <div class="flash-group">
+      <div class="flash-group-name">${{escapeHtml(provider)}} ${{items.length}}件</div>
+      ${{items.map(flashCard).join('')}}
+    </div>`).join('');
+  return `<div class="flash-col ${{cls}}"><h3>${{heading}}</h3>${{groups || `<div class="flash-empty">${{escapeHtml(emptyText)}}</div>`}}</div>`;
+}}
+
+function moveRow(event) {{
+  const label = event.kind === 'ended' ? '<span class="badge warn">配布終了</span>' : '<span class="badge first">配布再開</span>';
+  const meta = [
+    event['残り枚数'] ? '今の残り ' + event['残り枚数'] : '',
+    event.flaps >= 3 ? `30日で出入り ${{event.flaps}} 回` : '',
+  ].filter(Boolean).map(escapeHtml).join(' ・ ');
+  return `<div class="move-row">
+    <span>${{escapeHtml(event.provider)}}</span>
+    <span>${{label}}</span>
+    <span>${{titleLink(event.title, event['詳細URL'])}}</span>
+    <span class="mv-meta">${{meta}}</span>
+  </div>`;
+}}
+
+function renderFlash(container) {{
+  const flash = DATA.flash || {{ events: [], freshness: [], hint_news: [] }};
+  const days = DATA.recent_change_dates || [];
+  let current = days[0] ? days[0].label : '';
+  const chips = (flash.freshness || []).map(item => `<span class="fresh-chip ${{escapeHtml(item.state)}}"><b>${{escapeHtml(item.label)}}</b>${{escapeHtml(item.text)}}</span>`).join('');
+  container.innerHTML = `
+    <div class="section">
+      <div class="flash-head"><h2>速報</h2><div class="day-tabs"></div></div>
+      <div class="fresh-strip">${{chips}}</div>
+      <div class="flash-body"></div>
+    </div>`;
+  const dayTabs = container.querySelector('.day-tabs');
+  const body = container.querySelector('.flash-body');
+
+  function mainCount(label) {{
+    return flash.events.filter(event => event.day === label && ['new', 'gone'].includes(event.kind)).length;
+  }}
+
+  function draw() {{
+    dayTabs.innerHTML = days.map(day => `
+      <button type="button" class="day-tab${{day.label === current ? ' active' : ''}}" data-day="${{escapeHtml(day.label)}}">
+        ${{escapeHtml(day.label)}}<span class="day-date">${{escapeHtml(shortDate(day.date))}}</span><span class="day-count">${{mainCount(day.label)}}</span>
+      </button>`).join('');
+    dayTabs.querySelectorAll('.day-tab').forEach(button => button.addEventListener('click', () => {{
+      current = button.dataset.day;
+      draw();
+    }}));
+    const day = days.find(item => item.label === current) || {{}};
+    const events = flash.events.filter(event => event.day === current);
+    const added = events.filter(event => event.kind === 'new');
+    const removed = events.filter(event => event.kind === 'gone');
+    const moves = events.filter(event => ['ended', 'reopened'].includes(event.kind));
+    const hints = (flash.hint_news || []).filter(hint => hint.date === day.date);
+    body.innerHTML = `
+      <div class="flash-counts">
+        <div class="flash-count new"><div class="num">${{added.length}}</div><div class="lbl">新しく出たクーポン</div></div>
+        <div class="flash-count gone"><div class="num">${{removed.length}}</div><div class="lbl">消えたクーポン</div></div>
+        <div class="flash-count move"><div class="num">${{moves.length}}</div><div class="lbl">在庫の出入り（終了・再開）</div></div>
+        <div class="flash-count hint"><div class="num">${{hints.length}}</div><div class="lbl">Xなどで見つけた未確認の新着</div></div>
+      </div>
+      <div class="flash-grid">
+        ${{flashColumn(added, 'new', '新しく出たクーポン', 'この日に新しく出たクーポンはありません。')}}
+        ${{flashColumn(removed, 'gone', '消えたクーポン', 'この日に消えたクーポンはありません。')}}
+      </div>
+      <details class="flash-more">
+        <summary>在庫の出入り（配布終了・再開） ${{moves.length}}件</summary>
+        <div class="note">一覧には残ったまま、配布枚数が尽きて「終了」になった、または補充されて「再開」したものです。JTBは上限に達すると終了になり、予告なく追加配布されることがあります。JTB国内は公式の在庫データで残り枚数を確かめています。</div>
+        ${{moves.map(moveRow).join('') || '<div class="flash-empty">この日の在庫の出入りはありません。</div>'}}
+      </details>
+      <details class="flash-more">
+        <summary>Xなどで見つけた未確認の新着 ${{hints.length}}件</summary>
+        <div class="note">Grokが見つけた候補で、公式ページでは確かめていません。記事に使う前に公式ページで確かめます。</div>
+        ${{hints.map(hint => `<div class="move-row"><span>${{escapeHtml(hint.provider)}}</span><span><span class="badge hint">${{escapeHtml(hint.kind || '候補')}}</span></span><span>${{titleLink(hint.title, hint.url)}}</span><span class="mv-meta">${{escapeHtml(hint.discount || '')}}</span></div>`).join('') || '<div class="flash-empty">この日の未確認の新着はありません。</div>'}}
+      </details>`;
+  }}
+  draw();
+}}
+
+function renderCampaigns(container) {{
+  const items = (DATA.flash && DATA.flash.campaigns) || [];
+  const kinds = [...new Set(items.map(item => item.kind).filter(Boolean))];
+  let source = 'all';
+  let kind = 'all';
+  container.innerHTML = `
+    <div class="section">
+      <h2>キャンペーン・セール</h2>
+      <div class="note">クーポン以外のセール・キャンペーン・ポイント・会員特典です。「公式で確認済み」は公式ページから取った情報、「未確認」はGrokがXやWebで見つけた候補です。未確認のものは、公式ページで確かめてから記事に使います。期間が過ぎたものは除外済み。今入っているのは、じゃらん・Trip.comなどの公式取得分と、Grokの候補だけです。</div>
+      <div class="camp-toolbar"></div>
+      <div class="camp-grid"></div>
+    </div>`;
+  const toolbar = container.querySelector('.camp-toolbar');
+  const grid = container.querySelector('.camp-grid');
+
+  function card(item) {{
+    const sourceBadge = item.source === 'official'
+      ? '<span class="badge official">公式で確認済み</span>'
+      : '<span class="badge hint">未確認（Grok）</span>';
+    const asOf = item.as_of ? (item.source === 'official' ? 'データ日 ' : '見つけた日 ') + shortDate(item.as_of) : '';
+    return `<div class="camp-card">
+      <div class="fcard-badges">${{sourceBadge}}<span class="badge">${{escapeHtml(item.kind || '')}}</span><span class="badge">${{escapeHtml(item.provider)}}</span>${{item.stale ? '<span class="badge warn">2週間以上前の情報</span>' : ''}}</div>
+      <div class="fcard-title">${{titleLink(item.title, item.url)}}</div>
+      ${{item.discount ? `<div class="fcard-meta">${{escapeHtml(item.discount)}}</div>` : ''}}
+      ${{item.period ? `<div class="fcard-meta">期間: ${{escapeHtml(item.period)}}</div>` : ''}}
+      ${{asOf ? `<div class="fcard-meta">${{escapeHtml(asOf)}}</div>` : ''}}
+      ${{item.evidence ? `<details><summary>根拠</summary>${{escapeHtml(item.evidence)}}</details>` : ''}}
+    </div>`;
+  }}
+
+  function draw() {{
+    const button = (group, value, label, active) => `<button type="button" class="filter-btn${{active ? ' active' : ''}}" data-group="${{group}}" data-value="${{escapeHtml(value)}}">${{escapeHtml(label)}}</button>`;
+    const count = predicate => items.filter(predicate).length;
+    toolbar.innerHTML = [
+      button('source', 'all', `すべて ${{items.length}}`, source === 'all'),
+      button('source', 'official', `公式で確認済み ${{count(item => item.source === 'official')}}`, source === 'official'),
+      button('source', 'hint', `未確認 ${{count(item => item.source === 'hint')}}`, source === 'hint'),
+      '<span class="tab-sep"></span>',
+      button('kind', 'all', '種類すべて', kind === 'all'),
+      ...kinds.map(value => button('kind', value, value, kind === value)),
+    ].join('');
+    toolbar.querySelectorAll('.filter-btn').forEach(element => element.addEventListener('click', () => {{
+      if (element.dataset.group === 'source') source = element.dataset.value;
+      else kind = element.dataset.value;
+      draw();
+    }}));
+    const shown = items
+      .filter(item => source === 'all' || item.source === source)
+      .filter(item => kind === 'all' || item.kind === kind)
+      .sort((a, b) => (a.source === b.source ? String(b.as_of).localeCompare(String(a.as_of)) : a.source === 'official' ? -1 : 1));
+    grid.innerHTML = shown.map(card).join('') || '<div class="empty">該当するキャンペーン・セールはありません。</div>';
+  }}
+  draw();
+}}
+
+const TAB_RENDERERS = {{}};
+const RENDERED_TABS = new Set();
+
 function activate(tabId) {{
+  if (!TAB_RENDERERS[tabId]) tabId = 'flash';
   document.querySelectorAll('.tab').forEach(tab => tab.classList.toggle('active', tab.dataset.tab === tabId));
   document.querySelectorAll('.tab-content').forEach(content => content.classList.toggle('active', content.id === tabId));
+  const more = document.querySelector('.tab-more');
+  if (more) {{
+    const isMore = [...more.options].some(option => option.value === tabId);
+    more.value = isMore ? tabId : '';
+    more.classList.toggle('active', isMore);
+  }}
+  if (!RENDERED_TABS.has(tabId)) {{
+    RENDERED_TABS.add(tabId);
+    TAB_RENDERERS[tabId](document.getElementById(tabId));
+  }}
+  if (location.hash !== '#' + tabId) history.replaceState(null, '', '#' + tabId);
 }}
 
 function init() {{
   const tabs = document.getElementById('tabs');
   const contents = document.getElementById('contents');
-  const summaryTab = document.createElement('button');
-  summaryTab.className = 'tab active';
-  summaryTab.dataset.tab = 'summary';
-  summaryTab.textContent = '全社サマリー';
-  tabs.appendChild(summaryTab);
-  const summaryContent = document.createElement('div');
-  summaryContent.id = 'summary';
-  summaryContent.className = 'tab-content active';
-  contents.appendChild(summaryContent);
-  renderSummary(summaryContent);
-
-  DATA.providers.forEach(provider => {{
-    const tab = document.createElement('button');
-    tab.className = 'tab';
-    tab.dataset.tab = provider.id;
-    tab.innerHTML = `${{escapeHtml(provider.label)}} <span class="tab-count">${{escapeHtml(provider.tab_count_label ?? provider.count_label ?? provider.rows.length)}}</span>`;
-    tabs.appendChild(tab);
+  function addContent(id, render) {{
     const content = document.createElement('div');
-    content.id = provider.id;
+    content.id = id;
     content.className = 'tab-content';
     contents.appendChild(content);
-    renderProvider(content, provider);
+    TAB_RENDERERS[id] = render;
+  }}
+  function addTab(id, label, render, extraClass = '') {{
+    const tab = document.createElement('button');
+    tab.className = ('tab ' + extraClass).trim();
+    tab.dataset.tab = id;
+    tab.innerHTML = label;
+    tab.addEventListener('click', () => activate(id));
+    tabs.appendChild(tab);
+    addContent(id, render);
+  }}
+  const providerLabel = provider => `${{escapeHtml(provider.label)}} <span class="tab-count">${{escapeHtml(provider.tab_count_label ?? provider.count_label ?? provider.rows.length)}}</span>`;
+  addTab('flash', '速報', renderFlash, 'tab-main');
+  addTab('campaigns', `キャンペーン・セール <span class="tab-count">${{((DATA.flash && DATA.flash.campaigns) || []).length}}</span>`, renderCampaigns, 'tab-main');
+  addTab('summary', '全社サマリー', renderSummary);
+  const separator = document.createElement('span');
+  separator.className = 'tab-sep';
+  tabs.appendChild(separator);
+  DATA.providers.filter(provider => !provider.on_demand).forEach(provider => {{
+    addTab(provider.id, providerLabel(provider), content => renderProvider(content, provider));
   }});
-
-  tabs.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => activate(tab.dataset.tab)));
+  const others = DATA.providers.filter(provider => provider.on_demand);
+  if (others.length) {{
+    const select = document.createElement('select');
+    select.className = 'tab-more';
+    select.innerHTML = `<option value="">その他の会社（${{others.length}}社）</option>` +
+      others.map(provider => `<option value="${{escapeHtml(provider.id)}}">${{escapeHtml(provider.label)}}（${{escapeHtml(provider.tab_count_label ?? provider.count_label ?? provider.rows.length)}}）</option>`).join('');
+    select.addEventListener('change', () => {{ if (select.value) activate(select.value); }});
+    tabs.appendChild(select);
+    others.forEach(provider => addContent(provider.id, content => renderProvider(content, provider)));
+  }}
+  activate(decodeURIComponent(location.hash.slice(1)) || 'flash');
+  window.addEventListener('hashchange', () => activate(decodeURIComponent(location.hash.slice(1))));
 }}
 
 init();
