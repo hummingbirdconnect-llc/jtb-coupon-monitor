@@ -7,15 +7,191 @@ import json
 import re
 import tempfile
 import unittest
+from datetime import datetime
 from pathlib import Path
+from unittest import mock
 
+import generate_dashboard
 from generate_dashboard import (
+    JST,
+    build_provider_payload,
     dashboard_manual_sources,
     format_coupon_row,
+    load_pending_audit_counts,
     official_audit_display,
     scoped_count_labels,
     write_dashboard_outputs,
 )
+
+
+def write_json(path: Path, payload: object) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False), encoding="utf-8")
+
+
+SAMPLE_PROVIDER = {
+    "id": "sample_ota",
+    "label": "サンプル",
+    "data_dir": "official_coupon_data/sample_ota",
+    "coverage_status": "official_codex",
+    "check_frequency": "daily",
+    "freshness_sla_hours": 30,
+}
+
+
+class AuditReflectionTest(unittest.TestCase):
+    """公式監査の反映が、次の取得を待たずにダッシュボードへ出ること。"""
+
+    def test_pending_audit_counts_only_latest_unapplied_candidate(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            queue = root / "codex_audit_queue"
+            results = root / "codex_audit_results"
+            ledger = root / "codex_audit_data" / "applied-candidates.json"
+            # じゃらん: 古い未適用候補が残っていても、最新が適用済みなら0件。
+            # ファイル名の順と取得時刻の順をわざと逆にしてある。
+            for candidate_id, fetched_at in [
+                ("jalan-zz-old", "2026-08-01T05:00:00+09:00"),
+                ("jalan-yy-old", "2026-09-01T05:00:00+09:00"),
+                ("jalan-aa-latest", "2026-10-15T05:00:00+09:00"),
+            ]:
+                write_json(
+                    queue / "jalan" / f"{candidate_id}.json",
+                    {"candidate_id": candidate_id, "provider_id": "jalan", "fetched_at": fetched_at},
+                )
+            # 楽天トラベル: 最新が未適用なら、古い候補の数に関係なく1件。
+            for candidate_id, fetched_at in [
+                ("rakuten_travel-old", "2026-08-11T05:00:00+09:00"),
+                ("rakuten_travel-mid", "2026-09-11T05:00:00+09:00"),
+                ("rakuten_travel-new", "2026-10-15T05:00:00+09:00"),
+            ]:
+                write_json(
+                    queue / "rakuten_travel" / f"{candidate_id}.json",
+                    {
+                        "candidate_id": candidate_id,
+                        "provider_id": "rakuten_travel",
+                        "fetched_at": fetched_at,
+                    },
+                )
+            # 読売旅行: 最新に監査結果があれば、適用前でも監査待ちではない。
+            write_json(
+                queue / "yomiuri_travel" / "yomiuri_travel-new.json",
+                {
+                    "candidate_id": "yomiuri_travel-new",
+                    "provider_id": "yomiuri_travel",
+                    "fetched_at": "2026-10-15T05:00:00+09:00",
+                },
+            )
+            write_json(results / "yomiuri_travel" / "yomiuri_travel-new.json", {})
+            write_json(
+                ledger,
+                {"candidates": {"jalan-aa-latest": {}, "rakuten_travel-old": {}}},
+            )
+
+            with mock.patch.multiple(
+                generate_dashboard,
+                AUDIT_QUEUE_ROOT=queue,
+                AUDIT_RESULT_ROOT=results,
+                AUDIT_LEDGER=ledger,
+            ):
+                counts = load_pending_audit_counts()
+
+        self.assertEqual(counts, {"rakuten_travel": 1})
+
+    def test_applied_audit_file_newer_than_check_status_sets_date_and_freshness(self) -> None:
+        today = datetime.now(JST).date().isoformat()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            coupon = {"id": "sample-1", "title": "サンプルクーポン", "source_type": "official_codex_audit"}
+            data_dir = root / "official_coupon_data" / "sample_ota"
+            write_json(data_dir / "coupons_2026-09-29.json", [coupon])
+            write_json(data_dir / f"coupons_{today}.json", [coupon])
+            # GitHub Actions が前回の取得時に書いた記録（監査の反映より古い）。
+            write_json(
+                root / "provider_check_data" / "sample_ota" / "latest.json",
+                {
+                    "check_type": "official_page_candidate",
+                    "data_date": "2026-09-29",
+                    "freshness_status": "stale",
+                },
+            )
+            with mock.patch.multiple(
+                generate_dashboard,
+                ROOT=root,
+                CHECK_STATUS_ROOT=root / "provider_check_data",
+            ):
+                payload = build_provider_payload(SAMPLE_PROVIDER)
+
+        self.assertEqual(payload["latest_file"], f"coupons_{today}.json")
+        self.assertEqual(payload["data_date"], today)
+        self.assertEqual(payload["freshness_status"], "fresh")
+        self.assertEqual(payload["summary"]["データ日"], today)
+        self.assertEqual(payload["summary"]["鮮度"], "新鮮")
+
+    def test_check_status_newer_than_latest_file_is_kept(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_json(
+                root / "official_coupon_data" / "sample_ota" / "coupons_2026-08-11.json",
+                [{"id": "sample-1", "title": "サンプルクーポン"}],
+            )
+            write_json(
+                root / "provider_check_data" / "sample_ota" / "latest.json",
+                {
+                    "check_type": "official_page_candidate",
+                    "data_date": "2026-09-29",
+                    "freshness_status": "stale",
+                },
+            )
+            with mock.patch.multiple(
+                generate_dashboard,
+                ROOT=root,
+                CHECK_STATUS_ROOT=root / "provider_check_data",
+            ):
+                payload = build_provider_payload(SAMPLE_PROVIDER)
+
+        self.assertEqual(payload["data_date"], "2026-09-29")
+        self.assertEqual(payload["freshness_status"], "stale")
+
+    def test_on_demand_held_audit_is_not_shown_as_not_run(self) -> None:
+        # 最新候補が監査済み（保留）なら、古い候補が残っていても「未実施」としない。
+        # 公式データがまだ無く旧データを出している間は、取得記録の鮮度を変えない。
+        provider = {
+            **SAMPLE_PROVIDER,
+            "coverage_status": "official_on_demand",
+            "check_frequency": "on_demand",
+            "freshness_sla_hours": 720,
+            "legacy_data_dir": "manual_coupon_data/sample_ota",
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_json(
+                root / "manual_coupon_data" / "sample_ota" / "coupons_2026-05-20.json",
+                [{"id": "sample-1", "title": "サンプルクーポン"}],
+            )
+            write_json(
+                root / "official_source_data" / "sample_ota" / "state.json",
+                {"last_audit_status": "held"},
+            )
+            write_json(
+                root / "provider_check_data" / "sample_ota" / "latest.json",
+                {
+                    "check_type": "official_page_candidate",
+                    "data_date": "",
+                    "freshness_status": "unknown",
+                },
+            )
+            with mock.patch.multiple(
+                generate_dashboard,
+                ROOT=root,
+                CHECK_STATUS_ROOT=root / "provider_check_data",
+            ):
+                payload = build_provider_payload(provider, {})
+
+        self.assertTrue(payload["legacy_used"])
+        self.assertEqual(payload["ai_label"], "監査保留")
+        self.assertEqual(payload["data_date"], "2026-05-20")
+        self.assertEqual(payload["freshness_status"], "unknown")
 
 
 class DashboardOutputTest(unittest.TestCase):
