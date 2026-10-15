@@ -177,8 +177,25 @@ def is_on_demand(provider: dict[str, Any]) -> bool:
     return provider.get("check_frequency") == "on_demand" or int(provider.get("cadence_days", 0)) <= 0
 
 
+def _audit_candidate_sort_key(candidate: dict[str, Any], path: Path) -> tuple[float, str, str]:
+    """codex_audit_runner._candidate_sort_key と同じ順（取得時刻・ID・パス）で新しさを決める。"""
+    raw_fetched_at = str(candidate.get("fetched_at") or "")
+    try:
+        fetched_at = datetime.fromisoformat(raw_fetched_at.replace("Z", "+00:00"))
+        if fetched_at.tzinfo is None:
+            fetched_at = fetched_at.replace(tzinfo=timezone.utc)
+        timestamp = fetched_at.timestamp()
+    except ValueError:
+        timestamp = 0.0
+    return timestamp, str(candidate.get("candidate_id") or ""), str(path)
+
+
 def load_pending_audit_counts() -> dict[str, int]:
-    """Codex監査待ち（候補はあるが結果も適用も無い）の件数を会社別に数える。"""
+    """Codex監査待ち（最新候補に結果も適用も無い）の件数を会社別に数える。
+
+    監査は会社ごとに最新候補だけを読む（codex_audit_runner の latest_per_provider）。
+    最新より古い未適用候補はもう読まないので数えず、各社0件か1件になる。
+    """
     applied: dict[str, Any] = {}
     if AUDIT_LEDGER.exists():
         try:
@@ -188,18 +205,27 @@ def load_pending_audit_counts() -> dict[str, int]:
     counts: dict[str, int] = {}
     if not AUDIT_QUEUE_ROOT.exists():
         return counts
+    latest: dict[str, tuple[Path, dict[str, Any]]] = {}
     for path in sorted(AUDIT_QUEUE_ROOT.glob("*/*.json")):
         try:
             candidate = load_json(path)
         except (OSError, json.JSONDecodeError):
             continue
-        candidate_id = str(candidate.get("candidate_id") or "")
+        if not candidate.get("candidate_id"):
+            continue
         provider_id = str(candidate.get("provider_id") or path.parent.name)
-        if not candidate_id or candidate_id in applied:
+        current = latest.get(provider_id)
+        if current is None or _audit_candidate_sort_key(candidate, path) > _audit_candidate_sort_key(
+            current[1], current[0]
+        ):
+            latest[provider_id] = (path, candidate)
+    for provider_id, (_, candidate) in latest.items():
+        candidate_id = str(candidate["candidate_id"])
+        if candidate_id in applied:
             continue
         if (AUDIT_RESULT_ROOT / provider_id / f"{candidate_id}.json").exists():
             continue
-        counts[provider_id] = counts.get(provider_id, 0) + 1
+        counts[provider_id] = 1
     return counts
 
 
@@ -805,10 +831,16 @@ def build_provider_payload(
     elif provider.get("article_paths"):
         source_label = "記事HTMLあり"
 
-    data_date = check_status.get("data_date") or (
-        parse_date_value(latest_file).isoformat() if parse_date_value(latest_file) else ""
-    )
-    freshness = check_status.get("freshness_status") or infer_freshness(
+    check_date = parse_date_value(check_status.get("data_date"))
+    file_date = parse_date_value(latest_file)
+    data_date = check_status.get("data_date") or (file_date.isoformat() if file_date else "")
+    freshness = check_status.get("freshness_status") or ""
+    if file_date and not legacy_used and (check_date is None or file_date > check_date):
+        # 監査の反映などで、GitHub Actions の前回記録より新しいファイルができている。
+        # 次の取得を待たずに、そのファイルの日付で鮮度を計り直す。
+        data_date = file_date.isoformat()
+        freshness = ""
+    freshness = freshness or infer_freshness(
         data_date,
         check_status.get("check_type", ""),
         int(provider.get("freshness_sla_hours", 30)),
@@ -818,6 +850,8 @@ def build_provider_payload(
     if coverage == "official_on_demand":
         if pending_audits:
             audit_label = "監査待ち"
+        elif official_state.get("last_audit_status") == "held":
+            audit_label = "監査保留"
         elif any(coupon.get("source_type") == "official_codex_audit" for coupon in coupons):
             audit_label = "監査済み"
         else:
@@ -1440,7 +1474,7 @@ function checkStatusHtml(provider) {{
   details.push(`<span class="manual-meta">最終実行: ${{escapeHtml(formatCheckTime(status.completed_at))}}</span>`);
   details.push(`<span class="manual-meta">公式取得: ${{escapeHtml(formatCheckTime(status.official_fetched_at))}}</span>`);
   details.push(`<span class="manual-meta">URL確認日時: ${{escapeHtml(formatCheckTime(status.url_checked_at))}}</span>`);
-  details.push(`<span class="manual-meta">データ日: ${{escapeHtml(status.data_date || '不明')}}</span>`);
+  details.push(`<span class="manual-meta">データ日: ${{escapeHtml(provider.data_date || status.data_date || '不明')}}</span>`);
   details.push(`<span class="manual-meta">鮮度: ${{escapeHtml(provider.freshness_label || '不明')}}</span>`);
   details.push(`<span class="manual-meta">Codex監査: ${{escapeHtml(provider.ai_label || '対象外')}}</span>`);
   details.push(`<span class="manual-meta">件数: ${{escapeHtml(provider.count_display_label ?? provider.count_label ?? provider.rows.length)}}</span>`);
