@@ -1,0 +1,26 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-17T08:18:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "じゃらんのお得な10日間（2026年10月回）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/news/article/919372/",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "evidence": "公式：2026年10月20日（火）より開催、毎月20～29日に開催 ／ 公式：一部クーポン15日より事前配布開始 ／ 公式：最大10,000円分クーポン 20日予約受付開始、セールプラン掲載宿で使えるクーポンは22日10:00配布 ／ 公式：最大31%は宿泊料金10,000円（税込）以上でクーポン併用の場合 ／ 公式：先着予約数に達すると獲得済みでも使えない ／ 未確認：旅行期間 ／ 未確認：各クーポンの最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-17",
+      "discount": "対象プラン5%OFFなど＋宿泊施設で使える最大10,000円分クーポン、大型連休・3連休限定 最大15,000円分クーポン（クーポン併用で最大31%）",
+      "period": "予約：2026年10月20日10:00頃～（毎月20～29日開催。一部クーポンは10月15日から事前配布） ／ 旅行：未確認（Grok: 10月20日チェックイン以降）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

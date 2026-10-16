@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-17T08:18:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2 10:00～2026/11/4 09:59 ／ 公式：500円引き 宿泊対象 2026/10/2チェックイン～2027/9/30チェックアウト、金額条件なし、先着300,000枚、併用可 ／ 公式：除外日 10/9～10/11、10/31～11/2、11/20～11/23、12/25～1/3、1/8～1/10、2/19～2/22、3/19～3/21 ／ 公式：ダイヤモンド限定4,500円引きは金・土曜宿泊、1部屋40,000円（税込）以上 ／ 公式：次回は11月4日～12月2日開催予定 ／ 未確認：決済方法の条件（券ごと） ／ 未確認：会員ランク限定券の最低額（4,500円券以外）",
+      "observed_date": "2026-10-17",
+      "discount": "国内宿泊：全楽天会員500円OFF（先着300,000枚）。ダイヤモンド会員限定 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ限定 3,000円OFFほか",
+      "period": "予約：2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 旅行：2026/10/2（金）チェックイン～2027/9/30（木）チェックアウト（除外日あり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "毎月5と0のつく日（ホテル・温泉宿 最大20%OFF）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定、最大20%OFF ／ 公式：10%OFF券 予約対象 10/20・25・30から各2日間、宿泊 2027/8/1～2027/9/30 ／ 公式：5%OFF券 宿泊 2026/10/5～2027/7/31ほか ／ 公式：オンラインカード決済限定、1予約10,000円（税込）以上、1会員1枚まで ／ 公式：11月ご利用分は11月4日10時配布開始予定 ／ 未確認：最大20%OFFの内訳（宿クーポン併用の条件） ／ 未確認：5%OFF券の各予約対象期間",
+      "observed_date": "2026-10-17",
+      "discount": "楽天トラベルクーポン10%OFF・5%OFF（ページ表記は最大20%OFF）",
+      "period": "予約：2026/10/20 0:00～10/21 23:59、10/25 0:00～10/26 23:59、10/30 0:00～10/31 23:59（10%OFF券。48時間） ／ 旅行：10%OFF券：2027/8/1チェックイン～2027/9/30チェックアウト。5%OFF券：2026/10/5チェックイン～2027/7/31チェックアウトほか",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
