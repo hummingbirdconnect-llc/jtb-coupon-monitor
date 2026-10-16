@@ -6910,5 +6910,77 @@
   "pattern": "last_check",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "big_discount",
+  "ota": "his",
+  "title": "早めの予約がお得！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "his",
+  "title": "早めの予約がお得！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "last_check",
+  "ota": "jtb",
+  "title": "＜9～3月出発＞【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "his",
+  "title": "学生旅行応援！早めの予約がお得！1グループ最大20,000円引き"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "his",
+  "title": "早めの予約がお得！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "timing_answer",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-10-17",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]

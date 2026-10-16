@@ -1,0 +1,23 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-10-17T04:22:58.815621+09:00",
+  "completed_at": "2026-10-17T04:27:23.300597+09:00",
+  "official_fetched_at": "2026-10-17T04:27:23.300597+09:00",
+  "data_date": "2026-10-17",
+  "freshness_status": "fresh",
+  "coupon_count": 102,
+  "latest_file": "coupons_2026-10-17.json",
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "error": "",
+  "regional_coverage_status": "complete",
+  "region_count": 11,
+  "successful_region_count": 11,
+  "regional_visible_count": 421,
+  "unique_coupon_variant_count": 102,
+  "primary_region_code": "kanto",
+  "primary_region_coupon_count": 36
+}
