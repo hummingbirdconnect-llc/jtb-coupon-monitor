@@ -1,0 +1,16 @@
+{
+  "provider_id": "knt",
+  "provider_label": "近畿日本ツーリスト",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-10-16T16:02:44.388393+09:00",
+  "completed_at": "2026-10-16T16:03:16.811616+09:00",
+  "official_fetched_at": "2026-10-16T16:03:16.811616+09:00",
+  "data_date": "2026-10-16",
+  "freshness_status": "fresh",
+  "coupon_count": 10,
+  "latest_file": "coupons_2026-10-16.json",
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "error": ""
+}
