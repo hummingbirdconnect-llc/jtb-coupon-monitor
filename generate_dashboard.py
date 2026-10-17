@@ -363,6 +363,28 @@ def infer_freshness(data_date: str, check_type: str, sla_hours: int) -> str:
     return "fresh" if age_hours <= sla_hours else "stale"
 
 
+def unchanged_page_confirmed_at(
+    check_status: dict[str, Any], data_date: str, pending_audits: int, legacy_used: bool
+) -> str:
+    """公式ページが反映済みの内容から変わっていないと確かめた取得時刻を返す。
+
+    取得記録が「変更なし」（今のページのhashが監査で反映済みのhashと同じ）で、
+    監査待ちが0件、取得日が確定データの日付より新しいときだけ返す。
+    """
+    if legacy_used or pending_audits:
+        return ""
+    if check_status.get("check_type") != "official_page_candidate":
+        return ""
+    if check_status.get("status") != "unchanged":
+        return ""
+    fetched_at = str(check_status.get("official_fetched_at") or "")
+    fetched_date = parse_date_value(fetched_at)
+    data_day = parse_date_value(data_date)
+    if not fetched_date or not data_day or fetched_date <= data_day:
+        return ""
+    return fetched_at
+
+
 def manual_gh_command(provider_id: str, deep: bool = False) -> str:
     command = f"gh workflow run coupon-monitor.yml -R {REPOSITORY} -f provider_id={provider_id}"
     if deep:
@@ -845,6 +867,23 @@ def build_provider_payload(
         check_status.get("check_type", ""),
         int(provider.get("freshness_sla_hours", 30)),
     )
+    unchanged_confirmed_at = unchanged_page_confirmed_at(
+        check_status, data_date, pending_audits, legacy_used
+    )
+    display_freshness = freshness_label(freshness)
+    if unchanged_confirmed_at:
+        # 最新の取得でページが反映済みの内容のままなら、確定データの日付ではなく
+        # 変化なしを確かめた取得日で鮮度を計る。取得が止まれば期限超過へ戻る。
+        confirmed_date = parse_date_value(unchanged_confirmed_at)
+        freshness = infer_freshness(
+            confirmed_date.isoformat(),
+            check_status.get("check_type", ""),
+            int(provider.get("freshness_sla_hours", 30)),
+        )
+        display_freshness = (
+            f"{freshness_label(freshness)}"
+            f"（{confirmed_date.month}/{confirmed_date.day} 変化なしを確認）"
+        )
     if legacy_used:
         source_label = "記事抽出暫定JSON（深掘り前の旧データ）"
     if coverage == "official_on_demand":
@@ -894,7 +933,8 @@ def build_provider_payload(
         "region_filters": region_filters,
         "data_date": data_date,
         "freshness_status": freshness,
-        "freshness_label": freshness_label(freshness),
+        "freshness_label": display_freshness,
+        "unchanged_confirmed_at": unchanged_confirmed_at,
         "official_fetched_at": official_fetched_at,
         "url_checked_at": url_checked_at,
         "ai_label": audit_label,
@@ -945,7 +985,7 @@ def build_provider_payload(
             "最終深掘り日": (deep_dive_at or "未実施") if on_demand else "-",
             "URL確認日時": url_checked_at or "なし",
             "データ日": data_date or "不明",
-            "鮮度": freshness_label(freshness),
+            "鮮度": display_freshness,
             "Codex監査": audit_label,
             "監査待ち": str(pending_audits) if pending_audits else "0",
             "最新データ": latest_file or "なし",
@@ -1002,7 +1042,17 @@ def freshness_chip(provider: dict[str, Any], latest_date: Any) -> dict[str, Any]
     fetched = provider.get("official_fetched_at") or provider.get("check_status", {}).get("completed_at", "")
     fetched_date = parse_date_value(fetched)
     pending = provider.get("pending_audit_count") or 0
-    if data_date and latest_date and data_date >= latest_date:
+    confirmed_at = provider.get("unchanged_confirmed_at") or ""
+    confirmed_date = parse_date_value(confirmed_at)
+    if data_date and confirmed_date:
+        # ページは前回の監査から変わっていない。内容の日付と確かめた日時を並べる。
+        state = "fresh" if latest_date and confirmed_date >= latest_date else "stale"
+        text = f"{data_date.month}/{data_date.day} の内容・{confirmed_date.month}/{confirmed_date.day}"
+        time_match = re.search(r"T(\d{2}:\d{2})", confirmed_at)
+        if time_match:
+            text += f" {time_match.group(1)}"
+        text += " に変化なしを確認"
+    elif data_date and latest_date and data_date >= latest_date:
         state, text = "fresh", f"{data_date.month}/{data_date.day} 取得"
         time_match = re.search(r"T(\d{2}:\d{2})", str(fetched))
         if time_match and fetched_date == data_date:
