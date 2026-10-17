@@ -1,0 +1,52 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-18T08:16:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "じゃらんのお得な10日間",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/news/article/919372/",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "evidence": "公式：毎月20日から開催。じゃらんクーポン最大10,000円分（20日予約受付開始、セールプラン掲載宿向けは22日10:00配布開始） ／ 公式：宿泊施設クーポン最大15,000円分（大型連休・3連休限定／その他日程） ／ 公式：ゴールド・シルバー・ブロンズのステージ限定クーポン（最大10,000円／9,500円／9,000円分） ／ 公式：宿泊料金10,000円（税込）以上でクーポン併用最大31% ／ 公式：先着予約数に達すると獲得済みでも利用不可 ／ 未確認：予約期間の終了日 ／ 未確認：旅行期間 ／ 未確認：各クーポンの最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-18",
+      "discount": "じゃらんクーポン最大10,000円分、宿泊施設クーポン最大15,000円分、ステージ限定最大10,000円分など（宿泊10,000円以上でクーポン併用最大31%）",
+      "period": "予約：毎月20日から（10月は20日予約受付開始。一部は20日・22日10:00配布開始）。終了日は未確認（Grok: 10月29日23:59） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "九州ふっこう応援割（じゃらん）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad324606/topics/entry0006741538.html",
+      "official_url": "",
+      "evidence": "未確認：Grokが公式URLを示さず、じゃらんの公式ページを特定できなかった ／ 未確認：金額 ／ 未確認：予約期間 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法 ／ 未確認：受付中の県（楽天の鹿児島分は先着上限到達） ／ 未確認：見つけた場所はGrokが「過去関連」として挙げた宿の個別ページで、公式ページとしては読んでいない",
+      "observed_date": "2026-10-18",
+      "discount": "未確認（Grok: 最大50%、熊本県・鹿児島県は最大60%、1人あたり上限2万円程度）",
+      "period": "予約：未確認（Grok: 県により異なる。鹿児島県は10月14日10:00頃開始） ／ 旅行：未確認（Grok: 概ね10月1日頃～12月25日頃）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": false
+    },
+    {
+      "title": "「志摩にしました。」ふるさとお得クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/jalan/doc/news/button/2284831401/",
+      "official_url": "https://www.jalan.net/jalan/doc/news/button/2284831401/",
+      "evidence": "公式：関東・静岡在住の方限定のふるさとお得クーポン（東京・神奈川・埼玉・千葉・茨城・栃木・群馬・静岡） ／ 公式：キャンペーン対象宿とクーポン利用可能宿は異なることがある ／ 公式：プラン名に【新幹線乗車者限定特典】とあるプランが対象 ／ 公式：PR企画（近鉄レジャークリエイト株式会社）。特典は選べる5つの英虞湾体験 ／ 未確認：割引額（ページは画像中心で金額の文字なし） ／ 未確認：予約期間 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-10-18",
+      "discount": "未確認（Grok: 最大10,000円お得＋体験特典）",
+      "period": "予約：未確認（Grok: 2026年10月15日～12月29日） ／ 旅行：未確認（Grok: 10月15日チェックイン～12月30日チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
