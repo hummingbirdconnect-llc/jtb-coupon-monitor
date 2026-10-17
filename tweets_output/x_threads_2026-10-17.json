@@ -1,12 +1,12 @@
 {
   "date": "2026-10-17",
-  "generated_at": "2026-10-17 04:37 JST",
+  "generated_at": "2026-10-17 15:54 JST",
   "sites": [
     {
       "site_id": "yakushimafan",
       "display_name": "屋久島ファン",
       "x_account": "@yakushimafan",
-      "candidates": 191,
+      "candidates": 189,
       "threads": [
         {
           "provider_id": "his",
@@ -103,7 +103,7 @@
       "site_id": "welltrip",
       "display_name": "ウェルトリップ",
       "x_account": "welltrip",
-      "candidates": 191,
+      "candidates": 189,
       "threads": [
         {
           "provider_id": "his",
@@ -166,32 +166,32 @@
           ]
         },
         {
-          "provider_id": "jtb",
-          "provider_label": "JTB",
-          "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
-          "score": 52,
+          "provider_id": "jalpack",
+          "provider_label": "JALパック",
+          "title": "期間限定タイムセールクーポン（国内）",
+          "score": 42,
           "reasons": [
-            "本日配布再開",
-            "割引30%"
+            "割引30,000円",
+            "残り6日"
           ],
           "pattern": "discovery",
           "pattern_name": "発見共有型",
-          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "article_url": "https://travel.hb-connect.co.jp/jal-pack-coupon/",
           "posts": [
             {
-              "text": "今朝のクーポンチェックで見つけたやつです。\n【JTB】で最大30%OFFが出てます\n\n宿泊で使えます。\n期限は12/28まで。\n\n使える条件をまとめました👇\n(1/3)",
-              "weight": 142,
-              "chars": 84
+              "text": "今朝のクーポンチェックで見つけたやつです。\n【JALパック】で最大30,000円引きが出てます\n\n国内ダイナミックパッケージで使えます。\n予約は10/23まで、急ぎめです。\n\n使える条件をまとめました👇\n(1/3)",
+              "weight": 188,
+              "chars": 107
             },
             {
-              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大30％引\n✅対象: 宿泊\n✅予約期限: 12/28まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
-              "weight": 137,
-              "chars": 81
+              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大30,000円割引\n✅対象: 国内ダイナミックパッケージ\n✅予約期限: 10/23まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
+              "weight": 165,
+              "chars": 97
             },
             {
-              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #JTB\n(3/3)",
-              "weight": 137,
-              "chars": 109
+              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/jal-pack-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #JALパック\n(3/3)",
+              "weight": 145,
+              "chars": 118
             }
           ]
         }
