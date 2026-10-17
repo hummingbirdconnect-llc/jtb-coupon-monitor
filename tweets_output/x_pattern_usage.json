@@ -6982,5 +6982,77 @@
   "pattern": "price_diff",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "discovery",
+  "ota": "rurubu_travel",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "big_discount",
+  "ota": "his",
+  "title": "早めの予約がお得！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "question",
+  "ota": "his",
+  "title": "学生旅行応援！早めの予約がお得！1グループ最大20,000円引き"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "his",
+  "title": "早めの予約がお得！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "target_call",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "tripcom",
+  "title": "スーパー・ワールド・ウィーク"
+ },
+ {
+  "date": "2026-10-18",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "last_check",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
