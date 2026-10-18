@@ -1,0 +1,32 @@
+{
+  "provider_id": "jtrip",
+  "provider_label": "ジェイトリップ",
+  "generated_at": "2026-10-19T07:34:54.517723+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 25,
+  "registered_url_count": 4,
+  "candidates": [
+    {
+      "title": "J-TRIP SALE おひとりさま1,000円割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtrip.co.jp/sp/supersale/",
+      "official_url": "https://www.jtrip.co.jp/sp/supersale/",
+      "official_domain_match": true,
+      "evidence": "冬旅セールの公開ページにクーポンFUYU1Kを掲載。予約時のコード入力で割引。",
+      "observed_date": "2026-10-19",
+      "discount": "おひとりさま1,000円割引",
+      "period": "有効期限：2026年11月1日（日）まで／旅行対象：2026年11月1日（日）〜2027年3月31日（水）出発",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jtrip/hints_2026-10-19.json"
+}

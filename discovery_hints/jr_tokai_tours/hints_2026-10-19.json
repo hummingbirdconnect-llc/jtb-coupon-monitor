@@ -1,0 +1,60 @@
+{
+  "provider_id": "jr_tokai_tours",
+  "provider_label": "JR東海ツアーズ",
+  "generated_at": "2026-10-19T07:34:54.517723+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 5,
+  "candidates": [
+    {
+      "title": "ひとり旅キャンペーン割引",
+      "kind": "coupon",
+      "found_url": "https://x.com/halohalo_travel/status/2111652945720901897",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/line-cp/",
+      "official_domain_match": true,
+      "evidence": "初回利用者限定、LINE連携必須、1名利用・旅行総額20,000円以上。宿泊付き商品のみ。エントリー翌日中配信。",
+      "observed_date": "2026-10-19",
+      "discount": "2,000円 / お申込み1件につき",
+      "period": "エントリー：2026年10月16日(金)13:00～10月26日(月)12:59まで／利用：2026年11月2日(月)23:30まで／出発：2026年10月18",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "オリエンタルホテルズ 割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_domain_match": true,
+      "evidence": "ユニバーサル・シティ先着80枚、なんば先着30枚。JR＋宿ツアー対象、併用可。上限到達時は予約画面に表示されない。",
+      "observed_date": "2026-10-19",
+      "discount": "3,000円割引/1予約あたり",
+      "period": "予約可能期間：2026/10/6(火)～12/30(水)23:30／出発対象期間：2026/10/7(水)～12/31(木)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "ホテル阪急レスパイア大阪 割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/welltrip0620/status/2111577499562119525",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_domain_match": true,
+      "evidence": "先着105枚。JR＋宿の対象ツアーに利用可、併用可。上限到達時は予約画面に表示されない。",
+      "observed_date": "2026-10-19",
+      "discount": "4,000円割引/1予約あたり",
+      "period": "予約可能期間：2026/9/29(火)～12/30(水)23:30／出発対象期間：2026/10/1(木)～12/31(木)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jr_tokai_tours/hints_2026-10-19.json"
+}

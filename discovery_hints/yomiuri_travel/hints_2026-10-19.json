@@ -1,0 +1,17 @@
+{
+  "provider_id": "yomiuri_travel",
+  "provider_label": "読売旅行",
+  "generated_at": "2026-10-19T07:34:54.517723+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 4,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/yomiuri_travel/hints_2026-10-19.json"
+}

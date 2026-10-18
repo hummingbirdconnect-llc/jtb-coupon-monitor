@@ -1,0 +1,32 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-10-19T07:34:54.517723+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "決算大感謝SALEは取得本文に施策詳細が表示されず、金額・期間を確認できなかった。",
+  "known_title_count": 56,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "鹿児島ふっこう応援割適用クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/imatoku_coupon/status/2110901527326200129",
+      "official_url": "https://www.his-j.com/campaign/kokunai/kyushu/recovery/",
+      "official_domain_match": true,
+      "evidence": "オンライン新規予約限定。1人あたり1泊上限20,000円、2泊以上上限30,000円。予算到達で終了。",
+      "observed_date": "2026-10-19",
+      "discount": "最大60％引き",
+      "period": "10月16日(金)正午12時より予約受付開始。2026年10月14日(水)～2027年1月31日(日)宿泊分まで。ただし、2026年12月26日(土)宿泊分～2",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/his/hints_2026-10-19.json"
+}

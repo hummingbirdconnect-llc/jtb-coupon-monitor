@@ -1,0 +1,17 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-19T07:34:54.517723+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "オータムSALEの名称・割引表示は公開ページで確認。対象クーポンの予約期限を特定できず、Xの20%宿クーポンと併せて未確認扱い。",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-19.json"
+}

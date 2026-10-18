@@ -1,0 +1,32 @@
+{
+  "provider_id": "activityjapan",
+  "provider_label": "アクティビティジャパン",
+  "generated_at": "2026-10-19T07:34:54.517723+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "信州体験割は開催期間が10/1～12/25、取得・利用期間が7/1～9/30と同一ページで不整合のため採用せず。",
+  "known_title_count": 6,
+  "registered_url_count": 3,
+  "candidates": [
+    {
+      "title": "2026年オータムキャンペーンクーポン",
+      "kind": "coupon",
+      "found_url": "https://activityjapan.com/feature/coupon-campaign/",
+      "official_url": "https://activityjapan.com/campaign/autumn_campaign_2026/",
+      "official_domain_match": true,
+      "evidence": "オンライン決済限定。6,000円以上で400円OFF、18,000円以上で1,200円OFF。期間中何度でも利用可。",
+      "observed_date": "2026-10-19",
+      "discount": "400円 or 1,200円OFF",
+      "period": "開催期間：2026.9.3(木)～2026.11.4(水)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/activityjapan/hints_2026-10-19.json"
+}

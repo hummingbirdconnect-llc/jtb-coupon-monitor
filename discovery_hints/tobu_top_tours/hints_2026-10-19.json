@@ -1,0 +1,60 @@
+{
+  "provider_id": "tobu_top_tours",
+  "provider_label": "東武トップツアーズ",
+  "generated_at": "2026-10-19T07:34:54.517723+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 5,
+  "registered_url_count": 2,
+  "candidates": [
+    {
+      "title": "NIKKO MaaS付きプラン限定クーポン",
+      "kind": "coupon",
+      "found_url": "https://tobutoptours.jp/",
+      "official_url": "https://tobutoptours.jp/news/2026/1015/",
+      "official_domain_match": true,
+      "evidence": "10月15日11:50配布開始。対象施設のNIKKO MaaS付きプラン限定。枚数限定、事前取得が必要。",
+      "observed_date": "2026-10-19",
+      "discount": "5,000円引",
+      "period": "配布/予約対象期間：2026年10月15日～2027年2月26日／出発対象期間：2026年10月17日～2027年2月28日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "湯西川・奥鬼怒限定クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/welltrip0620/status/2111005240514502862",
+      "official_url": "https://tobutoptours.jp/news/2026/1008/",
+      "official_domain_match": true,
+      "evidence": "湯西川・奥鬼怒の対象施設限定。利用上限20枚。公開のお知らせとクーポン一覧で条件を確認。",
+      "observed_date": "2026-10-19",
+      "discount": "3,500円引き",
+      "period": "配布/予約対象期間：2026年10月8日～3月29日／出発対象期間：2026年10月10日～2027年3月31日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "熱海後楽園ホテル限定クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/welltrip0620/status/2111034505532453194",
+      "official_url": "https://tobutoptours.jp/news/2026/0813/",
+      "official_domain_match": true,
+      "evidence": "熱海後楽園ホテルに宿泊する列車付プランまたは宿泊プラン対象。枚数限定、事前取得が必要。",
+      "observed_date": "2026-10-19",
+      "discount": "3,000円",
+      "period": "配布/予約対象期間：2026年9月18日～12月22日／出発対象期間：2026年12月1日～12月24日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-19.json"
+}
