@@ -241,10 +241,35 @@
       "label": "ジェイトリップ",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "master_import",
-      "data_dir": "manual_coupon_data/jtrip",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/jtrip",
+      "legacy_data_dir": "manual_coupon_data/jtrip",
+      "source_type": "official_page_candidate",
+      "official_sources": [
+        {
+          "url": "https://www.jtrip.co.jp/sp/supersale/",
+          "fetch_method": "playwright",
+          "purpose": "J-TRIP SALE（クーポンコード FUYU1K）"
+        },
+        {
+          "url": "https://www.jtrip.co.jp/sp/comfort-hotel/",
+          "fetch_method": "playwright",
+          "purpose": "コンフォートホテル特別価格キャンペーン"
+        },
+        {
+          "url": "https://www.jtrip.co.jp/j-kyushu/sp/fukko-ouenwari/",
+          "fetch_method": "playwright",
+          "purpose": "九州ふっこう応援割"
+        },
+        {
+          "url": "https://www.jtrip.co.jp/j-shikoku/sp/uraraka/",
+          "fetch_method": "playwright",
+          "purpose": "JAL麗らか四国キャンペーン"
+        }
+      ],
+      "official_domains": ["jtrip.co.jp"],
       "master_path": "../vault_blog/ウェルトリップ/会社別/ジェイトリップ/coupon-master/master.md",
-      "note": "coupon-master由来の暫定データ。下書き投稿済み記事あり。"
+      "note": "J-TRIP SALE・コンフォートホテル特別価格・九州ふっこう応援割・麗らか四国を指定時に深掘りする。通常のHTTP取得は403になるためブラウザ取得。終了済みのPaidyキャンペーンページは登録しない。"
     },
     {
       "id": "yumeyado",
