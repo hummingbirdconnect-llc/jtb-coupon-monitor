@@ -1,0 +1,60 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-10-18T12:32:07.728086+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "JALふるさと応援割　ゆくたび感動 飛行機で飛騨高山へ！",
+      "kind": "campaign",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/?tco=moduType",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "公式の国内割引ツアー一覧で1名様につき10,000円助成と予約・出発期間を確認。2027年3月1日帰着分まで。",
+      "observed_date": "2026-10-18",
+      "discount": "1名様につき10,000円助成",
+      "period": "予約対象期間：2026年10月15日～2027年2月27日／出発対象期間：2026年11月1日～2027年2月28日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "JALふるさと応援割　徳島へお出かけ！",
+      "kind": "campaign",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/?tco=moduType",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "公式の国内割引ツアー一覧で1名様につき10,000円助成と予約・出発期間を確認。2027年3月1日帰着分まで。",
+      "observed_date": "2026-10-18",
+      "discount": "1名様につき10,000円助成",
+      "period": "予約対象期間：2026年10月13日～2027年2月27日／出発対象期間：2026年10月14日～2027年2月28日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "JALふるさと応援割　徳島からお出かけ！",
+      "kind": "campaign",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/?tco=moduType",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "公式の国内割引ツアー一覧で1名様につき5,000円助成、併用利用可と記載。2027年3月1日帰着分まで。",
+      "observed_date": "2026-10-18",
+      "discount": "1名様につき5,000円助成",
+      "period": "予約対象期間：2026年10月13日～2027年2月27日／出発対象期間：2026年10月14日～2027年2月28日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jalpack/hints_2026-10-18.json"
+}

@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-10-18T12:32:07.728086+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式deals公開ページでは日本向けクーポンの条件を再現できず、検索結果にある金額・有効期間を公式本文で確認できなかった。ログインは行っていない。",
+  "known_title_count": 7,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-10-18.json"
+}

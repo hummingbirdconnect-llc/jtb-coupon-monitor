@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-18T12:32:07.728086+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "KOKO HOTEL 姫路城：【じゃらん】10月限定！500円クーポン★全プラン利用可！",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad300872/coupon/",
+      "official_url": "https://www.jalan.net/yad300872/coupon/",
+      "official_domain_match": true,
+      "evidence": "公開ページを直接再取得して確認。全プラン利用可、予約金額500円（税込）以上、先着予約数100、併用可。宿泊対象日は未確認。",
+      "observed_date": "2026-10-18",
+      "discount": "500 円分",
+      "period": "配布期間・予約期間：2026年9月28日（月）00:00〜2026年10月31日（土）23:59",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-18.json"
+}

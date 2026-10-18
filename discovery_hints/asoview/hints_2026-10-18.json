@@ -1,0 +1,46 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-10-18T12:32:07.728086+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "アソビュー！遊びつくしキャンペーン（対象施設限定クーポン第3弾）",
+      "kind": "coupon",
+      "found_url": "https://www.asoview.com/brand/202610_asobitsukushi/?content=hero",
+      "official_url": "https://www.asoview.com/brand/202610_asobitsukushi/",
+      "official_domain_match": true,
+      "evidence": "15,000円以上で3,000円OFF、10,000円以上で1,000円OFF、3,000円以上で500円OFF。会員・対象プラン限定、先着順。",
+      "observed_date": "2026-10-18",
+      "discount": "最大3,000円OFF",
+      "period": "第3弾：2026年10月17日（土）12:00 〜 10月22日（木）23:59",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "やまぐちのアソビ新発見割2026（第二期）",
+      "kind": "coupon",
+      "found_url": "https://www.asoview.com/brand/yamaguchi/",
+      "official_url": "https://www.asoview.com/brand/yamaguchi/",
+      "official_domain_match": true,
+      "evidence": "山口県の対象体験プランの予約時に利用。会員登録済みの利用者が対象。1予約につき1回適用、上限到達で終了。公開条件のみ確認。",
+      "observed_date": "2026-10-18",
+      "discount": "1人当たり30%OFF",
+      "period": "【第二期】2026年10月1日（木）0:00~2026年12月31日（木）23:59",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/asoview/hints_2026-10-18.json"
+}

@@ -1,64 +1,82 @@
 {
-  "completed_at": "2026-09-24T07:17:11.278960+09:00",
-  "scope": "auto",
-  "provider_count": 6,
-  "error_count": 4,
-  "candidate_count": 68,
-  "new_count": 43,
+  "completed_at": "2026-10-18T12:32:07.728086+09:00",
+  "scope": "codex-auto",
+  "provider_count": 8,
+  "error_count": 2,
+  "candidate_count": 8,
+  "new_count": 8,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
       "status": "error",
-      "error": "ValueError: grok の出力から candidates を読み取れませんでした",
+      "error": "公式一覧の動的項目が未展開で、新規候補の予約期間を確認できず。別途確認したバスツアーAM079のタイムセールは10/14 12:00までのため除外。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-09-24.json"
+      "hints_file": "discovery_hints/his/hints_2026-10-18.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 53,
-      "new_count": 41,
-      "hints_file": "discovery_hints/jtb/hints_2026-09-24.json"
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jtb/hints_2026-10-18.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
       "status": "ok",
       "error": "",
-      "candidate_count": 15,
-      "new_count": 2,
-      "hints_file": "discovery_hints/knt/hints_2026-09-24.json"
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/knt/hints_2026-10-18.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
-      "status": "error",
-      "error": "RuntimeError: grok exit=1: sed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not executed: required env var(s) not set: ${AGI_COCKPIT_AGENT_TYPE}, ${AGI_COCKPIT_STATUS_FILE}\n\u001b[2m2026-09-23T22:41:30.922564Z\u001b[0m \u001b[33m WARN\u001b[0m stop hook failed; ignoring (fail-open) \u001b[3mhook_name\u001b[0m\u001b[2m=\u001b[0mglobal/settings:stop[0].hooks[0] \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not execu",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalpack/hints_2026-09-24.json"
+      "status": "ok",
+      "error": "",
+      "candidate_count": 3,
+      "new_count": 3,
+      "hints_file": "discovery_hints/jalpack/hints_2026-10-18.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
-      "status": "error",
-      "error": "RuntimeError: grok exit=1: sed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not executed: required env var(s) not set: ${AGI_COCKPIT_AGENT_TYPE}, ${AGI_COCKPIT_STATUS_FILE}\n\u001b[2m2026-09-23T22:41:33.832434Z\u001b[0m \u001b[33m WARN\u001b[0m stop hook failed; ignoring (fail-open) \u001b[3mhook_name\u001b[0m\u001b[2m=\u001b[0mglobal/settings:stop[0].hooks[0] \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not execu",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalan/hints_2026-09-24.json"
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jalan/hints_2026-10-18.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-18.json"
+    },
+    {
+      "provider_id": "klook",
+      "provider_label": "Klook",
       "status": "error",
-      "error": "RuntimeError: grok exit=1: sed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not executed: required env var(s) not set: ${AGI_COCKPIT_AGENT_TYPE}, ${AGI_COCKPIT_STATUS_FILE}\n\u001b[2m2026-09-23T22:41:37.590884Z\u001b[0m \u001b[33m WARN\u001b[0m stop hook failed; ignoring (fail-open) \u001b[3mhook_name\u001b[0m\u001b[2m=\u001b[0mglobal/settings:stop[0].hooks[0] \u001b[3melapsed_ms\u001b[0m\u001b[2m=\u001b[0m0 \u001b[3mhook_failure\u001b[0m\u001b[2m=\u001b[0mhook not execu",
+      "error": "公式deals公開ページでは日本向けクーポンの条件を再現できず、検索結果にある金額・有効期間を公式本文で確認できなかった。ログインは行っていない。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-09-24.json"
+      "hints_file": "discovery_hints/klook/hints_2026-10-18.json"
+    },
+    {
+      "provider_id": "asoview",
+      "provider_label": "アソビュー",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 2,
+      "new_count": 2,
+      "hints_file": "discovery_hints/asoview/hints_2026-10-18.json"
     }
   ]
 }
