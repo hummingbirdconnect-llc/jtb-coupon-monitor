@@ -1,0 +1,36 @@
+{
+  "completed_at": "2026-10-19T05:31:16.125034+09:00",
+  "scope": "all",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 0,
+  "codex_audit_candidates": [],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "his",
+      "provider_label": "HIS",
+      "check_type": "official_monitor",
+      "status": "success",
+      "started_at": "2026-10-19T05:27:03.953850+09:00",
+      "completed_at": "2026-10-19T05:31:16.117130+09:00",
+      "official_fetched_at": "2026-10-19T05:31:16.117130+09:00",
+      "data_date": "2026-10-19",
+      "freshness_status": "fresh",
+      "coupon_count": 101,
+      "latest_file": "coupons_2026-10-19.json",
+      "ai_used": false,
+      "wp_review_eligible": false,
+      "error": "",
+      "regional_coverage_status": "complete",
+      "region_count": 11,
+      "successful_region_count": 11,
+      "regional_visible_count": 410,
+      "unique_coupon_variant_count": 101,
+      "primary_region_code": "kanto",
+      "primary_region_coupon_count": 35,
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-19T05:31:16.117130+09:00"
+    }
+  ]
+}
