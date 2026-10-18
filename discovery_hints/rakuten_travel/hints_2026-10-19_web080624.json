@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-19T08:29:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2 10:00～2026/11/4 09:59 ／ 公式：全楽天会員500円OFF、ダイヤモンド限定最大4,500円OFF、ダイヤモンド・プラチナ限定最大3,000円OFF ／ 公式：各先着利用300,000枚 ／ 公式：クーポンには金額条件あり ／ 未確認：宿泊対象期間 ／ 未確認：各クーポンの最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-10-19",
+      "discount": "国内宿泊：全楽天会員500円OFF、ダイヤモンド会員限定 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員限定 週末3,000円／1,500円OFF・平日2,500円／1,000円OFF。楽パック8,000円／4,000円／500円（公式）",
+      "period": "予約：2026/10/2（金）10:00～2026/11/4（水）09:59（公式）。次回は11月4日～12月2日予定（公式） ／ 旅行：未確認（Grok: 2026年10月2日チェックイン～2027年9月30日チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "毎月5と0のつく日はホテル・宿が最大20%OFF",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/top/",
+      "evidence": "公式：ホテル・温泉宿 クーポン最大20%OFF（併用） ／ 公式：2027年9月末までの宿泊予約で使える ／ 公式：楽パック5%は170,000円以上の宿泊予約対象 ／ 未確認：今回（10月20日）の開催期間・配布期間 ／ 未確認：宿泊クーポンの最低利用額 ／ 未確認：会員条件 ／ 未確認：決済方法",
+      "observed_date": "2026-10-19",
+      "discount": "ホテル・温泉宿 クーポン併用で最大20%OFF、最高級宿 最大20%OFF、楽パック5%（170,000円以上）・JR+宿最大5,000円、レンタカー最大10%OFF（公式）",
+      "period": "予約：未確認。公式ページは毎月5と0のつく日の常設案内で、今回（10月20日）の開催期間の記載なし（Grok: 次回2026年10月20日開始） ／ 旅行：2027年9月末までの宿泊予約で使える（ホテル・温泉宿・公式）。楽パック（航空券）は2027年7月末、レンタカーは2027年3月末まで（公式）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

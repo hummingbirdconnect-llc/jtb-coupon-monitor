@@ -1,0 +1,52 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-10-19T08:29:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "年末セール（Late Escape Deals）",
+      "kind": "coupon",
+      "found_url": "https://x.com/moppy_official/status/2110611654417449226",
+      "official_url": "https://www.booking.com/dealspage.ja.html",
+      "evidence": "公式：年末の宿泊が15%以上OFF ／ 公式：2026年10月1日～2027年1月7日の宿泊を2027年1月7日までに予約 ／ 公式：東京506件・大阪市306件・京都市167件・札幌市130件・福岡市109件・那覇市47件が対象 ／ 未確認：最低利用額 ／ 未確認：会員条件（会員登録不要かどうか） ／ 未確認：決済方法 ／ 未確認：税・手数料前の料金への適用（Grokのみ）",
+      "observed_date": "2026-10-19",
+      "discount": "年末の宿泊が15%以上OFF（公式）",
+      "period": "予約：2027年1月7日までに予約（公式） ／ 旅行：2026年10月1日～2027年1月7日の宿泊（公式）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "Genius（ジーニアス）割引",
+      "kind": "coupon",
+      "found_url": "https://www.booking.com/genius.ja.html",
+      "official_url": "https://www.booking.com/genius.ja.html",
+      "evidence": "公式：宿泊予約が10%OFF／10～15%OFF／10～20%OFF ／ 公式：レベル2で対象プランの無料朝食・無料客室アップグレード ／ 公式：無料で会員登録する ／ 未確認：レベルアップの回数条件 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-10-19",
+      "discount": "宿泊予約10%OFF（レベル1）、10～15%OFF（レベル2）、10～20%OFF（レベル3）。レンタカー10%／10～15%OFF。レベル2以上は対象プランで無料朝食・客室アップグレード、レベル3は優先サポート（公式）",
+      "period": "予約：常設（公式ページに期間の記載なし） ／ 旅行：常設（同上）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "モバイル限定料金（Mobile Rate）",
+      "kind": "coupon",
+      "found_url": "https://www.booking.com/",
+      "official_url": "https://www.booking.com/",
+      "evidence": "未確認：公式トップページにモバイル限定料金の記載なし。割引率・期間・対象・決済とも公式で確かめられず",
+      "observed_date": "2026-10-19",
+      "discount": "未確認（Grok: 通常10%以上、施設による）",
+      "period": "予約：未確認（Grok: 常時） ／ 旅行：未確認（Grok: 施設による）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

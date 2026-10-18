@@ -1,0 +1,52 @@
+{
+  "provider_id": "toku",
+  "provider_label": "トクー",
+  "generated_at": "2026-10-19T08:29:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "ウルトラトクー市",
+      "kind": "coupon",
+      "found_url": "https://www.tocoo.jp/",
+      "official_url": "https://www.tocoo.jp/ultra-tocoo",
+      "evidence": "公式：最大割引率94%（2026年9月25日現在） ／ 公式：販売日・客室数が限られる ／ 公式（トップ）：トクープライム会員（有料会員）限定のコンテンツ ／ 未確認：販売期間・宿泊期間 ／ 未確認：最低利用額 ／ 未確認：決済方法・キャンセル条件",
+      "observed_date": "2026-10-19",
+      "discount": "最大割引率94%（2026年9月25日現在・公式）",
+      "period": "予約：未確認（公式：販売日・客室数などが限られる） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "タイムセール",
+      "kind": "coupon",
+      "found_url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "official_url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "evidence": "公式：対象プランが割引率30%OFF以上 ／ 公式：タイムセールの料金はトクープライム会員限定で表示 ／ 公式：除外日や在庫切れで料金が適用されない場合あり ／ 公式：一部プランに「事前カード決済限定」の表記 ／ 未確認：セール期間 ／ 未確認：宿泊期間 ／ 未確認：最低利用額 ／ 未確認：決済方法（プランごと）",
+      "observed_date": "2026-10-19",
+      "discount": "対象プランが30%OFF以上（公式）",
+      "period": "予約：未確認（公式：期間限定） ／ 旅行：未確認（公式：「10月お日にち限定」プランあり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "今日割・明日割",
+      "kind": "coupon",
+      "found_url": "https://x.com/tocoo_jp/status/2105598607542108557",
+      "official_url": "https://www.tocoo.jp/",
+      "evidence": "公式：今日割・明日割の宿 25%OFF の表示例 ／ 公式：無料会員でも卸値で予約できるようになった ／ 公式：無料会員登録で卸値で予約できる ／ 未確認：今日割・明日割の最大割引率 ／ 未確認：受付締切時刻 ／ 未確認：無料会員での利用可否（個別の明記） ／ 未確認：決済方法",
+      "observed_date": "2026-10-19",
+      "discount": "今日割・明日割の宿で25%OFFの例（7,400円→5,550円・公式トップ）。最大率は未確認",
+      "period": "予約：未確認（当日・前日予約の枠。締切時刻は未確認） ／ 旅行：未確認（当日または翌日チェックイン）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
