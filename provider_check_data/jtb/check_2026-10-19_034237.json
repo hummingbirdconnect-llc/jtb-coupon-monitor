@@ -1,0 +1,16 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-10-19T03:33:20.664930+09:00",
+  "completed_at": "2026-10-19T03:42:37.585689+09:00",
+  "official_fetched_at": "2026-10-19T03:42:37.585689+09:00",
+  "data_date": "2026-10-19",
+  "freshness_status": "fresh",
+  "coupon_count": 90,
+  "latest_file": "coupons_2026-10-19.json",
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "error": ""
+}
