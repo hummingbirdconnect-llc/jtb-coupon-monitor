@@ -359,13 +359,13 @@
       "coverage_status": "official_on_demand",
       "data_dir": "official_coupon_data/asoview",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html"],
-      "note": "公式クーポン一覧ページを指定時に深掘りする。",
+      "note": "公式クーポン一覧を指定時に深掘りする。割引額は一覧に出るが、クーポンの獲得はログインが必要。通常HTTPは本文が取れないためブラウザ取得。",
       "source_type": "official_page_candidate",
       "legacy_data_dir": "manual_coupon_data/asoview",
       "official_sources": [
         {
           "url": "https://www.asoview.com/coupon/",
-          "fetch_method": "auto",
+          "fetch_method": "playwright",
           "purpose": "公式クーポン一覧"
         }
       ],
@@ -489,17 +489,27 @@
       "coverage_status": "official_on_demand",
       "data_dir": "official_coupon_data/skypack_tours",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/スカイパックツアーズ/note/スカイパックツアーズ_P_クーポン全まとめ_パイプライン記事.html"],
-      "note": "専用キャンペーン一覧が無く、トップページのバナーが起点。ブラウザ取得で指定時に深掘りする。",
+      "note": "公式は skypaktours.co.jp（スカイパックツアーズ株式会社）。旧URL www.skypack.jp は包装会社なので使わない。トップは通常HTTPが失敗するため playwright。現行クーポンとクーポン案内は html。終了済みの先トク等は登録しない。",
       "source_type": "official_page_candidate",
       "legacy_data_dir": "manual_coupon_data/skypack_tours",
       "official_sources": [
         {
-          "url": "https://www.skypack.jp/",
+          "url": "https://www.skypaktours.co.jp/",
           "fetch_method": "playwright",
-          "purpose": "トップページ（キャンペーン・路線別訴求）"
+          "purpose": "トップページ（キャンペーン告知）"
+        },
+        {
+          "url": "https://normal.skypaktours.co.jp/addition/campaign/c08asjam01",
+          "fetch_method": "html",
+          "purpose": "奄美群島しまめぐり割（現行クーポン）"
+        },
+        {
+          "url": "https://normal.skypaktours.co.jp/coupon/guide.html",
+          "fetch_method": "html",
+          "purpose": "たす旅クーポンの共通案内"
         }
       ],
-      "official_domains": ["skypack.jp"]
+      "official_domains": ["skypaktours.co.jp"]
     },
     {
       "id": "tobu_top_tours",
