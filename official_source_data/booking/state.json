@@ -1,7 +1,7 @@
 {
   "provider_id": "booking",
-  "observed_hash": "f17a0fe77c6685ec74e2696387af2be874e8f7d39a8fc93ae6ad7a671d430b4e",
-  "last_checked_at": "2026-09-18T13:14:16.122811+09:00",
+  "observed_hash": "f56fe3d5e547f577fafd45cd12e5e98205142d0f4e8d8a18d6ee400cdaeb229a",
+  "last_checked_at": "2026-10-20T08:03:11.647200+09:00",
   "sources": [
     {
       "url": "https://www.booking.com/genius.ja.html",
@@ -9,23 +9,19 @@
       "status_code": 200,
       "fetch_method": "playwright",
       "error": "",
-      "text_chars": 5110,
-      "content_hash": "76cba27dd528febd889b4e0780e6cf4f88a9eef27a628cc0dffd8a0d72b85307"
-    },
-    {
-      "url": "https://www.booking.com/index.ja.html",
-      "ok": false,
-      "status_code": "",
-      "fetch_method": "playwright",
-      "error": "Playwright HTTP 202",
-      "text_chars": 0,
-      "content_hash": ""
+      "purpose": "Geniusロイヤルティ特典",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 5117,
+      "content_hash": "f08541d99c4756d81ef843e1db64522d823fe2faa22c92e931044af374d1ee49"
     }
   ],
-  "queued_hash": "f17a0fe77c6685ec74e2696387af2be874e8f7d39a8fc93ae6ad7a671d430b4e",
-  "queued_candidate_id": "booking-f17a0fe77c6685ec",
-  "queued_at": "2026-09-18T13:14:16.123558+09:00",
-  "last_audit_status": "held",
+  "queued_hash": "f56fe3d5e547f577fafd45cd12e5e98205142d0f4e8d8a18d6ee400cdaeb229a",
+  "queued_candidate_id": "booking-f56fe3d5e547f577",
+  "queued_at": "2026-10-20T08:03:11.647690+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-09-29T17:55:53.685997+09:00",
   "last_audit_candidate_id": "booking-f17a0fe77c6685ec"
 }
