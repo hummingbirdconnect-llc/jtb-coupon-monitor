@@ -606,7 +606,7 @@
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/ゆこゆこネット/reputation-migration-20260604/yukoyuko-reputation.html"
       ],
-      "note": "ゆこゆこ公式APIのクーポン一覧・個別キャンペーンと公式お得情報ページを日次取得。獲得型クーポンは公開コードなしとして扱う。 2026-09-18以降は指定時だけ実行。"
+      "note": "公開クーポンページの gaiaApi.endpoint（/api/gaia）を読み、キーなしの公開プロキシでクーポン一覧を取得する。v1Key はページから消えたため使わない。獲得型クーポンは公開コードなしとして扱う。2026-09-18以降は指定時だけ実行。"
     },
     {
       "id": "booking",
@@ -655,22 +655,42 @@
       "label": "Surprice",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "B/C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/surprice",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/surprice",
+      "legacy_data_dir": "manual_coupon_data/surprice",
+      "source_type": "official_page_candidate",
+      "official_domains": ["surpricenow.com"],
+      "official_sources": [
+        {
+          "url": "https://faq.surpricenow.com/faqs/surprice1019/",
+          "fetch_method": "auto",
+          "purpose": "公式クーポンの使い方（クーポンIDの入力手順）"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/サプライス/coupon-brushup-20260613/surprice-coupon-rewrite.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。海外航空券セール・クーポンコードの公式取得化候補。"
+      "note": "2026-10-19に公式FAQのHTML取得を確認。週次セール https://www.surpricenow.com/sale/weekly.html はAkamaiのAccess Deniedで取れない。現行クーポンIDの一覧は公開FAQにない。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "traveloka",
       "label": "Traveloka",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/traveloka",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/traveloka",
+      "legacy_data_dir": "manual_coupon_data/traveloka",
+      "source_type": "official_page_candidate",
+      "official_domains": ["traveloka.com"],
+      "official_sources": [
+        {
+          "url": "https://www.traveloka.com/ja-jp/promotion",
+          "fetch_method": "playwright",
+          "purpose": "公式プロモーション一覧（期間限定クーポン）"
+        }
+      ],
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/Traveloka/coupon-brushup-20260613/traveloka-coupon-affiliate-brushup-swell.html"
       ],
-      "note": "Welltrip記事HTML由来の暫定データ。地域・アプリ・外部配布の差があるため半自動確認向き。"
+      "note": "2026-10-19に公式プロモーションページをブラウザ描画で取得。期間限定クーポン（最大10,000円・最大5,000円）が本文に出る。通常のHTTPだけだとカードが空の案内文になる。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "airtrip",
@@ -697,10 +717,20 @@
       "label": "スカイチケット",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/skyticket",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/skyticket",
+      "legacy_data_dir": "manual_coupon_data/skyticket",
+      "source_type": "official_page_candidate",
+      "official_domains": ["skyticket.jp"],
+      "official_sources": [
+        {
+          "url": "https://skyticket.jp/hotel/campaign/zyoukenwari/",
+          "fetch_method": "auto",
+          "purpose": "ホテルの条件割（早期割・直前割・ポイント増量）"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/スカイチケット/coupon-migration-20260612/skyticket-coupon-swell.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。航空券・レンタカー・ホテルの割引表示を分けて確認する。"
+      "note": "2026-10-19に条件割特集のHTML取得を確認。クーポンコード一覧は公開されていない。スペシャルクーポンページ /campaign/sktk/campaign/sktk/ は403のため登録しない。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "jcation",
@@ -813,10 +843,20 @@
       "label": "JAMJAMライナー",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/jamjam",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/jamjam",
+      "legacy_data_dir": "manual_coupon_data/jamjam",
+      "source_type": "official_page_candidate",
+      "official_domains": ["jamjamliner.jp"],
+      "official_sources": [
+        {
+          "url": "https://jamjamliner.jp/question.html",
+          "fetch_method": "auto",
+          "purpose": "公式FAQ（JWEB割・J得割）"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/note/jamjam-liner-coupon-rewrite-20260617/article.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。高速バス・ツアーの割引導線を半自動で確認。"
+      "note": "2026-10-19に公式FAQのHTML取得を確認。クーポンコード一覧はなく、公開されている割引はJWEB割とJ得割。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "skyscanner",
@@ -889,22 +929,42 @@
       "label": "しろくまツアー",
       "site_targets": ["welltrip"],
       "classification": "D",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/shirokuma_tour",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/shirokuma_tour",
+      "legacy_data_dir": "manual_coupon_data/shirokuma_tour",
+      "source_type": "official_page_candidate",
+      "official_domains": ["wbf.co.jp"],
+      "official_sources": [
+        {
+          "url": "https://www.wbf.co.jp/peachtravel/campaign/",
+          "fetch_method": "auto",
+          "purpose": "PeachTRAVELオータムセール"
+        }
+      ],
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/しろくまツアー/reputation-migration-20260604/shirokuma-tour-reputation.html"
       ],
-      "note": "Welltrip既存記事由来の暫定枠。公式クーポン取得元は未確認のため保留寄り。"
+      "note": "2026-10-19にPeachTRAVELオータムセールのHTML取得を確認。クーポンコード一覧はなく、国内トップのお知らせでは10/30までの期間限定。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "agoda",
       "label": "Agoda",
       "site_targets": ["tripbooking"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/agoda",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/agoda",
+      "legacy_data_dir": "manual_coupon_data/agoda",
+      "source_type": "official_page_candidate",
+      "official_domains": ["agoda.com"],
+      "official_sources": [
+        {
+          "url": "https://www.agoda.com/ja-jp/deals",
+          "fetch_method": "playwright",
+          "purpose": "公式クーポン・割引料金"
+        }
+      ],
       "article_paths": ["../vault_blog/トリップブッキング/note/Agoda_01_クーポン_SWELL_HTML.html"],
-      "note": "記事はあるが最新クーポン取得データは未整備。"
+      "note": "2026-10-19に公式dealsページをブラウザ描画で取得。通常のHTTPは本文が短く失敗する。ログインはしない。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "expedia",

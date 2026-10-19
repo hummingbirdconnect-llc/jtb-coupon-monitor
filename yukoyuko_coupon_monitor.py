@@ -264,26 +264,48 @@ def append_change_log(changes: list[dict[str, str]]) -> None:
     path.write_text(json.dumps(existing[-500:], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+_GAIA_ENDPOINT_PATTERN = re.compile(
+    r"""gaiaApi:\s*\{.*?endpoint:\s*(["'])([^"']+)\1""",
+    re.S,
+)
+_GAIA_KEY_PATTERN = re.compile(
+    r"""gaiaApi:\s*\{.*?v1Key:\s*(["'])([^"']+)\1""",
+    re.S,
+)
+
+
+def parse_api_config(html: str) -> tuple[str, str]:
+    """公開ページの gaiaApi 設定を読む。
+
+    新しいクーポンページは endpoint が `/api/gaia` だけで、v1Key は載っていない。
+    キーがページに無いときは空文字を返し、公開プロキシをキーなしで呼ぶ。
+    """
+    endpoint_match = _GAIA_ENDPOINT_PATTERN.search(html)
+    if not endpoint_match:
+        raise RuntimeError("failed to extract gaia API endpoint from official coupon page")
+    endpoint = endpoint_match.group(2).replace("\\/", "/")
+    if endpoint.startswith("/"):
+        endpoint = f"{BASE_URL}{endpoint}"
+    key_match = _GAIA_KEY_PATTERN.search(html)
+    api_key = key_match.group(2) if key_match else ""
+    return endpoint.rstrip("/"), api_key
+
+
 def fetch_api_config(timeout: int = 20) -> tuple[str, str]:
     response = requests.get(COUPON_TOP_URL, headers=HEADERS, timeout=timeout)
     response.raise_for_status()
-    html = response.text
-    endpoint_match = re.search(r"gaiaApi:\s*\{.*?endpoint:\s*\"([^\"]+)\"", html, re.S)
-    key_match = re.search(r"gaiaApi:\s*\{.*?v1Key:\s*\"([^\"]+)\"", html, re.S)
-    if not endpoint_match or not key_match:
-        raise RuntimeError("failed to extract gaia API config from official coupon page")
-    endpoint = endpoint_match.group(1).replace("\\/", "/")
-    api_key = key_match.group(1)
-    return endpoint, api_key
+    return parse_api_config(response.text)
 
 
 def api_headers(api_key: str) -> dict[str, str]:
-    return {
+    headers = {
         **HEADERS,
         "Accept": "application/json",
         "Content-Type": "application/x-www-form-urlencoded",
-        "x-api-key": api_key,
     }
+    if api_key:
+        headers["x-api-key"] = api_key
+    return headers
 
 
 def fetch_json_with_key(
