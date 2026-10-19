@@ -1,4 +1,6 @@
-from yukoyuko_coupon_monitor import build_coupon
+import pytest
+
+from yukoyuko_coupon_monitor import build_coupon, parse_api_config
 
 
 def test_build_coupon_from_campaign_detail():
@@ -94,3 +96,39 @@ def test_build_coupon_marks_issue_limit_over():
     assert coupon["category"] == "エリアクーポン・地域割"
     assert coupon["stock_status"] == "上限到達"
     assert "先着上限に達したクーポンあり" in coupon["conditions"]
+
+
+def test_parse_api_config_reads_relative_endpoint_without_v1key():
+    html = """
+    YUKOYUKO.api = {
+      gaiaApi: {
+        endpoint: '/api/gaia',
+      },
+    };
+    """
+
+    endpoint, api_key = parse_api_config(html)
+
+    assert endpoint == "https://www.yukoyuko.net/api/gaia"
+    assert api_key == ""
+
+
+def test_parse_api_config_keeps_absolute_endpoint_and_public_key():
+    html = """
+    YUKOYUKO.api = {
+      gaiaApi: {
+        endpoint: "https:\\/\\/gaia-api.yukoyuko.net",
+        v1Key: "public-example-key",
+      },
+    };
+    """
+
+    endpoint, api_key = parse_api_config(html)
+
+    assert endpoint == "https://gaia-api.yukoyuko.net"
+    assert api_key == "public-example-key"
+
+
+def test_parse_api_config_requires_endpoint():
+    with pytest.raises(RuntimeError):
+        parse_api_config("YUKOYUKO.api = { gaiaApi: {} };")
