@@ -326,10 +326,25 @@
       "label": "一休",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/ikkyu",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/ikkyu",
+      "legacy_data_dir": "manual_coupon_data/ikkyu",
+      "source_type": "official_page_candidate",
+      "official_domains": ["ikyu.com"],
+      "official_sources": [
+        {
+          "url": "https://www.ikyu.com/coupons/accommodations",
+          "fetch_method": "auto",
+          "purpose": "公式の割引クーポン一覧（宿ごとの枚数限定クーポン）"
+        },
+        {
+          "url": "https://www.ikyu.com/special/timesale_ikyu_rr/search",
+          "fetch_method": "auto",
+          "purpose": "一休の日セール（旅館・リゾートスペシャル）"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。会員ステージ・時間限定表示の個人差に注意。"
+      "note": "2026-10-20に日本のIP（Mac）から公式クーポン一覧とセールページのHTML取得を確認。クラウドからは Fastly で拒否されるため、Macの毎朝取得（provider-fetch-jp）で深掘りする。会員ステージ・時間限定表示の個人差に注意。監査の適用は未実施。"
     },
     {
       "id": "relux",
