@@ -1,7 +1,7 @@
 {
   "provider_id": "asoview",
-  "observed_hash": "060a2c4c2e9a0df085bb3a57b2576f127353f97e05902a0894e41b513644a2df",
-  "last_checked_at": "2026-09-18T13:13:48.305916+09:00",
+  "observed_hash": "bc87e633f0b558bc57e714783fd40da86bbf86ad2284f6f590ce1c54ee681bd6",
+  "last_checked_at": "2026-10-19T09:09:49.947532+09:00",
   "sources": [
     {
       "url": "https://www.asoview.com/coupon/",
@@ -9,14 +9,19 @@
       "status_code": 200,
       "fetch_method": "playwright",
       "error": "",
-      "text_chars": 2351,
-      "content_hash": "f33e5bf582bce7f9018be494fb361c1f16b9d56b7d7153802bf8e184c2f2ca9f"
+      "purpose": "公式クーポン一覧",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 1563,
+      "content_hash": "7f6523ef8cc01e7a324cc63017025510898cb17c29d10976f8d6710a155659c3"
     }
   ],
-  "queued_hash": "060a2c4c2e9a0df085bb3a57b2576f127353f97e05902a0894e41b513644a2df",
-  "queued_candidate_id": "asoview-060a2c4c2e9a0df0",
-  "queued_at": "2026-09-18T13:13:48.306293+09:00",
-  "last_audit_status": "held",
+  "queued_hash": "bc87e633f0b558bc57e714783fd40da86bbf86ad2284f6f590ce1c54ee681bd6",
+  "queued_candidate_id": "asoview-bc87e633f0b558bc",
+  "queued_at": "2026-10-19T09:09:49.947904+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-09-29T17:55:53.685604+09:00",
   "last_audit_candidate_id": "asoview-060a2c4c2e9a0df0"
 }

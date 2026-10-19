@@ -1,0 +1,29 @@
+{
+  "provider_id": "yahoo_travel",
+  "provider_label": "Yahoo!トラベル",
+  "check_type": "snapshot_url_check",
+  "status": "warning",
+  "started_at": "2026-10-19T09:09:36.821332+09:00",
+  "completed_at": "2026-10-19T09:09:38.401568+09:00",
+  "url_checked_at": "2026-10-19T09:09:38.401574+09:00",
+  "official_fetched_at": "",
+  "data_date": "2026-05-20",
+  "freshness_status": "snapshot_only",
+  "coupon_count": 6,
+  "latest_file": "coupons_2026-05-20.json",
+  "checked_url_count": 1,
+  "ok_url_count": 0,
+  "failed_url_count": 1,
+  "failed_urls": [
+    {
+      "url": "https://travel.yahoo.co.jp/",
+      "ok": false,
+      "status_code": "403",
+      "classification": "access_blocked",
+      "error": ""
+    }
+  ],
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "note": "旧スナップショット内のURL確認であり、最新クーポンの公式取得ではありません。"
+}

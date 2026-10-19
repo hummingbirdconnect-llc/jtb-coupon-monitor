@@ -1,0 +1,18 @@
+{
+  "provider_id": "yukoyuko",
+  "provider_label": "ゆこゆこネット",
+  "check_type": "official_monitor",
+  "status": "error",
+  "started_at": "2026-10-19T09:10:10.822399+09:00",
+  "completed_at": "2026-10-19T09:10:11.830264+09:00",
+  "official_fetched_at": "",
+  "data_date": "2026-09-18",
+  "freshness_status": "stale",
+  "coupon_count": 53,
+  "latest_file": "coupons_2026-09-18.json",
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "error": "exit_code=1",
+  "deep_dive": true,
+  "deep_dive_at": "2026-10-19T09:10:11.830264+09:00"
+}

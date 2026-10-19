@@ -1,0 +1,52 @@
+{
+  "completed_at": "2026-10-19T09:10:13.953142+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 1,
+  "codex_audit_candidate_count": 0,
+  "codex_audit_candidates": [],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "booking",
+      "provider_label": "Booking.com",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-19T09:10:11.955700+09:00",
+      "completed_at": "2026-10-19T09:10:13.952370+09:00",
+      "official_fetched_at": "",
+      "source_results": [
+        {
+          "url": "https://www.booking.com/genius.ja.html",
+          "ok": false,
+          "status_code": "",
+          "fetch_method": "playwright",
+          "error": "Playwright HTTP 202",
+          "purpose": "Geniusロイヤルティ特典",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 0,
+          "content_hash": ""
+        }
+      ],
+      "failed_source_count": 1,
+      "configured_source_count": 1,
+      "discovered_source_count": 0,
+      "audit_source_count": 0,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": false,
+      "wp_review_eligible": false,
+      "status": "error",
+      "error": "Playwright HTTP 202",
+      "coupon_count": 0,
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-19T09:10:13.952370+09:00"
+    }
+  ]
+}

@@ -1,0 +1,4227 @@
+[
+  {
+    "id": "rurubu_travel-ruapp1m-1f0eaa45ee",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【最大4,500円OFF！】アプリでの初回購入限定クーポン（会員限定）※国内宿泊対象",
+    "category": "アプリ限定クーポン",
+    "discount": "最大7%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊（アプリ購入限定）",
+    "booking_period": "2026年4月22日～2999年12月1日",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [
+      {
+        "code": "RUAPP1M",
+        "discount": "7% クーポン",
+        "expired": false,
+        "min_booking_amount": "なし",
+        "coupons_left": "クーポン残り9,977,301枚！",
+        "search_url": "https://www.rurubu.travel/?cid=1924078",
+        "booking_period": "2026年4月22日～2999年12月1日"
+      }
+    ],
+    "conditions": [
+      "残数表示: クーポン残り9,977,301枚！"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【最大4,500円OFF！】アプリでの初回購入限定クーポン（会員限定）※国内宿泊対象",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "RUAPP1M",
+          "discount": "7% クーポン",
+          "expired": false,
+          "min_booking_amount": "なし",
+          "coupons_left": "クーポン残り9,977,301枚！",
+          "search_url": "https://www.rurubu.travel/?cid=1924078",
+          "booking_period": "2026年4月22日～2999年12月1日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/?cid=1924078"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ruapp2m-7476b0f17e",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【最大4,500円OFF！】アプリでの2回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "category": "アプリ限定クーポン",
+    "discount": "最大6%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊（アプリ購入限定）",
+    "booking_period": "2026年4月22日～2999年12月1日",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [
+      {
+        "code": "RUAPP2M",
+        "discount": "6% クーポン",
+        "expired": false,
+        "min_booking_amount": "なし",
+        "coupons_left": "クーポン残り9,991,513枚！",
+        "search_url": "https://www.rurubu.travel/?cid=1924078",
+        "booking_period": "2026年4月22日～2999年12月1日"
+      }
+    ],
+    "conditions": [
+      "残数表示: クーポン残り9,991,513枚！"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【最大4,500円OFF！】アプリでの2回目購入限定クーポン（会員限定）※国内宿泊対象",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "RUAPP2M",
+          "discount": "6% クーポン",
+          "expired": false,
+          "min_booking_amount": "なし",
+          "coupons_left": "クーポン残り9,991,513枚！",
+          "search_url": "https://www.rurubu.travel/?cid=1924078",
+          "booking_period": "2026年4月22日～2999年12月1日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/?cid=1924078"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ruapp3m-4f25ed4da5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【最大4,500円OFF！】アプリでの3回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "category": "アプリ限定クーポン",
+    "discount": "最大5%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊（アプリ購入限定）",
+    "booking_period": "2026年4月22日～2999年12月1日",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [
+      {
+        "code": "RUAPP3M",
+        "discount": "5% クーポン",
+        "expired": false,
+        "min_booking_amount": "なし",
+        "coupons_left": "クーポン残り9,996,469枚！",
+        "search_url": "https://www.rurubu.travel/?cid=1924078",
+        "booking_period": "2026年4月22日～2999年12月1日"
+      }
+    ],
+    "conditions": [
+      "残数表示: クーポン残り9,996,469枚！"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【最大4,500円OFF！】アプリでの3回目購入限定クーポン（会員限定）※国内宿泊対象",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "RUAPP3M",
+          "discount": "5% クーポン",
+          "expired": false,
+          "min_booking_amount": "なし",
+          "coupons_left": "クーポン残り9,996,469枚！",
+          "search_url": "https://www.rurubu.travel/?cid=1924078",
+          "booking_period": "2026年4月22日～2999年12月1日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/?cid=1924078"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ruapp4m-0ebf6e741d",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【最大4,500円OFF！】アプリでの4回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "category": "アプリ限定クーポン",
+    "discount": "最大4%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊（アプリ購入限定）",
+    "booking_period": "2026年4月22日～2999年12月1日",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [
+      {
+        "code": "RUAPP4M",
+        "discount": "4% クーポン",
+        "expired": false,
+        "min_booking_amount": "なし",
+        "coupons_left": "クーポン残り9,998,562枚！",
+        "search_url": "https://www.rurubu.travel/?cid=1924078",
+        "booking_period": "2026年4月22日～2999年12月1日"
+      }
+    ],
+    "conditions": [
+      "残数表示: クーポン残り9,998,562枚！"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【最大4,500円OFF！】アプリでの4回目購入限定クーポン（会員限定）※国内宿泊対象",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "RUAPP4M",
+          "discount": "4% クーポン",
+          "expired": false,
+          "min_booking_amount": "なし",
+          "coupons_left": "クーポン残り9,998,562枚！",
+          "search_url": "https://www.rurubu.travel/?cid=1924078",
+          "booking_period": "2026年4月22日～2999年12月1日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/?cid=1924078"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ruapp5m-94c871dd7d",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【最大4,500円OFF！】アプリでの5回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "category": "アプリ限定クーポン",
+    "discount": "最大3%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊（アプリ購入限定）",
+    "booking_period": "2026年4月22日～2999年12月1日",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [
+      {
+        "code": "RUAPP5M",
+        "discount": "3% クーポン",
+        "expired": false,
+        "min_booking_amount": "なし",
+        "coupons_left": "クーポン残り9,999,305枚！",
+        "search_url": "https://www.rurubu.travel/?cid=1924078",
+        "booking_period": "2026年4月22日～2999年12月1日"
+      }
+    ],
+    "conditions": [
+      "残数表示: クーポン残り9,999,305枚！"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【最大4,500円OFF！】アプリでの5回目購入限定クーポン（会員限定）※国内宿泊対象",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "RUAPP5M",
+          "discount": "3% クーポン",
+          "expired": false,
+          "min_booking_amount": "なし",
+          "coupons_left": "クーポン残り9,999,305枚！",
+          "search_url": "https://www.rurubu.travel/?cid=1924078",
+          "booking_period": "2026年4月22日～2999年12月1日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/?cid=1924078"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-autm26sep80-autm26sep50-autm26sep20-dfd29715d6",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "category": "複数エリア対象クーポン",
+    "discount": "最大¥8,000引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月10日～2026年11月16日",
+    "travel_period": "2026年9月10日～2027年3月31日",
+    "stay_period": "2026年9月10日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "AUTM26SEP80",
+        "discount": "¥8,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 90,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月10日～2026年11月16日",
+        "stay_period": "2026年9月10日～2027年3月31日"
+      },
+      {
+        "code": "AUTM26SEP50",
+        "discount": "¥5,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 60,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月10日～2026年11月16日",
+        "stay_period": "2026年9月10日～2027年3月31日"
+      },
+      {
+        "code": "AUTM26SEP20",
+        "discount": "¥2,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 14,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月10日～2026年11月16日",
+        "stay_period": "2026年9月10日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 90,000 / ¥ 60,000 / ¥ 14,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+      "location": "",
+      "coupon_option_count": 3,
+      "coupon_codes": [
+        {
+          "code": "AUTM26SEP80",
+          "discount": "¥8,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 90,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月10日～2026年11月16日",
+          "stay_period": "2026年9月10日～2027年3月31日"
+        },
+        {
+          "code": "AUTM26SEP50",
+          "discount": "¥5,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 60,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月10日～2026年11月16日",
+          "stay_period": "2026年9月10日～2027年3月31日"
+        },
+        {
+          "code": "AUTM26SEP20",
+          "discount": "¥2,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 14,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月10日～2026年11月16日",
+          "stay_period": "2026年9月10日～2027年3月31日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xiwts26sp50-491a3fcf11",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "おでんせ！いわて旅割キャンペーン 第2弾【県央・県南エリア】（おとな・こどもひとり1泊あたり最大5,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月1日～2026年12月25日",
+    "travel_period": "2026年10月1日～2026年12月25日",
+    "stay_period": "2026年10月1日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "XIWTS26SP50",
+        "discount": "50%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月1日～2026年12月25日",
+        "stay_period": "2026年10月1日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "おでんせ！いわて旅割キャンペーン 第2弾【県央・県南エリア】（おとな・こどもひとり1泊あたり最大5,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XIWTS26SP50",
+          "discount": "50%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月1日～2026年12月25日",
+          "stay_period": "2026年10月1日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xiwtn26sp50-8d460be3b6",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月1日～2026年12月25日",
+    "travel_period": "2026年10月1日～2026年12月25日",
+    "stay_period": "2026年10月1日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "XIWTN26SP50",
+        "discount": "50%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月1日～2026年12月25日",
+        "stay_period": "2026年10月1日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XIWTN26SP50",
+          "discount": "50%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月1日～2026年12月25日",
+          "stay_period": "2026年10月1日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-tkmya26jun5-cc87d687c9",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "名湯一門 高見屋グループで使えるクーポン（最大10,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大5%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年6月16日～2026年11月30日",
+    "travel_period": "2026年6月16日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年10月9日、2026年10月12日～2026年11月20日、2026年11月23日～2026年11月30日",
+    "stay_period": "2026年6月16日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年10月9日、2026年10月12日～2026年11月20日、2026年11月23日～2026年11月30日",
+    "coupon_codes": [
+      {
+        "code": "TKMYA26JUN5",
+        "discount": "5% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り35枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2153&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年6月16日～2026年11月30日",
+        "stay_period": "2026年6月16日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年10月9日、2026年10月12日～2026年11月20日、2026年11月23日～2026年11月30日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 40,000",
+      "残数表示: クーポン残り35枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "名湯一門 高見屋グループで使えるクーポン（最大10,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "TKMYA26JUN5",
+          "discount": "5% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り35枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2153&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年6月16日～2026年11月30日",
+          "stay_period": "2026年6月16日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年10月9日、2026年10月12日～2026年11月20日、2026年11月23日～2026年11月30日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=2153&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ikh26mar100-ikh26mar50-ikh26mar30-4f90eaeefc",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "群馬県 伊香保温泉をぶらり散策しようクーポン",
+    "category": "エリア限定クーポン",
+    "discount": "最大¥10,000引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年3月18日～2027年2月28日",
+    "travel_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日",
+    "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "IKH26MAR100",
+        "discount": "¥10,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 100,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年3月18日～2027年2月28日",
+        "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+      },
+      {
+        "code": "IKH26MAR50",
+        "discount": "¥5,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 50,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年3月18日～2027年2月28日",
+        "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+      },
+      {
+        "code": "IKH26MAR30",
+        "discount": "¥3,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 30,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年3月18日～2027年2月28日",
+        "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+      },
+      {
+        "code": "IKH26MAR20",
+        "discount": "¥2,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 20,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年3月18日～2027年2月28日",
+        "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 100,000 / ¥ 50,000 / ¥ 30,000 / ¥ 20,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "群馬県 伊香保温泉をぶらり散策しようクーポン",
+      "location": "",
+      "coupon_option_count": 4,
+      "coupon_codes": [
+        {
+          "code": "IKH26MAR100",
+          "discount": "¥10,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 100,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年3月18日～2027年2月28日",
+          "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+        },
+        {
+          "code": "IKH26MAR50",
+          "discount": "¥5,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 50,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年3月18日～2027年2月28日",
+          "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+        },
+        {
+          "code": "IKH26MAR30",
+          "discount": "¥3,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 30,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年3月18日～2027年2月28日",
+          "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+        },
+        {
+          "code": "IKH26MAR20",
+          "discount": "¥2,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 20,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年3月18日～2027年2月28日",
+          "stay_period": "2026年3月18日～2026年5月1日、2026年5月6日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年12月29日、2027年1月3日～2027年2月28日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ibrk26jun15-56a84a4dd7",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "茨城県のおすすめ施設で使えるクーポン（ひとり1泊あたり）",
+    "category": "エリア限定クーポン",
+    "discount": "最大¥1,500引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年7月8日～2026年12月25日",
+    "travel_period": "2026年7月8日～2026年7月17日、2026年7月21日～2026年8月10日、2026年8月17日～2026年9月18日、2026年9月24日～2026年10月9日、2026年10月13日～2026年11月20日、2026年11月24日～2026年12月25日",
+    "stay_period": "2026年7月8日～2026年7月17日、2026年7月21日～2026年8月10日、2026年8月17日～2026年9月18日、2026年9月24日～2026年10月9日、2026年10月13日～2026年11月20日、2026年11月24日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "IBRK26JUN15",
+        "discount": "¥1,500引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 8,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年7月8日～2026年12月25日",
+        "stay_period": "2026年7月8日～2026年7月17日、2026年7月21日～2026年8月10日、2026年8月17日～2026年9月18日、2026年9月24日～2026年10月9日、2026年10月13日～2026年11月20日、2026年11月24日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 8,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "茨城県のおすすめ施設で使えるクーポン（ひとり1泊あたり）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "IBRK26JUN15",
+          "discount": "¥1,500引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 8,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年7月8日～2026年12月25日",
+          "stay_period": "2026年7月8日～2026年7月17日、2026年7月21日～2026年8月10日、2026年8月17日～2026年9月18日、2026年9月24日～2026年10月9日、2026年10月13日～2026年11月20日、2026年11月24日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-hcj26aug30-ec847416c1",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "心をほどく、青の離島へ 八丈島で使えるクーポン（ひとり1泊あたり最大7,500円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大30%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月17日～2027年2月28日",
+    "travel_period": "2026年9月23日～2027年2月28日",
+    "stay_period": "2026年9月23日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "HCJ26AUG30",
+        "discount": "30%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 4,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年8月17日～2027年2月28日",
+        "stay_period": "2026年9月23日～2027年2月28日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Izu Islands",
+      "最低利用金額: ¥ 4,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "心をほどく、青の離島へ 八丈島で使えるクーポン（ひとり1泊あたり最大7,500円引き）",
+      "location": "Izu Islands",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "HCJ26AUG30",
+          "discount": "30%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 4,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年8月17日～2027年2月28日",
+          "stay_period": "2026年9月23日～2027年2月28日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-hcjm26sep20-f543743b1b",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "がんばろう！八丈島で使えるクーポン（ひとり1泊あたり）",
+    "category": "エリア限定クーポン",
+    "discount": "最大¥2,000引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月11日～2027年2月28日",
+    "travel_period": "2026年9月23日～2027年2月28日",
+    "stay_period": "2026年9月23日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "HCJM26SEP20",
+        "discount": "¥2,000引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 4,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月11日～2027年2月28日",
+        "stay_period": "2026年9月23日～2027年2月28日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Izu Islands",
+      "最低利用金額: ¥ 4,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "がんばろう！八丈島で使えるクーポン（ひとり1泊あたり）",
+      "location": "Izu Islands",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "HCJM26SEP20",
+          "discount": "¥2,000引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 4,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月11日～2027年2月28日",
+          "stay_period": "2026年9月23日～2027年2月28日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-suwan26ap50-suwan26ap10-472122b816",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "長野県 上諏訪エリアのおすすめ施設で使えるクーポン＜第二弾＞",
+    "category": "エリア限定クーポン",
+    "discount": "最大¥5,000引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年4月30日～2026年10月31日",
+    "travel_period": "2026年9月1日～2026年9月4日、2026年9月6日～2026年9月11日、2026年9月13日～2026年9月18日、2026年9月23日～2026年9月25日、2026年9月27日～2026年10月30日",
+    "stay_period": "2026年9月1日～2026年9月4日、2026年9月6日～2026年9月11日、2026年9月13日～2026年9月18日、2026年9月23日～2026年9月25日、2026年9月27日～2026年10月30日",
+    "coupon_codes": [
+      {
+        "code": "SUWAN26AP50",
+        "discount": "¥5,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 35,000",
+        "coupons_left": "クーポン残り6枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-09-01&los=1&city_id=107672&adults=1&children=0&rooms=1&cid=1839358&campaignId=147154",
+        "booking_period": "2026年4月30日～2026年10月31日",
+        "stay_period": "2026年9月1日～2026年9月4日、2026年9月6日～2026年9月11日、2026年9月13日～2026年9月18日、2026年9月23日～2026年9月25日、2026年9月27日～2026年10月30日"
+      },
+      {
+        "code": "SUWAN26AP10",
+        "discount": "¥1,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 7,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年4月30日～2026年10月31日",
+        "stay_period": "2026年9月1日～2026年9月4日、2026年9月6日～2026年9月11日、2026年9月13日～2026年9月18日、2026年9月23日～2026年9月25日、2026年9月27日～2026年10月30日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Suwa",
+      "最低利用金額: ¥ 35,000 / ¥ 7,000",
+      "残数表示: クーポン残り6枚！ / クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "長野県 上諏訪エリアのおすすめ施設で使えるクーポン＜第二弾＞",
+      "location": "Suwa",
+      "coupon_option_count": 2,
+      "coupon_codes": [
+        {
+          "code": "SUWAN26AP50",
+          "discount": "¥5,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 35,000",
+          "coupons_left": "クーポン残り6枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-09-01&los=1&city_id=107672&adults=1&children=0&rooms=1&cid=1839358&campaignId=147154",
+          "booking_period": "2026年4月30日～2026年10月31日",
+          "stay_period": "2026年9月1日～2026年9月4日、2026年9月6日～2026年9月11日、2026年9月13日～2026年9月18日、2026年9月23日～2026年9月25日、2026年9月27日～2026年10月30日"
+        },
+        {
+          "code": "SUWAN26AP10",
+          "discount": "¥1,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 7,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年4月30日～2026年10月31日",
+          "stay_period": "2026年9月1日～2026年9月4日、2026年9月6日～2026年9月11日、2026年9月13日～2026年9月18日、2026年9月23日～2026年9月25日、2026年9月27日～2026年10月30日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-09-01&los=1&city_id=107672&adults=1&children=0&rooms=1&cid=1839358&campaignId=147154"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-wtizu26sp25-26013814f2",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "静岡県 西伊豆エリアのおすすめ施設で使えるクーポン（おとなひとり1泊あたり）",
+    "category": "エリア限定クーポン",
+    "discount": "最大¥2,500引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月9日～2026年12月25日",
+    "travel_period": "2026年10月1日～2026年12月25日",
+    "stay_period": "2026年10月1日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "WTIZU26SP25",
+        "discount": "¥2,500引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 10,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月9日～2026年12月25日",
+        "stay_period": "2026年10月1日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 10,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "静岡県 西伊豆エリアのおすすめ施設で使えるクーポン（おとなひとり1泊あたり）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "WTIZU26SP25",
+          "discount": "¥2,500引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 10,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月9日～2026年12月25日",
+          "stay_period": "2026年10月1日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-etizu26sp20-etizu26sp15-1d5b7a12e3",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "静岡県 東伊豆町のおすすめ施設で使えるクーポン（平日・休日の宿泊20％引き・最大割引額30,000円、休前日の宿泊15％引き・最大割引額20,000円）",
+    "category": "エリア限定クーポン",
+    "discount": "最大20%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [
+      {
+        "code": "ETIZU26SP20",
+        "discount": "20% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 18,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月24日～2026年12月18日",
+        "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日",
+        "guests": "大人2名以上"
+      },
+      {
+        "code": "ETIZU26SP15",
+        "discount": "15% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 18,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月24日～2026年12月18日",
+        "stay_period": "2026年10月3日、2026年10月10日～2026年10月11日、2026年10月17日、2026年10月24日、2026年10月31日、2026年11月2日、2026年11月7日、2026年11月14日、2026年11月21日～2026年11月22日、2026年11月28日、2026年12月5日、2026年12月12日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 18,000",
+      "残数表示: クーポン配布終了",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "静岡県 東伊豆町のおすすめ施設で使えるクーポン（平日・休日の宿泊20％引き・最大割引額30,000円、休前日の宿泊15％引き・最大割引額20,000円）",
+      "location": "",
+      "coupon_option_count": 2,
+      "coupon_codes": [
+        {
+          "code": "ETIZU26SP20",
+          "discount": "20% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 18,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月24日～2026年12月18日",
+          "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日",
+          "guests": "大人2名以上"
+        },
+        {
+          "code": "ETIZU26SP15",
+          "discount": "15% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 18,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月24日～2026年12月18日",
+          "stay_period": "2026年10月3日、2026年10月10日～2026年10月11日、2026年10月17日、2026年10月24日、2026年10月31日、2026年11月2日、2026年11月7日、2026年11月14日、2026年11月21日～2026年11月22日、2026年11月28日、2026年12月5日、2026年12月12日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-itoa26may20-b4887b76e5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "今こそ伊東へ！伊東温泉・伊豆高原・川奈で使える旅行割引クーポン（ひとり1泊あたり最大5,000円引き）＜第二期＞",
+    "category": "エリア限定クーポン",
+    "discount": "最大20%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月28日～2026年12月10日",
+    "travel_period": "2026年10月1日～2026年12月10日",
+    "stay_period": "2026年10月1日～2026年12月10日",
+    "coupon_codes": [
+      {
+        "code": "ITOA26MAY20",
+        "discount": "20%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 3,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年8月28日～2026年12月10日",
+        "stay_period": "2026年10月1日～2026年12月10日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Ito",
+      "最低利用金額: ¥ 3,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "今こそ伊東へ！伊東温泉・伊豆高原・川奈で使える旅行割引クーポン（ひとり1泊あたり最大5,000円引き）＜第二期＞",
+      "location": "Ito",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "ITOA26MAY20",
+          "discount": "20%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 3,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年8月28日～2026年12月10日",
+          "stay_period": "2026年10月1日～2026年12月10日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-osaka26jun5-d40c4c3235",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "今だけおトクに！大阪おすすめ施設で使えるクーポン",
+    "category": "エリア限定クーポン",
+    "discount": "最大¥500引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年6月11日～2027年2月28日",
+    "travel_period": "2026年6月11日～2027年2月28日",
+    "stay_period": "2026年6月11日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "OSAKA26JUN5",
+        "discount": "¥500 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 2,000",
+        "coupons_left": "クーポン残り2,174枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2152&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年6月11日～2027年2月28日",
+        "stay_period": "2026年6月11日～2027年2月28日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 2,000",
+      "残数表示: クーポン残り2,174枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "今だけおトクに！大阪おすすめ施設で使えるクーポン",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "OSAKA26JUN5",
+          "discount": "¥500 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 2,000",
+          "coupons_left": "クーポン残り2,174枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2152&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年6月11日～2027年2月28日",
+          "stay_period": "2026年6月11日～2027年2月28日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=2152&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-kgwa26oct80-kgwa26oct60-kgwa26oct40-867df5079d",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "香川県のおすすめ施設で使えるクーポン",
+    "category": "エリア限定クーポン",
+    "discount": "最大¥8,000引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年10月1日～2027年2月28日",
+    "travel_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+    "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "KGWA26OCT80",
+        "discount": "¥8,000 クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年10月1日～2027年2月28日",
+        "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+        "guests": "大人2名以上"
+      },
+      {
+        "code": "KGWA26OCT60",
+        "discount": "¥6,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 30,000",
+        "coupons_left": "クーポン残り2枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年10月1日～2027年2月28日",
+        "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+        "guests": "大人2名以上"
+      },
+      {
+        "code": "KGWA26OCT40",
+        "discount": "¥4,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 20,000",
+        "coupons_left": "クーポン残り15枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年10月1日～2027年2月28日",
+        "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+        "guests": "大人2名以上"
+      },
+      {
+        "code": "KGWA26OCT20",
+        "discount": "¥2,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 10,000",
+        "coupons_left": "クーポン残り24枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年10月1日～2027年2月28日",
+        "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 40,000 / ¥ 30,000 / ¥ 20,000 / ¥ 10,000",
+      "残数表示: クーポン配布終了 / クーポン残り2枚！ / クーポン残り15枚！ / クーポン残り24枚！",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "香川県のおすすめ施設で使えるクーポン",
+      "location": "",
+      "coupon_option_count": 4,
+      "coupon_codes": [
+        {
+          "code": "KGWA26OCT80",
+          "discount": "¥8,000 クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年10月1日～2027年2月28日",
+          "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+          "guests": "大人2名以上"
+        },
+        {
+          "code": "KGWA26OCT60",
+          "discount": "¥6,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 30,000",
+          "coupons_left": "クーポン残り2枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年10月1日～2027年2月28日",
+          "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+          "guests": "大人2名以上"
+        },
+        {
+          "code": "KGWA26OCT40",
+          "discount": "¥4,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 20,000",
+          "coupons_left": "クーポン残り15枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年10月1日～2027年2月28日",
+          "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+          "guests": "大人2名以上"
+        },
+        {
+          "code": "KGWA26OCT20",
+          "discount": "¥2,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 10,000",
+          "coupons_left": "クーポン残り24枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年10月1日～2027年2月28日",
+          "stay_period": "2026年11月24日～2026年12月26日、2027年1月5日～2027年2月28日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "https://www.rurubu.travel/search?region=2114&checkIn=2026-10-26&los=1&adults=2&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xfuku26sp50-dc90bd2fdf",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "「九州ふっこう応援割ふくおかキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年10月7日～2026年12月15日",
+    "travel_period": "2026年10月7日～2026年12月15日",
+    "stay_period": "2026年10月7日～2026年12月15日",
+    "coupon_codes": [
+      {
+        "code": "XFUKU26SP50",
+        "discount": "50%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年10月7日～2026年12月15日",
+        "stay_period": "2026年10月7日～2026年12月15日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "「九州ふっこう応援割ふくおかキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XFUKU26SP50",
+          "discount": "50%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年10月7日～2026年12月15日",
+          "stay_period": "2026年10月7日～2026年12月15日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xksag26sp50-a9e966d852",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "「九州ふっこう応援割さがキャンペーン」（おとな・こども一人1泊あたり最大20,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月24日～2026年12月25日",
+    "travel_period": "2026年10月1日～2026年12月25日",
+    "stay_period": "2026年10月1日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "XKSAG26SP50",
+        "discount": "50%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月24日～2026年12月25日",
+        "stay_period": "2026年10月1日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "「九州ふっこう応援割さがキャンペーン」（おとな・こども一人1泊あたり最大20,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XKSAG26SP50",
+          "discount": "50%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月24日～2026年12月25日",
+          "stay_period": "2026年10月1日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xnaga26sp50-2644c38827",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "「九州ふっこう応援割ながさきキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月30日～2026年12月25日",
+    "travel_period": "2026年10月1日～2026年12月25日",
+    "stay_period": "2026年10月1日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "XNAGA26SP50",
+        "discount": "50%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月30日～2026年12月25日",
+        "stay_period": "2026年10月1日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "「九州ふっこう応援割ながさきキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XNAGA26SP50",
+          "discount": "50%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月30日～2026年12月25日",
+          "stay_period": "2026年10月1日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xkum26oc60-305eab23d8",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "「熊本ふっこう応援割」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大60%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年10月8日～2026年12月25日",
+    "travel_period": "2026年10月8日～2026年12月25日",
+    "stay_period": "2026年10月8日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "XKUM26OC60",
+        "discount": "60%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年10月8日～2026年12月25日",
+        "stay_period": "2026年10月8日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "「熊本ふっこう応援割」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XKUM26OC60",
+          "discount": "60%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年10月8日～2026年12月25日",
+          "stay_period": "2026年10月8日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xmiya26oc50-6373599314",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "「九州ふっこう応援割みやざき割キャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年10月5日～2026年12月25日",
+    "travel_period": "2026年10月5日～2026年12月25日",
+    "stay_period": "2026年10月5日～2026年12月25日",
+    "coupon_codes": [
+      {
+        "code": "XMIYA26OC50",
+        "discount": "50%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年10月5日～2026年12月25日",
+        "stay_period": "2026年10月5日～2026年12月25日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "「九州ふっこう応援割みやざき割キャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XMIYA26OC50",
+          "discount": "50%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年10月5日～2026年12月25日",
+          "stay_period": "2026年10月5日～2026年12月25日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-xamami26sp50-759aea3d9c",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "あまみゆったり島泊割（おとな・こどもひとり1泊あたり最大5,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月14日～2027年2月28日",
+    "travel_period": "2026年10月13日～2027年2月28日",
+    "stay_period": "2026年10月13日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "XAMAMI26SP50",
+        "discount": "50%引(1人1泊あたり)",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月14日～2027年2月28日",
+        "stay_period": "2026年10月13日～2027年2月28日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Amami Ōshima",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "あまみゆったり島泊割（おとな・こどもひとり1泊あたり最大5,000円引き）",
+      "location": "Amami Ōshima",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "XAMAMI26SP50",
+          "discount": "50%引(1人1泊あたり)",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月14日～2027年2月28日",
+          "stay_period": "2026年10月13日～2027年2月28日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-okinw26sp10-19699e4591",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "年末年始も使える！【10月～1月出発】沖縄県のおすすめ施設で使えるクーポン（最大5,000円引き）",
+    "category": "エリア限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月16日～2027年1月31日",
+    "travel_period": "2026年10月1日～2027年1月31日",
+    "stay_period": "2026年10月1日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "OKINW26SP10",
+        "discount": "10% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月16日～2027年1月31日",
+        "stay_period": "2026年10月1日～2027年1月31日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "年末年始も使える！【10月～1月出発】沖縄県のおすすめ施設で使えるクーポン（最大5,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "OKINW26SP10",
+          "discount": "10% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月16日～2027年1月31日",
+          "stay_period": "2026年10月1日～2027年1月31日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26tais15-2d8e855a94",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "北海道 ホテル大雪 ＯＮＳＥＮ ＆ ＣＡＮＹＯＮ ＲＥＳＯＲＴで使えるクーポン（最大10,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月29日～2027年1月18日",
+    "travel_period": "2026年10月18日～2027年1月18日",
+    "stay_period": "2026年10月18日～2027年1月18日",
+    "coupon_codes": [
+      {
+        "code": "PP26TAIS15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り55枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-18&los=1&city_id=105656&adults=1&children=0&rooms=1&cid=1839358&campaignId=170513",
+        "booking_period": "2026年9月29日～2027年1月18日",
+        "stay_period": "2026年10月18日～2027年1月18日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Asahikawa",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り55枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "北海道 ホテル大雪 ＯＮＳＥＮ ＆ ＣＡＮＹＯＮ ＲＥＳＯＲＴで使えるクーポン（最大10,000円引き）",
+      "location": "Asahikawa",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26TAIS15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り55枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-18&los=1&city_id=105656&adults=1&children=0&rooms=1&cid=1839358&campaignId=170513",
+          "booking_period": "2026年9月29日～2027年1月18日",
+          "stay_period": "2026年10月18日～2027年1月18日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-18&los=1&city_id=105656&adults=1&children=0&rooms=1&cid=1839358&campaignId=170513"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26edelh15-pp26edelh10-8d771e84c9",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "北海道 ホテルモントレエーデルホフ札幌で使えるクーポン（旅行代金10％引き・最大割引額5,000円、旅行代金30,000円以上で15％引き・最大割引額10,000円)",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月8日～2027年1月31日",
+    "travel_period": "2026年11月2日～2027年1月31日",
+    "stay_period": "2026年11月2日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26EDELH15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 30,000",
+        "coupons_left": "クーポン残り14枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-02&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=169090",
+        "booking_period": "2026年9月8日～2027年1月31日",
+        "stay_period": "2026年11月2日～2027年1月31日",
+        "guests": "大人2名以上"
+      },
+      {
+        "code": "PP26EDELH10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り60枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-02&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=169089",
+        "booking_period": "2026年9月8日～2027年1月31日",
+        "stay_period": "2026年11月2日～2027年1月31日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Sapporo",
+      "最低利用金額: ¥ 30,000 / ¥ 1",
+      "残数表示: クーポン残り14枚！ / クーポン残り60枚！",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "北海道 ホテルモントレエーデルホフ札幌で使えるクーポン（旅行代金10％引き・最大割引額5,000円、旅行代金30,000円以上で15％引き・最大割引額10,000円)",
+      "location": "Sapporo",
+      "coupon_option_count": 2,
+      "coupon_codes": [
+        {
+          "code": "PP26EDELH15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 30,000",
+          "coupons_left": "クーポン残り14枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-02&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=169090",
+          "booking_period": "2026年9月8日～2027年1月31日",
+          "stay_period": "2026年11月2日～2027年1月31日",
+          "guests": "大人2名以上"
+        },
+        {
+          "code": "PP26EDELH10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り60枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-02&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=169089",
+          "booking_period": "2026年9月8日～2027年1月31日",
+          "stay_period": "2026年11月2日～2027年1月31日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-02&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=169090",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-02&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=169089"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26ntama15-0ee7c74a4d",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "秋田県 新玉川温泉で使えるクーポン（最大5,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月15日～2027年3月31日",
+    "travel_period": "2026年12月12日～2026年12月30日、2027年1月3日～2027年3月31日",
+    "stay_period": "2026年12月12日～2026年12月30日、2027年1月3日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26NTAMA15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り101枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-12&los=1&city_id=253804&adults=1&children=0&rooms=1&cid=1839358&campaignId=169279",
+        "booking_period": "2026年9月15日～2027年3月31日",
+        "stay_period": "2026年12月12日～2026年12月30日、2027年1月3日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Semboku",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り101枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "秋田県 新玉川温泉で使えるクーポン（最大5,000円引き）",
+      "location": "Semboku",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26NTAMA15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り101枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-12&los=1&city_id=253804&adults=1&children=0&rooms=1&cid=1839358&campaignId=169279",
+          "booking_period": "2026年9月15日～2027年3月31日",
+          "stay_period": "2026年12月12日～2026年12月30日、2027年1月3日～2027年3月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-12&los=1&city_id=253804&adults=1&children=0&rooms=1&cid=1839358&campaignId=169279"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26mpakt15-70cf89aa1a",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "秋田県 ホテルメトロポリタン秋田で使えるクーポン（最大5,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月29日～2027年3月31日",
+    "travel_period": "2026年9月29日～2026年11月16日、2026年11月18日～2027年3月31日",
+    "stay_period": "2026年9月29日～2026年11月16日、2026年11月18日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26MPAKT15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り60枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1117&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年9月29日～2027年3月31日",
+        "stay_period": "2026年9月29日～2026年11月16日、2026年11月18日～2027年3月31日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り60枚！",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "秋田県 ホテルメトロポリタン秋田で使えるクーポン（最大5,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26MPAKT15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り60枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1117&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年9月29日～2027年3月31日",
+          "stay_period": "2026年9月29日～2026年11月16日、2026年11月18日～2027年3月31日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1117&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26okada10-pp26okada70-pp26okada30-11e60eb9e0",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "神奈川県 箱根湯本温泉 ホテルおかだで使えるクーポン",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大¥10,000引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月2日～2026年12月30日",
+    "travel_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日",
+    "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日",
+    "coupon_codes": [
+      {
+        "code": "PP26OKADA10",
+        "discount": "¥10,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 100,000",
+        "coupons_left": "クーポン残り2枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167370",
+        "booking_period": "2026年9月2日～2026年12月30日",
+        "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
+      },
+      {
+        "code": "PP26OKADA70",
+        "discount": "¥7,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 70,000",
+        "coupons_left": "クーポン残り42枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167369",
+        "booking_period": "2026年9月2日～2026年12月30日",
+        "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
+      },
+      {
+        "code": "PP26OKADA30",
+        "discount": "¥3,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 30,000",
+        "coupons_left": "クーポン残り39枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167368",
+        "booking_period": "2026年9月2日～2026年12月30日",
+        "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Hakone",
+      "最低利用金額: ¥ 100,000 / ¥ 70,000 / ¥ 30,000",
+      "残数表示: クーポン残り2枚！ / クーポン残り42枚！ / クーポン残り39枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "神奈川県 箱根湯本温泉 ホテルおかだで使えるクーポン",
+      "location": "Hakone",
+      "coupon_option_count": 3,
+      "coupon_codes": [
+        {
+          "code": "PP26OKADA10",
+          "discount": "¥10,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 100,000",
+          "coupons_left": "クーポン残り2枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167370",
+          "booking_period": "2026年9月2日～2026年12月30日",
+          "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
+        },
+        {
+          "code": "PP26OKADA70",
+          "discount": "¥7,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 70,000",
+          "coupons_left": "クーポン残り42枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167369",
+          "booking_period": "2026年9月2日～2026年12月30日",
+          "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
+        },
+        {
+          "code": "PP26OKADA30",
+          "discount": "¥3,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 30,000",
+          "coupons_left": "クーポン残り39枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167368",
+          "booking_period": "2026年9月2日～2026年12月30日",
+          "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167370",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167369",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167368"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26tobas10-d2d9e16151",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【10月～1月出発】三重県 伊勢志摩 鳥羽シーサイドホテルで使えるクーポン（最大6,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月26日～2027年1月31日",
+    "travel_period": "2026年10月1日～2027年1月31日",
+    "stay_period": "2026年10月1日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26TOBAS10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り2枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166944",
+        "booking_period": "2026年8月26日～2027年1月31日",
+        "stay_period": "2026年10月1日～2027年1月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Toba",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り2枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【10月～1月出発】三重県 伊勢志摩 鳥羽シーサイドホテルで使えるクーポン（最大6,000円引き）",
+      "location": "Toba",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26TOBAS10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り2枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166944",
+          "booking_period": "2026年8月26日～2027年1月31日",
+          "stay_period": "2026年10月1日～2027年1月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166944"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26tobas12-a542e60b42",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【2月～3月出発】三重県 伊勢志摩 鳥羽シーサイドホテルで使えるクーポン（最大7,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大12%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月26日～2027年3月31日",
+    "travel_period": "2027年2月1日～2027年3月31日",
+    "stay_period": "2027年2月1日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26TOBAS12",
+        "discount": "12% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り25枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-02-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166943",
+        "booking_period": "2026年8月26日～2027年3月31日",
+        "stay_period": "2027年2月1日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Toba",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り25枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【2月～3月出発】三重県 伊勢志摩 鳥羽シーサイドホテルで使えるクーポン（最大7,000円引き）",
+      "location": "Toba",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26TOBAS12",
+          "discount": "12% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り25枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-02-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166943",
+          "booking_period": "2026年8月26日～2027年3月31日",
+          "stay_period": "2027年2月1日～2027年3月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2027-02-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166943"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ppkry26sp15-523fc4d96a",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "沖縄県 かりゆしホテルズのおすすめ施設で使える割引クーポン（最大5,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月16日～2027年1月31日",
+    "travel_period": "2026年11月1日～2027年1月31日",
+    "stay_period": "2026年11月1日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "PPKRY26SP15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 20,000",
+        "coupons_left": "クーポン残り101枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=170525",
+        "booking_period": "2026年9月16日～2027年1月31日",
+        "stay_period": "2026年11月1日～2027年1月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Okinawa Main island",
+      "最低利用金額: ¥ 20,000",
+      "残数表示: クーポン残り101枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "沖縄県 かりゆしホテルズのおすすめ施設で使える割引クーポン（最大5,000円引き）",
+      "location": "Okinawa Main island",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PPKRY26SP15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 20,000",
+          "coupons_left": "クーポン残り101枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=170525",
+          "booking_period": "2026年9月16日～2027年1月31日",
+          "stay_period": "2026年11月1日～2027年1月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=170525"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26rizza15-98d64ca1c6",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "沖縄県 リザンシーパークホテル谷茶ベイで使えるクーポン（最大10,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月9日～2026年11月30日",
+    "travel_period": "2026年10月1日～2027年1月31日",
+    "stay_period": "2026年10月1日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26RIZZA15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 25,000",
+        "coupons_left": "クーポン残り24枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=169104",
+        "booking_period": "2026年9月9日～2026年11月30日",
+        "stay_period": "2026年10月1日～2027年1月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Okinawa Main island",
+      "最低利用金額: ¥ 25,000",
+      "残数表示: クーポン残り24枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "沖縄県 リザンシーパークホテル谷茶ベイで使えるクーポン（最大10,000円引き）",
+      "location": "Okinawa Main island",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26RIZZA15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 25,000",
+          "coupons_left": "クーポン残り24枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=169104",
+          "booking_period": "2026年9月9日～2026年11月30日",
+          "stay_period": "2026年10月1日～2027年1月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=169104"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26monsp10-9449bf18e5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "沖縄県 ホテル モントレ 沖縄スパ＆リゾートで使えるクーポン（最大5,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月15日～2027年1月31日",
+    "travel_period": "2026年12月1日～2027年1月31日",
+    "stay_period": "2026年12月1日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26MONSP10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 25,000",
+        "coupons_left": "クーポン残り120枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=166567",
+        "booking_period": "2026年9月15日～2027年1月31日",
+        "stay_period": "2026年12月1日～2027年1月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Okinawa Main island",
+      "最低利用金額: ¥ 25,000",
+      "残数表示: クーポン残り120枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "沖縄県 ホテル モントレ 沖縄スパ＆リゾートで使えるクーポン（最大5,000円引き）",
+      "location": "Okinawa Main island",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26MONSP10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 25,000",
+          "coupons_left": "クーポン残り120枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=166567",
+          "booking_period": "2026年9月15日～2027年1月31日",
+          "stay_period": "2026年12月1日～2027年1月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=166567"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26kanuc15-pp26kanuc10-44022d71c4",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "沖縄県 カヌチャベイホテル＆ヴィラズで使えるクーポン（最大15,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月28日～2026年12月31日",
+    "travel_period": "2026年9月28日～2027年1月31日",
+    "stay_period": "2026年9月28日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26KANUC15",
+        "discount": "15% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年9月28日～2026年12月31日",
+        "stay_period": "2026年9月28日～2027年1月31日"
+      },
+      {
+        "code": "PP26KANUC10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り33枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1685&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年9月28日～2026年12月31日",
+        "stay_period": "2026年9月28日～2027年1月31日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了 / クーポン残り33枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "沖縄県 カヌチャベイホテル＆ヴィラズで使えるクーポン（最大15,000円引き）",
+      "location": "",
+      "coupon_option_count": 2,
+      "coupon_codes": [
+        {
+          "code": "PP26KANUC15",
+          "discount": "15% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年9月28日～2026年12月31日",
+          "stay_period": "2026年9月28日～2027年1月31日"
+        },
+        {
+          "code": "PP26KANUC10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り33枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1685&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年9月28日～2026年12月31日",
+          "stay_period": "2026年9月28日～2027年1月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1685&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26busen15-a092fc3279",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "沖縄県 ザ・ブセナテラスで使えるクーポン（最大15,000円引き）",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月15日～2027年1月31日",
+    "travel_period": "2026年11月1日～2026年12月25日、2027年1月2日～2027年1月31日",
+    "stay_period": "2026年11月1日～2026年12月25日、2027年1月2日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26BUSEN15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り31枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=167055",
+        "booking_period": "2026年9月15日～2027年1月31日",
+        "stay_period": "2026年11月1日～2026年12月25日、2027年1月2日～2027年1月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Okinawa Main island",
+      "最低利用金額: ¥ 40,000",
+      "残数表示: クーポン残り31枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "沖縄県 ザ・ブセナテラスで使えるクーポン（最大15,000円引き）",
+      "location": "Okinawa Main island",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "PP26BUSEN15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り31枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=167055",
+          "booking_period": "2026年9月15日～2027年1月31日",
+          "stay_period": "2026年11月1日～2026年12月25日、2027年1月2日～2027年1月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=167055"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-pp26jlnah60-pp26jlnah30-59af8861be",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "沖縄県 ホテルＪＡＬシティ那覇で使えるクーポン",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "discount": "最大¥6,000引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月15日～2026年12月31日",
+    "travel_period": "2026年10月1日～2026年12月31日",
+    "stay_period": "2026年10月1日～2026年12月31日",
+    "coupon_codes": [
+      {
+        "code": "PP26JLNAH60",
+        "discount": "¥6,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 30,000",
+        "coupons_left": "クーポン残り57枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=168654",
+        "booking_period": "2026年9月15日～2026年12月31日",
+        "stay_period": "2026年10月1日～2026年12月31日"
+      },
+      {
+        "code": "PP26JLNAH30",
+        "discount": "¥3,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 15,000",
+        "coupons_left": "クーポン残り69枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=168653",
+        "booking_period": "2026年9月15日～2026年12月31日",
+        "stay_period": "2026年10月1日～2026年12月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Okinawa Main island",
+      "最低利用金額: ¥ 30,000 / ¥ 15,000",
+      "残数表示: クーポン残り57枚！ / クーポン残り69枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "沖縄県 ホテルＪＡＬシティ那覇で使えるクーポン",
+      "location": "Okinawa Main island",
+      "coupon_option_count": 2,
+      "coupon_codes": [
+        {
+          "code": "PP26JLNAH60",
+          "discount": "¥6,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 30,000",
+          "coupons_left": "クーポン残り57枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=168654",
+          "booking_period": "2026年9月15日～2026年12月31日",
+          "stay_period": "2026年10月1日～2026年12月31日"
+        },
+        {
+          "code": "PP26JLNAH30",
+          "discount": "¥3,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 15,000",
+          "coupons_left": "クーポン残り69枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=168653",
+          "booking_period": "2026年9月15日～2026年12月31日",
+          "stay_period": "2026年10月1日～2026年12月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=168654",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=717899&adults=1&children=0&rooms=1&cid=1839358&campaignId=168653"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-cgks26oct15-b730282736",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "北海道 シャトレーゼ ガトーキングダム札幌で使えるクーポン（最大4,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年10月16日～2027年1月31日",
+    "travel_period": "2026年11月1日～2027年1月31日",
+    "stay_period": "2026年11月1日～2027年1月31日",
+    "coupon_codes": [
+      {
+        "code": "CGKS26OCT15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 20,000",
+        "coupons_left": "クーポン残り74枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=173445",
+        "booking_period": "2026年10月16日～2027年1月31日",
+        "stay_period": "2026年11月1日～2027年1月31日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Sapporo",
+      "最低利用金額: ¥ 20,000",
+      "残数表示: クーポン残り74枚！",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "北海道 シャトレーゼ ガトーキングダム札幌で使えるクーポン（最大4,000円引き）",
+      "location": "Sapporo",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "CGKS26OCT15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 20,000",
+          "coupons_left": "クーポン残り74枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=173445",
+          "booking_period": "2026年10月16日～2027年1月31日",
+          "stay_period": "2026年11月1日～2027年1月31日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=3435&adults=2&children=0&rooms=1&cid=1839358&campaignId=173445"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ysae26aug15-59335cc695",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "北海道 ワイズホテル旭川駅前で使えるクーポン（最大4,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月10日～2026年10月31日",
+    "travel_period": "2026年8月10日～2026年10月31日",
+    "stay_period": "2026年8月10日～2026年10月31日",
+    "coupon_codes": [
+      {
+        "code": "YSAE26AUG15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 10,000",
+        "coupons_left": "クーポン残り52枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1146&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年8月10日～2026年10月31日",
+        "stay_period": "2026年8月10日～2026年10月31日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 10,000",
+      "残数表示: クーポン残り52枚！",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "北海道 ワイズホテル旭川駅前で使えるクーポン（最大4,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "YSAE26AUG15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 10,000",
+          "coupons_left": "クーポン残り52枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1146&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年8月10日～2026年10月31日",
+          "stay_period": "2026年8月10日～2026年10月31日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1146&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-hweto26ag20-4601cf95a2",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【10月宿泊限定】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大20%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月25日～2026年10月31日",
+    "travel_period": "2026年10月1日～2026年10月15日、2026年10月17日～2026年10月18日、2026年10月20日～2026年10月22日、2026年10月24日～2026年10月30日",
+    "stay_period": "2026年10月1日～2026年10月15日、2026年10月17日～2026年10月18日、2026年10月20日～2026年10月22日、2026年10月24日～2026年10月30日",
+    "coupon_codes": [
+      {
+        "code": "HWETO26AG20",
+        "discount": "20% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り1枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=166569",
+        "booking_period": "2026年8月25日～2026年10月31日",
+        "stay_period": "2026年10月1日～2026年10月15日、2026年10月17日～2026年10月18日、2026年10月20日～2026年10月22日、2026年10月24日～2026年10月30日",
+        "guests": "大人3名以上"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Hakodate",
+      "最低利用金額: ¥ 40,000",
+      "残数表示: クーポン残り1枚！",
+      "宿泊人数: 大人3名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【10月宿泊限定】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
+      "location": "Hakodate",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "HWETO26AG20",
+          "discount": "20% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り1枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=166569",
+          "booking_period": "2026年8月25日～2026年10月31日",
+          "stay_period": "2026年10月1日～2026年10月15日、2026年10月17日～2026年10月18日、2026年10月20日～2026年10月22日、2026年10月24日～2026年10月30日",
+          "guests": "大人3名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=166569"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-hwetn26oc20-hwetd26oc20-hwetj26oc20-f05ce375a5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【11月～3月出発】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大20%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [
+      {
+        "code": "HWETN26OC20",
+        "discount": "20% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り24枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172829",
+        "booking_period": "2026年10月9日～2026年11月30日",
+        "stay_period": "2026年11月1日～2026年11月5日、2026年11月7日～2026年11月30日",
+        "guests": "大人3名以上"
+      },
+      {
+        "code": "HWETD26OC20",
+        "discount": "20% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り28枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172830",
+        "booking_period": "2026年10月9日～2026年12月31日",
+        "stay_period": "2026年12月1日、2026年12月3日～2026年12月30日",
+        "guests": "大人3名以上"
+      },
+      {
+        "code": "HWETJ26OC20",
+        "discount": "20% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り26枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-01-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172831",
+        "booking_period": "2026年10月9日～2027年1月31日",
+        "stay_period": "2027年1月1日～2027年1月31日",
+        "guests": "大人3名以上"
+      },
+      {
+        "code": "HWETF26OC20",
+        "discount": "20% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り28枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-02-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172832",
+        "booking_period": "2026年10月9日～2027年2月28日",
+        "stay_period": "2027年2月1日～2027年2月28日",
+        "guests": "大人3名以上"
+      },
+      {
+        "code": "HWETM26OC20",
+        "discount": "20% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り28枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-03-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172833",
+        "booking_period": "2026年10月9日～2027年3月31日",
+        "stay_period": "2027年3月1日～2027年3月31日",
+        "guests": "大人3名以上"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Hakodate",
+      "最低利用金額: ¥ 40,000",
+      "残数表示: クーポン残り24枚！ / クーポン残り28枚！ / クーポン残り26枚！",
+      "宿泊人数: 大人3名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【11月～3月出発】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
+      "location": "Hakodate",
+      "coupon_option_count": 5,
+      "coupon_codes": [
+        {
+          "code": "HWETN26OC20",
+          "discount": "20% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り24枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172829",
+          "booking_period": "2026年10月9日～2026年11月30日",
+          "stay_period": "2026年11月1日～2026年11月5日、2026年11月7日～2026年11月30日",
+          "guests": "大人3名以上"
+        },
+        {
+          "code": "HWETD26OC20",
+          "discount": "20% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り28枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172830",
+          "booking_period": "2026年10月9日～2026年12月31日",
+          "stay_period": "2026年12月1日、2026年12月3日～2026年12月30日",
+          "guests": "大人3名以上"
+        },
+        {
+          "code": "HWETJ26OC20",
+          "discount": "20% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り26枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-01-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172831",
+          "booking_period": "2026年10月9日～2027年1月31日",
+          "stay_period": "2027年1月1日～2027年1月31日",
+          "guests": "大人3名以上"
+        },
+        {
+          "code": "HWETF26OC20",
+          "discount": "20% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り28枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-02-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172832",
+          "booking_period": "2026年10月9日～2027年2月28日",
+          "stay_period": "2027年2月1日～2027年2月28日",
+          "guests": "大人3名以上"
+        },
+        {
+          "code": "HWETM26OC20",
+          "discount": "20% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り28枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2027-03-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172833",
+          "booking_period": "2026年10月9日～2027年3月31日",
+          "stay_period": "2027年3月1日～2027年3月31日",
+          "guests": "大人3名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172829",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172830",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2027-01-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172831",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2027-02-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172832",
+        "https://www.rurubu.travel/ja-jp/search?checkin=2027-03-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172833"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-wsn26jul100-wsn26jul50-bc111c33c5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "リニューアルOPEN記念！群馬県 伊香保温泉 和心の宿大森で使えるクーポン",
+    "category": "施設限定クーポン",
+    "discount": "最大¥10,000引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年7月29日～2027年3月31日",
+    "travel_period": "2026年7月29日～2027年3月31日",
+    "stay_period": "2026年7月29日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "WSN26JUL100",
+        "discount": "¥10,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 80,000",
+        "coupons_left": "クーポン残り13枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年7月29日～2027年3月31日",
+        "stay_period": "2026年7月29日～2027年3月31日"
+      },
+      {
+        "code": "WSN26JUL50",
+        "discount": "¥5,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 35,000",
+        "coupons_left": "クーポン残り37枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年7月29日～2027年3月31日",
+        "stay_period": "2026年7月29日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 80,000 / ¥ 35,000",
+      "残数表示: クーポン残り13枚！ / クーポン残り37枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "リニューアルOPEN記念！群馬県 伊香保温泉 和心の宿大森で使えるクーポン",
+      "location": "",
+      "coupon_option_count": 2,
+      "coupon_codes": [
+        {
+          "code": "WSN26JUL100",
+          "discount": "¥10,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 80,000",
+          "coupons_left": "クーポン残り13枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年7月29日～2027年3月31日",
+          "stay_period": "2026年7月29日～2027年3月31日"
+        },
+        {
+          "code": "WSN26JUL50",
+          "discount": "¥5,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 35,000",
+          "coupons_left": "クーポン残り37枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年7月29日～2027年3月31日",
+          "stay_period": "2026年7月29日～2027年3月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1882&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "https://www.rurubu.travel/search?region=1882&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-meizn26jl20-d392438cda",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【10月以降出発】愛知県 三谷温泉 ホテル明山荘で使えるおすすめクーポン（最大20,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大20%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年7月17日～2027年3月31日",
+    "travel_period": "2026年10月1日～2027年3月31日",
+    "stay_period": "2026年10月1日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "MEIZN26JL20",
+        "discount": "20% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 20,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年7月17日～2027年3月31日",
+        "stay_period": "2026年10月1日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Toyohashi",
+      "最低利用金額: ¥ 20,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【10月以降出発】愛知県 三谷温泉 ホテル明山荘で使えるおすすめクーポン（最大20,000円引き）",
+      "location": "Toyohashi",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "MEIZN26JL20",
+          "discount": "20% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 20,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年7月17日～2027年3月31日",
+          "stay_period": "2026年10月1日～2027年3月31日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-yamag26oc15-997e0fabf9",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "岐阜県 下呂 温泉 山形屋で使えるクーポン（最大10,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年10月15日～2027年2月28日",
+    "travel_period": "2026年12月1日～2027年2月28日",
+    "stay_period": "2026年12月1日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "YAMAG26OC15",
+        "discount": "15% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 15,000",
+        "coupons_left": "クーポン残り28枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=106573&adults=1&children=0&rooms=1&cid=1839358&campaignId=173186",
+        "booking_period": "2026年10月15日～2027年2月28日",
+        "stay_period": "2026年12月1日～2027年2月28日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Gero",
+      "最低利用金額: ¥ 15,000",
+      "残数表示: クーポン残り28枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "岐阜県 下呂 温泉 山形屋で使えるクーポン（最大10,000円引き）",
+      "location": "Gero",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "YAMAG26OC15",
+          "discount": "15% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 15,000",
+          "coupons_left": "クーポン残り28枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=106573&adults=1&children=0&rooms=1&cid=1839358&campaignId=173186",
+          "booking_period": "2026年10月15日～2027年2月28日",
+          "stay_period": "2026年12月1日～2027年2月28日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=106573&adults=1&children=0&rooms=1&cid=1839358&campaignId=173186"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-kskba26oc10-cfe27f5826",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "岐阜県 下呂温泉 ホテルくさかべアルメリアで使えるクーポン（最大5,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年10月15日～2027年2月28日",
+    "travel_period": "2026年10月15日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年12月28日、2027年1月4日～2027年2月28日",
+    "stay_period": "2026年10月15日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年12月28日、2027年1月4日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "KSKBA26OC10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 15,000",
+        "coupons_left": "クーポン残り60枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1240&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年10月15日～2027年2月28日",
+        "stay_period": "2026年10月15日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年12月28日、2027年1月4日～2027年2月28日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 15,000",
+      "残数表示: クーポン残り60枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "岐阜県 下呂温泉 ホテルくさかべアルメリアで使えるクーポン（最大5,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "KSKBA26OC10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 15,000",
+          "coupons_left": "クーポン残り60枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1240&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年10月15日～2027年2月28日",
+          "stay_period": "2026年10月15日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年12月28日、2027年1月4日～2027年2月28日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1240&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-vison26ag10-078cc11206",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【9月～10月出発】開業5周年記念！三重県 ホテルヴィソンで使えるおすすめクーポン（最大5,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月28日～2026年10月31日",
+    "travel_period": "2026年9月1日～2026年10月31日",
+    "stay_period": "2026年9月1日～2026年10月31日",
+    "coupon_codes": [
+      {
+        "code": "VISON26AG10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り131枚！",
+        "search_url": "https://www.rurubu.travel/search?region=943&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年8月28日～2026年10月31日",
+        "stay_period": "2026年9月1日～2026年10月31日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り131枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【9月～10月出発】開業5周年記念！三重県 ホテルヴィソンで使えるおすすめクーポン（最大5,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "VISON26AG10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り131枚！",
+          "search_url": "https://www.rurubu.travel/search?region=943&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年8月28日～2026年10月31日",
+          "stay_period": "2026年9月1日～2026年10月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=943&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-vison26ag12-91d73a2fa5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【11月～3月出発】開業5周年記念！三重県 ホテルヴィソンで使えるおすすめクーポン（最大7,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大12%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月28日～2027年3月24日",
+    "travel_period": "2026年11月1日～2027年3月24日",
+    "stay_period": "2026年11月1日～2027年3月24日",
+    "coupon_codes": [
+      {
+        "code": "VISON26AG12",
+        "discount": "12% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り159枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=249298&adults=1&children=0&rooms=1&cid=1839358&campaignId=167150",
+        "booking_period": "2026年8月28日～2027年3月24日",
+        "stay_period": "2026年11月1日～2027年3月24日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Ise",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り159枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【11月～3月出発】開業5周年記念！三重県 ホテルヴィソンで使えるおすすめクーポン（最大7,000円引き）",
+      "location": "Ise",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "VISON26AG12",
+          "discount": "12% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り159枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=249298&adults=1&children=0&rooms=1&cid=1839358&campaignId=167150",
+          "booking_period": "2026年8月28日～2027年3月24日",
+          "stay_period": "2026年11月1日～2027年3月24日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-11-01&los=1&city_id=249298&adults=1&children=0&rooms=1&cid=1839358&campaignId=167150"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-tobi26jul15-fac55c67e2",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【10月以降出発】三重県 伊勢志摩 鳥羽国際ホテルで使えるクーポン（最大10,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年7月15日～2027年3月31日",
+    "travel_period": "2026年10月1日～2027年3月31日",
+    "stay_period": "2026年10月1日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "TOBI26JUL15",
+        "discount": "15% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年7月15日～2027年3月31日",
+        "stay_period": "2026年10月1日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Toba",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【10月以降出発】三重県 伊勢志摩 鳥羽国際ホテルで使えるクーポン（最大10,000円引き）",
+      "location": "Toba",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "TOBI26JUL15",
+          "discount": "15% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年7月15日～2027年3月31日",
+          "stay_period": "2026年10月1日～2027年3月31日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-shio26jul15-07b04ecec5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【10月以降出発】三重県 伊勢志摩 鳥羽国際ホテル潮路亭で使えるクーポン（最大11,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年7月15日～2027年3月31日",
+    "travel_period": "2026年10月1日～2027年3月31日",
+    "stay_period": "2026年10月1日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "SHIO26JUL15",
+        "discount": "15% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年7月15日～2027年3月31日",
+        "stay_period": "2026年10月1日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Toba",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【10月以降出発】三重県 伊勢志摩 鳥羽国際ホテル潮路亭で使えるクーポン（最大11,000円引き）",
+      "location": "Toba",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "SHIO26JUL15",
+          "discount": "15% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年7月15日～2027年3月31日",
+          "stay_period": "2026年10月1日～2027年3月31日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-nemu26jul15-46c85bdc26",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【10月以降出発】リニューアルOPEN記念！三重県 伊勢志摩 ＮＥＭＵ ＲＥＳＯＲＴ ＨＯＴＥＬ ＮＥＭＵで使えるクーポン（最大10,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年7月15日～2027年3月31日",
+    "travel_period": "2026年10月1日～2027年3月31日",
+    "stay_period": "2026年10月1日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "NEMU26JUL15",
+        "discount": "15% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年7月15日～2027年3月31日",
+        "stay_period": "2026年10月1日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Shima",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【10月以降出発】リニューアルOPEN記念！三重県 伊勢志摩 ＮＥＭＵ ＲＥＳＯＲＴ ＨＯＴＥＬ ＮＥＭＵで使えるクーポン（最大10,000円引き）",
+      "location": "Shima",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "NEMU26JUL15",
+          "discount": "15% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年7月15日～2027年3月31日",
+          "stay_period": "2026年10月1日～2027年3月31日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-hrmt26jun50-01f79d57c8",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【浜島温泉協同組合】 三重県 ＴＨＥ ＨＩＲＡＭＡＴＳＵ ＨＯＴＥＬＳ＆ＲＥＳＯＲＴＳ 賢島で使えるクーポン（最大150,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大50%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年6月17日～2026年11月30日",
+    "travel_period": "2026年7月1日～2026年11月30日",
+    "stay_period": "2026年7月1日～2026年11月30日",
+    "coupon_codes": [
+      {
+        "code": "HRMT26JUN50",
+        "discount": "50% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 200,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年6月17日～2026年11月30日",
+        "stay_period": "2026年7月1日～2026年11月30日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Shima",
+      "最低利用金額: ¥ 200,000",
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【浜島温泉協同組合】 三重県 ＴＨＥ ＨＩＲＡＭＡＴＳＵ ＨＯＴＥＬＳ＆ＲＥＳＯＲＴＳ 賢島で使えるクーポン（最大150,000円引き）",
+      "location": "Shima",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "HRMT26JUN50",
+          "discount": "50% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 200,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年6月17日～2026年11月30日",
+          "stay_period": "2026年7月1日～2026年11月30日"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-odsm26jun20-dfcbf23acd",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【浜島温泉協同組合】 三重県 大江戸温泉物語Ｐｒｅｍｉｕｍ 伊勢志摩で使えるクーポン（最大12,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大20%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年6月17日～2026年11月30日",
+    "travel_period": "2026年6月17日～2026年11月30日",
+    "stay_period": "2026年6月17日～2026年11月30日",
+    "coupon_codes": [
+      {
+        "code": "ODSM26JUN20",
+        "discount": "20% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 25,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年6月17日～2026年11月30日",
+        "stay_period": "2026年6月17日～2026年11月30日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 25,000",
+      "残数表示: クーポン配布終了",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【浜島温泉協同組合】 三重県 大江戸温泉物語Ｐｒｅｍｉｕｍ 伊勢志摩で使えるクーポン（最大12,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "ODSM26JUN20",
+          "discount": "20% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 25,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年6月17日～2026年11月30日",
+          "stay_period": "2026年6月17日～2026年11月30日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-tao26jun15-2bedf5668a",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "【浜島温泉協同組合】 三重県 ＴＡＯＹＡ南志摩で使えるクーポン（最大20,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大15%引き",
+    "stock_status": "配布終了",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年6月17日～2026年11月30日",
+    "travel_period": "2026年6月17日～2026年11月30日",
+    "stay_period": "2026年6月17日～2026年11月30日",
+    "coupon_codes": [
+      {
+        "code": "TAO26JUN15",
+        "discount": "15% クーポン",
+        "expired": true,
+        "min_booking_amount": "¥ 30,000",
+        "coupons_left": "クーポン配布終了",
+        "booking_period": "2026年6月17日～2026年11月30日",
+        "stay_period": "2026年6月17日～2026年11月30日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 30,000",
+      "残数表示: クーポン配布終了",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "【浜島温泉協同組合】 三重県 ＴＡＯＹＡ南志摩で使えるクーポン（最大20,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "TAO26JUN15",
+          "discount": "15% クーポン",
+          "expired": true,
+          "min_booking_amount": "¥ 30,000",
+          "coupons_left": "クーポン配布終了",
+          "booking_period": "2026年6月17日～2026年11月30日",
+          "stay_period": "2026年6月17日～2026年11月30日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-mrsbt26jn10-8eac18e819",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "三重県 都リゾート 志摩 ベイサイドテラスで使えるクーポン（最大5,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年6月9日～2026年11月30日",
+    "travel_period": "2026年6月9日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年11月30日",
+    "stay_period": "2026年6月9日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年11月30日",
+    "coupon_codes": [
+      {
+        "code": "MRSBT26JN10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り3枚！",
+        "search_url": "https://www.rurubu.travel/search?region=962&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年6月9日～2026年11月30日",
+        "stay_period": "2026年6月9日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年11月30日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り3枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "三重県 都リゾート 志摩 ベイサイドテラスで使えるクーポン（最大5,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "MRSBT26JN10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り3枚！",
+          "search_url": "https://www.rurubu.travel/search?region=962&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年6月9日～2026年11月30日",
+          "stay_period": "2026年6月9日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年11月30日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=962&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-ijk26aug12-c615bcfed9",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "三重県 石鏡温泉源泉の宿 ホテルいじか荘で使えるクーポン（最大6,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大12%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月5日～2027年2月28日",
+    "travel_period": "2026年8月16日～2026年9月18日、2026年9月23日～2026年10月31日、2026年12月1日～2027年2月28日",
+    "stay_period": "2026年8月16日～2026年9月18日、2026年9月23日～2026年10月31日、2026年12月1日～2027年2月28日",
+    "coupon_codes": [
+      {
+        "code": "IJK26AUG12",
+        "discount": "12% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り43枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-08-16&los=1&city_id=107512&adults=2&children=0&rooms=1&cid=1839358&campaignId=162806",
+        "booking_period": "2026年8月5日～2027年2月28日",
+        "stay_period": "2026年8月16日～2026年9月18日、2026年9月23日～2026年10月31日、2026年12月1日～2027年2月28日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Toba",
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り43枚！",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "三重県 石鏡温泉源泉の宿 ホテルいじか荘で使えるクーポン（最大6,000円引き）",
+      "location": "Toba",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "IJK26AUG12",
+          "discount": "12% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り43枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-08-16&los=1&city_id=107512&adults=2&children=0&rooms=1&cid=1839358&campaignId=162806",
+          "booking_period": "2026年8月5日～2027年2月28日",
+          "stay_period": "2026年8月16日～2026年9月18日、2026年9月23日～2026年10月31日、2026年12月1日～2027年2月28日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-08-16&los=1&city_id=107512&adults=2&children=0&rooms=1&cid=1839358&campaignId=162806"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-autk26sep20-c54e3363a5",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "ホテル近鉄ユニバーサル・シティで使える秋冬旅割引クーポン",
+    "category": "施設限定クーポン",
+    "discount": "最大¥2,000引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年9月10日～2026年11月16日",
+    "travel_period": "2026年9月10日～2027年3月31日",
+    "stay_period": "2026年9月10日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "AUTK26SEP20",
+        "discount": "¥2,000 クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 14,000",
+        "coupons_left": "クーポン残り43枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1795&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年9月10日～2026年11月16日",
+        "stay_period": "2026年9月10日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 14,000",
+      "残数表示: クーポン残り43枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "ホテル近鉄ユニバーサル・シティで使える秋冬旅割引クーポン",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "AUTK26SEP20",
+          "discount": "¥2,000 クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 14,000",
+          "coupons_left": "クーポン残り43枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1795&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年9月10日～2026年11月16日",
+          "stay_period": "2026年9月10日～2027年3月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1795&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-srk26aug10-9fbb9082b8",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "和歌山県 ホテル 三楽荘で使えるクーポン（最大10,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年8月19日～2026年10月31日",
+    "travel_period": "2026年8月19日～2026年12月30日、2027年1月4日～2027年3月31日",
+    "stay_period": "2026年8月19日～2026年12月30日、2027年1月4日～2027年3月31日",
+    "coupon_codes": [
+      {
+        "code": "SRK26AUG10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 1",
+        "coupons_left": "クーポン残り21枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1919&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年8月19日～2026年10月31日",
+        "stay_period": "2026年8月19日～2026年12月30日、2027年1月4日～2027年3月31日"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 1",
+      "残数表示: クーポン残り21枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "和歌山県 ホテル 三楽荘で使えるクーポン（最大10,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "SRK26AUG10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 1",
+          "coupons_left": "クーポン残り21枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1919&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年8月19日～2026年10月31日",
+          "stay_period": "2026年8月19日～2026年12月30日、2027年1月4日～2027年3月31日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1919&checkIn=2026-10-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-slag26jun10-752c3dc38a",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "大分県 スパ＆リゾートホテル ソラージュ大分・日出で使えるクーポン（最大10,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年6月19日～2026年10月31日",
+    "travel_period": "2026年6月19日～2026年10月31日",
+    "stay_period": "2026年6月19日～2026年10月31日",
+    "coupon_codes": [
+      {
+        "code": "SLAG26JUN10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 50,000",
+        "coupons_left": "クーポン残り22枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1174&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "booking_period": "2026年6月19日～2026年10月31日",
+        "stay_period": "2026年6月19日～2026年10月31日",
+        "guests": "大人2名以上"
+      }
+    ],
+    "conditions": [
+      "最低利用金額: ¥ 50,000",
+      "残数表示: クーポン残り22枚！",
+      "宿泊人数: 大人2名以上",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-10-19",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "大分県 スパ＆リゾートホテル ソラージュ大分・日出で使えるクーポン（最大10,000円引き）",
+      "location": "",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "SLAG26JUN10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 50,000",
+          "coupons_left": "クーポン残り22枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1174&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "booking_period": "2026年6月19日～2026年10月31日",
+          "stay_period": "2026年6月19日～2026年10月31日",
+          "guests": "大人2名以上"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=1174&checkIn=2026-10-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  }
+]

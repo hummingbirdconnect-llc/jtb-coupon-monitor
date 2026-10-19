@@ -1,0 +1,141 @@
+{
+  "completed_at": "2026-10-19T09:09:51.313408+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "activityjapan-f7533bcd1a0b6718",
+      "provider_id": "activityjapan",
+      "candidate_path": "codex_audit_queue/activityjapan/activityjapan-f7533bcd1a0b6718.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "activityjapan",
+      "provider_label": "アクティビティジャパン",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-19T09:09:50.094509+09:00",
+      "completed_at": "2026-10-19T09:09:51.309287+09:00",
+      "official_fetched_at": "2026-10-19T09:09:51.309291+09:00",
+      "source_results": [
+        {
+          "url": "https://activityjapan.com/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": false,
+          "discovered_from": "",
+          "discovered_urls": [
+            "https://activityjapan.com/campaign/theme-parks_tickets/",
+            "https://activityjapan.com/campaign/autumn_campaign_2026/",
+            "https://activityjapan.com/campaign/kyushu-activity-feature/",
+            "https://activityjapan.com/feature/coupon-campaign/"
+          ],
+          "text_chars": 4504,
+          "content_hash": "3ef228d118ffec576b283e0703da3ba4199f4945a5fad1d4d9df2765b32def21"
+        },
+        {
+          "url": "https://activityjapan.com/coupon/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "公式クーポン一覧",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 1144,
+          "content_hash": "48b6576e3f56b1176b6e7e559e577f087274316cb3670912aeb41df67d1f1d20"
+        },
+        {
+          "url": "https://activityjapan.com/feature/coupon-campaign/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "クーポン・キャンペーン特集",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 8414,
+          "content_hash": "f7935ee5a3f7fec81c8ea6699e3ef06afcce58d5c82cd94022817851c73529da"
+        },
+        {
+          "url": "https://activityjapan.com/campaign/theme-parks_tickets/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）から発見",
+          "source_role": "representative_discovered",
+          "include_in_audit": true,
+          "discovered_from": "https://activityjapan.com/",
+          "discovered_urls": [],
+          "text_chars": 13486,
+          "content_hash": "12725505b7073d72bcce87bfb14dbf162ed2bfb18100c63f6c1a227d37a7fb54"
+        },
+        {
+          "url": "https://activityjapan.com/campaign/autumn_campaign_2026/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）から発見",
+          "source_role": "representative_discovered",
+          "include_in_audit": true,
+          "discovered_from": "https://activityjapan.com/",
+          "discovered_urls": [],
+          "text_chars": 8973,
+          "content_hash": "ea3a032a1344df387dc6b9bb373df3a238246e62997911d4f30a556881dac7ee"
+        },
+        {
+          "url": "https://activityjapan.com/campaign/kyushu-activity-feature/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）から発見",
+          "source_role": "representative_discovered",
+          "include_in_audit": true,
+          "discovered_from": "https://activityjapan.com/",
+          "discovered_urls": [],
+          "text_chars": 15015,
+          "content_hash": "0ce04ad7b4ebc199fe03b8c1e3984f234df17f889c5dd491e6f9ad1343a0dfab"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 3,
+      "discovered_source_count": 3,
+      "audit_source_count": 5,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "f7533bcd1a0b67182d4f80b5c2ded488f3b544a30a6cb2052839d38beb0434d7",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "activityjapan-f7533bcd1a0b6718",
+      "audit_candidate_path": "codex_audit_queue/activityjapan/activityjapan-f7533bcd1a0b6718.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-19T09:09:51.309287+09:00"
+    }
+  ]
+}

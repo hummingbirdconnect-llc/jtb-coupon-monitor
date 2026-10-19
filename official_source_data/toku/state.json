@@ -1,21 +1,21 @@
 {
   "provider_id": "toku",
-  "observed_hash": "cf1d9120e18b0993c2669f0eff115d0f977bea397f2d3ff52da4244295f6d273",
-  "last_checked_at": "2026-09-18T14:16:42.296873+09:00",
+  "observed_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
+  "last_checked_at": "2026-10-19T09:10:10.687745+09:00",
   "sources": [
     {
       "url": "https://www.tocoo.jp/",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "html",
-      "error": "",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "auto",
+      "error": "HTTP 403; Playwright HTTP 403",
       "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）",
       "source_role": "discovery_hub",
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3544,
-      "content_hash": "1efb7c33ef637faa411c1dba563eec8413b6e26091652f43752aa1df93e4d4bd"
+      "text_chars": 0,
+      "content_hash": ""
     },
     {
       "url": "https://osusumeyado.tocoo.jp/specialsale/",
@@ -28,14 +28,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3749,
-      "content_hash": "0bd7835e39c7380e44d20dc6393e62f8e2a3739d78b53cb355c2e7cd6b139c05"
+      "text_chars": 3615,
+      "content_hash": "f65464ad24d6347c8fe7dd066564ea90980a6ac29754db489937f23e4d3852e1"
     }
   ],
-  "queued_hash": "cf1d9120e18b0993c2669f0eff115d0f977bea397f2d3ff52da4244295f6d273",
-  "queued_candidate_id": "toku-cf1d9120e18b0993",
-  "queued_at": "2026-09-18T13:14:10.019133+09:00",
-  "last_audit_status": "held",
+  "queued_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
+  "queued_candidate_id": "toku-57ea52d2ffc02ed6",
+  "queued_at": "2026-10-19T09:10:10.688161+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-09-29T17:55:53.694613+09:00",
   "last_audit_candidate_id": "toku-cf1d9120e18b0993"
 }

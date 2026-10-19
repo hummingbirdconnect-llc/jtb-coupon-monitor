@@ -1,0 +1,80 @@
+{
+  "completed_at": "2026-10-19T09:10:10.688816+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "toku-57ea52d2ffc02ed6",
+      "provider_id": "toku",
+      "candidate_path": "codex_audit_queue/toku/toku-57ea52d2ffc02ed6.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "toku",
+      "provider_label": "トクー",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-19T09:10:07.621078+09:00",
+      "completed_at": "2026-10-19T09:10:10.687087+09:00",
+      "official_fetched_at": "2026-10-19T09:10:10.687092+09:00",
+      "source_results": [
+        {
+          "url": "https://www.tocoo.jp/",
+          "ok": false,
+          "status_code": "",
+          "fetch_method": "auto",
+          "error": "HTTP 403; Playwright HTTP 403",
+          "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 0,
+          "content_hash": ""
+        },
+        {
+          "url": "https://osusumeyado.tocoo.jp/specialsale/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "スペシャルセール",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 3615,
+          "content_hash": "f65464ad24d6347c8fe7dd066564ea90980a6ac29754db489937f23e4d3852e1"
+        }
+      ],
+      "failed_source_count": 1,
+      "configured_source_count": 2,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "toku-57ea52d2ffc02ed6",
+      "audit_candidate_path": "codex_audit_queue/toku/toku-57ea52d2ffc02ed6.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-19T09:10:10.687087+09:00"
+    }
+  ]
+}

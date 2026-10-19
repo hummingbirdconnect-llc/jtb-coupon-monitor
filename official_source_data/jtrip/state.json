@@ -1,0 +1,67 @@
+{
+  "provider_id": "jtrip",
+  "observed_hash": "7d92bc89bcbffc6c6f9f2cf470757eac5f9cc36fb081dd3db6057151b0c3100f",
+  "last_checked_at": "2026-10-19T09:09:36.553684+09:00",
+  "sources": [
+    {
+      "url": "https://www.jtrip.co.jp/sp/supersale/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "J-TRIP SALE（クーポンコード FUYU1K）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 6855,
+      "content_hash": "3e1bffd62295dd6a19c912bb3c3559073ed890bb594c0e0ceb6f4402e45cd8dd"
+    },
+    {
+      "url": "https://www.jtrip.co.jp/sp/comfort-hotel/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "コンフォートホテル特別価格キャンペーン",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 8238,
+      "content_hash": "a53ec7a48d7c8844e818047a972e993d21a9f867429b117e19067303315b6c70"
+    },
+    {
+      "url": "https://www.jtrip.co.jp/j-kyushu/sp/fukko-ouenwari/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "九州ふっこう応援割",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 7342,
+      "content_hash": "7516e4500cac799d494fa74e7d1cd12e5537037c8a1127ba0d9e865a687eb859"
+    },
+    {
+      "url": "https://www.jtrip.co.jp/j-shikoku/sp/uraraka/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "JAL麗らか四国キャンペーン",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 4701,
+      "content_hash": "c9a2ecf87e7b542dbbf8c5b5431c3093f1cc1d84f2353274464e7c13225d3af3"
+    }
+  ],
+  "queued_hash": "7d92bc89bcbffc6c6f9f2cf470757eac5f9cc36fb081dd3db6057151b0c3100f",
+  "queued_candidate_id": "jtrip-7d92bc89bcbffc6c",
+  "queued_at": "2026-10-19T09:09:36.554919+09:00",
+  "last_audit_status": "pending"
+}

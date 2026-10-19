@@ -1,7 +1,7 @@
 {
   "provider_id": "tobu_top_tours",
-  "observed_hash": "2d48254494b19f514d31d651dfe26cd767719406d3dacba42b999e8fc307a374",
-  "last_checked_at": "2026-09-18T13:14:04.119706+09:00",
+  "observed_hash": "001dd2f04ed50858e1a2c3b0efb2dd98d8a5b7ede6df521ec95affca12956f89",
+  "last_checked_at": "2026-10-19T09:10:07.498821+09:00",
   "sources": [
     {
       "url": "https://tobutoptours.jp/members_new/coupon/",
@@ -9,8 +9,13 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 2318,
-      "content_hash": "9800dc55a72bd94241d46ab759f320d76a64eb7985885ed0b70c2ed4ae452f35"
+      "purpose": "会員向けクーポン案内",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 2786,
+      "content_hash": "b7d810b1c4243f30ac691319e0a52de27e94ed169ac25964f48a08e13afb6cdb"
     },
     {
       "url": "https://tobutoptours.jp/special/",
@@ -18,14 +23,19 @@
       "status_code": 200,
       "fetch_method": "html",
       "error": "",
-      "text_chars": 2070,
-      "content_hash": "25b8c13aaf32bb8f26b543743e1d546e16eb253510d40d9123e82954b68e7923"
+      "purpose": "特集一覧",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 2317,
+      "content_hash": "a6f4b3a71f8eadaa4332248322f1c5e380479caed9820ad7ce12e876139e67ee"
     }
   ],
-  "queued_hash": "2d48254494b19f514d31d651dfe26cd767719406d3dacba42b999e8fc307a374",
-  "queued_candidate_id": "tobu_top_tours-2d48254494b19f51",
-  "queued_at": "2026-09-18T13:14:04.120448+09:00",
-  "last_audit_status": "held",
+  "queued_hash": "001dd2f04ed50858e1a2c3b0efb2dd98d8a5b7ede6df521ec95affca12956f89",
+  "queued_candidate_id": "tobu_top_tours-001dd2f04ed50858",
+  "queued_at": "2026-10-19T09:10:07.499366+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-09-29T17:55:53.694110+09:00",
   "last_audit_candidate_id": "tobu_top_tours-2d48254494b19f51"
 }

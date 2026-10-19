@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "candidate_id": "toku-57ea52d2ffc02ed6",
+  "provider_id": "toku",
+  "provider_label": "トクー",
+  "change_kind": "baseline",
+  "fetched_at": "2026-10-19T09:10:10.687762+09:00",
+  "content_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
+  "data_dir": "official_coupon_data/toku",
+  "official_domains": [
+    "tocoo.jp"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "purpose": "スペシャルセール",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "f65464ad24d6347c8fe7dd066564ea90980a6ac29754db489937f23e4d3852e1",
+      "text": "タイムセール | 【厳選】トクー！おすすめの旅館・ホテル 国内宿泊 ウルトラトクー市 プライム限定 タイムセール プライム限定 直前割 関連サービス レンタカー 宿泊＋航空券 ポイントBANK サポート 問い合わせ よくある質問 アカウント ログイン 会員登録 期間限定 タイムセール 対象プランが割引率 30 %OFF以上。 期間限定だから、対象プランがいつもよりお得に予約できます。 早めの予約でもOK。お部屋のアップグレードなど特典付きプランも タイムセールの料金は、トクープライム会員限定で表示しています 価格の閲覧・ご予約は有料会員からご利用いただけます。 ログイン 会員登録 群馬県 四万温泉 大正元年創業 四万温泉 三木屋旅館 【温泉は無料で貸切もOK♪】週末も同額でお得な素泊りプラン 有料会員限定の料金です ログインして料金を見る 栃木県 奥日光湯元温泉 日光グランドホテル ほのかな宿 樹林 ＼★【10月お日にち限定】奥日光で紅葉鑑賞＆じっくり温泉♪限定特価★／にごり湯の源泉かけ流し露天を堪能♪霧降高原豚の豆乳しゃぶしゃぶコース２食付 有料会員限定の料金です ログインして料金を見る 静岡県 伊豆熱川温泉 絶景と露天風呂の宿 たかみホテル ＼行っちゃえ食っちゃえ！食欲の秋旅タイムセール！／【スタンダード】◆無料貸切風呂◆伊豆旅満喫♪オーシャンビュー天然温泉に金目鯛姿煮も＜部屋食＞ 有料会員限定の料金です ログインして料金を見る 長野県 北志賀高原 絶景温泉露天の宿 ホテルセラン ＼事前カード決済限定！お得な素泊りプラン／天然温泉かけ流し☆絶景露天と夜景・星空でリフレッシュ♪★ 有料会員限定の料金です ログインして料金を見る 長野県 南信州天龍村 おきよめの郷 森のコテージ 【直前特価!!早目のチェックイン12時～OK♪徒歩3分に上質の日帰り温泉あり！】コテージで気軽にお泊りプラン 有料会員限定の料金です ログインして料金を見る 群馬県 嬬恋 軽井沢のバリ島 エスティバン・クラブ ＼静かな秋をバリで一休み！期間限定特価&食前酒「アラック」付で更に美味しく♪／【１泊２食付プラン】大人気バリ料理ディナーで大満足 有料会員限定の料金です ログインして料金を見る 除外日や在庫切れなど、料金が適用されない場合があります。あらかじめご了承ください。 表示されている料金からさらに割引が適用されているプランもございます。 scroll to Top {\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#website\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\",\"name\":\"\\u3010\\u53b3\\u9078\\u3011\\u30c8\\u30af\\u30fc\\uff01\\u304a\\u3059\\u3059\\u3081\\u306e\\u65c5\\u9928\\u30fb\\u30db\\u30c6\\u30eb\",\"description\":\"\\u683c\\u5b89\\u65c5\\u884c\\u306e\\u5bbf\\u6cca\\u4e88\\u7d04\\u306a\\u3089\\u30c8\\u30af\\u30fc\\uff01\",\"inLanguage\":\"ja\",\"publisher\":{\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#organization\"}},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#organization\",\"name\":\"\\u3010\\u53b3\\u9078\\u3011\\u30c8\\u30af\\u30fc\\uff01\\u304a\\u3059\\u3059\\u3081\\u306e\\u65c5\\u9928\\u30fb\\u30db\\u30c6\\u30eb\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#breadcrumblist\",\"itemListElement\":[{\"@type\":\"ListItem\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#listItem\",\"position\":1,\"item\":{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\",\"name\":\"\\u30db\\u30fc\\u30e0\",\"description\":\"\\u30c8\\u30af\\u30fc\\uff01\\u306e\\u304a\\u5f97\\u306a\\u30d7\\u30e9\\u30f3\\u306e\\u4e2d\\u3067\\u3082\\u3055\\u3089\\u306b\\u53b3\\u9078\\u3057\\u305f\\u3001\\u7d76\\u5bfe\\u306b\\u6cca\\u307e\\u3063\\u3066\\u6b32\\u3057\\u3044\\u5bbf\\u3092\\u7d39\\u4ecb\\uff01\\u30ef\\u30b1\\u3042\\u3063\\u3066\\u6025\\u907d\\u5024\\u4e0b\\u3052\\u3055\\u308c\\u305f\\u30d7\\u30e9\\u30f3\\u3084\\u30c8\\u30af\\u30fc\\uff01\\u9650\\u5b9a\\u3067\\u7121\\u6599\\u7279\\u5178\\u304c\\u4ed8\\u304f\\u30d7\\u30e9\\u30f3\\u306a\\u3069\\u306e\\u304a\\u3059\\u3059\\u3081\\u60c5\\u5831\\u3092\\u30ea\\u30a2\\u30eb\\u30bf\\u30a4\\u30e0\\u3067\\u66f4\\u65b0\\u3002\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\"},\"nextItem\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#listItem\"},{\"@type\":\"ListItem\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#listItem\",\"position\":2,\"item\":{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/\",\"name\":\"\\u30bf\\u30a4\\u30e0\\u30bb\\u30fc\\u30eb\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/\"},\"previousItem\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#listItem\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#webpage\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/\",\"name\":\"\\u30bf\\u30a4\\u30e0\\u30bb\\u30fc\\u30eb | \\u3010\\u53b3\\u9078\\u3011\\u30c8\\u30af\\u30fc\\uff01\\u304a\\u3059\\u3059\\u3081\\u306e\\u65c5\\u9928\\u30fb\\u30db\\u30c6\\u30eb\",\"inLanguage\":\"ja\",\"isPartOf\":{\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#breadcrumblist\"},\"datePublished\":\"2021-11-01T11:51:19+09:00\",\"dateModified\":\"2026-09-25T08:34:43+09:00\"}]}"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

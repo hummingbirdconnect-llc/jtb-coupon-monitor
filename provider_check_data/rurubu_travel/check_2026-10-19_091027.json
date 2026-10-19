@@ -1,0 +1,18 @@
+{
+  "provider_id": "rurubu_travel",
+  "provider_label": "るるぶトラベル",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-10-19T09:10:26.508053+09:00",
+  "completed_at": "2026-10-19T09:10:27.588389+09:00",
+  "official_fetched_at": "2026-10-19T09:10:27.588389+09:00",
+  "data_date": "2026-10-19",
+  "freshness_status": "fresh",
+  "coupon_count": 60,
+  "latest_file": "coupons_2026-10-19.json",
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "error": "",
+  "deep_dive": true,
+  "deep_dive_at": "2026-10-19T09:10:27.588389+09:00"
+}

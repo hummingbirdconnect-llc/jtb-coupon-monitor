@@ -1,0 +1,21 @@
+{
+  "provider_id": "newt",
+  "provider_label": "NEWT",
+  "check_type": "snapshot_url_check",
+  "status": "snapshot_checked",
+  "started_at": "2026-10-19T09:10:14.086123+09:00",
+  "completed_at": "2026-10-19T09:10:14.371977+09:00",
+  "url_checked_at": "2026-10-19T09:10:14.371981+09:00",
+  "official_fetched_at": "",
+  "data_date": "2026-06-18",
+  "freshness_status": "snapshot_only",
+  "coupon_count": 11,
+  "latest_file": "coupons_2026-06-18.json",
+  "checked_url_count": 1,
+  "ok_url_count": 1,
+  "failed_url_count": 0,
+  "failed_urls": [],
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "note": "旧スナップショット内のURL確認であり、最新クーポンの公式取得ではありません。"
+}

@@ -1,7 +1,7 @@
 {
   "provider_id": "club_tourism",
   "observed_hash": "336f971184b766a729b9d5addd84c8e0e0901431e831570f7a06a55d176846ac",
-  "last_checked_at": "2026-09-18T14:16:36.454479+09:00",
+  "last_checked_at": "2026-10-19T09:09:57.486106+09:00",
   "sources": [
     {
       "url": "https://www.club-t.com/",
@@ -16,8 +16,8 @@
       "discovered_urls": [
         "https://www.club-t.com/sp/campaign/ctp/"
       ],
-      "text_chars": 14289,
-      "content_hash": "95bc3bc13436f255a2ed41eb370345a90e9fa5309201cd5efce528dcdb8c7f18"
+      "text_chars": 12667,
+      "content_hash": "454c501a9382f4f69ce76586f50c78cb86faaa1d32df7c6751447cef79f21b9e"
     },
     {
       "url": "https://www.club-t.com/sp/campaign/ctp/",

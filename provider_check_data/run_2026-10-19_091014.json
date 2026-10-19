@@ -1,0 +1,32 @@
+{
+  "completed_at": "2026-10-19T09:10:14.485767+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 0,
+  "codex_audit_candidates": [],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "surprice",
+      "provider_label": "Surprice",
+      "check_type": "snapshot_url_check",
+      "status": "snapshot_checked",
+      "started_at": "2026-10-19T09:10:14.485070+09:00",
+      "completed_at": "2026-10-19T09:10:14.485400+09:00",
+      "url_checked_at": "2026-10-19T09:10:14.485402+09:00",
+      "official_fetched_at": "",
+      "data_date": "2026-06-18",
+      "freshness_status": "snapshot_only",
+      "coupon_count": 7,
+      "latest_file": "coupons_2026-06-18.json",
+      "checked_url_count": 0,
+      "ok_url_count": 0,
+      "failed_url_count": 0,
+      "failed_urls": [],
+      "ai_used": false,
+      "wp_review_eligible": false,
+      "note": "旧スナップショット内のURL確認であり、最新クーポンの公式取得ではありません。"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "completed_at": "2026-10-19T09:09:57.487412+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 0,
+  "codex_audit_candidates": [],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "club_tourism",
+      "provider_label": "クラブツーリズム",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-19T09:09:51.444991+09:00",
+      "completed_at": "2026-10-19T09:09:57.485185+09:00",
+      "official_fetched_at": "2026-10-19T09:09:57.485190+09:00",
+      "source_results": [
+        {
+          "url": "https://www.club-t.com/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "playwright",
+          "error": "",
+          "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）",
+          "source_role": "discovery_hub",
+          "include_in_audit": false,
+          "discovered_from": "",
+          "discovered_urls": [
+            "https://www.club-t.com/sp/campaign/ctp/"
+          ],
+          "text_chars": 12667,
+          "content_hash": "454c501a9382f4f69ce76586f50c78cb86faaa1d32df7c6751447cef79f21b9e"
+        },
+        {
+          "url": "https://www.club-t.com/sp/campaign/ctp/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "キャンペーン案内（会員向けWEBクーポン含む）",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 11309,
+          "content_hash": "d2a5064f4dca467b5a3133cf0e19ad7880d56ce7285bac7e54127ef01c39166f"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 2,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": false,
+      "wp_review_eligible": false,
+      "status": "audit_held",
+      "change_kind": "baseline",
+      "content_hash": "336f971184b766a729b9d5addd84c8e0e0901431e831570f7a06a55d176846ac",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "club_tourism-336f971184b766a7",
+      "audit_candidate_path": "codex_audit_queue/club_tourism/club_tourism-336f971184b766a7.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-19T09:09:57.485185+09:00"
+    }
+  ]
+}

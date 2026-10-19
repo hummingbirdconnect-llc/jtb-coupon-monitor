@@ -2,34 +2,19 @@
   "provider_id": "traveloka",
   "provider_label": "Traveloka",
   "check_type": "snapshot_url_check",
-  "status": "warning",
-  "started_at": "2026-09-14T08:01:59.354673+09:00",
-  "completed_at": "2026-09-14T08:01:59.905950+09:00",
-  "url_checked_at": "2026-09-14T08:01:59.905956+09:00",
+  "status": "snapshot_checked",
+  "started_at": "2026-10-19T09:10:14.595656+09:00",
+  "completed_at": "2026-10-19T09:10:15.398112+09:00",
+  "url_checked_at": "2026-10-19T09:10:15.398117+09:00",
   "official_fetched_at": "",
   "data_date": "2026-06-18",
   "freshness_status": "snapshot_only",
   "coupon_count": 8,
   "latest_file": "coupons_2026-06-18.json",
   "checked_url_count": 2,
-  "ok_url_count": 0,
-  "failed_url_count": 2,
-  "failed_urls": [
-    {
-      "url": "https://www.traveloka.com/ja-jp/promotion",
-      "ok": false,
-      "status_code": "405",
-      "classification": "http_error",
-      "error": ""
-    },
-    {
-      "url": "https://www.traveloka.com/ja-jp/promotion/referafriend-jp",
-      "ok": false,
-      "status_code": "405",
-      "classification": "http_error",
-      "error": ""
-    }
-  ],
+  "ok_url_count": 2,
+  "failed_url_count": 0,
+  "failed_urls": [],
   "ai_used": false,
   "wp_review_eligible": false,
   "note": "旧スナップショット内のURL確認であり、最新クーポンの公式取得ではありません。"
