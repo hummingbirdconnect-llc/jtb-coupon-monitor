@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "orion_tour-50b66fe84186960c",
+  "provider_id": "orion_tour",
+  "uncertainty_reasons": [],
+  "page_summary": "クーポンコード一覧。3月出発先取りは予約が2026年10月31日まで。50周年と10月出発直前は終了の明記がある。",
+  "change_summary": "初回のbaseline。期間内の1件と終了2件を記録する。",
+  "recommendation": "draft",
+  "priority": 70,
+  "audit_notes": "クーポンコードの文字列は本文になく、コピーボタンの表示だけなので記録していない。予約対象期間と出発対象期間は指定の日付欄ラベルと異なるため条件に残した。50周年の併用不可の一文には文字化けがあるが、終了と金額と期間は別の連続した本文で確認した。",
+  "deals": [
+    {
+      "title": "JAL3月出発先取りクーポン",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大5％（上限10,000円）",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "予約対象期間は2026年9月11日～10月31日。出発対象期間は2027年3月1日～3月31日。JAL利用で商品名に「先取りキャンペーン」がある北海道・東北スキー対象プラン。1グループの旅行代金総額から最大5％、上限10,000円。他クーポンとの併用不可。",
+      "official_url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+      "evidence_quote": "北海道・東北スキー&スノボ！3月出発キャンペーン 予約対象期間 2026年9月11日(金)～2026年10月31日(土) 出発対象期間 2027年3月01日(月)～2027年3月31日(水) 対象商品 JAL利用の北海道・東北スキー『先取りキャンペーン』対象プラン ※商品名に「先取りキャンペーン」の記載があるツアーが対象です。 その他 ・ 1グループにつき旅行代金総額から最大5％（上限10,000円まで）を割引いたします。 ・他の割引クーポンとの併用はできません。",
+      "confidence": "high"
+    },
+    {
+      "title": "50周年キャンペーンクーポン",
+      "campaign_type": "coupon",
+      "status": "ended",
+      "classification": "ended",
+      "discount": "1,000円",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "終了。予約対象期間は2026年9月18日～10月13日。出発対象期間は2026年11月1日～2027年1月31日。JAL利用の国内ツアー。お1人様1,000円割引。",
+      "official_url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+      "evidence_quote": "50周年キャンペーンクーポン （※終了しました） 予約対象期間 2026年9月18日(金)～2026年10月13日(火) 出発対象期間 2026年11月1日(日)～2027年1月31日(日) 対象商品 JAL利用の国内ツアー全商品対象（全発地・全方面） ※JAL以外の航空会社（FDA、スプリングジャパン、ジェットスターなど）利用商品は対象外となります。 その他 ・ 幼児（0～2歳）のご利用は割引クーポン対象外となります。 ・他の割引クーポンとの併用はできません。 ・クーポンの配布上限に達した時点で予告なく販売終了となります。 【JAL利用全商品対象】 11月～1月出発割引クーポン 1,000 円割引 （お1人様につき）",
+      "confidence": "high"
+    },
+    {
+      "title": "JAL10月出発直前割引クーポン",
+      "campaign_type": "coupon",
+      "status": "ended",
+      "classification": "ended",
+      "discount": "2,000円",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "終了。予約対象期間は2026年9月18日～10月13日。出発対象期間は2026年10月1日～10月31日。JAL利用の国内ツアー。お1人様2,000円割引。",
+      "official_url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+      "evidence_quote": "10月出発直前割引クーポン （※終了しました） 予約対象期間 2026年9月18日(金)～2026年10月13日(火) 出発対象期間 2026年10月1日(木)～2026年10月31日(土) 対象商品 JAL利用の国内ツアー全商品対象（全発地・全方面） ※JAL以外の航空会社（FDA、スプリングジャパン、ジェットスターなど）利用商品は対象外となります。 その他 ・ 幼児（0～2歳）のご利用は割引クーポン対象外となります。 ・他の割引クーポンとの併用はできません。 ・クーポンの配布上限に達した時点で予告なく販売終了となります。 【JAL利用全商品対象】 10月出発直前割引クーポン 2,000 円割引 （お1人様につき）",
+      "confidence": "high"
+    }
+  ]
+}

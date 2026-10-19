@@ -21,5 +21,7 @@
   "queued_hash": "c8f62966319c5b9641033a18fd0b0e110fc87bebda3a95b184ceb7e2f118f9a0",
   "queued_candidate_id": "tabirai_rentacar-c8f62966319c5b96",
   "queued_at": "2026-10-19T17:09:59.100533+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-10-19T21:17:58.190587+09:00",
+  "last_audit_candidate_id": "tabirai_rentacar-c8f62966319c5b96"
 }

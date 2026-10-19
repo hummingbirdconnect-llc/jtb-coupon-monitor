@@ -18,8 +18,15 @@
       "content_hash": "d2f1e43024ac6083414f24b5fa5ae92daaa820ec682d29517de8d05a172e8980"
     }
   ],
-  "queued_hash": "bfdf0da3d46959eb3b48d279c9e9e7a3ec37c34b59f39a2c2b6af7f8b6773054",
-  "queued_candidate_id": "hankyu_travel-bfdf0da3d46959eb",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T17:10:01.922848+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-19T21:17:58.192069+09:00",
+  "last_audit_candidate_id": "hankyu_travel-bfdf0da3d46959eb",
+  "processed_hash": "bfdf0da3d46959eb3b48d279c9e9e7a3ec37c34b59f39a2c2b6af7f8b6773054",
+  "last_processed_at": "2026-10-19T21:17:58.192069+09:00",
+  "last_changed_at": "2026-10-19T21:17:58.192069+09:00",
+  "latest_file": "coupons_2026-10-19.json",
+  "semantic_hash": "c9110daeb48593bfe45fc7da6c8190ba7fd34c62e2b763bf9eb872aee142fc8e"
 }

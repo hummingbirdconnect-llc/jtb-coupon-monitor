@@ -18,8 +18,15 @@
       "content_hash": "c27760c42db62291d257456ba514c751824b4e114fbb2c17cde2155d2b66c9ef"
     }
   ],
-  "queued_hash": "da573e4ddf1561b2c86c3f98a69946ec3cc12f3716afeed7276c66661742cdb3",
-  "queued_candidate_id": "nippon_travel-da573e4ddf1561b2",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T17:10:00.138901+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-19T21:17:58.191343+09:00",
+  "last_audit_candidate_id": "nippon_travel-da573e4ddf1561b2",
+  "processed_hash": "da573e4ddf1561b2c86c3f98a69946ec3cc12f3716afeed7276c66661742cdb3",
+  "last_processed_at": "2026-10-19T21:17:58.191343+09:00",
+  "last_changed_at": "2026-10-19T21:17:58.191343+09:00",
+  "latest_file": "coupons_2026-10-19.json",
+  "semantic_hash": "57b88e41e2547e519831c326212d990b5bfac6bb6ce0f35e81de946a463df034"
 }

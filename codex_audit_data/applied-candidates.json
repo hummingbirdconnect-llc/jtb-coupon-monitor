@@ -251,6 +251,76 @@
       "recommendation": "ignore",
       "applied_at": "2026-10-15T14:39:06.167635+09:00",
       "result_path": "codex_audit_results/yomiuri_travel/yomiuri_travel-c4b9bedec9894d91.json"
+    },
+    "yahoo_travel-485bb103725b720d": {
+      "provider_id": "yahoo_travel",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.184708+09:00",
+      "result_path": "codex_audit_results/yahoo_travel/yahoo_travel-485bb103725b720d.json"
+    },
+    "newt-1e3a3a8c43b87851": {
+      "provider_id": "newt",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.186762+09:00",
+      "result_path": "codex_audit_results/newt/newt-1e3a3a8c43b87851.json"
+    },
+    "airtrip-0fb7e97ccfed439a": {
+      "provider_id": "airtrip",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.187840+09:00",
+      "result_path": "codex_audit_results/airtrip/airtrip-0fb7e97ccfed439a.json"
+    },
+    "jcation-78305ace16e05c18": {
+      "provider_id": "jcation",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.189027+09:00",
+      "result_path": "codex_audit_results/jcation/jcation-78305ace16e05c18.json"
+    },
+    "jalan_rentacar-fdd55466e5cb78bf": {
+      "provider_id": "jalan_rentacar",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.190066+09:00",
+      "result_path": "codex_audit_results/jalan_rentacar/jalan_rentacar-fdd55466e5cb78bf.json"
+    },
+    "tabirai_rentacar-c8f62966319c5b96": {
+      "provider_id": "tabirai_rentacar",
+      "status": "held",
+      "recommendation": "hold",
+      "applied_at": "2026-10-19T21:17:58.190732+09:00",
+      "result_path": "codex_audit_results/tabirai_rentacar/tabirai_rentacar-c8f62966319c5b96.json"
+    },
+    "nippon_travel-da573e4ddf1561b2": {
+      "provider_id": "nippon_travel",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.191470+09:00",
+      "result_path": "codex_audit_results/nippon_travel/nippon_travel-da573e4ddf1561b2.json"
+    },
+    "hankyu_travel-bfdf0da3d46959eb": {
+      "provider_id": "hankyu_travel",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.192203+09:00",
+      "result_path": "codex_audit_results/hankyu_travel/hankyu_travel-bfdf0da3d46959eb.json"
+    },
+    "jalan_pack-e12fc1e651e42438": {
+      "provider_id": "jalan_pack",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.192918+09:00",
+      "result_path": "codex_audit_results/jalan_pack/jalan_pack-e12fc1e651e42438.json"
+    },
+    "orion_tour-50b66fe84186960c": {
+      "provider_id": "orion_tour",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-19T21:17:58.193629+09:00",
+      "result_path": "codex_audit_results/orion_tour/orion_tour-50b66fe84186960c.json"
     }
   }
 }

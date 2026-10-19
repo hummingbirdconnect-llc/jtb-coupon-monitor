@@ -18,8 +18,15 @@
       "content_hash": "72ad15b9eb933b6d33d2c2e3b9bb61ed1aaa6a8d75e10adc48309fea320f0ff0"
     }
   ],
-  "queued_hash": "1e3a3a8c43b8785147e132c0c4c4c22537914422099669d6515e811ecf363fb6",
-  "queued_candidate_id": "newt-1e3a3a8c43b87851",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T17:09:55.454315+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-19T21:17:58.186559+09:00",
+  "last_audit_candidate_id": "newt-1e3a3a8c43b87851",
+  "processed_hash": "1e3a3a8c43b8785147e132c0c4c4c22537914422099669d6515e811ecf363fb6",
+  "last_processed_at": "2026-10-19T21:17:58.186559+09:00",
+  "last_changed_at": "2026-10-19T21:17:58.186559+09:00",
+  "latest_file": "coupons_2026-10-19.json",
+  "semantic_hash": "15e3812f4756b00a2f89108efe0f5e8f87882ece8aa16301d6d4e0cccc85be70"
 }

@@ -18,8 +18,15 @@
       "content_hash": "8189ab9eb8413cc87fe75bf98aeadb4205ecda335e5ab3b68ab6432e786e6c90"
     }
   ],
-  "queued_hash": "50b66fe84186960cab634e41faacc81407a928b7b34a390f095299cf723bd852",
-  "queued_candidate_id": "orion_tour-50b66fe84186960c",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T17:10:03.669356+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-19T21:17:58.193517+09:00",
+  "last_audit_candidate_id": "orion_tour-50b66fe84186960c",
+  "processed_hash": "50b66fe84186960cab634e41faacc81407a928b7b34a390f095299cf723bd852",
+  "last_processed_at": "2026-10-19T21:17:58.193517+09:00",
+  "last_changed_at": "2026-10-19T21:17:58.193517+09:00",
+  "latest_file": "coupons_2026-10-19.json",
+  "semantic_hash": "cfebbd1a8a60569bc98d975a6a90fd052bc6258a8011337a3a492f846343edae"
 }

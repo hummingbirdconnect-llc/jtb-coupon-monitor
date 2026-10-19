@@ -18,8 +18,15 @@
       "content_hash": "4d7f94cd6426e54c2d76aea659f4214fe491dbae2bd80ad957a5248755a7342a"
     }
   ],
-  "queued_hash": "485bb103725b720d3d34c00c99c7b15e2325a3a2ed1964dded5b6cae0aef4267",
-  "queued_candidate_id": "yahoo_travel-485bb103725b720d",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T17:09:54.639453+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-19T21:17:58.184593+09:00",
+  "last_audit_candidate_id": "yahoo_travel-485bb103725b720d",
+  "processed_hash": "485bb103725b720d3d34c00c99c7b15e2325a3a2ed1964dded5b6cae0aef4267",
+  "last_processed_at": "2026-10-19T21:17:58.184593+09:00",
+  "last_changed_at": "2026-10-19T21:17:50.519438+09:00",
+  "latest_file": "coupons_2026-10-19.json",
+  "semantic_hash": "2ab78999fa79f02890eefdc5cd8a16732e026ab751631fc130e456cd65082e10"
 }
