@@ -1,0 +1,17 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-10-20T07:33:54.830802+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "一部未確認：クーポン一覧・JAL PLAZA利用券・もっともっと北海道の詳細はcurl再取得も403、Chrome起動失敗。タイムセールは公式で10/23開始予告を確認し除外。",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jalpack/hints_2026-10-20.json"
+}

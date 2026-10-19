@@ -1,28 +1,28 @@
 {
-  "completed_at": "2026-10-19T07:34:54.517723+09:00",
+  "completed_at": "2026-10-20T07:33:54.830802+09:00",
   "scope": "codex-auto",
-  "provider_count": 20,
+  "provider_count": 8,
   "error_count": 3,
-  "candidate_count": 16,
+  "candidate_count": 9,
   "new_count": 6,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
       "status": "ok",
-      "error": "決算大感謝SALEは取得本文に施策詳細が表示されず、金額・期間を確認できなかった。",
+      "error": "一部未確認：決算SALE国内ホテルページは動的本文を取得できず、Chrome起動失敗。ブラウザUser-Agent付きcurl再取得でも本文なし。バスツアーは公式確認済み。",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/his/hints_2026-10-19.json"
+      "hints_file": "discovery_hints/his/hints_2026-10-20.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 5,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jtb/hints_2026-10-19.json"
+      "candidate_count": 4,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jtb/hints_2026-10-20.json"
     },
     {
       "provider_id": "knt",
@@ -31,160 +31,52 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-10-19.json"
+      "hints_file": "discovery_hints/knt/hints_2026-10-20.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
-      "status": "ok",
-      "error": "",
+      "status": "error",
+      "error": "一部未確認：クーポン一覧・JAL PLAZA利用券・もっともっと北海道の詳細はcurl再取得も403、Chrome起動失敗。タイムセールは公式で10/23開始予告を確認し除外。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalpack/hints_2026-10-19.json"
+      "hints_file": "discovery_hints/jalpack/hints_2026-10-20.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
       "status": "error",
-      "error": "公開クーポン一覧をWebとブラウザUA付きcurlで取得したが、個別施策の金額・期間が表示されず新規候補を確定できなかった。",
+      "error": "一部未確認：九州ふっこう応援割の公開一覧は動的本文を取得できず。Chrome起動失敗、User-Agent付きcurl再取得でも個別条件なし。お得な10日間は受付開始前表示のため除外。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalan/hints_2026-10-19.json"
+      "hints_file": "discovery_hints/jalan/hints_2026-10-20.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
-      "status": "error",
-      "error": "オータムSALEの名称・割引表示は公開ページで確認。対象クーポンの予約期限を特定できず、Xの20%宿クーポンと併せて未確認扱い。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "kkday",
-      "provider_label": "KKday",
       "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/kkday/hints_2026-10-19.json"
+      "error": "一部未確認：最強感謝祭の個別クーポン金額を公開本文で取得できず。第3弾は10/20 10:00開始予定。ログインしていない。",
+      "candidate_count": 2,
+      "new_count": 2,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-20.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
       "status": "error",
-      "error": "公開dealsページの取得結果が台湾中心で、日本向け施策の金額・期間を確認できなかった。ログインせず終了。",
+      "error": "公開SALEページは取得できたが日本向けの金額・期間を確認できず。Chrome起動失敗、User-Agent付きcurl再取得では海外分のみ。提携券KAIGAIDISNEYの国内適用条件も公式未確認。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "jtrip",
-      "provider_label": "ジェイトリップ",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jtrip/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "relux",
-      "provider_label": "Relux",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/relux/hints_2026-10-19.json"
+      "hints_file": "discovery_hints/klook/hints_2026-10-20.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/asoview/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "activityjapan",
-      "provider_label": "アクティビティジャパン",
-      "status": "ok",
-      "error": "信州体験割は開催期間が10/1～12/25、取得・利用期間が7/1～9/30と同一ページで不整合のため採用せず。",
-      "candidate_count": 1,
-      "new_count": 0,
-      "hints_file": "discovery_hints/activityjapan/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "club_tourism",
-      "provider_label": "クラブツーリズム",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/club_tourism/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "jr_tokai_tours",
-      "provider_label": "JR東海ツアーズ",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 3,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jr_tokai_tours/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "skypack_tours",
-      "provider_label": "スカイパックツアーズ",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/skypack_tours/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "tobu_top_tours",
-      "provider_label": "東武トップツアーズ",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 3,
-      "new_count": 3,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "yomiuri_travel",
-      "provider_label": "読売旅行",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/yomiuri_travel/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "toku",
-      "provider_label": "トクー",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/toku/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "booking",
-      "provider_label": "Booking.com",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-10-19.json"
-    },
-    {
-      "provider_id": "tripcom",
-      "provider_label": "Trip.com",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/tripcom/hints_2026-10-19.json"
+      "candidate_count": 2,
+      "new_count": 2,
+      "hints_file": "discovery_hints/asoview/hints_2026-10-20.json"
     }
   ]
 }

@@ -1,0 +1,46 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-10-20T07:33:54.830802+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "やまぐちのアソビ新発見割2026（第2期）",
+      "kind": "coupon",
+      "found_url": "https://x.com/welltrip0620/status/2112122590382981415",
+      "official_url": "https://www.asoview.com/brand/yamaguchi/",
+      "official_domain_match": true,
+      "evidence": "山口県の対象の遊び・体験が1人当たり30%OFF。会員登録者限定、対象プランの新規予約時に1予約1回。上限到達で終了。",
+      "observed_date": "2026-10-20",
+      "discount": "1人当たり30%OFF",
+      "period": "【第二期】2026年10月1日（木）0:00~2026年12月31日（木）23:59",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "千葉遊び尽くし応援割",
+      "kind": "coupon",
+      "found_url": "https://x.com/welltrip0620/status/2112090625910911119",
+      "official_url": "https://www.asoview.com/brand/chiba-asobi-oen/",
+      "official_domain_match": true,
+      "evidence": "対象の千葉県内アウトドア体験。1人最大1万円、体験月ごとに1アカウント1回。12月28～31日は10%OFF。予算上限あり。",
+      "observed_date": "2026-10-20",
+      "discount": "平日30%OFF・土日祝10%OFF",
+      "period": "販売期間：2026年8月27日(木)～12月31日(木)／催行期間：2026年9月1日(火)～12月31日(木)",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/asoview/hints_2026-10-20.json"
+}

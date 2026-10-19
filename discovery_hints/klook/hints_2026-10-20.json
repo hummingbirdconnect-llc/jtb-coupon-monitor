@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-10-20T07:33:54.830802+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開SALEページは取得できたが日本向けの金額・期間を確認できず。Chrome起動失敗、User-Agent付きcurl再取得では海外分のみ。提携券KAIGAIDISNEYの国内適用条件も公式未確認。",
+  "known_title_count": 7,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-10-20.json"
+}

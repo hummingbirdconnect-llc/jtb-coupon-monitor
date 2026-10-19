@@ -1,0 +1,17 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-20T07:33:54.830802+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "一部未確認：九州ふっこう応援割の公開一覧は動的本文を取得できず。Chrome起動失敗、User-Agent付きcurl再取得でも個別条件なし。お得な10日間は受付開始前表示のため除外。",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-20.json"
+}
