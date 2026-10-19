@@ -37,8 +37,11 @@ def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
     tuesday = {p["id"] for p in g.select_providers(registry, "auto", "", date(2026, 9, 22))}
     assert monday == daily | weekly
     assert tuesday == daily
+    # 公式ページを登録した指定時会社は週次の探索対象
+    assert {"newt", "yahoo_travel", "hankyu_travel"} <= weekly
     # 公式ページ未登録の指定時会社（記事由来だけ）は対象外
-    assert "newt" not in weekly
+    assert "ikkyu" not in weekly
+    assert "surprice" not in weekly
 
 
 def test_classify_marks_known_url_known_title_and_new() -> None:
