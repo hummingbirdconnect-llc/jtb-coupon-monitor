@@ -306,10 +306,20 @@
       "label": "Yahoo!トラベル",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/yahoo_travel",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/yahoo_travel",
+      "legacy_data_dir": "manual_coupon_data/yahoo_travel",
+      "source_type": "official_page_candidate",
+      "official_domains": ["travel.yahoo.co.jp"],
+      "official_sources": [
+        {
+          "url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+          "fetch_method": "auto",
+          "purpose": "キャンペーン予定（PayPay還元・セール日程）"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。PayPay・いまスグ利用など表示条件が混在。"
+      "note": "2026-10-19にキャンペーン予定ページのHTML取得を確認。指定時だけ深掘りする。トップページは403のため登録しない。監査の適用は未実施。"
     },
     {
       "id": "ikkyu",
@@ -625,10 +635,20 @@
       "label": "NEWT",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/newt",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/newt",
+      "legacy_data_dir": "manual_coupon_data/newt",
+      "source_type": "official_page_candidate",
+      "official_domains": ["newt.net"],
+      "official_sources": [
+        {
+          "url": "https://newt.net/sale",
+          "fetch_method": "auto",
+          "purpose": "公式セール一覧"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/NEWT/coupon-migration-20260609/newt-coupon-swell.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。アプリ・LINE・友達紹介など配布経路別の公式確認が必要。"
+      "note": "2026-10-19に https://newt.net/sale のHTML取得を確認。指定時だけ深掘りする。セール対象ツアーはクーポン併用不可の記載あり。監査の適用は未実施。"
     },
     {
       "id": "surprice",
@@ -657,10 +677,20 @@
       "label": "エアトリ",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/airtrip",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/airtrip",
+      "legacy_data_dir": "manual_coupon_data/airtrip",
+      "source_type": "official_page_candidate",
+      "official_domains": ["airtrip.jp"],
+      "official_sources": [
+        {
+          "url": "https://domdp.airtrip.jp/campaign/fukkou-wari/",
+          "fetch_method": "auto",
+          "purpose": "九州ふっこう応援割の受付状況"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/エアトリ/coupon-migration-20260612/airtrip-coupon.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。航空券・ホテル・ツアーの割引型を分けて確認する。"
+      "note": "2026-10-19にふっこう応援割ページのHTML取得を確認。2026-10-15時点で福岡・長崎・鹿児島は受付終了。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "skyticket",
@@ -677,56 +707,106 @@
       "label": "Jcation",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/jcation",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/jcation",
+      "legacy_data_dir": "manual_coupon_data/jcation",
+      "source_type": "official_page_candidate",
+      "official_domains": ["jcation.com"],
+      "official_sources": [
+        {
+          "url": "https://jcation.com/blog/kyushuouen/",
+          "fetch_method": "auto",
+          "purpose": "九州ふっこう応援割"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/Jcation/coupon-migration-20260612/jcation-coupon.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。レンタカー・国内旅行系の割引として半自動確認から開始。"
+      "note": "2026-10-19に九州ふっこう応援割ブログのHTML取得を確認。トップの告知では福岡・長崎の販売終了。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "jalan_rentacar",
       "label": "じゃらんレンタカー",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/jalan_rentacar",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/jalan_rentacar",
+      "legacy_data_dir": "manual_coupon_data/jalan_rentacar",
+      "source_type": "official_page_candidate",
+      "official_domains": ["jalan.net"],
+      "official_sources": [
+        {
+          "url": "https://www.jalan.net/rentacar/themes/sweet/",
+          "fetch_method": "auto",
+          "purpose": "スイート沖縄クーポン"
+        }
+      ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/じゃらんレンタカー/brushup-20260613/jalan-rentacar-coupon-swell.html"],
-      "note": "Welltrip記事HTML由来の暫定データ。じゃらん本体とは別にレンタカー枠として管理。"
+      "note": "2026-10-19にスイート沖縄クーポンページのHTML取得を確認。クーポン一覧 /rentacar/coupons/ は本文が短く取れないため登録しない。獲得期間は2026-10-14〜10-28。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "tabirai_rentacar",
       "label": "たびらいレンタカー",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/tabirai_rentacar",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/tabirai_rentacar",
+      "legacy_data_dir": "manual_coupon_data/tabirai_rentacar",
+      "source_type": "official_page_candidate",
+      "official_domains": ["tabirai.net"],
+      "official_sources": [
+        {
+          "url": "https://www.tabirai.net/car/special/campaign-plan/",
+          "fetch_method": "auto",
+          "purpose": "キャンペーンプラン（秋たび応援フェア・早割）"
+        }
+      ],
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/たびらいレンタカー/coupon-migration-20260612/tabirai-rentacar-coupon-brushup-20260613-swell.html"
       ],
-      "note": "Welltrip記事HTML由来の暫定データ。レンタカー予約の地域別・期間限定割引を半自動で確認。"
+      "note": "2026-10-19にキャンペーンプランページのHTML取得を確認。秋たび応援フェアの予約期間は2026-10-13で終了。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "nippon_travel",
       "label": "日本旅行",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/nippon_travel",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/nippon_travel",
+      "legacy_data_dir": "manual_coupon_data/nippon_travel",
+      "source_type": "official_page_candidate",
+      "official_domains": ["nta.co.jp"],
+      "official_sources": [
+        {
+          "url": "https://www.nta.co.jp/cpn/anniversary/",
+          "fetch_method": "auto",
+          "purpose": "創業121周年感謝祭クーポン"
+        }
+      ],
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/日本旅行/coupon-migration-20260612/nippon-travel-agency-coupon-swell.html"
       ],
-      "note": "Welltrip記事HTML由来の暫定データ。赤い風船・JRセットプランなどの商品別に確認する。"
+      "note": "2026-10-19に創業121周年感謝祭ページのHTML取得を確認。配布は2026-11-06 14:59まで。終了後はURLの差し替えが必要。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "hankyu_travel",
       "label": "阪急交通社",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/hankyu_travel",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/hankyu_travel",
+      "legacy_data_dir": "manual_coupon_data/hankyu_travel",
+      "source_type": "official_page_candidate",
+      "official_domains": ["hankyu-travel.com"],
+      "official_sources": [
+        {
+          "url": "https://www.hankyu-travel.com/coupon/",
+          "fetch_method": "auto",
+          "purpose": "公式クーポン一覧（誕生月）"
+        }
+      ],
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/阪急交通社/coupon-migration-20260612/hankyu-travel-coupon-swell.html"
       ],
-      "note": "Welltrip記事HTML由来の暫定データ。ツアー企画型のため、クーポンよりキャンペーン監視寄り。"
+      "note": "2026-10-19に公式クーポンページのHTML取得を確認。公開中は誕生月クーポン（1,000円・5,000円・10,000円）。89まつり・夏たび・福たびは終了。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "jamjam",
@@ -753,12 +833,22 @@
       "label": "じゃらんパック",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/jalan_pack",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/jalan_pack",
+      "legacy_data_dir": "manual_coupon_data/jalan_pack",
+      "source_type": "official_page_candidate",
+      "official_domains": ["jalan.net"],
+      "official_sources": [
+        {
+          "url": "https://www.jalan.net/dp/kyushu-shien/",
+          "fetch_method": "auto",
+          "purpose": "九州ふっこう応援割（JAL/ANAじゃらんパック）"
+        }
+      ],
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/じゃらんパック/reputation-migration-20260604/jalan-pack-reputation.html"
       ],
-      "note": "Welltrip既存記事由来の暫定枠。じゃらん宿泊本体と分け、パック専用クーポンの取得元を次に決める。"
+      "note": "2026-10-19に九州ふっこう応援割ページのHTML取得を確認。福岡・鹿児島は受付停止済み。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "rurubu_travel",
@@ -777,12 +867,22 @@
       "label": "オリオンツアー",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "article_exists",
-      "data_dir": "manual_coupon_data/orion_tour",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/orion_tour",
+      "legacy_data_dir": "manual_coupon_data/orion_tour",
+      "source_type": "official_page_candidate",
+      "official_domains": ["orion-tour.co.jp"],
+      "official_sources": [
+        {
+          "url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+          "fetch_method": "auto",
+          "purpose": "公式クーポンコード一覧"
+        }
+      ],
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/オリオンツアー/reputation-migration-20260604/orion-tour-reputation.html"
       ],
-      "note": "Welltrip既存記事由来の暫定枠。ツアー・スキー・高速バス系のキャンペーン確認を優先。"
+      "note": "2026-10-19にクーポンコード一覧のHTML取得を確認。50周年・10月出発直前は予約期間が2026-10-13で終了。北海道・東北スキー3月先取りは2026-10-31まで。指定時だけ深掘りする。監査の適用は未実施。"
     },
     {
       "id": "shirokuma_tour",
