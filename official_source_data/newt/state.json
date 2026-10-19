@@ -1,0 +1,25 @@
+{
+  "provider_id": "newt",
+  "observed_hash": "1e3a3a8c43b8785147e132c0c4c4c22537914422099669d6515e811ecf363fb6",
+  "last_checked_at": "2026-10-19T17:09:55.453359+09:00",
+  "sources": [
+    {
+      "url": "https://newt.net/sale",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "公式セール一覧",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 21591,
+      "content_hash": "72ad15b9eb933b6d33d2c2e3b9bb61ed1aaa6a8d75e10adc48309fea320f0ff0"
+    }
+  ],
+  "queued_hash": "1e3a3a8c43b8785147e132c0c4c4c22537914422099669d6515e811ecf363fb6",
+  "queued_candidate_id": "newt-1e3a3a8c43b87851",
+  "queued_at": "2026-10-19T17:09:55.454315+09:00",
+  "last_audit_status": "pending"
+}

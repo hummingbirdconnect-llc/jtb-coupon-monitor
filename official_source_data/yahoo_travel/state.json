@@ -1,0 +1,25 @@
+{
+  "provider_id": "yahoo_travel",
+  "observed_hash": "485bb103725b720d3d34c00c99c7b15e2325a3a2ed1964dded5b6cae0aef4267",
+  "last_checked_at": "2026-10-19T17:09:54.639066+09:00",
+  "sources": [
+    {
+      "url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "キャンペーン予定（PayPay還元・セール日程）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 4311,
+      "content_hash": "4d7f94cd6426e54c2d76aea659f4214fe491dbae2bd80ad957a5248755a7342a"
+    }
+  ],
+  "queued_hash": "485bb103725b720d3d34c00c99c7b15e2325a3a2ed1964dded5b6cae0aef4267",
+  "queued_candidate_id": "yahoo_travel-485bb103725b720d",
+  "queued_at": "2026-10-19T17:09:54.639453+09:00",
+  "last_audit_status": "pending"
+}

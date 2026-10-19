@@ -1,0 +1,25 @@
+{
+  "provider_id": "hankyu_travel",
+  "observed_hash": "bfdf0da3d46959eb3b48d279c9e9e7a3ec37c34b59f39a2c2b6af7f8b6773054",
+  "last_checked_at": "2026-10-19T17:10:01.922518+09:00",
+  "sources": [
+    {
+      "url": "https://www.hankyu-travel.com/coupon/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "公式クーポン一覧（誕生月）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 4244,
+      "content_hash": "d2f1e43024ac6083414f24b5fa5ae92daaa820ec682d29517de8d05a172e8980"
+    }
+  ],
+  "queued_hash": "bfdf0da3d46959eb3b48d279c9e9e7a3ec37c34b59f39a2c2b6af7f8b6773054",
+  "queued_candidate_id": "hankyu_travel-bfdf0da3d46959eb",
+  "queued_at": "2026-10-19T17:10:01.922848+09:00",
+  "last_audit_status": "pending"
+}

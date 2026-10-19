@@ -1,0 +1,66 @@
+{
+  "completed_at": "2026-10-19T17:10:01.923262+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "hankyu_travel-bfdf0da3d46959eb",
+      "provider_id": "hankyu_travel",
+      "candidate_path": "codex_audit_queue/hankyu_travel/hankyu_travel-bfdf0da3d46959eb.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "hankyu_travel",
+      "provider_label": "阪急交通社",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-19T17:10:00.286520+09:00",
+      "completed_at": "2026-10-19T17:10:01.922340+09:00",
+      "official_fetched_at": "2026-10-19T17:10:01.922345+09:00",
+      "source_results": [
+        {
+          "url": "https://www.hankyu-travel.com/coupon/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "公式クーポン一覧（誕生月）",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 4244,
+          "content_hash": "d2f1e43024ac6083414f24b5fa5ae92daaa820ec682d29517de8d05a172e8980"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 1,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "bfdf0da3d46959eb3b48d279c9e9e7a3ec37c34b59f39a2c2b6af7f8b6773054",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "hankyu_travel-bfdf0da3d46959eb",
+      "audit_candidate_path": "codex_audit_queue/hankyu_travel/hankyu_travel-bfdf0da3d46959eb.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-19T17:10:01.922340+09:00"
+    }
+  ]
+}

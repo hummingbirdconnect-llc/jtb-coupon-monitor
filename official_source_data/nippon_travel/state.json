@@ -1,0 +1,25 @@
+{
+  "provider_id": "nippon_travel",
+  "observed_hash": "da573e4ddf1561b2c86c3f98a69946ec3cc12f3716afeed7276c66661742cdb3",
+  "last_checked_at": "2026-10-19T17:10:00.138510+09:00",
+  "sources": [
+    {
+      "url": "https://www.nta.co.jp/cpn/anniversary/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "創業121周年感謝祭クーポン",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 3368,
+      "content_hash": "c27760c42db62291d257456ba514c751824b4e114fbb2c17cde2155d2b66c9ef"
+    }
+  ],
+  "queued_hash": "da573e4ddf1561b2c86c3f98a69946ec3cc12f3716afeed7276c66661742cdb3",
+  "queued_candidate_id": "nippon_travel-da573e4ddf1561b2",
+  "queued_at": "2026-10-19T17:10:00.138901+09:00",
+  "last_audit_status": "pending"
+}

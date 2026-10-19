@@ -1,0 +1,25 @@
+{
+  "provider_id": "airtrip",
+  "observed_hash": "0fb7e97ccfed439aaa4037946fccc2294b95171cbb6f35194fc17253907bd641",
+  "last_checked_at": "2026-10-19T17:09:56.443216+09:00",
+  "sources": [
+    {
+      "url": "https://domdp.airtrip.jp/campaign/fukkou-wari/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "九州ふっこう応援割の受付状況",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 2975,
+      "content_hash": "83c0d25cccefbb3bfc765d67f22f4fd84f4c747dc8ea92b5ff1dd0e6679ac354"
+    }
+  ],
+  "queued_hash": "0fb7e97ccfed439aaa4037946fccc2294b95171cbb6f35194fc17253907bd641",
+  "queued_candidate_id": "airtrip-0fb7e97ccfed439a",
+  "queued_at": "2026-10-19T17:09:56.443534+09:00",
+  "last_audit_status": "pending"
+}

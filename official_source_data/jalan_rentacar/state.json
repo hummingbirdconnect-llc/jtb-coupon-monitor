@@ -1,0 +1,25 @@
+{
+  "provider_id": "jalan_rentacar",
+  "observed_hash": "fdd55466e5cb78bf05818139867aea62eafe19494f686d0cbfd575556756c1dd",
+  "last_checked_at": "2026-10-19T17:09:58.534153+09:00",
+  "sources": [
+    {
+      "url": "https://www.jalan.net/rentacar/themes/sweet/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "スイート沖縄クーポン",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 4167,
+      "content_hash": "0c4b3abd8b32150e197716e0855b1ad34b6da1db0818a7235511d6f85cfd164d"
+    }
+  ],
+  "queued_hash": "fdd55466e5cb78bf05818139867aea62eafe19494f686d0cbfd575556756c1dd",
+  "queued_candidate_id": "jalan_rentacar-fdd55466e5cb78bf",
+  "queued_at": "2026-10-19T17:09:58.534517+09:00",
+  "last_audit_status": "pending"
+}

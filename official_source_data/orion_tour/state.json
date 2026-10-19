@@ -1,0 +1,25 @@
+{
+  "provider_id": "orion_tour",
+  "observed_hash": "50b66fe84186960cab634e41faacc81407a928b7b34a390f095299cf723bd852",
+  "last_checked_at": "2026-10-19T17:10:03.668343+09:00",
+  "sources": [
+    {
+      "url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "公式クーポンコード一覧",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 4575,
+      "content_hash": "8189ab9eb8413cc87fe75bf98aeadb4205ecda335e5ab3b68ab6432e786e6c90"
+    }
+  ],
+  "queued_hash": "50b66fe84186960cab634e41faacc81407a928b7b34a390f095299cf723bd852",
+  "queued_candidate_id": "orion_tour-50b66fe84186960c",
+  "queued_at": "2026-10-19T17:10:03.669356+09:00",
+  "last_audit_status": "pending"
+}

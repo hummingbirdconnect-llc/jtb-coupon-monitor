@@ -1,0 +1,66 @@
+{
+  "completed_at": "2026-10-19T17:09:59.100918+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "tabirai_rentacar-c8f62966319c5b96",
+      "provider_id": "tabirai_rentacar",
+      "candidate_path": "codex_audit_queue/tabirai_rentacar/tabirai_rentacar-c8f62966319c5b96.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "tabirai_rentacar",
+      "provider_label": "たびらいレンタカー",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-19T17:09:58.675466+09:00",
+      "completed_at": "2026-10-19T17:09:59.099920+09:00",
+      "official_fetched_at": "2026-10-19T17:09:59.099925+09:00",
+      "source_results": [
+        {
+          "url": "https://www.tabirai.net/car/special/campaign-plan/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "キャンペーンプラン（秋たび応援フェア・早割）",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 4348,
+          "content_hash": "707d6bf4a529c3e243f41781d99308b91039242abe52263669effba70f9c2870"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 1,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "c8f62966319c5b9641033a18fd0b0e110fc87bebda3a95b184ceb7e2f118f9a0",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "tabirai_rentacar-c8f62966319c5b96",
+      "audit_candidate_path": "codex_audit_queue/tabirai_rentacar/tabirai_rentacar-c8f62966319c5b96.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-19T17:09:59.099920+09:00"
+    }
+  ]
+}

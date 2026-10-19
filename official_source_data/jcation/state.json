@@ -1,0 +1,25 @@
+{
+  "provider_id": "jcation",
+  "observed_hash": "78305ace16e05c1832214df9d8217dff62c4fed4e007a68de2008da1b0aaf224",
+  "last_checked_at": "2026-10-19T17:09:57.503610+09:00",
+  "sources": [
+    {
+      "url": "https://jcation.com/blog/kyushuouen/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "九州ふっこう応援割",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 8070,
+      "content_hash": "de50d5eb683756a6ea17381ef7455c96cdbbfca610ed5ed2cbe892b02a7792fa"
+    }
+  ],
+  "queued_hash": "78305ace16e05c1832214df9d8217dff62c4fed4e007a68de2008da1b0aaf224",
+  "queued_candidate_id": "jcation-78305ace16e05c18",
+  "queued_at": "2026-10-19T17:09:57.504018+09:00",
+  "last_audit_status": "pending"
+}

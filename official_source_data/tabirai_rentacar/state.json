@@ -1,0 +1,25 @@
+{
+  "provider_id": "tabirai_rentacar",
+  "observed_hash": "c8f62966319c5b9641033a18fd0b0e110fc87bebda3a95b184ceb7e2f118f9a0",
+  "last_checked_at": "2026-10-19T17:09:59.100145+09:00",
+  "sources": [
+    {
+      "url": "https://www.tabirai.net/car/special/campaign-plan/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "キャンペーンプラン（秋たび応援フェア・早割）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 4348,
+      "content_hash": "707d6bf4a529c3e243f41781d99308b91039242abe52263669effba70f9c2870"
+    }
+  ],
+  "queued_hash": "c8f62966319c5b9641033a18fd0b0e110fc87bebda3a95b184ceb7e2f118f9a0",
+  "queued_candidate_id": "tabirai_rentacar-c8f62966319c5b96",
+  "queued_at": "2026-10-19T17:09:59.100533+09:00",
+  "last_audit_status": "pending"
+}
