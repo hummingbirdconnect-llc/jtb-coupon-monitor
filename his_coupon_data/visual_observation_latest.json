@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-10-19T05:27:04+09:00",
+  "official_checked_at": "2026-10-19T16:23:54+09:00",
   "official_area": "全11地域版",
   "coverage_status": "complete",
   "region_count": 11,
@@ -39,12 +39,12 @@
       "official_area": "東北版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=3",
       "tab_counts": {
-        "海外旅行": 20,
+        "海外旅行": 24,
         "国内旅行": 28
       },
-      "visible_count": 48,
+      "visible_count": 52,
       "total_dom_count": 59,
-      "hidden_dom_count": 11
+      "hidden_dom_count": 7
     },
     {
       "code": "koshinetsu",
@@ -52,12 +52,12 @@
       "official_area": "甲信越（新潟）版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=4",
       "tab_counts": {
-        "海外旅行": 20,
+        "海外旅行": 24,
         "国内旅行": 28
       },
-      "visible_count": 48,
+      "visible_count": 52,
       "total_dom_count": 59,
-      "hidden_dom_count": 11
+      "hidden_dom_count": 7
     },
     {
       "code": "chubu",
@@ -117,12 +117,12 @@
       "official_area": "四国版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=11",
       "tab_counts": {
-        "海外旅行": 20,
+        "海外旅行": 24,
         "国内旅行": 29
       },
-      "visible_count": 49,
+      "visible_count": 53,
       "total_dom_count": 59,
-      "hidden_dom_count": 10
+      "hidden_dom_count": 6
     },
     {
       "code": "kyushu",
@@ -130,12 +130,12 @@
       "official_area": "九州版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=8",
       "tab_counts": {
-        "海外旅行": 8,
-        "国内旅行": 30
+        "海外旅行": 5,
+        "国内旅行": 29
       },
-      "visible_count": 38,
+      "visible_count": 34,
       "total_dom_count": 59,
-      "hidden_dom_count": 21
+      "hidden_dom_count": 25
     },
     {
       "code": "okinawa",
@@ -152,13 +152,13 @@
     }
   ],
   "tab_counts": {
-    "海外旅行": 96,
-    "国内旅行": 314
+    "海外旅行": 105,
+    "国内旅行": 313
   },
   "visible_count": 101,
-  "regional_visible_count": 410,
+  "regional_visible_count": 418,
   "total_dom_count": 649,
-  "hidden_dom_count": 239,
+  "hidden_dom_count": 231,
   "capture_count": 101,
   "capture_method": "deduplicated_individual_element_screenshot",
   "derived_image_count": 101,

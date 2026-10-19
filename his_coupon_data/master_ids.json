@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T05:31:16.071715+09:00",
+  "last_updated": "2026-10-19T16:28:21.833054+09:00",
   "ids": {
     "ee7c96daf114": {
       "category": "海外ツアー・海外添乗員同行ツアー",
@@ -1162,6 +1162,66 @@
         "四国版"
       ]
     },
+    "c6edf54d0da8-799fbf": {
+      "category": "【福島発着】パスポート取得応援キャンペーン",
+      "title": "パスポート取得（更新）の方はお１人様あたり最大6,000円支援",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "d46507631b15-92b74e": {
+      "category": "【福島発着】リピーター割引",
+      "title": "過去に対象ツアーをお申し込みされた方はお１人様あたり10.000円引き",
+      "discount": "000円引き",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "d11e5c07e668-84742c": {
+      "category": "【福島発着】早期申込割引",
+      "title": "早めのお申し込みでお１人様あたり最大10,000円引き",
+      "discount": "最大10,000円引き",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
+    "b084e6c49879-9f7c5f": {
+      "category": "【福島発着】U29若者応援割引",
+      "title": "29歳以下の方が対象！台湾ツアーをお申し込みでお１人様あたり10,000円引き",
+      "discount": "10,000円引き",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
+      ]
+    },
     "85e63be9d23d-654665": {
       "category": "【新潟発着】海外旅行",
       "title": "パスポート取得（更新）の方はお１人様あたり新潟空港共通利用券3,200円分プレゼント",
@@ -1565,42 +1625,9 @@
         "四国版"
       ]
     },
-    "94dd66ec448d-7bef90": {
-      "category": "九州発 海外ツアー",
-      "title": "12月出発までがお得！12月出発までの海外ツアー申し込みで最大10,000円引き",
-      "discount": "最大10,000円引き",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
-    "6e6beee59060-cf7532": {
-      "category": "九州発 AirZ(海外航空券+ホテル)",
-      "title": "オンライン予約限定！旅トクAirZキャンペーン1グループ5,000円引き",
-      "discount": "5,000円引き",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
     "07c5f73161f8-6cbe2b": {
       "category": "佐賀空港利用 海外旅行",
       "title": "九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大4,000円助成",
-      "discount": "",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
-    "d266989e495d-bee0d4": {
-      "category": "佐賀空港利用 海外旅行",
-      "title": "若者（29歳以下）限定！九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大13,000円助成",
       "discount": "",
       "region_codes": [
         "kyushu"
@@ -1657,17 +1684,6 @@
       "category": "国内旅行",
       "title": "学生一人旅応援！1名様につき1,000円引き",
       "discount": "1,000円引き",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
-    "e1f684bd4419-49343f": {
-      "category": "九州発 国内ツアー",
-      "title": "年末年始出発割引クーポンお1人様5,000円引き",
-      "discount": "5,000円引き",
       "region_codes": [
         "kyushu"
       ],

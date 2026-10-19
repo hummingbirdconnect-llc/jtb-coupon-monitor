@@ -1,0 +1,16 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "check_type": "official_monitor",
+  "status": "success",
+  "started_at": "2026-10-19T16:38:41.013502+09:00",
+  "completed_at": "2026-10-19T16:39:11.085006+09:00",
+  "official_fetched_at": "2026-10-19T16:39:11.085006+09:00",
+  "data_date": "2026-10-19",
+  "freshness_status": "fresh",
+  "coupon_count": 7,
+  "latest_file": "coupons_2026-10-19.json",
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "error": ""
+}
