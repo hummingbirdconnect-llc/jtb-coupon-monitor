@@ -562,3 +562,107 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+def test_one_provider_error_keeps_the_run_green() -> None:
+    """1社の取得失敗では終了コード1にしない（他社の保存とダッシュボード更新を続ける）"""
+    summaries = [
+        {"provider_id": "his", "provider_label": "HIS", "status": "success"},
+        {"provider_id": "kkday", "provider_label": "KKday", "status": "error", "error": "HTTP 403"},
+        {"provider_id": "jtb", "provider_label": "JTB", "status": "success"},
+    ]
+    assert runner.report_run_outcome(summaries, fail_on_error=False) is False
+    assert runner.report_run_outcome(summaries, fail_on_error=True) is True
+
+
+def test_all_providers_error_still_fails_the_run() -> None:
+    """全社失敗のときだけは、後続の生成に意味がないので失敗で止める"""
+    summaries = [
+        {"provider_id": "his", "provider_label": "HIS", "status": "error", "error": "timeout"},
+        {"provider_id": "jtb", "provider_label": "JTB", "status": "error", "error": "timeout"},
+    ]
+    assert runner.report_run_outcome(summaries, fail_on_error=False) is True
+
+
+def test_needs_review_is_not_counted_as_failure() -> None:
+    """大量消失の要確認は失敗にしない"""
+    summaries = [
+        {"provider_id": "rurubu_travel", "provider_label": "るるぶトラベル", "status": "needs_review"},
+        {"provider_id": "jtb", "provider_label": "JTB", "status": "success"},
+    ]
+    assert runner.report_run_outcome(summaries, fail_on_error=True) is False
+
+
+def test_mass_disappearance_exit_code_becomes_needs_review() -> None:
+    """スクレイパーが要確認コードで終わったら needs_review として記録する"""
+    import subprocess
+
+    provider = {
+        "id": "rurubu_travel",
+        "label": "るるぶトラベル",
+        "data_dir": "rurubu_travel_coupon_data",
+    }
+    error = subprocess.CalledProcessError(runner.NEEDS_REVIEW_EXIT_CODE, ["python"])
+    with tempfile.TemporaryDirectory() as tmp:
+        with patch.object(runner, "STATUS_ROOT", Path(tmp)), patch.object(
+            runner.subprocess, "run", side_effect=error
+        ), patch.object(runner, "load_latest_coupons", return_value=([{"id": "A"}] * 60, "coupons_2026-10-19.json")):
+            payload = runner.run_real_monitor(provider)
+
+    assert payload["status"] == "needs_review"
+    assert payload["needs_review"] is True
+    assert payload["official_fetched_at"] == ""
+    # 前回データの件数がそのまま残る
+    assert payload["coupon_count"] == 60
+    assert payload["data_date"] == "2026-10-19"
+
+
+def test_real_monitor_failure_is_still_an_error() -> None:
+    """要確認以外の異常終了は今までどおり失敗として記録する"""
+    import subprocess
+
+    provider = {"id": "jtb", "label": "JTB", "data_dir": "jtb_coupon_data"}
+    error = subprocess.CalledProcessError(1, ["python"])
+    with tempfile.TemporaryDirectory() as tmp:
+        with patch.object(runner, "STATUS_ROOT", Path(tmp)), patch.object(
+            runner.subprocess, "run", side_effect=error
+        ), patch.object(runner, "load_latest_coupons", return_value=([], "")):
+            payload = runner.run_real_monitor(provider)
+
+    assert payload["status"] == "error"
+    assert payload["error"] == "exit_code=1"
+
+
+def test_unexpected_exception_is_recorded_per_provider() -> None:
+    """1社で想定外の例外が出ても、その会社だけ失敗にして次の会社へ進む"""
+    provider = {"id": "sample", "label": "Sample", "data_dir": "official_coupon_data/sample"}
+    with tempfile.TemporaryDirectory() as tmp:
+        with patch.object(runner, "STATUS_ROOT", Path(tmp)), patch.object(
+            runner, "run_provider", side_effect=RuntimeError("boom")
+        ):
+            payload = runner.run_provider_safely(
+                provider, timeout=1, max_urls=0, deep=False, explicit=False
+            )
+        saved = json.loads((Path(tmp) / "sample" / "latest.json").read_text(encoding="utf-8"))
+
+    assert payload["status"] == "error"
+    assert "RuntimeError: boom" in payload["error"]
+    assert saved["status"] == "error"
+
+
+def test_run_summary_lists_failed_and_needs_review_providers() -> None:
+    """実行サマリーに失敗・要確認の会社IDを残す（ワークフローの表示に使う）"""
+    summaries = [
+        {"provider_id": "his", "status": "success"},
+        {"provider_id": "kkday", "status": "error", "error": "HTTP 403"},
+        {"provider_id": "rurubu_travel", "status": "needs_review"},
+    ]
+    with tempfile.TemporaryDirectory() as tmp:
+        with patch.object(runner, "STATUS_ROOT", Path(tmp)):
+            latest = runner.write_run_summary("all", summaries)
+        payload = json.loads(latest.read_text(encoding="utf-8"))
+
+    assert payload["error_count"] == 1
+    assert payload["error_provider_ids"] == ["kkday"]
+    assert payload["needs_review_count"] == 1
+    assert payload["needs_review_provider_ids"] == ["rurubu_travel"]

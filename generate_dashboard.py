@@ -1328,6 +1328,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .check-baseline {{ background: #eaf3ff; color: #0f5caa; }}
 .check-warning {{ background: #fff5d6; color: #7a5200; }}
 .check-audit_pending,.check-baseline_pending,.check-audit_held {{ background: #fff5d6; color: #7a5200; }}
+.check-needs_review {{ background: #fff5d6; color: #7a5200; }}
 .check-error {{ background: #fdecef; color: #a52834; }}
 .check-no_data,.check-none {{ background: #eef2f7; color: #5c6978; }}
 .toolbar {{ display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }}
@@ -1559,6 +1560,7 @@ function checkStatusLabel(value) {{
     audit_held: 'ユーザー確認待ち',
     snapshot_checked: 'URL確認済み',
     warning: '要確認',
+    needs_review: '要確認（取得数が急減）',
     error: '失敗',
     no_data: 'データなし',
   }};

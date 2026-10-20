@@ -38,6 +38,10 @@ MASS_DISAPPEARANCE_THRESHOLD = 0.50  # 50%
 # 年なし日付の補完を有効にするか
 ENABLE_YEARLESS_DATE_FIX = True
 
+# 大量消失を検出したときにスクレイパーが返す終了コード。
+# 失敗（1）とは区別し、前回データを残したまま「要確認」として扱う。
+NEEDS_REVIEW_EXIT_CODE = 20
+
 
 # ============================================================
 # 1. 重複検出
@@ -227,9 +231,42 @@ def check_data_integrity(coupons, service_name=""):
 # ============================================================
 # 3. サニティチェック（前回比の異常検知）
 # ============================================================
+def sanity_metrics(current_coupons, master_ids):
+    """前回比の件数変化を数値で返す。警告文の生成は check_sanity 側が行う。
+
+    `master_ids` には「前回のスナップショット」を渡す。累積の台帳（過去に一度でも
+    見たIDの全部）を渡すと、とっくに終了したクーポンまで「消失」に数えてしまう。
+    """
+    prev_ids = set((master_ids or {}).get("ids", {}).keys())
+    curr_ids = set(c["id"] for c in current_coupons)
+
+    prev_count = len(prev_ids)
+    curr_count = len(curr_ids)
+    gone_count = len(prev_ids - curr_ids)
+    new_count = len(curr_ids - prev_ids)
+    gone_ratio = gone_count / prev_count if prev_count else 0.0
+    new_ratio = new_count / prev_count if prev_count else 0.0
+
+    all_gone = prev_count > 0 and curr_count == 0
+    return {
+        "previous_count": prev_count,
+        "current_count": curr_count,
+        "disappeared_count": gone_count,
+        "disappeared_ratio": gone_ratio,
+        "new_count": new_count,
+        "new_ratio": new_ratio,
+        "all_disappeared": all_gone,
+        "mass_disappearance": (
+            all_gone
+            or (prev_count >= 3 and gone_ratio > MASS_DISAPPEARANCE_THRESHOLD)
+        ),
+        "mass_new": prev_count >= 3 and new_ratio > MASS_DISAPPEARANCE_THRESHOLD,
+    }
+
+
 def check_sanity(current_coupons, master_ids, service_name=""):
     """
-    前回のマスターIDと比較して異常がないかチェック。
+    前回のスナップショットと比較して異常がないかチェック。
 
     検出パターン:
       - 前回比で50%以上のクーポンが消失 → DOM取得失敗の可能性
@@ -238,39 +275,80 @@ def check_sanity(current_coupons, master_ids, service_name=""):
     Returns: (is_ok, warnings)
     """
     warnings = []
-    prev_ids = set(master_ids.get("ids", {}).keys())
-    curr_ids = set(c["id"] for c in current_coupons)
+    metrics = sanity_metrics(current_coupons, master_ids)
+    prev_count = metrics["previous_count"]
+    gone_count = metrics["disappeared_count"]
 
-    prev_count = len(prev_ids)
-    curr_count = len(curr_ids)
-    gone_count = len(prev_ids - curr_ids)
-
-    if prev_count > 0 and curr_count == 0:
+    if metrics["all_disappeared"]:
         warnings.append(
             f"[{service_name}] 全クーポンが消失しました（前回{prev_count}件→今回0件）。"
             f"サイト構造変更またはアクセスブロックの可能性があります。"
         )
         return False, warnings
 
-    if prev_count >= 3 and gone_count / prev_count > MASS_DISAPPEARANCE_THRESHOLD:
+    if metrics["mass_disappearance"]:
         warnings.append(
             f"[{service_name}] 大量消失を検出: 前回{prev_count}件中{gone_count}件"
-            f"（{gone_count/prev_count:.0%}）が消失。"
+            f"（{metrics['disappeared_ratio']:.0%}）が消失。"
             f"DOM取得の不完全またはサイト構造変更の可能性があります。"
         )
         # 警告のみで続行（is_ok=Trueにしておく。止めるかは呼び出し側の判断）
         return True, warnings
 
     # 新規が異常に多い場合も警告（ID生成ロジックのバグの可能性）
-    new_count = len(curr_ids - prev_ids)
-    if prev_count >= 3 and new_count / max(prev_count, 1) > MASS_DISAPPEARANCE_THRESHOLD:
+    if metrics["mass_new"]:
         warnings.append(
-            f"[{service_name}] 大量新規を検出: {new_count}件が新規"
+            f"[{service_name}] 大量新規を検出: {metrics['new_count']}件が新規"
             f"（前回{prev_count}件）。"
             f"ID生成ロジックの変更またはサイト構造変更の可能性があります。"
         )
 
     return True, warnings
+
+
+def load_previous_snapshot_master(data_dir, exclude_date=None):
+    """直近の日次スナップショットを {"ids": {...}} の形で返す。
+
+    サニティチェックと差分ログの基準を「前回取得した一覧」に揃えるための関数。
+    累積台帳（master_ids.json）を基準にすると、過去に一度でも載ったクーポンが
+    すべて「消失」扱いになるため、こちらを使う。
+
+    Args:
+        data_dir: 会社ごとのデータディレクトリ
+        exclude_date: 除外する日付（通常は今日。再実行時に自分自身を基準にしないため）
+
+    Returns:
+        {"ids": {...}, "source_file": str} / 前回ファイルが無ければ None
+    """
+    path = Path(data_dir)
+    if not path.exists():
+        return None
+    candidates = []
+    for snapshot in path.glob("coupons_*.json"):
+        snapshot_date = snapshot.stem.split("_", 1)[-1][:10]
+        if exclude_date and snapshot_date == exclude_date:
+            continue
+        candidates.append((snapshot_date, snapshot))
+    if not candidates:
+        return None
+    _, latest = max(candidates)
+    try:
+        coupons = json.loads(latest.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if not isinstance(coupons, list):
+        return None
+    ids = {
+        str(coupon.get("id")): {
+            "title": coupon.get("title", ""),
+            "category": coupon.get("category", ""),
+            "discount": coupon.get("discount", ""),
+            "stock_status": coupon.get("stock_status", ""),
+        }
+        for coupon in coupons
+        if isinstance(coupon, dict) and coupon.get("id")
+    }
+    return {"ids": ids, "source_file": latest.name}
 
 
 # ============================================================
@@ -424,7 +502,7 @@ def validate_coupons(coupons, master_ids=None, service_name="UNKNOWN"):
 
     Args:
         coupons: スクレイピング結果のクーポンリスト
-        master_ids: 前回のマスターIDデータ（サニティチェック用、Noneならスキップ）
+        master_ids: 前回のスナップショット（サニティチェック用、Noneならスキップ）
         service_name: サービス名（"JTB" / "KNT" / "HIS"）
 
     Returns:
@@ -436,6 +514,7 @@ def validate_coupons(coupons, master_ids=None, service_name="UNKNOWN"):
             "duplicates_removed": int,
             "warnings": list[str],
             "is_healthy": bool,
+            "sanity": dict,   # 前回比の件数変化（master_ids を渡したときだけ）
         }
     """
     all_warnings = []
@@ -458,7 +537,9 @@ def validate_coupons(coupons, master_ids=None, service_name="UNKNOWN"):
 
     # 4. サニティチェック
     is_healthy = True
+    sanity = {}
     if master_ids is not None:
+        sanity = sanity_metrics(coupons, master_ids)
         is_ok, sanity_warnings = check_sanity(coupons, master_ids, service_name)
         all_warnings.extend(sanity_warnings)
         if not is_ok:
@@ -484,6 +565,7 @@ def validate_coupons(coupons, master_ids=None, service_name="UNKNOWN"):
         "duplicates_removed": duplicates_removed,
         "warnings": all_warnings,
         "is_healthy": is_healthy,
+        "sanity": sanity,
     }
 
     return coupons, report

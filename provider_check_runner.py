@@ -15,6 +15,7 @@ from urllib.parse import urlparse
 
 import requests
 
+from coupon_validator import NEEDS_REVIEW_EXIT_CODE
 from official_deal_monitor import run_official_deal_monitor
 from his_regions import (
     ALL_REGION_CODES,
@@ -207,8 +208,14 @@ def run_real_monitor(provider: dict) -> dict:
     try:
         subprocess.run(command, cwd=ROOT, check=True)
     except subprocess.CalledProcessError as exc:
-        status = "error"
-        error = f"exit_code={exc.returncode}"
+        if exc.returncode == NEEDS_REVIEW_EXIT_CODE:
+            # 取得件数が前回より大きく減ったケース。スクレイパー側が前回データを
+            # 残しているので、失敗ではなく「要確認」として扱う。
+            status = "needs_review"
+            error = "mass_disappearance_detected"
+        else:
+            status = "error"
+            error = f"exit_code={exc.returncode}"
     finally:
         completed = now_jst()
         print("::endgroup::")
@@ -223,6 +230,7 @@ def run_real_monitor(provider: dict) -> dict:
         "started_at": started.isoformat(),
         "completed_at": completed.isoformat(),
         "official_fetched_at": completed.isoformat() if status == "success" else "",
+        "needs_review": status == "needs_review",
         "data_date": data_date,
         "freshness_status": freshness_status(
             data_date, int(provider.get("freshness_sla_hours", 30)), official=True
@@ -440,11 +448,20 @@ def write_run_summary(scope: str, summaries: list[dict]) -> Path:
         for item in summaries
         if item.get("audit_candidate_id") and item.get("codex_audit_required")
     ]
+    error_provider_ids = [
+        item.get("provider_id") for item in summaries if item.get("status") == "error"
+    ]
+    needs_review_provider_ids = [
+        item.get("provider_id") for item in summaries if item.get("status") == "needs_review"
+    ]
     payload = {
         "completed_at": now_jst().isoformat(),
         "scope": scope,
         "provider_count": len(summaries),
-        "error_count": sum(item.get("status") == "error" for item in summaries),
+        "error_count": len(error_provider_ids),
+        "error_provider_ids": error_provider_ids,
+        "needs_review_count": len(needs_review_provider_ids),
+        "needs_review_provider_ids": needs_review_provider_ids,
         "codex_audit_candidate_count": len(audit_candidates),
         "codex_audit_candidates": audit_candidates,
         "wp_review_eligible_provider_ids": [],
@@ -473,17 +490,77 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         action="store_true",
         help="指定時だけの会社でも公式ページを深掘り取得する（--scope all と併用可）",
     )
+    parser.add_argument(
+        "--fail-on-error",
+        action="store_true",
+        help="1社でも取得に失敗したら終了コード1で終わる（既定は失敗を記録して続行）",
+    )
     return parser.parse_args(argv)
 
 
+def run_provider_safely(
+    provider: dict, *, timeout: int, max_urls: int, deep: bool, explicit: bool
+) -> dict:
+    """1社の取得で例外が出ても、その会社だけ失敗扱いにして他社へ進む。"""
+    try:
+        return run_provider(
+            provider, timeout=timeout, max_urls=max_urls, deep=deep, explicit=explicit
+        )
+    except Exception as exc:  # noqa: BLE001 - 1社の想定外エラーで全体を止めない
+        payload = {
+            "provider_id": provider["id"],
+            "provider_label": provider.get("label", provider["id"]),
+            "check_type": "unexpected_exception",
+            "status": "error",
+            "started_at": now_jst().isoformat(),
+            "completed_at": now_jst().isoformat(),
+            "official_fetched_at": "",
+            "coupon_count": len(load_latest_coupons(provider)[0]),
+            "error": f"{exc.__class__.__name__}: {exc}"[:300],
+        }
+        write_status(provider, payload)
+        return payload
+
+
+def report_run_outcome(summaries: list[dict], *, fail_on_error: bool) -> bool:
+    """実行結果を注記付きで出力し、終了コード1にすべきかを返す。"""
+    errors = [item for item in summaries if item.get("status") == "error"]
+    reviews = [item for item in summaries if item.get("status") == "needs_review"]
+    for item in reviews:
+        print(
+            f"::warning::{item.get('provider_label')}: 取得件数が前回より大きく減ったため"
+            f"要確認にしました（前回データは残しています）"
+        )
+    for item in errors:
+        print(
+            f"::warning::{item.get('provider_label')}: 取得に失敗しました"
+            f"（{item.get('error', '')[:120]}）。他社の保存とダッシュボード更新は続けます"
+        )
+    print(
+        f"結果: {len(summaries)}社中 失敗{len(errors)}社 / 要確認{len(reviews)}社"
+        + (f"（失敗: {', '.join(item['provider_id'] for item in errors)}）" if errors else "")
+    )
+    if not errors:
+        return False
+    if fail_on_error:
+        return True
+    # 全社が失敗したときだけは、後続の生成処理に意味がないので失敗で止める。
+    return len(errors) == len(summaries)
+
+
 def main(argv: list[str] | None = None) -> None:
+    # 子プロセスの出力と順番が揃うように行単位で書き出す（ログで原因を追えるようにする）
+    try:
+        sys.stdout.reconfigure(line_buffering=True)
+    except AttributeError:
+        pass
     args = parse_args(argv or sys.argv[1:])
     registry = load_registry()
     providers = select_providers(registry, args.scope, args.provider_id)
     print(f"selected providers: {', '.join(provider['id'] for provider in providers)}")
     explicit = bool(args.provider_id and args.provider_id != "all")
     summaries = [
-        run_provider(
+        run_provider_safely(
             provider,
             timeout=args.timeout,
             max_urls=args.max_urls,
@@ -493,7 +570,7 @@ def main(argv: list[str] | None = None) -> None:
         for provider in providers
     ]
     write_run_summary(args.scope, summaries)
-    if any(item.get("status") == "error" for item in summaries):
+    if report_run_outcome(summaries, fail_on_error=args.fail_on_error):
         raise SystemExit(1)
 
 

@@ -26,7 +26,11 @@ from typing import Any
 import requests
 from bs4 import BeautifulSoup
 
-from coupon_validator import validate_coupons
+from coupon_validator import (
+    NEEDS_REVIEW_EXIT_CODE,
+    load_previous_snapshot_master,
+    validate_coupons,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -582,10 +586,10 @@ def fetch_all_coupons(detail_limit: int | None = None, include_static: bool = Tr
 
 def cleanup_old_files() -> None:
     cutoff = now_jst() - timedelta(days=DATA_RETENTION_DAYS)
-    for pattern in ("coupons_*.json", "report_*.md"):
+    for pattern in ("coupons_*.json", "needs_review_coupons_*.json", "report_*.md"):
         for path in DATA_DIR.glob(pattern):
             try:
-                date_part = path.stem.split("_", 1)[1]
+                date_part = path.stem.rsplit("_", 1)[-1]
                 file_date = datetime.strptime(date_part[:10], "%Y-%m-%d").replace(tzinfo=JST)
             except (IndexError, ValueError):
                 continue
@@ -620,8 +624,12 @@ def write_report(coupons: list[dict[str, Any]], validation_report: dict[str, Any
     return path
 
 
-def save_coupons(coupons: list[dict[str, Any]], dry_run: bool = False) -> Path:
-    prefix = "dry_run_coupons" if dry_run else "coupons"
+def save_coupons(
+    coupons: list[dict[str, Any]], dry_run: bool = False, needs_review: bool = False
+) -> Path:
+    prefix = "needs_review_coupons" if needs_review else "coupons"
+    if dry_run:
+        prefix = f"dry_run_{prefix}"
     path = DATA_DIR / f"{prefix}_{today_str()}.json"
     path.write_text(json.dumps(coupons, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return path
@@ -630,10 +638,26 @@ def save_coupons(coupons: list[dict[str, Any]], dry_run: bool = False) -> Path:
 def run(dry_run: bool = False, init: bool = False, detail_limit: int | None = None, include_static: bool = True) -> list[dict[str, Any]]:
     setup_dirs()
     master = load_master_ids()
+    # 消失判定と差分ログの基準は「前回取得した一覧」。累積台帳を基準にすると、
+    # 何か月も前に終わったクーポンまで今日消えたことになってしまう。
+    baseline = None if init else load_previous_snapshot_master(DATA_DIR, exclude_date=today_str())
     coupons = fetch_all_coupons(detail_limit=detail_limit, include_static=include_static)
-    coupons, validation_report = validate_coupons(coupons, master_ids=master, service_name=PROVIDER_LABEL)
+    coupons, validation_report = validate_coupons(
+        coupons, master_ids=baseline, service_name=PROVIDER_LABEL
+    )
     if not validation_report.get("is_healthy", True):
         raise SystemExit("validation failed: unhealthy coupon snapshot")
+
+    sanity = validation_report.get("sanity") or {}
+    if sanity.get("mass_disappearance"):
+        review_path = save_coupons(coupons, dry_run=dry_run, needs_review=True)
+        print(f"🔍 要確認として保存（前回データはそのまま残します）: {review_path}")
+        print(
+            f"::warning::[{PROVIDER_LABEL}] 取得件数が前回より大きく減りました"
+            f"（前回{sanity.get('previous_count')}件→今回{sanity.get('current_count')}件）。"
+            f"今回の結果は採用せず、前回データを残して要確認にしました。"
+        )
+        raise SystemExit(NEEDS_REVIEW_EXIT_CODE)
 
     path = save_coupons(coupons, dry_run=dry_run)
     report_path = write_report(coupons, validation_report, dry_run=dry_run)
@@ -641,7 +665,7 @@ def run(dry_run: bool = False, init: bool = False, detail_limit: int | None = No
     print(f"📝 レポート: {report_path}")
 
     if not dry_run:
-        changes = [] if init else generate_change_log(coupons, master)
+        changes = [] if init or baseline is None else generate_change_log(coupons, baseline)
         append_change_log(changes)
         save_master_ids(coupons, master)
         cleanup_old_files()

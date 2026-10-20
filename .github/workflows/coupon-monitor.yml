@@ -218,6 +218,26 @@ jobs:
             fi
             echo "- AI audit: Codex scheduled task (OpenAI API is not used by Actions)"
           } >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY" || true
+          import json
+          from pathlib import Path
+
+          path = Path("provider_check_data/run-latest.json")
+          if not path.exists():
+              print("")
+              print("- 会社別チェックの記録がありません（実行前に失敗した可能性）")
+              raise SystemExit(0)
+          run = json.loads(path.read_text(encoding="utf-8"))
+          labels = {item.get("provider_id"): item.get("provider_label", "") for item in run.get("summaries", [])}
+          errors = run.get("error_provider_ids") or []
+          reviews = run.get("needs_review_provider_ids") or []
+          print("")
+          print(f"- 会社別チェック: {run.get('provider_count', 0)}社 / 失敗 {len(errors)}社 / 要確認 {len(reviews)}社")
+          for provider_id in errors:
+              print(f"  - ❌ 取得失敗: {labels.get(provider_id, provider_id)} ({provider_id})")
+          for provider_id in reviews:
+              print(f"  - 🔍 要確認（取得数が急減・前回データを保持）: {labels.get(provider_id, provider_id)} ({provider_id})")
+          PY
 
       - name: コミット＆プッシュ
         run: |
