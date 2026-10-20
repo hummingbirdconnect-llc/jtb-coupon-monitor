@@ -39,7 +39,12 @@
       "classification": "A",
       "coverage_status": "auto_daily",
       "data_dir": "jtb_coupon_data",
-      "note": "国内・海外の既存日次監視データあり。"
+      "change_rules": {
+        "count_status_toggle_as_change": false,
+        "new_requires_unseen_days": 7,
+        "gone_requires_unlisted": true
+      },
+      "note": "国内・海外の既存日次監視データあり。公式ページに載り続けている間の配布終了・再開は主な変化に数えず、在庫の出入りだけに出す。"
     },
     {
       "id": "knt",
