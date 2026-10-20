@@ -14,9 +14,9 @@
 - 新しく出たものの印は「初登場」と「前にもあったものが再登場」の2種類。消えたものが後で戻った場合は「その後に再登場」です
 - 30日で3回以上出入りしたクーポン（夜だけ出るHISのクーポンなど）には「30日で出入り N 回」の印
 - 一覧に残ったまま枚数が尽きたもの・補充されたもの（配布終了・再開）の置き場所は、下の「在庫の出入り」です
-- 上部の印は、常時監視6社の情報がいつ時点かを示すもの。じゃらん・楽天のように読み取りが止まっている会社は黄色になります
+- 上部の印は、定期で取得する11社の情報がいつ時点かを示すもの。じゃらん・楽天のように読み取りが止まっている会社は黄色になります
 - 「キャンペーン・セール」タブの中身は、クーポン以外のセール・キャンペーン・ポイント・会員特典です。公式取得分には「公式で確認済み」、Grokの候補には「未確認」の印が付きます。期間がすべて過ぎたものは除外し、14日より古い情報には印を付けています
-- 会社タブに並ぶのは常時6社だけで、残りは「その他の会社」から選ぶ形です。表を作るのは開いたタブの分だけ（全タブの表を最初に作ると、読み込みエラーが出ていました）
+- 会社タブに並ぶのは定期で取得する11社だけで、残りは「その他の会社」から選ぶ形です。表を作るのは開いたタブの分だけ（全タブの表を最初に作ると、読み込みエラーが出ていました）
 
 ### JTB国内の配布状況
 
@@ -40,14 +40,15 @@
 
 ## 2026-07 OTA監視拡張
 
-### 実行頻度（2026-09-18 改訂）
+### 実行頻度（2026-10-20 改訂）
 
-- 毎日6:00 JST: **常時監視の6社**（HIS、JTB、近畿日本ツーリスト、JALパック、じゃらん、楽天トラベル）
-- 毎日11:05 / 19:05 JST: HISだけを追加確認。公式画面で表示中のカードを再取得し、証拠画像とダッシュボードを更新
-- それ以外の38社: 定期実行しない。**指定したときだけ**深掘りする（次項）
-- 正本: `config/provider_registry.json` の `schedule`（`daily_provider_ids` が常時6社。載っていない会社は `on_demand`）
+- GitHub Actionsの定期実行（cron）は廃止しました。`coupon-monitor.yml` は手動実行（`workflow_dispatch`）だけです
+- 平日 7:00 / 15:45 JST: チーフbotがGitHub Actionsを手動実行し、**定期で取得する9社**（HIS、JTB、近畿日本ツーリスト、JALパック、じゃらん、楽天トラベル、るるぶトラベル、東武トップツアーズ、アソビュー）をまとめて取得します。会社を選ばず `provider_id: all` のまま実行し、範囲は `run_scope: due`
+- 毎日 6:45 / 15:30 JST: 日本のMac（launchd `com.hbconnect.provider-fetch-jp`）が**Booking.com・一休**を取得します。この2社は海外IPのGitHub Actionsからは拒否されるため、Actionsのまとめ実行からは外しています（`fetch_location: jp_mac`）
+- それ以外の33社: 定期実行しない。**指定したときだけ**深掘りする（次項）
+- 正本: `config/provider_registry.json` の `schedule`（`daily_provider_ids` が定期の9社、`jp_daily_provider_ids` が日本Macの2社。どちらにも載っていない会社は `on_demand`）
 
-### 指定時の深掘り（常時6社以外）
+### 指定時の深掘り（定期で取得する会社以外）
 
 深掘りとは、会社ごとに登録した公式のクーポン／キャンペーンページを取得し、前回から内容が変わっていればCodex監査候補（`codex_audit_queue/<会社ID>/`）を作ることです。クーポンだけでなくセール・ポイント・会員特典もキャンペーン種別として拾います。
 
@@ -60,7 +61,7 @@ python provider_check_runner.py --provider-id relux --deep && python generate_da
 
 - `--provider-id` を直指定すれば `--deep` は省略できます。`--scope all` で全社をまとめて回すときだけ `--deep` が必要です（付けないと旧URLの生存確認だけ）
 - 各社の `official_domains`（公式ドメイン）が空だとCodex監査の結果が全件はじかれるため、必ず登録する
-- 深掘り対象として公式ページを登録済みの会社: Relux、アソビュー、アクティビティジャパン、クラブツーリズム、JR東海ツアーズ、スカイパックツアーズ、東武トップツアーズ、読売旅行、トクー、Booking.com（`coverage_status: official_on_demand`）。ゆこゆこ・るるぶは既存の自動取得をそのまま指定時に動かします（`auto_on_demand`）
+- 深掘り対象として公式ページを登録済みの会社: Relux、アクティビティジャパン、クラブツーリズム、JR東海ツアーズ、スカイパックツアーズ、読売旅行、トクー（`coverage_status: official_on_demand`）。ゆこゆこは既存の自動取得をそのまま指定時に動かします（`auto_on_demand`）。アソビュー・東武トップツアーズ・るるぶトラベル・Booking.comは2026-10-20に定期取得へ戻しました
 - 深掘り結果は、Codex監査（`codex_audit_runner.py apply`）を通すと `official_coupon_data/<会社ID>/` に入り、ダッシュボードへ反映されます。監査前は記事由来の旧データを「深掘り前の旧データ」として表示します
 - 公式ページの登録を増やす・変える: `config/provider_registry.json` の該当会社の `official_sources`（URL・取得方法・目的）を編集する
 
@@ -68,8 +69,8 @@ python provider_check_runner.py --provider-id relux --deep && python generate_da
 
 ダッシュボードの「未確認の候補（外部情報）」欄は、Grokがweb検索（Xの投稿・公式サイト・ニュース）で見つけたクーポン・セール・キャンペーンの**未確認情報**です。公式ページの根拠がないため、Codex監査にも記事にも自動では流しません。
 
-- 頻度: 常時6社は毎朝、指定時の会社（公式ページ登録済み）は月曜だけ。国内MacのCodex自動化「クーポン候補集め（Grok）毎朝」（07:15、`~/.codex/automations/coupon-discovery-daily/`）が `vault_box/tools/coupon-discovery-daily.sh` を実行し、`discovery_hints/` とダッシュボードをGitHubへ送ります。GitHub Actionsでは実行しません（Grokの個人契約が必要）
-- 手元で試す: `python3 grok_deal_discovery.py --provider-id relux`（`--dry-run` で指示文だけ表示）。1社あたり4分前後かかる（web検索と閲覧を最大40往復）。6社で25分、月曜は19社で80分ほど
+- 頻度: 定期で取得する11社は毎朝、指定時の会社（公式ページ登録済み）は月曜だけ。国内MacのCodex自動化「クーポン候補集め（Grok）毎朝」（07:15、`~/.codex/automations/coupon-discovery-daily/`）が `vault_box/tools/coupon-discovery-daily.sh` を実行し、`discovery_hints/` とダッシュボードをGitHubへ送ります。GitHub Actionsでは実行しません（Grokの個人契約が必要）
+- 手元で試す: `python3 grok_deal_discovery.py --provider-id relux`（`--dry-run` で指示文だけ表示）。1社あたり4分前後かかる（web検索と閲覧を最大40往復）。11社で45分、月曜は25社で100分ほど
 - 状態の意味: 「新規」は登録済み公式ページにも既知の題名にも一致しないもの。「既知（URL一致）」「既知（題名一致）」はすでに把握済み
 - 候補を監視に加える手順: 候補の公式URLを開いて内容を確かめる → 「雛形をコピー」で得たJSONを `config/provider_registry.json` の該当会社の `official_sources` へ足す → `python3 provider_check_runner.py --provider-id <会社ID> --deep` で取得できることを確かめる → commit・push
 - Grokの認証が切れると全社「失敗」になります。ターミナルで `~/.grok/bin/grok login` を実行して再ログインしてください
@@ -170,7 +171,7 @@ python3 wp_review_orchestrator.py --dry-run
 ## 1. システム全体像
 
 ```
-┌─ GitHub Actions（毎朝6:00 JST 自動実行）────────────────┐
+┌─ GitHub Actions（平日 7:00 / 15:45 JST 手動実行）───────┐
 │                                                           │
 │  ① JTBクーポンページをスクレイピング                      │
 │     ├─ 国内クーポン一覧（CSSセレクタ方式）               │
@@ -225,7 +226,7 @@ python3 wp_review_orchestrator.py --dry-run
 
 ### 通常時: 何もしなくてOK
 
-毎朝6時に全体チェックが自動実行され、HISだけは11:05と19:05にも公式画面を再確認します。全体チェックで変動があればメール通知されます。
+平日の7:00と15:45に、チーフbotがGitHub Actionsの全体チェックを手動実行します。Booking.comと一休は日本のMacが6:45と15:30に取得します。全体チェックで変動があればメール通知されます。
 
 ### 結果の確認（Google Sheets）
 
@@ -307,19 +308,23 @@ python3 knt_coupon_monitor.py --init
 
 ### 3-3. 実行時間の変更
 
-`.github/workflows/coupon-monitor.yml` の `cron` を編集:
+GitHub Actionsの定期実行は2026-10-20に廃止しました。`coupon-monitor.yml` には `schedule`（cron）がなく、実行する時刻はチーフbotの手動実行で決めます（平日 7:00 / 15:45 JST）。
+
+定期実行へ戻す場合は `.github/workflows/coupon-monitor.yml` の `on:` に `schedule` を足します。
 
 ```yaml
-# 朝7時（JST）に変更 → UTC 22:00
-- cron: '0 22 * * *'
-
-# 1日2回（朝9時 + 夕方18時）
-- cron: '0 0,9 * * *'
+on:
+  schedule:
+    # 朝7時（JST）→ UTC 22:00
+    - cron: '0 22 * * *'
+  workflow_dispatch:
 ```
+
+日本のMacから取るBooking.com・一休の時刻は、launchd `com.hbconnect.provider-fetch-jp` の `StartCalendarInterval` で変えます（既定は 6:45 / 15:30 JST）。
 
 ### 3-4. 一時停止/再開
 
-Actions タブ → 左サイドバー「Coupon Monitor (JTB + KNT)」→ 右上「...」→「Disable workflow」
+定期実行がないため、止めたいときは手動実行をしないだけで済みます。Actions画面から無効化する場合は、Actions タブ → 左サイドバー「Coupon Monitor (JTB + KNT)」→ 右上「...」→「Disable workflow」
 
 ---
 

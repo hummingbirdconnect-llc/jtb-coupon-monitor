@@ -62,6 +62,13 @@ def load_registry() -> list[dict]:
         "cadence_days": 1,
         "freshness_sla_hours": 30,
     }
+    jp_daily_ids = set(schedule.get("jp_daily_provider_ids") or [])
+    jp_daily_defaults = schedule.get("jp_daily") or {
+        "check_frequency": "daily",
+        "cadence_days": 1,
+        "freshness_sla_hours": 30,
+        "fetch_location": "jp_mac",
+    }
     five_day_ids = set(schedule.get("every_5_days_provider_ids") or [])
     low_defaults = schedule.get("every_5_days") or {
         "check_frequency": "every_5_days",
@@ -78,6 +85,8 @@ def load_registry() -> list[dict]:
         provider = dict(raw)
         if provider["id"] in daily_ids:
             defaults = daily_defaults
+        elif provider["id"] in jp_daily_ids:
+            defaults = jp_daily_defaults
         elif provider["id"] in five_day_ids:
             defaults = low_defaults
         else:
@@ -336,6 +345,15 @@ def is_on_demand(provider: dict) -> bool:
     return int(provider.get("cadence_days", 0)) <= 0 or provider.get("check_frequency") == "on_demand"
 
 
+def is_jp_only(provider: dict) -> bool:
+    """海外IPのGitHub Actionsからは取れず、日本のMacから取る会社か。
+
+    まとめ実行（--scope due / daily / all など）からは外す。取得したいときは
+    `--scope jp_mac` か `--provider-id <会社ID>` で明示する。
+    """
+    return provider.get("fetch_location") == "jp_mac"
+
+
 def provider_due(provider: dict, current_date: date) -> bool:
     if is_on_demand(provider):
         return False
@@ -353,16 +371,20 @@ def select_providers(
         if not selected:
             raise SystemExit(f"unknown provider_id: {provider_id}")
         return selected
+    if scope == "jp_mac":
+        return [provider for provider in registry if is_jp_only(provider)]
+    # 日本のMacから取る会社は、まとめ実行では必ず外す（海外IPでは拒否される）
+    candidates = [provider for provider in registry if not is_jp_only(provider)]
     if scope == "daily":
-        return [provider for provider in registry if int(provider.get("cadence_days", 5)) == 1]
+        return [provider for provider in candidates if int(provider.get("cadence_days", 5)) == 1]
     if scope in {"every_5_days", "weekly"}:
-        return [provider for provider in registry if int(provider.get("cadence_days", 5)) == 5]
+        return [provider for provider in candidates if int(provider.get("cadence_days", 5)) == 5]
     if scope == "due":
         today = current_date or now_jst().date()
-        return [provider for provider in registry if provider_due(provider, today)]
+        return [provider for provider in candidates if provider_due(provider, today)]
     if scope == "on_demand":
-        return [provider for provider in registry if is_on_demand(provider)]
-    return registry
+        return [provider for provider in candidates if is_on_demand(provider)]
+    return candidates
 
 
 def deep_dive_allowed(provider: dict, *, deep: bool, explicit: bool) -> bool:
@@ -440,7 +462,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="会社別クーポンチェック実行")
     parser.add_argument(
         "--scope",
-        choices=["due", "daily", "every_5_days", "weekly", "on_demand", "all"],
+        choices=["due", "daily", "every_5_days", "weekly", "on_demand", "jp_mac", "all"],
         default="due",
     )
     parser.add_argument("--provider-id", default="", help="特定会社だけ実行する場合の provider id")

@@ -147,6 +147,13 @@ def load_registry() -> list[dict[str, Any]]:
         "cadence_days": 1,
         "freshness_sla_hours": 30,
     }
+    jp_daily_ids = set(schedule.get("jp_daily_provider_ids") or [])
+    jp_daily_defaults = schedule.get("jp_daily") or {
+        "check_frequency": "daily",
+        "cadence_days": 1,
+        "freshness_sla_hours": 30,
+        "fetch_location": "jp_mac",
+    }
     five_day_ids = set(schedule.get("every_5_days_provider_ids") or [])
     low_defaults = schedule.get("every_5_days") or {
         "check_frequency": "every_5_days",
@@ -163,6 +170,8 @@ def load_registry() -> list[dict[str, Any]]:
         provider = dict(raw)
         if provider["id"] in daily_ids:
             defaults = daily_defaults
+        elif provider["id"] in jp_daily_ids:
+            defaults = jp_daily_defaults
         elif provider["id"] in five_day_ids:
             defaults = low_defaults
         else:
@@ -865,7 +874,8 @@ def build_provider_payload(
         load_official_listing_dates(provider.get("data_dir")),
     )
     on_demand = is_on_demand(provider)
-    monitor_mode = "指定時" if on_demand else "常時"
+    jp_only = provider.get("fetch_location") == "jp_mac"
+    monitor_mode = "指定時" if on_demand else ("常時（Mac）" if jp_only else "常時")
     pending_audits = (pending_audit_counts or {}).get(provider["id"], 0)
     affiliate_status = affiliate_setup_status(provider["id"])
     hints = load_hints(provider["id"])
@@ -967,9 +977,14 @@ def build_provider_payload(
         "check_frequency_label": frequency_label,
         "freshness_sla_hours": int(provider.get("freshness_sla_hours", 30)),
         "manual_action_url": WORKFLOW_URL,
-        "manual_gh_command": manual_gh_command(provider["id"], deep=on_demand),
+        "manual_gh_command": (
+            local_deep_command(provider["id"])
+            if jp_only
+            else manual_gh_command(provider["id"], deep=on_demand)
+        ),
         "local_deep_command": local_deep_command(provider["id"]),
         "on_demand": on_demand,
+        "jp_only": jp_only,
         "monitor_mode": monitor_mode,
         "deep_dive_at": deep_dive_at,
         "pending_audit_count": pending_audits,
@@ -1641,12 +1656,12 @@ function manualPanelHtml(provider) {{
       ${{provider.on_demand ? `<span class="manual-meta">最終深掘り: ${{escapeHtml(formatCheckTime(provider.deep_dive_at))}}</span>` : ''}}
       <span class="manual-meta">ASP設定: ${{escapeHtml(provider.asp_setup_status || 'なし')}}</span>
       ${{checkStatusHtml(provider)}}
-      <div class="manual-hint">会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。</div>
+      <div class="manual-hint">${{provider.jp_only ? '海外IPのGitHub Actionsからは拒否されるため、日本のMacで下のコマンドを実行してください。' : '会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。'}}</div>
       ${{manualSourceQueueHtml(provider)}}
       ${{providerHintHtml(provider)}}
     </div>
     <div class="manual-actions">
-      <button type="button" class="manual-run-btn">${{provider.on_demand ? '深掘りを実行（GitHub）' : '手動チェック'}}</button>
+      ${{provider.jp_only ? '' : `<button type="button" class="manual-run-btn">${{provider.on_demand ? '深掘りを実行（GitHub）' : '手動チェック'}}</button>`}}
       <button type="button" class="copy-gh-btn">コマンドコピー</button>
     </div>
     <code class="manual-command">${{command}}</code>
@@ -1873,7 +1888,7 @@ function renderSummary(container) {{
       <div class="stats">
         <span class="stat">対象会社 ${{totalProviders}} 社</span>
         <span class="stat active">保存データあり ${{withRows}} 社</span>
-        <span class="stat">常時（毎日） ${{dailyProviders}} 社</span>
+        <span class="stat">定期で取得 ${{dailyProviders}} 社</span>
         ${{fiveDayProviders ? `<span class="stat">5日ごと ${{fiveDayProviders}} 社</span>` : ''}}
         <span class="stat">指定時だけ深掘り ${{onDemandProviders.length}} 社</span>
         <span class="stat review">Codex監査待ち ${{pendingAudits}} 件</span>

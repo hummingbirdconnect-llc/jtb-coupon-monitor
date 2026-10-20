@@ -56,18 +56,29 @@ def valid_result(candidate_id: str, discount: str = "最大3,000円OFF") -> dict
     }
 
 
-ALWAYS_ON_IDS = {"his", "jtb", "knt", "jalpack", "jalan", "rakuten_travel"}
+# GitHub Actions（海外IP）から定期取得する会社
+CLOUD_DAILY_IDS = {
+    "his",
+    "jtb",
+    "knt",
+    "jalpack",
+    "jalan",
+    "rakuten_travel",
+    "rurubu_travel",
+    "tobu_top_tours",
+    "asoview",
+}
+# 海外IPでは拒否されるため、日本のMacから定期取得する会社
+JP_DAILY_IDS = {"booking", "ikkyu"}
+ALWAYS_ON_IDS = CLOUD_DAILY_IDS | JP_DAILY_IDS
 ON_DEMAND_DEEP_IDS = {
     "relux",
-    "asoview",
     "activityjapan",
     "club_tourism",
     "jr_tokai_tours",
     "skypack_tours",
-    "tobu_top_tours",
     "yomiuri_travel",
     "toku",
-    "booking",
 }
 
 
@@ -87,9 +98,42 @@ def test_registry_frequency_counts() -> None:
 def test_scope_due_selects_only_always_on_providers() -> None:
     providers = runner.load_registry()
     due = runner.select_providers(providers, "due", "", date(2026, 9, 18))
-    assert {provider["id"] for provider in due} == ALWAYS_ON_IDS
+    assert {provider["id"] for provider in due} == CLOUD_DAILY_IDS
     on_demand = runner.select_providers(providers, "on_demand", "", date(2026, 9, 18))
     assert ON_DEMAND_DEEP_IDS <= {provider["id"] for provider in on_demand}
+
+
+def test_jp_only_providers_are_kept_out_of_cloud_runs() -> None:
+    providers = runner.load_registry()
+    jp_only = {provider["id"] for provider in providers if runner.is_jp_only(provider)}
+    assert jp_only == JP_DAILY_IDS
+    # まとめ実行では必ず外れる（海外IPのGitHub Actionsでは拒否される）
+    for scope in ("due", "daily", "all", "on_demand"):
+        selected = {provider["id"] for provider in runner.select_providers(providers, scope, "")}
+        assert not (selected & JP_DAILY_IDS), scope
+    # 日本のMacからは --scope jp_mac でまとめて、または会社ID直指定で取得する
+    assert {
+        provider["id"] for provider in runner.select_providers(providers, "jp_mac", "")
+    } == JP_DAILY_IDS
+    for provider_id in sorted(JP_DAILY_IDS):
+        selected = runner.select_providers(providers, "due", provider_id)
+        assert [provider["id"] for provider in selected] == [provider_id]
+
+
+def test_five_restored_providers_are_fetched_without_deep_flag() -> None:
+    """るるぶ・東武・アソビュー・Booking・一休は定期取得の対象（2026-10-20 復活）。"""
+    providers = {provider["id"]: provider for provider in runner.load_registry()}
+    for provider_id in ("rurubu_travel", "tobu_top_tours", "asoview", "booking", "ikkyu"):
+        provider = providers[provider_id]
+        assert not runner.is_on_demand(provider), provider_id
+        assert provider["cadence_days"] == 1
+        assert provider["freshness_sla_hours"] == 30
+    # るるぶは専用スクレイパー、一休は公式ページ未登録（PR #24 待ち）
+    assert "rurubu_travel" in runner.REAL_MONITOR_COMMANDS
+    assert not providers["ikkyu"].get("official_sources")
+    # 公式ページを登録済みの3社は --deep なしでも深掘りする
+    for provider_id in ("tobu_top_tours", "asoview", "booking"):
+        assert runner.deep_dive_allowed(providers[provider_id], deep=False, explicit=False)
 
 
 def test_on_demand_providers_have_official_sources_and_deep_flag_gate() -> None:
@@ -496,6 +540,8 @@ def main() -> None:
     tests = [
         test_registry_frequency_counts,
         test_scope_due_selects_only_always_on_providers,
+        test_jp_only_providers_are_kept_out_of_cloud_runs,
+        test_five_restored_providers_are_fetched_without_deep_flag,
         test_on_demand_providers_have_official_sources_and_deep_flag_gate,
         test_http_404_and_429_are_not_success,
         test_response_decoder_handles_shift_jis_and_utf8_despite_latin1_header,
