@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-10-21T07:34:07.454561+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "間際の予約でもおトク！500円分の利用券をプレゼント！",
+      "kind": "campaign",
+      "found_url": "https://www.jal.co.jp/ja-jp/campaign/dom.html?msockid=2ec87dd570c162d6204f6b1e71b86374",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/jalplaza-coupon/?cp=dom",
+      "official_domain_match": true,
+      "evidence": "出発30日前～7日前の国内ダイナミックパッケージ予約が対象。JAL PLAZA・Coralwayで使える利用券。旅行代金の値引きではない。",
+      "observed_date": "2026-10-21",
+      "discount": "500円分の利用券",
+      "period": "出発対象期間：～2027年3月31日まで／予約対象期間：～2027年3月24日まで／除外対象期間：2026年12月28日～2027年1月5日発",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalpack/hints_2026-10-21.json"
+}

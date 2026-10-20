@@ -1,0 +1,17 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-10-21T07:34:07.454561+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開クーポン一覧から施策本文を取得できず、別の限定クーポンページは「該当するクーポンがありません」と表示。検索結果だけの新江ノ島水族館10%OFFは未確認。",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/asoview/hints_2026-10-21.json"
+}

@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-21T07:34:07.454561+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "毎月20日から！じゃらんのお得な10日間",
+      "kind": "sale",
+      "found_url": "https://x.com/flylcc/status/2112564649527017673",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "official_domain_match": true,
+      "evidence": "10月開催分と厳選10%OFFプランを公開ページで確認。全日程・全部屋が10％OFFとは限らない。22日開始のクーポンは未開始として除外。",
+      "observed_date": "2026-10-21",
+      "discount": "厳選10%OFFプラン！",
+      "period": "掲載期間：2026年10月20日～2026年10月29日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-21.json"
+}
