@@ -84,12 +84,12 @@ ON_DEMAND_DEEP_IDS = {
 
 def test_registry_frequency_counts() -> None:
     providers = runner.load_registry()
-    assert len(providers) == 44
+    assert len(providers) == 43
     daily = {provider["id"] for provider in providers if provider["cadence_days"] == 1}
     assert daily == ALWAYS_ON_IDS
     assert sum(provider["cadence_days"] == 5 for provider in providers) == 0
     on_demand = [provider for provider in providers if runner.is_on_demand(provider)]
-    assert len(on_demand) == 44 - len(ALWAYS_ON_IDS)
+    assert len(on_demand) == 43 - len(ALWAYS_ON_IDS)
     for provider in on_demand:
         for offset in range(7):
             assert not runner.provider_due(provider, date(2026, 9, 18 + offset)), provider["id"]
