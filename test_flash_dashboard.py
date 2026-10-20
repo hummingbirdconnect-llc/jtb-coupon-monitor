@@ -6,7 +6,16 @@ from __future__ import annotations
 import unittest
 from datetime import date, datetime
 
-from generate_dashboard import annotate_change_log, change_kind, period_is_over, stock_label
+from generate_dashboard import (
+    DEFAULT_CHANGE_RULES,
+    annotate_change_log,
+    apply_change_rules,
+    change_kind,
+    load_registry,
+    period_is_over,
+    provider_change_rules,
+    stock_label,
+)
 from jtb_coupon_monitor import JST, summarize_password_stock
 
 
@@ -40,6 +49,87 @@ class AnnotateChangeLogTest(unittest.TestCase):
         self.assertTrue(again["_reappeared"])
         self.assertEqual(again["_flaps"], 3)
         self.assertFalse(rows[("2026-10-03", "🆕 新規", "fresh")]["_reappeared"])
+
+
+class ChangeRulesTest(unittest.TestCase):
+    """公式ページの掲載実績を優先し、配布終了・再開を主な変化に数えないこと。"""
+
+    JTB_RULES = {
+        "count_status_toggle_as_change": False,
+        "new_requires_unseen_days": 7,
+        "gone_requires_unlisted": True,
+    }
+    LISTING = {
+        # 10/18から10/20まで公式ページに載り続けているクーポン
+        "stay": ["2026-10-18", "2026-10-19", "2026-10-20"],
+        # 10/18で公式ページから消えたクーポン
+        "left": ["2026-10-17", "2026-10-18"],
+    }
+
+    def rows(self) -> list[dict]:
+        return [
+            {"日付": "2026-10-20", "ID": "stay", "種別": "🔴 配布終了", "_kind": "ended"},
+            {"日付": "2026-10-20", "ID": "stay", "種別": "🟢 配布再開", "_kind": "reopened"},
+            {"日付": "2026-10-20", "ID": "stay", "種別": "🆕 新規", "_kind": "new"},
+            {"日付": "2026-10-20", "ID": "stay", "種別": "❌ 消失", "_kind": "gone"},
+            {"日付": "2026-10-19", "ID": "left", "種別": "❌ 消失", "_kind": "gone"},
+            {"日付": "2026-10-19", "ID": "fresh", "種別": "🆕 新規", "_kind": "new"},
+        ]
+
+    def applied(self, rules: dict) -> list[dict]:
+        return apply_change_rules(self.rows(), rules, self.LISTING)
+
+    def test_default_rules_keep_every_recorded_kind(self) -> None:
+        rows = self.applied(dict(DEFAULT_CHANGE_RULES))
+        self.assertEqual(
+            [row["_kind"] for row in rows],
+            ["ended", "reopened", "new", "gone", "gone", "new"],
+        )
+        self.assertFalse(any(row["_minor"] for row in rows))
+
+    def test_status_toggle_is_kept_only_in_the_quiet_section(self) -> None:
+        ended, reopened = self.applied(self.JTB_RULES)[:2]
+        self.assertEqual((ended["_kind"], reopened["_kind"]), ("ended", "reopened"))
+        self.assertTrue(ended["_minor"])
+        self.assertTrue(reopened["_minor"])
+
+    def test_new_on_a_coupon_already_in_recent_official_data_is_not_new(self) -> None:
+        row = self.applied(self.JTB_RULES)[2]
+        self.assertEqual(row["_kind"], "reopened")
+        self.assertEqual(row["_demoted_from"], "new")
+        self.assertTrue(row["_minor"])
+
+    def test_gone_while_still_listed_officially_is_not_gone(self) -> None:
+        row = self.applied(self.JTB_RULES)[3]
+        self.assertEqual(row["_kind"], "ended")
+        self.assertEqual(row["_demoted_from"], "gone")
+        self.assertTrue(row["_minor"])
+
+    def test_real_new_and_real_gone_stay_as_main_changes(self) -> None:
+        left_gone, fresh_new = self.applied(self.JTB_RULES)[4:]
+        self.assertEqual((left_gone["_kind"], fresh_new["_kind"]), ("gone", "new"))
+        self.assertFalse(left_gone["_minor"])
+        self.assertFalse(fresh_new["_minor"])
+        self.assertNotIn("_demoted_from", left_gone)
+        self.assertNotIn("_demoted_from", fresh_new)
+
+    def test_registry_enables_the_rule_for_jtb_only(self) -> None:
+        registry = {provider["id"]: provider for provider in load_registry()}
+        jtb = provider_change_rules(registry["jtb"])
+        self.assertFalse(jtb["count_status_toggle_as_change"])
+        self.assertTrue(jtb["gone_requires_unlisted"])
+        self.assertGreater(jtb["new_requires_unseen_days"], 0)
+        others = [
+            provider_id
+            for provider_id, provider in registry.items()
+            if provider_id != "jtb" and provider.get("change_rules")
+        ]
+        self.assertEqual(others, [])
+        self.assertEqual(provider_change_rules(registry["knt"]), DEFAULT_CHANGE_RULES)
+
+    def test_unknown_rule_names_are_ignored(self) -> None:
+        rules = provider_change_rules({"change_rules": {"nonsense": True}})
+        self.assertEqual(rules, DEFAULT_CHANGE_RULES)
 
 
 class CampaignPeriodTest(unittest.TestCase):
