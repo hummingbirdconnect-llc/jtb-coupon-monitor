@@ -152,6 +152,7 @@ WordPress認証情報はGitHub Actionsでは使いません。国内Macの `vaul
 - 昔のように1社の失敗で止めたいときは `python3 provider_check_runner.py --scope all --deep --fail-on-error`
 - 取得件数が前回より半分以上減った会社は「要確認」にし、今回分は `needs_review_coupons_<日付>.json` へ退避します。前回のデータはそのまま残り、「消失」としては記録しません
 - 消失・新規の判定は前回取得した一覧（`coupons_<日付>.json`）を基準にします。累積台帳（`master_ids.json`）は初回確認日の記録用です
+- 要確認を確認して「本当に減っただけ」と分かったときは `--init` で再取得すると、今回分を新しい基準として採用できます
 
 ### WordPress安全条件
 
@@ -406,7 +407,7 @@ https://github.com/hummingbirdconnect-llc/jtb-coupon-monitor/settings/secrets/ac
 | メール通知が来ない | Gmail設定 | `GMAIL_APP_PASSWORD`（アプリパスワード）を確認 |
 | マスター台帳が壊れた | JSONエラー | `master_ids.json` を削除して `--init` で再作成 |
 | 1社が「取得失敗」と出る | その会社だけのブロックやページ変更 | 実行は続きます。サマリーの会社名を見て個別に `--provider-id` で再取得 |
-| 1社が「要確認（取得数が急減）」 | 取得漏れの疑い | `needs_review_coupons_<日付>.json` と公式ページを見比べ、正しければ再実行して採用 |
+| 1社が「要確認（取得数が急減）」 | 取得漏れの疑い | `needs_review_coupons_<日付>.json` と公式ページを見比べる。件数が本当に減っただけなら `python3 <会社>_coupon_monitor.py --init` で今回分を基準として採用（差分ログは出ません） |
 
 ---
 
