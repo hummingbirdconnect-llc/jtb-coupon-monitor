@@ -128,9 +128,11 @@ def test_five_restored_providers_are_fetched_without_deep_flag() -> None:
         assert not runner.is_on_demand(provider), provider_id
         assert provider["cadence_days"] == 1
         assert provider["freshness_sla_hours"] == 30
-    # るるぶは専用スクレイパー、一休は公式ページ未登録（PR #24 待ち）
+    # るるぶは専用スクレイパー
     assert "rurubu_travel" in runner.REAL_MONITOR_COMMANDS
-    assert not providers["ikkyu"].get("official_sources")
+    # 一休は公式ページの登録待ち（PR #24）。登録後は --deep なしで深掘りできること
+    if providers["ikkyu"].get("official_sources"):
+        assert runner.deep_dive_allowed(providers["ikkyu"], deep=False, explicit=False)
     # 公式ページを登録済みの3社は --deep なしでも深掘りする
     for provider_id in ("tobu_top_tours", "asoview", "booking"):
         assert runner.deep_dive_allowed(providers[provider_id], deep=False, explicit=False)
