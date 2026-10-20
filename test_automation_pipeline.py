@@ -69,7 +69,7 @@ CLOUD_DAILY_IDS = {
     "asoview",
 }
 # 海外IPでは拒否されるため、日本のMacから定期取得する会社
-JP_DAILY_IDS = {"booking", "ikkyu"}
+JP_DAILY_IDS = {"booking", "ikkyu", "yahoo_travel"}
 ALWAYS_ON_IDS = CLOUD_DAILY_IDS | JP_DAILY_IDS
 ON_DEMAND_DEEP_IDS = {
     "relux",

@@ -12,7 +12,7 @@
       "tobu_top_tours",
       "asoview"
     ],
-    "jp_daily_provider_ids": ["booking", "ikkyu"],
+    "jp_daily_provider_ids": ["booking", "ikkyu", "yahoo_travel"],
     "every_5_days_provider_ids": [],
     "daily": {
       "check_frequency": "daily",
@@ -37,7 +37,7 @@
       "cadence_days": 0,
       "freshness_sla_hours": 720
     },
-    "note": "定期で取得するのは daily_provider_ids の9社（GitHub Actionsを平日7:00・15:45 JSTに手動実行）と jp_daily_provider_ids の2社（海外IPから拒否されるため日本のMacから取得）。GitHub Actionsのcronは2026-10-20に廃止した。それ以外は --provider-id 指定（または workflow_dispatch）のときだけ深掘りする。"
+    "note": "定期で取得するのは daily_provider_ids の9社（GitHub Actionsを平日7:00・15:45 JSTに手動実行）と jp_daily_provider_ids の3社（海外IPから拒否されるため日本のMacから取得。一休・Yahoo!トラベルは専用 monitor で、ikkyu を yahoo_travel より前に置く）。GitHub Actionsのcronは2026-10-20に廃止した。それ以外は --provider-id 指定（または workflow_dispatch）のときだけ深掘りする。"
   },
   "providers": [
     {
@@ -295,32 +295,12 @@
       "note": "公開RaCoupon公式一覧を監視。ログイン後のmyクーポンは対象外。"
     },
     {
-      "id": "yahoo_travel",
-      "label": "Yahoo!トラベル",
-      "site_targets": ["welltrip", "yakushimafan"],
-      "classification": "C",
-      "coverage_status": "official_on_demand",
-      "data_dir": "official_coupon_data/yahoo_travel",
-      "legacy_data_dir": "manual_coupon_data/yahoo_travel",
-      "source_type": "official_page_candidate",
-      "official_domains": ["travel.yahoo.co.jp"],
-      "official_sources": [
-        {
-          "url": "https://travel.yahoo.co.jp/notice/special/post_7/",
-          "fetch_method": "auto",
-          "purpose": "キャンペーン予定（PayPay還元・セール日程）"
-        }
-      ],
-      "article_paths": ["../vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html"],
-      "note": "2026-10-19にキャンペーン予定ページのHTML取得を確認。指定時だけ深掘りする。トップページは403のため登録しない。監査の適用は未実施。"
-    },
-    {
       "id": "ikkyu",
       "label": "一休",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "official_on_demand",
-      "data_dir": "official_coupon_data/ikkyu",
+      "coverage_status": "auto_daily",
+      "data_dir": "ikkyu_coupon_data",
       "legacy_data_dir": "manual_coupon_data/ikkyu",
       "source_type": "official_page_candidate",
       "official_domains": ["ikyu.com"],
@@ -337,7 +317,27 @@
         }
       ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/一休/note/一休_SC01_クーポン完全ガイド_v3.html"],
-      "note": "2026-10-20に日本のIP（Mac）から公式クーポン一覧とセールページのHTML取得を確認。クラウドからは Fastly で拒否されるため、Macの毎朝取得（provider-fetch-jp）で深掘りする。会員ステージ・時間限定表示の個人差に注意。監査の適用は未実施。"
+      "note": "公式のクーポン一覧（宿限定クーポン＋自治体クーポン特集）を ikkyu_coupon_monitor.py で取得（2026-10-21 初回）。クラウドからは Fastly で拒否されるため、日本のMacの定期取得（provider-fetch-jp）で動かす。Yahoo!トラベルと同じ一休の仕組みで、同じ管理IDのクーポンは配布元を一休に寄せ、detail_data.shared_with に相手を記す。official_sources は Grok候補とダッシュボードの参照用に残す（専用 monitor があるため深掘りは走らない）。会員ステージ・時間限定表示の個人差と、ログイン後に獲得するクーポンの残枚数は取れない。"
+    },
+    {
+      "id": "yahoo_travel",
+      "label": "Yahoo!トラベル",
+      "site_targets": ["welltrip", "yakushimafan"],
+      "classification": "C",
+      "coverage_status": "auto_daily",
+      "data_dir": "yahoo_travel_coupon_data",
+      "legacy_data_dir": "official_coupon_data/yahoo_travel",
+      "source_type": "official_page_candidate",
+      "official_domains": ["travel.yahoo.co.jp"],
+      "official_sources": [
+        {
+          "url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+          "fetch_method": "auto",
+          "purpose": "キャンペーン予定（PayPay還元・セール日程）"
+        }
+      ],
+      "article_paths": ["../vault_blog/ウェルトリップ/会社別/ヤフートラベル/note/SC-2_ヤフートラベルクーポン・お得情報完全ガイド.html"],
+      "note": "公式のクーポン一覧（宿限定クーポン＋自治体クーポン特集）を yahoo_travel_coupon_monitor.py で取得（2026-10-21 初回）。宿泊予約は一休の仕組みで、同じ管理IDのクーポンは配布元を一休に寄せ、detail_data.shared_with に相手を記す。一休と同じく日本のMacの定期取得（provider-fetch-jp）で動かす。official_sources のキャンペーン予定ページの深掘り（Codex監査）結果は旧の official_coupon_data/yahoo_travel にあり、専用 monitor があるため深掘りは走らない。トップページは403のため登録しない。"
     },
     {
       "id": "relux",

@@ -43,6 +43,10 @@ REAL_MONITOR_COMMANDS: dict[str, list[str]] = {
     ],
     "rurubu_travel": [sys.executable, "rurubu_travel_coupon_monitor.py"],
     "yukoyuko": [sys.executable, "yukoyuko_coupon_monitor.py"],
+    # 一休を先に回す。同じ管理IDの印（shared_with）は相手の保存済みファイルを読んで付くため、
+    # 登録表（config/provider_registry.json）でも ikkyu を yahoo_travel より前に置く
+    "ikkyu": [sys.executable, "ikkyu_coupon_monitor.py"],
+    "yahoo_travel": [sys.executable, "yahoo_travel_coupon_monitor.py"],
 }
 
 

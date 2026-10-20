@@ -1,0 +1,581 @@
+{
+  "ids": {
+    "ikkyu-1116678": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "HOTEL GEOMETIQ Osaka Umeda, an Ascend Collection Hotel（ホテルジオメティック大阪梅田） 先着30名様限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122575": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ANAインターコンチネンタル別府リゾート＆スパ by IHG 先着50名様限定 23,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "23,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1098417": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 4,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "4,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1098418": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1098419": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 15,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "15,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1098421": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 20,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "20,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1101816": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "シタディーンハーバーフロント横浜 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1123519": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ひだホテルプラザ 先着20名様限定 5,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1123832": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "休暇村 南伊豆 先着30名様限定 4,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "4,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1086885": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "HOTEL day by day（ホテル デイ バイ デイ） 先着20名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1115109": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ANAクラウンプラザホテル秋田 by IHG 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-982985": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "プリンス スマート イン 名古屋栄 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1107648": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "西村屋ホテル招月庭 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1025684": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "クリスタルサウナ 7,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "7,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122685": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "登別万世閣 先着30名様限定 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1120336": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "リーガロイヤルホテル大阪 ヴィニェットコレクション by IHG 枚数限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1120338": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "リーガロイヤルホテル大阪 ヴィニェットコレクション by IHG 枚数限定 4,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "4,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1120341": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "リーガロイヤルホテル大阪 ヴィニェットコレクション by IHG 先着50名様限定 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1120342": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "リーガロイヤルホテル大阪 ヴィニェットコレクション by IHG 先着50名様限定 20,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "20,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121186": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテルインディゴ軽井沢 by IHG 7,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "7,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121188": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテルインディゴ軽井沢 by IHG 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122499": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "洞爺湖万世閣ホテルレイクサイドテラス 先着50名様限定 4,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "4,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1120750": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテルオークラJRハウステンボス 枚数限定 7,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "7,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1080810": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "サットンホテル博多シティ 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1094698": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "yarok 先着10名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1101432": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "たちばな四季亭 先着50名様限定 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1105288": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "山翠楼 SANSUIROU 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1105298": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "海石榴 つばき 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1107820": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "イビススタイルズ東京ベイ 枚数限定 4,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "4,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1108405": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテルモントレ ラ・スール福岡 枚数限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1109321": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "voco 大阪セントラル by IHG 先着30名様限定 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1110761": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "万葉の里 白雲荘 先着30名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1114613": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "上七軒 億 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1116713": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "アーバンホテル京都 先着50名様限定 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1119017": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ベストウェスタン沖縄恩納ビーチ 先着50名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1119047": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "満天ノ 辻のや 枚数限定 4,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "4,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121489": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "TOTOシーウィンド淡路 先着20名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121863": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "祝い宿 寿庵 先着15名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122513": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "アルモントホテル仙台 枚数限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1123870": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ガーデンテラス長崎ホテル＆リゾート 先着30名様限定 5,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1123077": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテルインディゴ犬山有楽苑 by IHG 先着50名様限定 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1123438": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ONCRI-KARATSU／おんくり唐津 5,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122609": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "熱海後楽園ホテル 枚数限定 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121129": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "アゴーラ 京都烏丸 枚数限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122428": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ザ・ウィンザーホテル洞爺 ヴィニェットコレクション by IHG 枚数限定 5,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121131": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "アゴーラ 京都四条 枚数限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121505": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "松島温泉 小松館 好風亭 先着50名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1107855": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテルインディゴ東京渋谷 by IHG 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1110616": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "CHILLYU 先着10名様限定 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1117229": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "OKINAWA KARIYUSHI RESORT EXES ONNA（沖縄かりゆしリゾートEXES恩納） 先着50名様限定 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1119433": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "VILLA BRAMARE 先着10名様限定 5,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122607": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "里創人倶楽部 伊勢志摩 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1089316": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ヒルトン成田 先着30名様限定 5,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1119771": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "安芸グランドホテル 先着50名様限定 20,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "20,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122449": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "うらり 武雄 Garden Terrace Spa Resorts 先着10名様限定 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-933399": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "群青の月 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1026154": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "JR東日本ホテルメッツ 津田沼 先着50名様限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1079160": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "渓流展望貸切露天の宿 奥土湯温泉郷 小滝温泉 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121164": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテル阪神大阪 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122451": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "Beach Resort ～CHIKURA～ 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1099444": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ベストウェスタンホテルフィーノ東京秋葉原 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1121431": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "ホテルオーシャン那覇国際通り 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-gov-622e87580d": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "Go To Akita! 得旅キャンペーン（秋田県）",
+      "category": "自治体クーポン",
+      "discount": "最大40,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-gov-db6ea6ce02": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "おでんせ！いわて旅割キャンペーン（岩手県）",
+      "category": "自治体クーポン",
+      "discount": "最大50%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-89c188d010": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "にいがた GoToトラベル（新潟県）",
+      "category": "自治体クーポン",
+      "discount": "最大30%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-1dc0db6859": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "今こそ伊東へ！キャンペーン（静岡県伊東市）",
+      "category": "自治体クーポン",
+      "discount": "最大20%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-e25aa96312": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "九州ふっこう応援割（佐賀県）",
+      "category": "自治体クーポン",
+      "discount": "最大50%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-04f2c7c537": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "九州ふっこう応援割（大分県）",
+      "category": "自治体クーポン",
+      "discount": "最大50%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-01f178ca99": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "九州ふっこう応援割（福岡県）",
+      "category": "自治体クーポン",
+      "discount": "最大50%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-7d37055a39": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "九州ふっこう応援割（長崎県）",
+      "category": "自治体クーポン",
+      "discount": "最大50%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-b1d2c2dc2a": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "九州ふっこう応援割（熊本県）",
+      "category": "自治体クーポン",
+      "discount": "最大60%割引",
+      "stock_status": "配布終了"
+    },
+    "ikkyu-gov-e4aad382c3": {
+      "first_seen": "2026-10-21",
+      "last_seen": "2026-10-21",
+      "title": "九州ふっこう応援割（鹿児島県）",
+      "category": "自治体クーポン",
+      "discount": "最大60%割引",
+      "stock_status": "配布終了"
+    }
+  },
+  "last_updated": "2026-10-21T05:41:16.083216+09:00"
+}

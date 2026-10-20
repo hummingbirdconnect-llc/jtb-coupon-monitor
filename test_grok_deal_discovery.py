@@ -30,6 +30,7 @@ def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
     registry = g.load_registry()
     daily = {p["id"] for p in g.select_providers(registry, "daily", "")}
     # 2026-10-20: るるぶ・東武・アソビュー・Booking・一休を定期取得へ戻したので毎朝の探索対象
+    # 2026-10-21: Yahoo!トラベルも一休と同じ専用 monitor で日本のMacから定期取得
     assert daily == {
         "his",
         "jtb",
@@ -42,6 +43,7 @@ def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
         "asoview",
         "booking",
         "ikkyu",
+        "yahoo_travel",
     }
     weekly = {p["id"] for p in g.select_providers(registry, "weekly", "")}
     assert {"relux", "toku"} <= weekly
@@ -53,7 +55,6 @@ def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
     # 公式ページを登録した指定時会社は週次の探索対象
     assert {
         "newt",
-        "yahoo_travel",
         "hankyu_travel",
         "surprice",
         "traveloka",
