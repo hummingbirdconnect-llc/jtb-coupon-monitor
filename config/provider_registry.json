@@ -210,36 +210,6 @@
       "note": "coupon-master由来の暫定データ。じゃらん本体とは別管理。"
     },
     {
-      "id": "kkday",
-      "label": "KKday",
-      "site_targets": ["welltrip"],
-      "classification": "B",
-      "coverage_status": "official_codex",
-      "data_dir": "official_coupon_data/kkday",
-      "legacy_data_dir": "manual_coupon_data/kkday",
-      "source_type": "official_page_candidate",
-      "official_domains": ["kkday.com"],
-      "official_sources": [
-        {
-          "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
-          "fetch_method": "auto",
-          "purpose": "公式クーポンまとめ"
-        },
-        {
-          "url": "https://www.kkday.com/ja/promo/coupon-campaign",
-          "fetch_method": "auto",
-          "purpose": "公式キャンペーン"
-        },
-        {
-          "url": "https://www.kkday.com/ja/promo/aj_newmember",
-          "fetch_method": "auto",
-          "purpose": "新規会員キャンペーン"
-        }
-      ],
-      "master_path": "../vault_blog/ウェルトリップ/会社別/KKday/coupon-master/master.md",
-      "note": "公式ブログ・キャンペーン・新規会員ページを監視。変更時だけCodex定期監査へ送る。"
-    },
-    {
       "id": "klook",
       "label": "Klook",
       "site_targets": ["welltrip"],
