@@ -112,7 +112,7 @@
   "queued_hash": "2fba493fd5f857ee850ab4ce20b6bf3bd95c6fe6a8ba93c6377cd4afacd56e0c",
   "queued_candidate_id": "relux-2fba493fd5f857ee",
   "queued_at": "2026-10-19T09:09:47.123753+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-09-29T17:55:53.693242+09:00",
-  "last_audit_candidate_id": "relux-d02924b6fe1940ed"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-10-20T09:15:29.107009+09:00",
+  "last_audit_candidate_id": "relux-2fba493fd5f857ee"
 }

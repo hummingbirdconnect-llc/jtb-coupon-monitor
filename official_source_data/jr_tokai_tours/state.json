@@ -153,10 +153,15 @@
       "content_hash": "8b259b891ee0899048a21c5c0a371ccfbb15b1c07656537b9db4e6918f8ee18f"
     }
   ],
-  "queued_hash": "c6d16d7f3fa1cd2ba0880154897e2a74c0ec7297b4cb439e9f47f222cb77f6ac",
-  "queued_candidate_id": "jr_tokai_tours-c6d16d7f3fa1cd2b",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T09:10:04.691111+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-09-29T17:55:53.689262+09:00",
-  "last_audit_candidate_id": "jr_tokai_tours-9a5af3ba285f834e"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-20T09:15:29.101707+09:00",
+  "last_audit_candidate_id": "jr_tokai_tours-c6d16d7f3fa1cd2b",
+  "processed_hash": "c6d16d7f3fa1cd2ba0880154897e2a74c0ec7297b4cb439e9f47f222cb77f6ac",
+  "last_processed_at": "2026-10-20T09:15:29.101707+09:00",
+  "last_changed_at": "2026-10-20T09:15:29.101707+09:00",
+  "latest_file": "coupons_2026-10-20.json",
+  "semantic_hash": "d209e4a457e19f3a34c140591b5a9b87197242608f72c20934489223034415ac"
 }
