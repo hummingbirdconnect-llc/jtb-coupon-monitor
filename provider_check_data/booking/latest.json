@@ -2,9 +2,9 @@
   "provider_id": "booking",
   "provider_label": "Booking.com",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-21T15:30:03.420792+09:00",
-  "completed_at": "2026-10-21T15:30:08.154461+09:00",
-  "official_fetched_at": "2026-10-21T15:30:08.154471+09:00",
+  "started_at": "2026-10-22T06:45:06.290166+09:00",
+  "completed_at": "2026-10-22T06:45:09.991198+09:00",
+  "official_fetched_at": "2026-10-22T06:45:09.991207+09:00",
   "source_results": [
     {
       "url": "https://www.booking.com/genius.ja.html",
@@ -39,5 +39,5 @@
   "coupon_count": 3,
   "content_hash": "f56fe3d5e547f577fafd45cd12e5e98205142d0f4e8d8a18d6ee400cdaeb229a",
   "error": "",
-  "freshness_status": "fresh"
+  "freshness_status": "stale"
 }
