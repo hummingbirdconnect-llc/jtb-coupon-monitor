@@ -2,9 +2,9 @@
   "provider_id": "asoview",
   "provider_label": "アソビュー",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-21T16:02:06.551870+09:00",
-  "completed_at": "2026-10-21T16:02:09.082913+09:00",
-  "official_fetched_at": "2026-10-21T16:02:09.082919+09:00",
+  "started_at": "2026-10-22T07:21:23.951485+09:00",
+  "completed_at": "2026-10-22T07:21:26.709111+09:00",
+  "official_fetched_at": "2026-10-22T07:21:26.709118+09:00",
   "source_results": [
     {
       "url": "https://www.asoview.com/coupon/",
@@ -41,5 +41,5 @@
   "audit_candidate_id": "asoview-8a2e0c276a49be6d",
   "audit_candidate_path": "codex_audit_queue/asoview/asoview-8a2e0c276a49be6d.json",
   "error": "",
-  "freshness_status": "fresh"
+  "freshness_status": "stale"
 }
