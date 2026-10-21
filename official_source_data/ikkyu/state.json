@@ -1,0 +1,39 @@
+{
+  "provider_id": "ikkyu",
+  "observed_hash": "5e34905600c77e45badcbcd3eb1f29e231d8ca5d409107613c7b549209ce3fc5",
+  "last_checked_at": "2026-10-21T15:30:11.234382+09:00",
+  "sources": [
+    {
+      "url": "https://www.ikyu.com/coupons/accommodations",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "公式の割引クーポン一覧（宿ごとの枚数限定クーポン）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 77456,
+      "content_hash": "cb6dde015d6d079c148935d76b8100ff7fb743012205e2ad6ce048d846ea8eb6"
+    },
+    {
+      "url": "https://www.ikyu.com/special/timesale_ikyu_rr/search",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "一休の日セール（旅館・リゾートスペシャル）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 337974,
+      "content_hash": "1f454030bc4c8bb5eccf7f8b2f6260ec1d5884254dfa4e9c3eb3001baaac3b41"
+    }
+  ],
+  "queued_hash": "5e34905600c77e45badcbcd3eb1f29e231d8ca5d409107613c7b549209ce3fc5",
+  "queued_candidate_id": "ikkyu-5e34905600c77e45",
+  "queued_at": "2026-10-21T15:30:11.238908+09:00",
+  "last_audit_status": "pending"
+}
