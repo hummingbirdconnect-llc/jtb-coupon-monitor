@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """coupon_validator.py のユニットテスト"""
+import json
 import sys
+from pathlib import Path
+
 sys.path.insert(0, ".")
 
 from coupon_validator import (
@@ -211,3 +214,76 @@ if __name__ == "__main__":
     test_validate_coupons_integration()
     test_extract_any_end_date()
     print("\n✅ 全テスト PASSED")
+
+
+def test_sanity_metrics_counts_disappearance_against_given_baseline():
+    """前回スナップショットを基準にすると、入れ替わりだけでは大量消失にしない"""
+    from coupon_validator import sanity_metrics
+
+    previous = {"ids": {f"A{i:03d}": {} for i in range(60)}}
+    current = [{"id": f"A{i:03d}"} for i in range(60)] + [
+        {"id": "NEW1"}, {"id": "NEW2"}, {"id": "NEW3"}
+    ]
+    metrics = sanity_metrics(current, previous)
+    assert metrics["previous_count"] == 60
+    assert metrics["current_count"] == 63
+    assert metrics["disappeared_count"] == 0
+    assert metrics["mass_disappearance"] is False
+    print("  ✅ test_sanity_metrics_counts_disappearance_against_given_baseline PASSED")
+
+
+def test_sanity_metrics_flags_mass_disappearance():
+    """半分以上が消えたら mass_disappearance を立てる"""
+    from coupon_validator import sanity_metrics
+
+    previous = {"ids": {f"A{i:03d}": {} for i in range(10)}}
+    current = [{"id": "A000"}, {"id": "A001"}]
+    metrics = sanity_metrics(current, previous)
+    assert metrics["disappeared_count"] == 8
+    assert metrics["mass_disappearance"] is True
+    assert metrics["all_disappeared"] is False
+    print("  ✅ test_sanity_metrics_flags_mass_disappearance PASSED")
+
+
+def test_validate_coupons_report_includes_sanity_metrics():
+    """validate_coupons のレポートから件数変化を取れる"""
+    from coupon_validator import validate_coupons
+
+    previous = {"ids": {f"A{i:03d}": {} for i in range(6)}}
+    current = [{"id": "A000", "title": "テストクーポン", "discount": "1,000円引"}]
+    _, report = validate_coupons(current, master_ids=previous, service_name="TEST")
+    assert report["sanity"]["mass_disappearance"] is True
+    assert report["sanity"]["previous_count"] == 6
+    assert report["is_healthy"] is True
+    print("  ✅ test_validate_coupons_report_includes_sanity_metrics PASSED")
+
+
+def test_load_previous_snapshot_master_picks_last_day_and_skips_review_files():
+    """基準は前回の日次スナップショット。今日の分と要確認ファイルは使わない"""
+    import tempfile
+    from coupon_validator import load_previous_snapshot_master
+
+    with tempfile.TemporaryDirectory() as tmp:
+        data_dir = Path(tmp)
+        (data_dir / "coupons_2026-10-18.json").write_text(
+            json.dumps([{"id": "OLD", "title": "古い"}]), encoding="utf-8"
+        )
+        (data_dir / "coupons_2026-10-19.json").write_text(
+            json.dumps([{"id": "A001", "title": "前回"}, {"id": "A002", "title": "前回2"}]),
+            encoding="utf-8",
+        )
+        (data_dir / "coupons_2026-10-20.json").write_text(
+            json.dumps([{"id": "TODAY", "title": "今日"}]), encoding="utf-8"
+        )
+        (data_dir / "needs_review_coupons_2026-10-20.json").write_text(
+            json.dumps([{"id": "REVIEW", "title": "要確認"}]), encoding="utf-8"
+        )
+
+        baseline = load_previous_snapshot_master(data_dir, exclude_date="2026-10-20")
+        assert baseline is not None
+        assert set(baseline["ids"]) == {"A001", "A002"}
+        assert baseline["source_file"] == "coupons_2026-10-19.json"
+
+        assert load_previous_snapshot_master(data_dir / "missing") is None
+        assert load_previous_snapshot_master(data_dir, exclude_date="2026-10-18") is not None
+    print("  ✅ test_load_previous_snapshot_master_picks_last_day_and_skips_review_files PASSED")

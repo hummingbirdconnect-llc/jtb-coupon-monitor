@@ -32,10 +32,15 @@
       "content_hash": "f65464ad24d6347c8fe7dd066564ea90980a6ac29754db489937f23e4d3852e1"
     }
   ],
-  "queued_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
-  "queued_candidate_id": "toku-57ea52d2ffc02ed6",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T09:10:10.688161+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-09-29T17:55:53.694613+09:00",
-  "last_audit_candidate_id": "toku-cf1d9120e18b0993"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-20T09:15:29.109684+09:00",
+  "last_audit_candidate_id": "toku-57ea52d2ffc02ed6",
+  "processed_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
+  "last_processed_at": "2026-10-20T09:15:29.109684+09:00",
+  "last_changed_at": "2026-10-20T09:15:29.109684+09:00",
+  "latest_file": "coupons_2026-10-20.json",
+  "semantic_hash": "c3faf270edcc09189f848ce6bd93d1a142cba6411202ff4fc8662e858651e616"
 }

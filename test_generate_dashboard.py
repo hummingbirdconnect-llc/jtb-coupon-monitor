@@ -14,6 +14,7 @@ from unittest import mock
 import generate_dashboard
 from generate_dashboard import (
     JST,
+    attach_recent_logs,
     build_provider_payload,
     dashboard_manual_sources,
     format_coupon_row,
@@ -37,6 +38,28 @@ SAMPLE_PROVIDER = {
     "check_frequency": "daily",
     "freshness_sla_hours": 30,
 }
+
+
+class RecentChangeTableTest(unittest.TestCase):
+    """主な変化の表と件数に、在庫の出入りだけの行を混ぜないこと。"""
+
+    DAYS = [{"key": "d0", "label": "今日", "date": "2026-10-20"}]
+
+    def test_minor_rows_stay_out_of_the_cross_provider_table(self) -> None:
+        providers = [
+            {
+                "id": "jtb",
+                "label": "JTB",
+                "logs": [
+                    {"日付": "2026-10-20", "ID": "toggle", "種別": "🟢 配布再開", "_kind": "reopened", "_minor": True},
+                    {"日付": "2026-10-20", "ID": "fresh", "種別": "🆕 新規", "_kind": "new", "_minor": False},
+                ],
+            }
+        ]
+        all_rows = attach_recent_logs(providers, self.DAYS)
+        self.assertEqual([row["ID"] for row in all_rows], ["fresh"])
+        # 速報の「在庫の出入り」で出せるよう、会社ごとの行には残す。
+        self.assertEqual([row["ID"] for row in providers[0]["recent_logs"]], ["toggle", "fresh"])
 
 
 class AuditReflectionTest(unittest.TestCase):

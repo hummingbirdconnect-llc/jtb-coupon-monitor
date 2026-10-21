@@ -93,10 +93,15 @@
       "content_hash": "0ce04ad7b4ebc199fe03b8c1e3984f234df17f889c5dd491e6f9ad1343a0dfab"
     }
   ],
-  "queued_hash": "f7533bcd1a0b67182d4f80b5c2ded488f3b544a30a6cb2052839d38beb0434d7",
-  "queued_candidate_id": "activityjapan-f7533bcd1a0b6718",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-19T09:09:51.312709+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-09-29T17:55:53.684936+09:00",
-  "last_audit_candidate_id": "activityjapan-7d7a9778522ae452"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-20T09:15:29.093966+09:00",
+  "last_audit_candidate_id": "activityjapan-f7533bcd1a0b6718",
+  "processed_hash": "f7533bcd1a0b67182d4f80b5c2ded488f3b544a30a6cb2052839d38beb0434d7",
+  "last_processed_at": "2026-10-20T09:15:29.093966+09:00",
+  "last_changed_at": "2026-10-20T09:15:29.093966+09:00",
+  "latest_file": "coupons_2026-10-20.json",
+  "semantic_hash": "01f14b158504bf2270ee8f1c2c40c4536f57d6844b929c8321e2c0d58aea4132"
 }

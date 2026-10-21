@@ -1,12 +1,11 @@
 name: Coupon Monitor
 
+# 定期実行（cron）は 2026-10-20 に廃止。平日 7:00 / 15:45 JST にチーフbotが手動実行する。
 on:
-  schedule:
-    - cron: '0 2,16 * * *'    # 毎日 11:00 / 1:00 JST: 常時監視の6社（HIS/JTB/KNT/JALパック/じゃらん/楽天トラベル）
   workflow_dispatch:
     inputs:
       provider_id:
-        description: 手動チェックする会社
+        description: 手動チェックする会社（all のときは下の「取得する範囲」に従う）
         required: true
         default: all
         type: choice
@@ -18,7 +17,6 @@ on:
           - jalpack
           - jalan
           - jalan_activity
-          - kkday
           - klook
           - jtrip
           - yumeyado
@@ -56,6 +54,14 @@ on:
           - expedia
           - hotels
           - tripcom
+      run_scope:
+        description: 取得する範囲（provider_id が all のときだけ効く）
+        required: false
+        default: due
+        type: choice
+        options:
+          - due     # 定期で取得する会社だけ（日本IP専用の会社は除く）
+          - all     # 全社をまとめて深掘り（日本IP専用の会社は除く）
       deep_dive:
         description: 指定した会社の公式ページを深掘り取得する（指定時だけの会社はこれを入れないと旧URL確認のみ）
         required: false
@@ -94,36 +100,24 @@ jobs:
       - name: 実行対象を決定
         id: plan
         run: |
-          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
-            if [ "${{ github.event.schedule }}" = "0 2,16 * * *" ]; then
-              echo "scope=due" >> "$GITHUB_OUTPUT"
-              echo "provider_id=" >> "$GITHUB_OUTPUT"
-              echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
-              echo "his_checked=true" >> "$GITHUB_OUTPUT"
-              echo "label=scheduled: 6 always-on providers" >> "$GITHUB_OUTPUT"
-            else
-              echo "scope=all" >> "$GITHUB_OUTPUT"
-              echo "provider_id=his" >> "$GITHUB_OUTPUT"
-              echo "his_visual_only=true" >> "$GITHUB_OUTPUT"
-              echo "his_checked=true" >> "$GITHUB_OUTPUT"
-              echo "label=scheduled: HIS official 11-region visible cards + screenshots" >> "$GITHUB_OUTPUT"
-            fi
+          if [ "${{ inputs.provider_id }}" = "all" ]; then
+            echo "scope=${{ inputs.run_scope }}" >> "$GITHUB_OUTPUT"
+            echo "provider_id=" >> "$GITHUB_OUTPUT"
+            echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
+            echo "his_checked=true" >> "$GITHUB_OUTPUT"
           else
             echo "scope=all" >> "$GITHUB_OUTPUT"
             echo "provider_id=${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
             if [ "${{ inputs.provider_id }}" = "his" ]; then
               echo "his_visual_only=true" >> "$GITHUB_OUTPUT"
-            else
-              echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
-            fi
-            if [ "${{ inputs.provider_id }}" = "his" ] || [ "${{ inputs.provider_id }}" = "all" ]; then
               echo "his_checked=true" >> "$GITHUB_OUTPUT"
             else
+              echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
               echo "his_checked=false" >> "$GITHUB_OUTPUT"
             fi
-            echo "label=manual: ${{ inputs.provider_id }} (deep_dive=${{ inputs.deep_dive }})" >> "$GITHUB_OUTPUT"
           fi
-          if [ "$GITHUB_EVENT_NAME" != "schedule" ] && [ "${{ inputs.deep_dive }}" = "true" ]; then
+          echo "label=manual: ${{ inputs.provider_id }} / scope=${{ inputs.run_scope }} (deep_dive=${{ inputs.deep_dive }})" >> "$GITHUB_OUTPUT"
+          if [ "${{ inputs.deep_dive }}" = "true" ]; then
             echo "deep=true" >> "$GITHUB_OUTPUT"
           else
             echo "deep=false" >> "$GITHUB_OUTPUT"
@@ -223,6 +217,26 @@ jobs:
             fi
             echo "- AI audit: Codex scheduled task (OpenAI API is not used by Actions)"
           } >> "$GITHUB_STEP_SUMMARY"
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY" || true
+          import json
+          from pathlib import Path
+
+          path = Path("provider_check_data/run-latest.json")
+          if not path.exists():
+              print("")
+              print("- 会社別チェックの記録がありません（実行前に失敗した可能性）")
+              raise SystemExit(0)
+          run = json.loads(path.read_text(encoding="utf-8"))
+          labels = {item.get("provider_id"): item.get("provider_label", "") for item in run.get("summaries", [])}
+          errors = run.get("error_provider_ids") or []
+          reviews = run.get("needs_review_provider_ids") or []
+          print("")
+          print(f"- 会社別チェック: {run.get('provider_count', 0)}社 / 失敗 {len(errors)}社 / 要確認 {len(reviews)}社")
+          for provider_id in errors:
+              print(f"  - ❌ 取得失敗: {labels.get(provider_id, provider_id)} ({provider_id})")
+          for provider_id in reviews:
+              print(f"  - 🔍 要確認（取得数が急減・前回データを保持）: {labels.get(provider_id, provider_id)} ({provider_id})")
+          PY
 
       - name: コミット＆プッシュ
         run: |

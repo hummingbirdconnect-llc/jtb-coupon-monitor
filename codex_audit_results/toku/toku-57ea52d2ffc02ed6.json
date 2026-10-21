@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "candidate_id": "toku-57ea52d2ffc02ed6",
+  "provider_id": "toku",
+  "page_summary": "トクー！タイムセールページ。対象プランが割引率30%OFF以上で、料金はトクープライム（有料）会員限定表示。",
+  "change_summary": "初回取得（baseline）。タイムセール1件を新規掲載。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "ページ下部の旅館・ホテル6プランは個別の宿泊プラン紹介（料金は会員限定で非表示）のためセールとは別に項目化していない。期間の記載なし。",
+  "deals": [
+    {
+      "title": "タイムセール",
+      "campaign_type": "sale",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "30 %OFF以上",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "対象プランが割引率30 %OFF以上。タイムセールの料金はトクープライム会員限定で表示。価格の閲覧・ご予約は有料会員から。期間の記載なし",
+      "official_url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "evidence_quote": "期間限定 タイムセール 対象プランが割引率 30 %OFF以上。 期間限定だから、対象プランがいつもよりお得に予約できます。 早めの予約でもOK。お部屋のアップグレードなど特典付きプランも タイムセールの料金は、トクープライム会員限定で表示しています 価格の閲覧・ご予約は有料会員からご利用いただけます。",
+      "confidence": "high"
+    }
+  ]
+}

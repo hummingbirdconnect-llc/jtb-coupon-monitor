@@ -147,6 +147,13 @@ def load_registry() -> list[dict[str, Any]]:
         "cadence_days": 1,
         "freshness_sla_hours": 30,
     }
+    jp_daily_ids = set(schedule.get("jp_daily_provider_ids") or [])
+    jp_daily_defaults = schedule.get("jp_daily") or {
+        "check_frequency": "daily",
+        "cadence_days": 1,
+        "freshness_sla_hours": 30,
+        "fetch_location": "jp_mac",
+    }
     five_day_ids = set(schedule.get("every_5_days_provider_ids") or [])
     low_defaults = schedule.get("every_5_days") or {
         "check_frequency": "every_5_days",
@@ -163,6 +170,8 @@ def load_registry() -> list[dict[str, Any]]:
         provider = dict(raw)
         if provider["id"] in daily_ids:
             defaults = daily_defaults
+        elif provider["id"] in jp_daily_ids:
+            defaults = jp_daily_defaults
         elif provider["id"] in five_day_ids:
             defaults = low_defaults
         else:
@@ -529,6 +538,92 @@ def format_coupon_row(
     return row
 
 
+# 会社ごとの「変化とみなす条件」。既定は今までどおり、記録された種別をそのまま使う。
+DEFAULT_CHANGE_RULES: dict[str, Any] = {
+    # 配布終了⇄配布再開を、その日の主な変化として数えるか
+    "count_status_toggle_as_change": True,
+    # 新規として扱うために、公式ページの直近何日分に出ていないことを求めるか（0なら求めない）
+    "new_requires_unseen_days": 0,
+    # 消失として扱うために、公式ページから消えていることを求めるか
+    "gone_requires_unlisted": False,
+}
+
+
+def provider_change_rules(provider: dict[str, Any]) -> dict[str, Any]:
+    """レジストリの change_rules を既定値に重ねて返す。"""
+    rules = dict(DEFAULT_CHANGE_RULES)
+    for key, value in (provider.get("change_rules") or {}).items():
+        if key in rules:
+            rules[key] = value
+    return rules
+
+
+def load_official_listing_dates(data_dir: str | None) -> dict[str, list[str]]:
+    """公式ページの日次スナップショットから、ID→掲載されていた日の一覧を作る。
+
+    公式ページに載っていたかどうかの判断は、監視の差分記録よりこちらを優先する。
+    """
+    if not data_dir:
+        return {}
+    directory = ROOT / data_dir
+    if not directory.exists():
+        return {}
+    listing: dict[str, list[str]] = {}
+    for path in sorted(directory.glob("coupons_*.json")):
+        file_date = parse_date_value(path.name)
+        if not file_date:
+            continue
+        try:
+            coupons = load_json(path)
+        except (OSError, json.JSONDecodeError):
+            continue
+        for coupon in coupons if isinstance(coupons, list) else []:
+            coupon_id = str(first_value(coupon, ["id", "coupon_id"]) or "")
+            if coupon_id:
+                listing.setdefault(coupon_id, []).append(file_date.isoformat())
+    return listing
+
+
+def apply_change_rules(
+    log_rows: list[dict[str, Any]],
+    rules: dict[str, Any],
+    listing_dates: dict[str, list[str]],
+) -> list[dict[str, Any]]:
+    """公式ページの掲載実績に照らして、変化の種別を会社ごとのルールで直す。
+
+    - 掲載が続いたままの配布終了・配布再開は、主な変化から外して在庫の出入りへ回す。
+    - 直近の公式データに出ていたIDの「新規」は、初登場ではないので在庫の出入りへ回す。
+    - 公式ページにまだ載っているIDの「消失」は、消えていないので在庫の出入りへ回す。
+    """
+    unseen_days = int(rules.get("new_requires_unseen_days") or 0)
+    adjusted = []
+    for row in log_rows:
+        row = dict(row)
+        row.setdefault("_minor", False)
+        kind = row.get("_kind", "other")
+        coupon_id = str(row.get("ID", ""))
+        days = listing_dates.get(coupon_id, [])
+        event_date = str(row.get("日付", ""))
+        if kind in {"ended", "reopened"} and not rules.get("count_status_toggle_as_change", True):
+            row["_minor"] = True
+        if kind == "new" and unseen_days > 0:
+            event_day = parse_date_value(event_date)
+            window_start = (event_day - timedelta(days=unseen_days)).isoformat() if event_day else ""
+            if any(window_start <= day < event_date for day in days):
+                row["_kind"] = "reopened"
+                row["_demoted_from"] = "new"
+                row["_minor"] = True
+        elif kind == "gone" and rules.get("gone_requires_unlisted"):
+            # その日以降の公式スナップショットに載っていれば、公式ページからは消えていない。
+            still_listed = any(day >= event_date for day in days)
+            if still_listed:
+                row["_kind"] = "ended"
+                row["_demoted_from"] = "gone"
+                row["_minor"] = True
+        adjusted.append(row)
+    return adjusted
+
+
 def change_kind(value: Any) -> str:
     """会社ごとに書き方の違う変化の種別を new/gone/ended/reopened にそろえる。"""
     text = str(value or "")
@@ -590,6 +685,7 @@ def format_log_rows(change_log: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "_reappeared": item["_reappeared"],
             "_flaps": item["_flaps"],
             "_came_back": item["_came_back"],
+            "_minor": False,
         })
     return rows
 
@@ -660,7 +756,8 @@ def attach_recent_logs(providers: list[dict[str, Any]], day_filters: list[dict[s
                 **row,
             }
             recent_rows.append(recent_row)
-            all_rows.append(recent_row)
+            if not row.get("_minor"):
+                all_rows.append(recent_row)
         provider["recent_logs"] = recent_rows
 
     return sorted(all_rows, key=lambda row: (row.get("日付", ""), row.get("会社", "")), reverse=True)
@@ -771,9 +868,14 @@ def build_provider_payload(
         legacy_used = bool(coupons)
     affiliate_config = load_affiliate_config(provider["id"])
     rows = [format_coupon_row(coupon, provider, file_kind, affiliate_config) for coupon in coupons]
-    log_rows = format_log_rows(load_change_log(provider.get("data_dir")))
+    log_rows = apply_change_rules(
+        format_log_rows(load_change_log(provider.get("data_dir"))),
+        provider_change_rules(provider),
+        load_official_listing_dates(provider.get("data_dir")),
+    )
     on_demand = is_on_demand(provider)
-    monitor_mode = "指定時" if on_demand else "常時"
+    jp_only = provider.get("fetch_location") == "jp_mac"
+    monitor_mode = "指定時" if on_demand else ("常時（Mac）" if jp_only else "常時")
     pending_audits = (pending_audit_counts or {}).get(provider["id"], 0)
     affiliate_status = affiliate_setup_status(provider["id"])
     hints = load_hints(provider["id"])
@@ -875,9 +977,14 @@ def build_provider_payload(
         "check_frequency_label": frequency_label,
         "freshness_sla_hours": int(provider.get("freshness_sla_hours", 30)),
         "manual_action_url": WORKFLOW_URL,
-        "manual_gh_command": manual_gh_command(provider["id"], deep=on_demand),
+        "manual_gh_command": (
+            local_deep_command(provider["id"])
+            if jp_only
+            else manual_gh_command(provider["id"], deep=on_demand)
+        ),
         "local_deep_command": local_deep_command(provider["id"]),
         "on_demand": on_demand,
+        "jp_only": jp_only,
         "monitor_mode": monitor_mode,
         "deep_dive_at": deep_dive_at,
         "pending_audit_count": pending_audits,
@@ -1052,6 +1159,7 @@ def build_flash_data(
                 "flaps": int(log.get("_flaps") or 0),
                 "came_back": bool(log.get("_came_back")),
                 "still_listed": coupon_id in current,
+                "demoted_from": log.get("_demoted_from", ""),
             }
             for field in FLASH_EVENT_FIELDS:
                 event[field] = source.get(field, "")
@@ -1220,6 +1328,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .check-baseline {{ background: #eaf3ff; color: #0f5caa; }}
 .check-warning {{ background: #fff5d6; color: #7a5200; }}
 .check-audit_pending,.check-baseline_pending,.check-audit_held {{ background: #fff5d6; color: #7a5200; }}
+.check-needs_review {{ background: #fff5d6; color: #7a5200; }}
 .check-error {{ background: #fdecef; color: #a52834; }}
 .check-no_data,.check-none {{ background: #eef2f7; color: #5c6978; }}
 .toolbar {{ display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }}
@@ -1451,6 +1560,7 @@ function checkStatusLabel(value) {{
     audit_held: 'ユーザー確認待ち',
     snapshot_checked: 'URL確認済み',
     warning: '要確認',
+    needs_review: '要確認（取得数が急減）',
     error: '失敗',
     no_data: 'データなし',
   }};
@@ -1548,12 +1658,12 @@ function manualPanelHtml(provider) {{
       ${{provider.on_demand ? `<span class="manual-meta">最終深掘り: ${{escapeHtml(formatCheckTime(provider.deep_dive_at))}}</span>` : ''}}
       <span class="manual-meta">ASP設定: ${{escapeHtml(provider.asp_setup_status || 'なし')}}</span>
       ${{checkStatusHtml(provider)}}
-      <div class="manual-hint">会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。</div>
+      <div class="manual-hint">${{provider.jp_only ? '海外IPのGitHub Actionsからは拒否されるため、日本のMacで下のコマンドを実行してください。' : '会社別に実行できます。GitHub Actions画面を開くか、下のコマンドをターミナルで実行してください。'}}</div>
       ${{manualSourceQueueHtml(provider)}}
       ${{providerHintHtml(provider)}}
     </div>
     <div class="manual-actions">
-      <button type="button" class="manual-run-btn">${{provider.on_demand ? '深掘りを実行（GitHub）' : '手動チェック'}}</button>
+      ${{provider.jp_only ? '' : `<button type="button" class="manual-run-btn">${{provider.on_demand ? '深掘りを実行（GitHub）' : '手動チェック'}}</button>`}}
       <button type="button" class="copy-gh-btn">コマンドコピー</button>
     </div>
     <code class="manual-command">${{command}}</code>
@@ -1780,7 +1890,7 @@ function renderSummary(container) {{
       <div class="stats">
         <span class="stat">対象会社 ${{totalProviders}} 社</span>
         <span class="stat active">保存データあり ${{withRows}} 社</span>
-        <span class="stat">常時（毎日） ${{dailyProviders}} 社</span>
+        <span class="stat">定期で取得 ${{dailyProviders}} 社</span>
         ${{fiveDayProviders ? `<span class="stat">5日ごと ${{fiveDayProviders}} 社</span>` : ''}}
         <span class="stat">指定時だけ深掘り ${{onDemandProviders.length}} 社</span>
         <span class="stat review">Codex監査待ち ${{pendingAudits}} 件</span>
@@ -1796,7 +1906,7 @@ function renderSummary(container) {{
   changeSection.className = 'section';
   changeSection.innerHTML = `
     <h2>その日のクーポン変動</h2>
-    <div class="note">旧記事・手元JSONのURL生存確認だけの件数は「公式取得クーポン」に含めません。対象日: ${{escapeHtml(dateLabels)}}</div>
+    <div class="note">旧記事・手元JSONのURL生存確認だけの件数は「公式取得クーポン」に含めません。公式ページに載り続けている間の配布終了・再開は、この表と件数には入れず、速報タブの「在庫の出入り」に出します。対象日: ${{escapeHtml(dateLabels)}}</div>
   `;
   container.appendChild(changeSection);
   renderGrid(changeSection, DATA.recent_change_rows, DATA.columns.recent_logs, {{
@@ -2051,8 +2161,12 @@ function flashColumn(events, cls, heading, emptyText) {{
 
 function moveRow(event) {{
   const label = event.kind === 'ended' ? '<span class="badge warn">配布終了</span>' : '<span class="badge first">配布再開</span>';
+  const demoted = event.demoted_from === 'gone'
+    ? '記録では消失だが公式ページには掲載中'
+    : (event.demoted_from === 'new' ? '記録では新規だが直近の公式データにあり' : '');
   const meta = [
     event['残り枚数'] ? '今の残り ' + event['残り枚数'] : '',
+    demoted,
     event.flaps >= 3 ? `30日で出入り ${{event.flaps}} 回` : '',
   ].filter(Boolean).map(escapeHtml).join(' ・ ');
   return `<div class="move-row">
@@ -2109,7 +2223,7 @@ function renderFlash(container) {{
       </div>
       <details class="flash-more">
         <summary>在庫の出入り（配布終了・再開） ${{moves.length}}件</summary>
-        <div class="note">一覧には残ったまま、配布枚数が尽きて「終了」になった、または補充されて「再開」したものです。JTBは上限に達すると終了になり、予告なく追加配布されることがあります。JTB国内は公式の在庫データで残り枚数を確かめています。</div>
+        <div class="note">一覧には残ったまま、配布枚数が尽きて「終了」になった、または補充されて「再開」したものです。JTBは上限に達すると終了になり、予告なく追加配布されることがあります。JTB国内は公式の在庫データで残り枚数を確かめています。JTBは公式ページに載り続けている間の終了・再開を「新しく出た」「消えた」には数えず、この欄だけに出します。</div>
         ${{moves.map(moveRow).join('') || '<div class="flash-empty">この日の在庫の出入りはありません。</div>'}}
       </details>
       <details class="flash-more">

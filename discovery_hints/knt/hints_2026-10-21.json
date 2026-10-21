@@ -1,0 +1,17 @@
+{
+  "provider_id": "knt",
+  "provider_label": "近畿日本ツーリスト",
+  "generated_at": "2026-10-21T07:34:07.454561+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "近ツー感謝ウィークは名称・期間を確認できたが、独立した割引額を確認できず候補不採用。",
+  "known_title_count": 10,
+  "registered_url_count": 10,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/knt/hints_2026-10-21.json"
+}

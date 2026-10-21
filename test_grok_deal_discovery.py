@@ -29,9 +29,22 @@ def _provider(**overrides):
 def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
     registry = g.load_registry()
     daily = {p["id"] for p in g.select_providers(registry, "daily", "")}
-    assert daily == {"his", "jtb", "knt", "jalpack", "jalan", "rakuten_travel"}
+    # 2026-10-20: るるぶ・東武・アソビュー・Booking・一休を定期取得へ戻したので毎朝の探索対象
+    assert daily == {
+        "his",
+        "jtb",
+        "knt",
+        "jalpack",
+        "jalan",
+        "rakuten_travel",
+        "rurubu_travel",
+        "tobu_top_tours",
+        "asoview",
+        "booking",
+        "ikkyu",
+    }
     weekly = {p["id"] for p in g.select_providers(registry, "weekly", "")}
-    assert {"relux", "booking", "toku"} <= weekly
+    assert {"relux", "toku"} <= weekly
     assert not (daily & weekly)
     monday = {p["id"] for p in g.select_providers(registry, "auto", "", date(2026, 9, 21))}
     tuesday = {p["id"] for p in g.select_providers(registry, "auto", "", date(2026, 9, 22))}
@@ -52,6 +65,7 @@ def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
     } <= weekly
     # 公式ページ未登録の指定時会社（記事由来だけ）は対象外
     assert "yumeyado" not in weekly
+    assert "skyscanner" not in weekly
 
 
 def test_classify_marks_known_url_known_title_and_new() -> None:

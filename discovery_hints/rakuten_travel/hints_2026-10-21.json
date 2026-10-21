@@ -1,0 +1,32 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-21T07:34:07.454561+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "鹿児島ふっこう応援割＜国内宿泊2泊＞10～12月宿泊",
+      "kind": "coupon",
+      "found_url": "https://x.com/ykstudiootoku/status/2112653139556151369",
+      "official_url": "https://travel.rakuten.co.jp/special/kyushuouen/kagoshima/",
+      "official_domain_match": true,
+      "evidence": "2泊限定・先着利用1,430枚。名称・金額・期間を公開条件で確認。現在の残数は未確認で、Xの空き情報は保証しない。",
+      "observed_date": "2026-10-21",
+      "discount": "ご宿泊料金(税込)の60%OFF／割引上限金額：10,000円(1人泊あたり)",
+      "period": "予約対象期間：2026/10/14(水) 10:00～2026/12/24(木) 23:59／宿泊対象期間：2026/10/14(水)チェックイン ～ 2026",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-21.json"
+}

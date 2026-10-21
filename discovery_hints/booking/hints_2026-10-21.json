@@ -1,0 +1,32 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-10-21T07:34:07.454561+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "年末セール",
+      "kind": "sale",
+      "found_url": "https://www.booking.com/dealspage.ja.html?aid=304142&campaign_id=late_escape&label=gen173nr-10CAEoggI46AdIFVgEaI8CiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuALnyY7VBsACAdICJGUwZjQ3Y2Q3LWMxZTUtNGE4Mi1iMDJkLTIxNzhhMzk4MmRmY9gCAeACAQ",
+      "official_url": "https://www.booking.com/dealspage.ja.html?campaign_id=late_escape",
+      "official_domain_match": true,
+      "evidence": "公式ページで予約・滞在期間と15%以上OFFを確認。東京・大阪市・京都市など日本国内の対象施設も掲載。",
+      "observed_date": "2026-10-21",
+      "discount": "年末の宿泊が15%以上OFF",
+      "period": "予約期間：2026年9月3日～2027年1月7日／2026年10月1日～2027年1月7日までの滞在",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/booking/hints_2026-10-21.json"
+}

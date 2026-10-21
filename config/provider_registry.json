@@ -1,12 +1,31 @@
 {
   "schema_version": 2,
   "schedule": {
-    "daily_provider_ids": ["his", "jtb", "knt", "jalpack", "jalan", "rakuten_travel"],
+    "daily_provider_ids": [
+      "his",
+      "jtb",
+      "knt",
+      "jalpack",
+      "jalan",
+      "rakuten_travel",
+      "rurubu_travel",
+      "tobu_top_tours",
+      "asoview"
+    ],
+    "jp_daily_provider_ids": ["booking", "ikkyu"],
     "every_5_days_provider_ids": [],
     "daily": {
       "check_frequency": "daily",
       "cadence_days": 1,
-      "freshness_sla_hours": 30
+      "freshness_sla_hours": 30,
+      "check_frequency_label": "平日2回（7:00 / 15:45 JST・手動実行）"
+    },
+    "jp_daily": {
+      "check_frequency": "daily",
+      "cadence_days": 1,
+      "freshness_sla_hours": 30,
+      "fetch_location": "jp_mac",
+      "check_frequency_label": "毎日（日本のMacから 6:45 / 15:30 JST）"
     },
     "every_5_days": {
       "check_frequency": "every_5_days",
@@ -18,7 +37,7 @@
       "cadence_days": 0,
       "freshness_sla_hours": 720
     },
-    "note": "常時監視は daily_provider_ids の6社だけ。それ以外は --provider-id 指定（または workflow_dispatch）のときだけ深掘りする。"
+    "note": "定期で取得するのは daily_provider_ids の9社（GitHub Actionsを平日7:00・15:45 JSTに手動実行）と jp_daily_provider_ids の2社（海外IPから拒否されるため日本のMacから取得）。GitHub Actionsのcronは2026-10-20に廃止した。それ以外は --provider-id 指定（または workflow_dispatch）のときだけ深掘りする。"
   },
   "providers": [
     {
@@ -27,7 +46,6 @@
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "A",
       "coverage_status": "auto_daily",
-      "check_frequency_label": "1日3回（6:00 / 11:05 / 19:05 JST）",
       "data_dir": "his_coupon_data",
       "master_path": "../vault_blog/ウェルトリップ/会社別/HIS/coupon-master/master.md",
       "note": "公式11地域版を独立取得。共通カードは統合し、地域限定・内容差分は分離して証拠画像を保存。"
@@ -39,7 +57,12 @@
       "classification": "A",
       "coverage_status": "auto_daily",
       "data_dir": "jtb_coupon_data",
-      "note": "国内・海外の既存日次監視データあり。"
+      "change_rules": {
+        "count_status_toggle_as_change": false,
+        "new_requires_unseen_days": 7,
+        "gone_requires_unlisted": true
+      },
+      "note": "国内・海外の既存日次監視データあり。公式ページに載り続けている間の配布終了・再開は主な変化に数えず、在庫の出入りだけに出す。"
     },
     {
       "id": "knt",
@@ -185,36 +208,6 @@
       "data_dir": "manual_coupon_data/jalan_activity",
       "master_path": "../vault_blog/ウェルトリップ/会社別/じゃらん遊び体験/coupon-master/master.md",
       "note": "coupon-master由来の暫定データ。じゃらん本体とは別管理。"
-    },
-    {
-      "id": "kkday",
-      "label": "KKday",
-      "site_targets": ["welltrip"],
-      "classification": "B",
-      "coverage_status": "official_codex",
-      "data_dir": "official_coupon_data/kkday",
-      "legacy_data_dir": "manual_coupon_data/kkday",
-      "source_type": "official_page_candidate",
-      "official_domains": ["kkday.com"],
-      "official_sources": [
-        {
-          "url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
-          "fetch_method": "auto",
-          "purpose": "公式クーポンまとめ"
-        },
-        {
-          "url": "https://www.kkday.com/ja/promo/coupon-campaign",
-          "fetch_method": "auto",
-          "purpose": "公式キャンペーン"
-        },
-        {
-          "url": "https://www.kkday.com/ja/promo/aj_newmember",
-          "fetch_method": "auto",
-          "purpose": "新規会員キャンペーン"
-        }
-      ],
-      "master_path": "../vault_blog/ウェルトリップ/会社別/KKday/coupon-master/master.md",
-      "note": "公式ブログ・キャンペーン・新規会員ページを監視。変更時だけCodex定期監査へ送る。"
     },
     {
       "id": "klook",
@@ -381,10 +374,10 @@
       "label": "アソビュー",
       "site_targets": ["welltrip"],
       "classification": "B/C",
-      "coverage_status": "official_on_demand",
+      "coverage_status": "official_codex",
       "data_dir": "official_coupon_data/asoview",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/アソビュー/note/KP_アソビュー_クーポン_パイプライン記事.html"],
-      "note": "公式クーポン一覧を指定時に深掘りする。割引額は一覧に出るが、クーポンの獲得はログインが必要。通常HTTPは本文が取れないためブラウザ取得。",
+      "note": "公式クーポン一覧を定期取得する（2026-10-20に指定時から戻した）。割引額は一覧に出るが、クーポンの獲得はログインが必要。通常HTTPは本文が取れないためブラウザ取得。",
       "source_type": "official_page_candidate",
       "legacy_data_dir": "manual_coupon_data/asoview",
       "official_sources": [
@@ -541,10 +534,10 @@
       "label": "東武トップツアーズ",
       "site_targets": ["welltrip"],
       "classification": "D",
-      "coverage_status": "official_on_demand",
+      "coverage_status": "official_codex",
       "data_dir": "official_coupon_data/tobu_top_tours",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/東武トップツアーズ/note/tobutoptours-coupon.html"],
-      "note": "会員向けクーポン案内と特集一覧を指定時に深掘りする。",
+      "note": "会員向けクーポン案内と特集一覧を定期取得する（2026-10-20に指定時から戻した）。",
       "source_type": "official_page_candidate",
       "legacy_data_dir": "manual_coupon_data/tobu_top_tours",
       "official_sources": [
@@ -628,12 +621,12 @@
       "label": "Booking.com",
       "site_targets": ["welltrip"],
       "classification": "C",
-      "coverage_status": "official_on_demand",
+      "coverage_status": "official_codex",
       "data_dir": "official_coupon_data/booking",
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/Booking.com/booking-campaign-code-migration-20260609/article.html"
       ],
-      "note": "通常取得もトップページも拒否されるため、Genius特典ページだけをブラウザ取得で指定時に深掘りする。キャンペーンコードの外部配布は対象外。",
+      "note": "海外IPではAWS WAFに止められるため、日本のMacからGenius特典ページだけをブラウザ取得する（jp_daily_provider_ids）。キャンペーンコードの外部配布は対象外。",
       "source_type": "official_page_candidate",
       "legacy_data_dir": "manual_coupon_data/booking",
       "official_sources": [
@@ -910,12 +903,12 @@
       "label": "るるぶトラベル",
       "site_targets": ["welltrip", "yakushimafan"],
       "classification": "C",
-      "coverage_status": "auto_on_demand",
+      "coverage_status": "auto_daily",
       "data_dir": "rurubu_travel_coupon_data",
       "article_paths": [
         "../vault_blog/ウェルトリップ/会社別/るるぶトラベル/reputation-migration-20260604/rurubu-travel-reputation.html"
       ],
-      "note": "公式割引クーポンページ（https://www.rurubu.travel/deals）を取得。JTB系の宿泊予約として、JTB本体とは別に成果・導線を確認する。 2026-09-18以降は指定時だけ実行。"
+      "note": "公式割引クーポンページ（https://www.rurubu.travel/deals）を取得。JTB系の宿泊予約として、JTB本体とは別に成果・導線を確認する。2026-09-18から指定時だけの扱いだったが、2026-10-20に定期取得へ戻した。"
     },
     {
       "id": "orion_tour",

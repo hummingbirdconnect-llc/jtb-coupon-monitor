@@ -7133,7 +7133,7 @@
   "tree": 1,
   "pattern": "price_diff",
   "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン"
  },
  {
   "date": "2026-10-20",
@@ -7141,7 +7141,7 @@
   "tree": 2,
   "pattern": "direct_number",
   "ota": "jtb",
-  "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン"
+  "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞"
  },
  {
   "date": "2026-10-20",
@@ -7157,21 +7157,21 @@
   "tree": 1,
   "pattern": "casual_aside",
   "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン"
  },
  {
   "date": "2026-10-20",
   "site": "welltrip",
   "tree": 2,
-  "pattern": "soft_news",
+  "pattern": "memo_style",
   "ota": "jtb",
-  "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン"
+  "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞"
  },
  {
   "date": "2026-10-20",
   "site": "welltrip",
   "tree": 3,
-  "pattern": "group_call",
+  "pattern": "quote_highlight",
   "ota": "jalpack",
   "title": "期間限定タイムセールクーポン（国内）"
  },
@@ -7189,13 +7189,85 @@
   "tree": 2,
   "pattern": "daily_check",
   "ota": "tripcom",
-  "title": "スーパー・ワールド・ウィーク"
+  "title": "人気エリアホテルをおトクに"
  },
  {
   "date": "2026-10-20",
   "site": "tripbooking",
   "tree": 3,
   "pattern": "season_context",
+  "ota": "agoda",
+  "title": "アプリ初回"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "jtb",
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "casual_aside",
+  "ota": "jtb",
+  "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "price_diff",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "大阪府のおすすめ施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "question",
+  "ota": "jalpack",
+  "title": "期間限定タイムセールクーポン（国内）"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "timing_answer",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "regret_prevention",
+  "ota": "tripcom",
+  "title": "人気エリアホテルをおトクに"
+ },
+ {
+  "date": "2026-10-21",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "daily_check",
   "ota": "agoda",
   "title": "アプリ初回"
  }
