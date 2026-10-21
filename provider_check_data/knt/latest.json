@@ -3,14 +3,17 @@
   "provider_label": "近畿日本ツーリスト",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-10-21T05:06:56.191308+09:00",
-  "completed_at": "2026-10-21T05:07:26.475370+09:00",
-  "official_fetched_at": "2026-10-21T05:07:26.475370+09:00",
+  "started_at": "2026-10-21T16:00:58.619973+09:00",
+  "completed_at": "2026-10-21T16:01:31.740028+09:00",
+  "official_fetched_at": "2026-10-21T16:01:31.740028+09:00",
+  "needs_review": false,
   "data_date": "2026-10-21",
   "freshness_status": "fresh",
-  "coupon_count": 10,
+  "coupon_count": 11,
   "latest_file": "coupons_2026-10-21.json",
   "ai_used": false,
   "wp_review_eligible": false,
-  "error": ""
+  "error": "",
+  "deep_dive": true,
+  "deep_dive_at": "2026-10-21T16:01:31.740028+09:00"
 }

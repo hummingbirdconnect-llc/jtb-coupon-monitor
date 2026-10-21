@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-07-18",
-    "type": "❌ 消失",
-    "id": "yado-sp-niigata-goto-39c481",
-    "category": "獲得クーポン",
-    "title": "「にいがたGo Toトラベル」キャンペーン",
-    "area": "新潟県"
-  },
-  {
-    "date": "2026-07-18",
-    "type": "❌ 消失",
-    "id": "yado-sp-wakayama-kumano-kcp-6bb148",
-    "category": "獲得クーポン",
-    "title": "熊野・串本・勝浦に泊まろう！和歌山南紀キャンペーン",
-    "area": "和歌山県"
-  },
-  {
     "date": "2026-07-24",
     "type": "❌ 消失",
     "id": "cpn-thanksweek-91eb8b",
@@ -222,5 +206,13 @@
     "category": "獲得クーポン",
     "title": "九州ふっこう応援割",
     "area": "九州"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "🆕 新規",
+    "id": "cmpgn-2600261",
+    "category": "獲得クーポン",
+    "title": "【福井の宝】福井の冬の味覚プランで使えるクーポン",
+    "area": "福井県"
   }
 ]

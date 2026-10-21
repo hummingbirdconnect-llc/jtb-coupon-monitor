@@ -2,38 +2,6 @@
   {
     "date": "2026-09-10",
     "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-ito26may20-5d9f6672cd",
-    "title": "今こそ伊東へ！伊東温泉・伊豆高原・川奈で使える旅行割引クーポン（ひとり1泊あたり最大5,000円引き）＜第一弾＞",
-    "discount": "最大20%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-kcr26jul15-f191fa03be",
-    "title": "三重県 伊勢神宮のお膝元 鳥羽 胡蝶蘭ラストサマー大感謝クーポン（最大10,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-knsk26jun15-ccbc47b61a",
-    "title": "【暑さに負けるな！】兵庫県人気温泉地 城崎夏のクーポンキャンペーン（最大6,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-mcr26jun150-mcr26jun100-mcr26jun60-f57185003a",
-    "title": "神奈川県 箱根湯本温泉 ホテル マイユクール 祥月で使えるクーポン",
-    "discount": "最大¥15,000引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
     "category": "施設限定クーポン",
     "id": "rurubu_travel-mrmn26may10-d1b2f4e4af",
     "title": "福島県 芦ノ牧温泉 丸峰観光ホテルで使えるクーポン（最大10,000円引き）",
@@ -3998,5 +3966,37 @@
     "id": "rurubu_travel-ygwr26may50-ygwr26may30-ygwr26may10-650589db8a",
     "title": "神奈川県 ゆがわら満喫クーポン",
     "discount": "最大¥5,000引き"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "new",
+    "category": "エリア限定クーポン",
+    "id": "rurubu_travel-hodhk26oc10-eaba529c5b",
+    "title": "道北エリア【北海道へ！】オススメ旅館・ホテルで使える割引クーポン",
+    "discount": "最大¥1,000引き"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26gseik50-ebef5cd1fd",
+    "title": "秋田県 男鹿温泉 セイコーグランドホテルで使えるクーポン",
+    "discount": "最大¥5,000引き"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26motob10-pp26motob50-07b4ca9a21",
+    "title": "沖縄県 オリオンホテル モトブ リゾート＆スパで使えるクーポン",
+    "discount": "最大¥10,000引き"
+  },
+  {
+    "date": "2026-10-21",
+    "type": "new",
+    "category": "エリア限定クーポン",
+    "id": "rurubu_travel-xkgsm26oc60-a0f116eeeb",
+    "title": "「鹿児島ふっこう応援割」（おとな・こどもひとり1泊あたり最大20,000円引き）",
+    "discount": "最大60%引き"
   }
 ]
