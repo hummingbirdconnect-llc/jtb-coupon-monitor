@@ -1,0 +1,32 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-22T07:32:42.152472+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "スペシャルクーポンWEEK",
+      "kind": "sale",
+      "found_url": "https://x.com/TabitokuMax/status/2112856933321646123",
+      "official_url": "https://travel.rakuten.co.jp/special/coupon-week/",
+      "official_domain_match": true,
+      "evidence": "公式ページのタイトルに最大30％OFF、本文に終了日時を確認。国内宿泊・交通＋宿・遊び体験・レンタカーを掲載。個別条件は別途あり。",
+      "observed_date": "2026-10-22",
+      "discount": "最大30％OFF",
+      "period": "10/29(木) 9:59まで",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-22.json"
+}

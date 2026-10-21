@@ -1,0 +1,32 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-10-22T07:32:42.152472+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "遊びつくしポイント",
+      "kind": "points",
+      "found_url": "https://www.asoview.com/brand/202610_asobitsukushi/",
+      "official_url": "https://www.asoview.com/brand/202610_asobitsukushi/",
+      "official_domain_match": true,
+      "evidence": "会員対象。3施設・合計1万円以上で1,000pt、5施設・合計1.5万円以上で3,000pt。11月9日頃付与予定。既知の割引クーポンとは別特典。",
+      "observed_date": "2026-10-22",
+      "discount": "最大3,000pt",
+      "period": "2026年10月1日（木）〜 10月31日（土）23:59（10月中のご予約・ご購入が対象）",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/asoview/hints_2026-10-22.json"
+}

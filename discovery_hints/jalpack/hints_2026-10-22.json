@@ -1,0 +1,60 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-10-22T07:32:42.152472+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "JAL九州応援クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "JMB会員向け国内旅行クーポン。九州対象、併用利用可と表示。",
+      "observed_date": "2026-10-22",
+      "discount": "3,000円OFF（1グループ）",
+      "period": "予約対象期間：2026年9月29日～2027年1月31日；出発対象期間：2026年10月1日～2027年2月28日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "伊丹発旭川着運航開始記念クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "JMB会員向け。対象路線を利用する国内旅行用、先着枚数制限あり。",
+      "observed_date": "2026-10-22",
+      "discount": "2,000円OFF（1グループ）",
+      "period": "予約対象期間：2026年8月18日～11月30日；出発対象期間：2026年10月25日～2027年3月31日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "伊丹発帯広着運航開始記念クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "JMB会員向け。対象路線を利用する国内旅行用、先着枚数制限あり。",
+      "observed_date": "2026-10-22",
+      "discount": "2,000円OFF（1グループ）",
+      "period": "予約対象期間：2026年8月18日～11月30日；出発対象期間：2026年12月1日～2027年3月31日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jalpack/hints_2026-10-22.json"
+}

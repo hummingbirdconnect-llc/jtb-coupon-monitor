@@ -1,10 +1,10 @@
 {
-  "completed_at": "2026-10-21T07:34:07.454561+09:00",
+  "completed_at": "2026-10-22T07:32:42.152472+09:00",
   "scope": "codex-auto",
-  "provider_count": 12,
-  "error_count": 5,
-  "candidate_count": 8,
-  "new_count": 7,
+  "provider_count": 13,
+  "error_count": 1,
+  "candidate_count": 22,
+  "new_count": 16,
   "results": [
     {
       "provider_id": "his",
@@ -12,44 +12,44 @@
       "status": "ok",
       "error": "",
       "candidate_count": 1,
-      "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-10-21.json"
+      "new_count": 1,
+      "hints_file": "discovery_hints/his/hints_2026-10-22.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 2,
-      "new_count": 2,
-      "hints_file": "discovery_hints/jtb/hints_2026-10-21.json"
+      "candidate_count": 4,
+      "new_count": 4,
+      "hints_file": "discovery_hints/jtb/hints_2026-10-22.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
-      "status": "error",
-      "error": "近ツー感謝ウィークは名称・期間を確認できたが、独立した割引額を確認できず候補不採用。",
+      "status": "ok",
+      "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-10-21.json"
+      "hints_file": "discovery_hints/knt/hints_2026-10-22.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/jalpack/hints_2026-10-21.json"
+      "candidate_count": 3,
+      "new_count": 3,
+      "hints_file": "discovery_hints/jalpack/hints_2026-10-22.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/jalan/hints_2026-10-21.json"
+      "candidate_count": 5,
+      "new_count": 5,
+      "hints_file": "discovery_hints/jalan/hints_2026-10-22.json"
     },
     {
       "provider_id": "rakuten_travel",
@@ -58,34 +58,43 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-21.json"
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-22.json"
     },
     {
       "provider_id": "ikkyu",
       "provider_label": "一休",
-      "status": "error",
-      "error": "targets.jsonのofficial_domainsが空。Web検索は実施したが指定公式ドメイン上での確認要件を満たせないため採用不可。",
-      "candidate_count": 0,
+      "status": "ok",
+      "error": "",
+      "candidate_count": 5,
       "new_count": 0,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-10-21.json"
+      "hints_file": "discovery_hints/ikkyu/hints_2026-10-22.json"
+    },
+    {
+      "provider_id": "yahoo_travel",
+      "provider_label": "Yahoo!トラベル",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 0,
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-10-22.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
-      "status": "error",
-      "error": "公開クーポン一覧から施策本文を取得できず、別の限定クーポンページは「該当するクーポンがありません」と表示。検索結果だけの新江ノ島水族館10%OFFは未確認。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/asoview/hints_2026-10-21.json"
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/asoview/hints_2026-10-22.json"
     },
     {
       "provider_id": "tobu_top_tours",
       "provider_label": "東武トップツアーズ",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-21.json"
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-22.json"
     },
     {
       "provider_id": "booking",
@@ -94,25 +103,25 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-10-21.json"
+      "hints_file": "discovery_hints/booking/hints_2026-10-22.json"
     },
     {
       "provider_id": "rurubu_travel",
       "provider_label": "るるぶトラベル",
       "status": "error",
-      "error": "登録済み/dealsはWeb取得・ブラウザUA付きcurlとも施策本文を取得できず。一覧全体の確認未完了。今月の値下げページは取得し終了を確認。",
+      "error": "Web検索で候補を発見したが、公式/dealsはWeb閲覧で本文なし。ブラウザUser-Agent付きcurlでも本文を取得できず。Chromeでの再確認は未実施。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-21.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-22.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
-      "status": "error",
-      "error": "日本向け公開SALEは取得できたが、JRWDELIVERY・2YOMIURI20の有効期間を確認できず。提携コードTAIWANZINEの公式裏付けも見つからず。",
+      "status": "ok",
+      "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-10-21.json"
+      "hints_file": "discovery_hints/klook/hints_2026-10-22.json"
     }
   ]
 }
