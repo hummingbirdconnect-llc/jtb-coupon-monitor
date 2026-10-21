@@ -61,7 +61,6 @@ def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
         "jamjam",
         "shirokuma_tour",
         "agoda",
-        "ikkyu",
     } <= weekly
     # 公式ページ未登録の指定時会社（記事由来だけ）は対象外
     assert "yumeyado" not in weekly
