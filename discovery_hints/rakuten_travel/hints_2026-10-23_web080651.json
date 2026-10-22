@@ -1,0 +1,52 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-23T08:23:59+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "スペシャルクーポンWEEK",
+      "kind": "coupon",
+      "found_url": "https://x.com/amebouamebou/status/2113300619272609937",
+      "official_url": "https://travel.rakuten.co.jp/special/coupon-week/",
+      "evidence": "未確認：公式ページがメンテナンス中の案内（2026/10/23 01:00～08:00、終了時刻は前後あり）に置き換わっており、08:19頃と08:25頃の2回とも条件を読めなかった ／ 未確認：割引額 ／ 未確認：予約期間 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-10-23",
+      "discount": "未確認（Grok: 国内宿泊はクーポン併用で最大30%OFF、楽パックは最大5,000円OFFなど）",
+      "period": "予約：未確認（Grok: 2026年10月20日10:00～10月29日9:59） ／ 旅行：未確認（Grok: 2026年10月20日チェックイン～2027年9月30日チェックアウト）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travelplanet.jp/rakutentravel-coupon-matsuri",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "未確認：公式ページがメンテナンス中の案内（2026/10/23 01:00～08:00、終了時刻は前後あり）に置き換わっており、08:19頃と08:25頃の2回とも条件を読めなかった ／ 未確認：割引額 ／ 未確認：予約期間 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-10-23",
+      "discount": "未確認（Grok: 全会員500円OFF、ダイヤモンド会員最大4,500円OFF（金土・条件付き）、ダイヤモンド・プラチナ限定の段階的割引、楽パック最大8,000円OFF）",
+      "period": "予約：未確認（Grok: 2026年10月2日10:00～11月4日9:59） ／ 旅行：未確認（Grok: 2026年10月2日チェックイン～2027年9月30日チェックアウト前後）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "連休旅行特集（楽パック最大10,000円OFFなど）",
+      "kind": "coupon",
+      "found_url": "https://appllio.com/rakuten-travel-good-deal-days",
+      "official_url": "https://travel.rakuten.co.jp/special/holiday/",
+      "evidence": "未確認：公式ページがメンテナンス中の案内（2026/10/23 01:00～08:00、終了時刻は前後あり）に置き換わっており、08:19頃と08:25頃の2回とも条件を読めなかった ／ 未確認：割引額 ／ 未確認：予約期間 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-10-23",
+      "discount": "未確認（Grok: 楽パックで最大10,000円OFFなどクーポンにより異なる）",
+      "period": "予約：未確認（Grok: ～2026年11月2日9:59前後） ／ 旅行：未確認（Grok: 例 12月1日出発～2027年7月31日帰着）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
