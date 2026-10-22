@@ -1,0 +1,43 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "check_type": "official_page_candidate",
+  "started_at": "2026-10-23T06:45:08.309783+09:00",
+  "completed_at": "2026-10-23T06:45:12.661084+09:00",
+  "official_fetched_at": "2026-10-23T06:45:12.661090+09:00",
+  "source_results": [
+    {
+      "url": "https://www.booking.com/genius.ja.html",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "Geniusロイヤルティ特典",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 5117,
+      "content_hash": "f08541d99c4756d81ef843e1db64522d823fe2faa22c92e931044af374d1ee49"
+    }
+  ],
+  "failed_source_count": 0,
+  "configured_source_count": 1,
+  "discovered_source_count": 0,
+  "audit_source_count": 1,
+  "manual_source_count": 0,
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "ai_used": false,
+  "codex_audit_required": false,
+  "wp_review_eligible": false,
+  "status": "unchanged",
+  "change_kind": "unchanged",
+  "data_date": "2026-10-20",
+  "latest_file": "coupons_2026-10-20.json",
+  "coupon_count": 3,
+  "content_hash": "f56fe3d5e547f577fafd45cd12e5e98205142d0f4e8d8a18d6ee400cdaeb229a",
+  "error": "",
+  "freshness_status": "stale"
+}
