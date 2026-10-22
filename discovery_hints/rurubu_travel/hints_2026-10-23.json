@@ -1,0 +1,32 @@
+{
+  "provider_id": "rurubu_travel",
+  "provider_label": "るるぶトラベル",
+  "generated_at": "2026-10-23T07:34:43.819190+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "調査一部制限：/dealsは本文を取得できず、headless ChromeもTargetClosedErrorで起動失敗。ブラウザ用User-Agent付きcurlで再取得しても一覧は空。個別の新潟県民向けページは取得・確認できた。",
+  "known_title_count": 65,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "【新潟県民限定】にいがたGo To トラベル（第二弾）",
+      "kind": "coupon",
+      "found_url": "https://www.rurubu.travel/theme/pref-plan/info_niigatagoto/",
+      "official_url": "https://www.rurubu.travel/theme/pref-plan/info_niigatagoto/",
+      "official_domain_match": true,
+      "evidence": "代表者・同行者全員が新潟県内在住であることが条件。対象施設で1人1泊30%OFF、最大5,000円。ビジネス目的は対象外。",
+      "observed_date": "2026-10-23",
+      "discount": "おとな・こどもひとり1泊あたり30%OFF（最大5,000円引き）",
+      "period": "対象予約期間：2026年9月7日 - 2026年12月28日；対象宿泊期間：2026年9月7日チェックイン - 2026年12月29日チェックアウトまで",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-23.json"
+}

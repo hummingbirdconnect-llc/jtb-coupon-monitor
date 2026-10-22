@@ -1,0 +1,17 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-23T07:34:43.819190+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式ページはメンテナンス（2026/10/23 01:00AM～08:00AM、日本時間）。Web取得503、ブラウザ用User-Agent付きcurlでも案内ページ。Xの2施策は公式の条件を確認できず不採用。",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-23.json"
+}

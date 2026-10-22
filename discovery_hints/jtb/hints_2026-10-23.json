@@ -1,0 +1,60 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-10-23T07:34:43.819190+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 91,
+  "registered_url_count": 92,
+  "candidates": [
+    {
+      "title": "10月～2月出発で最大15,000ポイント！旅するたびにポイントアップキャンペーン",
+      "kind": "points",
+      "found_url": "https://x.com/tabipro_his/status/2113228916852981994",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/tabitabi/",
+      "official_domain_match": true,
+      "evidence": "国内宿泊・国内ツアーも対象。1予約3万円以上、異なる月の旅行3回以上で15,000ポイント。会員・エントリー・メルマガ購読が必要。",
+      "observed_date": "2026-10-23",
+      "discount": "1回出発で300ポイント、2回出発で5,000ポイント、3回以上出発で15,000ポイント",
+      "period": "エントリー・予約期間：2026年7月10日（金）～2027年2月28日（日）；出発期間：2026年10月1日（木）～2027年2月28日（日）",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "＼18歳～29歳は当選確率2倍／抽選で10,000ポイント還元！",
+      "kind": "points",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/akifuyutabi/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/akifuyutabi/akifuyu26-01/",
+      "official_domain_match": true,
+      "evidence": "国内宿泊・国内ツアーも対象。1予約1万円以上で予約・出発し、444名に抽選還元。会員・エントリー・メルマガ購読が必要。",
+      "observed_date": "2026-10-23",
+      "discount": "10,000ポイント",
+      "period": "エントリー・予約期間：2026年8月17日（月）～2026年11月16日（月）；出発期間：2026年9月1日（火）～2027年1月31日（日）",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "秋限定！おでかけ応援クーポン！（JTB電子チケットクーポン）",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/akifuyutabi/",
+      "official_url": "https://www.jtb.co.jp/cvstkt/2609ode/page.asp",
+      "official_domain_match": true,
+      "evidence": "対象レジャーチケットのネット購入で2,000円以上は100円引、5,000円以上は200円引。各先着500枚、1人1回。",
+      "observed_date": "2026-10-23",
+      "discount": "100円引／200円引",
+      "period": "利用期間：2026/09/17(木)～2026/11/16(月)；販売期間：2026/09/17(木)～2026/11/16(月)",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jtb/hints_2026-10-23.json"
+}

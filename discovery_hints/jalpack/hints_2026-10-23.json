@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-10-23T07:34:43.819190+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "大阪（伊丹）－旭川／帯広／女満別　運航開始記念クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/itami-hokkaido-cpn/",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/itami-hokkaido-cpn/",
+      "official_domain_match": true,
+      "evidence": "国内航空券＋宿泊のJMB会員向け。対象路線往復直行便、1名以上・総額4万円以上。路線ごと先着枚数あり。",
+      "observed_date": "2026-10-23",
+      "discount": "2,000円（1グループにつき）",
+      "period": "予約対象期間：2026年8月18日（火）～11月30日（月）；出発対象期間：旭川線2026年10月25日（日）～2027年3月31日（水）、帯広線2026年12",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalpack/hints_2026-10-23.json"
+}

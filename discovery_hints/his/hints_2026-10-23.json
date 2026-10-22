@@ -1,0 +1,32 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-10-23T07:34:43.819190+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 55,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割",
+      "kind": "campaign",
+      "found_url": "https://x.com/amebouamebou/status/2113301866524311989",
+      "official_url": "https://www.his-j.com/campaign/kokunai/kyushu/recovery/08/",
+      "official_domain_match": true,
+      "evidence": "10月21日正午から全7県のオンライン予約再開を確認。九州発の対象ツアー。予算到達で終了し、予約完了前の枠確約はない。",
+      "observed_date": "2026-10-23",
+      "discount": "旅行・宿泊料金の50％（熊本県・鹿児島県は60％）",
+      "period": "10月21日(水)正午12時より予約受付を再開。2026年10月1日(木)～2026年12月25日(金)宿泊分まで。鹿児島県は2026年10月14日(水)～20",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/his/hints_2026-10-23.json"
+}

@@ -1,0 +1,32 @@
+{
+  "provider_id": "ikkyu",
+  "provider_label": "一休",
+  "generated_at": "2026-10-23T07:34:43.819190+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 65,
+  "registered_url_count": 8,
+  "candidates": [
+    {
+      "title": "一休の日セール！旅館・リゾートスペシャル（ホテルシギラミラージュ）",
+      "kind": "sale",
+      "found_url": "https://www.ikyu.com/special/timesale_ikyu_rr/search",
+      "official_url": "https://www.ikyu.com/special/timesale_ikyu_rr/search",
+      "official_domain_match": true,
+      "evidence": "対象一覧のホテルシギラミラージュでポイント30%分利用表示を確認。オンラインカード決済時。付与率は会員ステージ、宿泊期間は施設により異なる。",
+      "observed_date": "2026-10-23",
+      "discount": "ポイント30%分利用",
+      "period": "予約受付：2026/10/19（月）12:00から11/1（日）12:00まで",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/ikkyu/hints_2026-10-23.json"
+}

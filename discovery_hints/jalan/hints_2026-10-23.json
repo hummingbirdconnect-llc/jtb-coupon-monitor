@@ -1,0 +1,46 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-23T07:34:43.819190+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "じゃらんのお得な10日間",
+      "kind": "sale",
+      "found_url": "https://x.com/korehakkutsu26/status/2113286148625948892",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "official_domain_match": true,
+      "evidence": "10月20～29日開催。対象プランとクーポン併用時に最大36%お得。全プラン対象ではなく、枚数・金額条件あり。",
+      "observed_date": "2026-10-23",
+      "discount": "最大36%お得",
+      "period": "予約受付期間：2026年10月20日　10:00　～　2026年10月29日　23:59",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "ねこの日クーポン（PickUp宿で使えるクーポン）",
+      "kind": "coupon",
+      "found_url": "https://x.com/veltabi_travel/status/2113282932152684668",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "official_domain_match": true,
+      "evidence": "PickUp宿の宿泊施設クーポン最大15,300円分。2つのクーポン併用で最大22%お得。先着予約数到達で利用終了。",
+      "observed_date": "2026-10-23",
+      "discount": "最大15,300円分クーポン／2つのクーポン併用で最大22%お得！",
+      "period": "配布期間：2026年10月20日　10:00　～　2026年10月23日　23:59；予約受付期間：2026年10月22日　10:00　～　2026年10月23",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-23.json"
+}
