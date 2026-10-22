@@ -3,17 +3,17 @@
   "provider_label": "るるぶトラベル",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-10-22T07:21:29.035565+09:00",
-  "completed_at": "2026-10-22T07:21:30.510384+09:00",
-  "official_fetched_at": "2026-10-22T07:21:30.510384+09:00",
+  "started_at": "2026-10-22T16:11:11.483300+09:00",
+  "completed_at": "2026-10-22T16:11:12.958326+09:00",
+  "official_fetched_at": "2026-10-22T16:11:12.958326+09:00",
   "needs_review": false,
   "data_date": "2026-10-22",
   "freshness_status": "fresh",
-  "coupon_count": 64,
+  "coupon_count": 65,
   "latest_file": "coupons_2026-10-22.json",
   "ai_used": false,
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-22T07:21:30.510384+09:00"
+  "deep_dive_at": "2026-10-22T16:11:12.958326+09:00"
 }

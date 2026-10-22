@@ -2,14 +2,6 @@
   {
     "date": "2026-09-10",
     "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-mrmn26may10-d1b2f4e4af",
-    "title": "福島県 芦ノ牧温泉 丸峰観光ホテルで使えるクーポン（最大10,000円引き）",
-    "discount": "最大10%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
     "category": "エリア限定クーポン",
     "id": "rurubu_travel-okinw26mr10-d81c70edee",
     "title": "【4月～8月出発】沖縄県のおすすめ施設で使えるクーポン（最大5,000円引き）",
@@ -3998,5 +3990,13 @@
     "id": "rurubu_travel-xkgsm26oc60-a0f116eeeb",
     "title": "「鹿児島ふっこう応援割」（おとな・こどもひとり1泊あたり最大20,000円引き）",
     "discount": "最大60%引き"
+  },
+  {
+    "date": "2026-10-22",
+    "type": "new",
+    "category": "エリア限定クーポン",
+    "id": "rurubu_travel-jrinn26oc10-ab16a9e17c",
+    "title": "【11月～12月出発】北海道のJRイン6館で使えるクーポン（最大5,000円引き）",
+    "discount": "最大10%引き"
   }
 ]
