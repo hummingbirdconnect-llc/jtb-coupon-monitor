@@ -7342,5 +7342,77 @@
   "pattern": "price_diff",
   "ota": "agoda",
   "title": "アプリ初回"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "loss_aversion",
+  "ota": "jtb",
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "group_call",
+  "ota": "jtb",
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "question",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "memo_style",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "weekend_plan",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "season_context",
+  "ota": "tripcom",
+  "title": "人気エリアホテルをおトクに"
+ },
+ {
+  "date": "2026-10-23",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "アプリ初回"
  }
 ]
