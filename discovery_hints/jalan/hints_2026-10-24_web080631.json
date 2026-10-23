@@ -1,0 +1,52 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-24T08:16:37+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "じゃらんのお得な10日間（宿・ホテル向けクーポン）",
+      "kind": "coupon",
+      "found_url": "https://x.com/jalannet/status/2113510765252710706",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "evidence": "公式：掲載期間 2026年10月20日～2026年10月29日 ／ 公式：宿泊施設クーポン最大22,500円分、最大15,000円分（じゃらんクーポンと併用可）、最大10,000円分など ／ 公式：宿泊料金10,000円（税込）以上の予約時にクーポン併用で最大31％ ／ 公式：先着予約数に達すると獲得済みでも使えない。一部ホテルは対象外 ／ 未確認：旅行期間（クーポンごと） ／ 未確認：クーポンごとの最低利用額 ／ 未確認：対象者（会員条件） ／ 未確認：決済方法",
+      "observed_date": "2026-10-24",
+      "discount": "宿泊施設クーポン最大22,500円分、併用可能な宿泊施設クーポン最大15,000円分、じゃらんクーポン最大10,000円分など（併用で最大31％）",
+      "period": "予約：2026年10月20日～2026年10月29日（掲載期間） ／ 旅行：未確認（Grok: 施設クーポン例で2026年10月20日チェックイン～2027年5月1日チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "じゃらんのお得な10日間（じゃらんパッククーポン）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/theme/otoku_10days/",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "evidence": "公式：掲載期間 2026年10月20日～2026年10月29日 ／ 公式：じゃらんパッククーポン 80,000円分 ／ 公式：じゃらんパッククーポンと宿泊施設クーポンは併用可 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-10-24",
+      "discount": "じゃらんパッククーポン 最大80,000円分（宿泊施設クーポンと併用可）",
+      "period": "予約：2026年10月20日～2026年10月29日（掲載期間） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "九州ふっこう応援割（じゃらん）",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2113762612249043384",
+      "official_url": "",
+      "evidence": "公式：じゃらんnet上の1施設（ホテル青島サンクマール、宮崎県）のお知らせ。じゃらん全体の特設ページは見つからず ／ 公式：旅行代金・宿泊代金の最大50％割引、上限 1泊20,000円／2泊以上30,000円／2県以上35,000円 ／ 公式：12月26日（土）チェックアウト分まで ／ 公式：予算・クーポン上限に到達次第終了 ／ 未確認：じゃらん全体の特設ページ ／ 未確認：県ごとの予約期間と割引率 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-10-24",
+      "discount": "最大50％割引（宮崎県の例。上限 1泊20,000円／2泊以上30,000円／2県以上35,000円）。Grok: 一部県は60％",
+      "period": "予約：未確認（県・施設により異なる。予算上限で終了） ／ 旅行：未確認（宮崎県の施設の例で12月26日チェックアウト分まで）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": false
+    }
+  ]
+}

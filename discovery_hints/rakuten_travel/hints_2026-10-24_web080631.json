@@ -1,0 +1,26 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-24T08:16:37+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "楽天トラベル お得なクーポン祭",
+      "kind": "coupon",
+      "found_url": "https://x.com/otokunanaban/status/2113744696476606626",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 公式：全楽天会員様 500円OFF 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 4,500円OFF・4,000円OFF、ダイヤモンド・プラチナ会員様限定 3,000円〜1,000円OFF ／ 公式：クーポンには金額条件がある ／ 公式：オンラインカード決済限定のクーポンあり ／ 未確認：宿泊対象期間 ／ 未確認：クーポンごとの最低利用額",
+      "observed_date": "2026-10-24",
+      "discount": "全楽天会員500円OFF（先着300,000枚）、ダイヤモンド会員4,500円・4,000円OFF、ダイヤモンド・プラチナ会員3,000円〜1,000円OFFなど",
+      "period": "予約：2026年10月2日10:00～2026年11月4日09:59 ／ 旅行：未確認（Grok: 2026年10月2日チェックイン～2027年9月30日チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
