@@ -1,0 +1,33 @@
+{
+  "completed_at": "2026-10-23T15:30:19.167267+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "error_provider_ids": [],
+  "needs_review_count": 0,
+  "needs_review_provider_ids": [],
+  "codex_audit_candidate_count": 0,
+  "codex_audit_candidates": [],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "ikkyu",
+      "provider_label": "一休",
+      "check_type": "official_monitor",
+      "status": "success",
+      "started_at": "2026-10-23T15:30:17.232354+09:00",
+      "completed_at": "2026-10-23T15:30:19.164675+09:00",
+      "official_fetched_at": "2026-10-23T15:30:19.164675+09:00",
+      "needs_review": false,
+      "data_date": "2026-10-23",
+      "freshness_status": "fresh",
+      "coupon_count": 67,
+      "latest_file": "coupons_2026-10-23.json",
+      "ai_used": false,
+      "wp_review_eligible": false,
+      "error": "",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-23T15:30:19.164675+09:00"
+    }
+  ]
+}

@@ -242,7 +242,7 @@
     },
     "ikkyu-1109321": {
       "first_seen": "2026-10-21",
-      "last_seen": "2026-10-21",
+      "last_seen": "2026-10-23",
       "title": "voco 大阪セントラル by IHG 先着30名様限定 3,000円OFFクーポン",
       "category": "宿限定クーポン",
       "discount": "3,000円割引",
@@ -518,7 +518,7 @@
       "title": "にいがた GoToトラベル（新潟県）",
       "category": "自治体クーポン",
       "discount": "最大30%割引",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "ikkyu-gov-1dc0db6859": {
       "first_seen": "2026-10-21",
@@ -607,7 +607,31 @@
       "category": "宿限定クーポン",
       "discount": "4,000円割引",
       "stock_status": "配布中"
+    },
+    "ikkyu-1122538": {
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "title": "京王プレリアホテル札幌 先着50名様限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1122539": {
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "title": "京王プレリアホテル札幌 先着40名様限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "ikkyu-1026175": {
+      "first_seen": "2026-10-23",
+      "last_seen": "2026-10-23",
+      "title": "JR東日本ホテルメッツ プレミア 東京ベイ新木場 枚数限定 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-10-23T06:45:14.420671+09:00"
+  "last_updated": "2026-10-23T15:30:19.150826+09:00"
 }
