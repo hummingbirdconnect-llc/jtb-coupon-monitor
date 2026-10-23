@@ -149,6 +149,20 @@ def freshness_status(data_date: str, sla_hours: int, *, official: bool) -> str:
     return "fresh" if age_hours <= sla_hours else "stale"
 
 
+def official_page_freshness(payload: dict, sla_hours: int) -> str:
+    """公式ページ監視の鮮度。
+
+    ページが監査で反映済みの内容から変わっていなければ（status: unchanged）、
+    確定データの日付ではなく、変化なしを確かめた取得日で計る。
+    """
+    basis = payload.get("data_date", "")
+    if basis and payload.get("status") == "unchanged":
+        fetched_date = data_date_from_filename(payload.get("official_fetched_at", ""))
+        if fetched_date > basis:
+            basis = fetched_date
+    return freshness_status(basis, sla_hours, official=True)
+
+
 def coupon_url(coupon: dict) -> str:
     for key in ("detail_url", "source_url"):
         value = coupon.get(key)
@@ -426,11 +440,7 @@ def run_provider(
         payload = run_official_deal_monitor(provider, timeout=max(timeout, 30))
         payload.setdefault(
             "freshness_status",
-            freshness_status(
-                payload.get("data_date", ""),
-                int(provider.get("freshness_sla_hours", 30)),
-                official=True,
-            ),
+            official_page_freshness(payload, int(provider.get("freshness_sla_hours", 30))),
         )
         if is_on_demand(provider):
             payload["deep_dive"] = True
