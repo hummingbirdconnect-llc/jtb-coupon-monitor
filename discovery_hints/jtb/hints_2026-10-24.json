@@ -1,0 +1,32 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-10-24T07:34:36.790309+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 93,
+  "registered_url_count": 94,
+  "candidates": [
+    {
+      "title": "～すきを好きなだけ～かけこめ！秋冬旅 JTB公式X推し活応援キャンペーン",
+      "kind": "campaign",
+      "found_url": "https://x.com/JTB_jp/status/2113435239183786347",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/x_2026oshikatsu/",
+      "official_domain_match": true,
+      "evidence": "抽選で国内旅行予約用クーポンが当たる。1万円引は30名、合計10万円引は1名。後者は11月中旬通知予定。会員登録が必要。",
+      "observed_date": "2026-10-24",
+      "discount": "1万円引クーポン／合計10万円引クーポン",
+      "period": "2026年10月6日（火）～ 2026年11月4日（水）23:59",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jtb/hints_2026-10-24.json"
+}

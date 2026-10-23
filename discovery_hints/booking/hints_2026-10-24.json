@@ -1,0 +1,32 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-10-24T07:34:36.790309+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "年末セール",
+      "kind": "sale",
+      "found_url": "https://www.booking.com/index.ja.html",
+      "official_url": "https://www.booking.com/dealspage.ja.html?campaign_id=late_escape",
+      "official_domain_match": true,
+      "evidence": "公式ページに東京・大阪市・京都市など国内の対象施設を掲載。税・手数料加算前の料金に割引を適用。開始は14日より前。",
+      "observed_date": "2026-10-24",
+      "discount": "15%以上OFF",
+      "period": "予約期間：2026年9月3日～2027年1月7日／宿泊：2026年10月1日～2027年1月7日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/booking/hints_2026-10-24.json"
+}

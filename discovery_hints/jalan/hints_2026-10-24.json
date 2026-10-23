@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-24T07:34:36.790309+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "じゃらんのお得な10日間",
+      "kind": "sale",
+      "found_url": "https://x.com/yuna_trends1114/status/2113688941048320492",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "official_domain_match": true,
+      "evidence": "公開ページで対象プランとクーポン併用による最大36%お得を確認。全プランが5%OFFではなく、クーポンには先着上限がある。",
+      "observed_date": "2026-10-24",
+      "discount": "最大36%お得",
+      "period": "掲載期間：2026年10月20日～2026年10月29日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-24.json"
+}

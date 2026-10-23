@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-10-24T07:34:36.790309+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開SALEページは台湾向け表示のみ取得。Chrome起動失敗のため日本タブの条件を確認できず、ブラウザUser-Agent付きcurlでも国内適用・期間は未確認。ログインはしていない。",
+  "known_title_count": 7,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-10-24.json"
+}
