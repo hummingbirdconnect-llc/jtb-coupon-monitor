@@ -7348,8 +7348,8 @@
   "site": "yakushimafan",
   "tree": 1,
   "pattern": "loss_aversion",
-  "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "ota": "his",
+  "title": "早めの予約がお得！1名様につき最大5,000円引き"
  },
  {
   "date": "2026-10-23",
@@ -7357,15 +7357,15 @@
   "tree": 2,
   "pattern": "group_call",
   "ota": "jtb",
-  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
  },
  {
   "date": "2026-10-23",
   "site": "yakushimafan",
   "tree": 3,
-  "pattern": "daily_check",
-  "ota": "his",
-  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+  "pattern": "comeback",
+  "ota": "jtb",
+  "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞"
  },
  {
   "date": "2026-10-23",
@@ -7373,23 +7373,23 @@
   "tree": 1,
   "pattern": "group_call",
   "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "title": "すいちょるけん！鳥取割引クーポン"
  },
  {
   "date": "2026-10-23",
   "site": "welltrip",
   "tree": 2,
-  "pattern": "question",
-  "ota": "jtb",
-  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+  "pattern": "discovery",
+  "ota": "his",
+  "title": "早めの予約がお得！1名様につき最大5,000円引き"
  },
  {
   "date": "2026-10-23",
   "site": "welltrip",
   "tree": 3,
   "pattern": "memo_style",
-  "ota": "his",
-  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+  "ota": "jtb",
+  "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン"
  },
  {
   "date": "2026-10-23",

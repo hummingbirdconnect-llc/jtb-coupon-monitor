@@ -7774,5 +7774,50 @@
     "title": "熊本ふっこう応援割",
     "discount": "最大60％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "🆕 新規",
+    "id": "2610donan",
+    "category": "国内",
+    "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン",
+    "discount": "最大10,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "🆕 新規",
+    "id": "2610tottori",
+    "category": "国内",
+    "title": "すいちょるけん！鳥取割引クーポン",
+    "discount": "最大20,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "🔴 配布終了",
+    "id": "2609akifuyu",
+    "category": "国内",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "discount": "最大10,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "🔴 配布終了",
+    "id": "2609hankyu",
+    "category": "国内",
+    "title": "【10～12月宿泊】「阪急阪神ホテルズ」東京レム５施設と第一ホテル東京で使える！割引クーポン",
+    "discount": "最大5,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-23",
+    "type": "🟢 配布再開",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
   }
 ]

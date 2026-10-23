@@ -3,9 +3,9 @@
   "provider_label": "近畿日本ツーリスト",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-10-23T07:25:26.571519+09:00",
-  "completed_at": "2026-10-23T07:26:00.958899+09:00",
-  "official_fetched_at": "2026-10-23T07:26:00.958899+09:00",
+  "started_at": "2026-10-23T16:09:40.247077+09:00",
+  "completed_at": "2026-10-23T16:10:12.622273+09:00",
+  "official_fetched_at": "2026-10-23T16:10:12.622273+09:00",
   "needs_review": false,
   "data_date": "2026-10-23",
   "freshness_status": "fresh",
@@ -15,5 +15,5 @@
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-23T07:26:00.958899+09:00"
+  "deep_dive_at": "2026-10-23T16:10:12.622273+09:00"
 }

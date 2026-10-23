@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-23T07:25:26.513096+09:00",
+  "last_updated": "2026-10-23T16:09:40.183461+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -92,6 +92,13 @@
       "area": "北海道",
       "stock_status": "配布中"
     },
+    "2610donan": {
+      "category": "国内",
+      "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン",
+      "discount": "最大10,000円引",
+      "area": "北海道",
+      "stock_status": "配布中"
+    },
     "2609iwate": {
       "category": "国内",
       "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞",
@@ -146,7 +153,7 @@
       "title": "【10～12月宿泊】「阪急阪神ホテルズ」東京レム５施設と第一ホテル東京で使える！割引クーポン",
       "discount": "最大5,000円引",
       "area": "東京都",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2608hachijo": {
       "category": "国内",
@@ -232,6 +239,13 @@
       "area": "大阪府",
       "stock_status": "配布中"
     },
+    "2610tottori": {
+      "category": "国内",
+      "title": "すいちょるけん！鳥取割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "鳥取県",
+      "stock_status": "配布中"
+    },
     "2610matsue": {
       "category": "国内",
       "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
@@ -272,7 +286,7 @@
       "title": "九州ふっこう応援割 ふくおかキャンペーン",
       "discount": "最大50％引",
       "area": "福岡県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609kyushusaga": {
       "category": "国内",
@@ -370,7 +384,7 @@
       "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
       "discount": "最大10,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607appcp": {
       "category": "国内",

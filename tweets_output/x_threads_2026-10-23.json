@@ -1,13 +1,43 @@
 {
   "date": "2026-10-23",
-  "generated_at": "2026-10-23 07:26 JST",
+  "generated_at": "2026-10-23 16:11 JST",
   "sites": [
     {
       "site_id": "yakushimafan",
       "display_name": "屋久島ファン",
       "x_account": "@yakushimafan",
-      "candidates": 274,
+      "candidates": 275,
       "threads": [
+        {
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "早めの予約がお得！1名様につき最大5,000円引き",
+          "score": 61,
+          "reasons": [
+            "本日新規",
+            "割引5,000円"
+          ],
+          "pattern": "loss_aversion",
+          "pattern_name": "損失回避型",
+          "article_url": "https://yakushima.fun/his-coupon/",
+          "posts": [
+            {
+              "text": "知らないまま定価で予約しがちなやつです。\n【HIS】最大5,000円引きクーポン、配布中\n\n対象はHISが企画・実施する飛行機利用の国内ツアー。\n予約は11/4までです。\n\n条件はこの下にまとめました👇\n(1/3)",
+              "weight": 187,
+              "chars": 107
+            },
+            {
+              "text": "条件を短くまとめるとこうなります。\n\n✅割引: 最大5,000円引き\n✅対象: HISが企画・実施する飛行機利用の国内ツアー\n✅予約期限: 11/4まで\n\n⚠️30,000円以上の予約が条件です\n(2/3)",
+              "weight": 170,
+              "chars": 103
+            },
+            {
+              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/his-coupon/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #HIS\n(3/3)",
+              "weight": 145,
+              "chars": 103
+            }
+          ]
+        },
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
@@ -18,49 +48,19 @@
             "割引8,000円",
             "全国対象"
           ],
-          "pattern": "loss_aversion",
-          "pattern_name": "損失回避型",
-          "article_url": "https://yakushima.fun/jtb-first/",
-          "posts": [
-            {
-              "text": "知らないまま定価で予約しがちなやつです。\n【JTB】最大8,000円引きクーポン、配布中\n\n対象は宿泊・ツアー。\n予約は12/23までです。\n\n条件はこの下にまとめました👇\n(1/3)",
-              "weight": 159,
-              "chars": 92
-            },
-            {
-              "text": "条件を短くまとめるとこうなります。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/23まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
-              "weight": 141,
-              "chars": 88
-            },
-            {
-              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/jtb-first/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #JTB\n(3/3)",
-              "weight": 145,
-              "chars": 102
-            }
-          ]
-        },
-        {
-          "provider_id": "jtb",
-          "provider_label": "JTB",
-          "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
-          "score": 54,
-          "reasons": [
-            "本日配布再開",
-            "割引10,000円"
-          ],
           "pattern": "group_call",
           "pattern_name": "各位呼びかけ型",
           "article_url": "https://yakushima.fun/jtb-first/",
           "posts": [
             {
-              "text": "宿泊・ツアーを予約予定の各位。\n【JTB】に最大10,000円引きクーポンが出ています\n\n予約は11/16までです。\n\n条件はこの下にまとめました👇\n(1/3)",
-              "weight": 135,
-              "chars": 80
+              "text": "宿泊・ツアーを予約予定の各位。\n【JTB】に最大8,000円引きクーポンが出ています\n\n予約は12/23までです。\n\n条件はこの下にまとめました👇\n(1/3)",
+              "weight": 134,
+              "chars": 79
             },
             {
-              "text": "使う前にここだけ確認してください。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 11/16まで\n\n⚠️110,000円以上の予約が条件です\n(2/3)",
-              "weight": 142,
-              "chars": 89
+              "text": "使う前にここだけ確認してください。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/23まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 141,
+              "chars": 88
             },
             {
               "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/jtb-first/\n\n配布状況は毎朝チェックして更新しています。\n\n#旅行クーポン #JTB\n(3/3)",
@@ -70,30 +70,31 @@
           ]
         },
         {
-          "provider_id": "his",
-          "provider_label": "HIS",
-          "title": "年末年始出発がお得！1グループ最大50,000円引き",
-          "score": 39,
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞",
+          "score": 52,
           "reasons": [
-            "割引50,000円"
+            "本日配布再開",
+            "割引20%"
           ],
-          "pattern": "daily_check",
-          "pattern_name": "定点確認型",
-          "article_url": "https://yakushima.fun/his-coupon/",
+          "pattern": "comeback",
+          "pattern_name": "復活速報型",
+          "article_url": "https://yakushima.fun/jtb-first/",
           "posts": [
             {
-              "text": "【HIS】の最大50,000円引きクーポン、本日も配布中であることを確認しました\n\nHISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…で使えます。\n予約期限は11/4まで。\n\n条件はこの下にまとめました👇\n(1/3)",
-              "weight": 199,
-              "chars": 113
+              "text": "終了していた【JTB】のクーポンが復活してます。\n最大20%OFF、対象は宿泊・ツアー\n\n期限は12/10まで。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 125,
+              "chars": 75
             },
             {
-              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 最大50,000円引き\n✅対象: HISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…\n✅予約期限: 11/4まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
-              "weight": 205,
-              "chars": 119
+              "text": "条件を短くまとめるとこうなります。\n\n✅割引: 最大20％引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/10まで\n\n⚠️3,000円以上の予約が条件です\n(2/3)",
+              "weight": 136,
+              "chars": 83
             },
             {
-              "text": "取得手順と注意点はここにまとめています\n→ https://yakushima.fun/his-coupon/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #HIS\n(3/3)",
-              "weight": 151,
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 153,
               "chars": 106
             }
           ]
@@ -104,29 +105,28 @@
       "site_id": "welltrip",
       "display_name": "ウェルトリップ",
       "x_account": "welltrip",
-      "candidates": 227,
+      "candidates": 231,
       "threads": [
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
-          "score": 58,
+          "title": "すいちょるけん！鳥取割引クーポン",
+          "score": 63,
           "reasons": [
-            "本日配布再開",
-            "割引8,000円",
-            "全国対象"
+            "本日新規",
+            "割引20,000円"
           ],
           "pattern": "group_call",
           "pattern_name": "各位呼びかけ型",
           "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
           "posts": [
             {
-              "text": "宿泊・ツアーを予約予定の各位。\n【JTB】に最大8,000円引きクーポンが出ています\n\n期限は12/23まで。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "text": "宿泊・ツアーを予約予定の各位。\n【JTB】に最大20,000円引きクーポンが出ています\n\n期限は2/28まで。\n\n詳しい条件は下に続きます👇\n(1/3)",
               "weight": 128,
               "chars": 76
             },
             {
-              "text": "見ておきたい条件をまとめました。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/23まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "text": "見ておきたい条件をまとめました。\n\n✅割引: 最大20,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 2/28まで\n\n⚠️120,000円以上の予約が条件です\n(2/3)",
               "weight": 139,
               "chars": 87
             },
@@ -138,59 +138,60 @@
           ]
         },
         {
-          "provider_id": "jtb",
-          "provider_label": "JTB",
-          "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
-          "score": 54,
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "早めの予約がお得！1名様につき最大5,000円引き",
+          "score": 61,
           "reasons": [
-            "本日配布再開",
-            "割引10,000円"
+            "本日新規",
+            "割引5,000円"
           ],
-          "pattern": "question",
-          "pattern_name": "問いかけ型",
-          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "pattern": "discovery",
+          "pattern_name": "発見共有型",
+          "article_url": "https://travel.hb-connect.co.jp/his-coupon/",
           "posts": [
             {
-              "text": "宿泊・ツアーの予約、もう済ませましたか？\n【JTB】に最大10,000円引きクーポンが出てます\n\n期限は11/16まで。\n\n使える条件をまとめました👇\n(1/3)",
-              "weight": 137,
-              "chars": 81
+              "text": "今朝のクーポンチェックで見つけたやつです。\n【HIS】で最大5,000円引きが出てます\n\nHISが企画・実施する飛行機利用の国内ツアーで使えます。\n予約期限は11/4まで。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "weight": 187,
+              "chars": 107
             },
             {
-              "text": "予約前に見ておきたい条件はこちらです。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 11/16まで\n\n⚠️110,000円以上の予約が条件です\n(2/3)",
-              "weight": 146,
-              "chars": 91
+              "text": "予約前に見ておきたい条件はこちらです。\n\n✅割引: 最大5,000円引き\n✅対象: HISが企画・実施する飛行機利用の国内ツアー\n✅予約期限: 11/4まで\n\n⚠️30,000円以上の予約が条件です\n(2/3)",
+              "weight": 174,
+              "chars": 105
             },
             {
-              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #JTB\n(3/3)",
+              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/his-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #HIS\n(3/3)",
               "weight": 139,
               "chars": 110
             }
           ]
         },
         {
-          "provider_id": "his",
-          "provider_label": "HIS",
-          "title": "年末年始出発がお得！1グループ最大50,000円引き",
-          "score": 39,
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン",
+          "score": 59,
           "reasons": [
-            "割引50,000円"
+            "本日新規",
+            "割引10,000円"
           ],
           "pattern": "memo_style",
           "pattern_name": "メモ共有型",
-          "article_url": "https://travel.hb-connect.co.jp/his-coupon/",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
           "posts": [
             {
-              "text": "旅行の予定がある人向けの覚え書きです📝\n【HIS】最大50,000円引きクーポンが配布中\n\n対象はHISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…です。\n予約は11/4までです。\n\n詳しい条件は下に続きます👇\n(1/3)",
-              "weight": 204,
-              "chars": 116
+              "text": "旅行の予定がある人向けの覚え書きです📝\n【JTB】最大10,000円引きクーポンが配布中\n\n対象は宿泊・ツアーです。\n予約は2/27までです。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "weight": 159,
+              "chars": 92
             },
             {
-              "text": "予約前に見ておきたい条件はこちらです。\n\n✅割引: 最大50,000円引き\n✅対象: HISが企画・実施する国内航空券＋ホテル（ダイナミックパッ…\n✅予約期限: 11/4まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
-              "weight": 209,
-              "chars": 120
+              "text": "予約前に見ておきたい条件はこちらです。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 2/27まで\n\n⚠️50,000円以上の予約が条件です\n(2/3)",
+              "weight": 144,
+              "chars": 89
             },
             {
-              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/his-coupon/\n\n次の旅の計画に、よければ役立ててください。\n\n#旅行クーポン #HIS\n(3/3)",
+              "text": "取り方と使い方はこちらにまとめています\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n次の旅の計画に、よければ役立ててください。\n\n#旅行クーポン #JTB\n(3/3)",
               "weight": 135,
               "chars": 108
             }
