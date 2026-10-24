@@ -1,0 +1,60 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-25T07:33:29.537947+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "ANAクラウンプラザホテル秋田【10月限定】クラブルームで利用できる￥5,000クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad313423/coupon/",
+      "official_url": "https://www.jalan.net/yad313423/coupon/",
+      "official_domain_match": true,
+      "evidence": "公開ページで配布中。予約金額5,000円（税込）以上、先着100予約、併用可。宿泊対象日はカレンダー表示のため未確認。",
+      "observed_date": "2026-10-25",
+      "discount": "5,000 円分",
+      "period": "配布・予約期間：2026年9月17日（木）00:00～2026年10月31日（土）23:59",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "ふるさとお得【秋田県②】3000円分クーポン[宿泊予約]1001",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad313423/coupon/",
+      "official_url": "https://www.jalan.net/yad313423/coupon/",
+      "official_domain_match": true,
+      "evidence": "公開ページで配布中。秋田得旅と記載のプラン、予約金額6,000円（税込）以上、先着749予約、併用可。",
+      "observed_date": "2026-10-25",
+      "discount": "3,000 円分",
+      "period": "配布・予約期間：2026年10月1日（木）10:00～2027年2月27日（土）23:59／宿泊対象期間：2026年11月1日（日）チェックイン～2027年2月",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "ANAクラウンプラザホテル秋田 １０月宿泊で使える1000円クーポン Ver.2",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad313423/coupon/",
+      "official_url": "https://www.jalan.net/yad313423/coupon/",
+      "official_domain_match": true,
+      "evidence": "公開ページで配布中。予約金額15,000円（税込）以上、先着100予約、全プラン対象、併用可。宿泊対象カレンダーは未確認。",
+      "observed_date": "2026-10-25",
+      "discount": "1,000 円分",
+      "period": "配布・予約期間：2026年10月2日（金）00:00～2026年10月31日（土）23:59",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-25.json"
+}

@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-10-25T07:33:29.537947+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開一覧に金額はあるが有効期間を確認できず採用なし。Xのセール直前企画は公式の詳細ページを特定できなかった。",
+  "known_title_count": 7,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-10-25.json"
+}

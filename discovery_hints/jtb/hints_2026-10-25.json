@@ -1,0 +1,32 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-10-25T07:33:29.537947+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 93,
+  "registered_url_count": 94,
+  "candidates": [
+    {
+      "title": "2026年10月限定！熊本・宮崎・鹿児島キャンペーン",
+      "kind": "campaign",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/kumamoto2026/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/kumamoto2026/",
+      "official_domain_match": true,
+      "evidence": "3県の宿泊・JR＋宿泊・航空＋宿泊が対象。2名以上かつ旅行代金50,000円以上で1グループ10,000円引き。なくなり次第終了。",
+      "observed_date": "2026-10-25",
+      "discount": "10,000円引き！",
+      "period": "予約可能期間：2026年9月1日～10月30日／設定期間：2026年10月1日～10月31日（除外日：宿泊施設の休業日）",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jtb/hints_2026-10-25.json"
+}

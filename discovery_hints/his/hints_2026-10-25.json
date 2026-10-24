@@ -1,0 +1,32 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-10-25T07:33:29.537947+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "一部未確認：決算大感謝SALEの国内ページは本文を取得できず、別URLはブラウザUser-Agent付き再取得でも404。",
+  "known_title_count": 55,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割",
+      "kind": "campaign",
+      "found_url": "https://x.com/TabitokuMax/status/2112733109179609224",
+      "official_url": "https://www.his-j.com/campaign/kokunai/kyushu/recovery/08/",
+      "official_domain_match": true,
+      "evidence": "10月21日正午に全7県の受付再開。オンライン新規予約限定。交通付1泊は2万円、2泊以上は3万円が1人あたり上限。予算到達で終了。",
+      "observed_date": "2026-10-25",
+      "discount": "旅行・宿泊料金の50％（熊本県・鹿児島県は60％）",
+      "period": "2026年10月1日(木)～2026年12月25日(金)宿泊分まで。鹿児島県：2026年10月14日(水)～2027年1月31日(日)宿泊分まで（2026年12",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/his/hints_2026-10-25.json"
+}
