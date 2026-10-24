@@ -1,0 +1,26 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-10-25T08:16:08+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "国内ツアー 期間限定割引クーポン【HIS関西発】",
+      "kind": "coupon",
+      "found_url": "https://x.com/HIS_kix/status/2113136457292579255",
+      "official_url": "https://www.his-j.com/coupon/kansai/coupon_dom_20261022.html",
+      "evidence": "公式：5,000円引は一人100,000円以上、2,500円引は一人50,000円以上（1グループにつき） ／ 公式：新規予約期間 2026/10/22 00:00～10/31 18:00、対象出発 2026/12/1～2027/3/31 ／ 公式：HIS関西2府4県の店舗・コールセンター・オンラインのみ受付 ／ 公式：国内航空券+ホテル（ダイナミックパッケージ）・添乗員同行ツアー・鉄道・バス・クルーズ・国内ホテル・他社企画ツアーなどは対象外 ／ 公式：申込金の入金が条件。予約完了後の利用不可。株主優待・他割引と併用不可。なくなり次第終了 ／ 未確認：決済方法の指定 ／ 未確認：対象になる商品の具体名（対象外の一覧だけが記載）",
+      "observed_date": "2026-10-25",
+      "discount": "1グループ5,000円引（お一人様の旅行代金100,000円以上）／2,500円引（同50,000円以上）",
+      "period": "予約：2026年10月22日(木)00:00～2026年10月31日(土)18:00 ／ 旅行：2026年12月1日(火)～2027年3月31日(水)出発",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
