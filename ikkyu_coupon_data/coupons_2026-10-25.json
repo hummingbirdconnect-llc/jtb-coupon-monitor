@@ -1,70 +1,5 @@
 [
   {
-    "id": "ikkyu-1124360",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "オーセントホテル小樽 先着10名様限定 2,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "2,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "北海道／小樽",
-    "regions": [
-      "北海道"
-    ],
-    "booking_period": "～ 2026/10/25 12:00",
-    "travel_period": "2026/11/02 ～ 2026/12/23",
-    "stay_period": "2026/11/02 ～ 2026/12/23",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額10,000円以上",
-      "先着10名様限定",
-      "デイユース（日帰り）は対象外",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1124360",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-10-25",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1124360",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "オーセントホテル小樽",
-      "hotel_url": "https://www.ikyu.com/00000216/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00000216"
-      ],
-      "accommodations": [
-        {
-          "name": "オーセントホテル小樽",
-          "accommodation_id": "00000216",
-          "prefecture": "北海道",
-          "area": "小樽",
-          "large_area": "東日本"
-        }
-      ],
-      "large_area": "東日本",
-      "description": "先着10名様限定 2,000円OFFクーポン",
-      "min_amount": 10000,
-      "expired_at": "2026-10-25T12:00:00+09:00",
-      "checkout_begin": "2026-11-02T00:00:00+09:00",
-      "checkout_end": "2026-12-23T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
-    }
-  },
-  {
     "id": "ikkyu-1122575",
     "provider": "ikkyu",
     "provider_label": "一休.com",
@@ -125,7 +60,7 @@
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -189,7 +124,7 @@
       "checkout_end": "2027-08-24T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -253,7 +188,7 @@
       "checkout_end": "2027-08-24T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -317,7 +252,7 @@
       "checkout_end": "2027-08-24T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -381,7 +316,7 @@
       "checkout_end": "2027-08-24T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -446,7 +381,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -510,7 +445,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -574,7 +509,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -639,7 +574,71 @@
       "checkout_end": "2026-12-01T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
+    }
+  },
+  {
+    "id": "ikkyu-1125847",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "メルキュール札幌 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "北海道／すすきの駅 徒歩2分",
+    "regions": [
+      "北海道"
+    ],
+    "booking_period": "～ 2026/11/01 12:00",
+    "travel_period": "2026/10/25 ～ 2027/04/30",
+    "stay_period": "2026/10/25 ～ 2027/04/30",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額14,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1125847",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-25",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1125847",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "メルキュール札幌",
+      "hotel_url": "https://www.ikyu.com/00001515/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00001515"
+      ],
+      "accommodations": [
+        {
+          "name": "メルキュール札幌",
+          "accommodation_id": "00001515",
+          "prefecture": "北海道",
+          "area": "すすきの駅 徒歩2分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "2,000円OFFクーポン",
+      "min_amount": 14000,
+      "expired_at": "2026-11-01T12:00:00+09:00",
+      "checkout_begin": "2026-10-25T00:00:00+09:00",
+      "checkout_end": "2027-04-30T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -704,7 +703,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -769,7 +768,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -833,7 +832,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -896,7 +895,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -962,7 +961,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1029,7 +1028,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1096,7 +1095,72 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
+    }
+  },
+  {
+    "id": "ikkyu-1120342",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "リーガロイヤルホテル大阪 ヴィニェットコレクション by IHG 先着50名様限定 20,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "20,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大阪府／中之島",
+    "regions": [
+      "大阪府"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/15 ～ 2027/03/31",
+    "stay_period": "2026/10/15 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額100,000円以上",
+      "先着50名様限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1120342",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-25",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1120342",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "リーガロイヤルホテル大阪 ヴィニェットコレクション by IHG",
+      "hotel_url": "https://www.ikyu.com/00000117/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000117"
+      ],
+      "accommodations": [
+        {
+          "name": "リーガロイヤルホテル大阪 ヴィニェットコレクション by IHG",
+          "accommodation_id": "00000117",
+          "prefecture": "大阪府",
+          "area": "中之島",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着50名様限定 20,000円OFFクーポン",
+      "min_amount": 100000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-15T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1162,7 +1226,7 @@
       "checkout_end": "2027-09-27T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1228,7 +1292,7 @@
       "checkout_end": "2027-09-27T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1294,7 +1358,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1361,7 +1425,7 @@
       "checkout_end": "2026-11-06T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1427,7 +1491,7 @@
       "checkout_end": "2026-10-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1492,7 +1556,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1559,7 +1623,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1625,7 +1689,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1691,7 +1755,7 @@
       "checkout_end": "2026-10-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1758,7 +1822,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1824,7 +1888,7 @@
       "checkout_end": "2027-03-19T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1890,7 +1954,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -1957,7 +2021,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2023,7 +2087,7 @@
       "checkout_end": "2026-12-24T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2089,7 +2153,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2156,7 +2220,7 @@
       "checkout_end": "2027-04-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2223,7 +2287,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2289,7 +2353,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2354,7 +2418,7 @@
       "checkout_end": "2026-12-26T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2420,7 +2484,7 @@
       "checkout_end": "2027-06-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2486,7 +2550,7 @@
       "checkout_end": "2026-12-04T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2553,7 +2617,7 @@
       "checkout_end": "2026-12-23T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2619,7 +2683,7 @@
       "checkout_end": "2026-12-04T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2686,7 +2750,7 @@
       "checkout_end": "2026-12-29T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2752,7 +2816,7 @@
       "checkout_end": "2026-12-28T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2817,71 +2881,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
-    }
-  },
-  {
-    "id": "ikkyu-1117229",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "OKINAWA KARIYUSHI RESORT EXES ONNA（沖縄かりゆしリゾートEXES恩納） 先着50名様限定 3,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "3,000円割引",
-    "stock_status": "配布中",
-    "product_type": "宿泊",
-    "area": "沖縄県／恩納",
-    "regions": [
-      "沖縄県"
-    ],
-    "booking_period": "～ 2026/11/30 12:00",
-    "travel_period": "2026/11/24 ～ 2026/12/24",
-    "stay_period": "2026/11/24 ～ 2026/12/24",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額20,000円以上",
-      "先着50名様限定",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1117229",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-10-25",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1117229",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "OKINAWA KARIYUSHI RESORT EXES ONNA（沖縄かりゆしリゾートEXES恩納）",
-      "hotel_url": "https://www.ikyu.com/00001393/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00001393"
-      ],
-      "accommodations": [
-        {
-          "name": "OKINAWA KARIYUSHI RESORT EXES ONNA（沖縄かりゆしリゾートEXES恩納）",
-          "accommodation_id": "00001393",
-          "prefecture": "沖縄県",
-          "area": "恩納",
-          "large_area": "西日本"
-        }
-      ],
-      "large_area": "西日本",
-      "description": "先着50名様限定 3,000円OFFクーポン",
-      "min_amount": 20000,
-      "expired_at": "2026-11-30T12:00:00+09:00",
-      "checkout_begin": "2026-11-24T00:00:00+09:00",
-      "checkout_end": "2026-12-24T00:00:00+09:00",
-      "day_use_exclude": false,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -2948,7 +2948,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3014,7 +3014,7 @@
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3080,7 +3080,7 @@
       "checkout_end": "2026-12-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3144,7 +3144,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3210,7 +3210,72 @@
       "checkout_end": "2027-04-13T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
+    }
+  },
+  {
+    "id": "ikkyu-1028261",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "JR東日本ホテルメッツ 立川 枚数限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "東京都／JR立川駅南改札徒歩1分",
+    "regions": [
+      "東京都"
+    ],
+    "booking_period": "～ 2027/01/31 12:00",
+    "travel_period": "2026/06/01 ～ 2027/03/31",
+    "stay_period": "2026/06/01 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額10,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1028261",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-25",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1028261",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "JR東日本ホテルメッツ 立川",
+      "hotel_url": "https://www.ikyu.com/00080608/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00080608"
+      ],
+      "accommodations": [
+        {
+          "name": "JR東日本ホテルメッツ 立川",
+          "accommodation_id": "00080608",
+          "prefecture": "東京都",
+          "area": "JR立川駅南改札徒歩1分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "枚数限定 1,000円OFFクーポン",
+      "min_amount": 10000,
+      "expired_at": "2027-01-31T12:00:00+09:00",
+      "checkout_begin": "2026-06-01T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3274,7 +3339,7 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3341,7 +3406,7 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3405,7 +3470,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3470,7 +3535,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3535,7 +3600,7 @@
       "checkout_end": "2027-09-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3580,7 +3645,7 @@
       "ended_label": false,
       "search_url": "https://www.ikyu.com/tohoku/120240/",
       "raw_discount": "最大40,000円OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3625,7 +3690,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/tohoku/120220/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3670,7 +3735,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/koshinetsu/210551/",
       "raw_discount": "最大30%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3715,7 +3780,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/search?lct=22007000",
       "raw_discount": "最大20%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3760,7 +3825,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350906/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3805,7 +3870,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350907/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3850,7 +3915,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350901/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3895,7 +3960,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350902/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3940,7 +4005,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350905/",
       "raw_discount": "最大60%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   },
   {
@@ -3985,7 +4050,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350904/",
       "raw_discount": "最大60%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-24.json"
+      "sibling_checked_file": "coupons_2026-10-25.json"
     }
   }
 ]
