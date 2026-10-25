@@ -1,0 +1,17 @@
+{
+  "provider_id": "shirokuma_tour",
+  "provider_label": "しろくまツアー",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式オータムセール本文は取得できたが、割引額・予約期間を確定できず。",
+  "known_title_count": 1,
+  "registered_url_count": 2,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/shirokuma_tour/hints_2026-10-26.json"
+}

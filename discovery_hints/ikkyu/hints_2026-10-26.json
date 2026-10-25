@@ -1,0 +1,32 @@
+{
+  "provider_id": "ikkyu",
+  "provider_label": "一休",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 59,
+  "registered_url_count": 8,
+  "candidates": [
+    {
+      "title": "Go To Akita! 得旅キャンペーン",
+      "kind": "coupon",
+      "found_url": "https://x.com/Travelersnavi/status/2113469994738806963",
+      "official_url": "https://www.ikyu.com/special/01/akita/",
+      "official_domain_match": true,
+      "evidence": "4人以上・120,000円以上で40,000円分。人数・金額に応じた別券種も掲載。一覧でも秋田の受付案内を確認。",
+      "observed_date": "2026-10-26",
+      "discount": "40,000円分",
+      "period": "予約期間: 2026年10月1日から2027年2月27日まで；宿泊期間: 2026年11月1日チェックインから2027年2月28日チェックアウトまで",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/ikkyu/hints_2026-10-26.json"
+}

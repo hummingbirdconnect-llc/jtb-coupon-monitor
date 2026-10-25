@@ -1,0 +1,46 @@
+{
+  "provider_id": "tabirai_rentacar",
+  "provider_label": "たびらいレンタカー",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 5,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "【20周年第3弾】沖縄3泊以上でPayPayポイント当たる！！",
+      "kind": "points",
+      "found_url": "https://www.tabirai.net/car/special/campaign-plan/",
+      "official_url": "https://www.tabirai.net/car/service/paypay_oki_cp202608/",
+      "official_domain_match": true,
+      "evidence": "会員限定。沖縄のレンタカー3泊以上、時間制は72時間以上。抽選特典であり全員還元ではない。",
+      "observed_date": "2026-10-26",
+      "discount": "毎月抽選で10名様に1,000円分",
+      "period": "ご予約期間 2026/8/5(水)～2026/10/28(水)；対象の出発日 2026/8/12(水)～2026/10/28(水)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "HIPsプレミアムセール",
+      "kind": "sale",
+      "found_url": "https://www.tabirai.net/car/special/campaign-plan/",
+      "official_url": "https://www.tabirai.net/car/service/hipspremiumsale/",
+      "official_domain_match": true,
+      "evidence": "北海道の対象高級車、48時間以上で適用。2026/12/26～2027/1/3除外。その他車種の割引は別条件。",
+      "observed_date": "2026-10-26",
+      "discount": "最大40%OFF",
+      "period": "ご予約期間：即日～2027年3月31日(水)；ご利用期間：即日～2027年3月31日(水)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/tabirai_rentacar/hints_2026-10-26.json"
+}

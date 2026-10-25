@@ -1,0 +1,17 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "国内決算大感謝SALEの公式ページは本文が動的表示で、割引額と有効期間を取得できず。ブラウザ相当UAでも本文不足。",
+  "known_title_count": 55,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/his/hints_2026-10-26.json"
+}

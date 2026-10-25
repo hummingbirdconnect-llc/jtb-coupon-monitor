@@ -1,0 +1,32 @@
+{
+  "provider_id": "yahoo_travel",
+  "provider_label": "Yahoo!トラベル",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 81,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "JAL限定クーポン（10/25配布・8,000円）",
+      "kind": "coupon",
+      "found_url": "https://x.com/AtaglaTravel/status/2113467404424782150",
+      "official_url": "https://travel.yahoo.co.jp/promo/coupon/dp/jal/",
+      "official_domain_match": true,
+      "evidence": "JAL便の宿泊＋航空券。100,000円以上・2名以上・1泊以上、先着50枚。20,000円券は完売表示のため除外。",
+      "observed_date": "2026-10-26",
+      "discount": "8,000円",
+      "period": "予約期間：2026/10/25 12時～2026/11/8；旅行期間：2026/12/1～2027/3/31出発",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/yahoo_travel/hints_2026-10-26.json"
+}

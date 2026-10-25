@@ -1,0 +1,17 @@
+{
+  "provider_id": "jalan_pack",
+  "provider_label": "じゃらんパック",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開ページに最大30,000円の見出しはあるが、個別条件・期間を取得できず。ログインせず未確認とした。",
+  "known_title_count": 2,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jalan_pack/hints_2026-10-26.json"
+}

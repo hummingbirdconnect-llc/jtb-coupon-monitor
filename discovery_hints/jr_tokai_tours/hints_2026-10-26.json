@@ -1,0 +1,46 @@
+{
+  "provider_id": "jr_tokai_tours",
+  "provider_label": "JR東海ツアーズ",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 10,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "モクシー大阪梅田 割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_domain_match": true,
+      "evidence": "先着74枚、JR＋宿の対象プラン、併用可。EX会員ログイン後に予約時表示。公開条件を確認。",
+      "observed_date": "2026-10-26",
+      "discount": "3,000円割引/1予約あたり",
+      "period": "予約可能期間：2026/10/20(火)～2027/2/27(土)23:30；出発対象期間：2026/12/1(火)～2027/2/28(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "サンシャインシティプリンスホテル 割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
+      "official_domain_match": true,
+      "evidence": "12月出発先着80枚、1・2月出発先着120枚。JR＋宿の対象プラン、併用可。公開条件を確認。",
+      "observed_date": "2026-10-26",
+      "discount": "2,000円割引/1予約あたり",
+      "period": "予約可能期間：①2026/10/20(火)～12/30(水)23:30、②2026/10/20(火)～2027/2/27(土)23:30；出発対象期間：①202",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jr_tokai_tours/hints_2026-10-26.json"
+}

@@ -1,0 +1,32 @@
+{
+  "provider_id": "tripcom",
+  "provider_label": "Trip.com",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "『九州ふっこう応援割』ながさきキャンペーン",
+      "kind": "campaign",
+      "found_url": "https://jp.trip.com/sale/w/3dcskhfy90ul2ffm/kyushu-fukkou.html",
+      "official_url": "https://jp.trip.com/sale/w/3dcskhfy90ul2ffm/kyushu-fukkou.html",
+      "official_domain_match": true,
+      "evidence": "長崎県の指定宿泊プラン、1泊のみ。1人上限20,000円、自動割引。福岡・熊本・鹿児島は受付停止表示のため除外。",
+      "observed_date": "2026-10-26",
+      "discount": "宿泊料金の50％",
+      "period": "予約対象期間：2026年10月19日(月)13:00~12月25日(金)23:59；宿泊対象期間：2026年10月19日(月)~12月25日(金)宿泊分(12月",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/tripcom/hints_2026-10-26.json"
+}

@@ -1,0 +1,46 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "＜3人以上でお得＞秋冬SALE！120000円以上で18000円クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_domain_match": true,
+      "evidence": "旧軽井沢KIKYOキュリオ・コレクションbyヒルトン限定。120,000円以上、3人以上。宿泊対象日はカレンダー未確認。",
+      "observed_date": "2026-10-26",
+      "discount": "18,000円分",
+      "period": "予約期間：2026年10月26日(月)00:00～2026年11月25日(水)23:59",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "【じゃらんスペシャルウィーク】冬の平日７０００円クーポン！",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_domain_match": true,
+      "evidence": "マホロバマインズ三浦限定。100,000円以上の予約。宿泊対象日はカレンダー未確認。",
+      "observed_date": "2026-10-26",
+      "discount": "7,000円分",
+      "period": "予約期間：2026年10月26日(月)00:00～2026年11月19日(木)23:59",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-26.json"
+}

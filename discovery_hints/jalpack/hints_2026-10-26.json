@@ -1,0 +1,46 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "大阪（伊丹）－旭川／帯広／女満別 運航開始記念クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/ja-jp/campaign/dom.html",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/itami-hokkaido-cpn/",
+      "official_domain_match": true,
+      "evidence": "JMB会員、往復直行便利用の航空券＋宿泊が対象。1グループ総額40,000円以上。",
+      "observed_date": "2026-10-26",
+      "discount": "2,000円（1グループにつき）",
+      "period": "予約対象期間：2026年8月18日（火）～11月30日（月）；出発対象期間：旭川2026年10月25日（日）～2027年3月31日（水）、帯広2026年12月1",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "間際の予約でもおトク！500円分の利用券をプレゼント！",
+      "kind": "campaign",
+      "found_url": "https://www.jal.co.jp/ja-jp/campaign/dom.html",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/jalplaza-coupon/?cp=dom",
+      "official_domain_match": true,
+      "evidence": "出発30日前～7日前の国内ダイナミックパッケージ予約が対象。空港店舗の利用券を1人1枚。対象外商品あり。",
+      "observed_date": "2026-10-26",
+      "discount": "500円分",
+      "period": "予約対象期間：～2027年3月24日まで；出発対象期間：～2027年3月31日まで；除外対象期間：2026年12月28日～2027年1月5日発",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jalpack/hints_2026-10-26.json"
+}

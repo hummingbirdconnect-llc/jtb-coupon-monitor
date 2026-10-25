@@ -1,0 +1,17 @@
+{
+  "provider_id": "yomiuri_travel",
+  "provider_label": "読売旅行",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "九州応援割の名称・10%OFF・予約期間は公式で確認。対象出発期間が「2027年12月26日～2027年3月22日」と逆転しており未採用。",
+  "known_title_count": 4,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/yomiuri_travel/hints_2026-10-26.json"
+}

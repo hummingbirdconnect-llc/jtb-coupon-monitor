@@ -1,0 +1,17 @@
+{
+  "provider_id": "skyticket",
+  "provider_label": "スカイチケット",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "登録済み公式ページを直接取得できたが、個別ホテルの割引率のみでキャンペーン名・有効期間を確認できず。",
+  "known_title_count": 6,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/skyticket/hints_2026-10-26.json"
+}

@@ -1,0 +1,17 @@
+{
+  "provider_id": "activityjapan",
+  "provider_label": "アクティビティジャパン",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式クーポン一覧が読み込み中のまま。ブラウザ相当UAで再取得しても条件を取得できず。",
+  "known_title_count": 10,
+  "registered_url_count": 5,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/activityjapan/hints_2026-10-26.json"
+}

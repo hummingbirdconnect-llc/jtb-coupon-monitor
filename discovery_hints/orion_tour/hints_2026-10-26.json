@@ -1,0 +1,32 @@
+{
+  "provider_id": "orion_tour",
+  "provider_label": "オリオンツアー",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "JAL11月出発直前割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/trawi_site/status/2114334664769077261",
+      "official_url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+      "official_domain_match": true,
+      "evidence": "公開ページを直接再取得。JAL利用国内ツアー対象、0～2歳除外。冒頭の配布期限11/20と予約期限11/19が相違。",
+      "observed_date": "2026-10-26",
+      "discount": "2,000円割引（お1人様につき）",
+      "period": "予約対象期間：2026年10月25日(日)～2026年11月19日(木)；出発対象期間：2026年11月01日(日)～2026年11月30日(月)",
+      "confidence": "medium",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/orion_tour/hints_2026-10-26.json"
+}

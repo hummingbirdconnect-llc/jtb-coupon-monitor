@@ -1,0 +1,17 @@
+{
+  "provider_id": "agoda",
+  "provider_label": "Agoda",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式VisitJapanJPページはHTTP 200でも題名のみ。ブラウザ相当UAで再取得しても有効期間・国内適用条件を取得できず。",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/agoda/hints_2026-10-26.json"
+}

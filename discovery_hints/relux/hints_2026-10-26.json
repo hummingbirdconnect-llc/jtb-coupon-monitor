@@ -1,0 +1,17 @@
+{
+  "provider_id": "relux",
+  "provider_label": "Relux",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "登録済みタイムセールURLは再取得もHTTP 404。Xの三太郎の日は既知施策として除外。その他新施策の条件確認は不十分。",
+  "known_title_count": 7,
+  "registered_url_count": 3,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/relux/hints_2026-10-26.json"
+}

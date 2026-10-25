@@ -1,0 +1,32 @@
+{
+  "provider_id": "skypack_tours",
+  "provider_label": "スカイパックツアーズ",
+  "generated_at": "2026-10-26T07:37:53.674583+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 4,
+  "registered_url_count": 3,
+  "candidates": [
+    {
+      "title": "TIME SALE♪♪ 25,000円OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/Travelersnavi/status/2113178553202385350",
+      "official_url": "https://normal.skypaktours.co.jp/addition/campaign/c10sptts01",
+      "official_domain_match": true,
+      "evidence": "旅行総額500,000円以上、先着20枚。12/25～1/5除外。個別条件とページ冒頭で旅行開始年の記載が矛盾。",
+      "observed_date": "2026-10-26",
+      "discount": "25,000 円OFF",
+      "period": "予約対象期間：2026年10月21日（水）11:00 〜 2026年11月6日（金）17:00；個別クーポンの旅行対象期間：2026年12月1日(火) 〜 20",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/skypack_tours/hints_2026-10-26.json"
+}
