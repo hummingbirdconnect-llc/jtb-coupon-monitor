@@ -3,17 +3,17 @@
   "provider_label": "JALパック",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-10-23T16:10:12.623978+09:00",
-  "completed_at": "2026-10-23T16:10:50.796032+09:00",
-  "official_fetched_at": "2026-10-23T16:10:50.796032+09:00",
+  "started_at": "2026-10-26T07:23:03.176000+09:00",
+  "completed_at": "2026-10-26T07:23:33.061707+09:00",
+  "official_fetched_at": "2026-10-26T07:23:33.061707+09:00",
   "needs_review": false,
-  "data_date": "2026-10-23",
+  "data_date": "2026-10-26",
   "freshness_status": "fresh",
   "coupon_count": 7,
-  "latest_file": "coupons_2026-10-23.json",
+  "latest_file": "coupons_2026-10-26.json",
   "ai_used": false,
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-23T16:10:50.796032+09:00"
+  "deep_dive_at": "2026-10-26T07:23:33.061707+09:00"
 }

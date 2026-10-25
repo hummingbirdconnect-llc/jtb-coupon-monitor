@@ -2,26 +2,23 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-23T16:10:50.798515+09:00",
-  "completed_at": "2026-10-23T16:10:58.351209+09:00",
-  "official_fetched_at": "2026-10-23T16:10:58.351215+09:00",
+  "started_at": "2026-10-26T07:23:33.063324+09:00",
+  "completed_at": "2026-10-26T07:25:48.918067+09:00",
+  "official_fetched_at": "2026-10-26T07:25:48.918072+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "html",
-      "error": "",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "auto",
+      "error": "ReadTimeout; Playwright page text too short (141)",
       "purpose": "じゃらんクーポン入口・代表ページ発見",
       "source_role": "discovery_hub",
       "include_in_audit": false,
       "discovered_from": "",
-      "discovered_urls": [
-        "https://www.jalan.net/dp/theme/jp_coupon/",
-        "https://www.jalan.net/rentacar/coupons/"
-      ],
-      "text_chars": 1073,
-      "content_hash": "fc464c11a168e5d58c78b8107a6cfc2622f4a78af636ff6e7101a9b83089ace5"
+      "discovered_urls": [],
+      "text_chars": 0,
+      "content_hash": ""
     },
     {
       "url": "https://www.jalan.net/theme/jalancouponfes/",
@@ -94,7 +91,7 @@
       "content_hash": "6b4fc1a9bab3cd7af4a7fd5d50021c571ed1361c3b8a3f14e1217fc89f768995"
     }
   ],
-  "failed_source_count": 0,
+  "failed_source_count": 1,
   "configured_source_count": 6,
   "discovered_source_count": 0,
   "audit_source_count": 5,
