@@ -1,0 +1,25 @@
+{
+  "provider_id": "traveloka",
+  "observed_hash": "2bf76b5e7aa53aa333a8f4646367adf47a5dcc9dc166139339f66d842e0e66ff",
+  "last_checked_at": "2026-10-26T09:12:14.867813+09:00",
+  "sources": [
+    {
+      "url": "https://www.traveloka.com/ja-jp/promotion",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "公式プロモーション一覧（期間限定クーポン）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 2022,
+      "content_hash": "e0565880a5f26e35037c083a0fd8e18f5f11ff294e60bfeb24abf1155786fa77"
+    }
+  ],
+  "queued_hash": "2bf76b5e7aa53aa333a8f4646367adf47a5dcc9dc166139339f66d842e0e66ff",
+  "queued_candidate_id": "traveloka-2bf76b5e7aa53aa3",
+  "queued_at": "2026-10-26T09:12:14.868366+09:00",
+  "last_audit_status": "pending"
+}

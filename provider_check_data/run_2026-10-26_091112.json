@@ -1,0 +1,69 @@
+{
+  "completed_at": "2026-10-26T09:11:12.198832+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "error_provider_ids": [],
+  "needs_review_count": 0,
+  "needs_review_provider_ids": [],
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "klook-73a7096dce96247b",
+      "provider_id": "klook",
+      "candidate_path": "codex_audit_queue/klook/klook-73a7096dce96247b.json",
+      "change_kind": "update",
+      "status": "audit_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "klook",
+      "provider_label": "Klook",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-26T09:11:11.091046+09:00",
+      "completed_at": "2026-10-26T09:11:12.196314+09:00",
+      "official_fetched_at": "2026-10-26T09:11:12.196319+09:00",
+      "source_results": [
+        {
+          "url": "https://www.klook.com/ja/deals/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "Klook日本向け公式SALE一覧",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 1473,
+          "content_hash": "b3ee2508c924553bcdd3506a8d676d816d79ecdc7f6d05b8c42e37e5bc482401"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 1,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "audit_pending",
+      "change_kind": "update",
+      "content_hash": "73a7096dce96247b82df4d9cc3ec8cb1df6dee73ac3976730b6eb455273fc1b3",
+      "data_date": "2026-09-29",
+      "latest_file": "coupons_2026-09-29.json",
+      "coupon_count": 7,
+      "audit_candidate_id": "klook-73a7096dce96247b",
+      "audit_candidate_path": "codex_audit_queue/klook/klook-73a7096dce96247b.json",
+      "error": "",
+      "freshness_status": "fresh",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-26T09:11:12.196314+09:00"
+    }
+  ]
+}

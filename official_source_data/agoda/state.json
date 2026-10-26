@@ -1,0 +1,25 @@
+{
+  "provider_id": "agoda",
+  "observed_hash": "23689a84a24d17130f6fc6b816ec7324fdcd73925cfbff59b58d73a61f898706",
+  "last_checked_at": "2026-10-26T09:12:18.984789+09:00",
+  "sources": [
+    {
+      "url": "https://www.agoda.com/ja-jp/deals",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "公式クーポン・割引料金",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 865,
+      "content_hash": "df4562171317221734718098216da62b5ad338ae1640e406869ceb85d4397354"
+    }
+  ],
+  "queued_hash": "23689a84a24d17130f6fc6b816ec7324fdcd73925cfbff59b58d73a61f898706",
+  "queued_candidate_id": "agoda-23689a84a24d1713",
+  "queued_at": "2026-10-26T09:12:18.985119+09:00",
+  "last_audit_status": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "provider_id": "skyticket",
+  "observed_hash": "38b93c7d521facf5ca42aed77647e8486045e581fdd7b1c0f5a59676d9501338",
+  "last_checked_at": "2026-10-26T09:11:52.888744+09:00",
+  "sources": [
+    {
+      "url": "https://skyticket.jp/hotel/campaign/zyoukenwari/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "ホテルの条件割（早期割・直前割・ポイント増量）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 310978,
+      "content_hash": "7ebaa9ad4206546d1ddfad85a87d1ac11b6432dadcb9b7cd06f6cd8c9d40b222"
+    }
+  ],
+  "queued_hash": "38b93c7d521facf5ca42aed77647e8486045e581fdd7b1c0f5a59676d9501338",
+  "queued_candidate_id": "skyticket-38b93c7d521facf5",
+  "queued_at": "2026-10-26T09:11:52.895654+09:00",
+  "last_audit_status": "pending"
+}

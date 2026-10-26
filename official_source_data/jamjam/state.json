@@ -1,0 +1,25 @@
+{
+  "provider_id": "jamjam",
+  "observed_hash": "2ed7c4f060d405ad07d6280153743f5a4da409d6ba7b38f8f2356c574be2c1ec",
+  "last_checked_at": "2026-10-26T09:11:54.014654+09:00",
+  "sources": [
+    {
+      "url": "https://jamjamliner.jp/question.html",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "公式FAQ（JWEB割・J得割）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 10637,
+      "content_hash": "54d83e11a9902029d32d5d502d46f55ba19d5438cfcfd5f30bd0436be39e8b08"
+    }
+  ],
+  "queued_hash": "2ed7c4f060d405ad07d6280153743f5a4da409d6ba7b38f8f2356c574be2c1ec",
+  "queued_candidate_id": "jamjam-2ed7c4f060d405ad",
+  "queued_at": "2026-10-26T09:11:54.015230+09:00",
+  "last_audit_status": "pending"
+}

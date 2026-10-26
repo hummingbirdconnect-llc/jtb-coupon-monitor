@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "candidate_id": "agoda-23689a84a24d1713",
+  "provider_id": "agoda",
+  "provider_label": "Agoda",
+  "change_kind": "baseline",
+  "fetched_at": "2026-10-26T09:12:18.984800+09:00",
+  "content_hash": "23689a84a24d17130f6fc6b816ec7324fdcd73925cfbff59b58d73a61f898706",
+  "data_dir": "official_coupon_data/agoda",
+  "official_domains": [
+    "agoda.com"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://www.agoda.com/ja-jp/deals",
+      "purpose": "公式クーポン・割引料金",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "verification_method": "playwright",
+      "verification_result": "confirmed",
+      "content_hash": "df4562171317221734718098216da62b5ad338ae1640e406869ceb85d4397354",
+      "text": "アゴダ®公式サイト | キャンセル無料プラン・お得な割引 | 国内海外200万軒以上のホテル <特集>今日のクーポン・割引料金 アゴダだけの割引クーポンを利用してお得に旅にでましょう。このページに届く最新情報をお見逃しなく。 適用対象 ホテル & 一軒家・アパート (5) 航空券 (0) 航空券 + ホテル (0) 特別料金 クーポン (2) クレジットカード (0) 特別キャンペーン (3) 期間限定オファー (4) 宿泊予約が最大$40 OFF 残り3日間有効 クーポンを利用する 宿泊予約が最大$50 OFF 最低利用額：$120 | 残り3日間有効 クーポンを利用する 今だけ値下がり - 最大15% OFF⏳ 憧れの旅先で、ホテルを特別料金で予約しましょう。売り切れ前に今すぐ予約！ 今すぐGET AgodaVIP プログラム VIPメンバー限定特典や特別料金に関する詳細は、以下をクリックしてご確認いただけます。 続きを表示 海外ホテルセール - 最大30% OFF 海外のホテルやリゾートを特別料金で予約しましょう。 今すぐ予約 フラッグシップストアでお得 - アゴダの人気宿！🏨 フラッグシップストアを開いて、それぞれの宿の詳細をチェックして、次の理想の宿泊先を見つけよう！🤩 今すぐチェック アゴダアプリで検索を続ける アゴダアプリで、お得な料金、プラン、割引をゲットしましょう！ さっそくチェック クーポンの使用方法 クーポンを探して、受け取りましょう。プロモーションコードがある場合は、見つけたら忘れずにコピーしておきましょう。 「クーポン利用可」ロゴ掲載の宿泊施設を探しましょう。 予約フォームで支払いを完了する前に、プロモーションコードが適用されていることを確認しましょう。 Cookie設定の管理 アゴダでは、機能的に必要とされるCookieならびにトラッキング技術のみを使用しています。分析やマーケティングのためのCookieは使用していません。詳細については こちら をご参照ください。 閉じる"
+    }
+  ],
+  "previous_coupons": [],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

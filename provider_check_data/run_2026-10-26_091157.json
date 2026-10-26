@@ -1,0 +1,69 @@
+{
+  "completed_at": "2026-10-26T09:11:57.905089+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "error_provider_ids": [],
+  "needs_review_count": 0,
+  "needs_review_provider_ids": [],
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "shirokuma_tour-6ad80761e45eabbe",
+      "provider_id": "shirokuma_tour",
+      "candidate_path": "codex_audit_queue/shirokuma_tour/shirokuma_tour-6ad80761e45eabbe.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "shirokuma_tour",
+      "provider_label": "しろくまツアー",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-26T09:11:54.194275+09:00",
+      "completed_at": "2026-10-26T09:11:57.901427+09:00",
+      "official_fetched_at": "2026-10-26T09:11:57.901434+09:00",
+      "source_results": [
+        {
+          "url": "https://www.wbf.co.jp/peachtravel/campaign/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "PeachTRAVELオータムセール",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 35015,
+          "content_hash": "405ae1b010bb21162b093645f3dd15b77814948e50ba3837c0ba880d289c0f75"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 1,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "6ad80761e45eabbe0e4b548535f3cf1d5242acc453386ebb567c62d0f1ff749c",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "shirokuma_tour-6ad80761e45eabbe",
+      "audit_candidate_path": "codex_audit_queue/shirokuma_tour/shirokuma_tour-6ad80761e45eabbe.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-26T09:11:57.901427+09:00"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "provider_id": "surprice",
+  "observed_hash": "35b2cfdf5d93d59202bbf179f952c23ff5fcc3aee349232e10dac0df1fba12ae",
+  "last_checked_at": "2026-10-26T09:11:51.851819+09:00",
+  "sources": [
+    {
+      "url": "https://faq.surpricenow.com/faqs/surprice1019/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "公式クーポンの使い方（クーポンIDの入力手順）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 33146,
+      "content_hash": "e94694286ea18dcb18e4b2936d7d9135ad77a7e873f04fb3b33730e201116289"
+    }
+  ],
+  "queued_hash": "35b2cfdf5d93d59202bbf179f952c23ff5fcc3aee349232e10dac0df1fba12ae",
+  "queued_candidate_id": "surprice-35b2cfdf5d93d592",
+  "queued_at": "2026-10-26T09:11:51.852936+09:00",
+  "last_audit_status": "pending"
+}

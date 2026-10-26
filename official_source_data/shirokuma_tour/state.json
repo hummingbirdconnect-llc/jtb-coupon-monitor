@@ -1,0 +1,25 @@
+{
+  "provider_id": "shirokuma_tour",
+  "observed_hash": "6ad80761e45eabbe0e4b548535f3cf1d5242acc453386ebb567c62d0f1ff749c",
+  "last_checked_at": "2026-10-26T09:11:57.902675+09:00",
+  "sources": [
+    {
+      "url": "https://www.wbf.co.jp/peachtravel/campaign/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "PeachTRAVELオータムセール",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 35015,
+      "content_hash": "405ae1b010bb21162b093645f3dd15b77814948e50ba3837c0ba880d289c0f75"
+    }
+  ],
+  "queued_hash": "6ad80761e45eabbe0e4b548535f3cf1d5242acc453386ebb567c62d0f1ff749c",
+  "queued_candidate_id": "shirokuma_tour-6ad80761e45eabbe",
+  "queued_at": "2026-10-26T09:11:57.904525+09:00",
+  "last_audit_status": "pending"
+}

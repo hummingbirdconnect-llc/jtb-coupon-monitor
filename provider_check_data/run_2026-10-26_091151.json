@@ -1,0 +1,69 @@
+{
+  "completed_at": "2026-10-26T09:11:51.853454+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "error_provider_ids": [],
+  "needs_review_count": 0,
+  "needs_review_provider_ids": [],
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "surprice-35b2cfdf5d93d592",
+      "provider_id": "surprice",
+      "candidate_path": "codex_audit_queue/surprice/surprice-35b2cfdf5d93d592.json",
+      "change_kind": "baseline",
+      "status": "baseline_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "surprice",
+      "provider_label": "Surprice",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-10-26T09:11:51.502074+09:00",
+      "completed_at": "2026-10-26T09:11:51.851259+09:00",
+      "official_fetched_at": "2026-10-26T09:11:51.851264+09:00",
+      "source_results": [
+        {
+          "url": "https://faq.surpricenow.com/faqs/surprice1019/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "公式クーポンの使い方（クーポンIDの入力手順）",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 33146,
+          "content_hash": "e94694286ea18dcb18e4b2936d7d9135ad77a7e873f04fb3b33730e201116289"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 1,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "baseline_pending",
+      "change_kind": "baseline",
+      "content_hash": "35b2cfdf5d93d59202bbf179f952c23ff5fcc3aee349232e10dac0df1fba12ae",
+      "data_date": "",
+      "latest_file": "",
+      "coupon_count": 0,
+      "audit_candidate_id": "surprice-35b2cfdf5d93d592",
+      "audit_candidate_path": "codex_audit_queue/surprice/surprice-35b2cfdf5d93d592.json",
+      "error": "",
+      "freshness_status": "unknown",
+      "deep_dive": true,
+      "deep_dive_at": "2026-10-26T09:11:51.851259+09:00"
+    }
+  ]
+}
