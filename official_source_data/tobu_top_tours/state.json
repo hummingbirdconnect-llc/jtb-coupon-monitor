@@ -1,7 +1,7 @@
 {
   "provider_id": "tobu_top_tours",
-  "observed_hash": "2c122ada84716807737c1928582a9c248ace9e3052e06d1073690115fe94fcce",
-  "last_checked_at": "2026-10-26T07:25:54.768418+09:00",
+  "observed_hash": "c2089ea7404b05a4867a78270aca3f4e849437379a411dad067ff0d5a98b27e0",
+  "last_checked_at": "2026-10-26T16:05:25.897396+09:00",
   "sources": [
     {
       "url": "https://tobutoptours.jp/members_new/coupon/",
@@ -28,14 +28,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2439,
-      "content_hash": "d063c640987f4a0428cee17841b919b836ca3c936bfd266956410b75473d6136"
+      "text_chars": 2291,
+      "content_hash": "e2c2dec82c2d201fdffdea730ff213ed96f72437c1655739ae9de68f120f95e2"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-23T16:11:04.353566+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "c2089ea7404b05a4867a78270aca3f4e849437379a411dad067ff0d5a98b27e0",
+  "queued_candidate_id": "tobu_top_tours-c2089ea7404b05a4",
+  "queued_at": "2026-10-26T16:05:25.898000+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-24T09:10:56.819937+09:00",
   "last_audit_candidate_id": "tobu_top_tours-2c122ada84716807",
   "processed_hash": "2c122ada84716807737c1928582a9c248ace9e3052e06d1073690115fe94fcce",
