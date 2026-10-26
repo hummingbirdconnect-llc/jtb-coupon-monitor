@@ -1,0 +1,17 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-10-27T07:33:54.738805+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開の施策ページは確認できたが、クーポン一覧は動的表示で取得できず。Chrome起動失敗、ブラウザUser-Agent付きcurl再取得でも未表示。",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/asoview/hints_2026-10-27.json"
+}

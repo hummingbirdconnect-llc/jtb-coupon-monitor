@@ -1,0 +1,17 @@
+{
+  "provider_id": "knt",
+  "provider_label": "近畿日本ツーリスト",
+  "generated_at": "2026-10-27T07:33:54.738805+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "Web検索実施済み。公式クーポン一覧の本文を取得できず。Chrome起動失敗、ブラウザUser-Agent付きcurl再取得でも未表示。",
+  "known_title_count": 11,
+  "registered_url_count": 10,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/knt/hints_2026-10-27.json"
+}

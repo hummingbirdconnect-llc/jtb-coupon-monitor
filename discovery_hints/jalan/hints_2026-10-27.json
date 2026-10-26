@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-27T07:33:54.738805+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "【じゃらんのお得な10日間】3500円分プレミアムクーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad309355/coupon/?distCd=01&screenId=UWW3101&smlCd=272902&yadNo=309355",
+      "official_url": "https://www.jalan.net/yad309355/coupon/",
+      "official_domain_match": true,
+      "evidence": "日和ホテル大阪新世界の公開一覧で確認。予約金額40,000円（税込）以上。じゃらんクーポン、併用可。",
+      "observed_date": "2026-10-27",
+      "discount": "3,500円分",
+      "period": "予約期間2026年10月20日（火）10:00〜2026年10月29日（木）23:59；宿泊対象期間2026年10月20日（火）チェックイン〜2027年5月1日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-27.json"
+}

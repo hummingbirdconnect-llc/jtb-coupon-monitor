@@ -1,0 +1,32 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-27T07:33:54.738805+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "【まだバレてない秋田県。得旅キャンペーン】秋田県の対象宿泊施設で10月1日の予約から利用できる10,000円割引クーポン※併用可",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/movement/akita/202610_akita/",
+      "official_url": "https://travel.rakuten.co.jp/movement/akita/202610_akita/",
+      "official_domain_match": true,
+      "evidence": "国内宿泊、1部屋30,000円（税込）以上、先着2,950枚。公開ページの利用条件を確認。併用可。残数は未確認。",
+      "observed_date": "2026-10-27",
+      "discount": "10,000円",
+      "period": "予約対象期間：2026/10/1(木)10:00~2026/12/28(月)23:59；宿泊対象期間：2026/11/1(日)チェックイン~2027/2/28(",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-27.json"
+}
