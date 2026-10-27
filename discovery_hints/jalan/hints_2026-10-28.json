@@ -1,0 +1,46 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-28T07:35:01.870926+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "秀花園 湯の花膳：10/20発行_じゃらんのお得な10日間厳選宿_7500円分クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad323251/coupon/",
+      "official_url": "https://www.jalan.net/yad323251/coupon/",
+      "official_domain_match": true,
+      "evidence": "未ログイン公開ページで確認。150,000円（税込）以上、先着予約数1220。対象宿の全プラン、併用可。",
+      "observed_date": "2026-10-28",
+      "discount": "7,500 円分",
+      "period": "予約期間：2026年10月20日（火）10:00～2026年10月29日（木）23:59；宿泊対象期間：2026年10月20日（火）チェックイン～2027年5月",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "秀花園 湯の花膳：10月【じゃらんのお得な10日間】15000円",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/yad323251/coupon/",
+      "official_url": "https://www.jalan.net/yad323251/coupon/",
+      "official_domain_match": true,
+      "evidence": "未ログイン公開ページで確認。100,000円（税込）以上、先着予約数50000。宿泊対象日は別カレンダーで未確認。",
+      "observed_date": "2026-10-28",
+      "discount": "15,000 円分",
+      "period": "配布期間：2026年10月15日（木）10:00～2026年10月29日（木）23:59；予約期間：2026年10月20日（火）10:00～2026年10月29",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jalan/hints_2026-10-28.json"
+}

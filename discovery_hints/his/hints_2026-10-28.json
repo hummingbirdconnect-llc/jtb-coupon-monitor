@@ -1,0 +1,32 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-10-28T07:35:01.870926+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "決算大感謝SALEの本文が動的表示のため条件確認未完了。食事券特典は公式営業所ページで確認済み。",
+  "known_title_count": 54,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "ハウステンボスキャンペーン（食事券・パスポート特典）",
+      "kind": "campaign",
+      "found_url": "https://x.com/HIS_japan/status/2113933750434468163",
+      "official_url": "https://access.his-j.com/01/079/sp/recommended/20260905121705.html",
+      "official_domain_match": true,
+      "evidence": "対象ツアーに食事券とパスポート変更特典。国内添乗員同行・沖縄発・ホテル単体は対象外。食事券は0～2歳対象外。",
+      "observed_date": "2026-10-28",
+      "discount": "2,000円分の食事券付き（1名様あたり/滞在中1回）；追加500円で1DAYパスポート",
+      "period": "予約期間：2026年11月12日（木）まで；出発月：2026年9月～2027年3月",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/his/hints_2026-10-28.json"
+}

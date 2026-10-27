@@ -1,0 +1,17 @@
+{
+  "provider_id": "rurubu_travel",
+  "provider_label": "るるぶトラベル",
+  "generated_at": "2026-10-28T07:35:01.870926+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式クーポン一覧と特集の本文を取得できず。Chromeは起動失敗。ブラウザUser-Agent付きcurl再取得も本文空またはJavaScript認証画面。",
+  "known_title_count": 66,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-28.json"
+}
