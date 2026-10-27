@@ -7729,5 +7729,41 @@
     "title": "熊本ふっこう応援割",
     "discount": "最大60％引",
     "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "🔴 配布終了",
+    "id": "2605ito2",
+    "category": "国内",
+    "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞",
+    "discount": "最大20％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "🟢 配布再開",
+    "id": "2606kintetsu",
+    "category": "国内",
+    "title": "近鉄・都ホテルズのおすすめ施設で使える割引クーポン",
+    "discount": "最大5,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "🔴 配布終了",
+    "id": "2607tokyu",
+    "category": "国内",
+    "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+    "discount": "最大8,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "🔴 配布終了",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布終了"
   }
 ]

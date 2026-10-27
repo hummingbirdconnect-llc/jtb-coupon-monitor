@@ -7501,7 +7501,7 @@
   "tree": 2,
   "pattern": "target_call",
   "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "title": "☆【沖縄】11月～3月出発☆冬から春の旅行に使えるおすすめ旅行割引クーポン"
  },
  {
   "date": "2026-10-27",
@@ -7525,7 +7525,7 @@
   "tree": 2,
   "pattern": "quote_highlight",
   "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）"
  },
  {
   "date": "2026-10-27",
@@ -7540,8 +7540,8 @@
   "site": "tripbooking",
   "tree": 1,
   "pattern": "season_context",
-  "ota": "tripcom",
-  "title": "もっと！国内旅！"
+  "ota": "agoda",
+  "title": "今だけ値下がり - 最大15% OFF"
  },
  {
   "date": "2026-10-27",
@@ -7549,14 +7549,14 @@
   "tree": 2,
   "pattern": "soft_news",
   "ota": "tripcom",
-  "title": "人気エリアホテルをおトクに"
+  "title": "もっと！国内旅！"
  },
  {
   "date": "2026-10-27",
   "site": "tripbooking",
   "tree": 3,
-  "pattern": "last_check",
-  "ota": "agoda",
-  "title": "アプリ初回"
+  "pattern": "timing_answer",
+  "ota": "tripcom",
+  "title": "人気エリアホテルをおトクに"
  }
 ]

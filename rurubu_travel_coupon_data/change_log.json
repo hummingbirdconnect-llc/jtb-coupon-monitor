@@ -2,14 +2,6 @@
   {
     "date": "2026-09-10",
     "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-okinw26mr10-d81c70edee",
-    "title": "【4月～8月出発】沖縄県のおすすめ施設で使えるクーポン（最大5,000円引き）",
-    "discount": "最大10%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
     "category": "施設限定クーポン",
     "id": "rurubu_travel-osky26jul10-94fd7333e1",
     "title": "群馬県 草津温泉 大阪屋で使えるクーポン（最大10,000円引き）",
@@ -3997,6 +3989,14 @@
     "category": "エリア限定クーポン",
     "id": "rurubu_travel-jrinn26oc10-ab16a9e17c",
     "title": "【11月～12月出発】北海道のJRイン6館で使えるクーポン（最大5,000円引き）",
+    "discount": "最大10%引き"
+  },
+  {
+    "date": "2026-10-27",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26grosk10-290502c42f",
+    "title": "大阪府 ホテル グランヴィア 大阪で使えるクーポン（最大3,000円引き）",
     "discount": "最大10%引き"
   }
 ]
