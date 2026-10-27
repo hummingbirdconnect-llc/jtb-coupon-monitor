@@ -7765,5 +7765,32 @@
     "title": "九州ふっこう応援割 ふくおかキャンペーン",
     "discount": "最大50％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-28",
+    "type": "🔴 配布終了",
+    "id": "2606kintetsu",
+    "category": "国内",
+    "title": "近鉄・都ホテルズのおすすめ施設で使える割引クーポン",
+    "discount": "最大5,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-10-28",
+    "type": "🟢 配布再開",
+    "id": "2609akifuyu",
+    "category": "国内",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "discount": "最大10,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-10-28",
+    "type": "🔴 配布終了",
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布終了"
   }
 ]
