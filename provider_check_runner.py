@@ -149,6 +149,20 @@ def freshness_status(data_date: str, sla_hours: int, *, official: bool) -> str:
     return "fresh" if age_hours <= sla_hours else "stale"
 
 
+def confirmed_freshness(confirmed_at: str, *, now: datetime | None = None) -> str:
+    """確認日時から実時間で判定する。日時なし・不正・未来は確認扱いにしない。"""
+    try:
+        confirmed = datetime.fromisoformat(confirmed_at)
+        if confirmed.tzinfo is None:
+            return "unknown"
+        age = (now or now_jst()) - confirmed
+    except (TypeError, ValueError):
+        return "unknown"
+    if age < timedelta(0):
+        return "unknown"
+    return "fresh" if age <= timedelta(hours=30) else "stale"
+
+
 def coupon_url(coupon: dict) -> str:
     for key in ("detail_url", "source_url"):
         value = coupon.get(key)
@@ -424,14 +438,7 @@ def run_provider(
         return payload
     if deep_dive_allowed(provider, deep=deep, explicit=explicit):
         payload = run_official_deal_monitor(provider, timeout=max(timeout, 30))
-        payload.setdefault(
-            "freshness_status",
-            freshness_status(
-                payload.get("data_date", ""),
-                int(provider.get("freshness_sla_hours", 30)),
-                official=True,
-            ),
-        )
+        payload["freshness_status"] = confirmed_freshness(payload.get("confirmed_at", ""))
         if is_on_demand(provider):
             payload["deep_dive"] = True
             payload["deep_dive_at"] = payload.get("completed_at", "")

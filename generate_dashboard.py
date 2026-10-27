@@ -14,6 +14,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from provider_check_runner import confirmed_freshness
 from his_regions import coupon_region_codes
 from affiliate_links import affiliate_setup_status, load_affiliate_config, resolve_affiliate_url
 from grok_deal_discovery import latest_hints_file
@@ -232,6 +233,10 @@ def load_pending_audit_counts() -> dict[str, int]:
         candidate_id = str(candidate["candidate_id"])
         if candidate_id in applied:
             continue
+        if audit_completed_for_check(
+            {"audit_candidate_id": candidate_id}, load_official_state(provider_id)
+        ):
+            continue
         if (AUDIT_RESULT_ROOT / provider_id / f"{candidate_id}.json").exists():
             continue
         counts[provider_id] = 1
@@ -297,6 +302,20 @@ def load_official_state(provider_id: str) -> dict[str, Any]:
     return load_json(path)
 
 
+def audit_completed_for_check(check: dict[str, Any], state: dict[str, Any]) -> bool:
+    """取得時の候補と完了した候補が一致するときだけ待ち表示を解消する。"""
+    candidate_id = check.get("audit_candidate_id")
+    return bool(
+        candidate_id
+        and candidate_id == (
+            state.get("audit_completed_candidate_id") or state.get("last_audit_candidate_id")
+        )
+        and (state.get("audit_completed_at") or state.get("last_processed_at"))
+        and state.get("last_audit_status") == "processed"
+        and not state.get("queued_candidate_id")
+    )
+
+
 def official_audit_display(
     coverage: str,
     rows: list[dict[str, Any]],
@@ -313,11 +332,15 @@ def official_audit_display(
     held_current_candidate = state.get("last_audit_status") == "held" and (
         not queued_candidate_id or queued_candidate_id == audited_candidate_id
     )
-    audit_required = bool(check_status.get("codex_audit_required"))
+    audit_required = bool(check_status.get("codex_audit_required")) and not audit_completed_for_check(
+        check_status, state
+    )
 
     if held_current_candidate:
         audit_label = "監査保留"
-    elif state.get("last_audit_status") == "processed" and not queued_candidate_id:
+    elif state.get("last_audit_status") == "processed" and not queued_candidate_id and (
+        not audit_required or not check_status.get("audit_candidate_id")
+    ):
         audit_label = "監査済み"
     elif audit_required or state.get("last_audit_status") == "pending":
         audit_label = "監査待ち"
@@ -887,6 +910,19 @@ def build_provider_payload(
     frequency, frequency_label = provider_frequency(provider)
     check_status = load_provider_check(provider["id"])
     official_state = load_official_state(provider["id"])
+    if audit_completed_for_check(check_status, official_state):
+        # 表示用コピーだけを書き換え、取得時点の履歴は保持する。
+        check_status = {
+            **check_status,
+            "status": "audit_processed",
+            "codex_audit_required": False,
+            "content_confirmation_status": "processed",
+        }
+    elif official_state.get("last_audit_status") != "held" and (
+        check_status.get("codex_audit_required")
+        or official_state.get("last_audit_status") == "pending"
+    ):
+        pending_audits = max(pending_audits, 1)
     count_status, count_label, count_detail, audit_label = official_audit_display(
         coverage,
         rows,
@@ -947,7 +983,19 @@ def build_provider_payload(
         check_status.get("check_type", ""),
         int(provider.get("freshness_sla_hours", 30)),
     )
+    confirmed_at = check_status.get("confirmed_at", "")
+    confirmation_status = check_status.get("content_confirmation_status", "")
+    if "confirmed_at" in check_status:
+        freshness = confirmed_freshness(confirmed_at, now=datetime.now(JST))
+        if (
+            confirmation_status != "confirmed" or pending_audits
+            or check_status.get("failed_source_count")
+            or official_state.get("last_audit_status") in {"pending", "held"}
+        ):
+            confirmed_at = ""
+            freshness = "unknown"
     if legacy_used:
+        confirmed_at = ""
         source_label = "記事抽出暫定JSON（深掘り前の旧データ）"
     if coverage == "official_on_demand":
         if pending_audits:
@@ -1000,6 +1048,11 @@ def build_provider_payload(
         "visual_summary": visual_summary,
         "region_filters": region_filters,
         "data_date": data_date,
+        "confirmed_at": confirmed_at,
+        "content_confirmation_status": confirmation_status,
+        "failed_source_count": int(check_status.get("failed_source_count") or 0),
+        "review_count": review,
+        "audit_completed_at": official_state.get("audit_completed_at", ""),
         "freshness_status": freshness,
         "freshness_label": freshness_label(freshness),
         "official_fetched_at": official_fetched_at,
@@ -1052,6 +1105,9 @@ def build_provider_payload(
             "最終深掘り日": (deep_dive_at or "未実施") if on_demand else "-",
             "URL確認日時": url_checked_at or "なし",
             "データ日": data_date or "不明",
+            "内容を保存した日": data_date or "不明",
+            "内容確認日時": confirmed_at or "なし",
+            "一部失敗": str(check_status.get("failed_source_count") or 0),
             "鮮度": freshness_label(freshness),
             "Codex監査": audit_label,
             "監査待ち": str(pending_audits) if pending_audits else "0",
@@ -1109,7 +1165,20 @@ def freshness_chip(provider: dict[str, Any], latest_date: Any) -> dict[str, Any]
     fetched = provider.get("official_fetched_at") or provider.get("check_status", {}).get("completed_at", "")
     fetched_date = parse_date_value(fetched)
     pending = provider.get("pending_audit_count") or 0
-    if data_date and latest_date and data_date >= latest_date:
+    confirmed_at = provider.get("confirmed_at", "")
+    confirmation_freshness = confirmed_freshness(confirmed_at, now=datetime.now(JST))
+    if confirmed_at and confirmation_freshness != "unknown":
+        confirmed = datetime.fromisoformat(confirmed_at).astimezone(JST)
+        when = (
+            "本日" if confirmed.date() == datetime.now(JST).date()
+            else f"{confirmed.month}/{confirmed.day} {confirmed:%H:%M}"
+        )
+        state, text = confirmation_freshness, f"{when}確認・内容変更なし"
+        if state == "stale":
+            text += "（確認から30時間超過）"
+    elif "confirmed_at" in provider.get("check_status", {}):
+        state, text = "unknown", "内容未確認"
+    elif data_date and latest_date and data_date >= latest_date:
         state, text = "fresh", f"{data_date.month}/{data_date.day} 取得"
         time_match = re.search(r"T(\d{2}:\d{2})", str(fetched))
         if time_match and fetched_date == data_date:
@@ -1121,6 +1190,17 @@ def freshness_chip(provider: dict[str, Any], latest_date: Any) -> dict[str, Any]
             text += f"（公式ページは取得済み・読み取り待ち {pending} 件）"
     else:
         state, text = "unknown", "取得なし"
+    notices = []
+    if pending:
+        notices.append(f"点検待ち {pending}件")
+    if provider.get("failed_source_count"):
+        notices.append(f"一部失敗 {provider['failed_source_count']}件")
+    if provider.get("review_count"):
+        notices.append(f"要確認 {provider['review_count']}件")
+    if provider.get("content_confirmation_status") == "held":
+        notices.append("点検保留")
+    if notices:
+        text += " ／ " + "・".join(notices)
     return {"id": provider["id"], "label": provider["label"], "state": state, "text": text}
 
 
@@ -1555,6 +1635,7 @@ function checkStatusLabel(value) {{
   const labels = {{
     success: '正常',
     unchanged: '変更なし',
+    audit_processed: '点検完了',
     baseline_pending: '初回基準・監査待ち',
     audit_pending: 'Codex監査待ち',
     audit_held: 'ユーザー確認待ち',
@@ -1583,8 +1664,14 @@ function checkStatusHtml(provider) {{
   details.push(`<span class="manual-meta">${{escapeHtml(checkTypeLabel(status.check_type))}}</span>`);
   details.push(`<span class="manual-meta">最終実行: ${{escapeHtml(formatCheckTime(status.completed_at))}}</span>`);
   details.push(`<span class="manual-meta">公式取得: ${{escapeHtml(formatCheckTime(status.official_fetched_at))}}</span>`);
+  if (status.fetch_status) {{
+    const fetchLabels = {{success: '全対象成功', partial_failure: '一部失敗', error: '失敗'}};
+    details.push(`<span class="manual-meta">取得状態: ${{escapeHtml(fetchLabels[status.fetch_status] || status.fetch_status)}}</span>`);
+  }}
   details.push(`<span class="manual-meta">URL確認日時: ${{escapeHtml(formatCheckTime(status.url_checked_at))}}</span>`);
-  details.push(`<span class="manual-meta">データ日: ${{escapeHtml(provider.data_date || status.data_date || '不明')}}</span>`);
+  details.push(`<span class="manual-meta">内容を保存した日: ${{escapeHtml(provider.data_date || status.data_date || '不明')}}</span>`);
+  details.push(`<span class="manual-meta">内容確認日時: ${{escapeHtml(formatCheckTime(provider.confirmed_at))}}</span>`);
+  details.push(`<span class="manual-meta">点検待ち: ${{escapeHtml(provider.pending_audit_count || 0)}}件 / 一部失敗: ${{escapeHtml(provider.failed_source_count || 0)}}件 / 要確認: ${{escapeHtml(provider.review_count || 0)}}件</span>`);
   details.push(`<span class="manual-meta">鮮度: ${{escapeHtml(provider.freshness_label || '不明')}}</span>`);
   details.push(`<span class="manual-meta">Codex監査: ${{escapeHtml(provider.ai_label || '対象外')}}</span>`);
   details.push(`<span class="manual-meta">件数: ${{escapeHtml(provider.count_display_label ?? provider.count_label ?? provider.rows.length)}}</span>`);
