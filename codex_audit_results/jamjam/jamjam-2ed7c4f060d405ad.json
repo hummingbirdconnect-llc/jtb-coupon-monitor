@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "candidate_id": "jamjam-2ed7c4f060d405ad",
+  "provider_id": "jamjam",
+  "page_summary": "confirmedの本文はQ&Aのみで、割引プラン（ＪＷＥＢ割・Ｊ得割）の一般的な説明はあるが、割引額・期間・コード等の具体的なクーポン情報はない。",
+  "change_summary": "初回取得のbaseline。掲載データなし。確定できる項目なし。",
+  "recommendation": "hold",
+  "priority": 0,
+  "uncertainty_reasons": [
+    "confirmed本文がQ&Aページのみで、掲載対象となるクーポン情報が確認できない。"
+  ],
+  "audit_notes": "Q&Aページのみが取得されており、クーポン・キャンペーンの実体ページが取得されていない。2つの割引プランは説明のみでunpublishable。",
+  "deals": [
+    {
+      "title": "ＪＷＥＢ割プラン",
+      "campaign_type": "sale",
+      "status": "unknown",
+      "classification": "unpublishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "インターネット予約限定。割引額・期間の記載なし",
+      "official_url": "https://jamjamliner.jp/question.html",
+      "evidence_quote": "【ＪＷＥＢ割プラン】インターネット予約限定の、お値打ちな割引プランとなります。",
+      "confidence": "low"
+    },
+    {
+      "title": "Ｊ得割プラン",
+      "campaign_type": "sale",
+      "status": "unknown",
+      "classification": "unpublishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "空席状況に応じて発売。不定期販売で設定がない便もある。割引額・期間の記載なし",
+      "official_url": "https://jamjamliner.jp/question.html",
+      "evidence_quote": "【Ｊ得割プラン】 空席状況に応じて発売をするお値打ちな割引プランとなります。不定期販売となり、設定がない便もございます。",
+      "confidence": "low"
+    }
+  ]
+}

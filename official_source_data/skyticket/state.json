@@ -21,5 +21,7 @@
   "queued_hash": "38b93c7d521facf5ca42aed77647e8486045e581fdd7b1c0f5a59676d9501338",
   "queued_candidate_id": "skyticket-38b93c7d521facf5",
   "queued_at": "2026-10-26T09:11:52.895654+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-10-27T09:16:01.592025+09:00",
+  "last_audit_candidate_id": "skyticket-38b93c7d521facf5"
 }

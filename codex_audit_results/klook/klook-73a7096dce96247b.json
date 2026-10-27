@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "klook-73a7096dce96247b",
+  "provider_id": "klook",
+  "page_summary": "台湾向けクーポン3件（海外現地ツアー5%OFF、台湾高速鉄道B1G1、台湾おすすめホテル最大5,000円割引）と台湾の商品一覧。",
+  "change_summary": "前回掲載の7件のうち台湾高速鉄道B1G1（G02TAIWAN）は継続。海外現地ツアー5%OFF（TOURMOKLK5）と台湾おすすめホテル（TW5HOTELOCT）が新規。他の前回クーポンは本文から消えた。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "本文から消えた前回クーポンは終了と断定せずdealsに入れていない（要確認として残る）。「現在のSALE＆キャンペーン」以下は個別商品の販売価格・割引表示の一覧でクーポン／キャンペーン名ではないため対象外。期間の記載はなく日付項目はnull。",
+  "deals": [
+    {
+      "title": "海外現地ツアー 5%OFF",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "5%OFF",
+      "coupon_code": "TOURMOKLK5",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "アプリのみ。最低利用額なし",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "アプリのみ 海外現地ツアー クーポンコード: TOURMOKLK5 5%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "台湾高速鉄道 B1G1",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "50%OFF",
+      "coupon_code": "G02TAIWAN",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "台中、高雄、嘉義、台南、彰化、雲林のみに行く路線が対象。最低利用額なし",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "台湾高速鉄道（台湾高速鉄道）のB1G1：台中、高雄、嘉義、台南、彰化、雲林のみに行く路線 クーポンコード: G02TAIWAN 50%OFF 最低利用額なし 発行",
+      "confidence": "high"
+    },
+    {
+      "title": "台湾おすすめホテル 最大JPY 5,000割引",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大 JPY 5,000 割引",
+      "coupon_code": "TW5HOTELOCT",
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "アプリのみ",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "evidence_quote": "アプリのみ 台湾おすすめホテル クーポンコード: TW5HOTELOCT 最大 JPY 5,000 割引 発行",
+      "confidence": "high"
+    }
+  ]
+}

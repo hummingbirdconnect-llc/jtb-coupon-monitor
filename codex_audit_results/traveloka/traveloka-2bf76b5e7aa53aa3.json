@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "traveloka-2bf76b5e7aa53aa3",
+  "provider_id": "traveloka",
+  "page_summary": "プロモーションページに新規ユーザー向け最大10,000円、Web初回予約最大5,000円、イオンカード限定最大10%のクーポン。",
+  "change_summary": "初回取得のbaseline。掲載データなし。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "期間の記載は「期間限定」「プロモーション期間中」のみで日付項目はnull。クーポンコードは本文になし。",
+  "deals": [
+    {
+      "title": "期間限定クーポン 最大10,000円割引",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大10,000円割引",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "新規ユーザーのみ有効。対象は航空券/ホテル/アクティビティ/空港送迎レンタカー/空港送迎",
+      "official_url": "https://www.traveloka.com/ja-jp/promotion",
+      "evidence_quote": "期間限定クーポン 最大10,000円割引 新規ユーザーのみ有効 航空券 / ホテル / アクティビティ / 空港送迎レンタカー / 空港送迎 / User 取得",
+      "confidence": "high"
+    },
+    {
+      "title": "最大5,000円割引",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大5,000円割引",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "Webでの初回予約のみ有効。対象は航空券/ホテル/アクティビティ/空港送迎レンタカー/空港送迎",
+      "official_url": "https://www.traveloka.com/ja-jp/promotion",
+      "evidence_quote": "最大5,000円割引 Webでの初回予約のみ有効 航空券 / ホテル / アクティビティ / 空港送迎レンタカー / 空港送迎 / User 取得",
+      "confidence": "high"
+    },
+    {
+      "title": "イオンマークのカード限定 表示価格からさらに最大10%OFF",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "最大10%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "イオンマークのカードで日本円払いに限る。クーポンの在庫がある限り何度でも利用可",
+      "official_url": "https://www.traveloka.com/ja-jp/promotion",
+      "evidence_quote": "イオンマークのカード限定 表示価格からさらに最大10%OFF！プロモーション期間中、何度でも使える*！(*クーポンの在庫がある限り） ※イオンマークのカードで日本円でのお支払いに限り有効 航空券 / ホテル / アクティビティ / 空港送迎レンタカー / 空港送迎 取得",
+      "confidence": "high"
+    }
+  ]
+}

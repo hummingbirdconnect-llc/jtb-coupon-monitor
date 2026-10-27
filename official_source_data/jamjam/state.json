@@ -21,5 +21,7 @@
   "queued_hash": "2ed7c4f060d405ad07d6280153743f5a4da409d6ba7b38f8f2356c574be2c1ec",
   "queued_candidate_id": "jamjam-2ed7c4f060d405ad",
   "queued_at": "2026-10-26T09:11:54.015230+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-10-27T09:16:01.582910+09:00",
+  "last_audit_candidate_id": "jamjam-2ed7c4f060d405ad"
 }

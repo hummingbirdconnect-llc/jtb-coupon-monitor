@@ -405,6 +405,69 @@
       "recommendation": "draft",
       "applied_at": "2026-10-24T09:10:56.820770+09:00",
       "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-2c122ada84716807.json"
+    },
+    "agoda-23689a84a24d1713": {
+      "provider_id": "agoda",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-27T09:16:01.582240+09:00",
+      "result_path": "codex_audit_results/agoda/agoda-23689a84a24d1713.json"
+    },
+    "jamjam-2ed7c4f060d405ad": {
+      "provider_id": "jamjam",
+      "status": "held",
+      "recommendation": "hold",
+      "applied_at": "2026-10-27T09:16:01.583344+09:00",
+      "result_path": "codex_audit_results/jamjam/jamjam-2ed7c4f060d405ad.json"
+    },
+    "klook-73a7096dce96247b": {
+      "provider_id": "klook",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-27T09:16:01.585181+09:00",
+      "result_path": "codex_audit_results/klook/klook-73a7096dce96247b.json"
+    },
+    "shirokuma_tour-6ad80761e45eabbe": {
+      "provider_id": "shirokuma_tour",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-27T09:16:01.587731+09:00",
+      "result_path": "codex_audit_results/shirokuma_tour/shirokuma_tour-6ad80761e45eabbe.json"
+    },
+    "skypack_tours-6e6c13ba564a4aa2": {
+      "provider_id": "skypack_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-27T09:16:01.589680+09:00",
+      "result_path": "codex_audit_results/skypack_tours/skypack_tours-6e6c13ba564a4aa2.json"
+    },
+    "skyticket-38b93c7d521facf5": {
+      "provider_id": "skyticket",
+      "status": "held",
+      "recommendation": "hold",
+      "applied_at": "2026-10-27T09:16:01.592487+09:00",
+      "result_path": "codex_audit_results/skyticket/skyticket-38b93c7d521facf5.json"
+    },
+    "surprice-35b2cfdf5d93d592": {
+      "provider_id": "surprice",
+      "status": "held",
+      "recommendation": "hold",
+      "applied_at": "2026-10-27T09:16:01.593864+09:00",
+      "result_path": "codex_audit_results/surprice/surprice-35b2cfdf5d93d592.json"
+    },
+    "tobu_top_tours-a0ac7ca3b31ddbcd": {
+      "provider_id": "tobu_top_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-27T09:16:01.595725+09:00",
+      "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-a0ac7ca3b31ddbcd.json"
+    },
+    "traveloka-2bf76b5e7aa53aa3": {
+      "provider_id": "traveloka",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-27T09:16:01.596839+09:00",
+      "result_path": "codex_audit_results/traveloka/traveloka-2bf76b5e7aa53aa3.json"
     }
   }
 }

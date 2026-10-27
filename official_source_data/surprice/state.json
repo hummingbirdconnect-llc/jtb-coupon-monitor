@@ -21,5 +21,7 @@
   "queued_hash": "35b2cfdf5d93d59202bbf179f952c23ff5fcc3aee349232e10dac0df1fba12ae",
   "queued_candidate_id": "surprice-35b2cfdf5d93d592",
   "queued_at": "2026-10-26T09:11:51.852936+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "held",
+  "last_audited_at": "2026-10-27T09:16:01.593424+09:00",
+  "last_audit_candidate_id": "surprice-35b2cfdf5d93d592"
 }

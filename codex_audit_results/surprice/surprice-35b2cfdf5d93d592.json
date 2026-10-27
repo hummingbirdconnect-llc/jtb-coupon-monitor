@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "candidate_id": "surprice-35b2cfdf5d93d592",
+  "provider_id": "surprice",
+  "page_summary": "confirmed本文はクーポン利用時の注意と使い方のFAQで、個別クーポンの金額・コード・期間の記載はない。",
+  "change_summary": "初回取得のbaseline。掲載データなし。確定できる項目なし。",
+  "recommendation": "hold",
+  "priority": 0,
+  "uncertainty_reasons": [
+    "confirmed本文がクーポン利用方法のFAQのみで、掲載対象となるクーポン情報が確認できない。"
+  ],
+  "audit_notes": "FAQ本文のみ。個別クーポン・キャンペーンの記載なし。本文末尾はページ内部データ（JSON）でクーポン情報としては扱わない。",
+  "deals": []
+}

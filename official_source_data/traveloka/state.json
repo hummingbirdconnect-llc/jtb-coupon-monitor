@@ -18,8 +18,15 @@
       "content_hash": "e0565880a5f26e35037c083a0fd8e18f5f11ff294e60bfeb24abf1155786fa77"
     }
   ],
-  "queued_hash": "2bf76b5e7aa53aa333a8f4646367adf47a5dcc9dc166139339f66d842e0e66ff",
-  "queued_candidate_id": "traveloka-2bf76b5e7aa53aa3",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-26T09:12:14.868366+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-27T09:16:01.596397+09:00",
+  "last_audit_candidate_id": "traveloka-2bf76b5e7aa53aa3",
+  "processed_hash": "2bf76b5e7aa53aa333a8f4646367adf47a5dcc9dc166139339f66d842e0e66ff",
+  "last_processed_at": "2026-10-27T09:16:01.596397+09:00",
+  "last_changed_at": "2026-10-27T09:16:01.596397+09:00",
+  "latest_file": "coupons_2026-10-27.json",
+  "semantic_hash": "7f21c2b83a18cdbdaed65901a6b8afb9bf774d64eabf50f45a42cc7c8d774e83"
 }

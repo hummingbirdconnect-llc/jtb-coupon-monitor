@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "shirokuma_tour-6ad80761e45eabbe",
+  "provider_id": "shirokuma_tour",
+  "page_summary": "PeachTRAVELオータムセールのページ。販売受付は2026年10月30日まで、対象出発日は2027年3月27日まで。ツアー商品の一覧と、特典クーポン付きツアー2件。",
+  "change_summary": "初回取得のbaseline。掲載データなし。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "ページの大半は個別ツアー商品の紹介（価格表示は「円〜」のみ）で、USJ・ディズニーチケット付き、レンタカー付き、体験付きなどの商品特典は割引額・期間の記載がなくクーポン情報としては対象外。特典クーポン付きとして金額の記載がある2件のみ別項目に載せた。",
+  "deals": [
+    {
+      "title": "オータムセール",
+      "campaign_type": "sale",
+      "status": "active",
+      "classification": "publishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": "2026-10-30",
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "対象出発日は商品によって異なり、2027年03月27日（土）まで。販売受付期間は2026年10月30日（金）まで。掲載方面以外でも適用可能",
+      "official_url": "https://www.wbf.co.jp/peachtravel/campaign/",
+      "evidence_quote": "オータムセールはいつまでですか？ 対象出発日は商品によって異なりますが、2027年03月27日（土）までとなり、販売受付期間は2026年10月30日（金）までとなります。",
+      "confidence": "high"
+    },
+    {
+      "title": "リピーター多数の人気リゾート、本気値下げ",
+      "campaign_type": "campaign",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "11,000円相当",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "ホテル日航アリビラ宿泊のレンタカー・特典付きツアーに付く特典クーポン。期間の記載なし",
+      "official_url": "https://www.wbf.co.jp/peachtravel/campaign/",
+      "evidence_quote": "リピーター多数の人気リゾート、本気値下げ 全室オーシャンビュー＆11,000円相当の特典クーポン付♪ レンタカー,特典付き 宿泊ホテル ホテル日航アリビラ",
+      "confidence": "high"
+    },
+    {
+      "title": "宮崎で遊ぼうクーポンDX付",
+      "campaign_type": "campaign",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "2000円相当",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "ホテルマリックス宿泊の特典付きツアーに付く引換券。期間の記載なし",
+      "official_url": "https://www.wbf.co.jp/peachtravel/campaign/",
+      "evidence_quote": "宮崎で遊ぼうクーポンDX付 ・2000円相当の引換券付！ ※宮崎で遊ぼうクーポンDX ・繫華街まで徒歩1分♪ 特典付き 宿泊ホテル ホテルマリックス",
+      "confidence": "high"
+    }
+  ]
+}

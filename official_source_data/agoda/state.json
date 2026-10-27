@@ -18,8 +18,15 @@
       "content_hash": "df4562171317221734718098216da62b5ad338ae1640e406869ceb85d4397354"
     }
   ],
-  "queued_hash": "23689a84a24d17130f6fc6b816ec7324fdcd73925cfbff59b58d73a61f898706",
-  "queued_candidate_id": "agoda-23689a84a24d1713",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-26T09:12:18.985119+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-27T09:16:01.581528+09:00",
+  "last_audit_candidate_id": "agoda-23689a84a24d1713",
+  "processed_hash": "23689a84a24d17130f6fc6b816ec7324fdcd73925cfbff59b58d73a61f898706",
+  "last_processed_at": "2026-10-27T09:16:01.581528+09:00",
+  "last_changed_at": "2026-10-27T09:16:01.581528+09:00",
+  "latest_file": "coupons_2026-10-27.json",
+  "semantic_hash": "355dd98e22a8d9664273f3d319567b00e8590381cd9070649d888bd1c017532e"
 }
