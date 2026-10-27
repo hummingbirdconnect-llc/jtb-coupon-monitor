@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-28T08:15:10+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "値引きクーポン満載！お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 公式：国内宿泊 全楽天会員様 500円OFF 宿クーポン 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員様限定 週末3,000円/1,500円OFF・平日2,500円/1,000円OFF ／ 未確認：宿泊期間 ／ 未確認：最低利用額 ／ 未確認：決済方法（利用条件はボタンの中で未読）",
+      "observed_date": "2026-10-28",
+      "discount": "全楽天会員500円OFF（ダイヤモンド会員限定：週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員限定：週末3,000円/1,500円OFF・平日2,500円/1,000円OFF）",
+      "period": "予約：2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 旅行：未確認（Grok: 2026年10月2日チェックイン〜2027年9月30日チェックアウト）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "大阪府旅館ホテル生活衛生同業組合特集 500円割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/select/osaka-yado/202610/",
+      "evidence": "公式：予約対象期間 2026/10/19(月)10:00 ～ 2026/11/2(月)23:59 ／ 公式：宿泊対象期間 2026/10/19(月)チェックイン～2026/11/3(火)チェックアウト ／ 公式：国内宿泊 500円OFF 楽天トラベルクーポン 先着利用1,848枚 ／ 未確認：最低利用額 ／ 未確認：決済方法 ／ 未確認：1会員あたりの枚数",
+      "observed_date": "2026-10-28",
+      "discount": "500円OFF",
+      "period": "予約：2026/10/19(月)10:00 ～ 2026/11/2(月)23:59 ／ 旅行：2026/10/19(月)チェックイン～2026/11/3(火)チェックアウト",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
