@@ -201,6 +201,274 @@
     }
   },
   {
+    "id": "yahoo_travel-1127259",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ホテルグランヴィア広島 4,500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "4,500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島駅直結",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額25,000円以上",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127259",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127259",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ホテルグランヴィア広島",
+      "hotel_url": "https://travel.yahoo.co.jp/00000592/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000592"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島",
+          "accommodation_id": "00000592",
+          "prefecture": "広島県",
+          "area": "広島駅直結",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "4,500円OFFクーポン",
+      "min_amount": 25000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127260",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ホテルグランヴィア広島 6,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "6,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島駅直結",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127260",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127260",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ホテルグランヴィア広島",
+      "hotel_url": "https://travel.yahoo.co.jp/00000592/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000592"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島",
+          "accommodation_id": "00000592",
+          "prefecture": "広島県",
+          "area": "広島駅直結",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "6,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127261",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ホテルグランヴィア広島サウスゲート 6,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "6,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島市",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127261",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127261",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ホテルグランヴィア広島サウスゲート",
+      "hotel_url": "https://travel.yahoo.co.jp/00003243/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00003243"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島サウスゲート",
+          "accommodation_id": "00003243",
+          "prefecture": "広島県",
+          "area": "広島市",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "6,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127262",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ホテルグランヴィア広島サウスゲート 7,500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "7,500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島市",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額40,000円以上",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127262",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127262",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ホテルグランヴィア広島サウスゲート",
+      "hotel_url": "https://travel.yahoo.co.jp/00003243/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00003243"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島サウスゲート",
+          "accommodation_id": "00003243",
+          "prefecture": "広島県",
+          "area": "広島市",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "7,500円OFFクーポン",
+      "min_amount": 40000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1080810",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -1076,6 +1344,142 @@
     }
   },
   {
+    "id": "yahoo_travel-1122539",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "京王プレリアホテル札幌 先着40名様限定 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "北海道／JR札幌駅北口徒歩3分",
+    "regions": [
+      "北海道"
+    ],
+    "booking_period": "～ 2026/11/01 12:00",
+    "travel_period": "2026/10/23 ～ 2027/03/31",
+    "stay_period": "2026/10/23 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額45,000円以上",
+      "先着40名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1122539",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1122539",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "京王プレリアホテル札幌",
+      "hotel_url": "https://travel.yahoo.co.jp/00081757/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00081757"
+      ],
+      "accommodations": [
+        {
+          "name": "京王プレリアホテル札幌",
+          "accommodation_id": "00081757",
+          "prefecture": "北海道",
+          "area": "JR札幌駅北口徒歩3分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着40名様限定 2,000円OFFクーポン",
+      "min_amount": 45000,
+      "expired_at": "2026-11-01T12:00:00+09:00",
+      "checkout_begin": "2026-10-23T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1110829",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ホテル モンテ エルマーナ福岡 先着50名様限定 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "福岡県／渡辺通駅徒歩2分・天神駅徒歩10分",
+    "regions": [
+      "福岡県"
+    ],
+    "booking_period": "～ 2026/11/02 12:00",
+    "travel_period": "2026/10/27 ～ 2027/03/31",
+    "stay_period": "2026/10/27 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "先着50名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1110829",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1110829",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ホテル モンテ エルマーナ福岡",
+      "hotel_url": "https://travel.yahoo.co.jp/00081186/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00081186"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテル モンテ エルマーナ福岡",
+          "accommodation_id": "00081186",
+          "prefecture": "福岡県",
+          "area": "渡辺通駅徒歩2分・天神駅徒歩10分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着50名様限定 2,000円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-02T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1123438",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -1747,6 +2151,74 @@
     }
   },
   {
+    "id": "yahoo_travel-1089316",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ヒルトン成田 先着30名様限定 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "千葉県／成田",
+    "regions": [
+      "千葉県"
+    ],
+    "booking_period": "～ 2026/12/30 12:00",
+    "travel_period": "2026/08/23 ～ 2026/12/30",
+    "stay_period": "2026/08/23 ～ 2026/12/30",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額25,000円以上",
+      "先着30名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1089316",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1089316",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ヒルトン成田",
+      "hotel_url": "https://travel.yahoo.co.jp/00000442/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000442"
+      ],
+      "accommodations": [
+        {
+          "name": "ヒルトン成田",
+          "accommodation_id": "00000442",
+          "prefecture": "千葉県",
+          "area": "成田",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着30名様限定 5,000円OFFクーポン",
+      "min_amount": 25000,
+      "expired_at": "2026-12-30T12:00:00+09:00",
+      "checkout_begin": "2026-08-23T00:00:00+09:00",
+      "checkout_end": "2026-12-30T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1119771",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -2202,6 +2674,71 @@
       "expired_at": "2027-03-31T12:00:00+09:00",
       "checkout_begin": "2026-10-18T00:00:00+09:00",
       "checkout_end": "2027-09-30T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1051665",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "平戸海上ホテル 枚数限定 3,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "長崎県／たびら平戸口",
+    "regions": [
+      "長崎県"
+    ],
+    "booking_period": "～ 2026/10/31 12:00",
+    "travel_period": "2026/06/28 ～ 2026/12/31",
+    "stay_period": "2026/06/28 ～ 2026/12/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "枚数限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1051665",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1051665",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "平戸海上ホテル",
+      "hotel_url": "https://travel.yahoo.co.jp/00900920/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00900920"
+      ],
+      "accommodations": [
+        {
+          "name": "平戸海上ホテル",
+          "accommodation_id": "00900920",
+          "prefecture": "長崎県",
+          "area": "たびら平戸口",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "枚数限定 3,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-10-31T12:00:00+09:00",
+      "checkout_begin": "2026-06-28T00:00:00+09:00",
+      "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-10-27.json"
@@ -3058,6 +3595,136 @@
     }
   },
   {
+    "id": "yahoo_travel-1127291",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "クラブウィンダム白樺荘 志賀高原 先着10名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "長野県／下高井郡",
+    "regions": [
+      "長野県"
+    ],
+    "booking_period": "～ 2026/11/03 12:00",
+    "travel_period": "2026/10/28 ～ 2026/12/15",
+    "stay_period": "2026/10/28 ～ 2026/12/15",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額1,000円以上",
+      "先着10名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127291",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127291",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "クラブウィンダム白樺荘 志賀高原",
+      "hotel_url": "https://travel.yahoo.co.jp/00924485/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00924485"
+      ],
+      "accommodations": [
+        {
+          "name": "クラブウィンダム白樺荘 志賀高原",
+          "accommodation_id": "00924485",
+          "prefecture": "長野県",
+          "area": "下高井郡",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "先着10名様限定 1,000円OFFクーポン",
+      "min_amount": 1000,
+      "expired_at": "2026-11-03T12:00:00+09:00",
+      "checkout_begin": "2026-10-28T00:00:00+09:00",
+      "checkout_end": "2026-12-15T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127293",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "戸倉上山田温泉 クラブウィンダム千曲館 長野 先着10名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "長野県／戸倉上山田温泉",
+    "regions": [
+      "長野県"
+    ],
+    "booking_period": "～ 2026/11/03 12:00",
+    "travel_period": "2026/11/01 ～ 2026/12/22",
+    "stay_period": "2026/11/01 ～ 2026/12/22",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額1,000円以上",
+      "先着10名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127293",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127293",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "戸倉上山田温泉 クラブウィンダム千曲館 長野",
+      "hotel_url": "https://travel.yahoo.co.jp/00902598/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00902598"
+      ],
+      "accommodations": [
+        {
+          "name": "戸倉上山田温泉 クラブウィンダム千曲館 長野",
+          "accommodation_id": "00902598",
+          "prefecture": "長野県",
+          "area": "戸倉上山田温泉",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "先着10名様限定 1,000円OFFクーポン",
+      "min_amount": 1000,
+      "expired_at": "2026-11-03T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-12-22T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1117212",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -3183,6 +3850,71 @@
       "min_amount": 20000,
       "expired_at": "2026-11-15T12:00:00+09:00",
       "checkout_begin": "2026-10-15T00:00:00+09:00",
+      "checkout_end": "2027-01-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127281",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "BALLPARK TAKIBI TERRACE ALLPAR 10,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "10,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "北海道／北広島市",
+    "regions": [
+      "北海道"
+    ],
+    "booking_period": "～ 2026/11/20 12:00",
+    "travel_period": "2026/11/01 ～ 2027/01/31",
+    "stay_period": "2026/11/01 ～ 2027/01/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額25,000円以上",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127281",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127281",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "BALLPARK TAKIBI TERRACE ALLPAR",
+      "hotel_url": "https://travel.yahoo.co.jp/00920091/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00920091"
+      ],
+      "accommodations": [
+        {
+          "name": "BALLPARK TAKIBI TERRACE ALLPAR",
+          "accommodation_id": "00920091",
+          "prefecture": "北海道",
+          "area": "北広島市",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "10,000円OFFクーポン",
+      "min_amount": 25000,
+      "expired_at": "2026-11-20T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,

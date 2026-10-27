@@ -1,261 +1,5 @@
 [
   {
-    "id": "ikkyu-1098417",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 4,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "4,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "長野県／日向山高原",
-    "regions": [
-      "長野県"
-    ],
-    "booking_period": "～ 2026/10/27 12:00",
-    "travel_period": "2026/10/13 ～ 2027/08/24",
-    "stay_period": "2026/10/13 ～ 2027/08/24",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額20,000円以上",
-      "デイユース（日帰り）は対象外",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1098417",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-10-27",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1098417",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-      "hotel_url": "https://www.ikyu.com/00000969/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00000969"
-      ],
-      "accommodations": [
-        {
-          "name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-          "accommodation_id": "00000969",
-          "prefecture": "長野県",
-          "area": "日向山高原",
-          "large_area": "中日本"
-        }
-      ],
-      "large_area": "中日本",
-      "description": "4,000円OFFクーポン",
-      "min_amount": 20000,
-      "expired_at": "2026-10-27T12:00:00+09:00",
-      "checkout_begin": "2026-10-13T00:00:00+09:00",
-      "checkout_end": "2027-08-24T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
-    }
-  },
-  {
-    "id": "ikkyu-1098418",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 10,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "10,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "長野県／日向山高原",
-    "regions": [
-      "長野県"
-    ],
-    "booking_period": "～ 2026/10/27 12:00",
-    "travel_period": "2026/10/13 ～ 2027/08/24",
-    "stay_period": "2026/10/13 ～ 2027/08/24",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額40,000円以上",
-      "デイユース（日帰り）は対象外",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1098418",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-10-27",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1098418",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-      "hotel_url": "https://www.ikyu.com/00000969/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00000969"
-      ],
-      "accommodations": [
-        {
-          "name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-          "accommodation_id": "00000969",
-          "prefecture": "長野県",
-          "area": "日向山高原",
-          "large_area": "中日本"
-        }
-      ],
-      "large_area": "中日本",
-      "description": "10,000円OFFクーポン",
-      "min_amount": 40000,
-      "expired_at": "2026-10-27T12:00:00+09:00",
-      "checkout_begin": "2026-10-13T00:00:00+09:00",
-      "checkout_end": "2027-08-24T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
-    }
-  },
-  {
-    "id": "ikkyu-1098419",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 15,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "15,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "長野県／日向山高原",
-    "regions": [
-      "長野県"
-    ],
-    "booking_period": "～ 2026/10/27 12:00",
-    "travel_period": "2026/10/13 ～ 2027/08/24",
-    "stay_period": "2026/10/13 ～ 2027/08/24",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額60,000円以上",
-      "デイユース（日帰り）は対象外",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1098419",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-10-27",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1098419",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-      "hotel_url": "https://www.ikyu.com/00000969/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00000969"
-      ],
-      "accommodations": [
-        {
-          "name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-          "accommodation_id": "00000969",
-          "prefecture": "長野県",
-          "area": "日向山高原",
-          "large_area": "中日本"
-        }
-      ],
-      "large_area": "中日本",
-      "description": "15,000円OFFクーポン",
-      "min_amount": 60000,
-      "expired_at": "2026-10-27T12:00:00+09:00",
-      "checkout_begin": "2026-10-13T00:00:00+09:00",
-      "checkout_end": "2027-08-24T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
-    }
-  },
-  {
-    "id": "ikkyu-1098421",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG 20,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "20,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "長野県／日向山高原",
-    "regions": [
-      "長野県"
-    ],
-    "booking_period": "～ 2026/10/27 12:00",
-    "travel_period": "2026/10/13 ～ 2027/08/24",
-    "stay_period": "2026/10/13 ～ 2027/08/24",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額80,000円以上",
-      "デイユース（日帰り）は対象外",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1098421",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-10-27",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1098421",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-      "hotel_url": "https://www.ikyu.com/00000969/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00000969"
-      ],
-      "accommodations": [
-        {
-          "name": "ANAホリデイ・イン リゾート信濃大町くろよん by IHG",
-          "accommodation_id": "00000969",
-          "prefecture": "長野県",
-          "area": "日向山高原",
-          "large_area": "中日本"
-        }
-      ],
-      "large_area": "中日本",
-      "description": "20,000円OFFクーポン",
-      "min_amount": 80000,
-      "expired_at": "2026-10-27T12:00:00+09:00",
-      "checkout_begin": "2026-10-13T00:00:00+09:00",
-      "checkout_end": "2027-08-24T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
-    }
-  },
-  {
     "id": "ikkyu-1101816",
     "provider": "ikkyu",
     "provider_label": "一休.com",
@@ -317,7 +61,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -381,7 +125,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -445,7 +189,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -510,7 +254,7 @@
       "checkout_end": "2026-12-01T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -574,7 +318,71 @@
       "checkout_end": "2027-04-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1127234",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホテルグランバッハ熱海クレッシェンド 先着20名様限定 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "静岡県／熱海",
+    "regions": [
+      "静岡県"
+    ],
+    "booking_period": "～ 2026/11/02 12:00",
+    "travel_period": "2026/11/26 ～ 2027/03/31",
+    "stay_period": "2026/11/26 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額100,000円以上",
+      "先着20名様限定",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1127234",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127234",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホテルグランバッハ熱海クレッシェンド",
+      "hotel_url": "https://www.ikyu.com/00001943/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00001943"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランバッハ熱海クレッシェンド",
+          "accommodation_id": "00001943",
+          "prefecture": "静岡県",
+          "area": "熱海",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着20名様限定 2,000円OFFクーポン",
+      "min_amount": 100000,
+      "expired_at": "2026-11-02T12:00:00+09:00",
+      "checkout_begin": "2026-11-26T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -639,7 +447,263 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1121988",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAインターコンチネンタル安比高原リゾート by IHG 10,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "10,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "岩手県／安比高原",
+    "regions": [
+      "岩手県"
+    ],
+    "booking_period": "～ 2026/11/10 12:00",
+    "travel_period": "2026/10/27 ～ 2027/03/31",
+    "stay_period": "2026/10/27 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額50,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1121988",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1121988",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+      "hotel_url": "https://www.ikyu.com/00002959/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002959"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+          "accommodation_id": "00002959",
+          "prefecture": "岩手県",
+          "area": "安比高原",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "10,000円OFFクーポン",
+      "min_amount": 50000,
+      "expired_at": "2026-11-10T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1121994",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAインターコンチネンタル安比高原リゾート by IHG 15,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "15,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "岩手県／安比高原",
+    "regions": [
+      "岩手県"
+    ],
+    "booking_period": "～ 2026/11/10 12:00",
+    "travel_period": "2026/10/27 ～ 2027/03/31",
+    "stay_period": "2026/10/27 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額80,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1121994",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1121994",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+      "hotel_url": "https://www.ikyu.com/00002959/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002959"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+          "accommodation_id": "00002959",
+          "prefecture": "岩手県",
+          "area": "安比高原",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "15,000円OFFクーポン",
+      "min_amount": 80000,
+      "expired_at": "2026-11-10T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1121996",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAインターコンチネンタル安比高原リゾート by IHG 25,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "25,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "岩手県／安比高原",
+    "regions": [
+      "岩手県"
+    ],
+    "booking_period": "～ 2026/11/10 12:00",
+    "travel_period": "2026/10/27 ～ 2027/03/31",
+    "stay_period": "2026/10/27 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額100,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1121996",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1121996",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+      "hotel_url": "https://www.ikyu.com/00002959/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002959"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+          "accommodation_id": "00002959",
+          "prefecture": "岩手県",
+          "area": "安比高原",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "25,000円OFFクーポン",
+      "min_amount": 100000,
+      "expired_at": "2026-11-10T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1121997",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAインターコンチネンタル安比高原リゾート by IHG 35,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "35,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "岩手県／安比高原",
+    "regions": [
+      "岩手県"
+    ],
+    "booking_period": "～ 2026/11/10 12:00",
+    "travel_period": "2026/10/27 ～ 2027/03/31",
+    "stay_period": "2026/10/27 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額300,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1121997",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1121997",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+      "hotel_url": "https://www.ikyu.com/00002959/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002959"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAインターコンチネンタル安比高原リゾート by IHG",
+          "accommodation_id": "00002959",
+          "prefecture": "岩手県",
+          "area": "安比高原",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "35,000円OFFクーポン",
+      "min_amount": 300000,
+      "expired_at": "2026-11-10T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -704,7 +768,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -768,7 +832,72 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1127255",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "沖縄かりゆしリゾートEXES那覇（エグゼス那覇） 先着30名様限定 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "沖縄県／那覇市",
+    "regions": [
+      "沖縄県"
+    ],
+    "booking_period": "～ 2026/12/10 12:00",
+    "travel_period": "2026/11/25 ～ 2026/12/25",
+    "stay_period": "2026/11/25 ～ 2026/12/25",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "先着30名様限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1127255",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127255",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "沖縄かりゆしリゾートEXES那覇（エグゼス那覇）",
+      "hotel_url": "https://www.ikyu.com/00002611/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002611"
+      ],
+      "accommodations": [
+        {
+          "name": "沖縄かりゆしリゾートEXES那覇（エグゼス那覇）",
+          "accommodation_id": "00002611",
+          "prefecture": "沖縄県",
+          "area": "那覇市",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着30名様限定 5,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-12-10T12:00:00+09:00",
+      "checkout_begin": "2026-11-25T00:00:00+09:00",
+      "checkout_end": "2026-12-25T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -831,7 +960,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -897,7 +1026,7 @@
       "checkout_end": "2027-09-27T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -963,7 +1092,7 @@
       "checkout_end": "2027-09-27T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1029,7 +1158,263 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1127259",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホテルグランヴィア広島 4,500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "4,500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島駅直結",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額25,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1127259",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127259",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホテルグランヴィア広島",
+      "hotel_url": "https://www.ikyu.com/00000592/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000592"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島",
+          "accommodation_id": "00000592",
+          "prefecture": "広島県",
+          "area": "広島駅直結",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "4,500円OFFクーポン",
+      "min_amount": 25000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1127260",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホテルグランヴィア広島 6,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "6,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島駅直結",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1127260",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127260",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホテルグランヴィア広島",
+      "hotel_url": "https://www.ikyu.com/00000592/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000592"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島",
+          "accommodation_id": "00000592",
+          "prefecture": "広島県",
+          "area": "広島駅直結",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "6,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1127261",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホテルグランヴィア広島サウスゲート 6,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "6,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島市",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1127261",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127261",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホテルグランヴィア広島サウスゲート",
+      "hotel_url": "https://www.ikyu.com/00003243/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00003243"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島サウスゲート",
+          "accommodation_id": "00003243",
+          "prefecture": "広島県",
+          "area": "広島市",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "6,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1127262",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホテルグランヴィア広島サウスゲート 7,500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "7,500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "広島県／広島市",
+    "regions": [
+      "広島県"
+    ],
+    "booking_period": "～ 2026/10/29 12:00",
+    "travel_period": "2026/10/27 ～ 2027/04/29",
+    "stay_period": "2026/10/27 ～ 2027/04/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額40,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1127262",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127262",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホテルグランヴィア広島サウスゲート",
+      "hotel_url": "https://www.ikyu.com/00003243/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00003243"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグランヴィア広島サウスゲート",
+          "accommodation_id": "00003243",
+          "prefecture": "広島県",
+          "area": "広島市",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "7,500円OFFクーポン",
+      "min_amount": 40000,
+      "expired_at": "2026-10-29T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-04-29T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1096,7 +1481,7 @@
       "checkout_end": "2026-11-06T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1162,7 +1547,7 @@
       "checkout_end": "2026-10-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1227,7 +1612,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1294,7 +1679,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1360,7 +1745,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1426,7 +1811,7 @@
       "checkout_end": "2026-10-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1493,7 +1878,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1559,7 +1944,7 @@
       "checkout_end": "2027-03-19T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1625,7 +2010,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1692,7 +2077,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1758,7 +2143,7 @@
       "checkout_end": "2026-12-24T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1824,7 +2209,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1891,7 +2276,137 @@
       "checkout_end": "2027-04-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1122539",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "京王プレリアホテル札幌 先着40名様限定 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "北海道／JR札幌駅北口徒歩3分",
+    "regions": [
+      "北海道"
+    ],
+    "booking_period": "～ 2026/11/01 12:00",
+    "travel_period": "2026/10/23 ～ 2027/03/31",
+    "stay_period": "2026/10/23 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額45,000円以上",
+      "先着40名様限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1122539",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1122539",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "京王プレリアホテル札幌",
+      "hotel_url": "https://www.ikyu.com/00081757/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00081757"
+      ],
+      "accommodations": [
+        {
+          "name": "京王プレリアホテル札幌",
+          "accommodation_id": "00081757",
+          "prefecture": "北海道",
+          "area": "JR札幌駅北口徒歩3分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着40名様限定 2,000円OFFクーポン",
+      "min_amount": 45000,
+      "expired_at": "2026-11-01T12:00:00+09:00",
+      "checkout_begin": "2026-10-23T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1110829",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホテル モンテ エルマーナ福岡 先着50名様限定 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "福岡県／渡辺通駅徒歩2分・天神駅徒歩10分",
+    "regions": [
+      "福岡県"
+    ],
+    "booking_period": "～ 2026/11/02 12:00",
+    "travel_period": "2026/10/27 ～ 2027/03/31",
+    "stay_period": "2026/10/27 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "先着50名様限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1110829",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1110829",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホテル モンテ エルマーナ福岡",
+      "hotel_url": "https://www.ikyu.com/00081186/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00081186"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテル モンテ エルマーナ福岡",
+          "accommodation_id": "00081186",
+          "prefecture": "福岡県",
+          "area": "渡辺通駅徒歩2分・天神駅徒歩10分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着50名様限定 2,000円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-02T12:00:00+09:00",
+      "checkout_begin": "2026-10-27T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -1956,7 +2471,7 @@
       "checkout_end": "2026-12-26T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2022,7 +2537,7 @@
       "checkout_end": "2027-06-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2088,7 +2603,7 @@
       "checkout_end": "2026-12-04T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2155,7 +2670,7 @@
       "checkout_end": "2026-12-23T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2221,7 +2736,7 @@
       "checkout_end": "2026-12-04T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2288,7 +2803,7 @@
       "checkout_end": "2026-12-29T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2354,7 +2869,7 @@
       "checkout_end": "2026-12-28T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2419,7 +2934,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2486,7 +3001,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2552,7 +3067,72 @@
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
+    }
+  },
+  {
+    "id": "ikkyu-1089316",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ヒルトン成田 先着30名様限定 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "千葉県／成田",
+    "regions": [
+      "千葉県"
+    ],
+    "booking_period": "～ 2026/12/30 12:00",
+    "travel_period": "2026/08/23 ～ 2026/12/30",
+    "stay_period": "2026/08/23 ～ 2026/12/30",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額25,000円以上",
+      "先着30名様限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1089316",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-10-27",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1089316",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ヒルトン成田",
+      "hotel_url": "https://www.ikyu.com/00000442/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000442"
+      ],
+      "accommodations": [
+        {
+          "name": "ヒルトン成田",
+          "accommodation_id": "00000442",
+          "prefecture": "千葉県",
+          "area": "成田",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着30名様限定 5,000円OFFクーポン",
+      "min_amount": 25000,
+      "expired_at": "2026-12-30T12:00:00+09:00",
+      "checkout_begin": "2026-08-23T00:00:00+09:00",
+      "checkout_end": "2026-12-30T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2618,7 +3198,7 @@
       "checkout_end": "2026-12-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2682,7 +3262,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2748,7 +3328,7 @@
       "checkout_end": "2027-04-13T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2812,7 +3392,7 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2876,7 +3456,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -2941,7 +3521,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3006,7 +3586,7 @@
       "checkout_end": "2027-09-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3051,7 +3631,7 @@
       "ended_label": false,
       "search_url": "https://www.ikyu.com/tohoku/120240/",
       "raw_discount": "最大40,000円OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3096,7 +3676,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/tohoku/120220/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3141,7 +3721,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/koshinetsu/210551/",
       "raw_discount": "最大30%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3186,7 +3766,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/search?lct=22007000",
       "raw_discount": "最大20%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3231,7 +3811,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350906/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3276,7 +3856,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350907/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3321,7 +3901,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350901/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3366,7 +3946,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350902/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3411,7 +3991,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350905/",
       "raw_discount": "最大60%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   },
   {
@@ -3456,7 +4036,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350904/",
       "raw_discount": "最大60%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-10-26.json"
+      "sibling_checked_file": "coupons_2026-10-27.json"
     }
   }
 ]
