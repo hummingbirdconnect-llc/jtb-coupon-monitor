@@ -2,30 +2,6 @@
   {
     "date": "2026-09-10",
     "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-osky26jul10-94fd7333e1",
-    "title": "群馬県 草津温泉 大阪屋で使えるクーポン（最大10,000円引き）",
-    "discount": "最大10%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
-    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
-    "id": "rurubu_travel-pp26class15-fd3598b2f5",
-    "title": "三重県 志摩観光ホテル ザ クラシックで使えるクーポン（最大15,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
-    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
-    "id": "rurubu_travel-pp26enrak15-958ff7b870",
-    "title": "富山県 宇奈月温泉 延楽で使えるクーポン（最大15,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
     "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
     "id": "rurubu_travel-pp26fkich15-319f8cdfb3",
     "title": "群馬県 伊香保温泉 福一で使えるクーポン（最大24,000円引き）",
@@ -3998,5 +3974,29 @@
     "id": "rurubu_travel-pp26grosk10-290502c42f",
     "title": "大阪府 ホテル グランヴィア 大阪で使えるクーポン（最大3,000円引き）",
     "discount": "最大10%引き"
+  },
+  {
+    "date": "2026-10-28",
+    "type": "new",
+    "category": "施設限定クーポン",
+    "id": "rurubu_travel-mcr26oct150-mcr26oct100-mcr26oct70-c674cea006",
+    "title": "神奈川県 箱根湯本温泉 ホテル マイユクール 祥月で使えるクーポン",
+    "discount": "最大¥15,000引き"
+  },
+  {
+    "date": "2026-10-28",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26hermn15-1b3d180fcd",
+    "title": "宮城県 ホテル モンテ エルマーナ仙台で使えるクーポン（最大3,000円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-10-28",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26mnsdj15-b5e5492c9f",
+    "title": "宮城県 ホテル モントレ 仙台で使えるクーポン（最大4,000円引き）",
+    "discount": "最大15%引き"
   }
 ]

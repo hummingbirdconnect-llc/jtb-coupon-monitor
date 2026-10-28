@@ -3,9 +3,9 @@
   "provider_label": "JTB",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-10-28T07:05:57.847870+09:00",
-  "completed_at": "2026-10-28T07:16:08.460128+09:00",
-  "official_fetched_at": "2026-10-28T07:16:08.460128+09:00",
+  "started_at": "2026-10-28T15:59:02.912148+09:00",
+  "completed_at": "2026-10-28T16:08:21.912566+09:00",
+  "official_fetched_at": "2026-10-28T16:08:21.912566+09:00",
   "needs_review": false,
   "data_date": "2026-10-28",
   "freshness_status": "fresh",
@@ -15,5 +15,5 @@
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-28T07:16:08.460128+09:00"
+  "deep_dive_at": "2026-10-28T16:08:21.912566+09:00"
 }

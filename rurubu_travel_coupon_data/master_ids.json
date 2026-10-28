@@ -1070,7 +1070,7 @@
       "title": "おでんせ！いわて旅割キャンペーン 第2弾【県央・県南エリア】（おとな・こどもひとり1泊あたり最大5,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-xiwtn26sp50-8d460be3b6": {
       "first_seen": "2026-09-02",
@@ -1078,7 +1078,7 @@
       "title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-mss26sep20-2c5ca71865": {
       "first_seen": "2026-09-02",
@@ -1126,7 +1126,7 @@
       "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
       "category": "複数エリア対象クーポン",
       "discount": "最大¥8,000引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-autk26sep20-c54e3363a5": {
       "first_seen": "2026-09-11",
@@ -1367,7 +1367,31 @@
       "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
       "discount": "最大10%引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26mnsdj15-b5e5492c9f": {
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "title": "宮城県 ホテル モントレ 仙台で使えるクーポン（最大4,000円引き）",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大15%引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26hermn15-1b3d180fcd": {
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "title": "宮城県 ホテル モンテ エルマーナ仙台で使えるクーポン（最大3,000円引き）",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大15%引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-mcr26oct150-mcr26oct100-mcr26oct70-c674cea006": {
+      "first_seen": "2026-10-28",
+      "last_seen": "2026-10-28",
+      "title": "神奈川県 箱根湯本温泉 ホテル マイユクール 祥月で使えるクーポン",
+      "category": "施設限定クーポン",
+      "discount": "最大¥15,000引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-10-28T07:17:34.896821+09:00"
+  "last_updated": "2026-10-28T16:09:43.336172+09:00"
 }
