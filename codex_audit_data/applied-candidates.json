@@ -468,6 +468,13 @@
       "recommendation": "draft",
       "applied_at": "2026-10-27T09:16:01.596839+09:00",
       "result_path": "codex_audit_results/traveloka/traveloka-2bf76b5e7aa53aa3.json"
+    },
+    "tobu_top_tours-a967c6924413f9a1": {
+      "provider_id": "tobu_top_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-10-28T09:10:22.505970+09:00",
+      "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-a967c6924413f9a1.json"
     }
   }
 }
