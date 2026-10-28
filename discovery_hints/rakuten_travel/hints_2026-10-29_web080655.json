@@ -1,0 +1,26 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-29T08:15:15+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "値引きクーポン満載！お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travelplanet.jp/rakutentravel-coupon-matsuri",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 公式：国内宿泊 全楽天会員様 500円OFF 宿クーポン 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員様限定 週末3,000円/1,500円OFF・平日2,500円/1,000円OFF ／ 公式：クーポンには金額条件あり（金額はボタンの中で未読） ／ 未確認：宿泊期間 ／ 未確認：最低利用額の具体額 ／ 未確認：決済方法",
+      "observed_date": "2026-10-29",
+      "discount": "全楽天会員500円OFF（ダイヤモンド会員限定：週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員限定：週末3,000円/1,500円OFF・平日2,500円/1,000円OFF）",
+      "period": "予約：2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 旅行：未確認（Grok: 2026年10月2日チェックイン～2027年9月30日チェックアウト、除外日あり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
