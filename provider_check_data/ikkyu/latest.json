@@ -3,9 +3,9 @@
   "provider_label": "一休",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-10-28T06:45:12.557552+09:00",
-  "completed_at": "2026-10-28T06:45:14.391875+09:00",
-  "official_fetched_at": "2026-10-28T06:45:14.391875+09:00",
+  "started_at": "2026-10-28T15:30:11.100103+09:00",
+  "completed_at": "2026-10-28T15:30:12.755925+09:00",
+  "official_fetched_at": "2026-10-28T15:30:12.755925+09:00",
   "needs_review": false,
   "data_date": "2026-10-28",
   "freshness_status": "fresh",
@@ -15,5 +15,5 @@
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-28T06:45:14.391875+09:00"
+  "deep_dive_at": "2026-10-28T15:30:12.755925+09:00"
 }
