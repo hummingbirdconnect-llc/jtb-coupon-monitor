@@ -1,0 +1,60 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-10-29T07:33:49.650954+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 93,
+  "registered_url_count": 94,
+  "candidates": [
+    {
+      "title": "鹿児島ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukagoshima/page.asp",
+      "official_domain_match": true,
+      "evidence": "会員限定。12/26～1/3は除外。1人あたり宿泊のみ・交通付き1泊は2万円、交通付き2泊以上は3万円まで。公開ページで条件確認。",
+      "observed_date": "2026-10-29",
+      "discount": "60％引",
+      "period": "予約対象期間・宿泊対象期間：2026/10/20(火) ～ 2027/1/31(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "熊本ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2115455808725192942",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
+      "official_domain_match": true,
+      "evidence": "10月22日に一部券種の枚数追加と利用窓口拡大を掲載。会員限定。1人あたり宿泊のみ2万円、交通付き2泊以上3万円まで。残数は確約されない。",
+      "observed_date": "2026-10-29",
+      "discount": "60％引",
+      "period": "予約対象期間・宿泊対象期間：2026/10/8(木) ～ 2026/12/25(金)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "長崎マリオットホテルのスイートルームで使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610nagasakimarriott/page.asp",
+      "official_domain_match": true,
+      "evidence": "会員限定で先着150枚。下限代金なし。対象ホテルの一部プラン限定。Web・店舗等で利用できる。",
+      "observed_date": "2026-10-29",
+      "discount": "20,000円引",
+      "period": "予約対象期間：2026/9/29(火) ～ 2027/3/31(水)；宿泊対象期間：2026/10/1(木) ～ 2027/3/31(水)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jtb/hints_2026-10-29.json"
+}

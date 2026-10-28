@@ -1,0 +1,60 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-29T07:33:49.650954+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "一部のクーポン表示は動的。鹿児島ふっこう応援割の1月宿泊分は公開ページで期間・受付状況を確認できず。",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "楽パック 冬のごちそう旅フェア",
+      "kind": "coupon",
+      "found_url": "https://x.com/kigurumi_tai/status/2115466118571909362",
+      "official_url": "https://travel.rakuten.co.jp/package/special/gochisotabi/",
+      "official_domain_match": true,
+      "evidence": "国内の航空券・JR＋宿泊向け。公開ページで名称、最大額と終了日時を確認。開始日と個別クーポンの条件は取得できず。",
+      "observed_date": "2026-10-29",
+      "discount": "最大12,000円",
+      "period": "11月9日(月) 9:59まで",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "スペシャルクーポンWEEK",
+      "kind": "coupon",
+      "found_url": "https://x.com/yuzutabi03/status/2115443477945168055",
+      "official_url": "https://travel.rakuten.co.jp/special/coupon-week/",
+      "official_domain_match": true,
+      "evidence": "公式ページのタイトルで最大割引率、本文で国内宿泊対象と終了時刻を確認。確認時刻は10月29日7:32頃。個別の利用条件は未取得。",
+      "observed_date": "2026-10-29",
+      "discount": "最大30％OFF",
+      "period": "10/29(木) 9:59まで",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "【対象レンタカー会社限定】全国（一部エリア除く）対象！10月～3月のご返却に使える20%OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/yuzutabi03/status/2115451020566307328",
+      "official_url": "https://travel.rakuten.co.jp/cars/coupon/",
+      "official_domain_match": true,
+      "evidence": "指定会社・エリア限定。15,000円以上で先着8,000枚。1会員1枚。公開ページで条件確認。ログインや獲得操作は未実施。",
+      "observed_date": "2026-10-29",
+      "discount": "20%OFF（割引上限6,000円まで）",
+      "period": "予約対象期間：2026/10/2(金) 10:00～2026/11/4(水) 9:59；利用対象期間：2026/10/2(金)ご出発～2027/3/31(水)ご",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-29.json"
+}
