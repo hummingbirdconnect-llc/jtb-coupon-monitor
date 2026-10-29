@@ -1,0 +1,32 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-10-30T07:34:54.157777+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "決算大感謝SALE国内特集の本文はWeb取得で表示されず、ブラウザ相当User-Agent付きcurlもタイムアウト。バス商品ページは取得できた。",
+  "known_title_count": 54,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "決算大感謝SALE：東京発「秋の王道房総まんぷく旅」対象日値下げ",
+      "kind": "sale",
+      "found_url": "https://x.com/HIS_japan/status/2115383087026651223",
+      "official_url": "https://bus-tour.his-j.com/tyo/item/?cc=AP063",
+      "official_domain_match": true,
+      "evidence": "対象日を最大1,900円値下げ。11月5日出発は11,800円から9,900円。売り切れ次第終了。",
+      "observed_date": "2026-10-30",
+      "discount": "最大1,900円引き",
+      "period": "【開催期間】9/25（金）11:00～11/4（水）10:00",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/his/hints_2026-10-30.json"
+}

@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-10-30T07:34:54.157777+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開のTravel Fest特設ページはWeb取得・User-Agent付きcurlとも施策本文なし。日本向けの適用条件・期間を確認できず。Chromeは未実行。",
+  "known_title_count": 9,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-10-30.json"
+}

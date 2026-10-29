@@ -1,0 +1,60 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-10-30T07:34:54.157777+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 93,
+  "registered_url_count": 94,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割 ふくおかキャンペーン",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2115845291480109188",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushufukuoka/page.asp",
+      "official_domain_match": true,
+      "evidence": "10月22日に一部券種を追加し利用箇所を拡大。会員限定。宿泊1名の割引上限は20,000円。残数やX投稿の復活状況は未確認。",
+      "observed_date": "2026-10-30",
+      "discount": "50％引（割引上限20,000円）",
+      "period": "予約対象期間：2026/10/7(水) ～ 2026/12/15(火)／宿泊対象期間：2026/10/7(水) ～ 2026/12/15(火)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "熊本ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2115845291480109188",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
+      "official_domain_match": true,
+      "evidence": "10月22日に一部券種を追加し利用箇所を拡大。会員限定。宿泊1名の割引上限は20,000円。残数やX投稿の復活状況は未確認。",
+      "observed_date": "2026-10-30",
+      "discount": "60％引（割引上限20,000円）",
+      "period": "予約対象期間：2026/10/8(木) ～ 2026/12/25(金)／宿泊対象期間：2026/10/8(木) ～ 2026/12/25(金)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "鹿児島ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2115845291480109188",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukagoshima/page.asp",
+      "official_domain_match": true,
+      "evidence": "10月20日から受付。12/26～1/3は適用除外。会員限定。宿泊1名の割引上限は20,000円。残数やX投稿の復活状況は未確認。",
+      "observed_date": "2026-10-30",
+      "discount": "60％引（割引上限20,000円）",
+      "period": "予約対象期間：2026/10/20(火) ～ 2027/1/31(日)／宿泊対象期間：2026/10/20(火) ～ 2027/1/31(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jtb/hints_2026-10-30.json"
+}

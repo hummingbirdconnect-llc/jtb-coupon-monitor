@@ -1,0 +1,17 @@
+{
+  "provider_id": "rurubu_travel",
+  "provider_label": "るるぶトラベル",
+  "generated_at": "2026-10-30T07:34:54.157777+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式クーポン一覧はWeb取得・User-Agent付きcurlとも本文が空。函館湯の川温泉 海と灯の候補は公式本文で確認できず。Chromeは未実行。",
+  "known_title_count": 71,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-30.json"
+}

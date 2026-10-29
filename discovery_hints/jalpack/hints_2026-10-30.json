@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-10-30T07:34:54.157777+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "あいちウィークの公式ニュース本文はWeb取得で表示されず、User-Agent付きcurlでも403。尾道の公式ページは取得できた。",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "日本遺産を巡る旅「尾道水道が紡いだ中世からの箱庭的都市」クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/onomichi-suido/",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/onomichi-suido/",
+      "official_domain_match": true,
+      "evidence": "往復広島空港利用、1グループ40,000円以上が対象。500枚限定。指定ページからの予約に限る。",
+      "observed_date": "2026-10-30",
+      "discount": "1グループにつき2,000円割引！",
+      "period": "予約対象期間：2026年10月1日（木）～2027年3月30日（火）※なくなり次第終了となります。",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalpack/hints_2026-10-30.json"
+}

@@ -1,0 +1,32 @@
+{
+  "provider_id": "tobu_top_tours",
+  "provider_label": "東武トップツアーズ",
+  "generated_at": "2026-10-30T07:34:54.157777+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 2,
+  "candidates": [
+    {
+      "title": "新潟在住者限定！にいがたGoToトラベル",
+      "kind": "coupon",
+      "found_url": "https://tobutoptours.jp/news/2026/0520/",
+      "official_url": "https://tobutoptours.jp/yado/niigatagoto/",
+      "official_domain_match": true,
+      "evidence": "宿泊者全員が新潟県在住であることとTOBU POINT会員登録が条件。JR＋宿泊と日帰り、ビジネス利用は対象外。",
+      "observed_date": "2026-10-30",
+      "discount": "旅行代金の30％割引！！（1人1泊最大5,000円）",
+      "period": "予約期間：令和8年9月7日(月)10:00～12月28日(月)23:59まで／宿泊期間：令和8年9月7日(月)チェックイン分～12月29日(火)チェックアウト分",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-30.json"
+}
