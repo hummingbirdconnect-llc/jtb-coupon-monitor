@@ -7702,5 +7702,77 @@
   "pattern": "timing_answer",
   "ota": "tripcom",
   "title": "人気エリアホテルをおトクに"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "quote_highlight",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "ukigane",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "direct_number",
+  "ota": "his",
+  "title": "早めの予約がお得！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "weekend_plan",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "countdown",
+  "ota": "his",
+  "title": "年末年始出発がお得！1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "his",
+  "title": "早めの予約がお得！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "今だけ値下がり - 最大15% OFF"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "direct_number",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-10-30",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "target_call",
+  "ota": "tripcom",
+  "title": "人気エリアホテルをおトクに"
  }
 ]
