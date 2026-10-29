@@ -678,7 +678,7 @@
       "title": "茨城県のおすすめ施設で使えるクーポン（ひとり1泊あたり）",
       "category": "エリア限定クーポン",
       "discount": "最大¥1,500引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-pp26grosk30-bcb1a085af": {
       "first_seen": "2026-07-09",
@@ -1022,7 +1022,7 @@
       "title": "【10月～1月出発】三重県 伊勢志摩 鳥羽シーサイドホテルで使えるクーポン（最大6,000円引き）",
       "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
       "discount": "最大10%引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-pp26tobas12-a542e60b42": {
       "first_seen": "2026-08-27",
@@ -1078,7 +1078,7 @@
       "title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-mss26sep20-2c5ca71865": {
       "first_seen": "2026-09-02",
@@ -1230,7 +1230,7 @@
       "title": "「九州ふっこう応援割ふくおかキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-xksag26sp50-a9e966d852": {
       "first_seen": "2026-10-19",
@@ -1391,7 +1391,23 @@
       "category": "施設限定クーポン",
       "discount": "最大¥15,000引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-okada26oc70-okada26oc30-0d6a8dfb72": {
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "title": "【1月～3月出発】神奈川県 箱根湯本温泉 ホテルおかだで使えるクーポン",
+      "category": "施設限定クーポン",
+      "discount": "最大¥7,000引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-mykhs26oc10-111d52d00e": {
+      "first_seen": "2026-10-29",
+      "last_seen": "2026-10-29",
+      "title": "三重県 都リゾート 奥志摩 アクアフォレストで使えるクーポン（最大10,000円引き）",
+      "category": "施設限定クーポン",
+      "discount": "最大10%引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-10-29T07:27:25.883401+09:00"
+  "last_updated": "2026-10-29T16:08:11.405238+09:00"
 }
