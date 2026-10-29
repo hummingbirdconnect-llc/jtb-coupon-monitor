@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-10-30T08:19:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "毎月5と0のつく日から48時間限定！ホテル・温泉宿が最大20％OFF",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定！ホテル・温泉宿が最大20％OFF！ ／ 公式：10%OFF 先着利用2,000,000枚（利用終了まであと2日）、10%OFF 先着利用1,000,000枚（利用終了まであと15時間46分、東日本・西日本対象施設）、5%OFF 先着利用2,000,000枚（利用終了まであと2日） ／ 公式：11月ご利用分は11月4日10時配布開始予定 ／ 公式：対象施設は前月時点で温泉宿/高級宿登録がある宿泊施設。対象外の施設が含まれる場合あり ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-10-30",
+      "discount": "楽天トラベルクーポン 10%OFF（2種）と5%OFF。宿クーポン併用で最大20%OFF（公式）",
+      "period": "予約：毎月5と0のつく日から48時間限定（公式）。10月30日配布分は「利用終了まであと2日」「あと15時間46分」の表示（2026-10-30 08:15時点）。11月利用分は11月4日10時配布開始予定（公式） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天トラベル お得なクーポン祭（10月回）",
+      "kind": "coupon",
+      "found_url": "https://travelplanet.jp/rakutentravel-coupon-matsuri",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：毎月開催 予約対象期間：2026/10/2（金）10:00～2026/11/4（水）09:59 ／ 公式：国内宿泊（ホテル・宿）に全楽天会員様／ダイヤモンド会員様限定／ダイヤモンド・プラチナ会員様限定のクーポン区分。遊び・体験の区分もあり ／ 公式（クーポン一覧）：値引きクーポン満載！お得なクーポン祭 クーポンで最大4,500円OFF 2026/11/04 9:59まで開催 ／ 公式：クーポンには金額条件がございます ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額（金額条件の中身） ／ 未確認：決済方法の条件 ／ 未確認：区分ごとの割引額",
+      "observed_date": "2026-10-30",
+      "discount": "クーポンで最大4,500円OFF（公式クーポン一覧の表示）。未確認（Grok: 全会員向け国内宿泊500円OFFなど。楽パック最大8,000円引き）",
+      "period": "予約：2026/10/2（金）10:00～2026/11/4（水）09:59（公式） ／ 旅行：未確認（Grok: 2026年10月2日チェックイン～2027年9月30日チェックアウトなど、クーポンにより異なる）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
