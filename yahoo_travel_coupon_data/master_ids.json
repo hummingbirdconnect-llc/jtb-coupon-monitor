@@ -726,7 +726,7 @@
       "title": "おでんせ！いわて旅割キャンペーン（岩手県）",
       "category": "自治体クーポン",
       "discount": "最大50%割引",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "yahoo_travel-gov-89c188d010": {
       "first_seen": "2026-10-21",
@@ -734,7 +734,7 @@
       "title": "にいがた GoToトラベル（新潟県）",
       "category": "自治体クーポン",
       "discount": "最大30%割引",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "yahoo_travel-gov-1dc0db6859": {
       "first_seen": "2026-10-21",
@@ -818,7 +818,7 @@
     },
     "yahoo_travel-1110769": {
       "first_seen": "2026-10-22",
-      "last_seen": "2026-10-22",
+      "last_seen": "2026-10-30",
       "title": "箱根芦ノ湖 HOTEL RaKuun（ホテルラクーン） 先着30名様限定 1,000円OFFクーポン",
       "category": "宿限定クーポン",
       "discount": "1,000円割引",
@@ -1031,7 +1031,47 @@
       "category": "宿限定クーポン",
       "discount": "3,000円割引",
       "stock_status": "配布中"
+    },
+    "yahoo_travel-1128315": {
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "title": "函館大沼プリンスホテル 1,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "1,000円割引",
+      "stock_status": "配布中"
+    },
+    "yahoo_travel-1124380": {
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "title": "ANAクラウンプラザホテル広島 by IHG 先着30名様限定 5,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "5,000円割引",
+      "stock_status": "配布中"
+    },
+    "yahoo_travel-1124381": {
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "title": "ANAクラウンプラザホテル広島 by IHG 先着20名様限定 10,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "10,000円割引",
+      "stock_status": "配布中"
+    },
+    "yahoo_travel-1026082": {
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "title": "JR東日本ホテルメッツ 渋谷 先着50名様限定 2,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "2,000円割引",
+      "stock_status": "配布中"
+    },
+    "yahoo_travel-1123863": {
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "title": "ホテルフラッグス佐世保九十九島 先着50名様限定 3,000円OFFクーポン",
+      "category": "宿限定クーポン",
+      "discount": "3,000円割引",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-10-30T06:45:26.402938+09:00"
+  "last_updated": "2026-10-30T15:30:14.410630+09:00"
 }
