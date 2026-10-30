@@ -1,0 +1,26 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-10-31T08:19:47+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割（じゃらん）",
+      "kind": "coupon",
+      "found_url": "https://travel.watch.impress.co.jp/docs/news/2152714.html",
+      "official_url": "",
+      "evidence": "未確認：Grokが公式URLを示さず、登録済みのクーポンまとめページ（https://www.jalan.net/jalancponsum/）にも九州ふっこう応援割の案内が無かったため公式ページを読めていない ／ 未確認：割引率・上限額 ／ 未確認：予約期間（県ごとの受付状況） ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-10-31",
+      "discount": "未確認（Grok: 最大50%、熊本県・鹿児島県は最大60%。上限は1人あたり宿泊のみ・パック1泊20,000円、パック2泊以上30,000円）",
+      "period": "予約：未確認（Grok: 県・枠により異なる。鹿児島は受付中、長崎は11月2日10時再開予定。予算上限で停止しキャンセル戻りで復活する場合あり） ／ 旅行：未確認（Grok: 主に2026年10月1日以降の宿泊。多くは12月25日前後まで、鹿児島は延長）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": false
+    }
+  ]
+}
