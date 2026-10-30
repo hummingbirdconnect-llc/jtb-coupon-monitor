@@ -7,7 +7,7 @@ import json
 import re
 import tempfile
 import unittest
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from unittest import mock
 
@@ -18,6 +18,7 @@ from generate_dashboard import (
     build_provider_payload,
     dashboard_manual_sources,
     format_coupon_row,
+    freshness_chip,
     load_pending_audit_counts,
     official_audit_display,
     scoped_count_labels,
@@ -215,6 +216,118 @@ class AuditReflectionTest(unittest.TestCase):
         self.assertEqual(payload["ai_label"], "監査保留")
         self.assertEqual(payload["data_date"], "2026-05-20")
         self.assertEqual(payload["freshness_status"], "unknown")
+
+
+class UnchangedPageFreshnessTest(unittest.TestCase):
+    """ページが反映済みの内容から変わっていない日は、取得日で鮮度を計ること。"""
+
+    def setUp(self) -> None:
+        self.today = datetime.now(JST).date()
+
+    def build_payload(
+        self,
+        *,
+        status: str,
+        data_day: date,
+        fetched_day: date,
+        pending_audit_counts: dict[str, int] | None = None,
+    ) -> dict:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_json(
+                root / "official_coupon_data" / "sample_ota" / f"coupons_{data_day.isoformat()}.json",
+                [{"id": "sample-1", "title": "サンプルクーポン", "source_type": "official_codex_audit"}],
+            )
+            # GitHub Actions の取得記録。確定データの日付で計った鮮度（stale）が入っている。
+            write_json(
+                root / "provider_check_data" / "sample_ota" / "latest.json",
+                {
+                    "check_type": "official_page_candidate",
+                    "status": status,
+                    "change_kind": status if status == "unchanged" else "update",
+                    "official_fetched_at": f"{fetched_day.isoformat()}T04:37:46.213487+09:00",
+                    "data_date": data_day.isoformat(),
+                    "freshness_status": "stale",
+                    "codex_audit_required": status != "unchanged",
+                },
+            )
+            with mock.patch.multiple(
+                generate_dashboard,
+                ROOT=root,
+                CHECK_STATUS_ROOT=root / "provider_check_data",
+            ):
+                return build_provider_payload(SAMPLE_PROVIDER, pending_audit_counts or {})
+
+    def test_unchanged_page_without_pending_audit_is_fresh_from_fetch_date(self) -> None:
+        data_day = self.today - timedelta(days=2)
+        payload = self.build_payload(status="unchanged", data_day=data_day, fetched_day=self.today)
+
+        label = f"新鮮（{self.today.month}/{self.today.day} 変化なしを確認）"
+        self.assertEqual(payload["freshness_status"], "fresh")
+        self.assertEqual(payload["freshness_label"], label)
+        self.assertEqual(payload["summary"]["鮮度"], label)
+        # データ日は確定データの日付のまま。取得日は別の欄に持つ。
+        self.assertEqual(payload["data_date"], data_day.isoformat())
+        self.assertEqual(
+            payload["unchanged_confirmed_at"],
+            f"{self.today.isoformat()}T04:37:46.213487+09:00",
+        )
+
+    def test_unchanged_page_with_pending_audit_keeps_data_date_freshness(self) -> None:
+        payload = self.build_payload(
+            status="unchanged",
+            data_day=self.today - timedelta(days=2),
+            fetched_day=self.today,
+            pending_audit_counts={"sample_ota": 1},
+        )
+
+        self.assertEqual(payload["freshness_status"], "stale")
+        self.assertEqual(payload["freshness_label"], "期限超過")
+        self.assertEqual(payload["unchanged_confirmed_at"], "")
+
+    def test_changed_page_keeps_data_date_freshness(self) -> None:
+        payload = self.build_payload(
+            status="audit_pending",
+            data_day=self.today - timedelta(days=2),
+            fetched_day=self.today,
+        )
+
+        self.assertEqual(payload["freshness_status"], "stale")
+        self.assertEqual(payload["unchanged_confirmed_at"], "")
+
+    def test_old_unchanged_fetch_is_stale(self) -> None:
+        # 取得が止まれば、変化なしの確認も古くなり期限超過へ戻る。
+        fetched_day = self.today - timedelta(days=2)
+        payload = self.build_payload(
+            status="unchanged",
+            data_day=self.today - timedelta(days=4),
+            fetched_day=fetched_day,
+        )
+
+        self.assertEqual(payload["freshness_status"], "stale")
+        self.assertEqual(
+            payload["freshness_label"],
+            f"期限超過（{fetched_day.month}/{fetched_day.day} 変化なしを確認）",
+        )
+
+    def test_flash_chip_shows_content_date_and_unchanged_check(self) -> None:
+        provider = {
+            "id": "rakuten_travel",
+            "label": "楽天トラベル",
+            "data_date": "2026-10-15",
+            "official_fetched_at": "2026-10-17T04:37:46.213487+09:00",
+            "unchanged_confirmed_at": "2026-10-17T04:37:46.213487+09:00",
+            "pending_audit_count": 0,
+        }
+
+        today_chip = freshness_chip(provider, date(2026, 10, 17))
+        next_day_chip = freshness_chip(provider, date(2026, 10, 18))
+
+        self.assertEqual(today_chip["state"], "fresh")
+        self.assertEqual(today_chip["text"], "10/15 の内容・10/17 04:37 に変化なしを確認")
+        # ほかの会社に新しい日のデータがあれば、確認が古いことを黄色で示す。
+        self.assertEqual(next_day_chip["state"], "stale")
+        self.assertEqual(next_day_chip["text"], "10/15 の内容・10/17 04:37 に変化なしを確認")
 
 
 class DashboardOutputTest(unittest.TestCase):
