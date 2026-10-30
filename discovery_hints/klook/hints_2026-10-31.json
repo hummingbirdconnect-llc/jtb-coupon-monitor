@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-10-31T07:33:04.176319+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式SALEページの公開取得結果は韓国向け内容のみ。ブラウザ相当UAで再取得しても国内向けクーポンの条件・期間を確認できず。ログイン・Chrome起動は未実施。",
+  "known_title_count": 9,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-10-31.json"
+}

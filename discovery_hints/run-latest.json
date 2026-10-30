@@ -1,28 +1,28 @@
 {
-  "completed_at": "2026-10-30T07:34:54.157777+09:00",
+  "completed_at": "2026-10-31T07:33:04.176319+09:00",
   "scope": "codex-auto",
   "provider_count": 13,
   "error_count": 3,
-  "candidate_count": 16,
-  "new_count": 7,
+  "candidate_count": 11,
+  "new_count": 9,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
       "status": "ok",
-      "error": "決算大感謝SALE国内特集の本文はWeb取得で表示されず、ブラウザ相当User-Agent付きcurlもタイムアウト。バス商品ページは取得できた。",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/his/hints_2026-10-30.json"
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/his/hints_2026-10-31.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 3,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jtb/hints_2026-10-30.json"
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jtb/hints_2026-10-31.json"
     },
     {
       "provider_id": "knt",
@@ -31,43 +31,43 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/knt/hints_2026-10-31.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "status": "ok",
-      "error": "あいちウィークの公式ニュース本文はWeb取得で表示されず、User-Agent付きcurlでも403。尾道の公式ページは取得できた。",
+      "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/jalpack/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/jalpack/hints_2026-10-31.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
       "status": "ok",
       "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalan/hints_2026-10-30.json"
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jalan/hints_2026-10-31.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 3,
-      "new_count": 3,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-30.json"
+      "candidate_count": 5,
+      "new_count": 5,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-31.json"
     },
     {
       "provider_id": "ikkyu",
       "provider_label": "一休",
       "status": "ok",
       "error": "",
-      "candidate_count": 5,
+      "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/ikkyu/hints_2026-10-31.json"
     },
     {
       "provider_id": "yahoo_travel",
@@ -76,25 +76,25 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/yahoo_travel/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-10-31.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
       "status": "error",
-      "error": "公開クーポン一覧の施策本文を取得できず。個別公開キャンペーンは調査できたが既知の施策を除く採用候補なし。",
+      "error": "クーポン一覧はWeb取得・ブラウザ相当UAでの再取得とも個別券の本文が表示されず、新規券の確認は一部未完了。遊びつくし特設ページは取得でき、既知のクーポンの終了を確認。ログイン・Chrome起動は未実施。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/asoview/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/asoview/hints_2026-10-31.json"
     },
     {
       "provider_id": "tobu_top_tours",
       "provider_label": "東武トップツアーズ",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-30.json"
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-31.json"
     },
     {
       "provider_id": "booking",
@@ -103,25 +103,25 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/booking/hints_2026-10-31.json"
     },
     {
       "provider_id": "rurubu_travel",
       "provider_label": "るるぶトラベル",
       "status": "error",
-      "error": "公式クーポン一覧はWeb取得・User-Agent付きcurlとも本文が空。函館湯の川温泉 海と灯の候補は公式本文で確認できず。Chromeは未実行。",
+      "error": "登録済みクーポン一覧はWeb取得・ブラウザ相当UAでの再取得とも本文が空。検索結果だけでは公式条件を確かめられず候補除外。Chrome起動は未実施。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-31.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
       "status": "error",
-      "error": "公開のTravel Fest特設ページはWeb取得・User-Agent付きcurlとも施策本文なし。日本向けの適用条件・期間を確認できず。Chromeは未実行。",
+      "error": "公式SALEページの公開取得結果は韓国向け内容のみ。ブラウザ相当UAで再取得しても国内向けクーポンの条件・期間を確認できず。ログイン・Chrome起動は未実施。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-10-30.json"
+      "hints_file": "discovery_hints/klook/hints_2026-10-31.json"
     }
   ]
 }

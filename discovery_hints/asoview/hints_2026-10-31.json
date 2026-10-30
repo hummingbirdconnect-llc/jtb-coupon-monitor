@@ -1,0 +1,17 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-10-31T07:33:04.176319+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "クーポン一覧はWeb取得・ブラウザ相当UAでの再取得とも個別券の本文が表示されず、新規券の確認は一部未完了。遊びつくし特設ページは取得でき、既知のクーポンの終了を確認。ログイン・Chrome起動は未実施。",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/asoview/hints_2026-10-31.json"
+}

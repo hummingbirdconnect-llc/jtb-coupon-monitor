@@ -1,0 +1,32 @@
+{
+  "provider_id": "yahoo_travel",
+  "provider_label": "Yahoo!トラベル",
+  "generated_at": "2026-10-31T07:33:04.176319+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 86,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "超得セール！旅館・リゾートスペシャル",
+      "kind": "sale",
+      "found_url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+      "official_url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+      "official_domain_match": true,
+      "evidence": "対象施設・プランのオンラインカード決済でPayPayポイント15％以上。宿泊期間は各対象プランの予約可能期間に準ずる。",
+      "observed_date": "2026-10-31",
+      "discount": "PayPayポイント15％以上",
+      "period": "予約：2026年10月19日12:00～2026年11月1日11:59。宿泊：対象プランの予約可能期間に準ずる",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/yahoo_travel/hints_2026-10-31.json"
+}
