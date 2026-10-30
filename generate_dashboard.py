@@ -111,6 +111,9 @@ SUMMARY_COLUMNS = [
     "公式取得日時",
     "最終深掘り日",
     "URL確認日時",
+    "最終確認日",
+    "内容の最終更新日",
+    "内容の変化",
     "データ日",
     "鮮度",
     "Codex監査",
@@ -165,9 +168,13 @@ def load_registry() -> list[dict[str, Any]]:
         "cadence_days": 0,
         "freshness_sla_hours": 720,
     }
+    long_unchanged_days = int(
+        schedule.get("content_long_unchanged_days", DEFAULT_CONTENT_LONG_UNCHANGED_DAYS)
+    )
     providers = []
     for raw in config["providers"]:
         provider = dict(raw)
+        provider.setdefault("content_long_unchanged_days", long_unchanged_days)
         if provider["id"] in daily_ids:
             defaults = daily_defaults
         elif provider["id"] in jp_daily_ids:
@@ -360,16 +367,134 @@ def freshness_label(value: str) -> str:
     }.get(value or "unknown", value or "不明")
 
 
-def infer_freshness(data_date: str, check_type: str, sla_hours: int) -> str:
+OFFICIAL_CHECK_TYPES = {"official_monitor", "official_page_candidate"}
+DEFAULT_CONTENT_LONG_UNCHANGED_DAYS = 14
+CONTENT_STATUS_LABELS = {
+    "changed": "最近変化あり",
+    "long_unchanged": "長期間変化なし",
+    "unknown": "不明",
+}
+
+
+def parse_datetime_value(value: Any) -> datetime | None:
+    """ISO形式の日時、または YYYY-MM-DD を JST の日時として読む。"""
+    text = str(value or "").strip()
+    if not text:
+        return None
+    try:
+        parsed = datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            parsed = datetime.strptime(text[:10], "%Y-%m-%d")
+        except ValueError:
+            return None
+    return parsed.replace(tzinfo=JST) if parsed.tzinfo is None else parsed.astimezone(JST)
+
+
+def infer_freshness(
+    data_date: str, check_type: str, sla_hours: int, last_checked_at: str = ""
+) -> str:
+    """期限超過かどうかを「最終確認日（最後に取得できた日時）」で判定する。
+
+    中身が変わらない日は新しいクーポンJSONを書かないため、ファイル名の日付
+    （data_date）で測ると、毎日取得できている会社まで期限超過に見えてしまう。
+    最終確認日が記録に無い古い取得記録のときだけ、従来どおり data_date で測る。
+    """
     if check_type == "snapshot_url_check":
         return "snapshot_only"
-    if check_type not in {"official_monitor", "official_page_candidate"} or not data_date:
+    if check_type not in OFFICIAL_CHECK_TYPES:
+        return "unknown"
+    checked_at = parse_datetime_value(last_checked_at)
+    if checked_at:
+        age_hours = (datetime.now(JST) - checked_at).total_seconds() / 3600
+        return "fresh" if age_hours <= sla_hours else "stale"
+    if not data_date:
         return "unknown"
     try:
         age_hours = (datetime.now(JST).date() - datetime.strptime(data_date, "%Y-%m-%d").date()).days * 24
     except ValueError:
         return "unknown"
     return "fresh" if age_hours <= sla_hours else "stale"
+
+
+def short_date_label(value: Any) -> str:
+    """日時を「10/30」の形にする。読めないときは空にする。"""
+    parsed = parse_datetime_value(value)
+    return f"{parsed.month}/{parsed.day}" if parsed else ""
+
+
+def resolve_last_checked_at(check_status: dict[str, Any], official_state: dict[str, Any]) -> str:
+    """最後に公式ページを取得できた日時を、記録の新しい順に探す。"""
+    for value in (
+        check_status.get("last_checked_at"),
+        check_status.get("official_fetched_at"),
+        official_state.get("last_checked_at"),
+    ):
+        if parse_datetime_value(value):
+            return str(value)
+    return ""
+
+
+def resolve_content_last_changed_at(
+    check_status: dict[str, Any],
+    official_state: dict[str, Any],
+    change_log: list[dict[str, Any]],
+    data_date: str,
+) -> str:
+    """中身が最後に変わった日時を探す。
+
+    公式ページ監視の会社は state の last_changed_at、専用monitorの会社は
+    change_log.json の最後の変化日を使う。どちらも無ければデータ日で代える。
+    """
+    candidates = [
+        check_status.get("content_last_changed_at"),
+        official_state.get("last_changed_at"),
+        max(
+            (str(entry.get("date") or "") for entry in change_log if isinstance(entry, dict)),
+            default="",
+        ),
+        data_date,
+    ]
+    for value in candidates:
+        if parse_datetime_value(value):
+            return str(value)
+    return ""
+
+
+def content_change_display(
+    content_last_changed_at: str, *, long_unchanged_days: int, flagged: bool
+) -> dict[str, Any]:
+    """内容の最終更新日から、何日変わっていないかと要確認かどうかを出す。"""
+    changed_at = parse_datetime_value(content_last_changed_at)
+    if not changed_at:
+        return {"content_unchanged_days": None, "content_status": "unknown"}
+    unchanged_days = (datetime.now(JST).date() - changed_at.date()).days
+    threshold = max(1, int(long_unchanged_days))
+    status = "long_unchanged" if (flagged and unchanged_days >= threshold) else "changed"
+    return {"content_unchanged_days": unchanged_days, "content_status": status}
+
+
+def freshness_summary_text(
+    *,
+    last_checked_label: str,
+    content_changed_label: str,
+    content_status: str,
+    content_unchanged_days: Any,
+) -> str:
+    """「最終確認 10/30・内容変化なし（最終更新 9/29）」の1行を作る。"""
+    if not last_checked_label:
+        return "取得なし"
+    text = f"最終確認 {last_checked_label}"
+    if not content_changed_label:
+        return f"{text}・内容の最終更新は不明"
+    if content_changed_label == last_checked_label:
+        return f"{text}・内容が変わりました"
+    if content_status == "long_unchanged":
+        return (
+            f"{text}・要確認：長期間変化なし（{content_unchanged_days}日）"
+            f"（最終更新 {content_changed_label}）"
+        )
+    return f"{text}・内容変化なし（最終更新 {content_changed_label}）"
 
 
 def manual_gh_command(provider_id: str, deep: bool = False) -> str:
@@ -868,8 +993,9 @@ def build_provider_payload(
         legacy_used = bool(coupons)
     affiliate_config = load_affiliate_config(provider["id"])
     rows = [format_coupon_row(coupon, provider, file_kind, affiliate_config) for coupon in coupons]
+    change_log = load_change_log(provider.get("data_dir"))
     log_rows = apply_change_rules(
-        format_log_rows(load_change_log(provider.get("data_dir"))),
+        format_log_rows(change_log),
         provider_change_rules(provider),
         load_official_listing_dates(provider.get("data_dir")),
     )
@@ -942,10 +1068,37 @@ def build_provider_payload(
         # 次の取得を待たずに、そのファイルの日付で鮮度を計り直す。
         data_date = file_date.isoformat()
         freshness = ""
+    # 最終確認日（最後に公式ページを取得できた日時）。期限超過の判定はこれを基準にする。
+    last_checked_at = resolve_last_checked_at(check_status, official_state)
+    if last_checked_at and not legacy_used:
+        freshness = ""
     freshness = freshness or infer_freshness(
         data_date,
         check_status.get("check_type", ""),
         int(provider.get("freshness_sla_hours", 30)),
+        last_checked_at,
+    )
+    # 内容の最終更新日（中身が最後に変わった日）。取得できていても中身が変わらない日は進まない。
+    content_last_changed_at = resolve_content_last_changed_at(
+        check_status, official_state, change_log, data_date
+    )
+    last_checked_label = short_date_label(last_checked_at)
+    content_changed_label = short_date_label(content_last_changed_at)
+    content_display = content_change_display(
+        content_last_changed_at,
+        long_unchanged_days=int(
+            provider.get(
+                "content_long_unchanged_days", DEFAULT_CONTENT_LONG_UNCHANGED_DAYS
+            )
+        ),
+        # 指定時だけ深掘りする会社は、変化が無いのが普通なので要確認にしない。
+        flagged=not on_demand,
+    )
+    freshness_text = freshness_summary_text(
+        last_checked_label=last_checked_label,
+        content_changed_label=content_changed_label,
+        content_status=str(content_display["content_status"]),
+        content_unchanged_days=content_display["content_unchanged_days"],
     )
     if legacy_used:
         source_label = "記事抽出暫定JSON（深掘り前の旧データ）"
@@ -1002,6 +1155,21 @@ def build_provider_payload(
         "data_date": data_date,
         "freshness_status": freshness,
         "freshness_label": freshness_label(freshness),
+        "last_checked_at": last_checked_at,
+        "last_checked_label": last_checked_label,
+        "content_last_changed_at": content_last_changed_at,
+        "content_last_changed_label": content_changed_label,
+        "content_unchanged_days": content_display["content_unchanged_days"],
+        "content_status": content_display["content_status"],
+        "content_status_label": CONTENT_STATUS_LABELS.get(
+            str(content_display["content_status"]), "不明"
+        ),
+        "content_long_unchanged_days": int(
+            provider.get(
+                "content_long_unchanged_days", DEFAULT_CONTENT_LONG_UNCHANGED_DAYS
+            )
+        ),
+        "freshness_text": freshness_text,
         "official_fetched_at": official_fetched_at,
         "url_checked_at": url_checked_at,
         "ai_label": audit_label,
@@ -1051,6 +1219,15 @@ def build_provider_payload(
             "公式取得日時": official_fetched_at or "なし",
             "最終深掘り日": (deep_dive_at or "未実施") if on_demand else "-",
             "URL確認日時": url_checked_at or "なし",
+            "最終確認日": last_checked_label or "なし",
+            "内容の最終更新日": content_changed_label or "不明",
+            "内容の変化": (
+                f"要確認：長期間変化なし（{content_display['content_unchanged_days']}日）"
+                if content_display["content_status"] == "long_unchanged"
+                else CONTENT_STATUS_LABELS.get(
+                    str(content_display["content_status"]), "不明"
+                )
+            ),
             "データ日": data_date or "不明",
             "鮮度": freshness_label(freshness),
             "Codex監査": audit_label,
@@ -1104,23 +1281,56 @@ def load_recent_snapshot_rows(
 
 
 def freshness_chip(provider: dict[str, Any], latest_date: Any) -> dict[str, Any]:
-    """常時監視の会社について、情報がいつ時点のものかを1行で表す。"""
-    data_date = parse_date_value(provider.get("data_date"))
-    fetched = provider.get("official_fetched_at") or provider.get("check_status", {}).get("completed_at", "")
-    fetched_date = parse_date_value(fetched)
+    """常時監視の会社について、最終確認日と内容の最終更新日を1行で表す。
+
+    取得できていても中身が変わらない日はクーポンのJSONを書かないため、
+    「期限超過」と「長期間変化なし」を分けて出す。
+    """
+    last_checked_at = provider.get("last_checked_at") or ""
     pending = provider.get("pending_audit_count") or 0
-    if data_date and latest_date and data_date >= latest_date:
-        state, text = "fresh", f"{data_date.month}/{data_date.day} 取得"
-        time_match = re.search(r"T(\d{2}:\d{2})", str(fetched))
-        if time_match and fetched_date == data_date:
-            text = f"{data_date.month}/{data_date.day} {time_match.group(1)} 取得"
-    elif data_date:
+    if not last_checked_at:
+        # 一度も取得できていない会社だけ、従来どおりデータ日で表す。
+        data_date = parse_date_value(provider.get("data_date"))
+        if data_date:
+            return {
+                "id": provider["id"],
+                "label": provider["label"],
+                "state": "stale",
+                "text": f"{data_date.month}/{data_date.day} の情報のまま",
+            }
+        return {
+            "id": provider["id"],
+            "label": provider["label"],
+            "state": "unknown",
+            "text": "取得なし",
+        }
+
+    checked_label = provider.get("last_checked_label") or ""
+    time_match = re.search(r"T(\d{2}:\d{2})", str(last_checked_at))
+    if time_match:
+        checked_label = f"{checked_label} {time_match.group(1)}"
+    changed_label = provider.get("content_last_changed_label") or ""
+    content_status = provider.get("content_status") or "unknown"
+    unchanged_days = provider.get("content_unchanged_days")
+
+    if provider.get("freshness_status") == "stale":
         state = "stale"
-        text = f"{data_date.month}/{data_date.day} の情報のまま"
-        if fetched_date and fetched_date > data_date and pending:
-            text += f"（公式ページは取得済み・読み取り待ち {pending} 件）"
+        text = f"最終確認 {checked_label}・取得が止まっています"
+    elif content_status == "long_unchanged":
+        state = "attention"
+        text = (
+            f"最終確認 {checked_label}・要確認：長期間変化なし（{unchanged_days}日）"
+            f"（最終更新 {changed_label}）"
+        )
+    elif not changed_label:
+        state, text = "fresh", f"最終確認 {checked_label}・内容の最終更新は不明"
+    elif changed_label == (provider.get("last_checked_label") or ""):
+        state, text = "fresh", f"最終確認 {checked_label}・内容が変わりました"
     else:
-        state, text = "unknown", "取得なし"
+        state = "fresh"
+        text = f"最終確認 {checked_label}・内容変化なし（最終更新 {changed_label}）"
+    if pending:
+        text += f"（読み取り待ち {pending} 件）"
     return {"id": provider["id"], "label": provider["label"], "state": state, "text": text}
 
 
@@ -1310,6 +1520,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .manual-panel {{ display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; background: #fff; border: 1px solid #dfe4ea; border-radius: 8px; padding: 12px; margin-bottom: 14px; }}
 .manual-title {{ font-weight: 700; font-size: 0.92rem; color: #24313f; margin-bottom: 5px; }}
 .manual-meta {{ display: inline-block; color: #5c6978; font-size: 0.82rem; margin-right: 8px; line-height: 1.6; }}
+.manual-meta.warn {{ color: #1b4a78; font-weight: 700; }}
 .manual-hint {{ color: #667386; font-size: 0.8rem; line-height: 1.5; margin-top: 6px; }}
 .manual-actions {{ display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }}
 .manual-run-btn,.copy-gh-btn {{ border: 1px solid #0f5caa; border-radius: 6px; padding: 8px 12px; cursor: pointer; font-size: 0.83rem; font-weight: 700; }}
@@ -1383,6 +1594,8 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
 .fresh-chip.fresh::before {{ background: #1f9d5c; }}
 .fresh-chip.stale {{ border-color: #f0d98b; background: #fffaeb; color: #7a5200; }}
 .fresh-chip.stale::before {{ background: #d99a00; }}
+.fresh-chip.attention {{ border-color: #b9d4f0; background: #f2f8ff; color: #1b4a78; }}
+.fresh-chip.attention::before {{ background: #2f7fd1; }}
 .flash-counts {{ display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }}
 .flash-count {{ flex: 1 1 150px; background: #fff; border: 1px solid #dfe4ea; border-radius: 10px; padding: 10px 14px; }}
 .flash-count .num {{ font-size: 1.6rem; font-weight: 800; line-height: 1.1; }}
@@ -1584,6 +1797,11 @@ function checkStatusHtml(provider) {{
   details.push(`<span class="manual-meta">最終実行: ${{escapeHtml(formatCheckTime(status.completed_at))}}</span>`);
   details.push(`<span class="manual-meta">公式取得: ${{escapeHtml(formatCheckTime(status.official_fetched_at))}}</span>`);
   details.push(`<span class="manual-meta">URL確認日時: ${{escapeHtml(formatCheckTime(status.url_checked_at))}}</span>`);
+  details.push(`<span class="manual-meta">最終確認日: ${{escapeHtml(provider.last_checked_label || 'なし')}}</span>`);
+  details.push(`<span class="manual-meta">内容の最終更新日: ${{escapeHtml(provider.content_last_changed_label || '不明')}}</span>`);
+  if (provider.content_status === 'long_unchanged') {{
+    details.push(`<span class="manual-meta warn">要確認：長期間変化なし（${{escapeHtml(provider.content_unchanged_days)}}日）</span>`);
+  }}
   details.push(`<span class="manual-meta">データ日: ${{escapeHtml(provider.data_date || status.data_date || '不明')}}</span>`);
   details.push(`<span class="manual-meta">鮮度: ${{escapeHtml(provider.freshness_label || '不明')}}</span>`);
   details.push(`<span class="manual-meta">Codex監査: ${{escapeHtml(provider.ai_label || '対象外')}}</span>`);

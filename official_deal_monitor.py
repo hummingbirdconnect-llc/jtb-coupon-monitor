@@ -224,6 +224,7 @@ def _requests_fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[str,
 
 def _playwright_fetch(url: str, timeout: int = 45) -> str:
     try:
+        from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
         from playwright.sync_api import sync_playwright
     except ImportError as exc:
         raise OfficialFetchError("Playwright is not installed") from exc
@@ -237,6 +238,12 @@ def _playwright_fetch(url: str, timeout: int = 45) -> str:
                 viewport={"width": 1280, "height": 1600},
             )
             response = page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
+            # 一覧をJavaScriptで描画するページは、読み込み直後だと「0件」のまま読めてしまう。
+            # 通信が落ち着くまで待ってから本文を取り、待ちきれないページは従来の待ち時間で進む。
+            try:
+                page.wait_for_load_state("networkidle", timeout=min(timeout, 15) * 1000)
+            except PlaywrightTimeoutError:
+                pass
             page.wait_for_timeout(1500)
             status = response.status if response else 0
             if status != 200:
@@ -562,6 +569,8 @@ def write_audit_candidate(
 
 def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> dict[str, Any]:
     started = now_jst()
+    # 前回までの記録。取得に失敗しても「最終確認日」「内容の最終更新日」を引き継いで返す。
+    previous_state = load_state(provider["id"])
     configured_sources = list(provider["official_sources"])
     configured_results = [
         fetch_official_source(source, timeout=timeout) for source in configured_sources
@@ -614,6 +623,14 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
         "started_at": started.isoformat(),
         "completed_at": now_jst().isoformat(),
         "official_fetched_at": now_jst().isoformat() if successful_sources else "",
+        # 最終確認日。中身が変わらず新しいJSONを書かない日も、取得できたことを残す。
+        "last_checked_at": (
+            now_jst().isoformat()
+            if successful_sources
+            else previous_state.get("last_checked_at", "")
+        ),
+        # 内容の最終更新日。監査の反映で中身が実際に変わったときだけ進む。
+        "content_last_changed_at": previous_state.get("last_changed_at", ""),
         "source_results": public_source_results,
         "failed_source_count": len(failed_sources),
         "configured_source_count": len(configured_sources),
@@ -639,7 +656,7 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
         " ".join(f"SOURCE {source['url']} {source['text']}" for source in successful_sources)
     )
     current_hash = hashlib.sha256(full_source_material.encode("utf-8")).hexdigest()
-    state = load_state(provider["id"])
+    state = dict(previous_state)
     previous_processed_hash = state.get("processed_hash", "")
     previous_queued_hash = state.get("queued_hash", "")
     change_kind = "baseline" if not previous_processed_hash else "update"

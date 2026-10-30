@@ -3,9 +3,10 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import tempfile
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -666,3 +667,131 @@ def test_run_summary_lists_failed_and_needs_review_providers() -> None:
     assert payload["error_provider_ids"] == ["kkday"]
     assert payload["needs_review_count"] == 1
     assert payload["needs_review_provider_ids"] == ["rurubu_travel"]
+
+
+def test_freshness_is_measured_by_last_checked_at_not_data_date() -> None:
+    """取得できていれば、中身が変わらずデータ日が古くても期限超過にしない"""
+    checked_today = runner.now_jst().isoformat()
+
+    assert (
+        runner.freshness_status(
+            "2026-09-29", 30, official=True, last_checked_at=checked_today
+        )
+        == "fresh"
+    )
+    # 最終確認日そのものが古いときは、これまでどおり期限超過にする
+    stale_checked = (runner.now_jst() - timedelta(hours=40)).isoformat()
+    assert (
+        runner.freshness_status(
+            "2026-10-30", 30, official=True, last_checked_at=stale_checked
+        )
+        == "stale"
+    )
+    # 最終確認日が無い古い記録は、従来どおりデータ日で測る
+    assert runner.freshness_status("2026-09-29", 30, official=True) == "stale"
+    assert runner.freshness_status("", 30, official=False) == "snapshot_only"
+
+
+def test_content_change_summary_separates_long_unchanged_from_stale() -> None:
+    """長期間変化なしは、期限超過とは別の「要確認」として出す"""
+    recent = (runner.now_jst() - timedelta(days=2)).isoformat()
+    old = (runner.now_jst() - timedelta(days=31)).isoformat()
+
+    assert runner.content_change_summary(recent, long_unchanged_days=14) == {
+        "content_last_changed_at": recent,
+        "content_unchanged_days": 2,
+        "content_status": "changed",
+    }
+    long_unchanged = runner.content_change_summary(old, long_unchanged_days=14)
+    assert long_unchanged["content_status"] == "long_unchanged"
+    assert long_unchanged["content_unchanged_days"] == 31
+    assert runner.content_change_summary("", long_unchanged_days=14) == {
+        "content_last_changed_at": "",
+        "content_unchanged_days": None,
+        "content_status": "unknown",
+    }
+
+
+def test_latest_change_log_date_reads_the_newest_change() -> None:
+    """専用監視の会社は change_log.json の最後の変化日を内容の最終更新日にする"""
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        data_dir = root / "official_coupon_data" / "sample"
+        data_dir.mkdir(parents=True)
+        (data_dir / "change_log.json").write_text(
+            json.dumps(
+                [
+                    {"date": "2026-09-01", "type": "new", "id": "a"},
+                    {"date": "2026-10-20", "type": "updated", "id": "b"},
+                    {"date": "2026-10-05", "type": "removed", "id": "c"},
+                ]
+            ),
+            encoding="utf-8",
+        )
+        with patch.object(runner, "ROOT", root):
+            assert (
+                runner.latest_change_log_date("official_coupon_data/sample")
+                == "2026-10-20"
+            )
+            assert runner.latest_change_log_date("official_coupon_data/none") == ""
+            assert runner.latest_change_log_date(None) == ""
+
+
+def test_official_monitor_keeps_last_checked_at_when_content_is_unchanged() -> None:
+    """中身が変わらず新しいJSONを書かない回でも、最終確認日を更新して返す"""
+    provider = {
+        "id": "sample",
+        "label": "サンプル",
+        "data_dir": "official_coupon_data/sample",
+        "official_domains": ["example.com"],
+        "official_sources": [{"url": SOURCE_URL, "fetch_method": "html"}],
+    }
+
+    def fake_fetch(_source, timeout=30):
+        return {
+            "url": SOURCE_URL,
+            "ok": True,
+            "status_code": 200,
+            "fetch_method": "html",
+            "text": SOURCE_TEXT,
+            "error": "",
+        }
+
+    unchanged_hash = hashlib.sha256(
+        monitor.normalize_text(f"SOURCE {SOURCE_URL} {SOURCE_TEXT}").encode("utf-8")
+    ).hexdigest()
+    previous = {
+        "last_checked_at": "2026-10-29T07:00:00+09:00",
+        "last_changed_at": "2026-09-29T17:55:53+09:00",
+        "processed_hash": unchanged_hash,
+    }
+
+    old_root = monitor.ROOT
+    with tempfile.TemporaryDirectory() as tmp:
+        monitor.configure_root(Path(tmp))
+        try:
+            with patch.object(monitor, "load_state", return_value=previous), patch.object(
+                monitor, "fetch_official_source", side_effect=fake_fetch
+            ):
+                result = monitor.run_official_deal_monitor(provider)
+        finally:
+            monitor.configure_root(old_root)
+
+    assert result["status"] == "unchanged"
+    assert result["last_checked_at"] > previous["last_checked_at"]
+    assert result["content_last_changed_at"] == previous["last_changed_at"]
+
+
+def test_jalan_and_rakuten_sources_are_current_and_browser_rendered() -> None:
+    """掲載終了ページを外し、JS描画の楽天一覧はブラウザ取得にする"""
+    providers = {provider["id"]: provider for provider in runner.load_registry()}
+    jalan_urls = {source["url"] for source in providers["jalan"]["official_sources"]}
+    rakuten = providers["rakuten_travel"]["official_sources"]
+
+    assert "https://www.jalan.net/theme/jalancouponfes/" not in jalan_urls
+    assert "https://www.jalan.net/discountCoupon/CAM1322324/" not in jalan_urls
+    assert "https://www.jalan.net/theme/specialweek/" in jalan_urls
+    assert all(source["fetch_method"] == "playwright" for source in rakuten)
+    rakuten_urls = {source["url"] for source in rakuten}
+    assert "https://travel.rakuten.co.jp/coupon/special/matsuri/" in rakuten_urls
+    assert "https://travel.rakuten.co.jp/camp/50luxday/" in rakuten_urls

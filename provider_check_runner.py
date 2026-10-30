@@ -85,9 +85,13 @@ def load_registry() -> list[dict]:
         "cadence_days": 0,
         "freshness_sla_hours": 720,
     }
+    long_unchanged_days = int(
+        schedule.get("content_long_unchanged_days", DEFAULT_CONTENT_LONG_UNCHANGED_DAYS)
+    )
     providers = []
     for raw in config["providers"]:
         provider = dict(raw)
+        provider.setdefault("content_long_unchanged_days", long_unchanged_days)
         if provider["id"] in daily_ids:
             defaults = daily_defaults
         elif provider["id"] in jp_daily_ids:
@@ -136,9 +140,43 @@ def data_date_from_filename(filename: str) -> str:
     return match.group(0) if match else ""
 
 
-def freshness_status(data_date: str, sla_hours: int, *, official: bool) -> str:
+DEFAULT_CONTENT_LONG_UNCHANGED_DAYS = 14
+
+
+def parse_jst_datetime(value: str) -> datetime | None:
+    """ISO形式の日時、または YYYY-MM-DD を JST の日時として読む。"""
+    text = str(value or "").strip()
+    if not text:
+        return None
+    try:
+        parsed = datetime.fromisoformat(text.replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            parsed = datetime.strptime(text[:10], "%Y-%m-%d")
+        except ValueError:
+            return None
+    return parsed.replace(tzinfo=JST) if parsed.tzinfo is None else parsed.astimezone(JST)
+
+
+def freshness_status(
+    data_date: str,
+    sla_hours: int,
+    *,
+    official: bool,
+    last_checked_at: str = "",
+) -> str:
+    """期限超過かどうかを「最終確認日（最後に取得できた日時）」で判定する。
+
+    中身が変わらない日はクーポンのJSONを書き直さないため、ファイル名の日付
+    （data_date）で測ると、毎日取得できている会社まで期限超過に見えてしまう。
+    最終確認日が分からない古い記録のときだけ、従来どおり data_date で測る。
+    """
     if not official:
         return "snapshot_only"
+    checked_at = parse_jst_datetime(last_checked_at)
+    if checked_at:
+        age_hours = (now_jst() - checked_at).total_seconds() / 3600
+        return "fresh" if age_hours <= sla_hours else "stale"
     if not data_date:
         return "unknown"
     try:
@@ -147,6 +185,45 @@ def freshness_status(data_date: str, sla_hours: int, *, official: bool) -> str:
         return "unknown"
     age_hours = (now_jst().date() - data_day).days * 24
     return "fresh" if age_hours <= sla_hours else "stale"
+
+
+def latest_change_log_date(data_dir: str | None) -> str:
+    """change_log.json に残る最後の変化日（中身が最後に変わった日）を返す。"""
+    if not data_dir:
+        return ""
+    path = ROOT / data_dir / "change_log.json"
+    if not path.exists():
+        return ""
+    try:
+        entries = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return ""
+    dates = [
+        str(entry.get("date") or "")
+        for entry in entries
+        if isinstance(entry, dict) and entry.get("date")
+    ]
+    return max(dates) if dates else ""
+
+
+def content_change_summary(
+    last_changed_at: str, *, long_unchanged_days: int
+) -> dict[str, object]:
+    """内容の最終更新日から、何日変わっていないかと要確認かどうかを出す。"""
+    changed_at = parse_jst_datetime(last_changed_at)
+    if not changed_at:
+        return {
+            "content_last_changed_at": "",
+            "content_unchanged_days": None,
+            "content_status": "unknown",
+        }
+    unchanged_days = (now_jst().date() - changed_at.date()).days
+    threshold = max(1, int(long_unchanged_days))
+    return {
+        "content_last_changed_at": last_changed_at,
+        "content_unchanged_days": unchanged_days,
+        "content_status": "long_unchanged" if unchanged_days >= threshold else "changed",
+    }
 
 
 def coupon_url(coupon: dict) -> str:
@@ -226,6 +303,8 @@ def run_real_monitor(provider: dict) -> dict:
 
     coupons, latest_file = load_latest_coupons(provider)
     data_date = data_date_from_filename(latest_file)
+    # 最終確認日。取得そのものは成功しているのに中身が変わらない日も記録する。
+    last_checked_at = completed.isoformat() if status in {"success", "needs_review"} else ""
     payload = {
         "provider_id": provider["id"],
         "provider_label": provider["label"],
@@ -234,10 +313,22 @@ def run_real_monitor(provider: dict) -> dict:
         "started_at": started.isoformat(),
         "completed_at": completed.isoformat(),
         "official_fetched_at": completed.isoformat() if status == "success" else "",
+        "last_checked_at": last_checked_at,
         "needs_review": status == "needs_review",
         "data_date": data_date,
         "freshness_status": freshness_status(
-            data_date, int(provider.get("freshness_sla_hours", 30)), official=True
+            data_date,
+            int(provider.get("freshness_sla_hours", 30)),
+            official=True,
+            last_checked_at=last_checked_at,
+        ),
+        **content_change_summary(
+            latest_change_log_date(provider.get("data_dir")),
+            long_unchanged_days=int(
+                provider.get(
+                    "content_long_unchanged_days", DEFAULT_CONTENT_LONG_UNCHANGED_DAYS
+                )
+            ),
         ),
         "coupon_count": len(coupons),
         "latest_file": latest_file,
@@ -327,6 +418,7 @@ def run_snapshot_check(provider: dict, timeout: int, max_urls: int) -> dict:
         "completed_at": now_jst().isoformat(),
         "url_checked_at": now_jst().isoformat(),
         "official_fetched_at": "",
+        "last_checked_at": "",
         "data_date": data_date,
         "freshness_status": "snapshot_only",
         "coupon_count": len(coupons),
@@ -430,8 +522,20 @@ def run_provider(
                 payload.get("data_date", ""),
                 int(provider.get("freshness_sla_hours", 30)),
                 official=True,
+                last_checked_at=str(payload.get("last_checked_at") or ""),
             ),
         )
+        # 内容の最終更新日は official_source_data の state を見て official_deal_monitor が返す。
+        # ここでは「何日変わっていないか」と要確認かどうかだけ足す。
+        for key, value in content_change_summary(
+            str(payload.get("content_last_changed_at") or ""),
+            long_unchanged_days=int(
+                provider.get(
+                    "content_long_unchanged_days", DEFAULT_CONTENT_LONG_UNCHANGED_DAYS
+                )
+            ),
+        ).items():
+            payload[key] = value
         if is_on_demand(provider):
             payload["deep_dive"] = True
             payload["deep_dive_at"] = payload.get("completed_at", "")
