@@ -3,9 +3,9 @@
   "provider_label": "HIS",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-10-30T07:04:14.391808+09:00",
-  "completed_at": "2026-10-30T07:08:25.707287+09:00",
-  "official_fetched_at": "2026-10-30T07:08:25.707287+09:00",
+  "started_at": "2026-10-30T15:55:33.154415+09:00",
+  "completed_at": "2026-10-30T15:59:23.390847+09:00",
+  "official_fetched_at": "2026-10-30T15:59:23.390847+09:00",
   "needs_review": false,
   "data_date": "2026-10-30",
   "freshness_status": "fresh",
@@ -22,5 +22,5 @@
   "primary_region_code": "kanto",
   "primary_region_coupon_count": 34,
   "deep_dive": true,
-  "deep_dive_at": "2026-10-30T07:08:25.707287+09:00"
+  "deep_dive_at": "2026-10-30T15:59:23.390847+09:00"
 }

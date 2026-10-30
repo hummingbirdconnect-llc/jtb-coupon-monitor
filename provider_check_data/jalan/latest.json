@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-30T07:19:18.027413+09:00",
-  "completed_at": "2026-10-30T07:19:25.984553+09:00",
-  "official_fetched_at": "2026-10-30T07:19:25.984559+09:00",
+  "started_at": "2026-10-30T16:09:34.798299+09:00",
+  "completed_at": "2026-10-30T16:09:42.011009+09:00",
+  "official_fetched_at": "2026-10-30T16:09:42.011016+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -90,8 +90,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 478,
-      "content_hash": "6b4fc1a9bab3cd7af4a7fd5d50021c571ed1361c3b8a3f14e1217fc89f768995"
+      "text_chars": 34879,
+      "content_hash": "948528431fafa6c7757644761c5258197cb30f1d676fad6dad1d218c320691a2"
     }
   ],
   "failed_source_count": 0,
@@ -103,14 +103,16 @@
   "count_scope_label": "代表クーポン",
   "count_scope_detail": "代表的な公式クーポンページのみ。個別宿クーポン約1,000件は集計対象外。",
   "ai_used": false,
-  "codex_audit_required": false,
+  "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "unchanged",
-  "change_kind": "unchanged",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "29ae703c9c98520c4e6f89ba6b473834fa22fa44a7225ad3e8492e5731c705f2",
   "data_date": "2026-09-29",
   "latest_file": "coupons_2026-09-29.json",
   "coupon_count": 6,
-  "content_hash": "6ac9f90b5486edca6ffbe6bdc2bf05000161b373216332710152c6812f7211e3",
+  "audit_candidate_id": "jalan-29ae703c9c98520c",
+  "audit_candidate_path": "codex_audit_queue/jalan/jalan-29ae703c9c98520c.json",
   "error": "",
   "freshness_status": "stale"
 }

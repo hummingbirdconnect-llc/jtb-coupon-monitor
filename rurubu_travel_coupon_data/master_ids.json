@@ -678,7 +678,7 @@
       "title": "茨城県のおすすめ施設で使えるクーポン（ひとり1泊あたり）",
       "category": "エリア限定クーポン",
       "discount": "最大¥1,500引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-pp26grosk30-bcb1a085af": {
       "first_seen": "2026-07-09",
@@ -1198,7 +1198,7 @@
       "title": "年末年始も使える！【10月～1月出発】沖縄県のおすすめ施設で使えるクーポン（最大5,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大10%引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-ppkry26sp15-523fc4d96a": {
       "first_seen": "2026-09-17",
@@ -1407,7 +1407,23 @@
       "category": "施設限定クーポン",
       "discount": "最大10%引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26yoshi100-pp26yoshi70-pp26yoshi30-bd32fd25f2": {
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "title": "神奈川県 箱根湯本温泉 吉池旅館で使えるクーポン",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大¥10,000引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-crsp26oct15-031c3574d9": {
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "title": "北海道 クロスホテル札幌で使えるクーポン（最大5,000円引き）",
+      "category": "施設限定クーポン",
+      "discount": "最大15%引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-10-30T07:19:34.673337+09:00"
+  "last_updated": "2026-10-30T16:09:50.899926+09:00"
 }
