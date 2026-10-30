@@ -14,6 +14,7 @@
     ],
     "jp_daily_provider_ids": ["booking", "ikkyu", "yahoo_travel"],
     "every_5_days_provider_ids": [],
+    "content_long_unchanged_days": 14,
     "daily": {
       "check_frequency": "daily",
       "cadence_days": 1,
@@ -37,6 +38,7 @@
       "cadence_days": 0,
       "freshness_sla_hours": 720
     },
+    "note_freshness": "鮮度（fresh / stale）は「最終確認日（last_checked_at）」を基準に測る。取得できていても中身が変わらない日はクーポンのJSONを書かないため、データ日で測ると取得できている会社まで期限超過に見えてしまう。中身が content_long_unchanged_days 日以上変わらない会社は、期限超過ではなく「要確認：長期間変化なし」として別に出す。",
     "note": "定期で取得するのは daily_provider_ids の9社（GitHub Actionsを平日7:00・15:45 JSTに手動実行）と jp_daily_provider_ids の3社（海外IPから拒否されるため日本のMacから取得。一休・Yahoo!トラベルは専用 monitor で、ikkyu を yahoo_travel より前に置く）。GitHub Actionsのcronは2026-10-20に廃止した。それ以外は --provider-id 指定（または workflow_dispatch）のときだけ深掘りする。"
   },
   "providers": [
@@ -107,39 +109,45 @@
           "include_in_audit": false,
           "discover_links": true,
           "discovery_path_patterns": [
-            "^/theme/jalancouponfes/?$",
-            "^/theme/coupon/yadonohitokushu/?$",
-            "^/theme/furusato_coupon/?$",
+            "^/theme/specialweek/?$",
+            "^/theme/coupon/(?!general)[a-z0-9_-]+/?$",
+            "^/theme/furusato_coupon[0-9]*/?$",
+            "^/theme/[a-z0-9_-]*(coupon|cpn|cp|sale|fes|week)[a-z0-9_-]*/?$",
             "^/discountCoupon/CAM[0-9]+/?$",
             "^/dp/theme/jp_coupon/?$",
             "^/rentacar/coupons/?$"
           ],
-          "max_discovered_links": 8
+          "max_discovered_links": 10
         },
         {
-          "url": "https://www.jalan.net/theme/jalancouponfes/",
-          "fetch_method": "auto",
-          "purpose": "じゃらんクーポンフェス",
+          "url": "https://www.jalan.net/theme/specialweek/",
+          "fetch_method": "playwright",
+          "purpose": "じゃらんスペシャルウィーク（期間限定セール・クーポン一覧の入口。JavaScript描画のためブラウザ取得）",
           "source_role": "representative_campaign",
           "discover_links": true,
-          "discovery_path_patterns": ["^/discountCoupon/CAM[0-9]+/?$"],
-          "max_discovered_links": 5
+          "discovery_path_patterns": [
+            "^/theme/coupon/(?!general)[a-z0-9_-]+/?$",
+            "^/discountCoupon/CAM[0-9]+/?$"
+          ],
+          "max_discovered_links": 6
         },
         {
           "url": "https://www.jalan.net/theme/furusato_coupon/",
-          "fetch_method": "auto",
-          "purpose": "ふるさとお得クーポン",
+          "fetch_method": "playwright",
+          "min_page_text": 120,
+          "purpose": "ふるさとキャンペーン＆お得クーポン（JavaScript描画のためブラウザ取得）",
           "source_role": "representative_campaign"
         },
         {
-          "url": "https://www.jalan.net/discountCoupon/CAM1322324/",
+          "url": "https://www.jalan.net/theme/dpointcp/",
           "fetch_method": "auto",
-          "purpose": "代表的な直接クーポン詳細",
-          "source_role": "representative_coupon"
+          "purpose": "dポイント・じゃらん限定ポイント還元キャンペーン",
+          "source_role": "representative_campaign"
         },
         {
           "url": "https://www.jalan.net/dp/theme/jp_coupon/",
           "fetch_method": "auto",
+          "min_page_text": 120,
           "purpose": "じゃらんパッククーポン",
           "source_role": "representative_campaign"
         },
@@ -196,8 +204,8 @@
         }
       ],
       "master_path": "../vault_blog/ウェルトリップ/会社別/じゃらん/coupon-master/master.md",
-      "next_action": "代表公開ページの自動監視を継続。ログイン・動的表示ページは、ユーザー操作のブラウザ確認時だけ補完する。",
-      "note": "じゃらんクーポン入口から代表ページを発見し、クーポンフェス・ふるさと・パック・レンタカー・代表的な直接クーポンを監視。個別宿約1,000件は集計せず、ログイン・動的表示ページは確認待ちとして分離。"
+      "next_action": "代表公開ページの自動監視を継続。終了した特集は掲載期間切れが分かった時点で入れ替える。ログイン・動的表示ページは、ユーザー操作のブラウザ確認時だけ補完する。",
+      "note": "じゃらんクーポン入口から代表ページを発見し、スペシャルウィーク・ふるさと・dポイント還元・パック・レンタカーを監視。2026-10-30に、掲載終了したクーポンフェス（9/17〜10/16）と配布終了した大江戸温泉物語クーポン（CAM1322324・8/15〜8/31）を外した。期間限定ページを固定で持つと古くなるため、個別クーポン（/discountCoupon/CAM…）と新しい特集は入口ページからの自動発見で拾う。個別宿約1,000件は集計せず、ログイン・動的表示ページは確認待ちとして分離。"
     },
     {
       "id": "jalan_activity",
@@ -287,12 +295,41 @@
       "official_sources": [
         {
           "url": "https://travel.rakuten.co.jp/coupon/",
-          "fetch_method": "auto",
-          "purpose": "RaCoupon公式一覧"
+          "fetch_method": "playwright",
+          "purpose": "RaCoupon公式一覧（開催中キャンペーン・特集はJavaScript描画のためブラウザ取得）",
+          "source_role": "discovery_hub",
+          "discover_links": true,
+          "discovered_fetch_method": "playwright",
+          "discovery_path_patterns": ["^/coupon/special/[a-z0-9_-]+/?$"],
+          "max_discovered_links": 4
+        },
+        {
+          "url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+          "fetch_method": "playwright",
+          "purpose": "お得なクーポン祭（毎月開催の配布クーポン一覧）",
+          "source_role": "representative_campaign"
+        },
+        {
+          "url": "https://travel.rakuten.co.jp/camp/50luxday/",
+          "fetch_method": "playwright",
+          "purpose": "毎月5と0のつく日クーポン",
+          "source_role": "representative_campaign"
+        },
+        {
+          "url": "https://travel.rakuten.co.jp/coupon/yado/",
+          "fetch_method": "playwright",
+          "purpose": "宿オリジナル割引クーポン（代表例）",
+          "source_role": "representative_campaign"
+        },
+        {
+          "url": "https://event.travel.rakuten.co.jp/special/sales/",
+          "fetch_method": "playwright",
+          "purpose": "季節セール（秋冬SALEなど）の限定クーポン",
+          "source_role": "representative_campaign"
         }
       ],
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/楽天トラベル/note/楽天トラベル_P_クーポン完全ガイド_SWELL_HTML.html"],
-      "note": "公開RaCoupon公式一覧を監視。ログイン後のmyクーポンは対象外。"
+      "note": "RaCoupon公式一覧はキャンペーン・特集がJavaScript描画で、通常のHTML取得では「0件」と読まれるためブラウザ取得（playwright）にした。クーポン祭・5と0のつく日・宿クーポン・季節セールの代表ページも監視対象に加えた。ログイン後のmyクーポンは対象外。"
     },
     {
       "id": "ikkyu",

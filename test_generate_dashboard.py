@@ -7,7 +7,7 @@ import json
 import re
 import tempfile
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from unittest import mock
 
@@ -346,6 +346,118 @@ class DashboardOutputTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             with self.assertRaisesRegex(ValueError, "freshness SLA"):
                 write_dashboard_outputs(data, Path(tmp) / "dashboard")
+
+
+class FreshnessDateTest(unittest.TestCase):
+    """最終確認日と内容の最終更新日を分けて出し、期限超過は最終確認日で測ること。"""
+
+    def test_unchanged_content_with_todays_check_is_not_stale(self) -> None:
+        checked_at = datetime.now(JST).replace(microsecond=0).isoformat()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_json(
+                root / "official_coupon_data" / "sample_ota" / "coupons_2026-09-29.json",
+                [{"id": "sample-1", "title": "サンプルクーポン"}],
+            )
+            write_json(
+                root / "official_source_data" / "sample_ota" / "state.json",
+                {
+                    "last_checked_at": checked_at,
+                    "last_changed_at": "2026-09-29T17:55:53+09:00",
+                },
+            )
+            write_json(
+                root / "provider_check_data" / "sample_ota" / "latest.json",
+                {
+                    "check_type": "official_page_candidate",
+                    "status": "unchanged",
+                    "data_date": "2026-09-29",
+                    "freshness_status": "stale",
+                    "last_checked_at": checked_at,
+                    "content_last_changed_at": "2026-09-29T17:55:53+09:00",
+                },
+            )
+            with mock.patch.multiple(
+                generate_dashboard,
+                ROOT=root,
+                CHECK_STATUS_ROOT=root / "provider_check_data",
+            ):
+                payload = build_provider_payload(SAMPLE_PROVIDER)
+
+        # 取得できている日の記録があるので、データ日が古くても期限超過にしない。
+        self.assertEqual(payload["freshness_status"], "fresh")
+        self.assertEqual(payload["data_date"], "2026-09-29")
+        self.assertEqual(payload["content_last_changed_label"], "9/29")
+        self.assertEqual(payload["summary"]["内容の最終更新日"], "9/29")
+        self.assertEqual(payload["last_checked_label"], payload["summary"]["最終確認日"])
+        self.assertIn("内容変化なし", payload["freshness_text"])
+
+    def test_long_unchanged_content_is_flagged_separately(self) -> None:
+        checked_at = datetime.now(JST).replace(microsecond=0).isoformat()
+        changed_at = (datetime.now(JST) - timedelta(days=40)).replace(microsecond=0).isoformat()
+        # 毎日監視の会社（指定時だけ深掘りする会社は変化が無いのが普通なので対象外）。
+        provider = {**SAMPLE_PROVIDER, "cadence_days": 1}
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_json(
+                root / "official_coupon_data" / "sample_ota" / "coupons_2026-09-29.json",
+                [{"id": "sample-1", "title": "サンプルクーポン"}],
+            )
+            write_json(
+                root / "provider_check_data" / "sample_ota" / "latest.json",
+                {
+                    "check_type": "official_page_candidate",
+                    "status": "unchanged",
+                    "data_date": "2026-09-29",
+                    "last_checked_at": checked_at,
+                    "content_last_changed_at": changed_at,
+                },
+            )
+            with mock.patch.multiple(
+                generate_dashboard,
+                ROOT=root,
+                CHECK_STATUS_ROOT=root / "provider_check_data",
+            ):
+                payload = build_provider_payload(provider)
+
+        self.assertEqual(payload["freshness_status"], "fresh")
+        self.assertEqual(payload["content_status"], "long_unchanged")
+        self.assertEqual(payload["content_unchanged_days"], 40)
+        self.assertEqual(payload["summary"]["内容の変化"], "要確認：長期間変化なし（40日）")
+
+        chip = generate_dashboard.freshness_chip(payload, None)
+        self.assertEqual(chip["state"], "attention")
+        self.assertIn("要確認：長期間変化なし（40日）", chip["text"])
+
+    def test_old_last_checked_at_is_still_stale(self) -> None:
+        checked_at = (datetime.now(JST) - timedelta(hours=50)).replace(microsecond=0).isoformat()
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            write_json(
+                root / "official_coupon_data" / "sample_ota" / "coupons_2026-09-29.json",
+                [{"id": "sample-1", "title": "サンプルクーポン"}],
+            )
+            write_json(
+                root / "provider_check_data" / "sample_ota" / "latest.json",
+                {
+                    "check_type": "official_page_candidate",
+                    "status": "unchanged",
+                    "data_date": "2026-09-29",
+                    "last_checked_at": checked_at,
+                    "content_last_changed_at": "2026-09-29T17:55:53+09:00",
+                },
+            )
+            with mock.patch.multiple(
+                generate_dashboard,
+                ROOT=root,
+                CHECK_STATUS_ROOT=root / "provider_check_data",
+            ):
+                payload = build_provider_payload(SAMPLE_PROVIDER)
+
+        self.assertEqual(payload["freshness_status"], "stale")
+        chip = generate_dashboard.freshness_chip(payload, None)
+        self.assertEqual(chip["state"], "stale")
+        self.assertIn("取得が止まっています", chip["text"])
 
 
 if __name__ == "__main__":
