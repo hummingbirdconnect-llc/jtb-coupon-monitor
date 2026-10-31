@@ -91,15 +91,15 @@
       "content_hash": "948528431fafa6c7757644761c5258197cb30f1d676fad6dad1d218c320691a2"
     }
   ],
-  "queued_hash": "29ae703c9c98520c4e6f89ba6b473834fa22fa44a7225ad3e8492e5731c705f2",
-  "queued_candidate_id": "jalan-29ae703c9c98520c",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-10-30T16:09:42.014125+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-09-29T17:55:53.687616+09:00",
-  "last_audit_candidate_id": "jalan-6ac9f90b5486edca",
-  "processed_hash": "6ac9f90b5486edca6ffbe6bdc2bf05000161b373216332710152c6812f7211e3",
-  "last_processed_at": "2026-09-29T17:55:53.687616+09:00",
-  "last_changed_at": "2026-09-29T17:55:53.687616+09:00",
-  "latest_file": "coupons_2026-09-29.json",
-  "semantic_hash": "7e152853c2bd3f429a3fc2742908526d159415871cb0d7ddd04674831891b343"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-10-31T09:12:01.218990+09:00",
+  "last_audit_candidate_id": "jalan-29ae703c9c98520c",
+  "processed_hash": "29ae703c9c98520c4e6f89ba6b473834fa22fa44a7225ad3e8492e5731c705f2",
+  "last_processed_at": "2026-10-31T09:12:01.218990+09:00",
+  "last_changed_at": "2026-10-31T09:12:01.218990+09:00",
+  "latest_file": "coupons_2026-10-31.json",
+  "semantic_hash": "e7616a9898d2b0a7c16a5ac2f24c7769dcef6c4a5cdff9563d5ac821a2a1a705"
 }
