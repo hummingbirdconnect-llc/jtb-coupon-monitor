@@ -1,0 +1,17 @@
+{
+  "provider_id": "rurubu_travel",
+  "provider_label": "るるぶトラベル",
+  "generated_at": "2026-11-01T07:33:39.014730+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式クーポン一覧は本文なし。Chrome起動失敗、ブラウザUser-Agentで再取得しても改善なし。新潟の個別ページもJavaScriptによる判定が必要。",
+  "known_title_count": 73,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-01.json"
+}

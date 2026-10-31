@@ -1,19 +1,19 @@
 {
-  "completed_at": "2026-10-31T07:33:04.176319+09:00",
+  "completed_at": "2026-11-01T07:33:39.014730+09:00",
   "scope": "codex-auto",
   "provider_count": 13,
-  "error_count": 3,
-  "candidate_count": 11,
-  "new_count": 9,
+  "error_count": 5,
+  "candidate_count": 13,
+  "new_count": 12,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
-      "status": "ok",
-      "error": "",
+      "status": "error",
+      "error": "公開一覧の一部条件が未表示。九州ふっこう応援割はWeb取得不可、curl再取得も証明書検証エラー。Chrome起動失敗のため未確認。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/his/hints_2026-11-01.json"
     },
     {
       "provider_id": "jtb",
@@ -22,43 +22,43 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/jtb/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/jtb/hints_2026-11-01.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
-      "status": "ok",
-      "error": "",
+      "status": "error",
+      "error": "クーポン一覧の本文が未表示。Chrome起動失敗、ブラウザUser-Agentで再取得しても改善なし。別の公式キャンペーン一覧は確認済み。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/knt/hints_2026-11-01.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/jalpack/hints_2026-10-31.json"
+      "candidate_count": 3,
+      "new_count": 3,
+      "hints_file": "discovery_hints/jalpack/hints_2026-11-01.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/jalan/hints_2026-10-31.json"
+      "candidate_count": 5,
+      "new_count": 5,
+      "hints_file": "discovery_hints/jalan/hints_2026-11-01.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 5,
-      "new_count": 5,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-10-31.json"
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-01.json"
     },
     {
       "provider_id": "ikkyu",
@@ -66,8 +66,8 @@
       "status": "ok",
       "error": "",
       "candidate_count": 1,
-      "new_count": 0,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-10-31.json"
+      "new_count": 1,
+      "hints_file": "discovery_hints/ikkyu/hints_2026-11-01.json"
     },
     {
       "provider_id": "yahoo_travel",
@@ -76,16 +76,16 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/yahoo_travel/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-01.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
       "status": "error",
-      "error": "クーポン一覧はWeb取得・ブラウザ相当UAでの再取得とも個別券の本文が表示されず、新規券の確認は一部未完了。遊びつくし特設ページは取得でき、既知のクーポンの終了を確認。ログイン・Chrome起動は未実施。",
+      "error": "公開クーポン一覧と那須ワールドモンキーパークのチケット本文が未表示。Chrome起動失敗、ブラウザUser-Agentで再取得しても改善なし。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/asoview/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/asoview/hints_2026-11-01.json"
     },
     {
       "provider_id": "tobu_top_tours",
@@ -94,7 +94,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-01.json"
     },
     {
       "provider_id": "booking",
@@ -103,25 +103,25 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/booking/hints_2026-11-01.json"
     },
     {
       "provider_id": "rurubu_travel",
       "provider_label": "るるぶトラベル",
       "status": "error",
-      "error": "登録済みクーポン一覧はWeb取得・ブラウザ相当UAでの再取得とも本文が空。検索結果だけでは公式条件を確かめられず候補除外。Chrome起動は未実施。",
+      "error": "公式クーポン一覧は本文なし。Chrome起動失敗、ブラウザUser-Agentで再取得しても改善なし。新潟の個別ページもJavaScriptによる判定が必要。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-01.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
       "status": "error",
-      "error": "公式SALEページの公開取得結果は韓国向け内容のみ。ブラウザ相当UAで再取得しても国内向けクーポンの条件・期間を確認できず。ログイン・Chrome起動は未実施。",
+      "error": "公開の日本向け一覧で名称・割引額は読めたが、利用期間を確認できず採用不可。Xの限定コードも国内適用・期間を公式確認できなかった。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-10-31.json"
+      "hints_file": "discovery_hints/klook/hints_2026-11-01.json"
     }
   ]
 }
