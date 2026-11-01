@@ -1,141 +1,5 @@
 [
   {
-    "id": "yahoo_travel-1122538",
-    "provider": "yahoo_travel",
-    "provider_label": "Yahoo!トラベル",
-    "site_targets": [
-      "welltrip",
-      "yakushimafan"
-    ],
-    "article_slug": "yahoo-travel-coupon",
-    "title": "京王プレリアホテル札幌 先着50名様限定 1,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "1,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "北海道／JR札幌駅北口徒歩3分",
-    "regions": [
-      "北海道"
-    ],
-    "booking_period": "～ 2026/11/01 12:00",
-    "travel_period": "2026/10/23 ～ 2027/03/31",
-    "stay_period": "2026/10/23 ～ 2027/03/31",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額25,000円以上",
-      "先着50名様限定",
-      "デイユース（日帰り）は対象外",
-      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
-    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1122538",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-11-01",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1122538",
-      "origin_provider": "ikkyu",
-      "shared_with": [
-        "ikkyu"
-      ],
-      "hotel_name": "京王プレリアホテル札幌",
-      "hotel_url": "https://travel.yahoo.co.jp/00081757/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00081757"
-      ],
-      "accommodations": [
-        {
-          "name": "京王プレリアホテル札幌",
-          "accommodation_id": "00081757",
-          "prefecture": "北海道",
-          "area": "JR札幌駅北口徒歩3分",
-          "large_area": "東日本"
-        }
-      ],
-      "large_area": "東日本",
-      "description": "先着50名様限定 1,000円OFFクーポン",
-      "min_amount": 25000,
-      "expired_at": "2026-11-01T12:00:00+09:00",
-      "checkout_begin": "2026-10-23T00:00:00+09:00",
-      "checkout_end": "2027-03-31T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
-    }
-  },
-  {
-    "id": "yahoo_travel-1122539",
-    "provider": "yahoo_travel",
-    "provider_label": "Yahoo!トラベル",
-    "site_targets": [
-      "welltrip",
-      "yakushimafan"
-    ],
-    "article_slug": "yahoo-travel-coupon",
-    "title": "京王プレリアホテル札幌 先着40名様限定 2,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "2,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "北海道／JR札幌駅北口徒歩3分",
-    "regions": [
-      "北海道"
-    ],
-    "booking_period": "～ 2026/11/01 12:00",
-    "travel_period": "2026/10/23 ～ 2027/03/31",
-    "stay_period": "2026/10/23 ～ 2027/03/31",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額45,000円以上",
-      "先着40名様限定",
-      "デイユース（日帰り）は対象外",
-      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
-    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1122539",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-11-01",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1122539",
-      "origin_provider": "ikkyu",
-      "shared_with": [
-        "ikkyu"
-      ],
-      "hotel_name": "京王プレリアホテル札幌",
-      "hotel_url": "https://travel.yahoo.co.jp/00081757/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00081757"
-      ],
-      "accommodations": [
-        {
-          "name": "京王プレリアホテル札幌",
-          "accommodation_id": "00081757",
-          "prefecture": "北海道",
-          "area": "JR札幌駅北口徒歩3分",
-          "large_area": "東日本"
-        }
-      ],
-      "large_area": "東日本",
-      "description": "先着40名様限定 2,000円OFFクーポン",
-      "min_amount": 45000,
-      "expired_at": "2026-11-01T12:00:00+09:00",
-      "checkout_begin": "2026-10-23T00:00:00+09:00",
-      "checkout_end": "2027-03-31T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
-    }
-  },
-  {
     "id": "yahoo_travel-1110829",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -337,6 +201,73 @@
     }
   },
   {
+    "id": "yahoo_travel-1127820",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ガーデンテラス長崎ホテル＆リゾート 先着30名様限定 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "長崎県／長崎市内",
+    "regions": [
+      "長崎県"
+    ],
+    "booking_period": "～ 2026/11/08 12:00",
+    "travel_period": "2026/11/01 ～ 2027/03/19",
+    "stay_period": "2026/11/01 ～ 2027/03/19",
+    "coupon_codes": [],
+    "conditions": [
+      "先着30名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127820",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127820",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ガーデンテラス長崎ホテル＆リゾート",
+      "hotel_url": "https://travel.yahoo.co.jp/00001558/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00001558"
+      ],
+      "accommodations": [
+        {
+          "name": "ガーデンテラス長崎ホテル＆リゾート",
+          "accommodation_id": "00001558",
+          "prefecture": "長崎県",
+          "area": "長崎市内",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着30名様限定 5,000円OFFクーポン",
+      "min_amount": null,
+      "expired_at": "2026-11-08T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-03-19T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1121129",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -398,6 +329,73 @@
       "expired_at": "2026-11-09T12:00:00+09:00",
       "checkout_begin": "2026-10-18T00:00:00+09:00",
       "checkout_end": "2026-12-04T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1126969",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ホテルインディゴ犬山有楽苑 by IHG 先着50名様限定 7,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "7,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "愛知県／犬山市",
+    "regions": [
+      "愛知県"
+    ],
+    "booking_period": "～ 2026/11/09 12:00",
+    "travel_period": "2026/11/01 ～ 2027/03/31",
+    "stay_period": "2026/11/01 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額50,000円以上",
+      "先着50名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1126969",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1126969",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ホテルインディゴ犬山有楽苑 by IHG",
+      "hotel_url": "https://travel.yahoo.co.jp/00002942/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002942"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルインディゴ犬山有楽苑 by IHG",
+          "accommodation_id": "00002942",
+          "prefecture": "愛知県",
+          "area": "犬山市",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "先着50名様限定 7,000円OFFクーポン",
+      "min_amount": 50000,
+      "expired_at": "2026-11-09T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-01.json"
@@ -537,6 +535,141 @@
     }
   },
   {
+    "id": "yahoo_travel-1128705",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "道後プリンスホテル 先着20名様限定 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "愛媛県／道後温泉",
+    "regions": [
+      "愛媛県"
+    ],
+    "booking_period": "～ 2026/11/09 12:00",
+    "travel_period": "2027/01/04 ～ 2027/02/04",
+    "stay_period": "2027/01/04 ～ 2027/02/04",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額40,000円以上",
+      "先着20名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1128705",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128705",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "道後プリンスホテル",
+      "hotel_url": "https://travel.yahoo.co.jp/00030525/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00030525"
+      ],
+      "accommodations": [
+        {
+          "name": "道後プリンスホテル",
+          "accommodation_id": "00030525",
+          "prefecture": "愛媛県",
+          "area": "道後温泉",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着20名様限定 5,000円OFFクーポン",
+      "min_amount": 40000,
+      "expired_at": "2026-11-09T12:00:00+09:00",
+      "checkout_begin": "2027-01-04T00:00:00+09:00",
+      "checkout_end": "2027-02-04T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1128770",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "びわ湖大津プリンスホテル 枚数限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "滋賀県／京都駅から2駅・大津駅より車で約10分",
+    "regions": [
+      "滋賀県"
+    ],
+    "booking_period": "～ 2026/11/09 12:00",
+    "travel_period": "2026/11/01 ～ 2026/11/30",
+    "stay_period": "2026/11/01 ～ 2026/11/30",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額12,500円以上",
+      "枚数限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1128770",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128770",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "びわ湖大津プリンスホテル",
+      "hotel_url": "https://travel.yahoo.co.jp/00000635/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000635"
+      ],
+      "accommodations": [
+        {
+          "name": "びわ湖大津プリンスホテル",
+          "accommodation_id": "00000635",
+          "prefecture": "滋賀県",
+          "area": "京都駅から2駅・大津駅より車で約10分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "枚数限定 1,000円OFFクーポン",
+      "min_amount": 12500,
+      "expired_at": "2026-11-09T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-11-30T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1122428",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -599,6 +732,74 @@
       "expired_at": "2026-11-10T12:00:00+09:00",
       "checkout_begin": "2026-10-19T00:00:00+09:00",
       "checkout_end": "2026-12-23T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127776",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "アルモントホテル仙台 枚数限定 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "宮城県／仙台駅から徒歩5分",
+    "regions": [
+      "宮城県"
+    ],
+    "booking_period": "～ 2026/11/15 12:00",
+    "travel_period": "2026/11/01 ～ 2027/04/30",
+    "stay_period": "2026/11/01 ～ 2027/04/30",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額14,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127776",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127776",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "アルモントホテル仙台",
+      "hotel_url": "https://travel.yahoo.co.jp/00081831/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00081831"
+      ],
+      "accommodations": [
+        {
+          "name": "アルモントホテル仙台",
+          "accommodation_id": "00081831",
+          "prefecture": "宮城県",
+          "area": "仙台駅から徒歩5分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "枚数限定 2,000円OFFクーポン",
+      "min_amount": 14000,
+      "expired_at": "2026-11-15T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-04-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-01.json"
@@ -1077,6 +1278,140 @@
     }
   },
   {
+    "id": "yahoo_travel-1114614",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "上七軒 億 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "京都府／上七軒",
+    "regions": [
+      "京都府"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2027/03/19",
+    "stay_period": "2026/11/01 ～ 2027/03/19",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額50,000円以上",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1114614",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1114614",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "上七軒 億",
+      "hotel_url": "https://travel.yahoo.co.jp/00002460/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002460"
+      ],
+      "accommodations": [
+        {
+          "name": "上七軒 億",
+          "accommodation_id": "00002460",
+          "prefecture": "京都府",
+          "area": "上七軒",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "2,000円OFFクーポン",
+      "min_amount": 50000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-03-19T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1121496",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ベストウェスタン沖縄恩納ビーチ 先着50名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "沖縄県／恩納村",
+    "regions": [
+      "沖縄県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/26 ～ 2026/12/25",
+    "stay_period": "2026/11/26 ～ 2026/12/25",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額10,000円以上",
+      "先着50名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1121496",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1121496",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ベストウェスタン沖縄恩納ビーチ",
+      "hotel_url": "https://travel.yahoo.co.jp/00030136/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00030136"
+      ],
+      "accommodations": [
+        {
+          "name": "ベストウェスタン沖縄恩納ビーチ",
+          "accommodation_id": "00030136",
+          "prefecture": "沖縄県",
+          "area": "恩納村",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着50名様限定 1,000円OFFクーポン",
+      "min_amount": 10000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-26T00:00:00+09:00",
+      "checkout_end": "2026-12-25T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1122607",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -1139,6 +1474,478 @@
       "checkout_begin": "2026-10-18T00:00:00+09:00",
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127267",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "巛-sen-湯河原 先着30名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "神奈川県／湯河原温泉",
+    "regions": [
+      "神奈川県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2026/12/24",
+    "stay_period": "2026/11/01 ～ 2026/12/24",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "先着30名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127267",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127267",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "巛-sen-湯河原",
+      "hotel_url": "https://travel.yahoo.co.jp/00003027/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00003027"
+      ],
+      "accommodations": [
+        {
+          "name": "巛-sen-湯河原",
+          "accommodation_id": "00003027",
+          "prefecture": "神奈川県",
+          "area": "湯河原温泉",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着30名様限定 1,000円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-12-24T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127270",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "オーベルジュほまち 三國湊 先着20名様限定 3,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "福井県／坂井市",
+    "regions": [
+      "福井県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2026/12/24",
+    "stay_period": "2026/11/01 ～ 2026/12/24",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "先着20名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127270",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127270",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "オーベルジュほまち 三國湊",
+      "hotel_url": "https://travel.yahoo.co.jp/00003174/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00003174"
+      ],
+      "accommodations": [
+        {
+          "name": "オーベルジュほまち 三國湊",
+          "accommodation_id": "00003174",
+          "prefecture": "福井県",
+          "area": "坂井市",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "先着20名様限定 3,000円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-12-24T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127273",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "祝い宿 寿庵 先着15名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "栃木県／日光市川治温泉",
+    "regions": [
+      "栃木県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2026/12/24",
+    "stay_period": "2026/11/01 ～ 2026/12/24",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額40,000円以上",
+      "先着15名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127273",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127273",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "祝い宿 寿庵",
+      "hotel_url": "https://travel.yahoo.co.jp/00001926/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00001926"
+      ],
+      "accommodations": [
+        {
+          "name": "祝い宿 寿庵",
+          "accommodation_id": "00001926",
+          "prefecture": "栃木県",
+          "area": "日光市川治温泉",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着15名様限定 1,000円OFFクーポン",
+      "min_amount": 40000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-12-24T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127398",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "碧き凪ぎの宿 明治館 先着10名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "静岡県／土肥温泉",
+    "regions": [
+      "静岡県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2026/12/24",
+    "stay_period": "2026/11/01 ～ 2026/12/24",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額50,000円以上",
+      "先着10名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127398",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127398",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "碧き凪ぎの宿 明治館",
+      "hotel_url": "https://travel.yahoo.co.jp/00031236/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00031236"
+      ],
+      "accommodations": [
+        {
+          "name": "碧き凪ぎの宿 明治館",
+          "accommodation_id": "00031236",
+          "prefecture": "静岡県",
+          "area": "土肥温泉",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着10名様限定 1,000円OFFクーポン",
+      "min_amount": 50000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-12-24T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127565",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "The358 SORA 枚数限定 3,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "福岡県／福岡市",
+    "regions": [
+      "福岡県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2027/01/31",
+    "stay_period": "2026/11/01 ～ 2027/01/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127565",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127565",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "The358 SORA",
+      "hotel_url": "https://travel.yahoo.co.jp/00002953/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002953"
+      ],
+      "accommodations": [
+        {
+          "name": "The358 SORA",
+          "accommodation_id": "00002953",
+          "prefecture": "福岡県",
+          "area": "福岡市",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "枚数限定 3,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-01-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127566",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "The358 UMI 枚数限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "福岡県／福岡市総合体育館バス停 徒歩5分",
+    "regions": [
+      "福岡県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2027/01/31",
+    "stay_period": "2026/11/01 ～ 2027/01/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額15,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127566",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127566",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "The358 UMI",
+      "hotel_url": "https://travel.yahoo.co.jp/00082071/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00082071"
+      ],
+      "accommodations": [
+        {
+          "name": "The358 UMI",
+          "accommodation_id": "00082071",
+          "prefecture": "福岡県",
+          "area": "福岡市総合体育館バス停 徒歩5分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "枚数限定 1,000円OFFクーポン",
+      "min_amount": 15000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-01-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1128609",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ホテルグリーンパーク津 先着10名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "三重県／JR・近鉄 津駅 直結",
+    "regions": [
+      "三重県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/12/16 ～ 2027/02/28",
+    "stay_period": "2026/12/16 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額13,000円以上",
+      "先着10名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1128609",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128609",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "ホテルグリーンパーク津",
+      "hotel_url": "https://travel.yahoo.co.jp/00080221/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00080221"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルグリーンパーク津",
+          "accommodation_id": "00080221",
+          "prefecture": "三重県",
+          "area": "JR・近鉄 津駅 直結",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "先着10名様限定 1,000円OFFクーポン",
+      "min_amount": 13000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-12-16T00:00:00+09:00",
+      "checkout_end": "2027-02-28T00:00:00+09:00",
+      "day_use_exclude": false,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-01.json"
     }
@@ -1273,6 +2080,73 @@
       "expired_at": "2026-11-30T12:00:00+09:00",
       "checkout_begin": "2026-11-01T00:00:00+09:00",
       "checkout_end": "2026-11-30T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1129903",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "奥日光ホテル四季彩 先着30名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "栃木県／中禅寺湖",
+    "regions": [
+      "栃木県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2027/01/31",
+    "stay_period": "2026/11/01 ～ 2027/01/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額25,000円以上",
+      "先着30名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1129903",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1129903",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "奥日光ホテル四季彩",
+      "hotel_url": "https://travel.yahoo.co.jp/00000537/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000537"
+      ],
+      "accommodations": [
+        {
+          "name": "奥日光ホテル四季彩",
+          "accommodation_id": "00000537",
+          "prefecture": "栃木県",
+          "area": "中禅寺湖",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着30名様限定 1,000円OFFクーポン",
+      "min_amount": 25000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-01.json"
@@ -1546,6 +2420,205 @@
     }
   },
   {
+    "id": "yahoo_travel-1125257",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "たびのホテルlit豊川駅前 枚数限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "愛知県／JR豊川駅から徒歩1分",
+    "regions": [
+      "愛知県"
+    ],
+    "booking_period": "～ 2026/12/31 12:00",
+    "travel_period": "2026/11/01 ～ 2027/01/31",
+    "stay_period": "2026/11/01 ～ 2027/01/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額8,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1125257",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1125257",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "たびのホテルlit豊川駅前",
+      "hotel_url": "https://travel.yahoo.co.jp/00082811/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00082811"
+      ],
+      "accommodations": [
+        {
+          "name": "たびのホテルlit豊川駅前",
+          "accommodation_id": "00082811",
+          "prefecture": "愛知県",
+          "area": "JR豊川駅から徒歩1分",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "枚数限定 1,000円OFFクーポン",
+      "min_amount": 8000,
+      "expired_at": "2026-12-31T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-01-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1125259",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "サンフロンティアホテルズ 枚数限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大阪府／地下鉄四つ橋線 住之江公園駅徒歩1分",
+    "regions": [
+      "大阪府",
+      "愛知県",
+      "岐阜県",
+      "北海道",
+      "熊本県",
+      "栃木県",
+      "千葉県"
+    ],
+    "booking_period": "～ 2026/12/31 12:00",
+    "travel_period": "2026/11/01 ～ 2027/01/31",
+    "stay_period": "2026/11/01 ～ 2027/01/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額8,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "対象施設8軒（グループ共通）",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1125259",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1125259",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "サンフロンティアホテルズ",
+      "hotel_url": "https://travel.yahoo.co.jp/00080676/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00080676",
+        "00081399",
+        "00081545",
+        "00082189",
+        "00082722",
+        "00082750",
+        "00082788",
+        "00916365"
+      ],
+      "accommodations": [
+        {
+          "name": "日和ホテル大阪住之江公園駅前",
+          "accommodation_id": "00080676",
+          "prefecture": "大阪府",
+          "area": "地下鉄四つ橋線 住之江公園駅徒歩1分",
+          "large_area": "西日本"
+        },
+        {
+          "name": "招き湯 スプリングサニーホテル名古屋常滑駅前",
+          "accommodation_id": "00081399",
+          "prefecture": "愛知県",
+          "area": "名鉄常滑駅より徒歩約1分",
+          "large_area": "中日本"
+        },
+        {
+          "name": "たびのホテル飛騨高山",
+          "accommodation_id": "00081545",
+          "prefecture": "岐阜県",
+          "area": "高山駅より無料シャトルバス、約10分",
+          "large_area": "中日本"
+        },
+        {
+          "name": "日和ホテルフレックス大阪道頓堀",
+          "accommodation_id": "00082189",
+          "prefecture": "大阪府",
+          "area": "難波駅徒歩3分",
+          "large_area": "西日本"
+        },
+        {
+          "name": "たびのホテル石狩",
+          "accommodation_id": "00082722",
+          "prefecture": "北海道",
+          "area": "JR手稲駅より車で約１５分",
+          "large_area": "東日本"
+        },
+        {
+          "name": "たびのホテル阿蘇熊本空港",
+          "accommodation_id": "00082750",
+          "prefecture": "熊本県",
+          "area": "阿蘇くまもと空港 から車で 約12分",
+          "large_area": "西日本"
+        },
+        {
+          "name": "たびのホテル宇都宮ゆいの杜",
+          "accommodation_id": "00082788",
+          "prefecture": "栃木県",
+          "area": "「ゆいの杜東駅」より徒歩14分",
+          "large_area": "東日本"
+        },
+        {
+          "name": "たびのホテルEXpress成田",
+          "accommodation_id": "00916365",
+          "prefecture": "千葉県",
+          "area": "成田空港から車で10分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "枚数限定 1,000円OFFクーポン",
+      "min_amount": 8000,
+      "expired_at": "2026-12-31T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-01-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": true,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1079160",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -1742,6 +2815,74 @@
     }
   },
   {
+    "id": "yahoo_travel-1114424",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "オーベルジュ 北の暖暖 先着50名様限定 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "北海道／網走・オホーツク",
+    "regions": [
+      "北海道"
+    ],
+    "booking_period": "～ 2027/03/31 12:00",
+    "travel_period": "2026/10/05 ～ 2027/03/31",
+    "stay_period": "2026/10/05 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額40,000円以上",
+      "先着50名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1114424",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1114424",
+      "origin_provider": "ikkyu",
+      "shared_with": [
+        "ikkyu"
+      ],
+      "hotel_name": "オーベルジュ 北の暖暖",
+      "hotel_url": "https://travel.yahoo.co.jp/00002274/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002274"
+      ],
+      "accommodations": [
+        {
+          "name": "オーベルジュ 北の暖暖",
+          "accommodation_id": "00002274",
+          "prefecture": "北海道",
+          "area": "網走・オホーツク",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着50名様限定 5,000円OFFクーポン",
+      "min_amount": 40000,
+      "expired_at": "2027-03-31T12:00:00+09:00",
+      "checkout_begin": "2026-10-05T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1121431",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -1803,137 +2944,6 @@
       "checkout_begin": "2026-10-18T00:00:00+09:00",
       "checkout_end": "2027-09-30T00:00:00+09:00",
       "day_use_exclude": false,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
-    }
-  },
-  {
-    "id": "yahoo_travel-1108400",
-    "provider": "yahoo_travel",
-    "provider_label": "Yahoo!トラベル",
-    "site_targets": [
-      "welltrip",
-      "yakushimafan"
-    ],
-    "article_slug": "yahoo-travel-coupon",
-    "title": "京都丹波ヴィラアシタニ 先着10名様限定 5,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "5,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "京都府／南丹市",
-    "regions": [
-      "京都府"
-    ],
-    "booking_period": "～ 2026/11/01 12:00",
-    "travel_period": "2026/10/01 ～ 2027/03/31",
-    "stay_period": "2026/10/01 ～ 2027/03/31",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額30,000円以上",
-      "先着10名様限定",
-      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
-    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1108400",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-11-01",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1108400",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "京都丹波ヴィラアシタニ",
-      "hotel_url": "https://travel.yahoo.co.jp/00913470/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00913470"
-      ],
-      "accommodations": [
-        {
-          "name": "京都丹波ヴィラアシタニ",
-          "accommodation_id": "00913470",
-          "prefecture": "京都府",
-          "area": "南丹市",
-          "large_area": "西日本"
-        }
-      ],
-      "large_area": "西日本",
-      "description": "先着10名様限定 5,000円OFFクーポン",
-      "min_amount": 30000,
-      "expired_at": "2026-11-01T12:00:00+09:00",
-      "checkout_begin": "2026-10-01T00:00:00+09:00",
-      "checkout_end": "2027-03-31T00:00:00+09:00",
-      "day_use_exclude": false,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
-    }
-  },
-  {
-    "id": "yahoo_travel-1122856",
-    "provider": "yahoo_travel",
-    "provider_label": "Yahoo!トラベル",
-    "site_targets": [
-      "welltrip",
-      "yakushimafan"
-    ],
-    "article_slug": "yahoo-travel-coupon",
-    "title": "ホテル京福 福井駅前 枚数限定 500円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "500円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "福井県／福井",
-    "regions": [
-      "福井県"
-    ],
-    "booking_period": "～ 2026/11/01 12:00",
-    "travel_period": "2026/11/29 ～ 2026/12/28",
-    "stay_period": "2026/11/29 ～ 2026/12/28",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額7,500円以上",
-      "枚数限定",
-      "デイユース（日帰り）は対象外",
-      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
-    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1122856",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-11-01",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1122856",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "hotel_name": "ホテル京福 福井駅前",
-      "hotel_url": "https://travel.yahoo.co.jp/00901668/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00901668"
-      ],
-      "accommodations": [
-        {
-          "name": "ホテル京福 福井駅前",
-          "accommodation_id": "00901668",
-          "prefecture": "福井県",
-          "area": "福井",
-          "large_area": "中日本"
-        }
-      ],
-      "large_area": "中日本",
-      "description": "枚数限定 500円OFFクーポン",
-      "min_amount": 7500,
-      "expired_at": "2026-11-01T12:00:00+09:00",
-      "checkout_begin": "2026-11-29T00:00:00+09:00",
-      "checkout_end": "2026-12-28T00:00:00+09:00",
-      "day_use_exclude": true,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-01.json"
     }
@@ -2331,6 +3341,72 @@
     }
   },
   {
+    "id": "yahoo_travel-1128338",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "郡山ビューホテルアネックス 枚数限定 500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "福島県／JR郡山駅西口徒歩5分",
+    "regions": [
+      "福島県"
+    ],
+    "booking_period": "～ 2026/11/25 12:00",
+    "travel_period": "2026/11/01 ～ 2027/03/31",
+    "stay_period": "2026/11/01 ～ 2027/03/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額10,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1128338",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128338",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "郡山ビューホテルアネックス",
+      "hotel_url": "https://travel.yahoo.co.jp/00000326/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000326"
+      ],
+      "accommodations": [
+        {
+          "name": "郡山ビューホテルアネックス",
+          "accommodation_id": "00000326",
+          "prefecture": "福島県",
+          "area": "JR郡山駅西口徒歩5分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "枚数限定 500円OFFクーポン",
+      "min_amount": 10000,
+      "expired_at": "2026-11-25T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-03-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
     "id": "yahoo_travel-1058991",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
@@ -2462,7 +3538,7 @@
     }
   },
   {
-    "id": "yahoo_travel-1127313",
+    "id": "yahoo_travel-1127268",
     "provider": "yahoo_travel",
     "provider_label": "Yahoo!トラベル",
     "site_targets": [
@@ -2470,26 +3546,26 @@
       "yakushimafan"
     ],
     "article_slug": "yahoo-travel-coupon",
-    "title": "竹あかりの宿 加賀助 先着15名様限定 1,000円OFFクーポン",
+    "title": "箱根芦ノ湖 HOTEL RaKuun（ホテルラクーン） 先着30名様限定 1,000円OFFクーポン",
     "category": "宿限定クーポン",
     "discount": "1,000円割引",
     "stock_status": "配布中",
     "product_type": "宿泊",
-    "area": "岩手県／岩手郡",
+    "area": "神奈川県／足柄下",
     "regions": [
-      "岩手県"
+      "神奈川県"
     ],
     "booking_period": "～ 2026/11/30 12:00",
-    "travel_period": "2026/10/28 ～ 2026/12/24",
-    "stay_period": "2026/10/28 ～ 2026/12/24",
+    "travel_period": "2026/11/01 ～ 2026/12/24",
+    "stay_period": "2026/11/01 ～ 2026/12/24",
     "coupon_codes": [],
     "conditions": [
-      "予約金額15,000円以上",
-      "先着15名様限定",
+      "予約金額25,000円以上",
+      "先着30名様限定",
       "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
     ],
     "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
-    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127313",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127268",
     "source_type": "official_page",
     "fetch_method": "nuxt_data",
     "last_checked": "2026-11-01",
@@ -2498,30 +3574,227 @@
     "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
     "detail_data": {
       "platform": "ikyu",
-      "platform_manage_id": "1127313",
+      "platform_manage_id": "1127268",
       "origin_provider": "ikkyu",
       "shared_with": [],
-      "hotel_name": "竹あかりの宿 加賀助",
-      "hotel_url": "https://travel.yahoo.co.jp/00918181/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "hotel_name": "箱根芦ノ湖 HOTEL RaKuun（ホテルラクーン）",
+      "hotel_url": "https://travel.yahoo.co.jp/00909012/?discsort=1&lc=1&ppc=2&rc=1&st=1",
       "accommodation_ids": [
-        "00918181"
+        "00909012"
       ],
       "accommodations": [
         {
-          "name": "竹あかりの宿 加賀助",
-          "accommodation_id": "00918181",
-          "prefecture": "岩手県",
-          "area": "岩手郡",
+          "name": "箱根芦ノ湖 HOTEL RaKuun（ホテルラクーン）",
+          "accommodation_id": "00909012",
+          "prefecture": "神奈川県",
+          "area": "足柄下",
           "large_area": "東日本"
         }
       ],
       "large_area": "東日本",
-      "description": "先着15名様限定 1,000円OFFクーポン",
-      "min_amount": 15000,
+      "description": "先着30名様限定 1,000円OFFクーポン",
+      "min_amount": 25000,
       "expired_at": "2026-11-30T12:00:00+09:00",
-      "checkout_begin": "2026-10-28T00:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
       "checkout_end": "2026-12-24T00:00:00+09:00",
       "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127274",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "丹泉ホテル 先着20名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "山形県／南陽",
+    "regions": [
+      "山形県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2026/12/24",
+    "stay_period": "2026/11/01 ～ 2026/12/24",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額32,000円以上",
+      "先着20名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127274",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127274",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "丹泉ホテル",
+      "hotel_url": "https://travel.yahoo.co.jp/00902730/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00902730"
+      ],
+      "accommodations": [
+        {
+          "name": "丹泉ホテル",
+          "accommodation_id": "00902730",
+          "prefecture": "山形県",
+          "area": "南陽",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着20名様限定 1,000円OFFクーポン",
+      "min_amount": 32000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-12-24T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1127303",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "別邸 花水晶 先着30名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "山梨県／笛吹",
+    "regions": [
+      "山梨県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/01 ～ 2026/12/24",
+    "stay_period": "2026/11/01 ～ 2026/12/24",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "先着30名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1127303",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1127303",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "別邸 花水晶",
+      "hotel_url": "https://travel.yahoo.co.jp/00910410/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00910410"
+      ],
+      "accommodations": [
+        {
+          "name": "別邸 花水晶",
+          "accommodation_id": "00910410",
+          "prefecture": "山梨県",
+          "area": "笛吹",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "先着30名様限定 1,000円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2026-12-24T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1086894",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "HOTEL day by day（ホテル デイ バイ デイ） 先着20名様限定 500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "静岡県／JR浜松駅徒歩8分",
+    "regions": [
+      "静岡県"
+    ],
+    "booking_period": "～ 2026/12/01 12:00",
+    "travel_period": "2026/12/01 ～ 2026/12/31",
+    "stay_period": "2026/12/01 ～ 2026/12/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額6,120円以上",
+      "先着20名様限定",
+      "デイユース（日帰り）は対象外",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1086894",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1086894",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "HOTEL day by day（ホテル デイ バイ デイ）",
+      "hotel_url": "https://travel.yahoo.co.jp/00080588/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00080588"
+      ],
+      "accommodations": [
+        {
+          "name": "HOTEL day by day（ホテル デイ バイ デイ）",
+          "accommodation_id": "00080588",
+          "prefecture": "静岡県",
+          "area": "JR浜松駅徒歩8分",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "先着20名様限定 500円OFFクーポン",
+      "min_amount": 6120,
+      "expired_at": "2026-12-01T12:00:00+09:00",
+      "checkout_begin": "2026-12-01T00:00:00+09:00",
+      "checkout_end": "2026-12-31T00:00:00+09:00",
+      "day_use_exclude": true,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-01.json"
     }
@@ -3297,6 +4570,71 @@
       "expired_at": "2026-12-31T12:00:00+09:00",
       "checkout_begin": "2026-10-07T00:00:00+09:00",
       "checkout_end": "2027-01-31T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-01.json"
+    }
+  },
+  {
+    "id": "yahoo_travel-1129929",
+    "provider": "yahoo_travel",
+    "provider_label": "Yahoo!トラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "yahoo-travel-coupon",
+    "title": "ピースワン七戸十和田 先着10名様限定 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "青森県／十和田",
+    "regions": [
+      "青森県"
+    ],
+    "booking_period": "～ 2026/12/31 12:00",
+    "travel_period": "2026/11/02 ～ 2027/02/28",
+    "stay_period": "2026/11/02 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額60,000円以上",
+      "先着10名様限定",
+      "Yahoo! JAPAN IDでログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://travel.yahoo.co.jp/coupons/accommodations",
+    "detail_url": "https://travel.yahoo.co.jp/coupons/accommodations?cmid=1129929",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-01",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "Yahoo!トラベルの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1129929",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ピースワン七戸十和田",
+      "hotel_url": "https://travel.yahoo.co.jp/00919901/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00919901"
+      ],
+      "accommodations": [
+        {
+          "name": "ピースワン七戸十和田",
+          "accommodation_id": "00919901",
+          "prefecture": "青森県",
+          "area": "十和田",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着10名様限定 5,000円OFFクーポン",
+      "min_amount": 60000,
+      "expired_at": "2026-12-31T12:00:00+09:00",
+      "checkout_begin": "2026-11-02T00:00:00+09:00",
+      "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-01.json"
