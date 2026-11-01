@@ -1,0 +1,17 @@
+{
+  "provider_id": "traveloka",
+  "provider_label": "Traveloka",
+  "generated_at": "2026-11-02T07:36:36.644985+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開一覧は取得できたが、クーポンの具体的な金額・期間・国内適用条件が本文に表示されず。",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/traveloka/hints_2026-11-02.json"
+}

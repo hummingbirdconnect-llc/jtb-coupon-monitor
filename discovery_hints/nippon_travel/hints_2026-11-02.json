@@ -1,0 +1,32 @@
+{
+  "provider_id": "nippon_travel",
+  "provider_label": "日本旅行",
+  "generated_at": "2026-11-02T07:36:36.644985+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 2,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "創業121周年！感謝祭 121時間限定タイムセール",
+      "kind": "sale",
+      "found_url": "https://x.com/toraQP/status/2116755067470795013",
+      "official_url": "https://www.nta.co.jp/cpn/anniversary/timesale/",
+      "official_domain_match": true,
+      "evidence": "専用ページ経由の国内宿泊・JR＋宿泊・航空＋宿泊。旅行代金設定のある子供も対象。ほかの割引・クーポンは併用不可。",
+      "observed_date": "2026-11-02",
+      "discount": "お1人様あたり5%割引",
+      "period": "予約期間：2026年10月30日(金)15:00～11月4日(水)15:59；出発対象期間：2026年10月31日(土)～12月30日(水)",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/nippon_travel/hints_2026-11-02.json"
+}

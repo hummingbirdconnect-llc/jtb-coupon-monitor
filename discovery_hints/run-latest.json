@@ -1,91 +1,91 @@
 {
-  "completed_at": "2026-11-01T07:33:39.014730+09:00",
+  "completed_at": "2026-11-02T07:36:36.644985+09:00",
   "scope": "codex-auto",
-  "provider_count": 13,
-  "error_count": 5,
-  "candidate_count": 13,
-  "new_count": 12,
+  "provider_count": 37,
+  "error_count": 8,
+  "candidate_count": 24,
+  "new_count": 17,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
       "status": "error",
-      "error": "公開一覧の一部条件が未表示。九州ふっこう応援割はWeb取得不可、curl再取得も証明書検証エラー。Chrome起動失敗のため未確認。",
+      "error": "公式ページ本文が動的表示で名称・割引条件を取得できず。Chrome起動失敗、ブラウザUser-Agent付きcurl再取得も失敗。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/his/hints_2026-11-02.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/jtb/hints_2026-11-01.json"
+      "candidate_count": 5,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jtb/hints_2026-11-02.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
-      "status": "error",
-      "error": "クーポン一覧の本文が未表示。Chrome起動失敗、ブラウザUser-Agentで再取得しても改善なし。別の公式キャンペーン一覧は確認済み。",
+      "status": "ok",
+      "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/knt/hints_2026-11-02.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "status": "ok",
       "error": "",
-      "candidate_count": 3,
-      "new_count": 3,
-      "hints_file": "discovery_hints/jalpack/hints_2026-11-01.json"
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jalpack/hints_2026-11-02.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 5,
-      "new_count": 5,
-      "hints_file": "discovery_hints/jalan/hints_2026-11-01.json"
+      "status": "error",
+      "error": "スペシャルウィークの公開ページ内に掲載期間と古い終了日の不一致があり、現時点の条件を確定できず。ログイン未実施。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jalan/hints_2026-11-02.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-01.json"
+      "candidate_count": 5,
+      "new_count": 5,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-02.json"
     },
     {
       "provider_id": "ikkyu",
       "provider_label": "一休",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-11-01.json"
+      "candidate_count": 2,
+      "new_count": 2,
+      "hints_file": "discovery_hints/ikkyu/hints_2026-11-02.json"
     },
     {
       "provider_id": "yahoo_travel",
       "provider_label": "Yahoo!トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
+      "candidate_count": 2,
       "new_count": 0,
-      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-02.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
       "status": "error",
-      "error": "公開クーポン一覧と那須ワールドモンキーパークのチケット本文が未表示。Chrome起動失敗、ブラウザUser-Agentで再取得しても改善なし。",
+      "error": "公開クーポン一覧の本文が動的表示で取得できず。Chrome起動失敗、User-Agent付きcurl再取得でも条件表示なし。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/asoview/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/asoview/hints_2026-11-02.json"
     },
     {
       "provider_id": "tobu_top_tours",
@@ -94,7 +94,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-02.json"
     },
     {
       "provider_id": "booking",
@@ -103,25 +103,241 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/booking/hints_2026-11-02.json"
     },
     {
       "provider_id": "rurubu_travel",
       "provider_label": "るるぶトラベル",
       "status": "error",
-      "error": "公式クーポン一覧は本文なし。Chrome起動失敗、ブラウザUser-Agentで再取得しても改善なし。新潟の個別ページもJavaScriptによる判定が必要。",
+      "error": "検索結果に施策はあるが公式ページを開いても本文を取得できず。Chrome起動失敗、User-Agent付きcurl再取得でも本文なし。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-02.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
-      "status": "error",
-      "error": "公開の日本向け一覧で名称・割引額は読めたが、利用期間を確認できず採用不可。Xの限定コードも国内適用・期間を公式確認できなかった。",
+      "status": "ok",
+      "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-11-01.json"
+      "hints_file": "discovery_hints/klook/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "jtrip",
+      "provider_label": "ジェイトリップ",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jtrip/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "relux",
+      "provider_label": "Relux",
+      "status": "error",
+      "error": "登録済みタイムセールURLはcurl再取得で404。トップページは取得できたが、新規施策の金額・期間を確定できず。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/relux/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "activityjapan",
+      "provider_label": "アクティビティジャパン",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/activityjapan/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "club_tourism",
+      "provider_label": "クラブツーリズム",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/club_tourism/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "jr_tokai_tours",
+      "provider_label": "JR東海ツアーズ",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jr_tokai_tours/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "skypack_tours",
+      "provider_label": "スカイパックツアーズ",
+      "status": "error",
+      "error": "公式サイト取得がWebツールで502、ブラウザUser-Agent付きcurlでもTLS証明書検証エラー。Chrome起動失敗。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/skypack_tours/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "yomiuri_travel",
+      "provider_label": "読売旅行",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/yomiuri_travel/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "toku",
+      "provider_label": "トクー",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/toku/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "newt",
+      "provider_label": "NEWT",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/newt/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "surprice",
+      "provider_label": "Surprice",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/surprice/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "traveloka",
+      "provider_label": "Traveloka",
+      "status": "error",
+      "error": "公開一覧は取得できたが、クーポンの具体的な金額・期間・国内適用条件が本文に表示されず。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/traveloka/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "airtrip",
+      "provider_label": "エアトリ",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/airtrip/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "skyticket",
+      "provider_label": "スカイチケット",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/skyticket/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "jcation",
+      "provider_label": "Jcation",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jcation/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "jalan_rentacar",
+      "provider_label": "じゃらんレンタカー",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 5,
+      "new_count": 5,
+      "hints_file": "discovery_hints/jalan_rentacar/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "tabirai_rentacar",
+      "provider_label": "たびらいレンタカー",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/tabirai_rentacar/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "nippon_travel",
+      "provider_label": "日本旅行",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/nippon_travel/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "hankyu_travel",
+      "provider_label": "阪急交通社",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/hankyu_travel/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "jamjam",
+      "provider_label": "JAMJAMライナー",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jamjam/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "jalan_pack",
+      "provider_label": "じゃらんパック",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jalan_pack/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "orion_tour",
+      "provider_label": "オリオンツアー",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/orion_tour/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "shirokuma_tour",
+      "provider_label": "しろくまツアー",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/shirokuma_tour/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "agoda",
+      "provider_label": "Agoda",
+      "status": "error",
+      "error": "公式ページ本文が動的表示で取得できず。Chrome起動失敗、User-Agent付きcurl再取得でも条件表示なし。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/agoda/hints_2026-11-02.json"
+    },
+    {
+      "provider_id": "tripcom",
+      "provider_label": "Trip.com",
+      "status": "ok",
+      "error": "",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/tripcom/hints_2026-11-02.json"
     }
   ]
 }

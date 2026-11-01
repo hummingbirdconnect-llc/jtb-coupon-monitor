@@ -1,0 +1,17 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-02T07:36:36.644985+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "スペシャルウィークの公開ページ内に掲載期間と古い終了日の不一致があり、現時点の条件を確定できず。ログイン未実施。",
+  "known_title_count": 10,
+  "registered_url_count": 7,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jalan/hints_2026-11-02.json"
+}

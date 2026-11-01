@@ -1,0 +1,46 @@
+{
+  "provider_id": "ikkyu",
+  "provider_label": "一休",
+  "generated_at": "2026-11-02T07:36:36.644985+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 66,
+  "registered_url_count": 8,
+  "candidates": [
+    {
+      "title": "一休の日セール！人気宿スペシャル",
+      "kind": "sale",
+      "found_url": "https://x.com/familytrip_cost/status/2116651052103803300",
+      "official_url": "https://www.ikyu.com/special/01/notice/",
+      "official_domain_match": true,
+      "evidence": "対象施設・プラン限定。割引とポイント付与を組み合わせる場合あり。11月開催分の予約期間と最低保証のお得度を確認。",
+      "observed_date": "2026-11-02",
+      "discount": "対象プランがオンラインカード決済で7％以上お得",
+      "period": "予約期間：2026年11月1日12:00～2026年11月9日12:00；宿泊期間：対象プランの予約可能期間に準ずる",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "ラグジュアリールームセール",
+      "kind": "sale",
+      "found_url": "https://www.ikyu.com/special/01/notice/",
+      "official_url": "https://www.ikyu.com/special/01/notice/",
+      "official_domain_match": true,
+      "evidence": "対象施設・部屋限定。オンラインカード決済時のお得度。割引とポイント付与を組み合わせる場合あり。",
+      "observed_date": "2026-11-02",
+      "discount": "対象プランがオンラインカード決済で22％以上お得",
+      "period": "予約期間：2026年11月1日12:00～2026年11月9日11:59；宿泊期間：対象プランの予約可能期間に準ずる",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/ikkyu/hints_2026-11-02.json"
+}

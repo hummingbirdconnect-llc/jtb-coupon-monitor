@@ -1,0 +1,32 @@
+{
+  "provider_id": "club_tourism",
+  "provider_label": "クラブツーリズム",
+  "generated_at": "2026-11-02T07:36:36.644985+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 2,
+  "candidates": [
+    {
+      "title": "Japan Tour Special Coupon Campaign",
+      "kind": "coupon",
+      "found_url": "https://www.club-t.com/sp/campaign/inbound/",
+      "official_url": "https://www.club-t.com/sp/campaign/inbound/",
+      "official_domain_match": true,
+      "evidence": "日本国内ツアーのWeb新規予約向け。日本人および日本在住の外国籍の方は利用不可。海外在住の外国籍旅行者向け。",
+      "observed_date": "2026-11-02",
+      "discount": "6,000円以上で1,000円割引／20,000円以上で2,000円割引",
+      "period": "応募期間：2026年6月1日～2026年11月30日23：59まで；対象ツアー：2026年6月1日～2027年3月31日出発",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/club_tourism/hints_2026-11-02.json"
+}
