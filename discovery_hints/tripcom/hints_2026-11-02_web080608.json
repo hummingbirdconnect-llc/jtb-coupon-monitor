@@ -1,0 +1,52 @@
+{
+  "provider_id": "tripcom",
+  "provider_label": "Trip.com",
+  "generated_at": "2026-11-02T08:26:17+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "もっと！国内旅！ 北海道厳選ホテル最大60%OFF（Trip.com）",
+      "kind": "coupon",
+      "found_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "official_url": "https://jp.trip.com/sale/w/37676/gojapan.html",
+      "evidence": "未確認：公式のキャンペーンページは「キャンペーン期間外です。このキャンペーンはまだ開始していません」と表示され、本文を読めなかった（同時刻の一覧ページには帯が掲載） ／ 未確認：割引率 ／ 未確認：予約期間 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-11-02",
+      "discount": "未確認（Grok: 最大60%OFF。公式の一覧ページの帯にも「北海道厳選ホテル最大60%OFF！」とある）",
+      "period": "予約：未確認（Grok: 2026年11月2日00:00～11月29日23:59） ／ 旅行：未確認",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "国内ホテルならトリップ！ 人気ホテル最大50%OFF（Trip.com）",
+      "kind": "coupon",
+      "found_url": "https://jp.trip.com/sale/deals/?locale=ja-JP",
+      "official_url": "https://jp.trip.com/sale/w/41001/jp-hotel-dealscollection.html",
+      "evidence": "未確認：公式のキャンペーンページは「キャンペーン期間外です。このキャンペーンはまだ開始していません」と表示され、本文を読めなかった（同時刻の一覧ページには帯が掲載） ／ 未確認：割引率 ／ 未確認：予約期間 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-11-02",
+      "discount": "未確認（Grok: 最大50%OFF。公式の一覧ページの帯にも「人気ホテルも最大50%OFF」とある）",
+      "period": "予約：未確認 ／ 旅行：未確認",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "イオンカード分割払い手数料無料特別セール（Trip.com）",
+      "kind": "coupon",
+      "found_url": "https://www.aeon.co.jp/campaign/member/202608-23/",
+      "official_url": "https://jp.trip.com/sale/w/3npqhqd7qbwjlv1q/aeonpayment.html",
+      "evidence": "未確認：Grokが示した公式URLはイオン（aeon.co.jp）で公式ドメイン外。一覧ページの帯から見つけた trip.com のページは「キャンペーン期間外です。まだ開始していません」と表示され本文を読めなかった ／ 未確認：特典内容 ／ 未確認：予約期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済条件",
+      "observed_date": "2026-11-02",
+      "discount": "未確認（Grok: 分割払い手数料無料。割引ではなく手数料免除）",
+      "period": "予約：未確認（Grok: 2026年9月1日～11月15日、イオン側ページ由来） ／ 旅行：未確認",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "provider_id": "kkday",
+  "provider_label": "KKday",
+  "generated_at": "2026-11-02T08:26:17+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "KKday アプリ限定 国内商品クーポン（100円／300円OFF）",
+      "kind": "coupon",
+      "found_url": "https://x.com/KKdayJP/status/2116002126329766091",
+      "official_url": "https://www.kkday.com/ja/promo/coupon-campaign",
+      "evidence": "公式：アプリ購入限定 国内商品100円OFF クーポン：KKJPALL100、国内商品300円OFF クーポン：3JXARXW ／ 公式：クーポン毎に適用条件（最低利用金額／対象商品／APP限定）が異なる。最低利用金額はプラン毎のカウント。複数クーポンの併用不可 ／ 公式：配布上限に達し次第終了。獲得済みでも利用上限に達した場合は使えない ／ 未確認：予約期間（公式ページに期限の記載なし。Grokの『11月30日まで』はX投稿由来で未確認） ／ 未確認：旅行期間 ／ 未確認：最低利用額（クーポンごと） ／ 未確認：200円OFFコードの有無",
+      "observed_date": "2026-11-02",
+      "discount": "国内商品100円OFF（コード KKJPALL100）、国内商品300円OFF（コード 3JXARXW）。未確認（Grok: 200円OFF 26SLJP200、300円OFF KKJPALL300 も挙げたが公式ページでは読めず）",
+      "period": "予約：未確認（Grok: KKJPALL100は2026年11月30日まで、公式X投稿で確認とのこと） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "KKday 晴れたらいいなOFFクーポン（国内対象施設81円OFF）",
+      "kind": "coupon",
+      "found_url": "https://www.kkday.com/ja/blog/60360/kkday-coupon",
+      "official_url": "https://www.kkday.com/ja/promo/rainy-day",
+      "evidence": "公式：晴れたらいいなOFF 国内対象施設商品81円OFF クーポン：JPRAINYDAY81。期間限定・数量限定 ／ 未確認：予約期間（期限の記載なし） ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：決済方法の条件",
+      "observed_date": "2026-11-02",
+      "discount": "国内対象施設商品81円OFF（コード JPRAINYDAY81）",
+      "period": "予約：未確認（「期間限定クーポン」「数量限定」とのみ記載） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "KKday 日光江戸村 前売りチケット 40周年特別価格（11/30まで）",
+      "kind": "coupon",
+      "found_url": "https://www.kkday.com/ja/promo/limited-sale",
+      "official_url": "https://www.kkday.com/ja/promo/limited-sale",
+      "evidence": "公式：【11/30まで・40周年特別価格】日光江戸村 前売りチケット(栃木県 日光市) を期間限定セールページで確認 ／ 未確認：割引額（300円OFFの文言は公式ページで読めず） ／ 未確認：旅行期間（利用期間） ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法の条件 ／ 未確認：Grokが示した見つけた場所（公式X投稿）のURLなし",
+      "observed_date": "2026-11-02",
+      "discount": "未確認（Grok: 300円OFF。公式の期間限定セールページでは「40周年特別価格」とだけ読めた）",
+      "period": "予約：2026年11月30日まで ／ 旅行：未確認（チケットの利用期間は商品ページ）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

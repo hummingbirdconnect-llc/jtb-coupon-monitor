@@ -1,0 +1,26 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-02T08:26:17+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭（楽天トラベル）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/10/2（金）10:00～2026/11/4（水）09:59。次回は11月4日～12月2日開催予定 ／ 公式：全楽天会員500円OFF（全曜日・先着300,000枚）、ダイヤモンド会員限定 週末4,500円・平日4,000円、ダイヤモンド・プラチナ会員限定 週末3,000円／1,500円・平日2,500円／1,000円 ／ 公式：楽パック8,000円／4,000円／500円（先着30,000枚ほか）、レンタカー20%／10%／5%OFF ／ 公式：クーポンには金額条件がある（具体額は各クーポンの利用条件ページ） ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額（クーポンごと） ／ 未確認：決済方法の条件",
+      "observed_date": "2026-11-02",
+      "discount": "国内宿泊 全楽天会員500円OFF（全曜日）。ダイヤモンド会員限定 週末4,500円・平日4,000円OFF。ダイヤモンド・プラチナ会員限定 週末3,000円／1,500円・平日2,500円／1,000円OFF。楽パック 8,000円／4,000円／500円。レンタカー 20%／10%／5%OFF",
+      "period": "予約：2026年10月2日10:00～2026年11月4日09:59（次回は11月4日～12月2日開催予定） ／ 旅行：未確認（宿クーポンごとの利用条件ページにある）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
