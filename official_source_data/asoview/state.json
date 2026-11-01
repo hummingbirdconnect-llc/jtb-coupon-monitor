@@ -1,7 +1,7 @@
 {
   "provider_id": "asoview",
-  "observed_hash": "29e721755cfd668992dd3fb0c60776f35d08e139faced21049a8e3d6b68e720e",
-  "last_checked_at": "2026-10-30T16:09:46.758242+09:00",
+  "observed_hash": "5c918827baa0cfc8884718e120f2fcbd91da17e8871a2c3eafae7061742aca7f",
+  "last_checked_at": "2026-11-02T07:18:23.569605+09:00",
   "sources": [
     {
       "url": "https://www.asoview.com/coupon/",
@@ -14,14 +14,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 972,
-      "content_hash": "1ba7716f54dd7c560aed87b00acd4c5ad190f62d5071836480f1f4c6bcff0512"
+      "text_chars": 783,
+      "content_hash": "381a58ebb80aa3b506552d483b573ece46a76201010b198d967b85281204523c"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-23T07:26:47.338597+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "5c918827baa0cfc8884718e120f2fcbd91da17e8871a2c3eafae7061742aca7f",
+  "queued_candidate_id": "asoview-5c918827baa0cfc8",
+  "queued_at": "2026-11-02T07:18:23.570239+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-24T09:10:56.812450+09:00",
   "last_audit_candidate_id": "asoview-29e721755cfd6689",
   "processed_hash": "29e721755cfd668992dd3fb0c60776f35d08e139faced21049a8e3d6b68e720e",
