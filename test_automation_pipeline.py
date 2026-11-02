@@ -8,6 +8,7 @@ import tempfile
 from datetime import date, datetime
 from pathlib import Path
 from unittest.mock import Mock, patch
+from urllib.parse import urlparse
 
 import codex_audit_runner as audit_runner
 import official_deal_monitor as monitor
@@ -221,6 +222,82 @@ def test_jalan_registry_uses_representative_scope_and_manual_queue() -> None:
         source["access_mode"] == "login_required"
         for source in jalan["manual_sources"]
     )
+
+
+# じゃらん遊び体験のスペシャルウィークは、開催中でも本文に終了文が常設で載る。
+# 監査がこの文だけを見て ended にしないよう、掲載期間を根拠にする注意書きを
+# 取得元の purpose に持たせ、それが監査候補まで届くことを確認する。
+SPECIALWEEK_PAGE_TEXT = (
+    "じゃらん遊び・体験予約 スペシャルウィーク "
+    "掲載期間：2026年10月30日〜2026年11月19日 "
+    "エリアで探す おすすめのジャンル 注目の体験スポット "
+    "『じゃらん 遊び・体験スペシャルウィーク』は11/19（木）をもちまして終了いたしました。 "
+    "ご利用ありがとうございました。"
+)
+
+
+def test_jalan_activity_specialweek_end_check_uses_posting_period_not_end_sentence() -> None:
+    provider = next(
+        item for item in runner.load_registry() if item["id"] == "jalan_activity"
+    )
+    specialweek = next(
+        source
+        for source in provider["official_sources"]
+        if source["url"] == "https://www.jalan.net/activity/theme/specialweek/"
+    )
+
+    # 掲載期間を根拠にすること、終了文で判定しないことが purpose に書かれている
+    assert "掲載期間" in specialweek["purpose"]
+    assert "終了いたしました" in specialweek["purpose"]
+    assert "ended にしない" in specialweek["purpose"]
+    assert "スペシャルウィーク" in provider["note"]
+
+    # 監査候補には、終了文・掲載期間の両方と注意書きが一緒に渡る
+    source_result = monitor._source_result(
+        specialweek,
+        ok=True,
+        status_code=200,
+        fetch_method="html",
+        text=SPECIALWEEK_PAGE_TEXT,
+        error="",
+    )
+    candidate = monitor._candidate_sources([source_result])[0]
+    assert "掲載期間：2026年10月30日〜2026年11月19日" in candidate["text"]
+    assert "終了いたしました" in candidate["text"]
+    assert "掲載期間" in candidate["purpose"]
+
+
+def test_stage2_official_sources_are_registered_and_domains_cover_them() -> None:
+    providers = {item["id"]: item for item in runner.load_registry()}
+
+    yumeyado_urls = {source["url"] for source in providers["yumeyado"]["official_sources"]}
+    assert "https://itunes.apple.com/lookup?id=6450523196&country=jp" in yumeyado_urls
+    assert "https://prtimes.jp/companyrdf.php?company_id=16236" in yumeyado_urls
+    # yumeyado.jp 配下は匿名HTTPもPlaywrightも403のため自動取得に入れない
+    assert not any(url.startswith("https://yumeyado.jp/") for url in yumeyado_urls)
+    assert {source["url"] for source in providers["yumeyado"]["manual_sources"]} == {
+        "https://yumeyado.jp/lp/cpn",
+        "https://yumeyado.jp/lp",
+    }
+
+    expedia_urls = {source["url"] for source in providers["expedia"]["official_sources"]}
+    assert (
+        "https://epotoku.eposcard.co.jp/detail/index.html?ssfid=24784" in expedia_urls
+    )
+    # 404になったJCBの旧キャンペーンページは持たない
+    assert not any("c23_012hotelscom" in url for url in expedia_urls)
+    hotels_urls = {source["url"] for source in providers["hotels"]["official_sources"]}
+    assert not any("c23_012hotelscom" in url for url in hotels_urls)
+
+    # official_domains が欠けるとCodex監査の結果が全件はじかれる
+    for provider_id in ("jalan_activity", "yumeyado", "skyscanner", "expedia", "hotels"):
+        provider = providers[provider_id]
+        domains = provider["official_domains"]
+        for source in provider["official_sources"]:
+            host = urlparse(source["url"]).hostname or ""
+            assert any(
+                host == domain or host.endswith(f".{domain}") for domain in domains
+            ), f"{provider_id}: {host}"
 
 
 def test_latest_per_provider_applies_only_newest_and_never_backfills_old() -> None:

@@ -217,7 +217,7 @@
         {
           "url": "https://www.jalan.net/activity/theme/specialweek/",
           "fetch_method": "auto",
-          "purpose": "スペシャルウィークの掲載期間と割引"
+          "purpose": "スペシャルウィークの掲載期間と割引。注意：このページは開催中でも「11/19（木）をもちまして終了いたしました」という文が本文に常設で載っている。終了判定はこの文ではなく本文の「掲載期間：」の日付で行い、掲載期間の終了日の23:59（日本時間）を過ぎるまで ended にしない。"
         },
         {
           "url": "https://www.jalan.net/jalan/activity/doc/howto/coupon_help.html",
@@ -227,7 +227,7 @@
       ],
       "master_path": "../vault_blog/ウェルトリップ/会社別/じゃらん遊び体験/coupon-master/master.md",
       "next_action": "指定時に公開特集2本とクーポン説明ページを深掘りし、掲載期間の変化をCodex監査へ送る。",
-      "note": "coupon-master由来の暫定データ。じゃらん本体とは別管理。公開されている特集2本とクーポン説明ページは2026-11-02に匿名HTTPで取得できると確認して登録。クーポン一覧（/activity/theme/coupon/）はリクルートIDのログインへ遷移するため登録しない（じゃらん側の manual_sources に既出）。"
+      "note": "coupon-master由来の暫定データ。じゃらん本体とは別管理。公開されている特集2本とクーポン説明ページは2026-11-02に匿名HTTPで取得できると確認して登録。クーポン一覧（/activity/theme/coupon/）はリクルートIDのログインへ遷移するため登録しない（じゃらん側の manual_sources に既出）。スペシャルウィークのページは開催中でも終了文が本文に出るため、終了判定は「掲載期間：」の日付だけを根拠にする（2026年開催分は2026-11-19 23:59 JSTまで配布中）。"
     },
     {
       "id": "klook",
@@ -292,12 +292,27 @@
       "coverage_status": "master_import",
       "data_dir": "manual_coupon_data/yumeyado",
       "source_type": "official_page_candidate",
-      "official_domains": ["yumeyado.jp", "play.google.com"],
+      "official_domains": [
+        "yumeyado.jp",
+        "play.google.com",
+        "itunes.apple.com",
+        "prtimes.jp"
+      ],
       "official_sources": [
         {
           "url": "https://play.google.com/store/apps/details?hl=ja&id=li.yapp.appDB4E43FC",
           "fetch_method": "auto",
           "purpose": "公式アプリの紹介（アプリ限定1,000円クーポンの告知）"
+        },
+        {
+          "url": "https://itunes.apple.com/lookup?id=6450523196&country=jp",
+          "fetch_method": "auto",
+          "purpose": "App Store公式APIのアプリ情報（初回ダウンロード1,000円offクーポンの告知と更新日）"
+        },
+        {
+          "url": "https://prtimes.jp/companyrdf.php?company_id=16236",
+          "fetch_method": "auto",
+          "purpose": "運営元ベルーナの公式リリース一覧（PR TIMES RSS・ゆめやどのセール告知を含む）"
         }
       ],
       "manual_sources": [
@@ -305,18 +320,18 @@
           "url": "https://yumeyado.jp/lp/cpn",
           "purpose": "クーポン特集（使用期限の確認）",
           "access_mode": "dynamic_browser",
-          "reason": "匿名HTTPは403 Access Deniedになるため、ブラウザでの確認待ち"
+          "reason": "匿名HTTPもmonitorのPlaywright取得も403 Access Deniedになるため、手元のブラウザでの確認待ち"
         },
         {
           "url": "https://yumeyado.jp/lp",
           "purpose": "特集一覧",
           "access_mode": "dynamic_browser",
-          "reason": "匿名HTTPは403 Access Deniedになるため、ブラウザでの確認待ち"
+          "reason": "匿名HTTPもmonitorのPlaywright取得も403 Access Deniedになるため、手元のブラウザでの確認待ち"
         }
       ],
       "master_path": "../vault_blog/ウェルトリップ/会社別/ゆめやど/coupon-master/master.md",
-      "next_action": "公式アプリ紹介ページだけ自動取得し、yumeyado.jp の2ページはブラウザ確認で補う。",
-      "note": "coupon-master由来の暫定データ。LINE・地域割は半自動確認。2026-11-02の確認では yumeyado.jp 配下は匿名HTTPが全て403のため自動取得に登録しない。クーポン特集の正しいパスは /lp/cpn で、/lp/coupon は使わない（どちらも403のため確認待ちとして manual_sources に /lp/cpn だけ残す）。"
+      "next_action": "Google Play・App Store公式APIと運営元ベルーナのPR TIMESを自動取得し、yumeyado.jp の2ページはブラウザ確認で補う。",
+      "note": "coupon-master由来の暫定データ。LINE・地域割は半自動確認。2026-11-02の確認では yumeyado.jp 配下は匿名HTTPもmonitorのPlaywright取得も403のため自動取得に登録しない。クーポン特集の正しいパスは /lp/cpn で、/lp/coupon は使わない（どちらも403のため確認待ちとして manual_sources に /lp/cpn だけ残す）。代わりにApp Store公式API（itunes.apple.com/lookup）と運営元ベルーナのPR TIMES RSSを追加した。App Store側の説明文には「1,000円offの初回DLクーポンを限定配布中」が常設で載るため、新着ではなく常設クーポンとして扱う。"
     },
     {
       "id": "rakuten_travel",
@@ -1042,6 +1057,7 @@
         "americanexpress.com",
         "aeon.co.jp",
         "jcb.co.jp",
+        "eposcard.co.jp",
         "paypay.ne.jp",
         "prtimes.jp"
       ],
@@ -1065,6 +1081,11 @@
           "url": "https://j-pointmall.jcb.co.jp/shop/907/",
           "fetch_method": "auto",
           "purpose": "JCB J-POINTモールのポイント優待倍率"
+        },
+        {
+          "url": "https://epotoku.eposcard.co.jp/detail/index.html?ssfid=24784",
+          "fetch_method": "auto",
+          "purpose": "エポスカード会員向けクーポン（ホテル8%・航空券+ホテル2,500円のコードと予約期間）"
         },
         {
           "url": "https://paypay.ne.jp/notice/20261027/c-expedia/",
@@ -1102,7 +1123,7 @@
         "../vault_blog/トリップブッキング/note/エクスペディア_003_セール割引_SWELL.html"
       ],
       "next_action": "指定時にカード会社・決済事業者の公式ページとPR TIMESを深掘りし、expedia.co.jp 側の規約はブラウザ確認で補う。",
-      "note": "記事はあるが最新クーポン取得データは未整備。2026-11-02に匿名HTTPで取得できたカード会社・決済事業者・PR TIMESの公式ページだけ登録。expedia.co.jp 配下の規約ページ（pm-tnc-*）は429の人間認証画面になり、Mastercard用のスラッグ（pm-tnc-mastercard-jp）は404のため登録しない。Visaの優待案内（jp.review.visa.com）はJavaScript描画のみで本文が取れない。イオンのページはUser-Agentを送らないHTTPだと403になるため、monitorのUser-Agent付き取得が前提。"
+      "note": "記事はあるが最新クーポン取得データは未整備。2026-11-02に匿名HTTPで取得できたカード会社・決済事業者・PR TIMESの公式ページだけ登録。エポトクプラザのエクスペディア優待（ssfid=24784）はクーポンコードが本文に載るため追加した。expedia.co.jp 配下の規約ページ（pm-tnc-*）は429の人間認証画面になり、Mastercard用のスラッグ（pm-tnc-mastercard-jp）は404のため登録しない。Visaの優待案内（jp.review.visa.com）はJavaScript描画のみで本文が取れない。イオンのページはUser-Agentを送らないHTTPだと403になるため、monitorのUser-Agent付き取得が前提。"
     },
     {
       "id": "hotels",
