@@ -2,9 +2,9 @@
   "provider_id": "yomiuri_travel",
   "provider_label": "読売旅行",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-05T06:34:26.322970+09:00",
-  "completed_at": "2026-10-05T06:34:31.203238+09:00",
-  "official_fetched_at": "2026-10-05T06:34:31.203244+09:00",
+  "started_at": "2026-11-02T09:11:42.211951+09:00",
+  "completed_at": "2026-11-02T09:11:48.224992+09:00",
+  "official_fetched_at": "2026-11-02T09:11:48.224996+09:00",
   "source_results": [
     {
       "url": "https://www.yomiuri-ryokou.co.jp/",
@@ -17,8 +17,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 5858,
-      "content_hash": "3a995d97dc84abba777014daccd814753cb5403f1a4921d20d8af29fd3872ba2"
+      "text_chars": 5881,
+      "content_hash": "d81b3d2c599266e21006a11a24664ed6cab12ebc79aa1c9db6c706c734537e52"
     }
   ],
   "failed_source_count": 0,
@@ -34,14 +34,14 @@
   "wp_review_eligible": false,
   "status": "baseline_pending",
   "change_kind": "baseline",
-  "content_hash": "c4b9bedec9894d91b136ff66cde59ff3ac55472babd79fefc3b31c36c4a6a95d",
+  "content_hash": "2426ba6167666c4b272c25e6114749db332380446da16a72b0a433316d5be483",
   "data_date": "",
   "latest_file": "",
   "coupon_count": 0,
-  "audit_candidate_id": "yomiuri_travel-c4b9bedec9894d91",
-  "audit_candidate_path": "codex_audit_queue/yomiuri_travel/yomiuri_travel-c4b9bedec9894d91.json",
+  "audit_candidate_id": "yomiuri_travel-2426ba6167666c4b",
+  "audit_candidate_path": "codex_audit_queue/yomiuri_travel/yomiuri_travel-2426ba6167666c4b.json",
   "error": "",
   "freshness_status": "unknown",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-05T06:34:31.203238+09:00"
+  "deep_dive_at": "2026-11-02T09:11:48.224992+09:00"
 }

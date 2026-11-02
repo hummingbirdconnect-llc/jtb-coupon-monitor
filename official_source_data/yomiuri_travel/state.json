@@ -1,7 +1,7 @@
 {
   "provider_id": "yomiuri_travel",
-  "observed_hash": "c4b9bedec9894d91b136ff66cde59ff3ac55472babd79fefc3b31c36c4a6a95d",
-  "last_checked_at": "2026-10-05T06:34:31.203647+09:00",
+  "observed_hash": "2426ba6167666c4b272c25e6114749db332380446da16a72b0a433316d5be483",
+  "last_checked_at": "2026-11-02T09:11:48.225381+09:00",
   "sources": [
     {
       "url": "https://www.yomiuri-ryokou.co.jp/",
@@ -14,14 +14,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 5858,
-      "content_hash": "3a995d97dc84abba777014daccd814753cb5403f1a4921d20d8af29fd3872ba2"
+      "text_chars": 5881,
+      "content_hash": "d81b3d2c599266e21006a11a24664ed6cab12ebc79aa1c9db6c706c734537e52"
     }
   ],
-  "queued_hash": "c4b9bedec9894d91b136ff66cde59ff3ac55472babd79fefc3b31c36c4a6a95d",
-  "queued_candidate_id": "yomiuri_travel-c4b9bedec9894d91",
-  "queued_at": "2026-10-05T06:34:31.204096+09:00",
-  "last_audit_status": "held",
+  "queued_hash": "2426ba6167666c4b272c25e6114749db332380446da16a72b0a433316d5be483",
+  "queued_candidate_id": "yomiuri_travel-2426ba6167666c4b",
+  "queued_at": "2026-11-02T09:11:48.225819+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-15T14:39:06.167053+09:00",
   "last_audit_candidate_id": "yomiuri_travel-c4b9bedec9894d91"
 }
