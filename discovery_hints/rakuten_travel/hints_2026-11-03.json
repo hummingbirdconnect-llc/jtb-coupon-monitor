@@ -1,0 +1,32 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-03T07:33:33.620334+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "楽天トラベル 秋冬SALE",
+      "kind": "sale",
+      "found_url": "https://x.com/trawi_site/status/2116423446527676563",
+      "official_url": "https://travel.rakuten.co.jp/special/sales/",
+      "official_domain_match": true,
+      "evidence": "公式公開ページで国内ホテルのクーポン併用（最大10%＋最大20％）を確認。個別クーポンの予約・宿泊期間は未確認。別枠のポイント企画の期間は転用しない。",
+      "observed_date": "2026-11-03",
+      "discount": "ホテル・宿 最大30%OFF",
+      "period": "",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-03.json"
+}

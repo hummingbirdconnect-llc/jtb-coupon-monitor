@@ -1,0 +1,17 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-11-03T07:33:33.620334+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式ページの本文がJavaScript依存。Chrome起動失敗。ブラウザUAと証明書指定のcurl再取得でも金額・期間を読めず。",
+  "known_title_count": 56,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/his/hints_2026-11-03.json"
+}
