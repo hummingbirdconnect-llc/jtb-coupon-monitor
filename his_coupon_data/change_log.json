@@ -9490,5 +9490,23 @@
     "region_labels": [
       "首都圏版"
     ]
+  },
+  {
+    "date": "2026-11-03",
+    "type": "🆕 新規",
+    "id": "2dc7e09acbda-1114d6",
+    "category": "【東北・新潟発着】国内ツアー",
+    "title": "＼思い立ったら旅に出よう／東北・新潟発着国内ツアーが最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
   }
 ]
