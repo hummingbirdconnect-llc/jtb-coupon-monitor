@@ -15,7 +15,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608jtbcpnew/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 288,
+    "stock_remaining": 267,
     "stock_total": 7000,
     "stock_tiers": [
       {
@@ -23,7 +23,7 @@
         "discount_amount": 1000,
         "minimum_charge": 20000,
         "coupon_count": 7000,
-        "stock_count": 288,
+        "stock_count": 267,
         "sold_out": false,
         "reserve_from": "2026-08-17T00:00:00+09:00",
         "reserve_to": "2026-11-17T00:00:00+09:00",
@@ -92,6 +92,119 @@
     }
   },
   {
+    "id": "2611appcp",
+    "category": "国内",
+    "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
+    "discount": "最大3,000円引",
+    "area": "全国",
+    "regions": [
+      "全国"
+    ],
+    "type": "ツアー",
+    "booking_period": "2026/11/2(月) ～ 2026/11/16(月)",
+    "stay_period": "2026/11/3(火) ～ 2027/3/31(水)",
+    "store_available": false,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611appcp/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1447,
+    "stock_total": 1500,
+    "stock_tiers": [
+      {
+        "password": "h300",
+        "discount_amount": 3000,
+        "minimum_charge": 100000,
+        "coupon_count": 500,
+        "stock_count": 482,
+        "sold_out": false,
+        "reserve_from": "2026-10-28T00:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h301",
+        "discount_amount": 1500,
+        "minimum_charge": 50000,
+        "coupon_count": 500,
+        "stock_count": 477,
+        "sold_out": false,
+        "reserve_from": "2026-10-28T00:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      },
+      {
+        "password": "h302",
+        "discount_amount": 1000,
+        "minimum_charge": 30000,
+        "coupon_count": 500,
+        "stock_count": 488,
+        "sold_out": false,
+        "reserve_from": "2026-10-28T00:00:00+09:00",
+        "reserve_to": "2026-11-17T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
+    "detail_data": {
+      "coupon_codes": [
+        "appcp"
+      ],
+      "passwords": [
+        "h300",
+        "h301",
+        "h302"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 500枚 100,000円以上のご利用で 3,000 円引 クーポンコード appcp パスワ"
+      ],
+      "booking_regions": "全国の対象施設",
+      "usage_conditions": {
+        "出発対象期間": "2026/11/3(火) ～ 2027/3/31(水)",
+        "適用除外日※1": "なし",
+        "予約対象期間": "2026/11/2(月) ～ 2026/11/16(月)",
+        "予約対象地域": "全国の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JR＋宿泊プラン",
+        "飛行機＋宿泊プラン"
+      ],
+      "booking_channels": "",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "100,000円以上のご利用で 3,000 円引",
+        "50,000円以上のご利用で 1,500 円引",
+        "30,000円以上のご利用で 1,000 円引"
+      ],
+      "booking_period": "2026/11/2(月) ～ 2026/11/16(月)",
+      "stay_period": "2026/11/3(火) ～ 2027/3/31(水)"
+    },
+    "article_categories": [
+      "国内旅行",
+      "新幹線ツアー"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      },
+      "新幹線ツアー": {
+        "field": "available_plans",
+        "text": "JR＋宿泊プラン",
+        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
+      }
+    }
+  },
+  {
     "id": "2610premiumcp",
     "category": "国内",
     "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
@@ -107,7 +220,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610premiumcp/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 1766,
+    "stock_remaining": 1744,
     "stock_total": 3800,
     "stock_tiers": [
       {
@@ -115,7 +228,7 @@
         "discount_amount": 5000,
         "minimum_charge": 150000,
         "coupon_count": 1800,
-        "stock_count": 871,
+        "stock_count": 857,
         "sold_out": false,
         "reserve_from": "2026-09-25T00:00:00+09:00",
         "reserve_to": "2026-11-30T00:00:00+09:00",
@@ -127,7 +240,7 @@
         "discount_amount": 3000,
         "minimum_charge": 100000,
         "coupon_count": 1200,
-        "stock_count": 546,
+        "stock_count": 541,
         "sold_out": false,
         "reserve_from": "2026-09-25T00:00:00+09:00",
         "reserve_to": "2026-11-30T00:00:00+09:00",
@@ -139,7 +252,7 @@
         "discount_amount": 2000,
         "minimum_charge": 70000,
         "coupon_count": 800,
-        "stock_count": 349,
+        "stock_count": 346,
         "sold_out": false,
         "reserve_from": "2026-09-25T00:00:00+09:00",
         "reserve_to": "2026-11-30T00:00:00+09:00",
@@ -220,7 +333,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609young/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 1964,
+    "stock_remaining": 1962,
     "stock_total": 2333,
     "stock_tiers": [
       {
@@ -228,7 +341,7 @@
         "discount_amount": 3000,
         "minimum_charge": 70000,
         "coupon_count": 2333,
-        "stock_count": 1964,
+        "stock_count": 1962,
         "sold_out": false,
         "reserve_from": "2026-09-25T10:00:00+09:00",
         "reserve_to": "2027-01-18T00:00:00+09:00",
@@ -413,7 +526,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610airhayawari/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 539,
+    "stock_remaining": 519,
     "stock_total": 1800,
     "stock_tiers": [
       {
@@ -421,7 +534,7 @@
         "discount_amount": 5000,
         "minimum_charge": 0,
         "coupon_count": 1800,
-        "stock_count": 539,
+        "stock_count": 519,
         "sold_out": false,
         "reserve_from": "2026-10-01T10:00:00+09:00",
         "reserve_to": "2026-12-22T00:00:00+09:00",
@@ -537,7 +650,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2601green/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 946,
+    "stock_remaining": 944,
     "stock_total": 1700,
     "stock_tiers": [
       {
@@ -545,7 +658,7 @@
         "discount_amount": 8000,
         "minimum_charge": 0,
         "coupon_count": 1500,
-        "stock_count": 866,
+        "stock_count": 864,
         "sold_out": false,
         "reserve_from": "2026-01-20T10:00:00+09:00",
         "reserve_to": "2027-03-31T00:00:00+09:00",
@@ -664,7 +777,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609mercu/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 293,
+    "stock_remaining": 290,
     "stock_total": 1105,
     "stock_tiers": [
       {
@@ -672,7 +785,7 @@
         "discount_amount": 3000,
         "minimum_charge": 20000,
         "coupon_count": 500,
-        "stock_count": 181,
+        "stock_count": 180,
         "sold_out": false,
         "reserve_from": "2026-09-01T10:00:00+09:00",
         "reserve_to": "2026-12-01T00:00:00+09:00",
@@ -684,7 +797,7 @@
         "discount_amount": 3000,
         "minimum_charge": 20000,
         "coupon_count": 500,
-        "stock_count": 57,
+        "stock_count": 55,
         "sold_out": false,
         "reserve_from": "2026-09-01T10:00:00+09:00",
         "reserve_to": "2026-12-01T00:00:00+09:00",
@@ -922,6 +1035,93 @@
     }
   },
   {
+    "id": "2611kyoritsu",
+    "category": "国内",
+    "title": "<11～3月宿泊>全国の共立リゾート44施設で使える割引クーポン",
+    "discount": "2,000円引",
+    "area": "全国",
+    "regions": [
+      "全国"
+    ],
+    "type": "宿泊・ツアー",
+    "booking_period": "2026/11/2(月) ～ 2027/3/31(水)",
+    "stay_period": "2026/11/2(月) ～ 2027/3/31(水)",
+    "store_available": true,
+    "stock_status": "配布中",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611kyoritsu/page.asp",
+    "stock_end_reason": "",
+    "stock_remaining": 1489,
+    "stock_total": 1500,
+    "stock_tiers": [
+      {
+        "password": "h144",
+        "discount_amount": 2000,
+        "minimum_charge": 0,
+        "coupon_count": 1500,
+        "stock_count": 1489,
+        "sold_out": false,
+        "reserve_from": "2026-11-02T10:00:00+09:00",
+        "reserve_to": "2027-04-01T00:00:00+09:00",
+        "closed_by_period": false,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
+    "detail_data": {
+      "coupon_codes": [
+        "kyori"
+      ],
+      "passwords": [
+        "h144"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 1,500枚 下限代金なし 2,000 円引 クーポンコード kyori パスワード h144"
+      ],
+      "booking_regions": "全国の対象施設",
+      "usage_conditions": {
+        "宿泊対象期間": "2026/11/2(月) ～ 2027/3/31(水)",
+        "適用除外日※1": "12/30～1/3、1/9、10、3/20、21",
+        "予約対象期間": "2026/11/2(月) ～ 2027/3/31(水)",
+        "予約対象地域": "全国の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "利用可能箇所": "Web予約・JTB店舗・JTB提携販売店・旅の予約センター・JTBリモートコンシェルジュ・JCBトラベル",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JTB宿泊プラン",
+        "JR＋宿泊プラン",
+        "飛行機＋宿泊プラン"
+      ],
+      "booking_channels": "Web予約・JTB店舗・JTB提携販売店・旅の予約センター・JTBリモートコンシェルジュ・JCBトラベル",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "下限代金なし 2,000 円引"
+      ],
+      "booking_period": "2026/11/2(月) ～ 2027/3/31(水)",
+      "stay_period": "2026/11/2(月) ～ 2027/3/31(水)"
+    },
+    "article_categories": [
+      "国内旅行",
+      "新幹線ツアー"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      },
+      "新幹線ツアー": {
+        "field": "available_plans",
+        "text": "JR＋宿泊プラン",
+        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
+      }
+    }
+  },
+  {
     "id": "2606ooedo",
     "category": "国内",
     "title": "【9～1月宿泊】全国の大江戸温泉物語とTAOYAで使える割引クーポン",
@@ -937,7 +1137,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2606ooedo/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 631,
+    "stock_remaining": 628,
     "stock_total": 3887,
     "stock_tiers": [
       {
@@ -945,7 +1145,7 @@
         "discount_amount": 2000,
         "minimum_charge": 15000,
         "coupon_count": 2198,
-        "stock_count": 631,
+        "stock_count": 627,
         "sold_out": false,
         "reserve_from": "2026-06-19T10:00:00+09:00",
         "reserve_to": "2027-02-01T00:00:00+09:00",
@@ -957,8 +1157,8 @@
         "discount_amount": 3000,
         "minimum_charge": 30000,
         "coupon_count": 1225,
-        "stock_count": 0,
-        "sold_out": true,
+        "stock_count": 1,
+        "sold_out": false,
         "reserve_from": "2026-06-19T10:00:00+09:00",
         "reserve_to": "2027-02-01T00:00:00+09:00",
         "closed_by_period": false,
@@ -1039,92 +1239,6 @@
       "国内旅行": {
         "field": "category",
         "text": "国内"
-      }
-    }
-  },
-  {
-    "id": "2608kyoritsu",
-    "category": "国内",
-    "title": "<10～12月出発>【早期割引60】共立リゾート41施設で使える割引クーポン",
-    "discount": "2,000円引",
-    "area": "全国",
-    "regions": [
-      "全国"
-    ],
-    "type": "ツアー",
-    "booking_period": "2026/7/31(金) ～ 2026/10/30(金)",
-    "stay_period": "2026/10/1(木) ～ 2026/12/29(火)",
-    "store_available": true,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608kyoritsu/page.asp",
-    "stock_end_reason": "予約受付の終了",
-    "stock_remaining": 0,
-    "stock_total": 1500,
-    "stock_tiers": [
-      {
-        "password": "g902",
-        "discount_amount": 2000,
-        "minimum_charge": 1,
-        "coupon_count": 1500,
-        "stock_count": 1417,
-        "sold_out": false,
-        "reserve_from": "2026-07-31T10:00:00+09:00",
-        "reserve_to": "2026-10-31T00:00:00+09:00",
-        "closed_by_period": true,
-        "not_started": false
-      }
-    ],
-    "stock_source": "password_stock_api",
-    "detail_data": {
-      "coupon_codes": [
-        "kyori"
-      ],
-      "passwords": [
-        "g902"
-      ],
-      "conditions": [],
-      "notes": [
-        "なし 泊数指定なし 先着 1,500枚 下限代金なし 2,000 円引 クーポンコード kyori パスワード g902"
-      ],
-      "booking_regions": "全国の対象施設",
-      "usage_conditions": {
-        "出発対象期間": "2026/10/1(木) ～ 2026/12/29(火)",
-        "適用除外日※1": "10/10～10/11、11/21～11/22、12/30～12/31",
-        "予約対象期間": "2026/7/31(金) ～ 2026/10/30(金)",
-        "予約対象地域": "全国の対象施設",
-        "利用者条件": "JTBトラベルメンバー会員限定",
-        "利用可能箇所": "Web予約・JTB店舗・JTB提携販売店・旅の予約センター・JTBリモートコンシェルジュ・JCBトラベル",
-        "居住地条件※2": "なし"
-      },
-      "eligible_users": "JTBトラベルメンバー会員限定",
-      "available_plans": [
-        "JR＋宿泊プラン",
-        "飛行機＋宿泊プラン"
-      ],
-      "booking_channels": "Web予約・JTB店舗・JTB提携販売店・旅の予約センター・JTBリモートコンシェルジュ・JCBトラベル",
-      "residence_condition": "なし",
-      "departure_area": "",
-      "target_brand": "",
-      "target_products": "",
-      "discount_rules": [
-        "下限代金なし 2,000 円引"
-      ],
-      "booking_period": "2026/7/31(金) ～ 2026/10/30(金)",
-      "stay_period": "2026/10/1(木) ～ 2026/12/29(火)"
-    },
-    "article_categories": [
-      "国内旅行",
-      "新幹線ツアー"
-    ],
-    "classification_evidence": {
-      "国内旅行": {
-        "field": "category",
-        "text": "国内"
-      },
-      "新幹線ツアー": {
-        "field": "available_plans",
-        "text": "JR＋宿泊プラン",
-        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
       }
     }
   },
@@ -1310,7 +1424,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609sunsunski/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 255,
+    "stock_remaining": 250,
     "stock_total": 650,
     "stock_tiers": [
       {
@@ -1318,7 +1432,7 @@
         "discount_amount": 20000,
         "minimum_charge": 250000,
         "coupon_count": 200,
-        "stock_count": 92,
+        "stock_count": 90,
         "sold_out": false,
         "reserve_from": "2026-09-16T10:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -1330,7 +1444,7 @@
         "discount_amount": 10000,
         "minimum_charge": 120000,
         "coupon_count": 100,
-        "stock_count": 45,
+        "stock_count": 44,
         "sold_out": false,
         "reserve_from": "2026-09-16T10:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -1354,7 +1468,7 @@
         "discount_amount": 5000,
         "minimum_charge": 60000,
         "coupon_count": 200,
-        "stock_count": 118,
+        "stock_count": 116,
         "sold_out": false,
         "reserve_from": "2026-09-16T10:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -1437,7 +1551,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610dohoku/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 132,
+    "stock_remaining": 131,
     "stock_total": 210,
     "stock_tiers": [
       {
@@ -1457,7 +1571,7 @@
         "discount_amount": 5000,
         "minimum_charge": 20000,
         "coupon_count": 50,
-        "stock_count": 14,
+        "stock_count": 13,
         "sold_out": false,
         "reserve_from": "2026-10-06T00:00:00+09:00",
         "reserve_to": "2027-01-23T00:00:00+09:00",
@@ -1544,7 +1658,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610donan/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 82,
+    "stock_remaining": 77,
     "stock_total": 120,
     "stock_tiers": [
       {
@@ -1552,8 +1666,8 @@
         "discount_amount": 10000,
         "minimum_charge": 50000,
         "coupon_count": 20,
-        "stock_count": 1,
-        "sold_out": false,
+        "stock_count": 0,
+        "sold_out": true,
         "reserve_from": "2026-10-14T00:00:00+09:00",
         "reserve_to": "2027-02-28T00:00:00+09:00",
         "closed_by_period": false,
@@ -1564,7 +1678,7 @@
         "discount_amount": 5000,
         "minimum_charge": 30000,
         "coupon_count": 30,
-        "stock_count": 16,
+        "stock_count": 14,
         "sold_out": false,
         "reserve_from": "2026-10-14T00:00:00+09:00",
         "reserve_to": "2027-02-28T00:00:00+09:00",
@@ -1576,7 +1690,7 @@
         "discount_amount": 3000,
         "minimum_charge": 20000,
         "coupon_count": 40,
-        "stock_count": 37,
+        "stock_count": 35,
         "sold_out": false,
         "reserve_from": "2026-10-14T00:00:00+09:00",
         "reserve_to": "2027-02-28T00:00:00+09:00",
@@ -1673,7 +1787,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609iwate/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 26,
+    "stock_remaining": 24,
     "stock_total": 3253,
     "stock_tiers": [
       {
@@ -1681,7 +1795,7 @@
         "discount_amount": 50,
         "minimum_charge": 0,
         "coupon_count": 220,
-        "stock_count": 4,
+        "stock_count": 1,
         "sold_out": false,
         "reserve_from": "2026-09-01T10:00:00+09:00",
         "reserve_to": "2026-12-26T00:00:00+09:00",
@@ -1705,7 +1819,7 @@
         "discount_amount": 50,
         "minimum_charge": 0,
         "coupon_count": 108,
-        "stock_count": 2,
+        "stock_count": 3,
         "sold_out": false,
         "reserve_from": "2026-09-01T10:00:00+09:00",
         "reserve_to": "2026-12-26T00:00:00+09:00",
@@ -1741,8 +1855,8 @@
         "discount_amount": 50,
         "minimum_charge": 0,
         "coupon_count": 812,
-        "stock_count": 1,
-        "sold_out": false,
+        "stock_count": 0,
+        "sold_out": true,
         "reserve_from": "2026-09-01T10:00:00+09:00",
         "reserve_to": "2026-12-26T00:00:00+09:00",
         "closed_by_period": false,
@@ -1789,7 +1903,7 @@
         "discount_amount": 50,
         "minimum_charge": 0,
         "coupon_count": 110,
-        "stock_count": 8,
+        "stock_count": 9,
         "sold_out": true,
         "reserve_from": "2026-09-01T10:00:00+09:00",
         "reserve_to": "2026-12-26T00:00:00+09:00",
@@ -1878,7 +1992,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609goton/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 2,
+    "stock_remaining": 1,
     "stock_total": 1040,
     "stock_tiers": [
       {
@@ -1910,8 +2024,8 @@
         "discount_amount": 30,
         "minimum_charge": 0,
         "coupon_count": 155,
-        "stock_count": 1,
-        "sold_out": false,
+        "stock_count": 0,
+        "sold_out": true,
         "reserve_from": "2026-08-27T00:00:00+09:00",
         "reserve_to": "2026-12-29T00:00:00+09:00",
         "closed_by_period": false,
@@ -2142,7 +2256,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610gunma/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 263,
+    "stock_remaining": 261,
     "stock_total": 416,
     "stock_tiers": [
       {
@@ -2162,7 +2276,7 @@
         "discount_amount": 3000,
         "minimum_charge": 35000,
         "coupon_count": 48,
-        "stock_count": 8,
+        "stock_count": 7,
         "sold_out": false,
         "reserve_from": "2026-09-25T00:00:00+09:00",
         "reserve_to": "2027-04-01T00:00:00+09:00",
@@ -2186,7 +2300,7 @@
         "discount_amount": 3000,
         "minimum_charge": 35000,
         "coupon_count": 120,
-        "stock_count": 94,
+        "stock_count": 93,
         "sold_out": false,
         "reserve_from": "2026-09-25T00:00:00+09:00",
         "reserve_to": "2027-04-01T00:00:00+09:00",
@@ -2470,7 +2584,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608candeohotels/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 850,
+    "stock_remaining": 849,
     "stock_total": 1000,
     "stock_tiers": [
       {
@@ -2490,7 +2604,7 @@
         "discount_amount": 3000,
         "minimum_charge": 100000,
         "coupon_count": 700,
-        "stock_count": 581,
+        "stock_count": 580,
         "sold_out": false,
         "reserve_from": "2026-08-03T10:00:00+09:00",
         "reserve_to": "2027-02-01T00:00:00+09:00",
@@ -2568,10 +2682,10 @@
     "booking_period": "2026/9/7(月) ～ 2026/12/31(木)",
     "stay_period": "2026/10/1(木) ～ 2026/12/31(木)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609hankyu/page.asp",
-    "stock_end_reason": "品切れ",
-    "stock_remaining": 0,
+    "stock_end_reason": "",
+    "stock_remaining": 2,
     "stock_total": 140,
     "stock_tiers": [
       {
@@ -2591,8 +2705,8 @@
         "discount_amount": 3000,
         "minimum_charge": 20000,
         "coupon_count": 100,
-        "stock_count": 0,
-        "sold_out": true,
+        "stock_count": 2,
+        "sold_out": false,
         "reserve_from": "2026-08-28T00:00:00+09:00",
         "reserve_to": "2027-01-01T00:00:00+09:00",
         "closed_by_period": false,
@@ -2975,7 +3089,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610orientalhorels/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 476,
+    "stock_remaining": 474,
     "stock_total": 596,
     "stock_tiers": [
       {
@@ -2995,7 +3109,7 @@
         "discount_amount": 3000,
         "minimum_charge": 40000,
         "coupon_count": 65,
-        "stock_count": 59,
+        "stock_count": 58,
         "sold_out": false,
         "reserve_from": "2026-10-16T10:00:00+09:00",
         "reserve_to": "2026-12-16T00:00:00+09:00",
@@ -3007,7 +3121,7 @@
         "discount_amount": 8000,
         "minimum_charge": 80000,
         "coupon_count": 95,
-        "stock_count": 44,
+        "stock_count": 43,
         "sold_out": false,
         "reserve_from": "2026-10-16T10:00:00+09:00",
         "reserve_to": "2026-12-16T00:00:00+09:00",
@@ -3202,7 +3316,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2605ito2/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 2,
+    "stock_remaining": 3,
     "stock_total": 395,
     "stock_tiers": [
       {
@@ -3210,7 +3324,7 @@
         "discount_amount": 20,
         "minimum_charge": 3000,
         "coupon_count": 30,
-        "stock_count": 1,
+        "stock_count": 2,
         "sold_out": false,
         "reserve_from": "2026-08-25T10:00:00+09:00",
         "reserve_to": "2026-12-11T00:00:00+09:00",
@@ -3950,7 +4064,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609osaka/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 383,
+    "stock_remaining": 381,
     "stock_total": 525,
     "stock_tiers": [
       {
@@ -3970,7 +4084,7 @@
         "discount_amount": 2000,
         "minimum_charge": 15000,
         "coupon_count": 265,
-        "stock_count": 208,
+        "stock_count": 206,
         "sold_out": false,
         "reserve_from": "2026-09-03T11:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -4242,7 +4356,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610tottori/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 257,
+    "stock_remaining": 255,
     "stock_total": 315,
     "stock_tiers": [
       {
@@ -4250,7 +4364,7 @@
         "discount_amount": 20000,
         "minimum_charge": 120000,
         "coupon_count": 60,
-        "stock_count": 39,
+        "stock_count": 38,
         "sold_out": false,
         "reserve_from": "2026-10-23T10:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -4262,7 +4376,7 @@
         "discount_amount": 10000,
         "minimum_charge": 60000,
         "coupon_count": 105,
-        "stock_count": 83,
+        "stock_count": 82,
         "sold_out": false,
         "reserve_from": "2026-10-23T10:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -4372,7 +4486,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610matsue/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 1916,
+    "stock_remaining": 1915,
     "stock_total": 2000,
     "stock_tiers": [
       {
@@ -4380,7 +4494,7 @@
         "discount_amount": 20000,
         "minimum_charge": 100000,
         "coupon_count": 100,
-        "stock_count": 77,
+        "stock_count": 76,
         "sold_out": false,
         "reserve_from": "2026-10-09T10:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -4638,7 +4752,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610yamaguchi/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 163,
+    "stock_remaining": 161,
     "stock_total": 305,
     "stock_tiers": [
       {
@@ -4646,7 +4760,7 @@
         "discount_amount": 12000,
         "minimum_charge": 80000,
         "coupon_count": 150,
-        "stock_count": 79,
+        "stock_count": 77,
         "sold_out": false,
         "reserve_from": "2026-10-01T10:00:00+09:00",
         "reserve_to": "2027-03-01T00:00:00+09:00",
@@ -4966,8 +5080,8 @@
     "stock_status": "配布終了",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushufukuoka/page.asp",
     "stock_end_reason": "品切れ",
-    "stock_remaining": 2,
-    "stock_total": 2519,
+    "stock_remaining": 1,
+    "stock_total": 2520,
     "stock_tiers": [
       {
         "password": "W191",
@@ -4986,7 +5100,7 @@
         "discount_amount": 50,
         "minimum_charge": 0,
         "coupon_count": 455,
-        "stock_count": 2,
+        "stock_count": 1,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
         "reserve_to": "2026-12-16T00:00:00+09:00",
@@ -5045,7 +5159,7 @@
         "password": "W197",
         "discount_amount": 50,
         "minimum_charge": 0,
-        "coupon_count": 542,
+        "coupon_count": 543,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -5887,17 +6001,17 @@
     "booking_period": "2026/10/8(木) ～ 2026/12/25(金)",
     "stay_period": "2026/10/8(木) ～ 2026/12/25(金)",
     "store_available": false,
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
-    "stock_end_reason": "品切れ",
-    "stock_remaining": 2,
-    "stock_total": 3629,
+    "stock_end_reason": "",
+    "stock_remaining": 4,
+    "stock_total": 3667,
     "stock_tiers": [
       {
         "password": "W266",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 360,
+        "coupon_count": 365,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -5909,7 +6023,7 @@
         "password": "W267",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 1102,
+        "coupon_count": 1108,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -5945,7 +6059,7 @@
         "password": "W270",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 133,
+        "coupon_count": 139,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -5957,7 +6071,7 @@
         "password": "W271",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 215,
+        "coupon_count": 220,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -5969,7 +6083,7 @@
         "password": "W272",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 340,
+        "coupon_count": 343,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -5981,7 +6095,7 @@
         "password": "W273",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 80,
+        "coupon_count": 82,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -6017,9 +6131,9 @@
         "password": "W277",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 180,
-        "stock_count": 0,
-        "sold_out": true,
+        "coupon_count": 186,
+        "stock_count": 2,
+        "sold_out": false,
         "reserve_from": "2026-10-22T10:00:00+09:00",
         "reserve_to": "2026-12-24T00:00:00+09:00",
         "closed_by_period": false,
@@ -6029,7 +6143,7 @@
         "password": "W278",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 287,
+        "coupon_count": 292,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-22T10:00:00+09:00",
@@ -6466,7 +6580,7 @@
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukagoshima/page.asp",
     "stock_end_reason": "品切れ",
     "stock_remaining": 0,
-    "stock_total": 2799,
+    "stock_total": 2801,
     "stock_tiers": [
       {
         "password": "W282",
@@ -6592,7 +6706,7 @@
         "password": "W292",
         "discount_amount": 60,
         "minimum_charge": 0,
-        "coupon_count": 145,
+        "coupon_count": 147,
         "stock_count": 0,
         "sold_out": true,
         "reserve_from": "2026-10-20T13:00:00+09:00",
@@ -6744,7 +6858,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607jalka/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 35,
+    "stock_remaining": 34,
     "stock_total": 100,
     "stock_tiers": [
       {
@@ -6752,7 +6866,7 @@
         "discount_amount": 12000,
         "minimum_charge": 120000,
         "coupon_count": 100,
-        "stock_count": 35,
+        "stock_count": 34,
         "sold_out": false,
         "reserve_from": "2026-07-31T10:00:00+09:00",
         "reserve_to": "2027-01-30T00:00:00+09:00",
@@ -7034,7 +7148,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawamonterey/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 362,
+    "stock_remaining": 356,
     "stock_total": 600,
     "stock_tiers": [
       {
@@ -7054,7 +7168,7 @@
         "discount_amount": 5000,
         "minimum_charge": 50000,
         "coupon_count": 250,
-        "stock_count": 117,
+        "stock_count": 111,
         "sold_out": false,
         "reserve_from": "2026-09-07T10:00:00+09:00",
         "reserve_to": "2027-04-01T00:00:00+09:00",
@@ -7143,7 +7257,7 @@
     "stock_status": "配布中",
     "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609okinawa2/page.asp",
     "stock_end_reason": "",
-    "stock_remaining": 285,
+    "stock_remaining": 284,
     "stock_total": 333,
     "stock_tiers": [
       {
@@ -7151,7 +7265,7 @@
         "discount_amount": 3000,
         "minimum_charge": 20000,
         "coupon_count": 333,
-        "stock_count": 285,
+        "stock_count": 284,
         "sold_out": false,
         "reserve_from": "2026-09-01T10:00:00+09:00",
         "reserve_to": "2027-04-01T00:00:00+09:00",
@@ -7550,119 +7664,6 @@
     }
   },
   {
-    "id": "2607appcp",
-    "category": "国内",
-    "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
-    "discount": "最大3,000円引",
-    "area": "全国",
-    "regions": [
-      "全国"
-    ],
-    "type": "ツアー",
-    "booking_period": "2026/7/24(金) ～ 2026/9/27(日)",
-    "stay_period": "2026/7/25(土) ～ 2027/3/31(水)",
-    "store_available": false,
-    "stock_status": "配布終了",
-    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2607appcp/page.asp",
-    "stock_end_reason": "予約受付の終了",
-    "stock_remaining": 0,
-    "stock_total": 12950,
-    "stock_tiers": [
-      {
-        "password": "g883",
-        "discount_amount": 3000,
-        "minimum_charge": 100000,
-        "coupon_count": 5250,
-        "stock_count": 513,
-        "sold_out": true,
-        "reserve_from": "2026-07-15T00:00:00+09:00",
-        "reserve_to": "2026-09-28T00:00:00+09:00",
-        "closed_by_period": true,
-        "not_started": false
-      },
-      {
-        "password": "g882",
-        "discount_amount": 1500,
-        "minimum_charge": 50000,
-        "coupon_count": 5100,
-        "stock_count": 461,
-        "sold_out": true,
-        "reserve_from": "2026-07-15T00:00:00+09:00",
-        "reserve_to": "2026-09-28T00:00:00+09:00",
-        "closed_by_period": true,
-        "not_started": false
-      },
-      {
-        "password": "g881",
-        "discount_amount": 1000,
-        "minimum_charge": 30000,
-        "coupon_count": 2600,
-        "stock_count": 276,
-        "sold_out": true,
-        "reserve_from": "2026-07-15T00:00:00+09:00",
-        "reserve_to": "2026-09-28T00:00:00+09:00",
-        "closed_by_period": true,
-        "not_started": false
-      }
-    ],
-    "stock_source": "password_stock_api",
-    "detail_data": {
-      "coupon_codes": [
-        "appcp"
-      ],
-      "passwords": [
-        "g883",
-        "g882",
-        "g881"
-      ],
-      "conditions": [],
-      "notes": [
-        "なし 泊数指定なし 先着 1,000枚 100,000円以上のご利用で 3,000 円引 クーポンコード appcp パ"
-      ],
-      "booking_regions": "全国の対象施設",
-      "usage_conditions": {
-        "出発対象期間": "2026/7/25(土) ～ 2027/3/31(水)",
-        "適用除外日※1": "なし",
-        "予約対象期間": "2026/7/24(金)  ～ 2026/9/27(日)",
-        "予約対象地域": "全国の対象施設",
-        "利用者条件": "JTBトラベルメンバー会員限定",
-        "居住地条件※2": "なし"
-      },
-      "eligible_users": "JTBトラベルメンバー会員限定",
-      "available_plans": [
-        "JR＋宿泊プラン",
-        "飛行機＋宿泊プラン"
-      ],
-      "booking_channels": "",
-      "residence_condition": "なし",
-      "departure_area": "",
-      "target_brand": "",
-      "target_products": "",
-      "discount_rules": [
-        "100,000円以上のご利用で 3,000 円引",
-        "50,000円以上のご利用で 1,500 円引",
-        "30,000円以上のご利用で 1,000 円引"
-      ],
-      "booking_period": "2026/7/24(金)  ～ 2026/9/27(日)",
-      "stay_period": "2026/7/25(土) ～ 2027/3/31(水)"
-    },
-    "article_categories": [
-      "国内旅行",
-      "新幹線ツアー"
-    ],
-    "classification_evidence": {
-      "国内旅行": {
-        "field": "category",
-        "text": "国内"
-      },
-      "新幹線ツアー": {
-        "field": "available_plans",
-        "text": "JR＋宿泊プラン",
-        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
-      }
-    }
-  },
-  {
     "id": "2607young",
     "category": "国内",
     "title": "【U-29旅応援！】　国内ツアーで使える割引クーポン",
@@ -7901,7 +7902,7 @@
         "discount_amount": 3000,
         "minimum_charge": 0,
         "coupon_count": 8900,
-        "stock_count": 1777,
+        "stock_count": 1779,
         "sold_out": true,
         "reserve_from": "2026-04-27T10:00:00+09:00",
         "reserve_to": "2026-10-01T00:00:00+09:00",
@@ -7953,6 +7954,92 @@
       "国内旅行": {
         "field": "category",
         "text": "国内"
+      }
+    }
+  },
+  {
+    "id": "2608kyoritsu",
+    "category": "国内",
+    "title": "<10～12月出発>【早期割引60】共立リゾート41施設で使える割引クーポン",
+    "discount": "2,000円引",
+    "area": "全国",
+    "regions": [
+      "全国"
+    ],
+    "type": "ツアー",
+    "booking_period": "2026/7/31(金) ～ 2026/10/30(金)",
+    "stay_period": "2026/10/1(木) ～ 2026/12/29(火)",
+    "store_available": true,
+    "stock_status": "配布終了",
+    "detail_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2608kyoritsu/page.asp",
+    "stock_end_reason": "予約受付の終了",
+    "stock_remaining": 0,
+    "stock_total": 1500,
+    "stock_tiers": [
+      {
+        "password": "g902",
+        "discount_amount": 2000,
+        "minimum_charge": 1,
+        "coupon_count": 1500,
+        "stock_count": 1417,
+        "sold_out": false,
+        "reserve_from": "2026-07-31T10:00:00+09:00",
+        "reserve_to": "2026-10-31T00:00:00+09:00",
+        "closed_by_period": true,
+        "not_started": false
+      }
+    ],
+    "stock_source": "password_stock_api",
+    "detail_data": {
+      "coupon_codes": [
+        "kyori"
+      ],
+      "passwords": [
+        "g902"
+      ],
+      "conditions": [],
+      "notes": [
+        "なし 泊数指定なし 先着 1,500枚 下限代金なし 2,000 円引 クーポンコード kyori パスワード g902"
+      ],
+      "booking_regions": "全国の対象施設",
+      "usage_conditions": {
+        "出発対象期間": "2026/10/1(木) ～ 2026/12/29(火)",
+        "適用除外日※1": "10/10～10/11、11/21～11/22、12/30～12/31",
+        "予約対象期間": "2026/7/31(金) ～ 2026/10/30(金)",
+        "予約対象地域": "全国の対象施設",
+        "利用者条件": "JTBトラベルメンバー会員限定",
+        "利用可能箇所": "Web予約・JTB店舗・JTB提携販売店・旅の予約センター・JTBリモートコンシェルジュ・JCBトラベル",
+        "居住地条件※2": "なし"
+      },
+      "eligible_users": "JTBトラベルメンバー会員限定",
+      "available_plans": [
+        "JR＋宿泊プラン",
+        "飛行機＋宿泊プラン"
+      ],
+      "booking_channels": "Web予約・JTB店舗・JTB提携販売店・旅の予約センター・JTBリモートコンシェルジュ・JCBトラベル",
+      "residence_condition": "なし",
+      "departure_area": "",
+      "target_brand": "",
+      "target_products": "",
+      "discount_rules": [
+        "下限代金なし 2,000 円引"
+      ],
+      "booking_period": "2026/7/31(金) ～ 2026/10/30(金)",
+      "stay_period": "2026/10/1(木) ～ 2026/12/29(火)"
+    },
+    "article_categories": [
+      "国内旅行",
+      "新幹線ツアー"
+    ],
+    "classification_evidence": {
+      "国内旅行": {
+        "field": "category",
+        "text": "国内"
+      },
+      "新幹線ツアー": {
+        "field": "available_plans",
+        "text": "JR＋宿泊プラン",
+        "note": "JR＋宿泊が利用可能。具体的な列車は対象プランで確認"
       }
     }
   },

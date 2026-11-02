@@ -766,7 +766,7 @@
       "title": "【10月以降出発】リニューアルOPEN記念！三重県 伊勢志摩 ＮＥＭＵ ＲＥＳＯＲＴ ＨＯＴＥＬ ＮＥＭＵで使えるクーポン（最大10,000円引き）",
       "category": "施設限定クーポン",
       "discount": "最大15%引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-sgmc26jul20-sgmc26jul15-dc928ffa35": {
       "first_seen": "2026-07-18",
@@ -1134,7 +1134,7 @@
       "title": "ホテル近鉄ユニバーサル・シティで使える秋冬旅割引クーポン",
       "category": "施設限定クーポン",
       "discount": "最大¥2,000引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-hcjm26sep20-f543743b1b": {
       "first_seen": "2026-09-12",
@@ -1222,7 +1222,7 @@
       "title": "香川県のおすすめ施設で使えるクーポン",
       "category": "エリア限定クーポン",
       "discount": "最大¥8,000引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-xfuku26sp50-dc90bd2fdf": {
       "first_seen": "2026-10-19",
@@ -1423,7 +1423,55 @@
       "category": "施設限定クーポン",
       "discount": "最大15%引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-ngn26nov20-efcb8da2b6": {
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "title": "自然と歴史が息づく長野市へ～四季の彩りキャンペーン～（最大10,000円引き）",
+      "category": "エリア限定クーポン",
+      "discount": "最大20%引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26taikn50-63df2752f8": {
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "title": "宮城県 ホテル松島大観荘で使えるクーポン",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大¥5,000引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26bnya50-7ff4b978fa": {
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "title": "山形県 あつみ温泉 たちばなやで使えるクーポン",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大¥5,000引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26atsuma15-2208b9f612": {
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "title": "静岡県 つま恋リゾート 彩の郷で使えるクーポン（最大10,000円引き）",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大15%引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26kagki10-3be5b49453": {
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "title": "石川県 山中温泉 かがり 吉祥亭で使える割引クーポン（最大8,000円引き）",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大10%引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26miyaz15-697af20b64": {
+      "first_seen": "2026-11-02",
+      "last_seen": "2026-11-02",
+      "title": "宮崎県 宮崎観光ホテルで使えるクーポン（最大10,000円引き）",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大15%引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-11-02T07:18:28.916024+09:00"
+  "last_updated": "2026-11-02T16:02:32.272066+09:00"
 }
