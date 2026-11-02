@@ -61,7 +61,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -126,7 +126,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -189,7 +189,7 @@
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -253,7 +253,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -317,7 +317,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -381,7 +381,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -445,7 +445,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -508,7 +508,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -573,7 +573,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -638,7 +638,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -702,7 +702,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -767,7 +767,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -832,7 +832,7 @@
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -895,139 +895,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
-    }
-  },
-  {
-    "id": "ikkyu-1110829",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ホテル モンテ エルマーナ福岡 先着50名様限定 2,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "2,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "福岡県／渡辺通駅徒歩2分・天神駅徒歩10分",
-    "regions": [
-      "福岡県"
-    ],
-    "booking_period": "～ 2026/11/02 12:00",
-    "travel_period": "2026/10/27 ～ 2027/03/31",
-    "stay_period": "2026/10/27 ～ 2027/03/31",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額20,000円以上",
-      "先着50名様限定",
-      "デイユース（日帰り）は対象外",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1110829",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-11-02",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1110829",
-      "origin_provider": "ikkyu",
-      "shared_with": [
-        "yahoo_travel"
-      ],
-      "hotel_name": "ホテル モンテ エルマーナ福岡",
-      "hotel_url": "https://www.ikyu.com/00081186/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00081186"
-      ],
-      "accommodations": [
-        {
-          "name": "ホテル モンテ エルマーナ福岡",
-          "accommodation_id": "00081186",
-          "prefecture": "福岡県",
-          "area": "渡辺通駅徒歩2分・天神駅徒歩10分",
-          "large_area": "西日本"
-        }
-      ],
-      "large_area": "西日本",
-      "description": "先着50名様限定 2,000円OFFクーポン",
-      "min_amount": 20000,
-      "expired_at": "2026-11-02T12:00:00+09:00",
-      "checkout_begin": "2026-10-27T00:00:00+09:00",
-      "checkout_end": "2027-03-31T00:00:00+09:00",
-      "day_use_exclude": true,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
-    }
-  },
-  {
-    "id": "ikkyu-1123438",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ONCRI-KARATSU／おんくり唐津 5,000円OFFクーポン",
-    "category": "宿限定クーポン",
-    "discount": "5,000円割引",
-    "stock_status": "配布終了",
-    "product_type": "宿泊",
-    "area": "佐賀県／唐津",
-    "regions": [
-      "佐賀県"
-    ],
-    "booking_period": "～ 2026/11/02 12:00",
-    "travel_period": "2026/10/21 ～ 2026/12/26",
-    "stay_period": "2026/10/21 ～ 2026/12/26",
-    "coupon_codes": [],
-    "conditions": [
-      "予約金額40,000円以上",
-      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
-    ],
-    "source_url": "https://www.ikyu.com/coupons/accommodations",
-    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1123438",
-    "source_type": "official_page",
-    "fetch_method": "nuxt_data",
-    "last_checked": "2026-11-02",
-    "confidence": "high",
-    "display_type": "table",
-    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
-    "detail_data": {
-      "platform": "ikyu",
-      "platform_manage_id": "1123438",
-      "origin_provider": "ikkyu",
-      "shared_with": [
-        "yahoo_travel"
-      ],
-      "hotel_name": "ONCRI-KARATSU／おんくり唐津",
-      "hotel_url": "https://www.ikyu.com/00030745/?discsort=1&lc=1&ppc=2&rc=1&st=1",
-      "accommodation_ids": [
-        "00030745"
-      ],
-      "accommodations": [
-        {
-          "name": "ONCRI-KARATSU／おんくり唐津",
-          "accommodation_id": "00030745",
-          "prefecture": "佐賀県",
-          "area": "唐津",
-          "large_area": "西日本"
-        }
-      ],
-      "large_area": "西日本",
-      "description": "5,000円OFFクーポン",
-      "min_amount": 40000,
-      "expired_at": "2026-11-02T12:00:00+09:00",
-      "checkout_begin": "2026-10-21T00:00:00+09:00",
-      "checkout_end": "2026-12-26T00:00:00+09:00",
-      "day_use_exclude": false,
-      "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1093,7 +961,7 @@
       "checkout_end": "2027-06-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1159,7 +1027,7 @@
       "checkout_end": "2027-03-19T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1225,7 +1093,7 @@
       "checkout_end": "2026-12-04T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1291,7 +1159,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1356,7 +1224,7 @@
       "checkout_end": "2027-05-01T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1423,7 +1291,7 @@
       "checkout_end": "2027-02-04T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1489,7 +1357,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1556,7 +1424,7 @@
       "checkout_end": "2026-12-23T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1623,7 +1491,327 @@
       "checkout_end": "2027-04-30T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1128243",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG 2,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大阪府／本町駅 徒歩3分 心斎橋駅 徒歩6分",
+    "regions": [
+      "大阪府"
+    ],
+    "booking_period": "～ 2026/11/16 12:00",
+    "travel_period": "2026/12/01 ～ 2027/05/31",
+    "stay_period": "2026/12/01 ～ 2027/05/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額14,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1128243",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128243",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+      "hotel_url": "https://www.ikyu.com/00082386/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00082386"
+      ],
+      "accommodations": [
+        {
+          "name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+          "accommodation_id": "00082386",
+          "prefecture": "大阪府",
+          "area": "本町駅 徒歩3分 心斎橋駅 徒歩6分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "2,000円OFFクーポン",
+      "min_amount": 14000,
+      "expired_at": "2026-11-16T12:00:00+09:00",
+      "checkout_begin": "2026-12-01T00:00:00+09:00",
+      "checkout_end": "2027-05-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1128244",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG 2,500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "2,500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大阪府／本町駅 徒歩3分 心斎橋駅 徒歩6分",
+    "regions": [
+      "大阪府"
+    ],
+    "booking_period": "～ 2026/11/16 12:00",
+    "travel_period": "2026/12/01 ～ 2027/05/31",
+    "stay_period": "2026/12/01 ～ 2027/05/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1128244",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128244",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+      "hotel_url": "https://www.ikyu.com/00082386/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00082386"
+      ],
+      "accommodations": [
+        {
+          "name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+          "accommodation_id": "00082386",
+          "prefecture": "大阪府",
+          "area": "本町駅 徒歩3分 心斎橋駅 徒歩6分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "2,500円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-16T12:00:00+09:00",
+      "checkout_begin": "2026-12-01T00:00:00+09:00",
+      "checkout_end": "2027-05-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1128246",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG 3,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大阪府／本町駅 徒歩3分 心斎橋駅 徒歩6分",
+    "regions": [
+      "大阪府"
+    ],
+    "booking_period": "～ 2026/11/16 12:00",
+    "travel_period": "2026/12/01 ～ 2027/05/31",
+    "stay_period": "2026/12/01 ～ 2027/05/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額25,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1128246",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128246",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+      "hotel_url": "https://www.ikyu.com/00082386/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00082386"
+      ],
+      "accommodations": [
+        {
+          "name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+          "accommodation_id": "00082386",
+          "prefecture": "大阪府",
+          "area": "本町駅 徒歩3分 心斎橋駅 徒歩6分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "3,000円OFFクーポン",
+      "min_amount": 25000,
+      "expired_at": "2026-11-16T12:00:00+09:00",
+      "checkout_begin": "2026-12-01T00:00:00+09:00",
+      "checkout_end": "2027-05-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1128248",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG 4,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "4,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大阪府／本町駅 徒歩3分 心斎橋駅 徒歩6分",
+    "regions": [
+      "大阪府"
+    ],
+    "booking_period": "～ 2026/11/16 12:00",
+    "travel_period": "2026/12/01 ～ 2027/05/31",
+    "stay_period": "2026/12/01 ～ 2027/05/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1128248",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128248",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+      "hotel_url": "https://www.ikyu.com/00082386/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00082386"
+      ],
+      "accommodations": [
+        {
+          "name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+          "accommodation_id": "00082386",
+          "prefecture": "大阪府",
+          "area": "本町駅 徒歩3分 心斎橋駅 徒歩6分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "4,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-11-16T12:00:00+09:00",
+      "checkout_begin": "2026-12-01T00:00:00+09:00",
+      "checkout_end": "2027-05-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1128249",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG 10,500円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "10,500円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大阪府／本町駅 徒歩3分 心斎橋駅 徒歩6分",
+    "regions": [
+      "大阪府"
+    ],
+    "booking_period": "～ 2026/11/16 12:00",
+    "travel_period": "2026/12/01 ～ 2027/05/31",
+    "stay_period": "2026/12/01 ～ 2027/05/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額50,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1128249",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1128249",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+      "hotel_url": "https://www.ikyu.com/00082386/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00082386"
+      ],
+      "accommodations": [
+        {
+          "name": "ホリデイ・イン エクスプレス大阪シティセンター御堂筋 by IHG",
+          "accommodation_id": "00082386",
+          "prefecture": "大阪府",
+          "area": "本町駅 徒歩3分 心斎橋駅 徒歩6分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "10,500円OFFクーポン",
+      "min_amount": 50000,
+      "expired_at": "2026-11-16T12:00:00+09:00",
+      "checkout_begin": "2026-12-01T00:00:00+09:00",
+      "checkout_end": "2027-05-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1689,7 +1877,7 @@
       "checkout_end": "2026-12-04T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1756,7 +1944,7 @@
       "checkout_end": "2027-03-19T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1823,7 +2011,7 @@
       "checkout_end": "2027-03-19T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1890,7 +2078,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -1957,7 +2145,7 @@
       "checkout_end": "2026-12-29T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2023,7 +2211,7 @@
       "checkout_end": "2026-12-28T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2088,7 +2276,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2154,7 +2342,71 @@
       "checkout_end": "2027-03-19T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1117229",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "OKINAWA KARIYUSHI RESORT EXES ONNA（沖縄かりゆしリゾートEXES恩納） 先着50名様限定 3,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "沖縄県／恩納",
+    "regions": [
+      "沖縄県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/24 ～ 2026/12/24",
+    "stay_period": "2026/11/24 ～ 2026/12/24",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "先着50名様限定",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1117229",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1117229",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "OKINAWA KARIYUSHI RESORT EXES ONNA（沖縄かりゆしリゾートEXES恩納）",
+      "hotel_url": "https://www.ikyu.com/00001393/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00001393"
+      ],
+      "accommodations": [
+        {
+          "name": "OKINAWA KARIYUSHI RESORT EXES ONNA（沖縄かりゆしリゾートEXES恩納）",
+          "accommodation_id": "00001393",
+          "prefecture": "沖縄県",
+          "area": "恩納",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "先着50名様限定 3,000円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-24T00:00:00+09:00",
+      "checkout_end": "2026-12-24T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2220,7 +2472,7 @@
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2286,7 +2538,7 @@
       "checkout_end": "2026-12-25T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2353,7 +2605,7 @@
       "checkout_end": "2026-12-24T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2419,7 +2671,7 @@
       "checkout_end": "2026-12-24T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2485,7 +2737,7 @@
       "checkout_end": "2026-12-24T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2551,7 +2803,7 @@
       "checkout_end": "2026-12-24T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2618,7 +2870,7 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2685,7 +2937,7 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2751,7 +3003,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2818,7 +3070,7 @@
       "checkout_end": "2026-12-28T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2884,7 +3136,7 @@
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -2950,7 +3202,72 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1130592",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "熱海風雅 先着30名様限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "静岡県／熱海温泉",
+    "regions": [
+      "静岡県"
+    ],
+    "booking_period": "～ 2026/11/30 12:00",
+    "travel_period": "2026/11/02 ～ 2027/01/31",
+    "stay_period": "2026/11/02 ～ 2027/01/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額20,000円以上",
+      "先着30名様限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1130592",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1130592",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "熱海風雅",
+      "hotel_url": "https://www.ikyu.com/00031031/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00031031"
+      ],
+      "accommodations": [
+        {
+          "name": "熱海風雅",
+          "accommodation_id": "00031031",
+          "prefecture": "静岡県",
+          "area": "熱海温泉",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着30名様限定 1,000円OFFクーポン",
+      "min_amount": 20000,
+      "expired_at": "2026-11-30T12:00:00+09:00",
+      "checkout_begin": "2026-11-02T00:00:00+09:00",
+      "checkout_end": "2027-01-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3017,7 +3334,7 @@
       "checkout_end": "2026-12-18T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3083,7 +3400,7 @@
       "checkout_end": "2026-12-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3147,7 +3464,7 @@
       "checkout_end": "2026-12-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3213,7 +3530,7 @@
       "checkout_end": "2027-04-13T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3280,7 +3597,7 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3410,7 +3727,71 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": true,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1125183",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "サットンホテル博多シティ 枚数限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "福岡県／JR博多駅博多口徒歩5分",
+    "regions": [
+      "福岡県"
+    ],
+    "booking_period": "～ 2027/01/22 12:00",
+    "travel_period": "2026/11/01 ～ 2027/01/29",
+    "stay_period": "2026/11/01 ～ 2027/01/29",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額8,000円以上",
+      "枚数限定",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1125183",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-02",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1125183",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "サットンホテル博多シティ",
+      "hotel_url": "https://www.ikyu.com/00080709/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00080709"
+      ],
+      "accommodations": [
+        {
+          "name": "サットンホテル博多シティ",
+          "accommodation_id": "00080709",
+          "prefecture": "福岡県",
+          "area": "JR博多駅博多口徒歩5分",
+          "large_area": "西日本"
+        }
+      ],
+      "large_area": "西日本",
+      "description": "枚数限定 1,000円OFFクーポン",
+      "min_amount": 8000,
+      "expired_at": "2027-01-22T12:00:00+09:00",
+      "checkout_begin": "2026-11-01T00:00:00+09:00",
+      "checkout_end": "2027-01-29T00:00:00+09:00",
+      "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3474,7 +3855,7 @@
       "checkout_end": "2027-01-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3538,7 +3919,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3603,7 +3984,7 @@
       "checkout_end": "2027-02-28T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3670,7 +4051,7 @@
       "checkout_end": "2027-03-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3735,7 +4116,7 @@
       "checkout_end": "2027-09-30T00:00:00+09:00",
       "day_use_exclude": false,
       "is_hotel_group_coupon": false,
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3780,7 +4161,52 @@
       "ended_label": false,
       "search_url": "https://www.ikyu.com/tohoku/120240/",
       "raw_discount": "最大40,000円OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-4a493281a2",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（山形県南陽市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "山形県南陽市",
+    "regions": [
+      "山形県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "山形県南陽市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3825,7 +4251,367 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/tohoku/120220/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-0acaff3666",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（神奈川県横須賀市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "神奈川県横須賀市",
+    "regions": [
+      "神奈川県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "神奈川県横須賀市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-daa81b7474",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（栃木県那須塩原市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "栃木県那須塩原市",
+    "regions": [
+      "栃木県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "栃木県那須塩原市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-4c4e8f2a0a",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（千葉県鴨川市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "千葉県鴨川市",
+    "regions": [
+      "千葉県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "千葉県鴨川市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-d0de0facf5",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（山梨県北杜市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "山梨県北杜市",
+    "regions": [
+      "山梨県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "山梨県北杜市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-10e5c13128",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（石川県加賀市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "石川県加賀市",
+    "regions": [
+      "石川県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "石川県加賀市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-939705fdb9",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（愛知県南知多町）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "愛知県南知多町",
+    "regions": [
+      "愛知県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "愛知県南知多町",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-fbb5049f13",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（静岡県伊東市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "静岡県伊東市",
+    "regions": [
+      "静岡県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "静岡県伊東市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-4d5e08508f",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（長野県茅野市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "長野県茅野市",
+    "regions": [
+      "長野県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "長野県茅野市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3870,7 +4656,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/koshinetsu/210551/",
       "raw_discount": "最大30%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3915,7 +4701,187 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/search?lct=22007000",
       "raw_discount": "最大20%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-10cac2fa22",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（京都府京丹後市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "京都府京丹後市",
+    "regions": [
+      "京都府"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "京都府京丹後市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-7bed0a957e",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（沖縄県恩納村）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "沖縄県恩納村",
+    "regions": [
+      "沖縄県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "沖縄県恩納村",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-bd17a557cc",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（大分県由布市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "大分県由布市",
+    "regions": [
+      "大分県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "大分県由布市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-86ec508b4c",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ポイントアップキャンペーン（沖縄県石垣市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "沖縄県石垣市",
+    "regions": [
+      "沖縄県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-02",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ポイントアップキャンペーン",
+      "prefecture_text": "沖縄県石垣市",
+      "ended_label": false,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -3960,7 +4926,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350906/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -4005,7 +4971,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350907/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -4050,7 +5016,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350901/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -4095,7 +5061,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350902/",
       "raw_discount": "最大50%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -4140,7 +5106,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350905/",
       "raw_discount": "最大60%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   },
   {
@@ -4185,7 +5151,7 @@
       "ended_label": true,
       "search_url": "https://www.ikyu.com/kyushu/350904/",
       "raw_discount": "最大60%OFFクーポン",
-      "sibling_checked_file": "coupons_2026-11-01.json"
+      "sibling_checked_file": "coupons_2026-11-02.json"
     }
   }
 ]
