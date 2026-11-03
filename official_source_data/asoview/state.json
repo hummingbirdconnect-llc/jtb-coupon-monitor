@@ -18,15 +18,15 @@
       "content_hash": "381a58ebb80aa3b506552d483b573ece46a76201010b198d967b85281204523c"
     }
   ],
-  "queued_hash": "5c918827baa0cfc8884718e120f2fcbd91da17e8871a2c3eafae7061742aca7f",
-  "queued_candidate_id": "asoview-5c918827baa0cfc8",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-02T07:18:23.570239+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-10-24T09:10:56.812450+09:00",
-  "last_audit_candidate_id": "asoview-29e721755cfd6689",
-  "processed_hash": "29e721755cfd668992dd3fb0c60776f35d08e139faced21049a8e3d6b68e720e",
-  "last_processed_at": "2026-10-24T09:10:56.812450+09:00",
-  "last_changed_at": "2026-10-24T09:10:56.812450+09:00",
-  "latest_file": "coupons_2026-10-24.json",
-  "semantic_hash": "d8aea12df51cf87bd0d0fd30c587cff459adbb6a16a7509c12e35800ce1cb1ad"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-03T09:12:39.549571+09:00",
+  "last_audit_candidate_id": "asoview-5c918827baa0cfc8",
+  "processed_hash": "5c918827baa0cfc8884718e120f2fcbd91da17e8871a2c3eafae7061742aca7f",
+  "last_processed_at": "2026-11-03T09:12:39.549571+09:00",
+  "last_changed_at": "2026-11-03T09:12:39.549571+09:00",
+  "latest_file": "coupons_2026-11-03.json",
+  "semantic_hash": "16a399314a4e63fee49f8be7aa387ad7f1eb6cb7840072cd3e092b19f8097b9d"
 }

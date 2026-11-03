@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "candidate_id": "yomiuri_travel-2426ba6167666c4b",
+  "provider_id": "yomiuri_travel",
+  "page_summary": "読売旅行トップページ。ツアー検索フォームと特集リンク名のみで、クーポンの金額・割引率・年つき期間の記載なし。",
+  "change_summary": "初回(baseline)。確定できる掲載項目なし。",
+  "recommendation": "hold",
+  "priority": 20,
+  "uncertainty_reasons": [
+    "初回で、トップページ本文に金額・割引率・年つき期間のあるクーポンが確認できない"
+  ],
+  "audit_notes": "特集名（セール・キャンペーン）とFAQ見出しはあるが特典内容・期間が本文にないためunpublishable。地域別・テーマ別の特集リンクは目的地案内のため個別項目にしていない。",
+  "deals": [
+    {
+      "title": "超先取り春旅セール",
+      "campaign_type": "sale",
+      "status": "unknown",
+      "classification": "unpublishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "特集名のみ。割引内容・期間の記載なし",
+      "official_url": "https://www.yomiuri-ryokou.co.jp/",
+      "evidence_quote": "超先取り春旅セール",
+      "confidence": "low"
+    },
+    {
+      "title": "2026年読売巨人軍応援感謝キャンペーン",
+      "campaign_type": "campaign",
+      "status": "unknown",
+      "classification": "unpublishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "特集名のみ。特典内容・期間の記載なし",
+      "official_url": "https://www.yomiuri-ryokou.co.jp/",
+      "evidence_quote": "2026年読売巨人軍応援感謝キャンペーン",
+      "confidence": "low"
+    },
+    {
+      "title": "クーポンについて",
+      "campaign_type": "coupon",
+      "status": "unknown",
+      "classification": "unpublishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "よくあるご質問の見出しのみ。クーポンの金額・期間の記載なし",
+      "official_url": "https://www.yomiuri-ryokou.co.jp/",
+      "evidence_quote": "クーポンについて クーポンのご利用方法とご利用にあたっての注意事項",
+      "confidence": "low"
+    }
+  ]
+}
