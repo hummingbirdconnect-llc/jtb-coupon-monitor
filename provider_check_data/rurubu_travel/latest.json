@@ -3,9 +3,9 @@
   "provider_label": "るるぶトラベル",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-11-03T07:22:54.166004+09:00",
-  "completed_at": "2026-11-03T07:22:55.549369+09:00",
-  "official_fetched_at": "2026-11-03T07:22:55.549369+09:00",
+  "started_at": "2026-11-03T16:05:46.746555+09:00",
+  "completed_at": "2026-11-03T16:05:47.987671+09:00",
+  "official_fetched_at": "2026-11-03T16:05:47.987671+09:00",
   "needs_review": false,
   "data_date": "2026-11-03",
   "freshness_status": "fresh",
@@ -15,5 +15,5 @@
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-11-03T07:22:55.549369+09:00"
+  "deep_dive_at": "2026-11-03T16:05:47.987671+09:00"
 }

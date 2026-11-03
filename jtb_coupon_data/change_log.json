@@ -7522,5 +7522,23 @@
     "title": "熊本ふっこう応援割",
     "discount": "最大60％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-03",
+    "type": "🔴 配布終了",
+    "id": "2609goton",
+    "category": "国内",
+    "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
+    "discount": "最大30％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-03",
+    "type": "🟢 配布再開",
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
   }
 ]
