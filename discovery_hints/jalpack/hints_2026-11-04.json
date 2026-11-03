@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-11-04T07:33:47.498764+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "JALふるさと応援割　疲れたら、愛媛。",
+      "kind": "campaign",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/furusato/sik-ehime/",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/furusato/sik-ehime/",
+      "official_domain_match": true,
+      "evidence": "11月2日に販売再開。往復松山空港利用と愛媛県内指定施設1泊以上が条件。専用ページからの予約に限る。",
+      "observed_date": "2026-11-04",
+      "discount": "5,000円（1名につき）",
+      "period": "2026年7月8日（水）～11月30日（月）出発まで／2026年12月1日（火）帰着分まで／2026年8月13日（木）～8月16日（日）出発を除く",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalpack/hints_2026-11-04.json"
+}

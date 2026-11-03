@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-04T07:33:47.498764+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 10,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "じゃらんスペシャルウィーク！期間限定セール",
+      "kind": "sale",
+      "found_url": "https://travel.watch.impress.co.jp/docs/news/2151097.html",
+      "official_url": "https://www.jalan.net/theme/specialweek/",
+      "official_domain_match": true,
+      "evidence": "掲載期間は10月30日～11月19日。最大1万円分クーポンを公開。終了表示の券は対象外。見出しに旧日付が残るため期間の確認は一部。",
+      "observed_date": "2026-11-04",
+      "discount": "最大10,000円分クーポン",
+      "period": "掲載期間：2026年10月30日～2026年11月19日",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalan/hints_2026-11-04.json"
+}
