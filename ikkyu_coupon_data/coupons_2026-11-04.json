@@ -63,6 +63,70 @@
     }
   },
   {
+    "id": "ikkyu-1131766",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "龍宮城スパ・ホテル三日月 富士見亭 5,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "5,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "千葉県／木更津",
+    "regions": [
+      "千葉県"
+    ],
+    "booking_period": "～ 2026/11/09 12:00",
+    "travel_period": "2026/11/04 ～ 2026/12/03",
+    "stay_period": "2026/11/04 ～ 2026/12/03",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額50,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1131766",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1131766",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "龍宮城スパ・ホテル三日月 富士見亭",
+      "hotel_url": "https://www.ikyu.com/00002330/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00002330"
+      ],
+      "accommodations": [
+        {
+          "name": "龍宮城スパ・ホテル三日月 富士見亭",
+          "accommodation_id": "00002330",
+          "prefecture": "千葉県",
+          "area": "木更津",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "5,000円OFFクーポン",
+      "min_amount": 50000,
+      "expired_at": "2026-11-09T12:00:00+09:00",
+      "checkout_begin": "2026-11-04T00:00:00+09:00",
+      "checkout_end": "2026-12-03T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
     "id": "ikkyu-1121988",
     "provider": "ikkyu",
     "provider_label": "一休.com",
@@ -378,6 +442,262 @@
       "expired_at": "2026-11-15T12:00:00+09:00",
       "checkout_begin": "2026-11-04T00:00:00+09:00",
       "checkout_end": "2027-06-30T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1102562",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAホリデイ・イン リゾート軽井沢 by IHG 4,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "4,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "群馬県／北軽井沢",
+    "regions": [
+      "群馬県"
+    ],
+    "booking_period": "～ 2026/11/18 12:00",
+    "travel_period": "2026/11/04 ～ 2027/08/31",
+    "stay_period": "2026/11/04 ～ 2027/08/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額15,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1102562",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1102562",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+      "hotel_url": "https://www.ikyu.com/00000410/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000410"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+          "accommodation_id": "00000410",
+          "prefecture": "群馬県",
+          "area": "北軽井沢",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "4,000円OFFクーポン",
+      "min_amount": 15000,
+      "expired_at": "2026-11-18T12:00:00+09:00",
+      "checkout_begin": "2026-11-04T00:00:00+09:00",
+      "checkout_end": "2027-08-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1102563",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAホリデイ・イン リゾート軽井沢 by IHG 8,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "8,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "群馬県／北軽井沢",
+    "regions": [
+      "群馬県"
+    ],
+    "booking_period": "～ 2026/11/18 12:00",
+    "travel_period": "2026/11/04 ～ 2027/08/31",
+    "stay_period": "2026/11/04 ～ 2027/08/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1102563",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1102563",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+      "hotel_url": "https://www.ikyu.com/00000410/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000410"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+          "accommodation_id": "00000410",
+          "prefecture": "群馬県",
+          "area": "北軽井沢",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "8,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-11-18T12:00:00+09:00",
+      "checkout_begin": "2026-11-04T00:00:00+09:00",
+      "checkout_end": "2027-08-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1102564",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAホリデイ・イン リゾート軽井沢 by IHG 11,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "11,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "群馬県／北軽井沢",
+    "regions": [
+      "群馬県"
+    ],
+    "booking_period": "～ 2026/11/18 12:00",
+    "travel_period": "2026/11/04 ～ 2027/08/31",
+    "stay_period": "2026/11/04 ～ 2027/08/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額50,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1102564",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1102564",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+      "hotel_url": "https://www.ikyu.com/00000410/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000410"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+          "accommodation_id": "00000410",
+          "prefecture": "群馬県",
+          "area": "北軽井沢",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "11,000円OFFクーポン",
+      "min_amount": 50000,
+      "expired_at": "2026-11-18T12:00:00+09:00",
+      "checkout_begin": "2026-11-04T00:00:00+09:00",
+      "checkout_end": "2027-08-31T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1102565",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAホリデイ・イン リゾート軽井沢 by IHG 15,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "15,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "群馬県／北軽井沢",
+    "regions": [
+      "群馬県"
+    ],
+    "booking_period": "～ 2026/11/18 12:00",
+    "travel_period": "2026/11/04 ～ 2027/08/31",
+    "stay_period": "2026/11/04 ～ 2027/08/31",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額70,000円以上",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1102565",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1102565",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+      "hotel_url": "https://www.ikyu.com/00000410/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000410"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAホリデイ・イン リゾート軽井沢 by IHG",
+          "accommodation_id": "00000410",
+          "prefecture": "群馬県",
+          "area": "北軽井沢",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "15,000円OFFクーポン",
+      "min_amount": 70000,
+      "expired_at": "2026-11-18T12:00:00+09:00",
+      "checkout_begin": "2026-11-04T00:00:00+09:00",
+      "checkout_end": "2027-08-31T00:00:00+09:00",
       "day_use_exclude": true,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-02.json"
@@ -834,6 +1154,71 @@
     }
   },
   {
+    "id": "ikkyu-1115111",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ANAクラウンプラザホテル秋田 by IHG 枚数限定 1,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "1,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "秋田県／JR秋田駅西口徒歩3分",
+    "regions": [
+      "秋田県"
+    ],
+    "booking_period": "～ 2026/12/31 12:00",
+    "travel_period": "2026/12/01 ～ 2027/02/28",
+    "stay_period": "2026/12/01 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額15,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1115111",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1115111",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ANAクラウンプラザホテル秋田 by IHG",
+      "hotel_url": "https://www.ikyu.com/00000349/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000349"
+      ],
+      "accommodations": [
+        {
+          "name": "ANAクラウンプラザホテル秋田 by IHG",
+          "accommodation_id": "00000349",
+          "prefecture": "秋田県",
+          "area": "JR秋田駅西口徒歩3分",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "枚数限定 1,000円OFFクーポン",
+      "min_amount": 15000,
+      "expired_at": "2026-12-31T12:00:00+09:00",
+      "checkout_begin": "2026-12-01T00:00:00+09:00",
+      "checkout_end": "2027-02-28T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
     "id": "ikkyu-1121129",
     "provider": "ikkyu",
     "provider_label": "一休.com",
@@ -1159,6 +1544,71 @@
       "checkout_begin": "2026-11-01T00:00:00+09:00",
       "checkout_end": "2026-11-30T00:00:00+09:00",
       "day_use_exclude": false,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-1131368",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ホテルオークラ東京ベイ 先着50名様限定 3,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "3,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "千葉県／舞浜",
+    "regions": [
+      "千葉県"
+    ],
+    "booking_period": "～ 2026/11/09 12:00",
+    "travel_period": "2026/11/02 ～ 2026/12/02",
+    "stay_period": "2026/11/02 ～ 2026/12/02",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額30,000円以上",
+      "先着50名様限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1131368",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1131368",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "ホテルオークラ東京ベイ",
+      "hotel_url": "https://www.ikyu.com/00000198/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00000198"
+      ],
+      "accommodations": [
+        {
+          "name": "ホテルオークラ東京ベイ",
+          "accommodation_id": "00000198",
+          "prefecture": "千葉県",
+          "area": "舞浜",
+          "large_area": "東日本"
+        }
+      ],
+      "large_area": "東日本",
+      "description": "先着50名様限定 3,000円OFFクーポン",
+      "min_amount": 30000,
+      "expired_at": "2026-11-09T12:00:00+09:00",
+      "checkout_begin": "2026-11-02T00:00:00+09:00",
+      "checkout_end": "2026-12-02T00:00:00+09:00",
+      "day_use_exclude": true,
       "is_hotel_group_coupon": false,
       "sibling_checked_file": "coupons_2026-11-02.json"
     }
@@ -3465,6 +3915,71 @@
     }
   },
   {
+    "id": "ikkyu-1131461",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "満天ノ 辻のや 枚数限定 4,000円OFFクーポン",
+    "category": "宿限定クーポン",
+    "discount": "4,000円割引",
+    "stock_status": "配布中",
+    "product_type": "宿泊",
+    "area": "石川県／粟津温泉・片山津温泉",
+    "regions": [
+      "石川県"
+    ],
+    "booking_period": "～ 2026/12/31 12:00",
+    "travel_period": "2026/11/04 ～ 2027/02/28",
+    "stay_period": "2026/11/04 ～ 2027/02/28",
+    "coupon_codes": [],
+    "conditions": [
+      "予約金額56,000円以上",
+      "枚数限定",
+      "デイユース（日帰り）は対象外",
+      "一休会員でログインしてクーポンを獲得（予約入力画面で自動選択）"
+    ],
+    "source_url": "https://www.ikyu.com/coupons/accommodations",
+    "detail_url": "https://www.ikyu.com/coupons/accommodations?cmid=1131461",
+    "source_type": "official_page",
+    "fetch_method": "nuxt_data",
+    "last_checked": "2026-11-04",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "一休.comの宿限定クーポン一覧（公式確認済み）",
+    "detail_data": {
+      "platform": "ikyu",
+      "platform_manage_id": "1131461",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "hotel_name": "満天ノ 辻のや",
+      "hotel_url": "https://www.ikyu.com/00031212/?discsort=1&lc=1&ppc=2&rc=1&st=1",
+      "accommodation_ids": [
+        "00031212"
+      ],
+      "accommodations": [
+        {
+          "name": "満天ノ 辻のや",
+          "accommodation_id": "00031212",
+          "prefecture": "石川県",
+          "area": "粟津温泉・片山津温泉",
+          "large_area": "中日本"
+        }
+      ],
+      "large_area": "中日本",
+      "description": "枚数限定 4,000円OFFクーポン",
+      "min_amount": 56000,
+      "expired_at": "2026-12-31T12:00:00+09:00",
+      "checkout_begin": "2026-11-04T00:00:00+09:00",
+      "checkout_end": "2027-02-28T00:00:00+09:00",
+      "day_use_exclude": true,
+      "is_hotel_group_coupon": false,
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
     "id": "ikkyu-1125183",
     "provider": "ikkyu",
     "provider_label": "一休.com",
@@ -4147,51 +4662,6 @@
     }
   },
   {
-    "id": "ikkyu-gov-4d5e08508f",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ポイントアップキャンペーン（長野県茅野市）",
-    "category": "自治体クーポン",
-    "discount": "",
-    "stock_status": "配布中",
-    "product_type": "宿泊",
-    "area": "長野県茅野市",
-    "regions": [
-      "長野県"
-    ],
-    "booking_period": "",
-    "travel_period": "",
-    "stay_period": "",
-    "coupon_codes": [],
-    "conditions": [
-      "予約時に自動で割引（手続き不要）",
-      "対象施設・条件は自治体の定めによる"
-    ],
-    "source_url": "https://www.ikyu.com/campaign/government/",
-    "detail_url": "https://www.ikyu.com/campaign/government/",
-    "source_type": "official_page",
-    "fetch_method": "requests_html",
-    "last_checked": "2026-11-04",
-    "confidence": "medium",
-    "display_type": "table",
-    "placement_hint": "一休.comの自治体クーポン特集",
-    "detail_data": {
-      "platform": "ikyu",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "campaign_name": "ポイントアップキャンペーン",
-      "prefecture_text": "長野県茅野市",
-      "ended_label": false,
-      "search_url": "",
-      "raw_discount": "",
-      "sibling_checked_file": "coupons_2026-11-02.json"
-    }
-  },
-  {
     "id": "ikkyu-gov-89c188d010",
     "provider": "ikkyu",
     "provider_label": "一休.com",
@@ -4372,6 +4842,51 @@
     }
   },
   {
+    "id": "ikkyu-gov-bef7714add",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ふるさと納税でお得に予約！（長野県茅野市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "宿泊",
+    "area": "長野県茅野市",
+    "regions": [
+      "長野県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-04",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ふるさと納税でお得に予約！",
+      "prefecture_text": "長野県茅野市",
+      "ended_label": true,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
     "id": "ikkyu-gov-10cac2fa22",
     "provider": "ikkyu",
     "provider_label": "一休.com",
@@ -4455,51 +4970,6 @@
       "shared_with": [],
       "campaign_name": "ポイントアップキャンペーン",
       "prefecture_text": "大分県由布市",
-      "ended_label": false,
-      "search_url": "",
-      "raw_discount": "",
-      "sibling_checked_file": "coupons_2026-11-02.json"
-    }
-  },
-  {
-    "id": "ikkyu-gov-86ec508b4c",
-    "provider": "ikkyu",
-    "provider_label": "一休.com",
-    "site_targets": [
-      "welltrip"
-    ],
-    "article_slug": "ikyu-coupon",
-    "title": "ポイントアップキャンペーン（沖縄県石垣市）",
-    "category": "自治体クーポン",
-    "discount": "",
-    "stock_status": "配布中",
-    "product_type": "宿泊",
-    "area": "沖縄県石垣市",
-    "regions": [
-      "沖縄県"
-    ],
-    "booking_period": "",
-    "travel_period": "",
-    "stay_period": "",
-    "coupon_codes": [],
-    "conditions": [
-      "予約時に自動で割引（手続き不要）",
-      "対象施設・条件は自治体の定めによる"
-    ],
-    "source_url": "https://www.ikyu.com/campaign/government/",
-    "detail_url": "https://www.ikyu.com/campaign/government/",
-    "source_type": "official_page",
-    "fetch_method": "requests_html",
-    "last_checked": "2026-11-04",
-    "confidence": "medium",
-    "display_type": "table",
-    "placement_hint": "一休.comの自治体クーポン特集",
-    "detail_data": {
-      "platform": "ikyu",
-      "origin_provider": "ikkyu",
-      "shared_with": [],
-      "campaign_name": "ポイントアップキャンペーン",
-      "prefecture_text": "沖縄県石垣市",
       "ended_label": false,
       "search_url": "",
       "raw_discount": "",
@@ -4815,6 +5285,51 @@
       "shared_with": [],
       "campaign_name": "ふるさと納税でお得に予約！",
       "prefecture_text": "沖縄県恩納村",
+      "ended_label": true,
+      "search_url": "",
+      "raw_discount": "",
+      "sibling_checked_file": "coupons_2026-11-02.json"
+    }
+  },
+  {
+    "id": "ikkyu-gov-19167a2f68",
+    "provider": "ikkyu",
+    "provider_label": "一休.com",
+    "site_targets": [
+      "welltrip"
+    ],
+    "article_slug": "ikyu-coupon",
+    "title": "ふるさと納税でお得に予約！（沖縄県石垣市）",
+    "category": "自治体クーポン",
+    "discount": "",
+    "stock_status": "配布終了",
+    "product_type": "宿泊",
+    "area": "沖縄県石垣市",
+    "regions": [
+      "沖縄県"
+    ],
+    "booking_period": "",
+    "travel_period": "",
+    "stay_period": "",
+    "coupon_codes": [],
+    "conditions": [
+      "予約時に自動で割引（手続き不要）",
+      "対象施設・条件は自治体の定めによる"
+    ],
+    "source_url": "https://www.ikyu.com/campaign/government/",
+    "detail_url": "https://www.ikyu.com/campaign/government/",
+    "source_type": "official_page",
+    "fetch_method": "requests_html",
+    "last_checked": "2026-11-04",
+    "confidence": "medium",
+    "display_type": "table",
+    "placement_hint": "一休.comの自治体クーポン特集",
+    "detail_data": {
+      "platform": "ikyu",
+      "origin_provider": "ikkyu",
+      "shared_with": [],
+      "campaign_name": "ふるさと納税でお得に予約！",
+      "prefecture_text": "沖縄県石垣市",
       "ended_label": true,
       "search_url": "",
       "raw_discount": "",

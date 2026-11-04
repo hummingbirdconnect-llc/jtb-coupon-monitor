@@ -3,17 +3,17 @@
   "provider_label": "一休",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-11-04T06:45:13.190830+09:00",
-  "completed_at": "2026-11-04T06:45:14.965933+09:00",
-  "official_fetched_at": "2026-11-04T06:45:14.965933+09:00",
+  "started_at": "2026-11-04T15:30:11.182736+09:00",
+  "completed_at": "2026-11-04T15:30:13.141940+09:00",
+  "official_fetched_at": "2026-11-04T15:30:13.141940+09:00",
   "needs_review": false,
   "data_date": "2026-11-04",
   "freshness_status": "fresh",
-  "coupon_count": 80,
+  "coupon_count": 88,
   "latest_file": "coupons_2026-11-04.json",
   "ai_used": false,
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-11-04T06:45:14.965933+09:00"
+  "deep_dive_at": "2026-11-04T15:30:13.141940+09:00"
 }
