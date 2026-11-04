@@ -1,0 +1,17 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-11-05T07:35:33.170620+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "取得できた施策名は既知のもの。一部の期間が動的表示のため取得できず、最新条件の確認には制限あり。",
+  "known_title_count": 56,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/his/hints_2026-11-05.json"
+}

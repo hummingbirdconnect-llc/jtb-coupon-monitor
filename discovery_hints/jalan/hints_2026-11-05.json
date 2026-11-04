@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-05T07:35:33.170620+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 10,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "じゃらんスペシャルウィーク",
+      "kind": "sale",
+      "found_url": "https://x.com/MbCPNbLdJL93989/status/2118101306938208719",
+      "official_url": "https://www.jalan.net/theme/specialweek/",
+      "official_domain_match": true,
+      "evidence": "公式ニュースで10月30日10時～11月19日23時59分の開催を確認。特設ページに半額プランの記載。旧日付も混在し、一部クーポンは終了表示。",
+      "observed_date": "2026-11-05",
+      "discount": "半額プラン",
+      "period": "掲載期間：2026年10月30日～2026年11月19日",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalan/hints_2026-11-05.json"
+}

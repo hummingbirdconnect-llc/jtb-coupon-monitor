@@ -1,0 +1,46 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-11-05T07:35:33.170620+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "羽田発新千歳着75周年記念クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "10月26日予約開始。JMB会員限定の国内旅行クーポン。先着6,000枚、1グループ2,000円OFF。併用利用可。",
+      "observed_date": "2026-11-05",
+      "discount": "2,000円OFF（1グループ）",
+      "period": "予約対象期間：2026年10月26日～12月29日／出発対象期間：2026年12月1日～2027年3月18日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "新千歳発－羽田着75周年記念クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "official_domain_match": true,
+      "evidence": "10月26日予約開始。JMB会員限定の国内旅行クーポン。先着3,000枚、1グループ2,000円OFF。併用利用可。",
+      "observed_date": "2026-11-05",
+      "discount": "2,000円OFF（1グループ）",
+      "period": "予約対象期間：2026年10月26日～12月29日／出発対象期間：2026年12月1日～2027年3月18日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jalpack/hints_2026-11-05.json"
+}

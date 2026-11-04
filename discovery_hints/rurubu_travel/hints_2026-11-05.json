@@ -1,0 +1,17 @@
+{
+  "provider_id": "rurubu_travel",
+  "provider_label": "るるぶトラベル",
+  "generated_at": "2026-11-05T07:35:33.170620+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式クーポン一覧はWeb閲覧・curlとも本文が空。Chromeのheadless起動失敗後、ブラウザーの識別情報付きcurlで再取得しても本文なし。検索結果のみの候補は不採用。",
+  "known_title_count": 73,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-05.json"
+}

@@ -1,0 +1,46 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-05T07:35:33.170620+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 94,
+  "registered_url_count": 95,
+  "candidates": [
+    {
+      "title": "【伊丹空港発 帯広空港着】航空＋宿で使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610obihiroairport2/page.asp",
+      "official_domain_match": true,
+      "evidence": "11月4日予約開始。往路は伊丹→帯広の直行便限定。帯広・十勝川温泉・サホロの対象施設で、人数等に応じ最大20,000円引。会員限定。",
+      "observed_date": "2026-11-05",
+      "discount": "最大 20,000 円引",
+      "period": "予約対象期間：2026/11/4(水) ～ 2027/2/27(土)／出発対象期間：2026/12/1(火) ～ 2027/2/28(日)",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "【帯広空港発 伊丹空港着】航空機+宿で使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610obihiroairport/page.asp",
+      "official_domain_match": true,
+      "evidence": "11月4日予約開始。帯広空港発・伊丹空港着の航空機と西日本の対象施設の宿泊に利用。4名以上で20,000円引。会員限定。",
+      "observed_date": "2026-11-05",
+      "discount": "最大 20,000 円引",
+      "period": "予約対象期間：2026/11/4(水) ～ 2027/2/27(土)／出発対象期間：2026/12/1(火) ～ 2027/2/28(日)",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-05.json"
+}
