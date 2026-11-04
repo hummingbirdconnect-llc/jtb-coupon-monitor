@@ -21,7 +21,7 @@ class WorkflowLocalWordPressSyncTests(unittest.TestCase):
             if "push_his_wordpress_feed.py" in line
         ]
         self.assertEqual(
-            ["python wordpress_feed/push_his_wordpress_feed.py --dry-run"],
+            ["if ! python wordpress_feed/push_his_wordpress_feed.py --dry-run; then"],
             calls,
         )
 
@@ -32,6 +32,34 @@ class WorkflowLocalWordPressSyncTests(unittest.TestCase):
 
     def test_validated_feed_is_still_committed(self) -> None:
         self.assertIn("wordpress_feed/his-monitor-feed.json", self.workflow)
+
+    def test_his_feed_failure_does_not_drop_other_provider_commits(self) -> None:
+        feed = self.workflow.split(
+            "- name: HIS WordPress用フィード生成・ローカル同期前検証", 1
+        )[1].split("\n      - name:", 1)[0]
+        self.assertIn("id: his_feed", feed)
+        self.assertIn("continue-on-error: true", feed)
+        self.assertIn("git checkout -- wordpress_feed/his-monitor-feed.json", feed)
+
+        commit = self.workflow.split("- name: コミット＆プッシュ", 1)[1].split(
+            "\n      - name:", 1
+        )[0]
+        self.assertIn("if: ${{ !cancelled() }}", commit)
+        self.assertLess(
+            self.workflow.index("- name: コミット＆プッシュ"),
+            self.workflow.index("- name: HIS公式監視の失敗をジョブ結果へ反映"),
+        )
+        reflect = self.workflow.split(
+            "- name: HIS公式監視の失敗をジョブ結果へ反映", 1
+        )[1]
+        self.assertIn("steps.his_feed.outcome == 'failure'", reflect)
+        self.assertIn("exit 1", reflect)
+
+        feed_builder = (ROOT / "wordpress_feed" / "build-his-wordpress-feed.mjs").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("latest.status !== \"success\"", feed_builder)
+        self.assertIn("HIS公式監視の最新実行が成功状態ではありません。", feed_builder)
 
 
 if __name__ == "__main__":

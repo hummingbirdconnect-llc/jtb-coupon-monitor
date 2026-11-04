@@ -51,7 +51,11 @@ from his_regions import (
 # ============================================================
 # 設定
 # ============================================================
+HIS_TOP_URL = "https://www.his-j.com/"
 PAGE_URL = "https://www.his-j.com/campaign/shisaku/"
+# 地域切替URLへ初回アクセスすると Cloudflare が 403 を返すことがある。
+# 同一ブラウザ文脈でトップと施策ページを先に開く。
+WARMUP_URLS = (HIS_TOP_URL, PAGE_URL)
 
 DATA_DIR = Path("./his_coupon_data")
 MASTER_FILE = DATA_DIR / "master_ids.json"
@@ -65,6 +69,10 @@ TAB_CONFIG = (
 )
 REGION_FETCH_ATTEMPTS = 2
 REGION_RETRY_DELAY_SECONDS = 2
+# 403の直後に同じ切替URLへ連打しない。ActionsのIP自体が拒否されている場合は
+# 待っても通らないことがある。
+REGION_HTTP_403_RETRY_DELAY_SECONDS = 15
+WARMUP_SETTLE_MS = 1000
 
 # データ保持日数
 DATA_RETENTION_DAYS = 30
@@ -268,15 +276,35 @@ def _assign_variant_id(
 
 
 def _new_browser_context(browser):
+    # UAは固定しない。Chrome/122 のまま実行中の Chromium（Actions上は156前後）と
+    # 食い違うと、Cloudflare の 403 判定材料になる。Playwright 既定の UA は
+    # 起動したブラウザのバージョンと一致する。
     return browser.new_context(
-        user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                   "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
         viewport={"width": 1280, "height": 800},
         locale="ja-JP",
         # GitHub ActionsはUTCで動くため、時間帯限定カードの表示判定を
         # 公式ページ利用者と同じ日本時間に固定する。
         timezone_id="Asia/Tokyo",
     )
+
+
+def _retry_delay_seconds(exc: BaseException, requested_delay: float) -> float:
+    """403の再試行だけ待ちを延ばす。0秒指定のときはテスト用に即時再試行する。"""
+    if requested_delay <= 0:
+        return 0
+    if "403" in str(exc):
+        return max(requested_delay, REGION_HTTP_403_RETRY_DELAY_SECONDS)
+    return requested_delay
+
+
+def _warmup_his_session(page) -> None:
+    """地域切替の前にトップと施策ページを開き、冷えたURLへの直行を避ける。"""
+    for url in WARMUP_URLS:
+        response = page.goto(url, wait_until="domcontentloaded", timeout=30000)
+        if not _response_ok(response):
+            status = response.status if response else "応答なし"
+            raise RuntimeError(f"事前アクセスHTTP {status}: {url}")
+        page.wait_for_timeout(WARMUP_SETTLE_MS)
 
 
 def _response_ok(response) -> bool:
@@ -300,6 +328,7 @@ def _fetch_one_region(
         'Object.defineProperty(navigator, "webdriver", { get: () => false });'
     )
     try:
+        _warmup_his_session(page)
         switch_response = page.goto(
             region.switch_url,
             wait_until="domcontentloaded",
@@ -467,12 +496,13 @@ def _fetch_region_with_retry(
                 raise RuntimeError(
                     f"{region.label}の取得に{attempts}回失敗: {exc}"
                 ) from exc
+            delay = _retry_delay_seconds(exc, retry_delay_seconds)
             print(
                 f"    ⚠️ {region.label}の取得を再試行します"
-                f"（{attempt}/{attempts}: {exc}）"
+                f"（{attempt}/{attempts}: {exc} / {delay:.0f}秒後）"
             )
-            if retry_delay_seconds > 0:
-                time.sleep(retry_delay_seconds)
+            if delay > 0:
+                time.sleep(delay)
             continue
 
         variants_by_base.clear()
