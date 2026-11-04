@@ -1,0 +1,65 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-05T08:18:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 4,
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭（11月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/11/4（水）10:00～2026/12/2（水）09:59 ／ 公式：全楽天会員様 500円OFF 宿クーポン 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 週末4,500円OFF・平日4,000円OFF ／ 公式：ダイヤモンド・プラチナ会員様限定 3,000円OFFほか ／ 公式：クーポンには金額条件がございます ／ 未確認：宿泊対象期間 ／ 未確認：各クーポンの最低利用額 ／ 未確認：決済方法 ／ 未確認：楽パックのクーポン（ページ上で見つからない）",
+      "observed_date": "2026-11-05",
+      "discount": "国内宿泊：全楽天会員500円OFF、ダイヤモンド会員限定 最大4,500円OFF、ダイヤモンド・プラチナ会員限定 最大3,000円OFF（未確認（Grok: 楽パック最大8,000円OFF））",
+      "period": "予約：2026/11/4（水）10:00～2026/12/2（水）09:59 ／ 旅行：未確認（Grok: 国内宿泊 2026年11月4日チェックイン～2027年10月31日チェックアウト頃）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "秋冬SALE",
+      "kind": "coupon",
+      "found_url": "https://event.travel.rakuten.co.jp/special/sales/",
+      "official_url": "https://event.travel.rakuten.co.jp/special/sales/",
+      "evidence": "公式：クーポン利用で最大30%OFF対象施設 ／ 公式：最大10,000円OFFクーポン（FHG HOTELS）、最大8,000円OFFクーポン（温泉宿） ／ 公式：ページ内のポイントキャンペーンはエントリー必須・予約対象期間 2026年8月31日10:00～11月30日09:59 ／ 未確認：SALE本体の予約期間（ページで見つからない） ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-05",
+      "discount": "クーポン利用で最大30%OFF対象施設。ホテルブランドのクーポン最大10,000円OFF・最大8,000円OFFなど（未確認（Grok: 楽パック最大15,000円OFF））",
+      "period": "予約：未確認（Grok: 2026年10月29日10:00～11月19日9:59頃） ／ 旅行：未確認（Grok: クーポンにより異なる）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "5と0のつく日（国内ホテル・温泉宿）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定！ホテル・温泉宿が最大20％OFF！ ／ 公式：12月ご利用分は12月2日10時配布開始予定 ／ 公式：対象施設内には本企画のクーポン対象外の施設が含まれている場合あり ／ 未確認：配布の開始・終了時刻 ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-05",
+      "discount": "ホテル・温泉宿が最大20%OFF",
+      "period": "予約：毎月5と0のつく日から48時間限定（11月5日分は未確認（Grok: 11月5日0:00～11月6日23:59頃）） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "連休旅行特集（楽パック向け）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/package/special/renkyu/",
+      "official_url": "https://travel.rakuten.co.jp/package/special/renkyu/",
+      "evidence": "公式：春休みやGWのご予約なら今！最大12,000円クーポン配布 ／ 公式：11月～2027年8月のご旅行に使えるクーポン ／ 公式：JAL 12,000円 11/2(月)10時から利用開始 先着利用20枚 ／ 公式：ANA・JAL 10,000円 先着利用300枚／ANA 10,000円 先着利用200枚 ／ 未確認：予約期間の終了日 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-05",
+      "discount": "楽パック 最大12,000円（JAL 12,000円、ANA・JAL 10,000円、ANA 10,000円、JAL 7,000円、JR 5,000円、JR 3,000円）",
+      "period": "予約：11/2(月) 10時から利用開始（終了は未確認（Grok: 12月7日9:59頃）） ／ 旅行：2026年11月～2027年8月のご旅行",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
