@@ -1,0 +1,60 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-11-06T07:33:57.374021+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 9,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "新幹線 当日手荷物配送 6000円OFF",
+      "kind": "coupon",
+      "found_url": "https://www.klook.com/ja/deals/",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "official_domain_match": true,
+      "evidence": "公開ページの「日本 クーポンコード」に掲載。最低利用額なし。期間・対象商品の詳細は未確認。",
+      "observed_date": "2026-11-06",
+      "discount": "JPY 6,000 オフ",
+      "period": "",
+      "confidence": "medium",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "日本および韓国の冬のツアーとアクティビティが15%OFF",
+      "kind": "coupon",
+      "found_url": "https://www.klook.com/ja/deals/",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "official_domain_match": true,
+      "evidence": "公開ページの「日本 クーポンコード」に掲載。最低利用額なし。期間・対象商品の詳細は未確認。",
+      "observed_date": "2026-11-06",
+      "discount": "15%OFF",
+      "period": "",
+      "confidence": "medium",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "日本バス乗車券 5%OFF",
+      "kind": "coupon",
+      "found_url": "https://www.klook.com/ja/deals/",
+      "official_url": "https://www.klook.com/ja/deals/",
+      "official_domain_match": true,
+      "evidence": "公開ページの「日本 クーポンコード」に掲載。最低利用額なし。期間・対象商品の詳細は未確認。",
+      "observed_date": "2026-11-06",
+      "discount": "5%OFF",
+      "period": "",
+      "confidence": "medium",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/klook/hints_2026-11-06.json"
+}

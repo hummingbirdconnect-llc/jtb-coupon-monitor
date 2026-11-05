@@ -1,0 +1,60 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-06T07:33:57.374021+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "楽天スーパーDEAL 秋冬SALE",
+      "kind": "points",
+      "found_url": "https://travel.rakuten.co.jp/superdeal/special/akifuyu2026/",
+      "official_url": "https://travel.rakuten.co.jp/superdeal/special/akifuyu2026/",
+      "official_domain_match": true,
+      "evidence": "公開ページで国内対象の40%還元プランと期間を確認。楽天モバイル利用者の追加2%はエントリーが必要。",
+      "observed_date": "2026-11-06",
+      "discount": "最大40%ポイントバック！",
+      "period": "エントリー・予約対象期間：2026年10月29日(木)10:00～11月19日(木)09:59まで／旅行対象期間：2026年10月29日(木)チェックイン～ 2",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "楽天トラベル 秋冬SALE 国内ホテル・宿",
+      "kind": "sale",
+      "found_url": "https://x.com/yonyonkoko/status/2118444495784276176",
+      "official_url": "https://travel.rakuten.co.jp/special/sales/",
+      "official_domain_match": true,
+      "evidence": "公式ページに国内ホテルのクーポン併用（最大10%＋最大20％）を掲載。SALE自体の期間は本文で確認できず。",
+      "observed_date": "2026-11-06",
+      "discount": "最大30%OFF",
+      "period": "",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "JAL楽パック 11-3月の旅行応援 3日間限定セール 10,000円クーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/package/jal/sale/202611/?l-id=dptop_widebnr_jalsale2611",
+      "official_url": "https://travel.rakuten.co.jp/package/jal/sale/202611/",
+      "official_domain_match": true,
+      "evidence": "国内JAL航空券＋宿泊。2名以上・150,000円以上、先着35枚、併用可。残枚数は未確認。",
+      "observed_date": "2026-11-06",
+      "discount": "10,000円",
+      "period": "予約対象期間：2026/11/5(木) 0:00~2026/11/7(土) 23:59／旅程期間：2026/11/6(金)出発～2027/3/31(水)帰着",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-06.json"
+}
