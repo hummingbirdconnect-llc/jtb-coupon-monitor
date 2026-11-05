@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-04T07:20:21.685844+09:00",
-  "completed_at": "2026-11-04T07:20:28.545452+09:00",
-  "official_fetched_at": "2026-11-04T07:20:28.545458+09:00",
+  "started_at": "2026-11-05T16:04:37.008410+09:00",
+  "completed_at": "2026-11-05T16:04:43.319277+09:00",
+  "official_fetched_at": "2026-11-05T16:04:43.319284+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -34,8 +34,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 1877,
-      "content_hash": "97afadbe1c31d1c6ad1fa1fea72b55d6bfd35c077fb355abda95d5bf4a1df738"
+      "text_chars": 1795,
+      "content_hash": "fcaff3f177b7489fb9b99da26ee49bc9c6aece034f921206c2b4a2783f363ed3"
     },
     {
       "url": "https://www.jalan.net/theme/furusato_coupon/",
@@ -90,8 +90,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 34894,
-      "content_hash": "faa7e94cac9a2cab65069c0ad9b6cb47e53c816bb78d662580b36175d5d7a099"
+      "text_chars": 35669,
+      "content_hash": "18a640e4d035074c75bd74122b4ae9149d580afcb5fcb8efb3b5198799075053"
     }
   ],
   "failed_source_count": 0,
@@ -103,14 +103,16 @@
   "count_scope_label": "代表クーポン",
   "count_scope_detail": "代表的な公式クーポンページのみ。個別宿クーポン約1,000件は集計対象外。",
   "ai_used": false,
-  "codex_audit_required": false,
+  "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "unchanged",
-  "change_kind": "unchanged",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "5b545cccabc9e8052c26c67f018796386294f086e657448fc562ed124f9d0bf4",
   "data_date": "2026-11-03",
   "latest_file": "coupons_2026-11-03.json",
   "coupon_count": 10,
-  "content_hash": "9944fa95a8b83b1404c8c70ca5db23902b7a6f364683e4860a4a086255a61217",
+  "audit_candidate_id": "jalan-5b545cccabc9e805",
+  "audit_candidate_path": "codex_audit_queue/jalan/jalan-5b545cccabc9e805.json",
   "error": "",
-  "freshness_status": "fresh"
+  "freshness_status": "stale"
 }

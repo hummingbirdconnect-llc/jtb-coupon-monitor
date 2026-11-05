@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-08-06",
-    "type": "🔴 配布終了",
-    "id": "2605dohoku",
-    "category": "国内",
-    "title": "【道北エリア】おすすめ旅館・ホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-06",
-    "type": "🔴 配布終了",
-    "id": "2605douou",
-    "category": "国内",
-    "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-06",
-    "type": "🔴 配布終了",
-    "id": "2605hokka",
-    "category": "国内",
-    "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-06",
-    "type": "🔴 配布終了",
-    "id": "2606douto",
-    "category": "国内",
-    "title": "<7～8月宿泊>【道東エリア】おすすめ施設で使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-06",
-    "type": "🟢 配布再開",
-    "id": "2606hilton",
-    "category": "国内",
-    "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
-    "discount": "最大15,000円引",
-    "stock_status": "配布中"
-  },
-  {
-    "date": "2026-08-06",
-    "type": "🔴 配布終了",
-    "id": "2606nstoh2",
-    "category": "国内",
-    "title": "【6～9月宿泊】「日本の旬 東北」　南東北エリアのおすすめ施設で使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
     "date": "2026-08-07",
     "type": "🟢 配布再開",
     "id": "2604nstoh",
@@ -7513,5 +7459,95 @@
     "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
     "discount": "最大25,000円引",
     "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🆕 新規",
+    "id": "2610obihiroairport",
+    "category": "国内",
+    "title": "【帯広空港発 伊丹空港着】航空機+宿で使える割引クーポン",
+    "discount": "最大20,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🆕 新規",
+    "id": "2610obihiroairport2",
+    "category": "国内",
+    "title": "【伊丹空港発 帯広空港着】航空＋宿で使える割引クーポン",
+    "discount": "最大20,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🆕 新規",
+    "id": "2611jtb_tsdcc93nj",
+    "category": "国内",
+    "title": "【JTB旅する木トクデー】11月5日（木）予約限定　国内旅行で使える割引クーポン＜10:00開始＞",
+    "discount": "最大2,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🆕 新規",
+    "id": "2611prince",
+    "category": "国内",
+    "title": "<12～2月宿泊>全国の西武プリンスホテルズ＆リゾーツ56施設で使える割引クーポン",
+    "discount": "最大8,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🟢 配布再開",
+    "id": "2606kintetsu",
+    "category": "国内",
+    "title": "近鉄・都ホテルズのおすすめ施設で使える割引クーポン",
+    "discount": "最大5,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🔴 配布終了",
+    "id": "2609goton",
+    "category": "国内",
+    "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
+    "discount": "最大30％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🟢 配布再開",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🟢 配布再開",
+    "id": "2609kyushukagoshima",
+    "category": "国内",
+    "title": "鹿児島ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🟢 配布再開",
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-05",
+    "type": "🔴 配布終了",
+    "id": "2609okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】12月～1月出発☆年末年始にも使える旅行割引クーポン",
+    "discount": "最大25,000円引",
+    "stock_status": "配布終了"
   }
 ]

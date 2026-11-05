@@ -1,0 +1,19 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "check_type": "official_monitor",
+  "status": "error",
+  "started_at": "2026-11-05T15:52:17.518221+09:00",
+  "completed_at": "2026-11-05T15:52:36.481546+09:00",
+  "official_fetched_at": "",
+  "needs_review": false,
+  "data_date": "2026-11-04",
+  "freshness_status": "fresh",
+  "coupon_count": 101,
+  "latest_file": "coupons_2026-11-04.json",
+  "ai_used": false,
+  "wp_review_eligible": false,
+  "error": "exit_code=1",
+  "deep_dive": true,
+  "deep_dive_at": "2026-11-05T15:52:36.481546+09:00"
+}
