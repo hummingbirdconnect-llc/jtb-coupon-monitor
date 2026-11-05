@@ -1,0 +1,78 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-11-06T08:18:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 5,
+  "candidate_count": 5,
+  "candidates": [
+    {
+      "title": "JALパック 早決60クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/",
+      "evidence": "公式：1グループにつき3,000円割引、出発60日前までの予約 ／ 公式：予約対象期間 2026年8月3日10:00〜2027年1月30日23:57、対象出発期間 2027年1月1日〜3月31日 ／ 公式：旅行代金60,000円以上（オプショナルプラン代金は除く） ／ 公式：JMB会員、予約前にクーポン獲得が必要。対象はJALダイナミックパッケージ「航空券＋宿泊」（国内）、JAL楽パック等を除く ／ 公式：他の併用可能な割引クーポンと併用可 ／ 未確認：決済方法の限定の有無（公式に記載なし）",
+      "observed_date": "2026-11-06",
+      "discount": "1グループにつき3,000円割引",
+      "period": "予約：2026年8月3日(月)10:00〜2027年1月30日(土)23:57（出発60日前までの予約） ／ 旅行：2027年1月1日〜3月31日出発",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "JALパック 期間限定クーポン（最大30,000円／7,000円／3,000円）",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/kas/",
+      "official_url": "https://www.jal.co.jp/jp/ja/tour/dp_coupon/",
+      "evidence": "未確認：公式のクーポン一覧ページにGrokの言う期間限定クーポンの記載が見当たらなかった ／ 未確認：Grok自身がタイムセールは11月2日で終了と書いており、配布が続いているか不明 ／ 未確認：割引額・予約期間・出発期間・最低利用額・対象者・決済方法",
+      "observed_date": "2026-11-06",
+      "discount": "未確認（Grok: 最大30,000円割引・毎日先着100枚、ほかに7,000円・3,000円）",
+      "period": "予約：未確認（Grok: 配布中としてタイムセール関連ページで案内） ／ 旅行：未確認（Grok: 2026年11月1日〜2027年4月25日出発）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "JAL九州応援クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/kyu/kyusyu-ouen-cpn/",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/kyu/kyusyu-ouen-cpn/",
+      "evidence": "公式：JALの独自クーポンで、県の九州ふっこう応援割ではない。ふっこう応援割とは併用不可 ／ 公式：予約対象期間 2026年9月29日〜2027年1月31日、対象出発期間 2026年10月1日〜2027年2月28日 ／ 公式：割引額3,000円（1グループ）、旅行代金30,000円以上 ／ 公式：往路到着地が九州6県の空港となるJMB会員。対象はJALダイナミックパッケージ「航空券＋宿泊」（国内） ／ 未確認：決済方法の限定の有無（公式に記載なし）",
+      "observed_date": "2026-11-06",
+      "discount": "1グループにつき3,000円割引",
+      "period": "予約：2026年9月29日(火)〜2027年1月31日(日) ／ 旅行：2026年10月1日〜2027年2月28日出発",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "JALカード会員限定 国内ダイナミックパッケージ2%割引",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/tours/jalcard_cpn/",
+      "official_url": "https://www.jal.co.jp/jp/ja/tours/jalcard_cpn/",
+      "evidence": "公式：JALカード会員向け、国内ダイナミックパッケージ2%割引 ／ 公式：会員優待割引とJMB会員限定割引クーポンを併用可。併用は最大3種類で、このページから申し込むと会員優待割引が自動適用され残りのクーポンは2種類まで ／ 未確認：予約期間・旅行期間・最低利用額・決済方法の条件（公式の該当ページに記載なし）",
+      "observed_date": "2026-11-06",
+      "discount": "国内ダイナミックパッケージ2%割引",
+      "period": "予約：未確認（公式の該当ページに期間の記載なし） ／ 旅行：未確認（公式の該当ページに期間の記載なし）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "JALパック 間際の予約でもおトク！500円分の利用券プレゼント",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/jalplaza-coupon/",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/jalplaza-coupon/",
+      "evidence": "公式：特典は空港店舗「JAL PLAZA」「Coralway」で使える500円分の利用券 ／ 公式：出発30日前〜7日前の予約が対象。予約対象期間は〜2027年3月24日、出発対象期間は〜2027年3月31日、2026年12月28日〜2027年1月5日発は除外 ／ 公式：利用券は電子クーポン、専用アプリで受け取り。スマートフォンがないと使えない。利用は2027年4月13日までの旅行期間中 ／ 公式：2026年11月6日に予約した場合の対象出発期間は11月13日〜12月6日 ／ 未確認：最低利用額・決済方法の条件（公式に記載なし）",
+      "observed_date": "2026-11-06",
+      "discount": "空港店舗「JAL PLAZA」「Coralway」で使える500円分の利用券（1人1枚、電子クーポン）",
+      "period": "予約：〜2027年3月24日（出発30日前〜7日前の予約） ／ 旅行：〜2027年3月31日出発（2026年12月28日〜2027年1月5日発は除外）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
