@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T16:03:22.317405+09:00",
+  "last_updated": "2026-11-06T07:19:10.645499+09:00",
   "ids": {
     "2611jtb_tsdcc93nj": {
       "category": "国内",
@@ -241,7 +241,7 @@
     },
     "2608hankyu": {
       "category": "国内",
-      "title": "【9～11月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
+      "title": "【9～12月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
       "discount": "最大5,000円引",
       "area": "京都府・大阪府",
       "stock_status": "配布中"
@@ -321,7 +321,7 @@
       "title": "九州ふっこう応援割 ふくおかキャンペーン",
       "discount": "最大50％引",
       "area": "福岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609kyushusaga": {
       "category": "国内",
@@ -370,7 +370,7 @@
       "title": "鹿児島ふっこう応援割",
       "discount": "最大60％引",
       "area": "鹿児島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607jalka": {
       "category": "国内",
@@ -419,7 +419,7 @@
       "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
       "discount": "最大10,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2607young": {
       "category": "国内",

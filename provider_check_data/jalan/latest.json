@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-05T16:04:37.008410+09:00",
-  "completed_at": "2026-11-05T16:04:43.319277+09:00",
-  "official_fetched_at": "2026-11-05T16:04:43.319284+09:00",
+  "started_at": "2026-11-06T07:20:10.011818+09:00",
+  "completed_at": "2026-11-06T07:20:19.301005+09:00",
+  "official_fetched_at": "2026-11-06T07:20:19.301013+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -90,8 +90,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 35669,
-      "content_hash": "18a640e4d035074c75bd74122b4ae9149d580afcb5fcb8efb3b5198799075053"
+      "text_chars": 35684,
+      "content_hash": "cf22225d0d405ee76827788cb10e63215bdd08b3321c847b1cee75f613c296b4"
     }
   ],
   "failed_source_count": 0,
@@ -107,12 +107,12 @@
   "wp_review_eligible": false,
   "status": "audit_pending",
   "change_kind": "update",
-  "content_hash": "5b545cccabc9e8052c26c67f018796386294f086e657448fc562ed124f9d0bf4",
+  "content_hash": "14ef57d588a9e7d02f4a302ede08c4d336fb7f36c5c59074a2695160d8edd8b0",
   "data_date": "2026-11-03",
   "latest_file": "coupons_2026-11-03.json",
   "coupon_count": 10,
-  "audit_candidate_id": "jalan-5b545cccabc9e805",
-  "audit_candidate_path": "codex_audit_queue/jalan/jalan-5b545cccabc9e805.json",
+  "audit_candidate_id": "jalan-14ef57d588a9e7d0",
+  "audit_candidate_path": "codex_audit_queue/jalan/jalan-14ef57d588a9e7d0.json",
   "error": "",
   "freshness_status": "stale"
 }

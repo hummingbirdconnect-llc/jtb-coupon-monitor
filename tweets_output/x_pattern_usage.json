@@ -8062,5 +8062,77 @@
   "pattern": "group_call",
   "ota": "tripcom",
   "title": "人気エリアホテルをおトクに"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "anshin_reserve",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "honest_value",
+  "ota": "rurubu_travel",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "regret_prevention",
+  "ota": "jtb",
+  "title": "<12～2月宿泊>全国の西武プリンスホテルズ＆リゾーツ56施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "direct_number",
+  "ota": "jtb",
+  "title": "<12～2月宿泊>全国の西武プリンスホテルズ＆リゾーツ56施設で使える割引クーポン"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "countdown",
+  "ota": "his",
+  "title": "年末出発特別割引！対象商品ご予約で1グループ最大50,000円引き"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "question",
+  "ota": "agoda",
+  "title": "今だけ値下がり - 最大15% OFF"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "anshin_reserve",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-11-06",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "tripcom",
+  "title": "人気エリアホテルをおトクに"
  }
 ]

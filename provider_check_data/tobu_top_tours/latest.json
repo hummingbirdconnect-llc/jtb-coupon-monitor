@@ -2,9 +2,9 @@
   "provider_id": "tobu_top_tours",
   "provider_label": "東武トップツアーズ",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-05T16:04:46.974000+09:00",
-  "completed_at": "2026-11-05T16:04:50.327978+09:00",
-  "official_fetched_at": "2026-11-05T16:04:50.327984+09:00",
+  "started_at": "2026-11-06T07:20:22.564819+09:00",
+  "completed_at": "2026-11-06T07:20:25.880526+09:00",
+  "official_fetched_at": "2026-11-06T07:20:25.880534+09:00",
   "source_results": [
     {
       "url": "https://tobutoptours.jp/members_new/coupon/",
@@ -31,8 +31,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2118,
-      "content_hash": "797dd502ea1bec1f5f81103ffa02ac0bda9e34543a71754b1abe5b2814497653"
+      "text_chars": 2278,
+      "content_hash": "58d456173661e1fe7135932512d9ef7a1311ddfff8620042fb6449e50435dad0"
     }
   ],
   "failed_source_count": 0,
@@ -48,12 +48,12 @@
   "wp_review_eligible": false,
   "status": "audit_pending",
   "change_kind": "update",
-  "content_hash": "f302b76df58085eacf5004c2af4157007b8bc9e4073c54ac2a8ea811c81fc62b",
+  "content_hash": "8540993ced54e3a4b7f3698ce4fe1206dffeb59332ee4d67ea96714fc686c8fe",
   "data_date": "2026-11-03",
   "latest_file": "coupons_2026-11-03.json",
   "coupon_count": 8,
-  "audit_candidate_id": "tobu_top_tours-f302b76df58085ea",
-  "audit_candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-f302b76df58085ea.json",
+  "audit_candidate_id": "tobu_top_tours-8540993ced54e3a4",
+  "audit_candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-8540993ced54e3a4.json",
   "error": "",
   "freshness_status": "stale"
 }
