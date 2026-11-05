@@ -376,17 +376,35 @@ def provider_due(provider: dict, current_date: date) -> bool:
 
 
 def select_providers(
-    registry: list[dict], scope: str, provider_id: str, current_date: date | None = None
+    registry: list[dict],
+    scope: str,
+    provider_id: str,
+    current_date: date | None = None,
+    exclude_provider_ids: set[str] | None = None,
 ) -> list[dict]:
+    """実行する会社を選ぶ。
+
+    exclude_provider_ids は、別のワークフロー（self-hostedランナーのHISなど）で
+    取得する会社をこの実行から外すために使う。
+    """
+    excluded = set(exclude_provider_ids or ())
     if provider_id and provider_id != "all":
         selected = [provider for provider in registry if provider["id"] == provider_id]
         if not selected:
             raise SystemExit(f"unknown provider_id: {provider_id}")
-        return selected
+        return [provider for provider in selected if provider["id"] not in excluded]
     if scope == "jp_mac":
-        return [provider for provider in registry if is_jp_only(provider)]
+        return [
+            provider
+            for provider in registry
+            if is_jp_only(provider) and provider["id"] not in excluded
+        ]
     # 日本のMacから取る会社は、まとめ実行では必ず外す（海外IPでは拒否される）
-    candidates = [provider for provider in registry if not is_jp_only(provider)]
+    candidates = [
+        provider
+        for provider in registry
+        if not is_jp_only(provider) and provider["id"] not in excluded
+    ]
     if scope == "daily":
         return [provider for provider in candidates if int(provider.get("cadence_days", 5)) == 1]
     if scope in {"every_5_days", "weekly"}:
@@ -487,6 +505,12 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         default="due",
     )
     parser.add_argument("--provider-id", default="", help="特定会社だけ実行する場合の provider id")
+    parser.add_argument(
+        "--exclude-provider-id",
+        action="append",
+        default=[],
+        help="この実行から外す provider id（別ワークフローで取得する会社。複数指定可）",
+    )
     parser.add_argument("--timeout", type=int, default=10, help="URL生存確認のタイムアウト秒")
     parser.add_argument("--max-urls", type=int, default=30, help="記事抽出系で確認するURL上限")
     parser.add_argument(
@@ -560,7 +584,17 @@ def main(argv: list[str] | None = None) -> None:
         pass
     args = parse_args(argv or sys.argv[1:])
     registry = load_registry()
-    providers = select_providers(registry, args.scope, args.provider_id)
+    providers = select_providers(
+        registry,
+        args.scope,
+        args.provider_id,
+        exclude_provider_ids=set(args.exclude_provider_id),
+    )
+    if not providers:
+        # 対象が空のまま進むと run-latest.json を0社で上書きしてしまう
+        raise SystemExit(
+            "取得対象の会社がありません（--provider-id と --exclude-provider-id の指定を確認）"
+        )
     print(f"selected providers: {', '.join(provider['id'] for provider in providers)}")
     explicit = bool(args.provider_id and args.provider_id != "all")
     summaries = [
