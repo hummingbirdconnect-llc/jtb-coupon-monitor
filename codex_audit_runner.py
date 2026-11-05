@@ -184,6 +184,8 @@ def _record_state(
         state.update(
             {
                 "processed_hash": candidate["content_hash"],
+                "audit_completed_at": at.isoformat(),
+                "audit_completed_candidate_id": candidate["candidate_id"],
                 "last_processed_at": at.isoformat(),
                 "last_changed_at": at.isoformat()
                 if semantic_changed

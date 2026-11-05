@@ -616,6 +616,11 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
         "official_fetched_at": now_jst().isoformat() if successful_sources else "",
         "source_results": public_source_results,
         "failed_source_count": len(failed_sources),
+        "fetch_status": (
+            ("partial_failure" if failed_sources else "success") if successful_sources else "error"
+        ),
+        "content_confirmation_status": "unconfirmed",
+        "confirmed_at": "",
         "configured_source_count": len(configured_sources),
         "discovered_source_count": len(discovered_sources),
         "audit_source_count": len(successful_sources),
@@ -656,12 +661,26 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
     )
 
     if current_hash == previous_processed_hash:
-        state["last_audit_status"] = "processed"
+        confirmation_status = {
+            "held": "held", "pending": "pending",
+        }.get(state.get("last_audit_status"), "unconfirmed")
+        if (
+            not failed_sources
+            and previous_coupons
+            and confirmation_status == "unconfirmed"
+            and not state.get("queued_candidate_id")
+        ):
+            state["confirmed_at"] = now_jst().isoformat()
+            confirmation_status = "confirmed"
         save_state(provider["id"], state)
         return {
             **base_payload,
             "status": "unchanged",
             "change_kind": "unchanged",
+            "content_confirmation_status": confirmation_status,
+            "confirmed_at": (
+                state.get("confirmed_at", "") if confirmation_status == "confirmed" else ""
+            ),
             "data_date": latest_file.stem.replace("coupons_", "") if latest_file else "",
             "latest_file": latest_file.name if latest_file else "",
             "coupon_count": len(previous_coupons),
@@ -697,6 +716,7 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
             "baseline_pending" if change_kind == "baseline" else "audit_pending"
         ),
         "change_kind": change_kind,
+        "content_confirmation_status": "held" if held else "pending",
         "content_hash": current_hash,
         "data_date": latest_file.stem.replace("coupons_", "") if latest_file else "",
         "latest_file": latest_file.name if latest_file else "",
