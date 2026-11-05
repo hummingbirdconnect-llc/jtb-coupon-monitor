@@ -23,12 +23,14 @@ jobs:
   his:
     runs-on: [self-hosted, his]
     timeout-minutes: 60
-    env:
-      # ブラウザはワークスペース外（ランナーのツールキャッシュ）へ置き、
-      # チェックアウトのクリーンで消えないようにする
-      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.tool_cache }}/playwright-browsers
 
     steps:
+      - name: ブラウザの保存先を決める
+        # ブラウザはワークスペース外（ランナーのツールキャッシュ）へ置き、
+        # チェックアウトのクリーンで消えないようにする。
+        # job全体のenvでは runner コンテキストが使えないため、ここで環境変数へ書き出す
+        run: echo "PLAYWRIGHT_BROWSERS_PATH=$RUNNER_TOOL_CACHE/playwright-browsers" >> "$GITHUB_ENV"
+
       - name: チェックアウト
         uses: actions/checkout@v5
         with:
