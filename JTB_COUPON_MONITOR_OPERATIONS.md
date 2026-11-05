@@ -43,11 +43,12 @@
 ### 実行頻度（2026-10-20 改訂）
 
 - GitHub Actionsの定期実行（cron）は廃止しました。`coupon-monitor.yml` は手動実行（`workflow_dispatch`）だけです
-- 平日 7:00 / 15:45 JST: チーフbotがGitHub Actionsを手動実行し、**定期で取得する9社**（HIS、JTB、近畿日本ツーリスト、JALパック、じゃらん、楽天トラベル、るるぶトラベル、東武トップツアーズ、アソビュー）をまとめて取得します。会社を選ばず `provider_id: all` のまま実行し、範囲は `run_scope: due`
+- 平日 7:00 / 15:45 JST: チーフbotがGitHub Actionsを手動実行し、**定期で取得する8社**（JTB、近畿日本ツーリスト、JALパック、じゃらん、楽天トラベル、るるぶトラベル、東武トップツアーズ、アソビュー）をまとめて取得します。会社を選ばず `provider_id: all` のまま実行し、範囲は `run_scope: due`
+- 平日 7:00 / 15:45 JST: **HIS**は日本のMac miniのself-hostedランナー（`macmini-his`）で `his-monitor.yml` が自動実行します。海外IPのGitHub Actionsでは403になるため取得をここへ移しました。詳細は[HIS公式監視のself-hostedランナー](docs/his-self-hosted-runner.md)
 - 毎日 6:45 / 15:30 JST: 日本のMac（launchd `com.hbconnect.provider-fetch-jp`）が**Booking.com・一休・Yahoo!トラベル**を取得します。この3社は海外IPのGitHub Actionsからは拒否される（Yahoo!トラベルは一休と同じ仕組みのため同じ扱い）ので、Actionsのまとめ実行からは外しています（`fetch_location: jp_mac`）
 - 一休と Yahoo!トラベルは 2026-10-21 から専用の monitor（`ikkyu_coupon_monitor.py`・`yahoo_travel_coupon_monitor.py`、保存先 `ikkyu_coupon_data/`・`yahoo_travel_coupon_data/`）で公式のクーポン一覧を読みます。同じ管理IDのクーポンが両方に載るため、一休を先に取得し、相手にも載るものは `detail_data.shared_with` に記します（登録表で `ikkyu` を `yahoo_travel` より前に置く）。日本のMacの `provider-fetch-jp/run.sh` は、この2社の保存先も commit の対象に足し、対象に `yahoo_travel` を加える必要があります（2026-10-21 時点では未対応）
 - それ以外の32社: 定期実行しない。**指定したときだけ**深掘りする（次項）
-- 正本: `config/provider_registry.json` の `schedule`（`daily_provider_ids` が定期の9社、`jp_daily_provider_ids` が日本Macの3社。どちらにも載っていない会社は `on_demand`）
+- 正本: `config/provider_registry.json` の `schedule`（`daily_provider_ids` が定期の9社、`jp_daily_provider_ids` が日本Macの3社。どちらにも載っていない会社は `on_demand`）。うちHISは `coupon-monitor.yml` の実行から `--exclude-provider-id his` で外し、`his-monitor.yml` が取得します
 
 ### 指定時の深掘り（定期で取得する会社以外）
 
@@ -320,6 +321,7 @@ python3 knt_coupon_monitor.py --init
 ### 3-3. 実行時間の変更
 
 GitHub Actionsの定期実行は2026-10-20に廃止しました。`coupon-monitor.yml` には `schedule`（cron）がなく、実行する時刻はチーフbotの手動実行で決めます（平日 7:00 / 15:45 JST）。
+HISだけは `his-monitor.yml`（self-hostedランナー）に `schedule` があり、平日 7:00 / 15:45 JST に自動実行します。
 
 定期実行へ戻す場合は `.github/workflows/coupon-monitor.yml` の `on:` に `schedule` を足します。
 

@@ -104,6 +104,31 @@ def test_scope_due_selects_only_always_on_providers() -> None:
     assert ON_DEMAND_DEEP_IDS <= {provider["id"] for provider in on_demand}
 
 
+def test_excluded_providers_are_dropped_from_every_selection() -> None:
+    """HISはself-hostedランナー（日本のMac）が取るため、本線の実行から外せる。"""
+    providers = runner.load_registry()
+    for scope in ("due", "daily", "all", "on_demand"):
+        selected = {
+            provider["id"]
+            for provider in runner.select_providers(
+                providers, scope, "", date(2026, 9, 18), exclude_provider_ids={"his"}
+            )
+        }
+        assert "his" not in selected, scope
+    assert {provider["id"] for provider in runner.select_providers(providers, "due", "", date(2026, 9, 18))} == CLOUD_DAILY_IDS
+    # 会社ID直指定でも、外した会社は実行しない
+    assert (
+        runner.select_providers(providers, "all", "his", exclude_provider_ids={"his"}) == []
+    )
+    # 外していない会社の直指定はそのまま通る
+    assert [
+        provider["id"]
+        for provider in runner.select_providers(
+            providers, "all", "jtb", exclude_provider_ids={"his"}
+        )
+    ] == ["jtb"]
+
+
 def test_jp_only_providers_are_kept_out_of_cloud_runs() -> None:
     providers = runner.load_registry()
     jp_only = {provider["id"] for provider in providers if runner.is_jp_only(provider)}

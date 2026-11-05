@@ -1,6 +1,8 @@
 name: Coupon Monitor
 
 # 定期実行（cron）は 2026-10-20 に廃止。平日 7:00 / 15:45 JST にチーフbotが手動実行する。
+# HISの取得は his-monitor.yml（日本のMac mini / self-hostedランナー）が担当する。
+# このワークフローはコミット済みのHISデータを読むだけで、HISの公式取得はしない。
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +13,6 @@ on:
         type: choice
         options:
           - all
-          - his
           - jtb
           - knt
           - jalpack
@@ -103,18 +104,9 @@ jobs:
           if [ "${{ inputs.provider_id }}" = "all" ]; then
             echo "scope=${{ inputs.run_scope }}" >> "$GITHUB_OUTPUT"
             echo "provider_id=" >> "$GITHUB_OUTPUT"
-            echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
-            echo "his_checked=true" >> "$GITHUB_OUTPUT"
           else
             echo "scope=all" >> "$GITHUB_OUTPUT"
             echo "provider_id=${{ inputs.provider_id }}" >> "$GITHUB_OUTPUT"
-            if [ "${{ inputs.provider_id }}" = "his" ]; then
-              echo "his_visual_only=true" >> "$GITHUB_OUTPUT"
-              echo "his_checked=true" >> "$GITHUB_OUTPUT"
-            else
-              echo "his_visual_only=false" >> "$GITHUB_OUTPUT"
-              echo "his_checked=false" >> "$GITHUB_OUTPUT"
-            fi
           fi
           echo "label=manual: ${{ inputs.provider_id }} / scope=${{ inputs.run_scope }} (deep_dive=${{ inputs.deep_dive }})" >> "$GITHUB_OUTPUT"
           if [ "${{ inputs.deep_dive }}" = "true" ]; then
@@ -162,50 +154,75 @@ jobs:
           if [ "${{ steps.plan.outputs.deep }}" = "true" ]; then
             args+=(--deep)
           fi
+          # HISは his-monitor.yml（日本のMac）が取得するため、ここでは必ず外す
+          args+=(--exclude-provider-id his)
           xvfb-run -a python provider_check_runner.py "${args[@]}"
 
+      - name: HISデータの鮮度確認（警告のみ）
+        if: ${{ !cancelled() }}
+        # HISは his-monitor.yml がコミットしたデータを使う。古いときは警告だけ出し、
+        # この実行は止めない。
+        run: |
+          python - <<'PY' || true
+          import json
+          from datetime import datetime, timedelta, timezone
+          from pathlib import Path
+
+          JST = timezone(timedelta(hours=9))
+          now = datetime.now(JST)
+          fetched_at = None
+          source = ""
+
+          latest = Path("provider_check_data/his/latest.json")
+          if latest.exists():
+              payload = json.loads(latest.read_text(encoding="utf-8"))
+              stamp = payload.get("official_fetched_at") or payload.get("completed_at") or ""
+              if stamp:
+                  try:
+                      fetched_at = datetime.fromisoformat(stamp)
+                  except ValueError:
+                      fetched_at = None
+                  else:
+                      source = "provider_check_data/his/latest.json"
+
+          if fetched_at is None:
+              files = sorted(Path("his_coupon_data").glob("coupons_*.json"), reverse=True)
+              if files:
+                  fetched_at = datetime.fromtimestamp(files[0].stat().st_mtime, JST)
+                  source = str(files[0])
+
+          if fetched_at is None:
+              print("::warning::HISの取得記録が見つかりません。his-monitor.yml の実行状況を確認してください。")
+              raise SystemExit(0)
+
+          if fetched_at.tzinfo is None:
+              fetched_at = fetched_at.replace(tzinfo=JST)
+          age_hours = (now - fetched_at).total_seconds() / 3600
+          print(f"HISデータの取得時刻: {fetched_at.isoformat()}（{age_hours:.1f}時間前 / {source}）")
+          if age_hours > 24:
+              print(
+                  f"::warning::HISデータが{age_hours:.1f}時間前のものです（24時間超）。"
+                  "his-monitor.yml の実行とMac miniの稼働を確認してください。"
+              )
+          PY
+
       - name: ツイート文面生成
-        if: steps.plan.outputs.his_visual_only != 'true'
         run: python generate_tweets.py
 
       - name: 変動通知メール送信
-        if: steps.plan.outputs.his_visual_only != 'true'
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           NOTIFY_EMAIL: ${{ secrets.NOTIFY_EMAIL }}
         run: python daily_diff_notifier.py
 
-      - name: HIS ブログ用HTML生成（テーブル形式）
-        run: python generate_his_html.py
-
-      - name: HIS ブログ用HTML生成（リスト形式）
-        run: python generate_his_list_html.py
-
       - name: JTB ブログ用HTML生成（リスト形式）
-        if: steps.plan.outputs.his_visual_only != 'true'
         run: python generate_jtb_html.py
 
       - name: ダッシュボード HTML・JSON 生成
         run: python generate_dashboard.py
 
-      - name: HIS WordPress用フィード生成・ローカル同期前検証
-        id: his_feed
-        if: steps.plan.outputs.his_checked == 'true'
-        # HISがCloudflare 403などで失敗しても、同じ実行で取れた他社データを
-        # 捨てない。失敗は outcome=failure のまま残し、コミット後にジョブを失敗させる。
-        continue-on-error: true
-        run: |
-          node wordpress_feed/build-his-wordpress-feed.mjs
-          # 生成できたが同期前検証に落ちたフィードはコミットしない。
-          # ステータス不一致の生成失敗は書き込み前に落ちるので、ここでは戻す対象がない。
-          if ! python wordpress_feed/push_his_wordpress_feed.py --dry-run; then
-            git checkout -- wordpress_feed/his-monitor-feed.json
-            exit 1
-          fi
-
       - name: X投稿ツリー生成（サイト別デイリー3本）
-        if: steps.plan.outputs.his_visual_only != 'true'
         continue-on-error: true
         run: python generate_x_threads.py
 
@@ -218,21 +235,9 @@ jobs:
             echo "- run: ${{ steps.plan.outputs.label }}"
             echo "- scope: ${{ steps.plan.outputs.scope }}"
             echo "- provider_id: ${{ steps.plan.outputs.provider_id }}"
-            echo "- HIS visual-only: ${{ steps.plan.outputs.his_visual_only }}"
-            if [ "${{ steps.plan.outputs.his_checked }}" != "true" ]; then
-              echo "- HIS WordPress feed: not generated"
-            elif [ "${{ steps.his_feed.outcome }}" = "success" ]; then
-              echo "- HIS WordPress feed: validated for local Mac sync"
-            elif [ "${{ steps.his_feed.outcome }}" = "failure" ]; then
-              echo "- HIS WordPress feed: 検証失敗（フィードは更新せず、他社データは保存対象）"
-            else
-              echo "- HIS WordPress feed: 未実行（outcome=${{ steps.his_feed.outcome }}）"
-            fi
+            echo "- HIS: このワークフローでは取得しない（his-monitor.yml / 日本のMac mini が担当）"
             echo "- AI audit: Codex scheduled task (OpenAI API is not used by Actions)"
           } >> "$GITHUB_STEP_SUMMARY"
-          if [ "${{ steps.his_feed.outcome }}" = "failure" ]; then
-            echo "::warning::HIS公式監視の最新実行が成功状態ではないか、WordPressフィード検証に失敗しました。フィードは更新せず、他社のクーポンデータはコミットします。"
-          fi
           python - <<'PY' >> "$GITHUB_STEP_SUMMARY" || true
           import json
           from pathlib import Path
@@ -262,7 +267,6 @@ jobs:
           generated_paths=(
             jtb_coupon_data/
             knt_coupon_data/
-            his_coupon_data/
             jalpack_coupon_data/
             rurubu_travel_coupon_data/
             yukoyuko_coupon_data/
@@ -275,7 +279,6 @@ jobs:
             html_output/
             tweets_output/
             dashboard/
-            wordpress_feed/his-monitor-feed.json
           )
           staged_paths=()
           for path in "${generated_paths[@]}"; do
@@ -290,20 +293,10 @@ jobs:
             echo "✅ 変更なし"
             exit 0
           fi
-          commit_message="📊 クーポンデータ更新 $(date +%Y-%m-%d)"
-          if [ "${{ steps.his_feed.outcome }}" = "failure" ]; then
-            commit_message="${commit_message}（HIS公式監視は失敗、他社データのみ更新）"
-          fi
-          git commit -m "$commit_message"
+          git commit -m "📊 クーポンデータ更新 $(date +%Y-%m-%d)"
           for i in 1 2 3; do
             git pull --rebase origin main && break
             echo "⚠️ rebase リトライ ($i/3)..."
             sleep 5
           done
           git push origin main
-
-      - name: HIS公式監視の失敗をジョブ結果へ反映
-        if: ${{ !cancelled() && steps.his_feed.outcome == 'failure' }}
-        run: |
-          echo "::error::HIS WordPressフィードの生成または同期前検証に失敗しました。失敗したフィードはコミットせず、他社データはコミット処理まで進めています。HISのlatest.jsonは取得結果のままです（失敗をsuccessにはしません）。"
-          exit 1

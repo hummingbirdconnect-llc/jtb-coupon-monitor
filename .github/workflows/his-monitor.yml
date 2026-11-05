@@ -1,0 +1,210 @@
+name: HIS Coupon Monitor (self-hosted)
+
+# HIS公式サイトは海外IPのGitHub Actionsランナーへ403を返すため、取得は
+# 日本のMac mini（self-hosted runner: macmini-his）へ移した。
+# 平日 7:00 / 15:45 JST に動かす（cronはUTC指定）。
+on:
+  schedule:
+    # 平日 7:00 JST = 前日 22:00 UTC（日〜木）
+    - cron: '0 22 * * 0-4'
+    # 平日 15:45 JST = 同日 6:45 UTC（月〜金）
+    - cron: '45 6 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: his-monitor
+  cancel-in-progress: false
+
+jobs:
+  his:
+    runs-on: [self-hosted, his]
+    timeout-minutes: 60
+    env:
+      # ブラウザはワークスペース外（ランナーのツールキャッシュ）へ置き、
+      # チェックアウトのクリーンで消えないようにする
+      PLAYWRIGHT_BROWSERS_PATH: ${{ runner.tool_cache }}/playwright-browsers
+
+    steps:
+      - name: チェックアウト
+        uses: actions/checkout@v5
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Python 仮想環境と依存パッケージ
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install --upgrade pip
+          .venv/bin/python -m pip install -r requirements.txt
+
+      - name: Playwright Chromium インストール
+        # macOSのランナーではOS依存パッケージの追加（--with-deps）とsudoは使わない
+        run: .venv/bin/python -m playwright install chromium
+
+      - name: Node セットアップ
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: アフィリエイト設定を復元
+        env:
+          HIS_AFFILIATE_CONFIG: ${{ secrets.HIS_AFFILIATE_CONFIG }}
+        run: |
+          mkdir -p config
+          if [ -n "$HIS_AFFILIATE_CONFIG" ]; then
+            printf '%s' "$HIS_AFFILIATE_CONFIG" > config/his_affiliate_links.json
+          else
+            echo "::warning::HIS_AFFILIATE_CONFIG が未設定のため、ASP計測リンクなしでHTMLを作ります。"
+          fi
+
+      - name: HIS公式画面チェック（全11地域）
+        # provider_check_runner.py 経由で動かし、provider_check_data/his/ と
+        # 地域カバレッジの判定を今までと同じ形で残す
+        run: .venv/bin/python provider_check_runner.py --provider-id his --deep --fail-on-error
+
+      - name: 他社ぶんの実行記録を元に戻す
+        if: ${{ !cancelled() }}
+        # HIS1社だけの実行記録で全社ぶんの run-latest.json を上書きしないようにする。
+        # ここを戻さないとコミット前の git pull --rebase も止まる。
+        run: |
+          git checkout -- provider_check_data/run-latest.json
+          git clean -fq -- 'provider_check_data/run_*.json'
+
+      - name: HIS ブログ用HTML生成（テーブル形式）
+        run: .venv/bin/python generate_his_html.py
+
+      - name: HIS ブログ用HTML生成（リスト形式）
+        run: .venv/bin/python generate_his_list_html.py
+
+      - name: HIS WordPress用フィード生成・ローカル同期前検証
+        # WordPress本番への送信はしない（--dry-run の検証だけ）。
+        # 検証に落ちたフィードはコミット対象へ残さず、ジョブは失敗させる。
+        run: |
+          node wordpress_feed/build-his-wordpress-feed.mjs
+          if ! .venv/bin/python wordpress_feed/push_his_wordpress_feed.py --dry-run; then
+            git checkout -- wordpress_feed/his-monitor-feed.json
+            exit 1
+          fi
+
+      - name: 実行サマリー
+        if: always()
+        run: |
+          {
+            echo "## HIS monitor (self-hosted)"
+            echo ""
+            echo "- runner: macmini-his (self-hosted, his)"
+            echo "- trigger: ${{ github.event_name }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+          .venv/bin/python - <<'PY' >> "$GITHUB_STEP_SUMMARY" || true
+          import json
+          from pathlib import Path
+
+          path = Path("provider_check_data/his/latest.json")
+          if not path.exists():
+              print("- HIS公式チェックの記録がありません（実行前に失敗した可能性）")
+              raise SystemExit(0)
+          latest = json.loads(path.read_text(encoding="utf-8"))
+          print(f"- status: {latest.get('status', '')}")
+          print(f"- クーポン件数: {latest.get('coupon_count', 0)}")
+          print(
+              "- 地域カバレッジ: "
+              f"{latest.get('regional_coverage_status', 'unknown')} "
+              f"({latest.get('successful_region_count', 0)}/{latest.get('region_count', 0)})"
+          )
+          if latest.get("error"):
+              print(f"- error: {latest['error']}")
+          PY
+
+      - name: コミット＆プッシュ（HISのパスだけ）
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          generated_paths=(
+            his_coupon_data/
+            provider_check_data/his/
+            html_output/his_coupons.html
+            html_output/his_coupons_list.html
+            dashboard/evidence/his/
+            wordpress_feed/his-monitor-feed.json
+          )
+          staged_paths=()
+          for path in "${generated_paths[@]}"; do
+            if [ -e "$path" ] || [ -n "$(git ls-files -- "$path")" ]; then
+              staged_paths+=("$path")
+            fi
+          done
+          if [ ${#staged_paths[@]} -gt 0 ]; then
+            git add -A -- "${staged_paths[@]}"
+          fi
+          if git diff --staged --quiet; then
+            echo "✅ 変更なし"
+            exit 0
+          fi
+          git commit -m "📊 HISクーポンデータ更新 $(date +%Y-%m-%d)"
+          pushed=false
+          for i in 1 2 3; do
+            # 本線ワークフローのコミットと衝突しても取り込んでから送る
+            if git pull --rebase origin main && git push origin main; then
+              pushed=true
+              break
+            fi
+            echo "⚠️ rebase/push リトライ ($i/3)..."
+            sleep 10
+          done
+          if [ "$pushed" != "true" ]; then
+            echo "::error::HISデータのプッシュに失敗しました。"
+            exit 1
+          fi
+
+      - name: 失敗をIssueへ記録
+        if: failure()
+        uses: actions/github-script@v8
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const label = 'his-monitor-failure';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            try {
+              await github.rest.issues.getLabel({ ...context.repo, name: label });
+            } catch (error) {
+              if (error.status !== 404) throw error;
+              await github.rest.issues.createLabel({
+                ...context.repo,
+                name: label,
+                color: 'd73a4a',
+                description: 'HIS公式監視（self-hostedランナー）の失敗',
+              });
+            }
+            const body = [
+              'HIS公式監視（self-hostedランナー macmini-his）が失敗しました。',
+              '',
+              `- 実行ログ: ${runUrl}`,
+              `- トリガー: ${context.eventName}`,
+              '',
+              '確認すること: Macが起動してランナーが動いているか、HISが403を返していないか、地域カバレッジが11地域そろっているか。',
+            ].join('\n');
+            const existing = await github.rest.issues.listForRepo({
+              ...context.repo,
+              state: 'open',
+              labels: label,
+              per_page: 1,
+            });
+            if (existing.data.length > 0) {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: existing.data[0].number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                ...context.repo,
+                title: 'HIS公式監視の失敗（self-hostedランナー）',
+                labels: [label],
+                body,
+              });
+            }
