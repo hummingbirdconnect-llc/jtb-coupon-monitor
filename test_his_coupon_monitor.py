@@ -7,14 +7,24 @@ sys.path.insert(0, ".")
 
 from bs4 import BeautifulSoup
 
+import his_coupon_monitor
 from his_coupon_monitor import (
+    HIS_TOP_URL,
+    PAGE_URL,
+    REGION_HTTP_403_RETRY_DELAY_SECONDS,
+    REGION_RETRY_DELAY_SECONDS,
+    WARMUP_URLS,
     _assign_variant_id,
     _card_content_signature,
     _capture_card_png,
     _extract_campaign_from_end_text,
     _extract_explicit_ended_campaigns,
+    _fetch_one_region,
     _fetch_region_with_retry,
     _finalize_regional_observations,
+    _new_browser_context,
+    _retry_delay_seconds,
+    _warmup_his_session,
     enrich_visible_coupons,
     make_coupon_id,
     parse_coupons,
@@ -191,6 +201,174 @@ def test_region_retry_discards_partial_attempt_state():
     print("  ✅ test_region_retry_discards_partial_attempt_state PASSED")
 
 
+class _RecordingBrowser:
+    def __init__(self):
+        self.kwargs = None
+
+    def new_context(self, **kwargs):
+        self.kwargs = kwargs
+        return kwargs
+
+
+def test_browser_context_does_not_pin_stale_chrome_ua():
+    """実行中のChromiumと食い違うChrome/122をUAに固定しない。"""
+    browser = _RecordingBrowser()
+    _new_browser_context(browser)
+    assert "user_agent" not in browser.kwargs
+    assert "Chrome/122" not in str(browser.kwargs)
+    assert browser.kwargs["locale"] == "ja-JP"
+    assert browser.kwargs["timezone_id"] == "Asia/Tokyo"
+    print("  ✅ test_browser_context_does_not_pin_stale_chrome_ua PASSED")
+
+
+class _FakeResponse:
+    def __init__(self, status):
+        self.status = status
+
+
+class _FakePage:
+    def __init__(self, status_for):
+        self.urls = []
+        self.status_for = status_for
+
+    def add_init_script(self, script):
+        return None
+
+    def goto(self, url, **kwargs):
+        self.urls.append(url)
+        return _FakeResponse(self.status_for(url))
+
+    def wait_for_timeout(self, ms):
+        return None
+
+
+def test_warmup_visits_top_and_campaign_before_raising_on_403():
+    """403のページで止まり、それより後のURLは開かない。"""
+    page = _FakePage(lambda url: 403 if url == PAGE_URL else 200)
+    try:
+        _warmup_his_session(page)
+    except RuntimeError as exc:
+        assert "事前アクセスHTTP 403" in str(exc)
+        assert page.urls == [HIS_TOP_URL, PAGE_URL]
+        print("  ✅ test_warmup_visits_top_and_campaign_before_raising_on_403 PASSED")
+        return
+    raise AssertionError("事前アクセスの403が検出されませんでした")
+
+
+class _FakeContext:
+    def __init__(self, page):
+        self.page = page
+        self.closed = False
+
+    def new_page(self):
+        return self.page
+
+    def close(self):
+        self.closed = True
+
+
+class _FakeBrowser:
+    def __init__(self, page):
+        self.page = page
+        self.context = None
+
+    def new_context(self, **kwargs):
+        self.context = _FakeContext(self.page)
+        return self.context
+
+
+def test_region_switch_is_warmed_up_before_default_aspx():
+    """地域切替URLへ直行せず、トップと施策ページを先に開く。"""
+    page = _FakePage(
+        lambda url: 403 if "Default.aspx?param=" in url else 200
+    )
+    browser = _FakeBrowser(page)
+    try:
+        _fetch_one_region(
+            browser,
+            HIS_REGIONS[0],
+            object(),
+            "2026-11-05T07:00:00+09:00",
+            {},
+            {},
+            [],
+            {},
+        )
+    except RuntimeError as exc:
+        assert "地域切替HTTP 403" in str(exc)
+        assert page.urls == [*WARMUP_URLS, HIS_REGIONS[0].switch_url]
+        assert browser.context.closed is True
+        print("  ✅ test_region_switch_is_warmed_up_before_default_aspx PASSED")
+        return
+    raise AssertionError("ウォームアップ後の地域切替403が検出されませんでした")
+
+
+def test_http_403_retry_waits_longer_and_zero_delay_stays_immediate():
+    """403だけ待ちを延ばし、テスト用の0秒指定では待たない。"""
+    sleeps = []
+    original_sleep = his_coupon_monitor.time.sleep
+    his_coupon_monitor.time.sleep = sleeps.append
+
+    def fail_once(message):
+        calls = {"n": 0}
+
+        def fake_fetch(*_args, **_kwargs):
+            calls["n"] += 1
+            if calls["n"] == 1:
+                raise RuntimeError(message)
+            return {"code": "kanto", "visible_count": 1}
+
+        return fake_fetch
+
+    state = [{}, {}, [], {}]
+    try:
+        summary = _fetch_region_with_retry(
+            object(),
+            HIS_REGIONS[0],
+            object(),
+            "2026-11-05T07:00:00+09:00",
+            *state,
+            fetch_region=fail_once("地域切替HTTP 403"),
+            attempts=2,
+            retry_delay_seconds=REGION_RETRY_DELAY_SECONDS,
+        )
+        assert summary["visible_count"] == 1
+        assert sleeps == [REGION_HTTP_403_RETRY_DELAY_SECONDS]
+        assert _retry_delay_seconds(
+            RuntimeError("事前アクセスHTTP 403: https://www.his-j.com/"),
+            REGION_RETRY_DELAY_SECONDS,
+        ) == REGION_HTTP_403_RETRY_DELAY_SECONDS
+
+        sleeps.clear()
+        _fetch_region_with_retry(
+            object(),
+            HIS_REGIONS[0],
+            object(),
+            "2026-11-05T07:00:00+09:00",
+            *state,
+            fetch_region=fail_once("一時的な遷移競合"),
+            attempts=2,
+            retry_delay_seconds=REGION_RETRY_DELAY_SECONDS,
+        )
+        assert sleeps == [REGION_RETRY_DELAY_SECONDS]
+
+        sleeps.clear()
+        _fetch_region_with_retry(
+            object(),
+            HIS_REGIONS[0],
+            object(),
+            "2026-11-05T07:00:00+09:00",
+            *state,
+            fetch_region=fail_once("地域切替HTTP 403"),
+            attempts=2,
+            retry_delay_seconds=0,
+        )
+        assert sleeps == []
+    finally:
+        his_coupon_monitor.time.sleep = original_sleep
+    print("  ✅ test_http_403_retry_waits_longer_and_zero_delay_stays_immediate PASSED")
+
+
 def test_extract_campaign_from_end_text():
     """公式の終了見出しからキャンペーン名を抽出できる。"""
     campaign = _extract_campaign_from_end_text(
@@ -338,6 +516,10 @@ if __name__ == "__main__":
     test_regional_observations_are_finalized_and_selectable()
     test_parse_coupons_uses_injected_regional_variant_id()
     test_region_retry_discards_partial_attempt_state()
+    test_browser_context_does_not_pin_stale_chrome_ua()
+    test_warmup_visits_top_and_campaign_before_raising_on_403()
+    test_region_switch_is_warmed_up_before_default_aspx()
+    test_http_403_retry_waits_longer_and_zero_delay_stays_immediate()
     test_extract_campaign_from_end_text()
     test_explicit_ended_campaign_overrides_future_booking_period()
     test_thanks_text_can_mark_previous_campaign_heading_as_ended()
