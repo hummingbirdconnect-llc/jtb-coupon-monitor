@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T07:10:03.464332+09:00",
+  "last_updated": "2026-11-05T22:02:00.802199+09:00",
   "ids": {
     "3e0f99b608b3": {
       "category": "ボルネオ島・香港・マカオ・グアム・ケアンズ",
@@ -105,32 +105,10 @@
         "沖縄版"
       ]
     },
-    "622329e389ba": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "kanto"
-      ],
-      "region_labels": [
-        "首都圏版"
-      ]
-    },
     "73b9e6727c2b": {
       "category": "国内ツアー",
       "title": "年末年始出発がお得！1名様につき3,000円引き",
       "discount": "3,000円引き",
-      "region_codes": [
-        "kanto"
-      ],
-      "region_labels": [
-        "首都圏版"
-      ]
-    },
-    "fa7492599d3d": {
-      "category": "国内ツアー",
-      "title": "11・12月出発がお得！1名様につき2,000円引き",
-      "discount": "2,000円引き",
       "region_codes": [
         "kanto"
       ],
@@ -173,161 +151,6 @@
       "category": "国内航空券＋ホテル",
       "title": "年末年始出発がお得！1グループ最大50,000円引き",
       "discount": "最大50,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "0b24898aa4c9": {
-      "category": "国内航空券＋ホテル",
-      "title": "11・12月出発がお得！1グループ3,000円引き",
-      "discount": "3,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "2b9c08e217c3": {
-      "category": "九州ツアー",
-      "title": "旅で九州を応援しよう！1～3月出発限定1名様につき2,000円引き",
-      "discount": "2,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "5f8a07284254": {
-      "category": "九州行き航空券＋ホテル",
-      "title": "旅で九州を応援しよう！1グループ5,000円引き",
-      "discount": "5,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "34ba7eb1eb87": {
-      "category": "沖縄ツアー",
-      "title": "【沖縄キャンペーン】リゾートステイコース限定！子ども1名様につき10,000円引き",
-      "discount": "10,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "81f88a153a60": {
-      "category": "沖縄行き航空券＋ホテル",
-      "title": "【沖縄キャンペーン】1グループ5,000円引き",
-      "discount": "5,000円引き",
       "region_codes": [
         "kanto",
         "hokkaido",
@@ -541,37 +364,6 @@
         "沖縄版"
       ]
     },
-    "0e3df06e9f08": {
-      "category": "国内航空券＋ホテル",
-      "title": "JAL利用がお得！1グループ10,000円引き",
-      "discount": "10,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
     "2291e0cd6211": {
       "category": "沖縄ツアー",
       "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
@@ -656,134 +448,10 @@
         "沖縄版"
       ]
     },
-    "3a623464caf8": {
-      "category": "国内ホテル",
-      "title": "連休や週末の滞在にも使える！11月宿泊限定1グループ1,000円引き",
-      "discount": "1,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "385538411fb5": {
-      "category": "国内ホテル",
-      "title": "【沖縄キャンペーン】1グループ2,000円引き",
-      "discount": "2,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
     "7a2a9d6d1586": {
       "category": "国内ホテル",
       "title": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊で使える1グループ1,000円引き",
       "discount": "1,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "f8f51d3cdff8": {
-      "category": "変なホテル",
-      "title": "秋の連休も年末年始もお得！変なホテル公式サイトで使える1グループ10％引き",
-      "discount": "10%引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "bea5a2d2f18f": {
-      "category": "満天ノ 辻のや",
-      "title": "秋の連休も年末年始もお得！満天ノ 辻のや公式サイトで使える1グループ10％引き",
-      "discount": "10%引き",
       "region_codes": [
         "kanto",
         "hokkaido",
@@ -884,17 +552,6 @@
         "四国版",
         "九州版",
         "沖縄版"
-      ]
-    },
-    "622329e389ba-965067": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "hokkaido"
-      ],
-      "region_labels": [
-        "北海道版"
       ]
     },
     "2291e0cd6211-1c6fe3": {
@@ -1247,19 +904,6 @@
         "四国版"
       ]
     },
-    "622329e389ba-4e67fa": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "tohoku",
-        "koshinetsu"
-      ],
-      "region_labels": [
-        "東北版",
-        "甲信越（新潟）版"
-      ]
-    },
     "dca1b1ed227f-aee4e7": {
       "category": "国内旅行",
       "title": "学生旅行応援！早めの予約がお得！1グループ最大5,000円引き",
@@ -1327,19 +971,6 @@
         "四国版"
       ]
     },
-    "622329e389ba-902c08": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "chubu",
-        "hokuriku"
-      ],
-      "region_labels": [
-        "中部版",
-        "北陸版"
-      ]
-    },
     "2291e0cd6211-c9a6aa": {
       "category": "沖縄ツアー",
       "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
@@ -1405,17 +1036,6 @@
         "北陸版"
       ]
     },
-    "622329e389ba-4ae532": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "kansai"
-      ],
-      "region_labels": [
-        "関西版"
-      ]
-    },
     "2291e0cd6211-039698": {
       "category": "沖縄ツアー",
       "title": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
@@ -1469,17 +1089,6 @@
       ],
       "region_labels": [
         "関西版"
-      ]
-    },
-    "622329e389ba-9aa2f8": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "chugoku"
-      ],
-      "region_labels": [
-        "中国版"
       ]
     },
     "dca1b1ed227f-16ac21": {
@@ -1537,30 +1146,6 @@
         "四国版"
       ]
     },
-    "622329e389ba-e08633": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "shikoku"
-      ],
-      "region_labels": [
-        "四国版"
-      ]
-    },
-    "025ca168fc5c-4d9815": {
-      "category": "高速バス・夜行バス",
-      "title": "オンライン予約限定！熊本を応援！1名様につき5％引き",
-      "discount": "5%引き",
-      "region_codes": [
-        "shikoku",
-        "kyushu"
-      ],
-      "region_labels": [
-        "四国版",
-        "九州版"
-      ]
-    },
     "dca1b1ed227f-1cbf81": {
       "category": "国内旅行",
       "title": "学生旅行応援！早めの予約がお得！1グループ最大5,000円引き",
@@ -1605,21 +1190,10 @@
         "四国版"
       ]
     },
-    "07c5f73161f8-6cbe2b": {
-      "category": "佐賀空港利用 海外旅行",
-      "title": "九州佐賀国際空港利用 国際線グループ旅行支援1名様につき最大4,000円助成",
-      "discount": "",
-      "region_codes": [
-        "kyushu"
-      ],
-      "region_labels": [
-        "九州版"
-      ]
-    },
-    "622329e389ba-30597f": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
+    "3439da1669ce-b27959": {
+      "category": "九州発 AirZ(海外航空券+ホテル)",
+      "title": "ホテルとセットでの予約がお得！最大10,000円引き",
+      "discount": "最大10,000円引き",
       "region_codes": [
         "kyushu"
       ],
@@ -1669,17 +1243,6 @@
       ],
       "region_labels": [
         "九州版"
-      ]
-    },
-    "622329e389ba-b1fd08": {
-      "category": "国内ツアー",
-      "title": "早めの予約がお得！1名様につき最大5,000円引き",
-      "discount": "最大5,000円引き",
-      "region_codes": [
-        "okinawa"
-      ],
-      "region_labels": [
-        "沖縄版"
       ]
     },
     "dca1b1ed227f-9f67af": {
