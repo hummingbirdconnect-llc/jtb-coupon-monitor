@@ -1,0 +1,32 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-11-07T07:34:35.324519+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "一部確認不可：施策一覧の動的項目から予約期間を取得できず、九州旅応援等は未採用。",
+  "known_title_count": 42,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://www.his-j.com/campaign/kokunai/kyushu/recovery/10/",
+      "official_url": "https://www.his-j.com/campaign/kokunai/kyushu/recovery/10/",
+      "official_domain_match": true,
+      "evidence": "熊本・大分の受付再開を掲載。オンライン限定。1人上限は1泊2万円、2泊以上3万円。福岡は12月15日まで。鹿児島は別期間・除外日あり。",
+      "observed_date": "2026-11-07",
+      "discount": "旅行・宿泊料金の50％（熊本県・鹿児島県は60％）",
+      "period": "2026年10月1日(木)～2026年12月25日(金)宿泊分まで。",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/his/hints_2026-11-07.json"
+}

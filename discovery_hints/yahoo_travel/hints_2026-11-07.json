@@ -1,0 +1,60 @@
+{
+  "provider_id": "yahoo_travel",
+  "provider_label": "Yahoo!トラベル",
+  "generated_at": "2026-11-07T07:34:35.324519+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 84,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "癒やされづくし！づづづのやいづ旅",
+      "kind": "coupon",
+      "found_url": "https://travel.yahoo.co.jp/feature/kanko_yaizu",
+      "official_url": "https://travel.yahoo.co.jp/feature/kanko_yaizu",
+      "official_domain_match": true,
+      "evidence": "焼津市内の対象宿泊施設向け。11月2日予約開始。公式ページに割引率・上限・予約期間・宿泊期間を掲載。",
+      "observed_date": "2026-11-07",
+      "discount": "割引率：15％；上限：1人1泊あたり2,000円",
+      "period": "予約期間：2026年11月2日（月）正午 ～2026年12月31日（木）23:59；宿泊対象期間：2026年11月2日（月）～2027年1月31日（日）宿泊分ま",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "超得セール！ 人気宿スペシャル",
+      "kind": "sale",
+      "found_url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+      "official_url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+      "official_domain_match": true,
+      "evidence": "対象施設・プランまたは部屋限定。通常10％分等を含む。宿泊施設提供分は割引となる場合あり。宿泊期間は各プランに準ずる。",
+      "observed_date": "2026-11-07",
+      "discount": "オンラインカード決済でPayPayポイント15％以上",
+      "period": "2026年11月1日12:00～2026年11月9日11:59",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "ラグジュアリールームセール",
+      "kind": "sale",
+      "found_url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+      "official_url": "https://travel.yahoo.co.jp/notice/special/post_7/",
+      "official_domain_match": true,
+      "evidence": "対象施設・プランまたは部屋限定。通常10％分等を含む。宿泊施設提供分は割引となる場合あり。宿泊期間は各プランに準ずる。",
+      "observed_date": "2026-11-07",
+      "discount": "オンラインカード決済でPayPayポイント30％以上",
+      "period": "2026年11月1日12:00～2026年11月9日11:59",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-07.json"
+}

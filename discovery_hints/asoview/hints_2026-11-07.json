@@ -1,0 +1,32 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-11-07T07:34:35.324519+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "神戸おでかけ3%OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://www.asoview.com/note/8175/?campaign=kobenote&content=campaign_tab",
+      "official_url": "https://www.asoview.com/note/8175/",
+      "official_domain_match": true,
+      "evidence": "公式記事に掲載の神戸11施設・全プランが対象。購入合計から3％引き。1人1回、予定枚数で終了。他クーポン・ポイント併用不可。",
+      "observed_date": "2026-11-07",
+      "discount": "3%OFF",
+      "period": "2026年11月7日（土）から11月19日（木）23:59まで",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/asoview/hints_2026-11-07.json"
+}

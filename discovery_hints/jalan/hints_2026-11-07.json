@@ -1,0 +1,46 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-07T07:34:35.324519+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 10,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "LONGINGHOUSE 旧軽井沢・諏訪ノ森 ２日間限定お得な15500円クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_domain_match": true,
+      "evidence": "11月7日配布開始。対象宿の予約金額75,000円（税込）以上。公開一覧で確認。宿泊対象日はカレンダーのため未確認。",
+      "observed_date": "2026-11-07",
+      "discount": "15,500円分",
+      "period": "予約期間：2026年11月7日(土)00:00～2026年11月8日(日)23:59",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "軽井沢ホテル ロンギングハウス ２日間限定お得な14000円クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_url": "https://www.jalan.net/jalancponsum/zenkoku/",
+      "official_domain_match": true,
+      "evidence": "11月7日配布開始。対象宿の予約金額60,000円（税込）以上。公開一覧で確認。宿泊対象日はカレンダーのため未確認。",
+      "observed_date": "2026-11-07",
+      "discount": "14,000円分",
+      "period": "予約期間：2026年11月7日(土)00:00～2026年11月8日(日)23:59",
+      "confidence": "medium",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jalan/hints_2026-11-07.json"
+}

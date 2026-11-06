@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-11-07T07:34:35.324519+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "一部確認不可：日本向け公開一覧で名称・金額は確認できたが、利用期間が取得できず有効性を確定できない。ログイン未実施。",
+  "known_title_count": 9,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-11-07.json"
+}
