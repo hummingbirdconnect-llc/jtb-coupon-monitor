@@ -7513,5 +7513,59 @@
     "title": "鹿児島ふっこう応援割",
     "discount": "最大60％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "🆕 新規",
+    "id": "2611okinawa",
+    "category": "国内",
+    "title": "☆【沖縄】1月～5月出発☆冬旅からGW旅行に使えるおすすめ旅行割引クーポン",
+    "discount": "最大20,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "🆕 新規",
+    "id": "2611shimane",
+    "category": "国内",
+    "title": "だんだん島根割引クーポン",
+    "discount": "最大20,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "❌ 消失",
+    "id": "2611jtb_tsdcc93nj",
+    "category": "国内",
+    "title": "【JTB旅する木トクデー】11月5日（木）予約限定　国内旅行で使える割引クーポン＜10:00開始＞",
+    "discount": "最大2,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "🔴 配布終了",
+    "id": "2609akifuyu",
+    "category": "国内",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "discount": "最大10,000円引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "🟢 配布再開",
+    "id": "2609kyushukagoshima",
+    "category": "国内",
+    "title": "鹿児島ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-06",
+    "type": "🔴 配布終了",
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布終了"
   }
 ]

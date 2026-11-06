@@ -1,13 +1,6 @@
 {
-  "last_updated": "2026-11-06T07:19:10.645499+09:00",
+  "last_updated": "2026-11-06T15:58:13.900135+09:00",
   "ids": {
-    "2611jtb_tsdcc93nj": {
-      "category": "国内",
-      "title": "【JTB旅する木トクデー】11月5日（木）予約限定　国内旅行で使える割引クーポン＜10:00開始＞",
-      "discount": "最大2,000円引",
-      "area": "全国",
-      "stock_status": "配布終了"
-    },
     "2608jtbcpnew": {
       "category": "国内",
       "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(9-1月出発)",
@@ -281,6 +274,13 @@
       "area": "鳥取県",
       "stock_status": "配布中"
     },
+    "2611shimane": {
+      "category": "国内",
+      "title": "だんだん島根割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "島根県",
+      "stock_status": "配布中"
+    },
     "2610matsue": {
       "category": "国内",
       "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
@@ -349,7 +349,7 @@
       "title": "熊本ふっこう応援割",
       "discount": "最大60％引",
       "area": "熊本県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609kyucp": {
       "category": "国内",
@@ -370,7 +370,7 @@
       "title": "鹿児島ふっこう応援割",
       "discount": "最大60％引",
       "area": "鹿児島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2607jalka": {
       "category": "国内",
@@ -400,6 +400,13 @@
       "area": "沖縄県",
       "stock_status": "配布中"
     },
+    "2611okinawa": {
+      "category": "国内",
+      "title": "☆【沖縄】1月～5月出発☆冬旅からGW旅行に使えるおすすめ旅行割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "沖縄県",
+      "stock_status": "配布中"
+    },
     "2610okinawa": {
       "category": "国内",
       "title": "☆【沖縄】11月～3月出発☆冬から春の旅行に使えるおすすめ旅行割引クーポン",
@@ -419,7 +426,7 @@
       "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
       "discount": "最大10,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607young": {
       "category": "国内",
