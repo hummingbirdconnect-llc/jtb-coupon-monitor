@@ -1,0 +1,26 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-08T08:14:46+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "",
+      "official_url": "",
+      "evidence": "未確認：公式URLがGrokの回答に無く、じゃらんのクーポンまとめページ（登録済みURL）にも記載が見つからなかった ／ 未確認：割引率・上限・予約期間・対象県の受付状況",
+      "observed_date": "2026-11-08",
+      "discount": "未確認（Grok: 宿泊料金の50%OFF、熊本県・鹿児島県は60%OFF。上限1人あたり宿泊のみ20,000円、じゃらんパック2泊以上30,000円など）",
+      "period": "予約：未確認（Grok: 県・予算により異なり、予算上限で終了。一部県で11月以降に再販売） ／ 旅行：未確認（Grok: 主に2026年10月1日～12月25日宿泊分。県により異なる）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": false
+    }
+  ]
+}
