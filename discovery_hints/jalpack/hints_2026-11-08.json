@@ -1,0 +1,46 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-11-08T07:34:22.717509+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "行って当てよう！もっともっと四国キャンペーン",
+      "kind": "campaign",
+      "found_url": "https://www.jal.co.jp/ja-jp/campaign/dom.html",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/mottomotto_sik_cpn/?cp=dom",
+      "official_domain_match": true,
+      "evidence": "対象のJAL国内パッケージ・イージーホテル利用と応募が必要。抽選特典であり、確定した旅行代金の割引ではない。",
+      "observed_date": "2026-11-08",
+      "discount": "抽選で5,000マイルを30名様にプレゼント！",
+      "period": "予約・応募受付期間：2026年10月30日（金）～2027年2月26日（金）／対象出発期間（JALイージーホテルは宿泊期間）：2026年11月1日（日）～202",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "間際の予約でもおトク！500円分の利用券をプレゼント！",
+      "kind": "campaign",
+      "found_url": "https://appllio.com/jal-domestic-sale-coupon-campaign",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/jalplaza-coupon/?cp=dom",
+      "official_domain_match": true,
+      "evidence": "出発30～7日前の国内パッケージ予約が対象。空港店舗で使う電子利用券を1人1枚付与。旅行代金の値引きではない。",
+      "observed_date": "2026-11-08",
+      "discount": "500円分の利用券",
+      "period": "予約対象期間：～2027年3月24日まで／出発対象期間：～2027年3月31日まで／除外対象期間：2026年12月28日～2027年1月5日発",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jalpack/hints_2026-11-08.json"
+}

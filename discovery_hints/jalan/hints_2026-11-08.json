@@ -1,0 +1,32 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-08T07:34:22.717509+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 13,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "【じゃらんスペシャルウィーク】お得に予約できるクーポン（800円分）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/discountCoupon/CAM0080329/",
+      "official_url": "https://www.jalan.net/discountCoupon/CAM0080329/",
+      "official_domain_match": true,
+      "evidence": "公開ページで800円券の取得表示を確認。予約金額1万円以上・会員限定・先着。1,600～10,000円券は配布終了。",
+      "observed_date": "2026-11-08",
+      "discount": "800 円分",
+      "period": "配布期間：2026年10月26日(月)10:00～2026年11月10日(火)23:59／予約期間：2026年10月30日(金)10:00～2026年11月10",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalan/hints_2026-11-08.json"
+}

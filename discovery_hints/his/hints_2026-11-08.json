@@ -1,0 +1,32 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-11-08T07:34:22.717509+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 42,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "＼思い立ったら旅に出よう／ 東北・新潟発着国内ツアーが最大5,000円引き",
+      "kind": "coupon",
+      "found_url": "https://www.his-j.com/campaign/shisaku/",
+      "official_url": "https://www.his-j.com/campaign/shisaku/",
+      "official_domain_match": true,
+      "evidence": "東北・新潟発の飛行機利用国内ツアーが対象。公式ページの公開表示用データで予約・出発期間を確認。数量限定。",
+      "observed_date": "2026-11-08",
+      "discount": "1グループあたり最大5,000円引き",
+      "period": "新規予約期間：2026年11月3日(火)00:00～12月7日(月)09:59／対象出発期間：2027年1月12日(火)～3月31日(水)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/his/hints_2026-11-08.json"
+}

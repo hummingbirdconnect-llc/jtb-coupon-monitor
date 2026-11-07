@@ -1,0 +1,32 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-11-08T07:34:22.717509+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "年末セール",
+      "kind": "sale",
+      "found_url": "https://www.booking.com/dealspage.ja.html?aid=304142&campaign_id=late_escape&label=mkt123sc-6d286e6b-bb21-4b96-abf7-612256d80334",
+      "official_url": "https://www.booking.com/dealspage.ja.html",
+      "official_domain_match": true,
+      "evidence": "公式セールページで名称・割引率・期限を確認。東京、大阪、札幌、京都、福岡、那覇の対象宿泊施設を掲載。",
+      "observed_date": "2026-11-08",
+      "discount": "年末の宿泊が15%以上OFF",
+      "period": "2026年10月1日～2027年1月7日の宿泊を2027年1月7日までにご予約ください。",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/booking/hints_2026-11-08.json"
+}
