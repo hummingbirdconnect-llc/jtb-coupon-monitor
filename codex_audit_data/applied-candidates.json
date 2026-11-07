@@ -517,6 +517,20 @@
       "recommendation": "hold",
       "applied_at": "2026-11-03T09:12:39.556538+09:00",
       "result_path": "codex_audit_results/yomiuri_travel/yomiuri_travel-2426ba6167666c4b.json"
+    },
+    "jalan-14ef57d588a9e7d0": {
+      "provider_id": "jalan",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-07T09:10:32.331780+09:00",
+      "result_path": "codex_audit_results/jalan/jalan-14ef57d588a9e7d0.json"
+    },
+    "tobu_top_tours-c434da7108b9441a": {
+      "provider_id": "tobu_top_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-07T09:10:32.334528+09:00",
+      "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-c434da7108b9441a.json"
     }
   }
 }

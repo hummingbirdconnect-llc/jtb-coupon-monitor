@@ -1,55 +1,33 @@
 {
-  "completed_at": "2026-11-03T09:12:35.141728+09:00",
+  "completed_at": "2026-11-07T09:10:32.032117+09:00",
   "dry_run": true,
   "selection_mode": "latest_per_provider",
-  "audit_count": 4,
+  "audit_count": 2,
   "waiting_count": 0,
   "validation_error_count": 0,
   "wp_review_eligible_provider_ids": [],
   "eligible_candidates": [],
   "audits": [
     {
-      "candidate_id": "asoview-5c918827baa0cfc8",
-      "provider_id": "asoview",
-      "provider_label": "アソビュー",
-      "change_kind": "update",
-      "recommendation": "draft",
-      "priority": 70,
-      "change_summary": "前回掲載(2026-10-24)の13件のうち、10月千葉・東京ジョイポリス・遊びつくしキャンペーン3件は本文から消えた（終了とは断定しない）。他8件は継続。",
-      "validation_errors": [],
-      "high_confidence": true,
-      "wp_review_eligible": false,
-      "status": "dry_run_validated",
-      "semantic_changed": true,
-      "data_date": "2026-11-03",
-      "latest_file": "",
-      "coupon_count": 13,
-      "retained_missing_ids": [
-        "asoview-9b0472384d0a3667",
-        "asoview-4da7a1f9a2bcf311",
-        "asoview-2d6bcf7990ed1f2d",
-        "asoview-7e4cf26e70d03d00",
-        "asoview-5b5151ba18e12d37"
-      ],
-      "wp_block_reason": "前回データから消えた項目を要確認で保持"
-    },
-    {
-      "candidate_id": "jalan-9944fa95a8b83b14",
+      "candidate_id": "jalan-14ef57d588a9e7d0",
       "provider_id": "jalan",
       "provider_label": "じゃらん",
       "change_kind": "update",
       "recommendation": "draft",
-      "priority": 80,
-      "change_summary": "前回掲載(2026-10-31)からの変化: ニッポンレンタカー北海道/九州3,000円分が配布終了に変化。ふるさと特集は金額・期間の記載がなく掲載対象外へ。じゃらんレンタカー割引クーポン（一般）と旅応援連動 宿の日特集は今回の本文に出ておらず、終了とは断定せず要確認として残す。",
+      "priority": 70,
+      "change_summary": "レンタカーはバジェット・レンタカー北海道クーポンが新規、ニッポンレンタカー各クーポンは本文から消えた（終了と決めつけず要確認のまま）。クーポンフェスの掲載期間が更新、大江戸温泉物語は配布終了を確認。",
       "validation_errors": [],
       "high_confidence": true,
       "wp_review_eligible": false,
       "status": "dry_run_validated",
       "semantic_changed": true,
-      "data_date": "2026-11-03",
+      "data_date": "2026-11-07",
       "latest_file": "",
-      "coupon_count": 10,
+      "coupon_count": 13,
       "retained_missing_ids": [
+        "jalan-6ed358b049c03acc",
+        "jalan-941247c9ac6f2b68",
+        "jalan-0b5241f31c167844",
         "jalan-d464dfcb6dae0082",
         "jalan-4cdad71d00e76f94",
         "jalan-d2f2b202481a9708"
@@ -57,42 +35,26 @@
       "wp_block_reason": "前回データから消えた項目を要確認で保持"
     },
     {
-      "candidate_id": "tobu_top_tours-9ded362801f2e545",
+      "candidate_id": "tobu_top_tours-c434da7108b9441a",
       "provider_id": "tobu_top_tours",
       "provider_label": "東武トップツアーズ",
       "change_kind": "update",
       "recommendation": "draft",
       "priority": 70,
-      "change_summary": "前回掲載(2026-10-31)の8件のうち、ブラックフライデーセールと「鬼怒川温泉5,000円引きクーポン配布中」は今回のconfirmed本文に出ておらず（終了とは断定しない）。他6件は継続。",
+      "change_summary": "前回掲載分のうちクーポン5件は内容変更なし。ブラックフライデーセールが年つき期間で再確認でき確定。九州ふっこう応援割・鬼怒川5,000円引きクーポンは今回の本文に無く、終了とは判断せず要確認のまま。",
       "validation_errors": [],
       "high_confidence": true,
       "wp_review_eligible": false,
       "status": "dry_run_validated",
       "semantic_changed": true,
-      "data_date": "2026-11-03",
+      "data_date": "2026-11-07",
       "latest_file": "",
       "coupon_count": 8,
       "retained_missing_ids": [
-        "tobu_top_tours-e9ce4bf80d64c456",
+        "tobu_top_tours-d36f57fa533f6028",
         "tobu_top_tours-acff3f8afb0846f6"
       ],
       "wp_block_reason": "前回データから消えた項目を要確認で保持"
-    },
-    {
-      "candidate_id": "yomiuri_travel-2426ba6167666c4b",
-      "provider_id": "yomiuri_travel",
-      "provider_label": "読売旅行",
-      "change_kind": "baseline",
-      "recommendation": "hold",
-      "priority": 20,
-      "change_summary": "初回(baseline)。確定できる掲載項目なし。",
-      "validation_errors": [],
-      "high_confidence": false,
-      "wp_review_eligible": false,
-      "status": "dry_run_held",
-      "hold_reasons": [
-        "初回で、トップページ本文に金額・割引率・年つき期間のあるクーポンが確認できない"
-      ]
     }
   ],
   "waiting_candidates": []
