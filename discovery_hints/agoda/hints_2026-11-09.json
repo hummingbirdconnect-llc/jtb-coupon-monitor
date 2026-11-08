@@ -1,0 +1,17 @@
+{
+  "provider_id": "agoda",
+  "provider_label": "Agoda",
+  "generated_at": "2026-11-09T07:38:11.525776+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開ページを再取得したが、割引の期間・国内対象条件の本文を取得できず。Chromeによる確認は未実施。",
+  "known_title_count": 4,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/agoda/hints_2026-11-09.json"
+}

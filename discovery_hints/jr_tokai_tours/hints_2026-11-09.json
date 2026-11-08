@@ -1,0 +1,32 @@
+{
+  "provider_id": "jr_tokai_tours",
+  "provider_label": "JR東海ツアーズ",
+  "generated_at": "2026-11-09T07:38:11.525776+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 10,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "EX旅先予約 秋冬の大セール",
+      "kind": "sale",
+      "found_url": "https://x.com/NicolenaWorld/status/2118986963793662219",
+      "official_url": "https://travel.jr-central.co.jp/plan/tokushu/ex/autumnsale/",
+      "official_domain_match": true,
+      "evidence": "対象の観光・体験プラン。1予約最大3,000円。EXサービス会員登録が必要。ホテル・レンタカーは対象外。",
+      "observed_date": "2026-11-09",
+      "discount": "10％OFF",
+      "period": "販売期間（予約受付期間）2026年10月30日（金）～12月24日（木）；対象出発期間：2026年11月1日（日）～12月31日（木）",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jr_tokai_tours/hints_2026-11-09.json"
+}

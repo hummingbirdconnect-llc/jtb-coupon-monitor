@@ -1,0 +1,32 @@
+{
+  "provider_id": "tripcom",
+  "provider_label": "Trip.com",
+  "generated_at": "2026-11-09T07:38:11.525776+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 6,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割（福岡・長崎・熊本・鹿児島）",
+      "kind": "campaign",
+      "found_url": "https://jp.trip.com/sale/w/3dcskhfy90ul2ffm/kyushu-fukkou.html",
+      "official_url": "https://jp.trip.com/sale/w/3dcskhfy90ul2ffm/kyushu-fukkou.html",
+      "official_domain_match": true,
+      "evidence": "対象ホテルの1泊予約のみ。1人最大2万円で自動割引。鹿児島は12月26日～1月3日除外。予算到達で終了。",
+      "observed_date": "2026-11-09",
+      "discount": "宿泊料金の最大 50%OFF（熊本県・鹿児島県は最大 60%OFF）",
+      "period": "福岡：2026年10月19日(月)13:00~12月15日(火)23:59；長崎：2026年10月19日(月)13:00~12月25日(金)23:59；熊本：2",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/tripcom/hints_2026-11-09.json"
+}

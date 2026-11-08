@@ -1,0 +1,17 @@
+{
+  "provider_id": "skypack_tours",
+  "provider_label": "スカイパックツアーズ",
+  "generated_at": "2026-11-09T07:38:11.525776+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式トップページの取得に失敗。別の公式セールページは取得できたが、既知施策かつ予約期間終了。",
+  "known_title_count": 4,
+  "registered_url_count": 3,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/skypack_tours/hints_2026-11-09.json"
+}

@@ -1,0 +1,32 @@
+{
+  "provider_id": "knt",
+  "provider_label": "近畿日本ツーリスト",
+  "generated_at": "2026-11-09T07:38:11.525776+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 10,
+  "registered_url_count": 9,
+  "candidates": [
+    {
+      "title": "九州を元気に！旅で応援クーポン・プラン",
+      "kind": "coupon",
+      "found_url": "https://www.knt.co.jp/yado/sp/fukkou/kyushu/",
+      "official_url": "https://www.knt.co.jp/yado/sp/fukkou/kyushu/",
+      "official_domain_match": true,
+      "evidence": "宿泊・交通＋宿泊向け。9万円以上で1万円割引などの券種を確認。既知の九州ふっこう応援割とは別の施策。",
+      "observed_date": "2026-11-09",
+      "discount": "最大10,000円割引",
+      "period": "予約：2026年9月3日（木）～2026年12月31日（木）；宿泊：2026年9月3日（木）～2026年12月31日（木）宿泊分",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/knt/hints_2026-11-09.json"
+}

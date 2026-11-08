@@ -1,0 +1,32 @@
+{
+  "provider_id": "yumeyado",
+  "provider_label": "ゆめやど",
+  "generated_at": "2026-11-09T07:38:11.525776+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 21,
+  "registered_url_count": 3,
+  "candidates": [
+    {
+      "title": "にいがたGoToトラベル",
+      "kind": "campaign",
+      "found_url": "https://yumeyado.jp/lp/niigata",
+      "official_url": "https://yumeyado.jp/lp/niigata",
+      "official_domain_match": true,
+      "evidence": "同行者全員が新潟県在住である新規予約。1人1泊最大5,000円引き。ビジネス対象外。日付の曜日表記はページ原文。",
+      "observed_date": "2026-11-09",
+      "discount": "宿泊代金が30％OFF！",
+      "period": "予約期間 2026/9/7日(月)9:00～12/28(月)まで；宿泊期間 2026/9/7(月)チェックイン～12/29日(火)チェックアウトまで",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/yumeyado/hints_2026-11-09.json"
+}

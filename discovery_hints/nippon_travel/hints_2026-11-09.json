@@ -1,0 +1,60 @@
+{
+  "provider_id": "nippon_travel",
+  "provider_label": "日本旅行",
+  "generated_at": "2026-11-09T07:38:11.525776+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 2,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "LINE友だち登録＆ID連携で使える500円分クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.nta.co.jp/cpn/index.htm",
+      "official_url": "https://www.nta.co.jp/cpn/index.htm",
+      "official_domain_match": true,
+      "evidence": "国内旅行欄で確認。新規登録1回につき1マイクーポン。取得や連携操作は未実施。",
+      "observed_date": "2026-11-09",
+      "discount": "500円分クーポン",
+      "period": "予約対象期間 2026年11月05日 ～ 2027年05月31日；出発対象期間 2026年11月05日 ～ 2027年05月31日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "ユニバーサルシティに泊まる割引キャンペーン",
+      "kind": "campaign",
+      "found_url": "https://www.nta.co.jp/cpn/index.htm",
+      "official_url": "https://www.nta.co.jp/cpn/index.htm",
+      "official_domain_match": true,
+      "evidence": "大阪のテーマパーク周辺対象施設の予約で利用。他クーポン・割引との併用不可。",
+      "observed_date": "2026-11-09",
+      "discount": "お1人様1旅行あたり7%割引（割引上限5,000円）",
+      "period": "予約対象期間 2026年09月28日 ～ 2026年11月30日；出発対象期間 2026年10月01日 ～ 2026年12月30日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "ラグジュアリーホテル割引キャンペーン",
+      "kind": "campaign",
+      "found_url": "https://www.nta.co.jp/cpn/index.htm",
+      "official_url": "https://www.nta.co.jp/cpn/index.htm",
+      "official_domain_match": true,
+      "evidence": "東京・横浜の対象施設の宿泊で利用。他クーポン・割引との併用不可。",
+      "observed_date": "2026-11-09",
+      "discount": "1旅行1組あたり5,000円割引",
+      "period": "予約対象期間 2026年09月25日 ～ 2026年12月24日；出発対象期間 2026年10月01日 ～ 2026年12月30日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/nippon_travel/hints_2026-11-09.json"
+}
