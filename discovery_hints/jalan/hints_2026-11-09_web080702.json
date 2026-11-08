@@ -1,0 +1,26 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-09T08:26:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "ふるさとキャンペーン＆お得クーポン（ご当地クーポンのまとめ）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/theme/furusato_coupon/",
+      "official_url": "https://www.jalan.net/theme/furusato_coupon/",
+      "evidence": "公式：ご当地特集とお得なクーポンをまとめたページ ／ 公式：愛知県 最大4000円クーポン配布 ／ 公式：長崎県五島市 最大1万円クーポン ／ 公式：福島県 １人あたり１泊3000円もお安く ／ 未確認：地域ごとの予約期間・宿泊期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-11-09",
+      "discount": "地域ごとに異なる（例：愛知県 最大4,000円クーポン、長崎県五島市 最大1万円クーポン、福島県 1人1泊3,000円引き）",
+      "period": "予約：未確認（地域ごとに異なる） ／ 旅行：未確認（地域ごとに異なる）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

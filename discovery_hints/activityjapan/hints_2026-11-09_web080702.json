@@ -1,0 +1,52 @@
+{
+  "provider_id": "activityjapan",
+  "provider_label": "アクティビティジャパン",
+  "generated_at": "2026-11-09T08:26:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "長野県150周年『もっと知りたい!信州体験割』（秋冬期）",
+      "kind": "coupon",
+      "found_url": "https://x.com/activityjapan/status/2105598809258811642",
+      "official_url": "https://activityjapan.com/dmo/discover-shinshu/",
+      "evidence": "公式：県内在住者はNGN5で最大50%オフ、県外からの訪問者はNGN6で最大20%オフ（割引上限一人5,000円/回、1人1回） ／ 公式：クーポン取得・利用期間 2026年10月1日～12月25日 ／ 公式：予算の上限に達した場合は期間に関わらず終了することがある ／ 公式：予約完了後の事後登録・割引は受けられない ／ 公式：オプション料金は割引対象外 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-09",
+      "discount": "長野県内在住者 最大50%OFF（クーポンコードNGN5）、県外からの訪問者 最大20%OFF（NGN6）。割引上限1人5,000円/回",
+      "period": "予約：クーポン取得・利用期間 2026年10月1日（木）～12月25日（金）（予算上限で早期終了あり） ／ 旅行：配布期間中に実施される体験（2026年12月25日まで）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "先トククーポン（14日以上先の予約で1,000円OFF）",
+      "kind": "coupon",
+      "found_url": "https://activityjapan.com/feature/sakitoku_campaign/",
+      "official_url": "https://activityjapan.com/feature/sakitoku_campaign/",
+      "evidence": "公式：14日以上先の予約時にクーポン入力で1,000円OFF（予約代金10,000円以上） ／ 公式：クーポン利用期間 未定（終了時には当ページで告知） ／ 公式：オンライン決済限定（クレジット、PayPay） ／ 公式：期間中は何度でも利用可能。複数クーポンの同時利用は不可 ／ 公式：催行後に決済金額からクーポン分を返金",
+      "observed_date": "2026-11-09",
+      "discount": "1,000円OFF",
+      "period": "予約：未定（終了時に公式ページで告知） ／ 旅行：予約時から14日以上先の体験",
+      "confidence": "high",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "アクティビティジャパン公式LINE限定クーポン",
+      "kind": "coupon",
+      "found_url": "https://activityjapan.com/feature/coupon-campaign/",
+      "official_url": "https://activityjapan.com/feature/line-campaign/",
+      "evidence": "公式：LINE公式アカウント限定の特別クーポンを随時配布 ／ 公式：LINE限定クーポンは不定期で配布 ／ 未確認：割引額 ／ 未確認：予約期間 ／ 未確認：利用期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-09",
+      "discount": "未確認（Grok: 500円OFF）",
+      "period": "予約：未確認（公式：不定期配布） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

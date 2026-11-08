@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-09T08:26:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "楽天トラベル お得なクーポン祭（11月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/11/4（水）10:00～2026/12/2（水）09:59 ／ 公式：全楽天会員様 500円OFF 先着利用300,000枚 ／ 公式：ダイヤモンド会員様限定 4,500円OFF（週末）・4,000円OFF（平日） ／ 公式：ダイヤモンド・プラチナ会員様限定 3,000円OFF・2,500円OFFほか ／ 公式：クーポンには金額条件がございます ／ 未確認：宿泊対象期間 ／ 未確認：各クーポンの最低利用額 ／ 未確認：決済方法（どのクーポンがオンラインカード決済限定か） ／ 未確認：楽パックのクーポン",
+      "observed_date": "2026-11-09",
+      "discount": "国内宿泊：全楽天会員500円OFF、ダイヤモンド会員限定4,500円OFF（週末）・4,000円OFF（平日）、ダイヤモンド・プラチナ会員限定3,000円OFFほか（未確認（Grok: 楽パック最大8,000円OFF））",
+      "period": "予約：2026/11/4（水）10:00～2026/12/2（水）09:59 ／ 旅行：未確認（Grok: 国内宿泊 2026年11月4日チェックイン～2027年10月31日チェックアウト、除外日あり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "RaCoupon（ラ・クーポン）宿泊料金割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/",
+      "evidence": "公式：最大4,500円OFF・最大30％OFF・最大10％OFFのクーポンを掲載 ／ 公式：毎月5と0のつく日はホテル・宿が最大20％OFF ／ 公式：クーポンには除外日が設定されている場合がある ／ 公式：各クーポンには利用枚数制限や利用条件がある ／ 未確認：予約期間 ／ 未確認：宿泊期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-11-09",
+      "discount": "クーポンごとに異なる（ページ表記：最大4,500円OFF、最大30％OFF、5と0のつく日は最大20％OFF）",
+      "period": "予約：未確認（クーポンごとに異なる） ／ 旅行：未確認（クーポンごとに異なる。除外日あり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

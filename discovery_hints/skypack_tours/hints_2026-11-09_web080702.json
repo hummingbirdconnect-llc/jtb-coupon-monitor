@@ -1,0 +1,12 @@
+{
+  "provider_id": "skypack_tours",
+  "provider_label": "スカイパックツアーズ",
+  "generated_at": "2026-11-09T08:26:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 0,
+  "candidate_count": 0,
+  "candidates": []
+}
