@@ -1,17 +1,18 @@
 [
   {
-    "id": "sp-fukkou-kagoshima_shimameguri-63c531",
+    "id": "cmpgn-2600261",
     "category": "獲得クーポン",
-    "title": "あまみゆったり島泊割",
-    "area": "",
+    "title": "【福井の宝】福井の冬の味覚プランで使えるクーポン",
+    "area": "福井県",
     "type": "国内宿泊",
-    "detail_url": "https://www.knt.co.jp/yado/sp/fukkou/kagoshima_shimameguri/",
+    "detail_url": "https://www.knt.co.jp/coupon/campaign.html?cmpgncd=2600261",
     "stock_status": "配布中",
+    "discount": "5,000円割引",
     "detail_data": {
-      "discount": "",
+      "discount": "5,000円割引",
       "conditions": [],
-      "booking_period": "2026年10月6日（火）～2027年2月28日（日）　※上限に達し次第終了",
-      "stay_period": "2026年10月13日（火）～2027年2月28日（日）※3月1日（月）チェックアウト分まで",
+      "booking_period": "2026年10月21日(水)～2027年3月19日(金)まで",
+      "stay_period": "【福井の宝】2026年11月7日(土)～2027年3月20日(土)まで　※3月21日(日)チェックアウト分まで / 【福井の宝】2026年11月7日（土）～2027年3月20日（土）獲得クーポンの利用条件について",
       "coupon_codes": [],
       "notes": [
         "が過ぎている場合や、先着上限数、自治体等の予算上限に達している場合等、利用条件を満たさない場合は再度ご利用いただくことができません。 KNT",
@@ -20,18 +21,35 @@
     }
   },
   {
-    "id": "yado-sp-kagoshima-natsu-cp-4a08ed",
+    "id": "kyushu-ouenwari-2c9ab1",
     "category": "獲得クーポン",
-    "title": "南の宝箱　鹿児島「かごしま観光応援割」キャンペーン",
-    "area": "",
-    "type": "国内宿泊",
-    "detail_url": "https://www.knt.co.jp/yado/sp/kagoshima-natsu-cp/",
+    "title": "九州ふっこう応援割",
+    "area": "九州",
+    "type": "国内ツアー・国内宿泊",
+    "detail_url": "https://www.knt.co.jp/kyushu-ouenwari/",
     "stock_status": "配布中",
     "detail_data": {
       "discount": "",
       "conditions": [],
-      "booking_period": "2026年9月14日（月）～2026年10月13日（火）上限に達し次第終了",
-      "stay_period": "2026年9月14日（月）～2026年10月13日（火）宿泊10月14日（水）チェックアウトまで",
+      "booking_period": "",
+      "stay_period": "2026年10月1日（木）～12月25日（金）宿泊分 / 【熊本県】2026年10月14日（水）～2027年1月31日（日）宿泊分",
+      "coupon_codes": [],
+      "notes": []
+    }
+  },
+  {
+    "id": "sp-fukkou-kagoshima_shimameguri-63c531",
+    "category": "獲得クーポン",
+    "title": "あまみゆったり島泊割",
+    "area": "鹿児島県",
+    "type": "国内宿泊",
+    "detail_url": "https://www.knt.co.jp/yado/sp/fukkou/kagoshima_shimameguri/",
+    "stock_status": "配布中",
+    "detail_data": {
+      "discount": "",
+      "conditions": [],
+      "booking_period": "2026年10月6日（火）～2027年2月28日（日）　※上限に達し次第終了",
+      "stay_period": "2026年10月13日（火）～2027年2月28日（日）※3月1日（月）チェックアウト分まで",
       "coupon_codes": [],
       "notes": [
         "が過ぎている場合や、先着上限数、自治体等の予算上限に達している場合等、利用条件を満たさない場合は再度ご利用いただくことができません。 KNT",
@@ -185,25 +203,6 @@
       "coupon_codes": [],
       "notes": [
         "ることができます。 1予約につき利用できるクーポンは1枚です。他の割引クーポン・福利厚生補助・各種提携割引（株主優待券・企業名記載の旅行券含"
-      ]
-    }
-  },
-  {
-    "id": "cpn-akicpn-6ac946",
-    "category": "クーポンコード",
-    "title": "近ツー秋のクーポン祭2026",
-    "area": "",
-    "type": "国内ダイナミックパッケージ・国内宿泊",
-    "detail_url": "https://www.knt.co.jp/cpn/akicpn/",
-    "stock_status": "配布中",
-    "detail_data": {
-      "discount": "",
-      "conditions": [],
-      "booking_period": "2026年7月31日（金）から2026年10月31日（土）まで",
-      "stay_period": "内に、近畿日本ツーリスト公式ホームページより国内ダイナミックパッケージ（交通＋宿泊）もしくは国内宿泊プランをご購入のお客様",
-      "coupon_codes": [],
-      "notes": [
-        "ドをご入力ください。1予約につき下記金額を割引します。 ※ご予約完了前に割引金額が適用されているか、必ず画面確認をお願いいたします。 交通+"
       ]
     }
   }

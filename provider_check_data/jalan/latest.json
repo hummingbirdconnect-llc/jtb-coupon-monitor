@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-08T13:58:08.026410+09:00",
-  "completed_at": "2026-11-08T13:58:16.768386+09:00",
-  "official_fetched_at": "2026-11-08T13:58:16.768392+09:00",
+  "started_at": "2026-11-09T07:21:26.704932+09:00",
+  "completed_at": "2026-11-09T07:21:35.706879+09:00",
+  "official_fetched_at": "2026-11-09T07:21:35.706886+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -112,5 +112,5 @@
   "coupon_count": 13,
   "content_hash": "14ef57d588a9e7d02f4a302ede08c4d336fb7f36c5c59074a2695160d8edd8b0",
   "error": "",
-  "freshness_status": "fresh"
+  "freshness_status": "stale"
 }
