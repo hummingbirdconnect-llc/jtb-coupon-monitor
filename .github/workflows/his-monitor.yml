@@ -2,13 +2,10 @@ name: HIS Coupon Monitor (self-hosted)
 
 # HIS公式サイトは海外IPのGitHub Actionsランナーへ403を返すため、取得は
 # 日本のMac mini（self-hosted runner: macmini-his）へ移した。
-# 平日 7:00 / 15:45 JST に動かす（cronはUTC指定）。
+# 平日 7:00 / 15:45 JST に動かす。GitHubの定期実行（schedule）は遅れ・抜けが
+# 出たため（2026-11-06〜07）、2026-11-08から Mac mini の launchd
+# （com.hbconnect.his-monitor-trigger）が workflow_dispatch で起動する。
 on:
-  schedule:
-    # 平日 7:00 JST = 前日 22:00 UTC（日〜木）
-    - cron: '0 22 * * 0-4'
-    # 平日 15:45 JST = 同日 6:45 UTC（月〜金）
-    - cron: '45 6 * * 1-5'
   workflow_dispatch:
 
 permissions:
