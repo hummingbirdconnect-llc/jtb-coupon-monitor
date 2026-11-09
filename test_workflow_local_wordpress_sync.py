@@ -42,9 +42,10 @@ class WorkflowLocalWordPressSyncTests(unittest.TestCase):
     def test_his_runs_on_the_japanese_self_hosted_runner(self) -> None:
         self.assertIn("runs-on: [self-hosted, his]", self.his_workflow)
         self.assertIn("provider_check_runner.py --provider-id his", self.his_workflow)
-        # 平日 7:00 / 15:45 JST（UTC指定）
-        self.assertIn("cron: '0 22 * * 0-4'", self.his_workflow)
-        self.assertIn("cron: '45 6 * * 1-5'", self.his_workflow)
+        # 2026-11-08〜（#35）GitHubの定期実行はやめ、Mac mini の launchd
+        # （com.hbconnect.his-monitor-trigger）が平日 7:00 / 15:45 JST に workflow_dispatch で起動する
+        self.assertIn("workflow_dispatch:", self.his_workflow)
+        self.assertNotIn("schedule:", self.his_workflow)
         # 本線はHISを取得しない
         self.assertIn("--exclude-provider-id his", self.workflow)
         self.assertNotIn("generate_his_html.py", self.workflow)
