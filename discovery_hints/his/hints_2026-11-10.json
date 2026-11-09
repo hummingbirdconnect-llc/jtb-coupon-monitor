@@ -1,0 +1,17 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-11-10T07:34:09.280270+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開一覧は取得できたが、一部条件が動的表示のため未確認。BLACK FRIDAY 2026はX上で11/11開始予告のため本日の候補から除外。",
+  "known_title_count": 42,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/his/hints_2026-11-10.json"
+}

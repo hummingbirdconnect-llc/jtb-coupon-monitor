@@ -1,0 +1,60 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-10T07:34:09.280270+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 99,
+  "registered_url_count": 100,
+  "candidates": [
+    {
+      "title": "☆【沖縄】1月～5月出発☆冬旅からGW旅行に使えるおすすめ旅行割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/marumaru25n/status/2119659502828204380",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611okinawa/page.asp",
+      "official_domain_match": true,
+      "evidence": "11月6日受付開始。会員限定・対象施設の国内ツアー。2名以上、350,000円以上で20,000円引。先着125枚の設定。",
+      "observed_date": "2026-11-10",
+      "discount": "20,000 円引",
+      "period": "予約対象期間：2026/11/6(金) ～ 2027/3/31(水)；出発対象期間：2027/1/1(金) ～ 2027/5/31(月)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610matsue/page.asp",
+      "official_domain_match": true,
+      "evidence": "対象施設・会員限定。基本クーポンは100,000円以上で20,000円引。日～木曜日限定、2連泊以上の追加クーポンも掲載。",
+      "observed_date": "2026-11-10",
+      "discount": "20,000 円引",
+      "period": "予約対象期間：2026/10/9(金) ～ 2027/2/28(日)；宿泊対象期間：2027/1/4(月) ～ 2027/2/28(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2610yamaguchi/page.asp",
+      "official_domain_match": true,
+      "evidence": "会員限定・対象施設。2名以上、80,000円以上で12,000円引。先着150枚の設定。12/29～1/3は適用除外。",
+      "observed_date": "2026-11-10",
+      "discount": "12,000 円引",
+      "period": "予約対象期間：2026/10/1(木) ～ 2027/2/28(日)；宿泊対象期間：2026/12/1(火) ～ 2027/2/28(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-10.json"
+}

@@ -1,0 +1,17 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-10T07:34:09.280270+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "スペシャルウィーク公式ページに掲載期間10/30～11/19、見出し9/18終了、11/10第2弾開始が混在し、開催期限を確定できず。",
+  "known_title_count": 13,
+  "registered_url_count": 7,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jalan/hints_2026-11-10.json"
+}

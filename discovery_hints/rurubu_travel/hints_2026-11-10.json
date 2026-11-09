@@ -1,0 +1,17 @@
+{
+  "provider_id": "rurubu_travel",
+  "provider_label": "るるぶトラベル",
+  "generated_at": "2026-11-10T07:34:09.280270+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式一覧はWeb閲覧とブラウザ相当User-Agent付きcurlで本文を取得できず。検索結果の候補は公式条件未確認のため不採用。Chromeは未実行。",
+  "known_title_count": 74,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-10.json"
+}

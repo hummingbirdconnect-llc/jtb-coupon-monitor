@@ -1,91 +1,91 @@
 {
-  "completed_at": "2026-11-09T07:38:11.525776+09:00",
+  "completed_at": "2026-11-10T07:34:09.280270+09:00",
   "scope": "codex-auto",
-  "provider_count": 42,
-  "error_count": 7,
-  "candidate_count": 33,
-  "new_count": 20,
+  "provider_count": 13,
+  "error_count": 5,
+  "candidate_count": 9,
+  "new_count": 5,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
-      "status": "ok",
-      "error": "",
+      "status": "error",
+      "error": "公開一覧は取得できたが、一部条件が動的表示のため未確認。BLACK FRIDAY 2026はX上で11/11開始予告のため本日の候補から除外。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-11-09.json"
+      "hints_file": "discovery_hints/his/hints_2026-11-10.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 5,
+      "candidate_count": 3,
       "new_count": 0,
-      "hints_file": "discovery_hints/jtb/hints_2026-11-09.json"
+      "hints_file": "discovery_hints/jtb/hints_2026-11-10.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/knt/hints_2026-11-09.json"
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/knt/hints_2026-11-10.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "status": "ok",
       "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalpack/hints_2026-11-09.json"
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jalpack/hints_2026-11-10.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 5,
-      "new_count": 5,
-      "hints_file": "discovery_hints/jalan/hints_2026-11-09.json"
+      "status": "error",
+      "error": "スペシャルウィーク公式ページに掲載期間10/30～11/19、見出し9/18終了、11/10第2弾開始が混在し、開催期限を確定できず。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jalan/hints_2026-11-10.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-09.json"
+      "candidate_count": 2,
+      "new_count": 2,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-10.json"
     },
     {
       "provider_id": "ikkyu",
       "provider_label": "一休",
       "status": "ok",
       "error": "",
-      "candidate_count": 5,
-      "new_count": 0,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-11-09.json"
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/ikkyu/hints_2026-11-10.json"
     },
     {
       "provider_id": "yahoo_travel",
       "provider_label": "Yahoo!トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 2,
+      "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-09.json"
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-10.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/asoview/hints_2026-11-09.json"
+      "status": "error",
+      "error": "公開クーポン一覧の内容を取得できず。ブラウザ相当User-Agent付きcurlでも改善せず。個別プランは金額・販売期間を確認できず。Chromeは未実行。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/asoview/hints_2026-11-10.json"
     },
     {
       "provider_id": "tobu_top_tours",
@@ -94,7 +94,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-09.json"
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-10.json"
     },
     {
       "provider_id": "booking",
@@ -103,286 +103,25 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-11-09.json"
+      "hints_file": "discovery_hints/booking/hints_2026-11-10.json"
     },
     {
       "provider_id": "rurubu_travel",
       "provider_label": "るるぶトラベル",
       "status": "error",
-      "error": "クーポン一覧はブラウザ相当のUser-Agentで再取得しても本文が空。施設別クーポンの現行条件を確認できず。Chromeによる確認は未実施。",
+      "error": "公式一覧はWeb閲覧とブラウザ相当User-Agent付きcurlで本文を取得できず。検索結果の候補は公式条件未確認のため不採用。Chromeは未実行。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "jalan_activity",
-      "provider_label": "じゃらん遊び体験",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalan_activity/hints_2026-11-09.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-10.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
       "status": "error",
-      "error": "公開一覧に国内向け割引はあるが、取得経路で表示が異なり、期間・利用条件を確定できず。ログインは未実施。",
+      "error": "公開ページで名称・金額は読めたが、候補の有効期間を確認できず。ログインせず、採用を見送った。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "jtrip",
-      "provider_label": "ジェイトリップ",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 5,
-      "new_count": 5,
-      "hints_file": "discovery_hints/jtrip/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "yumeyado",
-      "provider_label": "ゆめやど",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/yumeyado/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "relux",
-      "provider_label": "Relux",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/relux/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "activityjapan",
-      "provider_label": "アクティビティジャパン",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/activityjapan/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "club_tourism",
-      "provider_label": "クラブツーリズム",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/club_tourism/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "jr_tokai_tours",
-      "provider_label": "JR東海ツアーズ",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/jr_tokai_tours/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "skypack_tours",
-      "provider_label": "スカイパックツアーズ",
-      "status": "error",
-      "error": "公式トップページの取得に失敗。別の公式セールページは取得できたが、既知施策かつ予約期間終了。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/skypack_tours/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "yomiuri_travel",
-      "provider_label": "読売旅行",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/yomiuri_travel/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "toku",
-      "provider_label": "トクー",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/toku/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "newt",
-      "provider_label": "NEWT",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/newt/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "surprice",
-      "provider_label": "Surprice",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/surprice/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "traveloka",
-      "provider_label": "Traveloka",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/traveloka/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "airtrip",
-      "provider_label": "エアトリ",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/airtrip/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "skyticket",
-      "provider_label": "スカイチケット",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/skyticket/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "jcation",
-      "provider_label": "Jcation",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jcation/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "jalan_rentacar",
-      "provider_label": "じゃらんレンタカー",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalan_rentacar/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "tabirai_rentacar",
-      "provider_label": "たびらいレンタカー",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/tabirai_rentacar/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "nippon_travel",
-      "provider_label": "日本旅行",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 3,
-      "new_count": 3,
-      "hints_file": "discovery_hints/nippon_travel/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "hankyu_travel",
-      "provider_label": "阪急交通社",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/hankyu_travel/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "jamjam",
-      "provider_label": "JAMJAMライナー",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jamjam/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "skyscanner",
-      "provider_label": "スカイスキャナー",
-      "status": "error",
-      "error": "公式の直前セールページがJavaScript必須表示。公開本文で国内向け施策の金額・期間を確認できず。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/skyscanner/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "jalan_pack",
-      "provider_label": "じゃらんパック",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalan_pack/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "orion_tour",
-      "provider_label": "オリオンツアー",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 0,
-      "hints_file": "discovery_hints/orion_tour/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "shirokuma_tour",
-      "provider_label": "しろくまツアー",
-      "status": "error",
-      "error": "スカイマーク秋冬タイムセールの期間は確認したが、割引額・割引率を確認できず。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/shirokuma_tour/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "agoda",
-      "provider_label": "Agoda",
-      "status": "error",
-      "error": "公開ページを再取得したが、割引の期間・国内対象条件の本文を取得できず。Chromeによる確認は未実施。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/agoda/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "expedia",
-      "provider_label": "Expedia",
-      "status": "error",
-      "error": "PayPay導入記念の金額・期間は確認。国内旅行の対象商品・追加条件はアプリ案内のみで確定できず。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/expedia/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "hotels",
-      "provider_label": "Hotels.com",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/hotels/hints_2026-11-09.json"
-    },
-    {
-      "provider_id": "tripcom",
-      "provider_label": "Trip.com",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/tripcom/hints_2026-11-09.json"
+      "hints_file": "discovery_hints/klook/hints_2026-11-10.json"
     }
   ]
 }
