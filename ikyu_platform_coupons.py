@@ -425,23 +425,77 @@ def fetch_html(url: str, timeout: int = 30) -> str:
     return response.text
 
 
-def fetch_all_coupons(site: SiteConfig, include_government: bool = True) -> list[dict[str, Any]]:
-    print(f"📥 {site.provider_label} 公式のクーポン一覧を取得中... {site.base_url}{COUPON_LIST_PATH}")
-    html = fetch_html(f"{site.base_url}{COUPON_LIST_PATH}")
+# ------------------------------------------------------------
+# 本人が開いたページの保存ファイルから読む（2026-11-10〜）
+# ------------------------------------------------------------
+# 2026-11-02（Yahoo!トラベル）と 11-05（一休）から、日本の Mac からの自動取得にも
+# 403 が返る。取得を断るサイトの保護は回避しない方針なので、通信での取得はやめ、
+# 本人が自分のブラウザで開いたページを保存したファイルから読む。
+# 保存はタブ保存の部品（provider-fetch-jp/save_tab.js）が行い、先頭に
+# <!-- saved-from: URL --> の印を付ける。ファイル名は <provider>-<kind>.html。
+
+PAGE_PATHS = {"coupons": COUPON_LIST_PATH, "government": GOVERNMENT_PATH}
+_SAVED_FROM = re.compile(r"<!--\s*saved-from:\s*(\S+)\s*-->")
+
+
+def saved_page_path(saved_dir: Path, site: SiteConfig, kind: str) -> Path:
+    if kind not in PAGE_PATHS:
+        raise ValueError(f"ページの種類が違う: {kind}")
+    return Path(saved_dir) / f"{site.provider}-{kind}.html"
+
+
+def check_saved_page(html: str, site: SiteConfig, kind: str) -> None:
+    """保存ファイルが、その会社のそのページを保存した物かを先頭の印で確かめる。"""
+    match = _SAVED_FROM.search(html[:4000])
+    if not match:
+        raise RuntimeError("保存ファイルに saved-from の印が無い。タブ保存の部品で保存したファイルだけを読む")
+    saved_url = match.group(1).split("#")[0].split("?")[0].rstrip("/")
+    expected = f"{site.base_url}{PAGE_PATHS[kind]}".rstrip("/")
+    if saved_url != expected:
+        raise RuntimeError(f"保存ファイルのページが違う: {saved_url}（期待: {expected}）")
+
+
+def read_saved_page(saved_dir: Path, site: SiteConfig, kind: str) -> str:
+    html = saved_page_path(saved_dir, site, kind).read_text(encoding="utf-8")
+    check_saved_page(html, site, kind)
+    return html
+
+
+def fetch_all_coupons(
+    site: SiteConfig,
+    include_government: bool = True,
+    saved_dir: Path | None = None,
+) -> list[dict[str, Any]]:
+    """クーポン一覧と自治体特集を読む。saved_dir を渡したときは保存ファイルだけを読み、通信しない。"""
+    if saved_dir is None:
+        print(f"📥 {site.provider_label} 公式のクーポン一覧を取得中... {site.base_url}{COUPON_LIST_PATH}")
+        html = fetch_html(f"{site.base_url}{COUPON_LIST_PATH}")
+    else:
+        print(f"📂 {site.provider_label} 保存したクーポン一覧を読む... {saved_page_path(saved_dir, site, 'coupons')}")
+        html = read_saved_page(saved_dir, site, "coupons")
     raw_items = extract_coupon_list(html)
     now = now_jst()
     coupons = [build_coupon(raw, site, now) for raw in raw_items if raw.get("manageId")]
     print(f"  宿限定クーポン: {len(coupons)}件（東日本・中日本・西日本の全タブ）")
 
     if include_government:
-        print(f"📥 {site.provider_label} 自治体クーポン特集を確認中... {site.base_url}{GOVERNMENT_PATH}")
+        if saved_dir is None:
+            print(f"📥 {site.provider_label} 自治体クーポン特集を確認中... {site.base_url}{GOVERNMENT_PATH}")
+            skippable: tuple[type[BaseException], ...] = (requests.RequestException,)
+        else:
+            print(f"📂 {site.provider_label} 保存した自治体クーポン特集を読む... {saved_page_path(saved_dir, site, 'government')}")
+            skippable = (OSError, RuntimeError)
         try:
-            gov_html = fetch_html(f"{site.base_url}{GOVERNMENT_PATH}")
+            if saved_dir is None:
+                gov_html = fetch_html(f"{site.base_url}{GOVERNMENT_PATH}")
+            else:
+                gov_html = read_saved_page(saved_dir, site, "government")
             gov_items = parse_government_page(gov_html, site)
             print(f"  自治体クーポン: {len(gov_items)}件（配布中 {sum(1 for g in gov_items if g['stock_status'] == '配布中')}件）")
             coupons.extend(gov_items)
-        except requests.RequestException as exc:
-            print(f"  ⚠️ 自治体クーポン特集の取得失敗: {exc.__class__.__name__}")
+        except skippable as exc:
+            detail = f" {exc}" if saved_dir is not None else ""
+            print(f"  ⚠️ 自治体クーポン特集の取得失敗: {exc.__class__.__name__}{detail}")
     return coupons
 
 
