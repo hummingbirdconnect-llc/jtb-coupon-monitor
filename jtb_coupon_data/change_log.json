@@ -7423,5 +7423,32 @@
     "title": "九州ふっこう応援割 ふくおかキャンペーン",
     "discount": "最大50％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-09",
+    "type": "🟢 配布再開",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-09",
+    "type": "🟢 配布再開",
+    "id": "2609kyushukagoshima",
+    "category": "国内",
+    "title": "鹿児島ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-09",
+    "type": "🟢 配布再開",
+    "id": "2609kyushunagasaki",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ながさきキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
   }
 ]
