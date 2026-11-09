@@ -2,9 +2,9 @@
   "provider_id": "relux",
   "provider_label": "Relux",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-19T09:09:38.642291+09:00",
-  "completed_at": "2026-10-19T09:09:47.117682+09:00",
-  "official_fetched_at": "2026-10-19T09:09:47.117688+09:00",
+  "started_at": "2026-11-09T09:08:05.881591+09:00",
+  "completed_at": "2026-11-09T09:08:12.803841+09:00",
+  "official_fetched_at": "2026-11-09T09:08:12.803846+09:00",
   "source_results": [
     {
       "url": "https://rlx.jp/",
@@ -18,14 +18,14 @@
       "discovered_from": "",
       "discovered_urls": [
         "https://rlx.jp/timesale/",
-        "https://rlx.jp/special/discount_point2610/",
+        "https://rlx.jp/special/discount_agorahotel/",
+        "https://rlx.jp/special/hokkaido2610/",
         "https://rlx.jp/special/kani2609/",
-        "https://rlx.jp/special/breakfast2609/",
-        "https://rlx.jp/special/children202608/",
-        "https://rlx.jp/special/allinclusive2607/"
+        "https://rlx.jp/special/new2610/",
+        "https://rlx.jp/special/breakfast2609/"
       ],
-      "text_chars": 3994,
-      "content_hash": "e9d7fdb8b970064a1bd0baf1f6cbcc4a37066e0a23d906e116b848b03160fb19"
+      "text_chars": 4010,
+      "content_hash": "322e0cd140129ac4ec0dfece54ded3797dde8d39756ccb9946603de4e0bfd5f9"
     },
     {
       "url": "https://rlx.jp/timesale/",
@@ -38,11 +38,11 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3044,
-      "content_hash": "7c62a795ac82a8663b54c7acaa3363ffcdbcc132a98343a84b4590e9495450f0"
+      "text_chars": 3055,
+      "content_hash": "6370077f998e2cb25d0a6eff280604c9e8224f963ed8ae3f7a34febf1bc89794"
     },
     {
-      "url": "https://rlx.jp/special/discount_point2610/",
+      "url": "https://rlx.jp/special/discount_agorahotel/",
       "ok": true,
       "status_code": 200,
       "fetch_method": "html",
@@ -52,8 +52,22 @@
       "include_in_audit": true,
       "discovered_from": "https://rlx.jp/",
       "discovered_urls": [],
-      "text_chars": 30806,
-      "content_hash": "23b2a525b67bb749c9494185a728ceaa948b1779a4cadeac3f6ab3d950012203"
+      "text_chars": 2636,
+      "content_hash": "ed3de314ae8d236f254519924f227a9042456409b8e7a9ee4dbeafdcd3ac299f"
+    },
+    {
+      "url": "https://rlx.jp/special/hokkaido2610/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）から発見",
+      "source_role": "representative_discovered",
+      "include_in_audit": true,
+      "discovered_from": "https://rlx.jp/",
+      "discovered_urls": [],
+      "text_chars": 5590,
+      "content_hash": "5739d5b32a04e30e938eef6076a173ac6a139b38eee5ec93665f5f2c7eef4da7"
     },
     {
       "url": "https://rlx.jp/special/kani2609/",
@@ -66,8 +80,22 @@
       "include_in_audit": true,
       "discovered_from": "https://rlx.jp/",
       "discovered_urls": [],
-      "text_chars": 5769,
-      "content_hash": "965556a6daa6c288ed9ff3f3367f7fea9bebcab07ea85d4fa936c66cd6e25731"
+      "text_chars": 5765,
+      "content_hash": "d592959ebbb7b6c6ce40f5e9b02427533f0a0974db8cb78506fc80a133073904"
+    },
+    {
+      "url": "https://rlx.jp/special/new2610/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）から発見",
+      "source_role": "representative_discovered",
+      "include_in_audit": true,
+      "discovered_from": "https://rlx.jp/",
+      "discovered_urls": [],
+      "text_chars": 8614,
+      "content_hash": "943016c106d21747f7a3f28b82eee10650069b6d8dfd2dab48b532281b86b1b3"
     },
     {
       "url": "https://rlx.jp/special/breakfast2609/",
@@ -80,36 +108,8 @@
       "include_in_audit": true,
       "discovered_from": "https://rlx.jp/",
       "discovered_urls": [],
-      "text_chars": 12035,
-      "content_hash": "4706051b07e730a11afbdb2d88f9b3d68df620475ece75e0cfec8e9ae627ce62"
-    },
-    {
-      "url": "https://rlx.jp/special/children202608/",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "html",
-      "error": "",
-      "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）から発見",
-      "source_role": "representative_discovered",
-      "include_in_audit": true,
-      "discovered_from": "https://rlx.jp/",
-      "discovered_urls": [],
-      "text_chars": 13611,
-      "content_hash": "6d68c6d235b009db299790d3c172282958f6260d33c54b2989a81db78c24cebc"
-    },
-    {
-      "url": "https://rlx.jp/special/allinclusive2607/",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "html",
-      "error": "",
-      "purpose": "トップページ（キャンペーン告知の監視＋配下ページの自動発見）から発見",
-      "source_role": "representative_discovered",
-      "include_in_audit": true,
-      "discovered_from": "https://rlx.jp/",
-      "discovered_urls": [],
-      "text_chars": 5782,
-      "content_hash": "0edebe10c5d5257f452486206898a6d99a520078cd87b507c903aad3d7461ff0"
+      "text_chars": 11948,
+      "content_hash": "6d2fd03971a60b5e94f143bf47974a55257c09ea60ff619fecbece62248d31f6"
     }
   ],
   "failed_source_count": 0,
@@ -125,14 +125,14 @@
   "wp_review_eligible": false,
   "status": "baseline_pending",
   "change_kind": "baseline",
-  "content_hash": "2fba493fd5f857ee850ab4ce20b6bf3bd95c6fe6a8ba93c6377cd4afacd56e0c",
+  "content_hash": "56a32003619841037da22ca9c31e7c74791333c694754b176acb2d7579dc6f0a",
   "data_date": "",
   "latest_file": "",
   "coupon_count": 0,
-  "audit_candidate_id": "relux-2fba493fd5f857ee",
-  "audit_candidate_path": "codex_audit_queue/relux/relux-2fba493fd5f857ee.json",
+  "audit_candidate_id": "relux-56a3200361984103",
+  "audit_candidate_path": "codex_audit_queue/relux/relux-56a3200361984103.json",
   "error": "",
   "freshness_status": "unknown",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-19T09:09:47.117682+09:00"
+  "deep_dive_at": "2026-11-09T09:08:12.803841+09:00"
 }

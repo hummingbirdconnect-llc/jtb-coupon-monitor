@@ -1,7 +1,7 @@
 {
   "provider_id": "toku",
-  "observed_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
-  "last_checked_at": "2026-10-19T09:10:10.687745+09:00",
+  "observed_hash": "b0410a1b34cd30aec7b516dc5ab5f152e722fde5876715b428bde7b244244286",
+  "last_checked_at": "2026-11-09T09:08:36.351245+09:00",
   "sources": [
     {
       "url": "https://www.tocoo.jp/",
@@ -28,14 +28,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3615,
-      "content_hash": "f65464ad24d6347c8fe7dd066564ea90980a6ac29754db489937f23e4d3852e1"
+      "text_chars": 3986,
+      "content_hash": "db25af30a81c7f19bc1b00b41cb88c64e895455a7a253df5edfb789f0e97d60b"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-19T09:10:10.688161+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "b0410a1b34cd30aec7b516dc5ab5f152e722fde5876715b428bde7b244244286",
+  "queued_candidate_id": "toku-b0410a1b34cd30ae",
+  "queued_at": "2026-11-09T09:08:36.351624+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-20T09:15:29.109684+09:00",
   "last_audit_candidate_id": "toku-57ea52d2ffc02ed6",
   "processed_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",

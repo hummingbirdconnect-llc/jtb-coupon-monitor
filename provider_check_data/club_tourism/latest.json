@@ -2,9 +2,9 @@
   "provider_id": "club_tourism",
   "provider_label": "クラブツーリズム",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-19T09:09:51.444991+09:00",
-  "completed_at": "2026-10-19T09:09:57.485185+09:00",
-  "official_fetched_at": "2026-10-19T09:09:57.485190+09:00",
+  "started_at": "2026-11-09T09:08:12.953221+09:00",
+  "completed_at": "2026-11-09T09:08:22.791687+09:00",
+  "official_fetched_at": "2026-11-09T09:08:22.791691+09:00",
   "source_results": [
     {
       "url": "https://www.club-t.com/",
@@ -19,8 +19,8 @@
       "discovered_urls": [
         "https://www.club-t.com/sp/campaign/ctp/"
       ],
-      "text_chars": 12667,
-      "content_hash": "454c501a9382f4f69ce76586f50c78cb86faaa1d32df7c6751447cef79f21b9e"
+      "text_chars": 12842,
+      "content_hash": "1f2a8676b917898514b04e69ff72b2a66d38fa5e6e1ef21e2074dd3323414f78"
     },
     {
       "url": "https://www.club-t.com/sp/campaign/ctp/",
@@ -33,8 +33,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 11309,
-      "content_hash": "d2a5064f4dca467b5a3133cf0e19ad7880d56ce7285bac7e54127ef01c39166f"
+      "text_chars": 11331,
+      "content_hash": "dc06fc7423218a5dd86e2379aabfba322358e55253ecc6982ffd1eb6fa7ac8b8"
     }
   ],
   "failed_source_count": 0,
@@ -46,18 +46,18 @@
   "count_scope_label": "クーポン",
   "count_scope_detail": "",
   "ai_used": false,
-  "codex_audit_required": false,
+  "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "audit_held",
+  "status": "baseline_pending",
   "change_kind": "baseline",
-  "content_hash": "336f971184b766a729b9d5addd84c8e0e0901431e831570f7a06a55d176846ac",
+  "content_hash": "a8e938142a8a82f348ffe728430c637a90d29bed4fa2f12724575dc84f98823f",
   "data_date": "",
   "latest_file": "",
   "coupon_count": 0,
-  "audit_candidate_id": "club_tourism-336f971184b766a7",
-  "audit_candidate_path": "codex_audit_queue/club_tourism/club_tourism-336f971184b766a7.json",
+  "audit_candidate_id": "club_tourism-a8e938142a8a82f3",
+  "audit_candidate_path": "codex_audit_queue/club_tourism/club_tourism-a8e938142a8a82f3.json",
   "error": "",
   "freshness_status": "unknown",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-19T09:09:57.485185+09:00"
+  "deep_dive_at": "2026-11-09T09:08:22.791687+09:00"
 }

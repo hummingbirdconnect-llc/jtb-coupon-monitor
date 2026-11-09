@@ -2,9 +2,9 @@
   "provider_id": "toku",
   "provider_label": "トクー",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-19T09:10:07.621078+09:00",
-  "completed_at": "2026-10-19T09:10:10.687087+09:00",
-  "official_fetched_at": "2026-10-19T09:10:10.687092+09:00",
+  "started_at": "2026-11-09T09:08:33.135275+09:00",
+  "completed_at": "2026-11-09T09:08:36.350071+09:00",
+  "official_fetched_at": "2026-11-09T09:08:36.350075+09:00",
   "source_results": [
     {
       "url": "https://www.tocoo.jp/",
@@ -31,8 +31,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3615,
-      "content_hash": "f65464ad24d6347c8fe7dd066564ea90980a6ac29754db489937f23e4d3852e1"
+      "text_chars": 3986,
+      "content_hash": "db25af30a81c7f19bc1b00b41cb88c64e895455a7a253df5edfb789f0e97d60b"
     }
   ],
   "failed_source_count": 1,
@@ -46,16 +46,16 @@
   "ai_used": false,
   "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "baseline_pending",
-  "change_kind": "baseline",
-  "content_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
-  "data_date": "",
-  "latest_file": "",
-  "coupon_count": 0,
-  "audit_candidate_id": "toku-57ea52d2ffc02ed6",
-  "audit_candidate_path": "codex_audit_queue/toku/toku-57ea52d2ffc02ed6.json",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "b0410a1b34cd30aec7b516dc5ab5f152e722fde5876715b428bde7b244244286",
+  "data_date": "2026-10-20",
+  "latest_file": "coupons_2026-10-20.json",
+  "coupon_count": 1,
+  "audit_candidate_id": "toku-b0410a1b34cd30ae",
+  "audit_candidate_path": "codex_audit_queue/toku/toku-b0410a1b34cd30ae.json",
   "error": "",
-  "freshness_status": "unknown",
+  "freshness_status": "fresh",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-19T09:10:10.687087+09:00"
+  "deep_dive_at": "2026-11-09T09:08:36.350071+09:00"
 }

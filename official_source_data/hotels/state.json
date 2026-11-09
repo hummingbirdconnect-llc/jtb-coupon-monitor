@@ -1,0 +1,53 @@
+{
+  "provider_id": "hotels",
+  "observed_hash": "8e47e405b8fc6eadf23d16c69b453d76e868c0f08662904cfddc5e6394b21892",
+  "last_checked_at": "2026-11-09T09:08:05.720076+09:00",
+  "sources": [
+    {
+      "url": "https://www.aeon.co.jp/special/travel/hotelscom/",
+      "ok": false,
+      "status_code": "",
+      "fetch_method": "auto",
+      "error": "ReadTimeout; Playwright HTTP 403",
+      "purpose": "イオンマークのカード会員向けクーポン（コードと利用条件）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 0,
+      "content_hash": ""
+    },
+    {
+      "url": "https://epotoku.eposcard.co.jp/detail/index.html?ssfid=25346",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "エポスカード会員向けクーポン（コードと利用条件）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 2735,
+      "content_hash": "fdc1e80910009b7dfa01c3b2924791fbc5982a89fe93a049fb35834a88941648"
+    },
+    {
+      "url": "https://prtimes.jp/companyrdf.php?company_id=3373",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "エクスペディアホールディングスの公式リリース一覧（PR TIMES RSS・Hotels.com分を含む）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 65023,
+      "content_hash": "9380ce989c466edfe91483ce5c7d8660bfc020a772e0e7c6f2f0a0f063c2b145"
+    }
+  ],
+  "queued_hash": "8e47e405b8fc6eadf23d16c69b453d76e868c0f08662904cfddc5e6394b21892",
+  "queued_candidate_id": "hotels-8e47e405b8fc6ead",
+  "queued_at": "2026-11-09T09:08:05.722943+09:00",
+  "last_audit_status": "pending"
+}

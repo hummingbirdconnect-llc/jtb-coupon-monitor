@@ -1,0 +1,25 @@
+{
+  "provider_id": "skyscanner",
+  "observed_hash": "9a115f33ace361c8361884cf81c83d3ccb7fee7bf63b307f4f7d12328d3c2f13",
+  "last_checked_at": "2026-11-09T09:04:42.371275+09:00",
+  "sources": [
+    {
+      "url": "https://prtimes.jp/companyrdf.php?company_id=146646",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "Skyscanner Limited の公式リリース一覧（PR TIMES RSS）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 11772,
+      "content_hash": "fe58b8c9d07f443de21e7e74989fc1aad331b3e2e31ebb779e4c28641a3cb5de"
+    }
+  ],
+  "queued_hash": "9a115f33ace361c8361884cf81c83d3ccb7fee7bf63b307f4f7d12328d3c2f13",
+  "queued_candidate_id": "skyscanner-9a115f33ace361c8",
+  "queued_at": "2026-11-09T09:04:42.372416+09:00",
+  "last_audit_status": "pending"
+}

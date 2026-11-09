@@ -2,9 +2,9 @@
   "provider_id": "airtrip",
   "provider_label": "エアトリ",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-19T17:09:55.606047+09:00",
-  "completed_at": "2026-10-19T17:09:56.443049+09:00",
-  "official_fetched_at": "2026-10-19T17:09:56.443053+09:00",
+  "started_at": "2026-11-09T09:08:37.285613+09:00",
+  "completed_at": "2026-11-09T09:08:37.982933+09:00",
+  "official_fetched_at": "2026-11-09T09:08:37.982938+09:00",
   "source_results": [
     {
       "url": "https://domdp.airtrip.jp/campaign/fukkou-wari/",
@@ -17,8 +17,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2975,
-      "content_hash": "83c0d25cccefbb3bfc765d67f22f4fd84f4c747dc8ea92b5ff1dd0e6679ac354"
+      "text_chars": 642,
+      "content_hash": "ae7e8030a96aa49360c212d258ceac8e8c26914597645d63c5b1f56fb98e1a20"
     }
   ],
   "failed_source_count": 0,
@@ -32,16 +32,16 @@
   "ai_used": false,
   "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "baseline_pending",
-  "change_kind": "baseline",
-  "content_hash": "0fb7e97ccfed439aaa4037946fccc2294b95171cbb6f35194fc17253907bd641",
-  "data_date": "",
-  "latest_file": "",
-  "coupon_count": 0,
-  "audit_candidate_id": "airtrip-0fb7e97ccfed439a",
-  "audit_candidate_path": "codex_audit_queue/airtrip/airtrip-0fb7e97ccfed439a.json",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "f667da48849885962537fef2b3660484c9d1e6eace9afd6119de2fcb7e6c1b13",
+  "data_date": "2026-10-19",
+  "latest_file": "coupons_2026-10-19.json",
+  "coupon_count": 3,
+  "audit_candidate_id": "airtrip-f667da4884988596",
+  "audit_candidate_path": "codex_audit_queue/airtrip/airtrip-f667da4884988596.json",
   "error": "",
-  "freshness_status": "unknown",
+  "freshness_status": "fresh",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-19T17:09:56.443049+09:00"
+  "deep_dive_at": "2026-11-09T09:08:37.982933+09:00"
 }

@@ -1,7 +1,7 @@
 {
   "provider_id": "club_tourism",
-  "observed_hash": "336f971184b766a729b9d5addd84c8e0e0901431e831570f7a06a55d176846ac",
-  "last_checked_at": "2026-10-19T09:09:57.486106+09:00",
+  "observed_hash": "a8e938142a8a82f348ffe728430c637a90d29bed4fa2f12724575dc84f98823f",
+  "last_checked_at": "2026-11-09T09:08:22.792460+09:00",
   "sources": [
     {
       "url": "https://www.club-t.com/",
@@ -16,8 +16,8 @@
       "discovered_urls": [
         "https://www.club-t.com/sp/campaign/ctp/"
       ],
-      "text_chars": 12667,
-      "content_hash": "454c501a9382f4f69ce76586f50c78cb86faaa1d32df7c6751447cef79f21b9e"
+      "text_chars": 12842,
+      "content_hash": "1f2a8676b917898514b04e69ff72b2a66d38fa5e6e1ef21e2074dd3323414f78"
     },
     {
       "url": "https://www.club-t.com/sp/campaign/ctp/",
@@ -30,14 +30,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 11309,
-      "content_hash": "d2a5064f4dca467b5a3133cf0e19ad7880d56ce7285bac7e54127ef01c39166f"
+      "text_chars": 11331,
+      "content_hash": "dc06fc7423218a5dd86e2379aabfba322358e55253ecc6982ffd1eb6fa7ac8b8"
     }
   ],
-  "queued_hash": "336f971184b766a729b9d5addd84c8e0e0901431e831570f7a06a55d176846ac",
-  "queued_candidate_id": "club_tourism-336f971184b766a7",
-  "queued_at": "2026-09-18T14:16:36.454894+09:00",
-  "last_audit_status": "held",
+  "queued_hash": "a8e938142a8a82f348ffe728430c637a90d29bed4fa2f12724575dc84f98823f",
+  "queued_candidate_id": "club_tourism-a8e938142a8a82f3",
+  "queued_at": "2026-11-09T09:08:22.792994+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-09-29T17:55:53.686556+09:00",
   "last_audit_candidate_id": "club_tourism-336f971184b766a7"
 }

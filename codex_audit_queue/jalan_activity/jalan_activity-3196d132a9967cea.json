@@ -1,0 +1,571 @@
+{
+  "schema_version": 1,
+  "candidate_id": "jalan_activity-3196d132a9967cea",
+  "provider_id": "jalan_activity",
+  "provider_label": "じゃらん遊び体験",
+  "change_kind": "baseline",
+  "fetched_at": "2026-11-09T09:04:26.264668+09:00",
+  "content_hash": "3196d132a9967cea3cc8e0695768dd8e4fcebeef2b267dc96ed3f4951734c72b",
+  "data_dir": "manual_coupon_data/jalan_activity",
+  "official_domains": [
+    "jalan.net"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://www.jalan.net/activity/theme/otoku_10days/",
+      "purpose": "お得な10日間（毎月20日から）の掲載期間と割引",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "ca8ae94e396798d4c050b0c9381f07c084ecf71b2d09041f6db5ed2da686528e",
+      "text": "毎月20日から！じゃらんのお得な10日間 【じゃらんnet】(遊び・体験) 遊び・体験予約 » 毎月20日から！じゃらんのお得な10日間 (遊び・体験) 毎月20日から！じゃらんのお得な10日間 (遊び・体験) 掲載期間：2026年10月20日〜2026年10月29日 宿・ホテル じゃらんパック(交通＋宿泊) 遊び・体験 レンタカー 本セールの掲載開始時間は10:00頃を予定しています coming soon! coming soon! 該当するプランはありませんでした。 該当するプランはありませんでした。 このページのTOPへ ▲ このページのTOPへ 遊び・体験予約 » 毎月20日から！じゃらんのお得な10日間 (遊び・体験) { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [ { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"遊び・体験予約\", \"item\": \"https://www.jalan.net/activity/\" }, { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"毎月20日から！じゃらんのお得な10日間 (遊び・体験)\", \"item\": \"https://www.jalan.net/activity/theme/otoku_10days/\" } ] }"
+    },
+    {
+      "url": "https://www.jalan.net/activity/theme/specialweek/",
+      "purpose": "スペシャルウィークの掲載期間と割引。注意：このページは開催中でも「11/19（木）をもちまして終了いたしました」という文が本文に常設で載っている。終了判定はこの文ではなく本文の「掲載期間：」の日付で行い、掲載期間の終了日の23:59（日本時間）を過ぎるまで ended にしない。",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "540e2c2b85985287ec88ed9b1350d4cc1a4d52d77f8a5889ea8d2a83328b0782",
+      "text": "【スペシャルウィーク】 お得にレジャーを満喫｜じゃらん遊び・体験予約 遊び・体験予約 » じゃらん遊び・体験予約 スペシャルウィーク じゃらん遊び・体験予約 スペシャルウィーク 掲載期間：2026年10月30日〜2026年11月19日 エリアで探す おすすめの ジャンル 注目の 体験スポット 『じゃらん 遊び・体験スペシャルウィーク』は 11/19（木）をもちまして終了いたしました。 ご利用ありがとうございました。 今だけお得な スペシャルウィークプランを探す エリアで探そう! おすすめのジャンル 注目の体験スポット 該当するプランはありませんでした。 遊び・体験予約 » じゃらん遊び・体験予約 スペシャルウィーク { \"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [ { \"@type\": \"ListItem\", \"position\": 1, \"name\": \"遊び・体験予約\", \"item\": \"https://www.jalan.net/activity/\" }, { \"@type\": \"ListItem\", \"position\": 2, \"name\": \"じゃらん遊び・体験予約 スペシャルウィーク\", \"item\": \"https://www.jalan.net/activity/theme/specialweek/\" } ] }"
+    },
+    {
+      "url": "https://www.jalan.net/jalan/activity/doc/howto/coupon_help.html",
+      "purpose": "遊び・体験クーポンの使い方と条件",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "7c5cc5f9c494e745df13f8af09d31f2703d7c8ff6cb55ca3ea25477c8d04592e",
+      "text": "クーポンについて クーポンについて 宿・ホテルクーポン 交通＋宿泊クーポン じゃらんレンタカークーポン じゃらん遊び・体験クーポン じゃらん遊び・体験クーポンは、じゃらんnetの遊び・体験予約の際に利用できるお得なクーポンです。 下記の注意事項を参照の上、ご利用ください。 ※じゃらんクーポン（国内宿予約）、じゃらんパッククーポン、じゃらん海外クーポン、じゃらんレンタカークーポンとは取扱いが異なりますので、ご注意ください。 じゃらん遊び・体験クーポンを獲得する 獲得可能なじゃらん遊び・体験クーポンは、じゃらんnetのキャンペーンページやメルマガにてご案内いたします。 ご案内の手順に従ってじゃらん遊び・体験クーポンを獲得してください。 じゃらん遊び・体験クーポンの獲得には、リクルートIDのログインが必要となります。 リクルートIDをお持ちでない方は、新規会員登録をお願いいたします。 獲得済みのクーポンは マイページ から確認いただけます。 じゃらん遊び・体験クーポンの獲得はPCでのみ可能です。 ※スマートフォンの場合は、PC版ページ切替後、クーポンの獲得が可能になります。 ページの先頭に戻る↑ 予約時にじゃらん遊び・体験クーポンを利用する 予約にあたっては、リクルートIDによるログイン（会員予約）が必要です。 予約内容入力後の支払情報入力のステップにて、獲得済みで、かつご利用可能なじゃらん遊び・体験クーポンが表示されますので、選択の上、予約してください。選択したじゃらん遊び・体験クーポンの金額分をご利用料金に利用できます。 ※いかなる場合でも、予約済みのご予約に対して後からじゃらん遊び・体験クーポンを利用することはできません。 ※利用期限が過ぎたじゃらん遊び・体験クーポンは、いかなる場合でもご利用できません。 ※ご利用可能なじゃらん遊び・体験クーポンがない場合には、選択できません。 ※じゃらん遊び・体験クーポンの利用条件については、各じゃらん遊び・体験クーポンのご案内ページをご参照ください。 ※利用できる金額は、じゃらん遊び・体験クーポンごとに異なります。 ページの先頭に戻る↑ じゃらん遊び・体験クーポンをご利用いただく上でのご注意 1 利用の前提 獲得済みのじゃらん遊び・体験クーポンのうち、クーポンの利用条件を満たす 遊び・体験 の場合のみ利用できます。 [例]最大2名まで利用可能のじゃらん遊び・体験クーポンを3名の遊び・体験予約で利用することはできません。 1件の遊び・体験予約につき利用できるじゃらん遊び・体験クーポンは1枚までです。 ※複数のじゃらん遊び・体験クーポンが利用条件を満たしている場合でも、1件の遊び・体験予約につき複数のじゃらん遊び・体験クーポンを利用することはできません。 じゃらん遊び・体験クーポンの金額がご利用代金を上回る場合であっても、差額は返却されませんので、ご了承ください。 じゃらん遊び・体験クーポンは転売を含め一切の権利譲渡を禁止しています。 じゃらん遊び・体験クーポンの獲得・利用に関して、「じゃらんnet遊び・体験予約サービス利用規約」違反があったとリクルートが合理的に判断した際、既に獲得・利用済のじゃらん遊び・体験クーポンも無効となる場合があります。 2 じゃらん遊び・体験クーポンの利用範囲及び利用方法の制限 じゃらん遊び・体験クーポンは、じゃらんnet遊び・体験予約のみで利用できます。 それ以外のサービス（※国内宿泊予約、じゃらんパックのツアー予約、デイユース予約、海外ホテル予約、じゃらんレンタカー予約など）では利用できません。 じゃらん遊び・体験クーポンは、じゃらんnet（サイト上）での遊び・体験予約時のみ利用できます。 所定の方法とは異なる方法（じゃらん遊び・体験クーポンを印刷してお持ちいただく、スマートフォンの画面を見せる等）では利用できません。 じゃらん遊び・体験クーポンは、＜リクエスト予約の場合＞じゃらんnet（サイト上）での予約後、遊び・体験の実施会社が予約を承諾した時点（予約確定）をもって有効となります。 予約満員、ご利用機器の不具合等で予約を完了できなかった場合については、利用できません。 3 加算されるポイントについて じゃらんnetの遊び・体験予約に対して加算されるスコアは、じゃらん遊び・体験クーポンの利用有無にかかわらず、 『利用料金の合計額（税込み）』を基に加算いたします。 [例]遊び・体験代金10,000円、クーポン金額5,000円の場合は支払い代金は5,000円となりますが、利用代金10,000円の『税込み金額』を基にポイントを加算いたします。 4 加算されるスコアについて じゃらんnetの遊び・体験予約に対して加算されるポイントは、じゃらん遊び・体験クーポンの利用有無にかかわらず、 『利用料金の合計額（税込み）』に応じて1円につき1スコアが加算されます。 [例]遊び・体験代金10,000円、クーポン金額5,000円の場合は支払い代金は5,000円となりますが、利用代金10,000円の『税込み金額』を基に10,000スコアを加算いたします。 5 予約変更について じゃらんnet（サイト上）で遊び・体験ご予約後の、お問い合わせ、予約変更については、遊び・体験の実施会社へ直接ご連絡ください。 予約の変更の際、変更内容によってはじゃらん遊び・体験クーポンの利用条件を満たさなくなる場合がありますので、あらかじめご了承ください。 予約変更により、利用条件を満たさなくなった場合、クーポンは利用できなくなります。変更操作の時点で有効期限を過ぎたクーポンは失効しますのでご注意ください。 6 予約キャンセルについて じゃらん遊び・体験クーポンを利用した予約をキャンセルした場合は、じゃらん遊び・体験クーポンは即時返却されます。 また予約満員、ご利用機器の不具合等で予約を完了できなかった場合については、実施会社が予約をキャンセルした際にじゃらん遊び・体験クーポンは即時返却されます。 返却時点でじゃらん遊び・体験クーポンの行使期間を過ぎている場合はそのじゃらん遊び・体験クーポンは失効いたします。 キャンセル料は、該当遊び・体験の実施会社が定めたキャンセル規定に則り、じゃらん遊び・体験クーポン利用前の金額を基に算出いたします。 じゃらん遊び・体験クーポンをキャンセル料の支払いに充当することはできません。 キャンセル操作の時点で有効期限を過ぎたクーポンは失効しますのでご注意ください。 7 オンラインカード決済予約の領収書データWeb表示サービスについて じゃらん遊び・体験クーポンを利用したオンラインカード決済予約の領収書データについては、じゃらん遊び・体験クーポン金額を差し引いた金額にて表示いたします。 ※じゃらん遊び・体験クーポン金額が差し引かれる前の金額では表示いたしませんので、ご了承ください。 ページの先頭に戻る↑ 閉じる"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "jalan_activity-bc0bd998da",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "じゃらん遊び・体験クーポン（通常・毎週金曜更新）",
+      "category": "§1 公式クーポン（✅稼働中のみ）",
+      "discount": "クーポンにより異なる（最大2,000〜3,000円・Phase 2.5 で再検証）",
+      "stock_status": "配布中",
+      "product_type": "遊び・体験予約専用（宿泊・レンタカー・ホテル予約には使用不可）",
+      "booking_period": "",
+      "travel_period": "取得後数日〜1週間程度",
+      "coupon_codes": [],
+      "conditions": [
+        "ログイン必須・クーポンページから取得"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input（公式ヘルプ確認済み）",
+        "raw_status": "✅"
+      }
+    },
+    {
+      "id": "jalan_activity-5ee17611ec",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "施設・プラン個別の割引",
+      "category": "§1 公式クーポン（✅稼働中のみ）",
+      "discount": "最大60%・25%OFF・26%OFF・初回限定100円引・早期予約割 等（プラン別に明示）",
+      "stock_status": "配布中",
+      "product_type": "施設ページ・エリア一覧・ジャンル一覧で個別配布",
+      "booking_period": "",
+      "travel_period": "プランの予約受付期間に準ずる",
+      "coupon_codes": [],
+      "conditions": [
+        "ログイン不要（プランに値引き表示が出ている）"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input（公式ページ多数確認）",
+        "raw_status": "✅"
+      }
+    },
+    {
+      "id": "jalan_activity-5231309e6e",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "お得な10日間クーポン",
+      "category": "§1 公式クーポン（✅稼働中のみ）",
+      "discount": "最大3,000円",
+      "stock_status": "配布中",
+      "product_type": "遊び・体験予約（宿泊・レンタカーとは別枠）",
+      "booking_period": "",
+      "travel_period": "毎月20日〜29日の予約期間中",
+      "coupon_codes": [],
+      "conditions": [
+        "ログイン必須・クーポンページから取得"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input（当月日付は要確認・公式表示に不整合あり）",
+        "raw_status": "✅"
+      }
+    },
+    {
+      "id": "jalan_activity-05302f2e34",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "スペシャルウィーク遊び体験クーポン",
+      "category": "§1 公式クーポン（✅稼働中のみ）",
+      "discount": "最大6,000円分（1予約20,000円以上条件）",
+      "stock_status": "配布中",
+      "product_type": "遊び・体験予約（宿泊SWとは別クーポン体系）",
+      "booking_period": "",
+      "travel_period": "開催期間中",
+      "coupon_codes": [],
+      "conditions": [
+        "先着順・ログイン必須・クーポンページから取得"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input（次回開催は年次テンプレで扱う）",
+        "raw_status": "✅"
+      }
+    },
+    {
+      "id": "jalan_activity-9184d0ce71",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "リクルートカード",
+      "category": "§2 カード連携",
+      "discount": "1.2%ポイント還元",
+      "stock_status": "要確認",
+      "product_type": "遊び・体験予約含む全じゃらんnet決済",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "リクルートカード決済"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "auto-research（1.2%還元は確認）",
+        "raw_status": "⚠️"
+      }
+    },
+    {
+      "id": "jalan_activity-5e2d9e2ceb",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "リクルートカード会員限定クーポン（遊び・体験専用）",
+      "category": "§2 カード連携",
+      "discount": "2,000円引（条件付き）",
+      "stock_status": "要確認",
+      "product_type": "リクルートカード会員",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "会員登録＋対象クーポン取得"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input（公式URL存在・開催中断定は不可）",
+        "raw_status": "⚠️断定掲載NG"
+      }
+    },
+    {
+      "id": "jalan_activity-c07502cf61",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "モッピー",
+      "category": "§3 ポイントサイト還元（当サイト収益には直接寄与しないが情報として掲載）",
+      "discount": "❌案件終了（2026-04-22 fact-checker 再確認・遊び体験専用案件ページ site_id=1842 は「掲載期間が終了しています」と表示）",
+      "stock_status": "配布終了",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "該当なし"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "auto-research",
+        "raw_status": "❌"
+      }
+    },
+    {
+      "id": "jalan_activity-8f1ee96cca",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "ハピタス",
+      "category": "§3 ポイントサイト還元（当サイト収益には直接寄与しないが情報として掲載）",
+      "discount": "要確認",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "体験完了後承認（推定）"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "auto-research",
+        "raw_status": "⚠️"
+      }
+    },
+    {
+      "id": "jalan_activity-0d0d1720ce",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "エポスポイントUPサイト",
+      "category": "§3 ポイントサイト還元（当サイト収益には直接寄与しないが情報として掲載）",
+      "discount": "還元率未取得",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "要確認"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "auto-research",
+        "raw_status": "⚠️"
+      }
+    },
+    {
+      "id": "jalan_activity-d3cf6417fb",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "ふるさと納税返礼品（体験型）",
+      "category": "§4 ギフト・制度",
+      "discount": "ふるさとチョイス・ふるなび等で体験型返礼品を取得可能・じゃらん遊び体験との直接連携は未確認",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "auto-research",
+        "raw_status": "⚠️"
+      }
+    },
+    {
+      "id": "jalan_activity-fec7cdf40f",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "じゃらんステージプログラム（レギュラー→ブロンズ→シルバー→ゴールド）",
+      "category": "§5 会員ランク",
+      "discount": "",
+      "stock_status": "配布中",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input（公式確認済み）",
+        "raw_status": "✅注意事項付き"
+      }
+    },
+    {
+      "id": "jalan_activity-f256fc925f",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "お得な10日間（遊び・体験）",
+      "category": "セール枠（定期・年次）— §1 と一部重複するが記事構成上の独立カテゴリとして保持",
+      "discount": "",
+      "stock_status": "配布中",
+      "product_type": "遊び・体験予約（宿泊・レンタカーとは別枠）",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input",
+        "raw_status": "✅通年・当月日付に公式不整合あり"
+      }
+    },
+    {
+      "id": "jalan_activity-b2dd802e28",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "スペシャルウィーク（遊び・体験）",
+      "category": "セール枠（定期・年次）— §1 と一部重複するが記事構成上の独立カテゴリとして保持",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "遊び・体験予約",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "user-input",
+        "raw_status": "⚠️年次（直近2026春は4/17で終了・次回未発表）"
+      }
+    },
+    {
+      "id": "jalan_activity-6e9a7a715f",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "じゃらんシークレットクーポン（遊び体験向け）",
+      "category": "OTA固有：シークレットクーポン（非公開配布・要確認）",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "auto-research",
+        "raw_status": "⚠️要確認（新規配布停止情報あり）"
+      }
+    },
+    {
+      "id": "jalan_activity-547dd85368",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "スペシャルウィーク（2026年春回）",
+      "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+      "discount": "",
+      "stock_status": "配布終了",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "2026-04-17",
+      "coupon_codes": [],
+      "conditions": [],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "coupon-master",
+        "raw_status": ""
+      }
+    },
+    {
+      "id": "jalan_activity-54468ba4ed",
+      "provider": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "dポイント＋じゃらん限定ポイント100%還元キャンペーン",
+      "category": "§8 終了済みアーカイブ（❌終了・❓不明）",
+      "discount": "",
+      "stock_status": "配布終了",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "2026-02-28（現地体験日期限）",
+      "coupon_codes": [],
+      "conditions": [],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "manual_master",
+      "fetch_method": "coupon_master",
+      "last_checked": "2026-05-20",
+      "confidence": "medium",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "coupon-master",
+        "raw_status": ""
+      }
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

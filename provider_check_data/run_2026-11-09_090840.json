@@ -1,0 +1,69 @@
+{
+  "completed_at": "2026-11-09T09:08:40.225252+09:00",
+  "scope": "due",
+  "provider_count": 1,
+  "error_count": 0,
+  "error_provider_ids": [],
+  "needs_review_count": 0,
+  "needs_review_provider_ids": [],
+  "codex_audit_candidate_count": 1,
+  "codex_audit_candidates": [
+    {
+      "candidate_id": "jalan_rentacar-573412f7497c243e",
+      "provider_id": "jalan_rentacar",
+      "candidate_path": "codex_audit_queue/jalan_rentacar/jalan_rentacar-573412f7497c243e.json",
+      "change_kind": "update",
+      "status": "audit_pending"
+    }
+  ],
+  "wp_review_eligible_provider_ids": [],
+  "summaries": [
+    {
+      "provider_id": "jalan_rentacar",
+      "provider_label": "じゃらんレンタカー",
+      "check_type": "official_page_candidate",
+      "started_at": "2026-11-09T09:08:39.175724+09:00",
+      "completed_at": "2026-11-09T09:08:40.220967+09:00",
+      "official_fetched_at": "2026-11-09T09:08:40.220971+09:00",
+      "source_results": [
+        {
+          "url": "https://www.jalan.net/rentacar/themes/sweet/",
+          "ok": true,
+          "status_code": 200,
+          "fetch_method": "html",
+          "error": "",
+          "purpose": "スイート沖縄クーポン",
+          "source_role": "official_source",
+          "include_in_audit": true,
+          "discovered_from": "",
+          "discovered_urls": [],
+          "text_chars": 4021,
+          "content_hash": "5ed1fe9eb14995fe32cac61efa450497fc0b55020ac1616946a8da6bf7d20cf4"
+        }
+      ],
+      "failed_source_count": 0,
+      "configured_source_count": 1,
+      "discovered_source_count": 0,
+      "audit_source_count": 1,
+      "manual_source_count": 0,
+      "coverage_scope": "all_confirmed_deals",
+      "count_scope_label": "クーポン",
+      "count_scope_detail": "",
+      "ai_used": false,
+      "codex_audit_required": true,
+      "wp_review_eligible": false,
+      "status": "audit_pending",
+      "change_kind": "update",
+      "content_hash": "573412f7497c243e82e7a881412167eaee88137e0d8e110bce8c7d6c3938bf03",
+      "data_date": "2026-10-19",
+      "latest_file": "coupons_2026-10-19.json",
+      "coupon_count": 7,
+      "audit_candidate_id": "jalan_rentacar-573412f7497c243e",
+      "audit_candidate_path": "codex_audit_queue/jalan_rentacar/jalan_rentacar-573412f7497c243e.json",
+      "error": "",
+      "freshness_status": "fresh",
+      "deep_dive": true,
+      "deep_dive_at": "2026-11-09T09:08:40.220967+09:00"
+    }
+  ]
+}

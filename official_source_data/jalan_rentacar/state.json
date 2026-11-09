@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan_rentacar",
-  "observed_hash": "fdd55466e5cb78bf05818139867aea62eafe19494f686d0cbfd575556756c1dd",
-  "last_checked_at": "2026-10-19T17:09:58.534153+09:00",
+  "observed_hash": "573412f7497c243e82e7a881412167eaee88137e0d8e110bce8c7d6c3938bf03",
+  "last_checked_at": "2026-11-09T09:08:40.223607+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/rentacar/themes/sweet/",
@@ -14,14 +14,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 4167,
-      "content_hash": "0c4b3abd8b32150e197716e0855b1ad34b6da1db0818a7235511d6f85cfd164d"
+      "text_chars": 4021,
+      "content_hash": "5ed1fe9eb14995fe32cac61efa450497fc0b55020ac1616946a8da6bf7d20cf4"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-19T17:09:58.534517+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "573412f7497c243e82e7a881412167eaee88137e0d8e110bce8c7d6c3938bf03",
+  "queued_candidate_id": "jalan_rentacar-573412f7497c243e",
+  "queued_at": "2026-11-09T09:08:40.224105+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-19T21:17:58.189903+09:00",
   "last_audit_candidate_id": "jalan_rentacar-fdd55466e5cb78bf",
   "processed_hash": "fdd55466e5cb78bf05818139867aea62eafe19494f686d0cbfd575556756c1dd",

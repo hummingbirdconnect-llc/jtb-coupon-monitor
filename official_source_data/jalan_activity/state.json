@@ -1,0 +1,53 @@
+{
+  "provider_id": "jalan_activity",
+  "observed_hash": "3196d132a9967cea3cc8e0695768dd8e4fcebeef2b267dc96ed3f4951734c72b",
+  "last_checked_at": "2026-11-09T09:04:26.264651+09:00",
+  "sources": [
+    {
+      "url": "https://www.jalan.net/activity/theme/otoku_10days/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "お得な10日間（毎月20日から）の掲載期間と割引",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 650,
+      "content_hash": "ca8ae94e396798d4c050b0c9381f07c084ecf71b2d09041f6db5ed2da686528e"
+    },
+    {
+      "url": "https://www.jalan.net/activity/theme/specialweek/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "スペシャルウィークの掲載期間と割引。注意：このページは開催中でも「11/19（木）をもちまして終了いたしました」という文が本文に常設で載っている。終了判定はこの文ではなく本文の「掲載期間：」の日付で行い、掲載期間の終了日の23:59（日本時間）を過ぎるまで ended にしない。",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 634,
+      "content_hash": "540e2c2b85985287ec88ed9b1350d4cc1a4d52d77f8a5889ea8d2a83328b0782"
+    },
+    {
+      "url": "https://www.jalan.net/jalan/activity/doc/howto/coupon_help.html",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "遊び・体験クーポンの使い方と条件",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 2884,
+      "content_hash": "7c5cc5f9c494e745df13f8af09d31f2703d7c8ff6cb55ca3ea25477c8d04592e"
+    }
+  ],
+  "queued_hash": "3196d132a9967cea3cc8e0695768dd8e4fcebeef2b267dc96ed3f4951734c72b",
+  "queued_candidate_id": "jalan_activity-3196d132a9967cea",
+  "queued_at": "2026-11-09T09:04:26.265680+09:00",
+  "last_audit_status": "pending"
+}

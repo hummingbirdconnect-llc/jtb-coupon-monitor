@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "candidate_id": "skyscanner-9a115f33ace361c8",
+  "provider_id": "skyscanner",
+  "provider_label": "スカイスキャナー",
+  "change_kind": "baseline",
+  "fetched_at": "2026-11-09T09:04:42.371293+09:00",
+  "content_hash": "9a115f33ace361c8361884cf81c83d3ccb7fee7bf63b307f4f7d12328d3c2f13",
+  "data_dir": "manual_coupon_data/skyscanner",
+  "official_domains": [
+    "skyscanner.jp",
+    "prtimes.jp"
+  ],
+  "coverage_scope": "campaign_only",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://prtimes.jp/companyrdf.php?company_id=146646",
+      "purpose": "Skyscanner Limited の公式リリース一覧（PR TIMES RSS）",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "fe58b8c9d07f443de21e7e74989fc1aad331b3e2e31ebb779e4c28641a3cb5de",
+      "text": "Skyscanner Limited【プレスリリース】 by PR TIMES https://prtimes.jp info@prtimes.jp Copyright (c) PR TIMES Inc. All Rights Reserved. 2026-11-04T15:41:51+09:00 ja-JP PR TIMES｜Skyscanner Limitedのプレスリリース・ニュースリリース。 〈グローバル旅行アプリ スカイスキャナー 「トラベルトレンドレポート2027」〉 「2027年コスパ最強の旅行先 10選」を発表！ https://prtimes.jp/main/html/rd/p/000000045.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,400のウェブサイトから最適な旅行プランを提供するグローバル旅行アプリ Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、最新の検索データ... Skyscanner Limited 企業・官公庁・団体 2026-11-04T11:30:02+09:00 2026-11-04 【スカイスキャナー調査】年に一度の旅行セール期、賢く予約したい方必見 ブラックフライデー到来！ 約30%も価格が下がった都市も！？昨年の航空券価格の下落率 TOP10を発表 https://prtimes.jp/main/html/rd/p/000000042.000146646.html [Skyscanner Limited] グローバル旅行アプリ「スカイスキャナー」を運営するSkyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2025年のブラックフライデー期間（2025年11月28日～12月2日）の日本発航空券の価... Skyscanner Limited 企業・官公庁・団体 2026-10-29T11:00:03+09:00 2026-10-29 〈グローバル旅行アプリ スカイスキャナー 「トラベルトレンドレポート2027」〉 「2027年 トレンドの“国内”旅行先」を発表！ https://prtimes.jp/main/html/rd/p/000000041.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,400のウェブサイトから最適な旅行プランを提供するグローバル旅行アプリSkyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2027年にブレイク... Skyscanner Limited 企業・官公庁・団体 2026-10-27T11:00:01+09:00 2026-10-27 グローバル旅行アプリ スカイスキャナー 数万件以上の検索データから導き出した、次にブレイクする旅行先をご紹介！ 「2027年 トレンドが予想される旅行先10選」 https://prtimes.jp/main/html/rd/p/000000039.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,400のウェブサイトから最適な旅行プランを提供するグローバル旅行アプリSkyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、独自の検索データ... Skyscanner Limited 企業・官公庁・団体 2026-10-13T11:00:15+09:00 2026-10-13 2027年の旅行選びは、”自分にとって真に意味のある体験を賢く選ぶ旅”へ 世界中の検索データや調査結果から導き出した「トラベルトレンドレポート2027」を発表 https://prtimes.jp/main/html/rd/p/000000038.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,400のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2027年の旅行... Skyscanner Limited 企業・官公庁・団体 2026-10-08T11:00:02+09:00 2026-10-08 日本人旅行者ニーズの変化や、旅の選び方をデータと現場から紐解くスカイスキャナー×日本航空×航空アナリスト 鳥海高太朗氏で語る『“価格以上の価値”とこれからの旅のカタチ』開催 https://prtimes.jp/main/html/rd/p/000000035.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,400のウェブサイトから最適な旅行プランを提供する“グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2026年9月16日... Skyscanner Limited 企業・官公庁・団体 2026-09-18T14:00:02+09:00 2026-09-18 【夏の旅行に関する意識調査】海水浴から「温泉・高原」へシフトした今年の夏。日本の旅行者が求める、新しい夏の過ごし方とは？ https://prtimes.jp/main/html/rd/p/000000034.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,400のウェブサイトから最適な旅行プランを提供する“グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、夏の旅行に関... Skyscanner Limited 企業・官公庁・団体 2026-09-17T11:00:03+09:00 2026-09-17 【グローバル旅行アプリ スカイスキャナー】AIとの会話で最適な旅先探し、リアルタイムのフライト追跡など、この夏をもっとお得に楽しむための機能を提供開始 https://prtimes.jp/main/html/rd/p/000000032.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する“グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、多様化する旅... Skyscanner Limited 企業・官公庁・団体 2026-06-30T13:00:02+09:00 2026-06-30 【関東・関西の旅行に関する価値観調査】お金の使い道や選択基準にも違いが？！“ロジタビ”の多様性が浮き彫りに東の「こだわり・プロセス派」と西の「実利・確実派」で異なる旅スタイルとは https://prtimes.jp/main/html/rd/p/000000033.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する“グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、関東地方と関西... Skyscanner Limited 企業・官公庁・団体 2026-07-31T15:00:02+09:00 2026-07-31 この夏、旅行者の本音は“穴場で・静かに・賢く”約8割が「誰も行ったことのない場所」に惹かれる夏へ https://prtimes.jp/main/html/rd/p/000000031.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する“グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、Skyscannerの... Skyscanner Limited 企業・官公庁・団体 2026-06-04T12:00:01+09:00 2026-06-04 【GWに旅行を諦めてしまった人必見】週末のスキマ日程にロジタビで賢く！この時期おすすめな「おトクの旅行先5選」を発表 https://prtimes.jp/main/html/rd/p/000000029.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200の旅行パートナーから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、最大12連休と... Skyscanner Limited 企業・官公庁・団体 2026-05-14T20:00:01+09:00 2026-05-14 ゴールデンウィークの海外旅行、穴場は「釜山」！まだ間に合う！「ゴールデンウィークにおすすめの旅行先5選」を発表 https://prtimes.jp/main/html/rd/p/000000027.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200の旅行パートナーから最適な旅行プランを提供する”グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2026年ゴール... Skyscanner Limited 企業・官公庁・団体 2026-04-14T13:01:57+09:00 2026-04-14 ChatGPTでSkyscannerアプリの提供を開始 https://prtimes.jp/main/html/rd/p/000000026.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、ChatGPT上でS... Skyscanner Limited 企業・官公庁・団体 2026-04-08T15:00:02+09:00 2026-04-08 今年のホワイトデーは“渡す”のではなく“一緒に行く”。 約4割が旅こそが「絆を深められる貴重な時間」と回答！ https://prtimes.jp/main/html/rd/p/000000025.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、「トラベルト... Skyscanner Limited 企業・官公庁・団体 2026-02-26T13:00:02+09:00 2026-02-26 グローバル旅行アプリスカイスキャナー、「2026年の海外旅行意識調査」を発表8割が海外旅行のためなら「日常の出費を我慢できる」と回答日常のプチ贅沢を削った日々の賢い節約で旅行する“ロジタビ”へシフト！ https://prtimes.jp/main/html/rd/p/000000023.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ”Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、18歳以上の日... Skyscanner Limited 企業・官公庁・団体 2026-01-15T12:00:03+09:00 2026-01-15 【イベントレポート】2026年、日本人旅行者に広がる新潮流「ロジタビ」をデータと現場から紐解くスカイスキャナー×HIS×航空アナリスト鳥海高太朗氏で語る『日本人が求める旅の“今”と“これから”』 開催 https://prtimes.jp/main/html/rd/p/000000024.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2026年1月15... Skyscanner Limited 企業・官公庁・団体 2026-01-19T10:00:02+09:00 2026-01-19 ー大学生100人に聞いた！旅行計画の実態調査ー大学生の6割が「旅先」よりも「予算」を優先して旅を計画していると判明 https://prtimes.jp/main/html/rd/p/000000022.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、日本で起きて... Skyscanner Limited 企業・官公庁・団体 2026-01-15T12:00:03+09:00 2026-01-15 〈グローバル旅行アプリ スカイスキャナー 「トラベルトレンドレポート2026」〉次にスポットライトが当たるのは！「2026年 トレンドの“国内”旅行先」 https://prtimes.jp/main/html/rd/p/000000021.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2026年にブレ... Skyscanner Limited 企業・官公庁・団体 2025-10-21T13:00:02+09:00 2025-10-21 〈グローバル旅行アプリ スカイスキャナー 「トラベルトレンドレポート2026」〉 「2026年コスパ最強の旅行先 10選」を発表！ https://prtimes.jp/main/html/rd/p/000000019.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、最新データを... Skyscanner Limited 企業・官公庁・団体 2025-10-16T13:00:03+09:00 2025-10-16 グローバル旅行アプリ スカイスキャナー 数万件以上の検索データから導き出した、次にブレイクする旅行先をご紹介！ 「2026年 トレンドが予測される旅行先10選」 https://prtimes.jp/main/html/rd/p/000000018.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、独自の検索デ... Skyscanner Limited 企業・官公庁・団体 2025-10-14T13:00:02+09:00 2025-10-14 来年の旅行におけるトレンドは“パーソナルな旅” ！？ 世界中の検索データや調査結果から導き出した「トラベルトレンドレポート 2026」を発表！ https://prtimes.jp/main/html/rd/p/000000016.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、日本を含む世... Skyscanner Limited 企業・官公庁・団体 2025-10-09T13:00:10+09:00 2025-10-09 グローバル旅行アプリ スカイスキャナー実施「星空ツーリズムに関する調査」 約8割が“星空ツーリズム”に関心を持っていることが判明！ https://prtimes.jp/main/html/rd/p/000000015.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、新たな旅行ト... Skyscanner Limited 企業・官公庁・団体 2025-08-29T13:00:02+09:00 2025-08-29 グローバル旅行アプリ スカイスキャナー AI旅行提案ツール 「スマートサーチ」が日本上陸！ https://prtimes.jp/main/html/rd/p/000000014.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、AI旅行提案ツ... Skyscanner Limited 企業・官公庁・団体 2025-07-22T14:00:01+09:00 2025-07-22 【イベントレポート】Z世代の旅アイコン、よしあきさん・ミチさんが“自分流旅行ハック”を大公開！ 「グローバル旅行アプリスカイスキャナー 夏旅トレンド発表会」 https://prtimes.jp/main/html/rd/p/000000013.000146646.html [Skyscanner Limited] ”グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2025年6月5日（木）に、人気姉弟モデルのよしあきさん・ミチさんをゲストにお招きし、「グローバル旅行アプリ... Skyscanner Limited 企業・官公庁・団体 2025-06-11T10:00:03+09:00 2025-06-11 グローバル旅行アプリ スカイスキャナー 「2025年 夏旅トレンド調査」を発表 この夏、旅行者が選んだ“後悔しない旅”の条件は「おトク・混まない・暑くない」と判明！？ https://prtimes.jp/main/html/rd/p/000000012.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、18歳以上の日... Skyscanner Limited 企業・官公庁・団体 2025-06-05T12:00:14+09:00 2025-06-05 グローバル旅行アプリ スカイスキャナー、ブライアン・バティスタ氏が新CEOに就任 https://prtimes.jp/main/html/rd/p/000000010.000146646.html [Skyscanner Limited] ”グローバル旅行アプリ”Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、ブライアン・バティスタ氏がジョン・マンジェラース氏の後任としてCEOに任命されたことを発表します。 バティ... Skyscanner Limited 企業・官公庁・団体 2025-05-14T16:00:06+09:00 2025-05-14 グローバル旅行アプリ スカイスキャナー実施「旅ランに関する調査」 日本は72%が早期計画、海外では56.2%が直前派スタイルの違いが鮮明に https://prtimes.jp/main/html/rd/p/000000011.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、近年ランニン... Skyscanner Limited 企業・官公庁・団体 2025-05-16T16:00:02+09:00 2025-05-16 海外でトレンドのマラソン・ランニングを目的とした旅行、”旅ラン”人気が日本にも！？ 約40%の日本人が今年、”旅ラン”を計画していると回答 https://prtimes.jp/main/html/rd/p/000000009.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、近年ランニン... Skyscanner Limited 企業・官公庁・団体 2025-04-17T14:00:02+09:00 2025-04-17 今年は“遠方で”充実した旅を楽しみたい旅行者が急増！？スカイスキャナー、2025年ゴールデンウィーク の「人気海外旅行先ランキング」、「トレンドの旅行先ランキング」を発表 https://prtimes.jp/main/html/rd/p/000000008.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200の旅行パートナーから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2025年ゴー... Skyscanner Limited 企業・官公庁・団体 2025-03-17T13:00:02+09:00 2025-03-17 おトクに旅行したい方必見！ 大きく価格が下落した航空券を紹介する新機能「DROPS」登場 https://prtimes.jp/main/html/rd/p/000000007.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテル・レンタカーなど約1,200の旅行パートナーから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は... Skyscanner Limited 企業・官公庁・団体 2025-02-20T15:00:11+09:00 2025-02-20 グローバル旅行アプリ スカイスキャナー 数百万の検索から得たデータと調査結果をもとに、「トラベルトレンドレポート 2025」を発表！ https://prtimes.jp/main/html/rd/p/000000002.000146646.html [Skyscanner Limited] [画像1: https://prtimes.jp/i/146646/2/resize/d146646-2-89068f2a119295232205-5.jpg ] Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、日本を含む世界各地で、2024年7月に世界各... Skyscanner Limited 企業・官公庁・団体 2024-10-15T12:00:01+09:00 2024-10-15 1月に行いたい決断のTOP5に“旅行”がランクイン！グローバル旅行アプリ スカイスキャナー実施「決断に関する調査」 https://prtimes.jp/main/html/rd/p/000000006.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200のウェブサイトから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、1月に様々な... Skyscanner Limited 企業・官公庁・団体 2025-01-08T14:00:02+09:00 2025-01-08 グローバル旅行アプリ スカイスキャナー、全世界で毎日数百件以上されている自社検索データを活用した「スカイスキャナー アドプラットフォーム」を発表 https://prtimes.jp/main/html/rd/p/000000005.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200の旅行パートナーから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、高度な新し... Skyscanner Limited 企業・官公庁・団体 2024-12-18T11:00:03+09:00 2024-12-18 来年の長期休暇に向けて旅行への意欲が増していると判明！？航空券・ホテルの予約数は前年比で38％上昇という結果に https://prtimes.jp/main/html/rd/p/000000003.000146646.html [Skyscanner Limited] 世界中の航空会社・旅行会社・ホテルなど約1,200の旅行パートナーから最適な旅行プランを提供する” グローバル旅行アプリ” Skyscanner Japan株式会社（本社：東京都港区、以下スカイスキャナー）は、2024年11月... Skyscanner Limited 企業・官公庁・団体 2024-12-12T11:00:02+09:00 2024-12-12 Z世代は旅行計画でも「タイパ」を意識！SNSで見つけてすぐ飛び立つ“即決旅行”が当たり前に！？約4人に1人が1週間以内に旅行を計画した経験アリと判明！ https://prtimes.jp/main/html/rd/p/000000001.000146646.html [Skyscanner Limited] 調査結果サマリ １.旅行のきっかけはSNS！42％がSNSの投稿を見て旅先を決定したことがあると回答 ２. Z世代は旅行もタイパ重視！ 25％が1週間前より直前の期間で航空券を購入した経験があると判明 ３.さら... Skyscanner Limited 企業・官公庁・団体 2024-08-22T14:00:01+09:00 2024-08-22"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "skyscanner-35d457f0ff",
+      "provider": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "スカイスキャナー クーポン",
+      "category": "article",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "スカイスキャナーの公式サイトによると、スカイスキャナー自体が直接発行する独自のクーポンというものは存在しません。 スカイスキャナーは、あくまで様々な航空会社やオンライン旅行代理店（OTA）の価格を比較するための検索プラットフォームです。 しかし、公式サイトでは、航空会社などが提供するプロモーションコード（割引コード）を賢く利用して、航空券を安く手に入れるための方法を詳しく解説しています。 / / ということで、次はスカイスキャナーで割引で予約する方法をご紹介していきます！"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "article_snapshot",
+      "fetch_method": "existing_article_heading",
+      "last_checked": "2026-06-18",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"
+      }
+    },
+    {
+      "id": "skyscanner-28293cc296",
+      "provider": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "割引コードの見つけ方（航空会社・OTA側のクーポン）",
+      "category": "article",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "航空会社のニュースレターに登録する: 最も効果的な方法の一つです。お気に入りの航空会社のニュースレターに登録すると、割引やプロモーション情報が最初に通知されることがよくあります。 航空会社の公式サイトを確認する: ほとんどの航空会社は、公式サイト内に「セール」や「お得な情報」といったページを設けており、そこで最新の割引コードを掲載しています。 公式SNSアカウントをフォローする: 航空会社は、SNSプラットフォームで限定セールやプロモーションコードを共有することがあります。"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "article_snapshot",
+      "fetch_method": "existing_article_heading",
+      "last_checked": "2026-06-18",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"
+      }
+    },
+    {
+      "id": "skyscanner-38d179edd6",
+      "provider": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "スカイスキャナーの海外航空券（国際線）セール情報",
+      "category": "article",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "スカイスキャナーを利用して海外航空券（国際線）のセール情報を見つける方法について、公式サイトの情報と航空券検索の仕組みを基に詳しくご説明します。 まず最も重要な点として、スカイスキャナーは特定の航空会社や旅行代理店のように「サマーセール」や「年末年始セール」といった独自のセールを大々的に開催することはありません。スカイスキャナーは、世界中の航空会社や旅行代理店が実施している無数のセールや割引価格をリアルタイムで発見するための検索ツールです。 したがって、「スカイスキャナーのセール情報」とは、「スカイスキャナーを使って、今現在セールを行っている航空会社の最安値航空券を見つける方法」と捉えるのが最も正確です。"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "article_snapshot",
+      "fetch_method": "existing_article_heading",
+      "last_checked": "2026-06-18",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"
+      }
+    },
+    {
+      "id": "skyscanner-448dc00d85",
+      "provider": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "スカイスキャナーで国際線のセール・格安航空券を見つける方法",
+      "category": "article",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "特定のセール期間を待つのではなく、以下の機能を活用することで、年間を通じてお得な海外航空券を見つけることが可能です。 1. 「すべての場所」検索機能の活用 もし行き先がまだ決まっていない、あるいは複数の候補地で迷っている場合に非常に強力な機能です。 使い方: 出発地に「東京 (すべての空港)」などを入力します。 目的地（行き先）の欄に「すべての場所」と入力するか、空欄のまま検索します。 日程は「月全体」を選び、さらに「最も安い月」を選択します。 メリット: この方法で検索すると、現在地から出発する世界中の航空券が安い順にリストアップされます。これにより、予期せぬ国や都市への驚くほど安いセール価格（例えば、特定の航空会社がキャンペーンを行っている路線など）を発見することができます。 2. 「月全体」および「最も安い月」検索機能 行きたい国や都市は決まっているものの、日程に柔軟性がある場合に最適な方法です。 使い方: 出発地と目的地を入力します。 出発日と現地出発日の欄でカレンダーを開き、「月全体」を選択します。 さらに「最も安い月」を選択して検索します。 メリット: 年間を通じて、その目"
+      ],
+      "source_url": "https://www.skyscanner.jp/flights/last-minute-deals/",
+      "detail_url": "https://www.skyscanner.jp/flights/last-minute-deals/",
+      "source_type": "article_snapshot",
+      "fetch_method": "existing_article_heading",
+      "last_checked": "2026-06-18",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"
+      }
+    },
+    {
+      "id": "skyscanner-f011e10d92",
+      "provider": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "スカイスキャナーで海外航空券のセール情報を得るための最善の方法",
+      "category": "article",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "スカイスキャナーで海外航空券のセール情報を得るための最善の方法は、特定の「セール」を待つのではなく、以下のスカイスキャナーの強力な検索機能を駆使することです。 行き先が未定なら → 「すべての場所」検索で、今最も安い国や都市を探す。 日程が未定なら → 「月全体」「最も安い月」検索で、最もお得な渡航時期を見つける。 特定の路線を狙うなら → 「プライスアラート」を設定し、価格変動を逃さない。 これらの方法を組み合わせることで、航空会社や旅行代理店が実施している様々なセールやキャンペーン価格を効率的に見つけ出し、最もお得な海外航空券を予約することが可能になります。"
+      ],
+      "source_url": "",
+      "detail_url": "",
+      "source_type": "article_snapshot",
+      "fetch_method": "existing_article_heading",
+      "last_checked": "2026-06-18",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"
+      }
+    },
+    {
+      "id": "skyscanner-daf75eabab",
+      "provider": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "サプライスのクーポン",
+      "category": "article",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "＼会員登録するとメールでクーポン配布のお知らせあります ／ 【公式】サプライスの海外航空券クーポンを獲得する→"
+      ],
+      "source_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3731913&pid=891946762",
+      "detail_url": "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3731913&pid=891946762",
+      "source_type": "article_snapshot",
+      "fetch_method": "existing_article_heading",
+      "last_checked": "2026-06-18",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"
+      }
+    },
+    {
+      "id": "skyscanner-321017a23f",
+      "provider": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "site_targets": [
+        "welltrip"
+      ],
+      "article_slug": "",
+      "title": "Trip.comのクーポン",
+      "category": "article",
+      "discount": "",
+      "stock_status": "要確認",
+      "product_type": "",
+      "booking_period": "",
+      "travel_period": "",
+      "coupon_codes": [],
+      "conditions": [
+        "＼TOP ページでお得な情報全部確認できる／ Trip.com公式で最新の割引クーポンを確認する→"
+      ],
+      "source_url": "https://jp.trip.com/sale/deals/?Allianceid=6028065&SID=170308125&trip_sub1=&trip_sub3=D4633862",
+      "detail_url": "https://jp.trip.com/sale/deals/?Allianceid=6028065&SID=170308125&trip_sub1=&trip_sub3=D4633862",
+      "source_type": "article_snapshot",
+      "fetch_method": "existing_article_heading",
+      "last_checked": "2026-06-18",
+      "confidence": "low",
+      "display_type": "table",
+      "placement_hint": "",
+      "detail_data": {
+        "source": "/Users/takamacmini/projects/vault_box/vault_blog/ウェルトリップ/会社別/スカイスキャナー/wp-7869-verification-20260607/article.html"
+      }
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "candidate_id": "toku-b0410a1b34cd30ae",
+  "provider_id": "toku",
+  "provider_label": "トクー",
+  "change_kind": "update",
+  "fetched_at": "2026-11-09T09:08:36.351261+09:00",
+  "content_hash": "b0410a1b34cd30aec7b516dc5ab5f152e722fde5876715b428bde7b244244286",
+  "data_dir": "official_coupon_data/toku",
+  "official_domains": [
+    "tocoo.jp"
+  ],
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "manual_sources": [],
+  "sources": [
+    {
+      "url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "purpose": "スペシャルセール",
+      "source_role": "official_source",
+      "discovered_from": "",
+      "status_code": 200,
+      "fetch_method": "html",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "content_hash": "db25af30a81c7f19bc1b00b41cb88c64e895455a7a253df5edfb789f0e97d60b",
+      "text": "タイムセール | 【厳選】トクー！おすすめの旅館・ホテル 国内宿泊 ウルトラトクー市 プライム限定 タイムセール プライム限定 直前割 関連サービス レンタカー 宿泊＋航空券 ポイントBANK サポート 問い合わせ よくある質問 アカウント ログイン 会員登録 期間限定 タイムセール 対象プランが割引率 30 %OFF以上。 期間限定だから、対象プランがいつもよりお得に予約できます。 早めの予約でもOK。お部屋のアップグレードなど特典付きプランも タイムセールの料金は、トクープライム会員限定で表示しています 価格の閲覧・ご予約は有料会員からご利用いただけます。 ログイン 会員登録 岩手県 八幡平 八幡平マウンテンホテル ＼秋の自然と温泉に癒される休日♪連休前のお日にち限定特価！／厳選した地産食材を最も美味しい調理法で【石窯焼きビュッフェ】 有料会員限定の料金です ログインして料金を見る 栃木県 奥日光湯元温泉 日光グランドホテル ほのかな宿 樹林 ＼★【11月お日にち限定】奥日光でじっくり温泉♪限定特価★／にごり湯の源泉かけ流し露天を堪能♪霧降高原豚の豆乳しゃぶしゃぶコース２食付 有料会員限定の料金です ログインして料金を見る 群馬県 みんなが認めた名湯、万座温泉 『白鐡の湯』 万座亭 【1泊2食付10,000円～】＼温泉が身体にしみる季節です♪2026年感謝タイムセール！／万座の乳白濁の源泉満喫★湯ったり♪☆【スタンダードプラン１泊２食付】 有料会員限定の料金です ログインして料金を見る 長野県 八ヶ岳東麓・南相木村 ブルーレイク 立岩荘 ≪登山や釣り等にもどうぞ！≫★自然豊かな湖畔の宿で過ごす♪★夜空は満天の星♪朝のBGMは鳥の声♪☆お得な素泊りプラン 有料会員限定の料金です ログインして料金を見る 長野県 南信州遠山郷 いろりの宿 島畑 ＼1日2組限定特価！早い者勝ち！／【囲炉裏で食べる2食付】馬刺し・鹿ステーキ・ボタン鍋etc...神々からの贈り物コース 有料会員限定の料金です ログインして料金を見る 長野県 南信州天龍村 おきよめの郷 森のコテージ 【直前特価!!早目のチェックイン12時～OK♪徒歩3分に上質の日帰り温泉あり！】コテージで気軽にお泊りプラン 有料会員限定の料金です ログインして料金を見る 群馬県 嬬恋 軽井沢のバリ島 エスティバン・クラブ ＼静かな秋をバリで一休み！期間限定特価&食前酒「アラック」付で更に美味しく♪／【１泊２食付プラン】大人気バリ料理ディナーで大満足 有料会員限定の料金です ログインして料金を見る 長野県 木曽 開田高原 郷土料理と手打ち蕎麦 旅館ふもと屋 【秋旅応援タイムセール！】自然豊かな開田高原で古民家のお宿ステイ♪◎高野槙風呂に入って夜もぐっすり♪スタンダード朝食付 有料会員限定の料金です ログインして料金を見る 新潟県 上越市 キューピットバレイ 手を伸ばせば星に届きそう ペンションLIVE 冬季受付開始！【絶対お得なリフト１日券引換券付★キューピットバレイ目の前】１泊朝食＆温泉割引券付 有料会員限定の料金です ログインして料金を見る 除外日や在庫切れなど、料金が適用されない場合があります。あらかじめご了承ください。 表示されている料金からさらに割引が適用されているプランもございます。 scroll to Top {\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#website\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\",\"name\":\"\\u3010\\u53b3\\u9078\\u3011\\u30c8\\u30af\\u30fc\\uff01\\u304a\\u3059\\u3059\\u3081\\u306e\\u65c5\\u9928\\u30fb\\u30db\\u30c6\\u30eb\",\"description\":\"\\u683c\\u5b89\\u65c5\\u884c\\u306e\\u5bbf\\u6cca\\u4e88\\u7d04\\u306a\\u3089\\u30c8\\u30af\\u30fc\\uff01\",\"inLanguage\":\"ja\",\"publisher\":{\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#organization\"}},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#organization\",\"name\":\"\\u3010\\u53b3\\u9078\\u3011\\u30c8\\u30af\\u30fc\\uff01\\u304a\\u3059\\u3059\\u3081\\u306e\\u65c5\\u9928\\u30fb\\u30db\\u30c6\\u30eb\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#breadcrumblist\",\"itemListElement\":[{\"@type\":\"ListItem\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#listItem\",\"position\":1,\"item\":{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\",\"name\":\"\\u30db\\u30fc\\u30e0\",\"description\":\"\\u30c8\\u30af\\u30fc\\uff01\\u306e\\u304a\\u5f97\\u306a\\u30d7\\u30e9\\u30f3\\u306e\\u4e2d\\u3067\\u3082\\u3055\\u3089\\u306b\\u53b3\\u9078\\u3057\\u305f\\u3001\\u7d76\\u5bfe\\u306b\\u6cca\\u307e\\u3063\\u3066\\u6b32\\u3057\\u3044\\u5bbf\\u3092\\u7d39\\u4ecb\\uff01\\u30ef\\u30b1\\u3042\\u3063\\u3066\\u6025\\u907d\\u5024\\u4e0b\\u3052\\u3055\\u308c\\u305f\\u30d7\\u30e9\\u30f3\\u3084\\u30c8\\u30af\\u30fc\\uff01\\u9650\\u5b9a\\u3067\\u7121\\u6599\\u7279\\u5178\\u304c\\u4ed8\\u304f\\u30d7\\u30e9\\u30f3\\u306a\\u3069\\u306e\\u304a\\u3059\\u3059\\u3081\\u60c5\\u5831\\u3092\\u30ea\\u30a2\\u30eb\\u30bf\\u30a4\\u30e0\\u3067\\u66f4\\u65b0\\u3002\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/\"},\"nextItem\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#listItem\"},{\"@type\":\"ListItem\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#listItem\",\"position\":2,\"item\":{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/\",\"name\":\"\\u30bf\\u30a4\\u30e0\\u30bb\\u30fc\\u30eb\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/\"},\"previousItem\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#listItem\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#webpage\",\"url\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/\",\"name\":\"\\u30bf\\u30a4\\u30e0\\u30bb\\u30fc\\u30eb | \\u3010\\u53b3\\u9078\\u3011\\u30c8\\u30af\\u30fc\\uff01\\u304a\\u3059\\u3059\\u3081\\u306e\\u65c5\\u9928\\u30fb\\u30db\\u30c6\\u30eb\",\"inLanguage\":\"ja\",\"isPartOf\":{\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/osusumeyado.tocoo.jp\\/specialsale\\/#breadcrumblist\"},\"datePublished\":\"2021-11-01T11:51:19+09:00\",\"dateModified\":\"2026-10-22T06:20:32+09:00\"}]}"
+    }
+  ],
+  "previous_coupons": [
+    {
+      "id": "toku-ebd5cdbd29f68bbc",
+      "title": "タイムセール",
+      "category": "sale",
+      "type": "sale",
+      "display_type": "campaign",
+      "discount": "30 %OFF以上",
+      "stock_status": "配布中",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "対象プランが割引率30 %OFF以上。タイムセールの料金はトクープライム会員限定で表示。価格の閲覧・ご予約は有料会員から。期間の記載なし",
+      "coupon_codes": [],
+      "detail_url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "source_url": "https://osusumeyado.tocoo.jp/specialsale/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "high",
+      "classification": "conditional",
+      "evidence_quote": "期間限定 タイムセール 対象プランが割引率 30 %OFF以上。 期間限定だから、対象プランがいつもよりお得に予約できます。 早めの予約でもOK。お部屋のアップグレードなど特典付きプランも タイムセールの料金は、トクープライム会員限定で表示しています 価格の閲覧・ご予約は有料会員からご利用いただけます。",
+      "official_fetched_at": "2026-10-20T09:15:29.109359+09:00"
+    }
+  ],
+  "audit_contract": {
+    "allowed_recommendations": [
+      "draft",
+      "hold",
+      "ignore"
+    ],
+    "allowed_classifications": [
+      "publishable",
+      "conditional",
+      "unpublishable",
+      "ended"
+    ],
+    "official_evidence_only": true,
+    "baseline_must_not_create_wp_draft": true,
+    "representative_scope_only": false
+  }
+}

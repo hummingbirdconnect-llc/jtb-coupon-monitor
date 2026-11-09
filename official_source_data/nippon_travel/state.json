@@ -1,7 +1,7 @@
 {
   "provider_id": "nippon_travel",
-  "observed_hash": "da573e4ddf1561b2c86c3f98a69946ec3cc12f3716afeed7276c66661742cdb3",
-  "last_checked_at": "2026-10-19T17:10:00.138510+09:00",
+  "observed_hash": "30ae87f274c04f185689ae1f3412d167bc1f03ad1f8f680602d71cd738f65357",
+  "last_checked_at": "2026-11-09T09:09:12.589000+09:00",
   "sources": [
     {
       "url": "https://www.nta.co.jp/cpn/anniversary/",
@@ -14,14 +14,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3368,
-      "content_hash": "c27760c42db62291d257456ba514c751824b4e114fbb2c17cde2155d2b66c9ef"
+      "text_chars": 3233,
+      "content_hash": "b25aacd8d16f96e4a7c10a2f01a677162e7928a939d95ec933725bc8756b986e"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-19T17:10:00.138901+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "30ae87f274c04f185689ae1f3412d167bc1f03ad1f8f680602d71cd738f65357",
+  "queued_candidate_id": "nippon_travel-30ae87f274c04f18",
+  "queued_at": "2026-11-09T09:09:12.589431+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-19T21:17:58.191343+09:00",
   "last_audit_candidate_id": "nippon_travel-da573e4ddf1561b2",
   "processed_hash": "da573e4ddf1561b2c86c3f98a69946ec3cc12f3716afeed7276c66661742cdb3",

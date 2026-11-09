@@ -1,7 +1,7 @@
 {
   "provider_id": "orion_tour",
-  "observed_hash": "50b66fe84186960cab634e41faacc81407a928b7b34a390f095299cf723bd852",
-  "last_checked_at": "2026-10-19T17:10:03.668343+09:00",
+  "observed_hash": "aa513d94d2e87f138c61e881e1e9d75215fdb708e654f5c6d37616d37b637504",
+  "last_checked_at": "2026-11-09T09:09:16.518653+09:00",
   "sources": [
     {
       "url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
@@ -14,14 +14,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 4575,
-      "content_hash": "8189ab9eb8413cc87fe75bf98aeadb4205ecda335e5ab3b68ab6432e786e6c90"
+      "text_chars": 4113,
+      "content_hash": "e0dda762e177756482050375e357ce53f402d82603c6d2a5957500966ad5f55c"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-19T17:10:03.669356+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "aa513d94d2e87f138c61e881e1e9d75215fdb708e654f5c6d37616d37b637504",
+  "queued_candidate_id": "orion_tour-aa513d94d2e87f13",
+  "queued_at": "2026-11-09T09:09:16.519086+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-19T21:17:58.193517+09:00",
   "last_audit_candidate_id": "orion_tour-50b66fe84186960c",
   "processed_hash": "50b66fe84186960cab634e41faacc81407a928b7b34a390f095299cf723bd852",

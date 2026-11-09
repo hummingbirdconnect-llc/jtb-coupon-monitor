@@ -2,9 +2,9 @@
   "provider_id": "jr_tokai_tours",
   "provider_label": "JR東海ツアーズ",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-19T09:09:57.637167+09:00",
-  "completed_at": "2026-10-19T09:10:04.686466+09:00",
-  "official_fetched_at": "2026-10-19T09:10:04.686471+09:00",
+  "started_at": "2026-11-09T09:08:26.874696+09:00",
+  "completed_at": "2026-11-09T09:08:32.975672+09:00",
+  "official_fetched_at": "2026-11-09T09:08:32.975677+09:00",
   "source_results": [
     {
       "url": "https://travel.jr-central.co.jp/",
@@ -26,8 +26,8 @@
         "https://travel.jr-central.co.jp/plan/tokushu/furusato/",
         "https://travel.jr-central.co.jp/plan/tokushu/s-pulse/"
       ],
-      "text_chars": 2358,
-      "content_hash": "45f02d75ccdf51938294a654c7fa11ced9627ba6cfe88e4b728a5971ab2b1068"
+      "text_chars": 2230,
+      "content_hash": "3b4357e114d75c8bd67e744100ea394a5c892dd675da9859c39e8250c62f40dc"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/coupon/",
@@ -40,8 +40,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 5740,
-      "content_hash": "4ec7927df694b1b1ea959bf285202f1f44a392637c4964f9bfa356b65dd52159"
+      "text_chars": 5446,
+      "content_hash": "e1a2ac4608f5f4b2f2972a263b3ea0cdc55f93b5bf3b1b8d890f1c3ac2193efd"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/line-cp/",
@@ -54,8 +54,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3662,
-      "content_hash": "b1bba5206eb23936491fb22ce8b95af2a244454420da1bd6f46af89609302fc1"
+      "text_chars": 2784,
+      "content_hash": "4c6d22a1358e52943ccf78ea1e0c6bbca4b22f1c0bff48ee51fb0ad02d2bce28"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/chokuzen/",
@@ -68,8 +68,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2825,
-      "content_hash": "c7af15491f5431856d8e6a92bece10d1d66cced84f66c6560cef488c3d803cf6"
+      "text_chars": 2817,
+      "content_hash": "1bcc2dc4fd2b1e0afb7614d9c9eddfbfea0c06247c326f26a57760da4330ddec"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/early/",
@@ -82,8 +82,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 4209,
-      "content_hash": "05e7a3a0a10b299d774b8bc62c2b28869f8d7ae432bd871a9c6891125723e80a"
+      "text_chars": 4205,
+      "content_hash": "06eaa70364d990a0ca9c100149bffa0326022c90b7ff653d4847f21d9baab4d8"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/event/",
@@ -96,8 +96,8 @@
       "include_in_audit": true,
       "discovered_from": "https://travel.jr-central.co.jp/",
       "discovered_urls": [],
-      "text_chars": 5060,
-      "content_hash": "a6095608782b3d284a97f0923b1883726fa6c4c5f069819587b6fc4504f09f56"
+      "text_chars": 5062,
+      "content_hash": "29a9d5aa51d6fb1220c485655a072bf180f3e0522c39333afb6747949b1f1f95"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/zurashi/",
@@ -124,8 +124,8 @@
       "include_in_audit": true,
       "discovered_from": "https://travel.jr-central.co.jp/",
       "discovered_urls": [],
-      "text_chars": 12142,
-      "content_hash": "3e553e79422ad15a6b4869bbfa280a66ed9c885e5c54a76b256c5801cc9cbcbd"
+      "text_chars": 11657,
+      "content_hash": "de300924650d522a1055bc5f6f0913568d8696caa42c7e0847eeec6563a5d9fd"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/furusato/",
@@ -138,8 +138,8 @@
       "include_in_audit": true,
       "discovered_from": "https://travel.jr-central.co.jp/",
       "discovered_urls": [],
-      "text_chars": 8523,
-      "content_hash": "7175ce226537c07d57abbffa077c896a8947d51cc6ba8b00e0b85f9ca47f8cdd"
+      "text_chars": 9429,
+      "content_hash": "8a4be8d2aef32d6f19b262c23005612022661c449715dd1ce15e1cde8276f8dd"
     },
     {
       "url": "https://travel.jr-central.co.jp/plan/tokushu/s-pulse/",
@@ -152,8 +152,8 @@
       "include_in_audit": true,
       "discovered_from": "https://travel.jr-central.co.jp/",
       "discovered_urls": [],
-      "text_chars": 3802,
-      "content_hash": "8b259b891ee0899048a21c5c0a371ccfbb15b1c07656537b9db4e6918f8ee18f"
+      "text_chars": 3036,
+      "content_hash": "aecfa7cb713bf29355bd6a6180a6e986c65ead737b2d43663b2da7c60e41487d"
     }
   ],
   "failed_source_count": 0,
@@ -167,16 +167,16 @@
   "ai_used": false,
   "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "baseline_pending",
-  "change_kind": "baseline",
-  "content_hash": "c6d16d7f3fa1cd2ba0880154897e2a74c0ec7297b4cb439e9f47f222cb77f6ac",
-  "data_date": "",
-  "latest_file": "",
-  "coupon_count": 0,
-  "audit_candidate_id": "jr_tokai_tours-c6d16d7f3fa1cd2b",
-  "audit_candidate_path": "codex_audit_queue/jr_tokai_tours/jr_tokai_tours-c6d16d7f3fa1cd2b.json",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "bba80e8635052f1e023b4c5b5834cd62a796e8a6535e854c0d0abc4b2765b2d9",
+  "data_date": "2026-10-20",
+  "latest_file": "coupons_2026-10-20.json",
+  "coupon_count": 10,
+  "audit_candidate_id": "jr_tokai_tours-bba80e8635052f1e",
+  "audit_candidate_path": "codex_audit_queue/jr_tokai_tours/jr_tokai_tours-bba80e8635052f1e.json",
   "error": "",
-  "freshness_status": "unknown",
+  "freshness_status": "fresh",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-19T09:10:04.686466+09:00"
+  "deep_dive_at": "2026-11-09T09:08:32.975672+09:00"
 }

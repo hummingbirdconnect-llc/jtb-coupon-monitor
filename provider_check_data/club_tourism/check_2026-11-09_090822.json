@@ -1,0 +1,63 @@
+{
+  "provider_id": "club_tourism",
+  "provider_label": "クラブツーリズム",
+  "check_type": "official_page_candidate",
+  "started_at": "2026-11-09T09:08:12.953221+09:00",
+  "completed_at": "2026-11-09T09:08:22.791687+09:00",
+  "official_fetched_at": "2026-11-09T09:08:22.791691+09:00",
+  "source_results": [
+    {
+      "url": "https://www.club-t.com/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）",
+      "source_role": "discovery_hub",
+      "include_in_audit": false,
+      "discovered_from": "",
+      "discovered_urls": [
+        "https://www.club-t.com/sp/campaign/ctp/"
+      ],
+      "text_chars": 12842,
+      "content_hash": "1f2a8676b917898514b04e69ff72b2a66d38fa5e6e1ef21e2074dd3323414f78"
+    },
+    {
+      "url": "https://www.club-t.com/sp/campaign/ctp/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "キャンペーン案内（会員向けWEBクーポン含む）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 11331,
+      "content_hash": "dc06fc7423218a5dd86e2379aabfba322358e55253ecc6982ffd1eb6fa7ac8b8"
+    }
+  ],
+  "failed_source_count": 0,
+  "configured_source_count": 2,
+  "discovered_source_count": 0,
+  "audit_source_count": 1,
+  "manual_source_count": 0,
+  "coverage_scope": "all_confirmed_deals",
+  "count_scope_label": "クーポン",
+  "count_scope_detail": "",
+  "ai_used": false,
+  "codex_audit_required": true,
+  "wp_review_eligible": false,
+  "status": "baseline_pending",
+  "change_kind": "baseline",
+  "content_hash": "a8e938142a8a82f348ffe728430c637a90d29bed4fa2f12724575dc84f98823f",
+  "data_date": "",
+  "latest_file": "",
+  "coupon_count": 0,
+  "audit_candidate_id": "club_tourism-a8e938142a8a82f3",
+  "audit_candidate_path": "codex_audit_queue/club_tourism/club_tourism-a8e938142a8a82f3.json",
+  "error": "",
+  "freshness_status": "unknown",
+  "deep_dive": true,
+  "deep_dive_at": "2026-11-09T09:08:22.791687+09:00"
+}

@@ -1,7 +1,7 @@
 {
   "provider_id": "airtrip",
-  "observed_hash": "0fb7e97ccfed439aaa4037946fccc2294b95171cbb6f35194fc17253907bd641",
-  "last_checked_at": "2026-10-19T17:09:56.443216+09:00",
+  "observed_hash": "f667da48849885962537fef2b3660484c9d1e6eace9afd6119de2fcb7e6c1b13",
+  "last_checked_at": "2026-11-09T09:08:37.985511+09:00",
   "sources": [
     {
       "url": "https://domdp.airtrip.jp/campaign/fukkou-wari/",
@@ -14,14 +14,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2975,
-      "content_hash": "83c0d25cccefbb3bfc765d67f22f4fd84f4c747dc8ea92b5ff1dd0e6679ac354"
+      "text_chars": 642,
+      "content_hash": "ae7e8030a96aa49360c212d258ceac8e8c26914597645d63c5b1f56fb98e1a20"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-19T17:09:56.443534+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "f667da48849885962537fef2b3660484c9d1e6eace9afd6119de2fcb7e6c1b13",
+  "queued_candidate_id": "airtrip-f667da4884988596",
+  "queued_at": "2026-11-09T09:08:37.985889+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-19T21:17:58.187665+09:00",
   "last_audit_candidate_id": "airtrip-0fb7e97ccfed439a",
   "processed_hash": "0fb7e97ccfed439aaa4037946fccc2294b95171cbb6f35194fc17253907bd641",

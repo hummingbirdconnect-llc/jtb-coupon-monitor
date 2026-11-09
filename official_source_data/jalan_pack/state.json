@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan_pack",
-  "observed_hash": "e12fc1e651e4243802451621b2c76cea912d034baaf5eee9beae60bda3fbe047",
-  "last_checked_at": "2026-10-19T17:10:02.827420+09:00",
+  "observed_hash": "1bb0a0765986ee654b971320dc178d9de67b36e4059406bffb92e5e9e4ed046e",
+  "last_checked_at": "2026-11-09T09:09:15.505604+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/dp/kyushu-shien/",
@@ -14,14 +14,14 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 3188,
-      "content_hash": "9f6b251aa16594982d7172b939445157d125ccf3c2fd89e6c88f4daed9c9b744"
+      "text_chars": 3530,
+      "content_hash": "1f4eac0daba3fe9fa1cd2d1913af6197a0a80e37075540753bc1dc291023b6b5"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-10-19T17:10:02.827744+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "1bb0a0765986ee654b971320dc178d9de67b36e4059406bffb92e5e9e4ed046e",
+  "queued_candidate_id": "jalan_pack-1bb0a0765986ee65",
+  "queued_at": "2026-11-09T09:09:15.506038+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-10-19T21:17:58.192774+09:00",
   "last_audit_candidate_id": "jalan_pack-e12fc1e651e42438",
   "processed_hash": "e12fc1e651e4243802451621b2c76cea912d034baaf5eee9beae60bda3fbe047",

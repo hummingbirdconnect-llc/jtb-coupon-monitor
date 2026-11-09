@@ -2,9 +2,9 @@
   "provider_id": "activityjapan",
   "provider_label": "アクティビティジャパン",
   "check_type": "official_page_candidate",
-  "started_at": "2026-10-19T09:09:50.094509+09:00",
-  "completed_at": "2026-10-19T09:09:51.309287+09:00",
-  "official_fetched_at": "2026-10-19T09:09:51.309291+09:00",
+  "started_at": "2026-11-09T09:08:22.954745+09:00",
+  "completed_at": "2026-11-09T09:08:26.713421+09:00",
+  "official_fetched_at": "2026-11-09T09:08:26.713425+09:00",
   "source_results": [
     {
       "url": "https://activityjapan.com/",
@@ -18,12 +18,11 @@
       "discovered_from": "",
       "discovered_urls": [
         "https://activityjapan.com/campaign/theme-parks_tickets/",
-        "https://activityjapan.com/campaign/autumn_campaign_2026/",
         "https://activityjapan.com/campaign/kyushu-activity-feature/",
         "https://activityjapan.com/feature/coupon-campaign/"
       ],
-      "text_chars": 4504,
-      "content_hash": "3ef228d118ffec576b283e0703da3ba4199f4945a5fad1d4d9df2765b32def21"
+      "text_chars": 4703,
+      "content_hash": "b6e5b7040ccb638472e8e29a357a879739cd4938dd593f1c18db143ceeb3e271"
     },
     {
       "url": "https://activityjapan.com/coupon/",
@@ -50,8 +49,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 8414,
-      "content_hash": "f7935ee5a3f7fec81c8ea6699e3ef06afcce58d5c82cd94022817851c73529da"
+      "text_chars": 9009,
+      "content_hash": "221133481a7e7647976f00ae06184378e416d4ce84a5463f20198c36dc46430e"
     },
     {
       "url": "https://activityjapan.com/campaign/theme-parks_tickets/",
@@ -64,22 +63,8 @@
       "include_in_audit": true,
       "discovered_from": "https://activityjapan.com/",
       "discovered_urls": [],
-      "text_chars": 13486,
-      "content_hash": "12725505b7073d72bcce87bfb14dbf162ed2bfb18100c63f6c1a227d37a7fb54"
-    },
-    {
-      "url": "https://activityjapan.com/campaign/autumn_campaign_2026/",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "html",
-      "error": "",
-      "purpose": "入口ページ（配下のキャンペーン・特集ページを自動発見）から発見",
-      "source_role": "representative_discovered",
-      "include_in_audit": true,
-      "discovered_from": "https://activityjapan.com/",
-      "discovered_urls": [],
-      "text_chars": 8973,
-      "content_hash": "ea3a032a1344df387dc6b9bb373df3a238246e62997911d4f30a556881dac7ee"
+      "text_chars": 15423,
+      "content_hash": "16ad688e73fd3dff5b5c1edd70d4d7ecbafe76aeb6861abca941e0a08507b0dc"
     },
     {
       "url": "https://activityjapan.com/campaign/kyushu-activity-feature/",
@@ -92,14 +77,14 @@
       "include_in_audit": true,
       "discovered_from": "https://activityjapan.com/",
       "discovered_urls": [],
-      "text_chars": 15015,
-      "content_hash": "0ce04ad7b4ebc199fe03b8c1e3984f234df17f889c5dd491e6f9ad1343a0dfab"
+      "text_chars": 15263,
+      "content_hash": "8fd08e0e342d68714e50d088bfbfc0f2b95dac0fb2190060b7394566e54cd4f7"
     }
   ],
   "failed_source_count": 0,
   "configured_source_count": 3,
-  "discovered_source_count": 3,
-  "audit_source_count": 5,
+  "discovered_source_count": 2,
+  "audit_source_count": 4,
   "manual_source_count": 0,
   "coverage_scope": "all_confirmed_deals",
   "count_scope_label": "クーポン",
@@ -107,16 +92,16 @@
   "ai_used": false,
   "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "baseline_pending",
-  "change_kind": "baseline",
-  "content_hash": "f7533bcd1a0b67182d4f80b5c2ded488f3b544a30a6cb2052839d38beb0434d7",
-  "data_date": "",
-  "latest_file": "",
-  "coupon_count": 0,
-  "audit_candidate_id": "activityjapan-f7533bcd1a0b6718",
-  "audit_candidate_path": "codex_audit_queue/activityjapan/activityjapan-f7533bcd1a0b6718.json",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "28690d768520beca148ae7cd50f011c868e1d76cfc17345ba17e4db893ab1eee",
+  "data_date": "2026-10-20",
+  "latest_file": "coupons_2026-10-20.json",
+  "coupon_count": 11,
+  "audit_candidate_id": "activityjapan-28690d768520beca",
+  "audit_candidate_path": "codex_audit_queue/activityjapan/activityjapan-28690d768520beca.json",
   "error": "",
-  "freshness_status": "unknown",
+  "freshness_status": "fresh",
   "deep_dive": true,
-  "deep_dive_at": "2026-10-19T09:09:51.309287+09:00"
+  "deep_dive_at": "2026-11-09T09:08:26.713421+09:00"
 }
