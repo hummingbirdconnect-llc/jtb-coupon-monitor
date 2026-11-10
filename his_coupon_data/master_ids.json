@@ -1,17 +1,6 @@
 {
-  "last_updated": "2026-11-10T15:49:39.946759+09:00",
+  "last_updated": "2026-11-11T07:04:30.757298+09:00",
   "ids": {
-    "3e0f99b608b3": {
-      "category": "ボルネオ島・香港・マカオ・グアム・ケアンズ",
-      "title": "年末出発特別割引！対象商品ご予約で1グループ最大50,000円引き",
-      "discount": "最大50,000円引き",
-      "region_codes": [
-        "kanto"
-      ],
-      "region_labels": [
-        "首都圏版"
-      ]
-    },
     "2af5cfea09cd": {
       "category": "海外旅行",
       "title": "学生旅行応援！早めの予約がお得！1グループ最大20,000円引き",
@@ -114,68 +103,6 @@
       ],
       "region_labels": [
         "首都圏版"
-      ]
-    },
-    "ee6c43ff5adf": {
-      "category": "国内航空券＋ホテル",
-      "title": "早めの予約がお得！1グループ最大10,000円引き",
-      "discount": "最大10,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
-    "280b2b87265b": {
-      "category": "国内航空券＋ホテル",
-      "title": "年末年始出発がお得！1グループ最大50,000円引き",
-      "discount": "最大50,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
       ]
     },
     "06f004280d64": {
@@ -448,37 +375,6 @@
         "沖縄版"
       ]
     },
-    "224fdcda9480": {
-      "category": "国内ホテル",
-      "title": "オンライン予約限定！早めの予約がお得！1グループ最大2,000円引き",
-      "discount": "最大2,000円引き",
-      "region_codes": [
-        "kanto",
-        "hokkaido",
-        "tohoku",
-        "koshinetsu",
-        "chubu",
-        "hokuriku",
-        "kansai",
-        "chugoku",
-        "shikoku",
-        "kyushu",
-        "okinawa"
-      ],
-      "region_labels": [
-        "首都圏版",
-        "北海道版",
-        "東北版",
-        "甲信越（新潟）版",
-        "中部版",
-        "北陸版",
-        "関西版",
-        "中国版",
-        "四国版",
-        "九州版",
-        "沖縄版"
-      ]
-    },
     "dca1b1ed227f": {
       "category": "国内旅行",
       "title": "学生旅行応援！早めの予約がお得！1グループ最大5,000円引き",
@@ -621,10 +517,10 @@
         "北海道版"
       ]
     },
-    "792cd90ac264-02c718": {
-      "category": "オーストラリア",
-      "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
-      "discount": "",
+    "4ba3d6cdfee3-5f1161": {
+      "category": "海外航空券+ホテル",
+      "title": "【オンライン予約限定】東北・新潟発 海外航空券+ホテルをご予約で1グループあたり最大15,000円引き",
+      "discount": "最大15,000円引き",
       "region_codes": [
         "tohoku",
         "koshinetsu"
@@ -632,6 +528,21 @@
       "region_labels": [
         "東北版",
         "甲信越（新潟）版"
+      ]
+    },
+    "792cd90ac264-747c05": {
+      "category": "オーストラリア",
+      "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+      "discount": "",
+      "region_codes": [
+        "tohoku",
+        "koshinetsu",
+        "shikoku"
+      ],
+      "region_labels": [
+        "東北版",
+        "甲信越（新潟）版",
+        "四国版"
       ]
     },
     "e850a0705b7d-fae589": {
@@ -1120,10 +1031,10 @@
         "中国版"
       ]
     },
-    "792cd90ac264-14d705": {
-      "category": "オーストラリア",
-      "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
-      "discount": "",
+    "4ba3d6cdfee3-dc651c": {
+      "category": "海外航空券+ホテル",
+      "title": "【オンライン予約限定】東北・新潟発 海外航空券+ホテルをご予約で1グループあたり最大15,000円引き",
+      "discount": "最大15,000円引き",
       "region_codes": [
         "shikoku"
       ],
