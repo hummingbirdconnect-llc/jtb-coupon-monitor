@@ -1,127 +1,127 @@
 {
-  "completed_at": "2026-11-10T07:34:09.280270+09:00",
+  "completed_at": "2026-11-11T07:34:03.379696+09:00",
   "scope": "codex-auto",
   "provider_count": 13,
-  "error_count": 5,
-  "candidate_count": 9,
-  "new_count": 5,
+  "error_count": 8,
+  "candidate_count": 14,
+  "new_count": 3,
   "results": [
     {
       "provider_id": "his",
       "provider_label": "HIS",
       "status": "error",
-      "error": "公開一覧は取得できたが、一部条件が動的表示のため未確認。BLACK FRIDAY 2026はX上で11/11開始予告のため本日の候補から除外。",
+      "error": "公式クーポンページが403で取得拒否。再取得せず停止。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-11-10.json"
+      "hints_file": "discovery_hints/his/hints_2026-11-11.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 3,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jtb/hints_2026-11-10.json"
+      "candidate_count": 2,
+      "new_count": 2,
+      "hints_file": "discovery_hints/jtb/hints_2026-11-11.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
       "status": "ok",
       "error": "",
-      "candidate_count": 0,
+      "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-11-10.json"
+      "hints_file": "discovery_hints/knt/hints_2026-11-11.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/jalpack/hints_2026-11-10.json"
+      "status": "error",
+      "error": "あいちウィークの公式取得結果から条件を確定できず。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/jalpack/hints_2026-11-11.json"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
-      "status": "error",
-      "error": "スペシャルウィーク公式ページに掲載期間10/30～11/19、見出し9/18終了、11/10第2弾開始が混在し、開催期限を確定できず。",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/jalan/hints_2026-11-10.json"
+      "status": "ok",
+      "error": "",
+      "candidate_count": 1,
+      "new_count": 1,
+      "hints_file": "discovery_hints/jalan/hints_2026-11-11.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 2,
-      "new_count": 2,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-10.json"
+      "status": "error",
+      "error": "長崎の公開ページは取得済み。獲得・終了の表示が混在し残枠を判定できず。Xの楽パック再開・宮崎・大分・記念クーポンは未確認。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-11.json"
     },
     {
       "provider_id": "ikkyu",
       "provider_label": "一休",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-11-10.json"
+      "candidate_count": 5,
+      "new_count": 0,
+      "hints_file": "discovery_hints/ikkyu/hints_2026-11-11.json"
     },
     {
       "provider_id": "yahoo_travel",
       "provider_label": "Yahoo!トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
+      "candidate_count": 5,
       "new_count": 0,
-      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-10.json"
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-11.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
       "status": "error",
-      "error": "公開クーポン一覧の内容を取得できず。ブラウザ相当User-Agent付きcurlでも改善せず。個別プランは金額・販売期間を確認できず。Chromeは未実行。",
+      "error": "公開一覧のクーポン本文が空。Chromeによる追加表示は未実施。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/asoview/hints_2026-11-10.json"
+      "hints_file": "discovery_hints/asoview/hints_2026-11-11.json"
     },
     {
       "provider_id": "tobu_top_tours",
       "provider_label": "東武トップツアーズ",
-      "status": "ok",
-      "error": "",
+      "status": "error",
+      "error": "公式クーポン一覧の取得結果から条件を確定できず。ブラックフライデーは既知施策のため除外。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-10.json"
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-11.json"
     },
     {
       "provider_id": "booking",
       "provider_label": "Booking.com",
-      "status": "ok",
-      "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-11-10.json"
+      "status": "error",
+      "error": "11.11スーパーセールの公式取得結果から条件を確定できず。",
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/booking/hints_2026-11-11.json"
     },
     {
       "provider_id": "rurubu_travel",
       "provider_label": "るるぶトラベル",
       "status": "error",
-      "error": "公式一覧はWeb閲覧とブラウザ相当User-Agent付きcurlで本文を取得できず。検索結果の候補は公式条件未確認のため不採用。Chromeは未実行。",
+      "error": "公式一覧はHTTP 200だが本文が空。Chromeによる追加表示は未実施。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-10.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-11.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
       "status": "error",
-      "error": "公開ページで名称・金額は読めたが、候補の有効期間を確認できず。ログインせず、採用を見送った。",
+      "error": "公開ページは取得できたが国内施策の金額・期間を確定できず。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-11-10.json"
+      "hints_file": "discovery_hints/klook/hints_2026-11-11.json"
     }
   ]
 }

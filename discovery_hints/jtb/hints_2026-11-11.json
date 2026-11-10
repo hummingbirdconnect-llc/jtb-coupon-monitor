@@ -1,0 +1,46 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-11T07:34:03.379696+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 100,
+  "registered_url_count": 101,
+  "candidates": [
+    {
+      "title": "＼18歳～29歳は当選確率2倍／抽選で10,000ポイント還元！",
+      "kind": "points",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/akifuyutabi/akifuyu26-01",
+      "official_domain_match": true,
+      "evidence": "国内宿泊等の1万円以上の予約・出発とエントリーが対象。抽選444名。会員登録・指定メールマガジン購読が必要。",
+      "observed_date": "2026-11-11",
+      "discount": "10,000ポイント",
+      "period": "エントリー・予約期間：2026年8月17日（月）～2026年11月16日（月）／出発期間：2026年9月1日（火）～2027年1月31日（日）",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "10月～2月出発で最大15,000ポイント！旅するたびにポイントアップキャンペーン",
+      "kind": "points",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/tabitabi/",
+      "official_domain_match": true,
+      "evidence": "国内宿泊等の1予約3万円以上が対象。同月の複数出発は1回。会員・エントリー・指定メールマガジン購読が必要。",
+      "observed_date": "2026-11-11",
+      "discount": "1回出発で300ポイント、2回出発で5,000ポイント、3回以上出発で15,000ポイント",
+      "period": "エントリー・予約期間：2026年7月10日（金）～2027年2月28日（日）／出発期間：2026年10月1日（木）～2027年2月28日（日）",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 2,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-11.json"
+}

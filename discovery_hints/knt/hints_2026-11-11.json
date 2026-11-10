@@ -1,0 +1,32 @@
+{
+  "provider_id": "knt",
+  "provider_label": "近畿日本ツーリスト",
+  "generated_at": "2026-11-11T07:34:03.379696+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 11,
+  "registered_url_count": 10,
+  "candidates": [
+    {
+      "title": "ほな、大阪行こか！キャンペーン第2弾",
+      "kind": "coupon",
+      "found_url": "https://www.knt.co.jp/campaign/",
+      "official_url": "https://www.knt.co.jp/campaign/",
+      "official_domain_match": true,
+      "evidence": "公式の開催中一覧に掲載。対象施設の国内宿泊。上限到達で終了。登録済みの第3弾とは対象宿泊期間が異なる。",
+      "observed_date": "2026-11-11",
+      "discount": "1人あたり最大3,000円割引！",
+      "period": "予約期間：2026年9月15日（火）～2026年11月30日（月）／宿泊期間：2026年10月1日（木）～2026年11月30日（月）宿泊",
+      "confidence": "high",
+      "status": "known_title",
+      "matched_title": "ほな、大阪行こかキャンペーン 第3弾"
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/knt/hints_2026-11-11.json"
+}
