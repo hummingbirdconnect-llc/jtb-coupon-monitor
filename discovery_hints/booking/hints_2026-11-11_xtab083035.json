@@ -1,0 +1,34 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-11-11T08:30:35.896539+09:00",
+  "search_days": 14,
+  "model": "claude-opus-5-5",
+  "source": "user_opened_tab+claude_read",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "note": "本人が開いたタブ（内蔵ブラウザ）と、拒否されていない公式ページをAIがChromeで開いて読んだ結果。開き直し・再読み込みなし。",
+  "carried_over_from": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "11.11（ダブルイレブン）スーパーセール",
+      "kind": "sale",
+      "found_url": "https://news.booking.com/ja/bookingcomjp-1111-2026/",
+      "official_url": "https://news.booking.com/ja/bookingcomjp-1111-2026/",
+      "official_domain_match": true,
+      "evidence": "検索結果に「11.11」ラベルが出る対象宿の新規予約で30％以上割引。客室料金のみ。他プロモーションと併用不可。",
+      "observed_date": "2026-11-11",
+      "discount": "宿泊料金30％以上割引（割引率は国により異なる）",
+      "period": "予約：2026年11月9日～11月16日23:00／宿泊：11月9日チェックイン～2027年12月31日チェックアウト",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/booking/hints_2026-11-11_xtab083035.json"
+}

@@ -1,0 +1,34 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-11-11T08:30:35.896539+09:00",
+  "search_days": 14,
+  "model": "claude-opus-5-5",
+  "source": "user_opened_tab+claude_read",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "note": "本人が開いたタブ（内蔵ブラウザ）と、拒否されていない公式ページをAIがChromeで開いて読んだ結果。開き直し・再読み込みなし。",
+  "carried_over_from": "",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "神戸おでかけ特集クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.asoview.com/coupon/",
+      "official_url": "https://www.asoview.com/coupon/",
+      "official_domain_match": true,
+      "evidence": "ログインしていない画面のクーポン一覧に掲載。獲得にはログインが必要。開始日の記載なし。",
+      "observed_date": "2026-11-11",
+      "discount": "表示価格から3％OFF",
+      "period": "2026年11月19日まで有効",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/asoview/hints_2026-11-11_xtab083035.json"
+}

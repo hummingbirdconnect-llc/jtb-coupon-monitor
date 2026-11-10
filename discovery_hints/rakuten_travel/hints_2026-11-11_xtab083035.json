@@ -1,0 +1,60 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-11T08:30:35.896539+09:00",
+  "search_days": 14,
+  "model": "claude-opus-5-5",
+  "source": "user_opened_tab+claude_read",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "note": "本人が開いたタブ（内蔵ブラウザ）と、拒否されていない公式ページをAIがChromeで開いて読んだ結果。開き直し・再読み込みなし。",
+  "carried_over_from": "hints_2026-11-11_web080654.json",
+  "known_title_count": 17,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割みやざき割キャンペーン 楽パック1泊限定50％クーポン",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/special/kyushuouen/miyazaki/",
+      "official_url": "https://travel.rakuten.co.jp/special/kyushuouen/miyazaki/",
+      "official_domain_match": true,
+      "evidence": "ANA楽パック・JAL楽パックの宮崎県の対象施設。先着184枚。併用不可。11/11朝は上限未到達の表示。同ページの他3枚は上限到達。",
+      "observed_date": "2026-11-11",
+      "discount": "50％割引（先着184枚）",
+      "period": "予約：2026年11月9日10:00～12月25日23:59／旅程：11月10日出発～12月26日帰着",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "お得なクーポン祭",
+      "kind": "coupon",
+      "found_url": "https://x.com/5656_Leo/status/2120183864207557063",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/11/4 10:00〜2026/12/2 9:59 ／ 公式：全楽天会員500円OFF（全曜日）、先着利用300,000枚 ／ 公式：ダイヤモンド会員限定4,500円OFF（週末）・4,000円OFF（平日） ／ 公式：ダイヤモンド・プラチナ会員限定 3,000円・1,500円OFF（週末）、2,500円・1,000円OFF（平日） ／ 未確認：宿泊対象期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-11",
+      "discount": "全楽天会員500円OFF。ダイヤモンド会員限定 最大4,500円OFF（週末）・4,000円OFF（平日）。ダイヤモンド・プラチナ会員限定 1,000〜3,000円OFF",
+      "period": "予約：2026/11/4 10:00〜2026/12/2 9:59 ／ 旅行：未確認（Grok: 2026/11/4頃〜2027/10/31チェックアウト頃）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "5と0のつく日（ホテル・温泉宿最大20%OFF）",
+      "kind": "coupon",
+      "found_url": "https://x.com/5656_Leo/status/2120183864207557063",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定 ／ 公式：高級宿・温泉宿 10%OFF（先着200万枚・100万枚）、5%OFF（先着200万枚） ／ 公式：12月ご利用分は12月2日10時配布開始予定 ／ 未確認：今回の予約期間の具体日付 ／ 未確認：宿泊期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-11",
+      "discount": "高級宿・温泉宿で使える楽天トラベルクーポン10%OFF（2種）・5%OFF。ページ題名は最大20%OFF",
+      "period": "予約：毎月5と0のつく日から48時間限定（今回の具体日付は未確認）。12月利用分は12/2 10時配布開始予定 ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-11_xtab083035.json"
+}

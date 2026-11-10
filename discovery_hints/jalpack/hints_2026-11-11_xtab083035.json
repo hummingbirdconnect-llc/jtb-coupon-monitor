@@ -1,0 +1,34 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-11-11T08:30:35.896539+09:00",
+  "search_days": 14,
+  "model": "claude-opus-5-5",
+  "source": "user_opened_tab+claude_read",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "note": "本人が開いたタブ（内蔵ブラウザ）と、拒否されていない公式ページをAIがChromeで開いて読んだ結果。開き直し・再読み込みなし。",
+  "carried_over_from": "",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [
+    {
+      "title": "あいちウィーク限定 JAL国内クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jal.co.jp/jp/ja/domtour/aichiweek/",
+      "official_url": "https://www.jal.co.jp/jp/ja/domtour/aichiweek/",
+      "official_domain_match": true,
+      "evidence": "名古屋（中部・小牧）発のJALグループ便を使う国内ツアー。旅行代金総額40,000円以上。先着500名。当ページからの予約のみ。",
+      "observed_date": "2026-11-11",
+      "discount": "1人5,000円引き",
+      "period": "申込：2026年8月3日～11月26日23:57／出発：2026年11月21日～11月27日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jalpack/hints_2026-11-11_xtab083035.json"
+}
