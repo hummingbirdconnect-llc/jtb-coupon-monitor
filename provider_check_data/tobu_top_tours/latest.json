@@ -2,9 +2,9 @@
   "provider_id": "tobu_top_tours",
   "provider_label": "東武トップツアーズ",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-10T07:20:32.896524+09:00",
-  "completed_at": "2026-11-10T07:20:35.333207+09:00",
-  "official_fetched_at": "2026-11-10T07:20:35.333212+09:00",
+  "started_at": "2026-11-11T07:20:20.998162+09:00",
+  "completed_at": "2026-11-11T07:20:23.511876+09:00",
+  "official_fetched_at": "2026-11-11T07:20:23.511882+09:00",
   "source_results": [
     {
       "url": "https://tobutoptours.jp/members_new/coupon/",
@@ -17,8 +17,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2786,
-      "content_hash": "b7d810b1c4243f30ac691319e0a52de27e94ed169ac25964f48a08e13afb6cdb"
+      "text_chars": 3186,
+      "content_hash": "b3ad99a3f2bbd09f22030f2200931fc9d3ec790fa998f04d8fb3fe550acb457c"
     },
     {
       "url": "https://tobutoptours.jp/special/",
@@ -31,8 +31,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2241,
-      "content_hash": "552a1a9d8f8eb397b56ad6c0acae46874aeaf9198db7f87f57b4f8b1c61ef7b1"
+      "text_chars": 2242,
+      "content_hash": "541ee505d8c77bfff7794f590f321efea9a1c6389f40e57c067a29303c13fddd"
     }
   ],
   "failed_source_count": 0,
@@ -48,12 +48,12 @@
   "wp_review_eligible": false,
   "status": "audit_pending",
   "change_kind": "update",
-  "content_hash": "334760af5799c690ee7baaf1d3f463613b4ad5872d41899536c1ba941ae4e901",
+  "content_hash": "4c0bb736ff1566771d4b2878f35b2bd780238d278f97370f36e374f7fc2a9c6c",
   "data_date": "2026-11-07",
   "latest_file": "coupons_2026-11-07.json",
   "coupon_count": 8,
-  "audit_candidate_id": "tobu_top_tours-334760af5799c690",
-  "audit_candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-334760af5799c690.json",
+  "audit_candidate_id": "tobu_top_tours-4c0bb736ff156677",
+  "audit_candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-4c0bb736ff156677.json",
   "error": "",
   "freshness_status": "stale"
 }

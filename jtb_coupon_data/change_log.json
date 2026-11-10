@@ -1,41 +1,5 @@
 [
   {
-    "date": "2026-08-12",
-    "type": "🔴 配布終了",
-    "id": "2605douou",
-    "category": "国内",
-    "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-12",
-    "type": "🔴 配布終了",
-    "id": "2605hokka",
-    "category": "国内",
-    "title": "【札幌・函館・小樽・帯広・ルスツ方面】北海道オススメホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-12",
-    "type": "🟢 配布再開",
-    "id": "2606tohoku",
-    "category": "国内",
-    "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布中"
-  },
-  {
-    "date": "2026-08-12",
-    "type": "🟢 配布再開",
-    "id": "2607okinawa",
-    "category": "国内",
-    "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
-    "discount": "最大15,000円引",
-    "stock_status": "配布中"
-  },
-  {
     "date": "2026-08-13",
     "type": "🆕 新規",
     "id": "2608jtbtsdccns08",
@@ -7459,5 +7423,50 @@
     "title": "九州ふっこう応援割 ながさきキャンペーン",
     "discount": "最大50％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "🆕 新規",
+    "id": "2611fukushima",
+    "category": "国内",
+    "title": "福島県おすすめ【今食べたい口福旅！海の福・山の福】プランで使える割引クーポン",
+    "discount": "最大15,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "🟢 配布再開",
+    "id": "2607jalhp",
+    "category": "国内",
+    "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
+    "discount": "最大12,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "🟢 配布再開",
+    "id": "2609goton",
+    "category": "国内",
+    "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
+    "discount": "最大30％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "🟢 配布再開",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "🟢 配布再開",
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
   }
 ]

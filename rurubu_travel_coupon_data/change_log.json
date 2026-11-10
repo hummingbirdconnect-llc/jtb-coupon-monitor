@@ -1,29 +1,5 @@
 [
   {
-    "date": "2026-09-10",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-xkgsmr26ap20-ac6fc9c22e",
-    "title": "南の宝箱 鹿児島 夏のかごしま宿泊割キャンペーン（離島）（おとな・こどもひとり1泊あたり最大8,000円引き）",
-    "discount": "最大20%引き"
-  },
-  {
-    "date": "2026-09-10",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-ygwr26may50-ygwr26may30-ygwr26may10-650589db8a",
-    "title": "神奈川県 ゆがわら満喫クーポン",
-    "discount": "最大¥5,000引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "new",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-autk26sep20-c54e3363a5",
-    "title": "ホテル近鉄ユニバーサル・シティで使える秋冬旅割引クーポン",
-    "discount": "最大¥2,000引き"
-  },
-  {
     "date": "2026-09-11",
     "type": "new",
     "category": "複数エリア対象クーポン",
@@ -3997,6 +3973,30 @@
     "category": "施設限定クーポン",
     "id": "rurubu_travel-jzk26nov15-jzk26nov10-5c110c8f1a",
     "title": "北海道 定山渓温泉 定山渓ビューホテルで使えるクーポン（旅行代金25,000円以上で10％引き・最大割引額4,000円、旅行代金60,000円以上で15％引き・最大割引額10,000円）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26tenyu60-e3230cf40c",
+    "title": "神奈川県 小涌谷温泉 箱根小涌園 天悠で使えるクーポン",
+    "discount": "最大¥6,000引き"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26view15-c96b75e79a",
+    "title": "東京都 浅草ビューホテルで使えるクーポン（最大10,000円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "new",
+    "category": "施設限定クーポン",
+    "id": "rurubu_travel-sehr26nov15-aa7b2ab945",
+    "title": "愛知県 西浦温泉 天空海遊の宿 末広で使えるクーポン（最大6,000円引き）",
     "discount": "最大15%引き"
   }
 ]

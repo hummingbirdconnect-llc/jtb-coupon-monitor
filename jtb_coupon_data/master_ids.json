@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-10T07:19:23.164222+09:00",
+  "last_updated": "2026-11-11T07:19:02.502685+09:00",
   "ids": {
     "2608jtbcpnew": {
       "category": "国内",
@@ -34,7 +34,7 @@
       "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
       "discount": "最大12,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2610airhayawari": {
       "category": "国内",
@@ -127,12 +127,19 @@
       "area": "岩手県",
       "stock_status": "配布中"
     },
+    "2611fukushima": {
+      "category": "国内",
+      "title": "福島県おすすめ【今食べたい口福旅！海の福・山の福】プランで使える割引クーポン",
+      "discount": "最大15,000円引",
+      "area": "福島県",
+      "stock_status": "配布中"
+    },
     "2609goton": {
       "category": "国内",
       "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
       "discount": "最大30％引",
       "area": "新潟県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2610niigata": {
       "category": "国内",
@@ -321,7 +328,7 @@
       "title": "九州ふっこう応援割 ふくおかキャンペーン",
       "discount": "最大50％引",
       "area": "福岡県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609kyushusaga": {
       "category": "国内",
@@ -349,7 +356,7 @@
       "title": "熊本ふっこう応援割",
       "discount": "最大60％引",
       "area": "熊本県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609kyucp": {
       "category": "国内",
