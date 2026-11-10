@@ -1,0 +1,39 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-11T08:16:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2120232778398900719",
+      "official_url": "",
+      "evidence": "未確認：公式ページ未読（Grokが公式URLを示さず、登録済みURLにも該当なし） ／ 未確認：割引率・上限 ／ 未確認：予約期間 ／ 未確認：宿泊期間 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：決済方法",
+      "observed_date": "2026-11-11",
+      "discount": "未確認（Grok: 宿泊料金の最大50%OFF、熊本・鹿児島は最大60%OFF。1人あたり上限約20,000円）",
+      "period": "予約：未確認（Grok: 県・期により異なる。長崎・宮崎の第2期は11月上旬開始） ／ 旅行：未確認（Grok: おおむね2026/10/1以降〜12月下旬チェックアウト）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": false
+    },
+    {
+      "title": "じゃらんレンタカー各種クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/rentacar/coupons/",
+      "official_url": "https://www.jalan.net/rentacar/coupons/",
+      "evidence": "公式：全53件、最大10,680円分（バジェット・レンタカー本州域、53,400円以上） ／ 公式：獲得・予約対象期間はカテゴリーごとに2026/11/11〜11/20まで ／ 公式：返却対象期間は2027/2/28〜5/31まで ／ 公式：額面ごとに最低利用額と先着数あり ／ 未確認：決済方法の条件",
+      "observed_date": "2026-11-11",
+      "discount": "700円分〜10,680円分（8カテゴリー・全53件。最大はバジェット本州域10,680円分）",
+      "period": "予約：2026/10/28〜2026/11/20（カテゴリーで違う。駅レンタカー北海道・ABC沖縄は11/11まで、じゃらん限定は11/15まで、バジェットは11/18まで、ステージ限定・スペシャルは11/20まで） ／ 旅行：返却 2026/10/28〜2027/05/31（カテゴリーで違う）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
