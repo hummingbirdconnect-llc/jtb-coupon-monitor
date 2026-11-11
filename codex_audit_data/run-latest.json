@@ -1,61 +1,233 @@
 {
-  "completed_at": "2026-11-07T09:10:32.334564+09:00",
+  "completed_at": "2026-11-11T09:02:07.429440+09:00",
   "dry_run": false,
   "selection_mode": "latest_per_provider",
   "audit_count": 2,
-  "waiting_count": 0,
+  "waiting_count": 18,
   "validation_error_count": 0,
   "wp_review_eligible_provider_ids": [],
   "eligible_candidates": [],
   "audits": [
     {
-      "candidate_id": "jalan-14ef57d588a9e7d0",
-      "provider_id": "jalan",
-      "provider_label": "じゃらん",
+      "candidate_id": "asoview-b6a303bdcde9e0e6",
+      "provider_id": "asoview",
+      "provider_label": "アソビュー",
       "change_kind": "update",
-      "recommendation": "draft",
+      "recommendation": "hold",
       "priority": 70,
-      "change_summary": "レンタカーはバジェット・レンタカー北海道クーポンが新規、ニッポンレンタカー各クーポンは本文から消えた（終了と決めつけず要確認のまま）。クーポンフェスの掲載期間が更新、大江戸温泉物語は配布終了を確認。",
+      "change_summary": "候補内の前回データと比べ、神戸おでかけ特集クーポンの3%OFF表示が増えている。前回の一部項目は今回の本文に無いが、終了を裏付ける記載は無い。利用条件が不足するため更新件数は確定しない。",
       "validation_errors": [],
-      "high_confidence": true,
+      "high_confidence": false,
       "wp_review_eligible": false,
-      "status": "processed",
-      "semantic_changed": true,
-      "data_date": "2026-11-07",
-      "latest_file": "coupons_2026-11-07.json",
-      "coupon_count": 13,
-      "retained_missing_ids": [
-        "jalan-6ed358b049c03acc",
-        "jalan-941247c9ac6f2b68",
-        "jalan-0b5241f31c167844",
-        "jalan-d464dfcb6dae0082",
-        "jalan-4cdad71d00e76f94",
-        "jalan-d2f2b202481a9708"
-      ],
-      "wp_block_reason": "前回データから消えた項目を要確認で保持"
+      "status": "held",
+      "hold_reasons": [
+        "クーポン獲得はログイン必須。候補には一覧本文のみがあり、ログイン後の適用条件・対象プラン・利用可否を検証できない。",
+        "有効期限は11/19、11/30、12/31、3/31、6/30など月日表示のみ。対象年を補完せず、現在有効な期間として確定しない。",
+        "個別の対象施設・チケット・利用条件が一覧本文だけでは揃わない。公開された表示を全件の利用可能クーポン数として数えない。"
+      ]
     },
     {
-      "candidate_id": "tobu_top_tours-c434da7108b9441a",
+      "candidate_id": "tobu_top_tours-4c0bb736ff156677",
       "provider_id": "tobu_top_tours",
       "provider_label": "東武トップツアーズ",
       "change_kind": "update",
-      "recommendation": "draft",
-      "priority": 70,
-      "change_summary": "前回掲載分のうちクーポン5件は内容変更なし。ブラックフライデーセールが年つき期間で再確認でき確定。九州ふっこう応援割・鬼怒川5,000円引きクーポンは今回の本文に無く、終了とは判断せず要確認のまま。",
+      "recommendation": "hold",
+      "priority": 80,
+      "change_summary": "候補内の前回データに対し、NIKKO MaaSの名称・期間表示が変わり、11月11日開始の条件も見られる。九州ふっこう応援割が今回本文にあり、ブラックフライデーの紹介は見当たらない。特集一覧の掲載順やページ切替の影響を排除できず、消えた紹介を終了扱いにしない。",
       "validation_errors": [],
-      "high_confidence": true,
+      "high_confidence": false,
       "wp_review_eligible": false,
-      "status": "processed",
-      "semantic_changed": true,
-      "data_date": "2026-11-07",
-      "latest_file": "coupons_2026-11-07.json",
-      "coupon_count": 8,
-      "retained_missing_ids": [
-        "tobu_top_tours-d36f57fa533f6028",
-        "tobu_top_tours-acff3f8afb0846f6"
-      ],
-      "wp_block_reason": "前回データから消えた項目を要確認で保持"
+      "status": "held",
+      "hold_reasons": [
+        "会員向けクーポンページの保存本文に個別の割引額が無い。過去の別名称クーポンの5,000円引き等を現在の項目へ転用できない。",
+        "利用条件はマイページのクーポン一覧で確認する案内で、ログイン後の取得可否・対象条件・残数に依存する。公開本文だけで現在利用可能と確定しない。",
+        "NIKKO MaaSの条件は同一見出し下に複数あり、利用上限110枚・52枚・30枚の表示を個別クーポンの区別や割引額と結び付ける根拠が不足している。",
+        "一部の期間末日に年の記載が無い。対象年を推定して日付欄を埋めない。",
+        "特集一覧は1から26までのページ案内があるが、候補の保存本文は一部のみ。全件の掲載状況や前回項目の終了を確認できない。",
+        "九州ふっこう応援割は最大60%OFF・1旅行1人あたり最大2万円の紹介にとどまり、対象期間・対象県の実施状況・適用条件が候補内で揃わない。"
+      ]
     }
   ],
-  "waiting_candidates": []
+  "waiting_candidates": [
+    {
+      "candidate_id": "activityjapan-28690d768520beca",
+      "provider_id": "activityjapan",
+      "provider_label": "アクティビティジャパン",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:08:26.715343+09:00",
+      "candidate_path": "codex_audit_queue/activityjapan/activityjapan-28690d768520beca.json",
+      "result_path": "codex_audit_results/activityjapan/activityjapan-28690d768520beca.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "airtrip-f667da4884988596",
+      "provider_id": "airtrip",
+      "provider_label": "エアトリ",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:08:37.985529+09:00",
+      "candidate_path": "codex_audit_queue/airtrip/airtrip-f667da4884988596.json",
+      "result_path": "codex_audit_results/airtrip/airtrip-f667da4884988596.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "club_tourism-a8e938142a8a82f3",
+      "provider_id": "club_tourism",
+      "provider_label": "クラブツーリズム",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:08:22.792475+09:00",
+      "candidate_path": "codex_audit_queue/club_tourism/club_tourism-a8e938142a8a82f3.json",
+      "result_path": "codex_audit_results/club_tourism/club_tourism-a8e938142a8a82f3.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "expedia-18f1fd4209334650",
+      "provider_id": "expedia",
+      "provider_label": "Expedia",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:06:28.723595+09:00",
+      "candidate_path": "codex_audit_queue/expedia/expedia-18f1fd4209334650.json",
+      "result_path": "codex_audit_results/expedia/expedia-18f1fd4209334650.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "hotels-8e47e405b8fc6ead",
+      "provider_id": "hotels",
+      "provider_label": "Hotels.com",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:08:05.720089+09:00",
+      "candidate_path": "codex_audit_queue/hotels/hotels-8e47e405b8fc6ead.json",
+      "result_path": "codex_audit_results/hotels/hotels-8e47e405b8fc6ead.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "jalan_activity-3196d132a9967cea",
+      "provider_id": "jalan_activity",
+      "provider_label": "じゃらん遊び体験",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:04:26.264668+09:00",
+      "candidate_path": "codex_audit_queue/jalan_activity/jalan_activity-3196d132a9967cea.json",
+      "result_path": "codex_audit_results/jalan_activity/jalan_activity-3196d132a9967cea.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "jalan_pack-1bb0a0765986ee65",
+      "provider_id": "jalan_pack",
+      "provider_label": "じゃらんパック",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:09:15.505621+09:00",
+      "candidate_path": "codex_audit_queue/jalan_pack/jalan_pack-1bb0a0765986ee65.json",
+      "result_path": "codex_audit_results/jalan_pack/jalan_pack-1bb0a0765986ee65.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "jalan_rentacar-573412f7497c243e",
+      "provider_id": "jalan_rentacar",
+      "provider_label": "じゃらんレンタカー",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:08:40.223624+09:00",
+      "candidate_path": "codex_audit_queue/jalan_rentacar/jalan_rentacar-573412f7497c243e.json",
+      "result_path": "codex_audit_results/jalan_rentacar/jalan_rentacar-573412f7497c243e.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "jr_tokai_tours-bba80e8635052f1e",
+      "provider_id": "jr_tokai_tours",
+      "provider_label": "JR東海ツアーズ",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:08:32.980069+09:00",
+      "candidate_path": "codex_audit_queue/jr_tokai_tours/jr_tokai_tours-bba80e8635052f1e.json",
+      "result_path": "codex_audit_results/jr_tokai_tours/jr_tokai_tours-bba80e8635052f1e.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "jtrip-2762bcb9aeb8b993",
+      "provider_id": "jtrip",
+      "provider_label": "ジェイトリップ",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:09:26.086091+09:00",
+      "candidate_path": "codex_audit_queue/jtrip/jtrip-2762bcb9aeb8b993.json",
+      "result_path": "codex_audit_results/jtrip/jtrip-2762bcb9aeb8b993.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "newt-d42754ad5af43344",
+      "provider_id": "newt",
+      "provider_label": "NEWT",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:08:37.122100+09:00",
+      "candidate_path": "codex_audit_queue/newt/newt-d42754ad5af43344.json",
+      "result_path": "codex_audit_results/newt/newt-d42754ad5af43344.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "nippon_travel-30ae87f274c04f18",
+      "provider_id": "nippon_travel",
+      "provider_label": "日本旅行",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:09:12.589018+09:00",
+      "candidate_path": "codex_audit_queue/nippon_travel/nippon_travel-30ae87f274c04f18.json",
+      "result_path": "codex_audit_results/nippon_travel/nippon_travel-30ae87f274c04f18.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "orion_tour-aa513d94d2e87f13",
+      "provider_id": "orion_tour",
+      "provider_label": "オリオンツアー",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:09:16.518665+09:00",
+      "candidate_path": "codex_audit_queue/orion_tour/orion_tour-aa513d94d2e87f13.json",
+      "result_path": "codex_audit_results/orion_tour/orion_tour-aa513d94d2e87f13.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "relux-56a3200361984103",
+      "provider_id": "relux",
+      "provider_label": "Relux",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:08:12.806753+09:00",
+      "candidate_path": "codex_audit_queue/relux/relux-56a3200361984103.json",
+      "result_path": "codex_audit_results/relux/relux-56a3200361984103.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "skyscanner-9a115f33ace361c8",
+      "provider_id": "skyscanner",
+      "provider_label": "スカイスキャナー",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:04:42.371293+09:00",
+      "candidate_path": "codex_audit_queue/skyscanner/skyscanner-9a115f33ace361c8.json",
+      "result_path": "codex_audit_results/skyscanner/skyscanner-9a115f33ace361c8.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "tabirai_rentacar-8aa429a9744621bb",
+      "provider_id": "tabirai_rentacar",
+      "provider_label": "たびらいレンタカー",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:09:12.046027+09:00",
+      "candidate_path": "codex_audit_queue/tabirai_rentacar/tabirai_rentacar-8aa429a9744621bb.json",
+      "result_path": "codex_audit_results/tabirai_rentacar/tabirai_rentacar-8aa429a9744621bb.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "toku-b0410a1b34cd30ae",
+      "provider_id": "toku",
+      "provider_label": "トクー",
+      "change_kind": "update",
+      "fetched_at": "2026-11-09T09:08:36.351261+09:00",
+      "candidate_path": "codex_audit_queue/toku/toku-b0410a1b34cd30ae.json",
+      "result_path": "codex_audit_results/toku/toku-b0410a1b34cd30ae.json",
+      "result_status": "needs_codex_audit"
+    },
+    {
+      "candidate_id": "yumeyado-602fdfa98af3c110",
+      "provider_id": "yumeyado",
+      "provider_label": "ゆめやど",
+      "change_kind": "baseline",
+      "fetched_at": "2026-11-09T09:04:41.944524+09:00",
+      "candidate_path": "codex_audit_queue/yumeyado/yumeyado-602fdfa98af3c110.json",
+      "result_path": "codex_audit_results/yumeyado/yumeyado-602fdfa98af3c110.json",
+      "result_status": "needs_codex_audit"
+    }
+  ]
 }

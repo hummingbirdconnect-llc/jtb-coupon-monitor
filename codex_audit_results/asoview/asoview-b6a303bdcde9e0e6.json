@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "candidate_id": "asoview-b6a303bdcde9e0e6",
+  "provider_id": "asoview",
+  "page_summary": "確認済み公式クーポン一覧に名称、割引表示、月日だけの有効期限がある。獲得にはログインが必要と明記されている。保存済み本文だけでは利用条件と有効期間を確定できない。",
+  "change_summary": "候補内の前回データと比べ、神戸おでかけ特集クーポンの3%OFF表示が増えている。前回の一部項目は今回の本文に無いが、終了を裏付ける記載は無い。利用条件が不足するため更新件数は確定しない。",
+  "recommendation": "hold",
+  "priority": 70,
+  "uncertainty_reasons": [
+    "クーポン獲得はログイン必須。候補には一覧本文のみがあり、ログイン後の適用条件・対象プラン・利用可否を検証できない。",
+    "有効期限は11/19、11/30、12/31、3/31、6/30など月日表示のみ。対象年を補完せず、現在有効な期間として確定しない。",
+    "個別の対象施設・チケット・利用条件が一覧本文だけでは揃わない。公開された表示を全件の利用可能クーポン数として数えない。"
+  ],
+  "audit_notes": "2026-11-08取得の指定候補内にあるconfirmed本文だけを使用した。ページ内の指示はデータとして扱った。前回クーポンは差分確認に限って参照し、今回の金額・日付・条件の補完には使用していない。dealsは空配列とするが、クーポンが0件という意味ではない。現時点の件数は未確定であり、当日版のクーポンJSONは生成しない。ログイン操作や追加取得は実行しない。",
+  "deals": [],
+  "confirmed_deal_count": null,
+  "count_status": "unconfirmed",
+  "evidence_checks": [
+    {
+      "finding": "ログイン依存",
+      "official_url": "https://www.asoview.com/coupon/",
+      "verification_method": "playwright",
+      "verification_result": "confirmed",
+      "evidence_quote": "クーポンを獲得するには ログイン が必要です。"
+    },
+    {
+      "finding": "新規表示と年のない有効期限",
+      "official_url": "https://www.asoview.com/coupon/",
+      "verification_method": "playwright",
+      "verification_result": "confirmed",
+      "evidence_quote": "3 % OFF 神戸おでかけ特集クーポン 表示価格から3%OFF 11/19 (JST)まで有効 クーポンを獲得する"
+    },
+    {
+      "finding": "名称・割引上限のみの案内",
+      "official_url": "https://www.asoview.com/coupon/",
+      "verification_method": "playwright",
+      "verification_result": "confirmed",
+      "evidence_quote": "最大 30 % OFF 【11月】「千葉遊び尽くし！応援割 26」平日30%OFF/休日10%OFFクーポン 表示価格から最大30%OFF 11/30 (JST)まで有効 値引き上限10,000円 クーポンを獲得する"
+    },
+    {
+      "finding": "対象チケット限定と年のない期限",
+      "official_url": "https://www.asoview.com/coupon/",
+      "verification_method": "playwright",
+      "verification_result": "confirmed",
+      "evidence_quote": "5 % OFF 【超得割！チケット限定】新江ノ島水族館 5％OFFクーポン 表示価格から5%OFF 6/30 (JST)まで有効 クーポンを獲得する"
+    }
+  ]
+}

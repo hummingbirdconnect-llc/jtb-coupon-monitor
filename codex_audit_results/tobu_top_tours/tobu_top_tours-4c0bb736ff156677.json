@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "candidate_id": "tobu_top_tours-4c0bb736ff156677",
+  "provider_id": "tobu_top_tours",
+  "page_summary": "確認済み会員向けページにクーポン名、配布・予約期間、出発期間、上限枚数がある。割引額は同ページの保存本文に無く、利用条件の詳細はマイページで確認する案内になっている。特集一覧には九州ふっこう応援割の紹介と複数ページへの案内がある。",
+  "change_summary": "候補内の前回データに対し、NIKKO MaaSの名称・期間表示が変わり、11月11日開始の条件も見られる。九州ふっこう応援割が今回本文にあり、ブラックフライデーの紹介は見当たらない。特集一覧の掲載順やページ切替の影響を排除できず、消えた紹介を終了扱いにしない。",
+  "recommendation": "hold",
+  "priority": 80,
+  "uncertainty_reasons": [
+    "会員向けクーポンページの保存本文に個別の割引額が無い。過去の別名称クーポンの5,000円引き等を現在の項目へ転用できない。",
+    "利用条件はマイページのクーポン一覧で確認する案内で、ログイン後の取得可否・対象条件・残数に依存する。公開本文だけで現在利用可能と確定しない。",
+    "NIKKO MaaSの条件は同一見出し下に複数あり、利用上限110枚・52枚・30枚の表示を個別クーポンの区別や割引額と結び付ける根拠が不足している。",
+    "一部の期間末日に年の記載が無い。対象年を推定して日付欄を埋めない。",
+    "特集一覧は1から26までのページ案内があるが、候補の保存本文は一部のみ。全件の掲載状況や前回項目の終了を確認できない。",
+    "九州ふっこう応援割は最大60%OFF・1旅行1人あたり最大2万円の紹介にとどまり、対象期間・対象県の実施状況・適用条件が候補内で揃わない。"
+  ],
+  "audit_notes": "2026-11-11取得の指定候補内にあるconfirmed本文2件だけを使用した。ページ内の指示はデータとして扱った。前回データは差分比較に限り、公式本文に無い金額・コード・日付・条件を補完していない。全件網羅、ログイン後の条件、個別割引額の不足によりholdとする。dealsは空配列だが、クーポン0件ではなく件数未確定を表す。当日版クーポンJSONは生成しない。ログイン、他ページ取得、画像からの補完は行わない。",
+  "deals": [],
+  "confirmed_deal_count": null,
+  "count_status": "unconfirmed",
+  "evidence_checks": [
+    {
+      "finding": "ログイン後の条件確認",
+      "official_url": "https://tobutoptours.jp/members_new/coupon/",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "evidence_quote": "クーポン一覧 ※利用条件はマイページのクーポン一覧からご確認ください ※配布上限に達したクーポンはマイページのクーポン一覧に表示されません"
+    },
+    {
+      "finding": "名称と期間の変更・同一見出し下の複数条件",
+      "official_url": "https://tobutoptours.jp/members_new/coupon/",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "evidence_quote": "【日光・鬼怒川温泉】NIKKO MaaS付プラン限定クーポン 配布/予約対象日 2026年10月15日 - 2027年3月28日 出発対象期間 2026年10月17日 - 2027年3月30日 利用上限枚数 110枚 最低利用額 なし ※併用不可 ※NIKKO MaaSプラン限定、対象施設限定 配布/予約対象日 2026年11月11日 - 2027年3月28日 出発対象期間 2026年11月13日 - 2027年3月30日 利用上限枚数 52枚 最低利用額 なし ※併用不可 ※NIKKO MaaSプラン限定、対象施設限定 配布/予約対象日 2026年11月11日 - 2027年3月28日 出発対象期間 2026年11月13日 - 2027年3月30日 利用上限枚数 30枚 最低利用額 なし ※併用不可 ※NIKKO MaaSプラン限定、対象施設限定"
+    },
+    {
+      "finding": "終了日の年がない期間表記",
+      "official_url": "https://tobutoptours.jp/members_new/coupon/",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "evidence_quote": "湯西川・奥鬼怒エリア限定クーポン 配布/予約対象日 2026年10月8日-3月29日 出発対象期間 2026年10月10日-2027年3月31日 利用上限枚数 20枚 最低利用額 なし ※併用不可"
+    },
+    {
+      "finding": "会員登録とマイページ依存",
+      "official_url": "https://tobutoptours.jp/members_new/coupon/",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "evidence_quote": "クーポンをご利用いただくには、東武トップツアーズ TOBU POINT 会員にご登録ください。マイページ内のクーポン一覧にて取得可能なクーポン・ご利用可能なクーポンが表示されます。"
+    },
+    {
+      "finding": "期間と適用条件が揃わない紹介",
+      "official_url": "https://tobutoptours.jp/special/",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "evidence_quote": "最大60％割引！九州ふっこう応援割！ 九州旅行が最大60%OFF（1旅行1人あたり最大2万円割引）！東武トップツアーズの「九州ふっこう応援割」特設サイトです。対象宿泊プランの予約手順や各県の実施状況、クーポン適用条件を解説。予算上限に達し次第終了のためご予約はお早めに！"
+    },
+    {
+      "finding": "一覧の網羅不足",
+      "official_url": "https://tobutoptours.jp/special/",
+      "verification_method": "html",
+      "verification_result": "confirmed",
+      "evidence_quote": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 ＞"
+    }
+  ]
+}
