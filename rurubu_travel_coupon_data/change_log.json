@@ -1,30 +1,6 @@
 [
   {
     "date": "2026-09-11",
-    "type": "new",
-    "category": "複数エリア対象クーポン",
-    "id": "rurubu_travel-autm26sep80-autm26sep50-autm26sep20-dfd29715d6",
-    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
-    "discount": "最大¥8,000引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-arim26jun15-b047d7c29e",
-    "title": "【暑さに負けるな！】兵庫県人気温泉地 有馬夏のクーポンキャンペーン（最大6,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-fukko26mr30-e46d3b0439",
-    "title": "【復幸旅！八丈島】7月宿泊割引クーポン（おとなひとり1泊あたり最大7,500円引き）",
-    "discount": "最大30%引き"
-  },
-  {
-    "date": "2026-09-11",
     "type": "gone",
     "category": "エリア限定クーポン",
     "id": "rurubu_travel-hodhk26jn10-739dc29483",
@@ -3973,6 +3949,30 @@
     "category": "施設限定クーポン",
     "id": "rurubu_travel-jzk26nov15-jzk26nov10-5c110c8f1a",
     "title": "北海道 定山渓温泉 定山渓ビューホテルで使えるクーポン（旅行代金25,000円以上で10％引き・最大割引額4,000円、旅行代金60,000円以上で15％引き・最大割引額10,000円）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26tenyu60-e3230cf40c",
+    "title": "神奈川県 小涌谷温泉 箱根小涌園 天悠で使えるクーポン",
+    "discount": "最大¥6,000引き"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26view15-c96b75e79a",
+    "title": "東京都 浅草ビューホテルで使えるクーポン（最大10,000円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-11",
+    "type": "new",
+    "category": "施設限定クーポン",
+    "id": "rurubu_travel-sehr26nov15-aa7b2ab945",
+    "title": "愛知県 西浦温泉 天空海遊の宿 末広で使えるクーポン（最大6,000円引き）",
     "discount": "最大15%引き"
   },
   {
