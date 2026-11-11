@@ -1,0 +1,17 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-11-12T07:37:55.013685+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式一覧が403。再取得せず",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jalpack/hints_2026-11-12.json"
+}
