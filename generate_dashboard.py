@@ -1003,6 +1003,8 @@ def build_provider_payload(
         "freshness_status": freshness,
         "freshness_label": freshness_label(freshness),
         "official_fetched_at": official_fetched_at,
+        # 公式ページの取得に最後に成功した日時（中身が変わらず data_date が動かない日も更新される）
+        "last_checked_at": official_state.get("last_checked_at") or check_status.get("last_checked_at", ""),
         "url_checked_at": url_checked_at,
         "ai_label": audit_label,
         "count_status": count_status,
@@ -1103,10 +1105,29 @@ def load_recent_snapshot_rows(
     return index
 
 
+def parse_jst_datetime(value: Any) -> datetime | None:
+    """ISO形式の日時を日本時間で返す。日付だけ・読めない値は None。"""
+    if not value or "T" not in str(value):
+        return None
+    try:
+        parsed = datetime.fromisoformat(str(value))
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=JST)
+    return parsed.astimezone(JST)
+
+
 def freshness_chip(provider: dict[str, Any], latest_date: Any) -> dict[str, Any]:
-    """常時監視の会社について、情報がいつ時点のものかを1行で表す。"""
+    """常時監視の会社について、情報がいつ時点のものかを1行で表す。
+
+    クーポン内容の基準日は data_date のまま。中身が変わらず data_date が古くても、
+    公式ページの取得に成功した日時（official_fetched_at → last_checked_at）が新しければ併記する。
+    併記は見せ方だけで、state（stale / fresh）の判定には使わない。
+    """
     data_date = parse_date_value(provider.get("data_date"))
-    fetched = provider.get("official_fetched_at") or provider.get("check_status", {}).get("completed_at", "")
+    checked = provider.get("official_fetched_at") or provider.get("last_checked_at") or ""
+    fetched = checked or provider.get("check_status", {}).get("completed_at", "")
     fetched_date = parse_date_value(fetched)
     pending = provider.get("pending_audit_count") or 0
     if data_date and latest_date and data_date >= latest_date:
@@ -1117,8 +1138,18 @@ def freshness_chip(provider: dict[str, Any], latest_date: Any) -> dict[str, Any]
     elif data_date:
         state = "stale"
         text = f"{data_date.month}/{data_date.day} の情報のまま"
+        checked_dt = parse_jst_datetime(checked)
+        checked_date = checked_dt.date() if checked_dt else parse_date_value(checked)
+        checked_label = ""
+        if checked_date and checked_date > data_date:
+            checked_label = f"{checked_date.month}/{checked_date.day}"
+            if checked_dt:
+                checked_label += f" {checked_dt.hour}:{checked_dt.minute:02d}"
         if fetched_date and fetched_date > data_date and pending:
-            text += f"（公式ページは取得済み・読み取り待ち {pending} 件）"
+            prefix = f"{checked_label} " if checked_label else ""
+            text += f"（{prefix}公式ページは取得済み・読み取り待ち {pending} 件）"
+        elif checked_label:
+            text += f"（{checked_label} チェック済み）"
     else:
         state, text = "unknown", "取得なし"
     return {"id": provider["id"], "label": provider["label"], "state": state, "text": text}
