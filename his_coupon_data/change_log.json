@@ -10306,5 +10306,135 @@
     "region_labels": [
       "首都圏版"
     ]
+  },
+  {
+    "date": "2026-11-12",
+    "type": "🆕 新規",
+    "id": "4ba3d6cdfee3-698ab4",
+    "category": "海外航空券+ホテル",
+    "title": "【オンライン予約限定】東北・新潟発 海外航空券+ホテルをご予約で1グループあたり最大15,000円引き",
+    "discount": "最大15,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "type": "🆕 新規",
+    "id": "792cd90ac264-02c718",
+    "category": "オーストラリア",
+    "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "type": "🆕 新規",
+    "id": "792cd90ac264-14d705",
+    "category": "オーストラリア",
+    "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "type": "🆕 新規",
+    "id": "9c1e71353fa1",
+    "category": "国内航空券＋ホテル",
+    "title": "【BLACK FRIDAY】間際の出発もお得！1グループ3,000円引き",
+    "discount": "3,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "type": "❌ 消失",
+    "id": "4ba3d6cdfee3-5f1161",
+    "category": "海外航空券+ホテル",
+    "title": "【オンライン予約限定】東北・新潟発 海外航空券+ホテルをご予約で1グループあたり最大15,000円引き",
+    "discount": "最大15,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "type": "❌ 消失",
+    "id": "4ba3d6cdfee3-dc651c",
+    "category": "海外航空券+ホテル",
+    "title": "【オンライン予約限定】東北・新潟発 海外航空券+ホテルをご予約で1グループあたり最大15,000円引き",
+    "discount": "最大15,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "type": "❌ 消失",
+    "id": "792cd90ac264-747c05",
+    "category": "オーストラリア",
+    "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
   }
 ]
