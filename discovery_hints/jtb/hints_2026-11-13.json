@@ -1,0 +1,32 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-13T07:37:48.656704+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 100,
+  "registered_url_count": 101,
+  "candidates": [
+    {
+      "title": "熊本ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://x.com/i/status/2121000152748159053",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
+      "official_domain_match": true,
+      "evidence": "熊本県の対象施設・会員限定。飛行機・JR利用2名2泊以上は60％引、上限60,000円。復活・残り1枚は公式で未確認。",
+      "observed_date": "2026-11-13",
+      "discount": "60％引（【飛行機・JR】2名・2泊以上：割引上限60,000円）",
+      "period": "予約対象期間・宿泊対象期間：2026/10/8(木) ～ 2026/12/25(金)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-13.json"
+}

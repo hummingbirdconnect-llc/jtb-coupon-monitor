@@ -1,0 +1,17 @@
+{
+  "provider_id": "his",
+  "provider_label": "HIS",
+  "generated_at": "2026-11-13T07:37:48.656704+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公式施策一覧・ブラックフライデー国内ページが403。拒否後の再取得なし。",
+  "known_title_count": 42,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/his/hints_2026-11-13.json"
+}

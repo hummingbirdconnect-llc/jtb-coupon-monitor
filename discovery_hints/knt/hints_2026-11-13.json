@@ -1,0 +1,17 @@
+{
+  "provider_id": "knt",
+  "provider_label": "近畿日本ツーリスト",
+  "generated_at": "2026-11-13T07:37:48.656704+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "登録済み大阪URLはタイムアウト。公式キャンペーン一覧は取得でき、既知・終了済みを除外。",
+  "known_title_count": 11,
+  "registered_url_count": 10,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/knt/hints_2026-11-13.json"
+}
