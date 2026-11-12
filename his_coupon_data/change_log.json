@@ -1,39 +1,5 @@
 [
   {
-    "date": "2026-08-14",
-    "type": "🆕 新規",
-    "id": "86a932fa496c",
-    "category": "国内航空券＋ホテル",
-    "title": "まもなく終了！スーパーサマーセールFINAL1グループ2,000円引き",
-    "discount": "2,000円引き",
-    "region_codes": [
-      "kanto",
-      "hokkaido",
-      "tohoku",
-      "koshinetsu",
-      "chubu",
-      "hokuriku",
-      "kansai",
-      "chugoku",
-      "shikoku",
-      "kyushu",
-      "okinawa"
-    ],
-    "region_labels": [
-      "首都圏版",
-      "北海道版",
-      "東北版",
-      "甲信越（新潟）版",
-      "中部版",
-      "北陸版",
-      "関西版",
-      "中国版",
-      "四国版",
-      "九州版",
-      "沖縄版"
-    ]
-  },
-  {
     "date": "2026-08-18",
     "type": "🆕 新規",
     "id": "07c5f73161f8-6cbe2b",
@@ -10425,6 +10391,368 @@
     "id": "792cd90ac264-747c05",
     "category": "オーストラリア",
     "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "🆕 新規",
+    "id": "792cd90ac264-747c05",
+    "category": "オーストラリア",
+    "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu",
+      "shikoku"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版",
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "🆕 新規",
+    "id": "d8281f860aaf-433829",
+    "category": "海外添乗員同行ツアー",
+    "title": "宮城県外在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "🆕 新規",
+    "id": "d8281f860aaf-e24a72",
+    "category": "海外添乗員同行ツアー",
+    "title": "宮城県外在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "1d54e4b285f1",
+    "category": "ハウステンボス行き航空券＋ホテル",
+    "title": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊で使える1グループ5,000円引き",
+    "discount": "5,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "353d3d8e86f8",
+    "category": "高速バス・夜行バス",
+    "title": "オンライン予約限定！学生旅行応援！25歳以下なら1名様につき6％引き",
+    "discount": "6%引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kanto"
+    ],
+    "region_labels": [
+      "首都圏版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-28a877",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chugoku"
+    ],
+    "region_labels": [
+      "中国版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-3bdbb0",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "chubu",
+      "hokuriku"
+    ],
+    "region_labels": [
+      "中部版",
+      "北陸版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-42f304",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-4f9c59",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-74b0a8",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "okinawa"
+    ],
+    "region_labels": [
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-857216",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "hokkaido"
+    ],
+    "region_labels": [
+      "北海道版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-b10f0d",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "kansai"
+    ],
+    "region_labels": [
+      "関西版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "48f07aa0c902-c91616",
+    "category": "国内ツアー・国内航空券＋ホテル",
+    "title": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
+    "discount": "最大5,000円引き",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "792cd90ac264-02c718",
+    "category": "オーストラリア",
+    "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "792cd90ac264-14d705",
+    "category": "オーストラリア",
+    "title": "東北・新潟在住者限定最大20,000円の交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "7a2a9d6d1586",
+    "category": "国内ホテル",
+    "title": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊で使える1グループ1,000円引き",
+    "discount": "1,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "af0e4e1e6c54",
+    "category": "ハウステンボス行きツアー",
+    "title": "【ハウステンボスキャンペーン】1グループ5,000円引き",
+    "discount": "5,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "type": "❌ 消失",
+    "id": "d8281f860aaf-897c1d",
+    "category": "海外添乗員同行ツアー",
+    "title": "宮城県外在住の方に10,000円交通費サポート",
     "discount": "",
     "region_codes": [
       "tohoku",
