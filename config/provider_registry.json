@@ -621,7 +621,7 @@
       "coverage_status": "official_on_demand",
       "data_dir": "official_coupon_data/yomiuri_travel",
       "article_paths": ["../vault_blog/ウェルトリップ/会社別/読売旅行/note/SC-01_クーポン・割引・キャンペーンまとめ.html"],
-      "note": "ツアー企画型でクーポンページが無い。トップページの告知を指定時に深掘りする。",
+      "note": "ツアー企画型。トップの告知に加え、九州ふっこう応援割と独自の九州応援割を指定時に深掘りする。独自応援割の対象出発は公式が「2027年12月26日～2027年3月22日」と書いており、同じページの「12/26～12/28」「1/4～3/22」と年が食い違う。監査では出発年を確定できるまで採用しない。",
       "source_type": "official_page_candidate",
       "legacy_data_dir": "manual_coupon_data/yomiuri_travel",
       "official_sources": [
@@ -629,6 +629,16 @@
           "url": "https://www.yomiuri-ryokou.co.jp/",
           "fetch_method": "playwright",
           "purpose": "トップページ（企画ツアー・キャンペーン告知）"
+        },
+        {
+          "url": "https://www.yomiuri-ryokou.co.jp/s/fair/josei/kyushu/",
+          "fetch_method": "auto",
+          "purpose": "九州ふっこう応援割（政府の旅行・宿泊割引）"
+        },
+        {
+          "url": "https://www.yomiuri-ryokou.co.jp/s/fair/sale/yts_kyushuouen/",
+          "fetch_method": "auto",
+          "purpose": "読売旅行の九州応援割（10%OFFクーポン）"
         }
       ],
       "official_domains": ["yomiuri-ryokou.co.jp"]
