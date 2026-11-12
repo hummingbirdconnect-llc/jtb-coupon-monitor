@@ -1,0 +1,39 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-13T08:16:44+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "九州ふっこう応援割（じゃらん経由）",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2120924809119044032",
+      "official_url": "",
+      "evidence": "未確認：じゃらんの公式ページを特定できず（登録済みのクーポンまとめに該当の文言なし） ／ 未確認：割引率・上限・予約期間・旅行期間・対象者・決済方法",
+      "observed_date": "2026-11-13",
+      "discount": "未確認（Grok: 最大50%OFF・熊本と鹿児島は最大60%、上限は宿泊のみ1人2万円・パック2泊以上3万円）",
+      "period": "予約：未確認（Grok: 県により異なる。予算上限で終了・復活あり） ／ 旅行：未確認（Grok: おおむね2026-10-01〜12-25チェックアウト、県差あり）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": false
+    },
+    {
+      "title": "ふるさとキャンペーン＆お得クーポン（ご当地クーポン）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/theme/furusato_coupon/",
+      "official_url": "https://www.jalan.net/theme/furusato_coupon/",
+      "evidence": "公式：ご当地特集ごとにクーポンを発行（例：長崎県五島市【最大1万円クーポン】、愛知県【最大4000円クーポン配布！】、栃木県【平日限定】クーポン×抽選応募） ／ 公式：他の旅行券との併用不可 ／ 公式：先着予約数に達すると獲得済みクーポンも使えなくなる ／ 公式：配布開始は配布日の10時頃予定 ／ 未確認：地域ごとの予約期間・宿泊期間・最低利用額・決済方法は各詳細ページで未確認",
+      "observed_date": "2026-11-13",
+      "discount": "地域ごとに異なる（公式の例：長崎県五島市 最大1万円、愛知県 最大4000円）",
+      "period": "予約：未確認（地域ごとの詳細ページ） ／ 旅行：未確認（地域ごとの詳細ページ）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

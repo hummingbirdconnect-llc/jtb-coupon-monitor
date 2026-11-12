@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-13T08:16:44+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "値引きクーポン満載！お得なクーポン祭",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/11/4（水）10:00～2026/12/2（水）09:59（毎月開催） ／ 公式：国内宿泊は全楽天会員様／ダイヤモンド会員様限定／ダイヤモンド・プラチナ会員様限定の枠 ／ 公式：全国のホテル・旅館が配布するオリジナル割引クーポンあり ／ 公式：クーポンには金額条件あり ／ 未確認：割引額 ／ 未確認：宿泊期間 ／ 未確認：最低利用額の具体額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-13",
+      "discount": "未確認（クーポンごとに異なる）",
+      "period": "予約：2026-11-04 10:00〜2026-12-02 09:59（公式） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "得旅キャンペーン 最大ポイント15倍（国内旅行）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "official_url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "evidence": "公式：エントリー・予約期間 2026年11月5日(木)10:00～2026年11月26日(木)9:59 ／ 公式：エントリー必須・対象ホテル限定、対象期間内にチェックイン日・チェックアウト日の両方が含まれる利用が対象 ／ 公式：11月・12月・1月の宿泊に適用 ／ 公式：2か月先の予約で15倍（通常1%＋キャンペーン14%、超先） ／ 公式：楽天モバイル契約者は早期予約がさらに+1倍（直前・超先は対象外） ／ 公式ページの早期の表記は「2026年11月30日(月)チェックイン～2026年1月31日(日)チェックアウト」で年が食い違う（表記のまま記録） ／ 未確認：最低利用額 ／ 未確認：決済方法 ／ 未確認：早期の対象期間の年表記の食い違い",
+      "observed_date": "2026-11-13",
+      "discount": "ポイント最大15倍（超先。通常1%＋キャンペーン14%）。楽天モバイル契約者は早期が+1倍（公式）",
+      "period": "予約：エントリー・予約 2026-11-05 10:00〜2026-11-26 09:59（公式） ／ 旅行：11月・12月・1月の宿泊（直前 11/5〜11/30、早期 11/30〜12/31、超先 12/31〜1/31 チェックイン〜チェックアウト）（公式）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
