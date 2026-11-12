@@ -11,6 +11,8 @@ from generate_dashboard import (
     annotate_change_log,
     apply_change_rules,
     change_kind,
+    format_coupon_row,
+    format_log_rows,
     load_registry,
     period_is_over,
     provider_change_rules,
@@ -29,6 +31,7 @@ class ChangeKindTest(unittest.TestCase):
         self.assertEqual(change_kind("ステータス変更 配布中→配布終了"), "ended")
         self.assertEqual(change_kind("🟢 配布再開"), "reopened")
         self.assertEqual(change_kind("ステータス変更 配布終了→配布中"), "reopened")
+        self.assertEqual(change_kind("status"), "status")
 
 
 class AnnotateChangeLogTest(unittest.TestCase):
@@ -52,10 +55,9 @@ class AnnotateChangeLogTest(unittest.TestCase):
 
 
 class ChangeRulesTest(unittest.TestCase):
-    """公式ページの掲載実績を優先し、配布終了・再開を主な変化に数えないこと。"""
+    """公式ページの掲載を正とし、配布終了・再開をイベントにしないこと（2026-11-13 オーナー決定）。"""
 
     JTB_RULES = {
-        "count_status_toggle_as_change": False,
         "new_requires_unseen_days": 7,
         "gone_requires_unlisted": True,
     }
@@ -79,44 +81,39 @@ class ChangeRulesTest(unittest.TestCase):
     def applied(self, rules: dict) -> list[dict]:
         return apply_change_rules(self.rows(), rules, self.LISTING)
 
-    def test_default_rules_keep_every_recorded_kind(self) -> None:
+    def test_default_rules_drop_stock_toggles_and_keep_new_and_gone(self) -> None:
         rows = self.applied(dict(DEFAULT_CHANGE_RULES))
         self.assertEqual(
-            [row["_kind"] for row in rows],
-            ["ended", "reopened", "new", "gone", "gone", "new"],
+            [(row["ID"], row["_kind"]) for row in rows],
+            [("stay", "new"), ("stay", "gone"), ("left", "gone"), ("fresh", "new")],
         )
         self.assertFalse(any(row["_minor"] for row in rows))
 
-    def test_status_toggle_is_kept_only_in_the_quiet_section(self) -> None:
-        ended, reopened = self.applied(self.JTB_RULES)[:2]
-        self.assertEqual((ended["_kind"], reopened["_kind"]), ("ended", "reopened"))
-        self.assertTrue(ended["_minor"])
-        self.assertTrue(reopened["_minor"])
+    def test_stock_end_and_reopen_are_never_events(self) -> None:
+        for rules in (dict(DEFAULT_CHANGE_RULES), self.JTB_RULES):
+            kinds = {row["_kind"] for row in self.applied(rules)}
+            self.assertFalse(kinds & {"ended", "reopened", "status"})
 
-    def test_new_on_a_coupon_already_in_recent_official_data_is_not_new(self) -> None:
-        row = self.applied(self.JTB_RULES)[2]
-        self.assertEqual(row["_kind"], "reopened")
-        self.assertEqual(row["_demoted_from"], "new")
-        self.assertTrue(row["_minor"])
+    def test_new_on_a_coupon_already_in_recent_official_data_is_dropped(self) -> None:
+        rows = self.applied(self.JTB_RULES)
+        self.assertNotIn(("stay", "new"), [(row["ID"], row["_kind"]) for row in rows])
 
-    def test_gone_while_still_listed_officially_is_not_gone(self) -> None:
-        row = self.applied(self.JTB_RULES)[3]
-        self.assertEqual(row["_kind"], "ended")
-        self.assertEqual(row["_demoted_from"], "gone")
-        self.assertTrue(row["_minor"])
+    def test_gone_while_still_listed_officially_is_not_an_end_event(self) -> None:
+        rows = self.applied(self.JTB_RULES)
+        self.assertNotIn(("stay", "gone"), [(row["ID"], row["_kind"]) for row in rows])
 
-    def test_real_new_and_real_gone_stay_as_main_changes(self) -> None:
-        left_gone, fresh_new = self.applied(self.JTB_RULES)[4:]
-        self.assertEqual((left_gone["_kind"], fresh_new["_kind"]), ("gone", "new"))
-        self.assertFalse(left_gone["_minor"])
-        self.assertFalse(fresh_new["_minor"])
-        self.assertNotIn("_demoted_from", left_gone)
-        self.assertNotIn("_demoted_from", fresh_new)
+    def test_only_removal_from_official_page_and_first_appearance_remain(self) -> None:
+        rows = self.applied(self.JTB_RULES)
+        self.assertEqual(
+            [(row["ID"], row["_kind"]) for row in rows],
+            [("left", "gone"), ("fresh", "new")],
+        )
+        self.assertFalse(any(row["_minor"] for row in rows))
+        self.assertFalse(any("_demoted_from" in row for row in rows))
 
     def test_registry_enables_the_rule_for_jtb_only(self) -> None:
         registry = {provider["id"]: provider for provider in load_registry()}
         jtb = provider_change_rules(registry["jtb"])
-        self.assertFalse(jtb["count_status_toggle_as_change"])
         self.assertTrue(jtb["gone_requires_unlisted"])
         self.assertGreater(jtb["new_requires_unseen_days"], 0)
         others = [
@@ -130,6 +127,50 @@ class ChangeRulesTest(unittest.TestCase):
     def test_unknown_rule_names_are_ignored(self) -> None:
         rules = provider_change_rules({"change_rules": {"nonsense": True}})
         self.assertEqual(rules, DEFAULT_CHANGE_RULES)
+
+
+class ChangeLogStockToggleTest(unittest.TestCase):
+    """変更ログから、各社の書き方の配布終了・再開を取り除くこと。"""
+
+    def test_stock_toggles_of_every_provider_are_not_logged(self) -> None:
+        log = [
+            {"date": "2026-10-01", "type": "🆕 新規", "id": "a"},
+            {"date": "2026-10-02", "type": "🔴 配布終了", "id": "a"},
+            {"date": "2026-10-03", "type": "🟢 配布再開", "id": "a"},
+            {"date": "2026-10-03", "type": "ステータス変更 配布中→配布終了", "id": "b"},
+            {"date": "2026-10-04", "type": "ステータス変更 配布終了→配布中", "id": "b"},
+            {"date": "2026-10-04", "type": "status", "id": "c", "detail": "配布中 → 配布終了"},
+            {"date": "2026-10-05", "type": "❌ 消失", "id": "a"},
+        ]
+        rows = format_log_rows(log)
+        self.assertEqual([(row["ID"], row["_kind"]) for row in rows], [("a", "gone"), ("a", "new")])
+        gone = rows[0]
+        # 終了・再開は出入りの回数にも数えない
+        self.assertEqual(gone["_flaps"], 2)
+        self.assertFalse(gone["_came_back"])
+
+
+class SoldOutStillListedTest(unittest.TestCase):
+    """公式ページに載っている品切れクーポンは配布中のまま、残り枚数は属性で残すこと。"""
+
+    PROVIDER = {"id": "knt", "label": "テスト"}
+
+    def row(self, **coupon) -> dict:
+        return format_coupon_row({"id": "x", "title": "t", **coupon}, self.PROVIDER, "coupons")
+
+    def test_sold_out_coupon_stays_active_with_remaining_count(self) -> None:
+        row = self.row(stock_status="配布終了", stock_end_reason="品切れ", stock_remaining=0, stock_total=100)
+        self.assertEqual(row["配布状況"], "配布中")
+        self.assertEqual(row["残り枚数"], "0 / 100（品切れ）")
+
+    def test_booking_period_end_is_still_shown_as_ended(self) -> None:
+        row = self.row(stock_status="配布終了", stock_end_reason="予約受付の終了", stock_remaining=0, stock_total=100)
+        self.assertEqual(row["配布状況"], "配布終了")
+
+    def test_active_coupon_is_unchanged(self) -> None:
+        row = self.row(stock_status="配布中", stock_remaining=1, stock_total=100)
+        self.assertEqual(row["配布状況"], "配布中")
+        self.assertEqual(row["残り枚数"], "1 / 100")
 
 
 class CampaignPeriodTest(unittest.TestCase):

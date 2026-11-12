@@ -485,6 +485,10 @@ def format_coupon_row(
         status = "配布中"
     elif status in {"ended", "expired"}:
         status = "配布終了"
+    if status == "配布終了" and coupon.get("stock_end_reason") == "品切れ":
+        # 公式ページに載っている間は、残り枚数が0でも配布中として扱う（2026-11-13 オーナー決定）。
+        # 残り枚数は「残り枚数」の欄に属性として残す。
+        status = "配布中"
 
     source_type = first_value(coupon, ["source_type"]) or first_value(detail, ["source"]) or file_kind
     codes = normalize_codes(coupon.get("coupon_codes") or detail.get("coupon_codes"))
@@ -540,8 +544,6 @@ def format_coupon_row(
 
 # 会社ごとの「変化とみなす条件」。既定は今までどおり、記録された種別をそのまま使う。
 DEFAULT_CHANGE_RULES: dict[str, Any] = {
-    # 配布終了⇄配布再開を、その日の主な変化として数えるか
-    "count_status_toggle_as_change": True,
     # 新規として扱うために、公式ページの直近何日分に出ていないことを求めるか（0なら求めない）
     "new_requires_unseen_days": 0,
     # 消失として扱うために、公式ページから消えていることを求めるか
@@ -591,9 +593,9 @@ def apply_change_rules(
 ) -> list[dict[str, Any]]:
     """公式ページの掲載実績に照らして、変化の種別を会社ごとのルールで直す。
 
-    - 掲載が続いたままの配布終了・配布再開は、主な変化から外して在庫の出入りへ回す。
-    - 直近の公式データに出ていたIDの「新規」は、初登場ではないので在庫の出入りへ回す。
-    - 公式ページにまだ載っているIDの「消失」は、消えていないので在庫の出入りへ回す。
+    配布終了・配布再開（枚数切れと補充）は、変化として記録・報告しない（2026-11-13 オーナー決定）。
+    - 直近の公式データに出ていたIDの「新規」は、初登場ではない（再開にあたる）ので外す。
+    - 公式ページにまだ載っているIDの「消失」は、消えていないので外す。
     """
     unseen_days = int(rules.get("new_requires_unseen_days") or 0)
     adjusted = []
@@ -604,33 +606,34 @@ def apply_change_rules(
         coupon_id = str(row.get("ID", ""))
         days = listing_dates.get(coupon_id, [])
         event_date = str(row.get("日付", ""))
-        if kind in {"ended", "reopened"} and not rules.get("count_status_toggle_as_change", True):
-            row["_minor"] = True
+        if kind in STOCK_TOGGLE_KINDS:
+            continue
         if kind == "new" and unseen_days > 0:
             event_day = parse_date_value(event_date)
             window_start = (event_day - timedelta(days=unseen_days)).isoformat() if event_day else ""
             if any(window_start <= day < event_date for day in days):
-                row["_kind"] = "reopened"
-                row["_demoted_from"] = "new"
-                row["_minor"] = True
+                continue
         elif kind == "gone" and rules.get("gone_requires_unlisted"):
             # その日以降の公式スナップショットに載っていれば、公式ページからは消えていない。
-            still_listed = any(day >= event_date for day in days)
-            if still_listed:
-                row["_kind"] = "ended"
-                row["_demoted_from"] = "gone"
-                row["_minor"] = True
+            if any(day >= event_date for day in days):
+                continue
         adjusted.append(row)
     return adjusted
 
 
+# 配布状況（在庫）の切り替わり。公式ページに載ったままの変化なので、イベントにしない。
+STOCK_TOGGLE_KINDS = {"ended", "reopened", "status"}
+
+
 def change_kind(value: Any) -> str:
-    """会社ごとに書き方の違う変化の種別を new/gone/ended/reopened にそろえる。"""
+    """会社ごとに書き方の違う変化の種別を new/gone/ended/reopened/status にそろえる。"""
     text = str(value or "")
     if "新規" in text or text == "new":
         return "new"
     if "消失" in text or text == "gone":
         return "gone"
+    if text == "status":
+        return "status"
     if text.endswith("配布終了"):
         return "ended"
     if "再開" in text or text.endswith("配布中"):
@@ -672,6 +675,8 @@ def annotate_change_log(change_log: list[dict[str, Any]]) -> list[dict[str, Any]
 
 
 def format_log_rows(change_log: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    # 配布終了・配布再開の記録は、変更ログ・速報・出入り回数のどれにも使わない。
+    change_log = [item for item in change_log if change_kind(item.get("type")) not in STOCK_TOGGLE_KINDS]
     rows = []
     for item in sorted(annotate_change_log(change_log), key=lambda row: row.get("date", ""), reverse=True):
         rows.append({
@@ -1159,7 +1164,6 @@ def build_flash_data(
                 "flaps": int(log.get("_flaps") or 0),
                 "came_back": bool(log.get("_came_back")),
                 "still_listed": coupon_id in current,
-                "demoted_from": log.get("_demoted_from", ""),
             }
             for field in FLASH_EVENT_FIELDS:
                 event[field] = source.get(field, "")
@@ -1906,7 +1910,7 @@ function renderSummary(container) {{
   changeSection.className = 'section';
   changeSection.innerHTML = `
     <h2>その日のクーポン変動</h2>
-    <div class="note">旧記事・手元JSONのURL生存確認だけの件数は「公式取得クーポン」に含めません。公式ページに載り続けている間の配布終了・再開は、この表と件数には入れず、速報タブの「在庫の出入り」に出します。対象日: ${{escapeHtml(dateLabels)}}</div>
+    <div class="note">旧記事・手元JSONのURL生存確認だけの件数は「公式取得クーポン」に含めません。公式ページに載り続けている間の配布終了・再開（枚数切れ・補充）は記録しません。公式ページから消えたときだけ「消失」に出します。対象日: ${{escapeHtml(dateLabels)}}</div>
   `;
   container.appendChild(changeSection);
   renderGrid(changeSection, DATA.recent_change_rows, DATA.columns.recent_logs, {{
@@ -2159,24 +2163,6 @@ function flashColumn(events, cls, heading, emptyText) {{
   return `<div class="flash-col ${{cls}}"><h3>${{heading}}</h3>${{groups || `<div class="flash-empty">${{escapeHtml(emptyText)}}</div>`}}</div>`;
 }}
 
-function moveRow(event) {{
-  const label = event.kind === 'ended' ? '<span class="badge warn">配布終了</span>' : '<span class="badge first">配布再開</span>';
-  const demoted = event.demoted_from === 'gone'
-    ? '記録では消失だが公式ページには掲載中'
-    : (event.demoted_from === 'new' ? '記録では新規だが直近の公式データにあり' : '');
-  const meta = [
-    event['残り枚数'] ? '今の残り ' + event['残り枚数'] : '',
-    demoted,
-    event.flaps >= 3 ? `30日で出入り ${{event.flaps}} 回` : '',
-  ].filter(Boolean).map(escapeHtml).join(' ・ ');
-  return `<div class="move-row">
-    <span>${{escapeHtml(event.provider)}}</span>
-    <span>${{label}}</span>
-    <span>${{titleLink(event.title, event['詳細URL'])}}</span>
-    <span class="mv-meta">${{meta}}</span>
-  </div>`;
-}}
-
 function renderFlash(container) {{
   const flash = DATA.flash || {{ events: [], freshness: [], hint_news: [] }};
   const days = DATA.recent_change_dates || [];
@@ -2208,24 +2194,17 @@ function renderFlash(container) {{
     const events = flash.events.filter(event => event.day === current);
     const added = events.filter(event => event.kind === 'new');
     const removed = events.filter(event => event.kind === 'gone');
-    const moves = events.filter(event => ['ended', 'reopened'].includes(event.kind));
     const hints = (flash.hint_news || []).filter(hint => hint.date === day.date);
     body.innerHTML = `
       <div class="flash-counts">
         <div class="flash-count new"><div class="num">${{added.length}}</div><div class="lbl">新しく出たクーポン</div></div>
         <div class="flash-count gone"><div class="num">${{removed.length}}</div><div class="lbl">消えたクーポン</div></div>
-        <div class="flash-count move"><div class="num">${{moves.length}}</div><div class="lbl">在庫の出入り（終了・再開）</div></div>
         <div class="flash-count hint"><div class="num">${{hints.length}}</div><div class="lbl">Xなどで見つけた未確認の新着</div></div>
       </div>
       <div class="flash-grid">
         ${{flashColumn(added, 'new', '新しく出たクーポン', 'この日に新しく出たクーポンはありません。')}}
         ${{flashColumn(removed, 'gone', '消えたクーポン', 'この日に消えたクーポンはありません。')}}
       </div>
-      <details class="flash-more">
-        <summary>在庫の出入り（配布終了・再開） ${{moves.length}}件</summary>
-        <div class="note">一覧には残ったまま、配布枚数が尽きて「終了」になった、または補充されて「再開」したものです。JTBは上限に達すると終了になり、予告なく追加配布されることがあります。JTB国内は公式の在庫データで残り枚数を確かめています。JTBは公式ページに載り続けている間の終了・再開を「新しく出た」「消えた」には数えず、この欄だけに出します。</div>
-        ${{moves.map(moveRow).join('') || '<div class="flash-empty">この日の在庫の出入りはありません。</div>'}}
-      </details>
       <details class="flash-more">
         <summary>Xなどで見つけた未確認の新着 ${{hints.length}}件</summary>
         <div class="note">Grokが見つけた候補で、公式ページでは確かめていません。記事に使う前に公式ページで確かめます。</div>
