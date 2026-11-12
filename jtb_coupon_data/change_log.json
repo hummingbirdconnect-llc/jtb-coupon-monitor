@@ -1,59 +1,5 @@
 [
   {
-    "date": "2026-08-14",
-    "type": "🔴 配布終了",
-    "id": "2605douou",
-    "category": "国内",
-    "title": "【道央エリア】おすすめ旅館・ホテルで使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-14",
-    "type": "🔴 配布終了",
-    "id": "2606hilton",
-    "category": "国内",
-    "title": "全国のヒルトンおすすめ施設で使える割引クーポン",
-    "discount": "最大15,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-14",
-    "type": "🔴 配布終了",
-    "id": "2606okinawa",
-    "category": "国内",
-    "title": "☆【沖縄】８月～９月出発☆お盆にも使える　おすすめ施設クーポン",
-    "discount": "最大20,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-14",
-    "type": "🟢 配布再開",
-    "id": "2606prince",
-    "category": "国内",
-    "title": "西武プリンスホテルズ＆リゾーツ30施設で使える割引クーポン",
-    "discount": "最大8,000円引",
-    "stock_status": "配布中"
-  },
-  {
-    "date": "2026-08-14",
-    "type": "🔴 配布終了",
-    "id": "2606tohoku",
-    "category": "国内",
-    "title": "【東北】この夏、おすすめ施設で使える割引クーポン",
-    "discount": "最大10,000円引",
-    "stock_status": "配布終了"
-  },
-  {
-    "date": "2026-08-14",
-    "type": "🟢 配布再開",
-    "id": "2607yamaguchi",
-    "category": "国内",
-    "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
-    "discount": "最大12,000円引",
-    "stock_status": "配布中"
-  },
-  {
     "date": "2026-08-15",
     "type": "🆕 新規",
     "id": "2608hankyu",
@@ -7486,5 +7432,23 @@
     "title": "熊本ふっこう応援割",
     "discount": "最大60％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "🟢 配布再開",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "🟢 配布再開",
+    "id": "2609kyushukumamoto",
+    "category": "国内",
+    "title": "熊本ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布中"
   }
 ]
