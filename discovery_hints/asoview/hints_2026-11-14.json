@@ -1,0 +1,32 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-11-14T07:37:25.588971+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 13,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "名古屋おでかけ 10%OFF クーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/legoland5555/status/2121211483749048619",
+      "official_url": "https://www.asoview.com/note/8190/?campaign=nagoyanote&content=campaign_tab",
+      "official_domain_match": true,
+      "evidence": "掲載12施設の全プランが対象。1人1回、他クーポン・ポイント併用不可。予定枚数で終了。",
+      "observed_date": "2026-11-14",
+      "discount": "10%OFF（最大1,000円引き）",
+      "period": "2026年11月13日（金）から11月19日（木）23:59まで",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/asoview/hints_2026-11-14.json"
+}
