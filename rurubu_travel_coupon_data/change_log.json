@@ -3,14 +3,6 @@
     "date": "2026-09-11",
     "type": "gone",
     "category": "エリア限定クーポン",
-    "id": "rurubu_travel-hodhk26jn10-739dc29483",
-    "title": "北海道 道北エリア おすすめ旅館・ホテルで使えるクーポン",
-    "discount": "最大¥1,000引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
     "id": "rurubu_travel-hodoo26my50-hodoo26my30-52a6036443",
     "title": "北海道 道央エリア オススメ旅館・ホテルで使える割引クーポン",
     "discount": "最大¥5,000引き"
@@ -3997,6 +3989,14 @@
     "category": "施設限定クーポン",
     "id": "rurubu_travel-sehr26nov15-aa7b2ab945",
     "title": "愛知県 西浦温泉 天空海遊の宿 末広で使えるクーポン（最大6,000円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-13",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26sensn15-bcacec9d30",
+    "title": "福井県 あわら温泉 まつや千千で使えるクーポン（最大10,000円引き）",
     "discount": "最大15%引き"
   }
 ]

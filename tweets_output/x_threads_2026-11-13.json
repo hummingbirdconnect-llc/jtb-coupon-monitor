@@ -1,13 +1,43 @@
 {
   "date": "2026-11-13",
-  "generated_at": "2026-11-13 07:20 JST",
+  "generated_at": "2026-11-13 16:02 JST",
   "sites": [
     {
       "site_id": "yakushimafan",
       "display_name": "屋久島ファン",
       "x_account": "@yakushimafan",
-      "candidates": 247,
+      "candidates": 249,
       "threads": [
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "【11～12月限定】一期一会の美食体験　熱海シェフ・イン・レジデンス 宿泊プランで使える割引クーポン",
+          "score": 59,
+          "reasons": [
+            "本日新規",
+            "割引10,000円"
+          ],
+          "pattern": "memo_style",
+          "pattern_name": "メモ共有型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "旅行の予定がある人向けの覚え書きです📝\n【JTB】最大10,000円引きクーポンが配布中\n\n対象は宿泊・ツアーです。\n予約期限は12/28まで。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 156,
+              "chars": 91
+            },
+            {
+              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/28まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
+              "weight": 149,
+              "chars": 90
+            },
+            {
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島行きを考え中なら、予約前のひと手間でお得になります。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 153,
+              "chars": 106
+            }
+          ]
+        },
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
@@ -17,24 +47,24 @@
             "本日配布再開",
             "割引50%"
           ],
-          "pattern": "memo_style",
-          "pattern_name": "メモ共有型",
+          "pattern": "weekend_plan",
+          "pattern_name": "週末計画型",
           "article_url": "https://yakushima.fun/jtb-first/",
           "posts": [
             {
-              "text": "旅行の予定がある人向けの覚え書きです📝\n【JTB】最大50%OFFクーポンが配布中\n\n対象は宿泊・ツアーです。\n予約期限は12/15まで。\n\n詳しい条件はこの下に👇\n(1/3)",
-              "weight": 150,
-              "chars": 88
+              "text": "週末に旅の計画を立てる人へ。\n【JTB】に最大50%OFFクーポンが出ています\n\n対象は宿泊・ツアー。\n予約は12/15までです。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 142,
+              "chars": 84
             },
             {
-              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 最大50％引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/15まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
-              "weight": 145,
-              "chars": 86
+              "text": "予約前の確認はここだけでOKです。\n\n✅割引: 最大50％引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/15まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
+              "weight": 143,
+              "chars": 85
             },
             {
-              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島行きを考え中なら、予約前のひと手間でお得になります。\n\n#旅行クーポン #JTB\n(3/3)",
-              "weight": 153,
-              "chars": 106
+              "text": "取得手順と注意点はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 151,
+              "chars": 105
             }
           ]
         },
@@ -47,54 +77,24 @@
             "割引10,000円",
             "残り7日"
           ],
-          "pattern": "weekend_plan",
-          "pattern_name": "週末計画型",
+          "pattern": "honest_value",
+          "pattern_name": "実用直言型",
           "article_url": "https://yakushima.fun/yahoo-coupon/",
           "posts": [
             {
-              "text": "週末に旅の計画を立てる人へ。\n【Yahoo!トラベル】に10,000円引きクーポンが出ています\n\n対象は宿泊。\n締切は11/20まで。検討中なら早めがおすすめです。\n\n詳しい条件はこの下に👇\n(1/3)",
-              "weight": 173,
-              "chars": 101
+              "text": "【Yahoo!トラベル】宿泊で使える10,000円引きクーポンが配布中です。\nこれは正直かなり実用的です\n\n11/20までなので、検討中の方は先に押さえておくと安心です。\n\n条件はこの下にまとめました👇\n(1/3)",
+              "weight": 186,
+              "chars": 107
             },
             {
-              "text": "予約前の確認はここだけでOKです。\n\n✅割引: 10,000円割引\n✅対象: 宿泊\n✅予約期限: 11/20まで\n\n⚠️25,000円以上の予約が条件です\n(2/3)",
-              "weight": 129,
-              "chars": 83
+              "text": "予約前にここだけ押さえておけば安心です。\n\n✅割引: 10,000円割引\n✅対象: 宿泊\n✅予約期限: 11/20まで\n\n⚠️25,000円以上の予約が条件です\n(2/3)",
+              "weight": 137,
+              "chars": 86
             },
             {
-              "text": "取得手順と注意点はここにまとめています\n→ https://yakushima.fun/yahoo-coupon/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #ヤフートラベル\n(3/3)",
+              "text": "取得手順と注意点はここにまとめています\n→ https://yakushima.fun/yahoo-coupon/\n\n屋久島行きを考え中なら、予約前のひと手間でお得になります。\n\n#旅行クーポン #ヤフートラベル\n(3/3)",
               "weight": 162,
               "chars": 112
-            }
-          ]
-        },
-        {
-          "provider_id": "his",
-          "provider_label": "HIS",
-          "title": "【BLACK FRIDAY】間際の出発もお得！1グループ3,000円引き",
-          "score": 36,
-          "reasons": [
-            "昨日新着",
-            "割引3,000円"
-          ],
-          "pattern": "anshin_reserve",
-          "pattern_name": "安心確保型",
-          "article_url": "https://yakushima.fun/his-coupon/",
-          "posts": [
-            {
-              "text": "HISが企画・実施するジェットスター・ジャ…を検討中の方は、先にクーポンを押さえておくと安心です。\n【HIS】で3,000円引きが配布中\n\n期限は12/7まで。\n\n使える条件はこの下です👇\n(1/3)",
-              "weight": 174,
-              "chars": 100
-            },
-            {
-              "text": "条件を短くまとめるとこうなります。\n\n✅割引: 3,000円引き\n✅対象: HISが企画・実施するジェットスター・ジャパン、Peach…\n✅予約期限: 12/7まで\n\n⚠️60,000円以上の予約が条件です\n(2/3)",
-              "weight": 177,
-              "chars": 109
-            },
-            {
-              "text": "クーポンの取り方と使い方はこちら\n→ https://yakushima.fun/his-coupon/\n\n屋久島行きを考え中なら、予約前のひと手間でお得になります。\n\n#旅行クーポン #HIS\n(3/3)",
-              "weight": 145,
-              "chars": 103
             }
           ]
         }
@@ -104,30 +104,30 @@
       "site_id": "welltrip",
       "display_name": "ウェルトリップ",
       "x_account": "welltrip",
-      "candidates": 226,
+      "candidates": 229,
       "threads": [
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "title": "九州ふっこう応援割 ふくおかキャンペーン",
-          "score": 52,
+          "title": "【11～12月限定】一期一会の美食体験　熱海シェフ・イン・レジデンス 宿泊プランで使える割引クーポン",
+          "score": 59,
           "reasons": [
-            "本日配布再開",
-            "割引50%"
+            "本日新規",
+            "割引10,000円"
           ],
           "pattern": "discovery",
           "pattern_name": "発見共有型",
           "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
           "posts": [
             {
-              "text": "今朝のクーポンチェックで見つけたやつです。\n【JTB】で最大50%OFFが出てます\n\n対象は宿泊・ツアーです。\n予約期限は12/15まで。\n\n使える条件をまとめました👇\n(1/3)",
-              "weight": 154,
-              "chars": 90
+              "text": "今朝のクーポンチェックで見つけたやつです。\n【JTB】で最大10,000円引きが出てます\n\n対象は宿泊・ツアーです。\n予約期限は12/28まで。\n\n使える条件をまとめました👇\n(1/3)",
+              "weight": 160,
+              "chars": 93
             },
             {
-              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大50％引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/15まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
-              "weight": 145,
-              "chars": 85
+              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大10,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/28まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
+              "weight": 149,
+              "chars": 89
             },
             {
               "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n旅の予定がある方はのぞいてみてください。\n\n#旅行クーポン #JTB\n(3/3)",
@@ -139,23 +139,23 @@
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "title": "熊本ふっこう応援割",
+          "title": "九州ふっこう応援割 ふくおかキャンペーン",
           "score": 52,
           "reasons": [
             "本日配布再開",
-            "割引60%"
+            "割引50%"
           ],
           "pattern": "question",
           "pattern_name": "問いかけ型",
           "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
           "posts": [
             {
-              "text": "宿泊・ツアーの予約、もう済ませましたか？\n【JTB】に最大60%OFFクーポンが出てます\n\n予約期限は12/25まで。\n\n使える条件をまとめました👇\n(1/3)",
+              "text": "宿泊・ツアーの予約、もう済ませましたか？\n【JTB】に最大50%OFFクーポンが出てます\n\n予約期限は12/15まで。\n\n使える条件をまとめました👇\n(1/3)",
               "weight": 135,
               "chars": 80
             },
             {
-              "text": "見ておきたい条件をまとめました。\n\n✅割引: 最大60％引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/25まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
+              "text": "見ておきたい条件をまとめました。\n\n✅割引: 最大50％引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/15まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
               "weight": 143,
               "chars": 84
             },
