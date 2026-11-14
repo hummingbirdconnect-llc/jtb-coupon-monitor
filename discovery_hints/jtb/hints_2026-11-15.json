@@ -1,0 +1,60 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-15T07:38:26.009216+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 102,
+  "registered_url_count": 103,
+  "candidates": [
+    {
+      "title": "だんだん島根割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611shimane/page.asp",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611shimane/page.asp",
+      "official_domain_match": true,
+      "evidence": "島根県の対象施設。会員限定。利用代金に応じて3,000～20,000円引。先着枚数あり。",
+      "observed_date": "2026-11-15",
+      "discount": "20,000円引／10,000円引／6,000円引／3,000円引",
+      "period": "予約対象期間：2026/11/6(金) ～ 2027/2/28(日)；宿泊対象期間：2027/1/4(月) ～ 2027/2/28(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "☆【沖縄】1月～5月出発☆冬旅からGW旅行に使えるおすすめ旅行割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611okinawa/page.asp",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611okinawa/page.asp",
+      "official_domain_match": true,
+      "evidence": "沖縄県の対象施設を利用する航空機付きツアー。会員限定、2名以上、20万円以上。先着枚数あり。",
+      "observed_date": "2026-11-15",
+      "discount": "20,000円引／15,000円引／10,000円引",
+      "period": "予約対象期間：2026/11/6(金) ～ 2027/3/31(水)；出発対象期間：2027/1/1(金) ～ 2027/5/31(月)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "熊本ふっこう応援割",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2121614298615275773",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2609kyushukumamoto/page.asp",
+      "official_domain_match": true,
+      "evidence": "熊本県の対象施設。会員限定。人数・泊数・交通により上限額が異なる。Xの残り1枚という在庫情報は未確認。",
+      "observed_date": "2026-11-15",
+      "discount": "60％引（【宿泊】1名：割引上限20,000円）",
+      "period": "予約・宿泊対象期間：2026/10/8(木) ～ 2026/12/25(金)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-15.json"
+}
