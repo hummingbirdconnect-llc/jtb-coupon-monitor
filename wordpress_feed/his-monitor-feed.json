@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T07:04:30.789957+09:00",
+  "generatedAt": "2026-11-15T07:04:27.993867+09:00",
   "source": {
     "monitorSourceId": "his-official-monitor",
     "providerSlug": "his",
     "providerName": "HIS",
     "monitorRepository": "jtb-coupon-monitor",
-    "monitorFile": "his_coupon_data/coupons_2026-11-11.json",
-    "monitorFileSha256": "54b0f0402b396bc957da7d3de5811430b3c0cf54d71ffad6fdb0fe84a4fbae31",
+    "monitorFile": "his_coupon_data/coupons_2026-11-15.json",
+    "monitorFileSha256": "6f82b86fa68e3c1c03c806fcb139a0b4b4c9e235cb1f421512113e8e88d8471f",
     "monitorHtmlFile": "html_output/his_coupons.html",
-    "monitorHtmlSha256": "b3d8f59eabad49b695e0b45e6f44d1cd1911aacc3fb8843c65b1dc4b96a6ce57",
+    "monitorHtmlSha256": "5dd65a2b03992ba64c9852b8cece024d7d762ec5204345af4c8e2d7ea284caf3",
     "monitorStatusFile": "provider_check_data/his/latest.json",
-    "monitorFetchedAt": "2026-11-11T07:04:30.789957+09:00",
-    "verifiedAt": "2026-11-11T07:04:30.789957+09:00",
+    "monitorFetchedAt": "2026-11-15T07:04:27.993867+09:00",
+    "verifiedAt": "2026-11-15T07:04:27.993867+09:00",
     "freshnessSlaHours": 30,
-    "monitorRawCount": 76,
-    "monitorPrimaryRegionCount": 19,
+    "monitorRawCount": 72,
+    "monitorPrimaryRegionCount": 23,
     "regionalCoverage": {
       "primaryRegionCode": "kanto",
-      "uniqueVariantCount": 76,
-      "primaryRegionCount": 19,
+      "uniqueVariantCount": 72,
+      "primaryRegionCount": 23,
       "regionCount": 11,
       "successfulRegionCount": 11
     },
     "officialComparison": {
-      "liveCount": 19,
-      "sourceCount": 19,
-      "matchedCount": 19,
+      "liveCount": 23,
+      "sourceCount": 23,
+      "matchedCount": 23,
       "codeMismatchCount": 0,
       "periodMismatchCount": 0
     },
@@ -39,11 +39,92 @@
     }
   },
   "counts": {
-    "total": 19,
-    "selectable": 7,
-    "needsReview": 12
+    "total": 23,
+    "selectable": 10,
+    "needsReview": 13
   },
   "items": [
+    {
+      "id": "his:61d5dfeb1f26",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "海外航空券 【BLACK FRIDAY】オンライン予約限定クーポン",
+      "discountLabel": "1組最大10,000円引き",
+      "bookingPeriod": "2026年11月11日(水)11:00～2026年11月24日(火)10:00",
+      "travelPeriod": "2026年11月12日(木)～2027年10月31日(日)",
+      "displayTitle": "海外航空券 1組最大10,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "BF10WZTJCGBWCUFR",
+          "condition": "航空券代金30万円以上",
+          "discount": "1万円割引"
+        },
+        {
+          "code": "BF05HQEGCQMUZKFS",
+          "condition": "航空券代金10万円以上",
+          "discount": "5千円割引"
+        },
+        {
+          "code": "BF03ZRDTGMUBVUMY",
+          "condition": "航空券代金2万円以上",
+          "discount": "3千円割引"
+        },
+        {
+          "code": "BF01YNNVTQGFVLZG",
+          "condition": "航空券代金1万円以上",
+          "discount": "1千円割引"
+        }
+      ],
+      "note": "オンライン予約限定です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "海外航空券",
+      "sourceTitle": "【BLACK FRIDAY】オンライン予約限定！1グループ最大10,000円引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
+    },
+    {
+      "id": "his:74a34a37a00b",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "オンライン配信「旅情報LIVE」視聴者限定 添乗員同行ニュージーランドツアークーポン",
+      "discountLabel": "1名5,000円引き",
+      "bookingPeriod": "2026年11月15日(日)10:00～2026年11月29日(日)23:59",
+      "travelPeriod": "2027年3月5日(金)～2027年9月20日(月)",
+      "displayTitle": "添乗員同行ニュージーランドツアー 1名5,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "DCP1LBGNUQZCLTWE",
+          "condition": "1名参加用",
+          "discount": "合計5千円割引"
+        },
+        {
+          "code": "DCP2ZNDRHGLZFCYK",
+          "condition": "2名参加用",
+          "discount": "合計1万円割引"
+        },
+        {
+          "code": "DCP3RVLGFRRRKTUP",
+          "condition": "3名参加用",
+          "discount": "合計15,000円割引"
+        }
+      ],
+      "note": "成田発添乗員同行impressoニュージーランド対象コースです。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-d6731468_q&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "添乗員同行ニュージーランドツアー",
+      "sourceTitle": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行ニュージーランドツアーお1人様5,000円引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
+    },
     {
       "id": "his:2af5cfea09cd",
       "monitorSourceId": "his-official-monitor",
@@ -75,7 +156,7 @@
       "note": "海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)が対象です。金額条件は1名あたりです。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "海外旅行",
       "sourceTitle": "学生旅行応援！早めの予約がお得！1グループ最大20,000円引き",
       "presentationVersion": 2,
@@ -115,7 +196,7 @@
       "note": "海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)が対象です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "海外旅行",
       "sourceTitle": "学生旅行応援！4名様以上のグループがお得！1グループ最大20,000円引き",
       "presentationVersion": 2,
@@ -145,7 +226,7 @@
       "note": "海外ツアー（Ciao）、海外添乗員同行ツアー（impresso）、AirZ(海外航空券+ホテル)が対象です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "海外旅行",
       "sourceTitle": "学生一人旅応援！1名様につき2,000円引き",
       "presentationVersion": 2,
@@ -153,6 +234,258 @@
       "warnings": [
         "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
       ]
+    },
+    {
+      "id": "his:d31268ef4651",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "海外お土産 【BLACK FRIDAY】クーポン",
+      "discountLabel": "500円引き",
+      "bookingPeriod": "2026年11月11日(水)～2026年12月6日(日)",
+      "travelPeriod": "",
+      "displayTitle": "海外お土産 500円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "vk9x36lwt6udbv4qk62q",
+          "condition": "",
+          "discount": "500円引き"
+        }
+      ],
+      "note": "詳細条件はリンク先でご確認ください。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "海外お土産",
+      "sourceTitle": "【BLACK FRIDAY】500円引きクーポン",
+      "presentationVersion": 2,
+      "selectable": false,
+      "warnings": [
+        "対象期間を監視元で確認できません。"
+      ]
+    },
+    {
+      "id": "his:0e1612a99e83",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "国内ツアー 【BLACK FRIDAY】早めの予約がお得 4月以降出発クーポン",
+      "discountLabel": "1組5,000円引き",
+      "bookingPeriod": "2026年11月11日(水)9:00～2026年12月7日(月)10:00",
+      "travelPeriod": "2027年4月1日(木)～2027年9月30日(木)",
+      "displayTitle": "国内ツアー 1組5,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "CWRMUBAY9MFKEJM8",
+          "condition": "2027年4月～2027年9月出発",
+          "discount": "5千円引き"
+        }
+      ],
+      "note": "詳細条件はリンク先でご確認ください。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "国内ツアー",
+      "sourceTitle": "【BLACK FRIDAY】早めの予約がお得！4月以降出発1グループ5,000円引き",
+      "presentationVersion": 2,
+      "selectable": false,
+      "warnings": [
+        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
+      ]
+    },
+    {
+      "id": "his:02e425af2b92",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "国内航空券＋ホテル 【BLACK FRIDAY】クーポン",
+      "discountLabel": "1組最大10％引き",
+      "bookingPeriod": "2026年11月11日(水)9:00～2026年12月7日(月)10:00",
+      "travelPeriod": "2026年11月14日(土)～2027年9月30日(木)",
+      "displayTitle": "国内航空券＋ホテル 1組最大10％引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "NCW23SJ54M4BTEG3",
+          "condition": "2027年4月～2027年9月出発",
+          "discount": "10％引き（上限2万円まで）"
+        },
+        {
+          "code": "DC8QHZYQTUG9Z3DD",
+          "condition": "2026年11月～2027年3月出発",
+          "discount": "5％引き（上限2万円まで）"
+        },
+        {
+          "code": "QMWF65EXW54VYVPA",
+          "condition": "2026年11月～2027年9月出発",
+          "discount": "5％引き（上限1万円まで）"
+        }
+      ],
+      "note": "オンライン予約でも利用できます。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "国内航空券＋ホテル",
+      "sourceTitle": "【BLACK FRIDAY】1グループ最大10％引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
+    },
+    {
+      "id": "his:fc57a093922d",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "国内航空券＋ホテル 【BLACK FRIDAY】JAL利用クーポン",
+      "discountLabel": "1組10,000円引き",
+      "bookingPeriod": "2026年11月11日(水)9:00～2026年12月7日(月)10:00",
+      "travelPeriod": "2026年11月14日(土)～2027年3月31日(水)",
+      "displayTitle": "国内航空券＋ホテル 1組10,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "M9FBGB7W7C2A4FCC",
+          "condition": "JAL・JTA利用",
+          "discount": "1万円引き"
+        }
+      ],
+      "note": "JAL・JTA利用の国内航空券＋ホテル（ダイナミックパッケージ）が対象です。オンライン予約でも利用できます。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "国内航空券＋ホテル",
+      "sourceTitle": "【BLACK FRIDAY】JAL利用がお得！1グループ10,000円引き",
+      "presentationVersion": 2,
+      "selectable": false,
+      "warnings": [
+        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
+      ]
+    },
+    {
+      "id": "his:9c1e71353fa1",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "国内航空券＋ホテル 【BLACK FRIDAY】間際の出発もお得クーポン",
+      "discountLabel": "1組3,000円引き",
+      "bookingPeriod": "2026年11月12日(木)10:00～2026年12月7日(月)10:00",
+      "travelPeriod": "2026年11月15日(日)～2027年2月5日(金)",
+      "displayTitle": "国内航空券＋ホテル 1組3,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "GX5D3ABQF38ZUPRC",
+          "condition": "ご予約日から3～60日以内の出発",
+          "discount": "3千円引き"
+        }
+      ],
+      "note": "ジェットスター・ジャパン、Peach、SPRING JAPAN、フジドリームエアラインズ利用の国内航空券＋ホテル（ダイナミックパッケージ）で、ご予約日から60日以内に出発する旅行商品が対象です。オンライン予約でも利用できます。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "国内航空券＋ホテル",
+      "sourceTitle": "【BLACK FRIDAY】間際の出発もお得！1グループ3,000円引き",
+      "presentationVersion": 2,
+      "selectable": false,
+      "warnings": [
+        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
+      ]
+    },
+    {
+      "id": "his:2bb8664cba50",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "国内添乗員同行ツアー 【BLACK FRIDAY】早めの予約クーポン",
+      "discountLabel": "1組最大10,000円引き",
+      "bookingPeriod": "2026年11月11日(水)9:00～2026年12月7日(月)10:00",
+      "travelPeriod": "2027年2月9日(火)～2027年7月31日(土)",
+      "displayTitle": "国内添乗員同行ツアー 1組最大10,000円引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "KBLA3G9HZF7RNJX5",
+          "condition": "150日前まで",
+          "discount": "1万円引き"
+        },
+        {
+          "code": "9HA2M3R8RVR7U4EE",
+          "condition": "120日前まで",
+          "discount": "5千円引き"
+        },
+        {
+          "code": "HKYFHQEL5URNCYDD",
+          "condition": "90日前まで",
+          "discount": "3千円引き"
+        }
+      ],
+      "note": "首都圏発の飛行機・鉄道利用国内添乗員同行ツアーが対象です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-d6731468_q&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "国内添乗員同行ツアー",
+      "sourceTitle": "【BLACK FRIDAY】早めの予約がお得！1グループ最大10,000円引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
+    },
+    {
+      "id": "his:20409b3c3251",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "国内ホテル 【BLACK FRIDAY】クーポン",
+      "discountLabel": "1組8％引き",
+      "bookingPeriod": "2026年11月11日(水)9:00～2026年12月7日(月)10:00",
+      "travelPeriod": "2026年11月12日(木)～2027年6月30日(水)",
+      "displayTitle": "国内ホテル 1組8％引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "RZWWJLAZL6VTKUK6",
+          "condition": "",
+          "discount": "8％引き"
+        }
+      ],
+      "note": "宿泊代金総額30,000円以上が条件です。オンライン予約限定です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-S6731472_P&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "国内ホテル",
+      "sourceTitle": "【BLACK FRIDAY】1グループ8％引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
+    },
+    {
+      "id": "his:3e6805c2d304",
+      "monitorSourceId": "his-official-monitor",
+      "providerSlug": "his",
+      "providerName": "HIS",
+      "status": "active",
+      "couponName": "グランピング・コテージ・貸し別荘宿泊 【BLACK FRIDAY】クーポン",
+      "discountLabel": "1組8％引き",
+      "bookingPeriod": "2026年11月11日(水)9:00～2026年12月7日(月)10:00",
+      "travelPeriod": "2026年11月12日(木)～2027年6月30日(水)",
+      "displayTitle": "グランピング・コテージ・貸し別荘宿泊 1組8％引きクーポンを確認する",
+      "codes": [
+        {
+          "code": "WOWPLUSBF20268%OFF",
+          "condition": "",
+          "discount": "8％引き"
+        }
+      ],
+      "note": "WOW+公式サイトで取り扱いのグランピング、コテージ・貸別荘、ペットと泊まれる施設が対象です。宿泊代金総額30,000円以上が条件です。オンライン予約限定です。",
+      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
+      "buttonText": "クーポンを確認する",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
+      "sourceCategory": "グランピング・コテージ・貸し別荘宿泊",
+      "sourceTitle": "【BLACK FRIDAY】1グループ8％引き",
+      "presentationVersion": 2,
+      "selectable": true,
+      "warnings": []
     },
     {
       "id": "his:73b9e6727c2b",
@@ -175,7 +508,7 @@
       "note": "首都圏発の飛行機利用国内ツアー、鉄道ツアーが対象です。1名様の旅行代金50,000円以上が条件です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "国内ツアー",
       "sourceTitle": "年末年始出発がお得！1名様につき3,000円引き",
       "presentationVersion": 2,
@@ -210,7 +543,7 @@
       "note": "北海道キャンペーン飛行機利用ツアーで問い合わせコード末尾が-HDO2の商品が対象です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-u6732260_a&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "北海道ツアー",
       "sourceTitle": "【北海道キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
       "presentationVersion": 2,
@@ -240,7 +573,7 @@
       "note": "北海道行き国内航空券＋ホテル（ダイナミックパッケージ）が対象です。オンライン予約でも利用できます。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "北海道行き航空券＋ホテル",
       "sourceTitle": "【北海道キャンペーン】1グループ3,000円引き",
       "presentationVersion": 2,
@@ -248,94 +581,6 @@
       "warnings": [
         "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
       ]
-    },
-    {
-      "id": "his:af0e4e1e6c54",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "active",
-      "couponName": "ハウステンボス行きツアー 【ハウステンボスキャンペーン】クーポン",
-      "discountLabel": "1組5,000円引き",
-      "bookingPeriod": "2026年9月1日(火)0:00～2026年11月12日(木)23:59",
-      "travelPeriod": "2026年9月9日(水)～2027年3月31日(水)",
-      "displayTitle": "ハウステンボス行きツアー 1組5,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "L7MAD7V5V6B3PFW4",
-          "condition": "",
-          "discount": "5千円引き"
-        }
-      ],
-      "note": "ハウステンボス行きツアーで問い合わせコード末尾が-HTBCの商品が対象です。",
-      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
-      "sourceCategory": "ハウステンボス行きツアー",
-      "sourceTitle": "【ハウステンボスキャンペーン】1グループ5,000円引き",
-      "presentationVersion": 2,
-      "selectable": false,
-      "warnings": [
-        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
-      ]
-    },
-    {
-      "id": "his:1d54e4b285f1",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "active",
-      "couponName": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊クーポン",
-      "discountLabel": "1組5,000円引き",
-      "bookingPeriod": "2026年9月1日(火)0:00 ～2026年11月12日(木)23:59",
-      "travelPeriod": "2026年9月4日(金)～2027年3月31日(水)",
-      "displayTitle": "ハウステンボス行き航空券＋ホテル 1組5,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "XDVXUWUAL8WEU444",
-          "condition": "",
-          "discount": "5千円引き"
-        }
-      ],
-      "note": "国内航空券＋ホテル（ダイナミックパッケージ）でハウステンボスオフィシャルホテルの宿泊が含まれる旅行が対象です。オンライン予約でも利用できます。",
-      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
-      "sourceCategory": "ハウステンボス行き航空券＋ホテル",
-      "sourceTitle": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊で使える1グループ5,000円引き",
-      "presentationVersion": 2,
-      "selectable": false,
-      "warnings": [
-        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
-      ]
-    },
-    {
-      "id": "his:7a2a9d6d1586",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "active",
-      "couponName": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊クーポン",
-      "discountLabel": "1組1,000円引き",
-      "bookingPeriod": "2026年9月1日(火)0:00～2026年11月12日(木)23:59",
-      "travelPeriod": "2026年9月2日(水)～2027年3月31日(水)",
-      "displayTitle": "国内ホテル 1組1,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "3WMP3QSWW66FHNV3",
-          "condition": "",
-          "discount": "1千円引き"
-        }
-      ],
-      "note": "ハウステンボスオフィシャルホテル宿泊が対象です。宿泊代金総額30,000円以上が条件です。オンライン予約限定です。",
-      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-S6731472_P&p=X653459L",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
-      "sourceCategory": "国内ホテル",
-      "sourceTitle": "【ハウステンボスキャンペーン】オフィシャルホテルの宿泊で使える1グループ1,000円引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
     },
     {
       "id": "his:ae14b11e831f",
@@ -358,7 +603,7 @@
       "note": "鳥取・島根キャンペーン飛行機利用ツアーで問い合わせコード末尾が-SANの商品が対象です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "鳥取・島根行きツアー",
       "sourceTitle": "【鳥取・島根キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
       "presentationVersion": 2,
@@ -388,7 +633,7 @@
       "note": "鳥取または島根行き航空券＋ホテル（ダイナミックパッケージ）でが対象です。オンライン予約でも利用できます。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "鳥取・島根行き航空券＋ホテル",
       "sourceTitle": "【鳥取・島根キャンペーン】1グループ3,000円引き",
       "presentationVersion": 2,
@@ -423,7 +668,7 @@
       "note": "首都圏・関西・中部発の沖縄に行ったらヨロンへ行こう！キャンペーン対象のツアー商品（お問合せコード末尾が-YONA、-YOMO）です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-g6731466_L&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "沖縄ツアー",
       "sourceTitle": "沖縄に行ったらヨロンへ行こう！キャンペーン1名様につき最大5,000円引き",
       "presentationVersion": 2,
@@ -431,44 +676,6 @@
       "warnings": [
         "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
       ]
-    },
-    {
-      "id": "his:4a1e059be07e",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "ended",
-      "couponName": "国内添乗員同行ツアー 早期割クーポン",
-      "discountLabel": "1組最大10,000円引き",
-      "bookingPeriod": "2026年8月18日(火)10:00～2026年11月11日(水)8:59",
-      "travelPeriod": "202611月16日(月)～2027年3月31日(水)",
-      "displayTitle": "国内添乗員同行ツアー 1組最大10,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "TS9BRWTB37UJ3KY6",
-          "condition": "150日前まで",
-          "discount": "1万円引き"
-        },
-        {
-          "code": "BJ8RTXJ2RDPNQXY6",
-          "condition": "120日前まで",
-          "discount": "5千円引き"
-        },
-        {
-          "code": "4Y3NYEWHTBBA94EE",
-          "condition": "90日前まで",
-          "discount": "3千円引き"
-        }
-      ],
-      "note": "首都圏発の飛行機・鉄道利用国内添乗員同行ツアーが対象です。",
-      "destinationUrl": "",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
-      "sourceCategory": "国内添乗員同行ツアー",
-      "sourceTitle": "早めの予約がお得！1グループ最大10,000円引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
     },
     {
       "id": "his:6a0f41c74707",
@@ -501,7 +708,7 @@
       "note": "首都圏および東北発バスツアーが対象です。金額条件は1名あたりです。オンライン予約限定です。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-F6191235_J&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "国内バスツアー",
       "sourceTitle": "早めの予約がお得！1名様につき最大3,000円引き",
       "presentationVersion": 2,
@@ -539,57 +746,12 @@
       "note": "飛行機利用の国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、クルーズツアーが対象です。金額条件は1名あたりです。オンライン予約でも利用できます。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "国内旅行",
       "sourceTitle": "学生旅行応援！早めの予約がお得！1グループ最大5,000円引き",
       "presentationVersion": 2,
       "selectable": true,
       "warnings": []
-    },
-    {
-      "id": "his:48f07aa0c902",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "active",
-      "couponName": "国内ツアー・国内航空券＋ホテル 学生旅行応援 3名様以上のグループがお得 1グループにつきクーポン",
-      "discountLabel": "1組最大5,000円引き",
-      "bookingPeriod": "2026年9月4日(金)0:00～2026年11月12日(木)23:59",
-      "travelPeriod": "2026年10月1日(木)～2027年3月31日(水)",
-      "displayTitle": "国内ツアー・国内航空券＋ホテル 1組最大5,000円引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "BCK5H8ZTPWCG6NW4",
-          "condition": "1グループ6名様",
-          "discount": "5千円引き"
-        },
-        {
-          "code": "D8HZ7USFKV9D5V44",
-          "condition": "1グループ5名様",
-          "discount": "4千円引き"
-        },
-        {
-          "code": "8VDCP9NRMSZU4ZN9",
-          "condition": "1グループ4名様",
-          "discount": "2千円引き"
-        },
-        {
-          "code": "YGLBST347XBMDPRC",
-          "condition": "1グループ3名様",
-          "discount": "1千円引き"
-        }
-      ],
-      "note": "オンライン予約でも利用できます。",
-      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-86731473_Y&p=X653459L",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
-      "sourceCategory": "国内ツアー・国内航空券＋ホテル",
-      "sourceTitle": "学生旅行応援！3名様以上のグループがお得！1グループにつき最大5,000円引き",
-      "presentationVersion": 2,
-      "selectable": false,
-      "warnings": [
-        "対象条件が監視処理の文字数上限に達しているため、全文の再確認が必要です。"
-      ]
     },
     {
       "id": "his:673f03098f0a",
@@ -622,7 +784,7 @@
       "note": "飛行機利用の国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、クルーズツアーが対象です。オンライン予約でも利用できます。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "国内旅行",
       "sourceTitle": "学生旅行応援！4名様以上のグループがお得！1グループ最大6,000円引き",
       "presentationVersion": 2,
@@ -650,37 +812,9 @@
       "note": "飛行機利用の国内ツアー、国内航空券＋ホテル（ダイナミックパッケージ）、国内添乗員同行ツアー、クルーズツアーが対象です。オンライン予約でも利用できます。",
       "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-a6693724_h&p=X653459L",
       "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
+      "sourceUpdatedAt": "2026-11-15T07:04:27.993867+09:00",
       "sourceCategory": "国内旅行",
       "sourceTitle": "学生一人旅応援！1名様につき1,000円引き",
-      "presentationVersion": 2,
-      "selectable": true,
-      "warnings": []
-    },
-    {
-      "id": "his:353d3d8e86f8",
-      "monitorSourceId": "his-official-monitor",
-      "providerSlug": "his",
-      "providerName": "HIS",
-      "status": "active",
-      "couponName": "高速バス・夜行バス 学生旅行応援 25歳以下ならクーポン",
-      "discountLabel": "1名6％引き",
-      "bookingPeriod": "2026年9月4日(金)0:00～2026年11月12日(木)23:59",
-      "travelPeriod": "2026年10月1日(木)～2027年3月31日(水)",
-      "displayTitle": "高速バス・夜行バス 1名6％引きクーポンを確認する",
-      "codes": [
-        {
-          "code": "WFKMVUJGNXGSTV77",
-          "condition": "",
-          "discount": "5％引き"
-        }
-      ],
-      "note": "オンライン予約限定です。",
-      "destinationUrl": "https://t.afi-b.com/visit.php?a=Q10113i-h6693729_N&p=X653459L",
-      "buttonText": "クーポンを確認する",
-      "sourceUpdatedAt": "2026-11-11T07:04:30.789957+09:00",
-      "sourceCategory": "高速バス・夜行バス",
-      "sourceTitle": "オンライン予約限定！学生旅行応援！25歳以下なら1名様につき6％引き",
       "presentationVersion": 2,
       "selectable": true,
       "warnings": []
