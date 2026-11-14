@@ -126,8 +126,46 @@ export function couponLinkKey(category, title) {
   return `${couponSection(String(category || ""), title)}${SECTION_SEPARATOR}${displayLinkTitle(title)}`;
 }
 
+function normalizeCodes(codes) {
+  return codes.map((code) => String(code || "").trim());
+}
+
+// 同じセクション・表示タイトルの別クーポン（公式でも同名の別カード）を
+// クーポンコードで区別するための照合キー。
+export function couponCodeLinkKey(category, title, codes) {
+  return `${couponLinkKey(category, title)}${SECTION_SEPARATOR}${normalizeCodes(codes).join("\n")}`;
+}
+
+// generate_his_html.py の表の行から、リンク直後のクーポンコード列を読む。
+// 行の形でない（リンクだけの）場合は null を返す。
+function extractRowCodes(html, fromIndex) {
+  const rowEnd = html.indexOf("</tr>", fromIndex);
+  if (rowEnd < 0) {
+    return null;
+  }
+  const rest = html.slice(fromIndex, rowEnd);
+  if (/<tr[\s>]|<a\s/i.test(rest)) {
+    return null;
+  }
+  const match = rest.match(
+    /^[\s\S]*?<\/th>\s*<td>[\s\S]*?<\/td>\s*<td>([\s\S]*?)<\/td>/,
+  );
+  if (!match) {
+    return null;
+  }
+  const cell = match[1].trim();
+  if (cell === "不要") {
+    return [];
+  }
+  return cell.split(/<br\s*\/?>/i).map((part) => {
+    const text = decodeHtml(part).trim();
+    // 複数コードは「(条件) コード」の形で出力される。
+    return text.startsWith("(") ? text.slice(text.lastIndexOf(" ") + 1) : text;
+  });
+}
+
 export function extractAffiliateLinks(html) {
-  const links = new Map();
+  const entries = [];
   let section = "";
   const pattern =
     /<!--\s*=+\s*([^=]+?)\s*=+\s*-->|<a\s+href="([^"]+)"[^>]*>([^<]+)<\/a>/g;
@@ -141,13 +179,50 @@ export function extractAffiliateLinks(html) {
     if (!section || !title || !url) {
       continue;
     }
-    const key = `${section}${SECTION_SEPARATOR}${title}`;
-    if (links.has(key) && links.get(key) !== url) {
-      throw new Error(
-        `同じセクション・表示タイトルに異なる遷移リンクがあります: ${section} / ${title}`,
-      );
+    entries.push({
+      section,
+      title,
+      url,
+      key: `${section}${SECTION_SEPARATOR}${title}`,
+      codes: extractRowCodes(html, match.index + match[0].length),
+    });
+  }
+
+  const groups = new Map();
+  for (const entry of entries) {
+    if (!groups.has(entry.key)) {
+      groups.set(entry.key, []);
     }
-    links.set(key, url);
+    groups.get(entry.key).push(entry);
+  }
+
+  const links = new Map();
+  for (const [key, group] of groups) {
+    const urls = new Set(group.map((entry) => entry.url));
+    if (urls.size === 1) {
+      links.set(key, group[0].url);
+      continue;
+    }
+    // 同名で遷移リンクが違う場合は、クーポンコードで行を一意に区別できる
+    // ときだけ受け入れる。区別できなければ従来どおり停止する。
+    const conflict = () =>
+      new Error(
+        `同じセクション・表示タイトルに異なる遷移リンクがあります: ${group[0].section} / ${group[0].title}`,
+      );
+    const byCodes = new Map();
+    for (const entry of group) {
+      if (entry.codes === null) {
+        throw conflict();
+      }
+      const codeKey = `${key}${SECTION_SEPARATOR}${normalizeCodes(entry.codes).join("\n")}`;
+      if (byCodes.has(codeKey) && byCodes.get(codeKey) !== entry.url) {
+        throw conflict();
+      }
+      byCodes.set(codeKey, entry.url);
+    }
+    for (const [codeKey, url] of byCodes) {
+      links.set(codeKey, url);
+    }
   }
   return links;
 }
@@ -308,7 +383,15 @@ function buildItem(coupon, links, monitorFetchedAt) {
   const destinationUrl =
     status === "ended"
       ? ""
-      : links.get(couponLinkKey(coupon.category, title)) || "";
+      : links.get(couponLinkKey(coupon.category, title)) ||
+        links.get(
+          couponCodeLinkKey(
+            coupon.category,
+            title,
+            (coupon.coupon_codes || []).map((entry) => entry?.code),
+          ),
+        ) ||
+        "";
   const presentation = formatHisCouponForCard(coupon);
   const warnings = [];
 
