@@ -5,6 +5,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   buildHisWordPressFeed,
+  couponCodeLinkKey,
   couponLinkKey,
   extractAffiliateLinks,
   selectRegionCoupons,
@@ -66,6 +67,52 @@ try {
 <a href="https://example.com/second">${duplicateTitle}</a>`),
     /同じセクション・表示タイトルに異なる遷移リンクがあります/,
     "同一セクション内の危険なリンク重複を許しています。",
+  );
+
+  // 公式でも同名の別カード（国内ホテル／グランピング等）は、
+  // 表のクーポンコード列で区別できれば別々のリンクを割り当てる。
+  const sameTitle = "【BLACK FRIDAY】1グループ8％引き";
+  const row = (url, codeCell) =>
+    `<tr><th>→<a href="${url}">${sameTitle}</a><img width="1" height="1" src="https://example.com/pixel"></th><td>1グループ8％引</td><td>${codeCell}</td><td>-</td><td>-</td></tr>`;
+  const sameTitleLinks = extractAffiliateLinks(`
+<!-- ========== 国内ホテル ========== -->
+${row("https://example.com/hotel", "HOTELCODE")}
+${row("https://example.com/glamping", "GLAMP8%OFF")}
+${row("https://example.com/multi", "(条件A) MULTI1<br>(条件B) MULTI2")}`);
+  assert.equal(
+    sameTitleLinks.get(couponLinkKey("国内ホテル", sameTitle)),
+    undefined,
+    "同名・別リンクのクーポンにコードなしでリンクを割り当てています。",
+  );
+  assert.equal(
+    sameTitleLinks.get(
+      couponCodeLinkKey("国内ホテル", sameTitle, ["HOTELCODE"]),
+    ),
+    "https://example.com/hotel",
+  );
+  assert.equal(
+    sameTitleLinks.get(
+      couponCodeLinkKey("グランピング・コテージ・貸し別荘宿泊", sameTitle, [
+        "GLAMP8%OFF",
+      ]),
+    ),
+    "https://example.com/glamping",
+    "グランピング等のクーポンに国内ホテルのリンクが割り当てられています。",
+  );
+  assert.equal(
+    sameTitleLinks.get(
+      couponCodeLinkKey("国内ホテル", sameTitle, ["MULTI1", "MULTI2"]),
+    ),
+    "https://example.com/multi",
+  );
+  assert.throws(
+    () =>
+      extractAffiliateLinks(`
+<!-- ========== 国内ホテル ========== -->
+${row("https://example.com/first", "SAMECODE")}
+${row("https://example.com/second", "SAMECODE")}`),
+    /同じセクション・表示タイトルに異なる遷移リンクがあります/,
+    "同名・同コードで遷移リンクが違う危険な重複を許しています。",
   );
 
   assert.deepEqual(
@@ -147,27 +194,47 @@ try {
   assert.equal(payload.source.officialComparison.codeMismatchCount, 0);
   assert.equal(payload.source.safetyChecks.currentRunFresh, false);
 
-  const domestic = payload.items.find(
-    (item) => item.id === "his:d3000a952db4",
+  // 監視元の各クーポンのコードが、表示整形後もそのまま残っていること。
+  const sourceById = new Map(
+    expectedPrimaryCoupons.map((coupon) => [`his:${coupon.id}`, coupon]),
   );
-  const urayasu = payload.items.find(
-    (item) => item.id === "his:e7b7aa037781",
-  );
-  assert.ok(domestic, "国内ホテル宿泊クーポンがフィードにありません。");
-  assert.ok(urayasu, "舞浜・浦安クーポンがフィードにありません。");
-  assert.deepEqual(
-    domestic.codes.map((entry) => entry.code),
-    ["37Y6V9DA7GTB84QB"],
-    "国内ホテル宿泊クーポンのコードが変わっています。",
-  );
-  assert.deepEqual(
-    urayasu.codes.map((entry) => entry.code),
-    ["BZAWUDBND5BMW6DD"],
-    "舞浜・浦安クーポンのコードが変わっています。",
-  );
+  for (const item of payload.items) {
+    const source = sourceById.get(item.id);
+    assert.ok(source, `監視元にないクーポンがフィードにあります: ${item.id}`);
+    assert.deepEqual(
+      item.codes.map((entry) => entry.code),
+      source.coupon_codes.map((entry) => String(entry.code || "").trim()),
+      `クーポンのコードが変わっています: ${item.id}`,
+    );
+  }
+
+  // 同じセクション・同名の別クーポンが最新データにあれば、
+  // 配布中のものがリンクを失わず、コードで正しく割り当てられていること。
+  const sameTitleGroups = new Map();
+  for (const item of payload.items) {
+    const source = sourceById.get(item.id);
+    const key = couponLinkKey(source.category, source.title);
+    if (!sameTitleGroups.has(key)) {
+      sameTitleGroups.set(key, []);
+    }
+    sameTitleGroups.get(key).push(item);
+  }
+  let sameTitleCount = 0;
+  for (const group of sameTitleGroups.values()) {
+    if (group.length < 2) {
+      continue;
+    }
+    for (const item of group.filter((entry) => entry.status === "active")) {
+      sameTitleCount += 1;
+      assert.ok(
+        item.destinationUrl,
+        `同名クーポンの遷移リンクが失われています: ${item.id}`,
+      );
+    }
+  }
 
   console.log(
-    `✅ HIS WordPressフィード生成テスト: 首都圏版${expectedPrimaryCoupons.length}件と対象2件を確認`,
+    `✅ HIS WordPressフィード生成テスト: 首都圏版${expectedPrimaryCoupons.length}件のコードと同名クーポン${sameTitleCount}件のリンクを確認`,
   );
 } finally {
   rmSync(outputDir, { recursive: true, force: true });
