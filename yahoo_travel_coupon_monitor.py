@@ -177,10 +177,15 @@ def save_coupons(coupons: list[dict[str, Any]], dry_run: bool = False) -> Path:
     return path
 
 
-def run(dry_run: bool = False, init: bool = False, include_government: bool = True) -> list[dict[str, Any]]:
+def run(
+    dry_run: bool = False,
+    init: bool = False,
+    include_government: bool = True,
+    saved_dir: Path | None = None,
+) -> list[dict[str, Any]]:
     setup_dirs()
     master = load_master_ids()
-    coupons = fetch_all_coupons(SITE, include_government=include_government)
+    coupons = fetch_all_coupons(SITE, include_government=include_government, saved_dir=saved_dir)
     if not coupons:
         raise SystemExit("取得0件。ページの作りが変わった可能性")
     marked = mark_shared_listing(coupons, SITE, BASE_DIR)
@@ -211,12 +216,16 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--dry-run", action="store_true", help="保存ファイルをdry_run名にし、master_idsを更新しない")
     parser.add_argument("--init", action="store_true", help="初回実行として差分ログを出さずmaster_idsを初期化")
     parser.add_argument("--no-government", action="store_true", help="自治体クーポン特集を読まない")
+    parser.add_argument(
+        "--from-saved", type=Path, metavar="DIR",
+        help="本人がブラウザで開いて保存したページ（yahoo_travel-coupons.html／yahoo_travel-government.html）から読む。通信しない",
+    )
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> None:
     args = parse_args(argv if argv is not None else sys.argv[1:])
-    run(dry_run=args.dry_run, init=args.init, include_government=not args.no_government)
+    run(dry_run=args.dry_run, init=args.init, include_government=not args.no_government, saved_dir=args.from_saved)
 
 
 if __name__ == "__main__":
