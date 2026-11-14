@@ -1,7 +1,9 @@
 import json
 from datetime import datetime, timezone, timedelta
 
+import pytest
 
+import ikyu_platform_coupons as platform
 from ikyu_platform_coupons import (
     SiteConfig,
     build_coupon,
@@ -176,3 +178,119 @@ def test_mark_shared_listing_without_sibling_data(tmp_path):
     coupons = [build_coupon(RAW, YAHOO)]
     assert mark_shared_listing(coupons, YAHOO, tmp_path) == 0
     assert coupons[0]["detail_data"]["shared_with"] == []
+
+
+# ------------------------------------------------------------
+# 本人が開いたページの保存ファイルから読む（2026-11-10〜）
+# ------------------------------------------------------------
+
+def flatten_devalue(root):
+    """テスト用: 普通の値を devalue の配列（先頭が根、参照は添字）にする。"""
+    flat = []
+
+    def add(value):
+        if value is None:
+            return -1
+        index = len(flat)
+        flat.append(None)
+        if isinstance(value, dict):
+            flat[index] = {key: add(child) for key, child in value.items()}
+        elif isinstance(value, list):
+            flat[index] = [add(child) for child in value]
+        else:
+            flat[index] = value
+        return index
+
+    add(root)
+    return flat
+
+
+def nuxt_coupon_html(coupons):
+    flat = flatten_devalue({"data": {"accommodationCouponsAvailable": {"coupons": coupons}}})
+    return f'<script type="application/json" id="__NUXT_DATA__">{json.dumps(flat, ensure_ascii=False)}</script>'
+
+
+def write_saved(saved_dir, site, kind, body, url=None):
+    url = url or f"{site.base_url}{platform.PAGE_PATHS[kind]}"
+    path = platform.saved_page_path(saved_dir, site, kind)
+    path.write_text(
+        f"<!-- saved-from: {url} -->\n<!-- saved-at: 2026-11-10T09:00:00+09:00 -->\n"
+        f"<!DOCTYPE html><html><body>{body}</body></html>",
+        encoding="utf-8",
+    )
+    return path
+
+
+@pytest.fixture
+def no_network(monkeypatch):
+    def fail(url, timeout=30):
+        raise AssertionError(f"保存ファイルから読むときは通信しない: {url}")
+
+    monkeypatch.setattr(platform, "fetch_html", fail)
+
+
+def test_fetch_all_coupons_reads_saved_pages_without_network(tmp_path, no_network):
+    write_saved(tmp_path, IKKYU, "coupons", nuxt_coupon_html([RAW, dict(RAW, manageId=999)]))
+    write_saved(tmp_path, IKKYU, "government", GOV_HTML)
+    coupons = platform.fetch_all_coupons(IKKYU, saved_dir=tmp_path)
+    assert [c["id"] for c in coupons[:2]] == ["ikkyu-1122685", "ikkyu-999"]
+    assert coupons[0]["title"] == "登別万世閣 先着30名様限定 3,000円OFFクーポン"
+    assert coupons[0]["detail_url"] == "https://www.ikyu.com/coupons/accommodations?cmid=1122685"
+    assert len(coupons) == 4
+    assert [c["category"] for c in coupons[2:]] == ["自治体クーポン", "自治体クーポン"]
+
+
+def test_saved_government_page_missing_is_skipped(tmp_path, no_network, capsys):
+    write_saved(tmp_path, YAHOO, "coupons", nuxt_coupon_html([RAW]))
+    coupons = platform.fetch_all_coupons(YAHOO, saved_dir=tmp_path)
+    assert [c["id"] for c in coupons] == ["yahoo_travel-1122685"]
+    assert "自治体クーポン特集の取得失敗: FileNotFoundError" in capsys.readouterr().out
+
+
+def test_saved_coupon_list_missing_stops(tmp_path, no_network):
+    write_saved(tmp_path, YAHOO, "government", GOV_HTML)
+    with pytest.raises(FileNotFoundError):
+        platform.fetch_all_coupons(YAHOO, saved_dir=tmp_path)
+
+
+def test_saved_page_from_other_site_is_rejected(tmp_path, no_network):
+    write_saved(tmp_path, YAHOO, "coupons", nuxt_coupon_html([RAW]), url="https://www.ikyu.com/coupons/accommodations")
+    with pytest.raises(RuntimeError, match="ページが違う"):
+        platform.fetch_all_coupons(YAHOO, saved_dir=tmp_path)
+
+
+def test_saved_page_without_mark_is_rejected(tmp_path, no_network):
+    platform.saved_page_path(tmp_path, IKKYU, "coupons").write_text(
+        f"<!DOCTYPE html><html><body>{nuxt_coupon_html([RAW])}</body></html>", encoding="utf-8"
+    )
+    with pytest.raises(RuntimeError, match="印が無い"):
+        platform.fetch_all_coupons(IKKYU, saved_dir=tmp_path, include_government=False)
+
+
+def test_check_saved_page_ignores_query_and_trailing_slash():
+    platform.check_saved_page("<!-- saved-from: https://www.ikyu.com/campaign/government?from=top#x -->", IKKYU, "government")
+    platform.check_saved_page("<!-- saved-from: https://travel.yahoo.co.jp/coupons/accommodations/ -->", YAHOO, "coupons")
+
+
+def test_fetch_all_coupons_without_saved_dir_still_fetches(monkeypatch):
+    calls = []
+
+    def fake_fetch(url, timeout=30):
+        calls.append(url)
+        return nuxt_coupon_html([RAW]) if url.endswith("/coupons/accommodations") else GOV_HTML
+
+    monkeypatch.setattr(platform, "fetch_html", fake_fetch)
+    coupons = platform.fetch_all_coupons(IKKYU)
+    assert calls == ["https://www.ikyu.com/coupons/accommodations", "https://www.ikyu.com/campaign/government/"]
+    assert len(coupons) == 3
+
+
+def test_monitors_accept_from_saved(tmp_path):
+    import ikkyu_coupon_monitor
+    import yahoo_travel_coupon_monitor
+
+    for monitor in (ikkyu_coupon_monitor, yahoo_travel_coupon_monitor):
+        args = monitor.parse_args(["--from-saved", str(tmp_path), "--dry-run"])
+        assert args.from_saved == tmp_path
+        assert args.dry_run is True
+        assert monitor.parse_args([]).from_saved is None
