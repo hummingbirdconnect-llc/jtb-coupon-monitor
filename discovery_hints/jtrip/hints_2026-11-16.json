@@ -1,0 +1,17 @@
+{
+  "provider_id": "jtrip",
+  "provider_label": "ジェイトリップ",
+  "generated_at": "2026-11-16T07:38:07.049588+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "拒否: 403 https://www.jtrip.co.jp/sp/supersale",
+  "known_title_count": 6,
+  "registered_url_count": 4,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jtrip/hints_2026-11-16.json"
+}
