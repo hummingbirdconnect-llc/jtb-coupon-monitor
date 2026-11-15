@@ -1,0 +1,39 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-16T08:22:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "じゃらんのお得な10日間（11月回）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/news/article/919372/",
+      "official_url": "https://www.jalan.net/theme/otoku_10days/",
+      "evidence": "公式：2026年11月20日（金）より開催 ／ 公式：対象プランでクーポンを利用すると最大36%お得 ／ 公式：宿泊料金10,000円（税込）以上の予約時に利用可能なクーポンを併用（最大31%） ／ 公式：じゃらんの宿泊施設で使える最大10,000円分クーポン、20日予約受付開始 ／ 公式：セールプラン掲載宿で使える最大10,000円分クーポンは22日10:00から配布 ／ 公式：大型連休・3連休限定／その他日程 最大15,000円分クーポン ／ 公式：ゴールドステージ限定 最大10,000円分クーポンなどステージ限定あり ／ 未確認：予約期間の終了日 ／ 未確認：旅行期間 ／ 未確認：決済方法の条件 ／ 未確認：先着枚数",
+      "observed_date": "2026-11-16",
+      "discount": "対象プランでクーポン利用時に最大36%お得（宿泊料金10,000円以上でクーポン併用時。最大10,000円分・最大15,000円分などのクーポン、ステージ限定あり）",
+      "period": "予約：2026年11月20日（金）から開催（終了日は未確認（Grok: 11月29日または30日頃）） ／ 旅行：未確認（Grok: 11月20日頃以降～翌年春頃、各クーポンによる）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "九州ふっこう応援割（じゃらん）",
+      "kind": "coupon",
+      "found_url": "https://x.com/travel_cupon4/status/2122014544549781789",
+      "official_url": "",
+      "evidence": "未確認：公式URLがGrokの回答に無く、登録済みの公式ページにも該当が無いため公式で照合していない ／ 未確認：割引率・上限・予約期間・旅行期間・対象者・決済方法",
+      "observed_date": "2026-11-16",
+      "discount": "未確認（Grok: 最大50%OFF、熊本県・鹿児島県は最大60%、1人あたり上限20,000円、じゃらんパック2泊以上は30,000円など）",
+      "period": "予約：未確認（Grok: 県により異なり、予算上限で停止中の県多数） ／ 旅行：未確認（Grok: おおむね2026年10月1日以降～12月25日前後の宿泊）",
+      "confidence": "low",
+      "status": "new",
+      "official_domain_match": false
+    }
+  ]
+}

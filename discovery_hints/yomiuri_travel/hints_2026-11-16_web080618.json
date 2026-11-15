@@ -1,0 +1,39 @@
+{
+  "provider_id": "yomiuri_travel",
+  "provider_label": "読売旅行",
+  "generated_at": "2026-11-16T08:22:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "読売旅行の九州応援割",
+      "kind": "coupon",
+      "found_url": "https://www.yomiuri-ryokou.co.jp/s/fair/sale/yts_kyushuouen/",
+      "official_url": "https://www.yomiuri-ryokou.co.jp/s/fair/sale/yts_kyushuouen/",
+      "evidence": "公式：セール期間 10月1日～2027年1月12日まで ／ 公式：1予約・1グループにつき基本旅行代金の総額から10%OFF ／ 公式：12/26～12/28出発と1/4～3/22出発の添乗員付きの1泊以上のツアー、12/29～1/3出発と九州ふっこう応援割対象コースを除く ／ 公式：予約時にクーポンコードを入力 ／ 公式：対象商品欄の年の表記が「2027年12月26日～2027年3月22日」（誤記の可能性） ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：他割引との併用条件（公式ページでは読めず） ／ 未確認：対象商品欄の年の表記の食い違い",
+      "observed_date": "2026-11-16",
+      "discount": "1予約・1グループにつき基本旅行代金の総額から10%OFF",
+      "period": "予約：2026年10月1日～2027年1月12日 ／ 旅行：12/26～12/28出発と1/4～3/22出発の添乗員付き1泊以上の九州ツアー（12/29～1/3出発と「九州ふっこう応援割」対象コースを除く。公式の対象商品欄は「2027年12月26日～」と表記）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "読売旅行 沖縄応援キャンペーン（5,000円割引クーポン）",
+      "kind": "coupon",
+      "found_url": "https://www.yomiuri-ryokou.co.jp/s/fair/okinawa/",
+      "official_url": "https://www.yomiuri-ryokou.co.jp/s/fair/okinawa/",
+      "evidence": "公式：対象の旅行プランを予約すると1予約につき5,000円割引 ／ 公式：キャンペーン期間 10月6日～12月31日 ／ 公式：2027年1月4日～2027年3月31日に出発するツアー ／ 公式：クーポンコードをコピーして利用 ／ 未確認：最低利用額 ／ 未確認：対象者 ／ 未確認：予約方法（WEB限定か） ／ 未確認：併用条件",
+      "observed_date": "2026-11-16",
+      "discount": "1予約につき5,000円割引",
+      "period": "予約：10月6日～12月31日（2026年） ／ 旅行：2027年1月4日～2027年3月31日出発の対象ツアー",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

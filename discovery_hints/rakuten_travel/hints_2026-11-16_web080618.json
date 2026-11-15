@@ -1,0 +1,39 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-16T08:22:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 2,
+  "candidate_count": 2,
+  "candidates": [
+    {
+      "title": "お得なクーポン祭",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/11/4（水）10:00～2026/12/2（水）09:59 ／ 公式：次回は12月2日～1月5日開催予定 ／ 公式：全楽天会員様／ダイヤモンド会員様限定／ダイヤモンド・プラチナ会員様限定の区分あり ／ 公式：クーポンには金額条件がございます ／ 公式：週末（金・土）宿泊・平日（日～木）宿泊に使えるクーポン対象宿あり ／ 未確認：各クーポンの割引額 ／ 未確認：最低利用額の具体額 ／ 未確認：旅行期間 ／ 未確認：決済方法の条件 ／ 未確認：先着枚数",
+      "observed_date": "2026-11-16",
+      "discount": "未確認（Grok: 全楽天会員向け500円OFF、ダイヤモンド会員限定で金土最大4,500円OFFなど）",
+      "period": "予約：2026/11/4（水）10:00～2026/12/2（水）09:59 ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "5と0のつく日（ホテル・温泉宿 最大20%OFF）",
+      "kind": "coupon",
+      "found_url": "https://x.com/kanyo11/status/2121848822972456967",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定！ホテル・温泉宿が最大20％OFF ／ 公式：一部のクーポンは別途獲得する必要があります ／ 公式：東日本・対象施設（北海道、東北、北関東、首都圏、甲信越）／西日本・対象施設（東海、北陸、近畿、山陽・山陰、四国、九州、沖縄） ／ 公式：12月ご利用分は12月2日10時配布開始予定 ／ 公式：楽天カード会員様特典 エントリー＆事前カード決済でポイント2.5倍 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：先着枚数 ／ 未確認：11月分の残り開催日",
+      "observed_date": "2026-11-16",
+      "discount": "ホテル・温泉宿が最大20%OFF（楽天カード会員はエントリー＆事前カード決済でポイント2.5倍）",
+      "period": "予約：毎月5と0のつく日から48時間限定（12月利用分は12月2日10時配布開始予定） ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "provider_id": "club_tourism",
+  "provider_label": "クラブツーリズム",
+  "generated_at": "2026-11-16T08:22:30+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 4,
+  "candidate_count": 4,
+  "candidates": [
+    {
+      "title": "クラブツーリズム LINE友だち登録キャンペーン（WEBクーポン500円）",
+      "kind": "coupon",
+      "found_url": "https://www.club-t.com/ct/ad/sns/line/",
+      "official_url": "https://www.club-t.com/ct/ad/sns/line/",
+      "evidence": "公式：すぐに使えるWEBクーポン500円を友だちになった方全員にプレゼント ／ 公式：2026年10月1日～11月30日の新規友だち登録、クーポン利用は同期間のお申し込み、旅行は2027年9月30日出発まで ／ 公式：WEBクーポンはご旅行代金1,000円以上の商品で利用可能 ／ 公式：インターネット予約の際にのみ利用可能 ／ 公式：他のクーポン・全国旅行支援など他の割引と併用不可 ／ 公式：基本旅行代金に適用、諸費用には不可。既存予約には不可",
+      "observed_date": "2026-11-16",
+      "discount": "WEBクーポン500円",
+      "period": "予約：2026年10月1日～11月30日の新規友だち登録・お申し込み ／ 旅行：2027年9月30日出発まで",
+      "confidence": "high",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "いざ！にっぽん旅 北海道キャンペーン（3,000円Webクーポン）",
+      "kind": "coupon",
+      "found_url": "https://www.club-t.com/sp/campaign/iza-nippon/hokkaido/",
+      "official_url": "https://www.club-t.com/sp/campaign/iza-nippon/hokkaido/",
+      "evidence": "公式：3,000円Webクーポン配布中 ／ 公式：クーポン予約対象期間 2026年4月15日（水）～2026年12月10日（木）、上限に達し次第終了 ／ 公式：2026年7月1日～2026年12月31日出発のクーポン対象商品に限る ／ 公式：予約の決済画面でクーポンコードを入力 ／ 公式：電話・カウンターでの申し込みには利用不可 ／ 未確認：最低利用額 ／ 未確認：他クーポンとの併用条件（公式ページでは読めず）",
+      "observed_date": "2026-11-16",
+      "discount": "3,000円Webクーポン",
+      "period": "予約：2026年4月15日（水）～2026年12月10日（木）の予約（上限に達し次第終了） ／ 旅行：2026年7月1日～2026年12月31日出発",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "クラブツーリズムPASS 年額プラン新規入会キャンペーン（5千円分クーポン）",
+      "kind": "coupon",
+      "found_url": "https://www.club-t.com/sp/campaign/ctp/",
+      "official_url": "https://www.club-t.com/sp/campaign/ctp/",
+      "evidence": "公式：新規入会で年額プランを申し込んだ方に5千円分の旅行割引クーポン ／ 公式：年額プラン初年度会費6,000円が無料、翌年以降は自動でクレジットカード決済 ／ 公式：再入会・月額プランからの変更・過去入会者は対象外 ／ 公式：ご旅行出発日が2028年3月31日まで有効 ／ 公式：基本旅行代金の実額が1円(税込)以上必要 ／ 公式：新規でインターネット予約をする際にのみ利用可能 ／ 未確認：キャンペーンの終了日",
+      "observed_date": "2026-11-16",
+      "discount": "5千円分の旅行割引クーポン＋年額プラン初年度会費6,000円が無料",
+      "period": "予約：未確認（キャンペーン終了日は公式ページで読めず） ／ 旅行：出発日が2028年3月31日まで",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "九州ふっこう応援割（クラブツーリズム対象ツアー）",
+      "kind": "coupon",
+      "found_url": "https://x.com/tanupon_travel/status/2121941888416849965",
+      "official_url": "https://www.club-t.com/sp/special/japan/kyusyu-ouen/",
+      "evidence": "公式：熊本県・鹿児島県は旅行代金の最大60%を支援（その他の県は最大50%） ／ 公式：割引上限額（1旅行・1人当たり）20,000円、交通付宿泊旅行商品（2泊以上）30,000円、周遊型（宿泊地が2県以上）35,000円 ／ 公式：割引対象期間 2026年10月1日～12月25日／鹿児島県 2026年10月14日～2027年1月31日（12月26日～1月3日は除く） ／ 公式：福岡県の対象商品は近畿日本ツーリストのHPにて販売予定 ／ 公式：2026年10月13日更新 ／ 未確認：予約期間 ／ 未確認：決済方法の条件 ／ 未確認：県ごとの受付状況",
+      "observed_date": "2026-11-16",
+      "discount": "旅行・宿泊料金の50%（熊本県・鹿児島県は60%）。上限は1人あたり20,000円、交通付2泊以上30,000円、2県以上周遊35,000円",
+      "period": "予約：未確認（県・商品により異なり、予算上限で終了の可能性） ／ 旅行：県により異なる（例：2026年10月1日～12月25日、鹿児島県は2026年10月14日～2027年1月31日で12月26日～1月3日を除く）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
