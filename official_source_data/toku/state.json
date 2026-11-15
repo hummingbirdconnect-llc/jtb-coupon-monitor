@@ -32,14 +32,14 @@
       "content_hash": "db25af30a81c7f19bc1b00b41cb88c64e895455a7a253df5edfb789f0e97d60b"
     }
   ],
-  "queued_hash": "b0410a1b34cd30aec7b516dc5ab5f152e722fde5876715b428bde7b244244286",
-  "queued_candidate_id": "toku-b0410a1b34cd30ae",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-09T09:08:36.351624+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-10-20T09:15:29.109684+09:00",
-  "last_audit_candidate_id": "toku-57ea52d2ffc02ed6",
-  "processed_hash": "57ea52d2ffc02ed6a15815aa74d7633114f5ae2eb1eae7cf6e2c5fa8b343d478",
-  "last_processed_at": "2026-10-20T09:15:29.109684+09:00",
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-15T09:13:02.802541+09:00",
+  "last_audit_candidate_id": "toku-b0410a1b34cd30ae",
+  "processed_hash": "b0410a1b34cd30aec7b516dc5ab5f152e722fde5876715b428bde7b244244286",
+  "last_processed_at": "2026-11-15T09:13:02.802541+09:00",
   "last_changed_at": "2026-10-20T09:15:29.109684+09:00",
   "latest_file": "coupons_2026-10-20.json",
   "semantic_hash": "c3faf270edcc09189f848ce6bd93d1a142cba6411202ff4fc8662e858651e616"

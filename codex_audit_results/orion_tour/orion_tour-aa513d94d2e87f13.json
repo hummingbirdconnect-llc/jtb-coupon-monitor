@@ -1,0 +1,45 @@
+{
+  "page_summary": "JAL11月出発直前割引クーポン（2,000円割引）が配布中。3月出発先取りクーポンは終了表記。",
+  "change_summary": "JAL11月出発直前割引クーポンが新規。JAL3月出発先取りが終了表記に変化。10月出発直前割引・50周年キャンペーンは本文から消えた（要確認として残す）。",
+  "recommendation": "draft",
+  "priority": 80,
+  "uncertainty_reasons": [],
+  "audit_notes": "本文から消えた「JAL10月出発直前割引クーポン」「50周年キャンペーンクーポン」は終了と決めつけず未記載。",
+  "deals": [
+    {
+      "title": "11月出発直前割引クーポン",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "2,000円",
+      "coupon_code": null,
+      "booking_start": "2026-10-25",
+      "booking_end": "2026-11-19",
+      "travel_start": null,
+      "travel_end": "2026-11-30",
+      "eligibility": "JAL利用の国内ツアー全商品対象。JAL以外の航空会社利用商品は対象外。幼児（0～2歳）対象外。他クーポン併用不可。配布上限に達した時点で販売終了。お1人様につき割引。 出発対象期間 2026年11月01日(日)～2026年11月30日(月)。",
+      "official_url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+      "evidence_quote": "11月出発直前割引クーポン 予約対象期間 2026年10月25日(日)～2026年11月19日(木) 出発対象期間 2026年11月01日(日)～2026年11月30日(月) 対象商品 JAL利用の国内ツアー全商品対象（全発地・全方面） ※JAL以外の航空会社（FDA、スプリングジャパン、ジェットスターなど）利用商品は対象外となります。 その他 ・ 幼児（0～2歳）のご利用は割引クーポン対象外となります。 ・他の割引クーポンとの併用はできません。 ・クーポンの配布上限に達した時点で予告なく販売終了となります。 【JAL利用全商品対象】 11月出発直前割引クーポン 2,000 円割引 （お1人様につき）",
+      "confidence": "high"
+    },
+    {
+      "title": "JAL3月出発先取りクーポン",
+      "campaign_type": "coupon",
+      "status": "ended",
+      "classification": "ended",
+      "discount": "最大5％（上限10,000円まで）",
+      "coupon_code": null,
+      "booking_start": "2026-09-11",
+      "booking_end": "2026-10-31",
+      "travel_start": null,
+      "travel_end": "2027-03-31",
+      "eligibility": "JAL利用の北海道・東北スキー先取りキャンペーン対象プラン。1グループにつき旅行代金総額から割引。終了しました。 出発対象期間 2027年3月01日(月)～2027年3月31日(水)。",
+      "official_url": "https://www.orion-tour.co.jp/air/fair/feature/coupon/",
+      "evidence_quote": "北海道・東北スキー&スノボ！3月出発キャンペーン（※終了しました） 予約対象期間 2026年9月11日(金)～2026年10月31日(土) 出発対象期間 2027年3月01日(月)～2027年3月31日(水) 対象商品 JAL利用の北海道・東北スキー『先取りキャンペーン』対象プラン ※商品名に「先取りキャンペーン」の記載があるツアーが対象です。 その他 ・ 1グループにつき旅行代金総額から最大5％（上限10,000円まで）",
+      "confidence": "high"
+    }
+  ],
+  "schema_version": 1,
+  "candidate_id": "orion_tour-aa513d94d2e87f13",
+  "provider_id": "orion_tour"
+}

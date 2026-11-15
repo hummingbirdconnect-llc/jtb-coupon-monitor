@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "candidate_id": "airtrip-f667da4884988596",
+  "provider_id": "airtrip",
+  "page_summary": "九州ふっこう応援割の特設ページ。すべての受付が終了した旨のみ記載。",
+  "change_summary": "県別の記載が消え、全体で受付終了の表記になった。",
+  "recommendation": "draft",
+  "priority": 80,
+  "uncertainty_reasons": [],
+  "audit_notes": "県別（福岡・長崎・鹿児島）の記載は本文から消えたため、終了と決めつけず適用時の要確認に任せる。「最大60%OFF」は見出し表記で県別の割引率ではないため割引欄はnull。",
+  "deals": [
+    {
+      "title": "九州ふっこう応援割",
+      "campaign_type": "campaign",
+      "status": "ended",
+      "classification": "ended",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "すべての受付が終了しました。",
+      "official_url": "https://domdp.airtrip.jp/campaign/fukkou-wari/",
+      "evidence_quote": "九州ふっこう応援割は、すべての受付が終了しました すべての受付が終了しました。 たくさんのご予約ありがとうございました。",
+      "confidence": "high"
+    }
+  ]
+}

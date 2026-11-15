@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "nippon_travel-30ae87f274c04f18",
+  "provider_id": "nippon_travel",
+  "page_summary": "創業121周年！日本旅行大感謝祭のページに「当キャンペーンは終了いたしました」と明記。第1弾クーポン（国内最大1万円・海外最大4万円）と第2弾121時間限定タイムセールが掲載。",
+  "change_summary": "前回は配布中として掲載していた国内・海外クーポンが、今回の本文で終了と明記された。",
+  "recommendation": "draft",
+  "priority": 100,
+  "uncertainty_reasons": [],
+  "audit_notes": "本文に年つきの期間の記載なし。日付項目は全てnull。",
+  "deals": [
+    {
+      "title": "創業121周年感謝祭 国内旅行用クーポン",
+      "campaign_type": "coupon",
+      "status": "ended",
+      "classification": "ended",
+      "discount": "最大1万円",
+      "eligibility": "当キャンペーンは終了。第1弾 感謝祭のお得なクーポン（国内旅行用）",
+      "official_url": "https://www.nta.co.jp/cpn/anniversary/",
+      "evidence_quote": "創業121周年！日本旅行大感謝祭 当キャンペーンは終了いたしました。 たくさんのご利用ありがとうございました。 TOP 国内旅行 海外旅行 終了いたしました 【第1弾】 感謝祭のお得なクーポン 最大1万円の国内旅行用、最大4万円の海外旅行用クーポンを配布！ 【第2弾】 121時間限定 タイムセール！ 日本旅行の創業121周年に合わせて、121時間限定で実施！",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "confidence": "high"
+    },
+    {
+      "title": "創業121周年感謝祭 海外旅行用クーポン",
+      "campaign_type": "coupon",
+      "status": "ended",
+      "classification": "ended",
+      "discount": "最大4万円",
+      "eligibility": "当キャンペーンは終了。第1弾 感謝祭のお得なクーポン（海外旅行用）",
+      "official_url": "https://www.nta.co.jp/cpn/anniversary/",
+      "evidence_quote": "創業121周年！日本旅行大感謝祭 当キャンペーンは終了いたしました。 たくさんのご利用ありがとうございました。 TOP 国内旅行 海外旅行 終了いたしました 【第1弾】 感謝祭のお得なクーポン 最大1万円の国内旅行用、最大4万円の海外旅行用クーポンを配布！ 【第2弾】 121時間限定 タイムセール！ 日本旅行の創業121周年に合わせて、121時間限定で実施！",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "confidence": "high"
+    },
+    {
+      "title": "121時間限定 タイムセール！",
+      "campaign_type": "sale",
+      "status": "ended",
+      "classification": "ended",
+      "discount": null,
+      "eligibility": "当キャンペーンは終了。第2弾。創業121周年に合わせて121時間限定で実施",
+      "official_url": "https://www.nta.co.jp/cpn/anniversary/",
+      "evidence_quote": "創業121周年！日本旅行大感謝祭 当キャンペーンは終了いたしました。 たくさんのご利用ありがとうございました。 TOP 国内旅行 海外旅行 終了いたしました 【第1弾】 感謝祭のお得なクーポン 最大1万円の国内旅行用、最大4万円の海外旅行用クーポンを配布！ 【第2弾】 121時間限定 タイムセール！ 日本旅行の創業121周年に合わせて、121時間限定で実施！",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "confidence": "high"
+    }
+  ]
+}

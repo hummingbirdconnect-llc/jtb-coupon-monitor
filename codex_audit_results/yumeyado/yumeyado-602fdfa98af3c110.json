@@ -1,0 +1,29 @@
+{
+  "page_summary": "ゆめやどアプリのストア説明。初回DLクーポン1,000円offの記載あり。他はアプリ機能説明とベルーナのPR一覧。",
+  "change_summary": "初回（baseline）。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "Apple lookup・PR TIMESは特典記載なし。Google Play本文の1件のみ確定。期間の記載なし。",
+  "deals": [
+    {
+      "title": "初回DLクーポン",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "1,000円",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "1,000円offの初回DLクーポンを限定配布中",
+      "official_url": "https://play.google.com/store/apps/details?hl=ja&id=li.yapp.appDB4E43FC",
+      "evidence_quote": "1,000円offの初回DLクーポンを限定配布中",
+      "confidence": "high"
+    }
+  ],
+  "schema_version": 1,
+  "candidate_id": "yumeyado-602fdfa98af3c110",
+  "provider_id": "yumeyado"
+}

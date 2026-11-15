@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "jalan_activity-3196d132a9967cea",
+  "provider_id": "jalan_activity",
+  "page_summary": "じゃらん遊び・体験のセール2件（お得な10日間・スペシャルウィーク）とクーポン案内ページ。",
+  "change_summary": "初回のbaseline。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "お得な10日間は掲載期間のみで特典内容なし・該当プランなし、期間は取得時点で終了日を過ぎている可能性があるが終了明記がないためactive。スペシャルウィークは本文に終了明記。クーポン案内は金額も期間もない案内ページのためunpublishable。",
+  "deals": [
+    {
+      "title": "毎月20日から！じゃらんのお得な10日間 (遊び・体験)",
+      "campaign_type": "sale",
+      "status": "active",
+      "classification": "publishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "掲載期間：2026年10月20日〜2026年10月29日。本セールの掲載開始時間は10:00頃を予定。該当するプランはありませんでした。",
+      "official_url": "https://www.jalan.net/activity/theme/otoku_10days/",
+      "evidence_quote": "毎月20日から！じゃらんのお得な10日間 (遊び・体験) 掲載期間：2026年10月20日〜2026年10月29日 宿・ホテル じゃらんパック(交通＋宿泊) 遊び・体験 レンタカー 本セールの掲載開始時間は10:00頃を予定しています coming soon! coming soon! 該当するプランはありませんでした。",
+      "confidence": "high"
+    },
+    {
+      "title": "じゃらん遊び・体験スペシャルウィーク",
+      "campaign_type": "sale",
+      "status": "ended",
+      "classification": "ended",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "掲載期間：2026年10月30日〜2026年11月19日。11/19（木）をもちまして終了。",
+      "official_url": "https://www.jalan.net/activity/theme/specialweek/",
+      "evidence_quote": "掲載期間：2026年10月30日〜2026年11月19日 エリアで探す おすすめの ジャンル 注目の 体験スポット 『じゃらん 遊び・体験スペシャルウィーク』は 11/19（木）をもちまして終了いたしました。 ご利用ありがとうございました。",
+      "confidence": "high"
+    },
+    {
+      "title": "じゃらん遊び・体験クーポン",
+      "campaign_type": "coupon",
+      "status": "unknown",
+      "classification": "unpublishable",
+      "discount": null,
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "クーポン獲得にはリクルートIDのログインが必要。獲得可能なクーポンはキャンペーンページやメルマガで案内。金額・期間の記載なし。",
+      "official_url": "https://www.jalan.net/jalan/activity/doc/howto/coupon_help.html",
+      "evidence_quote": "じゃらん遊び・体験クーポンは、じゃらんnetの遊び・体験予約の際に利用できるお得なクーポンです。 下記の注意事項を参照の上、ご利用ください。 ※じゃらんクーポン（国内宿予約）、じゃらんパッククーポン、じゃらん海外クーポン、じゃらんレンタカークーポンとは取扱いが異なりますので、ご注意ください。 じゃらん遊び・体験クーポンを獲得する 獲得可能なじゃらん遊び・体験クーポンは、じゃらんnetのキャンペーンページやメルマガにてご案内いたします。 ご案内の手順に従ってじゃらん遊び・体験クーポンを獲得してください。 じゃらん遊び・体験クーポンの獲得には、リクルートIDのログインが必要となります。 リクルートIDをお持ちでない方は、新規会員登録をお願いいたします。",
+      "confidence": "low"
+    }
+  ]
+}

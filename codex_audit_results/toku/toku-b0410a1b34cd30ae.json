@@ -1,0 +1,12 @@
+{
+  "page_summary": "タイムセールページ。対象プランが割引率30%OFF以上。価格は有料会員限定表示。",
+  "change_summary": "掲載宿プランの入れ替わりのみ。タイムセールの割引率・条件に変化なし。",
+  "recommendation": "ignore",
+  "priority": 20,
+  "uncertainty_reasons": [],
+  "audit_notes": "宿プラン一覧は個別プランでありキャンペーン項目ではないため扱わない。既存のタイムセール（30 %OFF以上）と同内容。",
+  "deals": [],
+  "schema_version": 1,
+  "candidate_id": "toku-b0410a1b34cd30ae",
+  "provider_id": "toku"
+}

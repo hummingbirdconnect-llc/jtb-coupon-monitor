@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate_id": "skyscanner-9a115f33ace361c8",
+  "provider_id": "skyscanner",
+  "page_summary": "SkyscannerのPR TIMES一覧。旅行トレンド・調査・機能提供のプレスリリースのみで、クーポン・セール・キャンペーンの記載なし。",
+  "change_summary": "初回（baseline）。掲載済みデータなし。確定できる特典なし。",
+  "recommendation": "hold",
+  "priority": 20,
+  "uncertainty_reasons": [],
+  "audit_notes": "「ブラックフライデー到来！」の見出しは昨年の航空券価格の下落率調査の記事で、Skyscanner自体のセール・クーポンではないため deals に載せない。",
+  "deals": []
+}

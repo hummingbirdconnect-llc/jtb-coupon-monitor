@@ -18,15 +18,15 @@
       "content_hash": "e0dda762e177756482050375e357ce53f402d82603c6d2a5957500966ad5f55c"
     }
   ],
-  "queued_hash": "aa513d94d2e87f138c61e881e1e9d75215fdb708e654f5c6d37616d37b637504",
-  "queued_candidate_id": "orion_tour-aa513d94d2e87f13",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-09T09:09:16.519086+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-10-19T21:17:58.193517+09:00",
-  "last_audit_candidate_id": "orion_tour-50b66fe84186960c",
-  "processed_hash": "50b66fe84186960cab634e41faacc81407a928b7b34a390f095299cf723bd852",
-  "last_processed_at": "2026-10-19T21:17:58.193517+09:00",
-  "last_changed_at": "2026-10-19T21:17:58.193517+09:00",
-  "latest_file": "coupons_2026-10-19.json",
-  "semantic_hash": "cfebbd1a8a60569bc98d975a6a90fd052bc6258a8011337a3a492f846343edae"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-15T09:13:02.795612+09:00",
+  "last_audit_candidate_id": "orion_tour-aa513d94d2e87f13",
+  "processed_hash": "aa513d94d2e87f138c61e881e1e9d75215fdb708e654f5c6d37616d37b637504",
+  "last_processed_at": "2026-11-15T09:13:02.795612+09:00",
+  "last_changed_at": "2026-11-15T09:13:02.795612+09:00",
+  "latest_file": "coupons_2026-11-15.json",
+  "semantic_hash": "e57bbd3e9f2f2a8fcd2c29b400585916df9618aaf5a062f041ab2136b3f0343f"
 }

@@ -531,6 +531,153 @@
       "recommendation": "draft",
       "applied_at": "2026-11-07T09:10:32.334528+09:00",
       "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-c434da7108b9441a.json"
+    },
+    "activityjapan-28690d768520beca": {
+      "provider_id": "activityjapan",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.765917+09:00",
+      "result_path": "codex_audit_results/activityjapan/activityjapan-28690d768520beca.json"
+    },
+    "airtrip-f667da4884988596": {
+      "provider_id": "airtrip",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.767026+09:00",
+      "result_path": "codex_audit_results/airtrip/airtrip-f667da4884988596.json"
+    },
+    "asoview-6f44245c25f70dc6": {
+      "provider_id": "asoview",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.768602+09:00",
+      "result_path": "codex_audit_results/asoview/asoview-6f44245c25f70dc6.json"
+    },
+    "club_tourism-a8e938142a8a82f3": {
+      "provider_id": "club_tourism",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.770185+09:00",
+      "result_path": "codex_audit_results/club_tourism/club_tourism-a8e938142a8a82f3.json"
+    },
+    "expedia-18f1fd4209334650": {
+      "provider_id": "expedia",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.773389+09:00",
+      "result_path": "codex_audit_results/expedia/expedia-18f1fd4209334650.json"
+    },
+    "hotels-8e47e405b8fc6ead": {
+      "provider_id": "hotels",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.775999+09:00",
+      "result_path": "codex_audit_results/hotels/hotels-8e47e405b8fc6ead.json"
+    },
+    "jalan-21216301a993ffa5": {
+      "provider_id": "jalan",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.778493+09:00",
+      "result_path": "codex_audit_results/jalan/jalan-21216301a993ffa5.json"
+    },
+    "jalan_activity-3196d132a9967cea": {
+      "provider_id": "jalan_activity",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.780390+09:00",
+      "result_path": "codex_audit_results/jalan_activity/jalan_activity-3196d132a9967cea.json"
+    },
+    "jalan_pack-1bb0a0765986ee65": {
+      "provider_id": "jalan_pack",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.781611+09:00",
+      "result_path": "codex_audit_results/jalan_pack/jalan_pack-1bb0a0765986ee65.json"
+    },
+    "jalan_rentacar-573412f7497c243e": {
+      "provider_id": "jalan_rentacar",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.783707+09:00",
+      "result_path": "codex_audit_results/jalan_rentacar/jalan_rentacar-573412f7497c243e.json"
+    },
+    "jr_tokai_tours-bba80e8635052f1e": {
+      "provider_id": "jr_tokai_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.788011+09:00",
+      "result_path": "codex_audit_results/jr_tokai_tours/jr_tokai_tours-bba80e8635052f1e.json"
+    },
+    "jtrip-2762bcb9aeb8b993": {
+      "provider_id": "jtrip",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.790832+09:00",
+      "result_path": "codex_audit_results/jtrip/jtrip-2762bcb9aeb8b993.json"
+    },
+    "newt-d42754ad5af43344": {
+      "provider_id": "newt",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.793546+09:00",
+      "result_path": "codex_audit_results/newt/newt-d42754ad5af43344.json"
+    },
+    "nippon_travel-30ae87f274c04f18": {
+      "provider_id": "nippon_travel",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.794708+09:00",
+      "result_path": "codex_audit_results/nippon_travel/nippon_travel-30ae87f274c04f18.json"
+    },
+    "orion_tour-aa513d94d2e87f13": {
+      "provider_id": "orion_tour",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.795933+09:00",
+      "result_path": "codex_audit_results/orion_tour/orion_tour-aa513d94d2e87f13.json"
+    },
+    "relux-56a3200361984103": {
+      "provider_id": "relux",
+      "status": "held",
+      "recommendation": "hold",
+      "applied_at": "2026-11-15T09:13:02.798250+09:00",
+      "result_path": "codex_audit_results/relux/relux-56a3200361984103.json"
+    },
+    "skyscanner-9a115f33ace361c8": {
+      "provider_id": "skyscanner",
+      "status": "held",
+      "recommendation": "hold",
+      "applied_at": "2026-11-15T09:13:02.799080+09:00",
+      "result_path": "codex_audit_results/skyscanner/skyscanner-9a115f33ace361c8.json"
+    },
+    "tabirai_rentacar-8aa429a9744621bb": {
+      "provider_id": "tabirai_rentacar",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.800508+09:00",
+      "result_path": "codex_audit_results/tabirai_rentacar/tabirai_rentacar-8aa429a9744621bb.json"
+    },
+    "tobu_top_tours-11f68eda981e67e9": {
+      "provider_id": "tobu_top_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.802057+09:00",
+      "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-11f68eda981e67e9.json"
+    },
+    "toku-b0410a1b34cd30ae": {
+      "provider_id": "toku",
+      "status": "processed",
+      "recommendation": "ignore",
+      "applied_at": "2026-11-15T09:13:02.803496+09:00",
+      "result_path": "codex_audit_results/toku/toku-b0410a1b34cd30ae.json"
+    },
+    "yumeyado-602fdfa98af3c110": {
+      "provider_id": "yumeyado",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-15T09:13:02.806431+09:00",
+      "result_path": "codex_audit_results/yumeyado/yumeyado-602fdfa98af3c110.json"
     }
   }
 }

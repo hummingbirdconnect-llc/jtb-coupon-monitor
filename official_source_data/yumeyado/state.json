@@ -46,8 +46,15 @@
       "content_hash": "dd0146c1a1d479921b8aa80faeefd8eb38e50a4be300f2445d23af51a17edb1e"
     }
   ],
-  "queued_hash": "602fdfa98af3c110a0020fca309b44cdfb66d98196a386048c92c07e5bff0483",
-  "queued_candidate_id": "yumeyado-602fdfa98af3c110",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-09T09:04:41.948410+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-15T09:13:02.806104+09:00",
+  "last_audit_candidate_id": "yumeyado-602fdfa98af3c110",
+  "processed_hash": "602fdfa98af3c110a0020fca309b44cdfb66d98196a386048c92c07e5bff0483",
+  "last_processed_at": "2026-11-15T09:13:02.806104+09:00",
+  "last_changed_at": "2026-11-15T09:13:02.806104+09:00",
+  "latest_file": "coupons_2026-11-15.json",
+  "semantic_hash": "b06c3818fb45c0df2f53cf71de1e6c8246bc86f2293c13bb0df5e81e5534a94a"
 }

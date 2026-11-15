@@ -46,8 +46,15 @@
       "content_hash": "9380ce989c466edfe91483ce5c7d8660bfc020a772e0e7c6f2f0a0f063c2b145"
     }
   ],
-  "queued_hash": "8e47e405b8fc6eadf23d16c69b453d76e868c0f08662904cfddc5e6394b21892",
-  "queued_candidate_id": "hotels-8e47e405b8fc6ead",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-09T09:08:05.722943+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-15T09:13:02.775678+09:00",
+  "last_audit_candidate_id": "hotels-8e47e405b8fc6ead",
+  "processed_hash": "8e47e405b8fc6eadf23d16c69b453d76e868c0f08662904cfddc5e6394b21892",
+  "last_processed_at": "2026-11-15T09:13:02.775678+09:00",
+  "last_changed_at": "2026-11-15T09:13:02.775678+09:00",
+  "latest_file": "coupons_2026-11-15.json",
+  "semantic_hash": "b619a115e9c3dd066f86b4d4f6957c2678411be6a49e9379b550eb97c946a0ab"
 }

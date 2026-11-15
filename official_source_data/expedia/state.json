@@ -102,8 +102,15 @@
       "content_hash": "bce5cdbffc18b4d9f27c0f336de6c3b88e745a07d7ef4aacce7a89263b3251fa"
     }
   ],
-  "queued_hash": "18f1fd420933465081ed2bf03cfac2789701c258e4ac2afe35fc6b35064ab7f1",
-  "queued_candidate_id": "expedia-18f1fd4209334650",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-09T09:06:28.726024+09:00",
-  "last_audit_status": "pending"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-15T09:13:02.772978+09:00",
+  "last_audit_candidate_id": "expedia-18f1fd4209334650",
+  "processed_hash": "18f1fd420933465081ed2bf03cfac2789701c258e4ac2afe35fc6b35064ab7f1",
+  "last_processed_at": "2026-11-15T09:13:02.772978+09:00",
+  "last_changed_at": "2026-11-15T09:13:02.772978+09:00",
+  "latest_file": "coupons_2026-11-15.json",
+  "semantic_hash": "0e6103071d33efe253df2ddbd3552556a20baab043129113fffa5afa51a02483"
 }

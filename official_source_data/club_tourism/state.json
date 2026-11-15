@@ -34,10 +34,15 @@
       "content_hash": "dc06fc7423218a5dd86e2379aabfba322358e55253ecc6982ffd1eb6fa7ac8b8"
     }
   ],
-  "queued_hash": "a8e938142a8a82f348ffe728430c637a90d29bed4fa2f12724575dc84f98823f",
-  "queued_candidate_id": "club_tourism-a8e938142a8a82f3",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-09T09:08:22.792994+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-09-29T17:55:53.686556+09:00",
-  "last_audit_candidate_id": "club_tourism-336f971184b766a7"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-15T09:13:02.769801+09:00",
+  "last_audit_candidate_id": "club_tourism-a8e938142a8a82f3",
+  "processed_hash": "a8e938142a8a82f348ffe728430c637a90d29bed4fa2f12724575dc84f98823f",
+  "last_processed_at": "2026-11-15T09:13:02.769801+09:00",
+  "last_changed_at": "2026-11-15T09:13:02.769801+09:00",
+  "latest_file": "coupons_2026-11-15.json",
+  "semantic_hash": "1202c90322f833ee8cd32512c0e182e31d3cc85b6aad5ac928f9f62e05005227"
 }
