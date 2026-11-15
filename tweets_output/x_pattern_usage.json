@@ -8710,5 +8710,77 @@
   "pattern": "daily_check",
   "ota": "tripcom",
   "title": "人気エリアホテルをおトクに"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "ukigane",
+  "ota": "jtb",
+  "title": "九州ふっこう応援割 ながさきキャンペーン"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "target_call",
+  "ota": "jtb",
+  "title": "鹿児島ふっこう応援割"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "group_call",
+  "ota": "yahoo_travel",
+  "title": "メルキュール札幌 先着40名様限定 10,000円OFFクーポン"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "九州ふっこう応援割 ながさきキャンペーン"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "memo_style",
+  "ota": "jtb",
+  "title": "鹿児島ふっこう応援割"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "group_call",
+  "ota": "ikkyu",
+  "title": "オテル グレージュ(DLIGHT LIFE&HOTELS) 10,000円OFFクーポン"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "今だけ値下がり - 最大15% OFF"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "group_call",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-11-16",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "target_call",
+  "ota": "tripcom",
+  "title": "人気エリアホテルをおトクに"
  }
 ]
