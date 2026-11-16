@@ -159,16 +159,22 @@ def canonical_url(url: str) -> str:
 
 
 def registered_urls(provider: dict[str, Any]) -> list[str]:
+    """登録URLを、登録どおりの形（末尾の「/」も含む）で返す。重複は正規形で判定する。
+
+    以前は正規形（末尾の「/」を削った形）を返しており、その形のURLを開いて
+    403になる会社があった（オリオンツアー 2026-11-16）。比較は呼び出し側で正規形にする。
+    """
     urls: list[str] = []
-    for source in provider.get("official_sources") or []:
-        url = canonical_url(source.get("url", ""))
-        if url and url not in urls:
-            urls.append(url)
+    seen: set[str] = set()
+    raw_urls = [source.get("url", "") for source in provider.get("official_sources") or []]
     for coupon in known_coupons(provider):
-        for key in ("detail_url", "source_url"):
-            url = canonical_url(coupon.get(key, ""))
-            if url and url not in urls:
-                urls.append(url)
+        raw_urls.extend(coupon.get(key, "") for key in ("detail_url", "source_url"))
+    for raw in raw_urls:
+        url = str(raw or "").strip()
+        key = canonical_url(url)
+        if key and key not in seen:
+            seen.add(key)
+            urls.append(url)
     return urls
 
 
@@ -316,8 +322,9 @@ def classify_candidate(
     domains = provider.get("official_domains") or []
     status = "new"
     matched_title = ""
+    url_keys = {canonical_url(url) for url in urls}
     for url in (official_url, found_url):
-        if url and canonical_url(url) in urls:
+        if url and canonical_url(url) in url_keys:
             status = "known_url"
             break
     if status == "new" and title:

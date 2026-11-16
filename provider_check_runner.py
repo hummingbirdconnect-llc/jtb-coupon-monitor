@@ -202,6 +202,35 @@ def write_status(provider: dict, payload: dict) -> Path:
     return latest
 
 
+URL_CHECK_FILE = "url_check_latest.json"
+
+
+def load_url_change(provider: dict, started: datetime) -> dict:
+    """監視スクリプトが今回書いた「URL変更の可能性」の記録を読む（古い記録は使わない）。"""
+    if not provider.get("data_dir"):
+        return {}
+    path = ROOT / provider["data_dir"] / URL_CHECK_FILE
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+        checked_at = datetime.fromisoformat(str(data.get("checked_at") or ""))
+        stale = checked_at < started
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return {}
+    if stale or not data.get("url_change_suspected"):
+        return {}
+    return {
+        key: data[key]
+        for key in (
+            "url_change_suspected",
+            "url_change_label",
+            "url_check_status",
+            "url_candidates",
+            "url_checks",
+        )
+        if key in data
+    }
+
+
 def run_real_monitor(provider: dict) -> dict:
     command = REAL_MONITOR_COMMANDS[provider["id"]]
     started = now_jst()
@@ -226,6 +255,7 @@ def run_real_monitor(provider: dict) -> dict:
 
     coupons, latest_file = load_latest_coupons(provider)
     data_date = data_date_from_filename(latest_file)
+    url_change = load_url_change(provider, started)
     payload = {
         "provider_id": provider["id"],
         "provider_label": provider["label"],
@@ -244,6 +274,7 @@ def run_real_monitor(provider: dict) -> dict:
         "ai_used": False,
         "wp_review_eligible": False,
         "error": error,
+        **url_change,
     }
     if provider["id"] == "his" and status == "success":
         visual_path = (
@@ -476,6 +507,9 @@ def write_run_summary(scope: str, summaries: list[dict]) -> Path:
     needs_review_provider_ids = [
         item.get("provider_id") for item in summaries if item.get("status") == "needs_review"
     ]
+    url_change_provider_ids = [
+        item.get("provider_id") for item in summaries if item.get("url_change_suspected")
+    ]
     payload = {
         "completed_at": now_jst().isoformat(),
         "scope": scope,
@@ -484,6 +518,8 @@ def write_run_summary(scope: str, summaries: list[dict]) -> Path:
         "error_provider_ids": error_provider_ids,
         "needs_review_count": len(needs_review_provider_ids),
         "needs_review_provider_ids": needs_review_provider_ids,
+        "url_change_suspected_count": len(url_change_provider_ids),
+        "url_change_suspected_provider_ids": url_change_provider_ids,
         "codex_audit_candidate_count": len(audit_candidates),
         "codex_audit_candidates": audit_candidates,
         "wp_review_eligible_provider_ids": [],
@@ -558,6 +594,17 @@ def report_run_outcome(summaries: list[dict], *, fail_on_error: bool) -> bool:
         print(
             f"::warning::{item.get('provider_label')}: 取得件数が前回より大きく減ったため"
             f"要確認にしました（前回データは残しています）"
+        )
+    for item in summaries:
+        if not item.get("url_change_suspected"):
+            continue
+        candidates = ", ".join(
+            str(candidate.get("url")) for candidate in item.get("url_candidates") or []
+        )
+        print(
+            f"::warning::{item.get('provider_label')}: URL変更の可能性"
+            f"（登録URLの状態: {item.get('url_check_status')}）"
+            f" 候補: {candidates or 'なし'}。登録URLの変更はオーナー確認のPRで行います"
         )
     for item in errors:
         print(

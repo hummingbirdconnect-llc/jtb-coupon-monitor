@@ -82,6 +82,14 @@
       "coverage_status": "auto_daily",
       "data_dir": "jalpack_coupon_data",
       "master_path": "../vault_blog/ウェルトリップ/会社別/JALパック/coupon-master/master.md",
+      "official_domains": ["jal.co.jp"],
+      "official_sources": [
+        {
+          "url": "https://www.jal.co.jp/jp/ja/campaign/blackflyday/",
+          "fetch_method": "auto",
+          "purpose": "JALブラックフライデー（旧 /jp/ja/domtour/jaldp/blackfriday/ は404。2026-11-16オーナー指定）"
+        }
+      ],
       "note": "Chrome方式の公式HTML取得と黄色背景リスト型レビューに対応済み。"
     },
     {

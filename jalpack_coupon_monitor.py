@@ -28,6 +28,7 @@ from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup
 
+import url_discovery
 from coupon_validator import validate_coupons
 
 
@@ -348,20 +349,68 @@ def base_coupon(
 # 公式ページ取得
 # ============================================================
 
+# URL変更の判定用に、直近の取得のステータスと転送後のURLを控える（url_discovery）
+LAST_FETCH = {"status": None, "final_url": ""}
+URL_CHECK_FILE = DATA_DIR / "url_check_latest.json"
+
+
 def fetch_official_html(url, timeout):
+    LAST_FETCH.update(status=None, final_url="")
     resp = requests.get(url, headers=HEADERS, timeout=(8, timeout))
+    LAST_FETCH.update(status=resp.status_code, final_url=str(resp.url or ""))
     resp.raise_for_status()
     resp.encoding = resp.apparent_encoding or "utf-8"
     return resp.text
 
 
 def fetch_official_html_with_chrome(browser, url, timeout):
+    LAST_FETCH.update(status=None, final_url="")
     page = browser.new_page(user_agent=HEADERS["User-Agent"])
     try:
-        page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
+        response = page.goto(url, wait_until="domcontentloaded", timeout=timeout * 1000)
+        LAST_FETCH.update(status=response.status if response else None, final_url=page.url or "")
         return page.content()
     finally:
         page.close()
+
+
+def write_url_check(url_results):
+    """404・403・トップへの転送になった公式URLの移転先候補を探して記録する。
+
+    登録URL（OFFICIAL_SOURCES）は書き換えない。変更はオーナー確認のPRで行う。
+    """
+    provider = {"id": "jalpack", "official_domains": ["jal.co.jp"]}
+    client = None
+    checks = []
+    for url, status, final_url in url_results:
+        if not url_discovery.needs_discovery(url, status, final_url):
+            continue
+        client = client or url_discovery.DiscoveryClient()
+        checks.append(
+            url_discovery.check_registered_url(
+                provider, url, status=status, final_url=final_url, client=client
+            )
+        )
+    summary = url_discovery.summarize_url_checks(checks)
+    payload = {
+        "provider_id": "jalpack",
+        "checked_at": datetime.now(JST).isoformat(),
+        **summary,
+        "url_change_suspected": bool(summary.get("url_change_suspected")),
+    }
+    URL_CHECK_FILE.parent.mkdir(parents=True, exist_ok=True)
+    URL_CHECK_FILE.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    for candidate_check in summary.get("url_checks") or []:
+        if not candidate_check.get("suspected"):
+            continue
+        found = ", ".join(c["url"] for c in candidate_check.get("candidates") or []) or "なし"
+        print(
+            f"  🔎 {url_discovery.URL_CHANGE_LABEL}: {candidate_check['registered_url']}"
+            f"（{candidate_check.get('status') or candidate_check['trigger']}）候補: {found}"
+        )
+    return summary
 
 
 def open_chrome_browser():
@@ -438,6 +487,7 @@ def parse_official_source(rule, html, fetch_method):
 def scrape_official_sources(timeout, fetch_method):
     coupons = []
     failures = []
+    url_results = []
     chrome = None
 
     try:
@@ -453,10 +503,12 @@ def scrape_official_sources(timeout, fetch_method):
                 else:
                     html = fetch_official_html(rule.url, timeout)
                     method_used = "requests"
+                url_results.append((rule.url, LAST_FETCH["status"], LAST_FETCH["final_url"]))
                 coupon = parse_official_source(rule, html, method_used)
                 coupons.append(coupon)
                 print(f"  ✅ 取得: {coupon['stock_status']} / {coupon.get('discount') or '割引額未抽出'}")
             except Exception as exc:
+                url_results.append((rule.url, LAST_FETCH["status"], LAST_FETCH["final_url"]))
                 failures.append({
                     "title": rule.title,
                     "url": rule.url,
@@ -471,6 +523,16 @@ def scrape_official_sources(timeout, fetch_method):
             browser.close()
             playwright.stop()
 
+    try:
+        url_change = write_url_check(url_results)
+    except Exception as exc:  # noqa: BLE001 - 候補探しの失敗で取得結果を失わない
+        print(f"  ⚠️ URL変更の確認に失敗: {exc.__class__.__name__}")
+        url_change = {}
+    for failure in failures:
+        for check in url_change.get("url_checks") or []:
+            if check["registered_url"] == failure["url"] and check.get("suspected"):
+                failure["url_change_label"] = url_discovery.URL_CHANGE_LABEL
+                failure["url_candidates"] = [c["url"] for c in check.get("candidates") or []]
     return coupons, failures
 
 
@@ -751,6 +813,11 @@ def generate_report(coupons, events, fetch_failures, source_mode, dry_run=False)
         lines.extend(["## 公式ページ取得失敗"])
         for f in fetch_failures:
             lines.append(f"- {f['title']}: {f['url']} / {f['error']}")
+            if f.get("url_change_label"):
+                lines.append(
+                    f"  - {f['url_change_label']}: 候補 "
+                    f"{', '.join(f.get('url_candidates') or []) or 'なし'}"
+                )
         lines.append("")
 
     if events:
