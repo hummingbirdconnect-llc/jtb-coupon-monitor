@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "90c1474a17a6a0962073e6e6d931afce0439c05694eb14ab26a22d23f4d5997a",
-  "last_checked_at": "2026-11-17T07:20:48.855903+09:00",
+  "observed_hash": "0bbc6f438ad7a728f0719221b0789fca9392a998500366fe41d7cc49f889a41d",
+  "last_checked_at": "2026-11-17T08:40:53.061330+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -89,12 +89,26 @@
       "discovered_urls": [],
       "text_chars": 48709,
       "content_hash": "becb069be29469b698597c3e82e34815aae4b388055b800407decb8a7ec0886d"
+    },
+    {
+      "url": "https://www.jalan.net/news/article/919372/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: じゃらんのお得な10日間（11月回）",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 8920,
+      "content_hash": "711d5f2a047486c4a573f3f63bf2ab239e2888b40d0c95b66d4963a58d9e049c"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-11-15T16:02:26.756694+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "0bbc6f438ad7a728f0719221b0789fca9392a998500366fe41d7cc49f889a41d",
+  "queued_candidate_id": "jalan-0bbc6f438ad7a728",
+  "queued_at": "2026-11-17T08:40:53.063786+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-11-16T09:10:39.927437+09:00",
   "last_audit_candidate_id": "jalan-90c1474a17a6a096",
   "processed_hash": "90c1474a17a6a0962073e6e6d931afce0439c05694eb14ab26a22d23f4d5997a",
