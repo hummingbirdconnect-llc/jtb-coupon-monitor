@@ -1,7 +1,7 @@
 {
   "provider_id": "rakuten_travel",
-  "observed_hash": "f67484ecd0b07250a1278a756dd11fa14288710653c7fbeaa0e8ac5c2f02b098",
-  "last_checked_at": "2026-11-17T07:20:50.812528+09:00",
+  "observed_hash": "907d00767ad9ea10585ff0b112e6a6e9269ea5f9901b4ca079f664f5a3ed90c6",
+  "last_checked_at": "2026-11-17T08:41:41.251834+09:00",
   "sources": [
     {
       "url": "https://travel.rakuten.co.jp/coupon/",
@@ -16,11 +16,39 @@
       "discovered_urls": [],
       "text_chars": 3893,
       "content_hash": "a3556c1076e0deee26931b2f4cdf5dd849e21f7a659eab81e30a86e3a8ce576d"
+    },
+    {
+      "url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: お得なクーポン祭",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 12716,
+      "content_hash": "3b8ee30fc53d9e80a8a4c95be940373d7111e3cadc179288d2ef12526c53d576"
+    },
+    {
+      "url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: 得旅キャンペーン（国内旅行・最大ポイント15倍）",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 15789,
+      "content_hash": "109e78fc6e397a80ed2a7f7728eb2770d2d80b1dba318e6175a7e55eaf3b2dbd"
     }
   ],
-  "queued_hash": "f67484ecd0b07250a1278a756dd11fa14288710653c7fbeaa0e8ac5c2f02b098",
-  "queued_candidate_id": "rakuten_travel-f67484ecd0b07250",
-  "queued_at": "2026-11-16T16:02:42.855946+09:00",
+  "queued_hash": "907d00767ad9ea10585ff0b112e6a6e9269ea5f9901b4ca079f664f5a3ed90c6",
+  "queued_candidate_id": "rakuten_travel-907d00767ad9ea10",
+  "queued_at": "2026-11-17T08:41:41.253673+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-10-15T14:39:06.165699+09:00",
   "last_audit_candidate_id": "rakuten_travel-2bac160af2f68288",
