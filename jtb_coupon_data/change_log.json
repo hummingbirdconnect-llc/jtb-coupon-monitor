@@ -7270,5 +7270,23 @@
     "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
     "discount": "最大3,000円引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-16",
+    "type": "🟢 配布再開",
+    "id": "2607tokyu",
+    "category": "国内",
+    "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+    "discount": "最大8,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-16",
+    "type": "🔴 配布終了",
+    "id": "2609kyushukagoshima",
+    "category": "国内",
+    "title": "鹿児島ふっこう応援割",
+    "discount": "最大60％引",
+    "stock_status": "配布終了"
   }
 ]

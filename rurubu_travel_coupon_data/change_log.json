@@ -3,38 +3,6 @@
     "date": "2026-09-11",
     "type": "gone",
     "category": "エリア限定クーポン",
-    "id": "rurubu_travel-hodoo26my50-hodoo26my30-52a6036443",
-    "title": "北海道 道央エリア オススメ旅館・ホテルで使える割引クーポン",
-    "discount": "最大¥5,000引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-hogs26may30-911100c684",
-    "title": "ガソリン応援特典付！兵庫県淡路島エリアで使えるクーポン",
-    "discount": "最大¥3,000引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-hweta26jn20-9c51a67818",
-    "title": "【8月宿泊限定】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
-    "discount": "最大20%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-hwetj26jn20-ef14acfbdf",
-    "title": "【7月宿泊限定】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
-    "discount": "最大20%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
     "id": "rurubu_travel-hyg26jun10-a30db7fd5d",
     "title": "兵庫県 ひょうごシティ夏得クーポン（最大4,000円引き）",
     "discount": "最大10%引き"
@@ -3997,6 +3965,38 @@
     "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
     "id": "rurubu_travel-pp26sensn15-bcacec9d30",
     "title": "福井県 あわら温泉 まつや千千で使えるクーポン（最大10,000円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-16",
+    "type": "new",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-itht26nov10-bef17e103c",
+    "title": "伊東園ホテルズのおすすめ施設で使えるクーポン（最大10,000円引き）",
+    "discount": "最大10%引き"
+  },
+  {
+    "date": "2026-11-16",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26ahvh150-ef92f91698",
+    "title": "長野県 安曇野 穂高ビューホテルで使えるクーポン",
+    "discount": "最大¥15,000引き"
+  },
+  {
+    "date": "2026-11-16",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26byny20-9e8a34c169",
+    "title": "長野県 湯田中温泉 一茶のこみち 美湯の宿で使えるクーポン（最大10,000円引き）",
+    "discount": "最大20%引き"
+  },
+  {
+    "date": "2026-11-16",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26yknsb15-d03126ddb4",
+    "title": "三重県 伊勢志摩 サン浦島悠季の里で使えるクーポン（最大12,000円引き）＜第三弾＞",
     "discount": "最大15%引き"
   }
 ]

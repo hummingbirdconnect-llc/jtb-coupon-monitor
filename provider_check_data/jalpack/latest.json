@@ -3,9 +3,9 @@
   "provider_label": "JALパック",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-11-16T07:19:48.907656+09:00",
-  "completed_at": "2026-11-16T07:20:17.830074+09:00",
-  "official_fetched_at": "2026-11-16T07:20:17.830074+09:00",
+  "started_at": "2026-11-16T16:02:02.246470+09:00",
+  "completed_at": "2026-11-16T16:02:36.766374+09:00",
+  "official_fetched_at": "2026-11-16T16:02:36.766374+09:00",
   "needs_review": false,
   "data_date": "2026-11-16",
   "freshness_status": "fresh",
@@ -15,5 +15,5 @@
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-11-16T07:20:17.830074+09:00"
+  "deep_dive_at": "2026-11-16T16:02:36.766374+09:00"
 }
