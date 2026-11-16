@@ -18,15 +18,15 @@
       "content_hash": "98491435c93a4f678d1960e7663379e8e1a0fb9de37fb221cd687d3ece25baf1"
     }
   ],
-  "queued_hash": "126dc2e864c37951c252af6c4ac3b72541f1c14069b8229aa1c4e6a51acdce2d",
-  "queued_candidate_id": "tripcom-126dc2e864c37951",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-16T09:04:01.009380+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-10-20T09:15:29.111121+09:00",
-  "last_audit_candidate_id": "tripcom-6b913f12c325e055",
-  "processed_hash": "6b913f12c325e0555342452143eeae2790ec303af0246781e318427d2d3f8bbd",
-  "last_processed_at": "2026-10-20T09:15:29.111121+09:00",
-  "last_changed_at": "2026-10-20T09:15:29.111121+09:00",
-  "latest_file": "coupons_2026-10-20.json",
-  "semantic_hash": "443deea6578201d22dec885b3281040266750385197f3e8bce5bbb8e0f292acf"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-16T09:10:39.930073+09:00",
+  "last_audit_candidate_id": "tripcom-126dc2e864c37951",
+  "processed_hash": "126dc2e864c37951c252af6c4ac3b72541f1c14069b8229aa1c4e6a51acdce2d",
+  "last_processed_at": "2026-11-16T09:10:39.930073+09:00",
+  "last_changed_at": "2026-11-16T09:10:39.930073+09:00",
+  "latest_file": "coupons_2026-11-16.json",
+  "semantic_hash": "1afde98c12610c5eb7737a6b33829ffd0840187c9cc582e7f083f329327e365b"
 }

@@ -678,6 +678,20 @@
       "recommendation": "draft",
       "applied_at": "2026-11-15T09:13:02.806431+09:00",
       "result_path": "codex_audit_results/yumeyado/yumeyado-602fdfa98af3c110.json"
+    },
+    "jalan-90c1474a17a6a096": {
+      "provider_id": "jalan",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-16T09:10:39.928532+09:00",
+      "result_path": "codex_audit_results/jalan/jalan-90c1474a17a6a096.json"
+    },
+    "tripcom-126dc2e864c37951": {
+      "provider_id": "tripcom",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-16T09:10:39.930913+09:00",
+      "result_path": "codex_audit_results/tripcom/tripcom-126dc2e864c37951.json"
     }
   }
 }
