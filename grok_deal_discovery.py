@@ -4,8 +4,9 @@
 - Grok CLI（~/.grok/bin/grok）の web 検索を使い、会社ごとに直近の情報を探す
 - 結果は **未確認の候補** として `discovery_hints/<provider_id>/hints_YYYY-MM-DD.json` に保存する
 - 既知のクーポン題名・登録済み公式URLと突き合わせて `status`（new / known_title / known_url）を付ける
-- Codex監査の候補（codex_audit_queue）には入れない。公式ページで裏付けが取れたものだけ、人が
-  `config/provider_registry.json` の `official_sources` へ登録する
+- Codex監査の候補（codex_audit_queue）には入れない。公式ドメイン上の新しいページは、
+  vault_box の `coupon_web_discovery.py register-sources` が `config/hint_sources.json` へ足し、
+  公式ページの監視が取得して監査へ回す（2026-11-17〜）。台帳への登録は今までどおり人が行う
 
 実行例:
     python3 grok_deal_discovery.py --provider-id relux

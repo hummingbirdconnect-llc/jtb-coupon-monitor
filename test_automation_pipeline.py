@@ -768,3 +768,94 @@ def test_run_summary_lists_failed_and_needs_review_providers() -> None:
     assert payload["error_provider_ids"] == ["kkday"]
     assert payload["needs_review_count"] == 1
     assert payload["needs_review_provider_ids"] == ["rurubu_travel"]
+
+
+def _write_hint_sources(root: Path, rows: list[dict]) -> None:
+    config = root / "config"
+    config.mkdir(parents=True, exist_ok=True)
+    (config / "hint_sources.json").write_text(
+        json.dumps({"schema_version": 1, "sources": rows}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+
+
+def test_hint_sources_are_fetched_and_audited_only_when_active_and_official() -> None:
+    """候補から足した公式ページ：有効・期限内・公式ドメインの行だけを監視先に加える"""
+    registered_url = "https://travel.rakuten.co.jp/coupon/"
+    hint_url = "https://travel.rakuten.co.jp/coupon/special/matsuri/"
+    provider = {
+        "id": "rakuten_travel",
+        "label": "楽天トラベル",
+        "data_dir": "official_coupon_data/rakuten_travel",
+        "official_domains": ["travel.rakuten.co.jp"],
+        "official_sources": [{"url": registered_url, "fetch_method": "auto"}],
+    }
+    rows = [
+        {"provider_id": "rakuten_travel", "url": hint_url, "title": "お得なクーポン祭",
+         "active": True, "expires_on": "2099-12-31"},
+        # 台帳と同じURL（二重にしない）
+        {"provider_id": "rakuten_travel", "url": registered_url + "?utm_source=x",
+         "active": True, "expires_on": "2099-12-31"},
+        # 無効・期限切れ・他社ドメイン・http・別会社は読まない
+        {"provider_id": "rakuten_travel", "url": hint_url + "off/", "active": False,
+         "expires_on": "2099-12-31"},
+        {"provider_id": "rakuten_travel", "url": hint_url + "old/", "active": True,
+         "expires_on": "2000-01-01"},
+        {"provider_id": "rakuten_travel", "url": "https://example.com/coupon/",
+         "active": True, "expires_on": "2099-12-31"},
+        {"provider_id": "rakuten_travel", "url": "http://travel.rakuten.co.jp/camp/",
+         "active": True, "expires_on": "2099-12-31"},
+        {"provider_id": "jalan", "url": "https://www.jalan.net/theme/x/",
+         "active": True, "expires_on": "2099-12-31"},
+    ]
+    fetched: list[str] = []
+
+    def fake_fetch(source, timeout=30):
+        fetched.append(source["url"])
+        return {
+            "url": source["url"], "ok": True, "status_code": 200, "fetch_method": "html",
+            "text": SOURCE_TEXT, "error": "", "purpose": source.get("purpose", ""),
+            "source_role": source.get("source_role", "official_source"),
+            "include_in_audit": source.get("include_in_audit", True),
+            "discovered_from": "", "discovered_urls": [],
+        }
+
+    old_root = monitor.ROOT
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        _write_hint_sources(root, rows)
+        monitor.configure_root(root)
+        try:
+            with patch.object(monitor, "fetch_official_source", side_effect=fake_fetch):
+                check = monitor.run_official_deal_monitor(provider)
+            candidate = json.loads(
+                (root / check["audit_candidate_path"]).read_text(encoding="utf-8")
+            )
+        finally:
+            monitor.configure_root(old_root)
+
+    assert fetched == [registered_url, hint_url]
+    assert check["hint_source_count"] == 1
+    assert [source["url"] for source in candidate["sources"]] == [registered_url, hint_url]
+
+
+def test_missing_or_broken_hint_sources_keep_registry_only() -> None:
+    """登録ファイルが無い・壊れていても、台帳だけで今までどおり動く"""
+    provider = {
+        "id": "rakuten_travel",
+        "official_domains": ["travel.rakuten.co.jp"],
+        "official_sources": [{"url": "https://travel.rakuten.co.jp/coupon/"}],
+    }
+    old_root = monitor.ROOT
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        monitor.configure_root(root)
+        try:
+            assert monitor.load_hint_sources(provider) == []
+            (root / "config").mkdir()
+            (root / "config" / "hint_sources.json").write_text("{壊れた", encoding="utf-8")
+            assert monitor.load_hint_sources(provider) == []
+            (root / "config" / "hint_sources.json").write_text('{"sources": "x"}', encoding="utf-8")
+            assert monitor.load_hint_sources(provider) == []
+        finally:
+            monitor.configure_root(old_root)
