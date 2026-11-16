@@ -1,0 +1,299 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17 07:21 JST",
+  "sites": [
+    {
+      "site_id": "yakushimafan",
+      "display_name": "屋久島ファン",
+      "x_account": "@yakushimafan",
+      "candidates": 303,
+      "threads": [
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "鹿児島ふっこう応援割",
+          "score": 52,
+          "reasons": [
+            "本日配布再開",
+            "割引60%"
+          ],
+          "pattern": "direct_number",
+          "pattern_name": "数字直球型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "【JTB】最大60%OFFクーポンが配布中です\n\n対象は宿泊・ツアー。\n予約は1/31までです。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 110,
+              "chars": 67
+            },
+            {
+              "text": "条件を短くまとめるとこうなります。\n\n✅割引: 最大60％引\n✅対象: 宿泊・ツアー\n✅予約期限: 1/31まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
+              "weight": 144,
+              "chars": 84
+            },
+            {
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島に行く予定がある人は予約前に一度見ておくと安心です。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 153,
+              "chars": 106
+            }
+          ]
+        },
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+          "score": 48,
+          "reasons": [
+            "昨日新着",
+            "割引8,000円",
+            "全国対象"
+          ],
+          "pattern": "discovery",
+          "pattern_name": "発見共有型",
+          "article_url": "https://yakushima.fun/jtb-first/",
+          "posts": [
+            {
+              "text": "今朝のクーポンチェックで見つけたやつです。\n【JTB】で最大8,000円引きが出てます\n\n宿泊・ツアーで使えます。\n期限は12/23まで。\n\n使える条件はこの下です👇\n(1/3)",
+              "weight": 153,
+              "chars": 89
+            },
+            {
+              "text": "条件を短くまとめるとこうなります。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/23まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 141,
+              "chars": 88
+            },
+            {
+              "text": "取得手順と注意点はここにまとめています\n→ https://yakushima.fun/jtb-first/\n\n屋久島の旅の計画に。予約前にチェックしてみてください。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 147,
+              "chars": 103
+            }
+          ]
+        },
+        {
+          "provider_id": "yahoo_travel",
+          "provider_label": "Yahoo!トラベル",
+          "title": "メルキュール札幌 先着40名様限定 10,000円OFFクーポン",
+          "score": 41,
+          "reasons": [
+            "割引10,000円",
+            "残り2日"
+          ],
+          "pattern": "countdown",
+          "pattern_name": "期限カウントダウン型",
+          "article_url": "https://yakushima.fun/yahoo-coupon/",
+          "posts": [
+            {
+              "text": "【あと2日】Yahoo!トラベルの10,000円引きクーポン、まだ間に合います\n\n宿泊で使えます。\n予約期限は11/19まで。\n\n詳しい条件はこの下に👇\n(1/3)",
+              "weight": 135,
+              "chars": 82
+            },
+            {
+              "text": "使える条件はここだけ見ればOKです。\n\n✅割引: 10,000円割引\n✅対象: 宿泊\n✅予約期限: 11/19まで\n\n⚠️70,000円以上の予約が条件です\n(2/3)",
+              "weight": 131,
+              "chars": 84
+            },
+            {
+              "text": "取得の手順と使い方はここにまとめています\n→ https://yakushima.fun/yahoo-coupon/\n\n屋久島の旅の計画に。予約前にチェックしてみてください。\n\n#旅行クーポン #ヤフートラベル\n(3/3)",
+              "weight": 160,
+              "chars": 111
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site_id": "welltrip",
+      "display_name": "ウェルトリップ",
+      "x_account": "welltrip",
+      "candidates": 270,
+      "threads": [
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "鹿児島ふっこう応援割",
+          "score": 52,
+          "reasons": [
+            "本日配布再開",
+            "割引60%"
+          ],
+          "pattern": "price_diff",
+          "pattern_name": "差額実感型",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "posts": [
+            {
+              "text": "【JTB】で最大60%OFFクーポンが配布中です。\n同じ予約でも、1枚使うかどうかでこの差がつきます\n\n対象は宿泊・ツアー。\n期限は1/31まで。\n\n使える条件をまとめました👇\n(1/3)",
+              "weight": 162,
+              "chars": 94
+            },
+            {
+              "text": "使える条件を整理しました。\n\n✅割引: 最大60％引\n✅対象: 宿泊・ツアー\n✅予約期限: 1/31まで\n\n⚠️先着制のため早めの確認がおすすめです\n(2/3)",
+              "weight": 136,
+              "chars": 80
+            },
+            {
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\n予約前のひと確認で、旅の予算がすこし浮きます。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 137,
+              "chars": 109
+            }
+          ]
+        },
+        {
+          "provider_id": "jtb",
+          "provider_label": "JTB",
+          "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+          "score": 48,
+          "reasons": [
+            "昨日新着",
+            "割引8,000円",
+            "全国対象"
+          ],
+          "pattern": "honest_take",
+          "pattern_name": "正直レビュー型",
+          "article_url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+          "posts": [
+            {
+              "text": "条件はすこし厳しめです。ただ、当てはまる人には大きいです。\n【JTB】最大8,000円引きクーポン配布中\n\n対象は宿泊・ツアーです。\n予約は12/23までです。\n\n使える条件をまとめました👇\n(1/3)",
+              "weight": 177,
+              "chars": 101
+            },
+            {
+              "text": "予約前のチェックポイントはこちら。\n\n✅割引: 最大8,000円引\n✅対象: 宿泊・ツアー\n✅予約期限: 12/23まで\n\n⚠️150,000円以上の予約が条件です\n(2/3)",
+              "weight": 141,
+              "chars": 88
+            },
+            {
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/jtb-coupon/\n\nがんばった自分へのご褒美旅にも。よければどうぞ。\n\n#旅行クーポン #JTB\n(3/3)",
+              "weight": 139,
+              "chars": 110
+            }
+          ]
+        },
+        {
+          "provider_id": "his",
+          "provider_label": "HIS",
+          "title": "【BLACK FRIDAY】オンライン予約限定！1グループ最大10,000円引き",
+          "score": 41,
+          "reasons": [
+            "割引10,000円",
+            "残り7日"
+          ],
+          "pattern": "daily_check",
+          "pattern_name": "定点確認型",
+          "article_url": "https://travel.hb-connect.co.jp/his-coupon/",
+          "posts": [
+            {
+              "text": "【HIS】の最大10,000円引きクーポン、本日も配布中であることを確認しました\n\n海外航空券で使えます。\n予約は11/24まで、急ぎめです。\n\n詳しい条件は下に続きます👇\n(1/3)",
+              "weight": 159,
+              "chars": 92
+            },
+            {
+              "text": "見ておきたい条件をまとめました。\n\n✅割引: 最大10,000円引き\n✅対象: 海外航空券\n✅予約期限: 11/24まで\n\n⚠️対象外の商品があるので予約前に確認してください\n(2/3)",
+              "weight": 157,
+              "chars": 93
+            },
+            {
+              "text": "使い方の手順はこちらから確認できます\n→ https://travel.hb-connect.co.jp/his-coupon/\n\n旅の予定がある方はのぞいてみてください。\n\n#旅行クーポン #HIS\n(3/3)",
+              "weight": 131,
+              "chars": 106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "site_id": "tripbooking",
+      "display_name": "トリップブッキング",
+      "x_account": "tripbooking",
+      "candidates": 26,
+      "threads": [
+        {
+          "provider_id": "agoda",
+          "provider_label": "Agoda",
+          "title": "今だけ値下がり - 最大15% OFF",
+          "score": 24,
+          "reasons": [
+            "割引15%"
+          ],
+          "pattern": "soft_news",
+          "pattern_name": "予約前チェック型",
+          "article_url": "https://tripbooking.jp/agoda-coupon/",
+          "posts": [
+            {
+              "text": "【Agoda】をこれから予約する人は、最大15%OFFクーポンの確認を先にどうぞ\n\n対象はsaleです。\n\n詳細は次の投稿にまとめました👇\n(1/3)",
+              "weight": 125,
+              "chars": 75
+            },
+            {
+              "text": "条件は以下にまとめました。\n\n✅割引: 最大15%\n✅対象: sale\n✅予約期限: 公式ページに記載\n\n⚠️配布状況は変わることがあるので公式ページで最新を確認してください\n(2/3)",
+              "weight": 161,
+              "chars": 93
+            },
+            {
+              "text": "コードの使い方と最新一覧はこちら\n→ https://tripbooking.jp/agoda-coupon/\n\nクーポンの配布状況は毎日チェックして更新しています。\n\n#旅行クーポン #アゴダ\n(3/3)",
+              "weight": 142,
+              "chars": 103
+            }
+          ]
+        },
+        {
+          "provider_id": "tripcom",
+          "provider_label": "Trip.com",
+          "title": "もっと！国内旅！",
+          "score": 24,
+          "reasons": [
+            "割引60%"
+          ],
+          "pattern": "last_check",
+          "pattern_name": "最終確認型",
+          "article_url": "https://tripbooking.jp/tripcom-coupon/",
+          "posts": [
+            {
+              "text": "【Trip.com】いま最大60%OFFクーポンが配布中です。\n予約ボタンを押す前のひと確認が、いちばん確実な節約です\n\ncampaignで使えます。\n\n詳細は次の投稿にまとめました👇\n(1/3)",
+              "weight": 163,
+              "chars": 98
+            },
+            {
+              "text": "適用条件の詳細です。\n\n✅割引: 最大60%OFF\n✅対象: campaign\n✅予約期限: 公式ページに記載\n\n⚠️配布状況は変わることがあるので公式ページで最新を確認してください\n(2/3)",
+              "weight": 162,
+              "chars": 97
+            },
+            {
+              "text": "最新のクーポン一覧と使い方はこちら\n→ https://tripbooking.jp/tripcom-coupon/\n\n一覧の更新は毎朝行っています。\n\n#旅行クーポン #Tripcom\n(3/3)",
+              "weight": 123,
+              "chars": 99
+            }
+          ]
+        },
+        {
+          "provider_id": "tripcom",
+          "provider_label": "Trip.com",
+          "title": "GO THAILAND",
+          "score": 24,
+          "reasons": [
+            "割引50%"
+          ],
+          "pattern": "anshin_reserve",
+          "pattern_name": "安心確保型",
+          "article_url": "https://tripbooking.jp/tripcom-coupon/",
+          "posts": [
+            {
+              "text": "campaignを検討中の方は、先にクーポンを押さえておくと安心です。\n【Trip.com】で最大50%OFFが配布中\n\n適用条件は下に続きます👇\n(1/3)",
+              "weight": 127,
+              "chars": 79
+            },
+            {
+              "text": "予約前の確認ポイントは以下です。\n\n✅割引: 最大50%OFF\n✅対象: campaign\n✅予約期限: 公式ページに記載\n\n⚠️配布状況は変わることがあるので公式ページで最新を確認してください\n(2/3)",
+              "weight": 174,
+              "chars": 103
+            },
+            {
+              "text": "最新のクーポン一覧と使い方はこちら\n→ https://tripbooking.jp/tripcom-coupon/\n\n配布終了・再開の検知も毎日行っています。\n\n#旅行クーポン #Tripcom\n(3/3)",
+              "weight": 133,
+              "chars": 104
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

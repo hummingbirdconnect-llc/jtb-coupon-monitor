@@ -2,22 +2,6 @@
   {
     "date": "2026-09-11",
     "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-hyg26jun10-a30db7fd5d",
-    "title": "兵庫県 ひょうごシティ夏得クーポン（最大4,000円引き）",
-    "discount": "最大10%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-ito26may20-5d9f6672cd",
-    "title": "今こそ伊東へ！伊東温泉・伊豆高原・川奈で使える旅行割引クーポン（ひとり1泊あたり最大5,000円引き）＜第一弾＞",
-    "discount": "最大20%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
     "category": "施設限定クーポン",
     "id": "rurubu_travel-kcr26jul15-f191fa03be",
     "title": "三重県 伊勢神宮のお膝元 鳥羽 胡蝶蘭ラストサマー大感謝クーポン（最大10,000円引き）",
@@ -3998,5 +3982,21 @@
     "id": "rurubu_travel-pp26yknsb15-d03126ddb4",
     "title": "三重県 伊勢志摩 サン浦島悠季の里で使えるクーポン（最大12,000円引き）＜第三弾＞",
     "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "gone",
+    "category": "施設限定クーポン",
+    "id": "rurubu_travel-autk26sep20-c54e3363a5",
+    "title": "ホテル近鉄ユニバーサル・シティで使える秋冬旅割引クーポン",
+    "discount": "最大¥2,000引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-autm26sep80-autm26sep50-autm26sep20-dfd29715d6",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "discount": "最大¥8,000引き"
   }
 ]

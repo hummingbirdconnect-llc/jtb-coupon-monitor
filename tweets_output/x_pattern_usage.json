@@ -8782,5 +8782,77 @@
   "pattern": "target_call",
   "ota": "tripcom",
   "title": "GO THAILAND"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "direct_number",
+  "ota": "jtb",
+  "title": "鹿児島ふっこう応援割"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "discovery",
+  "ota": "jtb",
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "countdown",
+  "ota": "yahoo_travel",
+  "title": "メルキュール札幌 先着40名様限定 10,000円OFFクーポン"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "鹿児島ふっこう応援割"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "honest_take",
+  "ota": "jtb",
+  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "daily_check",
+  "ota": "his",
+  "title": "【BLACK FRIDAY】オンライン予約限定！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "soft_news",
+  "ota": "agoda",
+  "title": "今だけ値下がり - 最大15% OFF"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "last_check",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-11-17",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "anshin_reserve",
+  "ota": "tripcom",
+  "title": "GO THAILAND"
  }
 ]

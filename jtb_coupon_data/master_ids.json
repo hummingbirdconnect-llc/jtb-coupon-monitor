@@ -1,20 +1,6 @@
 {
-  "last_updated": "2026-11-16T16:01:28.608988+09:00",
+  "last_updated": "2026-11-17T07:19:37.354030+09:00",
   "ids": {
-    "2608jtbcpnew": {
-      "category": "国内",
-      "title": "新規会員限定！初めてのJTB国内旅行で使えるクーポン(9-1月出発)",
-      "discount": "1,000円引",
-      "area": "全国",
-      "stock_status": "配布終了"
-    },
-    "2611appcp": {
-      "category": "国内",
-      "title": "【JTB公式アプリからの予約限定】国内ツアークーポン",
-      "discount": "最大3,000円引",
-      "area": "全国",
-      "stock_status": "配布終了"
-    },
     "2610premiumcp": {
       "category": "国内",
       "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
@@ -281,13 +267,6 @@
       "area": "滋賀県・京都府・大阪府・兵庫県・奈良県・和歌山県・鳥取県・島根県・岡山県・広島県・山口県",
       "stock_status": "配布中"
     },
-    "2608osacp": {
-      "category": "国内",
-      "title": "大阪府のおすすめ施設で使える割引クーポン",
-      "discount": "3,000円引",
-      "area": "大阪府",
-      "stock_status": "配布終了"
-    },
     "2610tottori": {
       "category": "国内",
       "title": "すいちょるけん！鳥取割引クーポン",
@@ -308,13 +287,6 @@
       "discount": "最大20,000円引",
       "area": "島根県",
       "stock_status": "配布中"
-    },
-    "2602jalcp": {
-      "category": "国内",
-      "title": "【JAL麗らか四国キャンペーン】往復JAL便利用でいく小豆島ツアーで使える割引クーポン",
-      "discount": "最大16,000円引",
-      "area": "香川県",
-      "stock_status": "配布終了"
     },
     "2610yamaguchi": {
       "category": "国内",
@@ -372,13 +344,6 @@
       "area": "熊本県",
       "stock_status": "配布中"
     },
-    "2609kyucp": {
-      "category": "国内",
-      "title": "【旅で応援！】＜10月限定＞熊本・宮崎・鹿児島宿泊利用で使える割引クーポン",
-      "discount": "10,000円引",
-      "area": "熊本県・宮崎県・鹿児島県",
-      "stock_status": "配布終了"
-    },
     "2609kyushumiyazaki": {
       "category": "国内",
       "title": "九州ふっこう応援割 みやざきキャンペーン",
@@ -391,7 +356,7 @@
       "title": "鹿児島ふっこう応援割",
       "discount": "最大60％引",
       "area": "鹿児島県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2607jalka": {
       "category": "国内",
@@ -475,13 +440,6 @@
       "title": "<10～12月出発>【早期割引60】共立リゾート41施設で使える割引クーポン",
       "discount": "2,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
-    },
-    "2607okinawa": {
-      "category": "国内",
-      "title": "☆【沖縄】8月～10月出発☆レイトサマーにも使える旅行割引クーポン",
-      "discount": "最大15,000円引",
-      "area": "沖縄県",
       "stock_status": "配布終了"
     },
     "2609yng": {
