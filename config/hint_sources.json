@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "provider_id": "jalan",
+      "url": "https://www.jalan.net/news/article/919372/",
+      "title": "じゃらんのお得な10日間（11月回）",
+      "added_on": "2026-11-17",
+      "expires_on": "2026-11-20",
+      "active": true,
+      "from_hint_file": "discovery_hints/jalan/hints_2026-11-17_web080620.json",
+      "fail_streak": 0
+    },
+    {
+      "provider_id": "rakuten_travel",
+      "url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "title": "お得なクーポン祭",
+      "added_on": "2026-11-17",
+      "expires_on": "2027-01-01",
+      "active": true,
+      "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
+      "fail_streak": 0
+    },
+    {
+      "provider_id": "rakuten_travel",
+      "url": "https://travel.rakuten.co.jp/camp/tokutabi/",
+      "title": "得旅キャンペーン（国内旅行・最大ポイント15倍）",
+      "added_on": "2026-11-17",
+      "expires_on": "2026-11-26",
+      "active": true,
+      "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
+      "fail_streak": 0
+    }
+  ]
+}
