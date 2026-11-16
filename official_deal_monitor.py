@@ -560,9 +560,71 @@ def write_audit_candidate(
     return path
 
 
+def _hint_sources_path() -> Path:
+    return ROOT / "config" / "hint_sources.json"
+
+
+def load_hint_sources(provider: dict[str, Any], today: str | None = None) -> list[dict[str, Any]]:
+    """候補欄から自動で足した公式ページ（config/hint_sources.json）のうち、有効な行を返す。
+
+    台帳（provider_registry.json）は書き換えず、この別ファイルだけを読む。
+    ファイルが無い・壊れている・行がおかしいときは、その分を飛ばす（台帳だけで動く）。
+    中身の根拠は今までどおり公式ページの本文だけ。候補の文（Grok・X）は監査に渡さない。
+    """
+    path = _hint_sources_path()
+    if not path.exists():
+        return []
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    rows = payload.get("sources") if isinstance(payload, dict) else None
+    if not isinstance(rows, list):
+        return []
+    today = today or now_jst().date().isoformat()
+    domains = [str(domain).lower() for domain in provider.get("official_domains") or []]
+    selected: list[dict[str, Any]] = []
+    for row in rows:
+        if not isinstance(row, dict) or row.get("provider_id") != provider.get("id"):
+            continue
+        if row.get("active") is not True:
+            continue
+        expires = str(row.get("expires_on") or "")
+        if not expires or expires < today:
+            continue
+        url = str(row.get("url") or "")
+        parts = urlsplit(url)
+        host = (parts.hostname or "").lower()
+        if parts.scheme != "https" or not any(
+            host == domain or host.endswith("." + domain) for domain in domains
+        ):
+            continue
+        selected.append(
+            {
+                "url": url,
+                "fetch_method": "auto",
+                "purpose": f"候補から追加: {row.get('title') or ''}".strip(),
+                "source_role": "hint_added",
+                "include_in_audit": True,
+            }
+        )
+    return selected
+
+
 def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> dict[str, Any]:
     started = now_jst()
     configured_sources = list(provider["official_sources"])
+    registered = {
+        _canonical_discovery_url(str(source["url"])) for source in configured_sources
+    }
+    hint_source_count = 0
+    for hint_source in load_hint_sources(provider):
+        canonical = _canonical_discovery_url(hint_source["url"])
+        if canonical in registered:
+            continue
+        registered.add(canonical)
+        configured_sources.append(hint_source)
+        hint_source_count += 1
     configured_results = [
         fetch_official_source(source, timeout=timeout) for source in configured_sources
     ]
@@ -617,6 +679,7 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
         "source_results": public_source_results,
         "failed_source_count": len(failed_sources),
         "configured_source_count": len(configured_sources),
+        "hint_source_count": hint_source_count,
         "discovered_source_count": len(discovered_sources),
         "audit_source_count": len(successful_sources),
         "manual_source_count": len(provider.get("manual_sources") or []),

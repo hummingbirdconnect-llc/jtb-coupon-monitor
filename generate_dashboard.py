@@ -1937,7 +1937,7 @@ function renderHintSection(container) {{
   section.className = 'section';
   section.innerHTML = `
     <h2>未確認の候補（外部情報）</h2>
-    <div class="note">Grokがweb検索（Xの投稿・公式・ニュース）で見つけた<strong>未確認の情報</strong>です。公式ページで確かめるまで記事には使いません。常時6社は毎朝、指定時の会社は月曜だけ更新します。「新規」は登録済みの公式ページにも既知のクーポン題名にも一致しなかったもの、「既知」はすでに把握済みのものです。確度は 高＝公式ページで確認、中＝複数の非公式情報、低＝X投稿1件などの単一情報。公式ドメイン上のURLが取れた候補は「雛形をコピー」で <code>official_sources</code> へ足す形をコピーできます（登録は人が行います）。<br>${{hintRunNote()}}</div>
+    <div class="note">Grokがweb検索（Xの投稿・公式・ニュース）で見つけた<strong>未確認の情報</strong>です。公式ページで確かめるまで記事には使いません。常時6社は毎朝、指定時の会社は月曜だけ更新します。「新規」は登録済みの公式ページにも既知のクーポン題名にも一致しなかったもの、「既知」はすでに把握済みのものです。確度は 高＝公式ページで確認、中＝複数の非公式情報、低＝X投稿1件などの単一情報。公式ドメイン上のURLが取れた候補は「雛形をコピー」で <code>official_sources</code> へ足す形をコピーできます（毎日取得の会社は、条件に合う新しい公式ページを自動で監視先に足し、公式ページで確かめた分だけ本表へ入ります）。<br>${{hintRunNote()}}</div>
   `;
   container.appendChild(section);
   renderGrid(section, DATA.hint_rows || [], DATA.columns.hints, {{
