@@ -46,15 +46,15 @@
       "content_hash": "109e78fc6e397a80ed2a7f7728eb2770d2d80b1dba318e6175a7e55eaf3b2dbd"
     }
   ],
-  "queued_hash": "907d00767ad9ea10585ff0b112e6a6e9269ea5f9901b4ca079f664f5a3ed90c6",
-  "queued_candidate_id": "rakuten_travel-907d00767ad9ea10",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-17T08:41:41.253673+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-10-15T14:39:06.165699+09:00",
-  "last_audit_candidate_id": "rakuten_travel-2bac160af2f68288",
-  "processed_hash": "2bac160af2f6828806ea0ffbdcf21bacee3502118f2a4af1bbf40e3dc2bea096",
-  "last_processed_at": "2026-10-15T14:39:06.165699+09:00",
-  "last_changed_at": "2026-10-15T14:39:06.165699+09:00",
-  "latest_file": "coupons_2026-10-15.json",
-  "semantic_hash": "2689ccecb8443f020c60fe41bceac4655d8816f7a6d7643abf3860ff029d1b09"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-17T09:12:37.348812+09:00",
+  "last_audit_candidate_id": "rakuten_travel-907d00767ad9ea10",
+  "processed_hash": "907d00767ad9ea10585ff0b112e6a6e9269ea5f9901b4ca079f664f5a3ed90c6",
+  "last_processed_at": "2026-11-17T09:12:37.348812+09:00",
+  "last_changed_at": "2026-11-17T09:12:37.348812+09:00",
+  "latest_file": "coupons_2026-11-17.json",
+  "semantic_hash": "813878d782459d67456281fcfe3375aa1ebb5785fb09e488cedad9ffd0ea3963"
 }
