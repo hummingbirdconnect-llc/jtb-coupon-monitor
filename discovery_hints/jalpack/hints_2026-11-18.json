@@ -1,0 +1,17 @@
+{
+  "provider_id": "jalpack",
+  "provider_label": "JALパック",
+  "generated_at": "2026-11-18T07:38:58.487415+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "あいちウィーク特別国内クーポン: 拒否403。監視データ未収載。https://www.jal.co.jp/jp/ja/domtour/aichiweek/",
+  "known_title_count": 7,
+  "registered_url_count": 7,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/jalpack/hints_2026-11-18.json"
+}

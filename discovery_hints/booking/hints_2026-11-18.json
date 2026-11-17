@@ -1,0 +1,17 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-11-18T07:38:58.487415+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "セール入口が404。2026年ブラックフライデーの有効な公式条件を確認できず。https://www.booking.com/deals.ja.html",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/booking/hints_2026-11-18.json"
+}

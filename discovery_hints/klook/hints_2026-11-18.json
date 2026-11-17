@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-11-18T07:38:58.487415+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開ページが台湾向け表示。日本向け冬ツアー・よみうりランドの割引期間を確認できず。",
+  "known_title_count": 9,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-11-18.json"
+}
