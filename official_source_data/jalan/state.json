@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "140dad857faa018267ab12a3484aa59e2ae408412a0c2b27aa028e5f76224a8b",
-  "last_checked_at": "2026-11-18T07:20:29.011209+09:00",
+  "observed_hash": "15a357e413ad98a1f59903e608a94207c551b6b7e39040f898d15cf7b924001a",
+  "last_checked_at": "2026-11-18T08:16:46.284349+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -103,11 +103,25 @@
       "discovered_urls": [],
       "text_chars": 8924,
       "content_hash": "be306dd15e2b2fe4968378f468acf930586311ccadba8e747068aa6b4fc7aeb3"
+    },
+    {
+      "url": "https://www.jalan.net/theme/PointUpCampaign_202611_02/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: 早ければ早いほどお得！ポイントアップ特典",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 6830,
+      "content_hash": "c8a8d0a716e5a171deecfbc831fc9015d684527157eb625e618f1c677bce918e"
     }
   ],
-  "queued_hash": "140dad857faa018267ab12a3484aa59e2ae408412a0c2b27aa028e5f76224a8b",
-  "queued_candidate_id": "jalan-140dad857faa0182",
-  "queued_at": "2026-11-18T07:20:29.014041+09:00",
+  "queued_hash": "15a357e413ad98a1f59903e608a94207c551b6b7e39040f898d15cf7b924001a",
+  "queued_candidate_id": "jalan-15a357e413ad98a1",
+  "queued_at": "2026-11-18T08:16:46.286873+09:00",
   "last_audit_status": "pending",
   "last_audited_at": "2026-11-17T09:12:37.345187+09:00",
   "last_audit_candidate_id": "jalan-0bbc6f438ad7a728",
