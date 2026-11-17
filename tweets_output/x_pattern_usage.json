@@ -8854,5 +8854,77 @@
   "pattern": "anshin_reserve",
   "ota": "tripcom",
   "title": "GO THAILAND"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "yakushimafan",
+  "tree": 1,
+  "pattern": "season_context",
+  "ota": "jtb",
+  "title": "【ブラックフライデー】国内ツアーで使える割引クーポン"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "yakushimafan",
+  "tree": 2,
+  "pattern": "soft_news",
+  "ota": "jtb",
+  "title": "新規会員限定！初めてのJTB国内旅行で使える最大10,000円引クーポン"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "yakushimafan",
+  "tree": 3,
+  "pattern": "anshin_reserve",
+  "ota": "yahoo_travel",
+  "title": "BALLPARK TAKIBI TERRACE ALLPAR 10,000円OFFクーポン"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "welltrip",
+  "tree": 1,
+  "pattern": "price_diff",
+  "ota": "jtb",
+  "title": "【ブラックフライデー】国内ツアーで使える割引クーポン"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "welltrip",
+  "tree": 2,
+  "pattern": "memo_style",
+  "ota": "jtb",
+  "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様25,000円引）"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "welltrip",
+  "tree": 3,
+  "pattern": "casual_aside",
+  "ota": "his",
+  "title": "【BLACK FRIDAY】オンライン予約限定！1グループ最大10,000円引き"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "tripbooking",
+  "tree": 1,
+  "pattern": "regret_prevention",
+  "ota": "agoda",
+  "title": "今だけ値下がり - 最大15% OFF"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "tripbooking",
+  "tree": 2,
+  "pattern": "daily_check",
+  "ota": "tripcom",
+  "title": "もっと！国内旅！"
+ },
+ {
+  "date": "2026-11-18",
+  "site": "tripbooking",
+  "tree": 3,
+  "pattern": "soft_news",
+  "ota": "tripcom",
+  "title": "GO THAILAND"
  }
 ]

@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-17T16:02:14.954240+09:00",
-  "completed_at": "2026-11-17T16:02:21.963961+09:00",
-  "official_fetched_at": "2026-11-17T16:02:21.963967+09:00",
+  "started_at": "2026-11-18T07:20:20.129136+09:00",
+  "completed_at": "2026-11-18T07:20:29.009067+09:00",
+  "official_fetched_at": "2026-11-18T07:20:29.009074+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -90,8 +90,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 48709,
-      "content_hash": "becb069be29469b698597c3e82e34815aae4b388055b800407decb8a7ec0886d"
+      "text_chars": 48724,
+      "content_hash": "1e29ce4f854feb55093c5c6666fdca36276b2d5318e20f0b69f40647c37c54ec"
     },
     {
       "url": "https://www.jalan.net/news/article/919372/",
@@ -104,8 +104,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 8920,
-      "content_hash": "711d5f2a047486c4a573f3f63bf2ab239e2888b40d0c95b66d4963a58d9e049c"
+      "text_chars": 8924,
+      "content_hash": "be306dd15e2b2fe4968378f468acf930586311ccadba8e747068aa6b4fc7aeb3"
     }
   ],
   "failed_source_count": 0,
@@ -118,14 +118,16 @@
   "count_scope_label": "代表クーポン",
   "count_scope_detail": "代表的な公式クーポンページのみ。個別宿クーポン約1,000件は集計対象外。",
   "ai_used": false,
-  "codex_audit_required": false,
+  "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "unchanged",
-  "change_kind": "unchanged",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "140dad857faa018267ab12a3484aa59e2ae408412a0c2b27aa028e5f76224a8b",
   "data_date": "2026-11-17",
   "latest_file": "coupons_2026-11-17.json",
   "coupon_count": 15,
-  "content_hash": "0bbc6f438ad7a728f0719221b0789fca9392a998500366fe41d7cc49f889a41d",
+  "audit_candidate_id": "jalan-140dad857faa0182",
+  "audit_candidate_path": "codex_audit_queue/jalan/jalan-140dad857faa0182.json",
   "error": "",
   "freshness_status": "fresh"
 }
