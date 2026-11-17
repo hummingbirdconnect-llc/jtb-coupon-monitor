@@ -2,62 +2,6 @@
   {
     "date": "2026-09-11",
     "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-kcr26jul15-f191fa03be",
-    "title": "三重県 伊勢神宮のお膝元 鳥羽 胡蝶蘭ラストサマー大感謝クーポン（最大10,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-knsk26jun15-ccbc47b61a",
-    "title": "【暑さに負けるな！】兵庫県人気温泉地 城崎夏のクーポンキャンペーン（最大6,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-mcr26jun150-mcr26jun100-mcr26jun60-f57185003a",
-    "title": "神奈川県 箱根湯本温泉 ホテル マイユクール 祥月で使えるクーポン",
-    "discount": "最大¥15,000引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-mrmn26may10-d1b2f4e4af",
-    "title": "福島県 芦ノ牧温泉 丸峰観光ホテルで使えるクーポン（最大10,000円引き）",
-    "discount": "最大10%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "エリア限定クーポン",
-    "id": "rurubu_travel-okinw26mr10-d81c70edee",
-    "title": "【4月～8月出発】沖縄県のおすすめ施設で使えるクーポン（最大5,000円引き）",
-    "discount": "最大10%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "施設限定クーポン",
-    "id": "rurubu_travel-osky26jul10-94fd7333e1",
-    "title": "群馬県 草津温泉 大阪屋で使えるクーポン（最大10,000円引き）",
-    "discount": "最大10%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
-    "id": "rurubu_travel-pp26class15-fd3598b2f5",
-    "title": "三重県 志摩観光ホテル ザ クラシックで使えるクーポン（最大15,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
     "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
     "id": "rurubu_travel-pp26enrak15-958ff7b870",
     "title": "富山県 宇奈月温泉 延楽で使えるクーポン（最大15,000円引き）",
@@ -3982,6 +3926,62 @@
     "id": "rurubu_travel-pp26yknsb15-d03126ddb4",
     "title": "三重県 伊勢志摩 サン浦島悠季の里で使えるクーポン（最大12,000円引き）＜第三弾＞",
     "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "gone",
+    "category": "施設限定クーポン",
+    "id": "rurubu_travel-autk26sep20-c54e3363a5",
+    "title": "ホテル近鉄ユニバーサル・シティで使える秋冬旅割引クーポン",
+    "discount": "最大¥2,000引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "gone",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-autm26sep80-autm26sep50-autm26sep20-dfd29715d6",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "discount": "最大¥8,000引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "new",
+    "category": "複数エリア対象クーポン",
+    "id": "rurubu_travel-blkfd26nv10-1544812b70",
+    "title": "【ブラックフライデー】割引クーポン",
+    "discount": "最大¥1,000引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp263suis15-7f98ac515e",
+    "title": "福島県 土湯温泉 水織音の宿山水荘で使えるクーポン（最大12,000円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26banky15-e67ed4ea9b",
+    "title": "栃木県 湯西川温泉 本家伴久で使えるクーポン（最大9,300円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26exhkt15-4df100d733",
+    "title": "福岡県 博多エクセルホテル東急で使えるクーポン（最大6,000円引き）",
+    "discount": "最大15%引き"
+  },
+  {
+    "date": "2026-11-17",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26hakho80-pp26hakho50-8c1d240853",
+    "title": "神奈川県 小涌谷温泉 箱根ホテル小涌園で使えるクーポン",
+    "discount": "最大¥8,000引き"
   },
   {
     "date": "2026-11-17",

@@ -1,6 +1,34 @@
 {
-  "last_updated": "2026-11-17T07:19:37.354030+09:00",
+  "last_updated": "2026-11-17T16:01:11.018606+09:00",
   "ids": {
+    "2611jtbcpnew": {
+      "category": "国内",
+      "title": "新規会員限定！初めてのJTB国内旅行で使える最大10,000円引クーポン",
+      "discount": "最大10,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
+    "2611black": {
+      "category": "国内",
+      "title": "【ブラックフライデー】国内ツアーで使える割引クーポン",
+      "discount": "最大30,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
+    "2611black2": {
+      "category": "国内",
+      "title": "【ブラックフライデー】割引クーポン",
+      "discount": "1,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
+    "2611mdscp": {
+      "category": "国内",
+      "title": "3月までの宿泊で使える国内宿泊クーポン",
+      "discount": "最大5,000円引",
+      "area": "全国",
+      "stock_status": "配布中"
+    },
     "2610premiumcp": {
       "category": "国内",
       "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
@@ -20,14 +48,14 @@
       "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
       "discount": "最大12,000円引",
       "area": "全国",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2610airhayawari": {
       "category": "国内",
       "title": "【早期100日前までの予約限定】＜1～3月出発＞先どり！航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
       "discount": "5,000円引",
       "area": "全国",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2601green": {
       "category": "国内",
@@ -132,6 +160,13 @@
       "title": "美食・美酒・名湯・体験・感動の旅♪ にいがた宿物語で使える割引クーポン",
       "discount": "最大7,000円引",
       "area": "新潟県",
+      "stock_status": "配布中"
+    },
+    "2611higashi": {
+      "category": "国内",
+      "title": "栃木・群馬・山梨・新潟のおすすめ施設で使える割引クーポン",
+      "discount": "最大5,000円引",
+      "area": "新潟県・群馬県・栃木県・山梨県",
       "stock_status": "配布中"
     },
     "2610gunma": {
@@ -349,14 +384,14 @@
       "title": "九州ふっこう応援割 みやざきキャンペーン",
       "discount": "最大50％引",
       "area": "宮崎県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609kyushukagoshima": {
       "category": "国内",
       "title": "鹿児島ふっこう応援割",
       "discount": "最大60％引",
       "area": "鹿児島県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2607jalka": {
       "category": "国内",
@@ -398,7 +433,7 @@
       "title": "☆【沖縄】11月～3月出発☆冬から春の旅行に使えるおすすめ旅行割引クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2609okinawa": {
       "category": "国内",
@@ -441,6 +476,34 @@
       "discount": "2,000円引",
       "area": "全国",
       "stock_status": "配布終了"
+    },
+    "2611bf": {
+      "category": "海外",
+      "title": "【ブラックフライデー】海外航空券+ホテルどこでも使える割引クーポン",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "配布中"
+    },
+    "2611bf25": {
+      "category": "海外",
+      "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様25,000円引）",
+      "discount": "最大100,000円引",
+      "area": "全方面",
+      "stock_status": "配布中"
+    },
+    "2611bf5": {
+      "category": "海外",
+      "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様5,000円引）",
+      "discount": "最大20,000円引",
+      "area": "全方面",
+      "stock_status": "配布中"
+    },
+    "2611bf10": {
+      "category": "海外",
+      "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様10,000円引）",
+      "discount": "最大40,000円引",
+      "area": "全方面",
+      "stock_status": "配布中"
     },
     "2609yng": {
       "category": "海外",

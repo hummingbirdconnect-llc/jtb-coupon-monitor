@@ -3,17 +3,17 @@
   "provider_label": "JTB",
   "check_type": "official_monitor",
   "status": "success",
-  "started_at": "2026-11-17T07:08:54.501158+09:00",
-  "completed_at": "2026-11-17T07:19:37.433331+09:00",
-  "official_fetched_at": "2026-11-17T07:19:37.433331+09:00",
+  "started_at": "2026-11-17T15:51:03.512848+09:00",
+  "completed_at": "2026-11-17T16:01:11.096091+09:00",
+  "official_fetched_at": "2026-11-17T16:01:11.096091+09:00",
   "needs_review": false,
   "data_date": "2026-11-17",
   "freshness_status": "fresh",
-  "coupon_count": 97,
+  "coupon_count": 106,
   "latest_file": "coupons_2026-11-17.json",
   "ai_used": false,
   "wp_review_eligible": false,
   "error": "",
   "deep_dive": true,
-  "deep_dive_at": "2026-11-17T07:19:37.433331+09:00"
+  "deep_dive_at": "2026-11-17T16:01:11.096091+09:00"
 }

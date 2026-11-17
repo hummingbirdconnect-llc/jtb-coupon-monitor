@@ -8789,7 +8789,7 @@
   "tree": 1,
   "pattern": "direct_number",
   "ota": "jtb",
-  "title": "鹿児島ふっこう応援割"
+  "title": "【ブラックフライデー】国内ツアーで使える割引クーポン"
  },
  {
   "date": "2026-11-17",
@@ -8797,15 +8797,15 @@
   "tree": 2,
   "pattern": "discovery",
   "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "title": "新規会員限定！初めてのJTB国内旅行で使える最大10,000円引クーポン"
  },
  {
   "date": "2026-11-17",
   "site": "yakushimafan",
   "tree": 3,
-  "pattern": "countdown",
-  "ota": "yahoo_travel",
-  "title": "メルキュール札幌 先着40名様限定 10,000円OFFクーポン"
+  "pattern": "fresh",
+  "ota": "rurubu_travel",
+  "title": "【ブラックフライデー】割引クーポン"
  },
  {
   "date": "2026-11-17",
@@ -8813,21 +8813,21 @@
   "tree": 1,
   "pattern": "price_diff",
   "ota": "jtb",
-  "title": "鹿児島ふっこう応援割"
+  "title": "【ブラックフライデー】国内ツアーで使える割引クーポン"
  },
  {
   "date": "2026-11-17",
   "site": "welltrip",
   "tree": 2,
-  "pattern": "honest_take",
+  "pattern": "season_context",
   "ota": "jtb",
-  "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン"
+  "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様25,000円引）"
  },
  {
   "date": "2026-11-17",
   "site": "welltrip",
   "tree": 3,
-  "pattern": "daily_check",
+  "pattern": "target_call",
   "ota": "his",
   "title": "【BLACK FRIDAY】オンライン予約限定！1グループ最大10,000円引き"
  },
