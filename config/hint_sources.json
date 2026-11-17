@@ -9,7 +9,8 @@
       "expires_on": "2026-11-20",
       "active": true,
       "from_hint_file": "discovery_hints/jalan/hints_2026-11-17_web080620.json",
-      "fail_streak": 0
+      "fail_streak": 0,
+      "last_check_seen": "2026-11-18T07:20:29.011209+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -19,7 +20,8 @@
       "expires_on": "2027-01-01",
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
-      "fail_streak": 0
+      "fail_streak": 0,
+      "last_check_seen": "2026-11-18T07:20:32.772052+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -29,6 +31,17 @@
       "expires_on": "2026-11-26",
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
+      "fail_streak": 0,
+      "last_check_seen": "2026-11-18T07:20:32.772052+09:00"
+    },
+    {
+      "provider_id": "jalan",
+      "url": "https://www.jalan.net/theme/PointUpCampaign_202611_02/",
+      "title": "早ければ早いほどお得！ポイントアップ特典",
+      "added_on": "2026-11-18",
+      "expires_on": "2027-01-01",
+      "active": true,
+      "from_hint_file": "discovery_hints/jalan/hints_2026-11-18_web080624.json",
       "fail_streak": 0
     }
   ]
