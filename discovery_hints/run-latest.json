@@ -1,9 +1,9 @@
 {
-  "completed_at": "2026-11-18T07:38:58.487415+09:00",
+  "completed_at": "2026-11-19T07:37:03.790029+09:00",
   "scope": "codex-auto",
   "provider_count": 13,
-  "error_count": 3,
-  "candidate_count": 21,
+  "error_count": 2,
+  "candidate_count": 23,
   "new_count": 0,
   "results": [
     {
@@ -13,7 +13,7 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/his/hints_2026-11-19.json"
     },
     {
       "provider_id": "jtb",
@@ -22,25 +22,25 @@
       "error": "",
       "candidate_count": 5,
       "new_count": 0,
-      "hints_file": "discovery_hints/jtb/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/jtb/hints_2026-11-19.json"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
       "status": "ok",
       "error": "",
-      "candidate_count": 0,
+      "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/knt/hints_2026-11-19.json"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "status": "error",
-      "error": "あいちウィーク特別国内クーポン: 拒否403。監視データ未収載。https://www.jal.co.jp/jp/ja/domtour/aichiweek/",
+      "error": "あいちウィーク公式詳細はHTTP 403。再取得せず。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalpack/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/jalpack/hints_2026-11-19.json"
     },
     {
       "provider_id": "jalan",
@@ -49,7 +49,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalan/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/jalan/hints_2026-11-19.json"
     },
     {
       "provider_id": "rakuten_travel",
@@ -58,7 +58,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-19.json"
     },
     {
       "provider_id": "ikkyu",
@@ -67,7 +67,7 @@
       "error": "",
       "candidate_count": 5,
       "new_count": 0,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/ikkyu/hints_2026-11-19.json"
     },
     {
       "provider_id": "yahoo_travel",
@@ -76,16 +76,16 @@
       "error": "",
       "candidate_count": 5,
       "new_count": 0,
-      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-19.json"
     },
     {
       "provider_id": "asoview",
       "provider_label": "アソビュー",
       "status": "ok",
       "error": "",
-      "candidate_count": 0,
+      "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/asoview/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/asoview/hints_2026-11-19.json"
     },
     {
       "provider_id": "tobu_top_tours",
@@ -94,16 +94,16 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-19.json"
     },
     {
       "provider_id": "booking",
       "provider_label": "Booking.com",
-      "status": "error",
-      "error": "セール入口が404。2026年ブラックフライデーの有効な公式条件を確認できず。https://www.booking.com/deals.ja.html",
+      "status": "ok",
+      "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/booking/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/booking/hints_2026-11-19.json"
     },
     {
       "provider_id": "rurubu_travel",
@@ -112,16 +112,16 @@
       "error": "",
       "candidate_count": 5,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-19.json"
     },
     {
       "provider_id": "klook",
       "provider_label": "Klook",
       "status": "error",
-      "error": "公開ページが台湾向け表示。日本向け冬ツアー・よみうりランドの割引期間を確認できず。",
+      "error": "公開一覧の取得結果が台湾向け表示。国内向け期間を確かめられず。",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-11-18.json"
+      "hints_file": "discovery_hints/klook/hints_2026-11-19.json"
     }
   ]
 }

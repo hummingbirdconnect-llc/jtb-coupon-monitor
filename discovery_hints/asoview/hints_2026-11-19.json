@@ -1,0 +1,32 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-11-19T07:37:03.790029+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 15,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "ナイトペアチケットで使える100円OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://www.asoview.com/coupon/",
+      "official_url": "https://www.asoview.com/coupon/",
+      "official_domain_match": true,
+      "evidence": "保存済み公開ページで券名、1人あたり100円OFF、12/25まで有効と確認。獲得にはログインが必要。",
+      "observed_date": "2026-11-19",
+      "discount": "1人あたり、100円OFF",
+      "period": "12/25まで有効",
+      "confidence": "medium",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/asoview/hints_2026-11-19.json"
+}
