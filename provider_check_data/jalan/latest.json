@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-18T08:16:34.451979+09:00",
-  "completed_at": "2026-11-18T08:16:46.282243+09:00",
-  "official_fetched_at": "2026-11-18T08:16:46.282250+09:00",
+  "started_at": "2026-11-18T20:10:09.239202+09:00",
+  "completed_at": "2026-11-18T20:10:18.182568+09:00",
+  "official_fetched_at": "2026-11-18T20:10:18.182574+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -90,8 +90,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 48724,
-      "content_hash": "1e29ce4f854feb55093c5c6666fdca36276b2d5318e20f0b69f40647c37c54ec"
+      "text_chars": 44982,
+      "content_hash": "78238f14ac686e572d279409b1858acc360e81fd2e84eb5b464e9fdc1cbe13ba"
     },
     {
       "url": "https://www.jalan.net/news/article/919372/",
@@ -104,8 +104,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 8924,
-      "content_hash": "be306dd15e2b2fe4968378f468acf930586311ccadba8e747068aa6b4fc7aeb3"
+      "text_chars": 8916,
+      "content_hash": "f950387a41226987c711c78884bf9ecd67468b5427dab117fe1d52354c28add3"
     },
     {
       "url": "https://www.jalan.net/theme/PointUpCampaign_202611_02/",
@@ -136,12 +136,12 @@
   "wp_review_eligible": false,
   "status": "audit_pending",
   "change_kind": "update",
-  "content_hash": "15a357e413ad98a1f59903e608a94207c551b6b7e39040f898d15cf7b924001a",
-  "data_date": "2026-11-17",
-  "latest_file": "coupons_2026-11-17.json",
-  "coupon_count": 15,
-  "audit_candidate_id": "jalan-15a357e413ad98a1",
-  "audit_candidate_path": "codex_audit_queue/jalan/jalan-15a357e413ad98a1.json",
+  "content_hash": "2ebc26125fdea727759cafa9f0618020e46bb06e07e5c7dbdd149ae49e3cd862",
+  "data_date": "2026-11-18",
+  "latest_file": "coupons_2026-11-18.json",
+  "coupon_count": 16,
+  "audit_candidate_id": "jalan-2ebc26125fdea727",
+  "audit_candidate_path": "codex_audit_queue/jalan/jalan-2ebc26125fdea727.json",
   "error": "",
   "freshness_status": "fresh"
 }

@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-11-18T07:00:36+09:00",
+  "official_checked_at": "2026-11-18T19:54:06+09:00",
   "official_area": "全11地域版",
   "coverage_status": "complete",
   "region_count": 11,
@@ -17,8 +17,8 @@
         "国内旅行": 17
       },
       "visible_count": 23,
-      "total_dom_count": 49,
-      "hidden_dom_count": 26
+      "total_dom_count": 50,
+      "hidden_dom_count": 27
     },
     {
       "code": "hokkaido",
@@ -30,8 +30,8 @@
         "国内旅行": 15
       },
       "visible_count": 21,
-      "total_dom_count": 49,
-      "hidden_dom_count": 28
+      "total_dom_count": 50,
+      "hidden_dom_count": 29
     },
     {
       "code": "tohoku",
@@ -39,12 +39,12 @@
       "official_area": "東北版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=3",
       "tab_counts": {
-        "海外旅行": 25,
+        "海外旅行": 24,
         "国内旅行": 16
       },
-      "visible_count": 41,
-      "total_dom_count": 49,
-      "hidden_dom_count": 8
+      "visible_count": 40,
+      "total_dom_count": 50,
+      "hidden_dom_count": 10
     },
     {
       "code": "koshinetsu",
@@ -52,12 +52,12 @@
       "official_area": "甲信越（新潟）版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=4",
       "tab_counts": {
-        "海外旅行": 25,
+        "海外旅行": 24,
         "国内旅行": 16
       },
-      "visible_count": 41,
-      "total_dom_count": 49,
-      "hidden_dom_count": 8
+      "visible_count": 40,
+      "total_dom_count": 50,
+      "hidden_dom_count": 10
     },
     {
       "code": "chubu",
@@ -69,8 +69,8 @@
         "国内旅行": 15
       },
       "visible_count": 21,
-      "total_dom_count": 49,
-      "hidden_dom_count": 28
+      "total_dom_count": 50,
+      "hidden_dom_count": 29
     },
     {
       "code": "hokuriku",
@@ -82,8 +82,8 @@
         "国内旅行": 15
       },
       "visible_count": 21,
-      "total_dom_count": 49,
-      "hidden_dom_count": 28
+      "total_dom_count": 50,
+      "hidden_dom_count": 29
     },
     {
       "code": "kansai",
@@ -95,8 +95,8 @@
         "国内旅行": 15
       },
       "visible_count": 21,
-      "total_dom_count": 49,
-      "hidden_dom_count": 28
+      "total_dom_count": 50,
+      "hidden_dom_count": 29
     },
     {
       "code": "chugoku",
@@ -108,8 +108,8 @@
         "国内旅行": 15
       },
       "visible_count": 21,
-      "total_dom_count": 49,
-      "hidden_dom_count": 28
+      "total_dom_count": 50,
+      "hidden_dom_count": 29
     },
     {
       "code": "shikoku",
@@ -117,12 +117,12 @@
       "official_area": "四国版",
       "switch_url": "https://www.his-j.com/Default.aspx?param=11",
       "tab_counts": {
-        "海外旅行": 25,
+        "海外旅行": 24,
         "国内旅行": 16
       },
-      "visible_count": 41,
-      "total_dom_count": 49,
-      "hidden_dom_count": 8
+      "visible_count": 40,
+      "total_dom_count": 50,
+      "hidden_dom_count": 10
     },
     {
       "code": "kyushu",
@@ -134,8 +134,8 @@
         "国内旅行": 15
       },
       "visible_count": 22,
-      "total_dom_count": 49,
-      "hidden_dom_count": 27
+      "total_dom_count": 50,
+      "hidden_dom_count": 28
     },
     {
       "code": "okinawa",
@@ -147,20 +147,20 @@
         "国内旅行": 15
       },
       "visible_count": 21,
-      "total_dom_count": 49,
-      "hidden_dom_count": 28
+      "total_dom_count": 50,
+      "hidden_dom_count": 29
     }
   ],
   "tab_counts": {
-    "海外旅行": 124,
+    "海外旅行": 121,
     "国内旅行": 170
   },
-  "visible_count": 72,
-  "regional_visible_count": 294,
-  "total_dom_count": 539,
-  "hidden_dom_count": 245,
-  "capture_count": 72,
+  "visible_count": 71,
+  "regional_visible_count": 291,
+  "total_dom_count": 550,
+  "hidden_dom_count": 259,
+  "capture_count": 71,
   "capture_method": "deduplicated_individual_element_screenshot",
-  "derived_image_count": 72,
+  "derived_image_count": 71,
   "evidence_directory": "evidence/his"
 }

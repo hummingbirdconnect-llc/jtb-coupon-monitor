@@ -3,22 +3,6 @@
     "date": "2026-09-11",
     "type": "gone",
     "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
-    "id": "rurubu_travel-pp26enrak15-958ff7b870",
-    "title": "富山県 宇奈月温泉 延楽で使えるクーポン（最大15,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
-    "id": "rurubu_travel-pp26fkich15-319f8cdfb3",
-    "title": "群馬県 伊香保温泉 福一で使えるクーポン（最大24,000円引き）",
-    "discount": "最大15%引き"
-  },
-  {
-    "date": "2026-09-11",
-    "type": "gone",
-    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
     "id": "rurubu_travel-pp26ghous100-06b8cbc125",
     "title": "福井県 あわら温泉 グランディア芳泉で使えるクーポン",
     "discount": "最大¥10,000引き"
@@ -3998,5 +3982,21 @@
     "id": "rurubu_travel-autm26sep80-autm26sep50-autm26sep20-dfd29715d6",
     "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
     "discount": "最大¥8,000引き"
+  },
+  {
+    "date": "2026-11-18",
+    "type": "new",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26monsp20-85c8c01543",
+    "title": "沖縄県 ホテル モントレ 沖縄スパ＆リゾートで使えるクーポン（最大30,000円引き）",
+    "discount": "最大20%引き"
+  },
+  {
+    "date": "2026-11-18",
+    "type": "gone",
+    "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+    "id": "rurubu_travel-pp26monsp10-9449bf18e5",
+    "title": "沖縄県 ホテル モントレ 沖縄スパ＆リゾートで使えるクーポン（最大5,000円引き）",
+    "discount": "最大10%引き"
   }
 ]
