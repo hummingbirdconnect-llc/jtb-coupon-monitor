@@ -453,3 +453,40 @@ OpenAI APIは使用しません。Codex定期実行はChatGPT/Codex契約内の�
 | Gmail SMTP | 無料（1日500通。本ツールは最大1通/日） |
 | OpenAI API | 未使用 |
 | Codex定期実行 | ChatGPT/Codex契約の利用上限に従う |
+
+## お得情報一覧と掲載状況
+
+ダッシュボードの「お得情報一覧」で会社・特典の種類・情報源・X投稿・公開記事を組み合わせて絞り込めます。名称を開くと出典、対象期間、投稿や記事のリンク、照合日が表示されます。「配布中」などは取得時の状態です。
+
+### AIで調べた案件を追加する
+
+既存の監視結果と、登録会社の `discovery_hints/<会社ID>/hints_*.json` の全履歴を読み込みます。別のAIで集めたものは `ai_intake/<会社ID>/<日付>-<調査名>.json` に同じ形式で追加します。会社IDは `config/provider_registry.json` の値を使います。過去のファイルを上書きせず、別名で追加できます。
+
+下記は形式の例です。名称、日付、出典、条件には実際に調べた内容を入れます。
+
+```json
+{
+  "generated_at": "2026-11-18",
+  "candidates": [{
+    "title": "公式に記載された特典名",
+    "kind": "sale",
+    "official_url": "https://example.com/offers/autumn/",
+    "found_url": "https://example.com/offers/autumn/",
+    "observed_date": "2026-11-18",
+    "evidence": "対象商品と適用条件",
+    "discount": "確認した割引額",
+    "period": "確認した予約期間"
+  }]
+}
+```
+
+種別には `coupon`・`sale`・`points`・`member_benefit`・`campaign`・`other` を使えます。同じ会社・名称・URLの観測をまとめ、最新の調査内容を表示します。JTB個別ページは同じクーポンを示すURLも使います。一覧ページしか共通しない案件は分けます。
+
+### Xと記事の記録を更新する
+
+Macで `python3 sync_deal_coverage.py --workspace /path/to/vault_box` を実行した後、`python3 generate_dashboard.py` で画面を更新します。MacのHIS監視は前者を、全社監視は当日のX下書き生成後に後者を実行します。Mac上の作業場を移した場合はリポジトリ変数 `DEAL_EDITORIAL_WORKSPACE` で指定できます。
+
+- Xは各サイトの監視ツールが生成した下書きと、ウェルトリップの取材・投稿記録を使います。「投稿済み」には実績と結び付いた公開投稿、または担当者が登録した公開投稿のURLが必要です。下書きしか見つからない場合は「下書きのみ」です。
+- ほかの自社アカウントの投稿も追跡できます。`editorial_data/publications.json` に `[{"key":"案件詳細にある案件ID","site":"アカウント名","date":"YYYY-MM-DD","url":"公開投稿のURL"}]` の形式で記録を追加し、再生成します。
+- 記事は登録した3サイトの公開本文を認証付きで取得します。同じ会社で一意の名称かコードを照合し、一致した記事に確認日と根拠を付けます。「本文に一致なし」は登録記事での照合結果です。言い換えた紹介や別記事への掲載、割引条件が最新版かどうかは別途確認が必要です。
+- Xの投稿本文、非公開下書きURL、WordPressの本文、認証情報は掲載記録へ保存しません。GitHub Pagesに公開すると、案件ごとの下書きの有無と公開記事・投稿へのリンクが閲覧者に表示されます。

@@ -14,6 +14,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from deal_catalog import build_catalog
 from his_regions import coupon_region_codes
 from affiliate_links import affiliate_setup_status, load_affiliate_config, resolve_affiliate_url
 from grok_deal_discovery import latest_hints_file
@@ -1253,6 +1254,7 @@ def build_dashboard_data() -> dict[str, Any]:
         "hint_run": hint_run,
         "recent_change_dates": recent_day_filters,
         "recent_change_rows": recent_change_rows,
+        "deals": build_catalog(ROOT, providers),
         "flash": build_flash_data(providers, registry, recent_day_filters),
         "columns": {
             "summary": SUMMARY_COLUMNS,
@@ -1265,13 +1267,13 @@ def build_dashboard_data() -> dict[str, Any]:
 
 
 def generate_html(data: dict[str, Any]) -> str:
-    data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+    data_json = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("<", r"\u003c")
     return f"""<!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>旅行会社クーポン監視ダッシュボード</title>
+<title>旅行会社のクーポン・セール・お得情報</title>
 <link href="https://unpkg.com/gridjs@6.2.0/dist/theme/mermaid.min.css" rel="stylesheet" />
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
@@ -1436,21 +1438,21 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; 
   .move-row {{ grid-template-columns: 1fr; gap: 2px; }}
   .camp-grid {{ grid-template-columns: 1fr; }}
 }}
+{(ROOT / "templates/deal_catalog.css").read_text(encoding="utf-8")}
 </style>
 </head>
 <body>
 <div class="header">
-  <h1>旅行会社クーポン監視ダッシュボード</h1>
+  <h1>旅行会社のクーポン・セール・お得情報</h1>
   <div class="updated">最終更新: {data["generated_at"]}</div>
-  <div class="doc-links">
-    資料:
+  <details class="deal-docs"><summary>運用資料</summary><div class="doc-links">
     <a href="{DOC_BASE}/JTB_COUPON_MONITOR_OPERATIONS.md" target="_blank" rel="noopener">運用マニュアル</a>
     <a href="{DOC_BASE}/config/affiliate_links/README.md" target="_blank" rel="noopener">アフィリエイト設定の書き方</a>
     <a href="{DOC_BASE}/CODEX_COUPON_AUDIT.md" target="_blank" rel="noopener">Codex監査の手順</a>
     <a href="{DOC_BASE}/config/provider_registry.json" target="_blank" rel="noopener">会社一覧の設定</a>
     <a href="{WORKFLOW_URL}" target="_blank" rel="noopener">GitHub Actions（手動実行）</a>
     <a href="https://github.com/{REPOSITORY}" target="_blank" rel="noopener">リポジトリ</a>
-  </div>
+  </div></details>
 </div>
 <div class="tabs" id="tabs"></div>
 <main id="contents"></main>
@@ -2290,6 +2292,8 @@ function renderCampaigns(container) {{
   draw();
 }}
 
+{(ROOT / "templates/deal_catalog.js").read_text(encoding="utf-8")}
+
 const TAB_RENDERERS = {{}};
 const RENDERED_TABS = new Set();
 
@@ -2332,7 +2336,8 @@ function init() {{
     addContent(id, render);
   }}
   const providerLabel = provider => `${{escapeHtml(provider.label)}} <span class="tab-count">${{escapeHtml(provider.tab_count_label ?? provider.count_label ?? provider.rows.length)}}</span>`;
-  addTab('flash', '速報', renderFlash, 'tab-main');
+  addTab('flash', 'お得情報一覧', renderDealCatalog, 'tab-main');
+  addTab('changes', '速報', renderFlash, 'tab-main');
   addTab('campaigns', `キャンペーン・セール <span class="tab-count">${{((DATA.flash && DATA.flash.campaigns) || []).length}}</span>`, renderCampaigns, 'tab-main');
   addTab('summary', '全社サマリー', renderSummary);
   const separator = document.createElement('span');

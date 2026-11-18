@@ -89,6 +89,17 @@ jobs:
             exit 1
           fi
 
+      - name: お得情報のX・記事掲載記録を更新
+        env:
+          DEAL_WORKSPACE: ${{ vars.DEAL_EDITORIAL_WORKSPACE }}
+        run: |
+          workspace="${DEAL_WORKSPACE:-$HOME/projects/vault_box}"
+          if [[ -r "$workspace/tools/.env" && -r "$workspace/docs/operations/welltrip-x-loop/state.sqlite3" ]]; then
+            .venv/bin/python sync_deal_coverage.py --workspace "$workspace"
+          else
+            echo "::warning::X・記事の照合元に接続できません。前回の確認日を保持します。"
+          fi
+
       - name: 実行サマリー
         if: always()
         run: |
@@ -129,6 +140,7 @@ jobs:
             html_output/his_coupons.html
             html_output/his_coupons_list.html
             dashboard/evidence/his/
+            editorial_data/
             wordpress_feed/his-monitor-feed.json
           )
           staged_paths=()

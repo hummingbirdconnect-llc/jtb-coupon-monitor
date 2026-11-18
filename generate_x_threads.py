@@ -736,6 +736,7 @@ def main():
             threads.append({
                 "provider_id": item["provider_id"],
                 "provider_label": item["provider_label"],
+                "coupon_id": item["row"].get("ID", ""),
                 "title": str(item["row"].get("タイトル", ""))[:60],
                 "score": item["score"],
                 "reasons": item["reasons"],

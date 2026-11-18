@@ -1,0 +1,1987 @@
+[
+ {
+  "site": "トリップブッキング",
+  "provider": "agoda",
+  "url": "https://tripbooking.jp/agoda-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 1472
+ },
+ {
+  "site": "トリップブッキング",
+  "provider": "expedia",
+  "url": "https://tripbooking.jp/expedia-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 642
+ },
+ {
+  "site": "トリップブッキング",
+  "provider": "hotels",
+  "url": "https://tripbooking.jp/hotels-com-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "hotels/hotels-042642c9bb",
+    "title": "VISA8",
+    "basis": "コード一致",
+    "code": "visa8"
+   },
+   {
+    "key": "hotels/hotels-4fc45d7474",
+    "title": "JCBJP8",
+    "basis": "コード一致",
+    "code": "jcbjp8"
+   },
+   {
+    "key": "hotels/hotels-16be4991ac",
+    "title": "AMEX8",
+    "basis": "コード一致",
+    "code": "amex8"
+   },
+   {
+    "key": "hotels/hotels-ef895c5cb1",
+    "title": "MCJP8",
+    "basis": "コード一致",
+    "code": "mcjp8"
+   }
+  ],
+  "post_id": 1242
+ },
+ {
+  "site": "トリップブッキング",
+  "provider": "tripcom",
+  "url": "https://tripbooking.jp/tripcom-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 241
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "activityjapan",
+  "url": "https://travel.hb-connect.co.jp/activityjapan-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "activityjapan/activityjapan-675b5e5858e783b6",
+    "title": "アクティビティジャパン公式LINEクーポン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 1784
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "asoview",
+  "url": "https://travel.hb-connect.co.jp/asoview-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "asoview/asoview-d57e48fa988c2be5",
+    "title": "神戸おでかけ特集クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-121b4c49d0bc2d8e",
+    "title": "名古屋おでかけ特集クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-5954b3703a0c499b",
+    "title": "サンリオキャラクターフェスinリトルユニバースOKINAWA セット券 300円OFFクーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-2ec81b898b0b564c",
+    "title": "【11月】「千葉遊び尽くし！応援割 26」平日30%OFF/休日10%OFFクーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-d38367ec80fe7777",
+    "title": "【第2弾】やまぐちのアソビ新発見割2026 30%OFFクーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-9241ba7390e436bf",
+    "title": "【12月】「千葉遊び尽くし！応援割 26」平日30%OFF/休日10%OFFクーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-cef5f41e38340f6c",
+    "title": "【アソビュー限定】OKINAWAフルーツランドクーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-f20f649a53555818",
+    "title": "【超得割！チケット限定】新江ノ島水族館 5％OFFクーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-1ea6f776da88f682",
+    "title": "【対象チケット限定】ニンジャ☆パーク1日フリーパス 500円引き",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 1456
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "his",
+  "url": "https://travel.hb-connect.co.jp/his-couponcode/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "his/61d5dfeb1f26",
+    "title": "【BLACK FRIDAY】オンライン予約限定！1グループ最大10,000円引き",
+    "basis": "コード一致",
+    "code": "bf01ynnvtqgfvlzg"
+   },
+   {
+    "key": "his/74a34a37a00b",
+    "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行ニュージーランドツアーお1人様5,000円引き",
+    "basis": "コード一致",
+    "code": "dcp1lbgnuqzcltwe"
+   },
+   {
+    "key": "his/2af5cfea09cd",
+    "title": "学生旅行応援！早めの予約がお得！1グループ最大20,000円引き",
+    "basis": "コード一致",
+    "code": "gcp1vmdsdcmspmmb"
+   },
+   {
+    "key": "his/a35860d1e2ee",
+    "title": "学生旅行応援！4名様以上のグループがお得！1グループ最大20,000円引き",
+    "basis": "コード一致",
+    "code": "gcp4psglyjxgevcf"
+   },
+   {
+    "key": "his/a180dbc69442",
+    "title": "学生一人旅応援！1名様につき2,000円引き",
+    "basis": "コード一致",
+    "code": "gcp7ejgjptlfttps"
+   },
+   {
+    "key": "his/d31268ef4651",
+    "title": "【BLACK FRIDAY】500円引きクーポン",
+    "basis": "コード一致",
+    "code": "vk9x36lwt6udbv4qk62q"
+   },
+   {
+    "key": "his/0e1612a99e83",
+    "title": "【BLACK FRIDAY】早めの予約がお得！4月以降出発1グループ5,000円引き",
+    "basis": "コード一致",
+    "code": "cwrmubay9mfkejm8"
+   },
+   {
+    "key": "his/02e425af2b92",
+    "title": "【BLACK FRIDAY】1グループ最大10％引き",
+    "basis": "コード一致",
+    "code": "dc8qhzyqtug9z3dd"
+   },
+   {
+    "key": "his/fc57a093922d",
+    "title": "【BLACK FRIDAY】JAL利用がお得！1グループ10,000円引き",
+    "basis": "コード一致",
+    "code": "m9fbgb7w7c2a4fcc"
+   },
+   {
+    "key": "his/9c1e71353fa1",
+    "title": "【BLACK FRIDAY】間際の出発もお得！1グループ3,000円引き",
+    "basis": "コード一致",
+    "code": "gx5d3abqf38zuprc"
+   },
+   {
+    "key": "his/2bb8664cba50",
+    "title": "【BLACK FRIDAY】早めの予約がお得！1グループ最大10,000円引き",
+    "basis": "コード一致",
+    "code": "9ha2m3r8rvr7u4ee"
+   },
+   {
+    "key": "his/20409b3c3251",
+    "title": "【BLACK FRIDAY】1グループ8％引き",
+    "basis": "コード一致",
+    "code": "rzwwjlazl6vtkuk6"
+   },
+   {
+    "key": "his/73b9e6727c2b",
+    "title": "年末年始出発がお得！1名様につき3,000円引き",
+    "basis": "コード一致",
+    "code": "z9p7n3nhse7cnm44"
+   },
+   {
+    "key": "his/06f004280d64",
+    "title": "【北海道キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
+    "basis": "コード一致",
+    "code": "r9xw7v7ytzqcbl33"
+   },
+   {
+    "key": "his/b38d07a03d5a",
+    "title": "【北海道キャンペーン】1グループ3,000円引き",
+    "basis": "コード一致",
+    "code": "t4sttc37rt7p2an9"
+   },
+   {
+    "key": "his/ae14b11e831f",
+    "title": "【鳥取・島根キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
+    "basis": "コード一致",
+    "code": "2uatwzkzsleumbqb"
+   },
+   {
+    "key": "his/beedf1c83b32",
+    "title": "【鳥取・島根キャンペーン】1グループ3,000円引き",
+    "basis": "コード一致",
+    "code": "p4mx3uuzs8jyxybb"
+   },
+   {
+    "key": "his/6a0f41c74707",
+    "title": "早めの予約がお得！1名様につき最大3,000円引き",
+    "basis": "コード一致",
+    "code": "54ezm2ny9zlpmt44"
+   },
+   {
+    "key": "his/2dc7e09acbda-1114d6",
+    "title": "＼思い立ったら旅に出よう／東北・新潟発着国内ツアーが最大5,000円引き",
+    "basis": "コード一致",
+    "code": "fjnf9y7jqzrq33g3"
+   },
+   {
+    "key": "his/3439da1669ce-b27959",
+    "title": "ホテルとセットでの予約がお得！最大10,000円引き",
+    "basis": "コード一致",
+    "code": "kyuaepbqjlvjwhsq"
+   }
+  ],
+  "post_id": 4954
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "ikkyu",
+  "url": "https://travel.hb-connect.co.jp/ikyu-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 2502
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "jalpack",
+  "url": "https://travel.hb-connect.co.jp/jal-pack-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "jalpack/jalpack-lsp-star",
+    "title": "LSP Star特典クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jalpack/jalpack-hayakime",
+    "title": "早決プラン55/60/90",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jalpack/lead-752701c6dad19b65a947",
+    "title": "北海道スキーゲレンデ満喫クーポン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 4961
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "jalan_activity",
+  "url": "https://travel.hb-connect.co.jp/jalan-activity-coupons/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 1806
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "jalan",
+  "url": "https://travel.hb-connect.co.jp/jalan-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "jalan/jalan-d464dfcb6dae0082",
+    "title": "ふるさとキャンペーン＆お得クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jalan/lead-fc77d1c6c6bee27c9720",
+    "title": "宿泊施設クーポン最大22,500円分",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 4974
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "jr_tokai_tours",
+  "url": "https://travel.hb-connect.co.jp/jr-tokai-tours-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 3680
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "jtb",
+  "url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "jtb/2611jtbcpnew",
+    "title": "新規会員限定！初めてのJTB国内旅行で使える最大10,000円引クーポン",
+    "basis": "コード一致",
+    "code": "cpnew"
+   },
+   {
+    "key": "jtb/2611mdscp",
+    "title": "3月までの宿泊で使える国内宿泊クーポン",
+    "basis": "コード一致",
+    "code": "mdscp"
+   },
+   {
+    "key": "jtb/2610premiumcp",
+    "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
+    "basis": "コード一致",
+    "code": "precp"
+   },
+   {
+    "key": "jtb/2601green",
+    "title": "【2026年4月以降出発】往復JR新幹線グリーン車で行く　華やぎ・優雅・ラグジュアリー割引クーポン",
+    "basis": "コード一致",
+    "code": "jrcpn"
+   },
+   {
+    "key": "jtb/2611prince",
+    "title": "<12～2月宿泊>全国の西武プリンスホテルズ＆リゾーツ56施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "princ"
+   },
+   {
+    "key": "jtb/2607tokyu",
+    "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "tokyu"
+   },
+   {
+    "key": "jtb/2611kyoritsu",
+    "title": "<11～3月宿泊>全国の共立リゾート44施設で使える割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2606ooedo",
+    "title": "【9～1月宿泊】全国の大江戸温泉物語とTAOYAで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "ooedo"
+   },
+   {
+    "key": "jtb/2607ihghotels",
+    "title": "IHG One Rewards × JTBトラベルメンバー パートナーシッププランで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "ihgcp"
+   },
+   {
+    "key": "jtb/2609sunsunski",
+    "title": "飛行機、JR利用がお得！スキー割引クーポン",
+    "basis": "コード一致",
+    "code": "sunsu"
+   },
+   {
+    "key": "jtb/2610obihiroairport2",
+    "title": "【伊丹空港発 帯広空港着】航空＋宿で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "obodp"
+   },
+   {
+    "key": "jtb/2610dohoku",
+    "title": "道北エリアのおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "dohok"
+   },
+   {
+    "key": "jtb/2610donan",
+    "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン",
+    "basis": "コード一致",
+    "code": "donan"
+   },
+   {
+    "key": "jtb/2609iwate",
+    "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞",
+    "basis": "コード一致",
+    "code": "iwate"
+   },
+   {
+    "key": "jtb/2611fukushima",
+    "title": "福島県おすすめ【今食べたい口福旅！海の福・山の福】プランで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "fukus"
+   },
+   {
+    "key": "jtb/2609goton",
+    "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
+    "basis": "コード一致",
+    "code": "zsngt"
+   },
+   {
+    "key": "jtb/2610niigata",
+    "title": "美食・美酒・名湯・体験・感動の旅♪ にいがた宿物語で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "niiga"
+   },
+   {
+    "key": "jtb/2611higashi",
+    "title": "栃木・群馬・山梨・新潟のおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "higas"
+   },
+   {
+    "key": "jtb/2610gunma",
+    "title": "ぐんま冬旅キャンペーン　割引クーポン",
+    "basis": "コード一致",
+    "code": "gunma"
+   },
+   {
+    "key": "jtb/2603ikaho",
+    "title": "伊香保温泉をぶらり散策しよう！割引クーポン",
+    "basis": "コード一致",
+    "code": "ikaho"
+   },
+   {
+    "key": "jtb/2610tochigi",
+    "title": "とちぎ旅冬の平日宿泊キャンペーン 割引クーポン",
+    "basis": "コード一致",
+    "code": "tochi"
+   },
+   {
+    "key": "jtb/2608candeohotels",
+    "title": "カンデオホテルズのおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "cande"
+   },
+   {
+    "key": "jtb/2609hankyu",
+    "title": "【10～12月宿泊】「阪急阪神ホテルズ」東京レム５施設と第一ホテル東京で使える！割引クーポン",
+    "basis": "コード一致",
+    "code": "remmc"
+   },
+   {
+    "key": "jtb/2608hachijo",
+    "title": "心をほどく、青の離島へ　八丈島で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "hachi"
+   },
+   {
+    "key": "jtb/2609hachijo",
+    "title": "がんばろう！八丈島で使えるクーポン",
+    "basis": "コード一致",
+    "code": "hacha"
+   },
+   {
+    "key": "jtb/2610orientalhorels",
+    "title": "<10～12月出発>オリエンタルホテルズ＆リゾーツ７施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "orien"
+   },
+   {
+    "key": "jtb/2611atami",
+    "title": "【11～12月限定】一期一会の美食体験　熱海シェフ・イン・レジデンス 宿泊プランで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "atami"
+   },
+   {
+    "key": "jtb/2605ito2",
+    "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞",
+    "basis": "コード一致",
+    "code": "zsito"
+   },
+   {
+    "key": "jtb/2611chubu",
+    "title": "【中部８県】おすすめの旅館・ホテルで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "chubu"
+   },
+   {
+    "key": "jtb/2608notoairport",
+    "title": "【往復ANA便】能登空港利用で使える国内ツアー割引クーポン",
+    "basis": "コード一致",
+    "code": "notoc"
+   },
+   {
+    "key": "jtb/2609shiga",
+    "title": "滋賀県　びわ湖の歴史と湖上交通　夕食に認証「近江牛」が楽しめる　おすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "shiga"
+   },
+   {
+    "key": "jtb/2606kintetsu",
+    "title": "近鉄・都ホテルズのおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "kinte"
+   },
+   {
+    "key": "jtb/2608kyotm",
+    "title": "【京の味覚を愉しむ】おすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "kyotm"
+   },
+   {
+    "key": "jtb/2608hankyu",
+    "title": "【9～12月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
+    "basis": "コード一致",
+    "code": "hanky"
+   },
+   {
+    "key": "jtb/2610osaka",
+    "title": "【泊まろう大阪】おすすめ施設で使える割引クーポン＜第3弾＞",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2610obihiroairport",
+    "title": "【帯広空港発 伊丹空港着】航空機+宿で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "obocp"
+   },
+   {
+    "key": "jtb/2610tottori",
+    "title": "すいちょるけん！鳥取割引クーポン",
+    "basis": "コード一致",
+    "code": "totto"
+   },
+   {
+    "key": "jtb/2611shimane",
+    "title": "だんだん島根割引クーポン",
+    "basis": "コード一致",
+    "code": "danda"
+   },
+   {
+    "key": "jtb/2610matsue",
+    "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "matsu"
+   },
+   {
+    "key": "jtb/2610yamaguchi",
+    "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "yamag"
+   },
+   {
+    "key": "jtb/2604sagak",
+    "title": "ANA便＜羽田空港発　佐賀空港利用＞国内ツアー　航空＋宿で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "sagak"
+   },
+   {
+    "key": "jtb/2608fdacp",
+    "title": "日本の旬九州特別企画　九州内の宿泊＋往復FDA利用で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "fdacp"
+   },
+   {
+    "key": "jtb/2610nagasakimarriott",
+    "title": "長崎マリオットホテルのスイートルームで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "nagam"
+   },
+   {
+    "key": "jtb/2607jalka",
+    "title": "＜9～3月出発＞【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "jalka"
+   },
+   {
+    "key": "jtb/2609okinawamonterey",
+    "title": "ホテルモントレ沖縄スパ＆リゾート、ホテルモントレ ラ・スール那覇で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "omont"
+   },
+   {
+    "key": "jtb/2609okinawa2",
+    "title": "沖縄【秋冬旅】タイムセールや年末年始にも利用できる割引クーポン",
+    "basis": "コード一致",
+    "code": "okisy"
+   },
+   {
+    "key": "jtb/2609akifuyu",
+    "title": "JTBのおすすめ施設で使える秋冬旅割引クーポン",
+    "basis": "コード一致",
+    "code": "akifu"
+   },
+   {
+    "key": "jtb/2608kyoritsu",
+    "title": "<10～12月出発>【早期割引60】共立リゾート41施設で使える割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2611bf",
+    "title": "【ブラックフライデー】海外航空券+ホテルどこでも使える割引クーポン",
+    "basis": "コード一致",
+    "code": "2611p1"
+   },
+   {
+    "key": "jtb/2611bf25",
+    "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様25,000円引）",
+    "basis": "コード一致",
+    "code": "2611q1"
+   },
+   {
+    "key": "jtb/2611bf5",
+    "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様5,000円引）",
+    "basis": "コード一致",
+    "code": "2611r1"
+   },
+   {
+    "key": "jtb/2611bf10",
+    "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様10,000円引）",
+    "basis": "コード一致",
+    "code": "2611s1"
+   },
+   {
+    "key": "jtb/2609yng",
+    "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜1月-3月出発＞（10代）",
+    "basis": "コード一致",
+    "code": "2609f1"
+   },
+   {
+    "key": "jtb/2609yng2",
+    "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜1月-3月出発＞（20代）",
+    "basis": "コード一致",
+    "code": "2609g1"
+   },
+   {
+    "key": "jtb/2604jl",
+    "title": "海外航空券+ホテルでどこでも使える割引クーポン【日本航空(JAL)対象】",
+    "basis": "コード一致",
+    "code": "2604n1"
+   },
+   {
+    "key": "jtb/2604sq",
+    "title": "海外航空券+ホテルでどこでも使える割引クーポン【シンガポール航空対象】",
+    "basis": "コード一致",
+    "code": "2604m1"
+   },
+   {
+    "key": "jtb/2607ci",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【チャイナエアライン対象】",
+    "basis": "コード一致",
+    "code": "2607d1"
+   },
+   {
+    "key": "jtb/2604mh",
+    "title": "海外航空券+ホテルでどこでも使える割引クーポン【マレーシア航空対象】",
+    "basis": "コード一致",
+    "code": "2604p1"
+   },
+   {
+    "key": "jtb/2607as",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アラスカ航空対象】",
+    "basis": "コード一致",
+    "code": "2607m1"
+   },
+   {
+    "key": "jtb/2609any",
+    "title": "【リニューアル記念】海外航空券＋ホテルどこでも使える割引クーポン",
+    "basis": "コード一致",
+    "code": "2609c1"
+   },
+   {
+    "key": "jtb/2604mh2",
+    "title": "海外航空券で使えるどこでも割引クーポン【マレーシア航空対象】",
+    "basis": "コード一致",
+    "code": "2604g1"
+   },
+   {
+    "key": "jtb/2607ci2",
+    "title": "海外航空券で使えるどこでも割引クーポン【チャイナエアライン対象】",
+    "basis": "コード一致",
+    "code": "2607b1"
+   },
+   {
+    "key": "jtb/2610ua",
+    "title": "海外航空券+ホテルで使えるグアム・サイパン・パラオ行き割引クーポン【ユナイテッド航空対象】",
+    "basis": "コード一致",
+    "code": "2610c1"
+   },
+   {
+    "key": "jtb/2609oz",
+    "title": "【韓国観光公社協賛！】韓国で使える！海外ツアールックJTBMySTYLE割引クーポン【アシアナ航空(OZ)対象】",
+    "basis": "コード一致",
+    "code": "2609b1"
+   },
+   {
+    "key": "jtb/2607ke2",
+    "title": "海外航空券で使えるソウル行き割引クーポン【大韓航空対象】",
+    "basis": "コード一致",
+    "code": "2607a1"
+   },
+   {
+    "key": "jtb/2607ke",
+    "title": "海外航空券+ホテルで使えるソウル行き割引クーポン【大韓航空対象】",
+    "basis": "コード一致",
+    "code": "2607c1"
+   },
+   {
+    "key": "jtb/2604lj2",
+    "title": "海外航空券で使える韓国行き割引クーポン【ジンエアー対象】",
+    "basis": "コード一致",
+    "code": "2604b1"
+   },
+   {
+    "key": "jtb/2604vn2",
+    "title": "海外航空券で使えるベトナム行き割引クーポン【ベトナム航空対象】",
+    "basis": "コード一致",
+    "code": "2604f1"
+   },
+   {
+    "key": "jtb/2604lj",
+    "title": "海外航空券+ホテルで使える韓国行き割引クーポン【ジンエアー対象】",
+    "basis": "コード一致",
+    "code": "2604j1"
+   },
+   {
+    "key": "jtb/2604vn",
+    "title": "海外航空券+ホテルで使えるベトナム行き割引クーポン【ベトナム航空対象】",
+    "basis": "コード一致",
+    "code": "2604q1"
+   },
+   {
+    "key": "jtb/2610ba",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【ブリティッシュ・エアウェイズ対象】",
+    "basis": "コード一致",
+    "code": "2610b1"
+   },
+   {
+    "key": "jtb/2607af",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【エールフランス航空対象】",
+    "basis": "コード一致",
+    "code": "2607h1"
+   },
+   {
+    "key": "jtb/2607ua",
+    "title": "海外航空券+ホテルで使えるアメリカ行き割引クーポン【ユナイテッド航空対象】",
+    "basis": "コード一致",
+    "code": "2607q1"
+   },
+   {
+    "key": "jtb/2607aa",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アメリカン航空対象】",
+    "basis": "コード一致",
+    "code": "2607n1"
+   },
+   {
+    "key": "jtb/2607ac",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【エア・カナダ対象】",
+    "basis": "コード一致",
+    "code": "2607p1"
+   },
+   {
+    "key": "jtb/2607qf",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【カンタス航空対象】",
+    "basis": "コード一致",
+    "code": "2607f1"
+   },
+   {
+    "key": "jtb/2607nz",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【ニュージーランド航空対象】",
+    "basis": "コード一致",
+    "code": "2607g1"
+   },
+   {
+    "key": "jtb/2609sk",
+    "title": "ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【スカンジナビア航空(SK)対象】",
+    "basis": "コード一致",
+    "code": "2609a1"
+   },
+   {
+    "key": "jtb/lead-6baf36d2dc7fe9bf4f2c",
+    "title": "【早期割引60】共立リゾート41施設で使える割引クーポン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 4959
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "jtb",
+  "url": "https://travel.hb-connect.co.jp/jtb-first-coupon/",
+  "date": "2026-11-18",
+  "status": "未取得",
+  "matches": []
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "jtb",
+  "url": "https://travel.hb-connect.co.jp/jtb-shinkansen-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "jtb/2611jtbcpnew",
+    "title": "新規会員限定！初めてのJTB国内旅行で使える最大10,000円引クーポン",
+    "basis": "コード一致",
+    "code": "cpnew"
+   },
+   {
+    "key": "jtb/2610premiumcp",
+    "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
+    "basis": "コード一致",
+    "code": "precp"
+   },
+   {
+    "key": "jtb/2601green",
+    "title": "【2026年4月以降出発】往復JR新幹線グリーン車で行く　華やぎ・優雅・ラグジュアリー割引クーポン",
+    "basis": "コード一致",
+    "code": "jrcpn"
+   },
+   {
+    "key": "jtb/2607ihghotels",
+    "title": "IHG One Rewards × JTBトラベルメンバー パートナーシッププランで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "ihgcp"
+   },
+   {
+    "key": "jtb/2609sunsunski",
+    "title": "飛行機、JR利用がお得！スキー割引クーポン",
+    "basis": "コード一致",
+    "code": "sunsu"
+   },
+   {
+    "key": "jtb/2610niigata",
+    "title": "美食・美酒・名湯・体験・感動の旅♪ にいがた宿物語で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "niiga"
+   },
+   {
+    "key": "jtb/2610gunma",
+    "title": "ぐんま冬旅キャンペーン　割引クーポン",
+    "basis": "コード一致",
+    "code": "gunma"
+   },
+   {
+    "key": "jtb/2608candeohotels",
+    "title": "カンデオホテルズのおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "cande"
+   },
+   {
+    "key": "jtb/2609shiga",
+    "title": "滋賀県　びわ湖の歴史と湖上交通　夕食に認証「近江牛」が楽しめる　おすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "shiga"
+   },
+   {
+    "key": "jtb/2608hankyu",
+    "title": "【9～12月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
+    "basis": "コード一致",
+    "code": "hanky"
+   },
+   {
+    "key": "jtb/2610matsue",
+    "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "matsu"
+   },
+   {
+    "key": "jtb/2610yamaguchi",
+    "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "yamag"
+   },
+   {
+    "key": "jtb/2610nagasakimarriott",
+    "title": "長崎マリオットホテルのスイートルームで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "nagam"
+   }
+  ],
+  "post_id": 5777
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "klook",
+  "url": "https://travel.hb-connect.co.jp/klook-coupon/",
+  "date": "2026-11-18",
+  "status": "未取得",
+  "matches": []
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "knt",
+  "url": "https://travel.hb-connect.co.jp/knt-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "knt/yado-sp-nara-kcp-b91c6e",
+    "title": "奈良県を楽しもうキャンペーン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "knt/lead-abc18106e6f43f8013c7",
+    "title": "ひなタビみやざき宿泊キャンペーン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 3382
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "rakuten_travel",
+  "url": "https://travel.hb-connect.co.jp/rakuten-travel-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "rakuten_travel/lead-eef792aae7465e305dc3",
+    "title": "スペシャルクーポンWEEK",
+    "basis": "名称一致"
+   },
+   {
+    "key": "rakuten_travel/lead-7b28480eac436baf99e4",
+    "title": "最高級宿スペシャルオファー",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 700
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "skypack_tours",
+  "url": "https://travel.hb-connect.co.jp/skypaktours-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "skypack_tours/skypack_tours-0c2e8025e0a7ac34",
+    "title": "奄美群島しまめぐり割 2泊 10,000円OFFクーポン",
+    "basis": "コード一致",
+    "code": "cam1020x89"
+   }
+  ],
+  "post_id": 2228
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "toku",
+  "url": "https://travel.hb-connect.co.jp/tocoo-travel-coupons/",
+  "date": "2026-11-18",
+  "status": "未取得",
+  "matches": []
+ },
+ {
+  "site": "ウェルトリップ",
+  "provider": "yumeyado",
+  "url": "https://travel.hb-connect.co.jp/yumeyado-coupons/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "yumeyado/lead-7001d76fbe78031cb95f",
+    "title": "にいがたGoToトラベル",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 1710
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "his",
+  "url": "https://yakushima.fun/his-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "his/61d5dfeb1f26",
+    "title": "【BLACK FRIDAY】オンライン予約限定！1グループ最大10,000円引き",
+    "basis": "コード一致",
+    "code": "bf01ynnvtqgfvlzg"
+   },
+   {
+    "key": "his/74a34a37a00b",
+    "title": "オンライン配信「旅情報LIVE」視聴者限定！添乗員同行ニュージーランドツアーお1人様5,000円引き",
+    "basis": "コード一致",
+    "code": "dcp1lbgnuqzcltwe"
+   },
+   {
+    "key": "his/d31268ef4651",
+    "title": "【BLACK FRIDAY】500円引きクーポン",
+    "basis": "コード一致",
+    "code": "vk9x36lwt6udbv4qk62q"
+   },
+   {
+    "key": "his/0e1612a99e83",
+    "title": "【BLACK FRIDAY】早めの予約がお得！4月以降出発1グループ5,000円引き",
+    "basis": "コード一致",
+    "code": "cwrmubay9mfkejm8"
+   },
+   {
+    "key": "his/02e425af2b92",
+    "title": "【BLACK FRIDAY】1グループ最大10％引き",
+    "basis": "コード一致",
+    "code": "dc8qhzyqtug9z3dd"
+   },
+   {
+    "key": "his/fc57a093922d",
+    "title": "【BLACK FRIDAY】JAL利用がお得！1グループ10,000円引き",
+    "basis": "コード一致",
+    "code": "m9fbgb7w7c2a4fcc"
+   },
+   {
+    "key": "his/2bb8664cba50",
+    "title": "【BLACK FRIDAY】早めの予約がお得！1グループ最大10,000円引き",
+    "basis": "コード一致",
+    "code": "9ha2m3r8rvr7u4ee"
+   },
+   {
+    "key": "his/20409b3c3251",
+    "title": "【BLACK FRIDAY】1グループ8％引き",
+    "basis": "コード一致",
+    "code": "rzwwjlazl6vtkuk6"
+   },
+   {
+    "key": "his/73b9e6727c2b",
+    "title": "年末年始出発がお得！1名様につき3,000円引き",
+    "basis": "コード一致",
+    "code": "z9p7n3nhse7cnm44"
+   },
+   {
+    "key": "his/06f004280d64",
+    "title": "【北海道キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
+    "basis": "コード一致",
+    "code": "r9xw7v7ytzqcbl33"
+   },
+   {
+    "key": "his/b38d07a03d5a",
+    "title": "【北海道キャンペーン】1グループ3,000円引き",
+    "basis": "コード一致",
+    "code": "t4sttc37rt7p2an9"
+   },
+   {
+    "key": "his/ae14b11e831f",
+    "title": "【鳥取・島根キャンペーン】90日以上前までのお申し込みで1グループ最大10％引き",
+    "basis": "コード一致",
+    "code": "2uatwzkzsleumbqb"
+   },
+   {
+    "key": "his/beedf1c83b32",
+    "title": "【鳥取・島根キャンペーン】1グループ3,000円引き",
+    "basis": "コード一致",
+    "code": "p4mx3uuzs8jyxybb"
+   },
+   {
+    "key": "his/6a0f41c74707",
+    "title": "早めの予約がお得！1名様につき最大3,000円引き",
+    "basis": "コード一致",
+    "code": "54ezm2ny9zlpmt44"
+   },
+   {
+    "key": "his/3439da1669ce-b27959",
+    "title": "ホテルとセットでの予約がお得！最大10,000円引き",
+    "basis": "コード一致",
+    "code": "kyuaepbqjlvjwhsq"
+   },
+   {
+    "key": "his/lead-51d4cbe2bb89ad5a0256",
+    "title": "ナイトタイムクーポン！海外航空券1グループ2,000円引き",
+    "basis": "名称一致"
+   },
+   {
+    "key": "his/lead-7638fe715d61ae0b5872",
+    "title": "【ハウステンボスキャンペーン】1グループ5,000円引き",
+    "basis": "名称一致"
+   },
+   {
+    "key": "his/lead-75c7e68c5d0537e8cb8a",
+    "title": "【ハウステンボスキャンペーン】",
+    "basis": "名称一致"
+   },
+   {
+    "key": "his/lead-cc0c547d86111a688461",
+    "title": "沖縄に行ったらヨロンへ行こう！キャンペーン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 53330
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "hotels",
+  "url": "https://yakushima.fun/hotels-com-couponcode/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "hotels/hotels-042642c9bb",
+    "title": "VISA8",
+    "basis": "コード一致",
+    "code": "visa8"
+   },
+   {
+    "key": "hotels/hotels-4fc45d7474",
+    "title": "JCBJP8",
+    "basis": "コード一致",
+    "code": "jcbjp8"
+   },
+   {
+    "key": "hotels/hotels-ef895c5cb1",
+    "title": "MCJP8",
+    "basis": "コード一致",
+    "code": "mcjp8"
+   }
+  ],
+  "post_id": 98493
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "jamjam",
+  "url": "https://yakushima.fun/jamjamtour-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 56283
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "jtb",
+  "url": "https://yakushima.fun/jtb-first/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "jtb/2611jtbcpnew",
+    "title": "新規会員限定！初めてのJTB国内旅行で使える最大10,000円引クーポン",
+    "basis": "コード一致",
+    "code": "cpnew"
+   },
+   {
+    "key": "jtb/2611black",
+    "title": "【ブラックフライデー】国内ツアーで使える割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2611black2",
+    "title": "【ブラックフライデー】割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2611mdscp",
+    "title": "3月までの宿泊で使える国内宿泊クーポン",
+    "basis": "コード一致",
+    "code": "mdscp"
+   },
+   {
+    "key": "jtb/2610premiumcp",
+    "title": "【JTBが厳選した高級旅館・ホテル予約で使える】年末年始・3連休も利用可能な国内ツアークーポン",
+    "basis": "コード一致",
+    "code": "precp"
+   },
+   {
+    "key": "jtb/2609young",
+    "title": "【U-29旅応援！】　国内ツアーで使える割引クーポン＜1～3月出発＞",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2607jalhp",
+    "title": "＜12～3月出発＞【平日出発限定】往復JAL便利用のツアーで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "jalhp"
+   },
+   {
+    "key": "jtb/2610airhayawari",
+    "title": "【早期100日前までの予約限定】＜1～3月出発＞先どり！航空機（往復JALまたはANA限定）利用の国内ツアーで使える割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2601green",
+    "title": "【2026年4月以降出発】往復JR新幹線グリーン車で行く　華やぎ・優雅・ラグジュアリー割引クーポン",
+    "basis": "コード一致",
+    "code": "jrcpn"
+   },
+   {
+    "key": "jtb/2611prince",
+    "title": "<12～2月宿泊>全国の西武プリンスホテルズ＆リゾーツ56施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "princ"
+   },
+   {
+    "key": "jtb/2607tokyu",
+    "title": "全国の東急ホテルズ＆リゾーツで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "tokyu"
+   },
+   {
+    "key": "jtb/2611kyoritsu",
+    "title": "<11～3月宿泊>全国の共立リゾート44施設で使える割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2606ooedo",
+    "title": "【9～1月宿泊】全国の大江戸温泉物語とTAOYAで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "ooedo"
+   },
+   {
+    "key": "jtb/2607ihghotels",
+    "title": "IHG One Rewards × JTBトラベルメンバー パートナーシッププランで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "ihgcp"
+   },
+   {
+    "key": "jtb/2609sunsunski",
+    "title": "飛行機、JR利用がお得！スキー割引クーポン",
+    "basis": "コード一致",
+    "code": "sunsu"
+   },
+   {
+    "key": "jtb/2610obihiroairport2",
+    "title": "【伊丹空港発 帯広空港着】航空＋宿で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "obodp"
+   },
+   {
+    "key": "jtb/2610dohoku",
+    "title": "道北エリアのおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "dohok"
+   },
+   {
+    "key": "jtb/2610donan",
+    "title": "北海道へ！【道南エリア～大沼・函館湯の川・松前～】おすすめ旅館・ホテル限定割引クーポン",
+    "basis": "コード一致",
+    "code": "donan"
+   },
+   {
+    "key": "jtb/2609iwate",
+    "title": "おでんせ！いわて旅割キャンペーン＜第２弾＞",
+    "basis": "コード一致",
+    "code": "iwate"
+   },
+   {
+    "key": "jtb/2611fukushima",
+    "title": "福島県おすすめ【今食べたい口福旅！海の福・山の福】プランで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "fukus"
+   },
+   {
+    "key": "jtb/2609goton",
+    "title": "【新潟県民限定】にいがた Go To トラベル（第二弾）",
+    "basis": "コード一致",
+    "code": "zsngt"
+   },
+   {
+    "key": "jtb/2610niigata",
+    "title": "美食・美酒・名湯・体験・感動の旅♪ にいがた宿物語で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "niiga"
+   },
+   {
+    "key": "jtb/2611higashi",
+    "title": "栃木・群馬・山梨・新潟のおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "higas"
+   },
+   {
+    "key": "jtb/2610gunma",
+    "title": "ぐんま冬旅キャンペーン　割引クーポン",
+    "basis": "コード一致",
+    "code": "gunma"
+   },
+   {
+    "key": "jtb/2603ikaho",
+    "title": "伊香保温泉をぶらり散策しよう！割引クーポン",
+    "basis": "コード一致",
+    "code": "ikaho"
+   },
+   {
+    "key": "jtb/2610tochigi",
+    "title": "とちぎ旅冬の平日宿泊キャンペーン 割引クーポン",
+    "basis": "コード一致",
+    "code": "tochi"
+   },
+   {
+    "key": "jtb/2608candeohotels",
+    "title": "カンデオホテルズのおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "cande"
+   },
+   {
+    "key": "jtb/2609hankyu",
+    "title": "【10～12月宿泊】「阪急阪神ホテルズ」東京レム５施設と第一ホテル東京で使える！割引クーポン",
+    "basis": "コード一致",
+    "code": "remmc"
+   },
+   {
+    "key": "jtb/2608hachijo",
+    "title": "心をほどく、青の離島へ　八丈島で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "hachi"
+   },
+   {
+    "key": "jtb/2609hachijo",
+    "title": "がんばろう！八丈島で使えるクーポン",
+    "basis": "コード一致",
+    "code": "hacha"
+   },
+   {
+    "key": "jtb/2610orientalhorels",
+    "title": "<10～12月出発>オリエンタルホテルズ＆リゾーツ７施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "orien"
+   },
+   {
+    "key": "jtb/2611atami",
+    "title": "【11～12月限定】一期一会の美食体験　熱海シェフ・イン・レジデンス 宿泊プランで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "atami"
+   },
+   {
+    "key": "jtb/2605ito2",
+    "title": "今こそ伊東へ！キャンペーン　伊東温泉・伊豆高原・川奈で使える割引クーポン＜第2期＞",
+    "basis": "コード一致",
+    "code": "zsito"
+   },
+   {
+    "key": "jtb/2611chubu",
+    "title": "【中部８県】おすすめの旅館・ホテルで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "chubu"
+   },
+   {
+    "key": "jtb/2608notoairport",
+    "title": "【往復ANA便】能登空港利用で使える国内ツアー割引クーポン",
+    "basis": "コード一致",
+    "code": "notoc"
+   },
+   {
+    "key": "jtb/2609shiga",
+    "title": "滋賀県　びわ湖の歴史と湖上交通　夕食に認証「近江牛」が楽しめる　おすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "shiga"
+   },
+   {
+    "key": "jtb/2606kintetsu",
+    "title": "近鉄・都ホテルズのおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "kinte"
+   },
+   {
+    "key": "jtb/2608kyotm",
+    "title": "【京の味覚を愉しむ】おすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "kyotm"
+   },
+   {
+    "key": "jtb/2608hankyu",
+    "title": "【9～12月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
+    "basis": "コード一致",
+    "code": "hanky"
+   },
+   {
+    "key": "jtb/2610osaka",
+    "title": "【泊まろう大阪】おすすめ施設で使える割引クーポン＜第3弾＞",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2610obihiroairport",
+    "title": "【帯広空港発 伊丹空港着】航空機+宿で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "obocp"
+   },
+   {
+    "key": "jtb/2610tottori",
+    "title": "すいちょるけん！鳥取割引クーポン",
+    "basis": "コード一致",
+    "code": "totto"
+   },
+   {
+    "key": "jtb/2611shimane",
+    "title": "だんだん島根割引クーポン",
+    "basis": "コード一致",
+    "code": "danda"
+   },
+   {
+    "key": "jtb/2610matsue",
+    "title": "【1～2月宿泊】松江市（玉造温泉、松江、美保関）の施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "matsu"
+   },
+   {
+    "key": "jtb/2610yamaguchi",
+    "title": "おいでませ山口！山口県のおすすめ施設で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "yamag"
+   },
+   {
+    "key": "jtb/2604sagak",
+    "title": "ANA便＜羽田空港発　佐賀空港利用＞国内ツアー　航空＋宿で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "sagak"
+   },
+   {
+    "key": "jtb/2608fdacp",
+    "title": "日本の旬九州特別企画　九州内の宿泊＋往復FDA利用で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "fdacp"
+   },
+   {
+    "key": "jtb/2609kyushufukuoka",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "basis": "コード一致",
+    "code": "zsfko"
+   },
+   {
+    "key": "jtb/2609kyushusaga",
+    "title": "九州ふっこう応援割 さがキャンペーン",
+    "basis": "コード一致",
+    "code": "zssga"
+   },
+   {
+    "key": "jtb/2609kyushunagasaki",
+    "title": "九州ふっこう応援割 ながさきキャンペーン",
+    "basis": "コード一致",
+    "code": "zsngs"
+   },
+   {
+    "key": "jtb/2610nagasakimarriott",
+    "title": "長崎マリオットホテルのスイートルームで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "nagam"
+   },
+   {
+    "key": "jtb/2609kyushukumamoto",
+    "title": "熊本ふっこう応援割",
+    "basis": "コード一致",
+    "code": "zskmm"
+   },
+   {
+    "key": "jtb/2609kyushumiyazaki",
+    "title": "九州ふっこう応援割 みやざきキャンペーン",
+    "basis": "コード一致",
+    "code": "ztmyz"
+   },
+   {
+    "key": "jtb/2609kyushukagoshima",
+    "title": "鹿児島ふっこう応援割",
+    "basis": "コード一致",
+    "code": "zskgo"
+   },
+   {
+    "key": "jtb/2607jalka",
+    "title": "＜9～3月出発＞【往復JAL/JAC便利用限定】鹿児島県離島のツアーで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "jalka"
+   },
+   {
+    "key": "jtb/2609amami",
+    "title": "あまみゆったり島泊割",
+    "basis": "コード一致",
+    "code": "amami"
+   },
+   {
+    "key": "jtb/2609okinawamonterey",
+    "title": "ホテルモントレ沖縄スパ＆リゾート、ホテルモントレ ラ・スール那覇で使える割引クーポン",
+    "basis": "コード一致",
+    "code": "omont"
+   },
+   {
+    "key": "jtb/2609okinawa2",
+    "title": "沖縄【秋冬旅】タイムセールや年末年始にも利用できる割引クーポン",
+    "basis": "コード一致",
+    "code": "okisy"
+   },
+   {
+    "key": "jtb/2607young",
+    "title": "【U-29旅応援！】　国内ツアーで使える割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "jtb/2611bf",
+    "title": "【ブラックフライデー】海外航空券+ホテルどこでも使える割引クーポン",
+    "basis": "コード一致",
+    "code": "2611p1"
+   },
+   {
+    "key": "jtb/2611bf25",
+    "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様25,000円引）",
+    "basis": "コード一致",
+    "code": "2611q1"
+   },
+   {
+    "key": "jtb/2611bf5",
+    "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様5,000円引）",
+    "basis": "コード一致",
+    "code": "2611r1"
+   },
+   {
+    "key": "jtb/2611bf10",
+    "title": "【ブラックフライデー】海外ツアールックJTBMySTYLEどこでも使えるクーポン（おひとり様10,000円引）",
+    "basis": "コード一致",
+    "code": "2611s1"
+   },
+   {
+    "key": "jtb/2609yng",
+    "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜1月-3月出発＞（10代）",
+    "basis": "コード一致",
+    "code": "2609f1"
+   },
+   {
+    "key": "jtb/2609yng2",
+    "title": "【U-29旅応援！】　海外ツアールックJTBMySTYLEどこでも使えるクーポン＜1月-3月出発＞（20代）",
+    "basis": "コード一致",
+    "code": "2609g1"
+   },
+   {
+    "key": "jtb/2604jl",
+    "title": "海外航空券+ホテルでどこでも使える割引クーポン【日本航空(JAL)対象】",
+    "basis": "コード一致",
+    "code": "2604n1"
+   },
+   {
+    "key": "jtb/2604sq",
+    "title": "海外航空券+ホテルでどこでも使える割引クーポン【シンガポール航空対象】",
+    "basis": "コード一致",
+    "code": "2604m1"
+   },
+   {
+    "key": "jtb/2607ci",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【チャイナエアライン対象】",
+    "basis": "コード一致",
+    "code": "2607d1"
+   },
+   {
+    "key": "jtb/2604mh",
+    "title": "海外航空券+ホテルでどこでも使える割引クーポン【マレーシア航空対象】",
+    "basis": "コード一致",
+    "code": "2604p1"
+   },
+   {
+    "key": "jtb/2607as",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アラスカ航空対象】",
+    "basis": "コード一致",
+    "code": "2607m1"
+   },
+   {
+    "key": "jtb/2604mh2",
+    "title": "海外航空券で使えるどこでも割引クーポン【マレーシア航空対象】",
+    "basis": "コード一致",
+    "code": "2604g1"
+   },
+   {
+    "key": "jtb/2607ci2",
+    "title": "海外航空券で使えるどこでも割引クーポン【チャイナエアライン対象】",
+    "basis": "コード一致",
+    "code": "2607b1"
+   },
+   {
+    "key": "jtb/2610ua",
+    "title": "海外航空券+ホテルで使えるグアム・サイパン・パラオ行き割引クーポン【ユナイテッド航空対象】",
+    "basis": "コード一致",
+    "code": "2610c1"
+   },
+   {
+    "key": "jtb/2609oz",
+    "title": "【韓国観光公社協賛！】韓国で使える！海外ツアールックJTBMySTYLE割引クーポン【アシアナ航空(OZ)対象】",
+    "basis": "コード一致",
+    "code": "2609b1"
+   },
+   {
+    "key": "jtb/2607ke2",
+    "title": "海外航空券で使えるソウル行き割引クーポン【大韓航空対象】",
+    "basis": "コード一致",
+    "code": "2607a1"
+   },
+   {
+    "key": "jtb/2607ke",
+    "title": "海外航空券+ホテルで使えるソウル行き割引クーポン【大韓航空対象】",
+    "basis": "コード一致",
+    "code": "2607c1"
+   },
+   {
+    "key": "jtb/2604lj2",
+    "title": "海外航空券で使える韓国行き割引クーポン【ジンエアー対象】",
+    "basis": "コード一致",
+    "code": "2604b1"
+   },
+   {
+    "key": "jtb/2604vn2",
+    "title": "海外航空券で使えるベトナム行き割引クーポン【ベトナム航空対象】",
+    "basis": "コード一致",
+    "code": "2604f1"
+   },
+   {
+    "key": "jtb/2604lj",
+    "title": "海外航空券+ホテルで使える韓国行き割引クーポン【ジンエアー対象】",
+    "basis": "コード一致",
+    "code": "2604j1"
+   },
+   {
+    "key": "jtb/2604vn",
+    "title": "海外航空券+ホテルで使えるベトナム行き割引クーポン【ベトナム航空対象】",
+    "basis": "コード一致",
+    "code": "2604q1"
+   },
+   {
+    "key": "jtb/2610ba",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【ブリティッシュ・エアウェイズ対象】",
+    "basis": "コード一致",
+    "code": "2610b1"
+   },
+   {
+    "key": "jtb/2607af",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【エールフランス航空対象】",
+    "basis": "コード一致",
+    "code": "2607h1"
+   },
+   {
+    "key": "jtb/2607ua",
+    "title": "海外航空券+ホテルで使えるアメリカ行き割引クーポン【ユナイテッド航空対象】",
+    "basis": "コード一致",
+    "code": "2607q1"
+   },
+   {
+    "key": "jtb/2607aa",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【アメリカン航空対象】",
+    "basis": "コード一致",
+    "code": "2607n1"
+   },
+   {
+    "key": "jtb/2607ac",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【エア・カナダ対象】",
+    "basis": "コード一致",
+    "code": "2607p1"
+   },
+   {
+    "key": "jtb/2607qf",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【カンタス航空対象】",
+    "basis": "コード一致",
+    "code": "2607f1"
+   },
+   {
+    "key": "jtb/2607nz",
+    "title": "海外航空券+ホテルで使えるどこでも割引クーポン【ニュージーランド航空対象】",
+    "basis": "コード一致",
+    "code": "2607g1"
+   },
+   {
+    "key": "jtb/lead-7b4f50642d1d3aa7e434",
+    "title": "【9～11月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 55083
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "knt",
+  "url": "https://yakushima.fun/knt-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "knt/yado-sp-nara-kcp-b91c6e",
+    "title": "奈良県を楽しもうキャンペーン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "knt/yado-sp-kagawa-kcp-3052c8",
+    "title": "香川たびクーポンキャンペーン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 54056
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "orion_tour",
+  "url": "https://yakushima.fun/orion-tour/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "orion_tour/orion_tour-695044ac38ce7d23",
+    "title": "11月出発直前割引クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "orion_tour/orion_tour-785fccd0163a61d2",
+    "title": "50周年キャンペーンクーポン",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 57778
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "rurubu_travel",
+  "url": "https://yakushima.fun/rurubu-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "rurubu_travel/rurubu_travel-ruapp1m-1f0eaa45ee",
+    "title": "【最大4,500円OFF！】アプリでの初回購入限定クーポン（会員限定）※国内宿泊対象",
+    "basis": "コード一致",
+    "code": "ruapp1m"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-ruapp2m-7476b0f17e",
+    "title": "【最大4,500円OFF！】アプリでの2回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "basis": "コード一致",
+    "code": "ruapp2m"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-ruapp3m-4f25ed4da5",
+    "title": "【最大4,500円OFF！】アプリでの3回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "basis": "コード一致",
+    "code": "ruapp3m"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-ruapp4m-0ebf6e741d",
+    "title": "【最大4,500円OFF！】アプリでの4回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "basis": "コード一致",
+    "code": "ruapp4m"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-ruapp5m-94c871dd7d",
+    "title": "【最大4,500円OFF！】アプリでの5回目購入限定クーポン（会員限定）※国内宿泊対象",
+    "basis": "コード一致",
+    "code": "ruapp5m"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-hodhk26oc10-eaba529c5b",
+    "title": "道北エリア【北海道へ！】オススメ旅館・ホテルで使える割引クーポン",
+    "basis": "コード一致",
+    "code": "hodhk26oc10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-jrinn26oc10-ab16a9e17c",
+    "title": "【11月～12月出発】北海道のJRイン6館で使えるクーポン（最大5,000円引き）",
+    "basis": "コード一致",
+    "code": "jrinn26oc10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-tkmya26jun5-cc87d687c9",
+    "title": "名湯一門 高見屋グループで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "tkmya26jun5"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-osaka26jun5-d40c4c3235",
+    "title": "今だけおトクに！大阪おすすめ施設で使えるクーポン",
+    "basis": "コード一致",
+    "code": "osaka26jun5"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26tais15-2d8e855a94",
+    "title": "北海道 ホテル大雪 ＯＮＳＥＮ ＆ ＣＡＮＹＯＮ ＲＥＳＯＲＴで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26tais15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26edelh15-pp26edelh10-8d771e84c9",
+    "title": "北海道 ホテルモントレエーデルホフ札幌で使えるクーポン（旅行代金10％引き・最大割引額5,000円、旅行代金30,000円以上で15％引き・最大割引額10,000円)",
+    "basis": "コード一致",
+    "code": "pp26edelh10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26ntama15-0ee7c74a4d",
+    "title": "秋田県 新玉川温泉で使えるクーポン（最大5,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26ntama15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26gseik50-ebef5cd1fd",
+    "title": "秋田県 男鹿温泉 セイコーグランドホテルで使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26gseik50"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26mpakt15-70cf89aa1a",
+    "title": "秋田県 ホテルメトロポリタン秋田で使えるクーポン（最大5,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26mpakt15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26mnsdj15-b5e5492c9f",
+    "title": "宮城県 ホテル モントレ 仙台で使えるクーポン（最大4,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26mnsdj15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26hermn15-1b3d180fcd",
+    "title": "宮城県 ホテル モンテ エルマーナ仙台で使えるクーポン（最大3,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26hermn15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26okada10-pp26okada70-pp26okada30-11e60eb9e0",
+    "title": "神奈川県 箱根湯本温泉 ホテルおかだで使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26okada10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26yoshi100-pp26yoshi70-pp26yoshi30-bd32fd25f2",
+    "title": "神奈川県 箱根湯本温泉 吉池旅館で使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26yoshi100"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26tobas12-a542e60b42",
+    "title": "【2月～3月出発】三重県 伊勢志摩 鳥羽シーサイドホテルで使えるクーポン（最大7,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26tobas12"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26grosk10-290502c42f",
+    "title": "大阪府 ホテル グランヴィア 大阪で使えるクーポン（最大3,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26grosk10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26motob10-pp26motob50-07b4ca9a21",
+    "title": "沖縄県 オリオンホテル モトブ リゾート＆スパで使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26motob10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-ppkry26sp15-523fc4d96a",
+    "title": "沖縄県 かりゆしホテルズのおすすめ施設で使える割引クーポン（最大5,000円引き）",
+    "basis": "コード一致",
+    "code": "ppkry26sp15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26rizza15-98d64ca1c6",
+    "title": "沖縄県 リザンシーパークホテル谷茶ベイで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26rizza15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26monsp10-9449bf18e5",
+    "title": "沖縄県 ホテル モントレ 沖縄スパ＆リゾートで使えるクーポン（最大5,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26monsp10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26kanuc15-pp26kanuc10-44022d71c4",
+    "title": "沖縄県 カヌチャベイホテル＆ヴィラズで使えるクーポン（最大15,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26kanuc10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26busen15-a092fc3279",
+    "title": "沖縄県 ザ・ブセナテラスで使えるクーポン（最大15,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26busen15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26jlnah60-pp26jlnah30-59af8861be",
+    "title": "沖縄県 ホテルＪＡＬシティ那覇で使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26jlnah30"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-cgks26oct15-b730282736",
+    "title": "北海道 シャトレーゼ ガトーキングダム札幌で使えるクーポン（最大4,000円引き）",
+    "basis": "コード一致",
+    "code": "cgks26oct15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-crsp26oct15-031c3574d9",
+    "title": "北海道 クロスホテル札幌で使えるクーポン（最大5,000円引き）",
+    "basis": "コード一致",
+    "code": "crsp26oct15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-hwetn26oc20-hwetd26oc20-hwetj26oc20-f05ce375a5",
+    "title": "【11月～3月出発】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "hwetd26oc20"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-wsn26jul100-wsn26jul50-bc111c33c5",
+    "title": "リニューアルOPEN記念！群馬県 伊香保温泉 和心の宿大森で使えるクーポン",
+    "basis": "コード一致",
+    "code": "wsn26jul100"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-mcr26oct150-mcr26oct100-mcr26oct70-c674cea006",
+    "title": "神奈川県 箱根湯本温泉 ホテル マイユクール 祥月で使えるクーポン",
+    "basis": "コード一致",
+    "code": "mcr26oct100"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-okada26oc70-okada26oc30-0d6a8dfb72",
+    "title": "【1月～3月出発】神奈川県 箱根湯本温泉 ホテルおかだで使えるクーポン",
+    "basis": "コード一致",
+    "code": "okada26oc30"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-yamag26oc15-997e0fabf9",
+    "title": "岐阜県 下呂 温泉 山形屋で使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "yamag26oc15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-kskba26oc10-cfe27f5826",
+    "title": "岐阜県 下呂温泉 ホテルくさかべアルメリアで使えるクーポン（最大5,000円引き）",
+    "basis": "コード一致",
+    "code": "kskba26oc10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-vison26ag12-91d73a2fa5",
+    "title": "【11月～3月出発】開業5周年記念！三重県 ホテルヴィソンで使えるおすすめクーポン（最大7,000円引き）",
+    "basis": "コード一致",
+    "code": "vison26ag12"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-mykhs26oc10-111d52d00e",
+    "title": "三重県 都リゾート 奥志摩 アクアフォレストで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "mykhs26oc10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-ijk26aug12-c615bcfed9",
+    "title": "三重県 石鏡温泉源泉の宿 ホテルいじか荘で使えるクーポン（最大6,000円引き）",
+    "basis": "コード一致",
+    "code": "ijk26aug12"
+   }
+  ],
+  "post_id": 61633
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "yahoo_travel",
+  "url": "https://yakushima.fun/yahoo-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [],
+  "post_id": 53731
+ },
+ {
+  "site": "屋久島ファン",
+  "provider": "yukoyuko",
+  "url": "https://yakushima.fun/yukoyuko-coupon/",
+  "date": "2026-11-18",
+  "status": "照合済み",
+  "matches": [
+   {
+    "key": "yukoyuko/yukoyuko-yukoyuko-under-10000-https-www-yukoy-a2965a21e2",
+    "title": "１泊１万円以下で泊まれる温泉旅館・宿特集",
+    "basis": "名称一致"
+   }
+  ],
+  "post_id": 56036
+ }
+]

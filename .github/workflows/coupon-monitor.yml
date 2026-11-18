@@ -226,6 +226,9 @@ jobs:
         continue-on-error: true
         run: python generate_x_threads.py
 
+      - name: 当日のX下書きをお得情報一覧に反映
+        run: python generate_dashboard.py
+
       - name: 実行サマリー
         if: always()
         run: |
