@@ -2,9 +2,9 @@
   "provider_id": "rakuten_travel",
   "provider_label": "楽天トラベル",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-18T20:10:18.187371+09:00",
-  "completed_at": "2026-11-18T20:10:21.654304+09:00",
-  "official_fetched_at": "2026-11-18T20:10:21.654309+09:00",
+  "started_at": "2026-11-19T07:27:12.277904+09:00",
+  "completed_at": "2026-11-19T07:27:13.591430+09:00",
+  "official_fetched_at": "2026-11-19T07:27:13.591435+09:00",
   "source_results": [
     {
       "url": "https://travel.rakuten.co.jp/coupon/",
@@ -68,5 +68,5 @@
   "coupon_count": 37,
   "content_hash": "907d00767ad9ea10585ff0b112e6a6e9269ea5f9901b4ca079f664f5a3ed90c6",
   "error": "",
-  "freshness_status": "fresh"
+  "freshness_status": "stale"
 }
