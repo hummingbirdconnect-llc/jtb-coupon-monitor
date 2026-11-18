@@ -1,0 +1,1615 @@
+{
+ "version": 2,
+ "sites": [
+  {
+   "site": "welltrip",
+   "name": "ウェルトリップ",
+   "checked_at": "2026-11-18T14:13:40+09:00",
+   "status": "取得済み",
+   "drafts_checked": true,
+   "articles": [
+    {
+     "post_id": 693,
+     "title": "楽天トラベル レンタカークーポン攻略【2026】取得方法・使い方・適用されない時の対処",
+     "url": "https://travel.hb-connect.co.jp/rakuten-travel-rental-car-coupon/",
+     "modified": "2026-11-17T08:33:30+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-17T08:33:30+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 698,
+     "title": "楽天トラベルの高速バスクーポン完全ガイド【2026年最新】",
+     "url": "https://travel.hb-connect.co.jp/rakuten-travel-bus-coupon/",
+     "modified": "2026-11-17T17:38:45+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-17T17:38:45+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 700,
+     "title": "楽天トラベル クーポンまとめ｜今使える割引の確認順と併用ルール",
+     "url": "https://travel.hb-connect.co.jp/rakuten-travel-coupon/",
+     "modified": "2026-11-17T16:48:54+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-29T13:55:17+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額",
+       "配布枚数"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     },
+     "draft_at": "2026-11-17T18:50:34+09:00"
+    },
+    {
+     "post_id": 707,
+     "title": "楽天トラベル「5と0のつく日」クーポン｜エントリー・条件・予約取り直し",
+     "url": "https://travel.hb-connect.co.jp/rakuten-travel-5-0-day/",
+     "modified": "2026-10-28T15:56:00+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-28T11:34:49+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "draft_at": "2026-07-19T19:54:38+09:00"
+    },
+    {
+     "post_id": 712,
+     "title": "楽天トラベル 海外クーポンまとめ【2026最新】海外ホテル・ツアーを安く予約する方法",
+     "url": "https://travel.hb-connect.co.jp/rakuten-travel-overseas-coupon/",
+     "modified": "2026-11-18T08:27:07+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 714,
+     "title": "楽天トラベルはいつ安い？【2026年版セールカレンダー】月別の狙い目とクーポン配布時期",
+     "url": "https://travel.hb-connect.co.jp/rakuten-travel-sale-calendar/",
+     "modified": "2026-11-08T07:49:07+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-28T11:09:05+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 1439,
+     "title": "アソビューのクーポンが使える施設一覧｜対象店舗・チケットの確認方法",
+     "url": "https://travel.hb-connect.co.jp/asoview-coupon-eligible/",
+     "modified": "2026-05-26T17:31:20+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 1456,
+     "title": "アソビューのクーポンまとめ【2026年11月】今使える割引と一番お得な使い方",
+     "url": "https://travel.hb-connect.co.jp/asoview-coupon/",
+     "modified": "2026-11-18T11:19:52+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-02T08:11:07+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 1461,
+     "title": "アソビューのLINEクーポンはギフト専用｜取得手順と使えない時の対処法",
+     "url": "https://travel.hb-connect.co.jp/asoview-line-coupon/",
+     "modified": "2026-11-18T08:28:00+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-05-24T09:38:02+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 1710,
+     "title": "ゆめやどクーポンはどれがお得？公式割引・クーポンナンバーの選び方",
+     "url": "https://travel.hb-connect.co.jp/yumeyado-coupons/",
+     "modified": "2026-10-26T16:25:50+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-26T16:25:49+09:00",
+      "fields": [
+       "クーポンコード",
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 1784,
+     "title": "アクティビティジャパンのクーポン・クーポンコード一覧と使い方",
+     "url": "https://travel.hb-connect.co.jp/activityjapan-coupon/",
+     "modified": "2026-11-10T18:03:43+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-10T18:03:42+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 1799,
+     "title": "じゃらん遊びお得な10日間クーポン攻略｜毎月20日〜のクーポン内容と事前配布のタイミング",
+     "url": "https://travel.hb-connect.co.jp/jalan-activity-otoku-10days/",
+     "modified": "2026-10-14T19:25:41+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 1804,
+     "title": "じゃらん遊びクーポンはいつ配布？次回予測と年間スケジュール",
+     "url": "https://travel.hb-connect.co.jp/jalan-activity-coupon-schedule/",
+     "modified": "2026-11-16T08:39:57+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-15T21:33:49+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 1806,
+     "title": "じゃらん遊び最新クーポン一覧｜シークレットの入手方法も解説",
+     "url": "https://travel.hb-connect.co.jp/jalan-activity-coupons/",
+     "modified": "2026-10-14T19:26:55+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-05-26T19:30:27+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 2228,
+     "title": "スカイパックツアーズ クーポン一覧｜たす旅で使える割引と予約前の確認点",
+     "url": "https://travel.hb-connect.co.jp/skypaktours-coupon/",
+     "modified": "2026-11-17T11:40:44+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-17T10:09:03+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 2230,
+     "title": "トクトククーポンとは？怪しくない理由と使い方・対象施設",
+     "url": "https://travel.hb-connect.co.jp/tokutoku-coupon/",
+     "modified": "2026-10-19T20:11:56+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 2235,
+     "title": "東武トップツアーズのクーポン一覧｜取得方法・使い方を画像で解説",
+     "url": "https://travel.hb-connect.co.jp/tobutoptours-coupon/",
+     "modified": "2026-11-18T08:19:21+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-16T19:20:06+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "published_run": "2026-11-18 朝",
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文を更新"
+     }
+    },
+    {
+     "post_id": 2495,
+     "title": "一休の誕生日クーポンは終了？【2026年】代わりに使える記念日割引テクニック",
+     "url": "https://travel.hb-connect.co.jp/ikyu-birthday-coupon/",
+     "modified": "2026-10-15T19:38:40+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 2497,
+     "title": "一休レストランクーポンの使い方｜60分・ランチ・予約前の注意点",
+     "url": "https://travel.hb-connect.co.jp/ikyu-coupon-restaurant/",
+     "modified": "2026-11-05T17:06:08+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 2498,
+     "title": "一休.comの60分以内クーポンはいつ出る？出し方と出ない・消えた時の対処法",
+     "url": "https://travel.hb-connect.co.jp/ikyu-60min-coupon/",
+     "modified": "2026-11-11T11:22:10+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 2501,
+     "title": "一休.com×アメックス・ダイナースクーポン完全ガイド｜毎月3000円〜5000円オフの入手法",
+     "url": "https://travel.hb-connect.co.jp/ikyu-coupon-credit-card/",
+     "modified": "2026-11-11T10:07:41+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 2502,
+     "title": "一休.comクーポン・クーポンコード一覧｜今すぐ使える割引と取得方法",
+     "url": "https://travel.hb-connect.co.jp/ikyu-coupon/",
+     "modified": "2026-11-17T17:56:48+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-11T11:19:08+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 2845,
+     "title": "【2026年11月】一休.comのセールはいつ？タイムセールの仕組み・半額ホテルを解説",
+     "url": "https://travel.hb-connect.co.jp/ikyu-coupon-sale/",
+     "modified": "2026-10-20T20:14:58+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-18T14:49:21+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 3239,
+     "title": "読売旅行の最新クーポン・セール・キャンペーン一覧｜取得方法と使い方",
+     "url": "https://travel.hb-connect.co.jp/yomiuri-ryokou-coupon/",
+     "modified": "2026-11-10T17:24:35+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-10T17:24:34+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 3382,
+     "title": "近畿日本ツーリストのクーポン・クーポンコードまとめ",
+     "url": "https://travel.hb-connect.co.jp/knt-coupon/",
+     "modified": "2026-11-17T08:33:20+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 3680,
+     "title": "JR東海ツアーズの割引クーポン最新まとめ｜使い方・取得方法もご案内！",
+     "url": "https://travel.hb-connect.co.jp/jr-tokai-tours-coupon/",
+     "modified": "2026-11-18T10:35:31+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "draft_at": "2026-05-22T07:01:19+09:00"
+    },
+    {
+     "post_id": 4954,
+     "title": "HISクーポン【2026年11月】海外旅行・国内旅行の割引一覧まとめ",
+     "url": "https://travel.hb-connect.co.jp/his-couponcode/",
+     "modified": "2026-11-18T08:38:38+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T08:38:38+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     },
+     "draft_at": "2026-11-15T16:01:42+09:00"
+    },
+    {
+     "post_id": 4959,
+     "title": "JTBクーポンコード一覧｜今使える割引とLINE・初回・5％OFFの配布状況",
+     "url": "https://travel.hb-connect.co.jp/jtb-coupon/",
+     "modified": "2026-11-18T08:00:26+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T08:00:26+09:00",
+      "fields": [
+       "配布枚数"
+      ]
+     },
+     "job": {
+      "published_run": "2026-11-18 朝",
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文を更新"
+     },
+     "draft_at": "2026-11-15T23:04:36+09:00"
+    },
+    {
+     "post_id": 4961,
+     "title": "JALパッククーポンまとめ｜割引一覧と使い方・受け取り方を整理",
+     "url": "https://travel.hb-connect.co.jp/jal-pack-coupon/",
+     "modified": "2026-11-18T10:42:00+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T10:42:00+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 4974,
+     "title": "じゃらん最新クーポン一覧と使い方",
+     "url": "https://travel.hb-connect.co.jp/jalan-coupon/",
+     "modified": "2026-11-18T09:20:42+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T06:01:24+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 4983,
+     "title": "KKdayクーポンまとめ｜3000円OFFはある？初回・アプリ割引を確認",
+     "url": "https://travel.hb-connect.co.jp/kkday-coupon/",
+     "modified": "2026-11-18T11:19:55+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T11:07:06+09:00",
+      "fields": [
+       "クーポンコード",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 5632,
+     "title": "クラブツーリズム クーポン・割引一覧【2026年11月】",
+     "url": "https://travel.hb-connect.co.jp/club-tourism-coupon/",
+     "modified": "2026-11-08T17:02:48+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-20T13:19:24+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 5777,
+     "title": "JTBの新幹線に使える割引クーポンコード一覧｜日帰りツアーは対象？",
+     "url": "https://travel.hb-connect.co.jp/jtb-shinkansen-coupon/",
+     "modified": "2026-11-18T10:35:30+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T10:35:30+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額",
+       "配布枚数"
+      ]
+     }
+    },
+    {
+     "post_id": 6866,
+     "title": "JR東海ツアーズの1000円クーポンはどこで使える？1ドリンク引換券と500円利用券の違いを解説",
+     "url": "https://travel.hb-connect.co.jp/jr-tokai-tours-1000yen-coupon-drink-ticket/",
+     "modified": "2026-09-30T09:07:13+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 7025,
+     "title": "Yahoo!トラベルクーポン一覧と8桁クーポンコード一覧",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-coupon/",
+     "modified": "2026-11-18T10:35:35+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T08:33:29+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 7027,
+     "title": "【コツ解説】ヤフートラベルの5,000円クーポンはいつ出る？出現条件と探し方",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-5000-coupon/",
+     "modified": "2026-11-06T19:17:16+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "draft_at": "2026-06-16T09:03:43+09:00"
+    },
+    {
+     "post_id": 7028,
+     "title": "ヤフートラベルの1,000円クーポンはどこ？90分・180分表示と使えない時の確認方法",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-1000-coupon/",
+     "modified": "2026-08-05T10:28:35+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 7029,
+     "title": "Yahooトラベルの2,000円クーポンコードはいつ取得できる？出し方・使い方",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-2000-couponcode/",
+     "modified": "2026-11-06T19:17:13+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 7030,
+     "title": "【裏技あり】ヤフートラベルの3,000円クーポンはいつ？出し方・60分/90分/180分・消えた時の確認方法",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-3000-coupon/",
+     "modified": "2026-09-23T06:02:38+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 7031,
+     "title": "ヤフートラベルの50,000円クーポンはある？過去実績と次回狙う方法",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-50000-coupon/",
+     "modified": "2026-09-04T13:38:14+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 7032,
+     "title": "ヤフートラベルのLINEクーポンコードはある？公式アカウント・取得方法・配布有無の確認",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-line-couponcode/",
+     "modified": "2026-08-05T10:29:06+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 7037,
+     "title": "ヤフートラベルに誕生日クーポンはある？記念日特典・代替クーポンの確認",
+     "url": "https://travel.hb-connect.co.jp/yahootravel-birthday-coupon/",
+     "modified": "2026-08-05T10:28:53+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 7869,
+     "title": "スカイスキャナー クーポンはある？コードの有無と航空券を安く探す順番",
+     "url": "https://travel.hb-connect.co.jp/skyscanner-coupon/",
+     "modified": "2026-11-08T07:49:01+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 7955,
+     "title": "トリップドットコムのクーポン・セール最新一覧｜初回・LINE・コード・航空券",
+     "url": "https://travel.hb-connect.co.jp/trip-com-coupon/",
+     "modified": "2026-11-18T10:35:27+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 7973,
+     "title": "HISバスツアークーポンで安く予約する方法｜早割コードと対象条件",
+     "url": "https://travel.hb-connect.co.jp/his-bus-tour-coupon/",
+     "modified": "2026-11-16T08:42:41+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-16T08:36:11+09:00",
+      "fields": [
+       "クーポンコード",
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 7982,
+     "title": "NEWTクーポン・割引まとめ｜友だち紹介8%OFF・アプリ7%OFFの使い方",
+     "url": "https://travel.hb-connect.co.jp/newt-coupon/",
+     "modified": "2026-11-18T10:35:29+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T10:35:29+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 8112,
+     "title": "ジャムジャムライナー&ツアー クーポンはある？JWEB割・J得割と楽天割引を確認",
+     "url": "https://travel.hb-connect.co.jp/jamjam-liner-coupon/",
+     "modified": "2026-10-31T12:39:19+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "draft_at": "2026-11-05T08:24:48+09:00"
+    },
+    {
+     "post_id": 8169,
+     "title": "HISクーポンコード海外旅行まとめ｜誰でも使える公式割引とクーポンがない時の探し方",
+     "url": "https://travel.hb-connect.co.jp/his-coupon-code-overseas-travel/",
+     "modified": "2026-11-15T16:40:02+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-15T16:40:02+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 8292,
+     "title": "サプライスのクーポン・セールまとめ｜3,000円・5,000円の配布状況",
+     "url": "https://travel.hb-connect.co.jp/surprice-coupon/",
+     "modified": "2026-11-17T08:33:27+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-17T08:33:27+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     },
+     "draft_at": "2026-10-20T10:34:06+09:00"
+    },
+    {
+     "post_id": 8311,
+     "title": "日本旅行のクーポン・割引まとめ｜JR＋宿泊・LINE・誕生日特典の確認順",
+     "url": "https://travel.hb-connect.co.jp/nippon-travel-agency-coupon/",
+     "modified": "2026-11-18T11:19:57+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 8323,
+     "title": "【2026年11月】阪急交通社の最新クーポン一覧",
+     "url": "https://travel.hb-connect.co.jp/hankyu-travel-coupon/",
+     "modified": "2026-11-18T10:35:26+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-07T10:07:38+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 8333,
+     "title": "トラベロカ（Traveloka）クーポン・セールまとめ｜ホテル・航空券予約前の確認ポイント",
+     "url": "https://travel.hb-connect.co.jp/traveloka-coupon/",
+     "modified": "2026-07-29T10:12:23+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 8381,
+     "title": "たびらいレンタカーのクーポン・キャンペーンまとめ｜コードより先に見る割引プラン",
+     "url": "https://travel.hb-connect.co.jp/tabirai-rentacar-coupon/",
+     "modified": "2026-11-18T10:35:32+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T10:35:32+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 8389,
+     "title": "じゃらんレンタカーのクーポンはどこで取る？ログイン後の獲得方法と使えない時の確認",
+     "url": "https://travel.hb-connect.co.jp/jalan-rentacar-coupon/",
+     "modified": "2026-10-14T17:41:43+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 8401,
+     "title": "じゃらんパッククーポン最大8万円はいつ？使い方・併用と安くなるタイミング",
+     "url": "https://travel.hb-connect.co.jp/jalan-pack-coupon/",
+     "modified": "2026-11-16T08:39:54+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 8967,
+     "title": "HIS割引クーポンコードの使い方｜入力画面の画像ありで解説",
+     "url": "https://travel.hb-connect.co.jp/his-coupon-how-to-use/",
+     "modified": "2026-11-13T17:22:04+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-08-25T15:30:11+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 9410,
+     "title": "HISの北海道クーポン3種類を比較｜旅行割引・とびっきりeクーポン・施設特典",
+     "url": "https://travel.hb-connect.co.jp/his-hokkaido-coupon/",
+     "modified": "2026-10-25T12:28:42+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-25T10:06:01+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 9777,
+     "title": "JTB旅行券の使い方｜トラベルギフトへの交換・換金・有効期限とクーポン券との違い",
+     "url": "https://travel.hb-connect.co.jp/jtb-travel-voucher/",
+     "modified": "2026-11-08T07:48:43+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 10218,
+     "title": "JTB旅物語クーポンコードと使い方・注意点（国内ツアー・海外ツアー）",
+     "url": "https://travel.hb-connect.co.jp/jtb-tabimonogatari-coupon/",
+     "modified": "2026-11-13T06:01:49+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T06:01:49+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 10303,
+     "title": "HISの沖縄クーポン・キャンペーン｜LeaLea eクーポンとは？使い方も解説",
+     "url": "https://travel.hb-connect.co.jp/his-okinawa-coupon/",
+     "modified": "2026-11-13T06:03:07+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T06:03:07+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 10412,
+     "title": "アクティビティジャパンのクーポンが使えない原因と対処法",
+     "url": "https://travel.hb-connect.co.jp/activityjapan-coupon-not-working/",
+     "modified": "2026-10-14T14:51:22+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-14T14:51:21+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 10504,
+     "title": "ヤフートラベルのふるさと納税クーポン｜使い方・予約後の適用を解説",
+     "url": "https://travel.hb-connect.co.jp/yahoo-travel-furusato-nozei/",
+     "modified": "2026-10-22T12:19:36+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 10623,
+     "title": "クラブツーリズムPASSキャンペーン｜初年度無料・5,000円クーポンの条件を解説！",
+     "url": "https://travel.hb-connect.co.jp/club-tourism-pass-campaign/",
+     "modified": "2026-10-20T20:15:01+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 11420,
+     "title": "HIS初回クーポンはある？新規会員登録コードの条件・受取時期",
+     "url": "https://travel.hb-connect.co.jp/his-first-coupon/",
+     "modified": "2026-10-15T13:07:40+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 11435,
+     "title": "HISシークレット・誕生日クーポン｜メルマガ特典の入手方法",
+     "url": "https://travel.hb-connect.co.jp/his-secret-coupon/",
+     "modified": "2026-10-01T14:57:40+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-09-03T13:09:21+09:00",
+      "fields": [
+       "クーポンコード"
+      ]
+     }
+    },
+    {
+     "post_id": 11449,
+     "title": "HIS割引クーポンコードが使えない原因と対処法｜併用・反映されない場合",
+     "url": "https://travel.hb-connect.co.jp/his-coupon-not-working/",
+     "modified": "2026-09-05T14:29:55+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 11470,
+     "title": "HISのJAFクーポン・会員優待｜ベネフィット・クラブオフも比較",
+     "url": "https://travel.hb-connect.co.jp/his-jaf-coupon/",
+     "modified": "2026-08-24T18:49:40+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 11648,
+     "title": "【かんたん】HISふるさと納税クーポンの使い方｜取得方法・対象旅行・有効期限を解説",
+     "url": "https://travel.hb-connect.co.jp/his-furusato-coupon/",
+     "modified": "2026-09-05T14:29:56+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 11745,
+     "title": "HISクーポンの印刷方法｜紙が必要な種類・出力場所・印刷できないときの対処",
+     "url": "https://travel.hb-connect.co.jp/his-coupon-print/",
+     "modified": "2026-09-05T14:29:57+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 11789,
+     "title": "HISの学生クーポンはある？学割の対象条件と卒業旅行で使える割引",
+     "url": "https://travel.hb-connect.co.jp/his-student-coupon/",
+     "modified": "2026-11-14T09:23:03+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T06:02:40+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 11800,
+     "title": "HISハワイクーポンは3種類｜旅行割引・LeaLea・ミール特典の違い",
+     "url": "https://travel.hb-connect.co.jp/his-hawaii-coupon/",
+     "modified": "2026-10-04T08:55:45+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 11802,
+     "title": "HIS韓国クーポン一覧｜ツアー・航空券・現地特典の違い",
+     "url": "https://travel.hb-connect.co.jp/his-korea-coupon/",
+     "modified": "2026-09-05T14:30:04+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 12081,
+     "title": "【2026年11月】Yahoo!トラベルのブラックフライデーはいつ？開催状況・過去のクーポンと備え方",
+     "url": "https://travel.hb-connect.co.jp/yahoo-travel-black-friday/",
+     "modified": "2026-10-20T20:14:56+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 12978,
+     "title": "【体験記】JTBの新幹線ツアーで名古屋1泊2日｜「旅の過ごし方クーポン」で手荷物配送と白玉が無料だった",
+     "url": "https://travel.hb-connect.co.jp/jtb-tabi-no-sugoshikata-nagoya/",
+     "modified": "2026-11-15T22:10:43+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-09-24T11:52:06+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "draft_at": "2026-11-15T22:09:36+09:00"
+    },
+    {
+     "post_id": 13034,
+     "title": "JTB「旅の過ごし方クーポン」の使い方｜入手方法・ログイン・無料の特典",
+     "url": "https://travel.hb-connect.co.jp/jtb-tabi-no-sugoshikata-coupon/",
+     "modified": "2026-10-21T17:07:14+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 13799,
+     "title": "一休.comの3,000円クーポンコードはどこ？宿泊で使える入手先と条件",
+     "url": "https://travel.hb-connect.co.jp/ikyu-coupon-3000/",
+     "modified": "2026-11-05T17:06:06+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-03T17:07:37+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 13930,
+     "title": "ヒルトン名古屋の宿泊記、古さは気になる？ベッド3台の客室は快適でした",
+     "url": "https://travel.hb-connect.co.jp/hilton-nagoya-jtb-tour-coupon-stay/",
+     "modified": "2026-11-15T22:43:51+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "draft_at": "2026-11-15T22:40:58+09:00"
+    },
+    {
+     "post_id": 13935,
+     "title": "一休.comの5,000円クーポンコードの種類・入手方法",
+     "url": "https://travel.hb-connect.co.jp/ikyu-coupon-5000/",
+     "modified": "2026-11-05T17:06:05+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     }
+    },
+    {
+     "post_id": 14230,
+     "title": "【2026年11月】クラブツーリズムの3,000円クーポンコード｜北海道キャンペーン",
+     "url": "https://travel.hb-connect.co.jp/club-tourism-3000/",
+     "modified": "2026-10-18T13:43:11+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-18T13:41:40+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 15210,
+     "title": "アクティビティジャパンのクーポン返金はいつ？返金されない原因と対処法",
+     "url": "https://travel.hb-connect.co.jp/activityjapan-coupon-refund/",
+     "modified": "2026-10-14T15:11:12+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 16273,
+     "title": "【2026年11月】ホテルズドットコムのクーポン一覧｜カード別8%OFFの条件と予約前の注意点",
+     "url": "https://travel.hb-connect.co.jp/hotels-com-coupon-list/",
+     "modified": "2026-11-18T10:35:34+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T10:35:34+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 16276,
+     "title": "【2026年11月】エクスペディアのクーポン一覧｜今使えるコードとカード別・PayPayの条件",
+     "url": "https://travel.hb-connect.co.jp/expedia-coupon-list/",
+     "modified": "2026-11-13T12:55:46+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T11:21:02+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "site": "yakushimafan",
+   "name": "屋久島ファン",
+   "checked_at": "2026-11-18T14:13:40+09:00",
+   "status": "取得済み",
+   "drafts_checked": true,
+   "articles": [
+    {
+     "post_id": 14683,
+     "title": "屋久島フリープラン 7社比較｜クーポン使えてお得な旅行会社は？",
+     "url": "https://yakushima.fun/dynamic-package/",
+     "modified": "2026-10-25T16:25:31+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 50839,
+     "title": "JTB 割引クーポン新幹線・JR日帰りはある？お得な方法をご案内！",
+     "url": "https://yakushima.fun/jtb-bullet-train/",
+     "modified": "2026-10-03T06:37:11+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-03T06:37:07+09:00",
+      "fields": [
+       "クーポンコード",
+       "予約・利用期間",
+       "割引・利用金額",
+       "配布枚数"
+      ]
+     }
+    },
+    {
+     "post_id": 50961,
+     "title": "JALパック（ダイナミックパッケージ）クーポン条件まとめ｜受け取り方・使い方・併用も解説！",
+     "url": "https://yakushima.fun/jal-coupon/",
+     "modified": "2026-11-18T08:01:09+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "本文差分あり・作業による更新は未確認",
+      "draft_run": "2026-11-18 朝"
+     },
+     "draft_at": "2026-11-18T08:09:31+09:00"
+    },
+    {
+     "post_id": 53063,
+     "title": "今すぐ使える！J-TRIP（ジェイトリップ）クーポン・セール・キャンペーン情報一覧！",
+     "url": "https://yakushima.fun/j-trip-campaign/",
+     "modified": "2026-11-18T10:13:07+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T10:13:04+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 53290,
+     "title": "楽天トラベル10000円割引「クーポンの条件と使い方」定番クーポンもご紹介！",
+     "url": "https://yakushima.fun/rakuten-coupon/",
+     "modified": "2026-11-17T17:56:37+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2024-05-14T20:51:47+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 53330,
+     "title": "HISクーポンコード一覧｜誰でも使える割引と限定特典【海外・国内】",
+     "url": "https://yakushima.fun/his-coupon/",
+     "modified": "2026-11-13T17:44:26+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T17:44:22+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし",
+      "draft_run": "2026-11-18 朝"
+     },
+     "draft_at": "2026-11-18T08:09:29+09:00"
+    },
+    {
+     "post_id": 53372,
+     "title": "初回特典も！スカイチケット(skyticket)割引クーポンコードを一覧でご紹介！",
+     "url": "https://yakushima.fun/skyticket/",
+     "modified": "2026-10-15T08:18:10+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-04-21T12:06:01+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 53505,
+     "title": "最新【2026年11月】エクスペディアのクーポンコード・セール割引一覧",
+     "url": "https://yakushima.fun/expedia/",
+     "modified": "2026-11-17T17:57:01+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 53702,
+     "title": "【2026年11月】日本旅行クーポン&誰でも使える割引情報一覧！",
+     "url": "https://yakushima.fun/nta-coupon/",
+     "modified": "2026-11-07T08:34:19+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-07T08:33:47+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 53731,
+     "title": "Yahoo!トラベル最新クーポンまとめ｜3,000円クーポンコードの出し方も解説",
+     "url": "https://yakushima.fun/yahoo-coupon/",
+     "modified": "2026-11-18T09:00:25+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T08:38:24+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "draft_at": "2026-11-05T06:17:38+09:00"
+    },
+    {
+     "post_id": 54056,
+     "title": "【2026年11月】近畿日本ツーリストのクーポンコード一覧｜初回でも使える？取得方法も解説！",
+     "url": "https://yakushima.fun/knt-coupon/",
+     "modified": "2026-11-15T20:32:46+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-15T20:32:43+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 54113,
+     "title": "【2026年11月】東武トップツアーズの「クーポン」＆「お得情報」使い方完全ガイド",
+     "url": "https://yakushima.fun/tobutoptours-sale-coupon/",
+     "modified": "2026-11-14T09:26:05+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-20T15:51:29+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし",
+      "draft_run": "2026-11-18 朝"
+     },
+     "draft_at": "2026-11-18T08:09:35+09:00"
+    },
+    {
+     "post_id": 54116,
+     "title": "【2026年11月】アクティビティジャパンは4桁or12桁のクーポンコードが必要！詳しくご紹介",
+     "url": "https://yakushima.fun/activityjapan/",
+     "modified": "2026-10-14T16:52:34+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-14T16:51:43+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 55083,
+     "title": "JTB割引クーポンコード一覧【2026年11月】初回・国内・海外まとめ",
+     "url": "https://yakushima.fun/jtb-first/",
+     "modified": "2026-11-18T09:55:55+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T09:55:52+09:00",
+      "fields": [
+       "クーポンコード",
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし"
+     },
+     "draft_at": "2026-11-18T08:09:49+09:00"
+    },
+    {
+     "post_id": 55825,
+     "title": "【2026年11月】Booking.comキャンペーンコードとは？今すぐ割引！を受ける情報も盛り込みました",
+     "url": "https://yakushima.fun/booking-coupon/",
+     "modified": "2026-11-18T08:42:56+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-18T08:42:31+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 55911,
+     "title": "Reluxクーポン一覧とお得に利用する5つの方法とは？セール・割引情報まとめ",
+     "url": "https://yakushima.fun/relux-coupon/",
+     "modified": "2026-11-17T17:42:06+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-17T17:42:06+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 56036,
+     "title": "セール情報あり！ゆこゆこネット2000円〜クーポンコード紹介と取得方法",
+     "url": "https://yakushima.fun/yukoyuko-coupon/",
+     "modified": "2026-11-13T18:11:26+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-04T10:01:51+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 56051,
+     "title": "【初回必見】クラブツーリズムのWebクーポン取得方法とキャンペーン",
+     "url": "https://yakushima.fun/club-tourism-coupon/",
+     "modified": "2026-11-08T17:25:40+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-08T17:25:37+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 56231,
+     "title": "klookの2回目以降も使えるクーポンコード【完全ガイド】",
+     "url": "https://yakushima.fun/klook/",
+     "modified": "2026-10-24T10:43:18+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-22T11:43:26+09:00",
+      "fields": [
+       "クーポンコード",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 56258,
+     "title": "【2026年11月】サプライスのクーポンコードはいつ配布？頻度を調べてみた",
+     "url": "https://yakushima.fun/suprice-coupon/",
+     "modified": "2026-11-17T17:41:43+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 56283,
+     "title": "初回クーポンあり【2026】ジャムジャムツアー クーポンコード一覧",
+     "url": "https://yakushima.fun/jamjamtour-coupon/",
+     "modified": "2026-11-07T09:30:44+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-30T17:24:05+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     },
+     "draft_at": "2026-11-04T14:04:50+09:00"
+    },
+    {
+     "post_id": 56353,
+     "title": "【2026年11月】アソビューのクーポンコード一覧｜初回・JAFクーポンはある？",
+     "url": "https://yakushima.fun/asoview-coupon/",
+     "modified": "2026-11-13T12:19:28+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-09-05T18:45:44+09:00",
+      "fields": [
+       "クーポンコード",
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし",
+      "draft_run": "2026-11-18 朝"
+     },
+     "draft_at": "2026-11-18T08:09:33+09:00"
+    },
+    {
+     "post_id": 57241,
+     "title": "【2026年11月】ANAスカイツアーズ 限定クーポン・キャンペーン 一覧",
+     "url": "https://yakushima.fun/skytours/",
+     "modified": "2026-03-01T08:32:31+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2025-11-03T12:15:14+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 57278,
+     "title": "併用できる？HISクーポンが使えない原因 9つのチェックポイント",
+     "url": "https://yakushima.fun/not-available/",
+     "modified": "2026-08-16T18:50:52+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 57778,
+     "title": "オリオンツアー クーポンコード 2026！日帰り・スノボ・楽天・北海道も解説",
+     "url": "https://yakushima.fun/orion-tour/",
+     "modified": "2026-11-05T08:27:34+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-05T08:27:32+09:00",
+      "fields": [
+       "クーポンコード",
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 59593,
+     "title": "KKdayクーポンコード2026｜初回・LINE・500円・3,000円・Visaの最新情報",
+     "url": "https://yakushima.fun/kkday/",
+     "modified": "2026-11-10T21:04:38+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-10T21:04:35+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 61633,
+     "title": "【2026年11月】るるぶトラベルのクーポンコード一覧（初回&誰でも使える）",
+     "url": "https://yakushima.fun/rurubu-coupon/",
+     "modified": "2026-11-13T12:19:32+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-12T11:36:40+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     },
+     "job": {
+      "last_run": "2026-11-18 朝",
+      "run_result": "公開本文の変更なし",
+      "draft_run": "2026-11-18 朝"
+     },
+     "draft_at": "2026-11-18T08:09:27+09:00"
+    },
+    {
+     "post_id": 61960,
+     "title": "サプライス クーポンが使えない原因 5つのチェックリスト&対処法",
+     "url": "https://yakushima.fun/surprice-usage/",
+     "modified": "2026-09-13T11:49:26+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-09-13T11:49:24+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 63713,
+     "title": "【2026年11月】楽天トラベルはいつがお得？セール時期とクーポン一覧",
+     "url": "https://yakushima.fun/rakuten-value-day/",
+     "modified": "2026-10-09T10:37:06+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-07-20T09:04:43+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 64584,
+     "title": "JTBクーポンコード併用の仕方を５ステップで解説！（オンラインクーポンとポイント）",
+     "url": "https://yakushima.fun/combined-use/",
+     "modified": "2026-07-10T19:50:47+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 64942,
+     "title": "【2026年11月】じゃらんはいつがお得？定番から今使えるクーポンまで一覧でご案内",
+     "url": "https://yakushima.fun/jalan-coupon-code/",
+     "modified": "2026-11-02T09:52:10+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-05T10:01:34+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 66063,
+     "title": "「クーポンコード」コピーのやり方を3ステップで解説！",
+     "url": "https://yakushima.fun/coupon-manner/",
+     "modified": "2026-09-12T09:14:32+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 66188,
+     "title": "クーポンコードとは？桁数についてや使い方を「かんたん」解説します！",
+     "url": "https://yakushima.fun/coupon-code/",
+     "modified": "2026-04-14T12:36:59+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2024-09-15T06:26:23+09:00",
+      "fields": [
+       "クーポンコード"
+      ]
+     }
+    },
+    {
+     "post_id": 66691,
+     "title": "LINE（ライン）クーポンコードのメリット・デメリット",
+     "url": "https://yakushima.fun/line-coupon/",
+     "modified": "2026-09-18T13:07:37+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 83394,
+     "title": "HISの学生割引クーポンコード＆キャンペーンまとめ【2026年11月】",
+     "url": "https://yakushima.fun/his-gakusei/",
+     "modified": "2026-11-11T13:52:47+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-11T13:44:32+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
+     }
+    },
+    {
+     "post_id": 86641,
+     "title": "近畿日本ツーリストの「フリーセレクション・アワードセレクション・クーポンコード」の使い方！",
+     "url": "https://yakushima.fun/knt-freeselection/",
+     "modified": "2026-04-01T11:01:48+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 86902,
+     "title": "初回・初心者のための「一休.comクーポン・クーポンコード」出し方まとめ",
+     "url": "https://yakushima.fun/first-ikyu/",
+     "modified": "2026-11-14T05:57:17+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-09T13:23:24+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     },
+     "draft_at": "2026-11-17T12:14:55+09:00"
+    },
+    {
+     "post_id": 87047,
+     "title": "【今すぐ使える】Agoda（アゴダ）のクーポン一覧",
+     "url": "https://yakushima.fun/agoda-coupon/",
+     "modified": "2026-11-17T17:56:40+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 87826,
+     "title": "エクスペディアのクーポンが使えない原因7つと対処法【2026年最新】",
+     "url": "https://yakushima.fun/expedia-coupon-not-working/",
+     "modified": "2026-02-05T10:22:52+09:00",
+     "history": {
+      "result": "履歴不足"
+     }
+    },
+    {
+     "post_id": 89664,
+     "title": "HIS初夢フェア完全攻略｜クーポン併用術と狙い目プランを徹底解説",
+     "url": "https://yakushima.fun/his-hatsuyume-fair/",
+     "modified": "2026-11-17T17:56:33+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 91242,
+     "title": "【2026年最新】スカイマークセール次回がいつかを過去の実績から予想！｜いま得・たす得・クーポン活用術",
+     "url": "https://yakushima.fun/skymark-sale/",
+     "modified": "2026-10-15T16:39:33+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-10-15T14:31:03+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 94548,
+     "title": "HISクーポン・バウチャーはどこで印刷する？国内・海外の確認方法",
+     "url": "https://yakushima.fun/his-coupon-print/",
+     "modified": "2026-08-29T20:57:57+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 94609,
+     "title": "HISの割引クレジットカード一覧｜会員限定クーポンコードも掲載",
+     "url": "https://yakushima.fun/his-credit-card-discount/",
+     "modified": "2026-08-29T20:51:22+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-08-14T18:28:33+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 94964,
+     "title": "じゃらんパッククーポンの使い方｜併用方法と表示されない・使えない原因",
+     "url": "https://yakushima.fun/jalan-pack-coupon-use/",
+     "modified": "2026-08-30T09:48:50+09:00",
+     "history": {
+      "result": "調べた履歴に条件差なし"
+     }
+    },
+    {
+     "post_id": 98433,
+     "title": "Expediaのクーポンコード一覧【2026年11月】割引・お得な情報まとめ",
+     "url": "https://yakushima.fun/expedia-couponcode/",
+     "modified": "2026-11-13T12:51:17+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T10:43:38+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    },
+    {
+     "post_id": 98493,
+     "title": "Hotels.comのクーポンコード一覧【2026年11月】割引・お得な情報まとめ",
+     "url": "https://yakushima.fun/hotels-com-couponcode/",
+     "modified": "2026-11-13T12:51:40+09:00",
+     "history": {
+      "result": "変更を確認",
+      "changed_at": "2026-11-13T11:14:48+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

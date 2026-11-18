@@ -6,6 +6,7 @@ function renderDealCatalog(container) {
     if (!checks.has(c.provider)) checks.set(c.provider, []);
     checks.get(c.provider).push(c);
   });
+  const updates = new Map((DATA.coupon_articles?.sites || []).flatMap(s=>s.articles.map(a=>[a.url,a.history.changed_at?.slice(0,10)])));
   const esc = escapeHtml;
   function link(url, label) {
     return /^https?:\/\//i.test(url || '') ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>` : esc(label);
@@ -44,7 +45,7 @@ function renderDealCatalog(container) {
   const pill = (value,label,done) => `<span class="deal-pill ${value===done?'done':value==='draft'?'draft':''}">${label}</span>`;
   function detail(r) {
     const links = (checks.get(r.provider) || []).map(c => link(c.url,c.site) + '（' + esc(c.date) + ' ' + esc(c.status) + '）');
-    const articles = r.articles.map(a=>link(a.url,a.site) + '（' + esc(a.date) + ' ' + esc(a.basis) + '）');
+    const articles = r.articles.map(a=>link(a.url,a.site) + '（' + esc(a.date) + ' ' + esc(a.basis) + '）' + (updates.get(a.url)?' · 記事のクーポン条件変更 '+esc(updates.get(a.url)):''));
     const x = r.x.map(x=>(x.stage==='posted'?link(x.url,x.site+'の投稿'):esc(x.site+' 下書き'))+'（'+esc(x.date)+'）');
     return `<p class="deal-meta">案件ID　<code>${esc(r.key)}</code></p><p><b>出典</b>　${link(r.url, r.url?'特典の掲載元':'URL未登録')}　${esc(r.sources.join('・'))}</p>
       ${r.ai_date?`<p><b>AIの発見</b>　${esc(r.ai_date)}　${link(r.ai_url,'発見元')}　${esc(r.ai_evidence)}</p>`:''}

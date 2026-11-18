@@ -1255,6 +1255,8 @@ def build_dashboard_data() -> dict[str, Any]:
         "recent_change_dates": recent_day_filters,
         "recent_change_rows": recent_change_rows,
         "deals": build_catalog(ROOT, providers),
+        "coupon_articles": (load_json(ROOT / "editorial_data/coupon-articles.json")
+                            if (ROOT / "editorial_data/coupon-articles.json").exists() else {"sites": []}),
         "flash": build_flash_data(providers, registry, recent_day_filters),
         "columns": {
             "summary": SUMMARY_COLUMNS,
@@ -2293,6 +2295,7 @@ function renderCampaigns(container) {{
 }}
 
 {(ROOT / "templates/deal_catalog.js").read_text(encoding="utf-8")}
+{(ROOT / "templates/coupon_article_updates.js").read_text(encoding="utf-8")}
 
 const TAB_RENDERERS = {{}};
 const RENDERED_TABS = new Set();
@@ -2337,6 +2340,7 @@ function init() {{
   }}
   const providerLabel = provider => `${{escapeHtml(provider.label)}} <span class="tab-count">${{escapeHtml(provider.tab_count_label ?? provider.count_label ?? provider.rows.length)}}</span>`;
   addTab('flash', 'お得情報一覧', renderDealCatalog, 'tab-main');
+  addTab('coupon-updates', 'クーポン記事の更新', renderCouponArticleUpdates, 'tab-main');
   addTab('changes', '速報', renderFlash, 'tab-main');
   addTab('campaigns', `キャンペーン・セール <span class="tab-count">${{((DATA.flash && DATA.flash.campaigns) || []).length}}</span>`, renderCampaigns, 'tab-main');
   addTab('summary', '全社サマリー', renderSummary);

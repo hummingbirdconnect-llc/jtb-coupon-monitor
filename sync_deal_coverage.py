@@ -16,6 +16,7 @@ from urllib.parse import urlsplit
 import requests
 from bs4 import BeautifulSoup
 
+from coupon_article_updates import collect_updates
 from deal_catalog import build_catalog, normalize, read, web_url
 from generate_dashboard import JST, ROOT, build_provider_payload, load_registry
 
@@ -169,11 +170,24 @@ def sync_articles(workspace, providers):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workspace", type=Path, required=True)
+    parser.add_argument("--coupon-runs", type=Path, default=Path.home() / "agent-tools/claude-tasks",
+                        help="朝夕のクーポン更新結果の保存先")
+    parser.add_argument("--article-updates-only", action="store_true", help="2サイトのクーポン記事の更新履歴だけを取得")
     args = parser.parse_args()
     workspace = args.workspace.resolve()
+    sys.path.insert(0, str(workspace / "tools"))
+    from wp_env import build_wp_auth, load_wp_config
+    dest = ROOT / "editorial_data"
+    path = dest / "coupon-articles.json"
+    updates = collect_updates(load_wp_config, build_wp_auth, {url for site, url in article_targets()},
+                              read(path) if path.exists() else {}, args.coupon_runs)
+    save(path, updates)
+    for site in updates["sites"]:
+        print(f"{site['name']}　{len(site['articles'])}記事　{site['status']}", flush=True)
+    if args.article_updates_only:
+        return
     providers = [build_provider_payload(p) for p in load_registry()]
     rows = x_receipts(workspace, providers)
-    dest = ROOT / "editorial_data"
     save(dest / "x.json", rows)
     checks = sync_articles(workspace, providers)
     save(dest / "articles.json", checks)
