@@ -3,7 +3,7 @@
   "site": "トリップブッキング",
   "provider": "agoda",
   "url": "https://tripbooking.jp/agoda-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 1472
@@ -12,7 +12,7 @@
   "site": "トリップブッキング",
   "provider": "expedia",
   "url": "https://tripbooking.jp/expedia-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 642
@@ -21,7 +21,7 @@
   "site": "トリップブッキング",
   "provider": "hotels",
   "url": "https://tripbooking.jp/hotels-com-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -55,7 +55,7 @@
   "site": "トリップブッキング",
   "provider": "tripcom",
   "url": "https://tripbooking.jp/tripcom-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 241
@@ -64,7 +64,7 @@
   "site": "ウェルトリップ",
   "provider": "activityjapan",
   "url": "https://travel.hb-connect.co.jp/activityjapan-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -79,7 +79,7 @@
   "site": "ウェルトリップ",
   "provider": "asoview",
   "url": "https://travel.hb-connect.co.jp/asoview-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -134,7 +134,7 @@
   "site": "ウェルトリップ",
   "provider": "his",
   "url": "https://travel.hb-connect.co.jp/his-couponcode/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -264,7 +264,7 @@
   "site": "ウェルトリップ",
   "provider": "ikkyu",
   "url": "https://travel.hb-connect.co.jp/ikyu-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 2502
@@ -273,7 +273,7 @@
   "site": "ウェルトリップ",
   "provider": "jalpack",
   "url": "https://travel.hb-connect.co.jp/jal-pack-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -298,7 +298,7 @@
   "site": "ウェルトリップ",
   "provider": "jalan_activity",
   "url": "https://travel.hb-connect.co.jp/jalan-activity-coupons/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 1806
@@ -307,7 +307,7 @@
   "site": "ウェルトリップ",
   "provider": "jalan",
   "url": "https://travel.hb-connect.co.jp/jalan-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -327,7 +327,7 @@
   "site": "ウェルトリップ",
   "provider": "jr_tokai_tours",
   "url": "https://travel.hb-connect.co.jp/jr-tokai-tours-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 3680
@@ -336,7 +336,7 @@
   "site": "ウェルトリップ",
   "provider": "jtb",
   "url": "https://travel.hb-connect.co.jp/jtb-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -620,6 +620,54 @@
     "basis": "名称一致"
    },
    {
+    "key": "jtb/2611sum",
+    "title": "【先どり】夏休み・秋旅にも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年7-10月出発＞",
+    "basis": "コード一致",
+    "code": "2511u1"
+   },
+   {
+    "key": "jtb/2611spr",
+    "title": "【先どり】春休み・GWにも使える！海外ツアールックJTBMySTYLEどこでも使えるクーポン＜2027年4-6月出発＞",
+    "basis": "コード一致",
+    "code": "2511t1"
+   },
+   {
+    "key": "jtb/2611jl2",
+    "title": "【ヨーロッパフェス】海外航空券+ホテルどこでも使える割引クーポン【日本航空（JAL）対象】",
+    "basis": "コード一致",
+    "code": "2611n1"
+   },
+   {
+    "key": "jtb/2611nh2",
+    "title": "【ヨーロッパフェス】海外航空券+ホテルどこでも使える割引クーポン【ANA対象】",
+    "basis": "コード一致",
+    "code": "2611l1"
+   },
+   {
+    "key": "jtb/2611ek2",
+    "title": "【ヨーロッパフェス】海外航空券+ホテルどこでも使える割引クーポン【エミレーツ航空（EK）対象】",
+    "basis": "コード一致",
+    "code": "2611j1"
+   },
+   {
+    "key": "jtb/2611jl",
+    "title": "【ヨーロッパフェス】海外ツアールックJTBMySTYLEどこでも使える割引クーポン【日本航空（JAL）対象】",
+    "basis": "コード一致",
+    "code": "2611g1"
+   },
+   {
+    "key": "jtb/2611nh",
+    "title": "【ヨーロッパフェス】海外ツアールックJTBMySTYLEどこでも使える割引クーポン【ANA対象】",
+    "basis": "コード一致",
+    "code": "2611d1"
+   },
+   {
+    "key": "jtb/2611ek",
+    "title": "【ヨーロッパフェス】海外ツアールックJTBMySTYLEどこでも使える割引クーポン【エミレーツ航空（EK）対象】",
+    "basis": "コード一致",
+    "code": "2611b1"
+   },
+   {
     "key": "jtb/2611bf",
     "title": "【ブラックフライデー】海外航空券+ホテルどこでも使える割引クーポン",
     "basis": "コード一致",
@@ -752,6 +800,42 @@
     "code": "2604q1"
    },
    {
+    "key": "jtb/2611eurjl2",
+    "title": "【ヨーロッパフェス】ヨーロッパで使える！海外航空券+ホテル割引クーポン【日本航空（JAL）対象】",
+    "basis": "コード一致",
+    "code": "2611m1"
+   },
+   {
+    "key": "jtb/2611eurnh2",
+    "title": "【ヨーロッパフェス】ヨーロッパで使える！海外航空券+ホテル割引クーポン【ANA対象】",
+    "basis": "コード一致",
+    "code": "2611k1"
+   },
+   {
+    "key": "jtb/2611eurek2",
+    "title": "【ヨーロッパフェス】ヨーロッパで使える！海外航空券+ホテル割引クーポン【エミレーツ航空（EK）対象】",
+    "basis": "コード一致",
+    "code": "2611h1"
+   },
+   {
+    "key": "jtb/2611eurjl",
+    "title": "【ヨーロッパフェス】ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【日本航空（JAL）対象】",
+    "basis": "コード一致",
+    "code": "2611f1"
+   },
+   {
+    "key": "jtb/2611eurnh",
+    "title": "【ヨーロッパフェス】ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【ANA対象】",
+    "basis": "コード一致",
+    "code": "2611c1"
+   },
+   {
+    "key": "jtb/2611eurek",
+    "title": "【ヨーロッパフェス】ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【エミレーツ航空（EK）対象】",
+    "basis": "コード一致",
+    "code": "2611a1"
+   },
+   {
     "key": "jtb/2610ba",
     "title": "海外航空券+ホテルで使えるどこでも割引クーポン【ブリティッシュ・エアウェイズ対象】",
     "basis": "コード一致",
@@ -811,7 +895,7 @@
   "site": "ウェルトリップ",
   "provider": "jtb",
   "url": "https://travel.hb-connect.co.jp/jtb-first-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "未取得",
   "matches": []
  },
@@ -819,7 +903,7 @@
   "site": "ウェルトリップ",
   "provider": "jtb",
   "url": "https://travel.hb-connect.co.jp/jtb-shinkansen-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -907,7 +991,7 @@
   "site": "ウェルトリップ",
   "provider": "klook",
   "url": "https://travel.hb-connect.co.jp/klook-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "未取得",
   "matches": []
  },
@@ -915,7 +999,7 @@
   "site": "ウェルトリップ",
   "provider": "knt",
   "url": "https://travel.hb-connect.co.jp/knt-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -935,7 +1019,7 @@
   "site": "ウェルトリップ",
   "provider": "rakuten_travel",
   "url": "https://travel.hb-connect.co.jp/rakuten-travel-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -955,7 +1039,7 @@
   "site": "ウェルトリップ",
   "provider": "skypack_tours",
   "url": "https://travel.hb-connect.co.jp/skypaktours-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -971,7 +1055,7 @@
   "site": "ウェルトリップ",
   "provider": "toku",
   "url": "https://travel.hb-connect.co.jp/tocoo-travel-coupons/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "未取得",
   "matches": []
  },
@@ -979,7 +1063,7 @@
   "site": "ウェルトリップ",
   "provider": "yumeyado",
   "url": "https://travel.hb-connect.co.jp/yumeyado-coupons/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -994,7 +1078,7 @@
   "site": "屋久島ファン",
   "provider": "his",
   "url": "https://yakushima.fun/his-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -1114,7 +1198,7 @@
   "site": "屋久島ファン",
   "provider": "hotels",
   "url": "https://yakushima.fun/hotels-com-couponcode/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -1142,7 +1226,7 @@
   "site": "屋久島ファン",
   "provider": "jamjam",
   "url": "https://yakushima.fun/jamjamtour-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 56283
@@ -1151,7 +1235,7 @@
   "site": "屋久島ファン",
   "provider": "jtb",
   "url": "https://yakushima.fun/jtb-first/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -1676,7 +1760,7 @@
   "site": "屋久島ファン",
   "provider": "knt",
   "url": "https://yakushima.fun/knt-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -1696,7 +1780,7 @@
   "site": "屋久島ファン",
   "provider": "orion_tour",
   "url": "https://yakushima.fun/orion-tour/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -1716,7 +1800,7 @@
   "site": "屋久島ファン",
   "provider": "rurubu_travel",
   "url": "https://yakushima.fun/rurubu-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
@@ -1948,7 +2032,7 @@
   "site": "屋久島ファン",
   "provider": "yahoo_travel",
   "url": "https://yakushima.fun/yahoo-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [],
   "post_id": 53731
@@ -1957,7 +2041,7 @@
   "site": "屋久島ファン",
   "provider": "yukoyuko",
   "url": "https://yakushima.fun/yukoyuko-coupon/",
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "status": "照合済み",
   "matches": [
    {
