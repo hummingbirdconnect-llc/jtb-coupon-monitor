@@ -1,0 +1,26 @@
+{
+  "provider_id": "jalan",
+  "provider_label": "じゃらん",
+  "generated_at": "2026-11-20T08:20:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 1,
+  "candidate_count": 1,
+  "candidates": [
+    {
+      "title": "じゃらんのお得な10日間（じゃらんパック向けクーポン）",
+      "kind": "coupon",
+      "found_url": "https://www.jalan.net/news/article/919372/",
+      "official_url": "https://www.jalan.net/news/article/919372/",
+      "evidence": "公式：毎月20日～月末頃まで実施。宿・ホテル向けとじゃらんパック（交通＋宿泊）向けのクーポンがある ／ 公式：割引率はいずれも最大36%ほど ／ 公式：先着予約数に達すると期間中でも利用不可 ／ 公式：じゃらんパッククーポンと宿泊施設クーポンは併用可 ／ 未確認：最大額（Grokの80,000円分は公式に記載なし） ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-20",
+      "discount": "未確認（Grok: 最大80,000円分）。公式は2つのキャンペーンとも割引率最大36%ほどと記載",
+      "period": "予約：毎月20日～月末頃（公式）。20日10時頃に獲得・予約 ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
