@@ -1173,6 +1173,11 @@ function renderCouponArticleUpdates(container) {
     draftsChecked:s.drafts_checked, stale:s.status!=='取得済み'})));
   const recent = a => day(a.history.changed_at);
   const latest = a => [a.modified,a.draft_at || ''].sort().at(-1);
+  function draftSortDate(a) {
+    if (a.draft_at) return a.draft_at;
+    // 時刻がない作業記録は、並べ替えのときだけ同じ日の午前・午後の先頭に置く。
+    return (a.job?.draft_run || '').replace(' 朝', 'T00:00').replace(' 夕', 'T12:00');
+  }
   const draftToday = a => day(a.draft_at) === today || day(a.job?.draft_run) === today;
   const publishedToday = a => day(a.job?.published_run) === today;
   const safeLink = a => /^https?:\/\//i.test(a.url) ? `<a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a>` : esc(a.title);
@@ -1197,6 +1202,12 @@ function renderCouponArticleUpdates(container) {
     <option value="week">直近7日にクーポン条件を変更</option><option value="run">今日の朝夕の作業で公開更新</option><option value="draft">今日更新用の下書きを保存</option>
     <option value="newer">公開記事より新しい下書きあり</option><option value="unknown">条件の変更日が未確認</option></select></label>
     <label>記事名<input type="search" aria-label="記事名" placeholder="旅行会社名・記事名" data-query></label>
+    <label>並べ替え<select data-sort>
+      <option value="">標準順</option>
+      <option value="modified-desc">公開記事の最終編集が新しい順</option><option value="modified-asc">公開記事の最終編集が古い順</option>
+      <option value="draft-desc">下書きの最終保存が新しい順</option><option value="draft-asc">下書きの最終保存が古い順</option>
+      <option value="changed-desc">クーポン条件の変更が新しい順</option><option value="changed-asc">クーポン条件の変更が古い順</option>
+    </select></label>
     <button type="button" data-reset>条件を戻す</button></div>
     <div class="deal-list"><div class="deal-results"><strong aria-live="polite"></strong></div><div class="update-list"></div></div>
     <p class="deal-hint">対象は朝夕の更新対象、登録記事と、題名に「クーポン」またはURL末尾の名前に「coupon」を含む公開記事です。下書きは元記事を特定できたものを表示します。</p></section>`;
@@ -1215,6 +1226,13 @@ function renderCouponArticleUpdates(container) {
   }
   function draw() {
     const site=$('[data-site]').value, filter=$('[data-state]').value, q=normalize($('[data-query]').value.trim());
+    const [field, direction] = $('[data-sort]').value.split('-');
+    const byDate = {
+      modified: a => a.modified,
+      draft: draftSortDate,
+      changed: a => a.history.changed_at
+    };
+    const sortDate = byDate[field] || (['today', 'week'].includes(filter) ? byDate.changed : latest);
     const matches=records.filter(a=>{
       if ((site && a.site!==site) || (q && !normalize(a.title).includes(q))) return false;
       switch(filter) {
@@ -1226,7 +1244,12 @@ function renderCouponArticleUpdates(container) {
         case 'unknown': return !a.history.changed_at;
         default: return true;
       }
-    }).sort((a,b)=>(['today','week'].includes(filter)?b.history.changed_at.localeCompare(a.history.changed_at):latest(b).localeCompare(latest(a))) || a.title.localeCompare(b.title,'ja'));
+    }).sort((a, b) => {
+      const left = sortDate(a) || '', right = sortDate(b) || '';
+      if (Boolean(left) !== Boolean(right)) return left ? -1 : 1;
+      const order = direction === 'asc' ? left.localeCompare(right) : right.localeCompare(left);
+      return order || a.title.localeCompare(b.title, 'ja');
+    });
     $('.deal-results strong').textContent=matches.length+'記事';
     $('.update-list').innerHTML=matches.map(show).join('') || '<p class="empty">条件に合う記事はありません。</p>';
   }
