@@ -93,6 +93,9 @@ def configure_root(root: Path) -> None:
 
 def discovery_eligible(provider: dict[str, Any]) -> bool:
     """Grok検索の対象にする会社か（常時監視、または公式ページを登録済みの指定時会社）。"""
+    if provider.get("discovery") is False:
+        # 旅行会社以外（アウトドア店など）。台帳で外した会社は探さない。
+        return False
     if not is_on_demand(provider):
         return True
     return bool(provider.get("official_sources"))

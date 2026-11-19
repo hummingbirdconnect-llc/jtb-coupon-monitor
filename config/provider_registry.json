@@ -1192,6 +1192,44 @@
         "../vault_blog/トリップブッキング/note/Trip.com_003_初回クーポン_SWELL.html"
       ],
       "note": "日本向け公式お得情報ページを監視。公開キャンペーンから開始。"
+    },
+    {
+      "id": "lbreath",
+      "label": "エルブレス（山道具）",
+      "site_targets": ["osenoutdoor"],
+      "classification": "B/C",
+      "coverage_status": "official_on_demand",
+      "data_dir": "official_coupon_data/lbreath",
+      "source_type": "official_page_candidate",
+      "check_frequency_label": "週1回（月曜 6:30 JST・Macから起動）",
+      "freshness_sla_hours": 192,
+      "discovery": false,
+      "official_domains": ["supersports.com"],
+      "official_sources": [
+        {
+          "url": "https://www.supersports.com/ja-jp/lbreath/coupons/",
+          "fetch_method": "playwright",
+          "purpose": "エルブレス公式オンラインストアのクーポン一覧（ゼビオ・ヴィクトリアの札も同じ一覧に並ぶ）"
+        }
+      ],
+      "manual_sources": [
+        {
+          "url": "https://www.supersports.com/ja-jp/lbreath/campaigns/",
+          "purpose": "特集一覧",
+          "access_mode": "dynamic_browser",
+          "reason": "描画が遅く、自動取得では本文が取れない"
+        },
+        {
+          "url": "https://member.point.supersports.com/campaigns/",
+          "purpose": "ポイントの企画",
+          "access_mode": "dynamic_browser",
+          "reason": "描画が遅く、自動取得では本文が取れない"
+        }
+      ],
+      "article_paths": [
+        "../vault_blog/オーセン山道具ブログ/会社別/エルブレス/2026-11-エルブレスクーポン/article.html"
+      ],
+      "note": "o-sen.net（アウトドア&山道具紹介ブログbyオーセン）向け。旅行会社ではなくアウトドア店。週1回だけ取得する。監査で載せるのは店名が L-Breath の札だけ（CLAUDE_COUPON_AUDIT.md「エルブレスの範囲」）。Grokの候補集めには入れない（discovery: false）。"
     }
   ]
 }
