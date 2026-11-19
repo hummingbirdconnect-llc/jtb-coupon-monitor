@@ -1,0 +1,25 @@
+{
+  "provider_id": "lbreath",
+  "observed_hash": "29555a4100fc81abcb501aa20de67c1fca2d3429f0de81c3f08f6af9893b2ce2",
+  "last_checked_at": "2026-11-19T22:28:04.912178+09:00",
+  "sources": [
+    {
+      "url": "https://www.supersports.com/ja-jp/lbreath/coupons/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "playwright",
+      "error": "",
+      "purpose": "エルブレス公式オンラインストアのクーポン一覧（ゼビオ・ヴィクトリアの札も同じ一覧に並ぶ）",
+      "source_role": "official_source",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 5004,
+      "content_hash": "42f03c312921b23ce737878cab649109cf7d2c5ae52965ca11214c5af4d49ac7"
+    }
+  ],
+  "queued_hash": "29555a4100fc81abcb501aa20de67c1fca2d3429f0de81c3f08f6af9893b2ce2",
+  "queued_candidate_id": "lbreath-29555a4100fc81ab",
+  "queued_at": "2026-11-19T22:28:04.912563+09:00",
+  "last_audit_status": "pending"
+}
