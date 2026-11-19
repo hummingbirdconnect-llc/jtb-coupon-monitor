@@ -1,0 +1,32 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-11-20T07:40:42.304184+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "ブラックフライデーセール",
+      "kind": "sale",
+      "found_url": "https://www.booking.com/dealspage.ja.html",
+      "official_url": "https://www.booking.com/dealspage.ja.html",
+      "official_domain_match": true,
+      "evidence": "東京・京都市の対象宿泊施設を掲載。公開ページの案内とFAQで割引率、予約期間、滞在期間を確認。",
+      "observed_date": "2026-11-20",
+      "discount": "最大40%オフ",
+      "period": "予約: 11月19日～2026年12月2日 / 滞在: 2026年11月19日～2027年12月31日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/booking/hints_2026-11-20.json"
+}
