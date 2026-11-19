@@ -1,7 +1,7 @@
 {
   "provider_id": "rakuten_travel",
-  "observed_hash": "907d00767ad9ea10585ff0b112e6a6e9269ea5f9901b4ca079f664f5a3ed90c6",
-  "last_checked_at": "2026-11-20T07:22:45.169549+09:00",
+  "observed_hash": "dc1bc3405e1641f7a1374979e0326de2a9922e3a752eb1a655963d27d5c2d05c",
+  "last_checked_at": "2026-11-20T08:23:29.309069+09:00",
   "sources": [
     {
       "url": "https://travel.rakuten.co.jp/coupon/",
@@ -44,12 +44,40 @@
       "discovered_urls": [],
       "text_chars": 15789,
       "content_hash": "109e78fc6e397a80ed2a7f7728eb2770d2d80b1dba318e6175a7e55eaf3b2dbd"
+    },
+    {
+      "url": "https://travel.rakuten.co.jp/special/blackfriday/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: 楽天トラベル BLACK FRIDAY",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 13659,
+      "content_hash": "6c93e9e4b98f36aa1f6585f1ce3823ae94697dbffe10a78379ee0bfd680ff5f4"
+    },
+    {
+      "url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: 毎月5と0のつく日（ホテル・温泉宿 最大20%OFF）",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 5629,
+      "content_hash": "0c4fc11ae21fb0449978853c02c33a64d4fe6e055538bb19c5857b1d197512f2"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-11-17T08:41:41.253673+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "dc1bc3405e1641f7a1374979e0326de2a9922e3a752eb1a655963d27d5c2d05c",
+  "queued_candidate_id": "rakuten_travel-dc1bc3405e1641f7",
+  "queued_at": "2026-11-20T08:23:29.311561+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-11-17T09:12:37.348812+09:00",
   "last_audit_candidate_id": "rakuten_travel-907d00767ad9ea10",
   "processed_hash": "907d00767ad9ea10585ff0b112e6a6e9269ea5f9901b4ca079f664f5a3ed90c6",
