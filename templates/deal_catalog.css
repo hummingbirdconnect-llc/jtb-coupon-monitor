@@ -34,7 +34,23 @@
 .update-site{border:1px solid #d9e2e8;border-top:3px solid #457385;border-radius:10px;background:white;padding:12px 16px}
 .update-site h3{font-size:1rem}.update-site p{margin:4px 0}.update-site b{color:#145b43;font-size:1.35rem}
 .update-site small,.update-row small{color:#536b79;font-size:.78rem}.update-board .deal-hint{margin:10px 0 14px}
-.update-row{display:grid;grid-template-columns:minmax(220px,2.5fr) repeat(3,minmax(115px,1fr));gap:14px;border-top:1px solid #e3e9ed;padding:12px 14px;align-items:center;font-size:.9rem}
-.update-row small{display:block;margin-bottom:5px}.update-row .deal-meta{margin:0 0 4px}.update-row a{font-weight:600;overflow-wrap:anywhere}
-@media(max-width:760px){.update-sites{grid-template-columns:1fr}.update-row{grid-template-columns:1fr 1fr;gap:9px}.update-row>div:first-child,.update-row>div:nth-child(2){grid-column:1/-1}.update-site{padding:9px 12px}}
-.update-run{grid-column:1/-1;padding:5px 8px;background:#f2f6f8;color:#3f5767;font-size:.8rem;border-radius:4px}
+.update-table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.9rem;text-align:left}
+.update-table th{background:#f2f6f8;padding:4px 6px;color:#354d5d}
+.update-table th:first-child{width:40%;padding-left:14px}
+.update-table th button{display:flex;align-items:center;justify-content:space-between;gap:4px;width:100%;min-height:44px;border:1px solid transparent;background:transparent;text-align:left;font-weight:600}
+.update-table th button:hover,.update-table th[aria-sort] button{background:#e1edf5;color:#124c73}
+.update-table th button:focus-visible{outline:2px solid #075798;outline-offset:-2px}
+.sort-arrow{flex:none;font-size:1rem}
+.update-row td{padding:12px 14px;border-top:1px solid #e3e9ed;overflow-wrap:anywhere}
+.update-row small{display:none}.update-row .deal-meta{margin:0 0 4px}.update-row a{font-weight:600;overflow-wrap:anywhere}
+.update-run{padding:5px 14px;background:#f2f6f8;color:#3f5767;font-size:.8rem}
+@media(max-width:760px){
+  .update-sites{grid-template-columns:1fr}.update-site{padding:9px 12px}
+  .update-table,.update-table thead,.update-list{display:block}
+  .update-table thead tr{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));background:#f2f6f8}
+  .update-table th:first-child{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);padding:0}
+  .update-table th{padding:2px}.update-table th button{padding:5px;font-size:.8rem}
+  .update-row{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:12px 14px;border-top:1px solid #e3e9ed}
+  .update-row td{padding:0;border:0}.update-row td:nth-child(-n+2){grid-column:1/-1}
+  .update-row small{display:block;margin-bottom:4px}.update-list tr:not(.update-row),.update-run{display:block}
+}

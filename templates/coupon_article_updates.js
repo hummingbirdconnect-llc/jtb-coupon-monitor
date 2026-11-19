@@ -16,6 +16,10 @@ function renderCouponArticleUpdates(container) {
   }
   const draftToday = a => day(a.draft_at) === today || day(a.job?.draft_run) === today;
   const publishedToday = a => day(a.job?.published_run) === today;
+  let sortField = '', sortDirection = 'desc';
+  function sortHeader(field, label) {
+    return `<th scope="col"><button type="button" data-sort-field="${field}">${label} <span class="sort-arrow" aria-hidden="true">↕</span></button></th>`;
+  }
   const safeLink = a => /^https?:\/\//i.test(a.url) ? `<a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a>` : esc(a.title);
   function siteCard(s) {
     const rows = s.articles;
@@ -38,14 +42,11 @@ function renderCouponArticleUpdates(container) {
     <option value="week">直近7日にクーポン条件を変更</option><option value="run">今日の朝夕の作業で公開更新</option><option value="draft">今日更新用の下書きを保存</option>
     <option value="newer">公開記事より新しい下書きあり</option><option value="unknown">条件の変更日が未確認</option></select></label>
     <label>記事名<input type="search" aria-label="記事名" placeholder="旅行会社名・記事名" data-query></label>
-    <label>並べ替え<select data-sort>
-      <option value="">標準順</option>
-      <option value="modified-desc">公開記事の最終編集が新しい順</option><option value="modified-asc">公開記事の最終編集が古い順</option>
-      <option value="draft-desc">下書きの最終保存が新しい順</option><option value="draft-asc">下書きの最終保存が古い順</option>
-      <option value="changed-desc">クーポン条件の変更が新しい順</option><option value="changed-asc">クーポン条件の変更が古い順</option>
-    </select></label>
     <button type="button" data-reset>条件を戻す</button></div>
-    <div class="deal-list"><div class="deal-results"><strong aria-live="polite"></strong></div><div class="update-list"></div></div>
+    <div class="deal-list"><div class="deal-results"><strong aria-live="polite"></strong></div>
+    <table class="update-table" aria-label="クーポン記事の更新"><thead><tr><th scope="col">記事名</th>
+      ${sortHeader('changed','クーポン条件の変更')}${sortHeader('modified','公開記事の最終編集')}${sortHeader('draft','下書きの最終保存')}
+    </tr></thead><tbody class="update-list"></tbody></table></div>
     <p class="deal-hint">対象は朝夕の更新対象、登録記事と、題名に「クーポン」またはURL末尾の名前に「coupon」を含む公開記事です。下書きは元記事を特定できたものを表示します。</p></section>`;
   const $ = selector => container.querySelector(selector);
   const normalize = v => v.normalize('NFKC').toLowerCase();
@@ -54,21 +55,21 @@ function renderCouponArticleUpdates(container) {
     const note = change.changed_at ? [change.fields.join('・'), change.latest_check].filter(Boolean).join(' ／ ') : change.result;
     const draft = a.draft_at ? stamp(a.draft_at) : (a.job?.draft_run || (a.draftsChecked?'対応する記録なし':'未確認'));
     const job = a.job || {};
-    return `<div class="update-row"><div><span class="deal-meta">${esc(a.name)}${a.stale?' · 前回の記録':''}</span>${safeLink(a)}</div>
-      <div><small>クーポン条件の変更</small><b>${change.changed_at?esc(stamp(change.changed_at)):'未確認'}</b><span class="deal-meta">${esc(note)}</span></div>
-      <div><small>公開記事の最終編集</small>${esc(stamp(a.modified))}</div>
-      <div><small>更新用下書きの最終保存</small>${esc(draft)}</div>
-      ${job.last_run?`<div class="update-run">朝夕の作業　${esc(job.last_run)} · ${esc(job.run_result)}${job.published_run && job.published_run !== job.last_run?'　／　直近の公開更新 '+esc(job.published_run):''}${job.draft_run?'　／　下書き保存 '+esc(job.draft_run):''}</div>`:''}</div>`;
+    return `<tr class="update-row"><td><span class="deal-meta">${esc(a.name)}${a.stale?' · 前回の記録':''}</span>${safeLink(a)}</td>
+      <td><small>クーポン条件の変更</small><b>${change.changed_at?esc(stamp(change.changed_at)):'未確認'}</b><span class="deal-meta">${esc(note)}</span></td>
+      <td><small>公開記事の最終編集</small>${esc(stamp(a.modified))}</td>
+      <td><small>下書きの最終保存</small>${esc(draft)}</td></tr>
+      ${job.last_run?`<tr><td colspan="4" class="update-run">朝夕の作業　${esc(job.last_run)} · ${esc(job.run_result)}${job.published_run && job.published_run !== job.last_run?'　／　直近の公開更新 '+esc(job.published_run):''}${job.draft_run?'　／　下書き保存 '+esc(job.draft_run):''}</td></tr>`:''}`;
   }
   function draw() {
     const site=$('[data-site]').value, filter=$('[data-state]').value, q=normalize($('[data-query]').value.trim());
-    const [field, direction] = $('[data-sort]').value.split('-');
+    const field = sortField || (['today', 'week'].includes(filter) ? 'changed' : '');
     const byDate = {
       modified: a => a.modified,
       draft: draftSortDate,
       changed: a => a.history.changed_at
     };
-    const sortDate = byDate[field] || (['today', 'week'].includes(filter) ? byDate.changed : latest);
+    const sortDate = byDate[field] || latest;
     const matches=records.filter(a=>{
       if ((site && a.site!==site) || (q && !normalize(a.title).includes(q))) return false;
       switch(filter) {
@@ -83,14 +84,34 @@ function renderCouponArticleUpdates(container) {
     }).sort((a, b) => {
       const left = sortDate(a) || '', right = sortDate(b) || '';
       if (Boolean(left) !== Boolean(right)) return left ? -1 : 1;
-      const order = direction === 'asc' ? left.localeCompare(right) : right.localeCompare(left);
+      const order = sortDirection === 'asc' ? left.localeCompare(right) : right.localeCompare(left);
       return order || a.title.localeCompare(b.title, 'ja');
     });
     $('.deal-results strong').textContent=matches.length+'記事';
-    $('.update-list').innerHTML=matches.map(show).join('') || '<p class="empty">条件に合う記事はありません。</p>';
+    $('.update-list').innerHTML=matches.map(show).join('') || '<tr><td colspan="4" class="empty">条件に合う記事はありません。</td></tr>';
+    for (const button of sortButtons) {
+      const active = button.dataset.sortField === field;
+      const newest = active && sortDirection === 'desc';
+      if (active) button.parentElement.setAttribute('aria-sort', newest ? 'descending' : 'ascending');
+      else button.parentElement.removeAttribute('aria-sort');
+      button.querySelector('.sort-arrow').textContent = active ? (newest ? '↓' : '↑') : '↕';
+      button.title = newest ? '古い順に並べ替え' : '新しい順に並べ替え';
+    }
+  }
+  const sortButtons = container.querySelectorAll('[data-sort-field]');
+  for (const button of sortButtons) {
+    button.onclick = () => {
+      sortField = button.dataset.sortField;
+      sortDirection = button.parentElement.getAttribute('aria-sort') === 'descending' ? 'asc' : 'desc';
+      draw();
+    };
   }
   container.querySelectorAll('select').forEach(el=>el.onchange=draw);
   $('[data-query]').oninput=draw;
-  $('[data-reset]').onclick=()=>{container.querySelectorAll('select,input').forEach(el=>el.value='');draw();};
+  $('[data-reset]').onclick=()=>{
+    container.querySelectorAll('select,input').forEach(el=>el.value='');
+    sortField = ''; sortDirection = 'desc';
+    draw();
+  };
   draw();
 }
