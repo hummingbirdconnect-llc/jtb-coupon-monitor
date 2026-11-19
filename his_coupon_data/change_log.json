@@ -9238,5 +9238,73 @@
       "甲信越（新潟）版",
       "四国版"
     ]
+  },
+  {
+    "date": "2026-11-19",
+    "type": "🆕 新規",
+    "id": "21cee2ee2f14",
+    "category": "高速バス・夜行バス",
+    "title": "【BLACK FRIDAY】年末年始出発1名様につき500円引き",
+    "discount": "500円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "type": "🆕 新規",
+    "id": "a65ab7c7a802",
+    "category": "国内航空券",
+    "title": "【BLACK FRIDAY】2・3月出発のLCC・FDA利用で1グループ3,000円引き",
+    "discount": "3,000円引き",
+    "region_codes": [
+      "kanto",
+      "hokkaido",
+      "tohoku",
+      "koshinetsu",
+      "chubu",
+      "hokuriku",
+      "kansai",
+      "chugoku",
+      "shikoku",
+      "kyushu",
+      "okinawa"
+    ],
+    "region_labels": [
+      "首都圏版",
+      "北海道版",
+      "東北版",
+      "甲信越（新潟）版",
+      "中部版",
+      "北陸版",
+      "関西版",
+      "中国版",
+      "四国版",
+      "九州版",
+      "沖縄版"
+    ]
   }
 ]

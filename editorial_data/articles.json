@@ -83,13 +83,13 @@
   "status": "照合済み",
   "matches": [
    {
-    "key": "asoview/asoview-d57e48fa988c2be5",
-    "title": "神戸おでかけ特集クーポン",
+    "key": "asoview/asoview-121b4c49d0bc2d8e",
+    "title": "名古屋おでかけ特集クーポン",
     "basis": "名称一致"
    },
    {
-    "key": "asoview/asoview-121b4c49d0bc2d8e",
-    "title": "名古屋おでかけ特集クーポン",
+    "key": "asoview/asoview-d57e48fa988c2be5",
+    "title": "神戸おでかけ特集クーポン",
     "basis": "名称一致"
    },
    {
@@ -541,11 +541,6 @@
     "title": "【9～12月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
     "basis": "コード一致",
     "code": "hanky"
-   },
-   {
-    "key": "jtb/2610osaka",
-    "title": "【泊まろう大阪】おすすめ施設で使える割引クーポン＜第3弾＞",
-    "basis": "名称一致"
    },
    {
     "key": "jtb/2610obihiroairport",
@@ -1387,11 +1382,6 @@
     "title": "【9～12月宿泊限定】「阪急阪神ホテルズ」大阪・京都４施設で使える！割引クーポン",
     "basis": "コード一致",
     "code": "hanky"
-   },
-   {
-    "key": "jtb/2610osaka",
-    "title": "【泊まろう大阪】おすすめ施設で使える割引クーポン＜第3弾＞",
-    "basis": "名称一致"
    },
    {
     "key": "jtb/2610obihiroairport",
