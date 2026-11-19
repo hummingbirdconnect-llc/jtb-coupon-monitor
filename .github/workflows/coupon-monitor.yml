@@ -55,6 +55,7 @@ on:
           - expedia
           - hotels
           - tripcom
+          - lbreath
       run_scope:
         description: 取得する範囲（provider_id が all のときだけ効く）
         required: false

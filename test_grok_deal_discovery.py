@@ -73,6 +73,9 @@ def test_select_providers_daily_every_day_and_weekly_only_on_monday() -> None:
     } <= weekly
     # 公式ページ未登録の指定時会社（専用スクレイパーだけ）は対象外
     assert "yukoyuko" not in weekly
+    # 2026-11-19: 台帳で discovery: false にした会社（アウトドア店）は、公式ページがあっても対象外
+    assert "lbreath" not in weekly
+    assert "lbreath" not in monday
 
 
 def test_classify_marks_known_url_known_title_and_new() -> None:
