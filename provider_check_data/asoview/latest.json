@@ -2,9 +2,9 @@
   "provider_id": "asoview",
   "provider_label": "アソビュー",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-19T16:10:02.789161+09:00",
-  "completed_at": "2026-11-19T16:10:08.350384+09:00",
-  "official_fetched_at": "2026-11-19T16:10:08.350408+09:00",
+  "started_at": "2026-11-20T07:22:45.170502+09:00",
+  "completed_at": "2026-11-20T07:22:48.081190+09:00",
+  "official_fetched_at": "2026-11-20T07:22:48.081196+09:00",
   "source_results": [
     {
       "url": "https://www.asoview.com/coupon/",
@@ -17,8 +17,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 991,
-      "content_hash": "5bd154d66a77a4b51d74abed0ec23339980e67fdcfe504c9140b54c7232aae01"
+      "text_chars": 858,
+      "content_hash": "336149351e1676b1ea32126c9283df729f2df708135f48a5e07a45b039b72ef1"
     }
   ],
   "failed_source_count": 0,
@@ -31,14 +31,16 @@
   "count_scope_label": "クーポン",
   "count_scope_detail": "",
   "ai_used": false,
-  "codex_audit_required": false,
+  "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "unchanged",
-  "change_kind": "unchanged",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "1ebb8d02367e6715487d2527e33751bb0e471be15f6b5af1a797dcf3836d72f4",
   "data_date": "2026-11-19",
   "latest_file": "coupons_2026-11-19.json",
   "coupon_count": 16,
-  "content_hash": "c1f14077e6f6f1cf4c99eb2a0d29ce369cade90c449caa3b4fdd4d020d57a850",
+  "audit_candidate_id": "asoview-1ebb8d02367e6715",
+  "audit_candidate_path": "codex_audit_queue/asoview/asoview-1ebb8d02367e6715.json",
   "error": "",
   "freshness_status": "fresh"
 }

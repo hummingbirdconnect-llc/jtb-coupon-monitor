@@ -27,7 +27,7 @@
     "source_url": "https://www.jal.co.jp/jp/ja/domtour/birthday-cpn/index.html",
     "source_type": "official_html",
     "fetch_method": "chrome",
-    "last_checked": "2026-10-20",
+    "last_checked": "2026-11-20",
     "confidence": "high",
     "display_type": "yellow_list",
     "placement_hint": "公式クーポンのJALパッククーポン一覧",
@@ -76,7 +76,7 @@
     "source_url": "https://www.jal.co.jp/jp/ja/intltour/birthday-cpn/index.html",
     "source_type": "official_html",
     "fetch_method": "chrome",
-    "last_checked": "2026-10-20",
+    "last_checked": "2026-11-20",
     "confidence": "high",
     "display_type": "yellow_list",
     "placement_hint": "公式クーポンのJALパッククーポン一覧",
@@ -107,36 +107,38 @@
     "article_slug": "jal-pack-coupon",
     "category": "公式クーポン",
     "title": "期間限定タイムセールクーポン（国内）",
-    "discount": "最大30,000円割引",
+    "discount": "1,000円 / 150,000円 / 最大50,000円 / 3,000円",
     "area": "",
     "type": "国内ダイナミックパッケージ",
     "product_type": "国内ダイナミックパッケージ",
-    "booking_period": "2026年10月23日（金）00:00～11月2日（月）23:57",
-    "travel_period": "2026年10月24日（土）～2027年10月10日（日）宿泊",
+    "booking_period": "2026 年 11 月 17 日（火）00:00～ 11 月 30 日（月）23:57",
+    "travel_period": "2026 年 11 月 18 日（水）～ 2027 年 11 月 7 日（日）宿泊 1～4 月",
     "coupon_codes": [],
     "conditions": [
       "JMB会員",
       "先着順",
-      "対象施設・方面限定"
+      "対象施設・方面限定",
+      "利用人数: など適用"
     ],
     "source_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/index.html",
     "source_type": "official_html",
     "fetch_method": "chrome",
-    "last_checked": "2026-10-20",
+    "last_checked": "2026-11-20",
     "confidence": "high",
     "display_type": "yellow_list",
     "placement_hint": "公式クーポンのJALパッククーポン一覧",
     "stock_status": "配布中",
     "detail_url": "https://www.jal.co.jp/jp/ja/domtour/jaldp/time_sale/index.html",
     "detail_data": {
-      "discount": "最大30,000円割引",
+      "discount": "1,000円 / 150,000円 / 最大50,000円 / 3,000円",
       "conditions": [
         "JMB会員",
         "先着順",
-        "対象施設・方面限定"
+        "対象施設・方面限定",
+        "利用人数: など適用"
       ],
-      "booking_period": "2026年10月23日（金）00:00～11月2日（月）23:57",
-      "stay_period": "2026年10月24日（土）～2027年10月10日（日）宿泊",
+      "booking_period": "2026 年 11 月 17 日（火）00:00～ 11 月 30 日（月）23:57",
+      "stay_period": "2026 年 11 月 18 日（水）～ 2027 年 11 月 7 日（日）宿泊 1～4 月",
       "coupon_codes": [],
       "notes": []
     }
@@ -155,7 +157,7 @@
     "area": "",
     "type": "海外ダイナミックパッケージ",
     "product_type": "海外ダイナミックパッケージ",
-    "booking_period": "",
+    "booking_period": "2026 年 11 月 17 日（火）00:00～ 11 月 30 日（月）23:59",
     "travel_period": "2025年4月8日（火）～6月30日（月）",
     "coupon_codes": [],
     "conditions": [
@@ -166,7 +168,7 @@
     "source_url": "https://www.jal.co.jp/jp/ja/intltour/jaldp/timesale/index2.html/",
     "source_type": "official_html",
     "fetch_method": "chrome",
-    "last_checked": "2026-10-20",
+    "last_checked": "2026-11-20",
     "confidence": "high",
     "display_type": "yellow_list",
     "placement_hint": "公式クーポンのJALパッククーポン一覧",
@@ -179,7 +181,7 @@
         "対象方面・旅行代金条件あり",
         "他割引クーポンと併用不可"
       ],
-      "booking_period": "",
+      "booking_period": "2026 年 11 月 17 日（火）00:00～ 11 月 30 日（月）23:59",
       "stay_period": "2025年4月8日（火）～6月30日（月）",
       "coupon_codes": [],
       "notes": []
@@ -215,7 +217,7 @@
     "source_url": "https://www.jal.co.jp/jp/ja/domtour/lsp-coupon/index.html",
     "source_type": "official_html",
     "fetch_method": "chrome",
-    "last_checked": "2026-10-20",
+    "last_checked": "2026-11-20",
     "confidence": "high",
     "display_type": "yellow_list",
     "placement_hint": "会員ランクのJALパッククーポン一覧",
@@ -254,7 +256,7 @@
     "type": "国内ダイナミックパッケージ",
     "product_type": "国内ダイナミックパッケージ",
     "booking_period": "",
-    "travel_period": "2026年6月17日（水）00:00～11月1日（日）23:57",
+    "travel_period": "2026年8月3日（月）10:00～2027年1月30日（土）23:57",
     "coupon_codes": [],
     "conditions": [
       "対象ホテル・対象商品限定",
@@ -267,7 +269,7 @@
     "source_url": "https://www.jal.co.jp/jp/ja/domtour/hayakime-cpn/",
     "source_type": "official_html",
     "fetch_method": "chrome",
-    "last_checked": "2026-10-20",
+    "last_checked": "2026-11-20",
     "confidence": "high",
     "display_type": "yellow_list",
     "placement_hint": "公式クーポンのJALパッククーポン一覧",
@@ -284,7 +286,7 @@
         "対象のお客さま: 対象"
       ],
       "booking_period": "",
-      "stay_period": "2026年6月17日（水）00:00～11月1日（日）23:57",
+      "stay_period": "2026年8月3日（月）10:00～2027年1月30日（土）23:57",
       "coupon_codes": [],
       "notes": []
     }
@@ -313,7 +315,7 @@
     "source_url": "https://www.jal.co.jp/jp/ja/jalcard/service/",
     "source_type": "official_html",
     "fetch_method": "chrome",
-    "last_checked": "2026-10-20",
+    "last_checked": "2026-11-20",
     "confidence": "high",
     "display_type": "yellow_list",
     "placement_hint": "カード連携のJALパッククーポン一覧",
