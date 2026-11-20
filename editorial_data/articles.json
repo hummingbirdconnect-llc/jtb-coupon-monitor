@@ -83,16 +83,6 @@
   "status": "照合済み",
   "matches": [
    {
-    "key": "asoview/asoview-121b4c49d0bc2d8e",
-    "title": "名古屋おでかけ特集クーポン",
-    "basis": "名称一致"
-   },
-   {
-    "key": "asoview/asoview-d57e48fa988c2be5",
-    "title": "神戸おでかけ特集クーポン",
-    "basis": "名称一致"
-   },
-   {
     "key": "asoview/asoview-5954b3703a0c499b",
     "title": "サンリオキャラクターフェスinリトルユニバースOKINAWA セット券 300円OFFクーポン",
     "basis": "名称一致"
@@ -125,6 +115,16 @@
    {
     "key": "asoview/asoview-1ea6f776da88f682",
     "title": "【対象チケット限定】ニンジャ☆パーク1日フリーパス 500円引き",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-121b4c49d0bc2d8e",
+    "title": "名古屋おでかけ特集クーポン",
+    "basis": "名称一致"
+   },
+   {
+    "key": "asoview/asoview-d57e48fa988c2be5",
+    "title": "神戸おでかけ特集クーポン",
     "basis": "名称一致"
    }
   ],
