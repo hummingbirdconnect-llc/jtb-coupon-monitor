@@ -3,7 +3,7 @@ function renderCouponArticleUpdates(container) {
   const rows = DATA.article_watch?.articles || [];
   const stamp = v => v ? new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',dateStyle:'short',timeStyle:'short'}).format(new Date(v)) : '未確認';
   container.innerHTML = `<section class="deal-board update-board"><div class="deal-heading"><h2>記事監視部隊</h2></div>
-    <p class="deal-hint">ウェルトリップ・屋久島ファンのクーポン記事をまとめて確認できます。公開記事の編集日時と、公開記事・公式情報の両方で確認できた照合結果だけを表示します。未確認は「問題なし」を意味しません。日時は日本時間です。</p>
+    <p class="deal-hint">ウェルトリップ・屋久島ファンのクーポン記事をまとめて確認できます。公開記事の編集日時と、公開記事・公式情報の両方で確認できた照合結果だけを表示します。未確認は「問題なし」を意味しません。HISでのコード一致は、確認できた表記の一部です。利用可否・配布状況・条件は未確認です。日時は日本時間です。</p>
     <div class="deal-filters"><label>サイト<select data-site aria-label="サイト"><option value="">両サイト</option><option value="welltrip">ウェルトリップ</option><option value="yakushimafan">屋久島ファン</option></select></label>
     <label>確認状況<select data-state aria-label="確認状況"><option value="">すべて</option><option value="difference">公開情報に差異あり</option><option value="verified">照合記録あり</option><option value="unknown">公式との照合未確認</option></select></label>
     <label>記事名<input data-query type="search" aria-label="記事名" placeholder="旅行会社名・記事名"></label>
@@ -14,7 +14,8 @@ function renderCouponArticleUpdates(container) {
   const norm = s => String(s).normalize('NFKC').toLowerCase();
   function draw() {
     const site=$('[data-site]').value, state=$('[data-state]').value, q=norm($('[data-query]').value);
-    const selected=rows.filter(a=>(!site || a.site===site) && (!q || norm(a.title).includes(q)) &&
+    const now=Date.now();
+    const selected=rows.map(a=>({...a,issues:a.issues.filter(i=>!i.expires_at || Date.parse(i.expires_at)>now)})).filter(a=>(!site || a.site===site) && (!q || norm(a.title).includes(q)) &&
       (!state || (state==='unknown' ? !a.issues.length : state==='verified' ? a.issues.length : a.issues.some(i=>i.status==='difference'))))
       .sort((a,b)=>(b.modified||'').localeCompare(a.modified||'') || a.site.localeCompare(b.site) || a.post_id-b.post_id);
     $('[data-count]').textContent=selected.length+'記事';

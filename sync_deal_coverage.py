@@ -8,7 +8,7 @@ import sqlite3
 import sys
 import unicodedata
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 from urllib.parse import urlsplit
@@ -16,7 +16,9 @@ from urllib.parse import urlsplit
 import requests
 from bs4 import BeautifulSoup
 
+from article_watch import stamp
 from coupon_article_updates import collect_updates
+from his_public_code_proof import TARGETS, build_proof
 from deal_catalog import build_catalog, normalize, read, web_url
 from generate_dashboard import JST, ROOT, build_provider_payload, load_registry
 
@@ -128,7 +130,7 @@ def article_matches(rows, codes, html):
     return found
 
 
-def sync_articles(workspace, providers):
+def sync_articles(workspace, providers, observations=None):
     sys.path.insert(0, str(workspace / "tools"))
     from wp_env import load_wp_config, build_wp_auth
     names = read(ROOT / "config/x_thread_sites.json")["sites"]
@@ -153,13 +155,21 @@ def sync_articles(workspace, providers):
             slug = urlsplit(url).path.strip("/").split("/")[-1]
             resp = requests.get(cfg["WP_URL"] + "/wp-json/wp/v2/posts", auth=build_wp_auth(cfg),
                                 params=dict(context="edit", status="publish", slug=slug,
-                                            _fields="id,slug,status,link,content,password"), timeout=20)
+                                            _fields="id,slug,status,link,content,password,modified_gmt"), timeout=20)
             resp.raise_for_status()
             for post in resp.json():
                 if (post["status"] == "publish" and not post.get("password") and post["slug"] == slug
                         and post["link"].rstrip("/") == url.rstrip("/")):
                     rec["matches"] = article_matches(by_provider[pid], codes, post["content"]["rendered"])
                     rec.update(status="照合済み", post_id=post["id"])
+                    if observations is not None and TARGETS.get(site) == (post["id"], url):
+                        gmt = post.get("modified_gmt")
+                        observations[site, url] = dict(
+                            id=post["id"], link=post["link"], status=post["status"],
+                            password=post.get("password"),
+                            modified_at=stamp(gmt + "Z") if isinstance(gmt, str) else None,
+                            rendered=post["content"]["rendered"],
+                            observed_at=datetime.now(timezone.utc).isoformat())
                     break
         except (OSError, requests.RequestException, ValueError, KeyError):
             pass
@@ -189,8 +199,14 @@ def main():
     providers = [build_provider_payload(p) for p in load_registry()]
     rows = x_receipts(workspace, providers)
     save(dest / "x.json", rows)
-    checks = sync_articles(workspace, providers)
+    observations = {}
+    checks = sync_articles(workspace, providers, observations)
     save(dest / "articles.json", checks)
+    try:
+        save(dest / "article-watch-public.json", build_proof(ROOT, updates, observations, datetime.now(timezone.utc)))
+    except OSError:
+        # Do not break regular coverage or expose source details; earlier proof expires.
+        print("::warning::HIS公開コード照合の保存に失敗しました。", flush=True)
     checked = sum(c["status"] == "照合済み" for c in checks)
     print(f"Xの取材・投稿記録 {len(rows)}件。公開記事 {checked}/{len(checks)}本の本文を照合。")
     if len(checks) != checked:

@@ -44,7 +44,8 @@ def official_origin(value):
     # Deliberately never export paths, query strings, fragments or redirect URLs.
     return 'https://' + h + '/'
 
-def build_article_watch(scope, feed=None):
+def build_article_watch(scope, feed=None, now=None):
+    now = (now or datetime.now(timezone.utc)).astimezone(timezone.utc).isoformat(timespec="seconds")
     records = {}
     for site in scope.get('sites', []):
         sid = site.get('site')
@@ -70,21 +71,38 @@ def build_article_watch(scope, feed=None):
                 records[key]['published_run'] = published
     accepted = {}
     if isinstance(feed, dict) and feed.get('schema_version') == 1 and feed.get('public_export') is True:
-        for f in feed.get('findings', []):
+        producer = feed.get('producer')
+        findings = feed.get('findings')
+        if not isinstance(findings, list) or producer not in (None, 'his-visible-code-v1'):
+            findings = []
+        for f in findings:
             if not isinstance(f, dict): continue
-            key = (f.get('site'), f.get('post_id'))
+            if not isinstance(f.get('site'), str) or type(f.get('post_id')) is not int:
+                continue
+            key = (f['site'], f['post_id'])
             if key not in records or f.get('article_verified') is not True or f.get('official_verified') is not True: continue
-            if f.get('field') not in FIELDS or f.get('status') not in STATUSES: continue
+            if not all(isinstance(f.get(k), str) for k in ('field', 'status')): continue
+            if f['field'] not in FIELDS or f['status'] not in STATUSES: continue
             offer = f.get('offer_id'); at = stamp(f.get('checked_at'))
             try: origin = official_origin(f.get('official_url'))
             except ValueError: origin = None
             if not isinstance(offer, str) or not offer.strip() or not at or not origin: continue
+            expires = None
+            if producer == 'his-visible-code-v1':
+                expires = stamp(f.get('expires_at'))
+                if (f['field'] != 'code' or f['status'] != 'match' or not expires or
+                        not at <= now < expires or origin != 'https://www.his-j.com/' or
+                        not records[key]['scope_current'] or not records[key]['modified'] or
+                        stamp(f.get('article_modified')) != records[key]['modified']):
+                    continue
             # Never copy a private offer label/ID to the public dashboard.
             oid = hashlib.sha256(offer.encode()).hexdigest()[:16]
             k = (*key, oid, f['field'])
             entry = dict(offer_key=oid, field=f['field'], field_label=FIELDS[f['field']],
                          status=f['status'], status_label=STATUSES[f['status']],
                          checked_at=at, official_origin=origin)
+            if expires:
+                entry.update(expires_at=expires, status_label='公開記事のコード表記が公式と一致')
             if k not in accepted or at > accepted[k]['checked_at']: accepted[k] = entry
     for (sid, pid, _, _), issue in sorted(accepted.items()): records[sid, pid]['issues'].append(issue)
     return {'schema_version': 1, 'articles': list(records.values()),
