@@ -1,0 +1,52 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-21T08:21:00+09:00",
+  "source": "grok_web_x_claude_in_chrome",
+  "verification": "official_page_partial",
+  "note": "X上のGrokで見つけ、公式ページで一部の条件を照らした候補。ウェルトリップのXで投稿済みのものは含まない",
+  "status": "ok",
+  "new_count": 3,
+  "candidate_count": 3,
+  "candidates": [
+    {
+      "title": "楽天トラベル BLACK FRIDAY",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/special/blackfriday/",
+      "official_url": "https://travel.rakuten.co.jp/special/blackfriday/",
+      "evidence": "公式：国内ホテル最大30%OFF（最大10%OFF＋最大20%OFF）、アプリ限定最大14,000円OFF、交通＋宿最大7,500円、レンタカー最大45%OFF（各クーポン併用時） ／ 公式：国内宿泊 オンラインカード決済限定 10%OFF 先着利用200,000枚 ／ 公式：クーポンには金額条件があり、利用条件・対象施設・併用可否はクーポンごとに異なる ／ 未確認：予約期間（ページの文字で読めず） ／ 未確認：旅行期間 ／ 未確認：最低利用額の具体額 ／ 未確認：対象者",
+      "observed_date": "2026-11-21",
+      "discount": "国内ホテル最大30%OFF（最大10%OFF＋最大20%OFFの併用）、アプリ限定最大14,000円OFF、交通＋宿最大7,500円、レンタカー最大45%OFF",
+      "period": "予約：未確認（Grok: 2026年11月19日10:00〜2026年12月1日9:59） ／ 旅行：未確認（Grok: 主に2026年11月19日チェックイン〜2027年10月31日チェックアウト、クーポンにより異なる）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "楽天トラベル お得なクーポン祭（11月回）",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "official_url": "https://travel.rakuten.co.jp/coupon/special/matsuri/",
+      "evidence": "公式：予約対象期間 2026/11/4（水）10:00〜2026/12/2（水）09:59。次回は12月2日 ／ 公式：全楽天会員 500円OFF 宿クーポン 先着利用300,000枚 ／ 公式：ダイヤモンド会員限定 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員限定 週末3,000円/1,500円OFF・平日2,500円/1,000円OFF ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-21",
+      "discount": "全楽天会員500円OFF（全曜日の宿泊）、ダイヤモンド会員限定 週末4,500円OFF・平日4,000円OFF、ダイヤモンド・プラチナ会員限定 週末3,000円/1,500円OFF・平日2,500円/1,000円OFF",
+      "period": "予約：2026年11月4日（水）10:00〜2026年12月2日（水）9:59 ／ 旅行：未確認（Grok: 2026年11月4日チェックイン〜2027年10月31日チェックアウト、除外日あり）",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    },
+    {
+      "title": "毎月5と0のつく日（ホテル・温泉宿）最大20%OFF",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "official_url": "https://travel.rakuten.co.jp/camp/50luxday/",
+      "evidence": "公式：毎月5と0のつく日から48時間限定！ホテル・温泉宿が最大20％OFF ／ 公式：国内宿泊 高級宿・温泉宿 10%OFF 先着利用2,000,000枚、10%OFF 先着利用1,000,000枚（東日本・西日本対象施設）、5%OFF 先着利用2,000,000枚 ／ 未確認：旅行期間 ／ 未確認：最低利用額 ／ 未確認：決済方法",
+      "observed_date": "2026-11-21",
+      "discount": "高級宿・温泉宿で最大20%OFF（10%OFFクーポン2種・5%OFFクーポンなど）",
+      "period": "予約：毎月5と0のつく日から48時間限定 ／ 旅行：未確認",
+      "confidence": "medium",
+      "status": "new",
+      "official_domain_match": true
+    }
+  ]
+}
