@@ -7,10 +7,12 @@
       "title": "じゃらんのお得な10日間（11月回）",
       "added_on": "2026-11-17",
       "expires_on": "2026-11-20",
-      "active": true,
+      "active": false,
       "from_hint_file": "discovery_hints/jalan/hints_2026-11-17_web080620.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-20T07:22:42.021838+09:00"
+      "last_check_seen": "2026-11-20T07:22:42.021838+09:00",
+      "deactivated_on": "2026-11-21",
+      "deactivated_reason": "期限切れ"
     },
     {
       "provider_id": "rakuten_travel",
@@ -21,7 +23,7 @@
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-20T07:22:45.169549+09:00"
+      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -32,7 +34,7 @@
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-20T07:22:45.169549+09:00"
+      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
     },
     {
       "provider_id": "jalan",
@@ -43,7 +45,7 @@
       "active": true,
       "from_hint_file": "discovery_hints/jalan/hints_2026-11-18_web080624.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-20T07:22:42.021838+09:00"
+      "last_check_seen": "2026-11-21T07:23:04.865359+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -53,7 +55,8 @@
       "expires_on": "2027-01-04",
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-20.json",
-      "fail_streak": 0
+      "fail_streak": 0,
+      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -63,7 +66,8 @@
       "expires_on": "2027-01-04",
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-20_web080631.json",
-      "fail_streak": 0
+      "fail_streak": 0,
+      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
     }
   ]
 }
