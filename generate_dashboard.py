@@ -15,6 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from deal_catalog import build_catalog
+from article_watch import load_article_watch
 from his_regions import coupon_region_codes
 from affiliate_links import affiliate_setup_status, load_affiliate_config, resolve_affiliate_url
 from grok_deal_discovery import latest_hints_file
@@ -1255,6 +1256,7 @@ def build_dashboard_data() -> dict[str, Any]:
         "recent_change_dates": recent_day_filters,
         "recent_change_rows": recent_change_rows,
         "deals": build_catalog(ROOT, providers),
+        "article_watch": load_article_watch(ROOT),
         "coupon_articles": (load_json(ROOT / "editorial_data/coupon-articles.json")
                             if (ROOT / "editorial_data/coupon-articles.json").exists() else {"sites": []}),
         "flash": build_flash_data(providers, registry, recent_day_filters),

@@ -1,4 +1,39 @@
 function renderCouponArticleUpdates(container) {
+  const esc = escapeHtml;
+  const rows = DATA.article_watch?.articles || [];
+  const stamp = v => v ? new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo',dateStyle:'short',timeStyle:'short'}).format(new Date(v)) : '未確認';
+  container.innerHTML = `<section class="deal-board update-board"><div class="deal-heading"><h2>記事監視部隊</h2></div>
+    <p class="deal-hint">ウェルトリップ・屋久島ファンのクーポン記事をまとめて確認できます。公開記事の編集日時と、公開記事・公式情報の両方で確認できた照合結果だけを表示します。未確認は「問題なし」を意味しません。日時は日本時間です。</p>
+    <div class="deal-filters"><label>サイト<select data-site aria-label="サイト"><option value="">両サイト</option><option value="welltrip">ウェルトリップ</option><option value="yakushimafan">屋久島ファン</option></select></label>
+    <label>確認状況<select data-state aria-label="確認状況"><option value="">すべて</option><option value="difference">公開情報に差異あり</option><option value="verified">照合記録あり</option><option value="unknown">公式との照合未確認</option></select></label>
+    <label>記事名<input data-query type="search" aria-label="記事名" placeholder="旅行会社名・記事名"></label>
+    <button data-reset type="button">条件を戻す</button></div>
+    <p data-count aria-live="polite"></p><div class="deal-list"><table class="update-table" aria-label="記事監視部隊"><thead><tr><th>記事</th><th>公開記事の最終編集</th><th>公式との照合</th></tr></thead><tbody data-rows></tbody></table></div>
+    <p class="deal-hint">修正文・承認待ちの下書き・非公開の分析情報は掲載しません。この画面から記事の公開や編集は行いません。施策や項目が異なる照合結果は別々に保持します。</p></section>`;
+  const $ = s => container.querySelector(s);
+  const norm = s => String(s).normalize('NFKC').toLowerCase();
+  function draw() {
+    const site=$('[data-site]').value, state=$('[data-state]').value, q=norm($('[data-query]').value);
+    const selected=rows.filter(a=>(!site || a.site===site) && (!q || norm(a.title).includes(q)) &&
+      (!state || (state==='unknown' ? !a.issues.length : state==='verified' ? a.issues.length : a.issues.some(i=>i.status==='difference'))))
+      .sort((a,b)=>(b.modified||'').localeCompare(a.modified||'') || a.site.localeCompare(b.site) || a.post_id-b.post_id);
+    $('[data-count]').textContent=selected.length+'記事';
+    $('[data-rows]').innerHTML=selected.map(a=>`<tr><td><span class="deal-meta">${esc(a.site_name)} · ${a.post_id}</span><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.title)}</a></td>
+      <td>${esc(stamp(a.modified))}${a.public_change_at?`<span class="deal-meta">公開本文の条件変更：${esc(stamp(a.public_change_at))} · ${esc(a.public_change_fields.join('・'))}</span>`:''}${a.published_run?`<span class="deal-meta">作業で公開更新：${esc(a.published_run)}</span>`:''}<span class="deal-meta">公開記事一覧の確認：${esc(stamp(a.scope_checked_at))}${a.scope_current?'':'（前回の記録）'}</span></td>
+      <td>${a.issues.length ? a.issues.map(i=>`<div><b>${esc(i.field_label)}</b>：${esc(i.status_label)}<span class="deal-meta">${esc(stamp(i.checked_at))} · <a href="${esc(i.official_origin)}" target="_blank" rel="noopener noreferrer">公式サイト</a></span></div>`).join('') : '公式との照合未確認'}</td></tr>`).join('') || '<tr><td colspan="3">条件に合う記事はありません。</td></tr>';
+  }
+  container.querySelectorAll('select').forEach(el=>el.onchange=draw);
+  $('[data-query]').oninput=draw;
+  $('[data-reset]').onclick=()=>{container.querySelectorAll('select,input').forEach(el=>el.value='');draw();};
+  draw();
+  const legacy = document.createElement('details');
+  legacy.innerHTML = '<summary>従来の更新履歴・並べ替えを開く</summary><div data-history></div>';
+  container.appendChild(legacy);
+  let historyReady=false;
+  legacy.ontoggle=()=>{if(legacy.open && !historyReady){renderCouponArticleUpdateHistory(legacy.querySelector('[data-history]'));historyReady=true;}};
+}
+
+function renderCouponArticleUpdateHistory(container) {
   const sites = DATA.coupon_articles?.sites || [];
   const esc = escapeHtml;
   const day = value => (value || '').slice(0, 10);

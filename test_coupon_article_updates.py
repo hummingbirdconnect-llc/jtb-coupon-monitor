@@ -52,3 +52,21 @@ class CouponArticleUpdateTests(TestCase):
             proof=root/"20261117-morning/check/scope-111-final/report.json"
             proof.write_text(json.dumps({"exit_code":0,"source_sha256":"old","candidate_sha256":"wrong"}))
             self.assertNotIn("published_run",job_records(root)["welltrip",111])
+
+    def test_modern_compare_public_and_express_fail_closed(self):
+        with TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run = root/'20261120-express-091500'
+            folder = run/'check/stage3'; folder.mkdir(parents=True)
+            (run/'run.done').write_text('0 completed')
+            (run/'stage3.ok').touch()
+            item = dict(status='publish',ok=True,backup_ok=True,same_as_pre=False,same_as_stage2_post=True)
+            (folder/'compare.json').write_text(json.dumps({'ng':[], 'items':{'welltrip-12':item,'yakushimafan-12':{**item,'status':'draft'}}}))
+            public = {'welltrip-12':dict(code=200,login=False,title=True,url='https://travel.hb-connect.co.jp/coupon/')}
+            (folder/'public.json').write_text(json.dumps(public))
+            out=job_records(root)
+            self.assertEqual(out['welltrip',12]['published_run'],'2026-11-20 臨時')
+            self.assertNotIn(('yakushimafan',12),out)
+            public['welltrip-12']['login']=True
+            (folder/'public.json').write_text(json.dumps(public))
+            self.assertFalse(job_records(root))

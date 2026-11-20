@@ -133,11 +133,41 @@ def job_records(run_dir):
     evidence = defaultdict(dict)
     runs = []
     for path in run_dir.glob("????????-*"):
-        match = re.fullmatch(r"(\d{8})-(morning|evening)", path.name)
+        match = re.fullmatch(r"(\d{8})-(morning|evening|express-\d{6})", path.name)
         if match and (path / "stage3.ok").is_file() and (path / "run.done").is_file():
-            runs.append((match[1], match[2] == "evening", path))
-    for ymd, evening, path in sorted(runs):
+            runs.append((match[1], match[2], path))
+    for ymd, period, path in sorted(runs, key=lambda r: (r[0], "073500" if r[1] == "morning" else "161500" if r[1] == "evening" else r[1].split("-", 1)[1])):
         checks = path / "check"
+        # Modern runner: successful compare + live public readback. No drafts
+        # or repair prose are exported by this branch.
+        modern = checks / "stage3/compare.json"
+        public = checks / "stage3/public.json"
+        if modern.is_file() and public.is_file():
+            if not re.match(r"^0\s", (path / "run.done").read_text()):
+                continue
+            comparison, published = read_json(modern), read_json(public)
+            if comparison.get("ng") != [] or not isinstance(comparison.get("items"), dict):
+                continue
+            day = f"{ymd[:4]}-{ymd[4:6]}-{ymd[6:]}"
+            slot = day + (" 朝" if period == "morning" else " 夕" if period == "evening" else " 臨時")
+            for key, item in comparison["items"].items():
+                m = re.fullmatch(r"(welltrip|yakushimafan)-(\d+)", key)
+                proof = published.get(key, {})
+                if not m or not isinstance(item, dict) or not isinstance(proof, dict):
+                    continue
+                if (item.get("status") != "publish" or item.get("ok") is not True
+                        or item.get("backup_ok") is not True or proof.get("code") != 200
+                        or proof.get("login") is not False or proof.get("title") is not True):
+                    continue
+                host = "travel.hb-connect.co.jp" if m[1] == "welltrip" else "yakushima.fun"
+                if urlsplit(proof.get("url", "")).hostname != host:
+                    continue
+                entry = evidence[m[1], int(m[2])]
+                if item.get("same_as_pre") is True:
+                    entry.update(last_run=slot, run_result="公開本文の変更なし")
+                elif item.get("same_as_pre") is False and item.get("same_as_stage2_post") is True:
+                    entry.update(last_run=slot, run_result="公開本文を更新", published_run=slot)
+            continue
         final = checks / "final-stats.json"
         pre = checks / "pre-stats.json"
         if not final.is_file() or not pre.is_file():
@@ -145,7 +175,7 @@ def job_records(run_dir):
         if not re.match(r"^0\s", (path / "run.done").read_text()):
             continue
         day = f"{ymd[:4]}-{ymd[4:6]}-{ymd[6:]}"
-        slot = day + (" 夕" if evening else " 朝")
+        slot = day + (" 朝" if period == "morning" else " 夕" if period == "evening" else " 臨時")
         before, after = read_json(pre), read_json(final)
         if not isinstance(before, dict) or not isinstance(after, dict):
             continue
