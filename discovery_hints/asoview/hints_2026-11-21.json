@@ -1,0 +1,46 @@
+{
+  "provider_id": "asoview",
+  "provider_label": "アソビュー",
+  "generated_at": "2026-11-21T07:40:16.985271+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 16,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "【ブラックフライデー】対象施設限定500円OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/assetformer/status/2123775060662178214",
+      "official_url": "https://www.asoview.com/coupon/",
+      "official_domain_match": true,
+      "evidence": "保存日時2026-11-21 07:30。公開一覧で名称・割引額・11/29期限を確認。年の記載なし。獲得はログインが必要。",
+      "observed_date": "2026-11-21",
+      "discount": "500円OFF",
+      "period": "11/29まで有効",
+      "confidence": "medium",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "【ブラックフライデー】対象施設限定1,000円OFFクーポン",
+      "kind": "coupon",
+      "found_url": "https://x.com/assetformer/status/2123775060662178214",
+      "official_url": "https://www.asoview.com/coupon/",
+      "official_domain_match": true,
+      "evidence": "保存日時2026-11-21 07:30。公開一覧で名称・割引額・11/29期限を確認。年の記載なし。獲得はログインが必要。",
+      "observed_date": "2026-11-21",
+      "discount": "1,000円OFF",
+      "period": "11/29まで有効",
+      "confidence": "medium",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/asoview/hints_2026-11-21.json"
+}

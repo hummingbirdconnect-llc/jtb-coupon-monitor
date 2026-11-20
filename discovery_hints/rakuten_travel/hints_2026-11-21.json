@@ -1,0 +1,17 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-21T07:40:16.985271+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "Rakuten STAYの発見情報を公式確認できず。推定URLは404。公式クーポン一覧の主要施策は既知。",
+  "known_title_count": 40,
+  "registered_url_count": 5,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-21.json"
+}

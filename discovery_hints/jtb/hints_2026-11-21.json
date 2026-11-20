@@ -1,0 +1,60 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-21T07:40:16.985271+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 124,
+  "registered_url_count": 125,
+  "candidates": [
+    {
+      "title": "【往復ANA便利用限定】＜沖縄行き＞年末年始ツアーで使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611anadp2/page.asp",
+      "official_domain_match": true,
+      "evidence": "指定16路線の往復ANA直行便、2名以上。20万円以上で4万円引。会員限定・先着。",
+      "observed_date": "2026-11-21",
+      "discount": "40,000 円引 / 30,000 円引 / 20,000 円引",
+      "period": "予約対象期間 2026/11/19(木) ～ 2027/1/2(土) / 出発対象期間 2026/12/20(日) ～ 2027/1/3(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "だんだん島根割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611shimane/page.asp",
+      "official_domain_match": true,
+      "evidence": "島根県の対象施設。12万円以上で2万円引など。会員限定・先着。",
+      "observed_date": "2026-11-21",
+      "discount": "20,000 円引 / 10,000 円引 / 6,000 円引 / 3,000 円引",
+      "period": "予約対象期間 2026/11/6(金) ～ 2027/2/28(日) / 宿泊対象期間 2027/1/4(月) ～ 2027/2/28(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "☆【沖縄】1月～5月出発☆冬旅からGW旅行に使えるおすすめ旅行割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611okinawa/page.asp",
+      "official_domain_match": true,
+      "evidence": "沖縄県の対象施設、2名以上。35万円以上で2万円引など。会員限定・先着。",
+      "observed_date": "2026-11-21",
+      "discount": "20,000 円引 / 15,000 円引 / 10,000 円引",
+      "period": "予約対象期間 2026/11/6(金) ～ 2027/3/31(水) / 出発対象期間 2027/1/1(金) ～ 2027/5/31(月)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-21.json"
+}
