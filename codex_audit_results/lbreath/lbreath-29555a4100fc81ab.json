@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "lbreath-29555a4100fc81ab",
+  "provider_id": "lbreath",
+  "page_summary": "オンラインストアクーポン一覧。L-Breathの札3件を確認（ほかの店の札も並ぶ）。",
+  "change_summary": "初回（baseline）。L-Breath 3件を新規確認。",
+  "recommendation": "draft",
+  "priority": 70,
+  "uncertainty_reasons": [],
+  "audit_notes": "他店の札 40 件は対象外（ゼビオ・ヴィクトリアゴルフ・ヴィクトリア）。札の有効期限は booking_end と eligibility に原文のまま記載。クーポンコードは表示なし。取得にログインが必要。",
+  "deals": [
+    {
+      "title": "【アウトドア】＜オンラインストア限定＞対象のアウトドア商品を購入で使える10%OFFクーポン",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "10%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": "2026-11-19",
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "表示価格より10%OFF。公式オンラインストア限定。L-Breath。2026/11/19まで",
+      "official_url": "https://www.supersports.com/ja-jp/lbreath/coupons/",
+      "evidence_quote": "表示価格より 10 % OFF 取得する 公式オンラインストア限定 L-Breath 【アウトドア】＜オンラインストア限定＞対象のアウトドア商品を購入で使える10%OFFクーポン 2026/11/19まで",
+      "confidence": "high"
+    },
+    {
+      "title": "【アウトドア】＜オンラインストア限定＞ブラックフライデークーポン！対象アイテム50％OFF！",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "50%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": "2026-11-30",
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "表示価格より50%OFF。公式オンラインストア限定。L-Breath。2026/11/30まで",
+      "official_url": "https://www.supersports.com/ja-jp/lbreath/coupons/",
+      "evidence_quote": "表示価格より 50 % OFF 取得する 公式オンラインストア限定 L-Breath 【アウトドア】＜オンラインストア限定＞ブラックフライデークーポン！対象アイテム50％OFF！ 2026/11/30まで",
+      "confidence": "high"
+    },
+    {
+      "title": "【アウトドア】＜オンラインストア限定＞サロモン対象商品ご購入で15％OFFクーポン！(LB)",
+      "campaign_type": "coupon",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "15%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": "2026-12-11",
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "表示価格より15%OFF。公式オンラインストア限定。L-Breath。2026/12/11まで",
+      "official_url": "https://www.supersports.com/ja-jp/lbreath/coupons/",
+      "evidence_quote": "表示価格より 15 % OFF 取得する 公式オンラインストア限定 L-Breath 【アウトドア】＜オンラインストア限定＞サロモン対象商品ご購入で15％OFFクーポン！(LB) 2026/12/11まで",
+      "confidence": "high"
+    }
+  ]
+}

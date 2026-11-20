@@ -748,6 +748,41 @@
       "recommendation": "draft",
       "applied_at": "2026-11-19T09:11:19.580393+09:00",
       "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-fc6729666e7fde80.json"
+    },
+    "asoview-1ebb8d02367e6715": {
+      "provider_id": "asoview",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-20T09:12:04.798584+09:00",
+      "result_path": "codex_audit_results/asoview/asoview-1ebb8d02367e6715.json"
+    },
+    "jalan-df1842112c579c1a": {
+      "provider_id": "jalan",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-20T09:12:04.802701+09:00",
+      "result_path": "codex_audit_results/jalan/jalan-df1842112c579c1a.json"
+    },
+    "lbreath-29555a4100fc81ab": {
+      "provider_id": "lbreath",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-20T09:12:04.804064+09:00",
+      "result_path": "codex_audit_results/lbreath/lbreath-29555a4100fc81ab.json"
+    },
+    "rakuten_travel-dc1bc3405e1641f7": {
+      "provider_id": "rakuten_travel",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-20T09:12:04.809087+09:00",
+      "result_path": "codex_audit_results/rakuten_travel/rakuten_travel-dc1bc3405e1641f7.json"
+    },
+    "tobu_top_tours-52577c5237a9a09e": {
+      "provider_id": "tobu_top_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-20T09:12:04.810759+09:00",
+      "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-52577c5237a9a09e.json"
     }
   }
 }
