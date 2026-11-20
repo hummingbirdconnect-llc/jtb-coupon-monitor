@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-20T16:03:22.290271+09:00",
-  "completed_at": "2026-11-20T16:03:29.550774+09:00",
-  "official_fetched_at": "2026-11-20T16:03:29.550780+09:00",
+  "started_at": "2026-11-21T07:22:57.029773+09:00",
+  "completed_at": "2026-11-21T07:23:04.863838+09:00",
+  "official_fetched_at": "2026-11-21T07:23:04.863844+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -90,22 +90,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 36249,
-      "content_hash": "3f061b3560922bde09abc0c1b797fc4ad5f60696c2e356806a233fc1f86773dc"
-    },
-    {
-      "url": "https://www.jalan.net/news/article/919372/",
-      "ok": true,
-      "status_code": 200,
-      "fetch_method": "html",
-      "error": "",
-      "purpose": "候補から追加: じゃらんのお得な10日間（11月回）",
-      "source_role": "hint_added",
-      "include_in_audit": true,
-      "discovered_from": "",
-      "discovered_urls": [],
-      "text_chars": 8916,
-      "content_hash": "f950387a41226987c711c78884bf9ecd67468b5427dab117fe1d52354c28add3"
+      "text_chars": 36259,
+      "content_hash": "55e9503c74bb382e0481726d237952863874b958ae80e330d03d2b62e83a4d06"
     },
     {
       "url": "https://www.jalan.net/theme/PointUpCampaign_202611_02/",
@@ -123,10 +109,10 @@
     }
   ],
   "failed_source_count": 0,
-  "configured_source_count": 8,
-  "hint_source_count": 2,
+  "configured_source_count": 7,
+  "hint_source_count": 1,
   "discovered_source_count": 0,
-  "audit_source_count": 7,
+  "audit_source_count": 6,
   "manual_source_count": 7,
   "coverage_scope": "curated_representative",
   "count_scope_label": "代表クーポン",
@@ -136,12 +122,12 @@
   "wp_review_eligible": false,
   "status": "audit_pending",
   "change_kind": "update",
-  "content_hash": "d0c3bd7fc521603e1ae0a5e730f6d43c719ac0d5a0c668a70d7b7861f6d19a5a",
+  "content_hash": "03abc83f62d83cc705a7f248501128ba12d4b2d76f94a2c0e887dc65c324bec2",
   "data_date": "2026-11-20",
   "latest_file": "coupons_2026-11-20.json",
   "coupon_count": 20,
-  "audit_candidate_id": "jalan-d0c3bd7fc521603e",
-  "audit_candidate_path": "codex_audit_queue/jalan/jalan-d0c3bd7fc521603e.json",
+  "audit_candidate_id": "jalan-03abc83f62d83cc7",
+  "audit_candidate_path": "codex_audit_queue/jalan/jalan-03abc83f62d83cc7.json",
   "error": "",
   "freshness_status": "fresh"
 }
