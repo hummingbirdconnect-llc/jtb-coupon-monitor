@@ -1070,7 +1070,7 @@
       "title": "おでんせ！いわて旅割キャンペーン 第2弾【県央・県南エリア】（おとな・こどもひとり1泊あたり最大5,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-xiwtn26sp50-8d460be3b6": {
       "first_seen": "2026-09-02",
@@ -1078,7 +1078,7 @@
       "title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-mss26sep20-2c5ca71865": {
       "first_seen": "2026-09-02",
@@ -1214,7 +1214,7 @@
       "title": "静岡県 東伊豆町のおすすめ施設で使えるクーポン（平日・休日の宿泊20％引き・最大割引額30,000円、休前日の宿泊15％引き・最大割引額20,000円）",
       "category": "エリア限定クーポン",
       "discount": "最大20%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-kgwa26oct80-kgwa26oct60-kgwa26oct40-867df5079d": {
       "first_seen": "2026-10-19",
@@ -1230,7 +1230,7 @@
       "title": "「九州ふっこう応援割ふくおかキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-xksag26sp50-a9e966d852": {
       "first_seen": "2026-10-19",
@@ -1550,7 +1550,7 @@
       "title": "【ブラックフライデー】割引クーポン",
       "category": "複数エリア対象クーポン",
       "discount": "最大¥1,000引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-pp263suis15-7f98ac515e": {
       "first_seen": "2026-11-17",
@@ -1599,7 +1599,23 @@
       "category": "施設限定クーポン",
       "discount": "最大15%引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-srnw26nov10-3a9d623763": {
+      "first_seen": "2026-11-20",
+      "last_seen": "2026-11-20",
+      "title": "北海道 北湯沢温泉 きたゆざわ 森のソラニワで使えるクーポン（最大6,000円引き）",
+      "category": "施設限定クーポン",
+      "discount": "最大10%引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-mdrk26nov10-aecf51e9f3": {
+      "first_seen": "2026-11-20",
+      "last_seen": "2026-11-20",
+      "title": "北海道 北湯沢温泉 緑の風リゾート きたゆざわで使えるクーポン（最大6,000円引き）",
+      "category": "施設限定クーポン",
+      "discount": "最大10%引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-11-20T07:22:53.174497+09:00"
+  "last_updated": "2026-11-20T16:03:37.638710+09:00"
 }

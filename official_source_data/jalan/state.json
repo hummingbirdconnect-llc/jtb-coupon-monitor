@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "df1842112c579c1aaaf2f7420cf91d424aee6f10968d227bd6c9bcdca461a807",
-  "last_checked_at": "2026-11-20T07:22:42.021838+09:00",
+  "observed_hash": "d0c3bd7fc521603e1ae0a5e730f6d43c719ac0d5a0c668a70d7b7861f6d19a5a",
+  "last_checked_at": "2026-11-20T16:03:29.552665+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -87,8 +87,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 43217,
-      "content_hash": "2fae4637541b6a7436c45b69a457c3e51f92e357fec82617018b9745414da7bf"
+      "text_chars": 36249,
+      "content_hash": "3f061b3560922bde09abc0c1b797fc4ad5f60696c2e356806a233fc1f86773dc"
     },
     {
       "url": "https://www.jalan.net/news/article/919372/",
@@ -119,10 +119,10 @@
       "content_hash": "c8a8d0a716e5a171deecfbc831fc9015d684527157eb625e618f1c677bce918e"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-11-20T07:22:42.025098+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "d0c3bd7fc521603e1ae0a5e730f6d43c719ac0d5a0c668a70d7b7861f6d19a5a",
+  "queued_candidate_id": "jalan-d0c3bd7fc521603e",
+  "queued_at": "2026-11-20T16:03:29.555188+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-11-20T09:12:04.802065+09:00",
   "last_audit_candidate_id": "jalan-df1842112c579c1a",
   "processed_hash": "df1842112c579c1aaaf2f7420cf91d424aee6f10968d227bd6c9bcdca461a807",

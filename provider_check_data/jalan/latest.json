@@ -2,9 +2,9 @@
   "provider_id": "jalan",
   "provider_label": "じゃらん",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-20T07:22:29.827965+09:00",
-  "completed_at": "2026-11-20T07:22:42.019473+09:00",
-  "official_fetched_at": "2026-11-20T07:22:42.019480+09:00",
+  "started_at": "2026-11-20T16:03:22.290271+09:00",
+  "completed_at": "2026-11-20T16:03:29.550774+09:00",
+  "official_fetched_at": "2026-11-20T16:03:29.550780+09:00",
   "source_results": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -90,8 +90,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 43217,
-      "content_hash": "2fae4637541b6a7436c45b69a457c3e51f92e357fec82617018b9745414da7bf"
+      "text_chars": 36249,
+      "content_hash": "3f061b3560922bde09abc0c1b797fc4ad5f60696c2e356806a233fc1f86773dc"
     },
     {
       "url": "https://www.jalan.net/news/article/919372/",
@@ -136,12 +136,12 @@
   "wp_review_eligible": false,
   "status": "audit_pending",
   "change_kind": "update",
-  "content_hash": "df1842112c579c1aaaf2f7420cf91d424aee6f10968d227bd6c9bcdca461a807",
-  "data_date": "2026-11-19",
-  "latest_file": "coupons_2026-11-19.json",
-  "coupon_count": 19,
-  "audit_candidate_id": "jalan-df1842112c579c1a",
-  "audit_candidate_path": "codex_audit_queue/jalan/jalan-df1842112c579c1a.json",
+  "content_hash": "d0c3bd7fc521603e1ae0a5e730f6d43c719ac0d5a0c668a70d7b7861f6d19a5a",
+  "data_date": "2026-11-20",
+  "latest_file": "coupons_2026-11-20.json",
+  "coupon_count": 20,
+  "audit_candidate_id": "jalan-d0c3bd7fc521603e",
+  "audit_candidate_path": "codex_audit_queue/jalan/jalan-d0c3bd7fc521603e.json",
   "error": "",
   "freshness_status": "fresh"
 }

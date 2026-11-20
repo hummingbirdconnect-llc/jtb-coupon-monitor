@@ -22,13 +22,13 @@
         "discount": "7% クーポン",
         "expired": false,
         "min_booking_amount": "なし",
-        "coupons_left": "クーポン残り9,973,910枚！",
+        "coupons_left": "クーポン残り9,973,882枚！",
         "search_url": "https://www.rurubu.travel/?cid=1924078",
         "booking_period": "2026年4月22日～2999年12月1日"
       }
     ],
     "conditions": [
-      "残数表示: クーポン残り9,973,910枚！"
+      "残数表示: クーポン残り9,973,882枚！"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -48,7 +48,7 @@
           "discount": "7% クーポン",
           "expired": false,
           "min_booking_amount": "なし",
-          "coupons_left": "クーポン残り9,973,910枚！",
+          "coupons_left": "クーポン残り9,973,882枚！",
           "search_url": "https://www.rurubu.travel/?cid=1924078",
           "booking_period": "2026年4月22日～2999年12月1日"
         }
@@ -82,13 +82,13 @@
         "discount": "6% クーポン",
         "expired": false,
         "min_booking_amount": "なし",
-        "coupons_left": "クーポン残り9,990,262枚！",
+        "coupons_left": "クーポン残り9,990,267枚！",
         "search_url": "https://www.rurubu.travel/?cid=1924078",
         "booking_period": "2026年4月22日～2999年12月1日"
       }
     ],
     "conditions": [
-      "残数表示: クーポン残り9,990,262枚！"
+      "残数表示: クーポン残り9,990,267枚！"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -108,7 +108,7 @@
           "discount": "6% クーポン",
           "expired": false,
           "min_booking_amount": "なし",
-          "coupons_left": "クーポン残り9,990,262枚！",
+          "coupons_left": "クーポン残り9,990,267枚！",
           "search_url": "https://www.rurubu.travel/?cid=1924078",
           "booking_period": "2026年4月22日～2999年12月1日"
         }
@@ -142,13 +142,13 @@
         "discount": "5% クーポン",
         "expired": false,
         "min_booking_amount": "なし",
-        "coupons_left": "クーポン残り9,995,844枚！",
+        "coupons_left": "クーポン残り9,995,846枚！",
         "search_url": "https://www.rurubu.travel/?cid=1924078",
         "booking_period": "2026年4月22日～2999年12月1日"
       }
     ],
     "conditions": [
-      "残数表示: クーポン残り9,995,844枚！"
+      "残数表示: クーポン残り9,995,846枚！"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -168,7 +168,7 @@
           "discount": "5% クーポン",
           "expired": false,
           "min_booking_amount": "なし",
-          "coupons_left": "クーポン残り9,995,844枚！",
+          "coupons_left": "クーポン残り9,995,846枚！",
           "search_url": "https://www.rurubu.travel/?cid=1924078",
           "booking_period": "2026年4月22日～2999年12月1日"
         }
@@ -262,13 +262,13 @@
         "discount": "3% クーポン",
         "expired": false,
         "min_booking_amount": "なし",
-        "coupons_left": "クーポン残り9,999,157枚！",
+        "coupons_left": "クーポン残り9,999,159枚！",
         "search_url": "https://www.rurubu.travel/?cid=1924078",
         "booking_period": "2026年4月22日～2999年12月1日"
       }
     ],
     "conditions": [
-      "残数表示: クーポン残り9,999,157枚！"
+      "残数表示: クーポン残り9,999,159枚！"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -288,7 +288,7 @@
           "discount": "3% クーポン",
           "expired": false,
           "min_booking_amount": "なし",
-          "coupons_left": "クーポン残り9,999,157枚！",
+          "coupons_left": "クーポン残り9,999,159枚！",
           "search_url": "https://www.rurubu.travel/?cid=1924078",
           "booking_period": "2026年4月22日～2999年12月1日"
         }
@@ -311,7 +311,7 @@
     "title": "【ブラックフライデー】割引クーポン",
     "category": "複数エリア対象クーポン",
     "discount": "最大¥1,000引き",
-    "stock_status": "配布中",
+    "stock_status": "配布終了",
     "product_type": "国内宿泊",
     "booking_period": "2026年11月17日～2026年12月1日",
     "travel_period": "2026年11月17日～2027年3月31日",
@@ -320,18 +320,18 @@
       {
         "code": "BLKFD26NV10",
         "discount": "¥1,000 クーポン",
-        "expired": false,
+        "expired": true,
         "min_booking_amount": "¥ 8,000",
-        "coupons_left": "クーポン残り261枚！",
-        "search_url": "https://www.rurubu.travel/?cid=1839358",
+        "coupons_left": "クーポン配布終了",
         "booking_period": "2026年11月17日～2026年12月1日",
         "stay_period": "2026年11月17日～2027年3月31日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 8,000",
-      "残数表示: クーポン残り261枚！",
-      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+      "残数表示: クーポン配布終了",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
+      "一部または全てのコードにexpiredフラグあり"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -349,17 +349,14 @@
         {
           "code": "BLKFD26NV10",
           "discount": "¥1,000 クーポン",
-          "expired": false,
+          "expired": true,
           "min_booking_amount": "¥ 8,000",
-          "coupons_left": "クーポン残り261枚！",
-          "search_url": "https://www.rurubu.travel/?cid=1839358",
+          "coupons_left": "クーポン配布終了",
           "booking_period": "2026年11月17日～2026年12月1日",
           "stay_period": "2026年11月17日～2027年3月31日"
         }
       ],
-      "search_urls": [
-        "https://www.rurubu.travel/?cid=1839358"
-      ],
+      "search_urls": [],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
   },
@@ -386,15 +383,15 @@
         "discount": "10% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り14枚！",
-        "search_url": "https://www.rurubu.travel/search?region=2133&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り34枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2133&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月16日～2027年2月28日",
         "stay_period": "2026年11月16日～2027年2月28日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り14枚！",
+      "残数表示: クーポン残り34枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -415,14 +412,14 @@
           "discount": "10% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り14枚！",
-          "search_url": "https://www.rurubu.travel/search?region=2133&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り34枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2133&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月16日～2027年2月28日",
           "stay_period": "2026年11月16日～2027年2月28日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=2133&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=2133&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -450,15 +447,15 @@
         "discount": "¥1,000 クーポン",
         "expired": false,
         "min_booking_amount": "¥ 7,000",
-        "coupons_left": "クーポン残り62枚！",
-        "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り140枚！",
+        "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月19日～2027年1月22日",
         "stay_period": "2026年10月19日～2026年12月28日、2027年1月4日～2027年1月22日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 7,000",
-      "残数表示: クーポン残り62枚！",
+      "残数表示: クーポン残り140枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -479,14 +476,14 @@
           "discount": "¥1,000 クーポン",
           "expired": false,
           "min_booking_amount": "¥ 7,000",
-          "coupons_left": "クーポン残り62枚！",
-          "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り140枚！",
+          "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月19日～2027年1月22日",
           "stay_period": "2026年10月19日～2026年12月28日、2027年1月4日～2027年1月22日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=378&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=378&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -514,15 +511,15 @@
         "discount": "10% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り10枚！",
-        "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り23枚！",
+        "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月22日～2026年12月31日",
         "stay_period": "2026年11月1日～2026年12月31日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り10枚！",
+      "残数表示: クーポン残り23枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -543,14 +540,14 @@
           "discount": "10% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り10枚！",
-          "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り23枚！",
+          "search_url": "https://www.rurubu.travel/search?region=378&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月22日～2026年12月31日",
           "stay_period": "2026年11月1日～2026年12月31日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=378&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=378&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -567,7 +564,7 @@
     "title": "おでんせ！いわて旅割キャンペーン 第2弾【県央・県南エリア】（おとな・こどもひとり1泊あたり最大5,000円引き）",
     "category": "エリア限定クーポン",
     "discount": "最大50%引き",
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "product_type": "国内宿泊",
     "booking_period": "2026年9月1日～2026年12月25日",
     "travel_period": "2026年10月1日～2026年12月25日",
@@ -576,18 +573,18 @@
       {
         "code": "XIWTS26SP50",
         "discount": "50%引(1人1泊あたり)",
-        "expired": true,
+        "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン配布終了",
+        "coupons_left": "クーポン残り26枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2127&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年9月1日～2026年12月25日",
         "stay_period": "2026年10月1日～2026年12月25日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン配布終了",
-      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
-      "一部または全てのコードにexpiredフラグあり"
+      "残数表示: クーポン残り26枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -605,14 +602,17 @@
         {
           "code": "XIWTS26SP50",
           "discount": "50%引(1人1泊あたり)",
-          "expired": true,
+          "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン配布終了",
+          "coupons_left": "クーポン残り26枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2127&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年9月1日～2026年12月25日",
           "stay_period": "2026年10月1日～2026年12月25日"
         }
       ],
-      "search_urls": [],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=2127&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
   },
@@ -628,7 +628,7 @@
     "title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
     "category": "エリア限定クーポン",
     "discount": "最大50%引き",
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "product_type": "国内宿泊",
     "booking_period": "2026年9月1日～2026年12月25日",
     "travel_period": "2026年10月1日～2026年12月25日",
@@ -637,18 +637,18 @@
       {
         "code": "XIWTN26SP50",
         "discount": "50%引(1人1泊あたり)",
-        "expired": true,
+        "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン配布終了",
+        "coupons_left": "クーポン残り25枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2127&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年9月1日～2026年12月25日",
         "stay_period": "2026年10月1日～2026年12月25日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン配布終了",
-      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
-      "一部または全てのコードにexpiredフラグあり"
+      "残数表示: クーポン残り25枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -666,14 +666,17 @@
         {
           "code": "XIWTN26SP50",
           "discount": "50%引(1人1泊あたり)",
-          "expired": true,
+          "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン配布終了",
+          "coupons_left": "クーポン残り25枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2127&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年9月1日～2026年12月25日",
           "stay_period": "2026年10月1日～2026年12月25日"
         }
       ],
-      "search_urls": [],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=2127&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
   },
@@ -701,7 +704,7 @@
         "expired": false,
         "min_booking_amount": "¥ 40,000",
         "coupons_left": "クーポン残り31枚！",
-        "search_url": "https://www.rurubu.travel/search?region=2153&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=2153&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年6月16日～2026年11月30日",
         "stay_period": "2026年6月16日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年10月9日、2026年10月12日～2026年11月20日、2026年11月23日～2026年11月30日"
       }
@@ -730,13 +733,13 @@
           "expired": false,
           "min_booking_amount": "¥ 40,000",
           "coupons_left": "クーポン残り31枚！",
-          "search_url": "https://www.rurubu.travel/search?region=2153&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=2153&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年6月16日～2026年11月30日",
           "stay_period": "2026年6月16日～2026年8月7日、2026年8月16日～2026年9月18日、2026年9月23日～2026年10月9日、2026年10月12日～2026年11月20日、2026年11月23日～2026年11月30日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=2153&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=2153&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -1178,7 +1181,7 @@
     "title": "静岡県 東伊豆町のおすすめ施設で使えるクーポン（平日・休日の宿泊20％引き・最大割引額30,000円、休前日の宿泊15％引き・最大割引額20,000円）",
     "category": "エリア限定クーポン",
     "discount": "最大20%引き",
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "product_type": "国内宿泊",
     "booking_period": "",
     "travel_period": "",
@@ -1187,9 +1190,10 @@
       {
         "code": "ETIZU26SP20",
         "discount": "20% クーポン",
-        "expired": true,
+        "expired": false,
         "min_booking_amount": "¥ 18,000",
-        "coupons_left": "クーポン配布終了",
+        "coupons_left": "クーポン残り4枚！",
+        "search_url": "https://www.rurubu.travel/search?region=850&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年9月24日～2026年12月18日",
         "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日",
         "guests": "大人2名以上"
@@ -1207,7 +1211,7 @@
     ],
     "conditions": [
       "最低利用金額: ¥ 18,000",
-      "残数表示: クーポン配布終了",
+      "残数表示: クーポン残り4枚！ / クーポン配布終了",
       "宿泊人数: 大人2名以上",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
       "一部または全てのコードにexpiredフラグあり"
@@ -1228,9 +1232,10 @@
         {
           "code": "ETIZU26SP20",
           "discount": "20% クーポン",
-          "expired": true,
+          "expired": false,
           "min_booking_amount": "¥ 18,000",
-          "coupons_left": "クーポン配布終了",
+          "coupons_left": "クーポン残り4枚！",
+          "search_url": "https://www.rurubu.travel/search?region=850&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年9月24日～2026年12月18日",
           "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日",
           "guests": "大人2名以上"
@@ -1246,7 +1251,9 @@
           "guests": "大人2名以上"
         }
       ],
-      "search_urls": [],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=850&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358"
+      ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
   },
@@ -1335,15 +1342,15 @@
         "discount": "¥500 クーポン",
         "expired": false,
         "min_booking_amount": "¥ 2,000",
-        "coupons_left": "クーポン残り1,773枚！",
-        "search_url": "https://www.rurubu.travel/search?region=2152&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り1,769枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2152&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年6月11日～2027年2月28日",
         "stay_period": "2026年6月11日～2027年2月28日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 2,000",
-      "残数表示: クーポン残り1,773枚！",
+      "残数表示: クーポン残り1,769枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -1364,14 +1371,14 @@
           "discount": "¥500 クーポン",
           "expired": false,
           "min_booking_amount": "¥ 2,000",
-          "coupons_left": "クーポン残り1,773枚！",
-          "search_url": "https://www.rurubu.travel/search?region=2152&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り1,769枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2152&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年6月11日～2027年2月28日",
           "stay_period": "2026年6月11日～2027年2月28日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=2152&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=2152&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -1512,7 +1519,7 @@
     "title": "「九州ふっこう応援割ふくおかキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
     "category": "エリア限定クーポン",
     "discount": "最大50%引き",
-    "stock_status": "配布終了",
+    "stock_status": "配布中",
     "product_type": "国内宿泊",
     "booking_period": "2026年10月7日～2026年12月15日",
     "travel_period": "2026年10月7日～2026年12月15日",
@@ -1521,18 +1528,18 @@
       {
         "code": "XFUKU26SP50",
         "discount": "50%引(1人1泊あたり)",
-        "expired": true,
+        "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン配布終了",
+        "coupons_left": "クーポン残り299枚！",
+        "search_url": "https://www.rurubu.travel/search?region=2119&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月7日～2026年12月15日",
         "stay_period": "2026年10月7日～2026年12月15日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン配布終了",
-      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
-      "一部または全てのコードにexpiredフラグあり"
+      "残数表示: クーポン残り299枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
     "detail_url": "https://www.rurubu.travel/deals",
@@ -1550,14 +1557,17 @@
         {
           "code": "XFUKU26SP50",
           "discount": "50%引(1人1泊あたり)",
-          "expired": true,
+          "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン配布終了",
+          "coupons_left": "クーポン残り299枚！",
+          "search_url": "https://www.rurubu.travel/search?region=2119&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月7日～2026年12月15日",
           "stay_period": "2026年10月7日～2026年12月15日"
         }
       ],
-      "search_urls": [],
+      "search_urls": [
+        "https://www.rurubu.travel/search?region=2119&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
+      ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
   },
@@ -2012,7 +2022,7 @@
         "discount": "15% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り42枚！",
+        "coupons_left": "クーポン残り41枚！",
         "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-18&los=1&city_id=105656&adults=1&children=0&rooms=1&cid=1839358&campaignId=170513",
         "booking_period": "2026年9月29日～2027年1月18日",
         "stay_period": "2026年10月18日～2027年1月18日"
@@ -2021,7 +2031,7 @@
     "conditions": [
       "対象エリア・施設: Asahikawa",
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り42枚！",
+      "残数表示: クーポン残り41枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -2042,7 +2052,7 @@
           "discount": "15% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り42枚！",
+          "coupons_left": "クーポン残り41枚！",
           "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-18&los=1&city_id=105656&adults=1&children=0&rooms=1&cid=1839358&campaignId=170513",
           "booking_period": "2026年9月29日～2027年1月18日",
           "stay_period": "2026年10月18日～2027年1月18日"
@@ -2234,7 +2244,7 @@
         "expired": false,
         "min_booking_amount": "¥ 10,000",
         "coupons_left": "クーポン残り117枚！",
-        "search_url": "https://www.rurubu.travel/search?region=992&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=992&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月21日～2027年3月19日",
         "stay_period": "2026年10月21日～2026年12月30日、2027年1月4日～2027年1月8日、2027年1月11日～2027年2月11日、2027年2月15日～2027年3月19日",
         "guests": "大人2名以上"
@@ -2265,14 +2275,14 @@
           "expired": false,
           "min_booking_amount": "¥ 10,000",
           "coupons_left": "クーポン残り117枚！",
-          "search_url": "https://www.rurubu.travel/search?region=992&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=992&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月21日～2027年3月19日",
           "stay_period": "2026年10月21日～2026年12月30日、2027年1月4日～2027年1月8日、2027年1月11日～2027年2月11日、2027年2月15日～2027年3月19日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=992&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=992&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2300,8 +2310,8 @@
         "discount": "15% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り26枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1117&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り25枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1117&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年9月29日～2027年3月31日",
         "stay_period": "2026年9月29日～2026年11月16日、2026年11月18日～2027年3月31日",
         "guests": "大人2名以上"
@@ -2309,7 +2319,7 @@
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り26枚！",
+      "残数表示: クーポン残り25枚！",
       "宿泊人数: 大人2名以上",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
@@ -2331,15 +2341,15 @@
           "discount": "15% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り26枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1117&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り25枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1117&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年9月29日～2027年3月31日",
           "stay_period": "2026年9月29日～2026年11月16日、2026年11月18日～2027年3月31日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1117&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1117&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2367,8 +2377,8 @@
         "discount": "¥5,000 クーポン",
         "expired": false,
         "min_booking_amount": "¥ 30,000",
-        "coupons_left": "クーポン残り57枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1589&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り55枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1589&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月2日～2027年1月31日",
         "stay_period": "2026年11月2日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2027年1月4日～2027年1月8日、2027年1月11日～2027年1月15日、2027年1月17日～2027年1月22日、2027年1月24日～2027年1月29日、2027年1月31日",
         "guests": "大人2名以上"
@@ -2376,7 +2386,7 @@
     ],
     "conditions": [
       "最低利用金額: ¥ 30,000",
-      "残数表示: クーポン残り57枚！",
+      "残数表示: クーポン残り55枚！",
       "宿泊人数: 大人2名以上",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
@@ -2398,15 +2408,15 @@
           "discount": "¥5,000 クーポン",
           "expired": false,
           "min_booking_amount": "¥ 30,000",
-          "coupons_left": "クーポン残り57枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1589&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り55枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1589&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月2日～2027年1月31日",
           "stay_period": "2026年11月2日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2027年1月4日～2027年1月8日、2027年1月11日～2027年1月15日、2027年1月17日～2027年1月22日、2027年1月24日～2027年1月29日、2027年1月31日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1589&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1589&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2434,15 +2444,15 @@
         "discount": "15% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り95枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り92枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月28日～2027年2月28日",
         "stay_period": "2026年11月1日～2027年2月28日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り95枚！",
+      "残数表示: クーポン残り92枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -2463,14 +2473,14 @@
           "discount": "15% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り95枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り92枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月28日～2027年2月28日",
           "stay_period": "2026年11月1日～2027年2月28日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2498,15 +2508,15 @@
         "discount": "15% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り117枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り116枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月28日～2027年2月28日",
         "stay_period": "2026年11月1日～2027年2月28日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り117枚！",
+      "残数表示: クーポン残り116枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -2527,14 +2537,14 @@
           "discount": "15% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り117枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り116枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月28日～2027年2月28日",
           "stay_period": "2026年11月1日～2027年2月28日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1876&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2563,7 +2573,7 @@
         "expired": false,
         "min_booking_amount": "¥ 30,000",
         "coupons_left": "クーポン残り117枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1156&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1156&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月2日～2026年12月25日",
         "stay_period": "2026年11月2日～2026年11月6日、2026年11月8日～2026年11月20日、2026年11月23日～2026年12月25日",
         "guests": "大人2名以上"
@@ -2594,14 +2604,14 @@
           "expired": false,
           "min_booking_amount": "¥ 30,000",
           "coupons_left": "クーポン残り117枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1156&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1156&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月2日～2026年12月25日",
           "stay_period": "2026年11月2日～2026年11月6日、2026年11月8日～2026年11月20日、2026年11月23日～2026年12月25日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1156&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1156&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2695,7 +2705,7 @@
         "expired": false,
         "min_booking_amount": "¥ 1",
         "coupons_left": "クーポン残り63枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1530&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1530&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月17日～2027年2月25日",
         "stay_period": "2026年11月17日～2026年12月25日、2027年1月4日～2027年1月28日、2027年2月1日～2027年2月4日、2027年2月8日～2027年2月11日、2027年2月15日～2027年2月18日、2027年2月22日～2027年2月25日",
         "guests": "大人2名以上"
@@ -2726,14 +2736,14 @@
           "expired": false,
           "min_booking_amount": "¥ 1",
           "coupons_left": "クーポン残り63枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1530&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1530&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月17日～2027年2月25日",
           "stay_period": "2026年11月17日～2026年12月25日、2027年1月4日～2027年1月28日、2027年2月1日～2027年2月4日、2027年2月8日～2027年2月11日、2027年2月15日～2027年2月18日、2027年2月22日～2027年2月25日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1530&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1530&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2761,15 +2771,15 @@
         "discount": "20% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 15,000",
-        "coupons_left": "クーポン残り58枚！",
-        "search_url": "https://www.rurubu.travel/search?region=769&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り57枚！",
+        "search_url": "https://www.rurubu.travel/search?region=769&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月16日～2027年2月14日",
         "stay_period": "2026年11月16日～2026年12月29日、2027年1月4日～2027年2月17日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 15,000",
-      "残数表示: クーポン残り58枚！",
+      "残数表示: クーポン残り57枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -2790,14 +2800,14 @@
           "discount": "20% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 15,000",
-          "coupons_left": "クーポン残り58枚！",
-          "search_url": "https://www.rurubu.travel/search?region=769&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り57枚！",
+          "search_url": "https://www.rurubu.travel/search?region=769&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月16日～2027年2月14日",
           "stay_period": "2026年11月16日～2026年12月29日、2027年1月4日～2027年2月17日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=769&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=769&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2826,7 +2836,7 @@
         "expired": false,
         "min_booking_amount": "¥ 30,000",
         "coupons_left": "クーポン残り30枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1170&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1170&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月16日～2027年2月14日",
         "stay_period": "2026年11月16日～2026年12月30日、2027年1月2日～2027年2月17日"
       }
@@ -2855,13 +2865,13 @@
           "expired": false,
           "min_booking_amount": "¥ 30,000",
           "coupons_left": "クーポン残り30枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1170&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1170&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月16日～2027年2月14日",
           "stay_period": "2026年11月16日～2026年12月30日、2027年1月2日～2027年2月17日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1170&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1170&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -2889,7 +2899,7 @@
         "discount": "15% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り51枚！",
+        "coupons_left": "クーポン残り53枚！",
         "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=5085&adults=1&children=0&rooms=1&cid=1839358&campaignId=176038",
         "booking_period": "2026年11月10日～2027年2月28日",
         "stay_period": "2026年12月1日～2027年2月28日"
@@ -2898,7 +2908,7 @@
     "conditions": [
       "対象エリア・施設: Tokyo",
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り51枚！",
+      "残数表示: クーポン残り53枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -2919,7 +2929,7 @@
           "discount": "15% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り51枚！",
+          "coupons_left": "クーポン残り53枚！",
           "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=5085&adults=1&children=0&rooms=1&cid=1839358&campaignId=176038",
           "booking_period": "2026年11月10日～2027年2月28日",
           "stay_period": "2026年12月1日～2027年2月28日"
@@ -2974,7 +2984,7 @@
         "discount": "¥3,000 クーポン",
         "expired": false,
         "min_booking_amount": "¥ 30,000",
-        "coupons_left": "クーポン残り33枚！",
+        "coupons_left": "クーポン残り34枚！",
         "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167368",
         "booking_period": "2026年9月2日～2026年12月30日",
         "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
@@ -2983,7 +2993,7 @@
     "conditions": [
       "対象エリア・施設: Hakone",
       "最低利用金額: ¥ 100,000 / ¥ 70,000 / ¥ 30,000",
-      "残数表示: クーポン残り2枚！ / クーポン残り42枚！ / クーポン残り33枚！",
+      "残数表示: クーポン残り2枚！ / クーポン残り42枚！ / クーポン残り34枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -3024,7 +3034,7 @@
           "discount": "¥3,000 クーポン",
           "expired": false,
           "min_booking_amount": "¥ 30,000",
-          "coupons_left": "クーポン残り33枚！",
+          "coupons_left": "クーポン残り34枚！",
           "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=79849&adults=1&children=0&rooms=1&cid=1839358&campaignId=167368",
           "booking_period": "2026年9月2日～2026年12月30日",
           "stay_period": "2026年10月1日～2026年10月2日、2026年10月4日～2026年10月9日、2026年10月12日～2026年10月16日、2026年10月18日～2026年10月23日、2026年10月25日～2026年10月30日、2026年11月1日、2026年11月3日～2026年11月6日、2026年11月8日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年11月27日、2026年11月29日～2026年12月4日、2026年12月6日～2026年12月11日、2026年12月13日～2026年12月18日、2026年12月20日～2026年12月25日、2026年12月27日～2026年12月30日"
@@ -3062,7 +3072,7 @@
         "expired": false,
         "min_booking_amount": "¥ 100,000",
         "coupons_left": "クーポン残り17枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月30日～2027年1月31日",
         "stay_period": "2026年10月30日～2027年3月31日"
       },
@@ -3072,7 +3082,7 @@
         "expired": false,
         "min_booking_amount": "¥ 70,000",
         "coupons_left": "クーポン残り39枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月30日～2027年1月31日",
         "stay_period": "2026年10月30日～2027年3月31日"
       },
@@ -3082,7 +3092,7 @@
         "expired": false,
         "min_booking_amount": "¥ 30,000",
         "coupons_left": "クーポン残り39枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月30日～2027年1月31日",
         "stay_period": "2026年10月30日～2027年3月31日"
       }
@@ -3111,7 +3121,7 @@
           "expired": false,
           "min_booking_amount": "¥ 100,000",
           "coupons_left": "クーポン残り17枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月30日～2027年1月31日",
           "stay_period": "2026年10月30日～2027年3月31日"
         },
@@ -3121,7 +3131,7 @@
           "expired": false,
           "min_booking_amount": "¥ 70,000",
           "coupons_left": "クーポン残り39枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月30日～2027年1月31日",
           "stay_period": "2026年10月30日～2027年3月31日"
         },
@@ -3131,15 +3141,15 @@
           "expired": false,
           "min_booking_amount": "¥ 30,000",
           "coupons_left": "クーポン残り39枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月30日～2027年1月31日",
           "stay_period": "2026年10月30日～2027年3月31日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
-        "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
-        "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "https://www.rurubu.travel/search?region=1263&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -3236,7 +3246,7 @@
         "expired": false,
         "min_booking_amount": "¥ 70,000",
         "coupons_left": "クーポン残り28枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月17日～2027年2月28日",
         "stay_period": "2026年11月17日～2026年12月7日、2026年12月11日～2026年12月25日、2027年1月3日～2027年2月28日",
         "guests": "大人2名以上"
@@ -3247,7 +3257,7 @@
         "expired": false,
         "min_booking_amount": "¥ 40,000",
         "coupons_left": "クーポン残り71枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月17日～2027年2月28日",
         "stay_period": "2026年11月17日～2026年12月7日、2026年12月11日～2026年12月25日、2027年1月3日～2027年2月28日",
         "guests": "大人2名以上"
@@ -3278,7 +3288,7 @@
           "expired": false,
           "min_booking_amount": "¥ 70,000",
           "coupons_left": "クーポン残り28枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月17日～2027年2月28日",
           "stay_period": "2026年11月17日～2026年12月7日、2026年12月11日～2026年12月25日、2027年1月3日～2027年2月28日",
           "guests": "大人2名以上"
@@ -3289,15 +3299,15 @@
           "expired": false,
           "min_booking_amount": "¥ 40,000",
           "coupons_left": "クーポン残り71枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月17日～2027年2月28日",
           "stay_period": "2026年11月17日～2026年12月7日、2026年12月11日～2026年12月25日、2027年1月3日～2027年2月28日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
-        "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "https://www.rurubu.travel/search?region=1237&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -3325,15 +3335,15 @@
         "discount": "15% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り31枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1408&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り30枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1408&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月2日～2027年2月28日",
         "stay_period": "2026年11月2日～2027年2月28日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り31枚！",
+      "残数表示: クーポン残り30枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -3354,14 +3364,14 @@
           "discount": "15% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り31枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1408&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り30枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1408&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月2日～2027年2月28日",
           "stay_period": "2026年11月2日～2027年2月28日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1408&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1408&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -3526,7 +3536,7 @@
         "expired": false,
         "min_booking_amount": "¥ 1",
         "coupons_left": "クーポン残り33枚！",
-        "search_url": "https://www.rurubu.travel/search?region=2024&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=2024&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月16日～2027年3月31日",
         "stay_period": "2026年11月16日～2026年12月25日、2027年1月4日～2027年3月31日",
         "guests": "大人2名以上"
@@ -3557,14 +3567,14 @@
           "expired": false,
           "min_booking_amount": "¥ 1",
           "coupons_left": "クーポン残り33枚！",
-          "search_url": "https://www.rurubu.travel/search?region=2024&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=2024&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月16日～2027年3月31日",
           "stay_period": "2026年11月16日～2026年12月25日、2027年1月4日～2027年3月31日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=2024&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=2024&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -3592,7 +3602,7 @@
         "discount": "10% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り1枚！",
+        "coupons_left": "クーポン残り2枚！",
         "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166944",
         "booking_period": "2026年8月26日～2027年1月31日",
         "stay_period": "2026年10月1日～2027年1月31日"
@@ -3601,7 +3611,7 @@
     "conditions": [
       "対象エリア・施設: Toba",
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り1枚！",
+      "残数表示: クーポン残り2枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -3622,7 +3632,7 @@
           "discount": "10% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り1枚！",
+          "coupons_left": "クーポン残り2枚！",
           "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-10-01&los=1&city_id=107512&adults=1&children=0&rooms=1&cid=1839358&campaignId=166944",
           "booking_period": "2026年8月26日～2027年1月31日",
           "stay_period": "2026年10月1日～2027年1月31日"
@@ -3722,7 +3732,7 @@
         "discount": "10% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り88枚！",
+        "coupons_left": "クーポン残り87枚！",
         "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=9590&adults=1&children=0&rooms=1&cid=1839358&campaignId=174006",
         "booking_period": "2026年10月27日～2027年3月31日",
         "stay_period": "2026年12月1日～2027年3月31日"
@@ -3731,7 +3741,7 @@
     "conditions": [
       "対象エリア・施設: Osaka",
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン残り88枚！",
+      "残数表示: クーポン残り87枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -3752,7 +3762,7 @@
           "discount": "10% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り88枚！",
+          "coupons_left": "クーポン残り87枚！",
           "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=9590&adults=1&children=0&rooms=1&cid=1839358&campaignId=174006",
           "booking_period": "2026年10月27日～2027年3月31日",
           "stay_period": "2026年12月1日～2027年3月31日"
@@ -3852,15 +3862,15 @@
         "discount": "15% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 7,000",
-        "coupons_left": "クーポン残り43枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1606&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り42枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1606&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月2日～2027年1月26日",
         "stay_period": "2026年11月2日～2027年1月26日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 7,000",
-      "残数表示: クーポン残り43枚！",
+      "残数表示: クーポン残り42枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
     "source_url": "https://www.rurubu.travel/deals",
@@ -3881,14 +3891,14 @@
           "discount": "15% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 7,000",
-          "coupons_left": "クーポン残り43枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1606&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り42枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1606&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月2日～2027年1月26日",
           "stay_period": "2026年11月2日～2027年1月26日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1606&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1606&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -4203,15 +4213,15 @@
         "discount": "10% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 1",
-        "coupons_left": "クーポン残り16枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1685&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "coupons_left": "クーポン残り17枚！",
+        "search_url": "https://www.rurubu.travel/search?region=1685&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年9月28日～2026年12月31日",
         "stay_period": "2026年9月28日～2027年1月31日"
       }
     ],
     "conditions": [
       "最低利用金額: ¥ 1",
-      "残数表示: クーポン配布終了 / クーポン残り16枚！",
+      "残数表示: クーポン配布終了 / クーポン残り17枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
       "一部または全てのコードにexpiredフラグあり"
     ],
@@ -4242,14 +4252,14 @@
           "discount": "10% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 1",
-          "coupons_left": "クーポン残り16枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1685&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "coupons_left": "クーポン残り17枚！",
+          "search_url": "https://www.rurubu.travel/search?region=1685&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年9月28日～2026年12月31日",
           "stay_period": "2026年9月28日～2027年1月31日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1685&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1685&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -4497,7 +4507,7 @@
         "expired": false,
         "min_booking_amount": "¥ 19,000",
         "coupons_left": "クーポン残り48枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1865&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1865&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月30日～2026年12月31日",
         "stay_period": "2026年11月1日～2026年12月31日",
         "guests": "大人2名以上"
@@ -4528,14 +4538,14 @@
           "expired": false,
           "min_booking_amount": "¥ 19,000",
           "coupons_left": "クーポン残り48枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1865&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1865&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月30日～2026年12月31日",
           "stay_period": "2026年11月1日～2026年12月31日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1865&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1865&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -4572,7 +4582,7 @@
         "discount": "10% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 25,000",
-        "coupons_left": "クーポン残り32枚！",
+        "coupons_left": "クーポン残り30枚！",
         "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=3435&adults=1&children=0&rooms=1&cid=1839358&campaignId=175845",
         "booking_period": "2026年11月4日～2027年2月28日",
         "stay_period": "2026年12月1日～2027年2月28日"
@@ -4581,7 +4591,7 @@
     "conditions": [
       "対象エリア・施設: Sapporo",
       "最低利用金額: ¥ 60,000 / ¥ 25,000",
-      "残数表示: クーポン配布終了 / クーポン残り32枚！",
+      "残数表示: クーポン配布終了 / クーポン残り30枚！",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要",
       "一部または全てのコードにexpiredフラグあり"
     ],
@@ -4612,7 +4622,7 @@
           "discount": "10% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 25,000",
-          "coupons_left": "クーポン残り32枚！",
+          "coupons_left": "クーポン残り30枚！",
           "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=3435&adults=1&children=0&rooms=1&cid=1839358&campaignId=175845",
           "booking_period": "2026年11月4日～2027年2月28日",
           "stay_period": "2026年12月1日～2027年2月28日"
@@ -4620,6 +4630,136 @@
       ],
       "search_urls": [
         "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=3435&adults=1&children=0&rooms=1&cid=1839358&campaignId=175845"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-srnw26nov10-3a9d623763",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "北海道 北湯沢温泉 きたゆざわ 森のソラニワで使えるクーポン（最大6,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年11月20日～2027年3月30日",
+    "travel_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日",
+    "stay_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日",
+    "coupon_codes": [
+      {
+        "code": "SRNW26NOV10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 33,000",
+        "coupons_left": "クーポン残り49枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=21332&adults=1&children=0&rooms=1&cid=1839358&campaignId=178849",
+        "booking_period": "2026年11月20日～2027年3月30日",
+        "stay_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Noboribetsu",
+      "最低利用金額: ¥ 33,000",
+      "残数表示: クーポン残り49枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-11-20",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "北海道 北湯沢温泉 きたゆざわ 森のソラニワで使えるクーポン（最大6,000円引き）",
+      "location": "Noboribetsu",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "SRNW26NOV10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 33,000",
+          "coupons_left": "クーポン残り49枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=21332&adults=1&children=0&rooms=1&cid=1839358&campaignId=178849",
+          "booking_period": "2026年11月20日～2027年3月30日",
+          "stay_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=21332&adults=1&children=0&rooms=1&cid=1839358&campaignId=178849"
+      ],
+      "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
+    }
+  },
+  {
+    "id": "rurubu_travel-mdrk26nov10-aecf51e9f3",
+    "provider": "rurubu_travel",
+    "provider_label": "るるぶトラベル",
+    "site_targets": [
+      "welltrip",
+      "yakushimafan"
+    ],
+    "article_slug": "rurubu-travel-coupon",
+    "title": "北海道 北湯沢温泉 緑の風リゾート きたゆざわで使えるクーポン（最大6,000円引き）",
+    "category": "施設限定クーポン",
+    "discount": "最大10%引き",
+    "stock_status": "配布中",
+    "product_type": "国内宿泊",
+    "booking_period": "2026年11月20日～2027年3月30日",
+    "travel_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日",
+    "stay_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日",
+    "coupon_codes": [
+      {
+        "code": "MDRK26NOV10",
+        "discount": "10% クーポン",
+        "expired": false,
+        "min_booking_amount": "¥ 40,000",
+        "coupons_left": "クーポン残り50枚！",
+        "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=21332&adults=1&children=0&rooms=1&cid=1839358&campaignId=178908",
+        "booking_period": "2026年11月20日～2027年3月30日",
+        "stay_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日"
+      }
+    ],
+    "conditions": [
+      "対象エリア・施設: Noboribetsu",
+      "最低利用金額: ¥ 40,000",
+      "残数表示: クーポン残り50枚！",
+      "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
+    ],
+    "source_url": "https://www.rurubu.travel/deals",
+    "detail_url": "https://www.rurubu.travel/deals",
+    "source_type": "official_deals",
+    "fetch_method": "window.dealsProp",
+    "last_checked": "2026-11-20",
+    "confidence": "high",
+    "display_type": "table",
+    "placement_hint": "るるぶトラベル公式割引クーポンページ",
+    "detail_data": {
+      "modal_title": "北海道 北湯沢温泉 緑の風リゾート きたゆざわで使えるクーポン（最大6,000円引き）",
+      "location": "Noboribetsu",
+      "coupon_option_count": 1,
+      "coupon_codes": [
+        {
+          "code": "MDRK26NOV10",
+          "discount": "10% クーポン",
+          "expired": false,
+          "min_booking_amount": "¥ 40,000",
+          "coupons_left": "クーポン残り50枚！",
+          "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=21332&adults=1&children=0&rooms=1&cid=1839358&campaignId=178908",
+          "booking_period": "2026年11月20日～2027年3月30日",
+          "stay_period": "2026年12月1日～2026年12月25日、2027年1月5日～2027年3月30日"
+        }
+      ],
+      "search_urls": [
+        "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=21332&adults=1&children=0&rooms=1&cid=1839358&campaignId=178908"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -4658,7 +4798,7 @@
         "discount": "20% クーポン",
         "expired": false,
         "min_booking_amount": "¥ 40,000",
-        "coupons_left": "クーポン残り17枚！",
+        "coupons_left": "クーポン残り16枚！",
         "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172830",
         "booking_period": "2026年10月9日～2026年12月31日",
         "stay_period": "2026年12月1日、2026年12月3日～2026年12月30日",
@@ -4701,7 +4841,7 @@
     "conditions": [
       "対象エリア・施設: Hakodate",
       "最低利用金額: ¥ 40,000",
-      "残数表示: クーポン残り23枚！ / クーポン残り17枚！ / クーポン残り25枚！ / クーポン残り28枚！",
+      "残数表示: クーポン残り23枚！ / クーポン残り16枚！ / クーポン残り25枚！ / クーポン残り28枚！",
       "宿泊人数: 大人3名以上",
       "クーポン欄の「宿泊施設を検索」から対象施設検索が必要"
     ],
@@ -4734,7 +4874,7 @@
           "discount": "20% クーポン",
           "expired": false,
           "min_booking_amount": "¥ 40,000",
-          "coupons_left": "クーポン残り17枚！",
+          "coupons_left": "クーポン残り16枚！",
           "search_url": "https://www.rurubu.travel/ja-jp/search?checkin=2026-12-01&los=1&city_id=88743&adults=3&children=0&rooms=1&cid=1839358&campaignId=172830",
           "booking_period": "2026年10月9日～2026年12月31日",
           "stay_period": "2026年12月1日、2026年12月3日～2026年12月30日",
@@ -4808,7 +4948,7 @@
         "expired": false,
         "min_booking_amount": "¥ 80,000",
         "coupons_left": "クーポン残り13枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年7月29日～2027年3月31日",
         "stay_period": "2026年7月29日～2027年3月31日"
       },
@@ -4818,7 +4958,7 @@
         "expired": false,
         "min_booking_amount": "¥ 35,000",
         "coupons_left": "クーポン残り37枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年7月29日～2027年3月31日",
         "stay_period": "2026年7月29日～2027年3月31日"
       }
@@ -4847,7 +4987,7 @@
           "expired": false,
           "min_booking_amount": "¥ 80,000",
           "coupons_left": "クーポン残り13枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年7月29日～2027年3月31日",
           "stay_period": "2026年7月29日～2027年3月31日"
         },
@@ -4857,14 +4997,14 @@
           "expired": false,
           "min_booking_amount": "¥ 35,000",
           "coupons_left": "クーポン残り37枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年7月29日～2027年3月31日",
           "stay_period": "2026年7月29日～2027年3月31日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
-        "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "https://www.rurubu.travel/search?region=1882&checkIn=2026-11-21&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -5093,7 +5233,7 @@
         "expired": false,
         "min_booking_amount": "¥ 40,000",
         "coupons_left": "クーポン残り30枚！",
-        "search_url": "https://www.rurubu.travel/search?region=775&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=775&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月19日～2027年1月31日",
         "stay_period": "2026年11月19日～2026年12月25日、2027年1月4日～2027年1月31日",
         "guests": "大人2名以上"
@@ -5124,14 +5264,14 @@
           "expired": false,
           "min_booking_amount": "¥ 40,000",
           "coupons_left": "クーポン残り30枚！",
-          "search_url": "https://www.rurubu.travel/search?region=775&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=775&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月19日～2027年1月31日",
           "stay_period": "2026年11月19日～2026年12月25日、2027年1月4日～2027年1月31日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=775&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=775&checkIn=2026-11-21&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -5222,7 +5362,7 @@
         "expired": false,
         "min_booking_amount": "¥ 1",
         "coupons_left": "クーポン残り48枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1239&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1239&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年11月10日～2027年2月28日",
         "stay_period": "2026年11月10日～2026年11月20日、2026年11月23日～2026年12月25日、2027年1月4日～2027年1月8日、2027年1月11日～2027年2月28日"
       }
@@ -5251,13 +5391,13 @@
           "expired": false,
           "min_booking_amount": "¥ 1",
           "coupons_left": "クーポン残り48枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1239&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1239&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年11月10日～2027年2月28日",
           "stay_period": "2026年11月10日～2026年11月20日、2026年11月23日～2026年12月25日、2027年1月4日～2027年1月8日、2027年1月11日～2027年2月28日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1239&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1239&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -5351,7 +5491,7 @@
         "expired": false,
         "min_booking_amount": "¥ 15,000",
         "coupons_left": "クーポン残り55枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1240&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1240&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月15日～2027年2月28日",
         "stay_period": "2026年10月15日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年12月28日、2027年1月4日～2027年2月28日"
       }
@@ -5380,13 +5520,13 @@
           "expired": false,
           "min_booking_amount": "¥ 15,000",
           "coupons_left": "クーポン残り55枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1240&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1240&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月15日～2027年2月28日",
           "stay_period": "2026年10月15日～2026年11月13日、2026年11月15日～2026年11月20日、2026年11月23日～2026年12月28日、2027年1月4日～2027年2月28日"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1240&checkIn=2026-11-20&los=1&adults=1&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1240&checkIn=2026-11-23&los=1&adults=1&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }
@@ -5856,7 +5996,7 @@
         "expired": false,
         "min_booking_amount": "¥ 1",
         "coupons_left": "クーポン残り29枚！",
-        "search_url": "https://www.rurubu.travel/search?region=1103&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+        "search_url": "https://www.rurubu.travel/search?region=1103&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
         "booking_period": "2026年10月29日～2027年3月31日",
         "stay_period": "2026年10月29日～2026年11月20日、2026年11月23日～2026年12月25日、2027年1月3日～2027年1月8日、2027年1月11日～2027年3月19日",
         "guests": "大人2名以上"
@@ -5887,14 +6027,14 @@
           "expired": false,
           "min_booking_amount": "¥ 1",
           "coupons_left": "クーポン残り29枚！",
-          "search_url": "https://www.rurubu.travel/search?region=1103&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358",
+          "search_url": "https://www.rurubu.travel/search?region=1103&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358",
           "booking_period": "2026年10月29日～2027年3月31日",
           "stay_period": "2026年10月29日～2026年11月20日、2026年11月23日～2026年12月25日、2027年1月3日～2027年1月8日、2027年1月11日～2027年3月19日",
           "guests": "大人2名以上"
         }
       ],
       "search_urls": [
-        "https://www.rurubu.travel/search?region=1103&checkIn=2026-11-20&los=1&adults=2&children=0&rooms=1&cid=1839358"
+        "https://www.rurubu.travel/search?region=1103&checkIn=2026-11-23&los=1&adults=2&children=0&rooms=1&cid=1839358"
       ],
       "source_page_title": "【お得な割引クーポン】今日のおトク情報をチェック！"
     }

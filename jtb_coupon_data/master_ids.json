@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T07:21:26.702974+09:00",
+  "last_updated": "2026-11-20T16:02:23.709653+09:00",
   "ids": {
     "2611jtbcpnew": {
       "category": "国内",
@@ -137,6 +137,13 @@
     "2610dohoku": {
       "category": "国内",
       "title": "道北エリアのおすすめ施設で使える割引クーポン",
+      "discount": "最大10,000円引",
+      "area": "北海道",
+      "stock_status": "配布中"
+    },
+    "2611douto": {
+      "category": "国内",
+      "title": "道東エリアのおすすめ施設で使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道",
       "stock_status": "配布中"
@@ -454,7 +461,7 @@
       "title": "☆【沖縄】1月～5月出発☆冬旅からGW旅行に使えるおすすめ旅行割引クーポン",
       "discount": "最大20,000円引",
       "area": "沖縄県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2610okinawa": {
       "category": "国内",
