@@ -261,6 +261,10 @@ jobs:
               print(f"  - ❌ 取得失敗: {labels.get(provider_id, provider_id)} ({provider_id})")
           for provider_id in reviews:
               print(f"  - 🔍 要確認（取得数が急減・前回データを保持）: {labels.get(provider_id, provider_id)} ({provider_id})")
+          for item in run.get("summaries", []):
+              if item.get("url_change_suspected"):
+                  urls = " / ".join(str(c.get("url")) for c in item.get("url_candidates") or []) or "なし"
+                  print(f"  - 🔗 URL変更の可能性: {item.get('provider_label', '')} ({item.get('provider_id')}) 状態 {item.get('url_check_status')} / 候補: {urls}（登録URLの変更はオーナー確認のPRで行う）")
           PY
 
       - name: コミット＆プッシュ
