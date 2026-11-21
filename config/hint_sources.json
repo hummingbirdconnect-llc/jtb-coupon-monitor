@@ -23,7 +23,7 @@
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
+      "last_check_seen": "2026-11-22T07:21:49.941382+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -34,7 +34,7 @@
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-17_web080620.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
+      "last_check_seen": "2026-11-22T07:21:49.941382+09:00"
     },
     {
       "provider_id": "jalan",
@@ -45,7 +45,7 @@
       "active": true,
       "from_hint_file": "discovery_hints/jalan/hints_2026-11-18_web080624.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-21T07:23:04.865359+09:00"
+      "last_check_seen": "2026-11-22T07:21:45.122864+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -56,7 +56,7 @@
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-20.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
+      "last_check_seen": "2026-11-22T07:21:49.941382+09:00"
     },
     {
       "provider_id": "rakuten_travel",
@@ -67,7 +67,27 @@
       "active": true,
       "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-20_web080631.json",
       "fail_streak": 0,
-      "last_check_seen": "2026-11-21T07:23:13.399557+09:00"
+      "last_check_seen": "2026-11-22T07:21:49.941382+09:00"
+    },
+    {
+      "provider_id": "rakuten_travel",
+      "url": "https://travel.rakuten.co.jp/service/smartphone/",
+      "title": "【国内宿泊】初めての楽天トラベル公式アプリご予約で10％OFFクーポン※併用可",
+      "added_on": "2026-11-22",
+      "expires_on": "2027-01-03",
+      "active": true,
+      "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-22.json",
+      "fail_streak": 0
+    },
+    {
+      "provider_id": "rakuten_travel",
+      "url": "https://travel.rakuten.co.jp/camp/rakutencard/coupon/",
+      "title": "楽天カード会員限定 国内宿泊クーポン（毎月）",
+      "added_on": "2026-11-22",
+      "expires_on": "2027-01-06",
+      "active": true,
+      "from_hint_file": "discovery_hints/rakuten_travel/hints_2026-11-22_web080626.json",
+      "fail_streak": 0
     }
   ]
 }
