@@ -1,0 +1,32 @@
+{
+  "provider_id": "rakuten_travel",
+  "provider_label": "楽天トラベル",
+  "generated_at": "2026-11-22T07:40:47.029682+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 40,
+  "registered_url_count": 5,
+  "candidates": [
+    {
+      "title": "【国内宿泊】初めての楽天トラベル公式アプリご予約で10％OFFクーポン※併用可",
+      "kind": "coupon",
+      "found_url": "https://travel.rakuten.co.jp/service/smartphone/",
+      "official_url": "https://travel.rakuten.co.jp/service/smartphone/",
+      "official_domain_match": true,
+      "evidence": "国内宿泊のアプリ初回予約、オンラインカード決済限定。割引上限2,000円、利用上限9,000枚。",
+      "observed_date": "2026-11-22",
+      "discount": "10%OFF",
+      "period": "予約: 2026/10/30(金) 10:00 ～ 2026/11/30(月) 9:59／宿泊: 2026/10/30(金) チェックイン ～ 2027/1/3",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-22.json"
+}

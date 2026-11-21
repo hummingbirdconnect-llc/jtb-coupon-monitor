@@ -1,0 +1,17 @@
+{
+  "provider_id": "klook",
+  "provider_label": "Klook",
+  "generated_at": "2026-11-22T07:40:47.029682+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "公開ページは台湾向け表示。日本向け候補の期間・条件を確認できず。",
+  "known_title_count": 9,
+  "registered_url_count": 1,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/klook/hints_2026-11-22.json"
+}
