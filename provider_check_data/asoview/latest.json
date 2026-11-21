@@ -2,9 +2,9 @@
   "provider_id": "asoview",
   "provider_label": "アソビュー",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-21T07:23:13.400158+09:00",
-  "completed_at": "2026-11-21T07:23:16.397787+09:00",
-  "official_fetched_at": "2026-11-21T07:23:16.397793+09:00",
+  "started_at": "2026-11-21T16:04:43.984193+09:00",
+  "completed_at": "2026-11-21T16:04:46.363750+09:00",
+  "official_fetched_at": "2026-11-21T16:04:46.363756+09:00",
   "source_results": [
     {
       "url": "https://www.asoview.com/coupon/",
@@ -18,7 +18,7 @@
       "discovered_from": "",
       "discovered_urls": [],
       "text_chars": 1022,
-      "content_hash": "b012fe79123f9a07e81cf0e9e77198da7b394b965719065e6597fc8d98939350"
+      "content_hash": "8523f82b1166f8434472d4823d78f2b663691b5ff97bc484f23415c945718414"
     }
   ],
   "failed_source_count": 0,
@@ -35,12 +35,12 @@
   "wp_review_eligible": false,
   "status": "audit_pending",
   "change_kind": "update",
-  "content_hash": "f27d182e731f5639a35c9f1eb4f4bcf082ccaafbbc2a1eb85ebb057c14251ae9",
-  "data_date": "2026-11-20",
-  "latest_file": "coupons_2026-11-20.json",
-  "coupon_count": 16,
-  "audit_candidate_id": "asoview-f27d182e731f5639",
-  "audit_candidate_path": "codex_audit_queue/asoview/asoview-f27d182e731f5639.json",
+  "content_hash": "215bc5ac3dfb4c44277f220216cc1b64c701fc90d651998432c324b86b7bd1fd",
+  "data_date": "2026-11-21",
+  "latest_file": "coupons_2026-11-21.json",
+  "coupon_count": 18,
+  "audit_candidate_id": "asoview-215bc5ac3dfb4c44",
+  "audit_candidate_path": "codex_audit_queue/asoview/asoview-215bc5ac3dfb4c44.json",
   "error": "",
   "freshness_status": "fresh"
 }
