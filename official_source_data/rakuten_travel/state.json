@@ -1,7 +1,7 @@
 {
   "provider_id": "rakuten_travel",
-  "observed_hash": "dc1bc3405e1641f7a1374979e0326de2a9922e3a752eb1a655963d27d5c2d05c",
-  "last_checked_at": "2026-11-22T07:21:49.941382+09:00",
+  "observed_hash": "703337df96d08c3117c2d16fd0b96347c5c6b7cebd561e9928a38cdbaf04a2d5",
+  "last_checked_at": "2026-11-22T08:16:42.588799+09:00",
   "sources": [
     {
       "url": "https://travel.rakuten.co.jp/coupon/",
@@ -72,12 +72,40 @@
       "discovered_urls": [],
       "text_chars": 5629,
       "content_hash": "0c4fc11ae21fb0449978853c02c33a64d4fe6e055538bb19c5857b1d197512f2"
+    },
+    {
+      "url": "https://travel.rakuten.co.jp/service/smartphone/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: 【国内宿泊】初めての楽天トラベル公式アプリご予約で10％OFFクーポン※併用可",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 2447,
+      "content_hash": "ede0426347241521e52bb6a5c49feb9035670b439393dfc653aa03a37b1aefdc"
+    },
+    {
+      "url": "https://travel.rakuten.co.jp/camp/rakutencard/coupon/",
+      "ok": true,
+      "status_code": 200,
+      "fetch_method": "html",
+      "error": "",
+      "purpose": "候補から追加: 楽天カード会員限定 国内宿泊クーポン（毎月）",
+      "source_role": "hint_added",
+      "include_in_audit": true,
+      "discovered_from": "",
+      "discovered_urls": [],
+      "text_chars": 1922,
+      "content_hash": "97289e329416c256dd606ea5032dce9b5f288709bbf72b67e3d41b7e6c034141"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-11-20T08:23:29.311561+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "703337df96d08c3117c2d16fd0b96347c5c6b7cebd561e9928a38cdbaf04a2d5",
+  "queued_candidate_id": "rakuten_travel-703337df96d08c31",
+  "queued_at": "2026-11-22T08:16:42.592493+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-11-20T09:12:04.808512+09:00",
   "last_audit_candidate_id": "rakuten_travel-dc1bc3405e1641f7",
   "processed_hash": "dc1bc3405e1641f7a1374979e0326de2a9922e3a752eb1a655963d27d5c2d05c",
