@@ -4,7 +4,7 @@
   "provider_id": "asoview",
   "provider_label": "アソビュー",
   "change_kind": "update",
-  "fetched_at": "2026-11-21T16:04:46.364136+09:00",
+  "fetched_at": "2026-11-22T16:04:25.931091+09:00",
   "content_hash": "215bc5ac3dfb4c44277f220216cc1b64c701fc90d651998432c324b86b7bd1fd",
   "data_dir": "official_coupon_data/asoview",
   "official_domains": [
@@ -30,27 +30,6 @@
   ],
   "previous_coupons": [
     {
-      "id": "asoview-5ed4a1683fcdf5d0",
-      "title": "【ブラックフライデー】対象施設限定500円OFFクーポン",
-      "category": "coupon",
-      "type": "coupon",
-      "display_type": "coupon",
-      "discount": "500円OFF",
-      "stock_status": "配布中",
-      "booking_period": "",
-      "travel_period": "",
-      "conditions": "11/29 (JST)まで有効（年の記載なし）。対象施設限定",
-      "coupon_codes": [],
-      "detail_url": "https://www.asoview.com/coupon/",
-      "source_url": "https://www.asoview.com/coupon/",
-      "source_type": "official_codex_audit",
-      "fetch_method": "codex-scheduled-audit",
-      "confidence": "high",
-      "classification": "conditional",
-      "evidence_quote": "500 円 OFF 【ブラックフライデー】対象施設限定500円OFFクーポン 表示価格から500円OFF 11/29 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
-    },
-    {
       "id": "asoview-813cb52e4dd9576f",
       "title": "【ブラックフライデー】対象施設限定1,000円OFFクーポン",
       "category": "coupon",
@@ -60,7 +39,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "11/29 (JST)まで有効（年の記載なし）。対象施設限定",
+      "conditions": "11/29 (JST)まで有効。対象施設限定",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -69,7 +48,7 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "1,000 円 OFF 【ブラックフライデー】対象施設限定1,000円OFFクーポン 表示価格から1,000円OFF 11/29 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-5954b3703a0c499b",
@@ -81,7 +60,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "11/30 (JST)まで有効（年の記載なし）",
+      "conditions": "11/30 (JST)まで有効",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -90,7 +69,7 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "300 円 OFF サンリオキャラクターフェスinリトルユニバースOKINAWA セット券 300円OFFクーポン 表示価格から300円OFF 11/30 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-2ec81b898b0b564c",
@@ -102,7 +81,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "11/30 (JST)まで有効（年の記載なし）。値引き上限10,000円",
+      "conditions": "11/30 (JST)まで有効。値引き上限10,000円",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -111,7 +90,7 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "最大 30 % OFF 【11月】「千葉遊び尽くし！応援割 26」平日30%OFF/休日10%OFFクーポン 表示価格から最大30%OFF 11/30 (JST)まで有効 値引き上限10,000円 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-f6e70cb0f9362237",
@@ -123,7 +102,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "12/25 (JST)まで有効（年の記載なし）",
+      "conditions": "12/25 (JST)まで有効",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -132,7 +111,7 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "100 円 OFF ナイトペアチケットで使える100円OFFクーポン 1人あたり、100円OFF 12/25 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-d38367ec80fe7777",
@@ -144,7 +123,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "12/31 (JST)まで有効（年の記載なし）",
+      "conditions": "12/31 (JST)まで有効",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -153,7 +132,7 @@
       "confidence": "high",
       "classification": "publishable",
       "evidence_quote": "30 % OFF 【第2弾】やまぐちのアソビ新発見割2026 30%OFFクーポン 表示価格から30%OFF 12/31 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-9241ba7390e436bf",
@@ -165,7 +144,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "12/31 (JST)まで有効（年の記載なし）。値引き上限10,000円",
+      "conditions": "12/31 (JST)まで有効。値引き上限10,000円",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -174,7 +153,7 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "最大 30 % OFF 【12月】「千葉遊び尽くし！応援割 26」平日30%OFF/休日10%OFFクーポン 表示価格から最大30%OFF 12/31 (JST)まで有効 値引き上限10,000円 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-cef5f41e38340f6c",
@@ -186,7 +165,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "3/31 (JST)まで有効（年の記載なし）",
+      "conditions": "3/31 (JST)まで有効",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -195,7 +174,7 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "8 % OFF 【アソビュー限定】OKINAWAフルーツランドクーポン 表示価格から8%OFF 3/31 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-3fc0667552369bcd",
@@ -207,7 +186,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "3/31 (JST)まで有効（年の記載なし）",
+      "conditions": "3/31 (JST)まで有効",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -216,7 +195,7 @@
       "confidence": "high",
       "classification": "publishable",
       "evidence_quote": "2,000 円 OFF AANC_エクストリームふくしま2026 表示価格から2,000円OFF 3/31 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-f20f649a53555818",
@@ -228,7 +207,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "6/30 (JST)まで有効（年の記載なし）",
+      "conditions": "6/30 (JST)まで有効",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -237,7 +216,7 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "5 % OFF 【超得割！チケット限定】新江ノ島水族館 5％OFFクーポン 表示価格から5%OFF 6/30 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
     },
     {
       "id": "asoview-1ea6f776da88f682",
@@ -249,7 +228,7 @@
       "stock_status": "配布中",
       "booking_period": "",
       "travel_period": "",
-      "conditions": "12/31 (JST)まで有効（年の記載なし）",
+      "conditions": "12/31 (JST)まで有効",
       "coupon_codes": [],
       "detail_url": "https://www.asoview.com/coupon/",
       "source_url": "https://www.asoview.com/coupon/",
@@ -258,7 +237,29 @@
       "confidence": "high",
       "classification": "conditional",
       "evidence_quote": "500 円 OFF 【対象チケット限定】ニンジャ☆パーク1日フリーパス 500円引き 表示価格から500円OFF 12/31 (JST)まで有効 クーポンを獲得する",
-      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00"
+      "official_fetched_at": "2026-11-22T09:10:23.191479+09:00"
+    },
+    {
+      "id": "asoview-5ed4a1683fcdf5d0",
+      "title": "【ブラックフライデー】対象施設限定500円OFFクーポン",
+      "category": "coupon",
+      "type": "coupon",
+      "display_type": "coupon",
+      "discount": "500円OFF",
+      "stock_status": "要確認",
+      "booking_period": "",
+      "travel_period": "",
+      "conditions": "11/29 (JST)まで有効（年の記載なし）。対象施設限定",
+      "coupon_codes": [],
+      "detail_url": "https://www.asoview.com/coupon/",
+      "source_url": "https://www.asoview.com/coupon/",
+      "source_type": "official_codex_audit",
+      "fetch_method": "codex-scheduled-audit",
+      "confidence": "low",
+      "classification": "conditional",
+      "evidence_quote": "500 円 OFF 【ブラックフライデー】対象施設限定500円OFFクーポン 表示価格から500円OFF 11/29 (JST)まで有効 クーポンを獲得する",
+      "official_fetched_at": "2026-11-21T09:10:28.137684+09:00",
+      "missing_from_latest": true
     },
     {
       "id": "asoview-121b4c49d0bc2d8e",
