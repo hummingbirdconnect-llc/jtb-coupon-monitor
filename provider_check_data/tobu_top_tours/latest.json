@@ -2,9 +2,9 @@
   "provider_id": "tobu_top_tours",
   "provider_label": "東武トップツアーズ",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-22T16:04:25.932449+09:00",
-  "completed_at": "2026-11-22T16:04:29.377421+09:00",
-  "official_fetched_at": "2026-11-22T16:04:29.377428+09:00",
+  "started_at": "2026-11-23T07:22:42.150683+09:00",
+  "completed_at": "2026-11-23T07:22:46.226474+09:00",
+  "official_fetched_at": "2026-11-23T07:22:46.226480+09:00",
   "source_results": [
     {
       "url": "https://tobutoptours.jp/members_new/coupon/",
@@ -54,5 +54,5 @@
   "coupon_count": 9,
   "content_hash": "10a75dd3eae85a837d10554aca6a8d9fb0d4ef11967644d3afe57007f6f3d865",
   "error": "",
-  "freshness_status": "fresh"
+  "freshness_status": "stale"
 }
