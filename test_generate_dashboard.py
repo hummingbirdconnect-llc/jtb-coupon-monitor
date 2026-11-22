@@ -348,5 +348,71 @@ class DashboardOutputTest(unittest.TestCase):
                 write_dashboard_outputs(data, Path(tmp) / "dashboard")
 
 
+class FreshnessChipTest(unittest.TestCase):
+    """常時監視の鮮度の1行表示。中身が変わらない日もチェック日時を併記する。"""
+
+    @staticmethod
+    def provider(**extra: object) -> dict:
+        base = {"id": "jalan", "label": "じゃらん", "check_status": {}}
+        base.update(extra)
+        return base
+
+    def test_unchanged_but_checked_today_shows_data_date_and_check_time(self) -> None:
+        chip = generate_dashboard.freshness_chip(
+            self.provider(
+                data_date="2026-11-07",
+                official_fetched_at="2026-11-11T07:20:16.685791+09:00",
+            ),
+            datetime(2026, 11, 11).date(),
+        )
+        self.assertEqual(chip["state"], "stale")
+        self.assertEqual(chip["text"], "11/7 の情報のまま（11/11 7:20 チェック済み）")
+
+    def test_last_checked_at_is_used_when_official_fetched_at_is_missing(self) -> None:
+        chip = generate_dashboard.freshness_chip(
+            self.provider(data_date="2026-11-07", last_checked_at="2026-11-10T22:05:00+00:00"),
+            datetime(2026, 11, 11).date(),
+        )
+        # UTC 22:05 は日本時間で翌日 7:05
+        self.assertEqual(chip["text"], "11/7 の情報のまま（11/11 7:05 チェック済み）")
+
+    def test_failed_run_completed_at_is_not_shown_as_checked(self) -> None:
+        chip = generate_dashboard.freshness_chip(
+            self.provider(
+                data_date="2026-11-07",
+                check_status={"completed_at": "2026-11-11T07:20:00+09:00", "status": "error"},
+            ),
+            datetime(2026, 11, 11).date(),
+        )
+        self.assertEqual(chip["text"], "11/7 の情報のまま")
+
+    def test_pending_audit_keeps_waiting_text(self) -> None:
+        chip = generate_dashboard.freshness_chip(
+            self.provider(
+                data_date="2026-11-07",
+                official_fetched_at="2026-11-11T07:20:16+09:00",
+                pending_audit_count=2,
+            ),
+            datetime(2026, 11, 11).date(),
+        )
+        self.assertEqual(chip["state"], "stale")
+        self.assertEqual(chip["text"], "11/7 の情報のまま（11/11 7:20 公式ページは取得済み・読み取り待ち 2 件）")
+
+    def test_check_not_newer_than_data_date_adds_nothing(self) -> None:
+        chip = generate_dashboard.freshness_chip(
+            self.provider(data_date="2026-11-07", official_fetched_at="2026-11-07T07:20:00+09:00"),
+            datetime(2026, 11, 11).date(),
+        )
+        self.assertEqual(chip["text"], "11/7 の情報のまま")
+
+    def test_fresh_same_day_fetch_is_unchanged(self) -> None:
+        chip = generate_dashboard.freshness_chip(
+            self.provider(data_date="2026-11-11", official_fetched_at="2026-11-11T07:20:16+09:00"),
+            datetime(2026, 11, 11).date(),
+        )
+        self.assertEqual(chip["state"], "fresh")
+        self.assertEqual(chip["text"], "11/11 07:20 取得")
+
+
 if __name__ == "__main__":
     unittest.main()
