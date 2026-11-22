@@ -113,6 +113,7 @@ SUMMARY_COLUMNS = [
     "公式取得日時",
     "最終深掘り日",
     "URL確認日時",
+    "URL変更",
     "データ日",
     "鮮度",
     "Codex監査",
@@ -860,6 +861,20 @@ def format_hint_rows(provider: dict[str, Any], hints: dict[str, Any]) -> list[di
     return rows
 
 
+def url_change_summary(check_status: dict[str, Any]) -> str:
+    """サマリー表・latest.json 向けの1行（例: URL変更の可能性（404） 候補: https://...）。"""
+    if not check_status.get("url_change_suspected"):
+        return "なし"
+    label = check_status.get("url_change_label") or "URL変更の可能性"
+    status = check_status.get("url_check_status") or "不明"
+    urls = [
+        str(candidate.get("url"))
+        for candidate in check_status.get("url_candidates") or []
+        if candidate.get("url")
+    ]
+    return f"{label}（{status}） 候補: {' / '.join(urls) if urls else 'なし'}"
+
+
 def build_provider_payload(
     provider: dict[str, Any], pending_audit_counts: dict[str, int] | None = None
 ) -> dict[str, Any]:
@@ -1006,6 +1021,11 @@ def build_provider_payload(
         "freshness_label": freshness_label(freshness),
         "official_fetched_at": official_fetched_at,
         "url_checked_at": url_checked_at,
+        # 登録URLが404・403・トップへの転送になったときの移転先候補（url_discovery）
+        "url_change_suspected": bool(check_status.get("url_change_suspected")),
+        "url_change_label": check_status.get("url_change_label", "") if check_status.get("url_change_suspected") else "",
+        "url_check_status": check_status.get("url_check_status", "") if check_status.get("url_change_suspected") else "",
+        "url_candidates": check_status.get("url_candidates", []) if check_status.get("url_change_suspected") else [],
         "ai_label": audit_label,
         "count_status": count_status,
         "count_label": count_label,
@@ -1053,6 +1073,7 @@ def build_provider_payload(
             "公式取得日時": official_fetched_at or "なし",
             "最終深掘り日": (deep_dive_at or "未実施") if on_demand else "-",
             "URL確認日時": url_checked_at or "なし",
+            "URL変更": url_change_summary(check_status),
             "データ日": data_date or "不明",
             "鮮度": freshness_label(freshness),
             "Codex監査": audit_label,
@@ -1609,7 +1630,19 @@ function checkStatusHtml(provider) {{
   if (status.error) {{
     details.push(`<span class="manual-meta">エラー: ${{escapeHtml(status.error)}}</span>`);
   }}
+  details.push(urlChangeHtml(provider));
   return details.join('');
+}}
+
+function urlChangeHtml(provider) {{
+  if (!provider.url_change_suspected) return '';
+  const candidates = (provider.url_candidates || []).map(candidate => {{
+    const url = String(candidate.url || '');
+    const safe = /^https?:\/\//.test(url) ? url : '#';
+    return `<a href="${{escapeHtml(safe)}}" target="_blank" rel="noopener noreferrer">${{escapeHtml(url)}}</a>（${{escapeHtml(candidate.method || '')}}・${{escapeHtml(candidate.status || '')}}）`;
+  }});
+  return `<span class="check-pill check-error">${{escapeHtml(provider.url_change_label || 'URL変更の可能性')}}</span>`
+    + `<span class="manual-meta">登録URLの状態: ${{escapeHtml(provider.url_check_status || '不明')}} / 候補: ${{candidates.length ? candidates.join(' / ') : 'なし'}}（登録URLの変更はオーナー確認のPRで行います）</span>`;
 }}
 
 function visualObservationNote(provider) {{

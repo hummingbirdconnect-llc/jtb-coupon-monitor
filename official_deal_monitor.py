@@ -15,6 +15,7 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 import requests
 from bs4 import BeautifulSoup
 
+import url_discovery
 from deal_audit_schema import normalize_text, stable_deal_id
 
 JST = timezone(timedelta(hours=9))
@@ -47,6 +48,10 @@ UNTRUSTED_WESTERN_ENCODINGS = {
 
 class OfficialFetchError(RuntimeError):
     """公式ソースを正常に取得できなかった。"""
+
+    def __init__(self, message: str, status_code: int | None = None) -> None:
+        super().__init__(message)
+        self.status_code = status_code
 
 
 def now_jst() -> datetime:
@@ -148,6 +153,8 @@ def _source_result(
     text: str,
     error: str,
     html: str = "",
+    http_status: int | None = None,
+    final_url: str = "",
 ) -> dict[str, Any]:
     result = {
         "url": source["url"],
@@ -162,6 +169,11 @@ def _source_result(
         "discovered_from": source.get("discovered_from", ""),
         "discovered_urls": _discover_official_urls(html, source) if ok and html else [],
     }
+    # URL変更の判定用（url_discovery）。requests で取れたときだけ入る。
+    if http_status is not None:
+        result["http_status"] = http_status
+    if final_url and final_url != source["url"]:
+        result["final_url"] = final_url
     return result
 
 
@@ -197,7 +209,8 @@ def _decode_response_html(response: requests.Response) -> str:
     return content.decode("utf-8", errors="replace")
 
 
-def _requests_fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[str, int]:
+def _requests_fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[str, int, str]:
+    """(HTML, ステータス, 転送後のURL) を返す。"""
     last_error = ""
     for attempt in range(retries + 1):
         try:
@@ -212,8 +225,14 @@ def _requests_fetch(url: str, timeout: int = 30, retries: int = 2) -> tuple[str,
                     time.sleep(2 ** attempt)
                     continue
             if response.status_code != 200:
-                raise OfficialFetchError(f"HTTP {response.status_code}")
-            return _decode_response_html(response), response.status_code
+                raise OfficialFetchError(
+                    f"HTTP {response.status_code}", status_code=response.status_code
+                )
+            return (
+                _decode_response_html(response),
+                response.status_code,
+                str(getattr(response, "url", "") or url),
+            )
         except requests.RequestException as exc:
             last_error = exc.__class__.__name__
             if attempt < retries:
@@ -256,10 +275,13 @@ def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str
     min_page_text = max(1, int(source.get("min_page_text", MIN_PAGE_TEXT)))
     html = ""
     request_error = ""
+    http_status: int | None = None
+    final_url = ""
 
     if requested_method in {"auto", "html", "embedded_json"}:
         try:
-            html, status_code = _requests_fetch(url, timeout=timeout)
+            html, status_code, final_url = _requests_fetch(url, timeout=timeout)
+            http_status = status_code
             embedded = _embedded_json_text(html)
             visible = _visible_text(html)
             if requested_method == "embedded_json" and len(embedded) >= min_page_text:
@@ -271,6 +293,8 @@ def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str
                     text=embedded,
                     error="",
                     html=html,
+                    http_status=http_status,
+                    final_url=final_url,
                 )
             if len(visible) >= min_page_text:
                 combined = visible
@@ -284,10 +308,13 @@ def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str
                     text=combined,
                     error="",
                     html=html,
+                    http_status=http_status,
+                    final_url=final_url,
                 )
             request_error = f"page text too short ({len(visible)})"
         except OfficialFetchError as exc:
             request_error = str(exc)
+            http_status = exc.status_code
 
     if requested_method in {"auto", "playwright"}:
         try:
@@ -303,6 +330,8 @@ def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str
                 text=visible,
                 error="",
                 html=html,
+                http_status=http_status,
+                final_url=final_url,
             )
         except OfficialFetchError as exc:
             request_error = f"{request_error}; {exc}".strip("; ")
@@ -314,6 +343,8 @@ def fetch_official_source(source: dict[str, Any], timeout: int = 30) -> dict[str
         fetch_method=requested_method,
         text="",
         error=request_error or "unsupported fetch method",
+        http_status=http_status,
+        final_url=final_url,
     )
 
 
@@ -628,6 +659,8 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
     configured_results = [
         fetch_official_source(source, timeout=timeout) for source in configured_sources
     ]
+    # 404・403・トップへの転送なら移転先の候補を探す（登録URLは書き換えない）
+    url_change = url_discovery.check_sources(provider, configured_sources, configured_results)
     known_urls = {
         _canonical_discovery_url(str(source["url"])) for source in configured_sources
     }
@@ -689,6 +722,7 @@ def run_official_deal_monitor(provider: dict[str, Any], timeout: int = 30) -> di
         "ai_used": False,
         "codex_audit_required": False,
         "wp_review_eligible": False,
+        **url_change,
     }
     if not successful_sources:
         return {
