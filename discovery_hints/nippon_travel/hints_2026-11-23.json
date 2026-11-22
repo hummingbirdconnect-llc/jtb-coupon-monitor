@@ -1,0 +1,60 @@
+{
+  "provider_id": "nippon_travel",
+  "provider_label": "日本旅行",
+  "generated_at": "2026-11-23T07:40:12.170060+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "【宿泊】500円分：2026/11/30まで使える◎ブラックフライデーセール2026◎",
+      "kind": "coupon",
+      "found_url": "https://www.nta.co.jp/cpn/campaign/black-friday/",
+      "official_url": "https://www.nta.co.jp/cpn/campaign/black-friday/",
+      "official_domain_match": true,
+      "evidence": "【宿泊】500円分：2026/11/30まで使える◎ブラックフライデーセール2026◎。500円引き。予約期間：2026年11月16日(月)15:00～2026年11月30日(月)14:59 / 出発対象期間：2026年11月17日(火)～",
+      "observed_date": "2026-11-23",
+      "discount": "500円引き",
+      "period": "予約期間：2026年11月16日(月)15:00～2026年11月30日(月)14:59 / 出発対象期間：2026年11月17日(火)～2027年2月28日(",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "【JR+宿泊】1,500円分：2026/11/30まで使える◎ブラックフライデーセール2026◎",
+      "kind": "coupon",
+      "found_url": "https://www.nta.co.jp/cpn/campaign/black-friday/",
+      "official_url": "https://www.nta.co.jp/cpn/campaign/black-friday/",
+      "official_domain_match": true,
+      "evidence": "【JR+宿泊】1,500円分：2026/11/30まで使える◎ブラックフライデーセール2026◎。1,500円引き。予約期間：2026年11月16日(月)15:00～2026年11月30日(月)14:59 / 出発対象期間：2026年11月",
+      "observed_date": "2026-11-23",
+      "discount": "1,500円引き",
+      "period": "予約期間：2026年11月16日(月)15:00～2026年11月30日(月)14:59 / 出発対象期間：2026年11月17日(火)～2027年2月28日(",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    },
+    {
+      "title": "【飛行機+宿泊】3,000円分：2026/11/30まで使える◎ブラックフライデーセール2026◎",
+      "kind": "coupon",
+      "found_url": "https://www.nta.co.jp/cpn/campaign/black-friday/",
+      "official_url": "https://www.nta.co.jp/cpn/campaign/black-friday/",
+      "official_domain_match": true,
+      "evidence": "【飛行機+宿泊】3,000円分：2026/11/30まで使える◎ブラックフライデーセール2026◎。3,000円引き。予約期間：2026年11月16日(月)15:00～2026年11月30日(月)14:59 / 出発対象期間：2026年11",
+      "observed_date": "2026-11-23",
+      "discount": "3,000円引き",
+      "period": "予約期間：2026年11月16日(月)15:00～2026年11月30日(月)14:59 / 出発対象期間：2026年11月17日(火)～2027年2月28日(",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 3,
+  "candidate_count": 3,
+  "hints_file": "discovery_hints/nippon_travel/hints_2026-11-23.json"
+}

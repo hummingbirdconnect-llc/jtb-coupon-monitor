@@ -1,0 +1,32 @@
+{
+  "provider_id": "jcation",
+  "provider_label": "Jcation",
+  "generated_at": "2026-11-23T07:40:12.170060+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "【2026年】ブラックフライデーセール",
+      "kind": "sale",
+      "found_url": "https://jcation.com/blog/blackfriday_sale_2026/",
+      "official_url": "https://jcation.com/blog/blackfriday_sale_2026/",
+      "official_domain_match": true,
+      "evidence": "航空券パック商品が一律20%割引。すべての航空会社が対象。割引上限なし。販売は12月3日23:59まで。",
+      "observed_date": "2026-11-23",
+      "discount": "一律20%割引",
+      "period": "販売期間：2026年11月17日 〜 12月3日 23:59まで / 対象の旅行期間：2026年11月22日 〜 12月30日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jcation/hints_2026-11-23.json"
+}

@@ -1,0 +1,17 @@
+{
+  "provider_id": "yumeyado",
+  "provider_label": "ゆめやど",
+  "generated_at": "2026-11-23T07:40:12.170060+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "拒否: 403。取り直しなし。",
+  "known_title_count": 21,
+  "registered_url_count": 3,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/yumeyado/hints_2026-11-23.json"
+}
