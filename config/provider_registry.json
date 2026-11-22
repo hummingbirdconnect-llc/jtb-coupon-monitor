@@ -58,11 +58,10 @@
       "coverage_status": "auto_daily",
       "data_dir": "jtb_coupon_data",
       "change_rules": {
-        "count_status_toggle_as_change": false,
         "new_requires_unseen_days": 7,
         "gone_requires_unlisted": true
       },
-      "note": "国内・海外の既存日次監視データあり。公式ページに載り続けている間の配布終了・再開は主な変化に数えず、在庫の出入りだけに出す。"
+      "note": "国内・海外の既存日次監視データあり。公式ページに載り続けている間の配布終了・再開（枚数切れ・補充）は記録も報告もしない（2026-11-13 オーナー決定）。公式ページから消えたときだけ消失とする。"
     },
     {
       "id": "knt",
