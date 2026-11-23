@@ -1,0 +1,32 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-24T07:42:39.230883+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 124,
+  "registered_url_count": 125,
+  "candidates": [
+    {
+      "title": "先どりポイントキャンペーン（国内旅行）",
+      "kind": "points",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/sakidori/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/sakidori/",
+      "official_domain_match": true,
+      "evidence": "国内旅行は90日前までの予約、300,000円以上が対象。エントリーが必要。",
+      "observed_date": "2026-11-24",
+      "discount": "5,000ポイント",
+      "period": "対象予約期間：2026年11月19日（木）～ 2027年1月31日（日）／対象出発期間：2027年4月1日(木) ～ 2027年10月31日(日)",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-24.json"
+}

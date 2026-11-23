@@ -1,0 +1,17 @@
+{
+  "provider_id": "yahoo_travel",
+  "provider_label": "Yahoo!トラベル",
+  "generated_at": "2026-11-24T07:42:39.230883+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "最新の監視データは2026-11-15。7日超のため使用不可。本人方針により公式ページは開かず。",
+  "known_title_count": 146,
+  "registered_url_count": 8,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-24.json"
+}
