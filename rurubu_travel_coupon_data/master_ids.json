@@ -1078,7 +1078,7 @@
       "title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-mss26sep20-2c5ca71865": {
       "first_seen": "2026-09-02",
@@ -1214,7 +1214,7 @@
       "title": "静岡県 東伊豆町のおすすめ施設で使えるクーポン（平日・休日の宿泊20％引き・最大割引額30,000円、休前日の宿泊15％引き・最大割引額20,000円）",
       "category": "エリア限定クーポン",
       "discount": "最大20%引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-kgwa26oct80-kgwa26oct60-kgwa26oct40-867df5079d": {
       "first_seen": "2026-10-19",
@@ -1222,7 +1222,7 @@
       "title": "香川県のおすすめ施設で使えるクーポン",
       "category": "エリア限定クーポン",
       "discount": "最大¥8,000引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-xfuku26sp50-dc90bd2fdf": {
       "first_seen": "2026-10-19",
@@ -1230,7 +1230,7 @@
       "title": "「九州ふっこう応援割ふくおかキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-xksag26sp50-a9e966d852": {
       "first_seen": "2026-10-19",
@@ -1254,7 +1254,7 @@
       "title": "「熊本ふっこう応援割」（おとな・こどもひとり1泊あたり最大20,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大60%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-xmiya26oc50-6373599314": {
       "first_seen": "2026-10-19",
@@ -1518,7 +1518,7 @@
       "title": "伊東園ホテルズのおすすめ施設で使えるクーポン（最大10,000円引き）",
       "category": "複数エリア対象クーポン",
       "discount": "最大10%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-pp26byny20-9e8a34c169": {
       "first_seen": "2026-11-16",
@@ -1615,7 +1615,23 @@
       "category": "施設限定クーポン",
       "discount": "最大10%引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26biwkh20-e6e6523e28": {
+      "first_seen": "2026-11-24",
+      "last_seen": "2026-11-24",
+      "title": "滋賀県 琵琶湖ホテルで使える割引クーポン（最大20,000円引き）",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大20%引き",
+      "stock_status": "配布中"
+    },
+    "rurubu_travel-kikt26nov10-9d002431e2": {
+      "first_seen": "2026-11-24",
+      "last_seen": "2026-11-24",
+      "title": "静岡県 舘山寺温泉 時わすれ開華亭で使えるクーポン（最大4,000円引き）",
+      "category": "施設限定クーポン",
+      "discount": "最大10%引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-11-24T07:24:46.081299+09:00"
+  "last_updated": "2026-11-24T16:05:17.029774+09:00"
 }

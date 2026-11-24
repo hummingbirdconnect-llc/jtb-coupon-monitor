@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24T07:21:12.134089+09:00",
+  "last_updated": "2026-11-24T16:03:47.894824+09:00",
   "ids": {
     "2611jtbcpnew": {
       "category": "国内",
@@ -330,6 +330,13 @@
       "area": "滋賀県・京都府・大阪府・兵庫県・奈良県・和歌山県・鳥取県・島根県・岡山県・広島県・山口県",
       "stock_status": "配布中"
     },
+    "2611hyogo": {
+      "category": "国内",
+      "title": "【兵庫県】のおすすめ施設で使える割引クーポン",
+      "discount": "15％引",
+      "area": "兵庫県",
+      "stock_status": "配布中"
+    },
     "2610tottori": {
       "category": "国内",
       "title": "すいちょるけん！鳥取割引クーポン",
@@ -377,7 +384,7 @@
       "title": "九州ふっこう応援割 ふくおかキャンペーン",
       "discount": "最大50％引",
       "area": "福岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609kyushusaga": {
       "category": "国内",
@@ -391,7 +398,7 @@
       "title": "九州ふっこう応援割 ながさきキャンペーン",
       "discount": "最大50％引",
       "area": "長崎県",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "2610nagasakimarriott": {
       "category": "国内",
