@@ -4,7 +4,7 @@
   {
    "site": "welltrip",
    "name": "ウェルトリップ",
-   "checked_at": "2026-11-24T15:49:34+09:00",
+   "checked_at": "2026-11-25T07:04:32+09:00",
    "status": "取得済み",
    "drafts_checked": true,
    "articles": [
@@ -38,7 +38,7 @@
      "post_id": 700,
      "title": "楽天トラベル クーポン一覧｜配布中の10,000円割引の条件も解説！",
      "url": "https://travel.hb-connect.co.jp/rakuten-travel-coupon/",
-     "modified": "2026-11-22T16:34:28+09:00",
+     "modified": "2026-11-24T16:37:01+09:00",
      "history": {
       "result": "変更を確認",
       "changed_at": "2026-11-22T16:34:28+09:00",
@@ -361,20 +361,18 @@
       "last_run": "2026-11-20 朝",
       "run_result": "公開本文の変更なし"
      },
-     "draft_at": "2026-11-15T16:01:42+09:00"
+     "draft_at": "2026-11-25T06:37:59+09:00"
     },
     {
      "post_id": 4959,
      "title": "JTBクーポンコード一覧｜今使える割引とLINE・初回・5％OFFの配布状況",
      "url": "https://travel.hb-connect.co.jp/jtb-coupon/",
-     "modified": "2026-11-24T07:48:46+09:00",
+     "modified": "2026-11-24T16:36:46+09:00",
      "history": {
       "result": "変更を確認",
-      "changed_at": "2026-11-24T07:48:46+09:00",
+      "changed_at": "2026-11-24T16:36:46+09:00",
       "fields": [
-       "クーポンコード",
-       "割引・利用金額",
-       "配布枚数"
+       "予約・利用期間"
       ]
      },
      "job": {
@@ -887,9 +885,14 @@
      "post_id": 12081,
      "title": "【2026年11月】Yahoo!トラベルのブラックフライデーはいつ？開催状況・過去のクーポンと備え方",
      "url": "https://travel.hb-connect.co.jp/yahoo-travel-black-friday/",
-     "modified": "2026-10-20T20:14:56+09:00",
+     "modified": "2026-11-25T06:33:09+09:00",
      "history": {
-      "result": "調べた履歴に条件差なし"
+      "result": "変更を確認",
+      "changed_at": "2026-11-25T06:33:09+09:00",
+      "fields": [
+       "予約・利用期間",
+       "割引・利用金額"
+      ]
      }
     },
     {
@@ -1008,7 +1011,7 @@
   {
    "site": "yakushimafan",
    "name": "屋久島ファン",
-   "checked_at": "2026-11-24T15:49:34+09:00",
+   "checked_at": "2026-11-25T07:04:32+09:00",
    "status": "取得済み",
    "drafts_checked": true,
    "articles": [

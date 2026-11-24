@@ -1,6 +1,6 @@
 {
   "source_url": "https://www.his-j.com/campaign/shisaku/",
-  "official_checked_at": "2026-11-24T15:45:32+09:00",
+  "official_checked_at": "2026-11-25T07:00:33+09:00",
   "official_area": "全11地域版",
   "coverage_status": "complete",
   "region_count": 11,
@@ -17,8 +17,8 @@
         "国内旅行": 19
       },
       "visible_count": 25,
-      "total_dom_count": 51,
-      "hidden_dom_count": 26
+      "total_dom_count": 53,
+      "hidden_dom_count": 28
     },
     {
       "code": "hokkaido",
@@ -30,8 +30,8 @@
         "国内旅行": 17
       },
       "visible_count": 22,
-      "total_dom_count": 51,
-      "hidden_dom_count": 29
+      "total_dom_count": 53,
+      "hidden_dom_count": 31
     },
     {
       "code": "tohoku",
@@ -43,8 +43,8 @@
         "国内旅行": 18
       },
       "visible_count": 41,
-      "total_dom_count": 51,
-      "hidden_dom_count": 10
+      "total_dom_count": 53,
+      "hidden_dom_count": 12
     },
     {
       "code": "koshinetsu",
@@ -155,12 +155,12 @@
     "海外旅行": 111,
     "国内旅行": 192
   },
-  "visible_count": 74,
+  "visible_count": 73,
   "regional_visible_count": 303,
-  "total_dom_count": 577,
-  "hidden_dom_count": 274,
-  "capture_count": 74,
+  "total_dom_count": 583,
+  "hidden_dom_count": 280,
+  "capture_count": 73,
   "capture_method": "deduplicated_individual_element_screenshot",
-  "derived_image_count": 74,
+  "derived_image_count": 73,
   "evidence_directory": "evidence/his"
 }
