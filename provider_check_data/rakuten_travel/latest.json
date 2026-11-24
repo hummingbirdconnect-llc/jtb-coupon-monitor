@@ -2,9 +2,9 @@
   "provider_id": "rakuten_travel",
   "provider_label": "楽天トラベル",
   "check_type": "official_page_candidate",
-  "started_at": "2026-11-24T16:05:03.879412+09:00",
-  "completed_at": "2026-11-24T16:05:09.200753+09:00",
-  "official_fetched_at": "2026-11-24T16:05:09.200761+09:00",
+  "started_at": "2026-11-25T07:22:55.674767+09:00",
+  "completed_at": "2026-11-25T07:23:00.232032+09:00",
+  "official_fetched_at": "2026-11-25T07:23:00.232039+09:00",
   "source_results": [
     {
       "url": "https://travel.rakuten.co.jp/coupon/",
@@ -87,8 +87,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 2447,
-      "content_hash": "ede0426347241521e52bb6a5c49feb9035670b439393dfc653aa03a37b1aefdc"
+      "text_chars": 3819,
+      "content_hash": "f3cfa9f74e2bef1b4cf88a23711dcb5c4a75f94fd442e73fbf24163b6d01b6e5"
     },
     {
       "url": "https://travel.rakuten.co.jp/camp/rakutencard/coupon/",
@@ -115,14 +115,16 @@
   "count_scope_label": "クーポン",
   "count_scope_detail": "",
   "ai_used": false,
-  "codex_audit_required": false,
+  "codex_audit_required": true,
   "wp_review_eligible": false,
-  "status": "unchanged",
-  "change_kind": "unchanged",
+  "status": "audit_pending",
+  "change_kind": "update",
+  "content_hash": "878ba599a97f978969d30f54a02210b478bc774e792d6c4d3461c416f0ab0913",
   "data_date": "2026-11-22",
   "latest_file": "coupons_2026-11-22.json",
   "coupon_count": 43,
-  "content_hash": "703337df96d08c3117c2d16fd0b96347c5c6b7cebd561e9928a38cdbaf04a2d5",
+  "audit_candidate_id": "rakuten_travel-878ba599a97f9789",
+  "audit_candidate_path": "codex_audit_queue/rakuten_travel/rakuten_travel-878ba599a97f9789.json",
   "error": "",
   "freshness_status": "stale"
 }
