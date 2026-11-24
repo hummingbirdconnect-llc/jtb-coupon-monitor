@@ -1,0 +1,46 @@
+{
+  "provider_id": "jtb",
+  "provider_label": "JTB",
+  "generated_at": "2026-11-25T07:40:58.715841+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 125,
+  "registered_url_count": 126,
+  "candidates": [
+    {
+      "title": "【兵庫県】のおすすめ施設で使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611hyogo/page.asp",
+      "official_domain_match": true,
+      "evidence": "兵庫県の対象施設。10,000円以上で15％引、上限8,000円。先着375枚。",
+      "observed_date": "2026-11-25",
+      "discount": "15％引（割引上限8,000円）",
+      "period": "予約対象期間2026/11/24(火) ～ 2027/2/28(日) / 宿泊対象期間2026/12/1(火) ～ 2027/2/28(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    },
+    {
+      "title": "【往復ANA便利用限定】＜沖縄行き＞年末年始ツアーで使える割引クーポン",
+      "kind": "coupon",
+      "found_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/",
+      "official_url": "https://www.jtb.co.jp/myjtb/campaign/coupon/detail/2611anadp2/page.asp",
+      "official_domain_match": true,
+      "evidence": "往復ANA指定16路線の直行便、2名以上。20万円以上で4万円引など3段階。",
+      "observed_date": "2026-11-25",
+      "discount": "最大40,000円引",
+      "period": "予約対象期間2026/11/19(木) ～ 2027/1/2(土) / 出発対象期間2026/12/20(日) ～ 2027/1/3(日)",
+      "confidence": "high",
+      "status": "known_url",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 0,
+  "candidate_count": 2,
+  "hints_file": "discovery_hints/jtb/hints_2026-11-25.json"
+}
