@@ -1,0 +1,32 @@
+{
+  "provider_id": "booking",
+  "provider_label": "Booking.com",
+  "generated_at": "2026-11-26T07:40:16.622902+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "ok",
+  "error": "",
+  "known_title_count": 3,
+  "registered_url_count": 1,
+  "candidates": [
+    {
+      "title": "Black Fridayセール",
+      "kind": "sale",
+      "found_url": "https://www.booking.com/dealspage.ja.html",
+      "official_url": "https://www.booking.com/dealspage.ja.html",
+      "official_domain_match": true,
+      "evidence": "公式公開ページに最大40%オフ、予約期間・滞在期間を掲載。東京・大阪・札幌など国内施設も対象。",
+      "observed_date": "2026-11-26",
+      "discount": "最大40%オフ",
+      "period": "予約期間: 11月19日～2026年12月2日 / 滞在: 2026年11月19日～2027年12月31日",
+      "confidence": "high",
+      "status": "new",
+      "matched_title": ""
+    }
+  ],
+  "new_count": 1,
+  "candidate_count": 1,
+  "hints_file": "discovery_hints/booking/hints_2026-11-26.json"
+}
