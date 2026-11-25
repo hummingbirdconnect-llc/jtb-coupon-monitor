@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "candidate_id": "booking-8f935dd59a484a59",
+  "provider_id": "booking",
+  "page_summary": "Booking.com Geniusロイヤルティプログラム。レベル1〜3の割引・特典を確認。クーポン配布はなし。",
+  "change_summary": "割引率・条件は前回掲載データと同じ。引用を公式本文の原文に置き換えて確定（公式本文での初回確定）。",
+  "recommendation": "draft",
+  "priority": 20,
+  "uncertainty_reasons": [],
+  "audit_notes": "期間の記載なし。日付項目は null。",
+  "deals": [
+    {
+      "title": "Geniusレベル1",
+      "campaign_type": "member_benefit",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "10%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "会員登録 / ログインで、対象の宿泊施設とレンタカーが対象",
+      "official_url": "https://www.booking.com/genius.ja.html",
+      "evidence_quote": "Geniusレベル1 会員登録 / ログインすることで、全世界の 対象の宿泊施設とレンタカー で即時割引を利用できるようになります。 宿泊予約が10%OFF 対象のレンタカーが10%OFF",
+      "confidence": "high"
+    },
+    {
+      "title": "Geniusレベル2",
+      "campaign_type": "member_benefit",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "10～15%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "2年間に5件の予約の利用を完了で、対象の宿泊施設とレンタカーが対象。対象のプランでの無料朝食・無料客室アップグレード",
+      "official_url": "https://www.booking.com/genius.ja.html",
+      "evidence_quote": "Geniusレベル2 2年間に5件の予約の利用を完了することで、全世界の 対象の宿泊施設とレンタカー で以下の特典が利用できるようになります。 宿泊予約が10～15%OFF 対象のレンタカーが10～15%OFF 対象のプランでの無料朝食 対象のプランでの無料客室アップグレード",
+      "confidence": "high"
+    },
+    {
+      "title": "Geniusレベル3",
+      "campaign_type": "member_benefit",
+      "status": "active",
+      "classification": "conditional",
+      "discount": "10～20%OFF",
+      "coupon_code": null,
+      "booking_start": null,
+      "booking_end": null,
+      "travel_start": null,
+      "travel_end": null,
+      "eligibility": "2年間に15件の予約の利用を完了で、対象の宿泊施設とレンタカーが対象。対象のプランでの無料朝食・無料客室アップグレード、全宿泊予約対象の優先サポート",
+      "official_url": "https://www.booking.com/genius.ja.html",
+      "evidence_quote": "Geniusレベル3 2年間に15件の予約の利用を完了することで、全世界の 対象の宿泊施設とレンタカー で以下の特典が利用できるようになります。 宿泊予約が10～20%OFF 対象のレンタカーが10～15%OFF 対象のプランでの無料朝食 対象のプランでの無料客室アップグレード 全宿泊予約対象の優先サポート",
+      "confidence": "high"
+    }
+  ]
+}
