@@ -1,21 +1,5 @@
 [
   {
-    "date": "2026-08-15",
-    "type": "🆕 新規",
-    "id": "cpn-thanksweek-91eb8b",
-    "category": "クーポンコード",
-    "title": "近ツー感謝ウィーク",
-    "area": ""
-  },
-  {
-    "date": "2026-08-21",
-    "type": "🆕 新規",
-    "id": "yado-sp-hokkaido-cpn-kcp-2-246642",
-    "category": "クーポンコード",
-    "title": "いざ！にっぽん旅 北海道キャンペーン（第二弾）",
-    "area": "北海道"
-  },
-  {
     "date": "2026-08-28",
     "type": "❌ 消失",
     "id": "cpn-thanksweek-91eb8b",
@@ -198,5 +182,13 @@
     "category": "獲得クーポン",
     "title": "奈良県を楽しもうキャンペーン",
     "area": "奈良県"
+  },
+  {
+    "date": "2026-11-25",
+    "type": "🆕 新規",
+    "id": "cpn-blackfriday-58da7e",
+    "category": "クーポンコード",
+    "title": "ブラックフライデーキャンペーン2026",
+    "area": ""
   }
 ]

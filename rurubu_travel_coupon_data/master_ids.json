@@ -1214,7 +1214,7 @@
       "title": "静岡県 東伊豆町のおすすめ施設で使えるクーポン（平日・休日の宿泊20％引き・最大割引額30,000円、休前日の宿泊15％引き・最大割引額20,000円）",
       "category": "エリア限定クーポン",
       "discount": "最大20%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-kgwa26oct80-kgwa26oct60-kgwa26oct40-867df5079d": {
       "first_seen": "2026-10-19",
@@ -1222,7 +1222,7 @@
       "title": "香川県のおすすめ施設で使えるクーポン",
       "category": "エリア限定クーポン",
       "discount": "最大¥8,000引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-xfuku26sp50-dc90bd2fdf": {
       "first_seen": "2026-10-19",
@@ -1550,7 +1550,7 @@
       "title": "【ブラックフライデー】割引クーポン",
       "category": "複数エリア対象クーポン",
       "discount": "最大¥1,000引き",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "rurubu_travel-pp263suis15-7f98ac515e": {
       "first_seen": "2026-11-17",
@@ -1631,7 +1631,15 @@
       "category": "施設限定クーポン",
       "discount": "最大10%引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-pp26hkdht20-9bb5f98841": {
+      "first_seen": "2026-11-25",
+      "last_seen": "2026-11-25",
+      "title": "北海道 帯広温泉 森のスパリゾート 北海道ホテルで使えるクーポン（最大10,000円引き）",
+      "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
+      "discount": "最大20%引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-11-25T07:23:06.443331+09:00"
+  "last_updated": "2026-11-25T16:05:12.277984+09:00"
 }

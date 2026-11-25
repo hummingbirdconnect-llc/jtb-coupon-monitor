@@ -1,7 +1,7 @@
 {
   "provider_id": "jalan",
-  "observed_hash": "03abc83f62d83cc705a7f248501128ba12d4b2d76f94a2c0e887dc65c324bec2",
-  "last_checked_at": "2026-11-25T07:22:55.673638+09:00",
+  "observed_hash": "345691121430b3abf17a35fca9c321a9003304c33c14c685d3b574343ed5d168",
+  "last_checked_at": "2026-11-25T16:05:01.439932+09:00",
   "sources": [
     {
       "url": "https://www.jalan.net/jalancponsum/",
@@ -87,8 +87,8 @@
       "include_in_audit": true,
       "discovered_from": "",
       "discovered_urls": [],
-      "text_chars": 36259,
-      "content_hash": "55e9503c74bb382e0481726d237952863874b958ae80e330d03d2b62e83a4d06"
+      "text_chars": 40081,
+      "content_hash": "f66b091d920edd37e42b7625c8a1ed503ee1f9dcf14aba48f508381aab3e4c74"
     },
     {
       "url": "https://www.jalan.net/theme/PointUpCampaign_202611_02/",
@@ -105,10 +105,10 @@
       "content_hash": "c8a8d0a716e5a171deecfbc831fc9015d684527157eb625e618f1c677bce918e"
     }
   ],
-  "queued_hash": "",
-  "queued_candidate_id": "",
-  "queued_at": "2026-11-21T07:23:04.867618+09:00",
-  "last_audit_status": "processed",
+  "queued_hash": "345691121430b3abf17a35fca9c321a9003304c33c14c685d3b574343ed5d168",
+  "queued_candidate_id": "jalan-345691121430b3ab",
+  "queued_at": "2026-11-25T16:05:01.442896+09:00",
+  "last_audit_status": "pending",
   "last_audited_at": "2026-11-21T09:10:28.147493+09:00",
   "last_audit_candidate_id": "jalan-03abc83f62d83cc7",
   "processed_hash": "03abc83f62d83cc705a7f248501128ba12d4b2d76f94a2c0e887dc65c324bec2",
