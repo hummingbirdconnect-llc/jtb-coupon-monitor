@@ -4,7 +4,7 @@
   {
    "site": "welltrip",
    "name": "ウェルトリップ",
-   "checked_at": "2026-11-25T15:49:37+09:00",
+   "checked_at": "2026-11-26T07:06:02+09:00",
    "status": "取得済み",
    "drafts_checked": true,
    "articles": [
@@ -326,9 +326,13 @@
      "post_id": 3382,
      "title": "近畿日本ツーリストのクーポン・クーポンコードまとめ",
      "url": "https://travel.hb-connect.co.jp/knt-coupon/",
-     "modified": "2026-11-17T08:33:20+09:00",
+     "modified": "2026-11-25T16:37:48+09:00",
      "history": {
-      "result": "調べた履歴に条件差なし"
+      "result": "変更を確認",
+      "changed_at": "2026-11-25T16:37:48+09:00",
+      "fields": [
+       "予約・利用期間"
+      ]
      },
      "job": {
       "last_run": "2026-11-20 朝",
@@ -367,12 +371,13 @@
      "post_id": 4959,
      "title": "JTBクーポンコード一覧｜今使える割引とLINE・初回・5％OFFの配布状況",
      "url": "https://travel.hb-connect.co.jp/jtb-coupon/",
-     "modified": "2026-11-24T16:36:46+09:00",
+     "modified": "2026-11-25T16:37:35+09:00",
      "history": {
       "result": "変更を確認",
-      "changed_at": "2026-11-24T16:36:46+09:00",
+      "changed_at": "2026-11-25T16:37:35+09:00",
       "fields": [
-       "予約・利用期間"
+       "予約・利用期間",
+       "割引・利用金額"
       ]
      },
      "job": {
@@ -885,7 +890,7 @@
      "post_id": 12081,
      "title": "【2026年11月】Yahoo!トラベルのブラックフライデーはいつ？開催状況・過去のクーポンと備え方",
      "url": "https://travel.hb-connect.co.jp/yahoo-travel-black-friday/",
-     "modified": "2026-11-25T06:33:09+09:00",
+     "modified": "2026-11-25T16:34:57+09:00",
      "history": {
       "result": "変更を確認",
       "changed_at": "2026-11-25T06:33:09+09:00",
@@ -1011,7 +1016,7 @@
   {
    "site": "yakushimafan",
    "name": "屋久島ファン",
-   "checked_at": "2026-11-25T15:49:37+09:00",
+   "checked_at": "2026-11-26T07:06:02+09:00",
    "status": "取得済み",
    "drafts_checked": true,
    "articles": [
@@ -1086,7 +1091,7 @@
      "post_id": 53330,
      "title": "HISクーポンコード一覧｜誰でも使える割引と限定特典【海外・国内】",
      "url": "https://yakushima.fun/his-coupon/",
-     "modified": "2026-11-24T13:30:53+09:00",
+     "modified": "2026-11-25T17:06:18+09:00",
      "history": {
       "result": "変更を確認",
       "changed_at": "2026-11-24T13:19:36+09:00",
@@ -1141,7 +1146,7 @@
      "post_id": 53731,
      "title": "Yahoo!トラベル最新クーポンまとめ｜3,000円クーポンコードの出し方も解説",
      "url": "https://yakushima.fun/yahoo-coupon/",
-     "modified": "2026-11-22T09:08:01+09:00",
+     "modified": "2026-11-25T17:28:34+09:00",
      "history": {
       "result": "変更を確認",
       "changed_at": "2026-11-22T09:06:28+09:00",
@@ -1340,7 +1345,8 @@
       "fields": [
        "予約・利用期間"
       ]
-     }
+     },
+     "draft_at": "2026-11-25T16:35:11+09:00"
     },
     {
      "post_id": 57278,
