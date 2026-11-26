@@ -1,0 +1,17 @@
+{
+  "provider_id": "ikkyu",
+  "provider_label": "一休",
+  "generated_at": "2026-11-27T07:42:26.418712+09:00",
+  "search_days": 14,
+  "model": "codex",
+  "source": "codex_web_search+x_findings",
+  "verification": "official_page_checked",
+  "status": "error",
+  "error": "監視データ 2026-11-15 は7日より古いため採用不可。本人方針により公式ページは取得しない。",
+  "known_title_count": 125,
+  "registered_url_count": 8,
+  "candidates": [],
+  "new_count": 0,
+  "candidate_count": 0,
+  "hints_file": "discovery_hints/ikkyu/hints_2026-11-27.json"
+}
