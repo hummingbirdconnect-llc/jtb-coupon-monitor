@@ -1078,7 +1078,7 @@
       "title": "おでんせ！いわて旅割キャンペーン 第2弾【県北・沿岸エリア】（おとな・こどもひとり1泊あたり最大7,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-mss26sep20-2c5ca71865": {
       "first_seen": "2026-09-02",
@@ -1230,7 +1230,7 @@
       "title": "「九州ふっこう応援割ふくおかキャンペーン」（おとな・こどもひとり1泊あたり最大20,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大50%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-xksag26sp50-a9e966d852": {
       "first_seen": "2026-10-19",
@@ -1254,7 +1254,7 @@
       "title": "「熊本ふっこう応援割」（おとな・こどもひとり1泊あたり最大20,000円引き）",
       "category": "エリア限定クーポン",
       "discount": "最大60%引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-xmiya26oc50-6373599314": {
       "first_seen": "2026-10-19",
@@ -1550,7 +1550,7 @@
       "title": "【ブラックフライデー】割引クーポン",
       "category": "複数エリア対象クーポン",
       "discount": "最大¥1,000引き",
-      "stock_status": "配布終了"
+      "stock_status": "配布中"
     },
     "rurubu_travel-pp263suis15-7f98ac515e": {
       "first_seen": "2026-11-17",
@@ -1639,7 +1639,15 @@
       "category": "＜るるぶトラベルおすすめ施設で使える＞施設限定クーポン",
       "discount": "最大20%引き",
       "stock_status": "配布中"
+    },
+    "rurubu_travel-vison26nv15-eb0b8a7758": {
+      "first_seen": "2026-11-26",
+      "last_seen": "2026-11-26",
+      "title": "開業5周年記念！三重県 ホテルヴィソンで使えるおすすめクーポン（最大12,000円引き）＜第二弾＞",
+      "category": "施設限定クーポン",
+      "discount": "最大15%引き",
+      "stock_status": "配布中"
     }
   },
-  "last_updated": "2026-11-26T07:22:04.382266+09:00"
+  "last_updated": "2026-11-26T16:04:16.695805+09:00"
 }

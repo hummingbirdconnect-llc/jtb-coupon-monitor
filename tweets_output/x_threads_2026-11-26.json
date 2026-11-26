@@ -1,12 +1,12 @@
 {
   "date": "2026-11-26",
-  "generated_at": "2026-11-26 07:22 JST",
+  "generated_at": "2026-11-26 16:04 JST",
   "sites": [
     {
       "site_id": "yakushimafan",
       "display_name": "屋久島ファン",
       "x_account": "@yakushimafan",
-      "candidates": 320,
+      "candidates": 323,
       "threads": [
         {
           "provider_id": "jtb",
@@ -42,8 +42,8 @@
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "coupon_id": "2609kyushusaga",
-          "title": "九州ふっこう応援割 さがキャンペーン",
+          "coupon_id": "2609kyushunagasaki",
+          "title": "九州ふっこう応援割 ながさきキャンペーン",
           "score": 52,
           "reasons": [
             "本日配布再開",
@@ -107,7 +107,7 @@
       "site_id": "welltrip",
       "display_name": "ウェルトリップ",
       "x_account": "welltrip",
-      "candidates": 275,
+      "candidates": 277,
       "threads": [
         {
           "provider_id": "jtb",
@@ -143,8 +143,8 @@
         {
           "provider_id": "jtb",
           "provider_label": "JTB",
-          "coupon_id": "2609kyushusaga",
-          "title": "九州ふっこう応援割 さがキャンペーン",
+          "coupon_id": "2609kyushunagasaki",
+          "title": "九州ふっこう応援割 ながさきキャンペーン",
           "score": 52,
           "reasons": [
             "本日配布再開",

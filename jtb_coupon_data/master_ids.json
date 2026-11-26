@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T07:20:37.735339+09:00",
+  "last_updated": "2026-11-26T16:02:41.742875+09:00",
   "ids": {
     "2611jtbcpnew": {
       "category": "国内",
@@ -405,7 +405,7 @@
       "title": "九州ふっこう応援割 さがキャンペーン",
       "discount": "最大50％引",
       "area": "佐賀県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609kyushunagasaki": {
       "category": "国内",
@@ -666,13 +666,6 @@
       "area": "全方面",
       "stock_status": "配布中"
     },
-    "2609any": {
-      "category": "海外",
-      "title": "【リニューアル記念】海外航空券＋ホテルどこでも使える割引クーポン",
-      "discount": "最大20,000円引",
-      "area": "全方面",
-      "stock_status": "配布終了"
-    },
     "2604mh2": {
       "category": "海外",
       "title": "海外航空券で使えるどこでも割引クーポン【マレーシア航空対象】",
@@ -894,6 +887,13 @@
       "category": "海外",
       "title": "ヨーロッパで使える！海外ツアールックJTBMySTYLE割引クーポン【スカンジナビア航空(SK)対象】",
       "discount": "最大60,000円引",
+      "area": "全方面",
+      "stock_status": "配布終了"
+    },
+    "2609any": {
+      "category": "海外",
+      "title": "【リニューアル記念】海外航空券＋ホテルどこでも使える割引クーポン",
+      "discount": "最大20,000円引",
       "area": "全方面",
       "stock_status": "配布終了"
     }
