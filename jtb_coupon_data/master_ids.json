@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T07:21:34.853384+09:00",
+  "last_updated": "2026-11-27T16:02:46.128704+09:00",
   "ids": {
     "2611jtbcpnew": {
       "category": "国内",
@@ -118,6 +118,13 @@
       "title": "IHG One Rewards × JTBトラベルメンバー パートナーシッププランで使える割引クーポン",
       "discount": "最大10,000円引",
       "area": "北海道・大阪府・沖縄県",
+      "stock_status": "配布中"
+    },
+    "2611monterey": {
+      "category": "国内",
+      "title": "ホテルモントレグループ20ホテルで使える割引クーポン",
+      "discount": "最大15,000円引",
+      "area": "北海道・東北・首都圏・近畿・九州・沖縄",
       "stock_status": "配布中"
     },
     "2609sunsunski": {
@@ -272,7 +279,7 @@
       "title": "【中部８県】おすすめの旅館・ホテルで使える割引クーポン",
       "discount": "最大5,000円引",
       "area": "長野県・岐阜県・静岡県・愛知県・三重県・富山県・石川県・福井県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2608notoairport": {
       "category": "国内",
@@ -398,7 +405,7 @@
       "title": "九州ふっこう応援割 ふくおかキャンペーン",
       "discount": "最大50％引",
       "area": "福岡県",
-      "stock_status": "配布中"
+      "stock_status": "配布終了"
     },
     "2609kyushusaga": {
       "category": "国内",

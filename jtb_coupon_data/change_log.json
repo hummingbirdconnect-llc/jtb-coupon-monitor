@@ -7288,5 +7288,32 @@
     "title": "鹿児島ふっこう応援割",
     "discount": "最大60％引",
     "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-27",
+    "type": "🆕 新規",
+    "id": "2611monterey",
+    "category": "国内",
+    "title": "ホテルモントレグループ20ホテルで使える割引クーポン",
+    "discount": "最大15,000円引",
+    "stock_status": "配布中"
+  },
+  {
+    "date": "2026-11-27",
+    "type": "🔴 配布終了",
+    "id": "2609kyushufukuoka",
+    "category": "国内",
+    "title": "九州ふっこう応援割 ふくおかキャンペーン",
+    "discount": "最大50％引",
+    "stock_status": "配布終了"
+  },
+  {
+    "date": "2026-11-27",
+    "type": "🔴 配布終了",
+    "id": "2611chubu",
+    "category": "国内",
+    "title": "【中部８県】おすすめの旅館・ホテルで使える割引クーポン",
+    "discount": "最大5,000円引",
+    "stock_status": "配布終了"
   }
 ]
