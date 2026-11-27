@@ -9022,5 +9022,79 @@
       "九州版",
       "沖縄版"
     ]
+  },
+  {
+    "date": "2026-11-27",
+    "type": "🆕 新規",
+    "id": "d8281f860aaf-02dac3",
+    "category": "海外添乗員同行ツアー",
+    "title": "宮城県外在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "type": "🆕 新規",
+    "id": "d8281f860aaf-2723ae",
+    "category": "海外添乗員同行ツアー",
+    "title": "宮城県外在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "type": "❌ 消失",
+    "id": "3439da1669ce-b27959",
+    "category": "九州発 AirZ(海外航空券+ホテル)",
+    "title": "ホテルとセットでの予約がお得！最大10,000円引き",
+    "discount": "最大10,000円引き",
+    "region_codes": [
+      "kyushu"
+    ],
+    "region_labels": [
+      "九州版"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "type": "❌ 消失",
+    "id": "d8281f860aaf-433829",
+    "category": "海外添乗員同行ツアー",
+    "title": "宮城県外在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "tohoku",
+      "koshinetsu"
+    ],
+    "region_labels": [
+      "東北版",
+      "甲信越（新潟）版"
+    ]
+  },
+  {
+    "date": "2026-11-27",
+    "type": "❌ 消失",
+    "id": "d8281f860aaf-e24a72",
+    "category": "海外添乗員同行ツアー",
+    "title": "宮城県外在住の方に10,000円交通費サポート",
+    "discount": "",
+    "region_codes": [
+      "shikoku"
+    ],
+    "region_labels": [
+      "四国版"
+    ]
   }
 ]
