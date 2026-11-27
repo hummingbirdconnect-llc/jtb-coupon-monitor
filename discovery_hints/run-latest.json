@@ -1,10 +1,10 @@
 {
-  "completed_at": "2026-11-27T07:42:26.418712+09:00",
+  "completed_at": "2026-11-28T07:41:12.543927+09:00",
   "scope": "codex-auto",
   "provider_count": 13,
   "error_count": 2,
   "candidate_count": 13,
-  "new_count": 1,
+  "new_count": 2,
   "results": [
     {
       "provider_id": "his",
@@ -13,16 +13,16 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/his/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/his/hints_2026-11-28.json"
     },
     {
       "provider_id": "jtb",
       "provider_label": "JTB",
       "status": "ok",
       "error": "",
-      "candidate_count": 5,
+      "candidate_count": 4,
       "new_count": 0,
-      "hints_file": "discovery_hints/jtb/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/jtb/hints_2026-11-28.json"
     },
     {
       "provider_id": "knt",
@@ -31,7 +31,7 @@
       "error": "",
       "candidate_count": 1,
       "new_count": 0,
-      "hints_file": "discovery_hints/knt/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/knt/hints_2026-11-28.json"
     },
     {
       "provider_id": "jalpack",
@@ -40,7 +40,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalpack/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/jalpack/hints_2026-11-28.json"
     },
     {
       "provider_id": "jalan",
@@ -49,34 +49,34 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/jalan/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/jalan/hints_2026-11-28.json"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
       "status": "ok",
       "error": "",
-      "candidate_count": 0,
-      "new_count": 0,
-      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-27.json"
+      "candidate_count": 2,
+      "new_count": 2,
+      "hints_file": "discovery_hints/rakuten_travel/hints_2026-11-28.json"
     },
     {
       "provider_id": "ikkyu",
       "provider_label": "一休",
       "status": "error",
-      "error": "監視データ 2026-11-15 は7日より古いため採用不可。本人方針により公式ページは取得しない。",
+      "error": "監視データが7日超。公式ページは取得禁止",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/ikkyu/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/ikkyu/hints_2026-11-28.json"
     },
     {
       "provider_id": "yahoo_travel",
       "provider_label": "Yahoo!トラベル",
       "status": "error",
-      "error": "監視データ 2026-11-15 は7日より古いため採用不可。本人方針により公式ページは取得しない。",
+      "error": "監視データが7日超。公式ページは取得禁止",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/yahoo_travel/hints_2026-11-28.json"
     },
     {
       "provider_id": "asoview",
@@ -85,7 +85,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/asoview/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/asoview/hints_2026-11-28.json"
     },
     {
       "provider_id": "tobu_top_tours",
@@ -94,16 +94,16 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/tobu_top_tours/hints_2026-11-28.json"
     },
     {
       "provider_id": "booking",
       "provider_label": "Booking.com",
       "status": "ok",
       "error": "",
-      "candidate_count": 1,
-      "new_count": 1,
-      "hints_file": "discovery_hints/booking/hints_2026-11-27.json"
+      "candidate_count": 0,
+      "new_count": 0,
+      "hints_file": "discovery_hints/booking/hints_2026-11-28.json"
     },
     {
       "provider_id": "rurubu_travel",
@@ -112,7 +112,7 @@
       "error": "",
       "candidate_count": 5,
       "new_count": 0,
-      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/rurubu_travel/hints_2026-11-28.json"
     },
     {
       "provider_id": "klook",
@@ -121,7 +121,7 @@
       "error": "",
       "candidate_count": 0,
       "new_count": 0,
-      "hints_file": "discovery_hints/klook/hints_2026-11-27.json"
+      "hints_file": "discovery_hints/klook/hints_2026-11-28.json"
     }
   ]
 }
