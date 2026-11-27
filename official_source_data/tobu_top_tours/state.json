@@ -32,15 +32,15 @@
       "content_hash": "f759153fe95ca508c1a9fbbd94c93226ba8ef2883a7a78a44bc6c799451e2b47"
     }
   ],
-  "queued_hash": "ad70cc92bc45aefd69fc9eb126d129284b76ced0727df6e573ae953606fe82d9",
-  "queued_candidate_id": "tobu_top_tours-ad70cc92bc45aefd",
+  "queued_hash": "",
+  "queued_candidate_id": "",
   "queued_at": "2026-11-27T07:22:58.257131+09:00",
-  "last_audit_status": "pending",
-  "last_audited_at": "2026-11-26T09:11:11.573569+09:00",
-  "last_audit_candidate_id": "tobu_top_tours-8b80aa23d99d6d92",
-  "processed_hash": "8b80aa23d99d6d92925a8fac28197b7702c7da69c6ffdf07a1f65be8a0ab172d",
-  "last_processed_at": "2026-11-26T09:11:11.573569+09:00",
-  "last_changed_at": "2026-11-26T09:11:11.573569+09:00",
-  "latest_file": "coupons_2026-11-26.json",
-  "semantic_hash": "ae70f46e2d05d9325311a5ced8be69ec7d8b4d87ebf22adf66e46cc0f12e16f0"
+  "last_audit_status": "processed",
+  "last_audited_at": "2026-11-27T09:10:06.065214+09:00",
+  "last_audit_candidate_id": "tobu_top_tours-ad70cc92bc45aefd",
+  "processed_hash": "ad70cc92bc45aefd69fc9eb126d129284b76ced0727df6e573ae953606fe82d9",
+  "last_processed_at": "2026-11-27T09:10:06.065214+09:00",
+  "last_changed_at": "2026-11-27T09:10:06.065214+09:00",
+  "latest_file": "coupons_2026-11-27.json",
+  "semantic_hash": "8d383e943d856060511d1574471550bd4b3e2ebd61f9d91f1e1ca49dbb7c3813"
 }

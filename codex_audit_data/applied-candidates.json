@@ -874,6 +874,27 @@
       "recommendation": "draft",
       "applied_at": "2026-11-26T09:11:11.574053+09:00",
       "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-8b80aa23d99d6d92.json"
+    },
+    "asoview-2c27b588ed49608a": {
+      "provider_id": "asoview",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-27T09:10:06.059608+09:00",
+      "result_path": "codex_audit_results/asoview/asoview-2c27b588ed49608a.json"
+    },
+    "rakuten_travel-3a6b14028cc70266": {
+      "provider_id": "rakuten_travel",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-27T09:10:06.064094+09:00",
+      "result_path": "codex_audit_results/rakuten_travel/rakuten_travel-3a6b14028cc70266.json"
+    },
+    "tobu_top_tours-ad70cc92bc45aefd": {
+      "provider_id": "tobu_top_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-27T09:10:06.065560+09:00",
+      "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-ad70cc92bc45aefd.json"
     }
   }
 }
