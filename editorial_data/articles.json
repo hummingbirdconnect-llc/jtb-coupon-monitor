@@ -1969,6 +1969,18 @@
     "code": "ruapp5m"
    },
    {
+    "key": "rurubu_travel/rurubu_travel-blkfd26nv10-1544812b70",
+    "title": "【ブラックフライデー】割引クーポン",
+    "basis": "コード一致",
+    "code": "blkfd26nv10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-itht26nov10-bef17e103c",
+    "title": "伊東園ホテルズのおすすめ施設で使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "itht26nov10"
+   },
+   {
     "key": "rurubu_travel/rurubu_travel-hodhk26oc10-eaba529c5b",
     "title": "道北エリア【北海道へ！】オススメ旅館・ホテルで使える割引クーポン",
     "basis": "コード一致",
@@ -1993,6 +2005,18 @@
     "code": "osaka26jun5"
    },
    {
+    "key": "rurubu_travel/rurubu_travel-hmg26nov15-c687f14f04",
+    "title": "【冬季限定】兵庫県 姫路・赤穂エリアのおすすめ施設で使えるクーポン（最大2,000円引き）",
+    "basis": "コード一致",
+    "code": "hmg26nov15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-wkym26nov10-b938a5efc9",
+    "title": "和歌山県のおすすめ施設で使える割引クーポン（最大8,000円引き）",
+    "basis": "コード一致",
+    "code": "wkym26nov10"
+   },
+   {
     "key": "rurubu_travel/rurubu_travel-pp26tais15-2d8e855a94",
     "title": "北海道 ホテル大雪 ＯＮＳＥＮ ＆ ＣＡＮＹＯＮ ＲＥＳＯＲＴで使えるクーポン（最大10,000円引き）",
     "basis": "コード一致",
@@ -2003,6 +2027,12 @@
     "title": "北海道 ホテルモントレエーデルホフ札幌で使えるクーポン（旅行代金10％引き・最大割引額5,000円、旅行代金30,000円以上で15％引き・最大割引額10,000円)",
     "basis": "コード一致",
     "code": "pp26edelh10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26hkdht20-9bb5f98841",
+    "title": "北海道 帯広温泉 森のスパリゾート 北海道ホテルで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26hkdht20"
    },
    {
     "key": "rurubu_travel/rurubu_travel-pp26ntama15-0ee7c74a4d",
@@ -2023,6 +2053,12 @@
     "code": "pp26mpakt15"
    },
    {
+    "key": "rurubu_travel/rurubu_travel-pp26taikn50-63df2752f8",
+    "title": "宮城県 ホテル松島大観荘で使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26taikn50"
+   },
+   {
     "key": "rurubu_travel/rurubu_travel-pp26mnsdj15-b5e5492c9f",
     "title": "宮城県 ホテル モントレ 仙台で使えるクーポン（最大4,000円引き）",
     "basis": "コード一致",
@@ -2033,6 +2069,48 @@
     "title": "宮城県 ホテル モンテ エルマーナ仙台で使えるクーポン（最大3,000円引き）",
     "basis": "コード一致",
     "code": "pp26hermn15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26bnya50-7ff4b978fa",
+    "title": "山形県 あつみ温泉 たちばなやで使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26bnya50"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp263suis15-7f98ac515e",
+    "title": "福島県 土湯温泉 水織音の宿山水荘で使えるクーポン（最大12,000円引き）",
+    "basis": "コード一致",
+    "code": "pp263suis15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26banky15-e67ed4ea9b",
+    "title": "栃木県 湯西川温泉 本家伴久で使えるクーポン（最大9,300円引き）",
+    "basis": "コード一致",
+    "code": "pp26banky15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26byny20-9e8a34c169",
+    "title": "長野県 湯田中温泉 一茶のこみち 美湯の宿で使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26byny20"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26ahvh150-ef92f91698",
+    "title": "長野県 安曇野 穂高ビューホテルで使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26ahvh150"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26hotku15-41a64756eb",
+    "title": "長野県 上諏訪温泉 ホテル紅やで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26hotku15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26view15-c96b75e79a",
+    "title": "東京都 浅草ビューホテルで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26view15"
    },
    {
     "key": "rurubu_travel/rurubu_travel-pp26okada10-pp26okada70-pp26okada30-11e60eb9e0",
@@ -2047,16 +2125,76 @@
     "code": "pp26yoshi100"
    },
    {
+    "key": "rurubu_travel/rurubu_travel-pp26tenyu60-e3230cf40c",
+    "title": "神奈川県 小涌谷温泉 箱根小涌園 天悠で使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26tenyu60"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26hakho80-pp26hakho50-8c1d240853",
+    "title": "神奈川県 小涌谷温泉 箱根ホテル小涌園で使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26hakho50"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26atsuma15-2208b9f612",
+    "title": "静岡県 つま恋リゾート 彩の郷で使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26atsuma15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26kagki10-3be5b49453",
+    "title": "石川県 山中温泉 かがり 吉祥亭で使える割引クーポン（最大8,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26kagki10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26sensn15-bcacec9d30",
+    "title": "福井県 あわら温泉 まつや千千で使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26sensn15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26yknsb15-d03126ddb4",
+    "title": "三重県 伊勢志摩 サン浦島悠季の里で使えるクーポン（最大12,000円引き）＜第三弾＞",
+    "basis": "コード一致",
+    "code": "pp26yknsb15"
+   },
+   {
     "key": "rurubu_travel/rurubu_travel-pp26tobas12-a542e60b42",
     "title": "【2月～3月出発】三重県 伊勢志摩 鳥羽シーサイドホテルで使えるクーポン（最大7,000円引き）",
     "basis": "コード一致",
     "code": "pp26tobas12"
    },
    {
+    "key": "rurubu_travel/rurubu_travel-pp26biwkh20-e6e6523e28",
+    "title": "滋賀県 琵琶湖ホテルで使える割引クーポン（最大20,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26biwkh20"
+   },
+   {
     "key": "rurubu_travel/rurubu_travel-pp26grosk10-290502c42f",
     "title": "大阪府 ホテル グランヴィア 大阪で使えるクーポン（最大3,000円引き）",
     "basis": "コード一致",
     "code": "pp26grosk10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26exhkt15-4df100d733",
+    "title": "福岡県 博多エクセルホテル東急で使えるクーポン（最大6,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26exhkt15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26inasa50-883cad4046",
+    "title": "長崎県 長崎市 稲佐山観光ホテルで使えるクーポン",
+    "basis": "コード一致",
+    "code": "pp26inasa50"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-pp26miyaz15-697af20b64",
+    "title": "宮崎県 宮崎観光ホテルで使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "pp26miyaz15"
    },
    {
     "key": "rurubu_travel/rurubu_travel-pp26motob10-pp26motob50-07b4ca9a21",
@@ -2071,10 +2209,10 @@
     "code": "ppkry26sp15"
    },
    {
-    "key": "rurubu_travel/rurubu_travel-pp26rizza15-98d64ca1c6",
-    "title": "沖縄県 リザンシーパークホテル谷茶ベイで使えるクーポン（最大10,000円引き）",
+    "key": "rurubu_travel/rurubu_travel-pp26monsp20-85c8c01543",
+    "title": "沖縄県 ホテル モントレ 沖縄スパ＆リゾートで使えるクーポン（最大30,000円引き）",
     "basis": "コード一致",
-    "code": "pp26rizza15"
+    "code": "pp26monsp20"
    },
    {
     "key": "rurubu_travel/rurubu_travel-pp26kanuc15-pp26kanuc10-44022d71c4",
@@ -2107,6 +2245,24 @@
     "code": "crsp26oct15"
    },
    {
+    "key": "rurubu_travel/rurubu_travel-jzk26nov15-jzk26nov10-5c110c8f1a",
+    "title": "北海道 定山渓温泉 定山渓ビューホテルで使えるクーポン（旅行代金25,000円以上で10％引き・最大割引額4,000円、旅行代金60,000円以上で15％引き・最大割引額10,000円）",
+    "basis": "コード一致",
+    "code": "jzk26nov10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-srnw26nov10-3a9d623763",
+    "title": "北海道 北湯沢温泉 きたゆざわ 森のソラニワで使えるクーポン（最大6,000円引き）",
+    "basis": "コード一致",
+    "code": "srnw26nov10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-mdrk26nov10-aecf51e9f3",
+    "title": "北海道 北湯沢温泉 緑の風リゾート きたゆざわで使えるクーポン（最大6,000円引き）",
+    "basis": "コード一致",
+    "code": "mdrk26nov10"
+   },
+   {
     "key": "rurubu_travel/rurubu_travel-hwetn26oc20-hwetd26oc20-hwetj26oc20-f05ce375a5",
     "title": "【11月～3月出発】3名から使える！北海道 函館湯の川温泉 海と灯／ヒューイットリゾートで使えるクーポン（最大10,000円引き）",
     "basis": "コード一致",
@@ -2131,6 +2287,30 @@
     "code": "okada26oc30"
    },
    {
+    "key": "rurubu_travel/rurubu_travel-icz26nov15-588a76b3c4",
+    "title": "静岡県 下賀茂温泉 源泉一途 南伊豆で使えるクーポン（最大10,000円引き）",
+    "basis": "コード一致",
+    "code": "icz26nov15"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-kikt26nov10-9d002431e2",
+    "title": "静岡県 舘山寺温泉 時わすれ開華亭で使えるクーポン（最大4,000円引き）",
+    "basis": "コード一致",
+    "code": "kikt26nov10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-meizn26jl20-d392438cda",
+    "title": "【10月以降出発】愛知県 三谷温泉 ホテル明山荘で使えるおすすめクーポン（最大20,000円引き）",
+    "basis": "コード一致",
+    "code": "meizn26jl20"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-sehr26nov15-aa7b2ab945",
+    "title": "愛知県 西浦温泉 天空海遊の宿 末広で使えるクーポン（最大6,000円引き）",
+    "basis": "コード一致",
+    "code": "sehr26nov15"
+   },
+   {
     "key": "rurubu_travel/rurubu_travel-yamag26oc15-997e0fabf9",
     "title": "岐阜県 下呂 温泉 山形屋で使えるクーポン（最大10,000円引き）",
     "basis": "コード一致",
@@ -2141,6 +2321,12 @@
     "title": "岐阜県 下呂温泉 ホテルくさかべアルメリアで使えるクーポン（最大5,000円引き）",
     "basis": "コード一致",
     "code": "kskba26oc10"
+   },
+   {
+    "key": "rurubu_travel/rurubu_travel-vison26nv15-eb0b8a7758",
+    "title": "開業5周年記念！三重県 ホテルヴィソンで使えるおすすめクーポン（最大12,000円引き）＜第二弾＞",
+    "basis": "コード一致",
+    "code": "vison26nv15"
    },
    {
     "key": "rurubu_travel/rurubu_travel-mykhs26oc10-111d52d00e",

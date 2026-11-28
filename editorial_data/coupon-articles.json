@@ -4,7 +4,7 @@
   {
    "site": "welltrip",
    "name": "ウェルトリップ",
-   "checked_at": "2026-11-28T07:04:55+09:00",
+   "checked_at": "2026-11-28T15:49:54+09:00",
    "status": "取得済み",
    "drafts_checked": true,
    "articles": [
@@ -343,9 +343,13 @@
      "post_id": 3680,
      "title": "JR東海ツアーズの割引クーポン最新まとめ｜使い方・取得方法もご案内！",
      "url": "https://travel.hb-connect.co.jp/jr-tokai-tours-coupon/",
-     "modified": "2026-11-18T10:35:31+09:00",
+     "modified": "2026-11-28T09:14:50+09:00",
      "history": {
-      "result": "調べた履歴に条件差なし"
+      "result": "変更を確認",
+      "changed_at": "2026-11-28T09:14:50+09:00",
+      "fields": [
+       "割引・利用金額"
+      ]
      },
      "draft_at": "2026-05-22T07:01:19+09:00"
     },
@@ -1016,7 +1020,7 @@
   {
    "site": "yakushimafan",
    "name": "屋久島ファン",
-   "checked_at": "2026-11-28T07:04:55+09:00",
+   "checked_at": "2026-11-28T15:49:54+09:00",
    "status": "取得済み",
    "drafts_checked": true,
    "articles": [
@@ -1387,20 +1391,21 @@
      "post_id": 61633,
      "title": "【2026年11月】るるぶトラベルのクーポンコード一覧（初回&誰でも使える）",
      "url": "https://yakushima.fun/rurubu-coupon/",
-     "modified": "2026-11-26T10:17:40+09:00",
+     "modified": "2026-11-28T11:23:17+09:00",
      "history": {
-      "result": "変更を確認",
+      "result": "以前に確認した変更",
       "changed_at": "2026-11-26T10:09:05+09:00",
       "fields": [
        "割引・利用金額"
-      ]
+      ],
+      "latest_check": "調べた履歴に条件差なし"
      },
      "job": {
       "last_run": "2026-11-20 朝",
       "run_result": "公開本文の変更なし",
       "draft_run": "2026-11-18 朝"
      },
-     "draft_at": "2026-11-28T06:38:32+09:00"
+     "draft_at": "2026-11-24T07:49:50+09:00"
     },
     {
      "post_id": 61960,
