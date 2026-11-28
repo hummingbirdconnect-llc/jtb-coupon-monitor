@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "candidate_id": "asoview-041e028180ae4162",
+  "provider_id": "asoview",
+  "page_summary": "アソビュークーポン一覧に12件のクーポンが掲載。獲得にはログインが必要。",
+  "change_summary": "前回適用分と同じ12件で、新規・終了・期間や金額の変化なし。",
+  "recommendation": "ignore",
+  "priority": 20,
+  "uncertainty_reasons": [],
+  "audit_notes": "掲載データに意味のある変化なし。",
+  "deals": []
+}

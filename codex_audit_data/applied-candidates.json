@@ -895,6 +895,27 @@
       "recommendation": "draft",
       "applied_at": "2026-11-27T09:10:06.065560+09:00",
       "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-ad70cc92bc45aefd.json"
+    },
+    "asoview-041e028180ae4162": {
+      "provider_id": "asoview",
+      "status": "processed",
+      "recommendation": "ignore",
+      "applied_at": "2026-11-28T09:09:38.943631+09:00",
+      "result_path": "codex_audit_results/asoview/asoview-041e028180ae4162.json"
+    },
+    "jalan-a49037dafa43998a": {
+      "provider_id": "jalan",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-28T09:09:38.946804+09:00",
+      "result_path": "codex_audit_results/jalan/jalan-a49037dafa43998a.json"
+    },
+    "tobu_top_tours-3d1a94fd58d369ae": {
+      "provider_id": "tobu_top_tours",
+      "status": "processed",
+      "recommendation": "draft",
+      "applied_at": "2026-11-28T09:09:38.948335+09:00",
+      "result_path": "codex_audit_results/tobu_top_tours/tobu_top_tours-3d1a94fd58d369ae.json"
     }
   }
 }
