@@ -1,31 +1,17 @@
 {
-  "completed_at": "2026-11-28T07:22:10.716747+09:00",
+  "completed_at": "2026-11-28T16:04:56.304434+09:00",
   "scope": "due",
   "provider_count": 8,
   "error_count": 0,
   "error_provider_ids": [],
   "needs_review_count": 0,
   "needs_review_provider_ids": [],
-  "codex_audit_candidate_count": 3,
+  "codex_audit_candidate_count": 1,
   "codex_audit_candidates": [
     {
-      "candidate_id": "jalan-a49037dafa43998a",
-      "provider_id": "jalan",
-      "candidate_path": "codex_audit_queue/jalan/jalan-a49037dafa43998a.json",
-      "change_kind": "update",
-      "status": "audit_pending"
-    },
-    {
-      "candidate_id": "asoview-041e028180ae4162",
+      "candidate_id": "asoview-7bc99b08c7b63e9d",
       "provider_id": "asoview",
-      "candidate_path": "codex_audit_queue/asoview/asoview-041e028180ae4162.json",
-      "change_kind": "update",
-      "status": "audit_pending"
-    },
-    {
-      "candidate_id": "tobu_top_tours-3d1a94fd58d369ae",
-      "provider_id": "tobu_top_tours",
-      "candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-3d1a94fd58d369ae.json",
+      "candidate_path": "codex_audit_queue/asoview/asoview-7bc99b08c7b63e9d.json",
       "change_kind": "update",
       "status": "audit_pending"
     }
@@ -37,9 +23,9 @@
       "provider_label": "JTB",
       "check_type": "official_monitor",
       "status": "success",
-      "started_at": "2026-11-28T07:08:44.608144+09:00",
-      "completed_at": "2026-11-28T07:20:40.785952+09:00",
-      "official_fetched_at": "2026-11-28T07:20:40.785952+09:00",
+      "started_at": "2026-11-28T15:50:46.103654+09:00",
+      "completed_at": "2026-11-28T16:03:29.059054+09:00",
+      "official_fetched_at": "2026-11-28T16:03:29.059054+09:00",
       "needs_review": false,
       "data_date": "2026-11-28",
       "freshness_status": "fresh",
@@ -49,16 +35,16 @@
       "wp_review_eligible": false,
       "error": "",
       "deep_dive": true,
-      "deep_dive_at": "2026-11-28T07:20:40.785952+09:00"
+      "deep_dive_at": "2026-11-28T16:03:29.059054+09:00"
     },
     {
       "provider_id": "knt",
       "provider_label": "近畿日本ツーリスト",
       "check_type": "official_monitor",
       "status": "success",
-      "started_at": "2026-11-28T07:20:40.793169+09:00",
-      "completed_at": "2026-11-28T07:21:19.284973+09:00",
-      "official_fetched_at": "2026-11-28T07:21:19.284973+09:00",
+      "started_at": "2026-11-28T16:03:29.065126+09:00",
+      "completed_at": "2026-11-28T16:04:04.519868+09:00",
+      "official_fetched_at": "2026-11-28T16:04:04.519868+09:00",
       "needs_review": false,
       "data_date": "2026-11-28",
       "freshness_status": "fresh",
@@ -68,16 +54,16 @@
       "wp_review_eligible": false,
       "error": "",
       "deep_dive": true,
-      "deep_dive_at": "2026-11-28T07:21:19.284973+09:00"
+      "deep_dive_at": "2026-11-28T16:04:04.519868+09:00"
     },
     {
       "provider_id": "jalpack",
       "provider_label": "JALパック",
       "check_type": "official_monitor",
       "status": "success",
-      "started_at": "2026-11-28T07:21:19.286321+09:00",
-      "completed_at": "2026-11-28T07:21:52.154746+09:00",
-      "official_fetched_at": "2026-11-28T07:21:52.154746+09:00",
+      "started_at": "2026-11-28T16:04:04.521312+09:00",
+      "completed_at": "2026-11-28T16:04:37.145814+09:00",
+      "official_fetched_at": "2026-11-28T16:04:37.145814+09:00",
       "needs_review": false,
       "data_date": "2026-11-28",
       "freshness_status": "fresh",
@@ -87,15 +73,15 @@
       "wp_review_eligible": false,
       "error": "",
       "deep_dive": true,
-      "deep_dive_at": "2026-11-28T07:21:52.154746+09:00"
+      "deep_dive_at": "2026-11-28T16:04:37.145814+09:00"
     },
     {
       "provider_id": "jalan",
       "provider_label": "じゃらん",
       "check_type": "official_page_candidate",
-      "started_at": "2026-11-28T07:21:52.156150+09:00",
-      "completed_at": "2026-11-28T07:21:58.558833+09:00",
-      "official_fetched_at": "2026-11-28T07:21:58.558840+09:00",
+      "started_at": "2026-11-28T16:04:37.147072+09:00",
+      "completed_at": "2026-11-28T16:04:44.867182+09:00",
+      "official_fetched_at": "2026-11-28T16:04:44.867189+09:00",
       "source_results": [
         {
           "url": "https://www.jalan.net/jalancponsum/",
@@ -209,26 +195,24 @@
       "count_scope_label": "代表クーポン",
       "count_scope_detail": "代表的な公式クーポンページのみ。個別宿クーポン約1,000件は集計対象外。",
       "ai_used": false,
-      "codex_audit_required": true,
+      "codex_audit_required": false,
       "wp_review_eligible": false,
-      "status": "audit_pending",
-      "change_kind": "update",
-      "content_hash": "a49037dafa43998a2e86f376e67940e78dea662569edf8157773ad5569df1a61",
-      "data_date": "2026-11-26",
-      "latest_file": "coupons_2026-11-26.json",
+      "status": "unchanged",
+      "change_kind": "unchanged",
+      "data_date": "2026-11-28",
+      "latest_file": "coupons_2026-11-28.json",
       "coupon_count": 25,
-      "audit_candidate_id": "jalan-a49037dafa43998a",
-      "audit_candidate_path": "codex_audit_queue/jalan/jalan-a49037dafa43998a.json",
+      "content_hash": "a49037dafa43998a2e86f376e67940e78dea662569edf8157773ad5569df1a61",
       "error": "",
-      "freshness_status": "stale"
+      "freshness_status": "fresh"
     },
     {
       "provider_id": "rakuten_travel",
       "provider_label": "楽天トラベル",
       "check_type": "official_page_candidate",
-      "started_at": "2026-11-28T07:21:58.563997+09:00",
-      "completed_at": "2026-11-28T07:22:02.407484+09:00",
-      "official_fetched_at": "2026-11-28T07:22:02.407490+09:00",
+      "started_at": "2026-11-28T16:04:44.869366+09:00",
+      "completed_at": "2026-11-28T16:04:48.689867+09:00",
+      "official_fetched_at": "2026-11-28T16:04:48.689873+09:00",
       "source_results": [
         {
           "url": "https://travel.rakuten.co.jp/coupon/",
@@ -340,9 +324,9 @@
       "provider_id": "asoview",
       "provider_label": "アソビュー",
       "check_type": "official_page_candidate",
-      "started_at": "2026-11-28T07:22:02.410166+09:00",
-      "completed_at": "2026-11-28T07:22:05.288030+09:00",
-      "official_fetched_at": "2026-11-28T07:22:05.288035+09:00",
+      "started_at": "2026-11-28T16:04:48.691973+09:00",
+      "completed_at": "2026-11-28T16:04:51.340332+09:00",
+      "official_fetched_at": "2026-11-28T16:04:51.340338+09:00",
       "source_results": [
         {
           "url": "https://www.asoview.com/coupon/",
@@ -355,8 +339,8 @@
           "include_in_audit": true,
           "discovered_from": "",
           "discovered_urls": [],
-          "text_chars": 1100,
-          "content_hash": "8c7a23f134566732bb7009c2bd2b2cebef1d9154c1fe0b87b0cf9f898e012bdf"
+          "text_chars": 1185,
+          "content_hash": "0238e7972e7cc31cafb3324f03bbb4cd397cc7b5be455d8fe81c0b9087938b7a"
         }
       ],
       "failed_source_count": 0,
@@ -373,12 +357,12 @@
       "wp_review_eligible": false,
       "status": "audit_pending",
       "change_kind": "update",
-      "content_hash": "041e028180ae4162f1a2204a7470234a24814ff27c402f286166e830f2ef36b6",
+      "content_hash": "7bc99b08c7b63e9d5d1ea60183634c07a5b58bab5110431417498c90761921f0",
       "data_date": "2026-11-27",
       "latest_file": "coupons_2026-11-27.json",
       "coupon_count": 20,
-      "audit_candidate_id": "asoview-041e028180ae4162",
-      "audit_candidate_path": "codex_audit_queue/asoview/asoview-041e028180ae4162.json",
+      "audit_candidate_id": "asoview-7bc99b08c7b63e9d",
+      "audit_candidate_path": "codex_audit_queue/asoview/asoview-7bc99b08c7b63e9d.json",
       "error": "",
       "freshness_status": "fresh"
     },
@@ -386,9 +370,9 @@
       "provider_id": "tobu_top_tours",
       "provider_label": "東武トップツアーズ",
       "check_type": "official_page_candidate",
-      "started_at": "2026-11-28T07:22:05.289256+09:00",
-      "completed_at": "2026-11-28T07:22:08.749732+09:00",
-      "official_fetched_at": "2026-11-28T07:22:08.749738+09:00",
+      "started_at": "2026-11-28T16:04:51.341909+09:00",
+      "completed_at": "2026-11-28T16:04:54.924289+09:00",
+      "official_fetched_at": "2026-11-28T16:04:54.924295+09:00",
       "source_results": [
         {
           "url": "https://tobutoptours.jp/members_new/coupon/",
@@ -429,16 +413,14 @@
       "count_scope_label": "クーポン",
       "count_scope_detail": "",
       "ai_used": false,
-      "codex_audit_required": true,
+      "codex_audit_required": false,
       "wp_review_eligible": false,
-      "status": "audit_pending",
-      "change_kind": "update",
-      "content_hash": "3d1a94fd58d369aee6aa100bdcb17dce3b589943f74468a202b064cc6b01dac1",
-      "data_date": "2026-11-27",
-      "latest_file": "coupons_2026-11-27.json",
+      "status": "unchanged",
+      "change_kind": "unchanged",
+      "data_date": "2026-11-28",
+      "latest_file": "coupons_2026-11-28.json",
       "coupon_count": 9,
-      "audit_candidate_id": "tobu_top_tours-3d1a94fd58d369ae",
-      "audit_candidate_path": "codex_audit_queue/tobu_top_tours/tobu_top_tours-3d1a94fd58d369ae.json",
+      "content_hash": "3d1a94fd58d369aee6aa100bdcb17dce3b589943f74468a202b064cc6b01dac1",
       "error": "",
       "freshness_status": "fresh"
     },
@@ -447,9 +429,9 @@
       "provider_label": "るるぶトラベル",
       "check_type": "official_monitor",
       "status": "success",
-      "started_at": "2026-11-28T07:22:08.751795+09:00",
-      "completed_at": "2026-11-28T07:22:10.713041+09:00",
-      "official_fetched_at": "2026-11-28T07:22:10.713041+09:00",
+      "started_at": "2026-11-28T16:04:54.925573+09:00",
+      "completed_at": "2026-11-28T16:04:56.301263+09:00",
+      "official_fetched_at": "2026-11-28T16:04:56.301263+09:00",
       "needs_review": false,
       "data_date": "2026-11-28",
       "freshness_status": "fresh",
@@ -459,7 +441,7 @@
       "wp_review_eligible": false,
       "error": "",
       "deep_dive": true,
-      "deep_dive_at": "2026-11-28T07:22:10.713041+09:00"
+      "deep_dive_at": "2026-11-28T16:04:56.301263+09:00"
     }
   ]
 }
